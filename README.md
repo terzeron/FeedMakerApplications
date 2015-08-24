@@ -1,5 +1,5 @@
-FeedMaker
-=========
+FeedMakerApplications
+=====================
 
 Applications using FeedMaker
 
