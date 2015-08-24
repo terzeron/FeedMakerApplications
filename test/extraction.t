@@ -32,7 +32,7 @@ class ExtractionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
         # post process test
-		cmd = "cat %s | %s/daum/post_process_daumwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_HOME'], url)
+		cmd = "cat %s | %s/daum/post_process_daumwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CWD'], url)
 		result = subprocess.check_output(cmd, shell=True)
 		expected = read_entire_file(processedFileName)
 		self.assertEqual(expected, result)
@@ -74,7 +74,7 @@ class ExtractionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		# post process test
-		cmd = "cat %s | %s/naver/post_process_naverwebtoon_mobile.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_HOME'], url)
+		cmd = "cat %s | %s/naver/post_process_naverwebtoon_mobile.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CWD'], url)
 		result = subprocess.check_output(cmd, shell=True)
 		expected = read_entire_file(processedFileName)
 		self.assertEqual(expected, result)
@@ -94,7 +94,7 @@ class ExtractionTest(unittest.TestCase):
 		downloadedFileName = htmlFileName + ".downloaded"
 
 		# post process test
-		cmd = "cat %s | %s/naver/post_process_naverwebtoon_ozviewer.pl '%s'" % (htmlFileName, os.environ['FEED_MAKER_HOME'], url)
+		cmd = "cat %s | %s/naver/post_process_naverwebtoon_ozviewer.pl '%s'" % (htmlFileName, os.environ['FEED_MAKER_CWD'], url)
 		result = subprocess.check_output(cmd, shell=True)
 		expected = read_entire_file(processedFileName)
 		self.assertEqual(expected, result)
@@ -154,7 +154,7 @@ class ExtractionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		# post process test
-		cmd = "cat %s | %s/ollehmarket/post_process_ollehmarketwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_HOME'], url)
+		cmd = "cat %s | %s/ollehmarket/post_process_ollehmarketwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CWD'], url)
 		result = subprocess.check_output(cmd, shell=True)
 		expected = read_entire_file(processedFileName)
 		self.assertEqual(expected, result)

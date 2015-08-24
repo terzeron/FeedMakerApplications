@@ -3,17 +3,16 @@
 	<collection>
 		<is_completed>true</is_completed>
 		<sort_field_pattern><![CDATA[Total_ID=(\d+)]]></sort_field_pattern>
-		<unit_size_per_day>2</unit_size_per_day>
+		<unit_size_per_day>6</unit_size_per_day>
 		<list_url_list>
-			<list_url><![CDATA[http://article.joins.com/issue/issue.asp?sid=6069&pn=1&spn=1&sn=&st=issue]]></list_url>
-			<list_url><![CDATA[http://article.joins.com/issue/issue.asp?sid=6069&pn=2&spn=1&sn=&st=issue]]></list_url>
-			<list_url><![CDATA[http://article.joins.com/issue/issue.asp?sid=6069&pn=3&spn=1&sn=&st=issue]]></list_url>
-			<list_url><![CDATA[http://article.joins.com/issue/issue.asp?sid=6069&pn=4&spn=1&sn=&st=issue]]></list_url>
-			<list_url><![CDATA[http://article.joins.com/issue/issue.asp?sid=6069&pn=5&spn=1&sn=&st=issue]]></list_url>
-			<list_url><![CDATA[http://article.joins.com/issue/issue.asp?sid=6069&pn=6&spn=1&sn=&st=issue]]></list_url>
-			<list_url><![CDATA[http://article.joins.com/issue/issue.asp?sid=6069&pn=7&spn=1&sn=&st=issue]]></list_url>
+			<list_url><![CDATA[http://find.joins.com/mediaSearch/news_search.asp?kwd=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&pageNum=6&srchFd=&cate=news&subcate=new&sort=default&radio=&selectBox1=&selectBox2=&detail1=&detail2=&relation=&relation2=&relationFlg=0&preKwd=&sdate=&edate=&section=&selectoption=&sldPeriodBox=&q=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&chk=]]></list_url>
+			<list_url><![CDATA[http://find.joins.com/mediaSearch/news_search.asp?kwd=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&pageNum=5&srchFd=&cate=news&subcate=new&sort=default&radio=&selectBox1=&selectBox2=&detail1=&detail2=&relation=&relation2=&relationFlg=0&preKwd=&sdate=&edate=&section=&selectoption=&sldPeriodBox=&q=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&chk=]]></list_url>
+			<list_url><![CDATA[http://find.joins.com/mediaSearch/news_search.asp?kwd=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&pageNum=4&srchFd=&cate=news&subcate=new&sort=default&radio=&selectBox1=&selectBox2=&detail1=&detail2=&relation=&relation2=&relationFlg=0&preKwd=&sdate=&edate=&section=&selectoption=&sldPeriodBox=&q=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&chk=]]></list_url>
+			<list_url><![CDATA[http://find.joins.com/mediaSearch/news_search.asp?kwd=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&pageNum=3&srchFd=&cate=news&subcate=new&sort=default&radio=&selectBox1=&selectBox2=&detail1=&detail2=&relation=&relation2=&relationFlg=0&preKwd=&sdate=&edate=&section=&selectoption=&sldPeriodBox=&q=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&chk=]]></list_url>
+			<list_url><![CDATA[http://find.joins.com/mediaSearch/news_search.asp?kwd=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&pageNum=2&srchFd=&cate=news&subcate=new&sort=default&radio=&selectBox1=&selectBox2=&detail1=&detail2=&relation=&relation2=&relationFlg=0&preKwd=&sdate=&edate=&section=&selectoption=&sldPeriodBox=&q=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&chk=]]></list_url>
+			<list_url><![CDATA[http://find.joins.com/mediaSearch/news_search.asp?kwd=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&pageNum=1&srchFd=&cate=news&subcate=new&sort=default&radio=&selectBox1=&selectBox2=&detail1=&detail2=&relation=&relation2=&relationFlg=0&preKwd=&sdate=&edate=&section=&selectoption=&sldPeriodBox=&q=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&chk=]]></list_url>
 		</list_url_list>
-		<element_class>list_thumb</element_class>
+		<element_class>bd</element_class>
 	</collection>
 	<extraction>
 		<element_list>

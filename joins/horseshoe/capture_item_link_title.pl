@@ -16,7 +16,12 @@ sub main
 	# idempotent 
 	while (my $line = <STDIN>) {
 		if ($state == 0) {
-			if ($line =~ m!<a class="title_cr" href="(?<link>http://article.joins.com/news/article/[^"]+)!) {
+			if ($line =~ m!<dt><a href="/Search_Link_Joongang\.asp\?Total_ID=(\d+)[^>]*>(.*)</a>!) {
+				$link = "http://article.joins.com/news/article/article.asp?ctg=17&Total_ID=" . $1;
+				$title = $2;
+				$title =~ s!</?b>!!g;
+				print "$link\t$title\n";
+			} elsif ($line =~ m!<a class="title_cr" href="(?<link>http://article.joins.com/news/article/[^"]+)!) {
 				$link = $+{"link"};
 				$link =~ s/\&amp;/&/g;
 				$state = 1;

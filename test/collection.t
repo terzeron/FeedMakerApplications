@@ -30,7 +30,7 @@ class CollectionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		expected = read_entire_file(listFileName)
-		cmd = "cat %s | %s/daum/capture_item_daumwebtoon_mobile.pl" % (extractedFileName, os.environ['FEED_MAKER_HOME'])
+		cmd = "cat %s | %s/daum/capture_item_daumwebtoon_mobile.pl" % (extractedFileName, os.environ['FEED_MAKER_CWD'])
 		result = subprocess.check_output(cmd, shell=True)
 		self.assertEqual(expected, result)
 
@@ -48,7 +48,7 @@ class CollectionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		expected = read_entire_file(listFileName)
-		cmd = "cat %s | %s/kakao/capture_item_kakaowebtoon.pl" % (extractedFileName, os.environ['FEED_MAKER_HOME'])
+		cmd = "cat %s | %s/kakao/capture_item_kakaowebtoon.pl" % (extractedFileName, os.environ['FEED_MAKER_CWD'])
 		result = subprocess.check_output(cmd, shell=True)
 		self.assertEqual(expected, result)
 
@@ -66,7 +66,7 @@ class CollectionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		expected = read_entire_file(listFileName)
-		cmd = "cat %s | %s/naver/capture_item_naverwebtoon.pl" % (extractedFileName, os.environ['FEED_MAKER_HOME'])
+		cmd = "cat %s | %s/naver/capture_item_naverwebtoon.pl" % (extractedFileName, os.environ['FEED_MAKER_CWD'])
 		result = subprocess.check_output(cmd, shell=True)
 		self.assertEqual(expected, result)
 
@@ -84,7 +84,7 @@ class CollectionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		expected = read_entire_file(listFileName)
-		cmd = "cat %s | %s/naver/capture_item_navercastpc.pl" % (extractedFileName, os.environ['FEED_MAKER_HOME'])
+		cmd = "cat %s | %s/naver/capture_item_navercastpc.pl" % (extractedFileName, os.environ['FEED_MAKER_CWD'])
 		result = subprocess.check_output(cmd, shell=True)
 		self.assertEqual(expected, result)
 
@@ -102,7 +102,7 @@ class CollectionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		expected = read_entire_file(listFileName)
-		cmd = "cat %s | %s/naver/capture_item_naverblog.pl" % (extractedFileName, os.environ['FEED_MAKER_HOME'])
+		cmd = "cat %s | %s/naver/capture_item_naverblog.pl" % (extractedFileName, os.environ['FEED_MAKER_CWD'])
 		result = subprocess.check_output(cmd, shell=True)
 		self.assertEqual(expected, result)
 
@@ -120,7 +120,7 @@ class CollectionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		expected = read_entire_file(listFileName)
-		cmd = "cat %s | %s/ollehmarket/capture_item_ollehmarketwebtoon.pl" % (extractedFileName, os.environ['FEED_MAKER_HOME'])
+		cmd = "cat %s | %s/ollehmarket/capture_item_ollehmarketwebtoon.pl" % (extractedFileName, os.environ['FEED_MAKER_CWD'])
 		result = subprocess.check_output(cmd, shell=True)
 		self.assertEqual(expected, result)
 
@@ -138,7 +138,7 @@ class CollectionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
 		expected = read_entire_file(listFileName)
-		cmd = "cat %s | %s/yonginlib/capture_item_yonginlib.pl" % (extractedFileName, os.environ['FEED_MAKER_HOME'])
+		cmd = "cat %s | %s/yonginlib/capture_item_yonginlib.pl" % (extractedFileName, os.environ['FEED_MAKER_CWD'])
 		result = subprocess.check_output(cmd, shell=True)
 		self.assertEqual(expected, result)
 
