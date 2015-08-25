@@ -53,7 +53,7 @@ class ExtractionTest(unittest.TestCase):
 		self.assertEqual(expected, result)
 
         # post process test
-		cmd = "cat %s | post_process_only_for_images.pl '%s'" % (extractedFileName, url)
+		cmd = "cat %s | post_process_only_for_images.py '%s'" % (extractedFileName, url)
 		result = subprocess.check_output(cmd, shell=True)
 		expected = read_entire_file(processedFileName)
 		self.assertEqual(expected, result)
