@@ -10,16 +10,6 @@
 			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=20]]></list_url>
 			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=30]]></list_url>
 			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=40]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=50]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=60]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=70]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=80]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=90]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=100]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=110]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=120]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=130]]></list_url>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=15&startRowNo=140]]></list_url>
 		</list_url_list>
 		<element_class>toon_work_list</element_class>
 		<item_capture_script>../capture_item_ollehmarketwebtoon.pl</item_capture_script>
