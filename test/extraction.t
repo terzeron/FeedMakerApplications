@@ -4,15 +4,8 @@
 import os
 import sys
 import unittest
-from feedmakerutil import get_md5_name
 import subprocess
-
-
-def read_entire_file(fileName):
-	with open(fileName) as f:
-		result = f.read()
-		f.close()
-		return result
+import feedmakerutil
 
 
 class ExtractionTest(unittest.TestCase):
@@ -26,15 +19,15 @@ class ExtractionTest(unittest.TestCase):
 		downloadedFileName = htmlFileName + ".downloaded"
 
 		# extract.py test
-		cmd = "cat %s | extract.py '%s'" % (htmlFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(extractedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s extract.py '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(extractedFileName)
 		self.assertEqual(expected, result)
 
         # post process test
-		cmd = "cat %s | %s/daum/post_process_daumwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CWD'], url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(processedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s %s/daum/post_process_daumwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CONF_FILE'], os.environ['FEED_MAKER_CWD'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(processedFileName)
 		self.assertEqual(expected, result)
 
 
@@ -47,15 +40,15 @@ class ExtractionTest(unittest.TestCase):
 		downloadedFileName = htmlFileName + ".downloaded"
 
 		# extract.py test
-		cmd = "cat %s | extract.py '%s'" % (htmlFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(extractedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s extract.py '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(extractedFileName)
 		self.assertEqual(expected, result)
 
         # post process test
-		cmd = "cat %s | post_process_only_for_images.py '%s'" % (extractedFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(processedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s post_process_only_for_images.py '%s'" % (extractedFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(processedFileName)
 		self.assertEqual(expected, result)
 
 
@@ -68,21 +61,21 @@ class ExtractionTest(unittest.TestCase):
 		downloadedFileName = htmlFileName + ".downloaded"
 
 		# extract.py test
-		cmd = "cat %s | extract.py '%s'" % (htmlFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(extractedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s extract.py '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(extractedFileName)
 		self.assertEqual(expected, result)
 
 		# post process test
-		cmd = "cat %s | %s/naver/post_process_naverwebtoon_mobile.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CWD'], url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(processedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s %s/naver/post_process_naverwebtoon_mobile.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CONF_FILE'], os.environ['FEED_MAKER_CWD'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(processedFileName)
 		self.assertEqual(expected, result)
 
 		# download test
-		cmd = "cat %s | download_image.pl '%s'" % (processedFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(downloadedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s download_image.pl '%s'" % (processedFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(downloadedFileName)
 		self.assertEqual(expected, result)
 
 
@@ -94,15 +87,15 @@ class ExtractionTest(unittest.TestCase):
 		downloadedFileName = htmlFileName + ".downloaded"
 
 		# post process test
-		cmd = "cat %s | %s/naver/post_process_naverwebtoon_ozviewer.pl '%s'" % (htmlFileName, os.environ['FEED_MAKER_CWD'], url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(processedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s %s/naver/post_process_naverwebtoon_ozviewer.pl '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], os.environ['FEED_MAKER_CWD'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(processedFileName)
 		self.assertEqual(expected, result)
 
 		# download test
-		cmd = "cat %s | download_image.pl '%s'" % (processedFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(downloadedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s download_image.pl '%s'" % (processedFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(downloadedFileName)
 		self.assertEqual(expected, result)
 
 
@@ -113,9 +106,9 @@ class ExtractionTest(unittest.TestCase):
 		extractedFileName = htmlFileName + ".extracted"
 
 		# extract.py test
-		cmd = "cat %s | extract.py '%s'" % (htmlFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(extractedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s extract.py '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(extractedFileName)
 		self.assertEqual(expected, result)
 
 
@@ -127,15 +120,15 @@ class ExtractionTest(unittest.TestCase):
 		downloadedFileName = htmlFileName + ".downloaded"
 
 		# extract.py test
-		cmd = "cat %s | extract.py '%s'" % (htmlFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(extractedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s extract.py '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(extractedFileName)
 		self.assertEqual(expected, result)
 
 		# download test
-		cmd = "cat %s | download_image.pl '%s'" % (extractedFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(downloadedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s download_image.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(downloadedFileName)
 		self.assertEqual(expected, result)
 
 
@@ -148,21 +141,21 @@ class ExtractionTest(unittest.TestCase):
 		downloadedFileName = htmlFileName + ".downloaded"
 
 		# extract.py test
-		cmd = "cat %s | extract.py '%s'" % (htmlFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(extractedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s extract.py '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(extractedFileName)
 		self.assertEqual(expected, result)
 
 		# post process test
-		cmd = "cat %s | %s/ollehmarket/post_process_ollehmarketwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CWD'], url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(processedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s %s/ollehmarket/post_process_ollehmarketwebtoon.pl '%s'" % (extractedFileName, os.environ['FEED_MAKER_CONF_FILE'], os.environ['FEED_MAKER_CWD'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(processedFileName)
 		self.assertEqual(expected, result)
 
 		# download test
-		cmd = "cat %s | download_image.pl '%s'" % (processedFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(downloadedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s download_image.pl '%s'" % (processedFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(downloadedFileName)
 		self.assertEqual(expected, result)
 
 
@@ -173,9 +166,9 @@ class ExtractionTest(unittest.TestCase):
 		extractedFileName = htmlFileName + ".extracted"
 
 		# extract.py test
-		cmd = "cat %s | extract.py '%s'" % (htmlFileName, url)
-		result = subprocess.check_output(cmd, shell=True)
-		expected = read_entire_file(extractedFileName)
+		cmd = "cat %s | env FEED_MAKER_CONF_FILE=%s extract.py '%s'" % (htmlFileName, os.environ['FEED_MAKER_CONF_FILE'], url)
+		result = feedmakerutil.execCmd(cmd)
+		expected = feedmakerutil.readFile(extractedFileName)
 		self.assertEqual(expected, result)
 
 
