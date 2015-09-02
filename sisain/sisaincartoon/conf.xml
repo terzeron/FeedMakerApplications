@@ -11,7 +11,7 @@
 		<element_list>
 		<element_id>articleBody</element_id>
 		</element_list>
-		<post_process_script>post_process_sisaincartoon.pl</post_process_script>
+		<post_process_script>./post_process_sisaincartoon.pl</post_process_script>
 		<encoding>cp949</encoding>
 	</extraction>
 	<rss>
