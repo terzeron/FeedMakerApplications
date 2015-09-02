@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 use Encode;
-use FeedMaker qw(get_encoding_from_config);
+use FeedMaker;
 
 
 sub get_list_page_link
@@ -15,7 +15,7 @@ sub get_list_page_link
 	my $first_article_link = "";
 
 	# 링크에 들어가서 1화를 찾아서 해당 링크 주소를 확인
-	my $html_file = "newlist/" . FeedMaker::get_md5_name($link) . ".html";
+	my $html_file = "newlist/" . FeedMaker::getMd5Name($link) . ".html";
 	my $cmd = qq([ -e "$html_file" -a -s "$html_file" ] || wget.sh --download "$html_file" "$link");
 	my $result = qx($cmd);
 	if ($ERRNO != 0) {
@@ -59,7 +59,7 @@ sub main
 	my $state = 0;
 	my @result_arr = ();
 
-	my $encoding = get_encoding_from_config();
+	my $encoding = FeedMaker::getEncodingFromConfig();
 
 	my $cmd = qq(find newlist -name "*.html" -mtime +7 -exec rm -f "{}" \\;);
 	my $result = qx($cmd);

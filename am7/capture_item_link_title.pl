@@ -7,7 +7,6 @@ use Carp;
 use Encode;
 use Getopt::Std;
 
-use FeedMaker qw(utf8_encode);
 use URI::Encode qw(uri_decode);
 use Scalar::Util qw(reftype);
 use JSON qw(decode_json);

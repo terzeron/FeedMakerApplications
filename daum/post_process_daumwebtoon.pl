@@ -6,7 +6,7 @@ use warnings;
 use Carp;
 use Modern::Perl;
 use Digest::MD5;
-use FeedMaker qw(read_config get_encoding_from_config);
+use FeedMaker;
 
 
 sub main
@@ -20,7 +20,7 @@ sub main
 		print $line;
 	}
 
-	my $encoding = get_encoding_from_config();
+	my $encoding = FeedMaker::getEncodingFromConfig();
 
 	my $post_link = $ARGV[0];
 	if ($post_link =~ m!http://cartoon\.media\.daum\.net/(m/)?webtoon/viewer/(\d+)$!) {

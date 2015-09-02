@@ -33,7 +33,7 @@ sub main
 {
 	my $url = "";
 
-	my $encoding = get_encoding_from_config();
+	my $encoding = FeedMaker::getEncodingFromConfig();
 
 	my $cmd = qq(find ./html -name "*.html" -mtime +7 | xargs rm -f);
 	my $result = qx($cmd);

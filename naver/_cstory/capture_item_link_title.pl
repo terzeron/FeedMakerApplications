@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 use Encode;
-use FeedMaker qw(get_encoding_from_config);
+use FeedMaker;
 
 
 sub get_title
@@ -61,7 +61,7 @@ sub main
 {
 	my $conf_file = $ARGV[0];
 
-	my $encoding = get_encoding_from_config();
+	my $encoding = FeedMaker::getEncodingFromConfig();
 
 	while (my $line = <STDIN>) {
 		if ($line =~ m!<a href=\"(cstory\.nhn\?nid=\d+)&(?:amp;)?page=\d+\"><img src="?[^>]+"?\s*/?></a>!) {

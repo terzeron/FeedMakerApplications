@@ -6,7 +6,7 @@ use warnings;
 use Carp;
 use Modern::Perl;
 use Digest::MD5;
-use FeedMaker qw(read_config get_md5_name);
+use FeedMaker;
 
 
 sub get_cache_url
@@ -14,7 +14,7 @@ sub get_cache_url
 	my $img_url = shift;
 	my $img_ext = shift;
 
-	return "http://terzeron.net/xml/img/" . get_md5_name($img_url) . "." . $img_ext;
+	return "http://terzeron.net/xml/img/" . FeedMaker::getMd5Name($img_url) . "." . $img_ext;
 }
 
 
@@ -23,7 +23,7 @@ sub get_cache_file_name
 	my $img_url = shift;
 	my $img_ext = shift;
 
-	return "/Users/terzeron/public_html/xml/img/" . get_md5_name($img_url) . "." . $img_ext;
+	return "/Users/terzeron/public_html/xml/img/" . FeedMaker::getMd5Name($img_url) . "." . $img_ext;
 }
 
 

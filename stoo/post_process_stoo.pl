@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 use Modern::Perl;
-use FeedMaker qw(get_encoding_from_config);
+use FeedMaker;
 
 
 sub main
@@ -24,7 +24,7 @@ sub main
 	}
 
 	if ($second_page_url ne "") {
-		my $encoding = get_encoding_from_config();
+		my $encoding = FeedMaker::getEncodingFromConfig();
 
 		my $cmd = qq(wget.sh "$second_page_url" | extract_element.py extraction);
 		#print $cmd . "\n";

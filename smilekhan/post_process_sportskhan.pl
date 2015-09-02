@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 use Modern::Perl;
-use FeedMaker qw(get_encoding_from_config);
+use FeedMaker;
 
 
 sub main
@@ -21,7 +21,7 @@ sub main
 		}
 	}
 
-	my $encoding = get_encoding_from_config();
+	my $encoding = FeedMaker::getEncodingFromConfig();
 
 	foreach my $url (@url_list) {
 		my $cmd = qq(wget.sh "$url");
