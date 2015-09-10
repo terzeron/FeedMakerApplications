@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<collection>
+		<is_completed>true</is_completed>
+		<sort_field_pattern><![CDATA[\t(\S+)$]]></sort_field_pattern>
+		<unit_size_per_day>2</unit_size_per_day>
+		<list_url_list>
+			<list_url><![CDATA[http://teamsego.github.io/github-trend-kr/js/bookindex.js]]></list_url>
+		</list_url_list>
+	</collection>
+	<extraction>
+		<bypass_element_extraction>true</bypass_element_extraction>
+		<post_process_script>markdown_to_html.py</post_process_script>
+	</extraction>
+	<rss>
+		<title><![CDATA[주간 깃헙 트렌드::TeamSEGO]]></title>
+		<description><![CDATA[주간 깃헙 트렌드::TeamSEGO]]></description>
+		<feed_url><![CDATA[http://terzeron.net/TeamSEGO.xml]]></feed_url>
+        <link><![CDATA[http://terzeron.net/TeamSEGO.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) TeamSEGO. All rights reserved.]]></copyright>
+        <language>ko</language>
+	</rss>
+</configuration>

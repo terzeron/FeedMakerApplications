@@ -13,7 +13,7 @@ sub main
 	my $link = "";
 	my $title = "";
 
-	my $encoding = FeedMaker::get_encoding_from_config();
+	my $encoding = FeedMaker::getEncodingFromConfig();
 
 	# 오래된 html 파일 지움
 	my $cmd = qq(find newlist -name "*.html" -mtime +7 -exec rm -f "{}" \\;);
