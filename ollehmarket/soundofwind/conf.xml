@@ -8,7 +8,7 @@
 			<list_url><![CDATA[http://webtoon.olleh.com/toon/timesList.kt?webtoonseq=87]]></list_url>
 		</list_url_list>
 		<element_class>toon_work_list</element_class>
-		<item_capture_script>../capture_item_ollehmarketwebtoon.pl</item_capture_script>
+		<item_capture_script>../capture_item_ollehmarketwebtoon.py -n 10</item_capture_script>
 	</collection>
 	<extraction>
 		<element_list>

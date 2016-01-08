@@ -5,7 +5,16 @@ use strict;
 use warnings;
 use Carp;
 use Encode;
-use FeedMaker qw(get_date_str get_list_file_name);
+use Time::Piece;
+use FeedMaker;
+
+
+sub get_date_str
+{
+    my $ts = shift;
+
+    my $date_str = localtime($ts)->strftime("%Y%m%d"); 
+}
 
 
 sub get_title_year
@@ -27,6 +36,15 @@ sub get_title_year
 		return "\t$1\t$2";
 	}
 	return "\t\t";
+}
+
+
+sub get_list_file_name
+{
+    my $prefix = shift;
+    my $date_str = shift;
+
+    return $prefix . "/" . $date_str . ".txt";
 }
 
 

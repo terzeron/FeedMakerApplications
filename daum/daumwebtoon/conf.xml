@@ -2,15 +2,22 @@
 <configuration>
 	<collection>
 		<list_url_list>
-			<list_url><![CDATA[http://cartoon.media.daum.net/webtoon/week]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/mon]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/tue]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/wed]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/thu]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/fri]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/sat]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/sun]]></list_url>
+			<list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/free]]></list_url>
 		</list_url_list>
-		<element_class>area_toonlist</element_class>
 		<ignore_old_list>true</ignore_old_list>
 	</collection>
 	<extraction>
 		<element_list>
-			<element_class>area_toon_info</element_class>
+			<element_class>product_intro</element_class>
 		</element_list>
+		<render_js>true</render_js>
 	</extraction>
 	<rss>
 		<title><![CDATA[다음웹툰목록]]></title>
