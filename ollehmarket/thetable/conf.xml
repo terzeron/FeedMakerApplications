@@ -5,17 +5,16 @@
 		<sort_field_pattern><![CDATA[timesseq=(\d+)]]></sort_field_pattern>
 		<unit_size_per_day>1</unit_size_per_day>
 		<list_url_list>
-			<list_url><![CDATA[http://webtoon.olleh.com/api/work/getTimesListByWork.kt?webtoonseq=202]]></list_url>
+			<list_url><![CDATA[http://webtoon.olleh.com/api/work/getTimesListByWork.kt?mobileyn=N&webtoonseq=202]]></list_url>
 		</list_url_list>
+		<referer><![CDATA[http://webtoon.olleh.com]]></referer>
 		<item_capture_script>../capture_item_ollehmarketwebtoon.py -n 10</item_capture_script>
-		<referer>http://webtoon.olleh.com/web/main.kt</referer>
 	</collection>
 	<extraction>
 		<element_list>
 			<element_class>toon_view_content</element_class>
 		</element_list>
-		<render_js>true</render_js>
-		<post_process_script>../post_process_ollehmarketwebtoon.pl</post_process_script>
+		<post_process_script>../post_process_ollehmarketwebtoon.py</post_process_script>
 		<post_process2_script>download_image.pl</post_process2_script>
 	</extraction>
 	<rss>

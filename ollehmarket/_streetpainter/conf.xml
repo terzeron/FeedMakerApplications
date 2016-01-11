@@ -9,7 +9,6 @@
 		</list_url_list>
 		<element_class>toon_work_list</element_class>
 		<item_capture_script>../capture_item_ollehmarketwebtoon.py -n 10</item_capture_script>
-		<render_js>true</render_js>
 	</collection>
 	<extraction>
 		<element_list>
@@ -17,7 +16,6 @@
 		</element_list>
 		<post_process_script>../post_process_ollehmarketwebtoon.pl</post_process_script>
 		<post_process2_script>download_image.pl</post_process2_script>
-		<render_js>true</render_js>
 	</extraction>
 	<rss>
 		<title><![CDATA[스트리트 페인터​::올레마켓]]></title>

@@ -15,7 +15,7 @@ sub main
 
 	while (my $line = <STDIN>) {
 		if ($state == 0) {
-			if ($line =~ m!<a class="wtl_toon\s*" href="/(webtoon/list.php\?btno=\d+)">!) {
+			if ($line =~ m!<a class="wtl_toon" href="/(webtoon/list.php\?btno=\d+)[^"]*">!) {
 				$link = $1;
 				$link = "http://comics.nate.com/" . $link;
 				$state = 1;
