@@ -21,7 +21,7 @@ sub main
 				$state = 1;
 			}
 		} elsif ($state == 1) {
-			if ($line =~ m!<span class="wtl_title">(.+)</span>!) {
+			if ($line =~ m!<span class="wtl_img"><i></i><img alt="([^"]+)"!) {
 				$title = $1;
 				print "$link\t$title\n";
 				$state = 0;
