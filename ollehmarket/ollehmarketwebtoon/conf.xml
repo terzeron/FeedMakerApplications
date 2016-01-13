@@ -5,10 +5,9 @@
 		<sort_field_pattern><![CDATA[webtoonSeq=(\d+)]]></sort_field_pattern>
 		<unit_size_per_day>24</unit_size_per_day>
 		<list_url_list>
-			<list_url><![CDATA[http://webtoon.olleh.com/toon/weekList.kt]]></list_url>
+			<list_url><![CDATA[https://webtoon.olleh.com/api/work/getWorkList.kt?mobileyn=N&toonfg=toon&toonType=toon&sort=update]]></list_url>
 		</list_url_list>
-		<element_class>dl_wrapper</element_class>
-		<item_capture_script>./capture_item_link_title.py -n 10</item_capture_script>
+		<referer><![CDATA[https://webtoon.olleh.com]]></referer>
 	</collection>
 	<extraction>
 		<element_list>
