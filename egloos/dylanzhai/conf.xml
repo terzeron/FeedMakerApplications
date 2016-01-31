@@ -207,6 +207,7 @@
 			<list_url><![CDATA[http://dylanzhai.egloos.com/page/1]]></list_url>
 		</list_url_list>
 		<element_class>entry-title</element_class>
+		<item_capture_script>../capture_item_link_title.py</item_capture_script>
 	</collection>
 	<extraction>
 		<element_list>
