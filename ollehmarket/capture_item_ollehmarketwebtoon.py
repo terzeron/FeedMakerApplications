@@ -9,7 +9,7 @@ import feedmakerutil
 
 
 def main():
-    displayLimit = 10
+    displayLimit = 1000
     count = 0
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
