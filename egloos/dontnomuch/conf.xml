@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
-        <unit_size_per_day>2</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://dontnomuch.egloos.com/page/83]]></list_url>
             <list_url><![CDATA[http://dontnomuch.egloos.com/page/82]]></list_url>

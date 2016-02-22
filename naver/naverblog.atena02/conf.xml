@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[&logNo=(\d+)]]></sort_field_pattern>
-        <unit_size_per_day>2</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=atena02&viewdate=&currentPage=9&categoryNo=24&parentCategoryNo=24&countPerPage=30]]></list_url>
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=atena02&viewdate=&currentPage=8&categoryNo=24&parentCategoryNo=24&countPerPage=30]]></list_url>

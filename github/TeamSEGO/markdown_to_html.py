@@ -11,7 +11,7 @@ def main(url):
     cmd = "markdown"
     html = feedmakerutil.execCmd(cmd)
     #html = re.sub(r'(?P<url>https?://[^"\'\<\>\)\(]+)', r'<a href="\g<url>">\g<url></a>', html)
-    html = re.sub(r'<img src="(?P<imgUrl>[^"]+)"', r'<img src="http://teamsego.github.io/github-trend-kr/\g<imgUrl>"', html)
+    #html = re.sub(r'<img src="(?P<imgUrl>[^"]+)"', r'<img src="http://teamsego.github.io/github-trend-kr/\g<imgUrl>"', html)
     print(html)
     
 
