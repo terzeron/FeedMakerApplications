@@ -13,7 +13,7 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>webToonArea</element_class>
+            <element_class>viewWrp</element_class>
         </element_list>
         <render_js>true</render_js>
         <post_process_script>post_process_only_for_images.py</post_process_script>

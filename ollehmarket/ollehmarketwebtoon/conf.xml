@@ -11,7 +11,7 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>thumbEtc</element_class>
+            <element_class>workDetail</element_class>
         </element_list>
     </extraction>
     <rss>

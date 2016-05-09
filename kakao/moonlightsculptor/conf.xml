@@ -7,13 +7,13 @@
         <list_url_list>
             <list_url><![CDATA[http://page.kakao.com/home/47196143]]></list_url>
         </list_url_list>
-        <element_id>kakaopage_home_list</element_id>
+        <element_class>contents</element_class>
         <item_capture_script>../capture_item_kakaowebtoon.pl</item_capture_script>
         <user_agent><![CDATA[Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 KAKAOTALK]]></user_agent>
     </collection>
     <extraction>
         <element_list>
-            <element_class>webToonArea</element_class>
+            <element_class>viewWrp</element_class>
         </element_list>
         <render_js>true</render_js>
         <post_process_script>post_process_only_for_images.py</post_process_script>
