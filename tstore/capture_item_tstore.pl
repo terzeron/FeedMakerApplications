@@ -16,12 +16,12 @@ sub main
 	while (my $line = <STDIN>) {
 		while ($line =~ m!
 							 [^}]*,
-							 "PROD_?NM":"\s*([^"]+)\s*",
+							 "prodId":"\s*([^"]+)\s*",
 							 [^}]*,
-							 "PROD_?ID":"\s*([^"]+)\s*",
+							 "prodNm":"\s*([^"]+)\s*",
 						 !igx) {
-			$title = $1;
-			$link = "http://m.tstore.co.kr/mobilepoc/webtoon/webtoonDetail.omp?prodId=" . $2;
+			$title = $2;
+			$link = "http://m.tstore.co.kr/mobilepoc/webtoon/webtoonDetail.omp?prodId=" . $1;
 			print "$link\t$title\n";
 		}
 	}

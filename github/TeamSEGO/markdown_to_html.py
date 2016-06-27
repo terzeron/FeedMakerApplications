@@ -10,9 +10,12 @@ import feedmakerutil
 def main(url):
     cmd = "markdown"
     html = feedmakerutil.execCmd(cmd)
-    #html = re.sub(r'(?P<url>https?://[^"\'\<\>\)\(]+)', r'<a href="\g<url>">\g<url></a>', html)
-    #html = re.sub(r'<img src="(?P<imgUrl>[^"]+)"', r'<img src="http://teamsego.github.io/github-trend-kr/\g<imgUrl>"', html)
-    print(html)
+    for line in html.split("\n"):
+        m = re.search(r'https?://[^\"\'\<\>\)\(]+', line)
+        if m:
+            if not re.search(r'<(a|img)[^>]*(href|src)=[\"\'](https?://[^\"\']*)', line):
+                line = "<a href='" + m.group(0) + "'>" + m.group(0) + "</a>"
+        print(line)
     
 
 if __name__ == "__main__":

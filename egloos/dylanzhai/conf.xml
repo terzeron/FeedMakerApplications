@@ -5,62 +5,6 @@
         <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/200]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/199]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/198]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/197]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/196]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/195]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/194]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/193]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/192]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/191]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/190]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/189]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/188]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/187]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/186]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/185]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/184]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/183]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/182]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/181]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/180]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/179]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/178]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/177]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/176]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/175]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/174]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/173]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/172]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/171]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/170]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/169]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/168]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/167]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/166]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/165]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/164]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/163]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/162]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/161]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/160]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/159]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/158]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/157]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/156]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/155]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/153]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/152]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/151]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/150]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/149]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/148]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/147]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/146]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/145]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/144]]></list_url>
             <list_url><![CDATA[http://dylanzhai.egloos.com/page/143]]></list_url>
             <list_url><![CDATA[http://dylanzhai.egloos.com/page/142]]></list_url>
             <list_url><![CDATA[http://dylanzhai.egloos.com/page/141]]></list_url>

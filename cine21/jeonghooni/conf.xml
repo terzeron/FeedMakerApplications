@@ -2,14 +2,14 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://www.cine21.com/news/cartoon_list/idx/0]]></list_url>
+            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=7]]></list_url>
         </list_url_list>
-        <element_class>cartoon_list</element_class>
-        <item_capture_script>../capture_item_cine21.pl</item_capture_script>
+        <element_class>news</element_class>
+        <item_capture_script>../capture_item_cine21.py</item_capture_script>
     </collection>
     <extraction>
         <element_list>
-            <element_class>tbl_cartoon_view</element_class>
+            <element_id>news_content</element_id>
         </element_list>
     </extraction>
     <rss>
