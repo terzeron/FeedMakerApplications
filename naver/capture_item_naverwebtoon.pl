@@ -13,7 +13,29 @@ sub main
 	my $title = "";
 
 	while (my $line = <STDIN>) {
-		if ($line =~ m!<a href="/((?:webtoon|challenge|bestChallenge)/detail.nhn[^"]+no=(\d+)[^"]+)"[^>]*>(.+)</a>!) {
+		if ($line =~ m!
+				  <a
+				  \s+
+				  href="/
+				  (
+				      (?:
+					  webtoon
+				      |
+					  challenge
+				      |
+					  bestChallenge
+				      )
+				      /detail\.nhn
+				      [^"]*
+				      no=(\d+)
+				      [^"]*
+				  )
+				  "
+				  [^>]*
+				  >
+				  (.+)
+				  </a>
+			      !x) {
 			$link = $1;
 			$title = sprintf("%04d. %s", $2, $3);
 			$link =~ s!&amp;!&!g;

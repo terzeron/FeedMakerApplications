@@ -16,7 +16,27 @@ sub main
 
 	while (my $line = <STDIN>) {
 		if ($state == 0) {
-			if ($line =~ m!<a href="/((?:webtoon|challenge|bestChallenge)/detail\.nhn[^"]+no=(\d+)[^"]+)"[^>]*>!) {
+			if ($line =~ m!
+					  <a
+					  \s+
+					  href="/
+					  (
+					      (?:
+						  webtoon
+					      |
+						  challenge
+					      |
+						  bestChallenge
+					      )
+					      /detail\.nhn
+					      [^"]+
+					      no=(\d+)
+					      [^"]+
+					  )
+					  "
+					  [^>]*
+					  >
+				      !x) {
 				$link = $1;
 				$num = $2;
 				$link =~ s!&amp;!&!g;

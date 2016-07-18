@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=7]]></list_url>
+            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=8]]></list_url>
         </list_url_list>
         <element_class>news</element_class>
         <item_capture_script>../capture_item_cine21.py</item_capture_script>
