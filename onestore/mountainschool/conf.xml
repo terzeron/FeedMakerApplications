@@ -4,15 +4,15 @@
         <sort_field_pattern><![CDATA[\t(\d+|\w+)]]></sort_field_pattern>
         <unit_size_per_day>12</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[http://m.tstore.co.kr/mobilepoc/webtoon/webtoonListMore.omp?prodId=H014748850&currentPage=1&menuId=DP26005]]></list_url>
+            <list_url><![CDATA[http://m.onestore.co.kr/mobilepoc/webtoon/webtoonListMore.omp?prodId=H014748850&currentPage=1&menuId=DP26005]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_tstore.pl</item_capture_script>
+        <item_capture_script>../capture_item_onestore.pl</item_capture_script>
     </collection>
     <extraction>
         <element_list>
             <element_class>webtoon-view</element_class>
         </element_list>
-        <post_process_script>../post_process_tstore.pl</post_process_script>
+        <post_process_script>../post_process_onestore.pl</post_process_script>
     </extraction>
     <rss>
         <title><![CDATA[마운틴 스쿨::T스토어]]></title>
