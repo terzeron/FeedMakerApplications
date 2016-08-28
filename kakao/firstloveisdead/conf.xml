@@ -6,11 +6,9 @@
         <unit_size_per_day>2</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://page.kakao.com/home/48015722]]></list_url>
-            <list_url><![CDATA[http://page.kakao.com/home/48015722?categoryUid=10&subCategoryUid=69&navi=1&inkatalk=0&page=2]]></list_url>
-            <list_url><![CDATA[http://page.kakao.com/home/48015722?categoryUid=10&subCategoryUid=69&navi=1&inkatalk=0&page=3]]></list_url>
         </list_url_list>
         <element_class>contents</element_class>
-        <item_capture_script>../capture_item_kakaowebtoon.pl</item_capture_script>
+        <item_capture_script>../capture_item_kakaowebtoon.py -n 10</item_capture_script>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36]]></user_agent>
     </collection>
     <extraction>
