@@ -4,12 +4,20 @@
 import os
 import sys
 import re
+import getopt
 import feedmakerutil
 
 
 def main():
     state = 0
     
+    numOfRecentFeeds = 0
+    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            numOfRecentFeeds = int(a)
+
+    feedList = []
     lineList = feedmakerutil.readStdinAsLineList()
     for line in lineList:
         if state == 0:
@@ -22,12 +30,15 @@ def main():
             if m2:
                 link = "http://teamsego.github.io/github-trend-kr/" + prefix + "/" + m2.group("link")
                 title = m2.group("link")
-                print("%s\t%s" % (link, title))
+                feedList.append((link, title))
             m3 = re.search(r'{"volume":', line)
             if m3:
                 lineList.insert(0, line)
                 state = 0
         #print(state, end=' ')
+
+    for feedLink, feedTitle in feedList[:-numOfRecentFeeds]:
+        print("%s\t%s", feedLink, feedTitle)
 
 if __name__ == "__main__":
     main()
