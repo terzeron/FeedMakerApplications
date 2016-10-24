@@ -2,15 +2,14 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://news.khan.co.kr/kh_opinion]]></list_url>
+            <list_url><![CDATA[http://news.khan.co.kr/kh_cartoon]]></list_url>
         </list_url_list>
-        <element_class>manpyung</element_class>
-        <item_capture_script>./capture_item_hammer.pl</item_capture_script>
+        <element_class>second</element_class>
         <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
-            <element_id>sub_cntTop</element_id>
+            <element_class>art_photo_wrap</element_class>
         </element_list>
         <encoding>cp949</encoding>
     </extraction>

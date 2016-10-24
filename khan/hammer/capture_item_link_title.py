@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+
+import os
+import sys
+import re
+import getopt
+import collections
+import feedmakerutil
+
+
+def main():
+    link_prefix = "http://news.khan.co.kr/kh_cartoon/"
+    
+    numOfRecentFeeds = 10
+    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            numOfRecentFeeds = int(a)
+    
+    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
+    lineList = feedmakerutil.readStdinAsLineList()
+    for line in lineList:
+        m1 = re.search(r'<a href="\./(?P<link>khan_index\.html\?artid=\d+)[^"]*">(?P<title>[^<]+)</a>', line)
+        if m1:
+            link = link_prefix + m1.group("link")
+            title = m1.group("title")
+            circularQueue.append((link, title))
+
+    for (link, title) in circularQueue:
+        print("%s\t%s" % (link, title))
+
+if __name__ == "__main__":
+    main()
