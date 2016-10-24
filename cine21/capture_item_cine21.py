@@ -17,7 +17,7 @@ def main():
     lineList = feedmakerutil.readStdinAsLineList()
     for line in lineList:
         if state == 0:
-            m1 = re.search(r'<a href="(?P<link>[^"]+)">', line)
+            m1 = re.search(r'<a href="(?P<link>[^"]+mag_id=\d+)">', line)
             if m1:
                 link = m1.group("link")
                 link = re.sub(r'&amp;', '&', link)
