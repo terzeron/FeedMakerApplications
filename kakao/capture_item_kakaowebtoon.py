@@ -4,6 +4,7 @@ import os
 import sys
 import re
 import getopt
+import collections
 import feedmakerutil
 
 
@@ -11,14 +12,14 @@ def main():
     link = ""
     title = ""
     state = 0
-    feedList = []
     
-    numOfRecentFeeds = 0
+    numOfRecentFeeds = 10
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             numOfRecentFeeds = int(a)
-                                    
+
+    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
     for line in lineList:
         if state == 0:
@@ -36,11 +37,12 @@ def main():
             if m3:
                 title = m3.group("title")
                 title = re.sub(r'&(lt|gt);', '', title)
-                feedList.append((link, title))
+                circularQueue.append((link, title))
                 state = 0
 
-    for feedLink, feedTitle in feedList[:-numOfRecentFeeds]:
-        print("%s\t%s" % (feedLink, feedTitle))
+    for (link, title) in circularQueue:
+        print("%s\t%s" % (link, title))
+        
 
 if __name__ == "__main__":
     main()
