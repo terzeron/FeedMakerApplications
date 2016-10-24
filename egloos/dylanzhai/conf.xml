@@ -3,29 +3,8 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
-        <unit_size_per_day>1</unit_size_per_day>
+        <unit_size_per_day>0.5</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/143]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/142]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/141]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/140]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/139]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/138]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/137]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/136]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/135]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/134]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/133]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/132]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/131]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/130]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/129]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/128]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/127]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/126]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/125]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/124]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/123]]></list_url>
             <list_url><![CDATA[http://dylanzhai.egloos.com/page/122]]></list_url>
             <list_url><![CDATA[http://dylanzhai.egloos.com/page/121]]></list_url>
             <list_url><![CDATA[http://dylanzhai.egloos.com/page/120]]></list_url>
@@ -158,8 +137,8 @@
         </element_list>
     </extraction>
     <rss>
-        <title><![CDATA[迪倫齋雜想]]></title>
-        <description><![CDATA[迪倫齋雜想]]></description>
+        <title><![CDATA[迪倫齋雜想::이글루스]]></title>
+        <description><![CDATA[迪倫齋雜想::이글루스]]></description>
         <feed_url><![CDATA[http://terzeron.net/dylanzhai.xml]]></feed_url>
         <link><![CDATA[http://terzeron.net/dylanzhai.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
