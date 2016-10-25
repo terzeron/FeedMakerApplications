@@ -9,7 +9,7 @@
             <list_url><![CDATA[http://cartoon.media.daum.net/data/mobile/webtoon/list_episode_by_nickname?nickname=afternoonheros&page_no=2]]></list_url>
             <list_url><![CDATA[http://cartoon.media.daum.net/data/mobile/webtoon/list_episode_by_nickname?nickname=afternoonheros&page_no=3]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_daumwebtoon_mobile.pl</item_capture_script>
+        <item_capture_script>../capture_item_daumwebtoon.py</item_capture_script>
     </collection>
     <extraction>
         <element_list>
