@@ -1,0 +1,29 @@
+
+===== check the validity of configuration file =====
+--- should use spaces instead of tab ---
+
+===== check the size and time of result file =====
+--- old xml files in /Users/terzeron/public_html/xml ---
+--- too small html file ---
+
+===== check the incremental feeding =====
+--- start_idx vs # of items ---
+./cine21/cine21.review  2%
+./daum/daumblog.nasica  80%
+./egloos/dylanzhai  10%
+./javabeat/javabeat  45%
+./minitoon/blackcontractor  45%
+./myktoon/kingsblood  15%
+./myktoon/orisorienta  10%
+./myktoon/readingagentin9thlevel  10%
+./myktoon/salondebilliard  52%
+./naver/naverblog.ggacn  77%
+./naver/naverblog.imkcs0425  3%
+./naver/naverblog.leakxx  87%
+./naver/naverblog.santacroce  81%
+
+===== check the garbage feeds =====
+--- /Users/terzeron/workspace/fma/logs/feed_access.txt ---
+--- false path (/Users/terzeron/public_html/xml) of recent days ---
+
+===== inconsistent registration =====
