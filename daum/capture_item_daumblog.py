@@ -5,6 +5,8 @@ import io
 import os
 import sys
 import re
+import getopt
+import collections
 import feedmakerutil
 
 
@@ -48,6 +50,7 @@ def getPageContent(url, encoding):
 
 def printArticleUrlList(pageContentLineList):
     state = 0
+    resultList = []
     for line in pageContentLineList:
         if state == 0:
             if re.search(r'class="contArea"', line):
@@ -59,32 +62,42 @@ def printArticleUrlList(pageContentLineList):
             if m:
                 blogId = m.group("blogId")
                 articleNo = m.group("articleNo")
-                url = "http://blog.daum.net/_blog/hdn/ArticleContentsView.do?blogid=%s&articleno=%s&looping=0&longOpen=" % (blogId, articleNo)
+                link = "http://blog.daum.net/_blog/hdn/ArticleContentsView.do?blogid=%s&articleno=%s&looping=0&longOpen=" % (blogId, articleNo)
                 title = m.group("title")
                 title = re.sub(r'&quot;', '', title)
-                print("%s\t%s" % (url, title))
+                resultList.append((link, title))
         else:
             break
+    return resultList
+
 
 def main():
     encoding = "utf-8"
     isEnd = False
     
+    numOfRecentFeeds = 30
+    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            numOfRecentFeeds = int(a)
+
     # get a url of first list page
     pageContentLineList = feedmakerutil.readStdinAsLineList()
-    printArticleUrlList(pageContentLineList)
+    resultList = printArticleUrlList(pageContentLineList)
     nextPageUrl, isEnd = getNextPageUrl(pageContentLineList, "articleTypeList")
-    
+
     # get url list from first list page (iterative)
-    while True:
+    while len(resultList) < numOfRecentFeeds:
         pageContent = getPageContent(nextPageUrl, encoding)
         pageContentLineList = re.split(r'\n', pageContent)
-        printArticleUrlList(pageContentLineList)
+        resultList.extend(printArticleUrlList(pageContentLineList))
         nextPageUrl, isEnd = getNextPageUrl(pageContentLineList, "cateList")
         if isEnd:
             break
 
-        
+    for (link, title) in resultList[:numOfRecentFeeds]:
+        print("%s\t%s" % (link, title))
+
             
 if __name__ == "__main__":
     main()
