@@ -5,7 +5,6 @@ import os
 import sys
 import re
 import getopt
-import collections
 import feedmakerutil
 
 def main():
@@ -23,8 +22,8 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
+    resultList = []
     for line in lineList:
         if state == 0:
             m = re.search(r'GRPCODE\s*:\s*"(?P<cafeName>[^"]+)"', line)
@@ -44,9 +43,9 @@ def main():
                 link = link_prefix + "bbs_read?grpid=" + cafeId + "&fldid=" + boardName + "&datanum=" + m.group("articleId")
                 title = m.group("title")
                 title = re.sub(r'(<[^>]*?>|^\s+|\s+$)', '', title)
-                circularQueue.append((link, title))
+                resultList.append((link, title))
 
-    for (link, title) in circularQueue:
+    for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
                 
 

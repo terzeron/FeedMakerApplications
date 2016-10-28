@@ -6,7 +6,6 @@ import os
 import sys
 import re
 import getopt
-import collections
 import feedmakerutil
 
 
@@ -21,8 +20,8 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
+    resultList = []
     for line in lineList:
         m = re.search(r'<a class="gal_subject" href="(?P<link>.+)" target="_blank">(?P<title>.+)</a>', line)
         if m:
@@ -30,9 +29,9 @@ def main():
             link = link_prefix + re.sub(r'&amp;', '&', link)
             title = m.group("title")
             title = re.sub(r'&amp;', '&', title)
-            circularQueue.append((link, title))
+            resultList.append((link, title))
 
-    for (link, title) in circularQueue:
+    for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
             
 if __name__ == "__main__":

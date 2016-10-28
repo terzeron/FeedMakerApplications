@@ -5,7 +5,6 @@ import os
 import sys
 import re
 import getopt
-import collections
 import feedmakerutil
 
 def main():
@@ -20,8 +19,8 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
+    resultList = []
     for line in lineList:
         p = re.compile(r'"id":(?P<id>\d+),"episode":(?P<episode>\d+),"title":"(?P<title>[^"]+)",')
         for m in p.finditer(line):
@@ -31,9 +30,9 @@ def main():
             title = md['title']
             link = link_prefix + id
             title = "%04d. %s" % (episode, title)
-            circularQueue.append((link, title))
+            resultList.append((link, title))
 
-    for (link, title) in circularQueue:
+    for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
                 
 

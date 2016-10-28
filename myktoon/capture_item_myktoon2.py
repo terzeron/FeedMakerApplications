@@ -5,7 +5,6 @@ import os
 import sys
 import re
 import getopt
-import collections
 import feedmakerutil
 
 
@@ -19,9 +18,9 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
         
-    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
     state = 0
+    resultList = []
     for line in lineList:
         if state == 0:
             m1 = re.search(r'<a href="/web/times_view.kt[^"]*webtoonseq=(?P<webtoonseq>\d+)&(amp;)?timesseq=(?P<timesseq>\d+)">', line)
@@ -34,10 +33,10 @@ def main():
             m2 = re.search(r'<span class="bkTitle">(?P<title>[^<]+)</span>', line)
             if m2:
                 title = m2.group("title")
-                circularQueue.append((link, title))
+                resultList.append((link, title))
                 state = 0
 
-    for (link, title) in circularQueue:
+    for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
             
 if __name__ == "__main__":

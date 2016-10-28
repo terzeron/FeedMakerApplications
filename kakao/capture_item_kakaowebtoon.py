@@ -4,7 +4,6 @@ import os
 import sys
 import re
 import getopt
-import collections
 import feedmakerutil
 
 
@@ -19,8 +18,8 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
+    resultList = []
     for line in lineList:
         if state == 0:
             m1 = re.search(r'<li class="list viewerLinkBtn (?:pointer )?list_[HV][^>]*data-productid="(?P<id>\d+)', line)
@@ -37,10 +36,10 @@ def main():
             if m3:
                 title = m3.group("title")
                 title = re.sub(r'&(lt|gt);', '', title)
-                circularQueue.append((link, title))
+                resultList.append((link, title))
                 state = 0
 
-    for (link, title) in circularQueue:
+    for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
         
 

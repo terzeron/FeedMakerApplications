@@ -5,7 +5,6 @@ import os
 import sys
 import re
 import getopt
-import collections
 import feedmakerutil
 
 
@@ -18,16 +17,16 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
     
-    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
+    resultList = []
     for line in lineList:
         m1 = re.search(r'<a href="\./(?P<link>khan_index\.html\?artid=\d+)[^"]*">(?P<title>[^<]+)</a>', line)
         if m1:
             link = link_prefix + m1.group("link")
             title = m1.group("title")
-            circularQueue.append((link, title))
+            resultList.append((link, title))
 
-    for (link, title) in circularQueue:
+    for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
 
 if __name__ == "__main__":

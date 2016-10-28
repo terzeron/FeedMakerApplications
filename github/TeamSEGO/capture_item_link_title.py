@@ -5,7 +5,6 @@ import os
 import sys
 import re
 import getopt
-import collections
 import feedmakerutil
 
 
@@ -18,8 +17,8 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
     
-    circularQueue = collections.deque([], maxlen=numOfRecentFeeds)
     lineList = feedmakerutil.readStdinAsLineList()
+    resultList = []
     for line in lineList:
         if state == 0:
             m1 = re.search(r'"path"\s*:\s*"(?P<prefix>[^"]+)"', line)
@@ -31,14 +30,14 @@ def main():
             if m2:
                 link = "http://teamsego.github.io/github-trend-kr/" + prefix + "/" + m2.group("link")
                 title = m2.group("link")
-                circularQueue.append((link, title))
+                resultList.append((link, title))
             m3 = re.search(r'{"volume":', line)
             if m3:
                 lineList.insert(0, line)
                 state = 0
         #print(state, end=' ')
 
-    for (link, title) in circularQueue:
+    for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
 
 if __name__ == "__main__":
