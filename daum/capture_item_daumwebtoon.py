@@ -32,7 +32,7 @@ def main():
             title = "%04d. %s" % (episode, title)
             resultList.append((link, title))
 
-    for (link, title) in resultList[-numOfRecentFeeds:]:
+    for (link, title) in resultList[:numOfRecentFeeds]:
         print("%s\t%s" % (link, title))
                 
 

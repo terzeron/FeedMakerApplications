@@ -26,7 +26,7 @@ def main():
             title = m1.group("title")
             resultList.append((link, title))
 
-    for (link, title) in resultList[-numOfRecentFeeds:]:
+    for (link, title) in resultList[:numOfRecentFeeds]:
         print("%s\t%s" % (link, title))
 
 if __name__ == "__main__":

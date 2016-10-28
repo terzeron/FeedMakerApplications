@@ -22,24 +22,24 @@ def main():
     resultList = []
     for line in lineList:
         if state == 0:
-            m1 = re.search(r'<li class="list viewerLinkBtn (?:pointer )?list_[HV][^>]*data-productid="(?P<id>\d+)', line)
-            if m1:
-                productid = m1.group("id")
+            m = re.search(r'<li class="list viewerLinkBtn (?:pointer )?list_[HV][^>]*data-productid="(?P<id>\d+)', line)
+            if m:
+                productid = m.group("id")
                 link = "http://page.kakao.com/viewer?productId=" + productid
                 state = 1
         elif state == 1:
-            m2 = re.search(r'<span class="Lfloat (?:listTitle )?ellipsis">', line)
-            if m2:
+            m = re.search(r'<span class="Lfloat (?:listTitle )?ellipsis">', line)
+            if m:
                 state = 2
         elif state == 2:
-            m3 = re.search(r'^\s*(?P<title>\S+.*\S+)\s*$', line)
-            if m3:
-                title = m3.group("title")
+            m = re.search(r'^\s*(?P<title>\S+.*\S+)\s*$', line)
+            if m:
+                title = m.group("title")
                 title = re.sub(r'&(lt|gt);', '', title)
                 resultList.append((link, title))
                 state = 0
 
-    for (link, title) in resultList[-numOfRecentFeeds:]:
+    for (link, title) in resultList[:numOfRecentFeeds]:
         print("%s\t%s" % (link, title))
         
 
