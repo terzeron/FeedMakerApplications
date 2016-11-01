@@ -15,7 +15,7 @@
             <element_id>bo_v_con</element_id>
         </element_list>
         <post_process_script>post_process_only_for_images.py</post_process_script>
-        <post_process2_script>download_image.pl</post_process2_script>
+        <post_process2_script>download_image.py</post_process2_script>
     </extraction>
     <rss>
         <title><![CDATA[All you need is kill::미니툰]]></title>

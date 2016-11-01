@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[timesseq=(\d+)]]></sort_field_pattern>
-        <unit_size_per_day>1</unit_size_per_day>
+        <unit_size_per_day>12</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://www.myktoon.com/web/times_list.kt?mobileyn=N&webtoonseq=75&startRowNo=80]]></list_url>
             <list_url><![CDATA[http://www.myktoon.com/web/times_list.kt?mobileyn=N&webtoonseq=75&startRowNo=60]]></list_url>
@@ -20,7 +20,7 @@
             <element_class>toon_view_content</element_class>
         </element_list>
         <post_process_script>../post_process_myktoon.py</post_process_script>
-        <post_process2_script>download_image.pl</post_process2_script>
+        <post_process2_script>download_image.py</post_process2_script>
     </extraction>
     <rss>
         <title><![CDATA[킹스 블러드::케이툰]]></title>

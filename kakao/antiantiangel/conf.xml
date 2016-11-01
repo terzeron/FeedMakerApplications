@@ -17,7 +17,7 @@
         </element_list>
         <render_js>true</render_js>
         <post_process_script>post_process_only_for_images.py</post_process_script>
-        <post_process2_script>download_image.pl</post_process2_script>
+        <post_process2_script>download_image.py</post_process2_script>
         <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
