@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[http://blog.daum.net/_blog/BlogTypeMain.do?blogid=0HpkV&admin=]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_daumblog.py</item_capture_script>
+        <item_capture_script>../capture_item_daumblog.py -n 100</item_capture_script>
     </collection>
     <extraction>
         <element_list>

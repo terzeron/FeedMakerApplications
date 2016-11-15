@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
-        <unit_size_per_day>12</unit_size_per_day>
+        <unit_size_per_day>4</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0004ozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003gzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0000czzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=00001zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=6&page=1&listnum=50&sortType=]]></list_url>
@@ -12,6 +12,7 @@
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0003czzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0002jzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=3&page=4&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0002izzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0001mzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=4&page=5&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0001lzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0000dzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=5&page=6&listnum=50&sortType=]]></list_url>
+
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=000FDzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=000EAzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=000GDzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=000FFzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=000FDzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=000EAzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=3&listnum=50&sortType=]]></list_url>
@@ -21,6 +22,7 @@
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=000Aezzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0009fzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=6&page=7&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=0009dzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0008Pzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=7&page=8&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=0008Ozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0007Wzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=8&page=9&listnum=50&sortType=]]></list_url>
+
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=00009zzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=00006zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=5&page=1&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=0004czzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003Szzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=0003Rzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0002Tzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=3&listnum=50&sortType=]]></list_url>
@@ -31,8 +33,10 @@
     </collection>
     <extraction>
         <element_list>
-            <element_id>template_xmp</element_id>
+            <element_id>wrap</element_id>
+            <element_id>user_contents</element_id>
         </element_list>
+        <post_process_script>download_image.py</post_process_script>
         <encoding>cp949</encoding>
     </extraction>
     <rss>
