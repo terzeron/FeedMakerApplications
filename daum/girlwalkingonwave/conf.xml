@@ -10,7 +10,7 @@
         <element_list>
             <element_class>img_wrap</element_class>
         </element_list>
-        <post_process_script>../post_process_daumwebtoon.pl</post_process_script>
+        <post_process_script>../post_process_daumwebtoon.py</post_process_script>
     </extraction>
     <rss>
         <title><![CDATA[파도를 걷는 소녀::다음]]></title>

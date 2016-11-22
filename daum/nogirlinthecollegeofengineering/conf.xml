@@ -10,7 +10,7 @@
         <element_list>
             <element_class>img_wrap</element_class>
         </element_list>
-        <post_process_script>../post_process_daumwebtoon.pl</post_process_script>
+        <post_process_script>../post_process_daumwebtoon.py</post_process_script>
     </extraction>
     <rss>
         <title><![CDATA[공대에는 아름이가 없다::다음]]></title>
