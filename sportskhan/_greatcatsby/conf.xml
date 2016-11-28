@@ -7,15 +7,15 @@
         <list_url_list>
             <list_url><![CDATA[http://sports.khan.co.kr/comics/cartoon_view.html?comics=b2c&sec_id=550114]]></list_url>
         </list_url_list>
-        <!--item_capture_script>../capture_item_link_title.pl -n 10</item_capture_script-->
-        <item_capture_script>../capture_item_link_title.pl</item_capture_script>
+        <!--item_capture_script>../capture_item_link_title.py -n 10</item_capture_script-->
+        <item_capture_script>../capture_item_link_title.py</item_capture_script>
         <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
             <element_id>NewsAdContent</element_id>
         </element_list>
-        <post_process_script>../post_process_sportskhan.pl</post_process_script>
+        <post_process_script>../post_process_sportskhan.py</post_process_script>
         <encoding>cp949</encoding>
     </extraction>
     <rss>
