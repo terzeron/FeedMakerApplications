@@ -6,13 +6,13 @@
         <list_url_list>
             <list_url><![CDATA[http://m.onestore.co.kr/mobilepoc/webtoon/webtoonListMore.omp?prodId=H015543877&currentPage=1&menuId=DP26003]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_onestore.pl</item_capture_script>
+        <item_capture_script>../capture_item_onestore.py</item_capture_script>
     </collection>
     <extraction>
         <element_list>
             <element_class>webtoon-view</element_class>
         </element_list>
-        <post_process_script>../post_process_onestore.pl</post_process_script>
+        <post_process_script>../post_process_onestore.py</post_process_script>
     </extraction>
     <rss>
         <title><![CDATA[엑스타시스::원스토어]]></title>
