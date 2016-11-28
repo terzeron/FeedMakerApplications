@@ -12,7 +12,7 @@
             <element_class>content_list</element_class>
             <element_id>dynamic_data</element_id>
         </element_list>
-        <post_process_script>./post_process_magazines.pl</post_process_script>
+        <post_process_script>./post_process_magazines.py</post_process_script>
     </extraction>
     <rss>
         <title><![CDATA[매거진S::네이버스포츠]]></title>
