@@ -34,7 +34,7 @@ def main():
             line = line.rstrip()
             matches = re.findall(r"[^\"]+\"\s*:\s*\"(assets/still/[^\"]+\.(?:png|jpg))\"", line)
             for match in matches:
-                imgUrl = urlPrefix + match[1]
+                imgUrl = urlPrefix + match[0]
                 print("<img src='%s' width='100%'/>" % (imgUrl))
 
                      
