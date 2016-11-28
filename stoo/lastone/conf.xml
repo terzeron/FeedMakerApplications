@@ -4,14 +4,14 @@
         <list_url_list>
             <list_url><![CDATA[http://stoo.asiae.co.kr/cartoon/ctlist.php?pg=1&strForm=s_list&sc3=105&sc2=ing]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_stoo2.pl -n 10</item_capture_script>
+        <item_capture_script>../capture_item_stoo.py -n 10</item_capture_script>
         <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
             <element_class>ctview</element_class>
         </element_list>
-        <post_process_script>../post_process_stoo.pl</post_process_script>
+        <post_process_script>../post_process_stoo.py</post_process_script>
         <encoding>cp949</encoding>
     </extraction>
     <rss>

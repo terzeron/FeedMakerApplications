@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+
+import sys
+import re
+import feedmakerutil
+
+
+def main():
+    secondPageUrl = ""
+
+    for line in feedmakerutil.readStdinAsLineList():
+        line = line.rstrip()
+        m = re.search(r"<a href='(?P<secondPageUrl>http://[^']+)'[^>]*><img src='http://cwstatic\.asiae\.co\.kr/images/cartoon/btn_s\.gif'/>", line)
+        if m:
+            secondPageUrl = m.group("secondPageUrl")
+        else:
+            m = re.search(r"<a href='(?P<secondPageUrl>http://stoo.asiae.co.kr/cartoon/view.htm[^']*)'>2페이지</a>", line)
+            if m:
+                secondPageUrl = m.group("secondPageUrl")
+            else:
+                m = re.search(r"<img src='(?P<imgUrl>http://cwcontent[^']+)'.*/>", line)
+                if m:
+                    imgUrl = m.group("imgUrl")
+                    print("<img src='%s' width='100%%'/>" % (imgUrl))
+            
+    if secondPageUrl != "":
+        cmd = "wget.sh '%s' | extract_element.py extraction" % (secondPageUrl)
+        #print(cmd)
+        result = feedmakerutil.execCmd(cmd)
+        if result:
+            for line in result.split("\n"):
+                m = re.search(r'<img\s*[^>]*src=(?:\'|\")(?P<imgUrl>http://cwcontent[^\'\"]+)(?:\'|\").*/>', line)
+                if m:
+                    imgUrl = m.group("imgUrl")
+                    print("<img src='%s' width='100%%'/>" % (imgUrl))
+                                        
+
+if __name__ == "__main__":
+    sys.exit(main())
