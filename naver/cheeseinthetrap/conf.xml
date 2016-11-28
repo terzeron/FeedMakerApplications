@@ -8,7 +8,7 @@
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=662162&page=1]]></list_url>
         </list_url_list>
         <element_class>viewList</element_class>
-        <item_capture_script>../capture_item_naverwebtoon.pl</item_capture_script>
+        <item_capture_script>../capture_item_naverwebtoon.py</item_capture_script>
     </collection>
     <extraction>
         <element_list>
