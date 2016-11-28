@@ -5,7 +5,7 @@
             <list_url><![CDATA[http://navercast.naver.com/list.nhn?category_type=series&list_type=image&category_id=89]]></list_url>
         </list_url_list>
         <element_class>card_lst</element_class>
-        <item_capture_script>../capture_item_navercastpc.pl</item_capture_script>
+        <item_capture_script>../capture_item_navercastpc.py</item_capture_script>
     </collection>
     <extraction>
         <element_list>
