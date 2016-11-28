@@ -37,7 +37,7 @@ def main():
         ''', line, re.VERBOSE)
         if m:
             url = m.group("url")
-            url = re.sub("&amp", "&", url)
+            url = re.sub("&amp;", "&", url)
             url = re.sub(r"&week(day)?=\w\w\w", "", url)
             link = urlPrefix + url
             title = "%04d. %s" % (int(m.group("title1")), m.group("title2"))

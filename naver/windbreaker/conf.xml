@@ -11,7 +11,7 @@
         <element_list>
             <element_class>wt_viewer</element_class>
         </element_list>
-        <post_process_script>../post_process_naverwebtoon_mobile.py</post_process_script>
+        <post_process_script>../post_process_naverwebtoon.py</post_process_script>
         <post_process2_script>download_image.py</post_process2_script>
     </extraction>
     <rss>
