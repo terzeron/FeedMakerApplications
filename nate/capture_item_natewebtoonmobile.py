@@ -15,11 +15,11 @@ def main():
 
     for line in feedmakerutil.readStdinAsLineList():
         if state == 0:
-            m = re.search(r'<a href="(?P<url>/webtoon/detail\.php\?[^"]+)&ampcategory=\d+">', line)
+            m = re.search(r'<a href="(?P<url>/webtoon/detail\.php\?[^"]+)&amp;category=\d+">', line)
             if m:
-                state = 1
                 url = urlPrefix + m.group("url")
                 link = re.sub(r'&amp;', '&', url)
+                state = 1
         elif state == 1:
             m = re.search(r'<span class="tel_episode">(?P<episodeNum>.+)</span>', line)
             if m:

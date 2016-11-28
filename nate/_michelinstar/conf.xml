@@ -5,7 +5,7 @@
             <list_url><![CDATA[http://comics.nate.com/webtoon/list.php?btno=48736]]></list_url>
         </list_url_list>
         <element_class>tel_list</element_class>
-        <item_capture_script>../capture_item_natewebtoonmobile.pl</item_capture_script>
+        <item_capture_script>../capture_item_natewebtoonmobile.py</item_capture_script>
     </collection>
     <extraction>
         <element_list>
