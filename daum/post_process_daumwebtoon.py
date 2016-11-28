@@ -24,9 +24,9 @@ def main():
         cmd = ""
         url = ""
         if mobile and mobile == "m/":
-            url = "http://cartoon.media.daum.net/data/mobile/webtoon/viewer?id=$episode_id"
+            url = "http://cartoon.media.daum.net/data/mobile/webtoon/viewer?id=" + episodeId
         else:
-            url = "http://cartoon.media.daum.net/webtoon/viewer_images.js?webtoon_episode_id=$episode_id"
+            url = "http://cartoon.media.daum.net/webtoon/viewer_images.js?webtoon_episode_id=" + episodeId
         cmd = "wget.sh '%s'" % (url)
         #print(cmd)
         result = feedmakerutil.execCmd(cmd)
