@@ -8,7 +8,7 @@ import getopt
 import feedmakerutil
 
 def main():
-    link_prefix = "http://cafe.daum.net/_c21_/"
+    linkPrefix = "http://cafe.daum.net/_c21_/"
     link = ""
     title = ""
     cafeName = ""
@@ -40,10 +40,11 @@ def main():
         elif state == 1:
             m = re.search(r'<a[^>]*href="[^"]+/bbs_read[^"]*datanum=(?P<articleId>\d+)[^>]*>(?P<title>.+)</a>', line)
             if m:
-                link = link_prefix + "bbs_read?grpid=" + cafeId + "&fldid=" + boardName + "&datanum=" + m.group("articleId")
+                link = linkPrefix + "bbs_read?grpid=" + cafeId + "&fldid=" + boardName + "&datanum=" + m.group("articleId")
                 title = m.group("title")
                 title = re.sub(r'(<[^>]*?>|^\s+|\s+$)', '', title)
-                resultList.append((link, title))
+                if link and title:
+                    resultList.append((link, title))
 
     for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))
