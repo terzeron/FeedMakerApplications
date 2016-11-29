@@ -26,7 +26,7 @@ def main():
         (?:</br>)?
         </p>
         </li>
-        ''', line)
+        ''', line, re.VERBOSE)
         if m:
             link = linkPrefix + m.group("link")
             title = m.group("title1") + " " + m.group("title2")
@@ -36,4 +36,4 @@ def main():
 
             
 if __name__ == "__main__":
-sys.exit(main())
+    sys.exit(main())
