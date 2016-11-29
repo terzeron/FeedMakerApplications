@@ -8,8 +8,6 @@
             <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=23210486&postListViewType=0&isExpertMy=true&fromNo=1]]></list_url>
             <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=23210486&postListViewType=0&isExpertMy=true&fromNo=2]]></list_url>
             <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=23210486&postListViewType=0&isExpertMy=true&fromNo=3]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=23210486&postListViewType=0&isExpertMy=true&fromNo=4]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=23210486&postListViewType=0&isExpertMy=true&fromNo=5]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_naverpost.py</item_capture_script>
     </collection>

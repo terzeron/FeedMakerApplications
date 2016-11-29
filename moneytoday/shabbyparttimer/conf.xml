@@ -5,7 +5,7 @@
             <list_url><![CDATA[http://comic.mt.co.kr/comicDetail.htm?nComicSeq=141]]></list_url>
         </list_url_list>
         <element_class>cartoonList</element_class>
-        <item_capture_script>../capture_item_moneytoday.pl</item_capture_script>
+        <item_capture_script>../capture_item_moneytoday.py</item_capture_script>
         <encoding>cp949</encoding>
     </collection>
     <extraction>
