@@ -10,7 +10,7 @@ import feedmakerutil
 
 
 def main():
-    link_prefix = "http://m.post.naver.com"
+    urlPrefix = "http://m.post.naver.com"
     link = ""
     title = ""
     
@@ -34,30 +34,43 @@ def main():
         html = re.sub(r'\\/', '/', html)
         html = re.sub(r'\\x3C', r'<', html)
         html = re.sub(r'\\>', r'>', html)
-
+        
     state = 0
     resultList = []
     for line in html.split("\n"):
         if state == 0:
-            m = re.search(r'<a href="(?P<link>/viewer/postView\.nhn\?volumeNo=\d+&memberNo=\d+)"', line)
+            m = re.search(r'<a href="(?P<url>/viewer/postView\.nhn\?volumeNo=\d+&memberNo=\d+)"', line)
             if m:
-                link = m.group("link")
-                link = re.sub(r'&lt;', '<', link)
-                link = re.sub(r'&gt;', '>', link)
-                link = link_prefix + link
-            m = re.search(r'<h3 class="tit_feed', line)
-            if m:
+                url = m.group("url")
+                url = re.sub(r'&lt;', '<', url)
+                url = re.sub(r'&gt;', '>', url)
+                link = urlPrefix + url
                 state = 1
         elif state == 1:
-            m = re.search(r'\s*(?P<title>\S+.*)</h3>', line)
+            if re.search(r'class="link_end"', line):
+                state = 2
+            else:
+                state = 0
+        elif state == 2:
+            m = re.search(r'<h3 class="tit_feed', line)
+            if m:
+                state = 3
+            else:
+                state = 0
+        elif state == 3:
+            m = re.search(r'\s*(?P<title>\S+.*\S+)\s*', line)
             if m:
                 title = m.group("title")
+                if re.search(r'\[대림자동차\s*공식\s*포스트\]', title):
+                    continue
                 title = re.sub(r'^\s+|\s+$', '', title)
                 title = re.sub(r'&#39;', '\'', title)
                 title = re.sub(r'&#40;', ')', title)
                 title = re.sub(r'&#41;', '(', title)
-                title = re.sub(r'\[대림자동차\s*공식\s*포스트\]', '', title)
-                resultList.append((link, title))
+                title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
+                title = re.sub(r'</h3>', '', title)
+                if link and title:
+                    resultList.append((link, title))
                 state = 0
 
     for (link, title) in resultList[-numOfRecentFeeds:]:
