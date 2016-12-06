@@ -13,6 +13,7 @@
             <element_id>dynamic_data</element_id>
         </element_list>
         <post_process_script>./post_process_magazines.py</post_process_script>
+        <post_process2_script>download_image.py</post_process2_script>
     </extraction>
     <rss>
         <title><![CDATA[매거진S::네이버스포츠]]></title>

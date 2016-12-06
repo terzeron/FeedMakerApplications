@@ -12,7 +12,7 @@ def main():
     urlPrefix = "http://sports.chosun.com/cartoon/sub_list.htm?title="
   
     for line in feedmakerutil.readStdinAsLineList():
-        m = re.search(r'<li><a href="[^"]*title=(?P<title>[^"&]+)[^"]*"><img alt="(?P<url>[^"]+)"', line)
+        m = re.search(r'<li><a href="[^"]*title=(?P<url>[^"&]+)[^"]*"><img alt="(?P<title>[^"]+)"', line)
         if m:
             if m.group("title") == "coin":
                 # 오늘의운세는 skip

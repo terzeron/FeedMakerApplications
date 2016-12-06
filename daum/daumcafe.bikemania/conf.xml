@@ -30,9 +30,11 @@
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=0001Dzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0000Azzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=4&page=5&listnum=50&sortType=]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_daumcafe.py -n 50</item_capture_script>
+        <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
+            <element_class>subject</element_class>
             <element_id>wrap</element_id>
             <element_id>user_contents</element_id>
         </element_list>
@@ -40,10 +42,10 @@
         <encoding>cp949</encoding>
     </extraction>
     <rss>
-        <title><![CDATA[바이크매니아::다음]]></title>
-        <description><![CDATA[바이크매니아::다음 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[http://terzeron.net/daumcafe.bikemania.xml]]></feed_url>
-        <link><![CDATA[http://terzeron.net/daumcafe.bikemania.xml]]></link>
+        <title><![CDATA[바이크매니아]]></title>
+        <description><![CDATA[바이크매니아 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[http://terzeron.net/daumcafe.bikemania2.xml]]></feed_url>
+        <link><![CDATA[http://terzeron.net/daumcafe.bikemania2.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>
         <language>ko</language>

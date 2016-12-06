@@ -33,7 +33,10 @@ def main():
             if failureCount > 2:
                 break
         else:
-            print(json.loads(result)["clipContent"])
+            clipContent = json.loads(result)["clipContent"]
+            clipContent = re.sub(r'src="{{{[^\|]*\|/([^\|]+)\|\d+|\d+}}}"', 'src="http://post.phinf.naver.net/\1"', clipContent)
+            clipContent = re.sub(r'<img src=\'http://static.post.naver.net/image/im/end/toast_flick.png\'/>', '', clipContent)
+            print(clipContent)
         
 if __name__ == "__main__":
     sys.exit(main())

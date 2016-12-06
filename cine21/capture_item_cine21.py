@@ -27,6 +27,8 @@ def main():
             m2 = re.search(r'<span class="tit">(?P<title>[^<]+)</span>', line)
             if m2:
                 title = m2.group("title")
+                if re.search(r'(대학교|영화학|모집)', title):
+                    continue
                 title = re.sub(r'&lt;', '"', title)
                 title = re.sub(r'&gt;', '"', title)
                 print("%s\t%s" % (link, title))

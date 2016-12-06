@@ -40,7 +40,7 @@ def main():
         elif state == 1:
             m = re.search(r'<a[^>]*href="[^"]+/bbs_read[^"]*datanum=(?P<articleId>\d+)[^>]*>(?P<title>.+)</a>', line)
             if m:
-                link = linkPrefix + "bbs_read?grpid=" + cafeId + "&fldid=" + boardName + "&datanum=" + m.group("articleId")
+                link = linkPrefix + "bbs_read?" + "&fldid=" + boardName + "&grpid=" + cafeId + "&datanum=" + m.group("articleId")
                 title = m.group("title")
                 title = re.sub(r'(<[^>]*?>|^\s+|\s+$)', '', title)
                 if link and title:

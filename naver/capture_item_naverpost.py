@@ -34,6 +34,7 @@ def main():
         html = re.sub(r'\\/', '/', html)
         html = re.sub(r'\\x3C', r'<', html)
         html = re.sub(r'\\>', r'>', html)
+        #print(html)
         
     state = 0
     resultList = []
@@ -61,12 +62,16 @@ def main():
             m = re.search(r'\s*(?P<title>\S+.*\S+)\s*', line)
             if m:
                 title = m.group("title")
-                if re.search(r'\[대림자동차\s*공식\s*포스트\]', title):
+                if re.search(r'^\s*\[대림자동차\s*공식\s*포스트\]\s*$', title):
                     continue
                 title = re.sub(r'^\s+|\s+$', '', title)
                 title = re.sub(r'&#39;', '\'', title)
                 title = re.sub(r'&#40;', ')', title)
                 title = re.sub(r'&#41;', '(', title)
+                title = re.sub(r'&lt;', '<', title)
+                title = re.sub(r'&gt;', '>', title)
+                title = re.sub(r'&nbsp;', ' ', title)
+                title = re.sub(r'&quot;', '"', title)
                 title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
                 title = re.sub(r'</h3>', '', title)
                 if link and title:

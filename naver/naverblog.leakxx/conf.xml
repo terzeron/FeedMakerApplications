@@ -17,6 +17,7 @@
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=leakxx&viewdate=&currentPage=1&categoryNo=0&parentCategoryNo=&countPerPage=30]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_naverblog.py -n 100</item_capture_script>
+        <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>

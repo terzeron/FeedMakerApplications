@@ -34,12 +34,13 @@ def main():
                     m = re.search(r"javascript:show1BoonContents\('(?P<articleId>\d+)'\s*,\s*\d+\)", link)
                     if m:
                         link = boonUrlPrefix + "/" + m.group("articleId")
+                link = re.sub(r'http://1boon.kakao.com/movie', boonUrlPrefix, link)
                 state = 1
         elif state == 1:
             m = re.search(r'<strong class="tit_magazine">(?P<title>[^<]*)</strong>', line)
             if m:
                 title = m.group("title")
-                if re.search(r'^\[사진\]', title):
+                if re.search(r'(\[(사진|포토|E포토|화보)\]|네티즌\s*리뷰|명대사\s*한줄)', title):
                     continue
                 if link and title:
                     resultList.append((link, title))

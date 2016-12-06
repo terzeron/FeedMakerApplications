@@ -37,6 +37,8 @@ def main():
         ''', line, re.VERBOSE)
         if m:
             url = m.group("url")
+            if re.search(r'no=\d+IBUS', url):
+                continue
             url = re.sub("&amp;", "&", url)
             url = re.sub(r"&week(day)?=\w\w\w", "", url)
             link = urlPrefix + url

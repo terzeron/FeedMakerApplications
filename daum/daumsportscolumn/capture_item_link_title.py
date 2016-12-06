@@ -21,6 +21,7 @@ def main():
 
     resultList = []
     lineList = feedmakerutil.readStdinAsLineList()
+    # html 파일에서 데이터 꺼내기
     for line in lineList:
         if state == 0:
             m = re.search(r'<a href="/sports/column/newsview\?newsId=(?P<newsId>\d+)&mccid=\d+" class="link_thumb">', line)
@@ -34,9 +35,10 @@ def main():
                 if link and title:
                     resultList.append((link, title))
                 state = 0
-                
+
+    # json 파일에서 데이터 꺼내기
     for line in lineList:
-        matches = re.findall(r'"key"\s*:\s*"(\d+)"[^{]*"title"\s*:\s*"([^"]+)"', line)
+        matches = re.findall(r'"key"\s*:\s*"(\d+)"[^{]*"title"\s*:\s*"(.+?)",', line)
         for match in matches:
             link = urlPrefix + match[0]
             title = match[1]
