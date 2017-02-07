@@ -40,11 +40,11 @@ def main():
             m = re.search(r'<strong class="tit_magazine">(?P<title>[^<]*)</strong>', line)
             if m:
                 title = m.group("title")
-                if re.search(r'(\[(사진|포토|E포토|화보)\]|네티즌\s*리뷰|명대사\s*한줄)', title):
+                state = 0
+                if re.search(r'(\[(사진|포토|E포토|화보)\]|네티즌\s*리뷰|명대사\s*한줄|개봉작\s*YES\s*or\s*NO)', title):
                     continue
                 if link and title:
                     resultList.append((link, title))
-                state = 0
                 
     for (link, title) in resultList[-numOfRecentFeeds:]:
         print("%s\t%s" % (link, title))

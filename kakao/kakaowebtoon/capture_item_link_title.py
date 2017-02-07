@@ -15,7 +15,7 @@ def main():
 
     for line in feedmakerutil.readStdinAsLineList():
         if state == 0:
-            m = re.search(r'<li class="list ajaxCallList\s*" data-seriesid="(?P<seriesId>\d+)">', line)
+            m = re.search(r'<li class="[^"]*"[^>]*data-seriesid="(?P<seriesId>\d+)"', line)
             if m:
                 link = urlPrefix + m.group("seriesId")
                 state = 1

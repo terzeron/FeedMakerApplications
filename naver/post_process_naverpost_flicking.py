@@ -19,6 +19,7 @@ def main():
     lineList = feedmakerutil.readStdinAsLineList()
     for line in lineList:
         line = line.rstrip()
+        line = re.sub(r'[\x01\x08]', '', line, re.LOCALE)
         print(line)
 
     failureCount = 0
@@ -34,8 +35,9 @@ def main():
                 break
         else:
             clipContent = json.loads(result)["clipContent"]
-            clipContent = re.sub(r'src="{{{[^\|]*\|/([^\|]+)\|\d+|\d+}}}"', 'src="http://post.phinf.naver.net/\1"', clipContent)
+            clipContent = re.sub(r'src="{{{[^\|]*\|/([^\|]+)\|\d+|\d+}}}"', r'src="http://post.phinf.naver.net/\1"', clipContent)
             clipContent = re.sub(r'<img src=\'http://static.post.naver.net/image/im/end/toast_flick.png\'/>', '', clipContent)
+            #clipContent = re.sub(r'[\x01\x08]', '', clipContent, re.LOCALE)
             print(clipContent)
         
 if __name__ == "__main__":
