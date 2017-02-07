@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[/(\d+)\t]]></sort_field_pattern>
+        <unit_size_per_day>1</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=1]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=2]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=3]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=4]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=5]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=6]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=7]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=8]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=9]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=10]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=11]]></list_url>
+        </list_url_list>
+        <item_capture_script>../capture_item_tistory.py -n 100</item_capture_script>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>area_view</element_class>
+        </element_list>
+    </extraction>
+    <rss>
+        <title><![CDATA[nasica::티스토리]]></title>
+        <description><![CDATA[nasica::티스토리 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[http://terzeron.net/nasica1.xml]]></feed_url>
+        <link><![CDATA[http://terzeron.net/nasica1.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Tistory. All rights reserved.]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
