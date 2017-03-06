@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <is_completed>true</is_completed>
-        <sort_field_pattern><![CDATA[mag_id=(\d+)]]></sort_field_pattern>
+        <sort_field_pattern><![CDATA[mag_id=(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>6</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3]]></list_url>
@@ -15,36 +15,10 @@
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=8]]></list_url>
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=9]]></list_url>
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=10]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=11]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=12]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=13]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=14]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=15]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=16]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=17]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=18]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=19]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=20]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=21]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=22]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=23]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=24]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=25]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=26]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=27]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=28]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=29]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=30]]></list_url>
+
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6]]></list_url>
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=2]]></list_url>
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=3]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=4]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=5]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=6]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=7]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=8]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=9]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=10]]></list_url>
         </list_url_list>
         <element_class>news</element_class>
         <item_capture_script>../capture_item_cine21.py</item_capture_script>
