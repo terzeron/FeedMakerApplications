@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>false</is_completed>
+        <sort_field_pattern><![CDATA[newsId=(\d+)]]></sort_field_pattern>
+        <unit_size_per_day>1</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[http://movie.daum.net/magazine/best]]></list_url>
+            <!--list_url><![CDATA[http://movie.daum.net/magazine/movienews]]></list_url-->
+            <list_url><![CDATA[http://movie.daum.net/magazine/new/list?page=1]]></list_url>
+        </list_url_list>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>cont_section</element_class>
+            <element_id>dmcfContents</element_id>
+        </element_list>
+        <post_process_script>download_image.py</post_process_script>
+    </extraction>
+    <rss>
+        <title><![CDATA[다음영화::다음]]></title>
+        <description><![CDATA[다음영화::다음 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[http://terzeron.net/daummovie.xml]]></feed_url>
+        <link><![CDATA[http://terzeron.net/daummovie.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+

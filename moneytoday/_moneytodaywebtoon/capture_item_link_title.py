@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+
+import sys
+import re
+import feedmakerutil
+
+
+def main():
+    link = ""
+    title = ""
+    icon = ""
+    state = 0
+    urlPrefix = "http://comic.mt.co.kr/"
+
+    for line in feedmakerutil.readStdinAsLineList():
+        if state == 0:
+            m = re.search(r'<p class="img2"><a href="./(?P<url>comicDetail.htm\?nComicSeq=\d+)">', line)
+            if m:
+                link = urlPrefix + m.group("url")
+                link = re.sub(r'&amp', '&', link)
+                state = 1
+        elif state == 1:
+            m = re.search(r'<p class="title"><strong>(?P<title>.+)</strong></p>', line)
+            if m:
+                title = m.group("title")
+                print("%s\t%s" % (link, title))
+                state = 0
+
+if __name__ == "__main__":
+    sys.exit(main())
