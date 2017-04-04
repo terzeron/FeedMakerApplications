@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[http://page.kakao.com/home/49170525]]></list_url>
         </list_url_list>
-        <element_class>contents</element_class>
+        <element_class>listMain</element_class>
         <item_capture_script>../capture_item_kakaowebtoon.py -n 10</item_capture_script>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36]]></user_agent>
     </collection>
