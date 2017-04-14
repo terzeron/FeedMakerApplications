@@ -9,7 +9,8 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>topContentWrp</element_class>
+            <element_class>homeTopContentWrp</element_class>
+            <element_class>introduceBoxLayer</element_class>
         </element_list>
     </extraction>
     <rss>
