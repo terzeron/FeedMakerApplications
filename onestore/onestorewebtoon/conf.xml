@@ -15,6 +15,7 @@
         </list_url_list>
         <element_class>list-one</element_class>
         <ignore_old_list>true</ignore_old_list>
+        <item_capture_script>./capture_item_link_title.py -n 50</item_capture_script>
     </collection>
     <extraction>
         <element_list>

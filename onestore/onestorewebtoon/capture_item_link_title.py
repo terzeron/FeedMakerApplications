@@ -3,6 +3,7 @@
 
 import sys
 import re
+import getopt
 import feedmakerutil
 
 
@@ -12,6 +13,12 @@ def main():
     state = 0
     resultList = []
     urlPrefix = "http://m.tstore.co.kr/mobilepoc"
+
+    numOfRecentFeeds = 20
+    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            numOfRecentFeeds = int(a)
         
     for line in feedmakerutil.readStdinAsLineList():
         if state == 0:
@@ -39,7 +46,7 @@ def main():
                 resultList.append((link, title))
                 state = 0
                     
-    for link, title in resultList[:5]:
+    for link, title in resultList[:numOfRecentFeeds]:
         print("%s\t%s" % (link, title))
         
 
