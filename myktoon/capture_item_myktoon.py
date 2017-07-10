@@ -9,27 +9,39 @@ import feedmakerutil
 
 
 def main():
-    displayLimit = 1000
-    count = 0
+    numOfRecentFeeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            displayLimit = int(a)
+            numOfRecentFeeds = int(a)
         
     lineList = feedmakerutil.readStdinAsLineList()
+    webtoonseq = ""
+    timesseq = ""
+    title = ""
+    resultList = []
     for line in lineList:
-        matches = re.findall(r'"timesseq"\s*:\s*(\d+)[^}]*"webtoonseq"\s*:\s*(\d+)[^}]*"timestitle"\s*:\s*"([^"]+)"', line)
+        matches = re.findall(r'"(\w+)"\s*:\s*"?([^"},]*)"?\s*', line)
         for match in matches:
-            if count > displayLimit:
-                break
-            timesseq = match[0]
-            webtoonseq = match[1]
-            link = "http://www.myktoon.com/web/times_view.kt?webtoonseq=" + webtoonseq + "&timesseq=" + timesseq
-            title = match[2]
-            print("%s\t%s" % (link, title))
-            count = count + 1
+            key = match[0]
+            value = match[1]
+            if key == "webtoonseq":
+                webtoonseq = value
+            elif key == "timesseq":
+                timesseq = value
+            elif key == "timestitle":
+                title = value
+            if webtoonseq != "" and timesseq != "" and title != "":
+                link = "http://www.myktoon.com/web/times_view.kt?webtoonseq=" + webtoonseq + "&timesseq=" + timesseq
+                resultList.append((link, title))
+                webtoonseq = ""
+                timesseq = ""
+                title = ""
 
-            
+    for (link, title) in resultList[:numOfRecentFeeds]:
+        print("%s\t%s" % (link, title))
+
+        
 if __name__ == "__main__":
 	main()
 

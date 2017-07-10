@@ -12,6 +12,7 @@ def main():
     title = ""
     urlPrefix = "http://blog.naver.com/PostView.nhn?blogId="
 
+    resultList = []
     for line in feedmakerutil.readStdinAsLineList():
         m = re.search(r'"blogId"\s*:\s*"(?P<blogId>[^"]+)"', line)
         if m:
@@ -23,9 +24,14 @@ def main():
             title = re.sub(r"\+", " ", title)
             title = re.sub(r"&quot;", "'", title)
             title = re.sub(r"&(lt|gt);", "", title)
-            link = urlPrefix + logNo
-            print("%s\t%s" % (link, title))
+            resultList.append((logNo, title))
 
+
+    for (logNo, title) in resultList:
+        link = urlPrefix + logNo
+        print("%s\t%s" % (link, title))
+        
+            
 
 if __name__ == "__main__":
     sys.exit(main())

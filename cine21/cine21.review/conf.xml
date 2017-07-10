@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[mag_id=(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>6</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=2]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=3]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=4]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=5]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=6]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=7]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=8]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=9]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=3&p=10]]></list_url>
-
             <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=2]]></list_url>
-            <list_url><![CDATA[http://www.cine21.com/news/list/?idx=6&p=3]]></list_url>
         </list_url_list>
         <element_class>news</element_class>
         <item_capture_script>../capture_item_cine21.py</item_capture_script>

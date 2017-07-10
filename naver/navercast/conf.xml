@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
+        <is_completed>true</is_completed>
+        <unit_size_per_day>1</unit_size_per_day>
+        <sort_field_pattern><![CDATA[docId=(\d+)]]></sort_field_pattern>
         <list_url_list>
-            <list_url><![CDATA[http://navercast.naver.com/]]></list_url>
+            <list_url><![CDATA[http://terms.naver.com/list.nhn?cid=58737&categoryId=58737]]></list_url>
+            <list_url><![CDATA[http://terms.naver.com/list.nhn?cid=58737&categoryId=58737&page=2]]></list_url>
+            <list_url><![CDATA[http://terms.naver.com/list.nhn?cid=58737&categoryId=58737&page=3]]></list_url>
+            <list_url><![CDATA[http://terms.naver.com/list.nhn?cid=58737&categoryId=58737&page=4]]></list_url>
+            <list_url><![CDATA[http://terms.naver.com/list.nhn?cid=58737&categoryId=58737&page=5]]></list_url>
         </list_url_list>
-        <element_class>card_lst</element_class>
+        <element_class>lst_wrap</element_class>
         <item_capture_script>../capture_item_navercastpc.py</item_capture_script>
     </collection>
     <extraction>
         <element_list>
-            <element_class>smarteditor_area</element_class>
+            <element_class>section_wrap</element_class>
         </element_list>
     </extraction>
     <rss>

@@ -5,8 +5,8 @@
         <sort_field_pattern><![CDATA[^(http\S+)\t]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://github.com/vhf/free-programming-books/blob/master/free-programming-books-ko.md]]></list_url>
-            <!--list_url><![CDATA[https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md]]></list_url-->
+            <!--list_url><![CDATA[https://github.com/vhf/free-programming-books/blob/master/free-programming-books-ko.md]]></list_url-->
+            <list_url><![CDATA[https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md]]></list_url>
         </list_url_list>
         <item_capture_script>./capture_item_link_title.py</item_capture_script>
     </collection>
