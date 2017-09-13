@@ -12,6 +12,7 @@
     <extraction>
         <element_list>
             <element_class>area_view</element_class>
+            <element_class>article</element_class>
         </element_list>
     </extraction>
     <rss>
