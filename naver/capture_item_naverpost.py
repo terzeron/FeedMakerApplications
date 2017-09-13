@@ -10,19 +10,19 @@ import feedmakerutil
 
 
 def main():
-    urlPrefix = "http://m.post.naver.com"
+    url_prefix = "http://m.post.naver.com"
     link = ""
     title = ""
     
-    numOfRecentFeeds = 1000
+    num_of_recent_feeds = 1000
     count = 0
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
-    lineList = feedmakerutil.readStdinAsLineList()
-    content = "".join(lineList)
+    line_list = feedmakerutil.readStdinAsLineList()
+    content = "".join(line_list)
     m = re.search(r'"html"\s*:\s*"(?P<html>.*)"\s*}\s*$', content)
     if m:
         html = m.group("html")
@@ -37,15 +37,17 @@ def main():
         #print(html)
         
     state = 0
-    resultList = []
+    result_list = []
     for line in html.split("\n"):
+        #print("state=", state)
         if state == 0:
             m = re.search(r'<a href="(?P<url>/viewer/postView\.nhn\?volumeNo=\d+&memberNo=\d+)"', line)
             if m:
                 url = m.group("url")
                 url = re.sub(r'&lt;', '<', url)
                 url = re.sub(r'&gt;', '>', url)
-                link = urlPrefix + url
+                link = url_prefix + url
+                title = ""
                 state = 1
         elif state == 1:
             if re.search(r'class="link_end"', line):
@@ -53,11 +55,13 @@ def main():
             else:
                 state = 0
         elif state == 2:
-            m = re.search(r'<h3 class="tit_feed', line)
-            if m:
+            if re.search(r'<h3 class="tit_feed', line):
                 state = 3
             else:
-                state = 0
+                if re.search(r'<strong class="tit_feed', line):
+                    state = 4
+                else:
+                    state = 0
         elif state == 3:
             m = re.search(r'\s*(?P<title>\S+.*\S+)\s*', line)
             if m:
@@ -75,10 +79,20 @@ def main():
                 title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
                 title = re.sub(r'</h3>', '', title)
                 if link and title:
-                    resultList.append((link, title))
+                    result_list.append((link, title))
                 state = 0
+        elif state == 4:
+            m = re.search(r'(<i class="[^"]+" aria-label="[^"]+"></i>)?(?P<title_postfix>.*)</strong>', line)
+            if m:
+                title += m.group("title_postfix") + " "
+                if link and title:
+                    result_list.append((link, title))
+                state = 0
+            else:
+                line = re.sub(r'<i class="[^"]+" aria-label="[^"]+"></i>', '', line)
+                title += line
 
-    for (link, title) in resultList[-numOfRecentFeeds:]:
+    for (link, title) in result_list[-num_of_recent_feeds:]:
         print("%s\t%s" % (link, title))
                 
                 
