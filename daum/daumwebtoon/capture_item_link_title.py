@@ -11,7 +11,7 @@ import feedmakerutil
 def main():
     lineList = feedmakerutil.readStdinAsLineList()
     for line in lineList:
-        matches = re.findall(r'nickname":"([^"]+)"[^"]*"title":"([^"]+)', line)
+        matches = re.findall(r'nickname":"([^"]+)"[^}]*"title":"([^"]+)', line)
 
         for match in matches:
             link = "http://cartoon.media.daum.net/webtoon/view/" + match[0]
