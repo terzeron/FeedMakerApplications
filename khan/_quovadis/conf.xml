@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>false</is_completed>
+        <sort_field_pattern><![CDATA[artid=(\d+)]]></sort_field_pattern>
+        <unit_size_per_day>1</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[http://search.khan.co.kr/search.html?stb=khan&q=%EC%BF%A0%EC%98%A4%EB%B0%94%EB%94%94%EC%8A%A4%EC%99%80%20%ED%96%89%EB%A1%9C%EB%82%9C&pg=1&sort=1]]></list_url>
+        </list_url_list>
+        <element_class>section</element_class>
+        <encoding>cp949</encoding>
+        <item_capture_script><![CDATA[../capture_item_khannews.py]]></item_capture_script>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>art_body</element_class>
+        </element_list>
+        <encoding>cp949</encoding>
+    </extraction>
+    <rss>
+        <title><![CDATA[쿠오바디스와 행로난::경향]]></title>
+        <description><![CDATA[쿠오바디스와 행로난::경향 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[http://terzeron.net/quovadis.xml]]></feed_url>
+        <link><![CDATA[http://terzeron.net/quovadis.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) The Kyunghyang Shinmun. All Rights Reserved]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
