@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[\t제(\d+)화]]></sort_field_pattern>
-        <unit_size_per_day>1</unit_size_per_day>
+        <unit_size_per_day>0.5</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.themeNo=391&sc.row=10&sc.page=1]]></list_url>
             <list_url><![CDATA[http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.themeNo=391&sc.row=10&sc.page=2]]></list_url>

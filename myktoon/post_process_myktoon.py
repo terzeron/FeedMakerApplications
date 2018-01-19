@@ -15,17 +15,18 @@ def main():
     url = sys.argv[1]
     parsedUrl = urlparse(url)
     parsedParams = parse_qs(parsedUrl.query)
-    webtoonseq = parsedParams['webtoonseq'][0]
     timesseq = parsedParams['timesseq'][0]
-    dataUrl = "http://www.myktoon.com/api/work/getTimesDetailImageList.kt?mobileyn=N&webtoonseq=" + webtoonseq + "&timesseq=" + timesseq
+    dataUrl = "https://v2.myktoon.com/web/works/times_image_list_ajax.kt?timesseq=" + timesseq
 
-    # request
     headers = { "Referer": url }
     response = requests.get(dataUrl, headers=headers)
     
     # read data from reponse
-    for item in response.json()['imageList']:
-        print("<img src='%s' width='100%%'>" % item['imagepath'])
+    #print(response.json())
+    for item in response.json()['response']:
+        #print(item)
+        if item['imagepath']:
+            print("<img src='%s' width='100%%'>" % item['imagepath'])
 
         
 if __name__ == "__main__":
