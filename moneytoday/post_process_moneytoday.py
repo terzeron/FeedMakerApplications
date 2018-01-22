@@ -9,7 +9,7 @@ def main():
     secondPageUrl = ""
     imgUrlList = []
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         line = line.rstrip()
         m = re.search(r"<img src='(?P<imgUrl>http://comicmenu.mt.co.kr/[^']+.jpg)'(?: width='\d+%')?/>", line)
         if m:
@@ -32,7 +32,7 @@ def main():
             
     if secondPageUrl != "":
         cmd = "wget.sh '%s' | extract.py '%s'" % (secondPageUrl, sys.argv[1])
-        result = feedmakerutil.execCmd(cmd)
+        result = feedmakerutil.exec_cmd(cmd)
         for line in result.split("\n"):
             m = re.search(r"<img src='(?P<imgUrl>http://comicmenu.mt.co.kr/[^']+.jpg)'(?: width='\d+%')?/>", line)
             if m:

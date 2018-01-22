@@ -13,7 +13,7 @@ def main():
     state = 0
     urlPrefix = "http://comics.nate.com"
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         if state == 0:
             m = re.search(r'<a href="(?P<url>/webtoon/detail\.php\?[^"]+)&amp;category=\d+">', line)
             if m:

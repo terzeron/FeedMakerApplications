@@ -21,7 +21,7 @@ def main():
         if o == '-n':
             num_of_recent_feeds = int(a)
 
-    line_list = feedmakerutil.readStdinAsLineList()
+    line_list = feedmakerutil.read_stdin_as_line_list()
     content = "".join(line_list)
     m = re.search(r'"html"\s*:\s*"(?P<html>.*)"\s*}\s*$', content)
     if m:

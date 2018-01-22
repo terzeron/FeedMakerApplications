@@ -11,7 +11,7 @@ def main():
     title = ""
     urlPrefix = "http://comic.naver.com/"
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         m = re.search(r'''
         <a
         \s+

@@ -11,7 +11,7 @@ def main():
     title = ""
     linkPrefix = "http://comic.mt.co.kr/"
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         m = re.search(r'''
         <li>
         <a\s+href="\./(?P<link>comicView\.htm[^"]+)">

@@ -9,18 +9,18 @@ import feedmakerutil
 
 
 def getUrlDomainFromConfig():
-    config = feedmakerutil.readConfig()
-    collection = feedmakerutil.getConfigNode(config, "collection")
-    listUrlList = feedmakerutil.getConfigNode(collection, "list_url_list")
-    listUrl = feedmakerutil.getConfigNode(listUrlList, "list_url")
-    url = feedmakerutil.getValueFromConfig(listUrl)
-    return feedmakerutil.getUrlDomain(url)
+    config = feedmakerutil.read_config()
+    collection = feedmakerutil.get_config_node(config, "collection")
+    listUrlList = feedmakerutil.get_config_node(collection, "list_url_list")
+    listUrl = feedmakerutil.get_config_node(listUrlList, "list_url")
+    url = feedmakerutil.get_value_from_config(listUrl)
+    return feedmakerutil.get_url_domain(url)
     
     
 def main():
     urlDomain = getUrlDomainFromConfig();
     
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     for line in lineList:
         matches = re.findall(r'<a href="/(\d+)"[^>]*>([^<]*)</a>', line)
 

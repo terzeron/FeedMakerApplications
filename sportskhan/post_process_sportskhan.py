@@ -10,7 +10,7 @@ def main():
     urlList = []
     encoding = "cp949"
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         line = line.rstrip()
         m = re.search(r"<a href='(?P<url>http://[^']+)'[^>]*>\d+</a>", line)
         if m:
@@ -22,7 +22,7 @@ def main():
 
     for url in urlList:
         cmd = "wget.sh '%s' %s" % (url, encoding)
-        result = feedmakerutil.execCmd(cmd)
+        result = feedmakerutil.exec_cmd(cmd)
         if result:
             for line in result.split("\n"):
                 m = re.search(r"<img\s*[^>]*src=(?:'|\")?(?P<url>http://images.sportskhan.net/article/[^'\"\s]+)(?:'|\")?[^>]*>", line)

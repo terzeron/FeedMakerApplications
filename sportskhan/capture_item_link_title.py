@@ -29,7 +29,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
     
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         if state == 0:
             m = re.search(r'document\.location\.href\s*=\s*"(?P<url>[^"]+)"', line)
             if m:

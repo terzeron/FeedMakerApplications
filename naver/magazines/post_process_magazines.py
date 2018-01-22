@@ -8,7 +8,7 @@ import feedmakerutil
 
 def main():
     state = 0
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         line = line.rstrip()
         if state == 0:
             pat = r'<img src=\"http://imgnews.naver.(com|net)/image/sports/\d+/magazineS/magazine_content/magazineS_\d+/\d+_file_image_0.jpg\" width=\"67\" height=\"9\" alt=\"[^\"]+\" />'

@@ -12,7 +12,7 @@ def main():
     title = ""
     state = 0
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         if state == 0:
             m = re.search(r'<strong class="title">', line)
             if m:

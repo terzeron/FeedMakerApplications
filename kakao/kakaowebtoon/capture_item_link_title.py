@@ -13,7 +13,7 @@ def main():
     state = 0
     urlPrefix = "http://page.kakao.com/home/"
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         if state == 0:
             m = re.search(r'<li class="[^"]*"[^>]*data-seriesid="(?P<seriesId>\d+)"', line)
             if m:

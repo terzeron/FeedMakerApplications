@@ -11,7 +11,7 @@ def main():
     title = ""
     urlPrefix = "http://sports.news.naver.com"
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         m = re.search(r'<a href="(?P<url>/magazineS/index\.nhn\?id=\d+)">(?P<title>[^<]+)</a>', line)
         if m:
             link = urlPrefix + m.group("url")

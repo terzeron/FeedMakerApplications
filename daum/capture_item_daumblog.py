@@ -82,7 +82,7 @@ def main():
             numOfRecentFeeds = int(a)
 
     # get a url of first list page
-    pageContentLineList = feedmakerutil.readStdinAsLineList()
+    pageContentLineList = feedmakerutil.read_stdin_as_line_list()
     resultList = printArticleUrlList(pageContentLineList)
     nextPageUrl, isEnd = getNextPageUrl(pageContentLineList, "articleTypeList")
 

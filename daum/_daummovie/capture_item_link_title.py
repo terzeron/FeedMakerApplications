@@ -22,7 +22,7 @@ def main():
             numOfRecentFeeds = int(a)
 
     resultList = []
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     for line in lineList:
         if state == 0:
             m = re.search(r'<a href="(?P<url>[^"]+)" class="link_magazine', line)

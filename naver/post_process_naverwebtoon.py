@@ -14,7 +14,7 @@ def main():
     imgExt = "jpg"
     pageUrl = sys.argv[1]
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         line = line.rstrip()
         if re.search(r"<(meta|style)", line):
             print(line)
@@ -39,7 +39,7 @@ def main():
         for i in range(60):
             imgUrl = "http://%s/%s%d.%s" % (imgHost, imgPath, i, imgExt)
             cmd = 'wget.sh --spider --referer "%s" "%s"' % (pageUrl, imgUrl)
-            result = feedmakerutil.execCmd(cmd)
+            result = feedmakerutil.exec_cmd(cmd)
             if result:
                 print("<img src='http://%s/%s%d.%s' width='100%%'/>" % (imgHost, imgPath, i, imgExt))
         

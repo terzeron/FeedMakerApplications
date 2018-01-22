@@ -19,7 +19,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
         p = re.compile(r'"id":(?P<id>\d+),"episode":(?P<episode>\d+),"title":"(?P<title>[^"]+)",')

@@ -11,7 +11,7 @@ def main():
     title = ""
     urlPrefix = "http://sports.chosun.com/cartoon/sub_list.htm?title="
   
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         m = re.search(r'<li><a href="[^"]*title=(?P<url>[^"&]+)[^"]*"><img alt="(?P<title>[^"]+)"', line)
         if m:
             if m.group("title") == "coin":

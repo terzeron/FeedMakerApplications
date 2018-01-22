@@ -12,7 +12,7 @@ def main():
     imgExt = "jpg"
     numUnits = 25
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         line = line.rstrip()
         print(line)
 
@@ -29,10 +29,11 @@ def main():
             url = "http://cartoon.media.daum.net/webtoon/viewer_images.js?webtoon_episode_id=" + episodeId
         cmd = "wget.sh '%s'" % (url)
         #print(cmd)
-        result = feedmakerutil.execCmd(cmd)
+        result = feedmakerutil.exec_cmd(cmd)
         #print(result)
         if not result:
-            die("can't download the page html from '%s'" % (url))
+            print("can't download the page html from '%s'" % (url))
+            sys.exit(-1)
         img_file_arr = []
         img_url_arr = []
         img_size_arr = []

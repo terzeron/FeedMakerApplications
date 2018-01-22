@@ -17,7 +17,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
     
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
         m1 = re.search(r'<a href="http://news.khan.co.kr/kh_news(?P<url>/khan_art_view.html[^"]+)"[^>]*>(\[[^\]]+\] )?(?P<title>[^<]+)</a>', line)

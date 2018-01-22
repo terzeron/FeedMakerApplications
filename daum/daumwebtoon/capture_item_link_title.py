@@ -9,7 +9,7 @@ import feedmakerutil
 
 
 def main():
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     for line in lineList:
         matches = re.findall(r'nickname":"([^"]+)"[^}]*"title":"([^"]+)', line)
 

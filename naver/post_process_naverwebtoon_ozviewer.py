@@ -14,7 +14,7 @@ def main():
     urlPrefix = ""
     dataUrl = ""
 
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         m = re.search(r"jpg: '(?P<urlPrefix>[^']+\/){=filename}\?type=[^']+'", line)
         if m:
             urlPrefix = m.group("urlPrefix")

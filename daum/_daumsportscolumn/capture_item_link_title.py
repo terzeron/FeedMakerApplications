@@ -20,7 +20,7 @@ def main():
             numOfRecentFeeds = int(a)
 
     resultList = []
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     # html 파일에서 데이터 꺼내기
     for line in lineList:
         if state == 0:

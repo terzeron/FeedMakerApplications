@@ -22,7 +22,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
         if state == 0:

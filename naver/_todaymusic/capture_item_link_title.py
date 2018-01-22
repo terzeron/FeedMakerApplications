@@ -13,7 +13,7 @@ def main():
     resultList = []
     urlPrefix = "http://music.naver.com"
     
-    for line in feedmakerutil.readStdinAsLineList():
+    for line in feedmakerutil.read_stdin_as_line_list():
         if state == 0:
             m = re.search(r'<a\s+class="[^"]+"\s+href=\"(?P<url>/todayMusic/index\.nhn[^\"]+)\"[^>]*>', line)
             if m:

@@ -20,7 +20,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    lineList = feedmakerutil.readStdinAsLineList()
+    lineList = feedmakerutil.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
         m = re.search(r'<a class="gal_subject" href="(?P<link>.+)" target="_blank">(?P<title>.+)</a>', line)
