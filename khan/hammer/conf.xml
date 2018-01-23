@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://news.khan.co.kr/kh_cartoon]]></list_url>
+            <list_url><![CDATA[http://news.khan.co.kr/kh_cartoon/]]></list_url>
         </list_url_list>
         <element_class>second</element_class>
         <encoding>cp949</encoding>
