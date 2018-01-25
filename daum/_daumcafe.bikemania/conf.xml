@@ -38,7 +38,9 @@
             <element_id>wrap</element_id>
             <element_id>user_contents</element_id>
         </element_list>
-        <post_process_script>download_image.py</post_process_script>
+        <post_process_script_list>
+            <post_process_script>download_image.py</post_process_script>
+        </post_process_script_list>
         <encoding>cp949</encoding>
     </extraction>
     <rss>

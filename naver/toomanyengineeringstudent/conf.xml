@@ -11,8 +11,10 @@
         <element_list>
             <element_class>wt_viewer</element_class>
         </element_list>
-        <post_process_script>../post_process_naverwebtoon.py</post_process_script>
-        <post_process2_script>download_image.py</post_process2_script>
+        <post_process_script_list>
+            <post_process_script>../post_process_naverwebtoon.py</post_process_script>
+            <post_process_script>download_image.py</post_process_script>
+        </post_process_script_list>
     </extraction>
     <rss>
         <title><![CDATA[공대생 너무만화::네이버]]></title>

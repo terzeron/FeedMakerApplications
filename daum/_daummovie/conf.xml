@@ -15,7 +15,9 @@
             <element_class>cont_section</element_class>
             <element_id>dmcfContents</element_id>
         </element_list>
-        <post_process_script>download_image.py</post_process_script>
+        <post_process_script_list>
+            <post_process_script>download_image.py</post_process_script>
+        </post_process_script_list>
     </extraction>
     <rss>
         <title><![CDATA[다음영화::다음]]></title>

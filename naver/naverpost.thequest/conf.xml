@@ -30,6 +30,7 @@
     <extraction>
         <element_list>
             <element_class>se_doc_viewer</element_class>
+            <element_class>se_card_container</element_class>
         </element_list>
         <post_process_script_list>
             <post_process_script>../post_process_naverpost.py</post_process_script>

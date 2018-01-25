@@ -14,8 +14,10 @@
             <element_id>cont</element_id>
         </element_list>
         <render_js>true</render_js>
-        <post_process_script>../post_process_naverpost_flicking.py</post_process_script>
-        <post_process2_script>download_image.py</post_process2_script>
+        <post_process_script_list>
+            <post_process_script>../post_process_naverpost_flicking.py</post_process_script>
+            <post_process_script>download_image.py</post_process_script>
+        </post_process_script_list>
     </extraction>
     <rss>
         <title><![CDATA[월간 모터바이크::네이버]]></title>
