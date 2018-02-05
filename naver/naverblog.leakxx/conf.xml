@@ -8,14 +8,12 @@
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=leakxx&viewdate=&currentPage=1&categoryNo=0&parentCategoryNo=&countPerPage=30]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_naverblog.py -n 50</item_capture_script>
-        <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
             <element_id>postViewArea</element_id>
         </element_list>
         <post_process_script>download_image.py</post_process_script>
-        <encoding>cp949</encoding>
     </extraction>
     <rss>
         <title><![CDATA[iHole::네이버]]></title>

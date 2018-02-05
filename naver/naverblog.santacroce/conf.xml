@@ -10,14 +10,12 @@
             <!--list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=santa_croce&viewdate=&currentPage=3&categoryNo=0&parentCategoryNo=&countPerPage=30]]></list_url-->
         </list_url_list>
         <item_capture_script>../capture_item_naverblog.py -n 50</item_capture_script>
-        <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
             <element_class>se_component</element_class>
         </element_list>
         <post_process_script>download_image.py</post_process_script>
-        <encoding>cp949</encoding>
     </extraction>
     <rss>
         <title><![CDATA[Santacroce의 세상 이야기::네이버]]></title>

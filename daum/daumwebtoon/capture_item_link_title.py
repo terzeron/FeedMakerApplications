@@ -5,19 +5,21 @@ import io
 import os
 import sys
 import re
+import json
 import feedmakerutil
 
 
 def main():
-    lineList = feedmakerutil.read_stdin_as_line_list()
-    for line in lineList:
-        matches = re.findall(r'nickname":"([^"]+)"[^}]*"title":"([^"]+)', line)
+    link_prefix = "http://cartoon.media.daum.net/webtoon/view/"
 
-        for match in matches:
-            link = "http://cartoon.media.daum.net/webtoon/view/" + match[0]
-            title = match[1]
+    json_str = feedmakerutil.read_stdin()
+    json_obj = json.loads(json_str)
+    for item in json_obj["data"]:
+        link = link_prefix + item["nickname"]
+        title = item["title"]
+        if item["ageGrade"] == 0:
             print("%s\t%s" % (link, title))
-
+        
             
 if __name__ == "__main__":
     main()

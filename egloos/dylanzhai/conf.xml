@@ -5,33 +5,15 @@
         <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>0.5</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/20]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/19]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/18]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/17]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/16]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/15]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/14]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/13]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/12]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/11]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/10]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/9]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/8]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/7]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/6]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/5]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/4]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/3]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/2]]></list_url>
-            <list_url><![CDATA[http://dylanzhai.egloos.com/page/1]]></list_url>
+            <list_url><![CDATA[http://dylanzhai.egloos.com/]]></list_url>
         </list_url_list>
-        <element_class>entry-title</element_class>
+        <element_class>post_contents_list</element_class>
         <item_capture_script>../capture_item_link_title.py</item_capture_script>
+        <user_agent>Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25</user_agent>
     </collection>
     <extraction>
         <element_list>
-            <element_class>hentry</element_class>
+            <element_class>post_contents</element_class>
         </element_list>
     </extraction>
     <rss>

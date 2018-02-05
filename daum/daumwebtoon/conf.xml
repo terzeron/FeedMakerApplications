@@ -16,7 +16,7 @@
         <element_list>
             <element_class>product_intro</element_class>
         </element_list>
-        <render_js>true</render_js>
+        <!--render_js>true</render_js-->
     </extraction>
     <rss>
         <title><![CDATA[다음웹툰목록]]></title>

@@ -5,30 +5,59 @@ import io
 import os
 import sys
 import re
+import getopt
 import feedmakerutil
 
 
-def getUrlDomainFromConfig():
+def get_url_domain_from_config():
     config = feedmakerutil.read_config()
     collection = feedmakerutil.get_config_node(config, "collection")
-    listUrlList = feedmakerutil.get_config_node(collection, "list_url_list")
-    listUrl = feedmakerutil.get_config_node(listUrlList, "list_url")
-    url = feedmakerutil.get_value_from_config(listUrl)
+    list_url_list = feedmakerutil.get_config_node(collection, "list_url_list")
+    list_url = feedmakerutil.get_config_node(list_url_list, "list_url")
+    url = feedmakerutil.get_value_from_config(list_url)
     return feedmakerutil.get_url_domain(url)
     
     
 def main():
-    urlDomain = getUrlDomainFromConfig();
-    
-    lineList = feedmakerutil.read_stdin_as_line_list()
-    for line in lineList:
-        matches = re.findall(r'<a href="/(\d+)"[^>]*>([^<]*)</a>', line)
+    url_domain = get_url_domain_from_config()
+    state = 0
 
+    num_of_recent_feeds = 1000
+    count = 0
+    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            num_of_recent_feeds = int(a)
+    
+    line_list = feedmakerutil.read_stdin_as_line_list()
+    result_list = []
+    for line in line_list:
+        '''
+        matches = re.findall(r'<a href="/(\d+)"[^>]*>([^<]*)</a>', line)
         for match in matches:
-            link = urlDomain + match[0]
+            link = url_domain + match[0]
             title = match[1]
             print("%s\t%s" % (link, title))
+        '''
+        if state == 0:
+            m = re.search(r'<strong class="title">', line)
+            if m:
+                state = 1
+        elif state == 1:
+            m = re.search(r'^\s*(?P<title>.*)\s*$', line)
+            if m:
+                title = m.group("title")
+                state = 2
+        elif state == 2:
+            m = re.search(r'<a class="post_link" href="(?P<url>[^"]+)"', line)
+            if m:
+                link = m.group("url")
+                result_list.append((link, title))
+                state = 0
 
+    for (link, title) in result_list[-num_of_recent_feeds:]:
+        print("%s\t%s" % (link, title))
+                
             
 if __name__ == "__main__":
     main()
