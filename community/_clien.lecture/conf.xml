@@ -8,13 +8,12 @@
             <list_url><![CDATA[http://clien.net/cs2/bbs/board.php?bo_table=lecture&sca=%5B기타%5D]]></list_url>
         </list_url_list>
         <element_class>board_main</element_class>
-        <item_capture_script>../capture_item_clien.pl</item_capture_script>
+        <item_capture_script>../capture_item_clien.py</item_capture_script>
     </collection>
     <extraction>
         <bypass_element_extraction>true</bypass_element_extraction>
         <element_list>
         </element_list>
-        <post_process_script>../post_process_clien.pl</post_process_script>
     </extraction>
     <rss>
         <title><![CDATA[강좌::클량]]></title>
