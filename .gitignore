@@ -6,6 +6,7 @@ __pycache__
 *.db
 
 *.xml.old
+collector.error.log
 error.log
 run.log
 *.xml
