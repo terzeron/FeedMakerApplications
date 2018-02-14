@@ -21,4 +21,4 @@ logs/
 .htpasswd
 www/jquery*
 www/work
-
+result.*.temp

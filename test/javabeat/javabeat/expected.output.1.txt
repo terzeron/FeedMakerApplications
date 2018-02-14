@@ -1,0 +1,1770 @@
+http://www.javabeat.net/3d-game-development-with-microsoft-silverlight-3/	3D Game Development with Microsoft Silverlight 3
+http://www.javabeat.net/5-new-features-html5/	5 New Features in HTML5
+http://www.javabeat.net/a-peek-files-utility-part-java-nio-package-java-7/	A peek into the Files utility which is part of java.nio package in Java 7
+http://www.javabeat.net/a-sneak-peak-at-the-lambda-expressions-in-java-8/	Lambda Expressions in Java 8
+http://www.javabeat.net/a4jsupport-how-to-use-action-attribute/	a4j:support &#8211; How to use action attribute?
+http://www.javabeat.net/a4jsupport-simple-example-on-onkeyup-event/	a4j:support &#8211; Simple Example on onkeyup event
+http://www.javabeat.net/abstract-factory-pattern/	Abstract Factory Design Pattern
+http://www.javabeat.net/abstract-keyword-in-java/	Abstract keyword In Java
+http://www.javabeat.net/access-modifiers-java/	Access Modifiers in Java
+http://www.javabeat.net/accessing-managed-bean-methods-programmatically-in-jsf-1-1/	Accessing Managed Bean methods programmatically in JSF 1.1
+http://www.javabeat.net/accessing-objects-in-jndi-using-spring/	Accessing objects in JNDI using Spring
+http://www.javabeat.net/accessing-portlet-specific-objects-in-jsp-pages/	Accessing Portlet-specific Objects in JSP Pages
+http://www.javabeat.net/accessing-server-side-data-using-flex-4-0/	Accessing Server Side Data using Flex 4.0
+http://www.javabeat.net/accessing-the-uiaccelerometer-in-iphone-and-ipad/	Accessing the UIAccelerometer in Iphone and iPad
+http://www.javabeat.net/accessing-web-services-from-jsf-applications/	Accessing Web Services from JSF applications
+http://www.javabeat.net/adding-a-map-to-an-application-in-iphone-and-ipad/	Adding a map to an application in iPhone and iPad
+http://www.javabeat.net/adding-methods-to-an-enum/	Adding methods to an Enum
+http://www.javabeat.net/adding-more-logic-with-the-email-task-in-activiti/	Adding More Logic with the Email Task in Activiti
+http://www.javabeat.net/advantages-and-disadvantages-jsf/	Advantages and Disadvantages &#8211; JSF
+http://www.javabeat.net/ajax-and-php/	AJAX and PHP
+http://www.javabeat.net/ajax-conversation-with-an-ajaxian/	AJAX &#8211; Conversation with an Ajaxian
+http://www.javabeat.net/ajax-example-dojo/	A Simple AJAX Example Using DOJO
+http://www.javabeat.net/ajax-request-parameter-dojo/	How to Pass Parameter in AJAX Request using DOJO?
+http://www.javabeat.net/ajax-support-in-struts-2-0/	AJAX Support in Struts 2.0
+http://www.javabeat.net/alert-messages-javascript/	Alert Messages in Javascript
+http://www.javabeat.net/alertdialog-box-android/	How to create AlertDialog box in Android?
+http://www.javabeat.net/an-introduction-to-jstl/	An Introduction to JSTL
+http://www.javabeat.net/android-articles/	Android Application Development Tutorials
+http://www.javabeat.net/android-development-environment/	How to set up android development environment?
+http://www.javabeat.net/androids-json-parser/	Android&#8217;s JSON parser
+http://www.javabeat.net/angularjs-ng-model-ng-bind/	AngularJS &#8211; Difference between ng-model and ng-bind
+http://www.javabeat.net/angularjs/	Introduction to AngularJS
+http://www.javabeat.net/animations-and-user-interface-in-css-3-0/	Animations and User Interface in CSS 3.0
+http://www.javabeat.net/annotation-based-bean-wiring-autowired-in-spring-framework/	Annotation Based Bean Wiring @Autowired in Spring framework
+http://www.javabeat.net/annotation-scheduling-asynchronous-spring-examples/	Annotation Support for Scheduling and Asynchronous Execution
+http://www.javabeat.net/annotations-and-dependency-injection-in-ejb-3-0/	Annotations and Dependency Injection in EJB 3.0
+http://www.javabeat.net/annotations-in-java-5-0/	Annotations in Java 5.0
+http://www.javabeat.net/apache-ant-interview-questions/	Apache Ant Interview Questions
+http://www.javabeat.net/apache-ant-listeners-and-loggers/	Apache ANT Listeners and Loggers
+http://www.javabeat.net/apache-axis2-web-services/	Apache Axis2 Web Services
+http://www.javabeat.net/apache-geronimo-plugins/	Developing Apache Geronimo Plugins
+http://www.javabeat.net/apache-jmeter/	Functional Testing using Apache JMeter
+http://www.javabeat.net/apache-maven-2-0-maven-plugins/	Apache Maven 2.0 &#8211; Maven Plugins
+http://www.javabeat.net/apache-maven-for-beginners/	Apache Maven for Beginners
+http://www.javabeat.net/apache-myfaces-1-2/	Apache MyFaces 1.2
+http://www.javabeat.net/apache-myfaces-trinidad-1-2/	Tags and Tag Attributes in Apache MyFaces Trinidad 1.2
+http://www.javabeat.net/apache-ofbiz-development-the-service-engine/	Apache OFBiz Development : The Service Engine
+http://www.javabeat.net/apache-poi-reading-excel-sheet-using-java/	Apache POI &#8211; Reading Excel sheet using Java
+http://www.javabeat.net/apache-tomcat-8-features/	Apache Tomcat 8 Features
+http://www.javabeat.net/arraylist-java/	ArrayList in Java
+http://www.javabeat.net/assertions-java/	Assertions In Java
+http://www.javabeat.net/asynchronous-file-upload-using-ajax-jquery-progress-bar-and-java/	Asynchronous File Upload using Ajax, jQuery Progress Bar and Java
+http://www.javabeat.net/asynchronous-servlet-servlet-3-0/	Asynchronous Servlet &#8211; A new feature in Servlet 3.0 and Java EE 6
+http://www.javabeat.net/asynctask-android/	AsyncTask in Android
+http://www.javabeat.net/attach-java-source-eclipse-ide/	How to Attach JDK source with Eclipse IDE?
+http://www.javabeat.net/auto-refresh-jsp/	Auto Refresh a Web Page In JSP
+http://www.javabeat.net/autoboxing-in-java-5-0/	AutoBoxing in Java 5.0
+http://www.javabeat.net/autowired-annotation-spring/	@Autowired Annotation in Spring
+http://www.javabeat.net/axis-2-0/	AXIS 2.0 Architecture
+http://www.javabeat.net/baisc-steps-to-configure-log4j-using-xml-and-properties-file/	Basic steps to configure Log4j using xml and properties file
+http://www.javabeat.net/bar-chart-dojo/	How To Create Bar Chart Using DOJO?
+http://www.javabeat.net/batch-insert-in-hibernate/	Batch insert in Hibernate
+http://www.javabeat.net/bean-definition-inheritance-spring/	Bean Definition Inheritance in Spring
+http://www.javabeat.net/bean-validation-1-1-java-ee-7-using-default-constraints/	Bean Validation 1.1 in Java EE 7 &#8211; Using Default Constraints
+http://www.javabeat.net/bean-validation-java-ee-creating-custom-constraints-validations/	Bean Validation in Java EE 7 &#8211; Creating Custom Constraints and Validations
+http://www.javabeat.net/benefits-of-using-web-services/	Benefits of using Web Services
+http://www.javabeat.net/binary-search-tree-traversal-java/	Binary Search Tree Traversal Implemented in Java
+http://www.javabeat.net/birt-2-6-data-analysis-and-reporting/	BIRT 2.6 Data Analysis and Reporting
+http://www.javabeat.net/blackberry-java-application-development/	BlackBerry Java Application Development
+http://www.javabeat.net/blueprint-and-service-dynamism-in-osgi/	Blueprint and Service Dynamism in OSGi
+http://www.javabeat.net/book-joomla-ecommerce-with-virtuemart/	Book Joomla ECommerce with VirtueMart
+http://www.javabeat.net/book-review-java-concurrency-practice/	Book Review: Java Concurrency in Practice
+http://www.javabeat.net/book-review-java-persistence-with-hibernate/	Book Review : Java Persistence with Hibernate
+http://www.javabeat.net/book-review-pro-java-7-nio-2/	Book Review: Pro Java 7 NIO.2
+http://www.javabeat.net/book-review-scjp-sun-certified-programmer-for-java-6-study-exam-310-065-guide/	Book Review : SCJP Sun Certified Programmer for Java 6 Study Exam 310-065 Guide
+http://www.javabeat.net/book-review-spring-in-action/	Book Review : Spring in Action
+http://www.javabeat.net/bootstrap-affix-plugin/	Bootstrap Affix Plugin
+http://www.javabeat.net/bootstrap-alerts/	Bootstrap Alerts
+http://www.javabeat.net/bootstrap-badges/	Bootstrap Badges
+http://www.javabeat.net/bootstrap-breadcrumbs/	Bootstrap Breadcrumbs
+http://www.javabeat.net/bootstrap-button-dropdowns/	Bootstrap Button Dropdowns
+http://www.javabeat.net/bootstrap-button-groups/	Bootstrap Button Groups
+http://www.javabeat.net/bootstrap-button-plugin/	Bootstrap Button Plugin
+http://www.javabeat.net/bootstrap-buttons/	Bootstrap Buttons
+http://www.javabeat.net/bootstrap-collapse-plugin/	Bootstrap Collapse Plugin
+http://www.javabeat.net/bootstrap-css/	Bootstrap CSS
+http://www.javabeat.net/bootstrap-dropdown-plugin/	Bootstrap Dropdown Plugin
+http://www.javabeat.net/bootstrap-dropdowns/	Bootstrap Dropdowns
+http://www.javabeat.net/bootstrap-environment-setup/	Bootstrap Environment Setup
+http://www.javabeat.net/bootstrap-forms/	Bootstrap Forms
+http://www.javabeat.net/bootstrap-framework/	What is Bootstrap?
+http://www.javabeat.net/bootstrap-glyphicons/	Bootstrap Glyphicons
+http://www.javabeat.net/bootstrap-grid-system/	Bootstrap Grid System
+http://www.javabeat.net/bootstrap-images/	Bootstrap Images
+http://www.javabeat.net/bootstrap-input-groups/	Bootstrap Input Groups
+http://www.javabeat.net/bootstrap-jumbotron/	Bootstrap Jumbotron
+http://www.javabeat.net/bootstrap-labels/	Bootstrap Labels
+http://www.javabeat.net/bootstrap-modals/	Bootstrap Modals
+http://www.javabeat.net/bootstrap-navigation-controls/	Bootstrap Navigation Controls
+http://www.javabeat.net/bootstrap-page-heading/	Bootstrap Page Heading
+http://www.javabeat.net/bootstrap-pagination/	Bootstrap Pagination
+http://www.javabeat.net/bootstrap-panels/	Bootstrap Panels
+http://www.javabeat.net/bootstrap-plugins/	Bootstrap Plugins
+http://www.javabeat.net/bootstrap-popover-plugin/	Bootstrap Popover Plugin
+http://www.javabeat.net/bootstrap-progress-bars/	Bootstrap Progress Bars
+http://www.javabeat.net/bootstrap-scrollspy-plugin/	Bootstrap Scrollspy Plugin
+http://www.javabeat.net/bootstrap-setup/	Bootstrap Setup
+http://www.javabeat.net/bootstrap-tab-plugin/	Bootstrap Tab Plugin
+http://www.javabeat.net/bootstrap-tables/	Bootstrap Tables
+http://www.javabeat.net/bootstrap-thumbnails/	Bootstrap Thumbnails
+http://www.javabeat.net/bootstrap-tooltip-plugin/	Bootstrap Tooltip Plugin
+http://www.javabeat.net/bootstrap-typography/	Bootstrap Typography
+http://www.javabeat.net/bootstrap-vs-foundation/	Bootstrap Vs Foundation
+http://www.javabeat.net/bootstrap/	Bootstrap Tutorials and Examples
+http://www.javabeat.net/border-radius-box-shadow-css3/	Border Radius, Box Shadow and Border Image in CSS3
+http://www.javabeat.net/bower-tutorial/	Bower Tutorial
+http://www.javabeat.net/bower/	Bower &#8211; Web Package Manager
+http://www.javabeat.net/build-spring-mvc-web-application-maven/	How To Build Spring MVC Web Application With Maven?
+http://www.javabeat.net/building-a-custom-security-plugin-in-activemq/	Building a custom security plugin in ActiveMQ
+http://www.javabeat.net/building-an-ejb-3-0-persistence-model-with-oracle-jdeveloper/	Building an EJB 3.0 Persistence Model with Oracle JDeveloper
+http://www.javabeat.net/building-dynamic-web-2-0-websites-with-ruby-on-rails/	Building Dynamic Web 2.0 Websites with Ruby on Rails
+http://www.javabeat.net/building-jsf-application-with-exadel-ide/	Building JSF application with Exadel IDE
+http://www.javabeat.net/building-soa-based-composite-applications-using-netbeans-ide-6/	Building SOA-Based Composite Applications Using NetBeans IDE 6
+http://www.javabeat.net/building-your-own-function-objects-in-scala/	Building your own function objects in Scala
+http://www.javabeat.net/bulletproof-job-scheduling-in-java/	Bulletproof Job Scheduling in Spring Batch
+http://www.javabeat.net/cache-abstraction-spring-cacheable-cacheevict/	Cache Abstraction In Spring (Example for @Cacheable and @CacheEvict)
+http://www.javabeat.net/cache-management-with-windows-azure/	Cache Management with Windows Azure
+http://www.javabeat.net/caching-in-spring/	Caching in Spring
+http://www.javabeat.net/call-java-oracle-functions-from-java-program/	Call Java Oracle Functions From Java program
+http://www.javabeat.net/canvas-tag-in-html5/	Canvas Tag in HTML5
+http://www.javabeat.net/cf-ajax-programming/	CF AJAX Programming
+http://www.javabeat.net/chain-of-responsibility-pattern-in-java/	Chain Of Responsibility Pattern In Java
+http://www.javabeat.net/char-array-to-string-java/	How To Convert Char Array To String In Java?
+http://www.javabeat.net/charting-with-flex-4-0/	Charting with Flex 4.0
+http://www.javabeat.net/check-hidden-file-java/	How to Check Hidden File in Java?
+http://www.javabeat.net/check-network-connection-using-java/	How To Check Network Connection Using Java
+http://www.javabeat.net/checkboxes-android/	How to create CheckBoxes in Android
+http://www.javabeat.net/checked-unchecked-exceptions/	Difference between Checked and Unchecked Exceptions in Java
+http://www.javabeat.net/choosing-a-cloud-vendor/	Choosing a Cloud Vendor
+http://www.javabeat.net/choosing-an-open-source-cms/	Choosing an Open Source CMS
+http://www.javabeat.net/circular-dependency-spring/	Circular Dependency in Spring
+http://www.javabeat.net/circular-linked-list-in-java/	Circular Linked List in Java
+http://www.javabeat.net/class-forname-classloader-loadclass-difference/	Difference Between Class.forName() and ClassLoader.loadClass()
+http://www.javabeat.net/classloader-java/	ClassLoader in Java
+http://www.javabeat.net/client-ip-address-servlet/	How To Get Client IP Address In Servlet
+http://www.javabeat.net/clipboard-toolkit-java/	How To Update Clipboard Content In Java
+http://www.javabeat.net/cloning-internet-applications-with-ruby/	Cloning Internet Applications with Ruby
+http://www.javabeat.net/closures-in-groovy/	Closures in Groovy
+http://www.javabeat.net/closures-in-java-7-0/	Closures in Java 7.0
+http://www.javabeat.net/cobertura-interview-questions/	Cobertura Interview Questions
+http://www.javabeat.net/code-splitting-in-gwt/	Code Splitting in GWT
+http://www.javabeat.net/collection-mapping-in-hibernate-one-to-many/	Collection Mapping in Hibernate : one-to-many
+http://www.javabeat.net/comparable-comparator-interface-java/	Comparable vs Comparator Interface in Java
+http://www.javabeat.net/comparable-comparator-object-sorting-java/	How To Sort Java Object Using Comparable And Comparator?
+http://www.javabeat.net/comparing-objects-in-java/	Comparing Objects in Java
+http://www.javabeat.net/comparison-of-ajax-frameworks-prototype-gwt-dwr-and-thinware/	Comparison of AJAX Frameworks: Prototype, GWT, DWR and Thinware
+http://www.javabeat.net/comparison-operators-in-hibernate/	Comparison operators in Hibernate
+http://www.javabeat.net/compress-files-zip-java/	Compress Files To ZIP Format Using Java
+http://www.javabeat.net/compressing-uncompressing-java/	Compressing and Uncompressing File Example in Java
+http://www.javabeat.net/conditional-annotation-spring-4-0/	Conditional Annotation in Spring 4.0
+http://www.javabeat.net/configure-mysql-database-with-hibernate-mappings/	Configure MySql Database With Hibernate Mappings
+http://www.javabeat.net/configure-quartz-scheduler-jobs-using-xml-file/	Configure Quartz Scheduler Jobs using XML File
+http://www.javabeat.net/configure-spring-batch-to-retrying-on-error/	Configure Spring Batch Retry on Error
+http://www.javabeat.net/configuring-multiple-databases-in-hibernate/	Configuring Multiple Databases in Hibernate
+http://www.javabeat.net/connect-mysql-jdbc-driver/	Connect To MySQL With JDBC Driver
+http://www.javabeat.net/console-api-ocpjp6/	Console API &#8211; OCPJP 6
+http://www.javabeat.net/console-support-in-java-6-0/	Console Support in Java 6.0
+http://www.javabeat.net/constructor-in-java/	Constructor in Java
+http://www.javabeat.net/constructor-injection-in-spring-ioc/	Constructor Injection in Spring IOC
+http://www.javabeat.net/container-extension-endpoints/	Write your Extension Endpoints for Spring IOC Container
+http://www.javabeat.net/content-negotiation-spring-mvc-3-2/	Content Negotiation in Spring MVC 3.2
+http://www.javabeat.net/content-types-and-storage/	Content Types and Storage
+http://www.javabeat.net/context-objects-thymeleaf/	Context Objects in Thymeleaf
+http://www.javabeat.net/contextrefreshedevent-applicationlistener-spring/	ContextRefreshedEvent And ApplicationListener In Spring
+http://www.javabeat.net/controlleradvice-improvements-spring-4-0/	@ControllerAdvice Improvements in Spring 4.0
+http://www.javabeat.net/conversion-between-array-and-list-types/	Conversion between Array and List types
+http://www.javabeat.net/convert-char-string-java/	How To Convert Char To String In Java?
+http://www.javabeat.net/convert-inputstream-string-java/	Convert InputStream To String In Java
+http://www.javabeat.net/convert-java-project-web-project-eclipse/	Convert Java Project to Web Project in Eclipse
+http://www.javabeat.net/convert-properties-file-xml-file-using-java/	How To Convert Properties File Into XML File Using Java?
+http://www.javabeat.net/convert-string-byte-java/	How To Convert String To Byte In Java?
+http://www.javabeat.net/convert-string-date-using-simpledateformat/	Convert String to Date using SimpleDateFormat
+http://www.javabeat.net/convert-string-inputstream-java/	Convert String To InputStream In Java
+http://www.javabeat.net/converter-tags-in-jsf/	Converter tags in JSF
+http://www.javabeat.net/cookies-jsp/	Cookies Handling in JSP
+http://www.javabeat.net/cookies-servlet/	Cookies In Servlet
+http://www.javabeat.net/copying-file-contents-using-filechannel/	Copying File Contents using FileChannel
+http://www.javabeat.net/core-concepts-of-the-java-memory-model-jmm/	Core Concepts of the Java Memory Model (JMM)
+http://www.javabeat.net/core-tags-in-jstl/	Core Tags in JSTL
+http://www.javabeat.net/create-applications-using-objectdb-and-jpa-in-netbeans/	Create applications using ObjectDb and JPA in NetBeans
+http://www.javabeat.net/create-directory-java/	Create Directory in Java
+http://www.javabeat.net/create-ejb-3-0-project-in-netbeans-6-1/	Create EJB 3.0 project in NetBeans 6.1
+http://www.javabeat.net/create-html-forms/	Create HTML Forms Without Using Tables
+http://www.javabeat.net/create-new-activity-android/	How to create a new activity in Android?
+http://www.javabeat.net/create-pdf-using-itext/	How to Create PDF using iText in Java?
+http://www.javabeat.net/create-simple-custom-converter-implementation-class-in-jsf/	Create simple custom Converter implementation class in JSF
+http://www.javabeat.net/create-spring-bean-inner-class/	How to create a Spring Bean of an Inner class?
+http://www.javabeat.net/create-spring-beans-using-factory-methods/	Create Spring Beans using Factory Methods
+http://www.javabeat.net/create-write-temporary-file-java/	How To Create + Write Temporary File In Java
+http://www.javabeat.net/creating-a-custom-pie-chart-component-with-degrafa-using-flex/	Creating a Custom Pie Chart Component with Degrafa using Flex
+http://www.javabeat.net/creating-a-raw-image-in-itext/	Creating a Raw Image in iText
+http://www.javabeat.net/creating-a-simple-tracer-pluginaddon-in-griffon-framework/	Creating a Simple Tracer Plugin/Addon in Griffon Framework
+http://www.javabeat.net/creating-an-activiti-development-environment/	Creating an Activiti Development Environment
+http://www.javabeat.net/creating-database-aware-applications-in-ruby-on-rails/	Creating Database aware applications in Ruby on Rails
+http://www.javabeat.net/creating-hard-links-and-soft-links-for-a-file-in-java/	Creating Hard links and Soft links for a file in Java
+http://www.javabeat.net/creating-json-document-using-java-and-gson-api/	Creating JSON document using Java and GSON API
+http://www.javabeat.net/creating-json-using-groovy/	Creating JSON using Groovy
+http://www.javabeat.net/creating-managed-threads-using-managedthreadfactory-java-ee-7-part-3/	Creating Managed Threads Using ManagedThreadFactory in Java EE 7 &#8211; Part 3
+http://www.javabeat.net/creating-restful-webservice-client-api-jax-rs-2-0/	JAX-RS : RESTful Webservice using JAX-RS 2.0
+http://www.javabeat.net/creating-ria-with-adobe-flex-framework/	Creating RIA with Adobe Flex framework
+http://www.javabeat.net/creating-services-in-android/	Creating Services in Android
+http://www.javabeat.net/creating-simple-java-project-using-apache-maven/	Creating Simple Java Project Using Apache Maven
+http://www.javabeat.net/creating-simple-toolbar-using-richfaces-tag-library/	Creating simple toolbar using RichFaces tag library
+http://www.javabeat.net/creating-simple-web-application-using-apache-maven/	Creating Simple Web Application Using Apache Maven
+http://www.javabeat.net/creating-tags-using-rails/	Creating Tags using Rails
+http://www.javabeat.net/creating-user-defined-exceptions/	Creating user defined exceptions
+http://www.javabeat.net/creating-webservice-using-jboss-and-eclipse-europa/	Creating Webservice using JBoss and Eclipse Europa
+http://www.javabeat.net/creating-writing-reading-java-files-api-java-7/	Creating, Writing, Reading files using Java Files API of Java 7
+http://www.javabeat.net/creating-xslt-documents/	Creating XSLT documents
+http://www.javabeat.net/creating-your-mysql-database/	Creating your MySQL Database
+http://www.javabeat.net/crud-operations-gaelyk-part-2/	CRUD Operations in Gaelyk- Part 2- Read Operation
+http://www.javabeat.net/crud-operations-in-gaelyk-part-1/	CRUD Operations in Gaelyk- Part 1- Create Operation
+http://www.javabeat.net/css-class-manipulation-with-jquery/	CSS Class Manipulation with jQuery
+http://www.javabeat.net/css-classes-buttons/	Create CSS Classes For Buttons
+http://www.javabeat.net/css-z-index-example/	CSS Z-Index example
+http://www.javabeat.net/currency-locale-java/	How To Display Currency For A Locale In Java
+http://www.javabeat.net/custom-datetimeconverter-in-jsf/	Custom DateTimeConverter in JSF
+http://www.javabeat.net/custom-formatter-logger-handler/	Create Custom Formatter for Logger Handler
+http://www.javabeat.net/custom-interceptors-in-struts-2-0/	Custom Interceptors in Struts 2.0
+http://www.javabeat.net/custom-scope-spring-beans/	Custom Scope for Spring Beans
+http://www.javabeat.net/custom-spring-callback-methods/	How to write Custom Spring Callback Methods?
+http://www.javabeat.net/custom-tag-libraries-and-tag-files-in-jsp-2-0/	Custom Tag Libraries and Tag Files in JSP 2.0
+http://www.javabeat.net/custom-tags-in-jsp-2-0/	Custom Tags in JSP 2.0
+http://www.javabeat.net/custom-validators-in-struts-2-0-2/	Beginners Guide for Struts 2 Custom Validators
+http://www.javabeat.net/custom-validators-in-struts-2-0/	Custom Validators in Struts 2.0
+http://www.javabeat.net/customizing-dragging-and-dropping-for-swing-components/	Customizing Dragging and Dropping for Swing Components
+http://www.javabeat.net/datasource-through-java-naming-and-dictionary-interface-jndi/	DataSource through Java Naming and Dictionary Interface (JNDI)
+http://www.javabeat.net/datepickerdialog-android/	How to create a DatePickerDialog in android?
+http://www.javabeat.net/dealing-with-directories-and-directory-trees-in-java-7-0/	Dealing with Directories and Directory Trees in Java 7.0
+http://www.javabeat.net/debug-android-application-logcat/	How to Debug an Android application with LogCat?
+http://www.javabeat.net/debug-logging-in-ipad/	Debug Logging in iPad
+http://www.javabeat.net/debugging-javascript-mozilla-firefox/	Debugging JavaScript In Mozilla Firefox
+http://www.javabeat.net/decoder-websocket-javaee-7/	Using Decoder With WebSocket In Java EE 7
+http://www.javabeat.net/decorator-design-pattern/	Decorator Design Pattern in Java
+http://www.javabeat.net/default-locale-java/	How To Set Default Locale In Java
+http://www.javabeat.net/delete-temporary-file-java/	How To Delete Temporary File In Java
+http://www.javabeat.net/dependency-management-jndi/	Dependency Management with JNDI
+http://www.javabeat.net/deploying-activemq-for-large-numbers-of-concurrent-applications/	Deploying ActiveMQ for large numbers of concurrent applications
+http://www.javabeat.net/deploying-zk-javaee-to-openshift/	Deploying a ZK based Java EE application to Red Hat Open Shift Cloud
+http://www.javabeat.net/deployment-descriptor-different-servlet-versions/	Deployment Descriptor in Different Servlet Versions
+http://www.javabeat.net/deprecated-tags-attributes-html/	Deprecated Tags and Attributes in HTML
+http://www.javabeat.net/design-patterns-interview-questions/	Design Patterns Interview Questions
+http://www.javabeat.net/design-patterns-java/	Design Patterns in Java
+http://www.javabeat.net/designing-and-developing-secure-java-ee-applications-using-glassfish-security/	Designing and Developing Secure Java EE Applications using GlassFish Security
+http://www.javabeat.net/develop-ruby-on-rails-applications-fast-using-radrails-1-0-community-edition/	Develop Ruby on Rails applications fast using RadRails 1.0 Community Edition
+http://www.javabeat.net/developing-a-simple-todo-application-using-javafx-java-and-mongodb-part-1/	Developing a Simple Todo Application using JavaFX, Java and MongoDB- Part-1
+http://www.javabeat.net/developing-a-simple-todo-application-using-javafx-java-and-mongodb-part-2/	Developing a Simple Todo Application using JavaFX, Java and MongoDB- Part-2
+http://www.javabeat.net/developing-a-simple-todo-application-using-javafx-java-and-mongodb-part-3/	Developing a Simple Todo Application using JavaFX, Java and MongoDB- Part-3
+http://www.javabeat.net/developing-a-spring-framework-mvc-application-step-by-step-using-netbeans/	How to develop Spring Framework MVC application in NetBeans?
+http://www.javabeat.net/developing-a-web-service-with-cxf/	Developing a Web Service with CXF
+http://www.javabeat.net/developing-applications-with-jboss-and-hibernate/	Developing Applications with JBoss, Hibernate and EJB 3.0
+http://www.javabeat.net/developing-groovy-based-web-application-and-deploying-to-google-app-engine/	Developing Groovy based web application and deploying to Google App Engine
+http://www.javabeat.net/developing-the-business-logic-in-activiti/	Developing the Business Logic in Activiti
+http://www.javabeat.net/developing-with-the-table-service-in-windows-azure/	Developing with the Table Service in Windows Azure
+http://www.javabeat.net/dialog-activity-android/	How to create Dialog activity in Android?
+http://www.javabeat.net/difference-arraylist-vector-linkedlist-java/	Difference between ArrayList, Vector and LinkedList in Java
+http://www.javabeat.net/difference-between-hibernates-saveupdate-and-saveorupdate-methods/	Difference between hibernate&#8217;s save,update and saveOrUpdate() methods
+http://www.javabeat.net/difference-between-list-and-arraylist/	Difference Between List and ArrayList ?
+http://www.javabeat.net/difference-forward-sendredirect-servlet/	Difference Between Forward And sendRedirect In Servlet
+http://www.javabeat.net/difference-resource-autowired-inject-spring-injection/	Difference Between @Resource, @Autowired and @Inject in Spring Injection
+http://www.javabeat.net/difference-servlet-jsp/	Difference Between Servlet and JSP
+http://www.javabeat.net/disk-space-usage-ubuntu/	How To Check Disk Space Usage on Ubuntu
+http://www.javabeat.net/display-error-messages-in-jsf-hmessage-part-2/	Display error messages in JSF [ h:message ] &#8211; part 2
+http://www.javabeat.net/display-error-messages-in-jsf-hmessages-part-1-2/	Display error messages in JSF [ h:messages ] &#8211; part 1
+http://www.javabeat.net/display-error-messages-in-jsf-hmessages-part-1/	Display error messages in JSF [ h:messages ] &#8211; part 1
+http://www.javabeat.net/displaying-data-using-datatable-in-apache-wicket/	Displaying Data Using DataTable in Apache Wicket
+http://www.javabeat.net/django-1-0-web-site-development/	Django 1.0 Web Site Development
+http://www.javabeat.net/documenting-our-application/	Documenting our Application
+http://www.javabeat.net/dojo-build/	DOJO &#8211; Build And Optimize Your DOJO Project
+http://www.javabeat.net/dojo-dom-construct/	Working With dojo/dom-construct &#8211; DOM construction API in DOJO
+http://www.javabeat.net/dojo-example/	A Simple DOJO Example
+http://www.javabeat.net/dojo-object-store/	How To Use DOJO Object Store?
+http://www.javabeat.net/dojo-widget-example/	A Simple DOJO Widget Example
+http://www.javabeat.net/dojoconfig/	Configuring Dojo With dojoConfig
+http://www.javabeat.net/dom-dojo-query/	Search DOM Tree using dojo.query
+http://www.javabeat.net/dom-javascript/	Working with DOM in Javascript
+http://www.javabeat.net/domain-name-system/	Domain Name System
+http://www.javabeat.net/domino-7-lotus-notes-application-development/	Domino 7 Lotus Notes Application Development
+http://www.javabeat.net/download-file-from-http-https-server-using-java/	Download file from HTTP &amp; HTTPS server using Java
+http://www.javabeat.net/downloading-content-from-the-internet/	Downloading Content from the Internet
+http://www.javabeat.net/drools-jboss-rules-5-0-human-readable-rules/	Drools JBoss Rules 5.0 &#8211; Human-readable Rules
+http://www.javabeat.net/dwr-java-ajax-applications/	DWR Java AJAX Applications
+http://www.javabeat.net/dynamic-attributes-in-tag-file-in-jsp-2-0/	Dynamic Attributes in Tag File in JSP 2.0
+http://www.javabeat.net/eclipse-add-server/	Eclipse Tips : How To Add Server In Eclipse
+http://www.javabeat.net/eclipse-block-selection/	Eclipse Tips : Block Selection in Eclipse (ALT + SHIFT + A)
+http://www.javabeat.net/eclipse-create-jar-file/	Eclipse Tips : How To Create JAR File In Eclipse
+http://www.javabeat.net/eclipse-current-workspace/	How To Get Eclipse Current Workspace Location
+http://www.javabeat.net/eclipse-custom-code-template/	Eclipse Tips : How To Create Custom Code Template In Eclipse
+http://www.javabeat.net/eclipse-declarations-ctrl-o/	Eclipse Tips : Open Declarations (CTRL + O)
+http://www.javabeat.net/eclipse-default-browser/	Eclipse Tips : Default Browser Settings
+http://www.javabeat.net/eclipse-heap-status/	Eclipse Tips : How To View Heap Status In Eclipse
+http://www.javabeat.net/eclipse-java-8/	Eclipse Support for Java 8
+http://www.javabeat.net/eclipse-local-history/	Eclipse Tips : Local History Settings in Eclipse
+http://www.javabeat.net/eclipse-mysql-configure/	Eclipse Tips : How To Configure MySql In Eclipse
+http://www.javabeat.net/eclipse-refactoring-history/	Eclipse Tips : Refactoring History
+http://www.javabeat.net/eclipse-rename-variable-alt-shift-r/	Eclipse Tips : Rename Variable (ALT + SHIFT + R)
+http://www.javabeat.net/eclipse-user-library/	Eclipse Tips : How To Add User Library In Eclipse
+http://www.javabeat.net/eclipselink-jpa-abstract-entity-non-entity-classes/	Eclipselink / JPA &#8211; Abstract Entity And Non-Entity Classes In The Entity Inheritance
+http://www.javabeat.net/eclipselink-jpa-annotations-attributeoverride-associationoverride/	EclipseLink / JPA Annotations &#8211; @AttributeOverride And @AssociationOverride
+http://www.javabeat.net/eclipselink-jpa-annotations-inheritance-joined-table/	EclipseLink / JPA Annotations &#8211; @Inheritance With Joined Table Strategy
+http://www.javabeat.net/eclipselink-jpa-annotations-inheritance-single-table/	EclipseLink / JPA Annotations &#8211; @Inheritance With Single Table Strategy
+http://www.javabeat.net/eclipselink-jpa-annotations-inheritance-table-per-concrete-strategy/	EclipseLink / JPA Annotations &#8211; @Inheritance With Table Per Concrete Strategy
+http://www.javabeat.net/eclipselink-jpa-annotations-manytomany/	EclipseLink / JPA Annotations &#8211; @ManyToMany
+http://www.javabeat.net/eclipselink-jpa-annotations-mappedsuperclass/	EclipseLink / JPA Annotations &#8211; @MappedSuperclass
+http://www.javabeat.net/eclipselink-jpa-annotations-onetomany-manytoone/	EclipseLink / JPA Annotations &#8211; @OneToMany and @ManyToOne
+http://www.javabeat.net/eclipselink-jpa-annotations-onetoone/	EclipseLink / JPA Annotations &#8211; @OneToOne
+http://www.javabeat.net/eclipselink-jpa-annotations/	EclipseLink &#8211; JPA Annotations
+http://www.javabeat.net/eclipselink-jpa-com-mysql-jdbc-exceptions-jdbc4-mysqlsyntaxerrorexception/	EclipseLink / JPA &#8211;  com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column
+http://www.javabeat.net/eclipselink-jpa-ddl-schema/	EclipseLink &#8211; DDL Schema Generation in JPA 2.1
+http://www.javabeat.net/eclipselink-jpa-fields-annotations-basic-transient/	EclipseLink &#8211; JPA Fields Annotations &#8211; @Basic and @Transient
+http://www.javabeat.net/eclipselink-jpa-installation-configuration/	EclipseLink – JPA Installation And Configuration Using Eclipse
+http://www.javabeat.net/eclipselink-mysql-driver-persistence-exception/	EclipseLink &#8211; Configuration error. Class [com.mysql.jdbc.Driver] not found [javax.persistence.PersistenceException]
+http://www.javabeat.net/eclipselink-persistence-exception-persistence-provider-entitymanager/	EclipseLink &#8211; javax.persistence.PersistenceException : No Persistence provider for EntityManager
+http://www.javabeat.net/eclipselink-project-maven/	How To Create EclipseLink Project Using Maven Archetype
+http://www.javabeat.net/eclipselink/	EclipseLink Tutorials
+http://www.javabeat.net/editing-eclipse-classpath-file/	Editing eclipse classpath file
+http://www.javabeat.net/ehcache/	Ehcache Example
+http://www.javabeat.net/ejb-3-0-entity-manager/	EJB 3.0 Entity Manager
+http://www.javabeat.net/ejb-3-webservices/	EJB 3.0 and WebServices
+http://www.javabeat.net/ejb-interview-questions/	EJB Interview Questions
+http://www.javabeat.net/ejb-webservices-in-jboss-application-server-sample-code/	EJB Webservices in JBoss application server sample code
+http://www.javabeat.net/email-integration-in-spring-framework/	Email Integration in Spring Framework
+http://www.javabeat.net/embeddable-embedded-embeddedid-jpa-annotations/	EclipseLink / JPA Annotations &#8211; @Embeddable, @Embedded and @EmbeddedId
+http://www.javabeat.net/embedding-html-into-java-swing-applications/	Embedding HTML into Java Swing Applications
+http://www.javabeat.net/enable-javascript-browsers/	How To Enable JavaScript In Browsers
+http://www.javabeat.net/enable-mongodb-journaling/	Enable MongoDB Journalling
+http://www.javabeat.net/encoder-websocket-in-javaee-7/	Using Encoder With WebSocket in Java EE 7
+http://www.javabeat.net/enhanced-collections-api-in-java-8-supports-lambda-expressions/	Enhanced Collections API in Java 8- Supports Lambda expressions
+http://www.javabeat.net/enhanced-for-loop-for-user-defined-objects/	Enhanced for-loop for User-defined objects
+http://www.javabeat.net/enterprise-push-server-in-icefaces/	Enterprise Push Server in ICEFaces
+http://www.javabeat.net/entity-annotation-deprecated-hibernate-4/	Deprecated @Entity Annotation in Hibernate 4
+http://www.javabeat.net/entity-beans-in-ejbbmp/	Entity Beans in EJB(BMP)
+http://www.javabeat.net/entity-beans-in-ejbcmp/	Entity Beans in EJB(CMP)
+http://www.javabeat.net/entitymanagerfactory-jpa/	How To Create EntityManagerFactory in JPA
+http://www.javabeat.net/environment-variables-java/	How To Display Environment Variables In Java
+http://www.javabeat.net/error-handling-in-php/	Error Handling in PHP
+http://www.javabeat.net/error-pages-in-jsp-2-0/	Error Pages in JSP 2.0
+http://www.javabeat.net/error-starting-modern-compiler-in-ant-and-eclipse/	Error starting modern compiler in Ant and Eclipse
+http://www.javabeat.net/event-driven-programming-with-jsf/	Event Driven Programming with JSF
+http://www.javabeat.net/event-kit-frameworks-in-ios4/	Event Kit Frameworks in iOS4
+http://www.javabeat.net/examining-functional-concepts-in-google-collections-using-scala/	Examining Functional Concepts in Google Collections using Scala
+http://www.javabeat.net/example-for-a-class-implementing-comparable-interface-in-java/	Example for a class implementing comparable interface in Java
+http://www.javabeat.net/exception-controlleradvice-spring-3-2/	Exception Handling With @ControllerAdvice in Spring 3.2
+http://www.javabeat.net/exception-handling-interview-questions/	Exception Handling Interview Questions
+http://www.javabeat.net/exception-handling-java/	Exception Handling in Java
+http://www.javabeat.net/exception-handling-spring-example/	Exception Handling in Spring with Example
+http://www.javabeat.net/exception-jsp/	Exception Handling in JSP
+http://www.javabeat.net/execute-batch-file-or-shell-script-using-ant/	Execute batch file or shell script using Ant
+http://www.javabeat.net/executorservice-framework-in-java/	Developing Concurrent applications using ExecutorService Framework in Java
+http://www.javabeat.net/exiting-blocks-and-methods-in-groovy/	Exiting Blocks and Methods in Groovy
+http://www.javabeat.net/expected-exception-test-junit-4/	Expected Exception Test in JUnit 4
+http://www.javabeat.net/exploring-the-path-api-java-nio-enhancement-in-java-7/	Exploring the Path API &#8211; Java NIO enhancement in Java 7
+http://www.javabeat.net/expression-language-in-jsp-2-0/	Expression Language in JSP 2.0
+http://www.javabeat.net/expression-language-thymeleaf/	Expression Language in Thymeleaf
+http://www.javabeat.net/expressjs-bootstrap/	Express.js + Bootstrap : Web Application Development Tutorial
+http://www.javabeat.net/expressjs-nodejs-mongoosejs/	RESTful Example using ExpressJS + Node.js + MongooseJS
+http://www.javabeat.net/expressjs-session-management/	NodeJS : ExpressJS Session Management
+http://www.javabeat.net/expressjs-session-store/	ExpressJS Session Store using MongoDB, PostgreSQL
+http://www.javabeat.net/ext-js-3-0-cookbook/	Ext JS 3.0 Cookbook
+http://www.javabeat.net/extending-viewresolver-and-chaining-viewresolvers-in-spring-mvc/	Extending View Resolver and Chaining View Resolvers in Spring MVC
+http://www.javabeat.net/extjs-framework/	Introduction to Ext JS
+http://www.javabeat.net/factory-collections-varargs/	A Simple Factory For Collections Using Varargs
+http://www.javabeat.net/factory-pattern-design-patterns-in-javaj2ee/	Factory Design Pattern
+http://www.javabeat.net/fattribute-tag-in-java-server-faces-jsf/	f:attribute Tag in Java Server Faces (JSF)
+http://www.javabeat.net/fconvertdatetime-tag-in-jsf/	f:convertDateTime tag in JSF
+http://www.javabeat.net/fconvertnumber-tag-in-jsf/	f:convertNumber Tag in JSF
+http://www.javabeat.net/fields-which-satisfy-javabean-specification-beanproperites-in-scala/	Fields which satisfy JavaBean specification &#8211; BeanProperties in Scala
+http://www.javabeat.net/file-modified-date-java/	File Modified Date Manipulation in Java
+http://www.javabeat.net/file-permissions-java/	How To Set The File Permissions In Java
+http://www.javabeat.net/file-upload-and-download-using-java/	File Upload and Download using Java
+http://www.javabeat.net/filenotfoundexception-java/	FileNotFoundException in Java
+http://www.javabeat.net/filestore/	FileStore in Java 7
+http://www.javabeat.net/filterdispatcher-strutsprepareandexecutefilter/	Difference Between FilterDispatcher and StrutsPrepareAndExecuteFilter in Struts 2
+http://www.javabeat.net/final-keyword-java/	Final Keyword
+http://www.javabeat.net/finalize-method-ocpjp-6/	Finalize Method &#8211; OCPJP 6
+http://www.javabeat.net/find-file-classpath-java/	How To Find A File In Classpath
+http://www.javabeat.net/finding-duplicate-input-elements-using-jquery/	Finding Duplicate Input Elements Using jQuery
+http://www.javabeat.net/firebug-1-5/	Firebug 1.5
+http://www.javabeat.net/first-steps-with-scalix-admin-console-and-scalix-web-access/	First Steps with Scalix Admin Console and Scalix Web Access
+http://www.javabeat.net/flash-attributes-in-spring-mvc-3-1/	Flash Attributes in Spring MVC 3.1
+http://www.javabeat.net/flex-3-0-applications-with-blazeds-in-eclipse/	Flex 3.0 Applications with BlazeDS in Eclipse
+http://www.javabeat.net/flex-3-with-java/	Flex 3 with Java
+http://www.javabeat.net/flex-4-components-exposed/	Flex 4 Components Exposed
+http://www.javabeat.net/flex-4-x-overview/	Flex 4.x &#8211; Overview
+http://www.javabeat.net/flexbox-css3-creating-flexible-layouts/	Use Flexbox in CSS3 For Creating Flexible Layouts
+http://www.javabeat.net/font-family-java/	How To Display Your System Font Families in Java
+http://www.javabeat.net/foundation-3-framework/	Introduction to Foundation 3 Framework
+http://www.javabeat.net/fragments-android/	Fragments in Android
+http://www.javabeat.net/free-online-css3-tools-web-design/	Top 5 Best Free Online CSS3 Tools For Web Design
+http://www.javabeat.net/freemarker-template-hello-world-example/	FreeMarker Template Hello World Example
+http://www.javabeat.net/freemarker-template-servlet-integration-example/	FreeMarker Template + Servlet Integration Example
+http://www.javabeat.net/functionalinterface-annotation-java-8/	@FunctionalInterface Annotation in Java 8
+http://www.javabeat.net/functions-as-first-class-citizens-in-scala/	Functions as First Class Citizens in Scala
+http://www.javabeat.net/fusioncharts-column-charts/	FusionCharts : Beautifying the Column Charts
+http://www.javabeat.net/g1-garbage-collector-in-java-7-0/	G1 Garbage Collector in Java 7.0
+http://www.javabeat.net/garbage-collection-java/	Garbage Collection in Java
+http://www.javabeat.net/garbage-collection-ocpjp-6/	Garbage Collection &#8211; OCPJP 6
+http://www.javabeat.net/generate-xsd-from-xml-files/	Generate XSD from XML files
+http://www.javabeat.net/generation-of-random-numbers/	Generation of Random Numbers
+http://www.javabeat.net/generic-methods-in-java-5-0/	Generic Methods in Java 5.0
+http://www.javabeat.net/generic-servlet-http-servlet/	Generic Servlet and Http Servlet
+http://www.javabeat.net/generics-in-java-5-0/	Generics in Java 5.0
+http://www.javabeat.net/geolocation-html5/	Geolocation in HTML5
+http://www.javabeat.net/get-classpath-java/	How To Get Classpath in Java
+http://www.javabeat.net/get-constructors-reflection/	Get Constructors using Reflection
+http://www.javabeat.net/get-fields-reflection/	Get Fields using Reflection
+http://www.javabeat.net/get-free-disk-space-java-windows/	How To Get Free Disk Space In Java (Windows)
+http://www.javabeat.net/get-ip-address-java/	How To Get IP Address In Java
+http://www.javabeat.net/get-list-jobs-quartz-scheduler/	How to Get List of Jobs in Quartz Scheduler?
+http://www.javabeat.net/get-methods-reflection/	Get Methods using Reflection
+http://www.javabeat.net/get-modifiers-reflection/	Get Modifiers of an Object using Reflection
+http://www.javabeat.net/get-package-name-reflection/	Get Package Name using Reflection
+http://www.javabeat.net/get-super-class-reflection/	Get Super Class Name using Reflection
+http://www.javabeat.net/get-url-content-using-java/	Get URL Content using Java
+http://www.javabeat.net/getting-response-through-gwt-using-http-protocol/	Getting Response through GWT using Http Protocol
+http://www.javabeat.net/getting-started-jaxb/	Getting Started with JAXB
+http://www.javabeat.net/getting-started-with-flex-2-0/	Getting Started with Flex 2.0
+http://www.javabeat.net/getting-started-with-oracle-soa-suite/	Getting Started with Oracle SOA Suite
+http://www.javabeat.net/ggts/	Introduction to Groovy / Grails Tool Suite (GGTS)
+http://www.javabeat.net/google-app-engine-java-and-gwt-application-development/	Google App Engine Java and GWT Application Development
+http://www.javabeat.net/google-web-toolkit-gwt-2-0-application-development/	Google Web Toolkit (GWT) 2.0 Application Development
+http://www.javabeat.net/google-web-toolkitgwt/	Google Web ToolKit(GWT)
+http://www.javabeat.net/gradle-tutorial/	Gradle Tutorial
+http://www.javabeat.net/grails-1-1-web-application-development/	Grails 1.1 Web Application Development
+http://www.javabeat.net/grails-mvc-tutorial/	Grails MVC Tutorial
+http://www.javabeat.net/grails/	Introduction to Grails
+http://www.javabeat.net/groovy-for-domain-specific-languages/	Groovy for Domain-Specific Languages
+http://www.javabeat.net/groovy-interview-questions-and-faqs/	Groovy Interview Questions and FAQs
+http://www.javabeat.net/guided-rules-with-the-guvnor/	Guided Rules with the Guvnor
+http://www.javabeat.net/gvm/	Setup Groovy enVironment Manager (GVM)
+http://www.javabeat.net/gwt-installation-and-creating-a-gwt-project/	GWT installation and creating a GWT Project
+http://www.javabeat.net/gwt-user-interface-components/	GWT user interface components
+http://www.javabeat.net/handle-exceptions-in-overriding-methods/	Handle exceptions in overriding methods
+http://www.javabeat.net/handling-configuration-at-runtime-in-windows-azure/	Handling Configuration at Runtime in Windows Azure
+http://www.javabeat.net/handlingavoiding-nulls-in-java-using-guava-versus-scala/	Handling/Avoiding Null&#8217;s in Java using Guava versus Scala
+http://www.javabeat.net/happy-path-testing-in-spring-testcontext-framework/	Happy Path Testing in Spring TestContext Framework
+http://www.javabeat.net/hashcode-and-equals-methods/	HashCode and equals methods
+http://www.javabeat.net/hashmap-java/	HashMap in Java
+http://www.javabeat.net/hashset-java/	HashSet in Java
+http://www.javabeat.net/hashtable-java/	HashTable in Java
+http://www.javabeat.net/hcommandlink-how-to-pass-parameter-to-next-page/	h:commandLink &#8211; How to pass Parameter to next page?
+http://www.javabeat.net/hdatatable-java-server-faces-jsf/	DataTable in JSF
+http://www.javabeat.net/helloworld-with-netbeans-7-2-beta-and-scala-2-9/	HelloWorld with Netbeans 7.2 beta and Scala 2.9
+http://www.javabeat.net/hgraphicimage-in-jsf/	h:graphicImage in JSF
+http://www.javabeat.net/hibernate-4-configuration-example/	Hibernate 4 Basic Configuration + Setup Example
+http://www.javabeat.net/hibernate-basic-configuration-example/	Hibernate basic configuration example
+http://www.javabeat.net/hibernate-configuration-resource-loading-problems/	Hibernate Configuration Resource Loading Problems
+http://www.javabeat.net/hibernate-criteria-query-example/	Hibernate Criteria Query API / HQL Example
+http://www.javabeat.net/hibernate-dependency-library-exception-commons-annotations/	Hibernate Dependency Library Exception (Commons Annotations) : org/hibernate/annotations/common/reflection/MetadataProvider
+http://www.javabeat.net/hibernate-dependency-library-exception-jboss-logging/	Hibernate Dependency Library Exception (JBoss Logging) : org/jboss/logging/BasicLogger
+http://www.javabeat.net/hibernate-dependency-library-exception-jpa-javaxpersistencesharedcachemode/	Hibernate Dependency Library Exception (JPA) : javax/persistence/SharedCacheMode
+http://www.javabeat.net/hibernate-dependency-library-exception-jta/	Hibernate Dependency Library Exception (JTA) : javax/transaction/SystemException
+http://www.javabeat.net/hibernate-detached-entity/	Hibernate / JPA &#8211; Detached entity passed to persist exception
+http://www.javabeat.net/hibernate-envers/	Introduction to Hibernate Envers
+http://www.javabeat.net/hibernate-exception-dom4j-documentexception/	Hibernate Exception &#8211; org/dom4j/DocumentException
+http://www.javabeat.net/hibernate-exception-javassist-library-methodfilter/	Hibernate Exception &#8211; javassist.util.proxy.MethodFilter
+http://www.javabeat.net/hibernate-exception-mysql-driver/	Hibernate Exception &#8211; Unable to load class com.mysql.jdbc.Driver
+http://www.javabeat.net/hibernate-interview-questions/	Hibernate Interview Questions
+http://www.javabeat.net/hibernate-many-to-many-example-annotations/	Hibernate Many-To-Many Mapping Example Using Annotations
+http://www.javabeat.net/hibernate-many-to-many-mapping/	Hibernate Many-To-Many Mapping Example (XML Mapping)
+http://www.javabeat.net/hibernate-maven-and-hsql-annotations/	Hibernate, Maven and HSQL – Example Project (Using Annotations)
+http://www.javabeat.net/hibernate-maven-hsql/	Hibernate, Maven and HSQL &#8211; Example Project (XML Mapping)
+http://www.javabeat.net/hibernate-one-to-many-example-annotations/	Hibernate One-To-Many Mapping Example Using Annotations
+http://www.javabeat.net/hibernate-one-to-many-mapping-example/	Hibernate One-To-Many Mapping Example (XML Mapping)
+http://www.javabeat.net/hibernate-one-to-one-mapping-annotations/	Hibernate One-To-One Mapping Example Using Java Annotations
+http://www.javabeat.net/hibernate-one-to-one-mapping/	Hibernate One-To-One Mapping(XML mapping)
+http://www.javabeat.net/hibernate-orm-4-3-0-released/	Hibernate ORM 4.3.0 Released
+http://www.javabeat.net/hibernate-ormobjectrelational-framework-an-introduction/	What is hibernate framework?
+http://www.javabeat.net/hibernate-querysyntaxexception/	How to Solve QuerySyntaxException in Hibernate?
+http://www.javabeat.net/hibernate-vs-ejb-3-0/	Hibernate Vs EJB 3.0
+http://www.javabeat.net/hibernate-xml-configuration-file-example/	Hibernate XML configuration file example
+http://www.javabeat.net/hiding-and-overriding-methods-in-java/	Hiding and Overriding Methods In Java
+http://www.javabeat.net/history-management-in-gwt/	History Management in GWT
+http://www.javabeat.net/houtputformat-tag-in-jsf/	h:outputFormat tag in JSF
+http://www.javabeat.net/how-much-faster-java-8/	How Much Faster Is Java 8?
+http://www.javabeat.net/how-to-configure-hibernate-using-xml-files/	How to Configure hibernate using XML files?
+http://www.javabeat.net/how-to-configure-java-messaging-service-jms-in-glassfish-3-application-server/	How to Configure Java Messaging Service (JMS) in GlassFish 3 Application Server?
+http://www.javabeat.net/how-to-configure-swingxbuilder-in-griffon/	How to configure SwingXBuilder in Griffon
+http://www.javabeat.net/how-to-create-a-layout-xml-file-in-android/	How to create a Layout xml file in Android?
+http://www.javabeat.net/how-to-create-bounded-taskflows-in-adf-using-jdeveloper/	How to create bounded taskflows in ADF using JDeveloper?
+http://www.javabeat.net/how-to-create-ejb-project-in-netbeans-7-0/	How to create EJB project in NetBeans 7.0?
+http://www.javabeat.net/how-to-create-widget-in-gwt-2-0/	How to create widget in GWT 2.0?
+http://www.javabeat.net/how-to-debug-jsp/	How To Debug JSP Page?
+http://www.javabeat.net/how-to-delete-a-cookie-on-server-in-a-j2ee-application/	How to delete a cookie on server in a J2EE application
+http://www.javabeat.net/how-to-enable-ssl-on-jboss-application-server/	How to enable SSL on JBoss application server?
+http://www.javabeat.net/how-to-implement-actionlistener-factionlistener-in-jsf/	How to implement ActionListener (f:actionListener) in JSF?
+http://www.javabeat.net/how-to-implement-fphaselistener-for-hcommandbutton/	How to implement f:phaseListener for h:commandButton?
+http://www.javabeat.net/how-to-initialize-list-property-in-managed-mean/	How to initialize List property in Managed Mean?
+http://www.javabeat.net/how-to-initialize-map-property-in-managed-mean/	How to initialize Map property in Managed Mean?
+http://www.javabeat.net/how-to-install-tomcat-6-0-server/	How to install Tomcat 6.0 server?
+http://www.javabeat.net/how-to-integrate-legacy-views-with-designer-tools-in-griffon/	How to integrate legacy views with designer tools in Griffon
+http://www.javabeat.net/how-to-lazy-initialize-spring-beans/	How to lazy initialize Spring beans?
+http://www.javabeat.net/how-to-perform-indexing-in-mysql/	How to perform indexing in MySQL?
+http://www.javabeat.net/how-to-query-xml-using-xpath/	How to Query XML using XPath
+http://www.javabeat.net/how-to-read-xml-file-and-inject-bean-reference-using-spring-framework/	How to read xml file and inject bean reference using Spring Framework?
+http://www.javabeat.net/how-to-send-email-using-spring-framework/	How to send EMail using Spring Framework?
+http://www.javabeat.net/how-to-set-selected-tab-in-richtabpanel-tag/	How to set selected tab in rich:tabPanel tag?
+http://www.javabeat.net/how-to-solve-querysyntaxexception-table-is-not-mapped-in-hibetnate/	How to solve QuerySyntaxException (table is not mapped) in hibetnate?
+http://www.javabeat.net/how-to-test-osgi-applications/	How to test OSGi Applications?
+http://www.javabeat.net/how-to-transfer-data-between-activities-in-android/	How to transfer data between Activities in Android?
+http://www.javabeat.net/how-to-use-bitwise-shift-operator-in-java/	How to use BitWise shift operator in Java?
+http://www.javabeat.net/how-to-use-bytebuffer-in-java/	How to use ByteBuffer in Java?
+http://www.javabeat.net/how-to-use-datasource-in-hibernate-application/	How to use datasource in Hibernate application?
+http://www.javabeat.net/how-to-use-enum-in-switch/	How to use Enum in Switch?
+http://www.javabeat.net/how-to-use-extends-in-generics/	How to use ? extends in Generics?
+http://www.javabeat.net/how-to-use-hselectbooleancheckbox-within-hdatatable/	How to use h:selectBooleanCheckBox within h:dataTable?
+http://www.javabeat.net/how-to-use-hselectoneradio-inside-hdatatable-in-jsf/	How to use h:selectOneRadio inside h:dataTable in JSF?
+http://www.javabeat.net/how-to-use-initialization-callback-methods-while-creating-spring-bean/	How to use Initialization callback methods while creating Spring bean?
+http://www.javabeat.net/how-to-use-managed-bean-reference-inside-faces-config-xml/	How to use Managed Bean reference inside faces-config.xml?
+http://www.javabeat.net/how-to-use-named-parameters-and-named-query-in-hibernate/	How to use named parameters and named query in Hibernate?
+http://www.javabeat.net/how-to-use-resource-bundle-in-jsf/	How to use Resource Bundle in JSF?
+http://www.javabeat.net/how-to-use-socket-api-for-creating-client-server-application-in-java/	How to use Socket API for creating Client-Server application in Java
+http://www.javabeat.net/how-to-use-xlink-and-xpointer/	How to use XLink and XPointer?
+http://www.javabeat.net/how-to-write-androidmanifest-xml/	How to write AndroidManifest.xml?
+http://www.javabeat.net/how-to-write-comments-controller-using-rails/	How to write comments controller using Rails?
+http://www.javabeat.net/how-to-write-interception-around-advice-in-spring-aop/	How to write Interception Around Advice in Spring AOP?
+http://www.javabeat.net/how-to-write-throws-advice-in-spring-aop/	How to write Throws Advice in Spring AOP?
+http://www.javabeat.net/hselectbooleancheckbox-java-server-faces-jsf/	h:selectBooleanCheckBox &#8211; Java Server Faces (JSF)
+http://www.javabeat.net/hselectmanycheckbox-java-server-faces-jsf/	h:selectManyCheckBox &#8211; Java Server Faces (JSF)
+http://www.javabeat.net/hselectmanymenu-java-server-faces-jsf/	h:selectManyMenu &#8211; Java Server Faces (JSF)
+http://www.javabeat.net/hselectonemenu-java-server-faces-jsf/	h:selectOneMenu &#8211; Java Server Faces (JSF)
+http://www.javabeat.net/html-5-0-features/	HTML 5.0 Features
+http://www.javabeat.net/html5-aside-tag/	HTML5 &#8211; Aside Tag
+http://www.javabeat.net/html5-autofocus-attribute/	HTML5 Autofocus Attribute
+http://www.javabeat.net/html5-color/	HTML5 Color Input Type
+http://www.javabeat.net/html5-contenteditable/	HTML5 Contenteditable Attribute
+http://www.javabeat.net/html5-datalist-select/	HTML5 &#8211; Datalist Vs Select Tags
+http://www.javabeat.net/html5-datalist/	HTML5 DataList Tag
+http://www.javabeat.net/html5-date/	HTML5 Date Input Type
+http://www.javabeat.net/html5-datetime-local/	HTML5 Datetime-local Input Type
+http://www.javabeat.net/html5-doctype/	HTML5 Doctype
+http://www.javabeat.net/html5-drag-drop-events/	HTML5 &#8211; Drag and Drop Events
+http://www.javabeat.net/html5-email/	HTML5 Email Input Type
+http://www.javabeat.net/html5-embed/	HTML5 Embed Tag
+http://www.javabeat.net/html5-events/	HTML5 Events
+http://www.javabeat.net/html5-figure/	HTML5 &#8211; Figure Tag
+http://www.javabeat.net/html5-footer/	HTML5  Footer Tag
+http://www.javabeat.net/html5-header/	HTML5 Header Tag
+http://www.javabeat.net/html5-input-time/	HTML5 Time Input Type
+http://www.javabeat.net/html5-main/	HTML5 Main Tag
+http://www.javabeat.net/html5-mark/	HTML5 Mark Tag
+http://www.javabeat.net/html5-meter/	HTML5 Meter Tag
+http://www.javabeat.net/html5-month/	HTML5 Month Input Type
+http://www.javabeat.net/html5-multimedia-development-cookbook/	HTML5 Multimedia Development Cookbook
+http://www.javabeat.net/html5-nav/	HTML5 Nav Tag
+http://www.javabeat.net/html5-number/	HTML5 Number Input Type
+http://www.javabeat.net/html5-output/	HTML5 Output Tag
+http://www.javabeat.net/html5-placeholder/	HTML5 Placeholder Attribute
+http://www.javabeat.net/html5-progress/	HTML5 Progress Tag
+http://www.javabeat.net/html5-range/	HTML5 Range Input Type
+http://www.javabeat.net/html5-required-attribute/	HTML5 Required Attribute
+http://www.javabeat.net/html5-search/	HTML5 Search Input Type
+http://www.javabeat.net/html5-time/	HTML5 Time Tag
+http://www.javabeat.net/html5-url/	HTML5 URL Input Type
+http://www.javabeat.net/html5-validator/	HTML5 Validator &#8211; Validating Forms With HTML5
+http://www.javabeat.net/html5-video-audio-tags/	HTML5 &#8211; Video and Audio Tags
+http://www.javabeat.net/html5-week/	HTML5 Week Input Type
+http://www.javabeat.net/http-codes/	HTTP Status Codes
+http://www.javabeat.net/http-messaging-in-java/	HTTP messaging in Java
+http://www.javabeat.net/httpservletcontext-struts-2-action-class/	HttpServletContext in Struts 2 Action Class
+http://www.javabeat.net/httpservletrequest-struts-2-action-class/	HttpServletRequest in Struts 2 Action Class
+http://www.javabeat.net/httpservletresponse-struts-2-action-class/	HttpServletResponse in Struts 2 Action Class
+http://www.javabeat.net/icefaces-1-8/	ICEfaces 1.8
+http://www.javabeat.net/icefaces-ee-2-0-is-now-available/	ICEfaces EE 2.0 is Now Available!
+http://www.javabeat.net/icefaces-in-portals-with-portletfaces-bridge/	ICEfaces in Portals with PortletFaces Bridge
+http://www.javabeat.net/implement-internationalization-and-localization-in-jsf/	Implement Internationalization and Localization in JSF
+http://www.javabeat.net/implementing-producer-consumer-scenario-using-blockingqueue-java/	Implementing a Producer-Consumer scenario using BlockingQueue in Java
+http://www.javabeat.net/implementing-restful-api-for-obtaining-the-book-details-for-an-isbn/	Implementing RESTful API for obtaining the book details for an ISBN
+http://www.javabeat.net/implicit-polymorphism-hibernate/	Implicit Polymorphism in Hibernate
+http://www.javabeat.net/increase-heap-size-eclipse/	How To Increase Heap Size in Eclipse?
+http://www.javabeat.net/indexing-in-practice-using-mongodb/	Indexing in Practice using MongoDB
+http://www.javabeat.net/inheritance-overriding-scala/	Inheritance and Overriding in Scala
+http://www.javabeat.net/initialize-variables-servlet/	How To Initialize Variables In Servlet
+http://www.javabeat.net/inject-named-jsr-330annotations-example/	@Inject and @Named (JSR 330) Annotations Example
+http://www.javabeat.net/inner-beans-in-spring-ioc/	Inner beans in Spring IOC
+http://www.javabeat.net/inner-classes-in-java/	Inner Classes in Java
+http://www.javabeat.net/install-maven-ubuntu/	How To Install Maven On Ubuntu?
+http://www.javabeat.net/install-maven-windows/	How To Install Maven On Windows?
+http://www.javabeat.net/install-tomcat-in-ubuntu/	How to Install Tomcat in Ubuntu?
+http://www.javabeat.net/installation-and-configuration-for-openldap/	Installation and Configuration for OpenLDAP
+http://www.javabeat.net/instance-initializer-java/	Instance Initializer in Java
+http://www.javabeat.net/instanceof-operator/	Instanceof Operator
+http://www.javabeat.net/integrating-jsf-and-jpa/	Integrating JSF and JPA
+http://www.javabeat.net/integrating-spring-and-groovy/	Spring and Groovy Integration
+http://www.javabeat.net/integrating-spring-and-jsf/	Integrating Spring and JSF
+http://www.javabeat.net/integrating-spring-framework-with-hibernate-orm-framework/	Spring + Hibernate Integration Tutorial
+http://www.javabeat.net/integrating-spring-web-flow-with-jsf/	Integrating Spring Web Flow with JSF
+http://www.javabeat.net/integrating-spring-with-jms/	Integrating Spring with JMS
+http://www.javabeat.net/integrating-struts-2-0-applications-with-hibernate/	Integrating Struts 2.0 applications with Hibernate
+http://www.javabeat.net/integrating-struts-with-spring/	Integrating Struts With Spring
+http://www.javabeat.net/interceptor-plugin-in-activemq/	Interceptor Plugin in ActiveMQ
+http://www.javabeat.net/interceptors-in-hibernate-orm-framework-an-introduction/	Interceptors in Hibernate Framework
+http://www.javabeat.net/internationalisationi18n-in-gwt-application/	Internationalisation(i18n) in GWT Application
+http://www.javabeat.net/internationalization-and-taglibs-in-struts-1-2/	Internationalization and Taglibs in Struts 1.2
+http://www.javabeat.net/internationalization-in-jsf-1-x/	Internationalization in JSF
+http://www.javabeat.net/internet-connection-java/	How To Test Internet Connection Using Java
+http://www.javabeat.net/introduction-backbone-js/	Introduction to Backbone.js
+http://www.javabeat.net/introduction-javascript/	Introduction to JavaScript
+http://www.javabeat.net/introduction-jsp/	Introduction to JSP
+http://www.javabeat.net/introduction-to-ajax4jsf/	Introduction to Ajax4Jsf
+http://www.javabeat.net/introduction-to-comet-and-reverse-ajax/	Introduction to Comet and Reverse AJAX
+http://www.javabeat.net/introduction-to-dom4j/	Introduction to DOM4J
+http://www.javabeat.net/introduction-to-eclipse-plugin-architecture/	How to write Eclipse Plugin?
+http://www.javabeat.net/introduction-to-facelets/	Introduction to Facelets
+http://www.javabeat.net/introduction-to-google-guice/	Introduction to Google Guice
+http://www.javabeat.net/introduction-to-groovy-scripting-language/	Introduction to Groovy Scripting Language
+http://www.javabeat.net/introduction-to-groovy-server-pages-gsp/	Introduction to Groovy Server Pages (GSP)
+http://www.javabeat.net/introduction-to-hibernate-caching/	What is Hibernate Caching?
+http://www.javabeat.net/introduction-to-j2me/	Introduction to J2ME
+http://www.javabeat.net/introduction-to-java-6-0-new-features-part-i/	Introduction to Java 6.0 New Features, Part–1
+http://www.javabeat.net/introduction-to-java-agents/	Introduction to Java Agents
+http://www.javabeat.net/introduction-to-java-module-system-in-java-7-0/	Introduction to Java Module System in Java 7.0
+http://www.javabeat.net/introduction-to-java-server-faces/	Introduction to Java Server Faces (JSF)
+http://www.javabeat.net/introduction-to-java-server-facesjsf-html-tags/	Introduction to Java Server Faces(JSF) HTML Tags
+http://www.javabeat.net/introduction-to-jboss-seam/	Introduction to JBoss Seam
+http://www.javabeat.net/introduction-to-jquery/	Introduction to jQuery
+http://www.javabeat.net/introduction-to-jsf-core-tags-library/	Introduction to JSF Core Tags Library
+http://www.javabeat.net/introduction-to-jsfunit/	Introduction to JSFUnit
+http://www.javabeat.net/introduction-to-ruby-on-rails/	Introduction to Ruby On Rails
+http://www.javabeat.net/introduction-to-spring-batch/	Spring Batch Tutorial with Example Application
+http://www.javabeat.net/introduction-to-spring-converters-and-formatters/	Introduction to Spring Converters and Formatters
+http://www.javabeat.net/introduction-to-spring-expression-language-spel/	Introduction to Spring Expression Language (SpEL)
+http://www.javabeat.net/introduction-to-spring-ide-2-0/	Introduction to Spring IDE 2.0
+http://www.javabeat.net/introduction-to-spring-jdbc-framework/	Introduction to Spring JDBC Framework
+http://www.javabeat.net/introduction-to-spring-ldap/	Introduction to Spring LDAP
+http://www.javabeat.net/introduction-to-spring-mvc-web-framework-web-tier/	Spring MVC Framework with Example
+http://www.javabeat.net/introduction-to-spring-oxm/	Introduction to Spring OXM
+http://www.javabeat.net/introduction-to-spring-portlets/	Introduction to Spring Portlets
+http://www.javabeat.net/introduction-to-spring-python/	Introduction to Spring Python
+http://www.javabeat.net/introduction-to-spring-rest-services/	Introduction to Spring REST Services
+http://www.javabeat.net/introduction-to-spring-rich-client/	Introduction to Spring Rich Client
+http://www.javabeat.net/introduction-to-spring-validation/	Introduction to Spring Validation
+http://www.javabeat.net/introduction-to-spring-web-flow-swf/	What is Spring Web Flow (SWF)?
+http://www.javabeat.net/introduction-to-spring-web-framework/	Spring MVC Tutorial
+http://www.javabeat.net/introduction-to-spring-web-services/	Spring Web Services
+http://www.javabeat.net/introduction-to-springs-aspect-oriented-programmingaop/	Spring AOP : Aspect Oriented Programming (AOP) in Spring
+http://www.javabeat.net/introduction-to-struts-actions/	Introduction to Struts Actions
+http://www.javabeat.net/invalidpropertiesformatexception/	Java InvalidPropertiesFormatException Example
+http://www.javabeat.net/invoke-method-reflection-api/	Invoke Method using Reflection API
+http://www.javabeat.net/invoking-restful-web-service-using-api-in-java-net-and-gson/	Invoking RESTful Web Service using API in java.net and GSON
+http://www.javabeat.net/invoking-soap-and-restful-web-services-using-flex-4-0/	Invoking SOAP and RESTful Web Services using Flex 4.0
+http://www.javabeat.net/ios-uitableview/	UITableView in iOS
+http://www.javabeat.net/ios-xcode-5/	IOS Tutorial : Hello World Application using Xcode 5.0
+http://www.javabeat.net/iterator-pattern/	Iterator Pattern
+http://www.javabeat.net/j2ee-connector-architecturejca-an-introduction/	J2EE Connector Architecture(JCA), An Introduction
+http://www.javabeat.net/j2ee-interview-questions/	J2EE Interview Questions
+http://www.javabeat.net/j2me-user-interface/	J2ME User Interface
+http://www.javabeat.net/jackson-java-json-processor/	Jackson &#8211; Java JSON Processor
+http://www.javabeat.net/jandex-classmate-libraries-hibernate-4-2/	Why Jandex and Classmate Libraries Used in Hibernate 4.2 Core
+http://www.javabeat.net/jasper-reports-and-data-sources/	Jasper Reports and Data Sources
+http://www.javabeat.net/jasper-reports-exceptions/	Jasper Reports : org.codehaus.groovy.control.CompilationFailedException
+http://www.javabeat.net/jasperreports-3-5-for-java-developers/	JasperReports 3.5 for Java developers
+http://www.javabeat.net/java-5-0/	Java 5.0
+http://www.javabeat.net/java-6-0-features-part-2-pluggable-annotation-processing-api/	Java 6.0 Features Part &#8211; 2 : Pluggable Annotation Processing API
+http://www.javabeat.net/java-6-0/	Java 6.0
+http://www.javabeat.net/java-7-0/	Java 7.0
+http://www.javabeat.net/java-7-new-features/	Java 7 New Features
+http://www.javabeat.net/java-8-datetimeformatter/	Java 8 Date Time API &#8211; DateTimeFormatter Example
+http://www.javabeat.net/java-8-datetimeformatterbuilder/	Java 8 Date Time API &#8211; DateTimeFormatterBuilder Example
+http://www.javabeat.net/java-8-functional-interfaces/	Java 8 &#8211; Functional Interfaces
+http://www.javabeat.net/java-8-lambda-expressions-example/	Java 8 Lambda Expressions Example
+http://www.javabeat.net/java-8-stringjoiner/	Java 8 StringJoiner Example
+http://www.javabeat.net/java-8-ubuntu/	Install Java 8 in Ubuntu
+http://www.javabeat.net/java-8/	Java 8 Release and Features
+http://www.javabeat.net/java-abstract-keyword/	Abstract Keyword
+http://www.javabeat.net/java-access-modifiers/	Java Access Modifiers
+http://www.javabeat.net/java-bean-property/	How To Get Bean Property Details In Java
+http://www.javabeat.net/java-bufferedoutputstream/	Java BufferedOutputStream Example
+http://www.javabeat.net/java-bufferedreader/	Java BufferedReader Example
+http://www.javabeat.net/java-bufferedwriter/	Java BufferedWriter Example
+http://www.javabeat.net/java-check-hard-disk-removable-disk/	How To Check Type Of Drive (Hard Disk / Removable Disk) In Java
+http://www.javabeat.net/java-class-forname/	How To Load A Class Using Class.forName()
+http://www.javabeat.net/java-class-loaded-path/	How To Check Where The Class Loaded From
+http://www.javabeat.net/java-class-name-object/	How To Get Class Name From Object
+http://www.javabeat.net/java-compiler-version-class-file/	How to check the java compiler version from a java class file?
+http://www.javabeat.net/java-compress-image/	How To Compress Image Using Java
+http://www.javabeat.net/java-count-files-directory/	How To Count Files In A Directory Using Java
+http://www.javabeat.net/java-create-zip-file/	How To Create Zip File Using Java
+http://www.javabeat.net/java-database-application-with-apache-velocity/	Java Database Application with Apache Velocity
+http://www.javabeat.net/java-default-keyword/	Default Keyword in Java
+http://www.javabeat.net/java-downcasting/	Downcasting In Java
+http://www.javabeat.net/java-ee-5-0-development-with-netbeans-6-0-developing-web-applications-using-jsf/	Developing JSF NetBeans 6.0
+http://www.javabeat.net/java-ee-8-survey-features/	Java EE 8 Survey and Features
+http://www.javabeat.net/java-ee-books/	Java EE Books
+http://www.javabeat.net/java-equals-hashcode/	Java equals() and hashcode()
+http://www.javabeat.net/java-exception-handling/	Java Exception Handling
+http://www.javabeat.net/java-fibonacci-number/	Fibonacci Number Generation in Java
+http://www.javabeat.net/java-fileinputstream/	Java FileInputStream Example
+http://www.javabeat.net/java-fileoutputstream-append/	Append To File using FileOutputStream
+http://www.javabeat.net/java-fileoutputstream/	Java FileOutputStream Example
+http://www.javabeat.net/java-filereader/	Java FileReader Example
+http://www.javabeat.net/java-filewriter/	Java FileWriter Example
+http://www.javabeat.net/java-generic-constructors/	Generic Constructors Example
+http://www.javabeat.net/java-get-class-loaded-path/	How To Get Class Loaded Path
+http://www.javabeat.net/java-get-current-class-loader-name/	How To Get Current Class Loader Name
+http://www.javabeat.net/java-get-interfaces-name/	How To Get Implementing Interfaces Name For A Class
+http://www.javabeat.net/java-getresourcestream/	Load Files From ClassPath Using getResourceStream()
+http://www.javabeat.net/java-hashmap-hashtable-difference/	Difference Between HashMap And Hashtable
+http://www.javabeat.net/java-helloworld-vs-scala-helloworld/	Java HelloWorld vs Scala HelloWorld
+http://www.javabeat.net/java-image-format/	How To Get Image Format Using Java
+http://www.javabeat.net/java-immutable-objects/	Java Immutable Objects
+http://www.javabeat.net/java-inputstreamreader/	Java InputStreamReader Example
+http://www.javabeat.net/java-instance-initializer/	Instance Initializer In Java
+http://www.javabeat.net/java-interface/	Basics of Java Interface Usage
+http://www.javabeat.net/java-interview-questions/	Java Interview Questions &#038; Answers
+http://www.javabeat.net/java-io-notserializableexception/	java.io.NotSerializableException
+http://www.javabeat.net/java-io-unsupportedencodingexception/	java.io.UnsupportedEncodingException
+http://www.javabeat.net/java-iterable-iterator-interface/	Java Iterable and Iterator Interface
+http://www.javabeat.net/java-json-api-jsr-353/	Creating JSON Data Using The Java JSON API (JSR 353)
+http://www.javabeat.net/java-jvm-charset/	How To Get Supported CharSet From JVM
+http://www.javabeat.net/java-keywords/	Java Keywords
+http://www.javabeat.net/java-lang-arrayindexoutofboundsexception/	java.lang.ArrayIndexOutOfBoundsException
+http://www.javabeat.net/java-lang-classnotfoundexception-javassist-classpath/	java.lang.ClassNotFoundException: javassist.ClassPath
+http://www.javabeat.net/java-lang-illegalaccessexception/	How To Resolve java.lang.IllegalAccessException
+http://www.javabeat.net/java-lang-incompatibleclasschangeerror/	java.lang.IncompatibleClassChangeError:  class org.springframework.core.type.classreading.ClassMetadataReadingVisitor  has interface org.springframework.asm.ClassVisitor as super class
+http://www.javabeat.net/java-lang-noclassdeffounderror-orgobjectwebasmclassvisitor/	java.lang.NoClassDefFoundError: org/objectweb/asm/ClassVisitor
+http://www.javabeat.net/java-lang-nosuchmethoderror/	java.lang.NoSuchMethodError
+http://www.javabeat.net/java-lang-outofmemoryerror-java-heap-space/	java.lang.OutOfMemoryError: Java heap space
+http://www.javabeat.net/java-lang-outofmemoryerror-permgen-space/	java.lang.OutOfMemoryError: PermGen space
+http://www.javabeat.net/java-linenumberreader/	Java LineNumberReader Example
+http://www.javabeat.net/java-list-contents-zip-file/	How To List Contents Of Zip File using Java
+http://www.javabeat.net/java-logging-handlers/	Java Logging Handlers Example
+http://www.javabeat.net/java-management-extensionsjmx-support-in-spring/	JMX support in Spring Framework
+http://www.javabeat.net/java-math-random-example/	Java Math.random() Example
+http://www.javabeat.net/java-me-and-web-services/	Java ME and Web services
+http://www.javabeat.net/java-messaging-servicejms/	Java Messaging Service(JMS)
+http://www.javabeat.net/java-open-word-document/	How To Open Word Document In Java
+http://www.javabeat.net/java-operating-system-drive-letters/	How To Get Operating System Drive Letters in Java
+http://www.javabeat.net/java-prime-number/	Prime Number Generation in Java
+http://www.javabeat.net/java-printstream/	Java PrintStream Example
+http://www.javabeat.net/java-printwriter/	Java PrintWriter Example
+http://www.javabeat.net/java-process-api/	Java 9 : Use Process API to Get Process Information
+http://www.javabeat.net/java-propertychangelistener/	How to Write Bean PropertyChangeListener in Java
+http://www.javabeat.net/java-pushbackreader/	Java PushbackReader Example
+http://www.javabeat.net/java-reflection/	Dynamic Class Loading using Java Reflection
+http://www.javabeat.net/java-scanner-class-examples/	Java Scanner Class With Examples
+http://www.javabeat.net/java-scriptengine-extension/	How To Get Java ScriptEngine By Extension
+http://www.javabeat.net/java-scriptengine-import-package/	How To Import Java Package Inside JavaScript using ScriptEngine
+http://www.javabeat.net/java-scriptengine-invoke-function/	Invoke Script Function using ScriptEngine
+http://www.javabeat.net/java-scriptengine-js-file/	How To Run External JavaScript File using ScriptEngine
+http://www.javabeat.net/java-scriptengine-mimetype/	How To Get Java ScriptEngine By MimeType
+http://www.javabeat.net/java-scriptengine-name/	How To Get Java ScriptEngine By Name
+http://www.javabeat.net/java-scriptengine/	Java ScriptEngine Example
+http://www.javabeat.net/java-scriptenginefactory/	Java ScriptEngineFactory Example
+http://www.javabeat.net/java-security-packages-using-jcajce/	Java Security Packages using JCA/JCE
+http://www.javabeat.net/java-serializable-interface/	Java Serializable Interface
+http://www.javabeat.net/java-servlet/	Introduction to Servlet
+http://www.javabeat.net/java-split-merge-files/	How To Split And Merge Files Using Java
+http://www.javabeat.net/java-sql-sqlexception-autocommittrue-exception/	java.sql.SQLException: Can&#8217;t call commit when autocommit=true Exception
+http://www.javabeat.net/java-state-design-pattern/	State Design Pattern In Java
+http://www.javabeat.net/java-static-initializer-instance-initializer-constructor/	Static Initializer , Instance Initializer And Constructor In Java
+http://www.javabeat.net/java-static-initializer/	Static Initializer In Java
+http://www.javabeat.net/java-static-nested-class/	Static Nested Class In Java
+http://www.javabeat.net/java-strategy-design-pattern/	Strategy Design Pattern In Java
+http://www.javabeat.net/java-string-indexof/	Java String IndexOf Example
+http://www.javabeat.net/java-string-intern/	Java String Intern Method Example
+http://www.javabeat.net/java-string-matches-method-example/	Java &#8211; String matches() Method Example
+http://www.javabeat.net/java-string-replaceall/	Java String ReplaceAll Method Example
+http://www.javabeat.net/java-string-reverse-recursion/	Java String Reverse using Recursion
+http://www.javabeat.net/java-string-split/	How To Split String In Java
+http://www.javabeat.net/java-stringbuffer-reverse/	Java String Reverse using StringBuffer Example
+http://www.javabeat.net/java-stringreader/	Java StringReader Example
+http://www.javabeat.net/java-strings-stringbuilder-stringbuffer/	Java Strings, StringBuilder, StringBuffer
+http://www.javabeat.net/java-super-class-name-object/	How To Get Super Class Name From Object
+http://www.javabeat.net/java-supported-image-formats/	How To Get Supported Image Formats Using Java
+http://www.javabeat.net/java-system-properties-values/	How To Get Java System Properties Values
+http://www.javabeat.net/java-threads-interview-questions/	Java Threads Interview Questions
+http://www.javabeat.net/java-timer-example/	Java Timer Example
+http://www.javabeat.net/java-util-formatter/	java.util.Formatter Example
+http://www.javabeat.net/java-util-hashmap/	Java HashMap Example
+http://www.javabeat.net/java-util-hashset/	Java HashSet Example
+http://www.javabeat.net/java-util-hashtable/	Java HashTable Example
+http://www.javabeat.net/java-util-linkedlist/	Java LinkedList Example
+http://www.javabeat.net/java-util-logging-logger/	Java Logging Example (java.util.logging.Logger)
+http://www.javabeat.net/java-util-treemap/	TreeMap Class Example
+http://www.javabeat.net/java-varargs/	Java Varargs
+http://www.javabeat.net/java-vs-javascript/	Java Vs. JavaScript
+http://www.javabeat.net/java-weakreference/	WeakReference in Java
+http://www.javabeat.net/javabeans-jsp/	How To Use JavaBeans in JSP?
+http://www.javabeat.net/javabeat-newsletter-1-whats-new-and-noteworthy-in-the-java-ecosystem/	JavaBeat Newsletter-1: What&#8217;s new and noteworthy in the Java ecosystem?
+http://www.javabeat.net/javabeat-newsletter-2-new-noteworthy-java-ecosystem/	JavaBeat Newsletter-2: New and noteworthy in Java Ecosystem
+http://www.javabeat.net/javaconfig-spring-3-0/	JavaConfig in Spring 3.0
+http://www.javabeat.net/javadoc-ant-task/	How To Generate Javadoc With Ant
+http://www.javabeat.net/javafx-media/	JavaFX Media
+http://www.javabeat.net/javascript-array-object/	JavaScript Array Object
+http://www.javabeat.net/javascript-boolean-object/	JavaScript Boolean Object
+http://www.javabeat.net/javascript-browser-detection/	How To Detect Browser using JavaScript
+http://www.javabeat.net/javascript-communication-between-html-and-pdf-in-itext/	JavaScript Communication between HTML and PDF in iText
+http://www.javabeat.net/javascript-comparision-operators/	JavaScript Comparision Operators
+http://www.javabeat.net/javascript-cookie-support/	How To Test Cookie Support using JavaScript
+http://www.javabeat.net/javascript-custom-objects/	Custom Objects in JavaScript
+http://www.javabeat.net/javascript-data-types-variables/	JavaScript &#8211; Data Types and Variables
+http://www.javabeat.net/javascript-date-object/	JavaScript Date Object
+http://www.javabeat.net/javascript-debugging/	JavaScript Debugging
+http://www.javabeat.net/javascript-difference-two-dates/	JavaScript &#8211; Difference Between Two Dates
+http://www.javabeat.net/javascript-document-createelement/	JavaScript document.createElement()
+http://www.javabeat.net/javascript-document-object-2/	Javascript Document Object
+http://www.javabeat.net/javascript-document-object/	JavaScript Document Object
+http://www.javabeat.net/javascript-elements-placements/	JavaScript Elements Placements
+http://www.javabeat.net/javascript-enable-disable-form-elements/	Enabling / Disabling Form Elements using JavaScript
+http://www.javabeat.net/javascript-format-number/	How To Format Numbers in JavaScript
+http://www.javabeat.net/javascript-get-os/	How To Get Operating System using JavaScript
+http://www.javabeat.net/javascript-history-object/	JavaScript History Object
+http://www.javabeat.net/javascript-in-pdf-documents-using-itext/	JavaScript in PDF Documents using iText
+http://www.javabeat.net/javascript-innerhtml/	JavaScript InnerHTML
+http://www.javabeat.net/javascript-loading-js-css-file/	Javascript &#8211; Dynamically Loading External JavaScript or CSS File
+http://www.javabeat.net/javascript-location-object/	JavaScript Location Object
+http://www.javabeat.net/javascript-math-object/	Javascript Math Object
+http://www.javabeat.net/javascript-navigator-object/	JavaScript Navigator Object
+http://www.javabeat.net/javascript-number-round/	Number Rounding in JavaScript
+http://www.javabeat.net/javascript-objects/	JavaScript Objects
+http://www.javabeat.net/javascript-plug-in-support/	How To Check Plug-In Support In Browser using JavaScript
+http://www.javabeat.net/javascript-preload-images/	How To Preload Images In JavaScript
+http://www.javabeat.net/javascript-print/	How To Print Page using JavaScript
+http://www.javabeat.net/javascript-prototype/	JavaScript Prototype
+http://www.javabeat.net/javascript-random-number/	JavaScript Random Number
+http://www.javabeat.net/javascript-regexp-object/	Javascript RegExp Object
+http://www.javabeat.net/javascript-reserved-words/	JavaScript Reserved Words
+http://www.javabeat.net/javascript-runtime-errors/	Javascript &#8211; Handling Runtime Errors using try/catch/finally
+http://www.javabeat.net/javascript-screen-object/	JavaScript Screen Object
+http://www.javabeat.net/javascript-string-object/	JavaScript String Object
+http://www.javabeat.net/javascript-switch/	JavaScript Switch Statement
+http://www.javabeat.net/javascript-syntax/	JavaScript Syntax
+http://www.javabeat.net/javascript-timers/	Timers in JavaScript
+http://www.javabeat.net/javascript-validation/	JavaScript Validation
+http://www.javabeat.net/javascript-window-object/	JavaScript &#8211; Window Object
+http://www.javabeat.net/javax-naming-namenotfoundexception/	javax.naming.NameNotFoundException: Name is not bound in this Context Exception
+http://www.javabeat.net/jax-ws-web-services-in-netbeans-6-1/	JAX-WS Web Services in NetBeans 6.1
+http://www.javabeat.net/jaxb-exception-nor-any-of-its-super-class-is-known-to-this-context/	JAXB Exception : nor any of its super class is known to this context
+http://www.javabeat.net/jaxb-tutorial/	JAXB Tutorial
+http://www.javabeat.net/jboss-as-5-performance-tuning/	JBoss AS 5 Performance Tuning
+http://www.javabeat.net/jboss-portal-server-development/	JBoss Portal Server Development
+http://www.javabeat.net/jboss-richfaces-3-3/	Skin Customization in JBoss RichFaces 3.3
+http://www.javabeat.net/jboss-seam-interview-questions/	JBoss Seam Interview Questions
+http://www.javabeat.net/jboss-tools-3-developers-guide/	JBoss Tools 3 Developer&#8217;s Guide
+http://www.javabeat.net/jdbc-4-0-and-oracle-jdeveloper-for-j2ee-development/	JDBC connection in JDeveloper with MySQL database
+http://www.javabeat.net/jdbc-interview-questions/	JDBC Interview Questions
+http://www.javabeat.net/jersey-resourceconfig-instance-contain-root-resource-classes/	Jersey : The ResourceConfig instance does not contain any root resource classes
+http://www.javabeat.net/jms-interview-questions/	JMS Interview Questions
+http://www.javabeat.net/jni-interview-questions/	JNI Interview Questions
+http://www.javabeat.net/job-schedulers-unix/	Job Schedulers &#8211; UNIX
+http://www.javabeat.net/jongo/	Jongo &#8211; The Java Object Document Mapper for MongoDB
+http://www.javabeat.net/jpa-2-1-features/	JPA 2.1 New Features
+http://www.javabeat.net/jpa-2-criteria-api/	JPA 2 Criteria API
+http://www.javabeat.net/jpa-2-features/	JPA 2.0 New Features
+http://www.javabeat.net/jpa-2-metamodel-ant/	JPA 2 MetaModel Generator using Ant
+http://www.javabeat.net/jpa-2-metamodel-eclipse/	JPA 2 MetaModel Generation using Eclipse
+http://www.javabeat.net/jpa-2/	JPA 2 Tutorials
+http://www.javabeat.net/jpa-annotations-generatedvalue-sequencegenerator-tablegenerator/	JPA Annotations &#8211; @GeneratedValue, @SequenceGenerator and @TableGenerator
+http://www.javabeat.net/jpa-annotations-temporal/	JPA Annotations &#8211; @Temporal
+http://www.javabeat.net/jpa-entity-listeners-callback-methods/	JPA Entity Listeners And Callback Methods
+http://www.javabeat.net/jpa-entitymanager-vs-hibernate-sessionfactory/	JPA EntityManagerFactory Vs Hibernate&#8217;s SessionFactory
+http://www.javabeat.net/jpa-in-netbeans-6-1/	JPA and NetBeans
+http://www.javabeat.net/jpa-jpql-2/	JPA – Java Persistence Query Language (JPQL) – PART II
+http://www.javabeat.net/jpa-jpql/	JPA &#8211; Java Persistence Query Language (JPQL) &#8211; PART I
+http://www.javabeat.net/jpa-lazy-eager-loading/	JPA &#8211; Lazy Loading and Eager Loading
+http://www.javabeat.net/jpa-primary-key-id-idclass/	JPA Entity Primary Key Using @Id and @IdClass
+http://www.javabeat.net/jpa-releases/	JPA Releases and Implementations
+http://www.javabeat.net/jpa-vs-hibernate/	JPA Vs Hibernate
+http://www.javabeat.net/jpa/	Introduction to Java Persistence API(JPA)
+http://www.javabeat.net/jquery-1-3-with-php/	jQuery 1.3 with PHP
+http://www.javabeat.net/jquery-1-3/	Effects and Animations in jQuery 1.3
+http://www.javabeat.net/jquery-add-remove-css-class/	How To Add / Remove CSS Class Dynamically In JQuery
+http://www.javabeat.net/jquery-after-insertafter/	JQuery after() And insertAfter() Example
+http://www.javabeat.net/jquery-ajax-introduction/	jQuery Ajax Introduction
+http://www.javabeat.net/jquery-ajaxerror/	JQuery ajaxError Event Example
+http://www.javabeat.net/jquery-ajaxget-example/	JQuery ajaxGet Example
+http://www.javabeat.net/jquery-ajaxsetup-example/	JQuery ajaxSetup Example
+http://www.javabeat.net/jquery-ajaxstart-example/	JQuery ajaxStart Example
+http://www.javabeat.net/jquery-append-appendto/	JQuery append() And appendTo() Example
+http://www.javabeat.net/jquery-attr/	JQuery Attr() Method Example
+http://www.javabeat.net/jquery-attribute-selector-contains-word-startswith-endswith/	JQuery Attribute Selector(Contains, Word, Starts With, Ends With)
+http://www.javabeat.net/jquery-before-insertbefore/	JQuery before() And insertBefore() Example
+http://www.javabeat.net/jquery-bind-unbind/	JQuery bind() And unbind() Example
+http://www.javabeat.net/jquery-callback-function/	JQuery Callback Function
+http://www.javabeat.net/jquery-callbacks-object/	JQuery Callbacks Object
+http://www.javabeat.net/jquery-change-event/	JQuery Change Event Example
+http://www.javabeat.net/jquery-checkbox-selector/	JQuery Checkbox Selector Example
+http://www.javabeat.net/jquery-checked-selector/	JQuery Checked Selector
+http://www.javabeat.net/jquery-child-selector/	JQuery Child Selector Example
+http://www.javabeat.net/jquery-class-selector/	JQuery Class Selector Example
+http://www.javabeat.net/jquery-clone/	JQuery Clone() Method Example
+http://www.javabeat.net/jquery-contains-selector/	JQuery Contains() Selector Example
+http://www.javabeat.net/jquery-css-class-element/	JQuery &#8211; How To Find  CSS Class In a Element
+http://www.javabeat.net/jquery-delegate-event/	JQuery Delegate Event Example
+http://www.javabeat.net/jquery-detach-hide-remove-methods/	JQuery : Difference Between detach(), hide() And remove() Methods
+http://www.javabeat.net/jquery-detach/	JQuery Detach Method() Example
+http://www.javabeat.net/jquery-disabled-selector/	JQuery Disabled Selector Example
+http://www.javabeat.net/jquery-dropdown-value/	How To Set Drop Down Value using JQUery
+http://www.javabeat.net/jquery-effects/	jQuery Effects &#8211; Hide, Show and Toggle
+http://www.javabeat.net/jquery-empty-selector/	JQuery Empty Selector Example
+http://www.javabeat.net/jquery-enabled-selector-example/	JQuery Enabled Selector Example
+http://www.javabeat.net/jquery-error-event/	JQuery Error Event Example
+http://www.javabeat.net/jquery-event-handler-ajax-json/	jQuery JavaScript Library &#8211; Animations, Event Handler, AJAX and JSON
+http://www.javabeat.net/jquery-event-handling-browser-events/	jQuery Event Handling &#8211; Browser Events
+http://www.javabeat.net/jquery-event-handling-form-events/	jQuery Event Handling – Form Events
+http://www.javabeat.net/jquery-event-handling-key-events/	jQuery Event Handling – Key Events
+http://www.javabeat.net/jquery-event-handling-mouse-events/	jQuery Event Handling – Mouse Events
+http://www.javabeat.net/jquery-file-selector/	JQuery File Selector Example
+http://www.javabeat.net/jquery-filter-selector/	JQuery Filter Selector Example
+http://www.javabeat.net/jquery-first-selector/	JQuery First Selector Example
+http://www.javabeat.net/jquery-focus-selector/	JQuery Focus Selector Example
+http://www.javabeat.net/jquery-getjson-example/	JQuery getJSON Example
+http://www.javabeat.net/jquery-getscript-example/	JQuery getScript Example
+http://www.javabeat.net/jquery-global-ajax-event-handlers/	jQuery Global Ajax Event Handlers
+http://www.javabeat.net/jquery-has-attribute-selector/	JQuery Has Attribute Selector Example
+http://www.javabeat.net/jquery-has-selector/	JQuery Has Selector Example
+http://www.javabeat.net/jquery-header-selector/	JQuery Header Selector Example
+http://www.javabeat.net/jquery-hidden-selector/	JQuery Hidden Selector Example
+http://www.javabeat.net/jquery-id-selector/	JQuery ID Selector Example
+http://www.javabeat.net/jquery-image-selector/	JQuery Image Selector Example
+http://www.javabeat.net/jquery-input-selector/	JQuery Input Selector Example
+http://www.javabeat.net/jquery-keydown-keypress-keyup/	JQuery Keydown, Keypress, and Keyup Example
+http://www.javabeat.net/jquery-live-event-handler/	JQuery Live Event Handler Example
+http://www.javabeat.net/jquery-load-unload/	JQuery Load and Unload Methods Example
+http://www.javabeat.net/jquery-multiple-attribute-selector/	JQuery Multiple Attribute Selector Example
+http://www.javabeat.net/jquery-multiple-selection/	How To Select Multiple Elements using JQuery Selector
+http://www.javabeat.net/jquery-not-selector/	JQuery Not Selector Example
+http://www.javabeat.net/jquery-position-offset/	JQuery Position() and Offset() Example
+http://www.javabeat.net/jquery-prepend-prependto/	JQuery prepend() and prependTo() Example
+http://www.javabeat.net/jquery-radio-selector/	JQuery Radio Selector Example
+http://www.javabeat.net/jquery-ready-event/	JQuery Ready Event Example
+http://www.javabeat.net/jquery-reference-guide/	jQuery Script Methods
+http://www.javabeat.net/jquery-remove-removeattr-removeclass/	JQuery remove(), removeAttr() and removeClass() Example
+http://www.javabeat.net/jquery-resize-event/	JQuery Resize Event Example
+http://www.javabeat.net/jquery-scroll-event/	JQuery Scroll Event Example
+http://www.javabeat.net/jquery-scroll-html-page/	How To Scroll a HTML Page Using JQuery Anchor Tag
+http://www.javabeat.net/jquery-select-checkboxes/	How To Select All CheckBoxes using JQuery
+http://www.javabeat.net/jquery-select-event/	JQuery Select Event Example
+http://www.javabeat.net/jquery-select2-plugin/	JQuery &#8211; How To Add Icon in the Dropdown List Box
+http://www.javabeat.net/jquery-selected-selector/	JQuery Selected Selector Example
+http://www.javabeat.net/jquery-selector-get-tag-name/	JQuery – How To Get Tag Name and Value Using JQuery Selector
+http://www.javabeat.net/jquery-selectors-2/	JQuery Selectors
+http://www.javabeat.net/jquery-selectors/	jQuery Selectors : ID selector, Class selector and Element selector
+http://www.javabeat.net/jquery-slidetoggle/	JQuery slideToggle Example
+http://www.javabeat.net/jquery-text-selector/	JQuery Text Selector Example
+http://www.javabeat.net/jquery-ui-buttons/	Create Buttons using jQuery UI
+http://www.javabeat.net/jquery-version-detect/	How To Detect JQuery Version
+http://www.javabeat.net/jquery-wildcard-selector/	JQuery Wildcard (*) Selector Example
+http://www.javabeat.net/jqueryui-accordion-example/	JqueryUI Accordion Example
+http://www.javabeat.net/jqueryui-autocomplete/	JqueryUI Autocomplete Widget
+http://www.javabeat.net/jqueryui-draggable-example/	JQuery UI Draggable Example
+http://www.javabeat.net/jqueryui-droppable-widget-example/	JQueryUI Droppable Widget Example
+http://www.javabeat.net/jqueryui-resizable-widget/	JQueryUI Resizable Widget
+http://www.javabeat.net/jqueryui-selectable-widget-example/	JQueryUI Selectable Widget Example
+http://www.javabeat.net/jqueryui-sortable-example/	JqueryUI Sortable Example
+http://www.javabeat.net/jsf-1-2-facelets-components/	JSF 1.2 Facelets Components
+http://www.javabeat.net/jsf-2-0-images-css-and-java-script/	JSF 2.0 &#8211; Images, CSS and Java Script
+http://www.javabeat.net/jsf-2-ajax-error-handling/	JSF 2 Ajax Error Handling Example
+http://www.javabeat.net/jsf-2-ajax-javascript-library/	JSF 2 Ajax JavaScript Library Example
+http://www.javabeat.net/jsf-2-ajax-progress/	JSF 2 Ajax Progress Bar Example
+http://www.javabeat.net/jsf-2-body-head/	JSF 2 Body and Head Example
+http://www.javabeat.net/jsf-2-button-link/	JSF 2 Button and Link Example
+http://www.javabeat.net/jsf-2-commandbutton/	JSF 2 CommandButton Example
+http://www.javabeat.net/jsf-2-commandlink-commandbutton-ajax-example/	JSF 2 CommandLink and CommandButton with AJAX Example
+http://www.javabeat.net/jsf-2-commandlink/	JSF 2 CommandLink Example
+http://www.javabeat.net/jsf-2-composite-component/	JSF 2 Composite Component Example
+http://www.javabeat.net/jsf-2-composition-insert-define/	JSF 2 Template &#8211; Composition, Insert and Define Example
+http://www.javabeat.net/jsf-2-conditional-navigation/	JSF 2 Conditional Navigation Example
+http://www.javabeat.net/jsf-2-conversationscoped/	JSF 2 @ConversationScoped Example
+http://www.javabeat.net/jsf-2-custom-tags/	JSF 2 Custom Tags Example
+http://www.javabeat.net/jsf-2-data-table-delete-row/	JSF 2 DataTable Delete Row Example
+http://www.javabeat.net/jsf-2-datatable/	JSF 2 DataTable Example
+http://www.javabeat.net/jsf-2-dynamic-navigation-from-outcome/	JSF 2 Dynamic Navigation using From Outcome Example
+http://www.javabeat.net/jsf-2-dynamic-target-view-id/	JSF 2 Dynamic Target View ID (to-view-id) Example
+http://www.javabeat.net/jsf-2-flash-scope/	JSF 2 Flash Scope Example
+http://www.javabeat.net/jsf-2-flowscoped/	JSF 2 @FlowScoped Example
+http://www.javabeat.net/jsf-2-form-ajax/	JSF 2 Form with AJAX Example
+http://www.javabeat.net/jsf-2-form/	JSF 2 Form Example
+http://www.javabeat.net/jsf-2-graphicimage/	JSF 2 GraphicImage Example
+http://www.javabeat.net/jsf-2-include/	JSF 2 Include Example
+http://www.javabeat.net/jsf-2-injecting-managed-beans/	JSF 2 Injecting Managed Beans Example
+http://www.javabeat.net/jsf-2-inputsecret/	JSF 2 InputSecret Example
+http://www.javabeat.net/jsf-2-inputtext-ajax/	JSF 2 InputText with AJAX Example
+http://www.javabeat.net/jsf-2-inputtext/	JSF 2 InputText Example
+http://www.javabeat.net/jsf-2-installation-configuration-eclipse/	JSF 2 Installation &#038; Configuration Using Eclipse
+http://www.javabeat.net/jsf-2-installation-configuration-maven-3/	JSF 2 Installation and Configuration Using Maven 3
+http://www.javabeat.net/jsf-2-javascript-namespaces/	JSF 2 JavaScript Namespaces Example
+http://www.javabeat.net/jsf-2-loadbundle/	JSF 2 Resource Bundle Example
+http://www.javabeat.net/jsf-2-managed-beans/	JSF 2 Managed Beans Example
+http://www.javabeat.net/jsf-2-message-messages/	JSF 2 Message and Messages Example
+http://www.javabeat.net/jsf-2-navigation-from-action/	JSF 2 Navigation using From Action Example
+http://www.javabeat.net/jsf-2-outputformat/	JSF 2 OutputFormat Example
+http://www.javabeat.net/jsf-2-outputlink/	JSF 2 OutputLink Example
+http://www.javabeat.net/jsf-2-outputscript/	JSF 2 OutputScript Example
+http://www.javabeat.net/jsf-2-outputstylesheet/	JSF 2 OutputStyleSheet Example
+http://www.javabeat.net/jsf-2-outputtext/	JSF 2 OutputText Example
+http://www.javabeat.net/jsf-2-panelgrid-panelgroup/	JSF 2 PanelGrid and PanelGroup Example
+http://www.javabeat.net/jsf-2-redirect-navigation/	JSF 2 Redirect Navigation Example
+http://www.javabeat.net/jsf-2-repeat/	JSF 2 Repeat Example
+http://www.javabeat.net/jsf-2-selectbooleancheckbox/	JSF 2 SelectBooleanCheckbox Example
+http://www.javabeat.net/jsf-2-selectmanycheckbox/	JSF 2 SelectManyCheckbox Example
+http://www.javabeat.net/jsf-2-selectmanylistbox/	JSF 2 SelectManyListBox Example
+http://www.javabeat.net/jsf-2-selectmanymenu/	JSF 2 SelectManyMenu Example
+http://www.javabeat.net/jsf-2-selectonelistbox/	JSF 2 SelectOneListBox Example
+http://www.javabeat.net/jsf-2-selectonemenu/	JSF 2 SelectOneMenu Example
+http://www.javabeat.net/jsf-2-selectoneradio/	JSF 2 SelectOneRadio Example
+http://www.javabeat.net/jsf-2-static-navigation/	JSF 2 Static Navigation Example
+http://www.javabeat.net/jsf-2-systemeventlistener-uicomponent-events/	JSF SystemEventListener &#8211; UIComponent Events Example
+http://www.javabeat.net/jsf-2-systemeventlistener-uiviewroot-events/	JSF 2 SystemEventListener – UIViewRoot Events Example
+http://www.javabeat.net/jsf-2-systemeventlistener/	JSF 2 SystemEventListener Example
+http://www.javabeat.net/jsf-2-textarea/	JSF 2 TextArea Example
+http://www.javabeat.net/jsf-2-ui-debug/	JSF 2 UI Debug Example
+http://www.javabeat.net/jsf-2-ui-decroate/	JSF 2 UI Decorate Example
+http://www.javabeat.net/jsf-2-ui-fragment/	JSF 2 UI Fragment Example
+http://www.javabeat.net/jsf-2-ui-param/	JSF 2 UI Param Example
+http://www.javabeat.net/jsf-2-ui-remove/	JSF 2 UI Remove Example
+http://www.javabeat.net/jsf-2-viewscoped/	JSF 2 ViewScoped Example
+http://www.javabeat.net/jsf-2-wildcard-navigation/	JSF 2 Wildcard Navigation Rule Example
+http://www.javabeat.net/jsf-2/	JSF 2 Tutorials
+http://www.javabeat.net/jsf-best-practices/	JSF Best Practices
+http://www.javabeat.net/jsf-custom-error-pages/	JSF Custom Error Pages
+http://www.javabeat.net/jsf-groovy-integration/	JSF + Groovy Integration
+http://www.javabeat.net/jsf-interview-questions/	JSF Interview Questions
+http://www.javabeat.net/jsf-scala-integration/	JSF + Scala Integration
+http://www.javabeat.net/json-processing-javaee-7-object-model-api/	JSON Processing in JavaEE 7- Using Object Model API
+http://www.javabeat.net/json-processing-javaee-7-streaming-api/	JSON Processing in JavaEE 7- Using Streaming API
+http://www.javabeat.net/json-response-from-javafx-http-request/	JSON response from JavaFX HTTP Request
+http://www.javabeat.net/jsp-actions/	JSP Actions
+http://www.javabeat.net/jsp-api/	JSP API
+http://www.javabeat.net/jsp-architecture-lifecycle/	JSP Architecture + Lifecycle
+http://www.javabeat.net/jsp-directives/	JSP Directives
+http://www.javabeat.net/jsp-eclipse/	Create JSP Page in Eclipse
+http://www.javabeat.net/jsp-expression-language-el/	JSP Expression Language (EL)
+http://www.javabeat.net/jsp-implicit-objects/	JSP Implicit Objects
+http://www.javabeat.net/jsp-redirect/	JSP Redirect
+http://www.javabeat.net/jsp-syntax/	JSP Syntax
+http://www.javabeat.net/jsp-tutorials/	JSP Tutorials
+http://www.javabeat.net/jstl-and-sql-tags/	JSTL  and  SQL-TAGS
+http://www.javabeat.net/jstl-and-xml-tags/	JSTL and  XML-TAGS
+http://www.javabeat.net/jstl-configuration-error/	JSTL Configuration Error
+http://www.javabeat.net/jstl-core-catch-tag/	JSTL Core c:catch Tag
+http://www.javabeat.net/jstl-core-choose-when-otherwise-tags/	JSTL Core c:choose,  c:when, c:otherwise Tags
+http://www.javabeat.net/jstl-core-foreach-tag/	JSTL Core c:forEach Tag
+http://www.javabeat.net/jstl-core-fortoken-tag/	JSTL Core c:forToken Tag
+http://www.javabeat.net/jstl-core-if-tag/	JSTL Core c:if Tag
+http://www.javabeat.net/jstl-core-import-tag/	JSTL Core c:import Tag
+http://www.javabeat.net/jstl-core-out-tag/	JSTL Core c:out Tag
+http://www.javabeat.net/jstl-core-param-tag/	JSTL Core c:param Tag
+http://www.javabeat.net/jstl-core-redirect-tag/	JSTL Core c:redirect Tag
+http://www.javabeat.net/jstl-core-remove-tag/	JSTL Core c:remove Tag
+http://www.javabeat.net/jstl-core-set-tag/	JSTL Core c:set Tag
+http://www.javabeat.net/jstl-core-tags/	JSTL Core Tags Library
+http://www.javabeat.net/jstl-core-url-tag/	JSTL Core c:url Tag
+http://www.javabeat.net/jstl-format-bundle-tag/	JSTL Format fmt:bundle Tag
+http://www.javabeat.net/jstl-format-fmtformatnumber-tag/	JSTL Format fmt:formatNumber Tag
+http://www.javabeat.net/jstl-format-fmtsetbundle-tag/	JSTL Format fmt:setBundle Tag
+http://www.javabeat.net/jstl-format-formatdate-tag/	JSTL Format fmt:formatDate Tag
+http://www.javabeat.net/jstl-format-message-tag/	JSTL Format fmt:message Tag
+http://www.javabeat.net/jstl-format-parsedate-tag/	JSTL Format fmt:parseDate Tag
+http://www.javabeat.net/jstl-format-parsenumber-tag/	JSTL Format fmt:parseNumber Tag
+http://www.javabeat.net/jstl-format-requestencoding-tag/	JSTL Format fmt:requestEncoding Tag
+http://www.javabeat.net/jstl-format-setlocale-tag/	JSTL Format fmt:setLocale Tag
+http://www.javabeat.net/jstl-format-settimezone-tag/	JSTL Format fmt:setTimeZone Tag
+http://www.javabeat.net/jstl-format-timezone-tag/	JSTL Formating fmt:timeZone Tag
+http://www.javabeat.net/jstl-formatting-tags-library/	JSTL  Formatting Tags Library
+http://www.javabeat.net/jstl-function-contains/	JSTL Function fn:contains()
+http://www.javabeat.net/jstl-function-containsignorecase/	JSTL Function fn:containsIgnoreCase()
+http://www.javabeat.net/jstl-function-endswith/	JSTL Function fn:endsWith()
+http://www.javabeat.net/jstl-function-escapexml/	JSTL Function fn:escapeXml()
+http://www.javabeat.net/jstl-function-in-jsp-2-0/	JSTL Function in JSP 2.0
+http://www.javabeat.net/jstl-function-indexof/	JSTL Function fn:indexOf()
+http://www.javabeat.net/jstl-function-join/	JSTL Function fn:join()
+http://www.javabeat.net/jstl-function-length/	JSTL Function fn:length()
+http://www.javabeat.net/jstl-function-replace/	JSTL Function fn:replace()
+http://www.javabeat.net/jstl-function-split/	JSTL Function fn:split()
+http://www.javabeat.net/jstl-function-startswith/	JSTL Function fn:startsWith()
+http://www.javabeat.net/jstl-function-substring/	JSTL Function fn:substring()
+http://www.javabeat.net/jstl-function-substringafter/	JSTL Function fn:substringAfter()
+http://www.javabeat.net/jstl-function-substringbefore/	JSTL Function fn:substringBefore()
+http://www.javabeat.net/jstl-function-tolowercase/	JSTL Function fn:toLowerCase()
+http://www.javabeat.net/jstl-function-touppercase/	JSTL Function fn:toUpperCase()
+http://www.javabeat.net/jstl-function-trim/	JSTL Function fn:trim()
+http://www.javabeat.net/jstl-functions/	JSTL Functions
+http://www.javabeat.net/jstl-sql-dateparam-tag/	JSTL SQL sql:dateParam Tag
+http://www.javabeat.net/jstl-sql-param-tag/	JSTL SQL sql:param Tag
+http://www.javabeat.net/jstl-sql-query-tag/	JSTL SQL sql:query Tag
+http://www.javabeat.net/jstl-sql-setdatasource-tag/	JSTL SQL sql:setDataSource Tag
+http://www.javabeat.net/jstl-sql-tags/	JSTL SQL Tags Library
+http://www.javabeat.net/jstl-sql-transaction-tag/	JSTL SQL sql:transaction  Tag
+http://www.javabeat.net/jstl-sql-update-tag/	JSTL SQL sql:update Tag
+http://www.javabeat.net/jstl-tags/	What is JSTL Tags and How to Setup?
+http://www.javabeat.net/jstl-xml-choose-when-otherwise-tag/	JSTL XML x:choose ,x:when and x:otherwise Tags
+http://www.javabeat.net/jstl-xml-foreach-tag/	JSTL XML x:forEach Tag
+http://www.javabeat.net/jstl-xml-if-tag/	JSTL XML x:if  Tag
+http://www.javabeat.net/jstl-xml-out-tag/	JSTL XML x:out Tag
+http://www.javabeat.net/jstl-xml-param-tag/	JSTL XML x:param Tag
+http://www.javabeat.net/jstl-xml-parse-tag/	JSTL XML x:parse Tag
+http://www.javabeat.net/jstl-xml-set-tag/	JSTL XML x:set Tag
+http://www.javabeat.net/jstl-xml-tags/	JSTL XML Tags Library
+http://www.javabeat.net/jstl-xml-transform-tag/	JSTL XML x:transform Tag
+http://www.javabeat.net/jstl/	JSTL Tutorials
+http://www.javabeat.net/judcon2014-bangalore-india/	JUDCon2014 In Bangalore,  India (January 30-31, 2014 )
+http://www.javabeat.net/juddi-and-configuration-in-jboss-and-mysql-database/	jUDDI and Configuration in jBoss and MySQL database
+http://www.javabeat.net/junit-4-0-example/	Unit Testing with JUnit 4 Annotations
+http://www.javabeat.net/junit-4-annotation-example/	JUnit 4 Annotation Example
+http://www.javabeat.net/jvmjrejava-compiler-interview-questions/	JVM,JRE,Java Compiler Interview Questions
+http://www.javabeat.net/k-means-clustering-algorithms-in-mahout/	K-Means Clustering Algorithms in Mahout
+http://www.javabeat.net/knowing-about-your-database/	Knowing about your Database
+http://www.javabeat.net/launching-a-spring-batch-job/	Launching a Spring Batch Job
+http://www.javabeat.net/layouts-in-android/	Layouts in Android
+http://www.javabeat.net/lazy-initialisation-singleton-and-double-check-locking/	Lazy Initialization, Singleton Pattern and Double Checked locking
+http://www.javabeat.net/learning-dojo/	Layout Widgets in Dojo
+http://www.javabeat.net/less-know-tags-html5/	Less Known Tags of HTML5
+http://www.javabeat.net/life-cycle-management-of-a-spring-bean/	Life Cycle Management of a Spring Bean
+http://www.javabeat.net/life-cycle-of-jsf-components/	Life Cycle of JSF Components
+http://www.javabeat.net/liferay-portal-enterprise-intranets/	Liferay Portal Enterprise Intranets
+http://www.javabeat.net/linkedlist-java/	LinkedList in Java
+http://www.javabeat.net/linux-thin-client-networks-design-and-deployment/	Linux Thin Client Networks Design and Deployment
+http://www.javabeat.net/list-of-hibernate-sql-dialects/	List of Hibernate SQL Dialects
+http://www.javabeat.net/listener-tags-in-jsf/	Listener tags in JSF
+http://www.javabeat.net/listing-and-filtering-directory-content-using-java-nio2/	Listing and filtering directory content using Java NIO2
+http://www.javabeat.net/lists-and-maps-as-managed-beans-in-jsf/	Lists and Maps as Managed Beans in JSF
+http://www.javabeat.net/lists-checkboxes-radio-buttons-alertdialog-android/	How to add lists, Checkboxes and Radio buttons to an AlertDialog &#8211; Android
+http://www.javabeat.net/load-on-startup-element-in-web-xml/	load-on-startup element in web.xml
+http://www.javabeat.net/location-tracker-in-android-using-gps-positioning-and-sqlite/	Location tracker in Android using GPS positioning and SQLite
+http://www.javabeat.net/locking-files-using-java/	Locking Files using Java
+http://www.javabeat.net/log4j-2-example/	Log4j 2 Example
+http://www.javabeat.net/log4j-2-spring-mvc/	Log4j 2 + Spring MVC Integration
+http://www.javabeat.net/log4j-2/	Log4j 2 Features
+http://www.javabeat.net/logged-username-spring-security/	How to get current username in Spring Security?
+http://www.javabeat.net/logging-messages-using-java-logging-api/	Logging Messages using Java Logging API
+http://www.javabeat.net/loopback-mysql/	Node.js : Building RESTful APIs using Loopback and MySQL
+http://www.javabeat.net/loosely-coupled-data-persistence-with-liferay/	Loosely Coupled Data Persistence with Liferay
+http://www.javabeat.net/making-content-visible-or-invisible-using-itext-pdf-framework/	Making Content Visible or Invisible using iText PDF Framework
+http://www.javabeat.net/making-use-of-the-properties-class/	Making use of the Properties class
+http://www.javabeat.net/managedexecutorservice-concurrency-utilities-java-ee-7-part1/	ManagedExecutorService for Implementing Concurrency Utilities in Java EE 7 &#8211; Part 1
+http://www.javabeat.net/managedscheduledexecutorservice-implementing-concurrency-utilities-java-ee-7-part-2/	ManagedScheduledExecutorService for Implementing Concurrency Utilities in Java EE 7 – Part 2
+http://www.javabeat.net/managing-output-connection-definitions-in-manifoldcf/	Managing Output Connection Definitions in ManifoldCF
+http://www.javabeat.net/managing-transactions-in-ejb-3-0/	Managing transactions in EJB 3.0
+http://www.javabeat.net/manipulating-styles-with-jquery/	Manipulating Styles with jQuery
+http://www.javabeat.net/many-to-one-relationship-in-hibernate-mappings-example/	Many-to-One Relationship in Hibernate Mappings &#8211; Example
+http://www.javabeat.net/mapping-java-objects-and-xml-documents-using-jaxb-in-java-6-0/	Mapping Java Objects and XML Documents using JAXB in Java 6.0
+http://www.javabeat.net/marker-interfaces-java/	Marker Interfaces in Java
+http://www.javabeat.net/mastering-oracle-scheduler-in-oracle-11g-databases/	Mastering Oracle Scheduler in Oracle 11g Databases
+http://www.javabeat.net/maven-eclipse/	Maven : Create Web Project in Eclipse
+http://www.javabeat.net/maven-lifecycle-phase-error/	Unknown Lifecycle Phase Error in Maven Build
+http://www.javabeat.net/merge-collections-spring/	How to Merge Collections in Spring?
+http://www.javabeat.net/merge-sort-implemented-using-fork-join/	Merge Sort implementation using Fork-Join Framework in Java 7
+http://www.javabeat.net/method-overloading-java/	Method Overloading in Java
+http://www.javabeat.net/method-overloading-vs-overriding-java/	Method Overloading Vs Overriding in Java
+http://www.javabeat.net/method-overriding-java/	Method Overriding in Java
+http://www.javabeat.net/methods-and-pattern-matching-in-scala/	Methods and Pattern Matching in Scala
+http://www.javabeat.net/methods-return-type-reflection/	Get Methods Return Type using Reflection
+http://www.javabeat.net/migrating-struts-applications-struts-2/	Migrating Struts Applications to Struts 2
+http://www.javabeat.net/mixing-generics-and-non-generics-code/	Mixing Generics And Non-Generics Code
+http://www.javabeat.net/modelattribute-spring-mvc/	@ModelAttribute in Spring MVC
+http://www.javabeat.net/mongodb-gridfs-tutorial/	MongoDB : GridFS Tutorial
+http://www.javabeat.net/mongodb-gui-tools/	Best MongoDB GUI Tools
+http://www.javabeat.net/mongodb-query-selectors/	MongoDB Query Selectors
+http://www.javabeat.net/mongodb-security-improvement-tips/	10 Tips To Improve MongoDB Security
+http://www.javabeat.net/mongodb-vs-rdbms-schema-design/	MongoDB vs. RDBMS Schema Design
+http://www.javabeat.net/mongoose-nodejs-mongodb/	Mongoose &#8211; Node.js + MongoDB with Mongoose Tutorial
+http://www.javabeat.net/monogodb-installation-windows/	How To Install MongoDB On Windows
+http://www.javabeat.net/multiple-parameters-spring-mvc-controller/	How To Pass Multiple Parameters To Spring MVC Controller
+http://www.javabeat.net/multitasking-on-ios-4/	Multitasking on iOS 4
+http://www.javabeat.net/mvc-jsp-servlet/	MVC Architecture Using Servlet And JSP
+http://www.javabeat.net/navigablemap-ocpjp-6/	NavigableMap &#8211; OCPJP 6
+http://www.javabeat.net/navigableset-ocpjp-6/	NavigableSet &#8211; OCPJP 6
+http://www.javabeat.net/navigation-features-foundation-framework/	Navigation Features in Foundation Framework
+http://www.javabeat.net/navigation-model-in-jsf/	Navigation model in JSF
+http://www.javabeat.net/neo4j-graph-database-installation-configuration-windows-7/	Neo4j Graph Database Installation And Configuration Windows 7
+http://www.javabeat.net/netbeans-ide-7-0-final-available-for-download/	NetBeans IDE 7.0 Final available for download!
+http://www.javabeat.net/netbeans-ide-8-0-beta-released/	NetBeans IDE 8.0 Beta Released
+http://www.javabeat.net/networking-interview-questions/	Networking Interview Questions
+http://www.javabeat.net/new-features-in-css-3-0/	New Features in CSS 3.0
+http://www.javabeat.net/new-features-in-flex-4-0/	New Features in Flex 4.0
+http://www.javabeat.net/new-features-in-google-android-2-3/	New Features in Google Android 2.3
+http://www.javabeat.net/new-features-in-java-5-0/	New Features in Java 5.0
+http://www.javabeat.net/new-features-in-java-7-0-part-1/	New Features in Java 7.0 &#8211; Part 1
+http://www.javabeat.net/new-features-in-java-ee-6-0/	New Features in Java EE 6.0
+http://www.javabeat.net/new-features-in-jdbc-api-java-6-0/	JDBC 4.0 API in Java 6.0
+http://www.javabeat.net/new-features-in-jsf-2-0/	New Features in JSF 2.0
+http://www.javabeat.net/new-features-in-jsp-2-0/	New Features in JSP 2.0
+http://www.javabeat.net/new-features-in-servlet-3-0/	New Features in Servlet 3.0
+http://www.javabeat.net/new-features-in-servlets-2-5/	New Features in Servlets 2.5
+http://www.javabeat.net/new-features-in-servlets-3-0/	New Features in Servlets 3.0
+http://www.javabeat.net/new-features-in-weblogic-server-10-0/	New Features in WebLogic Server 10.0
+http://www.javabeat.net/new-features-jdbc-3-0/	New features in JDBC 3.0
+http://www.javabeat.net/new-features-spring-3-1/	New Features in Spring 3.1
+http://www.javabeat.net/nodejs-fusioncharts-column-chart/	Node.js : Column Chart using FusionCharts with MongoDB
+http://www.javabeat.net/nodejs-modular-application/	Node.js : Modularizing Express.js and Node.js Applications
+http://www.javabeat.net/nodejs-mongodb/	Node.js + MongoDB &#8211; Performing CRUD Operations
+http://www.javabeat.net/nodejs-os-module/	Node.js : Operating System Utilities in Node.js OS Module
+http://www.javabeat.net/nodejs-packaging/	Node.js : Packaging and Deploying Node.js Applications [COMPLETE GUIDE]
+http://www.javabeat.net/nodejs-read-write-file/	Node.js : Reading and Writing File in Node.js
+http://www.javabeat.net/nodejs-strongloop-arc/	Node.js : RESTful APIs using StrongLoop Arc
+http://www.javabeat.net/nodejs-windows/	Node.js :  Simple Steps To Install Node.js and NPM on Windows
+http://www.javabeat.net/nodejs/	Introduction to Node.js
+http://www.javabeat.net/notifications-android/	How to create Notifications in Android?
+http://www.javabeat.net/novice-way-to-implement-a-singleton/	Novice way to implement a Singleton
+http://www.javabeat.net/null-and-not-null-comparison-in-the-hibernate-api/	NULL and NOT NULL comparison in the Hibernate API
+http://www.javabeat.net/objects-in-groovy/	Objects in Groovy
+http://www.javabeat.net/obtaining-and-modifying-the-metadata-of-the-files-in-java-7-nio-2/	Obtaining and modifying the metadata of the files in Java 7 NIO.2
+http://www.javabeat.net/obtaining-weather-information-using-the-weather-underground-api-gaelyk-sample/	A simple Location and Weather mashup using Gaelyk Framework
+http://www.javabeat.net/ocajp-7-syllabus/	OCAJP 7 Exam Syllabus
+http://www.javabeat.net/ocajp-faqs/	OCAJP FAQs
+http://www.javabeat.net/ocajp-mock-exam-questions-java-basics/	OCAJP 7 Mock Exam Questions (Java Basics)
+http://www.javabeat.net/ocajp/	OCAJP (Oracle Certified Associate Java Programmer)
+http://www.javabeat.net/ocejwcd-6-mock-exam-1/	OCEJWCD 6 Mock Exam &#8211; 1
+http://www.javabeat.net/ocejwcd-6-mock-exam-2/	OCEJWCD 6 Mock Exam &#8211; 2
+http://www.javabeat.net/ocejwcd-6-mock-exam-3/	OCEJWCD 6 Mock Exam &#8211; 3
+http://www.javabeat.net/ocejwcd-6-mock-exam-4/	OCEJWCD 6 Mock Exam &#8211; 4
+http://www.javabeat.net/ocejwcd-6-mock-exam-5/	OCEJWCD 6 Mock Exam &#8211; 5
+http://www.javabeat.net/ocejwcd-6-mock-exam-6/	OCEJWCD 6 Mock Exam &#8211; 6
+http://www.javabeat.net/ocejwcd-6-mock-exam-7/	OCEJWCD 6 Mock Exam &#8211; 7
+http://www.javabeat.net/ocejwcd-6/	OCEJWCD 6 Exam
+http://www.javabeat.net/ocmjea-6-syllabus/	OCMJEA 6 Syllabus
+http://www.javabeat.net/ocmjea-mock-exam-1/	OCMJEA Mock Exam -1
+http://www.javabeat.net/ocmjea-mock-exam-10/	OCMJEA Mock Exam &#8211; 10
+http://www.javabeat.net/ocmjea-mock-exam-11/	OCMJEA Mock Exam &#8211; 11
+http://www.javabeat.net/ocmjea-mock-exam-2/	OCMJEA Mock Exam &#8211; 2
+http://www.javabeat.net/ocmjea-mock-exam-3/	OCMJEA Mock Exam &#8211; 3
+http://www.javabeat.net/ocmjea-mock-exam-4/	OCMJEA Mock Exam &#8211; 4
+http://www.javabeat.net/ocmjea-mock-exam-5/	OCMJEA Mock Exam &#8211; 5
+http://www.javabeat.net/ocmjea-mock-exam-6/	OCMJEA Mock Exam &#8211; 6
+http://www.javabeat.net/ocmjea-mock-exam-7/	OCMJEA Mock Exam &#8211; 7
+http://www.javabeat.net/ocmjea-mock-exam-8/	OCMJEA Mock Exam &#8211; 8
+http://www.javabeat.net/ocmjea-mock-exam-9/	OCMJEA Mock Exam &#8211; 9
+http://www.javabeat.net/ocpjbcd-mock-exam-1/	OCPJBCD Mock Exam -1
+http://www.javabeat.net/ocpjbcd-mock-exam-2/	OCPJBCD Mock Exam &#8211; 2
+http://www.javabeat.net/ocpjbcd-mock-exam-3/	OCPJBCD Mock Exam &#8211; 3
+http://www.javabeat.net/ocpjbcd-mock-exam-4/	OCPJBCD Mock Exam &#8211; 4
+http://www.javabeat.net/ocpjbcd/	OCPJBCD / SCBCD 5 Exam
+http://www.javabeat.net/ocpjp-6-mock-exam-java-1/	OCPJP 6 Mock Exam -1
+http://www.javabeat.net/ocpjp-6-mock-exam-java-10/	OCPJP 6 Mock Exam -10
+http://www.javabeat.net/ocpjp-6-mock-exam-java-11/	OCPJP 6 Mock Exam -11
+http://www.javabeat.net/ocpjp-6-mock-exam-java-12/	OCPJP 6 Mock Exam -12
+http://www.javabeat.net/ocpjp-6-mock-exam-java-13/	OCPJP 6 Mock Exam -13
+http://www.javabeat.net/ocpjp-6-mock-exam-java-14/	OCPJP 6 Mock Exam -14
+http://www.javabeat.net/ocpjp-6-mock-exam-java-15/	OCPJP 6 Mock Exam -15
+http://www.javabeat.net/ocpjp-6-mock-exam-java-16/	OCPJP 6 Mock Exam -16
+http://www.javabeat.net/ocpjp-6-mock-exam-java-17/	OCPJP 6 Mock Exam -17
+http://www.javabeat.net/ocpjp-6-mock-exam-java-18/	OCPJP 6 Mock Exam -18
+http://www.javabeat.net/ocpjp-6-mock-exam-java-19/	OCPJP 6 Mock Exam -19
+http://www.javabeat.net/ocpjp-6-mock-exam-java-2/	OCPJP 6 Mock Exam &#8211; 2
+http://www.javabeat.net/ocpjp-6-mock-exam-java-20/	OCPJP 6 Mock Exam &#8211; 20
+http://www.javabeat.net/ocpjp-6-mock-exam-java-21/	OCPJP 6 Mock Exam &#8211; 21
+http://www.javabeat.net/ocpjp-6-mock-exam-java-3/	OCPJP 6 Mock Exam &#8211; 3
+http://www.javabeat.net/ocpjp-6-mock-exam-java-4/	OCPJP 6 Mock Exam &#8211; 4
+http://www.javabeat.net/ocpjp-6-mock-exam-java-5/	OCPJP 6 Mock Exam &#8211; 5
+http://www.javabeat.net/ocpjp-6-mock-exam-java-6/	OCPJP 6 Mock Exam &#8211; 6
+http://www.javabeat.net/ocpjp-6-mock-exam-java-7/	OCPJP 6 Mock Exam &#8211; 7
+http://www.javabeat.net/ocpjp-6-mock-exam-java-9/	OCPJP 6 Mock Exam &#8211; 9
+http://www.javabeat.net/ocpjp-6-syllabus/	OCPJP 6 / SCJP 1.6 Syllabus
+http://www.javabeat.net/ocpjp-6/	OCPJP 6 Exam
+http://www.javabeat.net/ocpjp-7-syllabus/	OCPJP 7 Syllabus
+http://www.javabeat.net/offline-web-application-html5/	A Simple Offline Web Application using HTML5
+http://www.javabeat.net/opencms-7-development/	OpenCms 7 Development
+http://www.javabeat.net/opensession-getcurrentsession-difference-hibernate/	openSession and getCurrentSession Difference in Hibernate
+http://www.javabeat.net/operating-system-os-java/	How To Get OS In Java
+http://www.javabeat.net/oracle-10g11g-data-and-database-management-utilities/	Oracle 10g/11g Data and Database Management Utilities
+http://www.javabeat.net/oracle-sql-developer-2-1/	Oracle SQL Developer 2.1
+http://www.javabeat.net/oracle-warehouse-builder-11g-getting-started/	Oracle Warehouse Builder 11g Getting Started
+http://www.javabeat.net/oracle-weblogic-10-3-2-campaign/	Oracle Weblogic 10.3.2 Campaign
+http://www.javabeat.net/ordering-queue-using-comparator-interface-and-priorityqueue/	Ordering Queue Using Comparator Interface and PriorityQueue
+http://www.javabeat.net/org-thymeleaf-exceptions-templateprocessingexception-exception-evaluating-ognl-expression/	org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating OGNL expression
+http://www.javabeat.net/osgi-and-apache-felix-3-0/	OSGi and Apache Felix 3.0
+http://www.javabeat.net/osgi-bundle-repository/	OSGi Bundle Repository
+http://www.javabeat.net/override-tostring/	Best Practices to Override toString Method in Java?
+http://www.javabeat.net/overriding-the-tostring-method-in-object-class/	Overriding the toString() method in Object class
+http://www.javabeat.net/package-objects-scala/	Package Objects in Scala
+http://www.javabeat.net/packt-publishing-seeks-authors-for-new-beginners-guide-series/	Packt Publishing seeks authors for new Beginner’s Guide series
+http://www.javabeat.net/pagination-in-hibernate-query-api/	Pagination in Hibernate Query API
+http://www.javabeat.net/pagination-using-hibernate-and-jsp/	Pagination using Hibernate and JSP
+http://www.javabeat.net/parse-xml-file-using-dom-parser/	How to Parse XML file using DOM Parser?
+http://www.javabeat.net/parse-xml-file-using-sax-parser/	How to Parse XML file using SAX Parser?
+http://www.javabeat.net/parsing-input-using-scanner/	Parsing Input using Scanner
+http://www.javabeat.net/parsing-json-using-groovy/	Parsing JSON using Groovy
+http://www.javabeat.net/parsing-json-using-java-and-gson-library/	Parsing JSON using Java and GSON library
+http://www.javabeat.net/parsing-vcard-file-generate-csv-file-required-data/	Parsing a vCard file to generate a CSV file with the required data
+http://www.javabeat.net/parsing-xml-documents-using-sax/	Parsing XML Documents using SAX
+http://www.javabeat.net/passing-arguments-and-properties-from-command-line/	Passing arguments and properties from command line
+http://www.javabeat.net/pathvariable-template-patterns-spring-mvc/	@PathVariable &#8211; URI Template Patterns in Spring MVC
+http://www.javabeat.net/pdf-file-content-type-servlet/	How To Set PDF File Display In Servlet
+http://www.javabeat.net/pentaho-reporting-3-5-for-java-developers/	Pentaho Reporting 3.5 for Java Developers
+http://www.javabeat.net/persisting-object-state-in-xml-format/	Persisting Object State in Xml Format
+http://www.javabeat.net/photo-viewer-javascript/	Photo Viewer using JavaScript
+http://www.javabeat.net/php-team-development-agile-works-best/	PHP Team Development : Agile Works Best
+http://www.javabeat.net/pie-chart-css3-html/	Creating Pie Chart Using CSS3 and HTML
+http://www.javabeat.net/pie-chart-dojo/	How To Create Pie Chart Using DOJO?
+http://www.javabeat.net/playing-with-collections-api-in-scala/	Playing with Collections API in Scala
+http://www.javabeat.net/playing-with-reduceleft-reduceright-foldleft-foldright-api-in-scala/	Playing with reduceLeft, reduceRight, foldLeft, foldRight API in Scala
+http://www.javabeat.net/polymorphic-association-mapping-relationship-hibernate/	Polymorphic  Association Mapping with Any Relationship in Hibernate
+http://www.javabeat.net/portlets-are-easy/	Portlets are easy
+http://www.javabeat.net/portletsession-based-inter-portlet-communication/	PortletSession-based Inter-Portlet Communication
+http://www.javabeat.net/precise-rounding-of-decimals-using-rounding-mode-enumeration/	Precise rounding of decimals using Rounding Mode Enumeration
+http://www.javabeat.net/preference-object-in-mahout/	Preference object in Mahout
+http://www.javabeat.net/preparing-your-application-to-use-push-notifications-in-iphone-and-ipad/	Preparing your application to use push notifications in iPhone and iPad
+http://www.javabeat.net/primary-auxiliary-constructors-scala/	Primary and Auxiliary Constructors in Scala
+http://www.javabeat.net/primefaces-5-features/	PrimeFaces 5 Features
+http://www.javabeat.net/primefaces-5-spring-data-mysql-integration/	PrimeFaces 5 + Spring Data + MySQL Integration
+http://www.javabeat.net/primefaces-5/	PrimeFaces 5.0 Released
+http://www.javabeat.net/primefaces-accordionpanel-dynamic-loading-cache/	PrimeFaces AccordionPanel &#8211; Dynamic Loading + Cache Example
+http://www.javabeat.net/primefaces-accordionpanel-javascript/	Primefaces AccordionPanel Client Side API Example
+http://www.javabeat.net/primefaces-accordionpanel-ontabchange-ontabshow/	PrimeFaces AccordionPanel &#8211; onTabChange and onTabShow Events
+http://www.javabeat.net/primefaces-accordionpanel/	Primefaces AccordionPanel Example
+http://www.javabeat.net/primefaces-ajaxbehavior/	PrimeFaces AjaxBehavior Example
+http://www.javabeat.net/primefaces-ajaxstatus/	Primefaces AjaxStatus Example
+http://www.javabeat.net/primefaces-autocomplete-ajaxbehavior/	PrimeFaces AutoComplete + AjaxBehavior Example
+http://www.javabeat.net/primefaces-autocomplete-client-side-api/	PrimeFaces AutoComplete + Client Side API
+http://www.javabeat.net/primefaces-autocomplete-completemethod/	PrimeFaces AutoComplete + completeMethod Example
+http://www.javabeat.net/primefaces-autocomplete-itemtip/	Primefaces AutoComplete + ItemTip Example
+http://www.javabeat.net/primefaces-autocomplete-pojo/	PrimeFaces AutoComplete + POJO Example
+http://www.javabeat.net/primefaces-blockui-client-side-api-example/	PrimeFaces BlockUI + Client Side API Example
+http://www.javabeat.net/primefaces-blockui/	PrimeFaces BlockUI Example
+http://www.javabeat.net/primefaces-breadcrumb/	Primefaces BreadCrumb Example
+http://www.javabeat.net/primefaces-button/	PrimeFaces Button Example
+http://www.javabeat.net/primefaces-captcha/	PrimeFaces Captcha Example
+http://www.javabeat.net/primefaces-charts-pie-chart-ajax-behavior/	PrimeFaces Charts &#8211; Pie Chart + Ajax Behavior Events Example
+http://www.javabeat.net/primefaces-clock/	PrimeFaces Clock Example
+http://www.javabeat.net/primefaces-collector/	PrimeFaces Collector Example
+http://www.javabeat.net/primefaces-colorpicker/	PrimeFaces ColorPicker Example
+http://www.javabeat.net/primefaces-hello-world-example/	Prime Faces Hello World Example
+http://www.javabeat.net/primefaces-jpa-mongodb-integration/	PrimeFaces + EclipseLink / JPA + MongoDB Integration
+http://www.javabeat.net/primefaces-spring-data-mongodb-integration/	PrimeFaces + Spring Data + MongoDB Integration
+http://www.javabeat.net/primefaces-spring-data-neo4j-integration/	PrimeFaces + Spring Data + Neo4j Integration
+http://www.javabeat.net/primefaces-spring-data-pagingandsortingrepository/	PrimeFaces + Spring Data using PagingAndSortingRepository Example
+http://www.javabeat.net/primefaces-spring-data-redis-integration/	PrimeFaces + Spring Data + Redis Integeration
+http://www.javabeat.net/primefaces-spring-hibernate-integration-example/	Primefaces + Spring + Hibernate Integration Example
+http://www.javabeat.net/primefaces-spring-roo-spring-data-mongodb/	PrimeFaces + Spring Roo + Spring Data + MongoDB Integration Example
+http://www.javabeat.net/primefaces-spring-roo-spring-data-mysql/	PrimeFaces + Spring Roo + Spring Data JPA Integration Example
+http://www.javabeat.net/primefaces-string-input-elements/	PrimeFaces : String Input Elements
+http://www.javabeat.net/primefaces-tutorial-calendar-input-elements/	PrimeFaces Tutorial on Calendar and Input Elements
+http://www.javabeat.net/profile-annotation-spring-4/	@Profile Annotation in Spring 4
+http://www.javabeat.net/programming-web-services-using-apache-axis/	Programming Web Services using Apache Axis
+http://www.javabeat.net/progressdialog-android/	How to create ProgressDialog in android?
+http://www.javabeat.net/protect-pdf-password-using-itext-java/	How to Protect PDF with Password using iText in Java?
+http://www.javabeat.net/publish-and-subscribe-messages-using-jms-topic-in-jboss-server/	Publish and Subscribe messages using JMS Topic in JBoss Server
+http://www.javabeat.net/qualifier-annotation-spring/	@Qualifier Annotation in Spring
+http://www.javabeat.net/quartz-interview-questions/	Quartz Interview Questions
+http://www.javabeat.net/quartz-job-scheduler-example-code/	Quartz Job Scheduler &#8211; Example Code
+http://www.javabeat.net/quartz-scheduler-tutorial/	Quartz Scheduler Tutorial
+http://www.javabeat.net/querying-class-information-at-runtime-using-java-reflection-api/	Querying Class Information at Runtime using Java Reflection API
+http://www.javabeat.net/randomly-accessing-the-file-contents/	Randomly accessing the file contents
+http://www.javabeat.net/read-object-file-java-deserialization/	Read An Object From File In Java (Deserialization)
+http://www.javabeat.net/reading-file-asynchronously-in-java/	Reading file asynchronously in Java
+http://www.javabeat.net/recursively-traversing-files-and-folders-using-java-file-api/	Recursively traversing files and folders using Java File API
+http://www.javabeat.net/redis-keyvalue-database-installation-configuration-windows-7/	Redis Key/Value Database Installation And Configuration Windows 7
+http://www.javabeat.net/refresh-servlet/	How To Refresh Servlet
+http://www.javabeat.net/refreshing-div-content-with-jquery/	Refreshing DIV Content with jQuery
+http://www.javabeat.net/register-spring-beans-beanfactory-using-registersingleton/	Register Spring Beans to BeanFactory using registerSingleton
+http://www.javabeat.net/regular-expressions-in-java/	Regular Expressions in Java
+http://www.javabeat.net/repeatable-annotation-java-8/	@Repeatable Annotation in Java 8
+http://www.javabeat.net/replacing-a-font-using-itext/	Replacing a Font using iText
+http://www.javabeat.net/request-dispatcher-servlet/	Request Dispatcher In Servlet
+http://www.javabeat.net/request-headers-servlet/	Request Headers In Servlet
+http://www.javabeat.net/request-lifecycle-in-struts-2-0-applications/	Request Lifecycle in Struts 2.0 applications
+http://www.javabeat.net/request-processing-lifecycle-phases-in-jsf/	Request Processing Lifecycle phases in JSF
+http://www.javabeat.net/requestcontextholder-spring-mvc/	RequestContextHolder in Spring MVC
+http://www.javabeat.net/requestheader-spring-mvc/	@RequestHeader in Spring MVC
+http://www.javabeat.net/required-annotation-spring/	@Required Annotation in Spring
+http://www.javabeat.net/resizing-an-image-in-an-existing-document-using-itext/	Resizing an Image in an Existing Document using iText
+http://www.javabeat.net/resolution-of-the-invocation-of-virtual-extension-methods-in-java-8/	Resolution of the invocation of Virtual Extension Methods in Java 8
+http://www.javabeat.net/resolve-resource-sync-filesystem-error-eclipse/	How To Resolve &#8220;Resource Is Out Of Sync With The Filesystem&#8221; Error in Eclipse?
+http://www.javabeat.net/resource-postconstruct-predestroy-annotations-example/	@Resource, @PostConstruct and @PreDestroy Annotations Example
+http://www.javabeat.net/resources-api-spring-resourceloaderaware/	Resources API in Spring &#8211; Part 2 (ResourceLoaderAware)
+http://www.javabeat.net/resources-api-spring/	Resources API in Spring &#8211; Part 1
+http://www.javabeat.net/restcontroller-spring-4-0/	RestController in Spring 4.0
+http://www.javabeat.net/restful-java-web-services/	RESTful Java Web Services
+http://www.javabeat.net/restful-springboot-mongodb/	Spring Boot : RESTful API using Spring Boot and MongoDB
+http://www.javabeat.net/restful-web-service-using-jersey/	RESTful Web Service using Jersey
+http://www.javabeat.net/rmi-interview-questions/	RMI Interview Questions
+http://www.javabeat.net/routing-slip-and-loading-balancer-eips-in-camel/	Routing Slip and Loading Balancer EIPs in Camel
+http://www.javabeat.net/routing-using-camels-implementation-of-the-eips/	Routing Using Camel’s Implementation of the EIPs
+http://www.javabeat.net/ruby-on-rails-web-mashup-projects/	Ruby on Rails Web Mashup Projects
+http://www.javabeat.net/run-external-application-java/	How To Run External Application From Java
+http://www.javabeat.net/running-in-the-cloud/	Running in the Cloud
+http://www.javabeat.net/runtime-addshutdownhook/	Runtime.addShutdownHook()
+http://www.javabeat.net/runtime-exceptions-java/	Runtime Exceptions in Java
+http://www.javabeat.net/sample-application-for-java-persistence-api-jpa/	Sample Application for Java Persistence API (JPA)
+http://www.javabeat.net/sample-code-for-listing-file-names-in-a-directory/	Sample code for Listing file names in a directory
+http://www.javabeat.net/sample-code-for-simpledateformat/	Sample code for SimpleDateFormat
+http://www.javabeat.net/sap-pp-interview-questions-press-release-dreamtech-press/	SAP PP Interview Questions [Press Release &#8211; Dreamtech Press]
+http://www.javabeat.net/sar-service-archive-file-in-jboss/	SAR (Service Archive) file in JBoss
+http://www.javabeat.net/scjp-6-0-certification-rehearse-it-try-it-crack-it-with-dreamtech-press/	SCJP 6.0 Certification – Rehearse It – Try It – Crack It with Dreamtech Press
+http://www.javabeat.net/screen-resolution-java/	How To Get Screen Resolution In Java
+http://www.javabeat.net/seam-2-0-web-development/	How to develop applications using JBoss Seam?
+http://www.javabeat.net/securing-ejb-applications/	How to secure EJB Applications?
+http://www.javabeat.net/send-mail-jsp/	How to Send Mail using JSP?
+http://www.javabeat.net/sending-and-receiving-messages-using-springs-amqp/	Sending and Receiving messages using Spring&#8217;s AMQP
+http://www.javabeat.net/sending-mail-from-java/	How to send mail using Java Mail API?
+http://www.javabeat.net/sendredirect-servlet/	sendRedirect in Servlet
+http://www.javabeat.net/separating-roles-and-permissions-in-spring-security/	Separating Roles and Permissions in Spring Security
+http://www.javabeat.net/serialversionuid-warning-eclipse/	How To Hide &#8220;Not Declare Static Final SerialVersionUID&#8221; Warning in Eclipse
+http://www.javabeat.net/service-oriented-architecture-an-integration-blueprint/	Service-Oriented Architecture— An Integration Blueprint
+http://www.javabeat.net/service-oriented-java-business-integration/	Service Oriented Java Business Integration
+http://www.javabeat.net/servlet-3-0/	Servlet 3.0
+http://www.javabeat.net/servlet-api/	Servlet API
+http://www.javabeat.net/servlet-context/	Servlet Context
+http://www.javabeat.net/servlet-example/	Servlet Example
+http://www.javabeat.net/servlet-filter/	Servlet Filter
+http://www.javabeat.net/servlet-life-cycle/	Servlet Life Cycle
+http://www.javabeat.net/servlet-lifecycle/	Servlet LifeCycle
+http://www.javabeat.net/servletconfig-servlet/	ServletConfig in Servlet
+http://www.javabeat.net/servletcontextlistener-example/	ServletContextListener Example
+http://www.javabeat.net/servletinputstream-servletoutputstream/	ServletInputStream and ServletOutputStream
+http://www.javabeat.net/servlets-interview-questions/	Servlets Interview Questions
+http://www.javabeat.net/servlets-tutorials/	Servlets Tutorials
+http://www.javabeat.net/session-factory-hibernate-4/	How To Create Session Factory in Hibernate 4
+http://www.javabeat.net/session-tracking-jsp/	Session Tracking in JSP
+http://www.javabeat.net/session-tracking-servlet/	Session Tracking Using Servlet
+http://www.javabeat.net/set-attributes-thymeleaf-template-using-thattr/	How To Set Attributes in Thymeleaf Template using th:attr?
+http://www.javabeat.net/set-tomcat-jvm-heap-size-eclipse/	How To Set Tomcat JVM Heap Size in Eclipse?
+http://www.javabeat.net/setter-injection-in-spring-ioc/	Setter Injection in Spring IOC
+http://www.javabeat.net/setup-dojo/	How to Setup DOJO Application?
+http://www.javabeat.net/shared-preferences-android/	Shared Preferences in android
+http://www.javabeat.net/simple-accelerometer-movement-in-ios4/	Simple Accelerometer Movement in iOS4
+http://www.javabeat.net/simple-android-application/	How to write a simple Android application?
+http://www.javabeat.net/simple-example-for-before-advice-and-after-advice-in-spring-framework/	Simple example for Before advice and After Advice in Spring Framework
+http://www.javabeat.net/simple-introduction-to-fork-join-framework-in-java-7/	Simple introduction to Fork-Join Framework in Java 7
+http://www.javabeat.net/simpledb-versus-rdbms/	SimpleDB versus RDBMS
+http://www.javabeat.net/singlethreadmodel-servlet/	SingleThreadModel In Servlet
+http://www.javabeat.net/singleton-pattern-design-patterns-in-javaj2ee/	Singleton Design Pattern
+http://www.javabeat.net/slideshow-jquery/	Creating Slideshow With jQuery
+http://www.javabeat.net/soa-process-architecture-modeling-and-simulation-in-bpel-tibcos-businessworks-and-beas-weblogic-integration/	Short and Long-Running Processes in SOA
+http://www.javabeat.net/sorting-custom-types-in-java/	Sorting Custom Types in Java
+http://www.javabeat.net/spring-2-5-aspect-oriented-programmingaop/	Aspect Oriented Programming (AOP) in Spring 2.5
+http://www.javabeat.net/spring-2-5-new-features-auto-detection-of-components-and-annotations/	New Features in Spring 2.5
+http://www.javabeat.net/spring-3-jsr-330-annotation-named-component-difference/	Spring 3 and JSR-330 Annotation : @Named and @Component Difference
+http://www.javabeat.net/spring-4-0-environment-setup/	Spring 4.0 Environment Setup
+http://www.javabeat.net/spring-4-2/	Spring 4.2 Released
+http://www.javabeat.net/spring-4-generics-qualifier/	Spring 4 &#8211; Generics Type as Qualifier When Injecting Beans
+http://www.javabeat.net/spring-4-rest-example/	Spring 4 REST Example
+http://www.javabeat.net/spring-4/	Spring 4 Tutorial
+http://www.javabeat.net/spring-5/	Spring 5 Updates
+http://www.javabeat.net/spring-and-jmx-integration/	Spring and JMX Integration
+http://www.javabeat.net/spring-annotations-component/	Spring Annotations : @Component, @Repository, @Service
+http://www.javabeat.net/spring-batch-3-0-0-rc1/	Spring Batch 3.0.0.RC1 Released
+http://www.javabeat.net/spring-batch-3/	Spring Batch 3.0 Release
+http://www.javabeat.net/spring-batch-example/	Spring Batch Example
+http://www.javabeat.net/spring-bean-factory-exception-beanfactory-initialized-already-closed/	Spring Bean Factory Exception : BeanFactory not initialized or already closed
+http://www.javabeat.net/spring-bean-scopes-request-session-global-session-example/	Spring bean scopes (Request, Session, Global Session) with example
+http://www.javabeat.net/spring-bean-scopes-singleton-prototype/	Spring bean scopes (Singleton and Prototype) with example
+http://www.javabeat.net/spring-best-practices-cloud-foundry-event-bangalore-free/	Spring Best Practices &#038; Cloud Foundry Event in Bangalore : Free
+http://www.javabeat.net/spring-bind-and-nestedpath-tags-springbind-and-springnestedpath/	Spring BIND and NESTEDPATH Tags (&lt;spring:bind&gt; and &lt;spring:nestedPath&gt;)
+http://www.javabeat.net/spring-boot-1-0-0-rc5/	Spring Boot 1.0.0.RC5 Released!!
+http://www.javabeat.net/spring-boot-actuator/	Complete Guide for Spring Boot Actuator
+http://www.javabeat.net/spring-boot-external-configurations/	Spring Boot : External Configurations for Spring Boot
+http://www.javabeat.net/spring-boot-logging/	Logging Configuration in Spring Boot
+http://www.javabeat.net/spring-boot-mysql/	MySQL Configurations for Spring Boot Applications
+http://www.javabeat.net/spring-boot-spring-mvc/	Spring Boot : Running Spring MVC Application
+http://www.javabeat.net/spring-boot-sql-databases/	Working with SQL Databases and Spring Boot
+http://www.javabeat.net/spring-boot-testing/	Spring Boot : Integration Testing REST API in Spring Boot
+http://www.javabeat.net/spring-boot/	Spring Boot Complete Guide
+http://www.javabeat.net/spring-cache/	Spring Cache Tutorial
+http://www.javabeat.net/spring-classpath-scanning-managed-components/	Spring Classpath Scanning &#038; Managed Components
+http://www.javabeat.net/spring-collections-example/	Spring Collections Example
+http://www.javabeat.net/spring-data-couchbase/	Spring Data Couchbase 1.0 GA Released!!
+http://www.javabeat.net/spring-data-custom-repository/	Spring Data JPA : Custom Repository / Query Methods Example
+http://www.javabeat.net/spring-data-gemfire-cache/	Caching Data using Spring Data GemFire
+http://www.javabeat.net/spring-data-gemfire/	Accessing Data with Spring Data GemFire
+http://www.javabeat.net/spring-data-jpa-namedquery/	Using @NamedQuery in Spring Data JPA
+http://www.javabeat.net/spring-data-jpa-query/	@Query Annotation in Spring Data JPA
+http://www.javabeat.net/spring-data-jpa-querydsl-integration/	Spring Data JPA + Querydsl Integration
+http://www.javabeat.net/spring-data-jpa-tutorial/	Spring Data JPA Tutorial
+http://www.javabeat.net/spring-data-jpa/	Spring Data JPA Tutorial using Spring Boot
+http://www.javabeat.net/spring-data-mongodb-rest-shell/	Spring Data + MongoDB + REST Shell Integration
+http://www.javabeat.net/spring-data-mongodb-tutorial/	Spring Data MongoDB Tutorial
+http://www.javabeat.net/spring-data-neo4j-3-rest-exporter-part-java-application/	Spring Data Neo4j 3 REST Exporter (Java Application)
+http://www.javabeat.net/spring-data-neo4j-3-rest-exporter-spring-boot/	Spring Data Neo4j 3 REST Exporter &#8211; Converting Spring Boot JAR Application To WAR
+http://www.javabeat.net/spring-data-neo4j/	Spring Data Neo4j Tutorial
+http://www.javabeat.net/spring-data-redis-example/	Spring Data Redis Example
+http://www.javabeat.net/spring-data-repository-read-only-write-only/	Read Only / Write Only Operations using Spring Data Repository Services
+http://www.javabeat.net/spring-data-rest-exporter/	Spring Data REST Exporter
+http://www.javabeat.net/spring-data-rest-gemfire-angularjs/	Spring Data REST + GemFire + AngularJS Integration
+http://www.javabeat.net/spring-data-rest-gemfire-backbone-js-integration/	Spring Data REST + GemFire + Backbone.js Integration
+http://www.javabeat.net/spring-data-rest-gemfire-rest-js-integration/	Spring Data REST + GemFire + Rest.js Integration
+http://www.javabeat.net/spring-data-rest-gemfire-sencha-touch/	Spring Data REST + GemFire Repository + Sencha Touch Integration
+http://www.javabeat.net/spring-data-rest-jquery/	Spring Data REST + GemFire + jQuery Integration
+http://www.javabeat.net/spring-dependson-attribute/	DependsOn Attribute in Spring Configuration
+http://www.javabeat.net/spring-dms-event-admin-service-support/	Spring DMs Event Admin Service Support
+http://www.javabeat.net/spring-eventlistener/	Spring : @EventListener in Spring 4.2
+http://www.javabeat.net/spring-faces/	How to enable Spring Faces support?
+http://www.javabeat.net/spring-framework-4-0-features/	Spring Framework 4.0 Release and Features
+http://www.javabeat.net/spring-framework-4-0-rc1-released/	Spring Framework 4.0 RC1 Released
+http://www.javabeat.net/spring-framework-4-0/	Spring 4.0 Features At a Glance
+http://www.javabeat.net/spring-framework-4-1-announced/	Spring Framework 4.1 Announced
+http://www.javabeat.net/spring-framework-form-tags/	Spring Framework FORM  Tags
+http://www.javabeat.net/spring-framework-interview-questions/	Spring Framework Interview Questions
+http://www.javabeat.net/spring-hateoas-linkbuilder-with-spring-rest/	How to use Spring HATEOAS LinkBuilder API with Spring REST?
+http://www.javabeat.net/spring-html-escape-and-escape-body-tags-springhtmlescape-and-springescapebody/	Spring HTML ESCAPE and ESCAPE BODY Tags (&lt;spring:htmlEscape&gt; and &lt;spring:escapeBody&gt;)
+http://www.javabeat.net/spring-html-transform-tag-springtransform/	Spring HTML TRANSFORM Tag (&lt;spring:transform&gt;)
+http://www.javabeat.net/spring-ibatis-integration/	How to integrate Spring with iBatis?
+http://www.javabeat.net/spring-jersey-integration-example/	Spring and Jersey Integration Example
+http://www.javabeat.net/spring-jms-api-and-weblogic-jms-integration/	Spring JMS API and Weblogic JMS Integration
+http://www.javabeat.net/spring-job-scheduling-support-with-jdk-timer-and-quartz/	Spring Job Scheduling support with JDK Timer and Quartz
+http://www.javabeat.net/spring-load-properties-file-value-annotation/	Spring : How To Load Properties File using @Value Annotation
+http://www.javabeat.net/spring-message-and-theme-tags-springmessage-and-springtheme/	Spring MESSAGE and THEME Tags
+http://www.javabeat.net/spring-method-injection/	Spring : Method Injection using lookup-method property
+http://www.javabeat.net/spring-multipart-file-upload/	Spring support for Multipart (File Upload)
+http://www.javabeat.net/spring-mvc-404-error-page/	Spring MVC : How To Return Custom 404 Error Pages
+http://www.javabeat.net/spring-mvc-angularjs-integration/	Spring MVC + AngularJS Integration
+http://www.javabeat.net/spring-mvc-annotations/	Spring MVC Annotations
+http://www.javabeat.net/spring-mvc-constructor-injection-example/	Spring MVC &#8211; Constructor Injection Example
+http://www.javabeat.net/spring-mvc-dispatcherservlet-example/	Spring MVC &#8211; DispatcherServlet Example
+http://www.javabeat.net/spring-mvc-example/	Spring MVC Example
+http://www.javabeat.net/spring-mvc-jquery/	Spring MVC + jQuery Integration Example
+http://www.javabeat.net/spring-mvc-redirect/	Spring MVC Redirect Example
+http://www.javabeat.net/spring-mvc-setter-injection-example/	Spring MVC &#8211; Setter Injection Example
+http://www.javabeat.net/spring-mvc-test-framework/	Introduction To Spring MVC Test Framework
+http://www.javabeat.net/spring-nouniquebeandefinitionexception/	Spring &#8211; NoUniqueBeanDefinitionException: No qualifying bean of type is defined: expected single matching bean but found 2:
+http://www.javabeat.net/spring-persistence-with-hibernate/	Spring Persistence with Hibernate
+http://www.javabeat.net/spring-python/	Spring Python
+http://www.javabeat.net/spring-roo-and-jpa-entities/	Spring Roo and JPA Entities
+http://www.javabeat.net/spring-roo-spring-data-jpa-eclipse-integration/	Spring Roo + Spring Data JPA Repositories + Eclipse Integration
+http://www.javabeat.net/spring-roo-spring-data-mongodb-eclipse/	Spring Roo + Spring Data + MongoDB Repositories Integration
+http://www.javabeat.net/spring-security-3-0/	Spring Security 3.0
+http://www.javabeat.net/spring-security-3-2-3/	Spring Security 3.2.3 Released
+http://www.javabeat.net/spring-security-3-2/	Spring Security 3.2 Released
+http://www.javabeat.net/spring-security-example/	Spring Security Basic Example
+http://www.javabeat.net/spring-security-login-form-example/	Spring Security Login Form Example
+http://www.javabeat.net/spring-security-tutorial/	Spring Security Tutorial
+http://www.javabeat.net/spring-social-1-1-0-rc1/	Spring Social 1.1.0 RC1 Released
+http://www.javabeat.net/spring-themes/	Themes in Spring MVC
+http://www.javabeat.net/spring-tool-suite-3-5-0/	Spring Tool Suite 3.5.0 Released
+http://www.javabeat.net/spring-tutorials/	Spring Tutorials
+http://www.javabeat.net/spring-web-flow-2-4-rc1/	Spring Web Flow 2.4 RC1 Released
+http://www.javabeat.net/spring-web-flow-introduction/	Introduction to Spring Web Flow
+http://www.javabeat.net/spring-with-apache-velocity/	Spring with Apache Velocity
+http://www.javabeat.net/standard-input-console-java/	How To Get The Standard Input From Console In Java
+http://www.javabeat.net/stateless-session-beans-in-ejb-3-0/	Stateless Session Beans in EJB 3.0
+http://www.javabeat.net/static-code-analysis-tool-firebugs/	Static Code Analysis Tool &#8211; FireBugs
+http://www.javabeat.net/static-html/	Static HTML Webpage Creation
+http://www.javabeat.net/static-keyword-in-java/	Static keyword in Java
+http://www.javabeat.net/static-keyword-java/	Static Keyword
+http://www.javabeat.net/stochastic-gradient-ascent/	Stochastic Gradient Ascent
+http://www.javabeat.net/storing-application-data-using-preferences-api/	Storing Application Data using Preferences API
+http://www.javabeat.net/strictmode-android-1/	What is StrictMode in Android? &#8211; Part 1
+http://www.javabeat.net/strictmode-android-2/	What is StrictMode in Android? – Part 2
+http://www.javabeat.net/string-to-char-array-java/	How To Convert String To Char Array In Java?
+http://www.javabeat.net/stringbuilder-class-in-java-5-0/	StringBuilder class in Java 5.0
+http://www.javabeat.net/stringtokenizer/	StringTokenizer Example
+http://www.javabeat.net/struts-1-0-vs-struts-2-0/	Struts 1.0 Vs Struts 2.0
+http://www.javabeat.net/struts-2-0-and-jpa-integration/	Struts 2.0 and JPA Integration
+http://www.javabeat.net/struts-2-0-and-spring/	Struts 2.0 and Spring
+http://www.javabeat.net/struts-2-0-introduction-and-validations-using-annotations/	Struts 2.0 and Validations using Annotations
+http://www.javabeat.net/struts-2-action-tag-example/	Struts 2 Action Tag Example
+http://www.javabeat.net/struts-2-annotation-example/	Struts 2 Annotation Example
+http://www.javabeat.net/struts-2-applications-eclipse/	Developing struts 2 applications using Eclipse
+http://www.javabeat.net/struts-2-bean-tag-example/	Struts 2 Bean Tag Example
+http://www.javabeat.net/struts-2-checkbox-tag-example/	Struts 2 CheckBox Tag Example
+http://www.javabeat.net/struts-2-configuration-files-path/	Struts 2 Configuration Files Path
+http://www.javabeat.net/struts-2-control-tags/	Struts 2 Control Tags
+http://www.javabeat.net/struts-2-date-tag-example/	Struts 2 Date Tag Example
+http://www.javabeat.net/struts-2-exception-configuration/	Struts 2 Exception Configuration
+http://www.javabeat.net/struts-2-features/	Struts 2 Features
+http://www.javabeat.net/struts-2-generator-tag-example/	Struts 2 Generator Tag Example
+http://www.javabeat.net/struts-2-google-appengine-integration/	Struts 2 + Google AppEngine Integration
+http://www.javabeat.net/struts-2-hello-world-example/	Struts 2 Hello World Example
+http://www.javabeat.net/struts-2-hidden-tag-example/	Struts 2 Hidden Tag Example
+http://www.javabeat.net/struts-2-if-else-tag-example/	Struts 2 If, Else Tag Example
+http://www.javabeat.net/struts-2-include-tag-example/	Struts 2 Include Tag Example
+http://www.javabeat.net/struts-2-interceptors-example/	Struts 2 Interceptors Example
+http://www.javabeat.net/struts-2-iterator-tag-example/	Struts 2 Iterator Tag Example
+http://www.javabeat.net/struts-2-json-integration/	Struts 2 + JSON Integration
+http://www.javabeat.net/struts-2-log4j-integration/	Struts 2 + Log4j Integration
+http://www.javabeat.net/struts-2-merge-tag-example/	Struts 2 Merge Tag Example
+http://www.javabeat.net/struts-2-password-tag-example/	Struts 2 Password Tag Example
+http://www.javabeat.net/struts-2-property-tag-example/	Struts 2 Property Tag Example
+http://www.javabeat.net/struts-2-push-tag-example/	Struts 2 Push Tag Example
+http://www.javabeat.net/struts-2-radio-tag-example/	Struts 2 Radio Tag Example
+http://www.javabeat.net/struts-2-resource-bundle-example/	Struts 2 Resource Bundle Example
+http://www.javabeat.net/struts-2-select-tag-example/	Struts 2 Select Tag Example
+http://www.javabeat.net/struts-2-spring-integration-example/	Struts 2 + Spring Integration Example
+http://www.javabeat.net/struts-2-textarea-tag-example/	Struts 2 TextArea Tag Example
+http://www.javabeat.net/struts-2-textfield-tag-example/	Struts 2 TextField Tag Example
+http://www.javabeat.net/struts-2/	Struts 2 Tutorials
+http://www.javabeat.net/struts-bean-cookie-tag-beancookie/	Struts BEAN Cookie Tag ( &lt; bean:cookie &gt;)
+http://www.javabeat.net/struts-bean-define-tag-beandefine/	Struts BEAN Define Tag ( &lt; bean:define &gt;)
+http://www.javabeat.net/struts-bean-include-tag-beaninclude/	Struts BEAN Include Tag ( &lt; bean:include &gt;)
+http://www.javabeat.net/struts-bean-page-tag-beanpage/	Struts BEAN Page Tag ( &lt; bean:page &gt;)
+http://www.javabeat.net/struts-bean-paramter-tag-beanparameter/	Struts BEAN Paramter Tag ( &lt; bean:parameter &gt;)
+http://www.javabeat.net/struts-bean-resource-tag-beanresource/	Struts BEAN Resource Tag ( &lt; bean:resource &gt;)
+http://www.javabeat.net/struts-bean-size-and-header-tag-beansize-and-beanheader/	Struts BEAN Size and Header Tag ( &lt; bean:size &gt;  and &lt; bean:header &gt;)
+http://www.javabeat.net/struts-bean-struts-tag-beanstruts/	Struts BEAN Struts Tag ( &lt; bean:struts &gt;)
+http://www.javabeat.net/struts-html-checkbox-tag/	Struts HTML CheckBox Tag (  )
+http://www.javabeat.net/struts-html-errors-tag-htmlerrors/	Struts HTML Errors Tag ( &lt; html:errors &gt;)
+http://www.javabeat.net/struts-html-file-tag-htmlfile/	Struts HTML File Tag ( &lt; html:file &gt; )
+http://www.javabeat.net/struts-html-img-tag-htmlimg/	Struts HTML Img Tag ( &lt; html:img &gt;)
+http://www.javabeat.net/struts-html-javascript-tag-htmljavascript/	Struts HTML JavaScript Tag ( &lt; html:javascript &gt;)
+http://www.javabeat.net/struts-html-link-tag-htmllink/	Struts HTML Link Tag ( &lt; html:link &gt;)
+http://www.javabeat.net/struts-html-multibox-tag/	Struts HTML MultiBox Tag ( )
+http://www.javabeat.net/struts-html-options-tag-htmloptions/	Struts HTML Options Tag ( &lt; html:options &gt;)
+http://www.javabeat.net/struts-html-optionscollection-tag-htmloptionscollection/	Struts HTML OptionsCollection Tag ( &lt; html:optionsCollection &gt;)
+http://www.javabeat.net/struts-html-radiobutton-tag/	Struts HTML RadioButton Tag (  )
+http://www.javabeat.net/struts-html-rewrite-tag-htmlrewrite/	Struts HTML Rewrite Tag ( &lt; html:rewrite &gt;)
+http://www.javabeat.net/struts-html-select-tag/	Struts HTML Select Tag ( )
+http://www.javabeat.net/struts-html-text-areatag/	Struts HTML Text AreaTag (  &lt; html:textarea &gt;  )
+http://www.javabeat.net/struts-html-text-tag/	Struts HTML Text Tag ( &lt; html:text &gt; )
+http://www.javabeat.net/struts-interview-questions/	Struts Interview Questions
+http://www.javabeat.net/struts-logic-equal-and-notequal-tag-logicequal-and-logicnotequal/	Struts LOGIC Equal and notEqual Tag ( &lt; logic:equal &gt;  and &lt; logic:notEqual &gt;)
+http://www.javabeat.net/struts-logic-greaterequal-and-greaterthan-tag-logicgreaterequal-and-logicgreaterthan/	Struts LOGIC greaterEqual and greaterThan Tag ( &lt;logic:greaterEqual&gt;  and &lt;logic:greaterThan&gt;)
+http://www.javabeat.net/struts-logic-iterate-tag-logiciterate/	Struts LOGIC Iterate Tag ( &lt;logic:iterate&gt; )
+http://www.javabeat.net/struts-logic-lessequal-and-lessthan-tag-logiclessequal-and-logiclessthan/	Struts LOGIC lessEqual and lessThan Tag ( &lt; logic:lessEqual &gt;  and &lt; logic:lessThan &gt;)
+http://www.javabeat.net/struts-logic-match-and-notmatch-tag-logicmatch-and-logicnotmatch/	Struts LOGIC match and notMatch Tag ( &lt; logic:match &gt;  and &lt; logic:notMatch &gt;)
+http://www.javabeat.net/struts-logic-messagespresent-and-messagesnotpresent-tag-logicmessagespresent-and-logicmessagesnotpresent/	Struts LOGIC messagesPresent and messagesNotPresent Tag ( &lt; logic:messagesPresent &gt;  and &lt; logic:messagesNotPresent &gt;)
+http://www.javabeat.net/struts-logic-present-and-notpresent-tag-logicpresent-and-logicnotpresent/	Struts LOGIC present and notPresent Tag ( &lt;logic:present&gt;  and &lt;logic:notPresent&gt;)
+http://www.javabeat.net/swing-extreme-testing-learn-swing-user-interface-testing-strategy/	Swing Extreme Testing : Learn Swing user interface testing strategy
+http://www.javabeat.net/switch-activity-android/	How to switch from one activity to another in Android?
+http://www.javabeat.net/switch-android-4-0/	Switch in Android 4.0
+http://www.javabeat.net/tapestry-5-0-building-web-applications/	Building Web Applications Using Tapestry 5.0
+http://www.javabeat.net/tapestry-interview-questions-and-faqs/	Tapestry Interview Questions and FAQs
+http://www.javabeat.net/task-execution-scheduling-spring/	Task Execution and Scheduling in Spring
+http://www.javabeat.net/template-design-pattern/	Template Method Design Pattern
+http://www.javabeat.net/template-method-pattern-design-patterns-in-javaj2ee/	Template method Pattern &#8211; Design Patterns in Java/J2EE
+http://www.javabeat.net/templates-in-groovy/	Templates in Groovy
+http://www.javabeat.net/templates-in-lift-framework/	Templates in Lift Framework
+http://www.javabeat.net/ternary-operator-in-jsp-2-0-expression-languageel/	Ternary Operator in JSP 2.0 Expression Language(EL)
+http://www.javabeat.net/test-driven-development-in-java/	Test Driven Development in Java
+http://www.javabeat.net/testing-support-in-spring-framework/	Testing Support in Spring Framework
+http://www.javabeat.net/the-bean-validation-api-in-spring-roo-framework/	The Bean Validation API in Spring Roo Framework
+http://www.javabeat.net/the-memory-leak-detector-oracle-jrockit/	The Memory Leak Detector Oracle JRockit
+http://www.javabeat.net/the-most-popular-collaborative-models/	The Most Popular Collaborative Models
+http://www.javabeat.net/the-query-api-in-jpa-ejb-3-0/	The Query API in JPA (EJB 3.0)
+http://www.javabeat.net/the-spring-batch-infrastructure/	The Spring Batch Infrastructure
+http://www.javabeat.net/the-standards-of-metadata/	The Standards of Metadata
+http://www.javabeat.net/theory-of-language-detection/	Theory of Language Detection
+http://www.javabeat.net/thread-contexts-in-manifoldcf/	Thread Contexts in ManifoldCF
+http://www.javabeat.net/threadlocal-in-java/	ThreadLocal in Java
+http://www.javabeat.net/threads-handlers-android/	Threads and Handlers in Android
+http://www.javabeat.net/threads-java/	Working with Threads in Java
+http://www.javabeat.net/threads-synchronization/	Threads Synchronization
+http://www.javabeat.net/three-ways-to-create-query-in-hibernate/	Three ways to create query in Hibernate
+http://www.javabeat.net/throw-throws-java-exception/	Difference Between Throw and Throws in Exception Handling
+http://www.javabeat.net/thymeleaf-hello-world-example/	Thymeleaf Hello World Example
+http://www.javabeat.net/thymeleaf/	Thymeleaf Tutorials
+http://www.javabeat.net/toast-message-android/	How to create a Toast message in Android?
+http://www.javabeat.net/tomcat-6-0-servlet-container-overview/	Tomcat 6.0 Servlet Container Overview
+http://www.javabeat.net/tomcat-interview-questions/	Tomcat Interview Questions
+http://www.javabeat.net/tomcat-port-configuration/	How To Change Tomcat Default Port  Configuration?
+http://www.javabeat.net/tooltip-dojo/	How to Create Tooltip in DOJO?
+http://www.javabeat.net/top-10-javascript-tips-for-your-site/	Top 10 JavaScript Tips for your site
+http://www.javabeat.net/traits-scala-advanced-concepts/	Traits in Scala- Advanced concepts
+http://www.javabeat.net/traits-scala/	Traits in Scala
+http://www.javabeat.net/transaction-control-annotations/	Transaction Control Using Annotations in Spring Framework
+http://www.javabeat.net/transaction-management-in-spring-batch-components/	Transaction Management in Spring Batch Components
+http://www.javabeat.net/transaction-management-in-spring-framework/	Transaction Management in Spring Framework
+http://www.javabeat.net/treating-pojos-like-pogos/	Treating POJOs like POGOs
+http://www.javabeat.net/treeset-java/	TreeSet in Java
+http://www.javabeat.net/try-catch-finally-exception/	Try, Catch and Finally in Exception Handling
+http://www.javabeat.net/tutorial-of-java-programming-with-apache-ant/	Tutorial of java programming with Apache Ant
+http://www.javabeat.net/twitter-nodejs-expressjs/	HOW TO : SignIn with Twitter using Node.js and Express.js
+http://www.javabeat.net/type-filters-eclipse/	Eclipse Tips : Type Filters in Eclipse
+http://www.javabeat.net/typedquery-jpa-2/	TypedQuery in JPA 2
+http://www.javabeat.net/types-of-managed-bean-scopes-in-spring-framework/	Types of Managed Bean scopes in Spring Framework
+http://www.javabeat.net/uml-2-0-in-action/	UML 2.0 in Action
+http://www.javabeat.net/understanding-classes-fields-scala/	Understanding Classes and its Fields in Scala
+http://www.javabeat.net/universal-description-discovery-and-integration-uddi/	What is UDDI?
+http://www.javabeat.net/update-eclipse-project-facets-using-settings-file/	Update Eclipse Project Facets Using Settings File
+http://www.javabeat.net/upload-file-jsp/	Upload a File Using JSP
+http://www.javabeat.net/use-a4jstatus-to-display-status-of-the-request/	Use a4j:status to display status of the request
+http://www.javabeat.net/use-dojokeys-key-press-events-dojo/	Use dojo/keys For Key Press Events in DOJO
+http://www.javabeat.net/use-import-importing-javaconfig-files-spring-projects/	Use @Import for Importing JavaConfig Files in Spring Projects
+http://www.javabeat.net/use-of-virtual-extension-methods-in-the-java-8-apis/	Use of Virtual Extension methods in the Java 8 APIs
+http://www.javabeat.net/use-richdatascroller-for-richdatatable-pagination/	Use rich:datascroller for rich:dataTable pagination
+http://www.javabeat.net/use-spring-el-xml-configurations/	How to use Spring EL in XML configurations?
+http://www.javabeat.net/use-switch-statement-thswitch-thymeleaf-template/	How To Use Switch Statement (th:switch) In Thymeleaf Template?
+http://www.javabeat.net/use-theach-iteration-thymeleaf-template/	How To Use th:each For Iteration In Thymeleaf Template?
+http://www.javabeat.net/use-trang-generate-xsd-xml/	Use Trang to Generate XSD from XML File
+http://www.javabeat.net/using-an-alert-view-as-a-task-loader-in-ipad/	Using an alert view as a task loader in iPad
+http://www.javabeat.net/using-apply-unapply-methods-scala/	Using Apply and Unapply Methods in Scala
+http://www.javabeat.net/using-cdi-with-ejb-3-0/	How to use CDI with EJB 3.0?
+http://www.javabeat.net/using-channels-in-spring-integration/	Using Channels in Spring Integration
+http://www.javabeat.net/using-controllers-in-play-framework/	Using Controllers in Play Framework
+http://www.javabeat.net/using-converters-in-jsf/	Using Converters in JSF
+http://www.javabeat.net/using-enterprise-beans-in-spring-environment/	How to use EJB with Spring framework?
+http://www.javabeat.net/using-javafx-chart-api-to-add-charts-to-swing-applications/	Using JavaFX Chart API to add charts to Swing applications
+http://www.javabeat.net/using-jsf-and-ajax-with-ajax-enabled-jsf-implementations-ajax4jsf/	JSF implementations &#8211; Ajax4Jsf, RichFaces and IceFaces
+http://www.javabeat.net/using-json-forms-with-ajax-in-lift-framework/	Using JSON forms with AJAX in Lift Framework
+http://www.javabeat.net/using-jsonslurper-groovy-api-from-java-to-parse-json/	Using JsonSlurper Groovy API from Java to parse JSON
+http://www.javabeat.net/using-lambda-expressions-of-java-8-in-java-fx-event-handlers/	Using Lambda Expressions of Java 8 in Java FX event handlers
+http://www.javabeat.net/using-liferays-service-builder-part-1/	Using Liferay&#8217;s Service Builder, part 1
+http://www.javabeat.net/using-liferays-service-builder-part-2/	Using Liferay&#8217;s Service Builder, part 2
+http://www.javabeat.net/using-manifoldcf-styles/	Using ManifoldCF Styles
+http://www.javabeat.net/using-morphia-java-library-for-mongodb/	Using Morphia- Java library for MongoDB
+http://www.javabeat.net/using-super-in-generics-java-5-0/	Using ? super in generics &#8211; Java 5.0
+http://www.javabeat.net/using-the-built-in-analyzers-in-lucene/	Using the Built-in Analyzers in Lucene
+http://www.javabeat.net/using-the-externalizable-interface/	Externalizable Interface in Java
+http://www.javabeat.net/using-the-jar-utility/	Using the Jar Utility
+http://www.javabeat.net/using-the-new-process-builder-class/	Using the new Process Builder class
+http://www.javabeat.net/using-the-prototype-pattern-to-clone-objects/	Prototype Design Pattern
+http://www.javabeat.net/using-yui-to-attach-javascript-event-listeners/	Using YUI to attach JavaScript event listeners
+http://www.javabeat.net/validator-tags-in-jsf/	Validator tags in JSF
+http://www.javabeat.net/variable-directive-in-jsp-2-0-custom-tags/	Variable Directive in JSP 2.0 Custom Tags
+http://www.javabeat.net/view-resolvers-in-spring-mvc/	Configure Multiple View Resolvers in Spring MVC
+http://www.javabeat.net/viewport-meta-tag/	Viewport Meta Tag For Responsive Design
+http://www.javabeat.net/virtual-extension-methods-in-java-8/	Virtual Extension Methods(or Defender Methods) in Java 8
+http://www.javabeat.net/visiting-all-the-files-and-directories-for-a-directory-in-java-using-nio2/	Visiting all the files and directories for a directory in Java using NIO2
+http://www.javabeat.net/visualizing-memory-usage-with-visualvm/	Visualizing Memory Usage with VisualVM
+http://www.javabeat.net/volatile-keyword-in-java/	Volatile keyword in Java
+http://www.javabeat.net/w3-total-cache-configurations/	W3 Total Cache Configurations
+http://www.javabeat.net/watchservice-api-java7-monitor-directory/	Implementing WatchService API in Java 7 to monitor the directory changes
+http://www.javabeat.net/web-application-project-maven/	Create Web Application Project With Maven
+http://www.javabeat.net/web-development-in-groovy-using-groovlets/	Web Development in Groovy using Groovlets
+http://www.javabeat.net/web-frameworks-supported-by-spring/	Web frameworks supported by Spring
+http://www.javabeat.net/web-xml/	Web.xml
+http://www.javabeat.net/webapplicationinitializer-spring-mvc/	WebApplicationInitializer in Spring MVC
+http://www.javabeat.net/webcontext-thymeleaf/	WebContext in Thymeleaf
+http://www.javabeat.net/weblogic-interview-questions/	Weblogic Interview Questions
+http://www.javabeat.net/webservices-rest-vs-soap/	WebServices : REST vs SOAP
+http://www.javabeat.net/websocket-java-ee-7/	WebSocket Support in Java EE 7
+http://www.javabeat.net/websphere-messaging/	WebSphere Messaging
+http://www.javabeat.net/what-are-functional-interfaces-and-functional-descriptor/	What are Functional Interfaces and Functional Descriptor?
+http://www.javabeat.net/what-is-adobe-flex/	What is Adobe Flex?
+http://www.javabeat.net/what-is-broad-assertion-in-unit-testing-in-java/	What is Broad Assertion in Unit Testing in Java?
+http://www.javabeat.net/what-is-difference-between-equals-and/	What is difference between equals() and == ?
+http://www.javabeat.net/what-is-ext-gwt-2-0/	What is Ext GWT 2.0?
+http://www.javabeat.net/what-is-immutable-objects-in-java/	What is Immutable Objects in Java?
+http://www.javabeat.net/what-is-javascript-object-notation-json/	What is JSON?
+http://www.javabeat.net/what-is-load-on-startup-element-in-web-xml-file/	What is load on startup element in web.xml file
+http://www.javabeat.net/what-is-model-view-presenter-mvp-in-gwt-application/	What is Model View Presenter (MVP) in GWT Application?
+http://www.javabeat.net/what-is-openlaszlo/	What is OpenLaszlo?
+http://www.javabeat.net/what-is-remote-debugging-in-java/	What is Remote Debugging in Java?
+http://www.javabeat.net/what-is-rss-and-atom/	What is RSS and Atom?
+http://www.javabeat.net/what-is-servlet/	What is servlet?
+http://www.javabeat.net/what-is-shale-web-framework/	What is Shale Web Framework?
+http://www.javabeat.net/what-is-slf4j/	What is SLF4J?
+http://www.javabeat.net/what-is-soa/	What is SOA?
+http://www.javabeat.net/what-is-spring/	What is Spring?
+http://www.javabeat.net/what-is-super-and-this-keyword-in-java/	What is super and this keyword in java?
+http://www.javabeat.net/what-is-the-difference-between-jrejvm-and-jdk/	What is the difference between JRE,JVM and JDK?
+http://www.javabeat.net/what-is-transient-keyword-in-java/	What is transient keyword in Java?
+http://www.javabeat.net/what-is-web-2-0/	What is Web 2.0?
+http://www.javabeat.net/what-is-web-3-0/	What is Web 3.0?
+http://www.javabeat.net/what-is-web-beans/	What is Web Beans?
+http://www.javabeat.net/what-is-xpath/	What is XPath?
+http://www.javabeat.net/whats-new-in-java-7-features-as-part-of-project-coin/	What&#8217;s new in Java 7- Features as part of Project Coin
+http://www.javabeat.net/whats-new-in-java-7-try-with-resource-construct-in-project-coin/	Whats new in Java 7 &#8211; try-with-resource construct in Project Coin
+http://www.javabeat.net/whats-new-in-silverlight-5/	What&#8217;s New in Silverlight 5?
+http://www.javabeat.net/whats-new-in-spring-3-0/	Spring 3 Features
+http://www.javabeat.net/why-multiple-inheritance-is-not-allowed-in-java/	Why multiple inheritance is not allowed in Java?
+http://www.javabeat.net/wildfly-8/	WildFly 8 Final is released!
+http://www.javabeat.net/window-system-in-netbeans-platform-6-9/	Window System in NetBeans Platform 6.9
+http://www.javabeat.net/wordpress-2-7/	WordPress 2.7
+http://www.javabeat.net/wordpress-error-database-update/	WordPress Error: Database Update Required
+http://www.javabeat.net/wordpress-for-business-bloggers/	WordPress for Business Bloggers
+http://www.javabeat.net/wordpress-plugin-development/	WordPress Plugin Development
+http://www.javabeat.net/working-with-arrays-java-util-arrays-class/	Working with arrays : java.util.Arrays class
+http://www.javabeat.net/working-with-blazeds-messaging-services-using-flex-4-0/	BlazeDS Messaging Services using Flex 4.0
+http://www.javabeat.net/working-with-blazeds-remote-data-services-using-flex-4-0/	Working with BlazeDS Remote Data Services using Flex 4.0
+http://www.javabeat.net/working-with-dom-attributes-using-jquery/	Working with DOM Attributes using jQuery
+http://www.javabeat.net/working-with-message-driven-beans/	Working with Message-Driven Beans
+http://www.javabeat.net/working-with-virtual-proxy-pattern/	Proxy Design Pattern
+http://www.javabeat.net/write-custom-tag-jsp/	How To Write Custom Tag in JSP?
+http://www.javabeat.net/write-object-to-file-java-serialization/	Write An Object To File In Java (Serialization)
+http://www.javabeat.net/write-properties-file-java/	How To Write Properties File In Java
+http://www.javabeat.net/write-properties-xml-file-java/	How To Write Properties To XML File In Java
+http://www.javabeat.net/write-quartz-joblistener/	How to Write Quartz JobListener?
+http://www.javabeat.net/write-your-own-validator-in-jsf/	Custom Validator in JSF
+http://www.javabeat.net/writing-a-custom-plugin-for-maven/	How to write a Custom Plugin for Maven?
+http://www.javabeat.net/writing-an-osgi-web-application/	Writing an OSGi Web Application
+http://www.javabeat.net/writing-jsf-applications-for-j2me-clients/	Writing JSF applications for J2ME clients
+http://www.javabeat.net/writing-simple-ant-build-script/	Writing simple ANT build script
+http://www.javabeat.net/xml-jquery-ajax/	Loading XML using jQuery AJAX
+http://www.javabeat.net/xml-schema-elements-part2/	XML Schema Elements &#8211; Part2
+http://www.javabeat.net/xml-schema-elements/	XML Schema Elements
+http://www.javabeat.net/xquery-syntax/	XQuery Syntax
+http://www.javabeat.net/yahoo-user-interface-libraryyui/	Yahoo! User Interface library(YUI)
+http://www.javabeat.net/zip-compression-api-java/	Working with java.util.zip compression API
