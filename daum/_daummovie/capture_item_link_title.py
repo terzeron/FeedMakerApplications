@@ -4,7 +4,7 @@
 import sys
 import re
 import getopt
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
             numOfRecentFeeds = int(a)
 
     resultList = []
-    lineList = feedmakerutil.read_stdin_as_line_list()
+    lineList = IO.read_stdin_as_line_list()
     for line in lineList:
         if state == 0:
             m = re.search(r'<a href="(?P<url>[^"]+)" class="link_magazine', line)

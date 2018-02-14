@@ -3,7 +3,7 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -11,7 +11,7 @@ def main():
     title = ""
     urlPrefix = "http://sports.donga.com/cartoon"
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r'<li(?: class="first")?><a href="(?P<url>\?cid=[^"]+)"><img alt="(?P<title>[^"]+)"', line)
         if m:
             link = urlPrefix + m.group("url")

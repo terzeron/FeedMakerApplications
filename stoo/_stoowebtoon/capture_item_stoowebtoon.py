@@ -3,7 +3,7 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -11,7 +11,7 @@ def main():
     title = ""
     urlPrefix = "http://stoo.asiae.co.kr"
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r'<a href="(?P<url>/cartoon/list.htm\?sec=\d+)"', line)
         if m:
             url = m.group("url")

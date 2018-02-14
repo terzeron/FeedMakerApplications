@@ -3,7 +3,7 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
     state = 0
     urlPrefix = "http://comic.mt.co.kr/"
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         if state == 0:
             m = re.search(r'<p class="img2"><a href="./(?P<url>comicDetail.htm\?nComicSeq=\d+)">', line)
             if m:

@@ -6,13 +6,13 @@ import os
 import sys
 import re
 import json
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
     link_prefix = "http://cartoon.media.daum.net/webtoon/view/"
 
-    json_str = feedmakerutil.read_stdin()
+    json_str = IO.read_stdin()
     json_obj = json.loads(json_str)
     for item in json_obj["data"]:
         link = link_prefix + item["nickname"]

@@ -3,7 +3,7 @@
 import sys
 import re
 import json
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -16,7 +16,7 @@ def main():
         volumeNo = int(m.group("volumeNo"))
         memberNo = int(m.group("memberNo"))
 
-    lineList = feedmakerutil.read_stdin_as_line_list()
+    lineList = IO.read_stdin_as_line_list()
     for line in lineList:
         line = line.rstrip()
         line = re.sub(r'[\x01\x08]', '', line, re.LOCALE)
@@ -28,8 +28,8 @@ def main():
         link = link_prefix + str(clipNo)
         cmd = 'wget.sh "%s" utf8' % (link)
         #print(cmd)
-        result = feedmakerutil.exec_cmd(cmd)
-        if result == False or re.search(r'"notExistClip"', result):
+        (result, error) = feedmakerutil.exec_cmd(cmd)
+        if error or re.search(r'"notExistClip"', result):
             failureCount = failureCount + 1
             if failureCount > 2:
                 break

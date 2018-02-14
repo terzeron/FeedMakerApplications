@@ -3,7 +3,7 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -11,13 +11,13 @@ def main():
     title = ""
     num = ""
     state = 0
-    url_prefix = "http://page.kakao.com/home/"
+    url_prefix = "http://page.kakao.com"
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         if state == 0:
-            m = re.search(r'<li class="[^"]*"[^>]*data-seriesid="(?P<series_id>\d+)"', line)
+            m = re.search(r'<a href="(?P<link>/home/\d+)\?[^"]+">', line)
             if m:
-                link = url_prefix + m.group("series_id")
+                link = url_prefix + m.group("link")
                 state = 1
         elif state == 1:
             if re.search(r'<p class="ellipsis"', line):
@@ -27,6 +27,10 @@ def main():
             if m:
                 title = m.group("title")
                 print("%s\t%s" % (link, title))
+                state = 3
+        elif state == 3:
+            m = re.search(r'^\s*</p>\s*$', line)
+            if m:
                 state = 0
 
 

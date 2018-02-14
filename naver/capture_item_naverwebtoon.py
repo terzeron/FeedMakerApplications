@@ -3,7 +3,7 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -11,7 +11,7 @@ def main():
     title = ""
     urlPrefix = "http://comic.naver.com/"
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r'''
         <a
         \s+

@@ -3,13 +3,13 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
     secondPageUrl = ""
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         line = line.rstrip()
         m = re.search(r"<a href='(?P<secondPageUrl>http://[^']+)'[^>]*><img src='http://cwstatic\.asiae\.co\.kr/images/cartoon/btn_s\.gif'/>", line)
         if m:
@@ -27,8 +27,8 @@ def main():
     if secondPageUrl != "":
         cmd = "wget.sh '%s' | extract_element.py extraction" % (secondPageUrl)
         #print(cmd)
-        result = feedmakerutil.exec_cmd(cmd)
-        if result:
+        (result, error) = feedmakerutil.exec_cmd(cmd)
+        if not error:
             for line in result.split("\n"):
                 m = re.search(r'<img\s*[^>]*src=(?:\'|\")(?P<imgUrl>http://cwcontent[^\'\"]+)(?:\'|\").*/>', line)
                 if m:

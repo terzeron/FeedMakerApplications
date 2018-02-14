@@ -5,13 +5,14 @@
             <list_url><![CDATA[http://page.kakao.com/main/ajaxCallWeeklyList?navi=1&day=0&inkatalk=0&categoryUid=10&subCategoryUid=1000&CommonPath=http://static-page.kakao.com//resources/kakaopage/common]]></list_url>
         </list_url_list>
         <element_class>list</element_class>
-        <user_agent><![CDATA[Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 KAKAOTALK]]></user_agent>
+        <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
     </collection>
     <extraction>
         <element_list>
             <element_class>homeTopContentWrp</element_class>
             <element_class>introduceBoxLayer</element_class>
         </element_list>
+        <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
     </extraction>
     <rss>
         <title><![CDATA[카카오웹툰목록]]></title>

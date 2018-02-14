@@ -4,7 +4,7 @@
 import sys
 import re
 import getopt
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
             numOfRecentFeeds = int(a)
 
     resultList = []
-    lineList = feedmakerutil.read_stdin_as_line_list()
+    lineList = IO.read_stdin_as_line_list()
     # html 파일에서 데이터 꺼내기
     for line in lineList:
         if state == 0:

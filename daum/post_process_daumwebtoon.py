@@ -4,6 +4,7 @@
 import sys
 import re
 import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -12,7 +13,7 @@ def main():
     imgExt = "jpg"
     numUnits = 25
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         line = line.rstrip()
         print(line)
 
@@ -29,9 +30,9 @@ def main():
             url = "http://cartoon.media.daum.net/webtoon/viewer_images.js?webtoon_episode_id=" + episodeId
         cmd = "crawler.sh '%s'" % (url)
         #print(cmd)
-        result = feedmakerutil.exec_cmd(cmd)
+        (result, error) = feedmakerutil.exec_cmd(cmd)
         #print(result)
-        if not result:
+        if error:
             print("can't download the page html from '%s'" % (url))
             sys.exit(-1)
         img_file_arr = []

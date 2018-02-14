@@ -3,13 +3,13 @@
 import sys
 import re
 import json
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
     state = 0
     
-    lineList = feedmakerutil.read_stdin_as_line_list()
+    lineList = IO.read_stdin_as_line_list()
     for line in lineList:
         #print(line)
         if state == 0:

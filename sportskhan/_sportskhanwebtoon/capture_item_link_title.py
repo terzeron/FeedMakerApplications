@@ -3,14 +3,14 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
     link = ""
     title = ""
   
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r'<strong><a href="(?P<url>http://sports.khan.co.kr/comics/cartoon_view.html\?comics=b2c&amp;sec_id=\d+)">(?P<title>[^<]+)</a></strong>', line)
         if m:
             link = m.group("url")

@@ -5,7 +5,7 @@ import os
 import sys
 import re
 import getopt
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
 
     state = 0
     url_prefix = "https://v2.myktoon.com/web/works/"
-    line_list = feedmakerutil.read_stdin_as_line_list()
+    line_list = IO.read_stdin_as_line_list()
     result_list = []
     for line in line_list:
         if state == 0:

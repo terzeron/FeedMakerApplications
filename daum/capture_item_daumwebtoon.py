@@ -6,6 +6,8 @@ import sys
 import re
 import getopt
 import feedmakerutil
+from feedmakerutil import IO
+
 
 def main():
     link_prefix = "http://cartoon.media.daum.net/m/webtoon/viewer/"
@@ -19,7 +21,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    lineList = feedmakerutil.read_stdin_as_line_list()
+    lineList = IO.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
         p = re.compile(r'"id":(?P<id>\d+),"episode":(?P<episode>\d+),"title":"(?P<title>[^"]+)",')

@@ -3,7 +3,7 @@
 
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -12,7 +12,7 @@ def main():
     state = 0
     urlPrefix = "http://comic.naver.com"
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r'<a[^>]*href="(?P<url>/webtoon/list.nhn\?titleId=\d+)[^"]*"[^>]*title="(?P<title>[^"]+)"[^>]*/?>', line)
         if m:
             url = m.group("url")

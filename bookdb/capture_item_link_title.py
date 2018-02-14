@@ -4,7 +4,7 @@
 import sys
 import re
 import urllib.parse
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
     theme_no: int = 0
 
     result_list = []
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         if state == 0:
             if re.search(r'gotoListOrderSelect\(', line):
                 state = 1

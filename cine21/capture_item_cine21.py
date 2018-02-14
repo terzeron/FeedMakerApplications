@@ -5,7 +5,7 @@ import io
 import os
 import sys
 import re
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     icon = ""
     state = 0
 
-    lineList = feedmakerutil.read_stdin_as_line_list()
+    lineList = IO.read_stdin_as_line_list()
     for line in lineList:
         if state == 0:
             m1 = re.search(r'<a href="(?P<link>[^"]+mag_id=\d+)">', line)

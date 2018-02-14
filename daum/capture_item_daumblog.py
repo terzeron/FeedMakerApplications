@@ -7,7 +7,7 @@ import sys
 import re
 import getopt
 import collections
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def getNextPageUrl(pageContentLineList, formName):
@@ -82,7 +82,7 @@ def main():
             numOfRecentFeeds = int(a)
 
     # get a url of first list page
-    pageContentLineList = feedmakerutil.read_stdin_as_line_list()
+    pageContentLineList = IO.read_stdin_as_line_list()
     resultList = printArticleUrlList(pageContentLineList)
     nextPageUrl, isEnd = getNextPageUrl(pageContentLineList, "articleTypeList")
 

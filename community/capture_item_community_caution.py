@@ -3,7 +3,7 @@
 import sys
 import re
 import getopt
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
         if o == '-n':
             num_of_recent_feeds = int(a)
 
-    line_list = feedmakerutil.read_stdin_as_line_list()
+    line_list = IO.read_stdin_as_line_list()
     result_list = []
 
     # clien

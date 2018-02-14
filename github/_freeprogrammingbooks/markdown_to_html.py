@@ -9,7 +9,7 @@ import feedmakerutil
 
 def main(url):
     cmd = "markdown"
-    html = feedmakerutil.exec_cmd(cmd)
+    (html, error) = feedmakerutil.exec_cmd(cmd)
     for line in html.split("\n"):
         m = re.search(r'https?://[^\"\'\<\>\)\(]+', line)
         if m:

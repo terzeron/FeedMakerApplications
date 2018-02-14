@@ -7,7 +7,7 @@ import sys
 import re
 import getopt
 import collections
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
             num_of_recent_feeds = int(a)
 
     result_list = []
-    list = feedmakerutil.read_stdin_as_line_list()
+    list = IO.read_stdin_as_line_list()
     state = 0
     for line in list:
         if state == 0:

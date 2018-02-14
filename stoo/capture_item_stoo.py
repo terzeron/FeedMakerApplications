@@ -4,7 +4,7 @@
 import sys
 import re
 import getopt
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def print_usage():
@@ -23,7 +23,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r'<a href="/cartoon/ctview.htm[^"]*(?P<url>id=[^&]+)[^"]*"[^>]*><span>(?P<title>.*)</span></a>', line)
         if m:
             title = m.group("title")

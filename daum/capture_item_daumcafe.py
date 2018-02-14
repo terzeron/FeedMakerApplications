@@ -5,7 +5,8 @@ import os
 import sys
 import re
 import getopt
-import feedmakerutil
+from feedmakerutil import IO
+
 
 def main():
     linkPrefix = "http://cafe.daum.net/_c21_/"
@@ -22,7 +23,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
-    lineList = feedmakerutil.read_stdin_as_line_list()
+    lineList = IO.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
         if state == 0:

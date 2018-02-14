@@ -5,8 +5,8 @@ import sys
 import os
 import re
 import subprocess
-import feedmakerutil
 from feedmakerutil import die, err, warn
+from feedmakerutil import IO
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     urlPrefix = ""
     dataUrl = ""
 
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r"jpg: '(?P<urlPrefix>[^']+\/){=filename}\?type=[^']+'", line)
         if m:
             urlPrefix = m.group("urlPrefix")

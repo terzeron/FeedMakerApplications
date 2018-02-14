@@ -4,7 +4,7 @@
 import sys
 import re
 import getopt
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def print_usage():
@@ -26,7 +26,7 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
           
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         if state == 0:
             m = re.search(r'<li class="section1">(?P<episodeNum>[^<]+)</li>', line)
             if m:

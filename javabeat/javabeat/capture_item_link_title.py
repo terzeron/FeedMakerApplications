@@ -5,7 +5,6 @@ import io
 import os
 import sys
 import re
-import feedmakerutil
 
 
 def main():

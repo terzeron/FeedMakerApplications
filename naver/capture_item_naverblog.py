@@ -4,7 +4,7 @@
 import sys
 import re
 import urllib.parse
-import feedmakerutil
+from feedmakerutil import IO
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
     urlPrefix = "http://blog.naver.com/PostView.nhn?blogId="
 
     resultList = []
-    for line in feedmakerutil.read_stdin_as_line_list():
+    for line in IO.read_stdin_as_line_list():
         m = re.search(r'"blogId"\s*:\s*"(?P<blogId>[^"]+)"', line)
         if m:
             urlPrefix = urlPrefix + m.group("blogId") + "&logNo="
