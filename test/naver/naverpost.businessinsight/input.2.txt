@@ -1,0 +1,1919 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no,address=no,email=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="index,follow" />
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="mobile-web-app-capable" content="yes">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://m.post.naver.com/viewer/postView.nhn?volumeNo=11413091&memberNo=35786474">
+	<meta property="og:image" content="http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/IukDdnlHJe3vklxE05Qn17Q41nPc.jpg?type=w400">
+	<meta property="og:description" content="[BY InterBiz 인터비즈] &lsquo;비트코인&rsquo;지폐나 동전과 달리 물리적인 형태가 없는 온라인 가상화폐(암호화..." />
+	<meta property="og:title" content="비트코인 채굴로 난방하는 시베리아│인터비즈">
+	<meta property="post:sharer_text" content="비트코인 채굴로 난방하는 시베리아│인터비즈
+{{_SHORT_URL_}}
+출처: InterBiz 인터비즈 | 네이버 포스트" >
+	<meta property="og:author" content="InterBiz 인터비즈">
+	<meta property="og:author_image" content="http://post.phinf.naver.net/MjAxNzExMzBfNjUg/MDAxNTEyMDAyNzE3MTA0.CDB9MMy7eHTQJqZid8-rdZQLbroVwj_5SYqtOYM_XL8g.nrZPMO7daD6zCLdCDib6G3KJ5VNDQ3GtcJKLyjmoMgog.PNG/post_2060968545232126757.png?type=f120_120">
+	
+	<meta property="nv:ticket" content="post02">
+	<meta property="nv:object_id" content="11413091_35786474">
+	<meta property="nv:like_id" content="11413091_35786474">
+	
+	<meta property="og:ticket" content="post02">
+	<meta property="og:object_id" content="11413091_35786474">
+	
+	<meta property="nv:news:volume_no" content="11413091">
+	<meta property="nv:news:title" content="비트코인 채굴로 난방하는 시베리아│인터비즈">
+	<meta property="nv:news:contents" content="&amp;lsquo;비트코인&amp;rsquo;지폐나 동전과 달리 물리적인 형태가 없는 온라인 가상화폐&amp;#40;암호화 화폐&amp;#41;. 2008년 &amp;lsquo;나카모토 사토시&amp;rsquo;라는 이름의 정체불명 컴퓨터 프로그래머가 창안.지난 해 12월 31일 968.23달러였던 비트코인 가격이 2017년 12월 17일 1만 8890달러까지 급등해 최고가를 경신합니다. 1년 사">
+	<meta property="nv:news:date" content="Wed Dec 20 14:59:02 KST 2017">
+	<meta property="nv:news:author_no" content="35786474">
+	<meta property="nv:news:authorhome" content="http://m.post.naver.com/my.nhn?memberNo=35786474">
+
+	<title>비트코인 채굴로 난방하는 시베리아│인터비즈 : 네이버 포스트</title>
+	<link rel="shortcut icon" type="image/x-icon" href="http://static.post.naver.net/image/icon/n_160311/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://static.post.naver.net/image/icon/n_160311/post_ico_144X144.png">
+
+<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/likeItList_post.css">
+<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/end_common.css"> 
+		<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/end.css">
+		<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/se3_card_end.css">
+	<script type="text/javascript">
+nhn=window.nhn||{};mug=nhn.mug=window.mug||{};mug.$=mug.$||{};mug.$.User={isLoggedIn:false,id:null,memberNo:null,type:"AUTHOR",blockType:""};mug.$.UserAgent={isInapp:false,isMobile:false,isTablet:false,isLolipopNaverApp:false,isInNaverApp:false,osName:"Etc",osVersion:"0",isEditProfileSupport:false,appSVC:"",appVer:"",isInBlogApp:false};mug.$.Props={jsDir:"http://static.post.naver.net/static/m/2018020601/js/min",cssDir:"http://static.post.naver.net/static/m/2018020601/css/min",ugcEditorUrl:"http://post.editor.naver.com",ugcEditorFlag:"true"==="true"};window.__jsLoad__=window.__jsLoad__||{};document.domain="naver.com";document.documentElement.setAttribute("data-useragent",navigator.userAgent);window.__mugFnList__=[];</script><link rel="stylesheet" href="http://static.editor.naver.net/static/viewer/common/se_viewer_card.css?3122714398-20180208111204"  />
+</head><body data-templateType="ugccard"
+	
+		class="gr viewer pc"
+		
+	style="">
+
+
+<div id="wrap">
+	<div id="header" class="sub end" role="banner">
+        <div class="gnb"
+
+>
+	<a href="#" onclick="mug.common.util.goBack();return false;" class="btn_gnb_prev"><i class="blind" aria-hidden="true">이전화면으로 가기</i></a>
+	<a href="http://www.naver.com" target="_blank" class="naver_logo_sub"><i class="ico_naver_logo_sub">네이버</i></a>
+	<h1><a href="/" class="logo2"><span class="ico_post_logo_sub">포스트 beta</span></a></h1>
+	
+	<div class="flt_r">
+		<button type="button" class="btn_t1 __series"><span>시리즈</span></button><button class="btn_flw __followAnchor" data-afterFollowLayer="NONE" onclick="mug.contents.util.follow(jQuery('.__followAnchor'), jQuery('.__unfollowAnchor'), 35786474, 'PERSON', this); return false;"   aria-pressed="false"><span>팔로우</span></button>
+		<button class="btn_flw on __unfollowAnchor" onclick="mug.contents.util.unfollow(jQuery('.__followAnchor'), jQuery('.__unfollowAnchor'), 35786474, 'PERSON', 'InterBiz 인터비즈'); return false;" style="display:none" aria-pressed="true"><span>팔로잉</span></button>
+		<!-- [D] 내글일때 삭제 버튼 표시 (PC 전용) -->
+		<!-- [D] 공유하기 (PC 전용) -->
+		<button type="button" class="btn_t1 share naver-splugin" data-title="비트코인 채굴로 난방하는 시베리아│인터비즈" data-source-name="InterBiz 인터비즈" onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'meb.share');return false;" role="button" aria-haspopup="true" aria-expanded="false">
+			<span>공유하기</span>
+		</button>
+
+		<button type="button" class="btn_t1 write" onclick="mug.common.nclick(this, 'gnb.write');mug.common.moveToAppLauncherUgcEditorUrl();"><a href="#" onclick="return false;">포스트 쓰기</a></button>
+
+		<div class="overflow_menu_area">
+			<button type="button" class="btn_overflow_menu" role="button" aria-haspopup="true" aria-expanded="false"><span class="sp"></span></button>
+			<ul class="ly_more t2 __gnb_overview_menu">
+				<li class="go_end"><a href="#" onclick="window.__toggleOverflowMenu(1000);mug.viewer.util.moveLast();return false;">마지막 페이지</a></li>
+				<li class="editor "><a href="/my.nhn?memberNo=35786474" onclick="__toggleOverflowMenu(1000);">작성자 보기</a></li>
+				<li class="share as_first"><a href="#" class="naver-splugin" data-title="비트코인 채굴로 난방하는 시베리아│인터비즈" data-source-name="InterBiz 인터비즈" onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'meb.share');return false;">공유하기</a></li>
+				<li class="url __bt_url" style="display:none"><a href="#">URL 복사</a></li>
+				<li class="bookmark __bt_bookmark" style="display:none"><a href="#">네이버 북마크</a></li>
+				<li class="app"><a href="#" onclick="__toggleOverflowMenu(1000);mug.common.nclick(this, 'meb.appdown');window.__openViewerToApp(35786474, 11413091);return false;">앱으로 보기</a></li>
+
+				<li class="report"><a href="/viewer/reportForm.nhn?volumeNo=11413091&memberNo=35786474" onclick="__toggleOverflowMenu(1000);" target="_blank">신고</a></li>
+				</ul>
+		</div>
+	</div>
+</div></div>
+    <div id="cont" class="end end_se3_spread" role="main">
+        <div class="se_body_wrap se_card_wrap se_spread se_scale se_theme_card_purpleline is-imgBg">
+	        <!-- 컨텐츠 내용 {{ -->
+			<script type="x-clip-content" id="__clipContent">
+				<!-- background {{-->
+				<div class="se_card_document_bg __se_bg_lazy"
+     style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb200_q20'); background-position:44.246% 50%"
+     data-imgsrc="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=w1200">
+        <div class="se_card_bg_exception">
+            <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb200_q20" alt="" class="se_card_bg_img">
+        </div>
+        <div class="se_dim"></div>
+</div>
+<div class="se_card_document_bg __se_bg_org"
+     style="display:none;background-position:44.246% 50%">
+        <div class="se_card_bg_exception">
+            <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=w1200" alt="" class="se_card_bg_img">
+        </div>
+        <div class="se_dim"></div>
+</div>
+<!-- background }}-->
+
+				<div class="se_card_container">
+				
+
+    <!-- coverCard -->
+    <div class="__se_card_cover se_card se_coverCard bottomTitle">
+        <div class="se_card_content">
+            <div class="se_card_cover_wrap ">
+                <div class="se_card_cover_wrapView">
+                    
+<!-- $SE3-TITLE_TOP Post Service placeholder -->
+<a href="/my/series/detail.nhn?seriesNo=350574&memberNo=35786474&prevVolumeNo=11413091" onclick="mug.common.nclick(this, 'tit.series');"><div class="se_series"><i class="se_ico_series" style="display:none">스타에디터3</i><i class="se_ico_series" style="">시리즈</i><i class="se_ico_groupseries" style="display:none">콜라보</i>이슈앤트렌드</div></a>
+<!-- ]]]$SE3-TITLE_TOP Post Service placeholder -->
+
+                        <!-- sectionTitle -->
+<div class="se_component se_sectionTitle">
+    <div class="se_sectionArea se_align-left">
+        <div class="se_viewArea se_ff_nanumgothic se_fs_H2 
+" style="color: ;
+text-decoration: inherit;
+font-style: inherit;">
+            <div class="se_textView">
+                <h5 class="se_textarea"><!-- SE3-TEXT { -->비트코인 채굴로 난방하는 시베리아│인터비즈<!-- } SE3-TEXT --></h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// sectionTitle -->
+
+                    
+<!-- $SE3-TITLE_CONTENTS Post Service placeholder[[[ -->
+<div class="se_container">
+<a href="/my.nhn?memberNo=35786474" class="se_thumbnail" onclick="mug.common.nclick(this, 'tit.profile');">
+<img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzExMzBfNjUg/MDAxNTEyMDAyNzE3MTA0.CDB9MMy7eHTQJqZid8-rdZQLbroVwj_5SYqtOYM_XL8g.nrZPMO7daD6zCLdCDib6G3KJ5VNDQ3GtcJKLyjmoMgog.PNG/post_2060968545232126757.png?type=f120_120" onerror="this.onerror=null;this.src='http://static.post.naver.net/image/im/img_default.gif'" alt="InterBiz 인터비즈님의 프로필 사진">
+</a>
+<div class="se_group">
+<a href="/my.nhn?memberNo=35786474" class="se_author" onclick="mug.common.nclick(this, 'tit.name');">InterBiz 인터비즈</a>
+<span style="display:none" class="ico_official_big"><i class="blind">공식</i></span>
+<i class="se_divide_dot" style="display:none"></i>
+<span class="se_follower" style="display:none">{=badgeName}</span>
+<p class="se_detail">
+<span class="se_publishDate">2017.12.20. 14:59 </span>
+<i class="se_divide_line"></i>
+<span class="se_view" style="">58,569 읽음</span>
+<span class="se_secret" style="display:none">비밀글</span>
+</p>
+</div>
+<button type="button" class="se_card_btn_follower __se3_follow_btn __card_start_follow" style="display:none">
+<span class="se_card_btn_bg"></span><span class="se_card_btn_line"></span><span class="se_card_btn_txt">팔로우</span></button>
+<a href="#" class="se_card_btn_stats __se3_stat_btn" style="display:none" onclick="mug.common.nclick(this, 'tit.stat');" target="_blank"><span>통계</span></a>
+</div>
+<!-- ]]]$SE3-TITLE_CONTENTS Post Service placeholder -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- textCard -->
+<div class="se_card se_textCard transparentBg se_card_first __se_card_first">
+            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
+            <div class="se_card_bg_exception">
+                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
+            </div>
+            <div class="se_dim"></div>
+        </div>
+
+    <div class="se_card_vertical_content">
+	<div class="se_card_vertical_alignArea">
+		<div class="se_card_vertical_alignView">
+			<div class="se_card_content">
+				<div class="se_card_titleArea">
+					<div class="se_card_titleView">
+					<div class="se_card_titleView_inner">
+						<!--섹션 컴퍼넌트-->
+					        <!-- sectionTitle -->
+<div class="se_component se_sectionTitle">
+    <div class="se_sectionArea se_align-center">
+        <div class="se_viewArea se_ff_nanummyeongjo se_fs_H2 
+" style="color: ;
+text-decoration: inherit;
+font-style: inherit;">
+            <div class="se_textView">
+                <h5 class="se_textarea"><!-- SE3-TEXT { -->&lsquo;비트코인&rsquo;<!-- } SE3-TEXT --></h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// sectionTitle -->
+
+						<!--//섹션 컴퍼넌트-->
+					</div>
+					</div>
+				</div>
+				<!--텍스트 컴퍼넌트-->
+			        <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>지폐나 동전과 달리 물리적인 형태가 없는 온라인 가상화폐(암호화 화폐). </span><span style='color:rgb(247,247,247);'>2008년 ‘나카모토 사토시’라는 이름의 정체불명 컴퓨터 프로그래머가 창안. </span><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+				<!--//텍스트 컴퍼넌트-->
+			</div>
+		</div>        
+	</div>
+	</div>
+</div>
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_2">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfNTUg/MDAxNTEzNzQ4NTczOTI3.JS2SG0kX0geOsi7G3cWe5D89pTWzthz6c2K5XmtwPuEg.kRNTdfyiRHeHat58KiV1xjHCUzWn1v73znj1JBz6kQgg.JPEG/GettyImages-886800342.jpg?type=w1200'); background-position:43.8739% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_2_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfNTUg/MDAxNTEzNzQ4NTczOTI3.JS2SG0kX0geOsi7G3cWe5D89pTWzthz6c2K5XmtwPuEg.kRNTdfyiRHeHat58KiV1xjHCUzWn1v73znj1JBz6kQgg.JPEG/GettyImages-886800342.jpg?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfNTUg/MDAxNTEzNzQ4NTczOTI3.JS2SG0kX0geOsi7G3cWe5D89pTWzthz6c2K5XmtwPuEg.kRNTdfyiRHeHat58KiV1xjHCUzWn1v73znj1JBz6kQgg.JPEG/GettyImages-886800342.jpg?type=w1200" data-attachment-id="Ia64XNZsPRoE6rTKJG7kOacEwkNo" id="SEDOC-1513904828246--1738205029_image_2_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { -->지난 해 12월 31일 968.23달러였던 비트코인 가격이 2017년 12월 17일 1만 8890달러까지 급등해 최고가를 경신합니다. 1년 사이 100만 원대에서 2000만원 대로 오른 것이죠. <!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_3">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMjU2/MDAxNTEzNzYwNzI5MzA2.7hdew6K6A2NPEiwe0jeEND1nFbcAC1yW_sm3lqvU_m0g.7EQAQHjP3fukyOpGiVij90tiQxW7nZHHMOu0JYof7Wwg.PNG/donga_db1.png?type=w1200'); background-position:50% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_3_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMjU2/MDAxNTEzNzYwNzI5MzA2.7hdew6K6A2NPEiwe0jeEND1nFbcAC1yW_sm3lqvU_m0g.7EQAQHjP3fukyOpGiVij90tiQxW7nZHHMOu0JYof7Wwg.PNG/donga_db1.png?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMjU2/MDAxNTEzNzYwNzI5MzA2.7hdew6K6A2NPEiwe0jeEND1nFbcAC1yW_sm3lqvU_m0g.7EQAQHjP3fukyOpGiVij90tiQxW7nZHHMOu0JYof7Wwg.PNG/donga_db1.png?type=w1200" data-attachment-id="ItasS7bcgTJ5Ur4YAjJDgdBul180" id="SEDOC-1513904828246--1738205029_image_3_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span>전에 없던 가격상승에 남녀노소 일확천금을 꿈꾸고 가상화폐에 투자(또는 투기)하고 있는데요.<br></span><span><br></span>전 세계 금융기관은 물론 정부도 이를 주시하고 있습니다.<!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_4">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfNDEg/MDAxNTEzNzYxNTIyMDEy.h8bnfQa0RxoI0paFATuZBxEJSxtsCn751BqbPPRWn3Qg.6rt4uFwPYCg7-WJ-4tOAP_KEGP_XwXKONHDmzTcii5Eg.JPEG/GettyImages-895643218.jpg?type=w1200'); background-position:81.1694% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_4_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfNDEg/MDAxNTEzNzYxNTIyMDEy.h8bnfQa0RxoI0paFATuZBxEJSxtsCn751BqbPPRWn3Qg.6rt4uFwPYCg7-WJ-4tOAP_KEGP_XwXKONHDmzTcii5Eg.JPEG/GettyImages-895643218.jpg?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfNDEg/MDAxNTEzNzYxNTIyMDEy.h8bnfQa0RxoI0paFATuZBxEJSxtsCn751BqbPPRWn3Qg.6rt4uFwPYCg7-WJ-4tOAP_KEGP_XwXKONHDmzTcii5Eg.JPEG/GettyImages-895643218.jpg?type=w1200" data-attachment-id="Im1lVShCaIknQThQUY5ABLVx0oXw" id="SEDOC-1513904828246--1738205029_image_4_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { -->비트코인은 개인이 컴퓨터로 직접 채굴해 얻을 수도 있어 아예 채굴을 전담하는 회사도 생겼습니다. <br>하지만 생산을 위해 컴퓨터를 계속 켜둬야해서 전력소모가 만만찮죠.<!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- textCard -->
+<div class="se_card se_textCard transparentBg ">
+            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
+            <div class="se_card_bg_exception">
+                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
+            </div>
+            <div class="se_dim"></div>
+        </div>
+
+    <div class="se_card_vertical_content">
+	<div class="se_card_vertical_alignArea">
+		<div class="se_card_vertical_alignView">
+			<div class="se_card_content">
+				<div class="se_card_titleArea">
+					<div class="se_card_titleView">
+					<div class="se_card_titleView_inner">
+						<!--섹션 컴퍼넌트-->
+					        <!-- sectionTitle -->
+<div class="se_component se_sectionTitle">
+    <div class="se_sectionArea se_align-center">
+        <div class="se_viewArea se_ff_nanummyeongjo se_fs_H2 
+" style="color: ;
+text-decoration: inherit;
+font-style: inherit;">
+            <div class="se_textView">
+                <h5 class="se_textarea"><!-- SE3-TEXT { -->그.런.데<!-- } SE3-TEXT --></h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// sectionTitle -->
+
+						<!--//섹션 컴퍼넌트-->
+					</div>
+					</div>
+				</div>
+				<!--텍스트 컴퍼넌트-->
+			        <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+				<!--//텍스트 컴퍼넌트-->
+			</div>
+		</div>        
+	</div>
+	</div>
+</div>
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_5">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/cryptohouse.png?type=w1200'); background-position:2.11546% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_5_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/cryptohouse.png?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/cryptohouse.png?type=w1200" data-attachment-id="IukDdnlHJe3vklxE05Qn17Q41nPc" id="SEDOC-1513904828246--1738205029_image_5_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-center">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span><b><span style="color: rgb(255, 179, 155);">비트코인 채굴전용집을</span></b><br></span><span><b><span style="color: rgb(255, 179, 155);"></span></b></span><span><b><span style="color: rgb(255, 179, 155);">만들어 파는 비즈니스가</span><span style="color: rgb(255, 179, 155);">&nbsp;나타났다?</span></b></span><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_6">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMTQy/MDAxNTEzODQ3MjIxNTUz.yDFKL_Dq2bJxUAdqWYgqGhiaGSiQGtikZLEmAdEQB_Ig.aAqUUxqRCqCzYDWvwpKxZGfAgvV2Jrv8dse4jm8v3_wg.JPEG/ddd.JPG?type=w1200'); background-position:31.6088% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_6_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMTQy/MDAxNTEzODQ3MjIxNTUz.yDFKL_Dq2bJxUAdqWYgqGhiaGSiQGtikZLEmAdEQB_Ig.aAqUUxqRCqCzYDWvwpKxZGfAgvV2Jrv8dse4jm8v3_wg.JPEG/ddd.JPG?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMTQy/MDAxNTEzODQ3MjIxNTUz.yDFKL_Dq2bJxUAdqWYgqGhiaGSiQGtikZLEmAdEQB_Ig.aAqUUxqRCqCzYDWvwpKxZGfAgvV2Jrv8dse4jm8v3_wg.JPEG/ddd.JPG?type=w1200" data-attachment-id="IA77v3s8QvQa0yjAi0vGkLhivnGk" id="SEDOC-1513904828246--1738205029_image_6_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	<div class="se_card_titleView_inner">
+		<div class="se_component se_sectionTitle">
+		    <div class="se_sectionArea se_align-center">
+		        <div class="se_viewArea se_ff_nanummyeongjo se_fs_H2 
+" style="color: ;
+text-decoration: inherit;
+font-style: inherit;">
+		            <div class="se_textView">
+		                <h5 class="se_textarea"><!-- SE3-TEXT { -->&ldquo;크립토하우스&rdquo;<!-- } SE3-TEXT --></h5>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(241,241,241);'>이 집은 암호화 화폐를 뜻하는 ‘크립토커런시(Cryptocurrency)’와 집을 뜻하는 ‘하우스(House)’를 결합해 ‘크립토하우스(Cryptohouse)’라고 불리는데요.</span><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_7">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMTAz/MDAxNTEzODQ3NTUzMzIx.676GEDPulhtlv_efITTEghzik2K3P_MgEotM-hyrb4og.jxbB3ARtGvZ_gW_bUSeAhtnFIDx5B1s4V-FVAQxdT5gg.JPEG/dgd.JPG?type=w1200'); background-position:50% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_7_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMTAz/MDAxNTEzODQ3NTUzMzIx.676GEDPulhtlv_efITTEghzik2K3P_MgEotM-hyrb4og.jxbB3ARtGvZ_gW_bUSeAhtnFIDx5B1s4V-FVAQxdT5gg.JPEG/dgd.JPG?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMTAz/MDAxNTEzODQ3NTUzMzIx.676GEDPulhtlv_efITTEghzik2K3P_MgEotM-hyrb4og.jxbB3ARtGvZ_gW_bUSeAhtnFIDx5B1s4V-FVAQxdT5gg.JPEG/dgd.JPG?type=w1200" data-attachment-id="IirvCrC94b9O8rUuUxn6_EAzVXMk" id="SEDOC-1513904828246--1738205029_image_7_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { -->집 안에는 비트코인을 채굴하는 과정에서 발생하는 열을 이용해 난방을 할 수 있는 시스템이 마련돼 있습니다.<!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- imageCard -->
+<div class="se_card se_singleMediaCard transparentBg ">
+	        <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
+            <div class="se_card_bg_exception">
+                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
+            </div>
+            <div class="se_dim"></div>
+        </div>
+
+	<div class="se_card_content">
+		<!--미디어 컴퍼넌트-->
+		    	<div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_8">
+    <div class="se_component se_image noBgImage se_image_w" style="">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_8_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMjI0/MDAxNTEzNzQ5MDYxOTkz.dyIXFV3kLRtx97C60n-wSwoK7UVTX4BgCz6ocCgM9ikg.EQ-_tdeFfIghb0YyEcIW0ByJxADLvZ94eQTG5Pj5wDkg.JPEG/33.JPG?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_imageArea">
+                    <img alt="" class="__se_img_el" style=""  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMjI0/MDAxNTEzNzQ5MDYxOTkz.dyIXFV3kLRtx97C60n-wSwoK7UVTX4BgCz6ocCgM9ikg.EQ-_tdeFfIghb0YyEcIW0ByJxADLvZ94eQTG5Pj5wDkg.JPEG/33.JPG?type=w1200" data-attachment-id="IJymahEwgMm-OCVXnKE9uaEnSKcs" id="SEDOC-1513904828246--1738205029_image_8_img" style="background-position:84.2549% 50%"/>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+		<!--//미디어 컴퍼넌트-->
+	</div>
+</div>
+
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_9">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMTQg/MDAxNTEzNzQ5MTg2MTIy.3LuzFUR997vA7-4v0DdHn0szNu52cREn7ZKVlGDyrCIg.qMlPkshoKjhRtkutTiISTVBCGoc3RgRybUex07MgRrMg.PNG/kkk.png?type=w1200'); background-position:90.8465% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_9_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMTQg/MDAxNTEzNzQ5MTg2MTIy.3LuzFUR997vA7-4v0DdHn0szNu52cREn7ZKVlGDyrCIg.qMlPkshoKjhRtkutTiISTVBCGoc3RgRybUex07MgRrMg.PNG/kkk.png?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMTQg/MDAxNTEzNzQ5MTg2MTIy.3LuzFUR997vA7-4v0DdHn0szNu52cREn7ZKVlGDyrCIg.qMlPkshoKjhRtkutTiISTVBCGoc3RgRybUex07MgRrMg.PNG/kkk.png?type=w1200" data-attachment-id="Ic4HIm-dSKLoVumVBz_UPAGRZ0xg" id="SEDOC-1513904828246--1738205029_image_9_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { -->럭셔리하진 않아도 침대, 의자, 씽크대, 취사도구는 물론 <span style="color:rgb(241,241,241);">화장실까지 모두 구비되어 있죠.</span><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_10">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMTEx/MDAxNTEzNzQ4OTM1MjIx.C8HpCvCiHTptJVlJb2Ef0DDLn-AkbOvIp7fwd17mD28g.-3vNNjhauE9kCXh0ABwx44BD8gDb76oZJHtBNMJEMpgg.PNG/engineer.png?type=w1200'); background-position:50% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_10_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMTEx/MDAxNTEzNzQ4OTM1MjIx.C8HpCvCiHTptJVlJb2Ef0DDLn-AkbOvIp7fwd17mD28g.-3vNNjhauE9kCXh0ABwx44BD8gDb76oZJHtBNMJEMpgg.PNG/engineer.png?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMTEx/MDAxNTEzNzQ4OTM1MjIx.C8HpCvCiHTptJVlJb2Ef0DDLn-AkbOvIp7fwd17mD28g.-3vNNjhauE9kCXh0ABwx44BD8gDb76oZJHtBNMJEMpgg.PNG/engineer.png?type=w1200" data-attachment-id="IUHVk9MMmQUfhwdGGUlpzq6VlZsE" id="SEDOC-1513904828246--1738205029_image_10_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style="color:rgb(247,247,247);">이 비트코인 채굴전용집을 만든 이리아 프롤로브</span><span style="color:rgb(247,247,247);">(</span><span style="color:rgb(247,247,247);">Ilya Frolov) 공동 창업자는 “(비트코인 채굴 시) 계산 과정에서 발생하는 열을 사용해 집을 난방하는 콘셉트”라고 말합니다.</span><br><br><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_11">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNTAg/MDAxNTEzODQ4Nzg5MzIw.o4-QWLddkdUxvb_5Y7kic5kAvVu1tO5BAVLagRqTkdgg.envTeyblaOvQvZqQN2kocc6JjLjO7DusdrMVDGqJu-Eg.PNG/gggg.png?type=w1200'); background-position:96.5383% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_11_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfNTAg/MDAxNTEzODQ4Nzg5MzIw.o4-QWLddkdUxvb_5Y7kic5kAvVu1tO5BAVLagRqTkdgg.envTeyblaOvQvZqQN2kocc6JjLjO7DusdrMVDGqJu-Eg.PNG/gggg.png?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNTAg/MDAxNTEzODQ4Nzg5MzIw.o4-QWLddkdUxvb_5Y7kic5kAvVu1tO5BAVLagRqTkdgg.envTeyblaOvQvZqQN2kocc6JjLjO7DusdrMVDGqJu-Eg.PNG/gggg.png?type=w1200" data-attachment-id="IupCrNmGKPFP4qJxO-zrjioI5odY" id="SEDOC-1513904828246--1738205029_image_11_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>그는 비트코인 채굴에서 중요한 요인이  전기료이며, 따라서 전기료가 모스크바의 20%밖에 안되는 이곳 ‘이르쿠츠크 주(Irkutsk, 시베리아 동부)’가 적합하다고 말합니다. </span><br><br><br><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- textCard -->
+<div class="se_card se_textCard default ">
+    <div class="se_card_vertical_content">
+	<div class="se_card_vertical_alignArea">
+		<div class="se_card_vertical_alignView">
+			<div class="se_card_content">
+				<div class="se_card_titleArea">
+					<div class="se_card_titleView">
+					<div class="se_card_titleView_inner">
+						<!--섹션 컴퍼넌트-->
+						<!--//섹션 컴퍼넌트-->
+					</div>
+					</div>
+				</div>
+				<!--텍스트 컴퍼넌트-->
+			        <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>수력 발전소가 모여 있는 이르쿠츠크주의 전기요금은 kwh당 평균 1루블(약 18원)입니다. 모스크바 전기료(kwh당 5루블)에 비해 80%나 저렴한 것인데요. </span><br><br><span style='color:rgb(247,247,247);'>크립토하우스는 한 채당 8500달러(920만 원)이지만 매달 850달러(2017년 12월 15일 기준) 가치의 비트코인을 채굴할 수 있습니다. </span><br><br><span style='color:rgb(247,247,247);'>이 집은 2020년까지 2000채가 공급될 예정입니다. </span><br><br><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+				<!--//텍스트 컴퍼넌트-->
+			</div>
+		</div>        
+	</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- textCard -->
+<div class="se_card se_textCard transparentBg ">
+            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
+            <div class="se_card_bg_exception">
+                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
+            </div>
+            <div class="se_dim"></div>
+        </div>
+
+    <div class="se_card_vertical_content">
+	<div class="se_card_vertical_alignArea">
+		<div class="se_card_vertical_alignView">
+			<div class="se_card_content">
+				<div class="se_card_titleArea">
+					<div class="se_card_titleView">
+					<div class="se_card_titleView_inner">
+						<!--섹션 컴퍼넌트-->
+						<!--//섹션 컴퍼넌트-->
+					</div>
+					</div>
+				</div>
+				<!--텍스트 컴퍼넌트-->
+			        <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-center">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style="color:rgb(241,241,241);">시베리아가 비트코인 채굴 산지로 적합하다고 <br></span><span style="color:rgb(241,241,241);"></span><span style="color:rgb(241,241,241);">여기는 것은 크립토하우스 창업자만이 아닙니다.</span><br><br><span style="color:rgb(247,247,247);">러시아 정부도 이 비즈니스의 가능성을 </span><br><span style="color:rgb(247,247,247);">검토 중이라고 하는데요.</span><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+				<!--//텍스트 컴퍼넌트-->
+			</div>
+		</div>        
+	</div>
+	</div>
+</div>
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_12">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMjk0/MDAxNTEzODUwMzQ4MjUy.uHq1KemGsnheRcfSuf1rAAOEAeIvruat4TP8jirSRzQg.qTh_Mu4NlWTJBgsIRN9-tiI3Qpn4tYyASiw3LtMtMzYg.JPEG/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%BE%D0%B2.jpg?type=w1200'); background-position:50% 42.6247%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_12_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMjk0/MDAxNTEzODUwMzQ4MjUy.uHq1KemGsnheRcfSuf1rAAOEAeIvruat4TP8jirSRzQg.qTh_Mu4NlWTJBgsIRN9-tiI3Qpn4tYyASiw3LtMtMzYg.JPEG/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%BE%D0%B2.jpg?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMjk0/MDAxNTEzODUwMzQ4MjUy.uHq1KemGsnheRcfSuf1rAAOEAeIvruat4TP8jirSRzQg.qTh_Mu4NlWTJBgsIRN9-tiI3Qpn4tYyASiw3LtMtMzYg.JPEG/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%BE%D0%B2.jpg?type=w1200" data-attachment-id="IIfAGXRrD-3MMqMqTryJt_Mr3DxE" id="SEDOC-1513904828246--1738205029_image_12_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>첫 시작은 러시아 의원 보리스 체르니쇼브(</span><span style='color:rgb(247,247,247);'>Boris Chernyshov)의 제안이었습니다.</span><br><br><span style='color:rgb(247,247,247);'>현재 이 </span><span style='color:rgb(247,247,247);'>제안은 러시아 산업부 장관, 정보통신부 장관에까지 전해졌다고 하네요.</span><br><br><br><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- textCard -->
+<div class="se_card se_textCard default ">
+    <div class="se_card_vertical_content">
+	<div class="se_card_vertical_alignArea">
+		<div class="se_card_vertical_alignView">
+			<div class="se_card_content">
+				<div class="se_card_titleArea">
+					<div class="se_card_titleView">
+					<div class="se_card_titleView_inner">
+						<!--섹션 컴퍼넌트-->
+						<!--//섹션 컴퍼넌트-->
+					</div>
+					</div>
+				</div>
+				<!--텍스트 컴퍼넌트-->
+			        <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(241,241,241);se_ff_nanummyeongjo' class=' se_ff_nanummyeongjo'><i>“채굴도시 내 사람들은 수익을 창출해 집과 필요한 것들을 살 수 있다. 해당 도시로부터의 세수 확보는 정부 예산을 보충할 것이다. </i></span><br><br><span style='color:rgb(241,241,241);se_ff_nanummyeongjo' class=' se_ff_nanummyeongjo'><i>그리고 만약 중국과 인접한 곳에 들어서면 해당 도시는 관련 산업의 비즈니스 허브가 될 것이다. </i></span><br><br><span style='color:rgb(241,241,241);se_ff_nanummyeongjo' class=' se_ff_nanummyeongjo'><i>이는 해외투자금의 유입으로 연결된다. 해당 프로젝트는 성장의 동인이다.”</i></span><br><br><span style='color:rgb(247,247,247);'>- 러시아 의원 보리스 체르니쇼프 -</span><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+				<!--//텍스트 컴퍼넌트-->
+			</div>
+		</div>        
+	</div>
+	</div>
+</div>
+
+    <!-- basicMediaCard -->
+    <div class="se_card se_basicMediaCard topMedia ">
+        <div class="se_card_content">
+                <div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_13">
+    <div class="se_component se_image default">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMzUg/MDAxNTEzODUxNjMwODM5.vzK0hVXsxVtzMUe9Tz2a6l25-TyedYLUFYrRlDtGtWYg.SdN9x4hL-QVdNbmYuw_wqvu_HFSoVJtQ9BT_oYW3_fYg.PNG/hghgh.png?type=w1200'); background-position:50% 4.40993%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_13_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMzUg/MDAxNTEzODUxNjMwODM5.vzK0hVXsxVtzMUe9Tz2a6l25-TyedYLUFYrRlDtGtWYg.SdN9x4hL-QVdNbmYuw_wqvu_HFSoVJtQ9BT_oYW3_fYg.PNG/hghgh.png?type=w1200", "linkUse" : "false","link" : ""}'>
+                <div class="se_border"></div>
+                <div class="se_card_exception">
+                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMzUg/MDAxNTEzODUxNjMwODM5.vzK0hVXsxVtzMUe9Tz2a6l25-TyedYLUFYrRlDtGtWYg.SdN9x4hL-QVdNbmYuw_wqvu_HFSoVJtQ9BT_oYW3_fYg.PNG/hghgh.png?type=w1200" data-attachment-id="I40YCjaWz-5n52mrUyKZjjMBEoGY" id="SEDOC-1513904828246--1738205029_image_13_img" />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+                
+                
+                
+                <!-- sectionTitle -->
+<div class="se_card_titleArea">
+	<div class="se_card_titleView">
+	</div>
+</div>
+<!--// sectionTitle -->
+
+                
+                
+                
+                <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>한편 블라디미르 푸틴 러시아 대통령은 2018년 7월까지 비트코인 등 암호화 화폐, 채굴, 가상화폐공개(ICO)를 관리하는 법안을 입법하고, 디지털 화폐와 관련한 모든 것을 규정할 것을 지시했습니다.</span><br><br><br><br><br><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- textCard -->
+<div class="se_card se_textCard transparentBg ">
+            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
+            <div class="se_card_bg_exception">
+                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
+            </div>
+            <div class="se_dim"></div>
+        </div>
+
+    <div class="se_card_vertical_content">
+	<div class="se_card_vertical_alignArea">
+		<div class="se_card_vertical_alignView">
+			<div class="se_card_content">
+				<div class="se_card_titleArea">
+					<div class="se_card_titleView">
+					<div class="se_card_titleView_inner">
+						<!--섹션 컴퍼넌트-->
+						<!--//섹션 컴퍼넌트-->
+					</div>
+					</div>
+				</div>
+				<!--텍스트 컴퍼넌트-->
+			        <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-center">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style="color:rgb(247,247,247);"><b>크립토하우스 프로젝트는 과연</b></span><br><span style="color:rgb(247,247,247);"><b>성공</b></span><span style="color: rgb(247, 247, 247);"><b>할 수 있을까요?</b></span><span style="color: rgb(247, 247, 247);"><br></span><br><span style="color:rgb(247,247,247);"><b>그리고 시베리아는 전 세계의 </b><br></span><span style="color:rgb(247,247,247);"><b>비트코인 ATM이 될 수 있을까요?</b></span><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+				<!--//텍스트 컴퍼넌트-->
+			</div>
+		</div>        
+	</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- textCard -->
+<div class="se_card se_textCard default ">
+    <div class="se_card_vertical_content">
+	<div class="se_card_vertical_alignArea">
+		<div class="se_card_vertical_alignView">
+			<div class="se_card_content">
+				<div class="se_card_titleArea">
+					<div class="se_card_titleView">
+					<div class="se_card_titleView_inner">
+						<!--섹션 컴퍼넌트-->
+						<!--//섹션 컴퍼넌트-->
+					</div>
+					</div>
+				</div>
+				<!--텍스트 컴퍼넌트-->
+			        <!-- paragraph -->
+<div class="se_card_textArea">
+    <div class="se_card_textView">
+    <div class="se_card_textView_inner">
+        <div class="se_card_scroll">
+            <!--텍스트 컴퍼넌트-->
+            <div class="se_component se_paragraph">
+                <div class="se_sectionArea se_align-left">
+                    <div class="se_editArea">
+                        <div class="se_viewArea se_ff_nanumgothic" style="">
+                            <div class="se_editView">
+                                <div class="se_textView">
+                                    <p class="se_textarea"><!-- SE3-TEXT { -->사진 출처 및 참고 영상<br><a href="https://youtu.be/nfoS1b51x18 " class="se_link" target="_blank">https://youtu.be/nfoS1b51x18</a><br><br><!-- } SE3-TEXT --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//텍스트 컴퍼넌트-->
+        </div>
+    </div>
+    </div>
+</div>
+<!--// paragraph -->
+
+				<!--//텍스트 컴퍼넌트-->
+			</div>
+		</div>        
+	</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- imageCard -->
+<div class="se_card se_singleMediaCard transparentBg ">
+	        <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
+            <div class="se_card_bg_exception">
+                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
+            </div>
+            <div class="se_dim"></div>
+        </div>
+
+	<div class="se_card_content">
+		<!--미디어 컴퍼넌트-->
+		    	<div class="se_card_mediaArea">
+    <div class="se_card_mediaView">
+<!-- image -->
+<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_14">
+    <div class="se_component se_image noBgImage se_image_h __se_center_img" style="$CARD_HEIGHT$">
+        <div class="se_sectionArea">
+            <a class="__se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_14_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfNjEg/MDAxNTEzODQ1NTU5NTY5.ITyj1VuGd9O95O_xaarpOT-EcvSFJmRrMFVVOmFiml8g.lX8vu_3PvwybN3ySlnxTFE1hrEySCgPgSDUJtXDpP48g.PNG/%EB%84%A4%EC%9D%B4%EB%B2%84%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4_%EC%84%A4%EC%A0%95_%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B2%84%EC%A0%84.png?type=w1200", "linkUse" : "true","link" : "http://m.naver.com/naverapp/?version=1&amp;cmd=addMenu&amp;menuCode=BUSINESS"}'>
+                <div class="se_imageArea">
+                    <img alt="" class="__se_img_el" style=""  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjEg/MDAxNTEzODQ1NTU5NTY5.ITyj1VuGd9O95O_xaarpOT-EcvSFJmRrMFVVOmFiml8g.lX8vu_3PvwybN3ySlnxTFE1hrEySCgPgSDUJtXDpP48g.PNG/%EB%84%A4%EC%9D%B4%EB%B2%84%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4_%EC%84%A4%EC%A0%95_%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B2%84%EC%A0%84.png?type=w1200" data-attachment-id="ILv0SjszA9XRmtRNgiwJWKB_pxms" id="SEDOC-1513904828246--1738205029_image_14_img" style="background-position:50% 50%"/>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- //image -->
+
+
+
+    </div>
+</div>
+
+		<!--//미디어 컴퍼넌트-->
+	</div>
+</div>
+
+</div>
+			</script>
+
+			<div id="__tmp_clipContent" style="height:1000px;background:white;padding-top: 80px;text-align: center;">
+
+			</div>
+
+			<!-- }} 컨텐츠 내용 -->
+
+
+        </div>
+        
+        <div class="editor_section as_se3">
+	<div class="state_line"></div>
+	<!-- 태그 -->
+	<!-- //태그 -->
+
+	<p class="write_by_smarteditor3">
+		<a href="http://post.naver.com/viewer/postView.nhn?volumeNo=3590526&memberNo=201497"><span class="se3_logo" aria-label="스마트에디터3.0"></span>으로 쓴 글입니다. <span class="go_detail">자세히보기</span></a>
+	</p>
+	<script type="text/javascript">
+        window.__mugFnList__.push(function() {
+            !function($, window) {
+                if (mug.common.isDev()) {
+                    console.log("asyncGet");
+                }
+                function asyncGet() {
+                    $.ajax({
+                        url: "getRecommendPostView2.nhn",
+                        dataType:"html",
+                        data: {
+                            volumeNo: "11413091",
+                            memberNo: "35786474",
+                            vType: "NO_SELECT",
+                            searchKeyword: "",
+                            searchRank: "",
+                            mainMenu: ""
+                        },
+                        success: function(resultHtml){
+                            if (mug.common.isDev()) {
+                                console.log("asyncGet success!!");
+                            }
+                            $("#__tmp_recPostView").replaceWith(resultHtml);
+                            $(".__authorName").text("InterBiz 인터비즈");
+
+                            if (!!window.__splugin) { //개인화플러그신 갱신
+                                __splugin.init();
+                            } else {
+                                mug.common.Sharer.init();
+                            }
+                            //new LikeUpdater(1).update();	//좋아요 갱신
+                            !!nhn.LikeIt.list.instance && nhn.LikeIt.list.instance.update();
+
+                            var refId = null;
+                            var elBtnLikeEnd = $("#btn_like_end");
+                            if(!!elBtnLikeEnd.length) {
+                                refId = setInterval(function() {
+                                    var welBtn = $("#btn_like_end");
+                                    if(welBtn.length > 0 && welBtn.attr("data-likeit") == 1) {
+                                        !!window.initLikeListBtn && initLikeListBtn();
+                                        clearInterval(refId);
+                                    }
+                                    chanageLikeText();
+                                }, 100);
+
+                            }
+
+
+                            /**
+                             * 댓글폼을 불러온다.
+                             */
+                            setTimeout(function() {
+                                $.ajax({
+                                    url: "/viewer/asyncCommentForm.nhn",
+                                    dataType:"html",
+                                    data: {
+                                        volumeNo: "11413091",
+                                        memberNo: "35786474"
+                                    },
+                                    success: function(html) {
+                                        jQuery("#__tmp_comment_js").html(html);
+                                    }
+                                });
+                            }, 200);
+                        },
+                        error: function(resp) {
+                            console.log(resp);
+                        }
+                    });
+                }
+                function chanageLikeText(){
+                    $('.__like_sp').each(function (i,v) {
+                        var val = $(v).children().last();
+                        if(val.text() == "좋아요"){
+                            val.text("0");
+                        }
+                    });
+                }
+                $(window).load(function() {
+                    setTimeout(asyncGet, 200);
+                });
+            }(jQuery, window);
+        });
+    </script>
+    <div id="__tmp_recPostView">
+        <div id="more_loading_img" class="loading_t1" style="display:;padding-top:10px">
+            <img src="http://static.post.naver.net/image/m/im/loader.gif" width="24" height="24" alt="로딩중">
+        </div>
+    </div>
+
+<script>
+
+</script></div>
+<div class="btn_area_btm  __viewer_footer"> <div class="btn_w">
+       <a href="#" 
+	       onclick="mug.common.nclick(this, 'men.prev');mug.common.util.goBack();return false;" 
+       class="btn_gnb_prev"><i class="blind" aria-hidden="true">이전화면으로 가기</i></a>
+		<div class="btn_like">
+			<div class="u_likeit_list_module">
+				<a href="#" onclick="mug.common.nclick(this, 'men.like');" class="u_likeit_list_btn u_type_bright u_none_txt" role="button" data-sid="POST" data-did="POST" data-cid="11413091_35786474" data-likeit="0" data-rparam=""><span class="u_ico"></span><em class="u_txt"></em><em class="u_cnt"></em></a>
+			</div>
+		</div>
+	   <a href="/like/likeMembers.nhn?volumeNo=11413091&volumeMemberNo=35786474" class="_likeit_btn_more btn_more" target="_self"><i class="btn_s_more"></i>좋아요 한 사람 보러가기</a>
+        <div class="btn_comment"><button onclick="mug.common.nclick(this, 'men.cmt'); location.href='/viewer/commentsView.nhn?volumeNo=11413091&memberNo=35786474'"><i class="btn_s_comment"></i><p class="blind">덧글</p><span class="__comment_count"></span></button></div>
+
+        <div class="btn_share"><button class="naver-splugin" data-title="비트코인 채굴로 난방하는 시베리아│인터비즈" data-source-name="InterBiz 인터비즈"
+		onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'men.share'); return false;" role="button" aria-haspopup="true" aria-expanded="false"><i class="btn_s_share"></i><p class="blind">공유하기</p></button></div>
+    </div>
+</div>
+
+<!-- [D] 플리킹, 스크롤 안내 토스트 팝업-->
+<div class="ly_toast toast_f __toast __toast_h" style="display:none">
+	<img src="http://static.post.naver.net/image/im/end/toast_flick.png" alt="좌우로 넘겨 보세요">
+</div>
+<div class="ly_toast toast_s __toast __toast_v" style="display:none">
+	<img src="http://static.post.naver.net/image/im/end/toast_scroll_150611.png" alt="상하로 스크롤 하세요">
+</div></div><!-- #cont end -->
+</div><!-- #wrap end -->
+
+
+<script src="http://static.editor.naver.net/static/viewer/common/se_init.min.js?3122714398-20180208111204"></script>
+<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/post_m_base.js"></script>
+	<script type="text/javascript">
+function __fnExecMugFnList__() {
+	if (!!window.__mugFnList__ && __mugFnList__.length > 0) {
+		for (var i = 0, len = __mugFnList__.length; i < len; i++) {
+			if (typeof __mugFnList__[i] == "function") {
+				__mugFnList__[i]();
+				__mugFnList__[i] = null;
+			}
+		}
+	}
+}
+__fnExecMugFnList__();
+</script>
+<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/renewal/nil.js"></script>
+<script type="text/javascript">
+!function($, window, document) {
+	function __closeOverflowMenu(delay) {
+		$(document.body).off("click", __closeOverflowMenuEventHandler);
+		delay = delay || 0;
+
+		var fn = function(){
+			var wel = $(".ly_more.__gnb_overview_menu");
+			wel.removeClass("on");
+            wel.siblings("button").attr("aria-expanded", "false");
+			wel.hasClass("on") ? wel.show() : wel.hide();
+		};
+
+		if (/Android 4\.0\./g.test(window.navigator.userAgent)) {
+			fn();
+		} else {
+			setTimeout(fn, delay);
+		}
+	}
+	window.__closeOverflowMenu = __closeOverflowMenu;
+
+
+	function __closeOverflowMenuEventHandler(ev) {
+		if ($(ev.target).parents(".__gnb_overview_menu").length > 0) {	//클릭한 엘리먼트가 메뉴바내 요소인 경우는 닫지않고 유지.
+			return;
+		}
+		__closeOverflowMenu();
+	}
+	window.__closeOverflowMenuEventHandler = __closeOverflowMenuEventHandler;
+
+	function __toggleOverflowMenu(delay) {
+		try {
+			if (__viewer.mode == "preview") {
+				return;
+			}
+		} catch(e) {}
+		delay = delay || 0;
+
+		var fn = function() {
+			var wel = $(".ly_more.__gnb_overview_menu");
+			wel.toggleClass("on");
+			if (wel.hasClass("on")) {
+                wel.siblings("button").attr("aria-expanded", "true");
+				wel.show();
+
+				//뷰어 메뉴바 스크립트에서 처리하고 있으므로 주석처리
+				setTimeout(function() {
+					$(document.body).on("click", __closeOverflowMenuEventHandler); // 바로 event attach하면 이벤트 핸들러까지 실행되어 바로 닫히게 된다;;;
+				}, 0);
+			} else {
+				__closeOverflowMenu();
+			}
+		};
+
+		if (/Android 4\.0\./g.test(window.navigator.userAgent)) {
+			fn();
+		} else {
+			setTimeout(fn, delay);
+		}
+	}
+	window.__toggleOverflowMenu = __toggleOverflowMenu;
+
+	$(".btn_overflow_menu").on("click", function() {
+		__toggleOverflowMenu();
+	});
+	$("#header .gnb button.__series").on("click", function(ev) {
+		ev.preventDefault();
+		location.href = "/my/series/detail.nhn?seriesNo=350574&memberNo=35786474&prevVolumeNo=11413091";
+	});
+
+
+	
+}(jQuery, window, document);
+</script>
+<script type="text/javascript">
+	(function($, document, window) {
+		var bInitFollowingStatus = false;
+		
+		function refreshFollowBtnsForSE3(bIsFollowingAuthor) {	
+			//console.log("refreshFollowBtnsForSE3 : bIsFollowingAuthor = " + bIsFollowingAuthor);
+			var bIsFlw = bInitFollowingStatus;
+			if (bIsFollowingAuthor != null) {
+				bIsFlw = bInitFollowingStatus = bIsFollowingAuthor;
+			}
+			
+			var elSe3btn = $(".__se3_follow_btn");	//신규 se3버튼
+			var elSe3Statbtn = $(".__se3_stat_btn");	//신규 se3버튼
+			var elGnbFollowBtn = $(".__followAnchor");	//
+			var elGnbUnFollowBtn = $(".__unfollowAnchor");
+			if (elGnbFollowBtn.length > 0 && elSe3btn.length > 0) {
+				if (!!bIsFlw) {	//팔로잉상태
+					elSe3btn.addClass("on");
+					elSe3btn.find(".se_card_btn_txt").text("팔로잉");
+					if (elSe3btn.hasClass("__card_start_follow") == false) { //se3 카드형 커버일 경우 바꾸지 않음. span 마크업이 남아 있다.
+						elSe3btn.text("팔로잉");
+					}
+					elSe3btn.each(function(idx){
+						this.onclick = function() {
+							var sNclickKey = $(this).attr("data-nclickkey");
+							if (!sNclickKey) {
+								sNclickKey = "tit.unfollow";
+							}
+							mug.common.nclick(elSe3btn[0], sNclickKey);
+							elGnbUnFollowBtn.click();
+							return false;
+						}
+					});
+				} else {
+					elSe3btn.removeClass("on");
+					elSe3btn.find(".se_card_btn_txt").text("팔로우");
+					if (elSe3btn.hasClass("__card_start_follow") == false) { //se3 카드형 커버일 경우 바꾸지 않음. span 마크업이 남아 있다.
+						elSe3btn.text("팔로우");
+					}
+					elSe3btn.each(function(idx){
+						this.onclick = function() {
+							var sNclickKey = $(this).attr("data-nclickkey");
+							if (!sNclickKey) {
+								sNclickKey = "tit.follow";
+							}
+							mug.common.nclick(elSe3btn[0], sNclickKey);
+							elGnbFollowBtn.click();
+							return false;
+						}
+					});
+				}
+			}
+			
+			mug.$.UserAgent.isMobile && elSe3btn.show();
+			
+		}
+		$(window).on("viewerLoad", function(){
+			refreshFollowBtnsForSE3();
+			mug.common.Sharer.init();
+		});
+		window.refreshFollowBtnsForSE3 = refreshFollowBtnsForSE3;
+	})(jQuery, document, window);
+</script><script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/post_se3_viewer.js"></script>
+<script type="text/javascript" src="http://common.like.naver.com/static/js/likeIt.list.js?v=20180215"></script>
+<script type="text/javascript">
+var __volumeMetaJson = {
+	volumeStatusType: "PUBLISHED"
+};
+window.__templateType__ = mug.viewer.templateType.UGC_CARD;
+(function(){
+	var bIsInapp = false;
+	var bIsViewRtLayer = 'false' === 'true';
+	var nVolumeNo = "11413091", nAuthorNo = "35786474";
+	var sProtectType = "0";
+	mug.viewer.se3.PcCardViewer.init({
+		"bIsInapp": bIsInapp, 
+		"bIsViewRtLayer": bIsViewRtLayer, 
+		"nVolumeNo": nVolumeNo,
+		"nAuthorNo": nAuthorNo,
+		"sProtectType": sProtectType,
+		"sLikeDomain": "http://common.like.naver.com",
+		"sStickerDomain": "http://m.gfmarket.naver.com"
+	});
+})();
+(function(window, $) {
+	var isSoundPlatformSupported = "";
+	var se3Body = $(".se_body_wrap");
+	var soundPlayBtn = $(".__sound_play_info_div");
+	if (isSoundPlatformSupported == "true") {
+		$(window).scroll(function() {
+			if (isSoundPlatformSupported == "true") {
+				var fadePoint = $(se3Body).offset().top + $(se3Body).height() - 250;
+				
+				if (fadePoint < $(document).scrollTop() && soundPlayBtn.is(":visible")) {
+					soundPlayBtn.fadeOut();
+				} else if (fadePoint >= $(document).scrollTop() && !$(".__sound_play_info_div").is(":visible")) {
+					soundPlayBtn.fadeIn();
+				}
+				
+				if (!!window.__soundViewer) {
+					window.__soundViewer.scroll($(document).scrollTop());
+				}
+			}
+		});
+	}
+})(window, jQuery);
+</script>
+<script type="text/x-mug-layer-template" id="__template_editor_warning">
+<div class="__template_editor_warning"> <div class="popup_w pop_link app_link" style="display:block;"> <div class="popup"> <div class="pop_cont"> 포스트앱/PC에서 작성한 글은<br/> 모바일웹에서 수정할 수 없습니다.<br/> 포스트앱에서 수정하시겠습니까? <button type="button" class="btn_t1" onclick="location.href='http://post.naver.com/appLauncher.nhn?scheme=open%3FvolumeNo%3D{=volumeNo}%26memberNo%3D{=memberNo}%26version%3D1'; return false;"><span>앱에서 수정하기</span></button> </div> <button class="btn_close" onclick="jQuery('.__template_editor_warning').remove(); return false;"><i class="blind">팝업닫기</i></button> </div> </div> <div class="dim on"></div> </div></script>
+<script type="text/x-mug-layer-template" id="__template_popular_editor_follow_MYFEED">
+	<div class="__template_popular_editor_follow"> <div class="popup_layer layer_myfeed_follow"> <div class="cont_area"> <div class="spot"> <img src="https://ssl.pstatic.net/static.post/image/im/layer_myfeed_171129.jpg" alt=""> </div> <div class="cont"> 팔로우하셨군요! <br/>다음 글은 <em>네이버홈 MY구독</em>에서 <br/> 쉽게 받아보세요. </div> </div> <div class="btn_area"> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.close');jQuery('.__template_popular_editor_follow').remove(); return false;">닫기</a> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.add');mug.contents.util.applyMyFeedNoti('35786474', '');">확인</a> </div> </div> <div class="dim on" onclick="mug.common.nclick(this, 'mfo.close');jQuery('.__template_popular_editor_follow').remove(); return false;"></div> </div></script>
+
+<script type="text/x-mug-layer-template" id="__template_popular_editor_follow_MYFEED_2nd">
+	<div class="__template_popular_editor_follow"> <div class="popup_layer layer_myfeed"> <div class="cont_area"> <div class="spot"> <img src="https://ssl.pstatic.net/static.post/image/im/layer_myfeed_171129.jpg" alt="팔로우하고 MY구독으로 받아보세요."> </div> <div class="cont"> <em>InterBiz 인터비즈</em>님의 포스트를 <br/> 네이버홈에서 받아보기 </div> <div class="description">팔로우하고 MY구독으로 받아보세요.</div> </div> <div class="btn_area"> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.close2');jQuery('.__template_popular_editor_follow').remove(); return false;">취소</a> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.add2');mug.contents.util.followAndMyFeedNoti('35786474', '', myFeedKey);">확인</a> </div> </div> <div class="dim on" onclick="mug.common.nclick(this, 'mfo.close2');jQuery('.__template_popular_editor_follow').remove(); return false;"></div> </div></script>
+<script type="text/x-mug-layer-template" id="__custom_alert_layer_template">
+	<div class="ly_msg" id="__custom_alert_layer" style="z-index:5000;display:none;position:fixed;display:block;-webkit-animation:disappear {=duration}s ease-in-out;-webkit-animation-fill-mode:forwards">
+		<span>{=message}</span>
+	</div>
+</script>
+
+<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/renewal/gnbhandler.js"></script>
+
+
+
+<script type="text/javascript">
+!function($) {
+	__appHeaderParams__="";lcs_do();window.nsc="Mpost.home";window.ccsrv="cc.naver.com";$(window).load(function(){});mug.common.util.attachOnError();
+
+	$(document).ready(function() {
+		
+		if (!mug.$.UserAgent.isInapp && !!window.GnbHandler) {
+			new GnbHandler().start();
+		}
+	});
+
+}(jQuery);
+
+</script>
+<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/lib/splog_m.js"></script>
+<script type="text/javascript">
+	var splog_url = "http://sp.naver.com/sp";
+	BMR.run(splog_url);
+</script>
+<script type="text/javascript">
+		mug.common._nilSendInfo = {
+			"channelId" : '35786474',
+			"gdid" : '00055f7ca0_0000ae2663',
+			"volumeNo" : '11413091',
+			"isAuthorSelf" : 'false',
+			"isFollowingAuthor" :  'false',
+			"eventCategory" : 'post_view',
+			"seriesNo" : '350574'
+		}
+	</script>
+	<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/renewal/mug.common.nil.js"></script>
+<script type="text/javascript">
+window.nsc = "Mpost.viewer";
+</script>
+</body>
+</html>

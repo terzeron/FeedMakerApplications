@@ -1,0 +1,2515 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<HEAD>
+
+
+	<meta http-equiv="Cache-Control" content="no-cache" /> 
+	<meta http-equiv="Expires" content="0" /> 
+	<meta http-equiv="Pragma" content="no-cache" /> 	   
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="naver-site-verification" content="8a7dc61ca674796abc5bedfd548d85da4d6a1a2d"/>
+	
+    <link rel="shortcut icon" href="http://bimage.interpark.com/interpark.ico">
+    <meta http-equiv="imagetoolbar" content="no" />
+<TITLE>북DB ㅣ 인터파크 책매거진 북DB</TITLE>
+<link rel="stylesheet" href="/renewPark/css/_bookdb/common.css?v=<!--#flastmod virtual='../_bookdb/common.css'-->" type="text/css" media="all">
+<link rel="stylesheet" href="/renewPark/css/bookDB_common.css?v=<!--#flastmod virtual='../bookDB_common.css'-->" type="text/css" media="all">
+<link rel="stylesheet" href="/renewPark/css/bookDB_common_ssl.css?v=<!--#flastmod virtual='../bookDB_common_ssl.css'-->" type="text/css" media="all">
+
+<script language="javascript" src="/static/js/common.js"></script>
+<script language="JavaScript" src="/static/js/StrutsValidate.js"></script>
+<script language="javascript" src="/static/js/CookieUtil.js"></script>
+<script language="javascript" src="/static/js/imfs/SessionExpireCheck.js"></script>
+<script language="javascript" src="/gate/html/include/interpark_pcid.js"></script>
+<script language="javascript" src="/gate/js/common.js"></script>
+<script language="javascript" src="/static/js/imfs/bdbCommon.js"></script>
+<script type="text/javascript" src="/renewPark/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/renewPark/js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="/gate/googleAnalytics/gaHeader.js"></script>
+<script language="JavaScript">_gCD18 = "북DB";</script>
+
+
+
+
+</head> 
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var currentPage = document.location.href;
+    var currentUrl = "";
+    var currentUrlParam = "";
+    var linkRst = "N";
+    
+    if(currentPage.indexOf("/bdb/") > 0){
+        currentUrlParam = currentPage.substr(currentPage.indexOf("/bdb/"), currentPage.length);
+        currentUrl = currentPage.substring(currentPage.indexOf("/bdb/"), currentPage.indexOf("?"));
+        
+        if(currentUrl == "/bdb/IssueStory.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/Interview.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/CelebrityBookShelf.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/starCast.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/sciencePlus.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/Column.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/BookInSide.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/NewWalk.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/CoverStory.do") {
+            linkRst = "Y";
+        }else if(currentUrl == "/bdb/Sketch.do") {
+            linkRst = "Y";
+        } else {
+            linkRst = "N";
+        }
+        
+        if(linkRst == "Y") {
+            currentUrl = "http://news.bookdb.co.kr" + currentUrlParam;
+            location.href = currentUrl;
+        }
+    }
+    
+</script>
+
+<script type="text/javascript">		
+function getHeaderLogin(){
+    var url = "http://bookdb.co.kr/bdb/member/login.do?_method=initial&gnbYn=Y&&bmid1=tnb&bmid2=login&bmid3=01";
+    var currentUrl = location.href;
+    var idx1 = currentUrl.indexOf("/",9);
+    var idx2 = currentUrl.indexOf("?",idx1+1);
+    
+    if(idx2 == -1) idx2 = 9999;
+    var str1 = currentUrl.substring(idx1,idx2);
+    var str2 = currentUrl.substring(idx2+1);
+    var idxLogOut = currentUrl.indexOf("logout");
+    
+    if(idxLogOut != -1){
+        str1 = "";
+        str2 = "";
+    }
+    
+    var login = currentUrl.indexOf("login");
+    
+    var orderList = currentUrl.indexOf("/order/OrderSearchList.do");
+    
+    if (orderList != -1) {
+    } else if (orderList == -1 && idxLogOut==-1 && login==-1) { 
+        url += "&historyGoCnt=-1";
+    }
+    window.open(url,"_self","");
+}
+                
+function getHeaderLogOut(){
+	var url = "http://bookdb.co.kr/bdb/member/login.do?_method=logout&gnbYn=Y";
+	window.open(url,"_self","");
+}
+
+function gnbView(num){
+	if(document.getElementById('ly_gnb'+num).style.display==''){
+		document.getElementById('ly_gnb'+num).style.display="none";
+	}else{
+		document.getElementById('ly_gnb'+num).style.display="";
+	}
+}
+
+function gnbBtn(num){
+	if(document.getElementById('btn_gnb'+num).src=='http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu0'+num+'-off.png'){
+		document.getElementById('btn_gnb'+num).src='http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu0'+num+'-on.png';
+	}else{
+		document.getElementById('btn_gnb'+num).src='http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu0'+num+'-off.png';
+	}
+}
+
+function showGLayer(layer_id) {
+	var layer_id = document.getElementById(layer_id);
+	if(layer_id){
+		layer_id.style.display = '';
+	}
+}
+
+function hideGLayer(layer_id) {
+	var layer_id = document.getElementById(layer_id);
+	if(layer_id){
+		layer_id.style.display = 'none';
+	}
+}	
+
+function sRank(){
+	if(document.getElementById('sRank').style.display==''){
+		document.getElementById('sRank').style.display="none";
+	}else{
+		document.getElementById('sRank').style.display="";
+	}
+}
+
+function sRankClose(){
+	$('#sRank').hide();    
+}
+
+function search(){
+	var f = document.searchForm;
+	f.searchWord.value = document.getElementById('searchWord').value;
+	f.elements["_method"].value = "list";
+	f.target="_self";
+	f.submit();
+}
+
+function kaView(text, url, target ){
+	var val = "<a href=\""+url+"\" target=\""+target+"\" >"+text+"</a>"
+	$('#kaDivC').html(val);
+	//document.getElementById('kaDiv').style.display="block";
+}
+
+$(document).ready(function(){
+	$("#searchWord").bind('keyup', function(e){
+		if(event.keyCode == 13){
+			search();
+			return;
+		}			
+	});
+});
+
+</script>
+	
+<div id="upper_banner100per" style="display:none;"></div>
+
+<script type="text/javascript">
+function bdb_setCookie( name, value, expiredays )
+{
+	var todayDate = new Date();
+	todayDate.setDate( todayDate.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+
+function upper_banner_close()
+{
+	bdb_setCookie( "bdb_upper_banner", "done" , 1);
+	$('#upper_banner100per').hide();
+}
+
+if(getCookie("bdb_upper_banner")!="done"){
+	var bookDBTopAdObj = getXmlObj_602("602014", "");
+	var _topAdHtml = "";
+	if(bookDBTopAdObj.info.length == 1){
+		_topAdHtml += '<div class="upper_100Wrap"  style="background: url('+bookDBTopAdObj.info[0].imgurls+') no-repeat center top;">';
+		_topAdHtml += '<div class="upper_100Wrap">';
+		_topAdHtml += '	<div class="upperBan_960Center"><a href="javascript:upper_banner_close();" class="close" title="닫기"></a>';
+		_topAdHtml += '		<div class="ttiBan_imgBox"><a href="'+bookDBTopAdObj.info[0].linkurl+'" target="'+bookDBTopAdObj.info[0].linktarget+'"><img src="'+bookDBTopAdObj.info[0].imgurl+'" alt="" /></a></div>';
+		_topAdHtml += '	</div>';
+		_topAdHtml += '</div>';
+		_topAdHtml += '</div>';
+		$('#upper_banner100per').css('backgroundColor', bookDBTopAdObj.info[0].text2);
+		$('#upper_banner100per').html(_topAdHtml).show();
+	}else if(bookDBTopAdObj.info.length == 2){
+		_topAdHtml += '<div class="upper_100Wrap" style="background: url('+bookDBTopAdObj.info[0].imgurls+') no-repeat center top;">';
+		_topAdHtml += '<div class="upperBan_960Center">';
+		_topAdHtml += '	<a href="javascript:upper_banner_close();" class="close" title="닫기"></a>';
+		_topAdHtml += '	<div class="ttiBan_imgBox1"><a href="'+bookDBTopAdObj.info[0].linkurl+'" target="'+bookDBTopAdObj.info[0].linktarget+'"><img src="'+bookDBTopAdObj.info[0].imgurl+'" alt=""></a></div>';
+		_topAdHtml += '	<div class="ttiBan_imgBox2"><a href="'+bookDBTopAdObj.info[1].linkurl+'" target="'+bookDBTopAdObj.info[1].linktarget+'"><img src="'+bookDBTopAdObj.info[1].imgurl+'" alt=""></a></div>';
+		_topAdHtml += '</div>';
+		_topAdHtml += '</div>';
+		_topAdHtml += '<div class="upper_patten100per" style="background-color:'+bookDBTopAdObj.info[1].text2+';"></div>';
+		$('#upper_banner100per').css('backgroundColor', bookDBTopAdObj.info[0].text2);
+		$('#upper_banner100per').html(_topAdHtml).show();
+	}
+}
+
+</script>
+
+<div id="header">
+	<div id="gateGnb">
+		<div class="gateMenu">
+			<!--<div class="inparkHome"><p><a href="http://book.interpark.com" title="인터파크홈" target="_blank">인터파크 홈</a></p></div>-->
+			<ul> 
+				<li>
+					<script type="text/javascript">
+						var loginString ;
+						if (getCookie("tempinterparkGUEST") == "" || getCookie("tempinterparkGUEST") == "logout" ) {
+							loginString = "<a href=\"javascript:getHeaderLogin();\" title=\"로그인\">로그인</a>";
+						} else {
+							loginString = "<a href=\"javascript:getHeaderLogOut();\" title=\"로그아웃\">로그아웃</a>";
+						}
+						document.write(loginString);
+					</script>
+				</li>
+				<li><a href="http://bookdb.co.kr/bdb/Notify.do?_method=bdbNotiList&bmid1=tnb&bmid2=notice&bmid3=01" title="공지사항">공지사항</a></li>
+				<li><a href="http://book.interpark.com?bmid1=tnb&bmid2=inpark&bmid3=01" title="인터파크도서">인터파크도서</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="gnbArea">
+		<div id="searchWrap">
+			<div class="searchArea">
+				<h1>
+					<a href="http://bookdb.co.kr/bdb/Main.do?_method=initial&bmid1=tnb&bmid2=bookdb&bmid3=01" class="bookDB_logo" title="북DB"><span>BookDB</span></a>
+				</h1>
+				<div class="gnbSearch" id="SearchGNBFrom">                
+					<div class="searchBox">				
+						<label for="searchWord" class="blind">북DB검색</label>
+						<input id="searchWord" type="text" name="keyword" title="검색어 입력"  value="" >              
+					</div>	
+					<div class="srBtn"><a href="javascript:search();"><img src="http://bimage.interpark.com/renewPark/bookDB/gnb/btn_search.gif" alt="검색"/></a></div>
+				</div>
+             <div class="scRankWrap">
+                 <div class="scRankTit">
+                     <img src="http://bimage.interpark.com/renewPark/bookDB/gnb/txt_searRank.gif" alt="">
+                 </div>
+
+                 <div class="scRankBook">
+                     <span class="num_gray_1"></span>
+                     <span class="bName" id="kaDivC"></span>
+                     <div class="arrowBtn"><a href="javascript:showGLayer('srankLayer');" class="scArrow"></a>
+
+                         
+                         <!-- 랭킹 레이어 -->
+                         <div id="srankLayer" class="ly_rankList" style="display:none;">
+                             <div class="titRank">
+                                 <div class="sTit"><img src="http://bimage.interpark.com/renewPark/bookDB/gnb/txt_searRank.gif" alt=""></div>
+                                 <div class="close">
+                                     <a href="javascript:hideGLayer('srankLayer');" class="Xlink">닫기</a>
+                                 </div>
+                             </div>
+
+                             <ol class="rankList">
+                             
+                                         <script>
+                                             kaView("배아이 | 좀비고등학교 코믹스 5", "http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=278999484&bmid1=tnb&bmid2=sranking&bmid3=01", "_blank" );
+                                         </script>
+                             
+                                 <li>
+                                     <div class="num_ctrl num_Dgray01 ico"></div>
+                                     <a href="http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=278999484&bmid1=tnb&bmid2=sranking&bmid3=01" title="" target="_blank" >
+                                         <span class="writer">배아이 </span>
+                                         <span class="subject"> 좀비고등학교 코믹스 5</span>
+                                     </a>
+                                 </li>
+
+                             
+                                 <li>
+                                     <div class="num_ctrl num_Dgray02 ico"></div>
+                                     <a href="http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=270046418&bmid1=tnb&bmid2=sranking&bmid3=01" title="" target="_blank" >
+                                         <span class="writer">마크 맨슨 </span>
+                                         <span class="subject"> 신경 끄기의 기술</span>
+                                     </a>
+                                 </li>
+
+                             
+                                 <li>
+                                     <div class="num_ctrl num_Dgray03 ico"></div>
+                                     <a href="http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=269518845&bmid1=tnb&bmid2=sranking&bmid3=01" title="" target="_blank" >
+                                         <span class="writer">김윤나 </span>
+                                         <span class="subject"> 말 그릇</span>
+                                     </a>
+                                 </li>
+
+                             
+                                 <li>
+                                     <div class="num_ctrl num_Dgray04 ico"></div>
+                                     <a href="http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=260042763&bmid1=tnb&bmid2=sranking&bmid3=01" title="" target="_blank" >
+                                         <span class="writer">조남주 </span>
+                                         <span class="subject"> 82년생 김지영</span>
+                                     </a>
+                                 </li>
+
+                             
+                                 <li>
+                                     <div class="num_ctrl num_Dgray05 ico"></div>
+                                     <a href="http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=278307652&bmid1=tnb&bmid2=sranking&bmid3=01" title="" target="_blank" >
+                                         <span class="writer">히가시노 게이고 </span>
+                                         <span class="subject"> 연애의 행방</span>
+                                     </a>
+                                 </li>
+
+                             
+                             </ol>
+                         </div>
+                         <!-- //랭킹 레이어 -->
+                         
+                     </div>
+                 </div>
+             </div>
+
+             
+             <div class="gnbRight_Ban">
+                 <div class="rightBan">
+                     <a href="http://news.bookdb.co.kr/bdb/Column.do?_method=ColumnList&sc.contsDtlType=03&sc.themeNo=498&bmid1=tnb&bmid2=banner&bmid3=01" target="_self">
+                         <img src="http://bimage.interpark.com/milti/bookPark/meet/webz/img/1517963802800.jpg" alt=""/>
+                     </a>
+                 </div>
+             </div>
+             
+			</div>
+		</div>
+
+		<div id="gnbWrap">
+			<ul class="menuLeft">
+				<li onMouseOver="showGLayer('cateSub1');" onMouseOut="hideGLayer('cateSub1');">
+					<a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=11&bmid1=gnb&bmid2=writerdbk&bmid3=00" onfocus="showGLayer('cateSub1');">
+						<img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu01-off.png"  onMouseOver="gnbBtn(1)" onMouseOut="gnbBtn(1)" id="btn_gnb1" alt="작가DB"/>
+					</a>
+					<div id="cateSub1" class="ly_gnb1" style="display:none;">		
+						<div class="ly_arrow"></div>											
+						<div class="ly_boxBg">							
+							<ul class="cate">
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=11&bmid1=gnb&bmid2=writerdbk&bmid3=01">한국소설</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=12&bmid1=gnb&bmid2=writerdbk&bmid3=02">외국소설</a></li>
+								<!--<li><a href="/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=3&bmid1=gnb&bmid2=writerdbk&bmid3=03">장르소설</a></li>-->
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=13&bmid1=gnb&bmid2=writerdbk&bmid3=04">시</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=14&bmid1=gnb&bmid2=writerdbk&bmid3=05">에세이/산문</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=15&bmid1=gnb&bmid2=writerdbk&bmid3=06">경제경영</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=16&bmid1=gnb&bmid2=writerdbk&bmid3=07">자기계발</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=17&bmid1=gnb&bmid2=writerdbk&bmid3=08">만화</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=18&bmid1=gnb&bmid2=writerdbk&bmid3=09">실용/교양</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=authorList&sc.sortType=1&sc.writerCategoryNo=19&bmid1=gnb&bmid2=writerdbk&bmid3=10">유아동</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/PersonDictionary.do?_method=writerCompanyList&bmid1=gnb&bmid2=writerdbk&bmid3=11" onblur="hideGLayer('cateSub1');">출판사 DB</a></li>
+							</ul>
+						</div>
+						<div class="ly_end"></div>
+					</div>
+				</li>
+				<li  onMouseOver="showGLayer('cateSub2');" onMouseOut="hideGLayer('cateSub2');">
+					<a href="http://news.bookdb.co.kr/bdb/Main.do?_method=interviewMain&bmid1=gnb&bmid2=bpeople&bmid3=00" onfocus="showGLayer('cateSub2');">
+						<img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu02-off.png"  onMouseOver="gnbBtn(2)" onMouseOut="gnbBtn(2)" id="btn_gnb2" alt="북인터뷰"/>
+					</a>
+					<div id="cateSub2" class="ly_gnb2" style="display:none;">	
+						<div class="ly_arrow"></div>						
+						<div class="ly_boxBg">
+							<ul class="cate">
+                                <li><a href="http://news.bookdb.co.kr/bdb/IssueStory.do?_method=list&bmid1=gnb&bmid2=bpeople&bmid3=07">이슈&스토리</a></li>
+								<li><a href="http://news.bookdb.co.kr/bdb/Interview.do?_method=InterviewList&bmid1=gnb&bmid2=bpeople&bmid3=02">작가인터뷰</a></li>
+								<li><a href="http://news.bookdb.co.kr/bdb/CelebrityBookShelf.do?_method=CelebrityBookShelfList&bmid1=gnb&bmid2=bpeople&bmid3=04">명사의 서가</a></li>
+                                <li><a href="http://news.bookdb.co.kr/bdb/starCast.do?_method=list&bmid1=gnb&bmid2=bpeople&bmid3=07" >북스타캐스트</a></li>
+                                <li><a href="http://news.bookdb.co.kr/bdb/sciencePlus.do?_method=list&bmid1=gnb&bmid2=bpeople&bmid3=01">사이언스+</a></li><!-- 사이언스플러스메뉴 -->
+								<li><a href="http://news.bookdb.co.kr/bdb/Column.do?_method=ColumnList&bmid1=gnb&bmid2=bpeople&bmid3=05">칼럼</a></li>
+								<li><a href="http://news.bookdb.co.kr/bdb/BookInSide.do?_method=BookInSideList&bmid1=gnb&bmid2=bpeople&bmid3=06" onblur="hideGLayer('cateSub2');">북인사이드</a></li>
+<!--                                <li><a href="/bdb/IssueTrend.do?_method=IssueTrendList&bmid1=gnb&bmid2=bpeople&bmid3=03">책 읽는 男女</a></li>-->
+								<li><a href="http://news.bookdb.co.kr/bdb/NewWalk.do?_method=NewWalkActionList&bmid1=gnb&bmid2=bpeople&bmid3=03">신간 산책</a></li>
+                                <li><a href="http://news.bookdb.co.kr/bdb/CoverStory.do?_method=CoverStoryList&bmid1=gnb&bmid2=bpeople&bmid3=01">출판계소식</a></li>
+							</ul>
+						</div>
+						<div class="ly_end"></div>
+					</div>
+				</li>
+				<li  onMouseOver="showGLayer('cateSub3');" onMouseOut="hideGLayer('cateSub3');">
+					<a href="http://bookdb.co.kr/bdb/NovelList.do?_method=NewMain&bmid1=gnb&bmid2=webnovel&bmid3=00" onfocus="showGLayer('cateSub3');">
+						<img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu03-off.png"  onMouseOver="gnbBtn(3)" onMouseOut="gnbBtn(3)" id="btn_gnb3" alt="웹소설"/>
+					</a>
+					<div id="cateSub3" class="ly_gnb3" style="display:none;">	
+						<div class="ly_arrow"></div>						
+						<div class="ly_boxBg">
+							<ul class="cate">
+								<li><a href="http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=AuthorList&type=A&rightType=N&D=2&bmid1=gnb&bmid2=webnovel&bmid3=01">작가들의 연재</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=AmateurWriterList&type=A&D=4&rightType=N&bmid1=gnb&bmid2=webnovel&bmid3=02">나도작가!</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=kAuthorList&type=A&D=3&rightType=K&bmid1=gnb&bmid2=webnovel&bmid3=03"  onblur="hideGLayer('cateSub3');">K오서 어워즈</a></li>
+							</ul>
+						</div>
+						<div class="ly_end"></div>
+					</div>
+				</li>
+				<li  onMouseOver="showGLayer('cateSub4');" onMouseOut="hideGLayer('cateSub4');">
+					<a href="http://bookdb.co.kr/bdb/Meet.do?_method=list&bmid1=gnb&bmid2=meet&bmid3=00" onfocus="showGLayer('cateSub4');">
+						<img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu04-off.png"  onMouseOver="gnbBtn(4)" onMouseOut="gnbBtn(4)" id="btn_gnb4" alt="리뷰"/>
+					</a>
+					<div id="cateSub4" class="ly_gnb4" style="display:none;">	
+						<div class="ly_arrow"></div>						
+						<div class="ly_boxBg">
+							<ul class="cate">
+								<li><a href="http://bookdb.co.kr/bdb/Meet.do?_method=list&bmid1=gnb&bmid2=meet&bmid3=01">만남신청</a></li>
+								<li><a href="http://bookdb.co.kr/bdb/Meet.do?_method=list&viewType=C&bmid1=gnb&bmid2=meet&bmid3=02">만남캘린더</a></li>
+								<li><a href="http://news.bookdb.co.kr/bdb/Sketch.do?_method=SketchList&bmid1=gnb&bmid2=bpeople&bmid3=03" onblur="hideGLayer('cateSub4');">만남후기</a></li>
+								<!-- <li><a href="http://bookdb.co.kr/bdb/lecture.do?_method=list&bmid1=gnb&bmid2=bpeople&bmid3=04" onblur="hideGLayer('cateSub4');">지식강연</a></li> -->
+							</ul>
+						</div>
+						<div class="ly_end"></div>
+					</div>
+				</li>
+				<li  onMouseOver="showGLayer('cateSub5');" onMouseOut="hideGLayer('cateSub5');">
+					<a href="http://bookdb.co.kr/bdb/WebReview.do?_method=bestReview&bmid1=gnb&bmid2=review&bmid3=00" onfocus="showGLayer('cateSub54');">
+						<img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu05-off.png"  onMouseOver="gnbBtn(5)" onMouseOut="gnbBtn(5)" id="btn_gnb5" alt="작가만남"/>
+					</a>
+					<div id="cateSub5" class="ly_gnb5" style="display:none;">	
+						<div class="ly_arrow"></div>						
+						<div class="ly_boxBg">
+							<ul class="cate">
+								<li><a href="http://bookdb.co.kr/bdb/WebReview.do?_method=bestReview&bmid1=gnb&bmid2=review&bmid3=01">베스트리뷰</a></li>
+							</ul>
+						</div>
+						<div class="ly_end"></div>
+					</div>
+				</li>
+				<li  onMouseOver="showGLayer('cateSub6');" onMouseOut="hideGLayer('cateSub6');">
+					<a href="http://bookdb.co.kr/bdb/RankingCategory.do?_method=rankingMainList&bmid1=gnb&bmid2=rank&bmid3=00" onfocus="showGLayer('cateSub6');">
+						<img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu06-off.png"  onMouseOver="gnbBtn(6)" onMouseOut="gnbBtn(6)" id="btn_gnb6" alt="랭킹"/>
+					</a>
+					<div id="cateSub6" class="ly_gnb6" style="display:none;">	
+						<div class="ly_arrow"></div>						
+						<div class="ly_boxBg">
+							<ul class="cate">
+								<li><a href="http://bookdb.co.kr/bdb/RankingCategory.do?_method=rankingTot&sc.page=1" onblur="hideGLayer('cateSub6');">작가랭킹</a></li>
+							</ul>
+						</div>
+						<div class="ly_end"></div>
+					</div>
+				</li>
+				<li  class="eLibrary">
+					<span class="ico_preView"></span>
+					<a href="http://bookdb.co.kr/bdb/ElibMain.do?_method=initial" onfocus="showGLayer('cateSub7');">
+						<img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu07-off.png"  onMouseOver="gnbBtn(7)" onMouseOut="gnbBtn(7)" id="btn_gnb7" alt="전자도서관"/>
+					</a>
+					<!-- Layer 7 =====  전자도서관 레이어 가리기 
+					<div id="cateSub7" class="ly_gnb7" style="display:none;">	
+						<div class="ly_arrow"></div>						
+						<div class="ly_boxBg">
+							<ul class="cate">
+								<li><a href="#">어린이도서관</a></li>
+								<li><a href="#">교육도서관</a></li>
+								<li><a href="#">일반도서관</a></li>
+								<li><a href="#" onblur="hideGLayer('cateSub7');">이북도서관</a></li>
+							</ul>
+						</div>
+						<div class="ly_end"></div>
+					</div>
+					 //Layer 7 -->
+				</li>
+			</ul>
+			<ul class="menuRight">
+				<li><a href="http://news.bookdb.co.kr/bdb/IssueStory.do?_method=list&bmid1=gnb&bmid2=bpeople&bmid3=06" title="이슈&스토리"><img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu_right04.png" alt="이슈&스토리"/></a></li>
+				<li><a href="http://news.bookdb.co.kr/bdb/Interview.do?_method=InterviewList&bmid1=gnb&bmid2=button&bmid3=01" title="작가인터뷰"><img src="http://bimage.interpark.com/renewPark/bookDB/gnb/gnb_menu_right01.png" alt="작가인터뷰"/></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<form name="searchForm" method="get" action="http://bookdb.co.kr/bdb/SearchList.do?_method=list&bmid1=tnb&bmid2=search&bmid3=01">
+	<input type="hidden" name="_method"/>
+	<input type="hidden" name="searchWord"     value=""/>
+</form>
+<script type="text/javascript">
+
+var cookiedata = document.cookie;    
+
+/*
+if ( cookiedata.indexOf("review2015Event=done") < 0 ){
+	document.getElementById("upper_banner100per").style.display = "";
+}else {
+	document.getElementById("upper_banner100per").style.display = "none";
+}
+*/
+
+function setEventCookie( name, value, expiredays ) {
+    var todayDate = new Date();
+
+    todayDate.setDate(todayDate.getDate());
+    var naxHours = 23 - todayDate.getHours();
+    var naxMinutes = 60 - todayDate.getMinutes();
+    var naxSeconds = 60 - todayDate.getSeconds();
+
+    todayDate.setHours(todayDate.getHours() + naxHours);
+    todayDate.setMinutes(todayDate.getMinutes() + naxMinutes-1);
+    todayDate.setSeconds(todayDate.getSeconds() + naxSeconds);
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+
+//최상단 띠배너
+/*
+$(function(){
+    $("#upper_banner100per .close").click(function(){
+        $("#upper_banner100per").hide();
+        setEventCookie( "review2015Event", "done" , 1 );
+    });
+});
+*/
+</script>
+
+<!-- ## welcome QuickMenu Left S ## -->
+<form onSubmit="return false;">
+    <script type="text/javascript" src="/gate/html/include/skyLeftBanner_bookDb.js"></script>
+</form>
+<!--// ## welcome QuickMenu Left S ## -->
+
+<script language="JavaScript">
+$(".sliderWrap").bxSlider({
+    slideWidth: 98,
+    responsive: false,
+    randomStart: true,
+    auto: false,
+    autoHover: false,
+    infiniteLoop: true,
+    controls: true,
+    pager: false
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" src="/static/js/imfs/BookDBComment.js"></script>
+<script language="javascript">
+	function gotoThemeList(obj){
+		if ( obj.value!=null && obj.value!="" ) {				
+			location.href="/meet/webZineDiary.do?_method=novelListByAuthor&sc.contsType=005&sc.contsDtlType=01&sc.themeNo=" + obj.value + "&sc.orderTp=desc";
+		}
+	}		
+
+	function gotoListOrderSelect(obj){
+		location.href="/meet/webZineDiary.do?_method=novelListByAuthor&sc.contsType=005&sc.contsDtlType=01&sc.themeNo=4&sc.orderTp="+obj.value;
+	}	
+	
+	function toContent(mrNo){
+		var frm = document.NovelContentViewForm;
+		frm.action = "/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor";
+		frm.method = "get";
+		frm.elements["_method"].value = "NovelDetailByAuthor";
+		frm.elements["sc.webzNo"].value = mrNo;
+		frm.elements["sc.contsType"].value = "005";
+		frm.elements["sc.contsDtlType"].value = "01";
+		frm.elements["type"].value = "W";
+		
+		var pageNo = frm.elements["sc.page"].value*1;
+		frm.elements["listPage"].value = 1;
+		frm.elements["sc.page"].value = "1";
+		frm.elements["listRow"].value  = frm.elements["sc.row"].value;
+		frm.submit();
+	}		
+
+	function summaryView(tp){
+		document.getElementById("contsummary").style.display=tp; 
+	}
+
+	//레이어 팝업
+	function moreView(){
+		if(document.getElementById('moreView').style.display==''){
+			document.getElementById('moreView').style.display="none";
+		} else {
+			document.getElementById('moreView').style.display="";
+		}
+	}
+
+	function moreViewClose(){
+		$("#moreView").hide();    
+	}
+
+	function goUrl(url){
+		window.location.href= url;
+	}
+	function goUrl2(url){
+		open(url,"","");
+	}
+
+	function addFavorite() {
+		if(!_isLogin()){
+			alert("로그인이 필요한 서비스 입니다.");
+			login();
+			return;
+		}
+
+		if('N' == 'Y'){
+			alert("이미 즐겨찾기 하셨습니다.");
+			return;
+		}
+		var intFavCnt = 0;
+		intFavCnt = parseInt($('#favoriteCntSpan').text());
+		
+		$.getJSON("/bdb/Favorite.do?_method=add2&contsNo=8", 
+			function (data) {
+			if (data.result== "F1") {
+				alert("로그인이 필요한 서비스 입니다.");
+				login();
+			}else if (data.result== "F2") {
+				alert("이미 즐겨찾기 하셨습니다.");
+			}else if (data.result== "F3") {
+				//$('#favoriteStar').attr("class","starBox_ctrl ico_sbOn ico");
+				//intFavCnt = intFavCnt + 1;
+				//$('#favoriteCntSpan').text(intFavCnt);
+				alert("즐겨찾기 하였습니다.");
+				window.location.reload();
+			} else {
+				alert("등록에 실패하였습니다. 다시 시도해주세요.");
+			}			
+		});
+	}
+</script>
+<link rel="stylesheet" href="/renewPark/css/_bookdb/webFiction.css?v=<!--#flastmod virtual='../_bookdb/webFiction.css'-->" type="text/css" media="all">
+<div id="container">
+	<!-- naviWrap -->
+	<div id="naviWrap" class="clearfix">		
+		<div class="home_navi"><a href="http://bookdb.co.kr" class="btn_ctrl bt_NaviHome ico"><span>홈</span></a></div>	
+		<div class="selectWrap"><p class="select">웹소설</p></div>
+		
+		<div class="selectWrap"><p class="select">작가들의 연재</p></div>
+					
+	</div>
+	<!--// naviWrap -->
+	<h2 class="noLine">
+	
+	<img src="http://bimage.interpark.com/renewPark/bookDB/title/wFic_Btit_wSeri.png" class="timg" alt="작가들의 연재"/>
+			
+	<div class="tab_btnWrap">
+		<a href="#" class="btn_ctrl btn_wChal button" onclick="location='/bdb/NovelMaster.do?_method=form'" title="나도작가도전"></a>
+		<a href="#" class="btn_ctrl btn_favor button" onclick="location='/bdb/FavoriteList.do?_method=list'" title="즐겨찾기"></a>
+	</div>
+	</h2>
+	
+	<div id="wFic_Lwrap">
+			
+		<!-- guide Wrap -->
+		<div class="infoBoxLine"></div>
+		<div class="infoBox">
+			<div class="infoTit">
+				<div class="tit"><span class="bName">정혜신의 그림에세이</span><span class="bar">|</span><span class="wName">정혜신</span> </div>
+				<div class="btn1">
+					
+					<a href="#" class="btn_ctrl btn_wrInfo button" title="작가정보더보기" onclick="javascript:goUrl('/bdb/PersonDictionary.do?_method=writerDetail&prsnNo=2254153')"></a>
+					
+					
+				</div>
+				<!-- 20131115 누적 조회수 -->
+				<div class="accuNum">
+					<p>누적 조회수 : <span>659,341</span>건</p>
+				</div>
+				<!--// 20131115 누적 조회수 -->
+			</div>
+			<div class="infoCon">
+				<div class="pic"><img src="http://bimage.interpark.com/milti/bookPark/meet/webz/img/img_list_4.jpg" class="bd" alt="" onError="javascript:this.src='http://bimage.interpark.com/renewPark/bookDB/bdb_noimage_130_82.gif';"/></div>
+				<div class="con">
+					<div class="btn2">
+						<a href="#" class="btn_ctrl btn_prolog button" title="프롤로그보기" onclick="javascript:toContent(8)"></a>
+						<a href="#" class="btn_ctrl btn_1stView button" title="첫회보기"  onclick="javascript:toContent(61)"></a>
+					</div>
+					<div class="date">작품소개 <span> 2009.01.21 연재시작 | 수요일 업데이트</span></div>
+					<p class="txt">
+						정신과 전문의 정혜신의 <그림에세이>는 절제된 그림과 짧은 글귀로 삶의 가치와 의미를 찾고자 하는 내용을 보여준다. 온기가 느껴지는 질그릇 같은 소박함과 잔잔한 여운이 담긴 그림과 글을 통해 일상에서 잊고 있었던 것은 무엇인지 알려준다. 
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--- 레이어 팝업 -->
+		<div class="lyBox">
+			<div id="moreView" class="moreViewPop" style="display:none;">
+				<span class="ly_ncArrow"></span>
+				<div class="viewPop">
+					<div class="poptit">
+						<span class="tit">작품소개</span>
+						<a href="javascript:moreView()" class="close" title="닫기"/></a>
+					</div>
+					<p>
+						정신과 전문의 정혜신의 <그림에세이>는 절제된 그림과 짧은 글귀로 삶의 가치와 의미를 찾고자 하는 내용을 보여준다. 온기가 느껴지는 질그릇 같은 소박함과 잔잔한 여운이 담긴 그림과 글을 통해 일상에서 잊고 있었던 것은 무엇인지 알려준다.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!---// 레이어 팝업 -->
+		<!-- 별점 노출 -->
+		<div class="th_startWrap">
+			<div class="starBbox">		
+			
+				<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다. -->				
+				<span class="star_on" style="width:0.0%;"></span>
+				<span class="star_off" style="width:100%;"></span>
+			</div>
+			<div class="th_sNum">0.0</div>
+			<div class="favoBox">
+				<a href="javascript:addFavorite();"><img src="http://bimage.interpark.com/renewPark/bookDB/wFiction/favo_txt.gif" alt="즐겨찾기"/></a>
+				<span>16</span>
+			</div>
+		</div>
+		<!-- // 별점 노출 -->
+		<!--// guide Wrap -->
+		<!-- list Wrap -->
+		<div class="th_listWrap">
+			<table class="thList">
+				<colgroup>
+					<col width="70">
+					<col width="320">
+					<col width="90">
+					<col width="80">
+					<col width="140">
+				</colgroup>
+				<thead>
+					<tr>
+						<th><p>회차</p></th>
+						<th><p>내용</p></th>
+						<th><p>업데이트</p></th>
+						<th><p>조회수</p></th>
+						<th><p>별점</p></th>
+					</tr>
+				</thead>
+				<tbody>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(392.0);">제9화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(392.0);">주가 조작으로 일확천금을 꿈꾸는 영화 속 조폭 두목은 자신의 위세를 과시할 때 구멍이 하나뿐인 수제벨트를 풀어 상대에게</a></p></td>
+						<td><p>2009.03.19</p></td>
+						<td><p>4,132</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(391.0);">제8화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(391.0);">어느 고즈넉한 사찰의 벽에는 이런 글귀가 적혀 있습니다. ‘사람이 죽으면 세 가지 독이 사라지는데 그 중 하나가 성냄이다</a></p></td>
+						<td><p>2009.03.12</p></td>
+						<td><p>3,091</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(291.0);">제7화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(291.0);">언어분석 연구결과에 의하면 우리나라 사람들이 감정을 표현할 때 자주 쓰는 말은 430여개랍니다. 그것을 불쾌와 쾌&#40;快&#41;의 단어로</a></p></td>
+						<td><p>2009.03.12</p></td>
+						<td><p>4,181</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(209.0);">제6화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(209.0);">수십 년간 학교에서 아이들을 가르치다가 지금은 세계적인 홈스쿨링 운동가로 인정을 받는 이가 있습니다. </a></p></td>
+						<td><p>2009.03.04</p></td>
+						<td><p>5,567</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(182.0);">제5화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(182.0);">한 중년 주부는 기도발이 좋으려면 기도의 내용이 복잡하지 않아야 한다는 확고한 믿음을 가지고 있습니다. </a></p></td>
+						<td><p>2009.02.25</p></td>
+						<td><p>4,565</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(126.0);">제4화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(126.0);">곱빼기 포함해 600만-700만 그릇. 우리나라 사람들이 하루동안 먹는 자장면의 양이 그렇답니다. </a></p></td>
+						<td><p>2009.02.16</p></td>
+						<td><p>4,828</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(102.0);">제3화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(102.0);">허름한 옷차림만 보고 박대했는데 알고보니 알토란 재력가였다거나 반대로 그럴 듯한 허우대에 외국 유학파라는 이력을 믿고</a></p></td>
+						<td><p>2009.02.10</p></td>
+						<td><p>3,932</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(61.0);">제2화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(61.0);">최근 조사에 의하면, 호주 사람들이 가장 바람직하다고 생각하는 직업은 목수랍니다. 이어서 타일공, 페인트공 등 육체노동을</a></p></td>
+						<td><p>2009.02.02</p></td>
+						<td><p>5,124</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					<tr>
+						<td><p><a href="javascript:toContent(8.0);">제1화</a></p></td>
+						<td class="tl"><p><a href="javascript:toContent(8.0);">전 세계적으로 수 천만 명의 남녀노소를 열광시킨 영화 &lt;트랜스포머&gt;의 감독은 처음에 연출을 제의받고 일언지하에 거절했답니다. 악당을</a></p></td>
+						<td><p>2009.01.21</p></td>
+						<td><p>6,121</p></td>
+						<td>
+							<div class="star">
+								<div class="starBbox">		
+									<!-- 건수를 % 퍼센트로 노출하도록 해두었습니다.
+									-off는 항상 100% (회색별) -on으로 % 조절하여 표시
+									20%가 별 1개 10%가 별 1/2
+									 -->			
+									 	
+									<span class="star_on" style="width:0.0%;"></span>
+									<span class="star_off" style="width:100%;"></span>
+								</div>
+								<div class="starNum">0.0</div>
+							</div>
+						</td>
+					</tr>
+		
+					</tbody>
+				</table>
+			</div>
+		
+<script language="javascript">
+<!--
+function gotoPage(p, f) {
+	document.forms[f].elements["sc.page"].value = p;
+	document.forms[f].submit();
+}
+function setPage(p, f) {
+	f.elements["sc.page"].value = p;
+}
+//-->
+</script>
+<div id="pageNaviType"><span class="lnk_prev2"><A HREF='#' onClick='gotoPage(1,"WebzineDiaryForm"); return false;' alt='1'><img src="http://bimage.interpark.com/renewPark/bookDB/common/btn/btnPaging_pre2.png" /></A></span><span class="lnk_prev"><A HREF='#' onClick='gotoPage(18,"WebzineDiaryForm"); return false;' alt='1 페이지 앞으로'><img src="http://bimage.interpark.com/renewPark/bookDB/common/btn/btnPaging_pre1.png" /></A></span><ul><li><A HREF='#' onClick='gotoPage(11,"WebzineDiaryForm"); return false;' alt=''>11</A></li>
+<li><A HREF='#' onClick='gotoPage(12,"WebzineDiaryForm"); return false;' alt=''>12</A></li>
+<li><A HREF='#' onClick='gotoPage(13,"WebzineDiaryForm"); return false;' alt=''>13</A></li>
+<li><A HREF='#' onClick='gotoPage(14,"WebzineDiaryForm"); return false;' alt=''>14</A></li>
+<li><A HREF='#' onClick='gotoPage(15,"WebzineDiaryForm"); return false;' alt=''>15</A></li>
+<li><A HREF='#' onClick='gotoPage(16,"WebzineDiaryForm"); return false;' alt=''>16</A></li>
+<li><A HREF='#' onClick='gotoPage(17,"WebzineDiaryForm"); return false;' alt=''>17</A></li>
+<li><A HREF='#' onClick='gotoPage(18,"WebzineDiaryForm"); return false;' alt=''>18</A></li>
+<li class="selected"><a href="#"><strong>19</strong></a></li></ul><span class="lnk_next"><img src="http://bimage.interpark.com/renewPark/bookDB/common/btn/btnPaging_next1.png" /></span><span class="lnk_next2"><img src="http://bimage.interpark.com/renewPark/bookDB/common/btn/btnPaging_next2.png" /></span>
+</div>
+
+	</div>
+	<!--Right Common -->
+	
+ 	
+
+<script language="JavaScript">
+function rightTabA(num){
+	for(var i = 1; i <= 4; i++){
+		if(i == num){
+			if(document.getElementById("rightTabA_ly"+i)){
+				document.getElementById("rightTabA_ly"+i).style.display="block"; 
+			}
+			if(document.getElementById("rightTabA_btn"+i)){
+				document.getElementById("rightTabA_btn"+i).className="on"; 
+			}
+		} else{
+			if(document.getElementById("rightTabA_ly"+i)){
+				document.getElementById("rightTabA_ly"+i).style.display="none"; 
+			}
+			if(document.getElementById("rightTabA_btn"+i)){
+				document.getElementById("rightTabA_btn"+i).className="off";    
+			}
+		}
+	}
+}
+
+function rightTabB(num){
+	for(var i = 1; i <= 4; i++){
+		if(i == num){
+			if(document.getElementById("rightTabB_ly"+i)){
+				document.getElementById("rightTabB_ly"+i).style.display="block";
+			} 
+			if(document.getElementById("rightTabB_btn"+i)){
+				document.getElementById("rightTabB_btn"+i).className="on";
+			}  
+		}
+		else{
+			if(document.getElementById("rightTabB_ly"+i)){
+				document.getElementById("rightTabB_ly"+i).style.display="none";
+			} 
+			if(document.getElementById("rightTabB_btn"+i)){
+				document.getElementById("rightTabB_btn"+i).className="off";   
+			}  
+		}
+	}
+}
+</script>
+<div id="wFic_Rwrap">
+
+		<div class="Rtit2"><img class="timg" src="http://bimage.interpark.com/renewPark/bookDB/title/right_tit_work.png" alt="인기작품"/>
+            <!-- 20140826 추가 -->
+            <div class="txt">일간집계/오전 9시 업데이트</div>
+            <!--// 20140826 추가 -->
+        </div>
+		<!-- tab Wrap -->
+		<div class="rightTabWrap">
+			<div class="tablist">
+				<ul>
+					<li class="on" id="rightTabA_btn1" onClick="rightTabA(1)"><p>전체</p></li>
+					<li class="off" id="rightTabA_btn2" onClick="rightTabA(2)"><p>작가연재</p></li>
+					<li class="off" id="rightTabA_btn3" onClick="rightTabA(3)"><p>K-오서</p></li>
+					<li class="off" id="rightTabA_btn4" onClick="rightTabA(4)"><p>나도작가</p></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 인기작가 -->
+		<div class="R_favorWriter">
+				
+			<div class="rTabListWrap" id="rightTabA_ly1" style="display:none;">
+				<ul class="favHot_list">
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numR_1 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=391">애인의 애인에게</a></li>
+							<li class="txt">
+								<span class="wname">백영옥 </span>
+								<span class="bar"></span>
+								<span class="seCount">총122화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:95,612</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:191</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.8</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_2 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=429">땅콩집 이야기 2</a></li>
+							<li class="txt">
+								<span class="wname">강성률 </span>
+								<span class="bar"></span>
+								<span class="seCount">총59화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:103,368</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:24</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.2</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_3 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=233">The Wall</a></li>
+							<li class="txt">
+								<span class="wname">우영창 </span>
+								<span class="bar"></span>
+								<span class="seCount">총72화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:262,675</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:186</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_4 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=4">정혜신의 그림에세이</a></li>
+							<li class="txt">
+								<span class="wname">정혜신 </span>
+								<span class="bar"></span>
+								<span class="seCount">총189화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:659,341</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:263</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_5 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=356">지금 제가 죽어도 될까요?</a></li>
+							<li class="txt">
+								<span class="wname">손선영 </span>
+								<span class="bar"></span>
+								<span class="seCount">총43화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:32,663</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:3</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_6 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=226">지구별 어른, 어린왕자를...</a></li>
+							<li class="txt">
+								<span class="wname">정희재 </span>
+								<span class="bar"></span>
+								<span class="seCount">총22화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:114,791</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:69</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_7 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=331">나는 힘이 세다</a></li>
+							<li class="txt">
+								<span class="wname">안영실 </span>
+								<span class="bar"></span>
+								<span class="seCount">총42화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:26,769</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:25</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  8.6</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_8 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=14">양파가 운다</a></li>
+							<li class="txt">
+								<span class="wname">전아리 </span>
+								<span class="bar"></span>
+								<span class="seCount">총86화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:134,674</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:185</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_9 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=183">사춘기 맞짱 뜨기</a></li>
+							<li class="txt">
+								<span class="wname">노경실 </span>
+								<span class="bar"></span>
+								<span class="seCount">총47화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:216,757</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:678</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+							<span class="wFic_btn_ctrl wFic_numG_1 ico"></span>
+							<span class="wFic_btn_ctrl wFic_numG_0 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=246">수줍은 느낌의 미소</a></li>
+							<li class="txt">
+								<span class="wname">김현구 </span>
+								<span class="bar"></span>
+								<span class="seCount">총59화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:182,695</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:91</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+				
+				</ul>
+			</div>
+		<!--// 인기작가 -->
+		
+				
+			<div class="rTabListWrap" id="rightTabA_ly2" style="display:none;">
+				<ul class="favHot_list">
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numR_1 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=391">애인의 애인에게</a></li>
+							<li class="txt">
+								<span class="wname">백영옥 </span>
+								<span class="bar"></span>
+								<span class="seCount">총122화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:95,612</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:191</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.8</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_2 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=429">땅콩집 이야기 2</a></li>
+							<li class="txt">
+								<span class="wname">강성률 </span>
+								<span class="bar"></span>
+								<span class="seCount">총59화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:103,368</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:24</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.2</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_3 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=233">The Wall</a></li>
+							<li class="txt">
+								<span class="wname">우영창 </span>
+								<span class="bar"></span>
+								<span class="seCount">총72화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:262,675</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:186</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_4 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=4">정혜신의 그림에세이</a></li>
+							<li class="txt">
+								<span class="wname">정혜신 </span>
+								<span class="bar"></span>
+								<span class="seCount">총189화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:659,341</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:263</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_5 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=356">지금 제가 죽어도 될까요?</a></li>
+							<li class="txt">
+								<span class="wname">손선영 </span>
+								<span class="bar"></span>
+								<span class="seCount">총43화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:32,663</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:3</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_6 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=226">지구별 어른, 어린왕자를...</a></li>
+							<li class="txt">
+								<span class="wname">정희재 </span>
+								<span class="bar"></span>
+								<span class="seCount">총22화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:114,791</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:69</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_7 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=331">나는 힘이 세다</a></li>
+							<li class="txt">
+								<span class="wname">안영실 </span>
+								<span class="bar"></span>
+								<span class="seCount">총42화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:26,769</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:25</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  8.6</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_8 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=14">양파가 운다</a></li>
+							<li class="txt">
+								<span class="wname">전아리 </span>
+								<span class="bar"></span>
+								<span class="seCount">총86화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:134,674</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:185</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_9 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=183">사춘기 맞짱 뜨기</a></li>
+							<li class="txt">
+								<span class="wname">노경실 </span>
+								<span class="bar"></span>
+								<span class="seCount">총47화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:216,757</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:678</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+				
+					<li>
+						<div class="num">
+							
+							<span class="wFic_btn_ctrl wFic_numG_1 ico"></span>
+							<span class="wFic_btn_ctrl wFic_numG_0 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[에세이] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=246">수줍은 느낌의 미소</a></li>
+							<li class="txt">
+								<span class="wname">김현구 </span>
+								<span class="bar"></span>
+								<span class="seCount">총59화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:182,695</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:91</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+				
+				</ul>
+			</div>
+		
+				
+		<!-- 인기작가 -->
+			<div class="rTabListWrap" id="rightTabA_ly3" style="display:none;">
+				<ul class="favHot_list">
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numR_1 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=411">야수의 나라</a></li>
+							<li class="txt">
+								<span class="wname">김나영 </span>
+								<span class="bar"></span>
+								<span class="seCount">총12화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:20,961</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:15</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.4</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_2 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=386">습도 8페이지</a></li>
+							<li class="txt">
+								<span class="wname">반시연 </span>
+								<span class="bar"></span>
+								<span class="seCount">총12화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:14,980</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:17</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  7.4</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_3 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=404">나비의 집</a></li>
+							<li class="txt">
+								<span class="wname">문필연 </span>
+								<span class="bar"></span>
+								<span class="seCount">총12화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:14,138</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:17</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_4 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=418">묘 증후군</a></li>
+							<li class="txt">
+								<span class="wname">이현준 </span>
+								<span class="bar"></span>
+								<span class="seCount">총11화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:17,821</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:9</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.4</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_5 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=392">런던의 안식월</a></li>
+							<li class="txt">
+								<span class="wname">이승민 </span>
+								<span class="bar"></span>
+								<span class="seCount">총12화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:8,445</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:11</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  7.0</span>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+			<!--// 인기작가 -->
+		
+				
+		<!-- 인기작가 -->
+			<div class="rTabListWrap" id="rightTabA_ly4" style="display:none;">
+				<ul class="favHot_list">
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numR_1 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1261">피레네의 성</a></li>
+							<li class="txt">
+								<span class="wname">kem </span>
+								<span class="bar"></span>
+								<span class="seCount">총1화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:1,312</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:1</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_2 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1161">낯선 사람</a></li>
+							<li class="txt">
+								<span class="wname">에이바 </span>
+								<span class="bar"></span>
+								<span class="seCount">총12화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:4,362</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:1</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_3 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[공포&추리] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1124"> 심몽(心&#30663;)</a></li>
+							<li class="txt">
+								<span class="wname">Angie,Sunny </span>
+								<span class="bar"></span>
+								<span class="seCount">총37화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:3,588</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:2</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  8.0</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_4 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[시] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1127">할아버지의 별</a></li>
+							<li class="txt">
+								<span class="wname">오드리햅번 </span>
+								<span class="bar"></span>
+								<span class="seCount">총1화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:223</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:0</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_5 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[시] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=841">흔한 바람에 눈이 감기어 </a></li>
+							<li class="txt">
+								<span class="wname">운영자 </span>
+								<span class="bar"></span>
+								<span class="seCount">총32화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:2,330</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:0</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_6 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[로맨스] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=961">최비서의 비밀</a></li>
+							<li class="txt">
+								<span class="wname">서여니 </span>
+								<span class="bar"></span>
+								<span class="seCount">총2화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:1,347</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:1</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_7 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[시] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1221">그저 그렇게</a></li>
+							<li class="txt">
+								<span class="wname">루니 </span>
+								<span class="bar"></span>
+								<span class="seCount">총1화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:683</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:0</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_8 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[시] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1125">또 하나의 이유</a></li>
+							<li class="txt">
+								<span class="wname">오드리햅번 </span>
+								<span class="bar"></span>
+								<span class="seCount">총1화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:230</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:0</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+								<span class="wFic_btn_ctrl wFic_numG_9 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[소설] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=761">터널</a></li>
+							<li class="txt">
+								<span class="wname">봄이온다 </span>
+								<span class="bar"></span>
+								<span class="seCount">총14화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:7,372</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:1</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  8.0</span>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<div class="num">
+							
+							<span class="wFic_btn_ctrl wFic_numG_1 ico"></span>
+							<span class="wFic_btn_ctrl wFic_numG_0 ico"></span>
+							
+						</div>
+						<ul class="txtWrap">
+							<li class="subject"><span class="cateTxt">[공포&추리] </span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=522">Remember Me</a></li>
+							<li class="txt">
+								<span class="wname">HaRyuJin </span>
+								<span class="bar"></span>
+								<span class="seCount">총4화</span>
+							</li>
+							<li class="txt">
+								<span class="searchCount">조회수:1,529</span>
+								<span class="bar"></span>
+								<span class="replyCount">댓글:0</span>
+								<span class="bar"></span>
+								<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  6.0</span>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+		<!--// 인기작가 -->
+		
+		</div>
+		
+		<div class="Rtit2"><img class="timg" src="http://bimage.interpark.com/renewPark/bookDB/title/right_tit_hotNewbook.png" alt="따끈따끈 신작"/></div>
+		<div class="rightTabWrap">
+			<div class="tablist">
+				<ul>
+					<li class="on" id="rightTabB_btn1" onClick="rightTabB(1)"><p>전체</p></li>
+					<li class="off" id="rightTabB_btn2" onClick="rightTabB(2)"><p>작가연재</p></li>
+					<li class="off" id="rightTabB_btn3" onClick="rightTabB(3)"><p>K-오서</p></li>
+					<li class="off" id="rightTabB_btn4" onClick="rightTabB(4)"><p>나도작가</p></li>
+				</ul>
+			</div>
+		</div>	
+				
+		<div class="R_hotNew">
+			
+			<div class="rTabListWrap"  id="rightTabB_ly1" style="display:none;">
+			<ul class="favHot_list">
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num01 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[SF&판타지]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1882">HAPPY HAPPY</a></li>
+						<li class="txt">
+							<span class="wname">스투키</span>
+							<span class="bar"></span>
+							<span class="seCount">총42화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:66</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num02 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=2047">붕어..들...</a></li>
+						<li class="txt">
+							<span class="wname">운영자</span>
+							<span class="bar"></span>
+							<span class="seCount">총1화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:13</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num03 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=492">부러진 코를 위한 발라드</a></li>
+						<li class="txt">
+							<span class="wname">아르네 스빙엔</span>
+							<span class="bar"></span>
+							<span class="seCount">총8화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:1,880</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num04 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1987">완벽한 컨 & 시머트리</a></li>
+						<li class="txt">
+							<span class="wname">드릴마스터</span>
+							<span class="bar"></span>
+							<span class="seCount">총24화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:13</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  8.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num05 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1925">순수의 시절</a></li>
+						<li class="txt">
+							<span class="wname">드릴마스터</span>
+							<span class="bar"></span>
+							<span class="seCount">총33화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:13</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+						</li>
+					</ul>
+				</li>
+							
+			</ul>
+		</div>
+		
+			
+		<div class="rTabListWrap" id="rightTabB_ly2" style="display:none;">
+			<ul class="favHot_list">
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num01 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=492">부러진 코를 위한 발라드</a></li>
+						<li class="txt">
+							<span class="wname">아르네 스빙엔</span>
+							<span class="bar"></span>
+							<span class="seCount">총8화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:1,880</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">10</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num02 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[에세이]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=467">우리가 녹는 온도</a></li>
+						<li class="txt">
+							<span class="wname">정이현</span>
+							<span class="bar"></span>
+							<span class="seCount">총22화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:4,016</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.7</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num03 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=450">낭만적 연애와 그 후의 일상</a></li>
+						<li class="txt">
+							<span class="wname">알랭 드 보통</span>
+							<span class="bar"></span>
+							<span class="seCount">총11화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:6,475</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:6</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.4</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num04 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=449">당신의 대통령은 지금, ...</a></li>
+						<li class="txt">
+							<span class="wname">이명행</span>
+							<span class="bar"></span>
+							<span class="seCount">총7화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:5,098</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.7</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num05 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=W&rightType=N&sc.themeNo=438">샬로테</a></li>
+						<li class="txt">
+							<span class="wname">다비드 포앙키노스</span>
+							<span class="bar"></span>
+							<span class="seCount">총9화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:6,391</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.0</span>
+						</li>
+					</ul>
+				</li>
+							
+			</ul>
+		</div>
+		
+			
+		<div class="rTabListWrap" id="rightTabB_ly3" style="display:none;">
+			<ul class="favHot_list">
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num01 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=418">묘 증후군</a></li>
+						<li class="txt">
+							<span class="wname">이현준</span>
+							<span class="bar"></span>
+							<span class="seCount">총11화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:9,175</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:1</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.4</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num02 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=411">야수의 나라</a></li>
+						<li class="txt">
+							<span class="wname">김나영</span>
+							<span class="bar"></span>
+							<span class="seCount">총12화</span>
+							
+								<span class="btn_ctrl ico_complate ico"></span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:9,019</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:2</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  9.4</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num03 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=404">나비의 집</a></li>
+						<li class="txt">
+							<span class="wname">문필연</span>
+							<span class="bar"></span>
+							<span class="seCount">총12화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:7,643</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:1</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont"> 10.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num04 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=392">런던의 안식월</a></li>
+						<li class="txt">
+							<span class="wname">이승민</span>
+							<span class="bar"></span>
+							<span class="seCount">총12화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:3,958</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  7.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num05 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.contsType=005&type=K&rightType=K&sc.themeNo=386">습도 8페이지</a></li>
+						<li class="txt">
+							<span class="wname">반시연</span>
+							<span class="bar"></span>
+							<span class="seCount">총12화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:3,737</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  7.4</span>
+						</li>
+					</ul>
+				</li>
+							
+			</ul>
+		</div>
+		
+			
+		<div class="rTabListWrap" id="rightTabB_ly4" style="display:none;">
+			<ul class="favHot_list">
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num01 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=2047">붕어..들...</a></li>
+						<li class="txt">
+							<span class="wname"></span>
+							<span class="bar"></span>
+							<span class="seCount">총1화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:0</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num02 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1987">완벽한 컨 & 시머트리</a></li>
+						<li class="txt">
+							<span class="wname">드릴마스터</span>
+							<span class="bar"></span>
+							<span class="seCount">총24화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:0</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  8.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num03 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1949">쥐들의 공명</a></li>
+						<li class="txt">
+							<span class="wname">드릴마스터</span>
+							<span class="bar"></span>
+							<span class="seCount">총21화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:0</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  8.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num04 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1948">보안점검</a></li>
+						<li class="txt">
+							<span class="wname">상구</span>
+							<span class="bar"></span>
+							<span class="seCount">총1화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:0</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+						</li>
+					</ul>
+				</li>
+							
+				<li>
+					<div class="num">
+						<span class="wFic_btn_ctrl wFic_num05 ico"></span>
+					</div>
+					<ul class="txtWrap">						
+						<li class="subject"><span class="cateTxt">[소설]</span><a href="/bdb/SeriesOfArtists.do?_method=AmaWriterList&rightType=N&type=W&sc.novelMstNo=1925">순수의 시절</a></li>
+						<li class="txt">
+							<span class="wname">드릴마스터</span>
+							<span class="bar"></span>
+							<span class="seCount">총33화</span>
+							
+						</li>
+						<li class="txt">
+							<span class="searchCount">조회수:0</span>
+							<span class="bar"></span>
+							<span class="replyCount">댓글:0</span>
+							<span class="bar"></span>
+							<span class="wFic_btn_ctrl wFic_Rstar ico"></span> <span class="redFont">  0.0</span>
+						</li>
+					</ul>
+				</li>
+							
+			</ul>
+		</div>
+		
+	</div>
+	
+	
+</div>
+
+<script type="text/javascript">
+<!--
+if(2 == 1){
+	rightTabA(1);
+	rightTabB(1);
+}else if(2 == 2){
+	rightTabA(2);
+	rightTabB(2);
+}else if(2 == 3){
+	rightTabA(3);
+	rightTabB(3);
+}else if(2 == 4){
+	rightTabA(4);
+	rightTabB(4);
+}
+//-->
+</script>
+	
+ 	  
+ 	<!--//Right Common -->
+</div>
+<form name="WebzineDiaryForm" method="get" action="/bdb/SeriesOfArtists.do">
+	<input type="hidden" name="_method" value="NovelListByAuthor">
+	<input type="hidden" name="sc.page"      value="19">
+	<input type="hidden" name="sc.row"       value="10">
+	<input type="hidden" name="sc.order"   value="">
+	<input type="hidden" name="sc.orderTp"   value="desc">
+	<input type="hidden" name="sc.cond"   value="">
+	<input type="hidden" name="sc.contsType"   value="005">
+	<input type="hidden" name="sc.themeNo"       value="4">
+	<input type="hidden" name="sc.contsDtlType"       value="01">
+	<input type="hidden" name="type"       value="W">
+	<input type="hidden" name="rightType"       value="N">
+</form>
+<form name="NovelContentViewForm" method="get" action="/bdb/SeriesOfArtists.do">
+	<input type="hidden" name="_method" value="AuthorList">
+	<input type="hidden" name="sc.page"      value="1">
+	<input type="hidden" name="sc.row"       value="10">
+	<input type="hidden" name="sc.order"   value="">
+	<input type="hidden" name="sc.orderTp"   value="">
+	<input type="hidden" name="sc.cond"   value="">
+	<input type="hidden" name="sc.contsType"   value="005">
+	<input type="hidden" name="sc.contsDtlType"       value="01">
+	<input type="hidden" name="sc.themeNo"       value="4">
+	<input type="hidden" name="sc.webzNo" value="">
+	<input type="hidden" name="listPage" value="">
+	<input type="hidden" name="listRow" value="">	
+	<input type="hidden" name="type"       value="W">
+	<input type="hidden" name="rightType"       value="N">
+</form>
+
+
+
+
+<script language='javascript'>
+
+    function withdraw(){
+        var url = "http://bookdb.co.kr/bookPark/html/bdb/pop_mem_dropOut.html";
+        window.open(url,"","scrollbars=no, location=no, resizable=no, status=no, toolbar=no, menubar=no, width=388, height=242");
+    }
+</script>
+<!-- Footer -->
+<div id="footer">
+<iframe id='' name='' src='http://bookdb.co.kr/bookPark/html/book_wiselog.html' scrolling='no' frameborder='0' width='0' height='0' style='display:none'></iframe>
+	<div class="footerWrap">
+		<ul>
+
+			<li class="none"><a href="http://incorp.interpark.com/communication/CompanyInfo.do?_method=initial"  target="_blank">회사소개</a></li>
+			<li><a href="http://book.interpark.com/bookPark/InfoOpenShopGuide.do?_method=RepresentativesInfo" target="_blank">광고/제휴/컨텐츠 문의</a></li>
+			<li  class="bol"><a href="http://bookdb.co.kr/bdb/Main.do?_method=html&fn=privacy_bdb" target="_blank">개인정보처리방침</a></li>
+			<li><a href="http://bookdb.co.kr/bdb/Main.do?_method=html&fn=useAgree_bdb" target="_blank">이용약관</a></li>
+			<li><a href="http://www.interpark.com/gate/info/protect_privacy_youth.html" target="_blank">청소년 보호정책(책임자: 김정연,김형우)</a></li>
+			<script language='javascript'>
+      			var loginString ;
+				if (getCookie("tempinterparkGUEST") == "" || getCookie("tempinterparkGUEST") == "logout" ) {
+      			    loginString = "";
+      			} else {
+      			    loginString = "<li><a href=\"javascript:withdraw();\" title=\"회원탈퇴\">회원탈퇴</a></li>";
+      			}
+			    document.write(loginString);
+			</script>
+
+			</ul>
+		<div class="bottomConWrap">
+			<p>서울특별시 강남구 삼성로 512 삼성동빌딩 10층(삼성동) 대표이사 이상규 (주)인터파크 사업자 등록번호 : 214-87-98889<br/>
+			개인정보보호책임자(CPO) 윤혜정 CPO@INTERPARK.COM | 개인정보보유기간 회원탈퇴시까지 | 이메일주소무단수집거부</p>
+		</div>
+		<p class="Copyright">COPYRIGHT(C) INTERPARK Corporation ALL RIGHT RESERVED</p>
+	</div>
+</div>
+<!--// Forter //-->
+<!-- wiselog 집계 -->
+
+<!-- ADIZ SCRIPT Start-->
+<script type="text/javascript" src="/gate/hanaad/adiz_sv120.js"></script>
+<!--// ADIZ SCRIPT End-->
+<!-- yelloexchange SCRIPT Start-->
+<script type="text/javascript" src="/gate/keyword7/keyword7_solution.js"></script>
+<script type="text/javascript" src="/gate/keyword7/keyword7_search_solution.js"></script>
+<!--// yelloexchange SCRIPT End-->
+<!-- GoClean SCRIPT Start-->
+<script type="text/javascript" src="/gate/cts/cts_tracking.js"></script>
+<script type="text/javascript" src="/gate/cts/cts_tracking_switch.js"></script>
+<!--// GoClean SCRIPT End-->
+<!-- google analytics SCRIPT Start-->
+<script type="text/javascript" src="/gate/googleAnalytics/google_analytics.js"></script>
+<!--// google analytics SCRIPT End-->
+<script type="text/javascript" src="/gate/googleAnalytics/gaFooter.js"></script>
+<form name="execForm" id="execForm" ></form>
+
+</BODY>
+
+</HTML>
+
+

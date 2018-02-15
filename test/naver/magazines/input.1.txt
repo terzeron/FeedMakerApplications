@@ -1,0 +1,31 @@
+<div class="list_all_thumb">
+<ul class="thumb_list">
+<li class="first"><a href="/magazineS/index.nhn?id=2023"><img alt="Sliding into Gold" height="190" src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/20180207_152/1517967744777mEgYP_JPEG/cover.jpg&amp;twidth=152&amp;theight=190&amp;qlt=90&amp;rf=sports&amp;opts=10" title="Sliding into Gold" width="152"/></a> <strong class="no">459호</strong>
+<h4>
+<a href="/magazineS/index.nhn?id=2023">Sliding into Gold</a>
+</h4> <span class="date">2018.02.07</span>
+</li>
+<li class=""><a href="/magazineS/index.nhn?id=2022"><img alt="올림픽 개폐회식에 열정을 담아낸 사람들" height="190" src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/20180130_163/1517303944986a0phr_JPEG/cover.jpg&amp;twidth=152&amp;theight=190&amp;qlt=90&amp;rf=sports&amp;opts=10" title="올림픽 개폐회식에 열정을 담아낸 사람들" width="152"/></a> <strong class="no">458호</strong>
+<h4>
+<a href="/magazineS/index.nhn?id=2022">올림픽 개폐회식에 열정을 담아낸 사람들</a>
+</h4> <span class="date">2018.01.31</span>
+</li>
+<li class=""><a href="/magazineS/index.nhn?id=2021"><img alt="미친 존재감 + 이상화 = 18.02.18 8PM" height="190" src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/20180111_41/15156304255508aBg4_JPEG/cover.jpg&amp;twidth=152&amp;theight=190&amp;qlt=90&amp;rf=sports&amp;opts=10" title="미친 존재감 + 이상화 = 18.02.18 8PM" width="152"/></a> <strong class="no">457호</strong>
+<h4>
+<a href="/magazineS/index.nhn?id=2021">미친 존재감 + 이상화 = 18.02.18 8PM</a>
+</h4> <span class="date">2018.01.11</span>
+</li>
+<li>
+<img alt="업데이트 예정중입니다." height="190" src="https://imgnews.pstatic.net/image/sports/2008/magazineS/service/img_last_no.gif" width="152">
+<strong class="no"></strong>
+<h4></h4>
+<span class="date"></span>
+</img></li>
+<li>
+<img alt="업데이트 예정중입니다." height="190" src="https://imgnews.pstatic.net/image/sports/2008/magazineS/service/img_last_no.gif" width="152">
+<strong class="no"></strong>
+<h4></h4>
+<span class="date"></span>
+</img></li>
+</ul>
+</div>

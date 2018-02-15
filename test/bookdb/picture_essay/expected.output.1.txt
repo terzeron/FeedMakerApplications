@@ -1,0 +1,9 @@
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=392	제9화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=391	제8화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=291	제7화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=209	제6화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=182	제5화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=126	제4화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=102	제3화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=61	제2화
+http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelDetailByAuthor&sc.themeNo=4&sc.webzNo=8	제1화

@@ -1,0 +1,1741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>유머게시판 | 보배드림 중고차쇼핑몰</title>
+  <META NAME="KEYWORDS" CONTENT="중고차 보배드림" />
+  <META NAME="DESCRIPTION" CONTENT="중고차 보배드림" />
+  <META NAME="ROBOTS" CONTENT="INDEX,FOLLOW" />
+  <META NAME="ROBOTS" CONTENT="ALL" />
+  <META NAME="subject" CONTENT="중고차 보배드림" />
+  <META NAME="author" content="중고차 보배드림" />
+  <META NAME="copyright" CONTENT="중고차 보배드림" />
+  <Meta name="classification"		content="중고차 보배드림" />
+
+<link rel="stylesheet" type="text/css" href="http://image.bobaedream.co.kr/renew/css/common_0227.css">
+<!-- link rel="stylesheet" type="text/css" href="http://image.bobaedream.co.kr/renew/css/topmenu_renew.css" / -->
+<link rel="stylesheet" type="text/css" href="http://image.bobaedream.co.kr/css/default_0227.css">
+<link rel="stylesheet" type="text/css" href="http://image.bobaedream.co.kr/css/community_renew_0309.css">
+<link rel="stylesheet" type="text/css" href="http://image.bobaedream.co.kr/renew2017/assets/css/bobae_comm_2017.css">
+<link rel="stylesheet" type="text/css" href="http://image.bobaedream.co.kr/renew2017/assets/css/bobae_sub_2017.css">
+<link rel="stylesheet" type="text/css" href="http://image.bobaedream.co.kr/renew2017/assets/css/bobae_old_2017.css">
+
+  
+<style>
+	.clistSearch03 {display:none}
+</style>
+  <link rel="shortcut icon" href="http://image.bobaedream.co.kr/renew2017/assets/images/favicon.ico">
+
+</head>
+
+<body>
+
+    <style type="text/css">
+    <!--
+      .menuArea .mainMenu .subMenu{border-bottom:2px solid #d2d2d2;}
+    -->
+    </style>
+    
+
+    <script type="text/javascript" src="http://image.bobaedream.co.kr/renew2017/assets/js/libs/jquery-latest.min.js"></script>
+
+<script>  
+	function subMenuOver(obj) {
+		var menu_id   = "4";
+		var menu_code = "strange";	  
+	  
+	  for(i=1;i<=9;i++) {
+	  
+	  		$("#imgMenu" + i).attr("src", "http://image.bobaedream.co.kr/renew/images/common/navi0" + i + "_off.jpg");
+	    
+	    	if (i == obj) {
+	        
+	        $("#subMenu" + i).show();
+	        $("#imgMenu" + i).attr("src", "http://image.bobaedream.co.kr/renew/images/common/navi0" + i + "_on.jpg");
+	
+	    	} else {
+	    		 $("#subMenu" + i).hide();
+	    	}
+	  }
+	}
+
+function subMenuOut(obj) {
+  var menu_id = "4";
+	var menu_code = "strange";
+	
+	switch(menu_id) {
+		case "2":
+			menu_id = "1";
+			break;
+		case "3":
+			menu_id = "8";
+			break;
+		case "4":
+			menu_id = "9";
+			break;
+		case "5":
+			menu_id = "4";
+			break;
+		case "11":
+			menu_id = "6";
+			break;
+		case "12":
+			menu_id = "6";
+			break;
+		default:
+			menu_id = "";
+			break;
+	}
+
+  for(i=1;i<=9;i++) {
+
+   	 if (i == menu_id) {
+   	 	 if(menu_id == '8' && menu_code == 'fa') {
+   	   	$("#imgMenu2").attr("src", "http://image.bobaedream.co.kr/renew/images/common/navi02_on.jpg");
+       	$("#subMenu2").hide();
+
+   	   	$("#imgMenu8").attr("src", "http://image.bobaedream.co.kr/renew/images/common/navi08_off.jpg");
+       	$("#subMenu8").hide();
+       	
+   	 	 } else {
+   	   	$("#imgMenu" + i).attr("src", "http://image.bobaedream.co.kr/renew/images/common/navi0" + i + "_on.jpg");
+       	$("#subMenu" + i).hide();
+       }
+   	 } else {
+   	 	
+      $("#subMenu" + i).hide();
+      $("#imgMenu" + i).attr("src", "http://image.bobaedream.co.kr/renew/images/common/navi0" + i + "_off.jpg");
+		 }
+  }
+  if(menu_id == '8' && menu_code == 'fa') {
+  	$("#subMenu2").show();
+  } else {
+  	$("#subMenu" + menu_id).show();
+  }
+  
+}
+
+$(function(){
+	$(".allview").click(function () {
+		$(".globalallview").toggleClass("globalallview_click");
+		$(".top_navi").toggleClass("zindex");
+	});
+	$(".allview .close").click(function () {
+		$(".globalallview").toggleClass("globalallview_click");
+		$(".top_navi").toggleClass("zindex"); 
+	});
+	$("#l_mapmenu").focusout(function(){
+		$(".globalallview").toggleClass("globalallview_click");
+		$(".top_navi").toggleClass("zindex");
+	});
+	$("#liMenu1").focusin(function(){
+			subMenuOver('1');
+	});
+	$("#liMenu2").focusin(function(){
+		subMenuOver('2');
+	});
+	$("#liMenu3").focusin(function(){
+		subMenuOver('3');
+	});
+	$("#liMenu4").focusin(function(){
+		subMenuOver('4');
+	});
+	$("#liMenu5").focusin(function(){
+		subMenuOver('5');
+	});
+	$("#liMenu6").focusin(function(){
+		subMenuOver('6');
+	});
+	$("#liMenu7").focusin(function(){
+		subMenuOver('7');
+	});
+	$("#liMenu8").focusin(function(){
+		subMenuOver('8');
+	});
+	$("#liMenu9").focusin(function(){
+		subMenuOver('9');
+	});
+	$("#l_subMenu9").focusout(function(){
+		subMenuOut();
+	});
+	var ctmp = document.cookie.split(";");
+	var chkLogin = "no";
+	for (i = 0; i < ctmp.length; i++) {
+		if (ctmp[i].match("Member_ID")) {
+			cctmp = ctmp[i].split("=");
+			if (cctmp[1] != "") {
+			chkLogin = "yes";
+			}
+		}
+	}
+	
+	if (chkLogin == "yes") {
+		$(".login_menu").remove();
+		$(".l_start").after("<li class=\"login_menu\"><a href=\"http://www.bobaedream.co.kr/center/center.htm\">고객센터</a></li><li class=\"login_menu\"><a href=\"http://www.bobaedream.co.kr/mycar/manage/mycar_select_list.php\">찜한차량 <span class=\"bluebold\" id=\"zzim\"></span></a></li><li class=\"login_menu\"><a href=\"javascript:sendmemoOpen()\">쪽지 <span class=\"bluebold\" id=\"note\"></span></a></li><li class=\"login_menu\"><a href=\"http://www.bobaedream.co.kr/mycommunity?lo=10&or_where=answer&globaltop=y\">내글반응</a></li><li class=\"login_menu\"><a href=\"https://security.bobaedream.co.kr/member/join/join_user_data_edit.php\">나의정보</a></li><li class=\"login_menu\"><a href=\"http://www.bobaedream.co.kr/mycar/manage/mycar_manage_main.php\">매물관리</a></li><li class=\"last login_menu\"><a href=\"http://www.bobaedream.co.kr/member/logout.php\">로그아웃</a></li>");					
+	  } else {
+		$(".login_menu").remove();
+		$(".l_start").after("<li class=\"login_menu\"><a href=\"http://www.bobaedream.co.kr/center/center.htm\">고객센터</a></li><li class=\"login_menu\"><a href=\"http://www.bobaedream.co.kr/mycar/manage/mycar_manage_main.php\">차량관리</a></li><li class=\"login_menu\"><a href=\"http://www.bobaedream.co.kr/mycar/mycar.php\">차량등록</a></li><li class=\"login_menu\"><a href=\"https://security.bobaedream.co.kr/member/join/sfindID_new.php\">ID</a>/<a href=\"https://security.bobaedream.co.kr/member/join/sfindPASS_new.php\">비번찾기</a></li><li class=\"last login_menu\"><a href=\"https://security.bobaedream.co.kr/member/join/register_choice_renew.php\">회원가입</a></li><li class=\"last login_menu\"><a href=\"https://security.bobaedream.co.kr/member/slogin.php\"><img src=\"http://image.bobaedream.co.kr/renew/images/bike/img_login.gif\" alt=\"로그인\" class=\"btn_login\" /></a></li>");
+		}
+});
+
+//  <![CDATA[
+  function itemView_top(t, type) {
+    var item = $("."+t+" > div");
+
+    var selectCnt = "";
+    var x = 0;
+    item.each(function(index, value){
+      if($(this).css('display') != 'none'){
+        selectCnt = x;
+      }
+      x++;
+      $(this).hide();
+    });
+
+    switch (type) {
+      case "+":	selectIndex = (selectCnt+1)>=x ?0:selectCnt+1;	break;
+      case "-":	selectIndex = (selectCnt-1)< 0 ?x-1:selectCnt-1;	break;
+    }
+
+    $(".bnnr2 > div").eq(selectIndex).show();
+    selectIndex = null;
+  }
+
+  function addFavorite(obj, title) {
+    if (window.sidebar) { // Mozilla Firefox Bookmark
+      window.sidebar.addPanel(title, 'http://www.bobaedream.co.kr/list?code=strange&or_gu=&info3=&s_select=Subject&s_key=%ED%9B%84%EB%B0%A9', '');
+		} else if (window.chrome) {
+			alert("Ctrl+D 를 누르시면 즐겨찾기에 추가하실 수 있습니다.");
+    } else if (window.external) { // IE Favorite
+      window.external.AddFavorite('http://www.bobaedream.co.kr/list?code=strange&or_gu=&info3=&s_select=Subject&s_key=%ED%9B%84%EB%B0%A9', title);
+    } else if (window.opera && window.print) { // Opera Hotlist
+      return true;
+    } else {
+      alert("Ctrl+D (Safari, Chrome) or Ctrl+B (Konqueror)");
+    }
+    //return false;
+  }
+
+  function layer_view(id_name) {
+    if (document.getElementById(id_name).style.display == "") {
+      document.getElementById(id_name).style.display = "block";
+      document.getElementById('allview_img').className = "on";
+    } else {
+      document.getElementById(id_name).style.display = "";
+      document.getElementById('allview_img').className = "";
+    }
+  }
+  function iopen() {
+    window.open("http://www.bobaedream.co.kr/mobile_page/mobile_sms.php?type=iphone", "mobile_sms", "width=367,height=441, top=80,left=200,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no");
+  }
+  function aopen() {
+    window.open("http://www.bobaedream.co.kr/mobile_page/mobile_sms.php?type=android", "mobile_sms", "width=367,height=441, top=80,left=200,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no");
+  }
+
+  function on_focus(id) {
+    if (id == "ID" && document.getElementById(id).value == "아이디") {
+      document.getElementById(id).value = "";
+    } else if (id == "Passwd2" && document.getElementById(id).value == "비밀번호") {
+      document.getElementById("Passwd2").style.display = "none";
+      document.getElementById("Passwd").style.display = "block";
+      document.frm_login.Passwd.focus();
+    }
+  }
+
+  function getRandomInt(min,max) {
+    return Math.floor((Math.random()*1000)%(max-min))+min;
+  }
+
+function sendmemoOpen() {
+  var screenWidth  = screen.availWidth;
+  var screenHeight = screen.availHeight;
+
+  var intLeft = (screenWidth - 626) / 2;
+  var intTop  = (screenHeight - 670) / 2
+
+  window.open('http://www.bobaedream.co.kr/board/note/receive_list.php', 'receive_list', 'scrollbars=no,resizable=no,top='+intTop+',left='+intLeft+',width=615,height=400');
+}
+
+// ]]>	
+</script>
+
+<div class="wrap">
+<div id="u_skip">
+	<a href="#Content"><span>본문 바로가기</span></a>
+	<a href="#LNB"><span>주 메뉴 바로가기</span></a>
+</div>
+	<!-- [S] 2017 BOBAE HEAD -->
+	<div id="bobaeHead">
+	    <div class="bobae-head js-header">
+	        <div class="component">
+	            <!-- tit-area -->
+	            <h1 class="tit-area">
+	                <a href="http://www.bobaedream.co.kr">
+	                    <img src="http://image.bobaedream.co.kr/renew2017/assets/images/layout/h1_logo_car.png" width="134" height="44" alt="보배드림"/>
+	                </a>
+	            </h1>
+	            <!-- gnb-util -->
+	            <div class="top-service">
+<script language="javascript">
+  ctmp = document.cookie.split(";");
+
+  var chkLogin = "no";
+  for (i = 0; i < ctmp.length; i++) {
+    if (ctmp[i].match("Member_ID")) {
+      cctmp = ctmp[i].split("=");
+      if (cctmp[1] != "") {
+        chkLogin = "yes";
+      }
+    }
+  }				
+
+				/* 로그인후 */
+if (chkLogin == "yes") {		
+				document.write("<ul class=\"clearfix\">");
+				document.write("<li class=\"svc-tab\"><a href=\"http://www.bobaedream.co.kr/member/logout.php\">로그아웃</a></li>");	
+				document.write("<li class=\"svc-tab\"><a href=\"https://security.bobaedream.co.kr/member/join/join_user_data_edit.php\">나의정보</a></li>");
+				document.write("<li class=\"svc-tab\"><a href=\"http://www.bobaedream.co.kr/mycar/manage/mycar_manage_main.php\">매물관리</a></li>");	
+				document.write("<li class=\"svc-tab\"><a href=\"javascript:getnoti();\" class='js-svc-tab'>알림 <b id=\"noti\">0</b></a><div class=\"svc-noti svc-panel js-svc-panel\" id=\"svc-noti\"></div></li>");				
+				document.write("<li class=\"svc-tab\"><a href=\"http://www.bobaedream.co.kr/mycommunity?lo=10&or_where=answer&globaltop=y\">마이페이지</a></li>");
+				document.write("<li class=\"svc-tab\"><a href=\"http://www.bobaedream.co.kr/center/center.htm\">고객센터</a></li>");
+				document.write("</ul>");
+  } else {
+				/* 로그인전 */
+				document.write("<ul class=\"clearfix\">");
+				document.write("<li class=\"svc-tab\"><a href=\"https://security.bobaedream.co.kr/member/slogin.php\">로그인</a></li>");
+				document.write("<li class=\"svc-tab\"><a href=\"https://security.bobaedream.co.kr/member/join/register_choice_renew.php\">회원가입</a></li>");
+				document.write("<li class=\"svc-tab\"><a href=\"https://security.bobaedream.co.kr/member/join/sfindID_new.php\">ID</a>/<a href=\"https://security.bobaedream.co.kr/member/join/sfindPASS_new.php\">비번찾기</a></li>");
+				document.write("<li class=\"svc-tab\"><a href=\"http://www.bobaedream.co.kr/center/center.htm\">고객센터</a></li>");
+				document.write("</ul>");
+	}
+</script>
+	            </div>
+	            <!-- bobae-gnb -->
+	            <div id="bobaeGNB" class="bobae-gnb">
+	                <ul class="menu clearfix js-menu">
+	                    <li class="menu-item">
+	                        <a href="http://www.bobaedream.co.kr/cyber/cyber.php" class="menu-link">
+	                            <span class="m1">사이버매장</span>
+	                        </a>
+	                        <div class="sub-menu">
+	                            <div class="sub-menu-wrapper">
+	                                <div class="sub-menu-inner">
+	                                    <ul class="sub-menu-list">
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?gubun=K">국산차 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?gubun=I">수입차 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?cat=1">승용차 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?cat=2">스포츠카 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?cat=4">RV/SUV 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?cat=3">밴/승합차 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?features=pick">픽업/트럭 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?features=camp">캠핑카 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?features=tuning">튜닝카 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?features=old">올드카 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?features=super">슈퍼카 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?features=rare">희귀차 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/CyberCar.php?features=auto">오토갤러리 매장</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="menu-item">
+	                        <a href="http://www.bobaedream.co.kr/mycar/mycar_list.php?sel_m_gubun=ALL" class="menu-link">
+	                            <span class="m2">내차사기</span>
+	                        </a>
+	                        <div class="sub-menu">
+	                            <div class="sub-menu-wrapper">
+	                                <div class="sub-menu-inner">
+	                                    <ul class="sub-menu-list">
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_list.php?sel_m_gubun=ALL">전체매물</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_list.php?gubun=K">국산차</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_list.php?gubun=I">수입차</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_list.php?sel_m_gubun=succ">리스승계차량</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_list.php?sel_m_gubun=tuning">튜닝카</a></li>
+	                                        <li class="sub-menu-item"><a href="/cyber/cyber.php">사이버매장</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="menu-item">
+	                        <a href="http://www.bobaedream.co.kr/mycar/mycar.php" class="menu-link">
+	                            <span class="m3">내차팔기</span>
+	                        </a>
+	                        <div class="sub-menu">
+	                            <div class="sub-menu-wrapper">
+	                                <div class="sub-menu-inner">
+	                                    <ul class="sub-menu-list">
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar.php">내차팔기 홈</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_self_step1.php?gubun=K">국산차 셀프등록</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_self_step1.php?gubun=I">수입차 셀프등록</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_photo_request.php?mType=C">사이버매장등록</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/ticket.php?gubun=K">국산차 매물등록권</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/ticket.php?gubun=I">수입차 매물등록권</a></li>
+	                                        <li class="sub-menu-item"><a href="/mycar/mycar_photo_request.php?mType=D">촬영대행서비스</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="menu-item">
+	                        <a href="http://bike.bobaedream.co.kr/" class="menu-link">
+	                            <span class="m4">오토바이</span>
+	                        </a>
+	                        <div class="sub-menu">
+	                            <div class="sub-menu-wrapper">
+	                                <div class="sub-menu-inner">
+	                                    <ul class="sub-menu-list">
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr">오토바이홈</a></li>
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr/bike2/bike_cyber_main.php">사이버 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr/bike2/bike_list.php?ifnew=Y">신차 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr/bike2/bike_list.php?ifnew=N">중고차 매장</a></li>
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr/bike_good/bike_good_list.php">용품장터</a></li>
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr/bike2/board/bike_community_main.php">커뮤니티</a></li>
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr/bike2/bike_apply.php">매물등록하기</a></li>
+	                                        <li class="sub-menu-item"><a href="http://bike.bobaedream.co.kr/bike2/mycar_list_main.php">나의매물관리</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="menu-item">
+	                        <a href="http://good.bobaedream.co.kr/good/list_sale.php" class="menu-link">
+	                            <span class="m5">중고장터</span>
+	                        </a>
+	                        <div class="sub-menu">
+	                            <div class="sub-menu-wrapper">
+	                                <div class="sub-menu-inner">
+	                                    <ul class="sub-menu-list">
+	                                        <li class="sub-menu-item"><a href="http://good.bobaedream.co.kr/good/list_sale.php">전체보기</a></li>
+	                                        <li class="sub-menu-item"><a href="http://good.bobaedream.co.kr/good/list_sale.php?on=old">중고용품 검색</a></li>
+	                                        <li class="sub-menu-item"><a href="http://good.bobaedream.co.kr/good/list_sale.php?on=new">새제품 검색</a></li>
+	                                        <li class="sub-menu-item"><a href="http://good.bobaedream.co.kr/good/list_sale.php?d1=150">수입차용품 검색</a></li>
+	                                        <li class="sub-menu-item"><a href="http://good.bobaedream.co.kr/good/home.php">용품등록하기</a></li>
+	                                        <li class="sub-menu-item"><a href="http://good.bobaedream.co.kr/good/list_mygood.php">나의 용품관리</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+                    <li class="menu-item">
+                        <a href="/partner/partner_main.php" class="menu-link">
+                            <span class="m9">협력업체</span>
+                        </a>
+                        <div class="sub-menu">
+                            <div class="sub-menu-wrapper">
+                                <div class="sub-menu-inner">
+                                    <ul class="sub-menu-list">
+                                        <li class="sub-menu-item"><a href="/partner/partner_main.php">협력업체홈</a></li>
+                                        <li class="sub-menu-item"><a href="/partner/partner_search.php">협력업체찾기</a></li>
+                                        <li class="sub-menu-item"><a href="/partner/partner_photo.php">업체작업사진</a></li>
+                                        <li class="sub-menu-item"><a href="/partner/partner_movie.php">업체작업영상</a></li>
+                                        <li class="sub-menu-item"><a href="/partner/partner_visit.php">방문후기</a></li>
+                                        <li class="sub-menu-item"><a href="/partner/partner_event.php">이벤트소식</a></li>
+                                        <li class="sub-menu-item"><a href="/partner/partner_qna.php">질문과답변</a></li>
+                                        <li class="sub-menu-item"><a href="/partner/partner_request.php">협력업체문의</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>	                    
+	                    <li class="menu-item is-selected">
+	                        <a href="http://www.bobaedream.co.kr/board/bbs.php" class="menu-link">
+	                            <span class="m6">커뮤니티</span>
+	                        </a>
+	                        <div class="sub-menu multiple">
+	                            <div class="sub-menu-wrapper">
+	                                <div class="sub-menu-inner">
+	                                    <a href="/board/bbs.php" class="title">게시판</a>
+	                                    <ul class="sub-menu-list">
+	                                        <li class="sub-menu-item"><a href="/list?code=best">베스트글</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=freeb">자유게시판</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=battle">시승기/배틀/목격담</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=famous">유명인의 차</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=politic">시사이슈</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=nnews">자동차뉴스</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=bbstory">보배드림 이야기</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=bb_talk">제안/건의</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=ad">성인게시판</a></li>
+	                                        <li class="sub-menu-item"><a href="/event/event_list.php?event_gubun=1">이벤트</a></li>
+	                                    </ul>
+	                                </div>
+	                                <div class="sub-menu-inner">
+	                                    <a href="/board/data.php" class="title">자료실</a>
+	                                    <ul class="sub-menu-list">
+	                                        <li class="sub-menu-item"><a href="/list?code=strange">유머게시판</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=accident">교통사고/사건/블박</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=national">국산차게시판</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=import">수입차게시판</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=hotcar">내차사진</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=dica">직찍/특종발견</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=special">자동차사진/동영상</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=wheel">장착시공사진</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=music">자유사진/동영상</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=girl">레이싱모델</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=army">군사/무기</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=truck">트럭/버스/중기</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=skybr">항공/해운/철도</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=bike">오토바이/자전거</a></li>
+	                                        <li class="sub-menu-item"><a href="/list?code=vi">올드카/추억거리</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                </ul>
+	                <!--
+	                <button type="button" class="btn-more"><span class="ico-mtop more">메뉴 더보기</span></button>
+	                -->
+	            </div>
+	            <!-- // bobae-gnb -->
+
+            <div class="bobae-srch">
+                <div class="clearfix">
+                    <button type="button" class="btn-srch js-btn-srch"><span class="ico-mtop search">검색창 열기</span></button>
+                    <div class="srch-box js-top-srch" id='s_box'>
+                        <form name="search_form" method="post" action="http://www.bobaedream.co.kr/search" onsubmit="javascript:	if(!document.search_form.keyword.value) { $('#s_box').removeClass('is-visible'); return false; } else { document.search_form.submit(); }">
+                            <label for="keyword" class="blind">검색하기</label>
+                            <span class="inp-srch"><input type="search" id="keyword" name="keyword"/></span>
+                            <button type="submit" class="srch-smit"><span class="ico-mtop search">검색하기</span></button>
+                        </form>
+                    </div>
+                    <button type="button" class="btn-menu js-btn-allsvc"><span class="ico-mtop menu">메뉴 열기</span></button>
+                </div>
+            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- //[E] 2017 BOBAE HEAD --> 
+
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  $(function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  });
+</script>		
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/77987245/우측띠', [160, 600], 'div-gpt-ad-1444210750033-0').addService(googletag.pubads());
+    googletag.defineSlot('/77987245/커뮤리스트하단', [728, 90], 'div-gpt-ad-1470046174064-0').addService(googletag.pubads());
+    googletag.defineSlot('/77987245/PC댓글상단', [728, 90], 'div-gpt-ad-1510653411258-0').addService(googletag.pubads());
+    googletag.enableServices();
+  });
+</script>
+	<div class="right_add" id='div-gpt-ad-1444210750033-0'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1444210750033-0'); });
+		</script>
+	</div>
+	
+
+  </div>
+  
+<script type="text/javascript">
+
+	// 알림
+	function get_top_cnt() {
+	  var dummy     = new Date().getTime();
+	
+	  // , data: "dummy=" + dummy + "&no=" + no + "&dep=" + dep
+	
+	  $.ajax({
+	    type: 'get'
+	    , async: true
+	    , url: '/script/note_get_cnt_new.php'
+	    , data: "dummy="     + dummy
+	    , dataType: 'json'
+	    , beforeSend: function() {
+	      //$('#ajax_load_indicator').show().fadeIn('fast');
+	    }
+	    , success: function(data) {
+	      var response = data;
+	
+	      $("#noti").html(response['noti']);
+	    }
+	    , error: function(data, status, err) {
+	      //alert('서버와의 통신이 실패했습니다.' + err);
+	    }
+	    , complete: function() {
+	      //$('#ajax_load_indicator').fadeOut();
+	    }
+	  });
+	}
+	
+	function getnoti() {
+	
+		var dummy = new Date().getTime();
+		var url = "/script/getnoti_2017.php?dummy=" + dummy;
+	
+			$("#svc-noti").load(url,function(response, status, xhr) {
+	
+			});
+	}		
+
+$(document).ready(function(){
+	if (chkLogin == "yes") {
+		  get_top_cnt();
+	}	
+});
+
+						
+</script>  
+<!-- bobaeService -->
+<div class="bobae-service js-all-service" id="bobaeService">
+    <div class="bs-dim js-bs-dim"></div>
+    <div class="svc-box">
+        <h2 class="blind">보배드림 전체메뉴</h2>
+        <!-- [S] service-all-area -->
+        <div class="service-all-area">
+            <div class="svc-col">
+            			    			<h3 class="stit"><a href="/cyber/cyber.php">사이버매장</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/cyber/CyberCar.php?gubun=K">국산차 매장</a></li>
+<li><a href="/cyber/CyberCar.php?gubun=I">수입차 매장</a></li>
+<li><a href="/cyber/CyberCar.php?cat=1">승용차 매장</a></li>
+<li><a href="/cyber/CyberCar.php?cat=2">스포츠카 매장</a></li>
+<li><a href="/cyber/CyberCar.php?cat=4">RV/SUV 매장</a></li>
+<li><a href="/cyber/CyberCar.php?cat=3">밴/승합차 매장</a></li>
+<li><a href="/cyber/CyberCar.php?features=pick">픽업/트럭 매장</a></li>
+<li><a href="/cyber/CyberCar.php?features=camp">캠핑카 매장</a></li>
+<li><a href="/cyber/CyberCar.php?features=tuning">튜닝카 매장</a></li>
+<li><a href="/cyber/CyberCar.php?features=old">올드카 매장</a></li>
+<li><a href="/cyber/CyberCar.php?features=super">슈퍼카 매장</a></li>
+<li><a href="/cyber/CyberCar.php?features=rare">희귀차 매장</a></li>
+<li><a href="/cyber/CyberCar.php?features=auto">오토갤러리 매장</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="/mycar/mycar_list.php?gubun=K">국산차</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/mycar/mycar_list.php?sel_m_gubun=ALL">전체매물</a></li>
+<li><a href="/mycar/mycar_list.php?gubun=K">국산차</a></li>
+<li><a href="/mycar/mycar_list.php?gubun=I">수입차</a></li>
+<li><a href="/mycar/mycar_list.php?sel_m_gubun=succ">리스승계차량</a></li>
+<li><a href="/mycar/mycar_list.php?sel_m_gubun=tuning">튜닝카</a></li>
+<li><a href="/cyber/cyber.php">사이버매장</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="/mycar/mycar_list.php?gubun=I">수입차</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/mycar/mycar_list.php?sel_m_gubun=ALL">전체매물</a></li>
+<li><a href="/mycar/mycar_list.php?gubun=K">국산차</a></li>
+<li><a href="/mycar/mycar_list.php?gubun=I">수입차</a></li>
+<li><a href="/mycar/mycar_list.php?sel_m_gubun=succ">리스승계차량</a></li>
+<li><a href="/mycar/mycar_list.php?sel_m_gubun=tuning">튜닝카</a></li>
+<li><a href="/cyber/cyber.php">사이버매장</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="/mycar/mycar.php">내차팔기</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/mycar/mycar.php">내차팔기 홈</a></li>
+<li><a href="/mycar/mycar_self_step1.php?gubun=K">국산차 셀프등록</a></li>
+<li><a href="/mycar/mycar_self_step1.php?gubun=I">수입차 셀프등록</a></li>
+<li><a href="/mycar/mycar_photo_request.php?mType=C">사이버매장등록</a></li>
+<li><a href="/mycar/ticket.php?gubun=K">국산차 매물등록권</a></li>
+<li><a href="/mycar/ticket.php?gubun=I">수입차 매물등록권</a></li>
+<li><a href="/mycar/mycar_photo_request.php?mType=D">촬영대행서비스</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="http://bike.bobaedream.co.kr">오토바이</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="http://bike.bobaedream.co.kr">오토바이홈</a></li>
+<li><a href="http://bike.bobaedream.co.kr/bike2/bike_cyber_main.php">사이버 매장</a></li>
+<li><a href="http://bike.bobaedream.co.kr/bike2/bike_list.php?ifnew=Y">신차 매장</a></li>
+<li><a href="http://bike.bobaedream.co.kr/bike2/bike_list.php?ifnew=N">중고차 매장</a></li>
+<li><a href="http://bike.bobaedream.co.kr/bike_good/bike_good_list.php">용품장터</a></li>
+<li><a href="http://bike.bobaedream.co.kr/bike2/board/bike_community_main.php">커뮤니티</a></li>
+<li><a href="http://bike.bobaedream.co.kr/bike2/bike_apply.php">매물등록하기</a></li>
+<li><a href="http://bike.bobaedream.co.kr/bike2/mycar_list_main.php">나의매물관리</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="/partner/partner_main.php">협력업체</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/partner/partner_main.php">협력업체홈</a></li>
+<li><a href="/partner/partner_search.php">협력업체찾기</a></li>
+<li><a href="/partner/partner_photo.php">업체작업사진</a></li>
+<li><a href="/partner/partner_movie.php">업체작업영상</a></li>
+<li><a href="/partner/partner_visit.php">방문후기</a></li>
+<li><a href="/partner/partner_event.php">이벤트소식</a></li>
+<li><a href="/partner/partner_qna.php">질문과답변</a></li>
+<li><a href="/partner/partner_request.php">협력업체문의</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="http://good.bobaedream.co.kr/good/list_sale.php">중고장터</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="http://good.bobaedream.co.kr/good/list_sale.php">전체보기</a></li>
+<li><a href="http://good.bobaedream.co.kr/good/list_sale.php?on=old">중고용품 검색</a></li>
+<li><a href="http://good.bobaedream.co.kr/good/list_sale.php?on=new">새제품 검색</a></li>
+<li><a href="http://good.bobaedream.co.kr/good/list_sale.php?d1=150">수입차용품 검색</a></li>
+<li><a href="http://good.bobaedream.co.kr/good/home.php">용품등록하기</a></li>
+<li><a href="http://good.bobaedream.co.kr/good/list_mygood.php">나의 용품관리</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="/board/bbs.php">게시판</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/list?code=best">베스트글</a></li>
+<li><a href="/list?code=freeb">자유게시판</a></li>
+<li><a href="/list?code=battle">시승기/배틀/목격담</a></li>
+<li><a href="/list?code=famous">유명인의 차</a></li>
+<li><a href="/list?code=politic">시사이슈</a></li>
+<li><a href="/list?code=nnews">자동차뉴스</a></li>
+<li><a href="/list?code=bbstory">보배드림 이야기</a></li>
+<li><a href="/list?code=bb_talk">제안/건의</a></li>
+<li><a href="/list?code=ad">성인게시판</a></li>
+<li><a href="/event/event_list.php?event_gubun=1">이벤트</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="/board/data.php">자료실</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/list?code=strange">유머게시판</a></li>
+<li><a href="/list?code=accident">교통사고/사건/블박</a></li>
+<li><a href="/list?code=national">국산차게시판</a></li>
+<li><a href="/list?code=import">수입차게시판</a></li>
+<li><a href="/list?code=hotcar">내차사진</a></li>
+<li><a href="/list?code=dica">직찍/특종발견</a></li>
+<li><a href="/list?code=special">자동차사진/동영상</a></li>
+<li><a href="/list?code=wheel">장착시공사진</a></li>
+<li><a href="/list?code=music">자유사진/동영상</a></li>
+<li><a href="/list?code=girl">레이싱모델</a></li>
+<li><a href="/list?code=army">군사/무기</a></li>
+<li><a href="/list?code=truck">트럭/버스/중기</a></li>
+<li><a href="/list?code=skybr">항공/해운/철도</a></li>
+<li><a href="/list?code=bike">오토바이/자전거</a></li>
+<li><a href="/list?code=vi">올드카/추억거리</a></li>
+    </ul>
+            						</div>
+<div class="svc-col">
+            			    			<h3 class="stit"><a href="/">테마별</a></h3>
+            			    			<ul class="svc-list">
+<li><a href="/event/event_list.php?event_gubun=1">보배드림 이벤트</a></li>
+    </ul>
+            						</div>
+            
+
+        </div>
+        <!-- //[E] service-all-area -->
+    </div>
+</div>
+<!-- //bobaeService -->
+  <div class="comcontent" id="Content" tabindex="0">
+    <div class="conLeft">
+<form name="form_login" method="post" action="https://security.bobaedream.co.kr/member/MemLoginCtrl.php" onsubmit="return login_chk();">
+  <input type="hidden" name="page" id="page" value="http://www.bobaedream.co.kr/list?code=strange&or_gu=&info3=&s_select=Subject&s_key=%ED%9B%84%EB%B0%A9" />	      
+      <div class="log_in">
+			<fieldset>
+				 <input type="checkbox" name="loginKEEP" id="save_keep" value="Y" /><label for="save_keep"><span class="log_in_text">로그인 상태 유지</span></label>
+				 <input type="text" value="아이디" id="ID4" name="ID" class="id" title="아이디입력"  />
+				 <input type="text" name="password" id="03" title="비밀번호" value="비밀번호" class="password_position" />
+				 <input type="password" id="Passwd5" name="Passwd" class="password_position" title="비밀번호입력" style="display:none;" onkeydown="Enter_Check();" />
+				 <input type="button" name="login_button" id="04" title="로그인" value="로그인" onclick="return login_chk('b');" />				 				 
+			 </fieldset>
+			 <ul>
+				<li><a href="https://security.bobaedream.co.kr/member/join/sfindID_new.php">아이디</a>/<a href="https://security.bobaedream.co.kr/member/join/sfindPASS_new.php">비밀번호찾기</a></li>
+				<li class="line">l</li>			 	
+				<li><a href="https://security.bobaedream.co.kr/member/join/register_choice_renew.php">회원가입</a></li>
+				<li class="ico_naver"><a href="javascript:void(window.open('https://security.bobaedream.co.kr/member/nid.php', 'nid_login', 'width=500,height=517, top=24,left=0,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no'));"><img src="http://image.bobaedream.co.kr/renew/images/bobae_renew/btn_naver.gif" alt="네이버" /></a></li>				
+			 </ul>
+      </div>
+</form>
+<script type="text/javascript">
+  //  <![CDATA[
+$(function(){
+
+	$('input.id').focusin(function(){
+		if($(this).val() == '아이디') {
+			$(this).val('');
+		}
+	});
+	$('input.id').focusout(function(){
+		if($(this).val() == '') {
+			$(this).val('아이디');
+		}
+	});
+
+
+	$('#03').focusin(function(){
+		$('#03').hide();
+		$('#Passwd5').show();
+		$('#Passwd5').focus();
+	});
+	$('#Passwd5').focusout(function(){
+		if($('#Passwd5').val() == '') {
+			$('#Passwd5').hide();
+			$('#03').show();
+		}
+	});
+});
+	function login_chk(b) {
+    if (document.form_login.ID.value.replace(/ /g,"") == "" || document.form_login.ID.value == "아이디") {
+      alert("아이디를 입력하세요.");
+      document.form_login.ID.focus();
+      return false;
+    } else if (document.form_login.Passwd.value.replace(/ /g,"") == "") {
+      alert("비밀번호를 입력하세요.");
+      $('#03').focus();
+      return false;
+    }
+    
+    if(b) document.form_login.submit();
+  }
+  
+	function Enter_Check(){	        
+		if(event.keyCode == 13){
+			login_chk('b');
+			return;
+		}
+	}  
+  // ]]>
+</script>
+      <div class="leftMenu">
+
+		<div class="left_con">
+        <h4><img src="http://image.bobaedream.co.kr/renew/images/title/title_community_left_02.gif" alt="자료실" /></h4>
+		<div class="list_left">
+        <ul>
+          <li><a href="/list?code=strange"><span class="hilight">유머게시판</span></a></li>
+	    <li><a href="/list?code=accident">교통사고/사건/블박</a></li>
+          <li><a href="/list?code=national">국산차게시판</a></li>
+          <li><a href="/list?code=import">수입차게시판</a></li>
+          <li><a href="/list?code=hotcar">내차사진</a></li>
+          <li><a href="/list?code=dica">직찍/특종발견</a></li>
+          <li><a href="/list?code=special">자동차사진/동영상</a></li>    
+        </ul>
+		</div>
+		<div class="list">
+		<ul>
+          <li><a href="/list?code=girl">레이싱모델</a></li>		  
+					<li><a href="/list?code=music">자유사진/동영상</a></li>                           
+          <li><a href="/list?code=army">군사/무기</a></li>
+          <li><a href="/list?code=truck">트럭/버스/중기</a></li>
+          <li><a href="/list?code=skybr">항공/해운/철도</a></li>
+	      	<li><a href="/list?code=vi">올드카/추억거리</a></li>
+		  <li class="end"><a href="/list?code=wheel">장착시공사진</a></li>
+        </ul>
+		</div>
+		</div>
+  
+		<div class="left_con">
+        <h4><img src="http://image.bobaedream.co.kr/renew/images/title/title_community_left_01.gif" alt="게시판" /></h4>
+		<div class="list_left">
+        <ul>
+          <li><a href="/list?code=best">베스트글</a></li>
+          <li><a href="/list?code=freeb">자유게시판</a></li>
+	    <li><a href="/list?code=battle">시승기/배틀/목격담</a></li>
+          <li><a href="/list?code=famous">유명인의 차</a></li>
+        </ul>
+		</div>
+		<div class="list">
+		<ul>
+          <li><a href="/list?code=nnews">자동차뉴스</a></li>
+          <li><a href="/list?code=politic">시사이슈</a></li>
+	    <li><a href="/list?code=ad">성인게시판</a></li>
+	    <li class="end"><a href="/partner/partner_main.php">협력업체</a></li>
+        </ul>
+		</div>
+		</div>
+  
+		<div class="left_con">
+        <h4><img src="http://image.bobaedream.co.kr/renew/images/title/title_community_left_03.gif" alt="기타" /></h4>
+		<div class="list_left">
+        <ul>
+          <li><a href="/event/event_list.php?event_gubun=1">이벤트</a></li>
+          <li><a href="/list.php?code=event_notice">공지사항</a></li>
+          <li class="end"><a href="/partner/partner_main.php">업체검색</a></li>
+        </ul>
+		</div>
+		<div class="list">
+		 <ul class="list">
+          <li><a href="/list?code=bb_talk">제안/건의</a></li>
+          <li><a href="/list?code=bbstory">보배드림 이야기</a></li>
+        </ul>
+		</div>
+		</div>
+        </div>
+	  <div class="left_con_last">
+<a href="http://www.bobaedream.co.kr/partner/partner_view.php?no=1307" id="cooperate_info0" style="display:none;"><p class="left_con_p"><img src="http://file4.bobaedream.co.kr/partner/special/2018/01/10/1515544779_c.jpg" alt="우리자동차" style="width:69px;height:69px;" /></p><ul class="left_con_ul"><li><span>우리자동차</span></li><li>수입차부품</li><li></li></ul></a><a href="http://www.bobaedream.co.kr/partner/partner_view.php?no=1003" id="cooperate_info1" style="display:none;"><p class="left_con_p"><img src="http://file4.bobaedream.co.kr/partner/special/2017/11/27/1511742975_c.jpg" alt="SM인터내셔널" style="width:69px;height:69px;" /></p><ul class="left_con_ul"><li><span>SM인터내셔널</span></li><li>수입차부품</li><li></li></ul></a><a href="http://www.bobaedream.co.kr/partner/partner_view.php?no=1457" id="cooperate_info2" style="display:none;"><p class="left_con_p"><img src="http://file4.bobaedream.co.kr/partner/special/2017/11/17/1510896333_c.jpg" alt="루마썬팅 대구" style="width:69px;height:69px;" /></p><ul class="left_con_ul"><li><span>루마썬팅 대구</span></li><li>블박/썬팅시공</li><li>053-604-2114</li></ul></a><a href="http://www.bobaedream.co.kr/partner/partner_view.php?no=538" id="cooperate_info3" style="display:none;"><p class="left_con_p"><img src="http://file4.bobaedream.co.kr/partner/special/2017/05/19/1495176726_c.jpg" alt="인치업나라" style="width:69px;height:69px;" /></p><ul class="left_con_ul"><li><span>인치업나라</span></li><li>휠/타이어</li><li>010-6676-7732</li></ul></a>      </div>     
+      <div class="sns">
+		<span class="title">보배드림 SNS</span>
+		<div class="sns_03">
+			<ul>
+				<li><a href="https://www.facebook.com/bobaedream"><img src="http://image.bobaedream.co.kr/renew/images/common_re/face.gif" alt="페이스북" /></a></li>
+				<li><a href="https://www.youtube.com/channel/UCLwH6qjWELskt7sGT2b3FOg"><img src="http://image.bobaedream.co.kr/renew/images/common_re/youtube.gif" alt="유튜브" /></a></li>
+				<li><a href="https://twitter.com/bobae_dream"><img src="http://image.bobaedream.co.kr/renew/images/common_re/twitt.gif" alt="트위터" /></a></li>
+				<li><a href="http://blog.naver.com/bobae_dream"><img src="http://image.bobaedream.co.kr/renew/images/common_re/naverblog.gif" alt="네이버블로그" /></a></li>
+				<li><a href="https://instagram.com/bobaedream"><img src="http://image.bobaedream.co.kr/renew/images/common_re/insta.gif" alt="인스타그램" /></a></li>
+			</ul>
+		</div>
+      </div>
+    </div>
+<script type="text/javascript">
+  //  <![CDATA[
+  rnum = getRandomInt(0,4);
+  document.getElementById("cooperate_info"+rnum).style.display = "";
+
+  // ]]>
+</script>
+    <div class="conRight">
+      <div class="titleArea02">
+        <h2><img src="http://image.bobaedream.co.kr/renew/images/title/title_community_strange.gif" alt="유머게시판" /></h2>
+              </div>
+	  <div class="top_add">
+		<span class="top_add_01">
+        <a href="/event/event_list.php?event_gubun=5" class="add_img"><img src="http://image.bobaedream.co.kr/renew/images/common_re/title_humor_add.gif" alt="광고" /></a>
+		</span>
+      </div>
+<div class="cList" style="margin-top:3px;">
+       
+ 
+
+      
+     
+
+
+        <div style="display:none;">
+          <img style="margin-left:5px;display: none;" id="calImg" src="http://image.bobaedream.co.kr/renew/images/common/btn_s05_cal.gif" alt="Popup" class="trigger" />
+        </div>
+        <div class="cListSearch">
+          <div class="clistSearch01" style="margin-top:3px">
+<a class="bsubject" href="http://www.bobaedream.co.kr/board/bulletin/notice_view.php?no=361&code=event_notice" target="_blank">[공지] 보배드림 커뮤니티 운영정책</a>            <!-- img class="alim" src="http://image.bobaedream.co.kr/renew/images/bobae_renew/notify.gif" alt="공지" / -->
+          </div>
+
+          <div class="clistSearch03">
+   <label for="noticeblind"></label>      
+	<!--
+            <select onchange="sdays(this.value, '');" style="width:77px;">
+              <option value=""     selected='selected'>전체기간</option>
+              <option value="7"   >1주일</option>
+              <option value="15"  >15일</option>
+              <option value="30"  >1개월</option>
+              <option value="90"  >3개월</option>
+            </select>	-->
+            <select class="clistSearch03_arrow" onchange="spageScale(this.value);" title=" ">
+              <option value="70" >70개씩</option>
+              <option value="50" >50개씩</option>
+              <option value="40" >40개씩</option>
+              <option value="30"  selected='selected'>30개씩</option>
+              <option value="20" >20개씩</option>
+              <option value="10" >10개씩</option>
+            </select>
+
+            <a href="/board/bulletin/write?code=strange"><img src="http://image.bobaedream.co.kr/renew/images/common/btn_writing_new.gif" alt="글쓰기" /></a>
+          </div>
+        </div>
+<script type="text/javascript">
+  //  <![CDATA[
+  function sdays(ord, flag) {
+    var str = "후방";
+    var frm = window.document.sform2;
+    if (str) {
+      frm.s_key.value = str;
+    }
+    frm.s_selday.value = ord;
+    if (!flag) frm.submit();
+  }
+
+  function sgus(ord) {
+    var str = "후방";
+    var frm = window.document.sform2;
+
+    if (str) {
+      frm.s_key.value = str;
+    }
+    var or_se = "desc";
+    var or_gu = "10";
+
+    if (or_gu == ord) {
+      if (or_se == "desc") {
+        frm.or_se.value = "asc";
+      } else {
+        frm.or_se.value = "desc";
+      }
+    } else {
+      frm.or_se.value = "desc";
+    }
+    frm.or_gu.value = ord;
+    frm.submit();
+  }
+
+  function spageScale(ord) {
+    var str = "후방";
+    var frm = window.document.sform2;
+    if (str) {
+      frm.s_key.value = str;
+    }
+    frm.pagescale.value = ord;
+    frm.submit();
+  }
+
+  function sBestDays(code, days, strNext) {
+    var str = "후방";
+    var frm = window.document.sform2;
+    if (str) {
+      frm.s_key.value = str;
+    }
+    frm.bestCode.value = code;
+    frm.bestDays.value = days;
+    if (strNext == "next") {
+      frm.bestNext.value = strNext;
+    }
+    frm.submit();
+  }
+
+  function sBestCode(bbscode) {
+    var str = "후방";
+    var frm = window.document.sform2;
+    if (str) {
+      frm.s_key.value = str;
+    }
+    frm.bestbbs.value = bbscode;
+    frm.submit();
+  }
+  function noticeBlind() {
+    var str = "후방";
+    var frm = window.document.sform2;
+    if (str) {
+      frm.s_key.value = str;
+    }
+    if ($("#noticeblind").is(":checked") == true) {
+      frm.noticeShow.value = "blind";
+    } else {
+      frm.noticeShow.value = "";
+    }
+    frm.submit();
+  }
+  // ]]>
+</script>
+
+        
+        <table id="boardlist" class="clistTable02" cellspacing="0" cellpadding="0" summary="이 표는 게시판 유머게시판 목록으로 총 6열로 구성되어 있으며 순위, 제목, 글쓴이, 등록일, 추천, 조회 순서입니다.">
+			<caption>유머게시판 목록</caption>
+          <colgroup>
+                        <col width="48" />
+            <col width="*" />
+            <col width="120" />
+            <col width="52" />
+            <col width="41" />
+            <col width="53" />
+          </colgroup>
+          <thead>
+            <tr>
+                            <th scope="col">번호</th>
+
+              <th scope="col">제목</th>
+              <th class="align_left" scope="col">글쓴이</th>
+              <th scope="col"><a href="javascript:sgus('10');">등록일<img src="http://image.bobaedream.co.kr/renew/images/common/ico_b7_down_new.gif" alt="더보기" /></a></th>
+              <th scope="col"><a href="javascript:sgus('30');">추천<img src="http://image.bobaedream.co.kr/renew/images/common/ico_b7_down_new.gif" alt="더보기" /></a></th>
+              <th scope="col"><a href="javascript:sgus('20');">조회<img src="http://image.bobaedream.co.kr/renew/images/common/ico_b7_down_new.gif" alt="더보기" /></a></th>              
+            </tr>
+          </thead>
+          <tbody>
+<tr class="best"><td class="c"><img src="http://image.bobaedream.co.kr/renew/images/bobae_renew/num01.gif" alt="1rank"   class="imgmargin" /></td><td><a class="bsubject" href="/view?code=strange&No=2250504&rtn=%2Flist%3Fcode%3Dstrange">26살, 정호씨 근황</a><a href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250504','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);" style="padding-left:4px;"><span class="Comment">(<strong class="totreply">358</strong>)</span></a></td><td class="author02"><span onClick="javascript:submenu_level('b3BocjFvcGhxcW9waHIzb3BocWtvcGhxOW9waHFrb3BocXBvcGhxbG9waHFwb3BocjBvcGhyM29waHI1b3Bocm0%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span><span onclick="javascript:submenu_show('b3BocjFvcGhxcW9waHIzb3BocWtvcGhxOW9waHFrb3BocXBvcGhxbG9waHFwb3BocjBvcGhyM29waHI1b3Bocm0%3D', '');" class="author" style="cursor:pointer;">목동2622</span></td><td class="date">02/12</td><td class="recomm"><font style="color:#ff7234;font-weight:bold;">2400</font><font color="#999999"></font></td><td class="count"><font color='#FF0000'>148892</font></td></tr>
+<tr class="best"><td class="c"><img src="http://image.bobaedream.co.kr/renew/images/bobae_renew/num02.gif" alt="2rank"   class="imgmargin" /></td><td><a class="bsubject" href="/view?code=strange&No=2247776&rtn=%2Flist%3Fcode%3Dstrange">독일 선수들 클라스</a><a href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2247776','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);" style="padding-left:4px;"><span class="Comment">(<strong class="totreply">257</strong>)</span></a></td><td class="author02"><span onClick="javascript:submenu_level('b3BocW5vcGhxbG9waHFnb3Boc2RvcGhzZG9waHNpb3Boc2s%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_20.gif" alt="레벨 원수" /></span><span onclick="javascript:submenu_show('b3BocW5vcGhxbG9waHFnb3Boc2RvcGhzZG9waHNpb3Boc2s%3D', '');" class="author" style="cursor:pointer;">시프겔</span></td><td class="date">02/10</td><td class="recomm"><font style="color:#ff7234;font-weight:bold;">2329</font><font color="#999999"></font></td><td class="count"><font color='#FF0000'>160310</font></td></tr>
+<tr class="best"><td class="c"><img src="http://image.bobaedream.co.kr/renew/images/bobae_renew/num03.gif" alt="3rank"   class="imgmargin" /></td><td><a class="bsubject" href="/view?code=strange&No=2252853&rtn=%2Flist%3Fcode%3Dstrange" title="GM이 한국에서 완전철수하기를 원하시는 분은 추천부탁드립니다">GM이 한국에서 완전철수하기를 원하시는 분은 추천부탁드립니다</a><a href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252853','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);" style="padding-left:4px;"><span class="Comment">(<strong class="totreply">181</strong>)</span></a></td><td class="author02"><span onClick="javascript:submenu_level('b3BocWVvcGhxZW9waHFlb3BocW9vcGhxb29waHFvb3BocTlvcGhxOW9waHE5');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_17.gif" alt="레벨 소장" /></span><span onclick="javascript:submenu_show('b3BocWVvcGhxZW9waHFlb3BocW9vcGhxb29waHFvb3BocTlvcGhxOW9waHE5', '');" class="author" style="cursor:pointer;">돼지닭쥐태워죽..</span></td><td class="date">02/14</td><td class="recomm"><font style="color:#ff7234;font-weight:bold;">2105</font><font color="#999999"></font></td><td class="count"><font color='#FF0000'>71906</font></td></tr>
+<tr class="best"><td class="c"><img src="http://image.bobaedream.co.kr/renew/images/bobae_renew/num04.gif" alt="4rank"   class="imgmargin" /></td><td><a class="bsubject" href="/view?code=strange&No=2247799&rtn=%2Flist%3Fcode%3Dstrange">현제 강릉 입니다. 바가지 개 오집니다.</a><a href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2247799','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);" style="padding-left:4px;"><span class="Comment">(<strong class="totreply">345</strong>)</span></a></td><td class="author02"><span onClick="javascript:submenu_level('b3BocWlvcGhxbW9waHIzb3BocTlvcGhxam9waHFrb3Boc2s%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_11.gif" alt="레벨 중위 3" /></span><span onclick="javascript:submenu_show('b3BocWlvcGhxbW9waHIzb3BocTlvcGhxam9waHFrb3Boc2s%3D', '');" class="author" style="cursor:pointer;">우루루꽝</span></td><td class="date">02/10</td><td class="recomm"><font style="color:#ff7234;font-weight:bold;">1955</font><font color="#999999"></font></td><td class="count"><font color='#FF0000'>127279</font></td></tr>
+<tr class="best"><td class="c"><img src="http://image.bobaedream.co.kr/renew/images/bobae_renew/num05.gif" alt="5rank"   class="imgmargin" /></td><td><a class="bsubject" href="/view?code=strange&No=2248918&rtn=%2Flist%3Fcode%3Dstrange">평창올림픽 얼음조각의 비밀</a><a href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2248918','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);" style="padding-left:4px;"><span class="Comment">(<strong class="totreply">134</strong>)</span></a></td><td class="author02"><span onClick="javascript:submenu_level('b3BocjFvcGhxcW9waHIzb3BocWtvcGhxOW9waHFrb3BocXBvcGhxbG9waHFwb3BocjBvcGhyM29waHI1b3Bocm0%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span><span onclick="javascript:submenu_show('b3BocjFvcGhxcW9waHIzb3BocWtvcGhxOW9waHFrb3BocXBvcGhxbG9waHFwb3BocjBvcGhyM29waHI1b3Bocm0%3D', '');" class="author" style="cursor:pointer;">목동2622</span></td><td class="date">02/11</td><td class="recomm"><font style="color:#ff7234;font-weight:bold;">1528</font><font color="#999999"></font></td><td class="count"><font color='#FF0000'>110405</font></td></tr>
+
+<tr class="best"><td class="c"><img src="http://image.bobaedream.co.kr/board/images/icon/ico_or_01.gif" border="0" alt="공지" /></td><td><a class="bsubject" href="http://www.bobaedream.co.kr/view?code=event_notice&No=603" target="_blank" title="새 창"><b>정치글, 저작권 위반 게시물 등 등록 제한 안내</b></a></td><td><span class="admin02">관리자</span></td><td class="date">04/17</td><td class="recomm">-</td><td class="count">103576</td></tr><tr class="best"><td class="c"><img src="http://image.bobaedream.co.kr/images/bike/icon_15.gif" border="0" alt="이벤트" /></td><td><a class="bsubject" href="http://www.bobaedream.co.kr/event/event_view.php?event_gubun=1&No=577" target="_blank" title="새 창">초대형 재난 감동실화 &lt;온리 더 브레이브&gt; 시사회 이벤트</a><strong class="totreply">[43]</strong></td><td><span class="admin02">영자C</span></td><td class="date">02/08</td><td class="recomm">-</td><td class="count">2546</td></tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4011</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2254191&bm=1" itemprop="name">처음 올려보는 후방짤</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2254191','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">11</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWxvcGhyM29waHFyb3BocXRvcGhxbm9waHFub3BocjVvcGhybQ%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_12.gif" alt="레벨 대위 2" /></span>
+                <span onClick="javascript:submenu_show('b3BocWxvcGhyM29waHFyb3BocXRvcGhxbm9waHFub3BocjVvcGhybQ%3D%3D','');" class="author" style="cursor:pointer;" title="투쿨투쿨">투쿨투쿨</span>
+              </td>
+              <td class="date">16:45</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">3</font><font color="#999999"></font></td>              
+              <td class="count">3293</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4010</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2253914&bm=1" itemprop="name">후방주의 레전드 블랙박스</a>&nbsp;<a style="padding-left:0px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2253914','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">1</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWVvcGhxbW9waHIzb3BocWVvcGhxa29waHFzb3Boc2VvcGhzZQ%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_10.gif" alt="레벨 소위 3" /></span>
+                <span onClick="javascript:submenu_show('b3BocWVvcGhxbW9waHIzb3BocWVvcGhxa29waHFzb3Boc2VvcGhzZQ%3D%3D','');" class="author" style="cursor:pointer;" title="비오템">비오템</span>
+              </td>
+              <td class="date">11:09</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">4</font><font color="#999999"></font></td>              
+              <td class="count">3043</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4009</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2253367&bm=1" title="이건 개도 안하는 짓인데(후방)" itemprop="name">이건 개도 안하는 짓인데(후방)</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2253367','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">18</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxa29waHFtb3BocTlvcGhza29waHFx');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_12.gif" alt="레벨 대위 3" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxa29waHFtb3BocTlvcGhza29waHFx','');" class="author" style="cursor:pointer;" title="JP대박">JP대박</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">4</font><font color="#999999"></font></td>              
+              <td class="count"><strong>6818</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4008</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252974&bm=1" itemprop="name">-후방주이</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252974','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">4</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D','');" class="author" style="cursor:pointer;" title="올">올</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">2</font><font color="#999999"></font></td>              
+              <td class="count">3197</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4007</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252953&bm=1" itemprop="name">후방주의!!!</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252953','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">12</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D','');" class="author" style="cursor:pointer;" title="올">올</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count">4686</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4006</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252949&bm=1" itemprop="name">후방주의</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252949','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">13</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D','');" class="author" style="cursor:pointer;" title="올">올</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">2</font><font color="#999999"></font></td>              
+              <td class="count">3964</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4005</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252837&bm=1" title="(후방극혐)경기 쉬는시간에 키스타임 하는군요." itemprop="name">(후방극혐)경기 쉬는시간에 키스타임 하는군요.</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252837','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">19</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWxvcGhxam9waHFob3Boc2tvcGhzaG9waHNlb3Boc20%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_11.gif" alt="레벨 중위 1" /></span>
+                <span onClick="javascript:submenu_show('b3BocWxvcGhxam9waHFob3Boc2tvcGhzaG9waHNlb3Boc20%3D','');" class="author" style="cursor:pointer;" title="원조마니또">원조마니또</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">4</font><font color="#999999"></font></td>              
+              <td class="count"><strong>8407</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4004</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252807&bm=1" itemprop="name">후방, 전방</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252807','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">7</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWVvcGhyM29waHFvb3BocXBvcGhyNW9waHFqb3BocWdvcGhyM29waHFrb3BocXJvcGhxdG9waHI1b3Bocm0%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_11.gif" alt="레벨 중위 2" /></span>
+                <span onClick="javascript:submenu_show('b3BocWVvcGhyM29waHFvb3BocXBvcGhyNW9waHFqb3BocWdvcGhyM29waHFrb3BocXJvcGhxdG9waHI1b3Bocm0%3D','');" class="author" style="cursor:pointer;" title="goodboy">goodboy</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">6</font><font color="#999999"></font></td>              
+              <td class="count"><strong>5969</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4003</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252769&bm=1" itemprop="name">오늘 첮 후방</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252769','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">2</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D','');" class="author" style="cursor:pointer;" title="올">올</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">4</font><font color="#999999"></font></td>              
+              <td class="count"><strong>5773</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4002</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252719&bm=1" title="(후방)좀 전에 입었을까요? 안 입었을까요? 에 대한 해답입니다." itemprop="name">(후방)좀 전에 입었을까요? 안 입었을까요? 에 대한 해답입니다.</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252719','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">3</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocThvcGhyMm9waHIzb3BocWdvcGhxZA%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_5.gif" alt="레벨 병장" /></span>
+                <span onClick="javascript:submenu_show('b3BocThvcGhyMm9waHIzb3BocWdvcGhxZA%3D%3D','');" class="author" style="cursor:pointer;" title="harusary">harusar..</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">1</font><font color="#999999"></font></td>              
+              <td class="count">4784</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4001</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252620&bm=1" title="[후방] 입었을 까요? 안입었을 까요?" itemprop="name">[후방] 입었을 까요? 안입었을 까요?</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252620','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">18</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWZvcGhxaW9waHF0b3BocjNvcGhxZw%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_6.gif" alt="레벨 하사 2" /></span>
+                <span onClick="javascript:submenu_show('b3BocWZvcGhxaW9waHF0b3BocjNvcGhxZw%3D%3D','');" class="author" style="cursor:pointer;" title="피겨4레그록">피겨4레그록</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">2</font><font color="#999999"></font></td>              
+              <td class="count"><strong>7027</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">4000</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252608&bm=1" title="염붕님이 신고한다고 하셔서 후방 글 삭제." itemprop="name">염붕님이 신고한다고 하셔서 후방 글 삭제.</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252608','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">10</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocW9vcGhxbW9waHFrb3BocXQ%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_15.gif" alt="레벨 대령 3" /></span>
+                <span onClick="javascript:submenu_show('b3BocW9vcGhxbW9waHFrb3BocXQ%3D','');" class="author" style="cursor:pointer;" title="훌렁출렁">훌렁출렁</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">3</font><font color="#999999"></font></td>              
+              <td class="count">1248</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3999</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252416&bm=1" title="메퇘지를 서로 소개해주려는 훈훈한 남자들(취향후방)" itemprop="name">메퇘지를 서로 소개해주려는 훈훈한 남자들(취향후방)</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/png.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252416','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">9</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocjFvcGhxOG9waHIzb3BocWdvcGhzbG9waHNrb3Boc2tvcGhzZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_8.gif" alt="레벨 상사 1" /></span>
+                <span onClick="javascript:submenu_show('b3BocjFvcGhxOG9waHIzb3BocWdvcGhzbG9waHNrb3Boc2tvcGhzZg%3D%3D','');" class="author" style="cursor:pointer;" title="수입명품한우">수입명품한우</span>
+              </td>
+              <td class="date">02/14</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">15</font><font color="#999999"></font></td>              
+              <td class="count"><strong>5414</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3998</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2252070&bm=1" itemprop="name">아고 꼬시다~~(후방)</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2252070','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">4</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWlvcGhxam9waHFib3BocXRvcGhxZ29waHIyb3BocWJvcGhxcQ%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/w_army_9.gif" alt="레벨 중령 2호봉" /></span>
+                <span onClick="javascript:submenu_show('b3BocWlvcGhxam9waHFib3BocXRvcGhxZ29waHIyb3BocWJvcGhxcQ%3D%3D','');" class="author" style="cursor:pointer;" title="로또1등함하자">로또1등함하자</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count">4634</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3997</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2251910&bm=1" itemprop="name">검스 후방</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2251910','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">7</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D','');" class="author" style="cursor:pointer;" title="올">올</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">1</font><font color="#999999"></font></td>              
+              <td class="count"><strong>5488</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3996</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2251586&bm=1" itemprop="name">처자 후방....</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2251586','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">15</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D','');" class="author" style="cursor:pointer;" title="올">올</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">1</font><font color="#999999"></font></td>              
+              <td class="count">1216</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3995</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2251515&bm=1" title="가성비조립컴(후방)견적좀봐주삼" itemprop="name">가성비조립컴(후방)견적좀봐주삼</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2251515','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">13</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocjBvcGhxcG9waHIwb3BocWJvcGhxa29waHFmb3BocXJvcGhxcW9waHNq');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_13.gif" alt="레벨 소령 1" /></span>
+                <span onClick="javascript:submenu_show('b3BocjBvcGhxcG9waHIwb3BocWJvcGhxa29waHFmb3BocXJvcGhxcW9waHNq','');" class="author" style="cursor:pointer;" title="둘리돌리">둘리돌리</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count">3159</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3994</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2251458&bm=1" itemprop="name">후방)뜻밖의 커밍아웃</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2251458','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">11</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3Boc2xvcGhzbW9waHNtb3Boc2lvcGhxbG9waHE5b3BocWVvcGhxcQ%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_15.gif" alt="레벨 대령 1" /></span>
+                <span onClick="javascript:submenu_show('b3Boc2xvcGhzbW9waHNtb3Boc2lvcGhxbG9waHE5b3BocWVvcGhxcQ%3D%3D','');" class="author" style="cursor:pointer;" title="낡은풍금">낡은풍금</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count"><strong>8171</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3993</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2251180&bm=1" title="(후방주의) 초콜릿 받아먹기" itemprop="name">(후방주의) 초콜릿 받아먹기</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2251180','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">6</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocXBvcGhyM29waHFrb3BocWZvcGhyM29waHFrb3BocWtvcGhxdG9waHFlb3Boc2w%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_15.gif" alt="레벨 대령 1" /></span>
+                <span onClick="javascript:submenu_show('b3BocXBvcGhyM29waHFrb3BocWZvcGhyM29waHFrb3BocWtvcGhxdG9waHFlb3Boc2w%3D','');" class="author" style="cursor:pointer;" title="누가넘버쑤리랫">누가넘버쑤리랫</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count"><strong>7193</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3992</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2251155&bm=1" title="[많이 후방] 왜갑자기 벌레들이 많아졌나요?" itemprop="name">[많이 후방] 왜갑자기 벌레들이 많아졌나요?</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/png.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2251155','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">11</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocW9vcGhxam9waHFub3BocXRvcGhxZ29waHNkb3Boc2VvcGhzZG9waHNk');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_6.gif" alt="레벨 하사 2" /></span>
+                <span onClick="javascript:submenu_show('b3BocW9vcGhxam9waHFub3BocXRvcGhxZ29waHNkb3Boc2VvcGhzZG9waHNk','');" class="author" style="cursor:pointer;" title="딸신">딸신</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">14</font><font color="#999999"></font></td>              
+              <td class="count"><strong>7240</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3991</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2251078&bm=1" title="대전 특파원 입니다~~(후방)" itemprop="name">대전 특파원 입니다~~(후방)</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2251078','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">19</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocjJvcGhyM29waHIyb3BocTlvcGhxb29waHFwb3BocWtvcGhzam9waHNqb3Boc2tvcGhzaw%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_6.gif" alt="레벨 하사 1" /></span>
+                <span onClick="javascript:submenu_show('b3BocjJvcGhyM29waHIyb3BocTlvcGhxb29waHFwb3BocWtvcGhzam9waHNqb3Boc2tvcGhzaw%3D%3D','');" class="author" style="cursor:pointer;" title="뿌락치">뿌락치</span>
+              </td>
+              <td class="date">02/13</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">7</font><font color="#999999"></font></td>              
+              <td class="count"><strong>8707</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3990</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250962&bm=1" itemprop="name">[후방] 교도소 플레이</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250962','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">6</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWJvcGhyM29waHFrb3BocXJvcGhxZm9waHIzb3BocWxvcGhyMw%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_17.gif" alt="레벨 소장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWJvcGhyM29waHFrb3BocXJvcGhxZm9waHIzb3BocWxvcGhyMw%3D%3D','');" class="author" style="cursor:pointer;" title="왕장군">왕장군</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">2</font><font color="#999999"></font></td>              
+              <td class="count"><strong>7330</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3989</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250911&bm=1" itemprop="name">후방) 꺼먼거</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250911','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">9</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocjNvcGhxa29waHIwb3BocTlvcGhzZG9waHNmb3Boc2hvcGhzZW9waHNtb3Boc2xvcGhzaw%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_13.gif" alt="레벨 소령 1" /></span>
+                <span onClick="javascript:submenu_show('b3BocjNvcGhxa29waHIwb3BocTlvcGhzZG9waHNmb3Boc2hvcGhzZW9waHNtb3Boc2xvcGhzaw%3D%3D','');" class="author" style="cursor:pointer;" title="전잉주여시남민">전잉주여시남민</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">4</font><font color="#999999"></font></td>              
+              <td class="count"><strong>7600</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3988</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250541&bm=1" itemprop="name">뭘 먹는걸까요? (후방)</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250541','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">10</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocW1vcGhxcG9waHIxb3Boc2dvcGhzaG9waHNpb3Boc2w%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/w_army_13.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocW1vcGhxcG9waHIxb3Boc2dvcGhzaG9waHNpb3Boc2w%3D','');" class="author" style="cursor:pointer;" title="보배부산지부장">보배부산지부장</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count">322</td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3987</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250415&bm=1" itemprop="name">색시백(후방)</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250415','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">7</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocjJvcGhxbW9waHFkb3BocXRvcGhxZm9waHFub3BocTlvcGhzam9waHNsb3Boc2hvcGhzbA%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_9.gif" alt="레벨 원사 3" /></span>
+                <span onClick="javascript:submenu_show('b3BocjJvcGhxbW9waHFkb3BocXRvcGhxZm9waHFub3BocTlvcGhzam9waHNsb3Boc2hvcGhzbA%3D%3D','');" class="author" style="cursor:pointer;" title="아타락쿠스">아타락쿠스</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">6</font><font color="#999999"></font></td>              
+              <td class="count"><strong>5927</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3986</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250362&bm=1" itemprop="name">오늘 첫 [후방주희]</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250362','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">10</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_18.gif" alt="레벨 중장" /></span>
+                <span onClick="javascript:submenu_show('b3BocWpvcGhxam9waHFqb3BocWlvcGhxZg%3D%3D','');" class="author" style="cursor:pointer;" title="올">올</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count"><strong>5881</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3985</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250286&bm=1" itemprop="name">후방)오늘도발기찬하루!</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/jpg.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250286','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">6</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocXNvcGhzZG9waHNsb3BocjBvcGhxcG9waHIzb3BocjJvcGhxbW9waHFq');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_19.gif" alt="레벨 대장" /></span>
+                <span onClick="javascript:submenu_show('b3BocXNvcGhzZG9waHNsb3BocjBvcGhxcG9waHIzb3BocjJvcGhxbW9waHFq','');" class="author" style="cursor:pointer;" title="국뽕왕">국뽕왕</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">1</font><font color="#999999"></font></td>              
+              <td class="count"><strong>5786</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3984</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250082&bm=1" title="(후방주의) 털렁털렁 ㅎㄷㄷㄷㄷㄷ" itemprop="name">(후방주의) 털렁털렁 ㅎㄷㄷㄷㄷㄷ</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250082','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">7</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocThvcGhxam9waHFqb3Boc2xvcGhzZG9waHNkb3Boc20%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_14.gif" alt="레벨 중령 2" /></span>
+                <span onClick="javascript:submenu_show('b3BocThvcGhxam9waHFqb3Boc2xvcGhzZG9waHNkb3Boc20%3D','');" class="author" style="cursor:pointer;" title="전내나">전내나</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count"><strong>7653</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3983</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250044&bm=1" title="(후방) 조심스레 벗겨 놓고는 무참히 만져 버리는..." itemprop="name">(후방) 조심스레 벗겨 놓고는 무참히 만져 버리는...</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250044','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">6</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocThvcGhxam9waHFqb3Boc2xvcGhzZG9waHNkb3Boc20%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_14.gif" alt="레벨 중령 2" /></span>
+                <span onClick="javascript:submenu_show('b3BocThvcGhxam9waHFqb3Boc2xvcGhzZG9waHNkb3Boc20%3D','');" class="author" style="cursor:pointer;" title="전내나">전내나</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font >0</font><font color="#999999"></font></td>              
+              <td class="count"><strong>6062</strong></td>              
+            </tr>
+            <tr itemscope itemtype="http://schema.org/Article">
+              <td class="num01">3982</td>
+              <td class="pl14">
+
+								                <a class="bsubject" style="padding:0;" href="/view?code=strange&No=2250040&bm=1" title="극후방) 화장실에서 다리 벌리고 극심한 고통에 처하게 된 처자" itemprop="name">극후방) 화장실에서 다리 벌리고 극심한 고통에 처하게 된 처자</a><img style="padding-left:3px" class="jpg" src="http://image.bobaedream.co.kr/newimg/gif.gif" alt="첨부파일" />&nbsp;<a style="padding-left:2px" href="javascript:window.open('/board/bulletin/comment_list.php?tb=uni_cmt_1802&code=strange&No=2250040','','resizable=yes,scrollbars=yes,width=760,height=590');void(0);"><span class="Comment">(<strong class="totreply">6</strong>)</span></a>
+              </td>
+              <td class="author02">
+                <span onClick="javascript:submenu_level('b3BocThvcGhxam9waHFqb3Boc2xvcGhzZG9waHNkb3Boc20%3D');" class="author_level"><img class="level" src="http://image.bobaedream.co.kr/board/level/army_14.gif" alt="레벨 중령 2" /></span>
+                <span onClick="javascript:submenu_show('b3BocThvcGhxam9waHFqb3Boc2xvcGhzZG9waHNkb3Boc20%3D','');" class="author" style="cursor:pointer;" title="전내나">전내나</span>
+              </td>
+              <td class="date">02/12</td>
+              
+              <td class="recomm"><font style="color:#ff7234;font-weight:bold;">1</font><font color="#999999"></font></td>              
+              <td class="count"><strong>6040</strong></td>              
+            </tr>
+        </tbody>
+      </table>
+
+    <form method="get" name="sform2" action="/list.php" onsubmit="return chk_search2();" style="margin:0;padding:0">
+      <input type="hidden" name="code" value="strange" />
+      <input type="hidden" name="s_cate" value="" />
+      <input type="hidden" name="maker_no" value="" />
+      <input type="hidden" name="model_no" value="" />
+      <input type="hidden" name="or_gu" value="10" />
+      <input type="hidden" name="or_se" value="desc" />
+      <input type="hidden" name="s_selday" value="" />
+      <input type="hidden" name="pagescale" value="30" />
+      <input type="hidden" name="info3" value="" />
+      <input type="hidden" name="noticeShow" value="" />
+
+      <input type="hidden" name="bestCode" value="" />
+      <input type="hidden" name="bestDays" value="" />
+      <input type="hidden" name="bestbbs" value="" />
+      <input type="hidden" name="vdate" value="" />
+      <input type="hidden" name="ndate" value="" />
+      <input type="hidden" name="nmdate" value="" />
+      <div class="pageMove03">
+        <ul class="pageNumber03">
+
+          	
+				
+	  		
+
+          
+<li class="first"><a  href="#"><span class="current">1</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=2"><span class="link_page">2</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=3"><span class="link_page">3</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=4"><span class="link_page">4</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=5"><span class="link_page">5</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=6"><span class="link_page">6</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=7"><span class="link_page">7</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=8"><span class="link_page">8</span></a></li>
+<li class=""><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=9"><span class="link_page">9</span></a></li>
+<li class="last"><a  href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=10"><span class="link_page">10</span></a></li>
+<li class="btn_next"><a href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=11"><img src="http://image.bobaedream.co.kr/renew/images/common/page_right1_new.gif" alt="다음" /></a></li>
+<li class="btn_next"><a href="/list?code=strange&s_cate=&maker_no=&model_no=&or_gu=10&or_se=desc&s_selday=&pagescale=30&info3=&noticeShow=&s_select=Subject&s_key=후방&level_no=&vdate=&type=list&page=134"><img src="http://image.bobaedream.co.kr/renew/images/common/page_right2_new.gif" alt="끝" /></a></li>
+    </ul>
+<div class="write"><a href="/board/bulletin/write.php?code=strange"><img src="http://image.bobaedream.co.kr/renew/images/common/btn_writing_new.gif" alt=" 글쓰기" /></a></div></div>
+
+        
+
+    <!--cList//-->
+    
+    <div class="board_search">
+      <select name="s_select" class="board_search_01" title=" ">
+        <option value='Body' >제목+내용</option>
+        <option value='Subject' selected>제목</option>
+        <option value='Name' >글쓴이</option>
+      </select>
+      <span class="search">
+      <input type="text" name="s_key" value="후방" title="검색어 입력"/><a href="javascript:chk_search2();void(0);" class="search"><img src="http://image.bobaedream.co.kr/renew/images/common_re/search_00.gif" alt="검색"  /></a>
+      <a href="/board/bulletin/mycommunity.php?cid=" target="_blank" class="search_text" title="새 창">내가 쓴 글</a>
+      <!--<span><a href="#"><img style="position:absolute;top:5px;right:0" align="bottom" src="http://image.bobaedream.co.kr/renew/images/common/list_topmove.gif" alt="" /></a></span>-->
+    </span>  
+    </div>
+
+    </form>
+
+<script type="text/javascript">
+  //  <![CDATA[
+  function chk_search2(obj) {
+  	
+  	if(obj == 'top') {
+    	document.sform2.s_select.value = document.getElementById('s_select_top').value;
+    	document.sform2.s_key.value = document.getElementById('s_key_top').value;
+    }
+  	
+  	
+    if (document.sform2.s_key.value.length < 2) {
+      window.alert('검색어는 2자 이상 입력해 주세요.');
+      return false;
+    } else {
+      document.sform2.submit();
+    }
+  }
+  // ]]>
+</script>
+
+      </div>
+      
+    
+
+		     
+<div id='div-gpt-ad-1470046174064-0' style='height:90px; width:728px; text-align:center; margin: 25px auto -25px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470046174064-0'); });
+</script>
+</div>
+
+	    </div>
+
+  </div>
+  
+
+
+<script type="text/javascript">
+  //  <![CDATA[
+  $(document).ready(function() {
+    if ("" != "") {
+      var strTemp = "";
+      strTemp = "#" + strTemp.replace("/", "").replace("/", "") + " a";
+      $("#faqListAll a").removeClass("on");
+      $(strTemp).addClass("on");
+    }
+
+
+  });
+
+  function sinfo3(info3) {
+    var str = "후방";
+    var frm = window.document.sform2;
+    if (str) {
+      frm.s_key.value = str;
+    }
+    frm.info3.value = info3;
+    frm.submit();
+  }
+  function customRange(dates) {
+    // 0 = monday, 1 = tuesday, 2 = wednesday, 3 = thursday,
+    // 4=friday, 5 = saturday, 6=sunday
+
+    if (this.id == 'startPicker') {
+      var strTemp = $('#startPicker').val();
+      sBestDays("", strTemp);
+      //$('#endPicker').datepick('option', 'minDate', dates[0] || null);
+    }
+  }
+function date_navi(ndate) {
+if(document.sform2.nmdate.value) var nmdate = document.sform2.nmdate.value;
+else var nmdate = "";
+	var dummy = new Date().getTime();
+	var url = "/board_renew/bulletin/inc/_navi.php?dummy=" + dummy + "&ndate=" + ndate + "&nmdate=" + nmdate + "&vdate=&bestDays=";
+	//$("#bobae_story").unload();
+
+		$("#date_navi").load(url,function(response, status, xhr) {
+			$( "#date_navi" ).show();
+		});
+}
+  // ]]>
+</script>    </div>
+    
+<!--footer-->
+	<div style="width:1010px; margin:0 auto">
+		<div class="Footer">
+			<ul class="top">
+				<li class="first"><img src="http://image.bobaedream.co.kr/image/usedcar/f_t1.gif" alt="패밀리사이트" /></li>
+				<li><a href="/mycar/mycar_list.php?gubun=K"><img src="http://image.bobaedream.co.kr/image/usedcar/f_t2.gif" alt="중고차" /></a></li>
+				<li><a href="http://bike.bobaedream.co.kr/"><img src="http://image.bobaedream.co.kr/image/usedcar/f_t6.gif" alt="오토바이" /></a></li>
+				<li class="last"><a href="http://www.bobaedream.co.kr/board/bbs.php"><img src="http://image.bobaedream.co.kr/image/usedcar/f_t7.gif" alt="커뮤니티" /></a></li>
+				<li class="right"><a href="/sitemap3.php"><img src="http://image.bobaedream.co.kr/image/usedcar/f_t8.gif" alt="서비스 전체보기" /></a></li>
+			</ul>
+			<div class="quickMenu">
+				<a href="/company/company_intro.php">회사소개</a><span>|</span>
+				<a href="/company/company_proposalinfo.php" class="bold">제휴/광고문의</a><span>|</span>
+				<a href="/center/recruit.htm">인재채용</a><span>|</span>
+				<a href="/company/service.php">이용약관</a><span>|</span>
+				<a href="/company/company_privacy.php">개인정보취급방침</a><span>|</span>
+				<a href="#">신고센터</a><span>|</span>
+				<a href="http://bobae.anyhelp.net/" class="bold" target="_blink" title="새 창">원격지원</a><span>|</span>
+				<a href="/center/center.htm">고객센터</a>
+			</div>
+			<div class="addr">
+				대표이사 : 김보배<span>|</span>
+				서울 양천구 목동동로 233-1 드림타워 11,12층<span>|</span>
+				고객센터 02-784-2329<span>|</span>
+				팩스 : 02-6499-2329<span>|</span>
+				이메일 : bobaedream@bobaedream.co.kr<br />
+				개인정보관리책임자 : 이은호<span>|</span>
+				Copyright©(주)보배네트워크<span>|</span>
+				사업자등록번호 : 117-81-64543<span>|</span> 
+				통신판매업신고번호 : 제 2013-서울양천-0465호 <a href="http://www.ftc.go.kr/info/bizinfo/communicationView.jsp?apv_perm_no=2013314011430200466&amp;area1=&amp;area2=&amp;currpage=1&amp;searchKey=04&amp;searchVal=1178164543&amp;stdate=&amp;enddate=" target="_blank" title="새 창"><img src="http://image.bobaedream.co.kr/image/usedcar/foot_comapny.gif" alt="사업자정보확인" /></a>
+				<p class="waning">보배드림은 통신판매중개자이며 차량판매의 당사자가 아닙니다. 따라서 보배드림은 차량 거래검토 및 거래에 대하여 어떤 책임을 지지 않습니다.</p>
+			</div>
+		</div>
+	</div>
+	<!--//footer--> 
+
+<!-- google log -->
+<script src="http://image.bobaedream.co.kr/common/js/google_log.js" type="text/javascript"></script>
+<script type="text/javascript">
+  function fNewWin(name, width, height){
+    cw = screen.availWidth; // 화면 너비
+    ch = screen.availHeight; // 화면 높이
+
+    sw = width;// 띄울 창의 너비
+    sh = height;// 띄울 창의 높이
+
+    ml = (cw-sw)/2;// 가운데 띄우기위한 창의 x위치
+    mt = (ch-sh)/2;// 가운데 띄우기위한 창의 y위치
+
+    if(arguments[3]) strScroll = 'yes';
+    else strScroll = 'no';
+
+    NewWindow = window.open(name, 'newWin'+sw+sh, 'width='+sw+', height='+sh+', top='+mt+', left='+ml+', toobar=no, scrollbars='+strScroll+', menubar=no, status=no, directories=no');
+  }
+</script>
+
+
+
+<div id="submenusel" style="position:absolute;margin:0px;width:100px;height:65px;border:1px solid #888;z-index:1001;background-color:#FFF;display:none;"></div>
+
+<script type="text/javascript">
+  //  <![CDATA[
+  var top_pos = 0;
+  var left_pos = 0;
+  $(document).bind('mousemove',function(e){
+    left_pos = e.pageX;
+    top_pos = e.pageY;
+  });
+  $(document).bind("click", function (event) {
+    var $target = $(event.target);
+    var nodnm = $target.attr("className");
+    if (nodnm != "author" || nodnm != "level") {
+      $("#submenusel").hide();
+    }
+  });
+  // ]]>
+</script>
+
+<script type='text/javascript'>
+
+$(document).ready(function(){
+	$(".clistSearch03").show();
+});
+
+</script>
+
+<div id="dim" class="js-dim"></div>
+  <!-- script type="text/javascript" src="http://image.bobaedream.co.kr/renew/js/fakeselect.js"></script -->  
+  <script type="text/javascript" src="http://image.bobaedream.co.kr/board_renew/bulletin/js/common.js"></script>
+  <script type="text/javascript" src="http://image.bobaedream.co.kr/renew2017/assets/js/bobae.comm.js"></script>  
+</body>
+</html>

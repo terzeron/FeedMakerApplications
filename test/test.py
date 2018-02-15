@@ -22,13 +22,28 @@ def main():
     fm_cwd = os.getenv("FEED_MAKER_CWD")
 
     test_subjects = {
-        "naver/dice": [ "../capture_item_naverwebtoon.py" ],
-        "naver/naverblog.pjwwoo": [ "../capture_item_naverblog" ],
-        "naver/navercast": [ "../capture_item_navercastpc.py" ],
-        "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
-        "naver/magazines": [ "./capture_item_link_title.py", "./post_process_magazines.py" ],
-        "cine21/cine21.review": [ "../capture_item_cine21.py" ],
         "javabeat/javabeat": [ "./capture_item_link_title.py" ],
+        "naver/navercast": [ "../capture_item_navercastpc.py" ],
+        "naver/naverblog.pjwwoo": [ "../capture_item_naverblog.py" ],
+        "naver/magazines": [ "./capture_item_link_title.py", "./post_process_magazines.py" ],
+        "naver/dice": [ "../capture_item_naverwebtoon.py" ],
+        "naver/naverwebtoon": [ "./capture_item_link_title.py" ],
+        "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
+        "cine21/cine21.review": [ "../capture_item_cine21.py" ],
+        "minitoon/onepunchman": [ "../capture_item_minitoon.py" ],
+        "bookdb/picture_essay": [ "../capture_item_link_title.py" ],
+        "myktoon/myktoon": [ "./capture_item_link_title.py" ],
+        "myktoon/doginvader": [ "../capture_item_myktoon.py", "../post_process_myktoon.py 'https://v2.myktoon.com/web/works/viewer.kt?timesseq=121476'" ],
+        "egloos/dylanzhai": [ "../capture_item_link_title.py" ],
+        "daum/redstorm": [ "../capture_item_daumwebtoon.py", "../post_process_daumwebtoon.py 'http://cartoon.media.daum.net/m/webtoon/viewer/46901'" ],
+        "daum/daumwebtoon": [ "./capture_item_link_title.py" ],
+        "khan/hammer": [ "./capture_item_link_title.py" ],
+        "reactivex/reactivex": [ "./capture_item_link_title.py", "./post_process_reactivex.py 'http://reactivex.io/documentation/operators/publish.html'" ],
+        "community/caution.images": [ "../capture_item_community_caution.py" ],
+        "community/caution.images3" : [ "./remove_tags.py" ],
+        "tistory/nasica1": [ "../capture_item_tistory.py" ],
+        "kakao/revivalofstudent": [ "../capture_item_kakaowebtoon.py" ],
+        "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
     }
     
     for (feed, scripts) in test_subjects.items():
@@ -40,7 +55,9 @@ def main():
             test_dir = fm_cwd + "/test/" + feed
             if not test_script(feed, script, work_dir, test_dir, index):
                 print("Error in %s of %s" % (feed, script))
-
+                return -1
+    print("Ok")
+    
                 
 if __name__ == "__main__":
    sys.exit(main())
