@@ -30,7 +30,7 @@ def main():
         "naver/naverwebtoon": [ "./capture_item_link_title.py" ],
         "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
         "cine21/cine21.review": [ "../capture_item_cine21.py" ],
-        "minitoon/onepunchman": [ "../capture_item_minitoon.py" ],
+        "minitoon/onepunchman": [ "../capture_item_minitoon.py -n 30" ],
         "bookdb/picture_essay": [ "../capture_item_link_title.py" ],
         "myktoon/myktoon": [ "./capture_item_link_title.py" ],
         "myktoon/doginvader": [ "../capture_item_myktoon.py", "../post_process_myktoon.py 'https://v2.myktoon.com/web/works/viewer.kt?timesseq=121476'" ],
