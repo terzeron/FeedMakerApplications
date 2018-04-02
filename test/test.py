@@ -29,7 +29,6 @@ def main():
         "naver/dice": [ "../capture_item_naverwebtoon.py" ],
         "naver/naverwebtoon": [ "./capture_item_link_title.py" ],
         "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
-        "cine21/cine21.review": [ "../capture_item_cine21.py" ],
         "minitoon/onepunchman": [ "../capture_item_minitoon.py -n 30" ],
         "bookdb/picture_essay": [ "../capture_item_link_title.py" ],
         "myktoon/myktoon": [ "./capture_item_link_title.py" ],
