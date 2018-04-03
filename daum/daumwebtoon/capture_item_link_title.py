@@ -19,8 +19,9 @@ def main():
         title = item["title"]
         if item["ageGrade"] == 0:
             print("%s\t%s" % (link, title))
-        
-            
+
+    return 0
+
+
 if __name__ == "__main__":
-    main()
-        
+    sys.exit(main())
