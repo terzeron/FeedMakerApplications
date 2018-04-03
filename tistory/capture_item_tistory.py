@@ -45,6 +45,20 @@ def main():
     state = 0
     for line in list:
         if state == 0:
+            m = re.search(r'href="(?P<url_prefix>http://[^"/]+\.tistory\.com)"', line)
+            if m:
+                url_prefix = m.group("url_prefix")
+                state = 1
+        elif state == 1:
+            m = re.search(r'<h2><a href="(?P<article_id>/\d+)">(?P<title>.*?)</a></h2>', line)
+            if m:
+                link = url_prefix + m.group("article_id")
+                title = m.group("title")
+                result_list.append((link, title))
+
+    state = 0
+    for line in list:
+        if state == 0:
             m = re.search(r'url: "(?P<url_prefix>http://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
