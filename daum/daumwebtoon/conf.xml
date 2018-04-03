@@ -13,10 +13,8 @@
         <ignore_old_list>true</ignore_old_list>
     </collection>
     <extraction>
-        <element_list>
-            <element_class>product_intro</element_class>
-        </element_list>
-        <!--render_js>true</render_js-->
+        <bypass_element_extraction>true</bypass_element_extraction>
+        <post_process_script>./post_process_daumwebtoon.py</post_process_script>
     </extraction>
     <rss>
         <title><![CDATA[다음웹툰목록]]></title>

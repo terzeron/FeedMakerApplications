@@ -6,6 +6,8 @@
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://nasica1.tistory.com/?page=1]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=2]]></list_url>
+            <list_url><![CDATA[http://nasica1.tistory.com/?page=3]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_tistory.py -n 100</item_capture_script>
     </collection>
