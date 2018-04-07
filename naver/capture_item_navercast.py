@@ -18,7 +18,7 @@ def main():
             if m:
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="/(?P<url>entry\.nhn\?[^"]+)">(?P<title>[^<]+)</a>', line)
+            m = re.search(r'<a href="/(?P<url>entry\.nhn\?[^"]+)"[^>]*>(?P<title>[^<]+)</a>', line)
             if m:
                 url = m.group("url")
                 url = re.sub(r'&amp;', '&', url)
