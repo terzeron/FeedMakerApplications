@@ -23,7 +23,7 @@ def main():
 
     test_subjects = {
         "javabeat/javabeat": [ "./capture_item_link_title.py" ],
-        "naver/navercast": [ "../capture_item_navercastpc.py" ],
+        "naver/navercast": [ "../capture_item_navercast.py" ],
         "naver/naverblog.pjwwoo": [ "../capture_item_naverblog.py" ],
         "naver/magazines": [ "./capture_item_link_title.py", "./post_process_magazines.py" ],
         "naver/dice": [ "../capture_item_naverwebtoon.py" ],
