@@ -10,9 +10,9 @@ from feedmakerutil import Config, IO, URL
 
 
 def get_url_domain_from_config():
-    config = Config.read_config()
-    collection = Config.get_config_node(config, "collection")
-    url = Config.get_config_value(collection, "list_url")
+    config = Config()
+    collection = config.get_collection_configs()
+    url = collection["list_url_list"][0]
     return URL.get_url_domain(url)
     
     
