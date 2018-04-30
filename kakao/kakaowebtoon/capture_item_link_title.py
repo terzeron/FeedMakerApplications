@@ -2,7 +2,7 @@
 
 
 import sys
-import re
+import json
 from feedmakerutil import IO
 
 
@@ -11,27 +11,19 @@ def main():
     title = ""
     num = ""
     state = 0
-    url_prefix = "http://page.kakao.com"
+    url_prefix = "http://page.kakao.com/home/"
 
-    for line in IO.read_stdin_as_line_list():
-        if state == 0:
-            m = re.search(r'<a href="(?P<link>/home/\d+)\?[^"]+">', line)
-            if m:
-                link = url_prefix + m.group("link")
-                state = 1
-        elif state == 1:
-            if re.search(r'<p class="ellipsis"', line):
-                state = 2
-        elif state == 2:
-            m = re.search(r'^\s*(?P<title>\S.*\S)\s*$', line)
-            if m:
-                title = m.group("title")
-                print("%s\t%s" % (link, title))
-                state = 3
-        elif state == 3:
-            m = re.search(r'^\s*</p>\s*$', line)
-            if m:
-                state = 0
+    json_content = IO.read_stdin()
+    data = json.loads(json_content)
+    if "section_containers" in data:
+        for container in data["section_containers"]:
+            if "section_series" in container:
+                for section in container["section_series"]:
+                    if "list" in section:
+                        for item in section["list"]:
+                            link = url_prefix + str(item["series_id"])
+                            title = item["title"]
+                            print("%s\t%s" % (link, title))
 
 
 if __name__ == "__main__":

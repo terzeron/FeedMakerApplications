@@ -42,17 +42,19 @@ def main():
 
     # mlbpark
     for line in line_list:
-        matches = re.findall(r'<a href=\'([^\']+)\' alt=\'[^\']*\' title=\'([^\']+)\'', line)
+        matches = re.findall(r'<a alt="[^"]*" class="[^"]*" href="([^"]*id=[^"]*)" title="([^"]+)"', line)
         for match in matches:
-            link = match[0]
+            url = match[0]
+            url = re.sub(r'&amp;', '&', url)
             title = match[1]
-            result_list.append((link, title))
+            result_list.append((url, title))
 
     # bobaedream
     for line in line_list:
-        m = re.search(r'<a class="bsubject"[^>]*href="(?P<url>[^"]+)" title="(?P<title>[^"]+)"', line)
+        m = re.search(r'<a class="bsubject"[^>]*href="(?P<url>[^"]*bm=1[^"]*)"[^>]*title="(?P<title>[^"]+)"', line)
         if m:
             url = m.group("url")
+            url = re.sub(r'&amp;', '&', url)
             link = bobaedream_link_prefix + url
             title = m.group("title")
             result_list.append((link, title))
