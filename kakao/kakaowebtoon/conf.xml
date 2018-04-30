@@ -2,17 +2,18 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://page.kakao.com/main/ajaxCallWeeklyList?navi=1&day=0&inkatalk=0&categoryUid=10&subCategoryUid=1000&CommonPath=http://static-page.kakao.com//resources/kakaopage/common]]></list_url>
+            <list_url><![CDATA[https://api2-page.kakao.com/api/v6/store/section_container/list?agent=web&category=10&subcategory=1000&day=0]]></list_url>
         </list_url_list>
-        <element_class>list</element_class>
+        <bypass_element_extraction>true</bypass_element_extraction>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
     </collection>
     <extraction>
         <element_list>
-            <element_class>homeTopContentWrp</element_class>
-            <element_class>introduceBoxLayer</element_class>
+            <element_class>thumbnailBox</element_class>
+            <element_class>textBox</element_class>
         </element_list>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
+        <render_js>true</render_js>
     </extraction>
     <rss>
         <title><![CDATA[카카오웹툰목록]]></title>

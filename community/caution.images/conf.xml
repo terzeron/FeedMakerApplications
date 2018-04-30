@@ -6,8 +6,9 @@
         <sort_field_pattern><![CDATA[no=(\d+)]]></sort_field_pattern>
         <list_url_list>
             <list_url><![CDATA[http://www.bobaedream.co.kr/list?code=strange&or_gu=&info3=&s_select=Subject&s_key=%ED%9B%84%EB%B0%A9]]></list_url>
+            <list_url><![CDATA[http://www.bobaedream.co.kr/list?code=strange&or_gu=&info3=&s_select=Subject&s_key=%ED%9B%84%EB%B0%A9&page=2]]></list_url>
         </list_url_list>
-        <element_class></element_class>
+        <element_class>cList</element_class>
         <item_capture_script>../capture_item_community_caution.py</item_capture_script>
     </collection>
     <extraction>

@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[bo_table=(\d+)&wr_id=(\d+)]]></sort_field_pattern>
-        <unit_size_per_day>0.25</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://minitoon.net/bbs/board.php?bo_table=9997&wr_id=4489]]></list_url>
         </list_url_list>
