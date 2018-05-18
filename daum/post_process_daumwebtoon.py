@@ -3,6 +3,7 @@
 
 import sys
 import re
+import json
 import feedmakerutil
 from feedmakerutil import IO
 
@@ -20,15 +21,10 @@ def main():
     postLink = sys.argv[1]
     m = re.search(r"http://cartoon\.media\.daum\.net/(?P<mobile>m/)?webtoon/viewer/(?P<episodeId>\d+)$", postLink)
     if m:
-        mobile = m.group("mobile")
         episodeId = m.group("episodeId")
         cmd = ""
-        url = ""
-        if mobile and mobile == "m/":
-            url = "http://cartoon.media.daum.net/data/mobile/webtoon/viewer?id=" + episodeId
-        else:
-            url = "http://cartoon.media.daum.net/webtoon/viewer_images.js?webtoon_episode_id=" + episodeId
-        cmd = "crawler.sh '%s'" % (url)
+        url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episodeId
+        cmd = "crawler.py '%s'" % (url)
         #print(cmd)
         (result, error) = feedmakerutil.exec_cmd(cmd)
         #print(result)
@@ -38,13 +34,15 @@ def main():
         img_file_arr = []
         img_url_arr = []
         img_size_arr = []
-        for line in re.split(r"}|\n", result):
-            m = re.search(r"\"url\":\"(?P<imgUrl>http://[^\"]+)\",(?:(?:.*imageOrder)|(?:\s*$))", line)
-            if m:
-                imgUrl = m.group("imgUrl")
-                if re.search(r"VodPlayer\.swf", imgUrl):
-                    continue
-                print("<img src='%s' width='100%%'/>" % (imgUrl))
+        content = json.loads(result)
+        if "data" in content:
+            if content["data"]:
+                for item in content["data"]:
+                    if "url" in item:
+                        img_url = item["url"]
+                        if re.search(r"VodPlayer\.swf", img_url):
+                            continue
+                        print("<img src='%s' width='100%%'/>" % (img_url))
 
                         
 if __name__ == "__main__":
