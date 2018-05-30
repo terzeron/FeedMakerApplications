@@ -9,16 +9,15 @@ import getopt
 from feedmakerutil import Config, IO, URL
 
 
-def get_url_domain_from_config():
+def get_url_from_config():
     config = Config()
     collection = config.get_collection_configs()
     url = collection["list_url_list"][0]
-    return URL.get_url_domain(url)
+    return url
     
     
 def main():
-    url_domain = get_url_domain_from_config()
-    state = 0
+    url = get_url_from_config()
 
     num_of_recent_feeds = 1000
     count = 0
@@ -30,28 +29,11 @@ def main():
     line_list = IO.read_stdin_as_line_list()
     result_list = []
     for line in line_list:
-        '''
-        matches = re.findall(r'<a href="/(\d+)"[^>]*>([^<]*)</a>', line)
-        for match in matches:
-            link = url_domain + match[0]
-            title = match[1]
-            print("%s\t%s" % (link, title))
-        '''
-        if state == 0:
-            m = re.search(r'<strong class="title">', line)
-            if m:
-                state = 1
-        elif state == 1:
-            m = re.search(r'^\s*(?P<title>.*)\s*$', line)
-            if m:
-                title = m.group("title")
-                state = 2
-        elif state == 2:
-            m = re.search(r'<a class="post_link" href="(?P<url>[^"]+)"', line)
-            if m:
-                link = m.group("url")
-                result_list.append((link, title))
-                state = 0
+        m = re.search(r'<a href="(?P<article_id>/\d+)"[^>]*title="(?P<title>[^"]+)"[^>]*>', line)
+        if m:
+            link = url + m.group("article_id")
+            title = m.group("title")
+            result_list.append((link, title))
 
     for (link, title) in result_list[-num_of_recent_feeds:]:
         print("%s\t%s" % (link, title))

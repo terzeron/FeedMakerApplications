@@ -7,13 +7,13 @@
         <list_url_list>
             <list_url><![CDATA[http://doncjesuis.egloos.com/]]></list_url>
         </list_url_list>
-        <element_class>post_contents_list</element_class>
+        <bypass_element_extraction>true</bypass_element_extraction>
         <item_capture_script>../capture_item_link_title.py</item_capture_script>
         <user_agent>Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25</user_agent>
     </collection>
     <extraction>
         <element_list>
-            <element_class>post_contents</element_class>
+            <element_class>post_view</element_class>
         </element_list>
     </extraction>
     <rss>
