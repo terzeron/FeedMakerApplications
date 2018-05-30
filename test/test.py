@@ -14,22 +14,21 @@ def test_script(feed, script, work_dir, test_dir, index):
     (result, error) = feedmakerutil.exec_cmd(cmd)
     if not error:
         os.chdir(test_dir)
-        return filecmp.cmp("result.%d.temp" % (index), "expected.output.%d.txt" % (index))
-    return False
+        return filecmp.cmp("result.%d.temp" % (index), "expected.output.%d.txt" % (index)), "", cmd
+    return False, error, cmd
 
 
 def main():
-    fm_cwd = os.getenv("FEED_MAKER_CWD")
+    fm_cwd = os.getenv("FEED_MAKER_WORK_DIR")
 
     test_subjects = {
-        "javabeat/javabeat": [ "./capture_item_link_title.py" ],
+        "java/javabeat": [ "./capture_item_link_title.py" ],
         "naver/navercast": [ "../capture_item_navercast.py" ],
         "naver/naverblog.pjwwoo": [ "../capture_item_naverblog.py" ],
         "naver/magazines": [ "./capture_item_link_title.py", "./post_process_magazines.py" ],
         "naver/dice": [ "../capture_item_naverwebtoon.py" ],
         "naver/naverwebtoon": [ "./capture_item_link_title.py" ],
         "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
-        "minitoon/onepunchman": [ "../capture_item_minitoon.py -n 30" ],
         "bookdb/picture_essay": [ "../capture_item_link_title.py" ],
         "myktoon/myktoon": [ "./capture_item_link_title.py" ],
         "myktoon/doginvader": [ "../capture_item_myktoon.py", "../post_process_myktoon.py 'https://v2.myktoon.com/web/works/viewer.kt?timesseq=121476'" ],
@@ -52,8 +51,9 @@ def main():
             print(feed, index, script)
             work_dir = fm_cwd + "/" + feed
             test_dir = fm_cwd + "/test/" + feed
-            if not test_script(feed, script, work_dir, test_dir, index):
-                print("Error in %s of %s" % (feed, script))
+            result, error, cmd = test_script(feed, script, work_dir, test_dir, index)
+            if error:
+                print("Error in %s of %s\n%s\n%s" % (feed, script, cmd, error))
                 return -1
     print("Ok")
     
