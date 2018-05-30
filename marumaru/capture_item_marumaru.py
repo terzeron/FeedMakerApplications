@@ -22,7 +22,7 @@ def main():
     lineList = IO.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
-        matches = re.findall(r'<a href="(?P<link>http[^"]+)"[^>]*>(?:<(?:span|font)[^>]*>)*(?P<title>(?!</?\w+).*?(?:화|권|부|편))(?:</(?:span|font)>)*</a>', line)
+        matches = re.findall(r'<a href="(?P<link>http[^"]+)"[^>]*>(?:<(?:span|font)[^>]*>)*(?P<title>(?!</?\w+).*?(?:화|권|부|편)[^<]*)(?:</(?:span|font)>)*</a>', line)
         for m in matches:
             link = m[0]
             link = re.sub(r'&amp;', '&', link)
