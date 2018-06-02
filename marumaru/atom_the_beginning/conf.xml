@@ -24,8 +24,8 @@
     <rss>
         <title><![CDATA[아톰 더 비기닝::마루마루]]></title>
         <description><![CDATA[아톰 더 비기닝::마루마루 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[http://terzeron.net/atom_the_beginning.xml]]></feed_url>
-        <link><![CDATA[http://terzeron.net/atom_the_beginning.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.net/atom_the_beginning.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.net/atom_the_beginning.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Marumaru. All rights reserved.]]></copyright>
         <language>ko</language>

@@ -29,6 +29,8 @@ def main():
             link = re.sub(r'http://(www.shencomics|www.yuncomics|blog.yuncomics).com', 'http://wasabisyrup.com', link)
             title = m[1]
             title = re.sub(r'&amp;', '&', title)
+            title = re.sub(r'&lt;', '<', title)
+            title = re.sub(r'&gt;', '>', title)
             resultList.append((link, title))
 
     for (link, title) in resultList[-numOfRecentFeeds:]:

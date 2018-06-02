@@ -18,8 +18,8 @@
     <rss>
         <title><![CDATA[서른 즈음에::일요신문]]></title>
         <description><![CDATA[서른 즈음에::일요신문 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[http://terzeron.net/aroundthirty.xml]]></feed_url>
-        <link><![CDATA[http://terzeron.net/aroundthirty.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.net/aroundthirty.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.net/aroundthirty.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) 일요신문. All Rights Reserved]]></copyright>
         <language>ko</language>
