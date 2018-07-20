@@ -18,6 +18,9 @@ def get_page_content(url, encoding, data, header):
 
 
 def main():
+    for line in sys.stdin:
+        pass
+    
     img_url_prefix = "https://page-edge.kakao.com/sdownload/resource?kid="
 
     page_url = sys.argv[1]

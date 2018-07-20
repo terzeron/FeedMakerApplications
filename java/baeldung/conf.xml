@@ -10,7 +10,7 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>post_content</element_class>
+            <element_id>main</element_id>
         </element_list>
         <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
