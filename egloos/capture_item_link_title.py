@@ -28,12 +28,23 @@ def main():
     
     line_list = IO.read_stdin_as_line_list()
     result_list = []
+    state = 0
     for line in line_list:
-        m = re.search(r'<a href="(?P<article_id>/\d+)"[^>]*title="(?P<title>[^"]+)"[^>]*>', line)
-        if m:
-            link = url + m.group("article_id")
-            title = m.group("title")
-            result_list.append((link, title))
+        if state == 0:
+            m = re.search(r'<strong class="title">', line)
+            if m:
+                state = 1
+        elif state == 1:
+            m = re.search(r'<a href="(?P<article_id>/\d+)"[^>]*title="(?P<title>[^"]+)"[^>]*>', line)
+            if m:
+                link = url + m.group("article_id")
+                title = m.group("title")
+                result_list.append((link, title))
+                state = 2
+        elif state == 2:
+            m = re.search(r'</strong>', line)
+            if m:
+                state = 0
 
     for (link, title) in result_list[-num_of_recent_feeds:]:
         print("%s\t%s" % (link, title))
