@@ -16,7 +16,9 @@ def main():
 
     for line in IO.read_stdin_as_line_list():
         line = line.rstrip()
-        print(line)
+        m = re.search(r"^<img src", line)
+        if not m:
+            print(line)
 
     postLink = sys.argv[1]
     m = re.search(r"http://cartoon\.media\.daum\.net/(?P<mobile>m/)?webtoon/viewer/(?P<episodeId>\d+)$", postLink)
@@ -34,7 +36,13 @@ def main():
         img_file_arr = []
         img_url_arr = []
         img_size_arr = []
-        content = json.loads(result)
+        try:
+            content = json.loads(result)
+        except json.decoder.JSONDecodeError:
+            #print(cmd)
+            #print(result)
+            raise json.decoder.JSONDecodeError
+
         if "data" in content:
             if content["data"]:
                 for item in content["data"]:
