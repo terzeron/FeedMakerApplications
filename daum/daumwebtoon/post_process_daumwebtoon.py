@@ -13,6 +13,9 @@ def main() -> int:
     url = sys.argv[1]
     webtoon_id: str
 
+    for line in sys.stdin:
+        pass
+
     print(feedmakerutil.header_str)
 
     m = re.search(r'/(?P<webtoon_id>[^/]+)$', url)
