@@ -25,6 +25,7 @@ def main():
         matches = re.findall(r'''
         <a
         \s+
+        (?:class="[^"]+"\s*)?
         href="
         (?P<link>http://(?!marumaru\.in)[^"]+)
         "
