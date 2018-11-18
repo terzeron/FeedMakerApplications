@@ -20,6 +20,7 @@
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[최강직업 용기사에서  초보직 운반꾼이 되었는데 어째서인지 용사들이 의지한다::마루마루]]></title>

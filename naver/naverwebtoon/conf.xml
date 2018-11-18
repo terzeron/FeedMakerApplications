@@ -11,6 +11,7 @@
         <element_list>
             <element_class>comicinfo</element_class>
         </element_list>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[네이버웹툰목록]]></title>

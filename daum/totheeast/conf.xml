@@ -13,6 +13,7 @@
         <post_process_script_list>
             <post_process_script>../post_process_daumwebtoon.py</post_process_script>
         </post_process_script_list>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[동쪽으로::다음]]></title>

@@ -18,6 +18,7 @@
             <!--post_process_script>../post_process_naverwebtoon.py</post_process_script-->
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[타인은 지옥이다::네이버]]></title>

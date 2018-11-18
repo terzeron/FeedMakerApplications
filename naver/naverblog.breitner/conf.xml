@@ -14,6 +14,7 @@
             <element_class>se_doc_viewer</element_class>
         </element_list>
         <post_process_script>download_image.py</post_process_script>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[Second Coming::네이버]]></title>

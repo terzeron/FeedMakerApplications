@@ -320,6 +320,7 @@
         <element_list>
             <element_class>tm_end</element_class>
         </element_list>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[오늘의뮤직::네이버뮤직]]></title>

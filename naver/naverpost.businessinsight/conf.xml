@@ -20,6 +20,7 @@
           <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <bypass_element_extraction>true</bypass_element_extraction>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[InterBiz::네이버]]></title>
