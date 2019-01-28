@@ -5,7 +5,7 @@
         <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>8</unit_size_per_day>
         <is_completed>false</is_completed>
-        <sort_field_pattern><![CDATA[/(\d+)]]></sort_field_pattern>
+        <sort_field_pattern><![CDATA[\b(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>4</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004rozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004qwzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType=]]></list_url>

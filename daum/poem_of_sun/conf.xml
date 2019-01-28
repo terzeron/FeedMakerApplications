@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <is_completed>true</is_completed>
-        <sort_field_pattern><![CDATA[/(\d+)]]></sort_field_pattern>
+        <sort_field_pattern><![CDATA[\b(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/view/PoetrySun?timeStamp=1548654638968]]></list_url>
