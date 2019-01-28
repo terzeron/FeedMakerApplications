@@ -17,8 +17,8 @@
     <rss>
         <title><![CDATA[달마과장::포커스]]></title>
         <description><![CDATA[달마과장::포커스 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/managerdharma.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/managerdharma.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/managerdharma.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/managerdharma.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) 포커스신문사. All rights reserved.]]></copyright>
         <language>ko</language>

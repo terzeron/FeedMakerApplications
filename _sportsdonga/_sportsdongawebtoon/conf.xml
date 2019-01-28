@@ -14,8 +14,8 @@
     <rss>
         <title><![CDATA[스포츠동아웹툰목록]]></title>
         <description><![CDATA[스포츠동아웹툰목록 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/oneplusone.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/oneplusone.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/oneplusone.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/oneplusone.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright sports.donga.com. All Rights Reserved]]></copyright>
         <language>ko</language>

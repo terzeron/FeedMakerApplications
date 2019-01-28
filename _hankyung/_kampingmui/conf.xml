@@ -40,8 +40,8 @@
     <rss>
         <title><![CDATA[금병매::한경닷컴]]></title>
         <description><![CDATA[금병매::한경닷컴 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/kampingmui.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/kampingmui.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/kampingmui.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/kampingmui.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) 한경닷컴. All Rights Reserved]]></copyright>
         <language>ko</language>

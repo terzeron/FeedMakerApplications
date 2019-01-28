@@ -15,8 +15,8 @@
     <rss>
         <title><![CDATA[그림판::한겨레]]></title>
         <description><![CDATA[그림판::한겨레 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/hanicartoon.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/hanicartoon.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/hanicartoon.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/hanicartoon.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) The Hankyoreh, LTD. All rights reserved.]]></copyright>
         <language>ko</language>

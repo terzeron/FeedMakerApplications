@@ -18,8 +18,8 @@
     <rss>
         <title><![CDATA[영화::토렌트알지]]></title>
         <description><![CDATA[영화::토렌트알지 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/torrentrg.movie.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/torrentrg.movie.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/torrentrg.movie.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/torrentrg.movie.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NHN Corp. All Rights Reserved]]></copyright>
         <language>ko</language>

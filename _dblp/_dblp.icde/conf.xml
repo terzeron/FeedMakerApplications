@@ -18,8 +18,8 @@
     <rss>
         <title><![CDATA[ICDE::DBLP]]></title>
         <description><![CDATA[ICDE::DBLP - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/dblp.icde.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/dblp.icde.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/dblp.icde.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/dblp.icde.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NHN Corp. All Rights Reserved]]></copyright>
         <language>ko</language>

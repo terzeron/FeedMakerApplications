@@ -20,8 +20,8 @@
     <rss>
         <title><![CDATA[천지::오마이뉴스]]></title>
         <description><![CDATA[천지::오마이뉴스 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/skyandland.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/skyandland.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/skyandland.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/skyandland.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) OhmyNews. All Rights Reserved]]></copyright>
         <language>ko</language>

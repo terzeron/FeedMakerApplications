@@ -18,8 +18,8 @@
     <rss>
         <title><![CDATA[VLDB::DBLP]]></title>
         <description><![CDATA[VLDB::DBLP - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/dblp.vldb.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/dblp.vldb.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/dblp.vldb.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/dblp.vldb.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NHN Corp. All Rights Reserved]]></copyright>
         <language>ko</language>
