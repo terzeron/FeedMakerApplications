@@ -15,13 +15,12 @@
             <element_class>thmb</element_class>
             <element_class>summary</element_class>
         </element_list>
-        <render_js>true</render_js>
     </extraction>
     <rss>
         <title><![CDATA[케이툰웹툰목록]]></title>
         <description><![CDATA[케이툰 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/myktoon.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/myktoon.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/myktoon.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/myktoon.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) KT Corp. All Rights Reserved]]></copyright>
         <language>ko</language>

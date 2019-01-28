@@ -3,9 +3,9 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[javabeat\.net\/(\S+)]]></sort_field_pattern>
-        <unit_size_per_day>1</unit_size_per_day>
+        <unit_size_per_day>3</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://terzeron.net/javabeat.list.html]]></list_url>
+            <list_url><![CDATA[https://terzeron.com/javabeat.list.html]]></list_url>
         </list_url_list>
     </collection>
     <extraction>
@@ -16,8 +16,8 @@
     <rss>
         <title><![CDATA[JavaBeat]]></title>
         <description><![CDATA[JavaBeat - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/javabeat.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/javabeat.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/javabeat.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/javabeat.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) JavaBeat.net. All Rights Reserved]]></copyright>
         <language>ko</language>

@@ -17,8 +17,8 @@
     <rss>
         <title><![CDATA[Free Programming Books::vhf]]></title>
         <description><![CDATA[Free Programming Books::vhf]]></description>
-        <feed_url><![CDATA[https://terzeron.net/freeprogrammingbooks.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/freeprogrammingbooks.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/freeprogrammingbooks.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/freeprogrammingbooks.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) TeamSEGO. All rights reserved.]]></copyright>
         <language>ko</language>

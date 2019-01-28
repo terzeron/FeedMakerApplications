@@ -21,8 +21,8 @@
     <rss>
         <title><![CDATA[설마리 비디오방::케이툰]]></title>
         <description><![CDATA[설마리 비디오방::케이툰 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/videoroom.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/videoroom.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/videoroom.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/videoroom.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) KT Corp. All Rights Reserved]]></copyright>
         <language>ko</language>
