@@ -4,6 +4,9 @@
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>8</unit_size_per_day>
+        <is_completed>false</is_completed>
+        <sort_field_pattern><![CDATA[/(\d+)]]></sort_field_pattern>
+        <unit_size_per_day>4</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0004ozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003gzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=]]></list_url>
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0000czzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=00001zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=6&page=1&listnum=50&sortType=]]></list_url>
@@ -30,7 +33,6 @@
             <list_url><![CDATA[http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=0001Dzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0000Azzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=4&page=5&listnum=50&sortType=]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_daumcafe.py -n 50</item_capture_script>
-        <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
@@ -46,8 +48,8 @@
     <rss>
         <title><![CDATA[바이크매니아]]></title>
         <description><![CDATA[바이크매니아 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/daumcafe.bikemania2.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/daumcafe.bikemania2.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/daumcafe.bikemania2.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/daumcafe.bikemania2.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>
         <language>ko</language>

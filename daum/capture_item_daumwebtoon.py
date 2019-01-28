@@ -15,7 +15,7 @@ def main():
     title = ""
     nickname = ""
 
-    numOfRecentFeeds = 30
+    numOfRecentFeeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':

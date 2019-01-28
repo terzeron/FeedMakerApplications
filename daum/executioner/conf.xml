@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
+        <is_completed>false</is_completed>
+        <sort_field_pattern><![CDATA[/(\d+)]]></sort_field_pattern>
+        <unit_size_per_day>4</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://cartoon.media.daum.net/data/mobile/webtoon/list_episode_by_nickname?nickname=RTX]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_daumwebtoon.py</item_capture_script>
+        <item_capture_script>../capture_item_daumwebtoon.py -n 10</item_capture_script>
     </collection>
     <extraction>
         <element_list>
@@ -18,8 +21,8 @@
     <rss>
         <title><![CDATA[집행자여::다음]]></title>
         <description><![CDATA[집행자여::다음 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/executioner.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/executioner.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/executioner.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/executioner.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>
         <language>ko</language>

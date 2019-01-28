@@ -4,6 +4,9 @@
         <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[newsId=(\d+)]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
+        <is_completed>false</is_completed>
+        <sort_field_pattern><![CDATA[/(\d+)]]></sort_field_pattern>
+        <unit_size_per_day>4</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://sports.media.daum.net/sports/column/]]></list_url>
             <list_url><![CDATA[http://sports.media.daum.net/proxy/api/mc2/contents/find.json?service=sports&clusterType=expert&pageSize=19&page=1]]></list_url>
@@ -17,8 +20,8 @@
     <rss>
         <title><![CDATA[다음스포츠칼럼::다음]]></title>
         <description><![CDATA[다음스포츠칼럼::다음 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/daumsportscolumn.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/daumsportscolumn.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/daumsportscolumn.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/daumsportscolumn.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>
         <language>ko</language>
