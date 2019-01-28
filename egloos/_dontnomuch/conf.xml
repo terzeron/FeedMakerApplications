@@ -100,8 +100,8 @@
     <rss>
         <title><![CDATA[꿈의 함대::이글루스]]></title>
         <description><![CDATA[꿈의 함대::이글루스]]></description>
-        <feed_url><![CDATA[https://terzeron.net/dontnomuch.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/dontnomuch.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/dontnomuch.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/dontnomuch.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) dontnomuch & Egloos. All Rights Reserved]]></copyright>
         <language>ko</language>

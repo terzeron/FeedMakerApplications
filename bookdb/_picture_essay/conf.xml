@@ -38,8 +38,8 @@
     <rss>
         <title><![CDATA[정혜신의 그림에세이::BookDB]]></title>
         <description><![CDATA[정혜신의 그림에세이::BookDB - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/picture_essay.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/picture_essay.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/picture_essay.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/picture_essay.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Interpark Corporation. All Rights Reserved]]></copyright>
         <language>ko</language>

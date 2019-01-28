@@ -269,8 +269,8 @@
     <rss>
         <title><![CDATA[세계의 만화]]></title>
         <description><![CDATA[세계의 만화 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/sg-mh.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/sg-mh.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/sg-mh.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/sg-mh.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) sg-mh & Egloos. All Rights Reserved]]></copyright>
         <language>ko</language>
