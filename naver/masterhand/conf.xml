@@ -20,8 +20,8 @@
     <rss>
         <title><![CDATA[고수::네이버]]></title>
         <description><![CDATA[고수::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/masterhand.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/masterhand.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/masterhand.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/masterhand.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>
         <language>ko</language>

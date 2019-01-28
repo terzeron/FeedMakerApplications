@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[startDate=(\d+)]]></sort_field_pattern>
-        <unit_size_per_day>0.25</unit_size_per_day>
+        <unit_size_per_day>30</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://music.naver.com/recommend/magazineList.nhn?page=308]]></list_url>
             <list_url><![CDATA[http://music.naver.com/recommend/magazineList.nhn?page=307]]></list_url>
@@ -325,8 +325,8 @@
     <rss>
         <title><![CDATA[오늘의뮤직::네이버뮤직]]></title>
         <description><![CDATA[오늘의 뮤직::네이버 뮤직 - 모바일 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/todaymusic.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/todaymusic.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/todaymusic.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/todaymusic.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All Rights Reserved]]></copyright>
         <language>ko</language>

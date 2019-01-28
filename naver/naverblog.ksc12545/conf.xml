@@ -13,6 +13,7 @@
         <element_list>
             <element_class>se_doc_viewer</element_class>
             <element_id>postViewArea</element_id>
+            <element_class>post-body</element_class>
         </element_list>
         <post_process_script>download_image.py</post_process_script>
         <force_sleep_between_articles>true</force_sleep_between_articles>
@@ -20,8 +21,8 @@
     <rss>
         <title><![CDATA[곽숙철의 혁신이야기::네이버]]></title>
         <description><![CDATA[곽숙철의 혁신이야기::네이버]]></description>
-        <feed_url><![CDATA[https://terzeron.net/naverblog.ksc12545.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/naverblog.ksc12545.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/naverblog.ksc12545.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/naverblog.ksc12545.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp & ksc12545@naver.com. All rights reserved.]]></copyright>
         <language>ko</language>

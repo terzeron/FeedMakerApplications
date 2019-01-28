@@ -20,8 +20,8 @@
     <rss>
         <title><![CDATA[암흑 도시::네이버]]></title>
         <description><![CDATA[암흑 도시::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/dark_city.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/dark_city.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/dark_city.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/dark_city.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>
         <language>ko</language>

@@ -15,13 +15,13 @@
             <!--post_process_script>../post_process_naverwebtoon.py</post_process_script-->
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
-        <force_sleep_between_articles>true</force_sleep_between_articles>
+        <!--force_sleep_between_articles>true</force_sleep_between_articles-->
     </extraction>
     <rss>
         <title><![CDATA[가우스 전자::네이버]]></title>
         <description><![CDATA[가우스 전자::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/gauss_electronics.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/gauss_electronics.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/gauss_electronics.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/gauss_electronics.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>
         <language>ko</language>

@@ -24,6 +24,7 @@ def main():
             title = re.sub(r"\+", " ", title)
             title = re.sub(r"&quot;", "'", title)
             title = re.sub(r"&(lt|gt);", "", title)
+            title = re.sub(r"\n", " ", title)
             resultList.append((logNo, title))
 
 

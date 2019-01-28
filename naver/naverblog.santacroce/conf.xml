@@ -22,8 +22,8 @@
     <rss>
         <title><![CDATA[Santacroce의 세상 이야기::네이버]]></title>
         <description><![CDATA[Santacroce의 세상 이야기::네이버]]></description>
-        <feed_url><![CDATA[https://terzeron.net/naverblog.santacroce.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/naverblog.santacroce.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/naverblog.santacroce.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/naverblog.santacroce.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp & santa_croce@naver.com. All rights reserved.]]></copyright>
         <language>ko</language>

@@ -20,8 +20,8 @@
     <rss>
         <title><![CDATA[점핑오버::네이버]]></title>
         <description><![CDATA[점핑오버::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/jumping_over.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/jumping_over.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/jumping_over.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/jumping_over.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>
         <language>ko</language>

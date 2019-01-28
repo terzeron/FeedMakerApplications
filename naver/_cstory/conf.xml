@@ -16,8 +16,8 @@
     <rss>
         <title><![CDATA[커버스토리::네이버영화]]></title>
         <description><![CDATA[커버스토리::네이버 영화 - 모바일 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.net/cstory.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.net/cstory.xml]]></link>
+        <feed_url><![CDATA[https://terzeron.com/cstory.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/cstory.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All Rights Reserved]]></copyright>
         <language>ko</language>
