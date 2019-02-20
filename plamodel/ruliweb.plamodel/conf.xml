@@ -5,12 +5,6 @@
         <sort_field_pattern><![CDATA[read\/(\d+)]]></sort_field_pattern>
         <unit_size_per_day>30</unit_size_per_day>
         <list_url_list>
-            <!-- id: 중력전선 -->
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082?view_best=1&search_type=name&search_key=%EC%A4%91%EB%A0%A5%EC%A0%84%EC%84%A0&page=1]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082?view_best=1&search_type=name&search_key=%EC%A4%91%EB%A0%A5%EC%A0%84%EC%84%A0&page=2]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082?view_best=1&search_type=name&search_key=%EC%A4%91%EB%A0%A5%EC%A0%84%EC%84%A0&page=3]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082?view_best=1&search_type=name&search_key=%EC%A4%91%EB%A0%A5%EC%A0%84%EC%84%A0&page=4]]></list_url>
-
             <!-- 베스트글 -->
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/list?view_best=1&orderby=good&page=1]]></list_url>
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/list?view_best=1&orderby=good&page=2]]></list_url>
@@ -49,61 +43,6 @@
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=3]]></list_url>
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=4]]></list_url>
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=5]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=6]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=7]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=8]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=9]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=10]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=11]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=12]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=13]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=14]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=15]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=16]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=17]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=18]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=19]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=20]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=21]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=22]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=23]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=24]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=25]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=26]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=27]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=28]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=29]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=30]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=31]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=32]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=33]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=34]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=35]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=36]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=37]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=38]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=39]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=40]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=41]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=42]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=43]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=44]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=45]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=46]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=47]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=48]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=49]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=50]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=51]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=52]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=53]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=54]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=55]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=56]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=57]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=58]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=59]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=도색&page=60]]></list_url>
 
             <!-- 제목+본문: 아크릴 -->
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=1]]></list_url>
@@ -111,61 +50,6 @@
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=3]]></list_url>
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=4]]></list_url>
             <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=5]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=6]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=7]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=8]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=9]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=10]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=11]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=12]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=13]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=14]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=15]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=16]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=17]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=18]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=19]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=20]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=21]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=22]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=23]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=24]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=25]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=26]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=27]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=28]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=29]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=30]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=31]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=32]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=33]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=34]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=35]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=36]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=37]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=38]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=39]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=40]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=41]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=42]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=43]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=44]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=45]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=46]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=47]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=48]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=49]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=50]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=51]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=52]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=53]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=54]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=55]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=56]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=57]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=58]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=59]]></list_url>
-            <list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=60]]></list_url>
         </list_url_list>
         <element_list>
             <element_id>board_list</element_id>
