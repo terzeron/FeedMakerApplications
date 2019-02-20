@@ -15,19 +15,28 @@ def main():
         if o == '-n':
             numOfRecentFeeds = int(a)
 
+    state = 0
     lineList = IO.read_stdin_as_line_list()
     resultList = []
     for line in lineList:
-        m = re.search(r'<a[^>]*href="(?P<link>[^\?"]+)[^"]*">(?P<title>.+)</a>', line)
-        if m:
-            link = m.group("link")
-            link = re.sub(r'&amp;', '&', link)
-            title = m.group("title")
-            resultList.append((link, title))
+        if state == 0:
+            m = re.search(r'<a class="deco" href="(?P<link>[^\?"]+)[^"]*">(?P<title>.+)</a>', line)
+            if m:
+                link = m.group("link")
+                link = re.sub(r'&amp;', '&', link)
+                title = m.group("title")
+                state = 1
+        elif state == 1:
+            m = re.search(r'<a class="nick"[^>]*>\s*ㅣ\s*(?P<author>.*?)\s*</a>', line)
+            if m:
+                author = m.group("author")
+                title = title + " | " + author
+                resultList.append((link, title))
+                state = 0
                               
     for (link, title) in resultList[:numOfRecentFeeds]:
         print("%s\t%s" % (link, title))
 
             
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
