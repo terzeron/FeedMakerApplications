@@ -3,6 +3,7 @@
 
 import sys
 import re
+import getopt
 import urllib.parse
 from feedmakerutil import IO
 
@@ -11,6 +12,12 @@ def main():
     link = ""
     title = ""
     urlPrefix = "http://blog.naver.com/PostView.nhn?blogId="
+
+    numOfRecentFeeds = 30
+    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            numOfRecentFeeds = int(a)
 
     resultList = []
     for line in IO.read_stdin_as_line_list():
@@ -28,7 +35,7 @@ def main():
             resultList.append((logNo, title))
 
 
-    for (logNo, title) in resultList:
+    for (logNo, title) in resultList[:numOfRecentFeeds]:
         link = urlPrefix + logNo
         print("%s\t%s" % (link, title))
         

@@ -30,4 +30,4 @@ def main():
         print("%s\t%s" % (link, title))
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
