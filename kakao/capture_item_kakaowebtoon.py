@@ -1,12 +1,19 @@
 #!/usr/bin/env python
 
 
+import os
 import sys
 import re
 import json
 import getopt
 import requests
-from feedmakerutil import IO, Config, die
+import logging
+import logging.config
+from feedmakerutil import IO, Config
+
+
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+logger = logging.getLogger()
 
 
 def get_page_content(url, encoding, data, header = {}):
@@ -30,8 +37,8 @@ def main():
         if m:
             series_id = m.group("series_id")
     if not series_id:
-        die("can't find series id from HTML")
-        sys.exit(-1)
+        logger.error("can't find series id from HTML")
+        return -1
         
     api_url = "https://api2-page.kakao.com/api/v5/store/singles"
     data = {"seriesid": series_id, "page": 0, "direction": "desc", "page_size": num_of_recent_feeds, "without_hidden": "true"}

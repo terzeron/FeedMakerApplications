@@ -8,7 +8,13 @@ import pprint
 import getopt
 import requests
 import urllib.parse
-from feedmakerutil import IO, Config, die
+import logging
+import logging.config
+from feedmakerutil import IO, Config
+
+
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+logger = logging.getLogger()
 
 
 def get_page_content(url, encoding, data, header):

@@ -23,10 +23,11 @@ def main():
 
     result_list = []
     list = IO.read_stdin_as_line_list()
+
     state = 0
     for line in list:
         if state == 0:
-            m = re.search(r'href="(?P<url_prefix>http://[^"/]+)"', line)
+            m = re.search(r'href="(?P<url_prefix>https?://[^"/]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -45,7 +46,7 @@ def main():
     state = 0
     for line in list:
         if state == 0:
-            m = re.search(r'href="(?P<url_prefix>http://[^"/]+\.tistory\.com)"', line)
+            m = re.search(r'href="(?P<url_prefix>https?://[^"/]+\.tistory\.com)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -59,7 +60,7 @@ def main():
     state = 0
     for line in list:
         if state == 0:
-            m = re.search(r'url: "(?P<url_prefix>http://[^"]+)"', line)
+            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -70,6 +71,25 @@ def main():
                 title = m.group("title")
                 result_list.append((link, title))
         
+    state = 0
+    for line in list:
+        if state == 0:
+            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
+            if m:
+                url_prefix = m.group("url_prefix")
+                state = 1
+        elif state == 1:
+            m = re.search(r'<a href="(?P<url>/[^"]+)">', line)
+            if m:
+                link = url_prefix + m.group("url")
+                state = 2
+        elif state == 2:
+            m = re.search(r'<span class="title">(?P<title>.*?)</span>', line)
+            if m:
+                title = m.group("title")
+                result_list.append((link, title))
+                state = 1
+
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 

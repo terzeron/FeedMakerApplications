@@ -5,8 +5,13 @@ import sys
 import os
 import re
 import subprocess
-from feedmakerutil import die, err, warn
+import logging
+import logging.config
 from feedmakerutil import IO
+
+
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+logger = logging.getLogger()
 
 
 def main():
@@ -25,7 +30,8 @@ def main():
                 break
       
     if not dataUrl or urlPrefix:
-        die("can't get a data url from input")
+        logger.error("can't get a data url from input")
+        return -1
     
     cmd = "wget.sh '%s' utf8 | gunzip 2> /dev/null || wget.sh '%s' utf8" % (dataUrl, dataUrl)
     #print(cmd);
