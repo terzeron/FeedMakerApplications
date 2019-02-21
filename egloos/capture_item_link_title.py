@@ -46,6 +46,21 @@ def main():
             if m:
                 state = 0
 
+    state = 0
+    for line in line_list:
+        if state == 0:
+            m = re.search(r'<h1><a href="(?P<url_prefix>[^"]+)"', line)
+            if m:
+                url_prefix = m.group("url_prefix")
+                state = 1
+        elif state == 1:
+            m = re.search(r'<a href="(?P<link>/\d+)"[^>]*title="(?P<title>[^"]+)"', line)
+            if m:
+                link = url_prefix + m.group("link")
+                title = m.group("title")
+                result_list.append((link, title))
+                state = 0
+
     for (link, title) in result_list[-num_of_recent_feeds:]:
         print("%s\t%s" % (link, title))
                 
