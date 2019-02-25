@@ -2,7 +2,7 @@
 
 import sys
 import re
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 
 def main():
@@ -32,7 +32,7 @@ def main():
             
     if secondPageUrl != "":
         cmd = "wget.sh '%s' | extract.py '%s'" % (secondPageUrl, sys.argv[1])
-        (result, error) = feedmakerutil.exec_cmd(cmd)
+        (result, error) = feed_maker_util.exec_cmd(cmd)
         for line in result.split("\n"):
             m = re.search(r"<img src='(?P<imgUrl>http://comicmenu.mt.co.kr/[^']+.jpg)'(?: width='\d+%')?/>", line)
             if m:

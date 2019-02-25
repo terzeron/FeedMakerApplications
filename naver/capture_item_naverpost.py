@@ -6,7 +6,7 @@ import sys
 import re
 import getopt
 import json
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 
 def main():

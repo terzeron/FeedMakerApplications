@@ -7,7 +7,7 @@ import re
 import getopt
 from urllib.parse import urlparse, parse_qs
 import requests
-import feedmakerutil
+import feed_maker_util
 
 
 def main():

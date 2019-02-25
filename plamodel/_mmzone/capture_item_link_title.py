@@ -5,7 +5,7 @@ import os
 import sys
 import re
 import getopt
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 def main():
     url_prefix = "http://mmzone.co.kr/mms_tool/"

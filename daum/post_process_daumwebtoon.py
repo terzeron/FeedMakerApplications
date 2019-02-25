@@ -4,8 +4,8 @@
 import sys
 import re
 import json
-import feedmakerutil
-from feedmakerutil import IO
+import feed_maker_util
+from feed_maker_util import IO
 
 
 def main():
@@ -28,7 +28,7 @@ def main():
         url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episodeId
         cmd = "crawler.py '%s'" % (url)
         #print(cmd)
-        (result, error) = feedmakerutil.exec_cmd(cmd)
+        (result, error) = feed_maker_util.exec_cmd(cmd)
         #print(result)
         if error:
             print("can't download the page html from '%s'" % (url))

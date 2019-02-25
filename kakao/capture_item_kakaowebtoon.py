@@ -9,7 +9,7 @@ import getopt
 import requests
 import logging
 import logging.config
-from feedmakerutil import IO, Config
+from feed_maker_util import IO, Config
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")

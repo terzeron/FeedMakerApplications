@@ -6,7 +6,7 @@ import re
 import time
 import requests
 from typing import Dict, Tuple
-import feedmakerutil
+import feed_maker_util
 
 
 def main() -> int:
@@ -16,7 +16,7 @@ def main() -> int:
     for line in sys.stdin:
         pass
 
-    print(feedmakerutil.header_str)
+    print(feed_maker_util.header_str)
 
     m = re.search(r'/(?P<webtoon_id>[^/]+)$', url)
     if m:

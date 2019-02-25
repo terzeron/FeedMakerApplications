@@ -4,12 +4,12 @@
 import os
 import sys
 import re
-import feedmakerutil
+import feed_maker_util
 
 
 def main(url):
     cmd = "markdown"
-    (html, error) = feedmakerutil.exec_cmd(cmd)
+    (html, error) = feed_maker_util.exec_cmd(cmd)
     for line in html.split("\n"):
         m = re.search(r'https?://[^\"\'\<\>\)\(]+', line)
         if m:

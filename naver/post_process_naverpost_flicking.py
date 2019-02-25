@@ -3,7 +3,7 @@
 import sys
 import re
 import json
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 
 def main():
@@ -28,7 +28,7 @@ def main():
         link = link_prefix + str(clipNo)
         cmd = 'wget.sh "%s" utf8' % (link)
         #print(cmd)
-        (result, error) = feedmakerutil.exec_cmd(cmd)
+        (result, error) = feed_maker_util.exec_cmd(cmd)
         if error or re.search(r'"notExistClip"', result):
             failureCount = failureCount + 1
             if failureCount > 2:

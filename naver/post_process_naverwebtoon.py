@@ -4,8 +4,8 @@
 import sys
 import re
 import http.client
-import feedmakerutil
-from feedmakerutil import IO
+import feed_maker_util
+from feed_maker_util import IO
 
 
 def main():
@@ -40,7 +40,7 @@ def main():
         for i in range(60):
             imgUrl = "http://%s/%s%d.%s" % (imgHost, imgPath, i, imgExt)
             cmd = 'wget.sh --spider --referer "%s" "%s"' % (pageUrl, imgUrl)
-            (result, error) = feedmakerutil.exec_cmd(cmd)
+            (result, error) = feed_maker_util.exec_cmd(cmd)
             if not error:
                 print("<img src='http://%s/%s%d.%s' width='100%%'/>" % (imgHost, imgPath, i, imgExt))
         

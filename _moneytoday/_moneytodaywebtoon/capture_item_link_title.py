@@ -3,7 +3,7 @@
 
 import sys
 import re
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 
 def main():

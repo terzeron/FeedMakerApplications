@@ -5,7 +5,7 @@ import sys
 import re
 import getopt
 import urllib.parse
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 
 def main():

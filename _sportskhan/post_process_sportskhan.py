@@ -3,7 +3,7 @@
 
 import sys
 import re
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
 
     for url in urlList:
         cmd = "wget.sh '%s' %s" % (url, encoding)
-        (result, error) = feedmakerutil.exec_cmd(cmd)
+        (result, error) = feed_maker_util.exec_cmd(cmd)
         if not error:
             for line in result.split("\n"):
                 m = re.search(r"<img\s*[^>]*src=(?:'|\")?(?P<url>http://images.sportskhan.net/article/[^'\"\s]+)(?:'|\")?[^>]*>", line)

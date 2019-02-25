@@ -3,7 +3,7 @@
 
 import sys
 import re
-from feedmakerutil import IO
+from feed_maker_util import IO
 
 
 def main():
@@ -27,7 +27,7 @@ def main():
     if secondPageUrl != "":
         cmd = "wget.sh '%s' | extract_element.py extraction" % (secondPageUrl)
         #print(cmd)
-        (result, error) = feedmakerutil.exec_cmd(cmd)
+        (result, error) = feed_maker_util.exec_cmd(cmd)
         if not error:
             for line in result.split("\n"):
                 m = re.search(r'<img\s*[^>]*src=(?:\'|\")(?P<imgUrl>http://cwcontent[^\'\"]+)(?:\'|\").*/>', line)

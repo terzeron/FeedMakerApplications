@@ -5,8 +5,8 @@ import os
 import sys
 import re
 import getopt
-import feedmakerutil
-from feedmakerutil import IO
+import feed_maker_util
+from feed_maker_util import IO
 
 
 def main():

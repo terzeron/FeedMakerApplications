@@ -6,7 +6,7 @@ import os
 import sys
 import re
 import getopt
-from feedmakerutil import Config, IO, URL
+from feed_maker_util import Config, IO, URL
 
 
 def get_url_from_config():
