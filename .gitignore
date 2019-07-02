@@ -21,3 +21,4 @@ logs/
 www/jquery*
 www/work
 result.*.temp
+.*login*
