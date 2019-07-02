@@ -30,6 +30,7 @@ def main():
             id = md['id']
             episode = int(md['episode'])
             title = md['title']
+            title = re.sub(r'\\u0027', '\'', title)
             link = link_prefix + id
             title = "%04d. %s" % (episode, title)
             resultList.append((link, title))
