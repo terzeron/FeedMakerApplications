@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <list_url_list>
+            <list_url><![CDATA[https://medium.com/coupang-tech/technote/home]]></list_url>
+        </list_url_list>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>section-inner</element_class>
+        </element_list>
+        <render_js>true</render_js>
+    </extraction>
+    <rss>
+        <title><![CDATA[Tech notes::쿠팡]]></title>
+        <description><![CDATA[Tech notes::쿠팡 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/coupang.tech.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/coupang.tech.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Coupang. All rights reserved.]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+

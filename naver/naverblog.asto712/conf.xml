@@ -11,7 +11,8 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>se_doc_viewer</element_class>
+            <element_class>se_component_wrap</element_class>
+            <element_class>se-main-container</element_class>
             <element_id>postViewArea</element_id>
         </element_list>
         <post_process_script>download_image.py</post_process_script>
