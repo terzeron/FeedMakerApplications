@@ -44,7 +44,7 @@ def main():
         index = 0
         for script in scripts:
             index += 1
-            print(feed, index, script)
+            print(feed)
             work_dir = fm_cwd + "/" + feed
             test_dir = fm_cwd + "/test/" + feed
             result, error, cmd = test_script(feed, script, work_dir, test_dir, index)
