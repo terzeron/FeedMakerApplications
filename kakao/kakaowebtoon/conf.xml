@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v6/store/section_container/list?agent=web&category=10&subcategory=1000&day=0]]></list_url>
+            <list_url><![CDATA[https://api2-page.kakao.com/api/v7/store/section_container/list?agent=web&category=10&subcategory=1000&day=0]]></list_url>
         </list_url_list>
         <bypass_element_extraction>true</bypass_element_extraction>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>

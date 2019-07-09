@@ -21,9 +21,10 @@ def main():
                 for section in container["section_series"]:
                     if "list" in section:
                         for item in section["list"]:
-                            link = url_prefix + str(item["series_id"])
-                            title = item["title"]
-                            print("%s\t%s" % (link, title))
+                            if item["age_grade"] == 0:
+                                link = url_prefix + str(item["series_id"])
+                                title = item["title"]
+                                print("%s\t%s" % (link, title))
 
 
 if __name__ == "__main__":

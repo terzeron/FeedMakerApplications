@@ -25,7 +25,7 @@ def main():
     resultList = []
     for line in lineList:
         if state == 0:
-            m = re.search(r'<a class="item-subject" href="(?P<link>[^"]+\/\d+)\/[^"]*">', line)
+            m = re.search(r'<a class="item-subject" href="(?P<link>[^"]+\/\d+)(\/|\?)[^"]*">', line)
             if m:
                 link = m.group("link")
                 link = re.sub(r'&amp;', '&', link)
