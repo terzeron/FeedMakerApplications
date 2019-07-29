@@ -7,7 +7,7 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>section-inner</element_class>
+            <element_class>iq</element_class>
         </element_list>
         <render_js>true</render_js>
     </extraction>
