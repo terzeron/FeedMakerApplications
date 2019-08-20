@@ -5,21 +5,19 @@
         <sort_field_pattern><![CDATA[no=(\d+)]]></sort_field_pattern>
         <unit_size_per_day>30</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_work&keyword=아크릴&start_page=0]]></list_url>
-
-            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&keyword=아크릴&start_page=0]]></list_url>
+            <list_url><![CDATA[http://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=2]]></list_url>
         </list_url_list>
         <element_list>
-            <element_id>main_left_block</element_id>
+            <element_id>scm_left_block</element_id>
         </element_list>
-        <item_capture_script>./capture_item_link_title.py</item_capture_script>
+        <item_capture_script>./capture_item_link_title.py -n 10</item_capture_script>
         <post_process_script_list>
-            <post_process_script>grep -v '[질답]'</post_process_script>
+            <!--post_process_script>grep -v '[질답]'</post_process_script-->
         </post_process_script_list>
     </collection>
     <extraction>
         <element_list>
-            <element_id>main_left_block</element_id>
+            <element_id>sc_photo_block</element_id>
         </element_list>
         <force_sleep_between_articles>true</force_sleep_between_articles>
         <render_js>true</render_js>

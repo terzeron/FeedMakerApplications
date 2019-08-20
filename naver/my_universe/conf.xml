@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=724817]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=731939]]></list_url>
         </list_url_list>
         <element_class>viewList</element_class>
         <item_capture_script>../capture_item_naverwebtoon.py</item_capture_script>
@@ -18,10 +18,10 @@
         <!--force_sleep_between_articles>true</force_sleep_between_articles-->
     </extraction>
     <rss>
-        <title><![CDATA[귀인::네이버]]></title>
-        <description><![CDATA[귀인::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/nobleman.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.com/nobleman.xml]]></link>
+        <title><![CDATA[나의 우주::네이버]]></title>
+        <description><![CDATA[나의 우주​::네이버 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/my_universe.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/my_universe.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>
         <language>ko</language>
