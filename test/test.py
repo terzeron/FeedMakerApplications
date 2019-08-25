@@ -30,7 +30,7 @@ def main():
         "naver/naverwebtoon": [ "./capture_item_link_title.py" ],
         "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
         "myktoon/myktoon": [ "./capture_item_link_title.py" ],
-        "myktoon/god_of_poverty": [ "../capture_item_myktoon.py", "../post_process_myktoon.py 'https://v2.myktoon.com/web/works/viewer.kt?timesseq=141841'" ],
+        #"myktoon/god_of_poverty": [ "../capture_item_myktoon.py", "../post_process_myktoon.py 'https://v2.myktoon.com/web/works/viewer.kt?timesseq=141841'" ],
         "egloos/oblivion": [ "../capture_item_link_title.py" ],
         "daum/redstorm": [ "../capture_item_daumwebtoon.py", "../post_process_daumwebtoon.py 'http://cartoon.media.daum.net/m/webtoon/viewer/46901'" ],
         "daum/daumwebtoon": [ "./capture_item_link_title.py" ],
