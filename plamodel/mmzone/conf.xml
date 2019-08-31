@@ -5,6 +5,7 @@
         <sort_field_pattern><![CDATA[no=(\d+)]]></sort_field_pattern>
         <unit_size_per_day>30</unit_size_per_day>
         <list_url_list>
+            <list_url><![CDATA[http://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=0]]></list_url>
             <list_url><![CDATA[http://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=2]]></list_url>
         </list_url_list>
         <element_list>
