@@ -26,7 +26,7 @@ def main():
         episodeId = m.group("episodeId")
         cmd = ""
         url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episodeId
-        cmd = "crawler.py '%s'" % (url)
+        cmd = "crawler.py --retry 2 '%s'" % (url)
         #print(cmd)
         (result, error) = feed_maker_util.exec_cmd(cmd)
         #print(result)
