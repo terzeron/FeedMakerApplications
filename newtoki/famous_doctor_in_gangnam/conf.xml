@@ -8,7 +8,7 @@
             <list_url><![CDATA[https://newtoki23.com/webtoon/232412]]></list_url>
         </list_url_list>
         <element_class>list-body</element_class>
-        <item_capture_script>../capture_item_newtoki.py -n 200</item_capture_script>
+        <item_capture_script>../capture_item_newtoki.py -n 5</item_capture_script>
     </collection>
     <extraction>
         <element_class>view-content</element_class>
