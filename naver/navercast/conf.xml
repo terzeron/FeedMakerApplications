@@ -12,7 +12,7 @@
             <!--list_url><![CDATA[http://terms.naver.com/list.nhn?cid=58737&categoryId=58737&page=5]]></list_url-->
         </list_url_list>
         <element_class>list_wrap</element_class>
-        <item_capture_script>../capture_item_navercast.py</item_capture_script>
+        <item_capture_script>../capture_item_navercast.py -n 10</item_capture_script>
     </collection>
     <extraction>
         <element_list>

@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+) ]]></sort_field_pattern>
-        <unit_size_per_day>1</unit_size_per_day>
+        <unit_size_per_day>0.3</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[https://kotlinlang.org/docs/reference/]]></list_url>
         </list_url_list>

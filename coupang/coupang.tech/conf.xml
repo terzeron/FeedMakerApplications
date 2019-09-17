@@ -7,7 +7,7 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>iq</element_class>
+            <element_path>//*[@id="root"]/div/article/div</element_path>
         </element_list>
         <render_js>true</render_js>
     </extraction>

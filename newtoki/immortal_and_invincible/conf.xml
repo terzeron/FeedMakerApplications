@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>falae</is_completed>
-        <sort_field_pattern><![CDATA[(\d+)([\-\.]\d+)?(?:화|권|부|편)]]></sort_field_pattern>
-        <unit_size_per_day>96</unit_size_per_day>
+        <is_completed>false</is_completed>
+        <sort_field_pattern><![CDATA[(\d+)\t]]></sort_field_pattern>
+        <unit_size_per_day>10</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://newtoki25.com/webtoon/303]]></list_url>
+            <list_url><![CDATA[https://newtoki25.com/webtoon/87242]]></list_url>
         </list_url_list>
         <element_class>list-body</element_class>
         <item_capture_script>../capture_item_newtoki.py -n 5</item_capture_script>
@@ -14,16 +14,17 @@
         <element_class>view-content</element_class>
         <post_process_script_list>
             <!--post_process_script>../post_process_mangashowme.py</post_process_script-->
+            <!--post_process_script>download_merge_split.py -b 1 -t 1 -s 800 -n 2 -c blackorwhite -l -v</post_process_script-->
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
         <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
-        <title><![CDATA[화산전생::뉴토끼]]></title>
-        <description><![CDATA[화산전생::뉴토끼 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/former_life_in_hwasan.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.com/former_life_in_hwasan.xml]]></link>
+        <title><![CDATA[불사무적::뉴토끼]]></title>
+        <description><![CDATA[불사무적::뉴토끼 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/immortal_and_invincible.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/immortal_and_invincible.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Newtoki. All rights reserved.]]></copyright>
         <language>ko</language>

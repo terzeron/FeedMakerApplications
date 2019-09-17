@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>falae</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[(\d+)([\-\.]\d+)?(?:화|권|부|편)]]></sort_field_pattern>
-        <unit_size_per_day>96</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://newtoki25.com/webtoon/303]]></list_url>
+            <list_url><![CDATA[https://newtoki25.net/bbs//board.php?bo_table=comic&wr_id=292334]]></list_url>
         </list_url_list>
         <element_class>list-body</element_class>
-        <item_capture_script>../capture_item_newtoki.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_newtoki.py -n 20</item_capture_script>
     </collection>
     <extraction>
         <element_class>view-content</element_class>
         <post_process_script_list>
             <!--post_process_script>../post_process_mangashowme.py</post_process_script-->
-            <post_process_script>download_image.py</post_process_script>
+            <post_process_script>download_merge_split.py -b 1 -t 1 -s 800 -n 2 -c blackorwhite -l -v</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
         <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
-        <title><![CDATA[화산전생::뉴토끼]]></title>
-        <description><![CDATA[화산전생::뉴토끼 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/former_life_in_hwasan.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.com/former_life_in_hwasan.xml]]></link>
+        <title><![CDATA[가시나무왕::뉴토끼]]></title>
+        <description><![CDATA[가시나무왕::뉴토끼 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/thorn_king.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/thorn_king.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Newtoki. All rights reserved.]]></copyright>
         <language>ko</language>
