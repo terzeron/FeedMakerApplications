@@ -10,14 +10,14 @@ def main():
     link = ""
     title = ""
     state = 0
-    urlPrefix = "http://comic.naver.com"
+    url_prefix = "http://comic.naver.com"
 
     for line in IO.read_stdin_as_line_list():
         m = re.search(r'<a[^>]*href="(?P<url>/webtoon/list.nhn\?titleId=\d+)[^"]*"[^>]*title="(?P<title>[^"]+)"[^>]*/?>', line)
         if m:
             url = m.group("url")
             title = m.group("title")
-            link = urlPrefix + url
+            link = url_prefix + url
             print("%s\t%s" % (link, title))
 
             

@@ -13,13 +13,13 @@ import feed_maker_util
 def main():
     # url parsing
     url = sys.argv[1]
-    parsedUrl = urlparse(url)
-    parsedParams = parse_qs(parsedUrl.query)
-    timesseq = parsedParams['timesseq'][0]
-    dataUrl = "https://v2.myktoon.com/web/works/times_image_list_ajax.kt?timesseq=" + timesseq
+    parsed_url = urlparse(url)
+    parsed_params = parse_qs(parsed_url.query)
+    timesseq = parsed_params['timesseq'][0]
+    data_url = "https://v2.myktoon.com/web/works/times_image_list_ajax.kt?timesseq=" + timesseq
 
     headers = { "Referer": url }
-    response = requests.get(dataUrl, headers=headers)
+    response = requests.get(data_url, headers=headers)
     
     # read data from reponse
     #print(response.json())

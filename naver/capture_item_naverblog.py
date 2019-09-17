@@ -11,32 +11,32 @@ from feed_maker_util import IO
 def main():
     link = ""
     title = ""
-    urlPrefix = "http://blog.naver.com/PostView.nhn?blogId="
+    url_prefix = "http://blog.naver.com/PostView.nhn?blogId="
 
-    numOfRecentFeeds = 30
+    num_of_recent_feeds = 30
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
-    resultList = []
+    result_list = []
     for line in IO.read_stdin_as_line_list():
         m = re.search(r'"blogId"\s*:\s*"(?P<blogId>[^"]+)"', line)
         if m:
-            urlPrefix = urlPrefix + m.group("blogId") + "&logNo="
+            url_prefix = url_prefix + m.group("blogId") + "&logNo="
         matches = re.findall(r'"logNo":"(\d+)","title":"([^"]+)",', line)
         for match in matches:
-            logNo = match[0]
+            log_no = match[0]
+            link = url_prefix + log_no
             title = urllib.parse.unquote(match[1])
             title = re.sub(r"\+", " ", title)
             title = re.sub(r"&quot;", "'", title)
             title = re.sub(r"&(lt|gt);", "", title)
             title = re.sub(r"\n", " ", title)
-            resultList.append((logNo, title))
+            result_list.append((link, title))
 
 
-    for (logNo, title) in resultList[:numOfRecentFeeds]:
-        link = urlPrefix + logNo
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
         
             

@@ -9,7 +9,7 @@ from feed_maker_util import IO
 def main():
     link = ""
     title = ""
-    urlPrefix = "http://comic.naver.com/"
+    url_prefix = "http://comic.naver.com/"
 
     for line in IO.read_stdin_as_line_list():
         m = re.search(r'''
@@ -41,7 +41,7 @@ def main():
                 continue
             url = re.sub("&amp;", "&", url)
             url = re.sub(r"&week(day)?=\w\w\w", "", url)
-            link = urlPrefix + url
+            link = url_prefix + url
             title = "%04d. %s" % (int(m.group("title1")), m.group("title2"))
             print("%s\t%s" % (link, title))
 

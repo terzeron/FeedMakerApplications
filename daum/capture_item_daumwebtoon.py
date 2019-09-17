@@ -15,15 +15,15 @@ def main():
     title = ""
     nickname = ""
 
-    numOfRecentFeeds = 1000
+    num_of_recent_feeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
-    lineList = IO.read_stdin_as_line_list()
-    resultList = []
-    for line in lineList:
+    line_list = IO.read_stdin_as_line_list()
+    result_list = []
+    for line in line_list:
         p = re.compile(r'"id":(?P<id>\d+),"episode":(?P<episode>\d+),"title":"(?P<title>[^"]+)",')
         for m in p.finditer(line):
             md = m.groupdict()
@@ -33,9 +33,9 @@ def main():
             title = re.sub(r'\\u0027', '\'', title)
             link = link_prefix + id
             title = "%04d. %s" % (episode, title)
-            resultList.append((link, title))
+            result_list.append((link, title))
 
-    for (link, title) in resultList[:numOfRecentFeeds]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
                 
 

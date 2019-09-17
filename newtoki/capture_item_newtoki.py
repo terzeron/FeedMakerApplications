@@ -15,15 +15,15 @@ def main():
     url_prefix = ""
     state = 0
     
-    numOfRecentFeeds = 1000
+    num_of_recent_feeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
-    lineList = IO.read_stdin_as_line_list()
-    resultList = []
-    for line in lineList:
+    line_list = IO.read_stdin_as_line_list()
+    result_list = []
+    for line in line_list:
         if state == 0:
             m = re.search(r'<a class="item-subject" href="(?P<link>[^"]+\/\d+)(\/|\?)[^"]*">', line)
             if m:
@@ -34,10 +34,10 @@ def main():
             m = re.search(r'^\s*(?P<title>\S+.*\S)\s*(?:<span class="count[^"]*">\d+</span>|</a>)$', line)
             if m:
                 title = m.group("title")
-                resultList.append((link, title))
+                result_list.append((link, title))
                 state = 0
 
-    for (link, title) in resultList[:numOfRecentFeeds]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
 

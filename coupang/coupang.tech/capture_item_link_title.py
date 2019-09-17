@@ -16,14 +16,14 @@ def main():
     url_prefix = "https://medium.com/coupang-tech/"
     state = 0
     
-    numOfRecentFeeds = 1000
+    num_of_recent_feeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
     content = IO.read_stdin()
-    resultList = []
+    result_list = []
     m = re.search(r'<script>//\s*<\!\[CDATA\[\s*window\["obvInit"\]\((?P<script>.*)\)\s*//\s*\]\]></script>', content)
     if m:
         json_content = m.group("script")
@@ -39,9 +39,9 @@ def main():
                             if "content" in item_data and "subtitle" in item_data["content"]:
                                 title = item_data["title"] + " " + item_data["content"]["subtitle"]
                                 link = url_prefix + item_data["uniqueSlug"]
-                                resultList.append((link, title))
+                                result_list.append((link, title))
 
-    for (link, title) in resultList[:numOfRecentFeeds]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
 

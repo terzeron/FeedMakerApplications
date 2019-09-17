@@ -14,8 +14,8 @@ def main():
     icon = ""
     state = 0
 
-    lineList = IO.read_stdin_as_line_list()
-    for line in lineList:
+    line_list = IO.read_stdin_as_line_list()
+    for line in line_list:
         if state == 0:
             m1 = re.search(r'<a href="(?P<link>[^"]+mag_id=\d+)">', line)
             if m1:

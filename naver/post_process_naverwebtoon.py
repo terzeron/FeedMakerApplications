@@ -9,40 +9,40 @@ from feed_maker_util import IO
 
 
 def main():
-    imgHost = ""
-    imgPath = ""
-    imgIndex = -1
-    imgExt = "jpg"
-    pageUrl = sys.argv[1]
+    img_host = ""
+    img_path = ""
+    img_index = -1
+    img_ext = "jpg"
+    page_url = sys.argv[1]
 
     for line in IO.read_stdin_as_line_list():
         line = line.rstrip()
         if re.search(r"<(meta|style)", line):
             print(line)
         else:
-            m = re.search(r"<img src='http://(?P<imgHost>imgcomic.naver.(?:com|net))/(?P<imgPath>[^']+_)(?P<imgIndex>\d+)\.(?P<imgExt>jpg|gif)", line, re.IGNORECASE)
+            m = re.search(r"<img src='http://(?P<img_host>imgcomic.naver.(?:com|net))/(?P<img_path>[^']+_)(?P<img_index>\d+)\.(?P<img_ext>jpg|gif)", line, re.IGNORECASE)
             if m:
-                imgHost = m.group("imgHost")
-                imgPath = m.group("imgPath")
-                imgIndex = int(m.group("imgIndex"))
-                imgExt = m.group("imgExt")
-                print("<img src='http://%s/%s%d.%s' width='100%%'/>" % (imgHost, imgPath, imgIndex, imgExt))
+                img_host = m.group("img_host")
+                img_path = m.group("img_path")
+                img_index = int(m.group("img_index"))
+                img_ext = m.group("img_ext")
+                print("<img src='http://%s/%s%d.%s' width='100%%'/>" % (img_host, img_path, img_index, img_ext))
             else:
-                m = re.search(r"<img src='http://(?P<imgHost>imgcomic.naver.(?:com|net))/(?P<imgPath>[^']+)\.(?P<imgExt>jpg|gif)", line, re.IGNORECASE)
+                m = re.search(r"<img src='http://(?P<img_host>imgcomic.naver.(?:com|net))/(?P<img_path>[^']+)\.(?P<img_ext>jpg|gif)", line, re.IGNORECASE)
                 if m:
-                    imgHost = m.group("imgHost")
-                    imgPath = m.group("imgPath")
-                    imgExt = m.group("imgExt")
-                    print("<img src='http://%s/%s.%s' width='100%%'/>" % (imgHost, imgPath, imgExt))
+                    img_host = m.group("img_host")
+                    img_path = m.group("img_path")
+                    img_ext = m.group("img_ext")
+                    print("<img src='http://%s/%s.%s' width='100%%'/>" % (img_host, img_path, img_ext))
         
-    if imgPath != "" and imgIndex >= 0:
+    if img_path != "" and img_index >= 0:
         # add some additional images loaded dynamically
         for i in range(60):
-            imgUrl = "http://%s/%s%d.%s" % (imgHost, imgPath, i, imgExt)
-            cmd = 'wget.sh --spider --referer "%s" "%s"' % (pageUrl, imgUrl)
+            img_url = "http://%s/%s%d.%s" % (img_host, img_path, i, img_ext)
+            cmd = 'wget.sh --spider --referer "%s" "%s"' % (page_url, img_url)
             (result, error) = feed_maker_util.exec_cmd(cmd)
             if not error:
-                print("<img src='http://%s/%s%d.%s' width='100%%'/>" % (imgHost, imgPath, i, imgExt))
+                print("<img src='http://%s/%s%d.%s' width='100%%'/>" % (img_host, img_path, i, img_ext))
         
     
     

@@ -9,17 +9,17 @@ from feed_maker_util import IO
 
 
 def main():
-    numOfRecentFeeds = 1000
+    num_of_recent_feeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
-    lineList = IO.read_stdin_as_line_list()
+    line_list = IO.read_stdin_as_line_list()
     timesseq = ""
     title = ""
-    resultList = []
-    for line in lineList:
+    result_list = []
+    for line in line_list:
         matches = re.findall(r'"(\w+)"\s*:\s*"?([^"},]*)"?\s*', line)
         for match in matches:
             key = match[0]
@@ -30,11 +30,11 @@ def main():
                 title = value
             if timesseq != "" and title != "":
                 link = "https://v2.myktoon.com/web/works/viewer.kt?timesseq=" + timesseq
-                resultList.append((link, title))
+                result_list.append((link, title))
                 timesseq = ""
                 title = ""
 
-    for (link, title) in resultList[:numOfRecentFeeds]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
         

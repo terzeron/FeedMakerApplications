@@ -9,45 +9,45 @@ from feed_maker_util import IO
 
 
 def main():
-    linkPrefix = "http://cafe.daum.net/_c21_/"
+    link_prefix = "http://cafe.daum.net/_c21_/"
     link = ""
     title = ""
-    cafeName = ""
-    cafeId = ""
-    boardName = ""
+    cafe_name = ""
+    cafe_id = ""
+    board_name = ""
     state = 0
 
-    numOfRecentFeeds = 30
+    num_of_recent_feeds = 30
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
-    lineList = IO.read_stdin_as_line_list()
-    resultList = []
-    for line in lineList:
+    line_list = IO.read_stdin_as_line_list()
+    result_list = []
+    for line in line_list:
         if state == 0:
-            m = re.search(r'GRPCODE\s*:\s*"(?P<cafeName>[^"]+)"', line)
+            m = re.search(r'GRPCODE\s*:\s*"(?P<cafe_name>[^"]+)"', line)
             if m:
-                cafeName = m.group("cafeName")
-            m = re.search(r'GRPID\s*:\s*"(?P<cafeId>[^"]+)"', line)
+                cafe_name = m.group("cafe_name")
+            m = re.search(r'GRPID\s*:\s*"(?P<cafe_id>[^"]+)"', line)
             if m:
-                cafeId = m.group("cafeId")
-            m = re.search(r'FLDID\s*:\s*"(?P<boardName>[^"]+)"', line)
+                cafe_id = m.group("cafe_id")
+            m = re.search(r'FLDID\s*:\s*"(?P<board_name>[^"]+)"', line)
             if m:
-                boardName = m.group("boardName")
-            if cafeName != "" and cafeId != "" and boardName != "":
+                board_name = m.group("board_name")
+            if cafe_name != "" and cafe_id != "" and board_name != "":
                 state = 1
         elif state == 1:
-            m = re.search(r'<a[^>]*href="[^"]+/bbs_read[^"]*datanum=(?P<articleId>\d+)[^>]*>(?P<title>.+)</a>', line)
+            m = re.search(r'<a[^>]*href="[^"]+/bbs_read[^"]*datanum=(?P<article_id>\d+)[^>]*>(?P<title>.+)</a>', line)
             if m:
-                link = linkPrefix + "bbs_read?" + "&fldid=" + boardName + "&grpid=" + cafeId + "&datanum=" + m.group("articleId")
+                link = link_prefix + "bbs_read?" + "&fldid=" + board_name + "&grpid=" + cafe_id + "&datanum=" + m.group("article_id")
                 title = m.group("title")
                 title = re.sub(r'(<[^>]*?>|^\s+|\s+$)', '', title)
                 if link and title:
-                    resultList.append((link, title))
+                    result_list.append((link, title))
 
-    for (link, title) in resultList[-numOfRecentFeeds:]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
                 
 

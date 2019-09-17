@@ -9,16 +9,16 @@ from feed_maker_util import IO
 
 
 def main():
-    numOfRecentFeeds = 1000
+    num_of_recent_feeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
-            numOfRecentFeeds = int(a)
+            num_of_recent_feeds = int(a)
 
     state = 0
-    lineList = IO.read_stdin_as_line_list()
-    resultList = []
-    for line in lineList:
+    line_list = IO.read_stdin_as_line_list()
+    result_list = []
+    for line in line_list:
         if state == 0:
             m = re.search(r'<a class="deco" href="(?P<link>[^\?"]+)[^"]*">(?P<title>.+)</a>', line)
             if m:
@@ -31,10 +31,10 @@ def main():
             if m:
                 author = m.group("author")
                 title = title + " | " + author
-                resultList.append((link, title))
+                result_list.append((link, title))
                 state = 0
                               
-    for (link, title) in resultList[:numOfRecentFeeds]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
             

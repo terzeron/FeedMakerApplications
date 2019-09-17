@@ -9,10 +9,10 @@ from feed_maker_util import IO
 
 
 def main():
-    imgPrefix = ""
-    imgIndex = -1
-    imgExt = "jpg"
-    numUnits = 25
+    img_prefix = ""
+    img_index = -1
+    img_ext = "jpg"
+    num_units = 25
 
     for line in IO.read_stdin_as_line_list():
         line = line.rstrip()
@@ -20,12 +20,12 @@ def main():
         if not m:
             print(line)
 
-    postLink = sys.argv[1]
-    m = re.search(r"http://cartoon\.media\.daum\.net/(?P<mobile>m/)?webtoon/viewer/(?P<episodeId>\d+)$", postLink)
+    post_link = sys.argv[1]
+    m = re.search(r"http://cartoon\.media\.daum\.net/(?P<mobile>m/)?webtoon/viewer/(?P<episode_id>\d+)$", post_link)
     if m:
-        episodeId = m.group("episodeId")
+        episode_id = m.group("episode_id")
         cmd = ""
-        url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episodeId
+        url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episode_id
         cmd = "crawler.py --retry 2 '%s'" % (url)
         #print(cmd)
         (result, error) = feed_maker_util.exec_cmd(cmd)
