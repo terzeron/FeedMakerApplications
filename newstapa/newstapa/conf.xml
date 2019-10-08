@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
+        <unit_size_per_day>4</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[https://newstapa.org/recent/page/30]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/29]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/28]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/27]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/26]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/25]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/24]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/23]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/22]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/21]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/20]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/19]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/18]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/17]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/16]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/15]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/14]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/13]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/12]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/11]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/10]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/9]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/8]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/7]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/6]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/5]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/4]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/3]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/2]]></list_url>
+            <list_url><![CDATA[https://newstapa.org/recent/page/1]]></list_url>
+        </list_url_list>
+        <element_class>container</element_class>
+        <item_capture_script>./capture_item_link_title.py -n 30</item_capture_script>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>archive-contents</element_class>
+        </element_list>
+        <sleep_time>2</sleep_time>
+    </extraction>
+    <rss>
+        <title><![CDATA[뉴스::뉴스타파]]></title>
+        <description><![CDATA[뉴스::뉴스타파 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/newstapa.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/newstapa.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) KCIJ. All Rights Reserved]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
