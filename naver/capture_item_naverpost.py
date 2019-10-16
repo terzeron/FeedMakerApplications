@@ -44,8 +44,6 @@ def main():
             m = re.search(r'<a href="(?P<url>/viewer/postView\.nhn\?volumeNo=\d+&memberNo=\d+)"', line)
             if m:
                 url = m.group("url")
-                url = re.sub(r'&lt;', '<', url)
-                url = re.sub(r'&gt;', '>', url)
                 link = url_prefix + url
                 title = ""
                 state = 1
@@ -68,16 +66,6 @@ def main():
                 title = m.group("title")
                 if re.search(r'^\s*\[대림자동차\s*공식\s*포스트\]\s*$', title):
                     continue
-                title = re.sub(r'^\s+|\s+$', '', title)
-                title = re.sub(r'&#39;', '\'', title)
-                title = re.sub(r'&#40;', ')', title)
-                title = re.sub(r'&#41;', '(', title)
-                title = re.sub(r'&lt;', '<', title)
-                title = re.sub(r'&gt;', '>', title)
-                title = re.sub(r'&nbsp;', ' ', title)
-                title = re.sub(r'&quot;', '"', title)
-                title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
-                title = re.sub(r'</h3>', '', title)
                 if link and title:
                     result_list.append((link, title))
                 state = 0
@@ -93,6 +81,18 @@ def main():
                 title += line
 
     for (link, title) in result_list[-num_of_recent_feeds:]:
+        url = re.sub(r'&lt;', '<', url)
+        url = re.sub(r'&gt;', '>', url)
+        title = re.sub(r'^\s+|\s+$', '', title)
+        title = re.sub(r'&#39;', '\'', title)
+        title = re.sub(r'&#40;', ')', title)
+        title = re.sub(r'&#41;', '(', title)
+        title = re.sub(r'&lt;', '<', title)
+        title = re.sub(r'&gt;', '>', title)
+        title = re.sub(r'&nbsp;', ' ', title)
+        title = re.sub(r'&quot;', '"', title)
+        title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
+        title = re.sub(r'</h3>', '', title)
         print("%s\t%s" % (link, title))
                 
                 
