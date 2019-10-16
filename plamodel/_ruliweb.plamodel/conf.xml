@@ -17,7 +17,7 @@
         <element_list>
             <element_id>board_list</element_id>
         </element_list>
-        <item_capture_script>./capture_item_link_title.py -n 20</item_capture_script>
+        <item_capture_script>./capture_item_link_title.py -n 50</item_capture_script>
         <post_process_script_list>
             <post_process_script>egrep -v -i "(sd|프레임.*걸)"</post_process_script>
         </post_process_script_list>
