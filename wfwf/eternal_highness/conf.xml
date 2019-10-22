@@ -5,7 +5,7 @@
         <sort_field_pattern><![CDATA[(\d+)([\-\.]\d+)?(?:화|권|부|편)]]></sort_field_pattern>
         <unit_size_per_day>4</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://wfwf46.com/list?toon=3051]]></list_url>
+            <list_url><![CDATA[https://wfwf47.com/list?toon=3051]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_wfwf.py -n 200</item_capture_script>
         <sleep_time>5</sleep_time>
