@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>false</is_completed>
-        <sort_field_pattern><![CDATA[no=(\d+)]]></sort_field_pattern>
-        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=718707]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=735599]]></list_url>
         </list_url_list>
         <element_class>viewList</element_class>
         <item_capture_script>../capture_item_naverwebtoon.py</item_capture_script>
@@ -18,13 +15,13 @@
             <!--post_process_script>../post_process_naverwebtoon.py</post_process_script-->
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
-        <force_sleep_between_articles>true</force_sleep_between_articles>
+        <!--force_sleep_between_articles>true</force_sleep_between_articles-->
     </extraction>
     <rss>
-        <title><![CDATA[한남동 케이하우스​::네이버]]></title>
-        <description><![CDATA[한남동 케이하우스::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/k_house_in_hannamdong.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.com/k_house_in_hannamdong.xml]]></link>
+        <title><![CDATA[이엑스피::네이버]]></title>
+        <description><![CDATA[이엑스피​::네이버 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/exp.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/exp.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>
         <language>ko</language>
