@@ -23,7 +23,7 @@ def main():
             if m:
                 link = url_prefix + m.group("link")
                 title = m.group("title")
-                if re.search(r'([Bb]ootiful ([Pp]odcast|GCP)|[Aa]vailable|[Rr]eleased|(\d+\.\d+\.\d+(.| )(M\d+|RC\d+|RELEASE)\)?$)|This [Ww]eek|now GA|goes (GA|RC\d+)|is out)', title):
+                if re.search(r'([Bb]ootiful ([Pp]odcast|GCP)|[Aa]vailable|[Rr]eleased|(\d+\.\d+\.\d+(.| )(M\d+|RC\d+|RELEASE)\)?$)|This [Ww]eek|now GA|goes (GA|RC\d+)|is out|SpringOne2GX|[Ww]ebinar)', title):
                     state = 0
                     continue
                 state = 2
