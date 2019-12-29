@@ -6,7 +6,7 @@
         <unit_size_per_day>0.3</unit_size_per_day>
         <list_url_list>
             <!-- 한국웹툰, 전체(200개), 다운만 -->
-            <list_url><![CDATA[https://newtoki34.net/webtoon/221713]]></list_url>
+            <list_url><![CDATA[https://newtoki41.net/webtoon/221713]]></list_url>
         </list_url_list>
         <element_class>list-body</element_class>
         <item_capture_script>../capture_item_newtoki.py -n 200</item_capture_script>

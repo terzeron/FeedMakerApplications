@@ -5,8 +5,8 @@
         <sort_field_pattern><![CDATA[(\d+)([\-\.]\d+)?(?:화|권|부|편)]]></sort_field_pattern>
         <unit_size_per_day>0.3</unit_size_per_day>
         <list_url_list>
-            <!-- 일본만화, 전체(200개), 다운만 -->
-            <list_url><![CDATA[https://newtoki34.net/comic/94838]]></list_url>
+            <!-- 일본만화, 전체(200개), 좌우분할 -->
+            <list_url><![CDATA[https://newtoki41.net/comic/94838]]></list_url>
         </list_url_list>
         <element_class>list-body</element_class>
         <item_capture_script>../capture_item_newtoki.py -n 200</item_capture_script>
@@ -15,8 +15,8 @@
         <element_class>view-content</element_class>
         <post_process_script_list>
             <!--post_process_script>../post_process_newtoki.py</post_process_script-->
-            <!--post_process_script>download_merge_split.py -b 1 -t 1 -s 800 -n 2 -c blackorwhite -l -v</post_process_script-->
-            <post_process_script>download_image.py</post_process_script>
+            <post_process_script>download_merge_split.py -b 1 -t 1 -s 800 -n 2 -c blackorwhite -l -v</post_process_script>
+            <!--post_process_script>download_image.py</post_process_script-->
         </post_process_script_list>
         <render_js>true</render_js>
         <force_sleep_between_articles>true</force_sleep_between_articles>
