@@ -1,6 +1,6 @@
 #!/bin/bash
 
-number=58
+number=64
 
 export PATH=$PATH
 FM_HOME=/home/terzeron/workspace/fma

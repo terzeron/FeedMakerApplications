@@ -1,6 +1,6 @@
 #/bin/bash
 
-number=23
+number=26
 
 export PATH=$PATH
 FM_HOME=/home/terzeron/workspace/fma

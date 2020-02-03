@@ -5,10 +5,8 @@ if [ "$1" == "" ]; then
     exit 1
 fi
 
-exit 0
+export number=$1
 
-number=$1
-
-perl -pi -e 's/^number=\d+/number='${number}'/g' check_*.sh
-perl -pi -e 's/(newtoki|manamoa|wfwf)\d+/$1'${number}'/g' */conf.xml
+perl -pi -e 's/^number=\d+/number=$ENV{"number"}/g' check_*.sh
+perl -pi -e 's/\<list_url\>\<\!\[CDATA\[https:\/\/(newtoki|manamoa|wfwf)\d+/\<list_url\>\<\!\[CDATA\[https:\/\/$1$ENV{"number"}/g' */conf.xml
 rm -rf */newlist
