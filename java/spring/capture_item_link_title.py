@@ -23,9 +23,10 @@ def main():
             if m:
                 link = url_prefix + m.group("link")
                 title = m.group("title")
-                if re.search(r'([Bb]ootiful ([Pp]odcast|GCP)|[Aa]vailable|[Rr]eleased|(\d+\.\d+\.\d+(.| )(M\d+|RC\d+|RELEASE)\)?$)|This [Ww]eek|now GA|goes (GA|RC\d+)|is out|SpringOne2GX|[Ww]ebinar)', title):
+                if re.search(r'([Bb]ootiful ([Pp]odcast|GCP)|[Aa]vailable|[Rr]eleased|(\d+\.\d+\.\d+(.| )(M\d+|RC\d+|RELEASE)\)?$)|This [Ww]eek|now GA|goes (GA|RC\d+)|is out|SpringOne2GX|[Ww]ebinar|SR\d)', title):
                     state = 0
                     continue
+                title = re.sub(r'&amp;', '&', title)
                 state = 2
         elif state == 2:
             m = re.search(r'<time class="date"[^>]*datetime="(?P<date>20\d+-\d+-\d+) ', line)
