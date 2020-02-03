@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>false</is_completed>
+        <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[(\d+)([\-\.]\d+)?(?:화|권|부|편)]]></sort_field_pattern>
-        <unit_size_per_day>4</unit_size_per_day>
+        <unit_size_per_day>0.4</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://wfwf62.com/list?toon=3934]]></list_url>
+            <!-- 전체(200개), 다운만 -->
+            <list_url><![CDATA[https://wfwf64.com/list?toon=3934]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_wfwf.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_wfwf.py -n 200</item_capture_script>
         <sleep_time>5</sleep_time>
         <render_js>true</render_js>
     </collection>
