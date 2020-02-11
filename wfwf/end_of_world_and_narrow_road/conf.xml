@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[https://wfwf65.com/list?toon=3047]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_wfwf.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_wfwf.py -n 10</item_capture_script>
         <sleep_time>5</sleep_time>
         <render_js>true</render_js>
     </collection>
