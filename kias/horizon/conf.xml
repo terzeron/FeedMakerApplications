@@ -1,49 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)]]></sort_field_pattern>
         <unit_size_per_day>0.2</unit_size_per_day>
+        <verify_ssl>false</verify_ssl>
         <list_url_list>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/33/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/32/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/31/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/30/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/29/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/28/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/27/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/26/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/25/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/24/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/23/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/22/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/21/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/20/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/19/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/18/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/17/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/16/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/15/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/14/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/13/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/12/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/11/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/10/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/9/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/8/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/7/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/6/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/5/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/4/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/3/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/2/]]></list_url>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles/page/1/]]></list_url>
+            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles]]></list_url>
         </list_url_list>
         <element_list>
             <element_class>inner-column</element_class>
         </element_list>
     </collection>
     <extraction>
+        <verify_ssl>false</verify_ssl>
         <element_list>
             <element_class>post-detail</element_class>
         </element_list>
