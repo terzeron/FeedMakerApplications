@@ -34,6 +34,9 @@ def main():
             m = re.search(r'^\s*(?P<title>\S+.*\S)\s*(?:<span class="count[^"]*">\d+</span>|</a>)$', line)
             if m:
                 title = m.group("title")
+                title = re.sub(r'\s+', ' ', title)
+                title = re.sub(r'\b(\d\d)(권|화|부|편)', '0\g<1>\g<2>', title)
+                title = re.sub(r'\b(\d)(권|화|부|편)', '00\g<1>\g<2>', title)
                 result_list.append((link, title))
                 state = 0
 
