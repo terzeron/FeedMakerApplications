@@ -6,6 +6,7 @@ import re
 import json
 import feed_maker_util
 from feed_maker_util import IO
+from crawler import Method, Crawler
 
 
 def main():
@@ -26,11 +27,13 @@ def main():
         episode_id = m.group("episode_id")
         cmd = ""
         url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episode_id
-        cmd = "crawler.py --retry 2 '%s'" % (url)
+        crawler = Crawler(method = Method.GET, headers = {})
+        result = crawler.run(url)
+        #cmd = "crawler.py --retry 2 '%s'" % (url)
         #print(cmd)
-        (result, error) = feed_maker_util.exec_cmd(cmd)
+        #(result, error) = feed_maker_util.exec_cmd(cmd)
         #print(result)
-        if error:
+        if not result:
             print("can't download the page html from '%s'" % (url))
             sys.exit(-1)
         img_file_arr = []
