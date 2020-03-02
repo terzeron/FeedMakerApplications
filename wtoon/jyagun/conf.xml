@@ -2,10 +2,10 @@
 <configuration>
     <collection>
         <is_completed>true</is_completed>
-        <sort_field_pattern><![CDATA[num=(\d+)\t]]></sort_field_pattern>
+        <sort_field_pattern><![CDATA[(\d+)([\-\.]\d+)?(?:화|권|부|편)]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://wtoon40.com/c1?toon=10026]]></list_url>
+            <list_url><![CDATA[https://wtoon40.com/c1?toon=12683]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_wtoon.py -n 200</item_capture_script>
         <!--sleep_time>5</sleep_time!-->
@@ -23,10 +23,10 @@
         <encoding>cp949</encoding>
     </extraction>
     <rss>
-        <title><![CDATA[파멸의 왕국::W툰]]></title>
-        <description><![CDATA[파멸의 왕국::W툰 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/kingdom_of_destruction.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.com/kingdom_of_destruction.xml]]></link>
+        <title><![CDATA[쟈건::W툰]]></title>
+        <description><![CDATA[쟈건::W툰 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/jyagun.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/jyagun.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) W툰. All rights reserved.]]></copyright>
         <language>ko</language>
