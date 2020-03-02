@@ -21,8 +21,8 @@
         <!--force_sleep_between_articles>true</force_sleep_between_articles-->
     </extraction>
     <rss>
-        <title><![CDATA[천애협로::호두코믹스]]></title>
-        <description><![CDATA[천애협로::호두코믹스 - 모바일 버전 RSS Feed]]></description>
+        <title><![CDATA[나 홀로 로그인::호두코믹스]]></title>
+        <description><![CDATA[나 홀로 로그인::호두코믹스 - 모바일 버전 RSS Feed]]></description>
         <feed_url><![CDATA[https://terzeron.com/login_alone.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/login_alone.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
