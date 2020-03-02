@@ -7,21 +7,24 @@ import sys
 import re
 import getopt
 from feed_maker_util import IO
+import typing
+from typing import List
 
 
-def main():
-    link = ""
-    title = ""
-    url_prefix = ""
-    state = 0
+def main() -> int:
+    link: str = ""
+    title: str = ""
+    url_prefix: str = ""
+    num: int = 0
+    state: int = 0
     
-    num_of_recent_feeds = 1000
+    num_of_recent_feeds: int = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
 
-    line_list = IO.read_stdin_as_line_list()
+    line_list: List[str] = IO.read_stdin_as_line_list()
     result_list = []
     for line in line_list:
         if state == 0:
@@ -44,11 +47,15 @@ def main():
             if m:
                 title = m.group("title")
                 title = re.sub(r"\s+", " ", title)
+                num = num + 1
+                title = "%d. %s" % (num, title)
                 result_list.append((link, title))
                 state = 1
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
+
+    return 0
 
 
 if __name__ == "__main__":
