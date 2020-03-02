@@ -27,12 +27,8 @@ def main():
         episode_id = m.group("episode_id")
         cmd = ""
         url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episode_id
-        crawler = Crawler(method = Method.GET, headers = {})
+        crawler = Crawler()
         result = crawler.run(url)
-        #cmd = "crawler.py --retry 2 '%s'" % (url)
-        #print(cmd)
-        #(result, error) = feed_maker_util.exec_cmd(cmd)
-        #print(result)
         if not result:
             print("can't download the page html from '%s'" % (url))
             sys.exit(-1)
