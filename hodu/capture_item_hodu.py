@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 import io
 import os
 import sys
@@ -13,6 +12,7 @@ def main():
     link = ""
     title = ""
     url_prefix = ""
+    num = 0
     state = 0
     
     num_of_recent_feeds = 1000
@@ -30,13 +30,23 @@ def main():
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
+            m = re.search(r'<div\s+class="num">', line)
+            if m:
+                state = 2
+        elif state == 2:
+            m = re.search(r'^\s*(?P<num>\d+)\s*</div>', line)
+            if m:
+                num = m.group("num")
+                state = 3
+        elif state == 3:
             m = re.search(r'<td[^>]*title="(?P<title>[^"]+)">', line)
             if m:
                 title = m.group("title")
                 title = re.sub(r"\s+", " ", title)
                 title = re.sub(r'&nbsp;', ' ', title)
-                state = 2
-        elif state == 2:
+                title = num + ". " + title
+                state = 4
+        elif state == 4:
             m = re.search(r'<a\s*href="(?P<link>/[^"]*\.html)"', line)
             if m:
                 link = url_prefix + m.group("link")
