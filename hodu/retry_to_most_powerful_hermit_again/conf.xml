@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[https://hodu20.net/Retry-다시-한번-최강-신선으로]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_hodu.py -n 100</item_capture_script>
+        <item_capture_script>../capture_item_hodu.py -n 200</item_capture_script>
         <!--sleep_time>5</sleep_time-->
         <!--render_js>true</render_js-->
     </collection>
