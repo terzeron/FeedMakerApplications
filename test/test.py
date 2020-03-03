@@ -36,7 +36,7 @@ def main():
         "daum/daumwebtoon": [ "./capture_item_link_title.py" ],
         "khan/hammer": [ "./capture_item_link_title.py" ],
         "tistory/nasica1": [ "../capture_item_tistory.py" ],
-        "kakao/higher_than_my_shoulders": [ "../capture_item_kakaowebtoon.py" ],
+        #"kakao/higher_than_my_shoulders": [ "../capture_item_kakaowebtoon.py" ],
         "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
     }
     
