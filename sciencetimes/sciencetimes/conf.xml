@@ -11,9 +11,6 @@
             <list_url><![CDATA[https://www.sciencetimes.co.kr/category/sci-people/science/page/4/]]></list_url>
             <list_url><![CDATA[https://www.sciencetimes.co.kr/category/sci-culumn/science/page/5/]]></list_url>
         </list_url_list>
-        <element_list>
-            <element_class>board_list</element_class>
-        </element_list>
         <item_capture_script>../capture_item_sciencetimes.py</item_capture_script>
     </collection>
     <extraction>

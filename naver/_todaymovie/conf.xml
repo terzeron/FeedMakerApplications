@@ -4,7 +4,6 @@
         <list_url_list>
             <list_url><![CDATA[http://today.movie.naver.com/today/month_view.nhn]]></list_url>
         </list_url_list>
-        <element_class>ncc_calendar1</element_class>
     </collection>
     <extraction>
         <element_list>

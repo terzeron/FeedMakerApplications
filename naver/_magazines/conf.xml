@@ -4,7 +4,6 @@
         <list_url_list>
             <list_url><![CDATA[http://sports.news.naver.com/sports/new/magazineS/list.nhn]]></list_url>
         </list_url_list>
-        <element_class>list_all_thumb</element_class>
     </collection>
     <extraction>
         <element_list>

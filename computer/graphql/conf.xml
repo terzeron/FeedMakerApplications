@@ -8,9 +8,6 @@
             <list_url><![CDATA[https://graphql-kr.github.io/learn/]]></list_url>
         </list_url_list>
         <item_capture_script>./capture_item_link_title.py -n 30</item_capture_script>
-        <element_list>
-            <element_class>nav-docs</element_class>
-        </element_list>
     </collection>
     <extraction>
         <element_list>

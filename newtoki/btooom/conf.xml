@@ -8,7 +8,6 @@
             <!-- 일본만화, 전체(200개), 다운만 -->
             <list_url><![CDATA[https://newtoki52.net/comic/129192]]></list_url>
         </list_url_list>
-        <element_class>list-body</element_class>
         <item_capture_script>../capture_item_newtoki.py -n 200</item_capture_script>
         <sleep_time>5</sleep_time>
         <render_js>true</render_js>

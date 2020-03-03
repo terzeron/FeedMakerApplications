@@ -7,7 +7,6 @@
         <list_url_list>
             <list_url><![CDATA[https://newstapa.org/recent/page/1]]></list_url>
         </list_url_list>
-        <element_class>container</element_class>
         <item_capture_script>./capture_item_link_title.py -n 5</item_capture_script>
     </collection>
     <extraction>

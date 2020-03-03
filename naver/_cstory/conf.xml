@@ -4,7 +4,6 @@
         <list_url_list>
             <list_url><![CDATA[http://movie.naver.com/movie/mzine/cstory_list.nhn]]></list_url>
         </list_url_list>
-        <element_id>content</element_id>
         <encoding>cp949</encoding>    
     </collection>
     <extraction>

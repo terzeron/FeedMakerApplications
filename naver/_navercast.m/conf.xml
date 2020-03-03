@@ -4,7 +4,6 @@
         <list_url_list>
             <list_url><![CDATA[http://m.navercast.naver.com/]]></list_url>
         </list_url_list>
-        <element_class>card_list</element_class>
     </collection>
     <extraction>
         <element_list>

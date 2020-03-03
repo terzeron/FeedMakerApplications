@@ -97,9 +97,6 @@
             <list_url><![CDATA[https://spring.io/blog?page=99]]></list_url>
             <list_url><![CDATA[https://spring.io/blog?page=100]]></list_url>
         </list_url_list>
-        <element_list>
-            <element_class>blog-preview--wrapper</element_class>
-        </element_list>
     </collection>
     <extraction>
         <element_list>

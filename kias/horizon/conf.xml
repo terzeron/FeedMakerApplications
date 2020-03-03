@@ -8,9 +8,6 @@
         <list_url_list>
             <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles]]></list_url>
         </list_url_list>
-        <element_list>
-            <element_class>inner-column</element_class>
-        </element_list>
     </collection>
     <extraction>
         <verify_ssl>false</verify_ssl>

@@ -26,7 +26,6 @@
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=670149&page=19]]></list_url>
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=670149&page=20]]></list_url>
         </list_url_list>
-        <element_class>viewList</element_class>
         <item_capture_script>../capture_item_naverwebtoon.py -n 200</item_capture_script>
     </collection>
     <extraction>

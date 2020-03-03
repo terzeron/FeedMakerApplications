@@ -4,7 +4,6 @@
         <list_url_list>
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=739503]]></list_url>
         </list_url_list>
-        <element_class>viewList</element_class>
         <item_capture_script>../capture_item_naverwebtoon.py</item_capture_script>
     </collection>
     <extraction>
