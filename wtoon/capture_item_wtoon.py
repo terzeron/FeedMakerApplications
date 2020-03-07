@@ -30,7 +30,7 @@ def main():
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a\s*href="(?P<link>/c2\?toon[^"]*)">', line)
+            m = re.search(r'<a\s*href="(?P<link>/\w+\d+\?toon[^"]*)">', line)
             if m:
                 link = url_prefix + m.group("link")
                 state = 2
