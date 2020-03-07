@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
 
-import io
-import os
 import sys
 import re
 import getopt
@@ -14,9 +12,9 @@ def main():
     title = ""
     url_prefix = ""
     state = 0
-    
+
     num_of_recent_feeds = 1000
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
@@ -30,7 +28,7 @@ def main():
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a(?:[^>]*)href="(?P<link>/view[^"]*)&amp;title=[^"]*"', line)
+            m = re.search(r'<a(?:[^>]*)href="(?P<link>/view[^"]*)&(amp;)?title=[^"]*"', line)
             if m:
                 link = url_prefix + m.group("link")
                 link = re.sub(r'&amp;', '&', link)
