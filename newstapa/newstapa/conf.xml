@@ -13,7 +13,6 @@
         <element_list>
             <element_class>archive-contents</element_class>
         </element_list>
-        <sleep_time>2</sleep_time>
     </extraction>
     <rss>
         <title><![CDATA[뉴스::뉴스타파]]></title>
