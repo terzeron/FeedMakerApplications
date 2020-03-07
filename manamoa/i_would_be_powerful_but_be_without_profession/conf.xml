@@ -5,12 +5,11 @@
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://manamoa29.net/bbs/page.php?hid=manga_detail&manga_id=7769]]></list_url>
+            <list_url><![CDATA[https://manamoa30.net/bbs/page.php?hid=manga_detail&manga_id=7769]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_manamoa.py -n 10</item_capture_script>
         <render_js>true</render_js>
-        <sleep_time>5</sleep_time>
-    </collection>
+            </collection>
     <extraction>
         <element_class>view-content</element_class>
         <element_class>images_from_canvas</element_class>
@@ -19,8 +18,7 @@
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
-        <sleep_time>5</sleep_time>
-    </extraction>
+            </extraction>
     <rss>
         <title><![CDATA[성장 치트로 뭐든 할 수 있는 것 같습니다만, 무직만은 포기할 수 없을 것 같습니다::마나모아]]></title>
         <description><![CDATA[성장 치트로 뭐든 할 수 있는 것 같습니다만, 무직만은 포기할 수 없을 것 같습니다::마나모아 - 모바일 버전 RSS Feed]]></description>
