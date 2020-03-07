@@ -5,19 +5,12 @@
             <list_url><![CDATA[http://news.khan.co.kr/kh_cartoon/]]></list_url>
         </list_url_list>
         <encoding>cp949</encoding>
-        <user_agent>Internet Explorer</user_agent>
     </collection>
     <extraction>
         <element_list>
             <element_class>art_photo_wrap</element_class>
         </element_list>
         <encoding>cp949</encoding>
-        <header_list>
-            <header><![CDATA[Accept-Encoding: gzip, deflate]]></header>
-            <header><![CDATA[Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8]]></header>
-        </header_list>
-        <uncompress_gzip>true</uncompress_gzip>
-        <user_agent><![CDATA[User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36]]></user_agent>
     </extraction>
     <rss>
         <title><![CDATA[장도리::경향]]></title>
