@@ -9,7 +9,7 @@
         </list_url_list>
         <item_capture_script>../capture_item_hodu.py -n 200</item_capture_script>
         <!--sleep_time>5</sleep_time-->
-        <!--render_js>true</render_js-->
+        <render_js>true</render_js>
     </collection>
     <extraction>
         <element_id>toon_img</element_id>
