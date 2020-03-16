@@ -6,7 +6,7 @@
         <unit_size_per_day>0.2</unit_size_per_day>
         <verify_ssl>false</verify_ssl>
         <list_url_list>
-            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/allarticles]]></list_url>
+            <list_url><![CDATA[https://horizon.kias.re.kr/category/archives/]]></list_url>
         </list_url_list>
     </collection>
     <extraction>
