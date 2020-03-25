@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[no=(\d+)]]></sort_field_pattern>
         <unit_size_per_day>5</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=0]]></list_url>
             <list_url><![CDATA[http://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=2]]></list_url>
         </list_url_list>
-        <item_capture_script>./capture_item_link_title.py -n 200</item_capture_script>
+        <item_capture_script>./capture_item_link_title.py -n 5</item_capture_script>
         <post_process_script_list>
             <!--post_process_script>grep -v '[질답]'</post_process_script-->
         </post_process_script_list>
