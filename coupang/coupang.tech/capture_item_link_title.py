@@ -15,7 +15,7 @@ def main():
     title = ""
     url_prefix = "https://medium.com/coupang-tech/"
     state = 0
-    
+
     num_of_recent_feeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
@@ -27,6 +27,7 @@ def main():
     m = re.search(r'<script>//\s*<\!\[CDATA\[\s*window\["obvInit"\]\((?P<script>.*)\)\s*//\s*\]\]></script>', content)
     if m:
         json_content = m.group("script")
+        json_content = json_content.replace(r'\x3e', '\x3e') 
         json_data = json.loads(json_content)
         if json_data:
             if "references" in json_data:
