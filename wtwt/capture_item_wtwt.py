@@ -25,7 +25,7 @@ def main():
     result_list = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https://wtoon[^"]+\.com)">', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https://wtwt[^"]+\.com)">', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
