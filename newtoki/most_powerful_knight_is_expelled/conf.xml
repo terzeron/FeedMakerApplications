@@ -6,7 +6,7 @@
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <!-- 일본만화, 최신(5개), 다운만 -->
-            <list_url><![CDATA[https://newtoki58.net/comic/288065]]></list_url>
+            <list_url><![CDATA[https://newtoki59.net/comic/288065]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_newtoki.py -n 10</item_capture_script>
         <sleep_time>5</sleep_time>
