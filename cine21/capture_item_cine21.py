@@ -24,7 +24,7 @@ def main():
                 link = "http://www.cine21.com" + link
                 state = 1
         elif state == 1:
-            m2 = re.search(r'<span class="tit">(?P<title>[^<]+)</span>', line)
+            m2 = re.search(r'<span class="tit">(?P<title>[^\n\r]+)</span>', line)
             if m2:
                 title = m2.group("title")
                 if re.search(r'(대학교|영화학|모집)', title):
