@@ -2,13 +2,13 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://news.khan.co.kr/kh_cartoon/]]></list_url>
+            <list_url><![CDATA[http://news.khan.co.kr/kh_cartoon/khan_index.html?mode=list&code=361102]]></list_url>
         </list_url_list>
         <encoding>cp949</encoding>
     </collection>
     <extraction>
         <element_list>
-            <element_class>art_photo_wrap</element_class>
+            <element_class>mp_List</element_class>
         </element_list>
         <encoding>cp949</encoding>
     </extraction>
