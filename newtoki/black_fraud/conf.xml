@@ -8,16 +8,14 @@
             <!-- 일본만화, 전체(200개), 좌우분할 -->
             <list_url><![CDATA[https://newtoki59.net/comic/94838]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_newtoki.py -n 200</item_capture_script>
+        <item_capture_script>../capture_item_newtoki.py -n 27</item_capture_script>
         <sleep_time>5</sleep_time>
         <render_js>true</render_js>
     </collection>
     <extraction>
         <element_class>view-content</element_class>
         <post_process_script_list>
-            <!--post_process_script>../post_process_newtoki.py</post_process_script-->
-            <post_process_script>download_merge_split.py -b 1 -t 1 -s 800 -n 2 -c blackorwhite -l -v</post_process_script>
-            <!--post_process_script>download_image.py</post_process_script-->
+            <post_process_script>download_merge_split.py -b 0 -t 1 -s 700 -n 2 -c blackorwhite -l -v</post_process_script>
         </post_process_script_list>
         <sleep_time>5</sleep_time>
         <render_js>true</render_js>

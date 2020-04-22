@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
 
-import io
-import os
+#import io
+#import os
 import sys
 import re
 import getopt
-from feed_maker_util import IO
-import typing
+#import typing
 from typing import List
+from feed_maker_util import IO
 
 
 def main() -> int:
@@ -17,9 +17,9 @@ def main() -> int:
     url_prefix: str = ""
     num: int = 0
     state: int = 0
-    
+
     num_of_recent_feeds: int = 1000
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
