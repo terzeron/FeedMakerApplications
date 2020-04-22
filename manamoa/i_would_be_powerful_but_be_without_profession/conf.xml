@@ -14,7 +14,6 @@
         <element_class>view-content</element_class>
         <element_class>images_from_canvas</element_class>
         <post_process_script_list>
-            <!--post_process_script>../post_process_manamoa.py</post_process_script-->
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
