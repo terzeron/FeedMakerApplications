@@ -4,10 +4,11 @@
 import sys
 import re
 import getopt
+from typing import List, Tuple
 from feed_maker_util import IO
 
 
-def main():
+def main() -> int:
     link = ""
     title = ""
     url_prefix = ""
@@ -20,7 +21,7 @@ def main():
             num_of_recent_feeds = int(a)
 
     line_list = IO.read_stdin_as_line_list()
-    result_list = []
+    result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
             m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https://wfwf[^"]+\.com)">', line)
@@ -44,6 +45,8 @@ def main():
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
+
+    return 0
 
 
 if __name__ == "__main__":

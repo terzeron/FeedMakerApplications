@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
 
-#import io
-#import os
+import io
+import os
 import sys
 import re
 import getopt
-from typing import List, Tuple
 from feed_maker_util import IO
+import typing
+from typing import List
 
 
 def main() -> int:
@@ -24,39 +25,29 @@ def main() -> int:
             num_of_recent_feeds = int(a)
 
     line_list: List[str] = IO.read_stdin_as_line_list()
-    result_list: List[Tuple[str, str]] = []
+    result_list = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"/]+)[^"]+"', line)
+            m = re.search(r'g5_url\s+=\s+"(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="(?P<link>/[^"]+\.html)">', line)
+            m = re.search(r'<tr\s+[^>]+href=\'(?P<link>/[^\']+\.adulti)\'">', line)
             if m:
                 link = url_prefix + m.group("link")
                 link = re.sub(r'&amp;', '&', link)
                 state = 2
         elif state == 2:
-            m = re.search(r'<span class="s_check">', line)
-            if m:
-                state = 3
-        elif state == 3:
-            m = re.search(r'</span>', line)
-            if m:
-                state = 4
-        elif state == 4:
-            m = re.search(r'\s*(<span[^>]*>.*</span>)?\s*(?P<title>\S.+)\s*</div>', line)
+            m = re.search(r'<div class="episode_subtitle">(?P<title>[^<]+)</div>', line)
             if m:
                 title = m.group("title")
                 title = re.sub(r"\s+", " ", title)
                 result_list.append((link, title))
                 state = 1
 
-    num = len(result_list)
     for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%d. %s" % (link, num, title))
-        num = num - 1
+        print("%s\t%s" % (link, title))
 
     return 0
 

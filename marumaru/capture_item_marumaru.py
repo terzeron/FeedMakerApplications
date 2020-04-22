@@ -1,28 +1,29 @@
 #!/usr/bin/env python
 
 
-import io
-import os
+#import io
+#import os
 import sys
 import re
 import getopt
+from typing import List, Tuple
 from feed_maker_util import IO
 
 
-def main():
+def main() -> int:
     link = ""
     title = ""
     url_prefix = ""
     state = 0
-    
+
     num_of_recent_feeds = 1000
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
 
     line_list = IO.read_stdin_as_line_list()
-    result_list = []
+    result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
             m = re.search(r'g5_url\s*=\s*"(?P<url_prefix>https?://[^"]+)"', line)
@@ -46,6 +47,8 @@ def main():
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%d. %s" % (link, num, title))
         num = num - 1
+
+    return 0
 
 
 if __name__ == "__main__":
