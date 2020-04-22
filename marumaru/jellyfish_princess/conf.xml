@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
+        <unit_size_per_day>1</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[https://marumaru.report/bbs/cmoic/22083]]></list_url>
+        </list_url_list>
+        <element_id>content</element_id>
+        <item_capture_script>../capture_item_marumaru.py -n 200</item_capture_script>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>view-img</element_class>
+        </element_list>
+        <post_process_script_list>
+            <!--post_process_script>../post_process_marumaru.py</post_process_script-->
+            <!--post_process_script>post_process_only_for_images.py</post_process_script-->
+            <!--post_process_script>download_image.py</post_process_script-->
+            <post_process_script>download_merge_split.py -b 0 -t 1 -s 1000 -n 2 -c blackorwhite -l -v</post_process_script>
+        </post_process_script_list>
+        <render_js>true</render_js>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
+    </extraction>
+    <rss>
+        <title><![CDATA[해파리 공주::마루마루]]></title>
+        <description><![CDATA[해파리 공주::마루마루 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/jellyfish_princess.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/jellyfish_princess.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Marumaru. All rights reserved.]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
