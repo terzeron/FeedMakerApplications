@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[http://cartoon.media.daum.net/data/mobile/webtoon/list_episode_by_nickname?nickname=bugplayer]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_daumwebtoon.py -n 10</item_capture_script>
+        <item_capture_script>../capture_item_daumwebtoon.py -n 15</item_capture_script>
     </collection>
     <extraction>
         <element_list>
