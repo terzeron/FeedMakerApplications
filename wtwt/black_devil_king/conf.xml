@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[num=(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[https://wtwt13.com/c1?toon=10344]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_wtwt.py -n 200</item_capture_script>
+        <item_capture_script>../capture_item_wtwt.py -n 5</item_capture_script>
         <encoding>cp949</encoding>
     </collection>
     <extraction>

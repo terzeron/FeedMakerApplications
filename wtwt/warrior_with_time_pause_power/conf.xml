@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[https://wtwt13.com/c1?toon=13307]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_wtwt.py -n 200</item_capture_script>
+        <item_capture_script>../capture_item_wtwt.py -n 5</item_capture_script>
         <encoding>cp949</encoding>
     </collection>
     <extraction>
