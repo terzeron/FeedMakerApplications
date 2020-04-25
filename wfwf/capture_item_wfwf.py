@@ -29,7 +29,7 @@ def main() -> int:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a(?:[^>]*)href="(?P<link>/view[^"]*)&(amp;)?title=[^"]*"', line)
+            m = re.search(r'<a(?:[^>]*)href="(?P<link>/[^"]*)&(amp;)?title=[^"]*"', line)
             if m:
                 link = url_prefix + m.group("link")
                 link = re.sub(r'&amp;', '&', link)
