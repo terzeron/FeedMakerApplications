@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>false</is_completed>
+        <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <render_js>true</render_js>
         <list_url_list>
             <list_url><![CDATA[https://aboutdron.net/book/켄간+아슈라+제로]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_aboutdron.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_aboutdron.py -n 20 | tail -1</item_capture_script>
         <referer><![CDATA[https://aboutdron.net]]></referer>
     </collection>
     <extraction>
@@ -20,6 +20,7 @@
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
+        <user_agent><![CDATA[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36]]></user_agent>
     </extraction>
     <rss>
         <title><![CDATA[켄간 아슈라 제로::제이마나]]></title>
