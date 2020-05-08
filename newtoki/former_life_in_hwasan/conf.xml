@@ -9,17 +9,12 @@
             <list_url><![CDATA[https://newtoki60.net/webtoon/303]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_newtoki.py -n 10</item_capture_script>
-        <sleep_time>5</sleep_time>
-        <render_js>true</render_js>
     </collection>
     <extraction>
-        <element_class>view-content</element_class>
+        <element_class>view-padding</element_class>
         <post_process_script_list>
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
-        <sleep_time>5</sleep_time>
-        <render_js>true</render_js>
-        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[화산전생::뉴토끼]]></title>
