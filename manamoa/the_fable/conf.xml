@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[https://manamoa36.net/bbs/page.php?hid=manga_detail&manga_id=10207]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_manamoa.py -n 10</item_capture_script>
+        <item_capture_script>../capture_item_manamoa.py -n 5</item_capture_script>
         <render_js>true</render_js>
             </collection>
     <extraction>
@@ -16,11 +16,10 @@
         <post_process_script_list>
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
-        <render_js>true</render_js>
-            </extraction>
+    </extraction>
     <rss>
-        <title><![CDATA[페이블::마나모아]]></title>
-        <description><![CDATA[페이블​::마나모아 - 모바일 버전 RSS Feed]]></description>
+        <title><![CDATA[더 페이블::마나모아]]></title>
+        <description><![CDATA[더 페이블::마나모아 - 모바일 버전 RSS Feed]]></description>
         <feed_url><![CDATA[https://terzeron.com/the_fable.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/the_fable.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
