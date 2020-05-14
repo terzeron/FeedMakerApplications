@@ -5,7 +5,7 @@
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>2</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://manamoa36.net/bbs/page.php?hid=manga_detail&manga_id=2656]]></list_url>
+            <list_url><![CDATA[https://manamoa37.net/bbs/page.php?hid=manga_detail&manga_id=2656]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_manamoa.py -n 10</item_capture_script>
         <render_js>true</render_js>
