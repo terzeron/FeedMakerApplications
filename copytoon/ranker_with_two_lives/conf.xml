@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>2</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://copytoon88.com/두-번-사는-랭커]]></list_url>
+            <list_url><![CDATA[https://copytoon89.com/두-번-사는-랭커]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_copytoon.py -n 200</item_capture_script>
+        <item_capture_script>../capture_item_copytoon.py -n 10</item_capture_script>
         <render_js>false</render_js>
     </collection>
     <extraction>
@@ -16,7 +16,7 @@
         <post_process_script_list>
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
-        <render_js>false</render_js>
+        <render_js>true</render_js>
     </extraction>
     <rss>
         <title><![CDATA[두 번 사는 랭커::카피툰]]></title>
