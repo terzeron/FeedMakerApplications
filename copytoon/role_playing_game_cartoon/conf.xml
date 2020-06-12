@@ -5,7 +5,7 @@
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>2</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://copytoon0-.com/롤플레잉겜만화]]></list_url>
+            <list_url><![CDATA[https://copytoon90-.com/롤플레잉겜만화]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_copytoon.py -n 200</item_capture_script>
         <render_js>false</render_js>
