@@ -5,7 +5,7 @@
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>2</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://copytoon90-.com/두-번-사는-랭커]]></list_url>
+            <list_url><![CDATA[https://copytoon89.com/두-번-사는-랭커]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_copytoon.py -n 10</item_capture_script>
         <render_js>false</render_js>
