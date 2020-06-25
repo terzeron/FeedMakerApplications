@@ -7,7 +7,7 @@
         <list_url_list>
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=donghm&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_naverblog.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_naverblog.py -n 10</item_capture_script>
     </collection>
     <extraction>
         <element_list>

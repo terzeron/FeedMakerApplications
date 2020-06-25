@@ -18,7 +18,7 @@
     </extraction>
     <rss>
         <title><![CDATA[캐슬::네이버]]></title>
-        <description><![CDATA[캐슬​::네이버 - 모바일 버전 RSS Feed]]></description>
+        <description><![CDATA[캐슬::네이버 - 모바일 버전 RSS Feed]]></description>
         <feed_url><![CDATA[https://terzeron.com/castle.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/castle.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>

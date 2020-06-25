@@ -13,7 +13,7 @@ def main():
     url_prefix = "http://m.post.naver.com"
     link = ""
     title = ""
-    
+
     num_of_recent_feeds = 1000
     count = 0
     optlist, args = getopt.getopt(sys.argv[1:], "n:")
@@ -35,7 +35,7 @@ def main():
         html = re.sub(r'\\x3C', r'<', html)
         html = re.sub(r'\\>', r'>', html)
         #print(html)
-        
+
     state = 0
     result_list = []
     for line in html.split("\n"):
@@ -94,8 +94,7 @@ def main():
         title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
         title = re.sub(r'</h3>', '', title)
         print("%s\t%s" % (link, title))
-                
-                
+
+
 if __name__ == "__main__":
 	sys.exit(main())
-
