@@ -8,7 +8,7 @@
     </collection>
     <extraction>
         <element_list>
-            <element_class>mp_List</element_class>
+            <element_class>mpview</element_class>
         </element_list>
         <encoding>cp949</encoding>
     </extraction>
