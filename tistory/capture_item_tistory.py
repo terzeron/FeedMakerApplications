@@ -65,9 +65,9 @@ def main():
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<h2 class="title"><a href="(?P<link>[^"]+)">(?P<title>.*)</a>', line)
+            m = re.search(r'<h2 class="title"><a href="(?P<article_id>\d+)">(?P<title>.*)</a>', line)
             if m:
-                link = url_prefix + m.group("link")
+                link = url_prefix + m.group("article_id")
                 title = m.group("title")
                 result_list.append((link, title))
         
@@ -79,9 +79,9 @@ def main():
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="(?P<url>/[^"]+)">', line)
+            m = re.search(r'<a href="(?P<article_id>/\d+)">', line)
             if m:
-                link = url_prefix + m.group("url")
+                link = url_prefix + m.group("article_id")
                 state = 2
         elif state == 2:
             m = re.search(r'<span class="title">(?P<title>.*?)</span>', line)
