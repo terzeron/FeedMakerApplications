@@ -6,13 +6,13 @@
         <unit_size_per_day>1</unit_size_per_day>
         <render_js>true</render_js>
         <list_url_list>
-            <list_url><![CDATA[https://aboutdron.net/book/켄간+아슈라+제로]]></list_url>
+            <list_url><![CDATA[https://dronlab.net/book/켄간+아슈라+제로]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_aboutdron.py -n 20 | tail -1</item_capture_script>
-        <referer><![CDATA[https://aboutdron.net]]></referer>
+        <referer><![CDATA[https://dronlab.net]]></referer>
     </collection>
     <extraction>
-        <referer><![CDATA[https://aboutdron.net]]></referer>
+        <referer><![CDATA[https://dronlab.net]]></referer>
         <element_class>view</element_class>
         <element_class>images_from_canvas</element_class>
         <post_process_script_list>
@@ -30,7 +30,7 @@
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) JMana. All rights reserved.]]></copyright>
         <language>ko</language>
-        <url_prefix_for_guid>https://aboutdron.net</url_prefix_for_guid>
+        <url_prefix_for_guid>https://dronlab.net</url_prefix_for_guid>
     </rss>
 </configuration>
 
