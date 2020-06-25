@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+-\d+-\d+) ]]></sort_field_pattern>
-        <unit_size_per_day>0.2</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[https://spring.io/blog]]></list_url>
             <list_url><![CDATA[https://spring.io/blog?page=1]]></list_url>
@@ -36,66 +36,6 @@
             <list_url><![CDATA[https://spring.io/blog?page=28]]></list_url>
             <list_url><![CDATA[https://spring.io/blog?page=29]]></list_url>
             <list_url><![CDATA[https://spring.io/blog?page=30]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=41]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=42]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=43]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=44]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=45]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=46]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=47]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=48]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=49]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=50]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=51]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=52]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=53]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=54]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=55]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=56]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=57]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=58]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=59]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=60]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=61]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=62]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=63]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=64]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=65]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=66]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=67]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=68]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=69]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=70]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=71]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=72]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=73]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=74]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=75]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=76]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=77]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=78]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=79]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=80]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=81]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=82]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=83]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=84]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=85]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=86]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=87]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=88]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=89]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=90]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=91]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=92]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=93]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=94]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=95]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=96]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=97]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=98]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=99]]></list_url>
-            <list_url><![CDATA[https://spring.io/blog?page=100]]></list_url>
         </list_url_list>
     </collection>
     <extraction>

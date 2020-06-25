@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\t(\d+) ]]></sort_field_pattern>
+        <unit_size_per_day>0.3</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[https://typescript-kr.github.io/]]></list_url>
+        </list_url_list>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>normal</element_class>
+        </element_list>
+    </extraction>
+    <rss>
+        <title><![CDATA[Typescript]]></title>
+        <description><![CDATA[Typescript - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/typescript.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/typescript.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) typescript-kr.github.io. All Rights Reserved]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
