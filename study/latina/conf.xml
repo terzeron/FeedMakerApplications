@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\t(\d+) ]]></sort_field_pattern>
+        <unit_size_per_day>0.5</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[https://kabbala.github.io/grammatica_latina/index.html]]></list_url>
+        </list_url_list>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>normal</element_class>
+        </element_list>
+    </extraction>
+    <rss>
+        <title><![CDATA[고전 라틴어 핸드북]]></title>
+        <description><![CDATA[고전 라틴어 핸드북 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/latina.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/latina.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) kabbala.github.io. All Rights Reserved]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
