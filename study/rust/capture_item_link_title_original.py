@@ -3,6 +3,7 @@
 
 import sys
 import re
+import getopt
 from feed_maker_util import IO
 
 
@@ -11,6 +12,12 @@ def main():
     num_of_recent_feeds = 1000
     url_prefix = "https://hanbum.gitbooks.io/rustbyexample/content/"
     result_list = []
+
+    num_of_recent_feeds = 1000
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            num_of_recent_feeds = int(a)
 
     for line in IO.read_stdin_as_line_list():
         if state == 0:

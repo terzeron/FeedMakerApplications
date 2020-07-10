@@ -3,16 +3,24 @@
 
 import sys
 import re
+import getopt
+from typing import List, Tuple
 from feed_maker_util import IO
 
 
 def main():
     state = 0
-    num_of_recent_feeds = 1000
     url_prefix = "https://kotlinlang.org"
-    result_list = []
 
-    for line in IO.read_stdin_as_line_list():
+    num_of_recent_feeds = 1000
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    for o, a in optlist:
+        if o == '-n':
+            num_of_recent_feeds = int(a)
+
+    line_list = IO.read_stdin_as_line_list()
+    result_list: List[Tuple[str]] = []
+    for line in line_list:
         if state == 0:
             m = re.search(r'<a href="(?P<link>[^"]+)"\s*$', line)
             if m:
