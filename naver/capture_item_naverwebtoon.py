@@ -3,8 +3,8 @@
 
 import sys
 import re
-from feed_maker_util import IO
 import getopt
+from feed_maker_util import IO
 
 
 def main():
@@ -13,8 +13,7 @@ def main():
     url_prefix = "http://comic.naver.com/"
 
     num_of_recent_feeds = 1000
-    count = 0
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
@@ -57,7 +56,7 @@ def main():
 
     for (link, title) in result_list[-num_of_recent_feeds:]:
         print("%s\t%s" % (link, title))
-            
+
 
 if __name__ == "__main__":
     sys.exit(main())
