@@ -23,7 +23,7 @@ def main() -> int:
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<a href="(?P<link>[^"]+\/\d+)(\/|\?)[^"]*" class="item-subject">', line)
+            m = re.search(r'<a [^>]*href="(?P<link>[^"]+\/\d+)(\/|\?)[^"]*" class="item-subject">', line)
             if m:
                 link = m.group("link")
                 link = re.sub(r'&amp;', '&', link)
