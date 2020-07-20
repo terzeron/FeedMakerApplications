@@ -13,7 +13,9 @@
     <extraction>
         <element_class>view-padding</element_class>
         <post_process_script_list>
-            <post_process_script>download_merge_split.py -b 0 -t 1 -s 700 -n 2 -c blackorwhite -l -v</post_process_script>
+            <post_process_script>../remove_anchor_images.sh</post_process_script>
+            <post_process_script>download_image.py</post_process_script>
+            <!--post_process_script>download_merge_split.py -b 0 -t 1 -s 700 -n 2 -c blackorwhite -l -v</post_process_script-->
         </post_process_script_list>
     </extraction>
     <rss>

@@ -13,8 +13,10 @@
     <extraction>
         <element_class>view-padding</element_class>
         <post_process_script_list>
+            <post_process_script>../remove_anchor_images.sh</post_process_script>
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
+        <render_js>true</render_js>
     </extraction>
     <rss>
         <title><![CDATA[풍운::뉴토끼]]></title>

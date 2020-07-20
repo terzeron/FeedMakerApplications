@@ -11,10 +11,12 @@
         <item_capture_script>../capture_item_newtoki.py -n 10</item_capture_script>
     </collection>
     <extraction>
-        <element_class>view-padding</element_class>
+        <element_id>html_encoder_div</element_id>
         <post_process_script_list>
+            <post_process_script>../remove_anchor_images.sh</post_process_script>
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
+        <render_js>true</render_js>
     </extraction>
     <rss>
         <title><![CDATA[성무신결::뉴토끼]]></title>
