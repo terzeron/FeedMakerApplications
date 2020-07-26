@@ -23,7 +23,7 @@ def main():
     fm_cwd = os.getenv("FEED_MAKER_WORK_DIR")
 
     test_subjects = {
-        "computer/javabeat": [ "./capture_item_link_title.py" ],
+        "study/javabeat": [ "./capture_item_link_title.py" ],
         "naver/navercast": [ "../capture_item_navercast.py" ],
         "naver/naverblog.pjwwoo": [ "../capture_item_naverblog.py" ],
         "naver/dice": [ "../capture_item_naverwebtoon.py" ],
