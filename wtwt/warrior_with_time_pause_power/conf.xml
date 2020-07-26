@@ -4,6 +4,7 @@
         <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[num=(\d+)\t]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
+        <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <list_url><![CDATA[https://wtwt27.com/c1?toon=13307]]></list_url>
         </list_url_list>
