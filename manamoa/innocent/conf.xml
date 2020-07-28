@@ -6,7 +6,7 @@
         <unit_size_per_day>0.3</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://manamoa51.net/bbs/page.php?hid=manga_detail&manga_id=4372]]></list_url>
+            <list_url><![CDATA[https://manamoa52.net/bbs/page.php?hid=manga_detail&manga_id=4372]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_manamoa.py -n 200</item_capture_script>
         <render_js>true</render_js>
