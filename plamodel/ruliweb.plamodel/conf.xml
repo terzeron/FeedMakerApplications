@@ -4,6 +4,7 @@
         <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[read\/(\d+)]]></sort_field_pattern>
         <unit_size_per_day>30</unit_size_per_day>
+        <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <!-- 베스트글 -->
             <list_url><![CDATA[https://bbs.ruliweb.com/family/232/board/300082?view_best=1&page=1]]></list_url>
@@ -16,7 +17,7 @@
         </list_url_list>
         <item_capture_script>./capture_item_link_title.py -n 50</item_capture_script>
         <post_process_script_list>
-            <post_process_script>egrep -v -i "(sd|프레임.*걸|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\s?아미|고우라이|가오가이가|판타시스타|사이버\s?포뮬라|록맨)"</post_process_script>
+            <post_process_script>egrep -v -i "(sd|프레임.*걸|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\s?아미|고우라이|가오가이가|판타시스타|사이버\s?포뮬라|록맨|자우라|키카이오|메탈가루몬|캡틴\s?사우루스|핸드스케일걸)"</post_process_script>
         </post_process_script_list>
     </collection>
     <extraction>
