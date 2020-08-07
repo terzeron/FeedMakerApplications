@@ -31,17 +31,21 @@ def main() -> int:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
+            m = re.search(r'<div class="list-wrap">', line)
+            if m:
+                state = 2
+        elif state == 2:
             m = re.search(r'<a href="(?P<link>[^"]+/\d+/\d+)">', line)
             if m:
                 link = url_prefix + m.group("link")
-                state = 2
-        elif state == 2:
+                state = 3
+        elif state == 3:
             m = re.search(r'\s*(?P<title>\S+.*)\s*(?:<span class="count".*|</a>)', line)
             if m:
                 title = m.group("title")
                 title = re.sub(r"\s+", " ", title)
                 result_list.append((link, title))
-                state = 1
+                state = 2
 
     num = len(result_list)
     for (link, title) in result_list[:num_of_recent_feeds]:
