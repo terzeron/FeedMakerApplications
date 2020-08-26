@@ -9,7 +9,7 @@
             <!--list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=santa_croce&viewdate=&currentPage=2&categoryNo=0&parentCategoryNo=&countPerPage=30]]></list_url-->
             <!--list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=santa_croce&viewdate=&currentPage=3&categoryNo=0&parentCategoryNo=&countPerPage=30]]></list_url-->
         </list_url_list>
-        <item_capture_script>../capture_item_naverblog.py -n 50</item_capture_script>
+        <item_capture_script>../capture_item_naverblog.py -n 5</item_capture_script>
     </collection>
     <extraction>
         <element_list>

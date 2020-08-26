@@ -54,7 +54,7 @@ def main():
             title = "%04d. %s" % (int(m.group("title1")), m.group("title2"))
             result_list.append((link, title))
 
-    for (link, title) in result_list[-num_of_recent_feeds:]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
 
