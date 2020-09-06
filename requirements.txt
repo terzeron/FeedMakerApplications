@@ -17,8 +17,9 @@ lxml==4.4.1
 mccabe==0.6.1
 mypy==0.770
 mypy-extensions==0.4.3
+mysqlclient==1.4.6
 ordered-set==3.1.1
-Pillow==6.2.2
+Pillow==7.2.0
 ply==3.11
 psutil==5.6.6
 pycodestyle==2.5.0
