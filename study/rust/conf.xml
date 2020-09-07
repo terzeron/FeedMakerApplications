@@ -8,13 +8,12 @@
             <!--list_url><![CDATA[https://hanbum.gitbooks.io/rustbyexample/content/]]></list_url-->
             <list_url><![CDATA[https://terzeron.com/rustbyexample.list.txt]]></list_url>
         </list_url_list>
-        <verify_ssl>false</verify_ssl>
     </collection>
     <extraction>
         <element_list>
             <element_class>page-inner</element_class>
         </element_list>
-        <verify_ssl>false</verify_ssl>
+        <render_js>true</render_js>
     </extraction>
     <rss>
         <title><![CDATA[Rust]]></title>

@@ -17,9 +17,10 @@
         <element_list>
             <element_class>wrap_body</element_class>
         </element_list>
-        <!--post_process_script_list>
-            <post_process_script>../post_process_daumwebtoon.py</post_process_script>
-        </post_process_script_list-->
+        <post_process_script_list>
+            <!--post_process_script>../post_process_daumwebtoon.py</post_process_script-->
+            <!--post_process_script>post_process_only_for_images.py</post_process_script-->
+        </post_process_script_list>
         <!--force_sleep_between_articles>true</force_sleep_between_articles-->
     </extraction>
     <rss>
