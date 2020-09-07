@@ -14,7 +14,7 @@ def main():
     url_prefix = "http://blog.naver.com/PostView.nhn?blogId="
 
     num_of_recent_feeds = 30
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
@@ -24,10 +24,11 @@ def main():
         m = re.search(r'"blogId"\s*:\s*"(?P<blogId>[^"]+)"', line)
         if m:
             url_prefix = url_prefix + m.group("blogId") + "&logNo="
+
         matches = re.findall(r'"logNo":"(\d+)","title":"([^"]+)",', line)
         for match in matches:
             log_no = match[0]
-            link = url_prefix + log_no
+            link = log_no
             title = urllib.parse.unquote(match[1])
             title = re.sub(r"\+", " ", title)
             title = re.sub(r"&quot;", "'", title)
@@ -35,11 +36,9 @@ def main():
             title = re.sub(r"\n", " ", title)
             result_list.append((link, title))
 
-
     for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%s" % (link, title))
-        
-            
+        print("%s\t%s" % (url_prefix + link, title))
+
 
 if __name__ == "__main__":
     sys.exit(main())
