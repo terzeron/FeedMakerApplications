@@ -22,7 +22,7 @@
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=14&categoryNo=39&parentCategoryNo=39&countPerPage=30]]></list_url>
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=15&categoryNo=39&parentCategoryNo=39&countPerPage=30]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_naverblog.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_naverblog.py -n 200</item_capture_script>
     </collection>
     <extraction>
         <element_list>
