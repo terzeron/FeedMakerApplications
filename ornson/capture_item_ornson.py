@@ -11,7 +11,6 @@ from feed_maker_util import IO
 def main() -> int:
     link = ""
     title = ""
-    url_prefix = ""
     state = 0
 
     num_of_recent_feeds = 1000
@@ -38,8 +37,10 @@ def main() -> int:
                 result_list.append((link, title))
                 state = 0
 
+    num = len(result_list)
     for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%s" % (link, title))
+        print("%s\t%03d. %s" % (link, num, title))
+        num = num - 1
 
     return 0
 

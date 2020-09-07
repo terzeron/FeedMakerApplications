@@ -2,19 +2,15 @@
 
 
 import sys
-import re
 import json
 import getopt
-import feed_maker_util
 from feed_maker_util import IO
-from crawler import Method, Crawler
 
 
 def main():
     link = ""
     title = ""
     url_prefix = "https://brunch.co.kr/@"
-    state = 0
 
     num_of_recent_feeds = 1000
     optlist, _ = getopt.getopt(sys.argv[1:], "n:")

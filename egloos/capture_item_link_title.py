@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
 
-import io
-import os
 import sys
 import re
 import getopt
@@ -14,18 +12,18 @@ def get_url_from_config():
     collection = config.get_collection_configs()
     url = collection["list_url_list"][0]
     return url
-    
-    
+
+
 def main():
     url = get_url_from_config()
+    url = URL.get_url_scheme(url) + "://" + URL.get_url_domain(url)
 
     num_of_recent_feeds = 1000
-    count = 0
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
-    
+
     line_list = IO.read_stdin_as_line_list()
     result_list = []
     state = 0
@@ -35,7 +33,7 @@ def main():
             if m:
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="(?P<article_id>/\d+)"[^>]*title="(?P<title>[^"]+)"[^>]*>', line)
+            m = re.search(r'<a href="/(?P<article_id>\d+)"[^>]*title="(?P<title>[^"]+)"[^>]*>', line)
             if m:
                 link = url + m.group("article_id")
                 title = m.group("title")
@@ -46,25 +44,16 @@ def main():
             if m:
                 state = 0
 
-    state = 0
     for line in line_list:
-        if state == 0:
-            m = re.search(r'<h1><a href="(?P<url_prefix>[^"]+)"', line)
-            if m:
-                url_prefix = m.group("url_prefix")
-                state = 1
-        elif state == 1:
-            m = re.search(r'<a href="(?P<link>/\d+)"[^>]*title="(?P<title>[^"]+)"', line)
-            if m:
-                link = url_prefix + m.group("link")
-                title = m.group("title")
-                result_list.append((link, title))
-                state = 0
+        m = re.search(r'<a href="/(?P<link>\d+)"[^>]*title="(?P<title>[^"]+)"', line)
+        if m:
+            link = url + m.group("link")
+            title = m.group("title")
+            result_list.append((link, title))
 
     for (link, title) in result_list[-num_of_recent_feeds:]:
         print("%s\t%s" % (link, title))
-                
-            
+
+
 if __name__ == "__main__":
     sys.exit(main())
-        

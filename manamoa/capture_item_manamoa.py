@@ -52,7 +52,7 @@ def main() -> int:
 
     num = len(result_list)
     for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%d. %s" % (link, num, title))
+        print("%s\t%03d. %s" % (link, num, title))
         num = num - 1
 
     return 0

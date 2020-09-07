@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 
 
-import io
-import os
 import sys
 import re
 import getopt
-import collections
 from feed_maker_util import IO
 
 
@@ -14,39 +11,39 @@ def main():
     link = ""
     title = ""
     url_prefix = ""
-    
-    num_of_recent_feeds = 30
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+
+    num_of_recent_feeds = 2000
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
 
     result_list = []
-    list = IO.read_stdin_as_line_list()
+    html = IO.read_stdin_as_line_list()
 
     state = 0
-    for line in list:
+    for line in html:
         if state == 0:
-            m = re.search(r'href="(?P<url_prefix>https?://[^"/]+)"', line)
+            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="(?P<article_id>/\d+)" class="link_post">', line)
+            m = re.search(r'<a href="(?P<article_id>/\d+)(?:\?category=\d+)?" class="link_post">', line)
             if m:
                 link = url_prefix + m.group("article_id")
                 state = 2
         elif state == 2:
-            m = re.search(r'<strong class="tit_post">(?P<title>.+)</strong>', line)
+            m = re.search(r'<strong class="tit_post\s*">(?P<title>.+)</strong>', line)
             if m:
                 title = m.group("title")
                 result_list.append((link, title))
                 state = 1
 
     state = 0
-    for line in list:
+    for line in html:
         if state == 0:
-            m = re.search(r'href="(?P<url_prefix>https?://[^"/]+\.tistory\.com)"', line)
+            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -58,7 +55,7 @@ def main():
                 result_list.append((link, title))
 
     state = 0
-    for line in list:
+    for line in html:
         if state == 0:
             m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
             if m:
@@ -70,16 +67,16 @@ def main():
                 link = url_prefix + m.group("article_id")
                 title = m.group("title")
                 result_list.append((link, title))
-        
+
     state = 0
-    for line in list:
+    for line in html:
         if state == 0:
             m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="(?P<article_id>/\d+)">', line)
+            m = re.search(r'<a href="(?P<article_id>/\d+)(?:\?category=\d+)?">', line)
             if m:
                 link = url_prefix + m.group("article_id")
                 state = 2
@@ -90,10 +87,33 @@ def main():
                 result_list.append((link, title))
                 state = 1
 
+    state = 0
+    for line in html:
+        if state == 0:
+            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
+            if m:
+                url_prefix = m.group("url_prefix")
+                state = 1
+        elif state == 1:
+            m = re.search(r'<div id="body" class="list">', line)
+            if m:
+                state = 2
+        elif state == 2:
+            m = re.search(r'<div id="body" class="entry">', line)
+            if m:
+                # 본문 시작이면 종료
+                break
+
+            m = re.search(r'<a href="(?P<article_id>/entry/[^"?=]+)(?:\?category=\d+)?">(?P<title>.+)</a>', line)
+            if m:
+                link = url_prefix + m.group("article_id")
+                title = m.group("title")
+                result_list.append((link, title))
+                state = 2
+
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
-            
+
 if __name__ == "__main__":
     sys.exit(main())
-        

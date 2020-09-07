@@ -44,8 +44,10 @@ def main() -> int:
                 result_list.append((link, title))
                 state = 1
 
+    num = len(result_list)
     for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%s" % (link, title))
+        print("%s\t%03d. %s" % (link, num, title))
+        num = num - 1
 
     return 0
 
