@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[https://medium.com/coupang-tech/technote/home]]></list_url>
+            <list_url><![CDATA[https://medium.com/deliverytechkorea/tagged/post]]></list_url>
         </list_url_list>
         <item_capture_script><![CDATA[../capture_item_medium.py]]></item_capture_script>
     </collection>
@@ -13,12 +13,12 @@
         <render_js>true</render_js>
     </extraction>
     <rss>
-        <title><![CDATA[Tech notes::쿠팡]]></title>
-        <description><![CDATA[Tech notes::쿠팡 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/coupang.tech.xml]]></feed_url>
-        <link><![CDATA[https://terzeron.com/coupang.tech.xml]]></link>
+        <title><![CDATA[Delivery Tech::DHK]]></title>
+        <description><![CDATA[Delivery Tech::DHK - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/dhk.tech.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/dhk.tech.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
-        <copyright><![CDATA[Copyright (c) Coupang. All rights reserved.]]></copyright>
+        <copyright><![CDATA[Copyright (c) DHK. All rights reserved.]]></copyright>
         <language>ko</language>
     </rss>
 </configuration>
