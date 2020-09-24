@@ -18,6 +18,7 @@
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
+        <simulate_scrolling>true</simulate_scrolling>
     </extraction>
     <rss>
         <title><![CDATA[귀환자의 마법은 특별해야 합니다::마나토끼]]></title>
