@@ -32,7 +32,7 @@ def main() -> int:
             if re.search(r'<div class="latest-news-wrapper">', line):
                 break
         elif state == 1:
-            m = re.search(r'<a [^>]*href="(?P<link>https?://[^"]+)">(?P<title>.+)</a>', line)
+            m = re.search(r'<a [^>]*href="(?P<link>https?://[^"]+)"[^>]*>(?P<title>.+)</a>', line)
             if m:
                 link = m.group("link")
                 title = m.group("title")
