@@ -15,6 +15,7 @@
         <element_class>image-view</element_class>
         <post_process_script_list>
             <post_process_script>download_image.py</post_process_script>
+            <post_process_script>../remove_anchor_images.sh</post_process_script>
         </post_process_script_list>
         <encoding>cp949</encoding>
     </extraction>
