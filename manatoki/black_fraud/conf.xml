@@ -7,7 +7,7 @@
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <!-- 일본만화, 전체(200개), 좌우분할 -->
-            <list_url><![CDATA[https://manatoki77.net/comic/94838]]></list_url>
+            <list_url><![CDATA[https://manatoki78.net/comic/94838]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_manatoki.py -n 5</item_capture_script>
     </collection>
