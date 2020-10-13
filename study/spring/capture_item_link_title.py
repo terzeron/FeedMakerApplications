@@ -33,7 +33,7 @@ def main():
                 title = re.sub(r'&amp;', '&', title)
                 state = 2
         elif state == 2:
-            m = re.search(r'<time class="date"[^>]*datetime="(?P<date>20\d+-\d+-\d+) ', line)
+            m = re.search(r'<time class=("|\')date("|\')[^>]*datetime="(?P<date>20\d+-\d+-\d+) ', line)
             if m:
                 date = m.group("date")
                 title = date + " " + title
