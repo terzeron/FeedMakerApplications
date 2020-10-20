@@ -42,7 +42,7 @@ def main():
             #print(prefix, count)
             i += 1
 
-        exclude_pattern_str += ")"
+    exclude_pattern_str += ")"
     print(exclude_pattern_str)
 
     # 출력
