@@ -43,7 +43,7 @@ def main():
             i += 1
 
     exclude_pattern_str += ")"
-    print(exclude_pattern_str)
+    #print(exclude_pattern_str)
 
     # 출력
     hardcoded_exclude_pattern_str = r'(?:cang[0-9].jpg|blank.gif)'
