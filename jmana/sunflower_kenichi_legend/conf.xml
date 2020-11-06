@@ -7,7 +7,7 @@
         <render_js>true</render_js>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://jmana.net/book?bookname=해바라기+-켄이치+전설-]]></list_url>
+            <list_url><![CDATA[https://jmana1/book?bookname=해바라기+-켄이치+전설-]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_jmana.py -n 200</item_capture_script>
         <referer><![CDATA[https://jmana.net]]></referer>
