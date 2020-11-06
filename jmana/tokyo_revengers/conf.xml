@@ -7,7 +7,7 @@
         <render_js>true</render_js>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://jmana1/book?bookname=도쿄+리벤저스]]></list_url>
+            <list_url><![CDATA[https://jmana1.net/book?bookname=도쿄+리벤저스]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_jmana.py -n 50</item_capture_script>
         <referer><![CDATA[https://jmana.net]]></referer>
