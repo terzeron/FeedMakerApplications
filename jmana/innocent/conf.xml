@@ -4,7 +4,6 @@
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
-        <render_js>true</render_js>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <list_url><![CDATA[https://jmana1.net/book?bookname=이노센트]]></list_url>
@@ -21,7 +20,6 @@
             <post_process_script>download_image.py</post_process_script>
             <post_process_script>../remove_anchor_images.sh</post_process_script>
         </post_process_script_list>
-        <render_js>true</render_js>
     </extraction>
     <rss>
         <title><![CDATA[이노센트::제이마나]]></title>
