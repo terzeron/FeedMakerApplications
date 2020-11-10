@@ -17,7 +17,9 @@
     </collection>
     <extraction>
         <bypass_element_extraction>true</bypass_element_extraction>
-        <post_process_script>./post_process_daumwebtoon.py</post_process_script>
+        <post_process_script_list>
+            <post_process_script>./post_process_daumwebtoon.py</post_process_script>
+        </post_process_script_list>
         <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
