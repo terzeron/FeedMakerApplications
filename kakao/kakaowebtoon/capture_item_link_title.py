@@ -9,22 +9,18 @@ from feed_maker_util import IO
 def main():
     link = ""
     title = ""
-    num = ""
-    state = 0
-    url_prefix = "http://page.kakao.com/home/"
+    url_prefix = "http://page.kakao.com/home?seriesId="
 
     json_content = IO.read_stdin()
     data = json.loads(json_content)
-    if "section_containers" in data:
-        for container in data["section_containers"]:
-            if "section_series" in container:
-                for section in container["section_series"]:
-                    if "list" in section:
-                        for item in section["list"]:
-                            if item["age_grade"] == 0:
-                                link = url_prefix + str(item["series_id"])
-                                title = item["title"]
-                                print("%s\t%s" % (link, title))
+    if "list" in data:
+        for item in data["list"]:
+            if item["age_grade"] == 0:
+                link = url_prefix + str(item["series_id"])
+                title = item["title"] 
+                if item["waitfree"] == "Y":
+                    continue
+                print("%s\t%s" % (link, title))
 
 
 if __name__ == "__main__":
