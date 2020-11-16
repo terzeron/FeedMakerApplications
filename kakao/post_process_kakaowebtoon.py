@@ -2,32 +2,30 @@
 
 import os
 import sys
-import re
 import json
-import pprint
-import getopt
-import requests
+#import pprint
 import urllib.parse
 import logging
 import logging.config
-from feed_maker_util import IO, Config
+import requests
+from feed_maker_util import Config
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
 logger = logging.getLogger()
 
 
-def get_page_content(url, encoding, data, header):
+def get_page_content(url, data, header):
     #print(data, header)
-    response = requests.post(url, data = data, headers = header)
+    response = requests.post(url, data=data, headers=header)
     return response.text
 
 
 def main():
     for line in sys.stdin:
         pass
-    
-    img_url_prefix = "https://page-edge.kakao.com/sdownload/resource?kid="
+
+    img_url_prefix = "https://page-edge-jz.kakao.com/sdownload/resource/"
 
     page_url = sys.argv[1]
     parsed_url = urllib.parse.urlparse(page_url)
@@ -36,13 +34,13 @@ def main():
 
     config = Config()
     extraction_conf = config.get_extraction_configs()
-    encoding = extraction_conf["encoding"]
+    #encoding = extraction_conf["encoding"]
     user_agent_str = extraction_conf["user_agent"]
-    
+
     api_url = "https://api2-page.kakao.com/api/v1/inven/get_download_data/web"
     header = {"User-Agent": user_agent_str}
     data = {"productId": product_id, "deviceId": "07fb8773b324c189df8d99dc6c296838"}
-    page_content = get_page_content(api_url, encoding, data, header)
+    page_content = get_page_content(api_url, data, header)
     data = json.loads(page_content)
     #pprint.pprint(data)
 
