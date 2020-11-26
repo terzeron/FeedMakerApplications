@@ -6,7 +6,7 @@
         <unit_size_per_day>0.4</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://marumaru.cash/bbs/cmoic/22123]]></list_url>
+            <list_url><![CDATA[https://marumaru.loan/bbs/cmoic/22123]]></list_url>
         </list_url_list>
         <element_id>content</element_id>
         <item_capture_script>../capture_item_marumaru.py -n 200</item_capture_script>
