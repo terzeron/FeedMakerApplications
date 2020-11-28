@@ -6,7 +6,7 @@
         <unit_size_per_day>1</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://jmana1.net/book?bookname=기동전사+건담+UC+반데시네]]></list_url>
+            <list_url><![CDATA[https://jmana06.aboutdron.net/book?bookname=기동전사+건담+UC+반데시네]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_jmana.py -n 5</item_capture_script>
         <referer><![CDATA[https://jmana.net]]></referer>
