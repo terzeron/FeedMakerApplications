@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
+        <unit_size_per_day>1</unit_size_per_day>
+        <ignore_old_list>true</ignore_old_list>
+        <list_url_list>
+            <list_url><![CDATA[https://funbe.site/백은아란전]]></list_url>
+        </list_url_list>
+        <item_capture_script>../capture_item_funbe.py -n 200</item_capture_script>
+        <referer><![CDATA[https://funbe.site]]></referer>
+    </collection>
+    <extraction>
+        <referer><![CDATA[https://funbe.site]]></referer>
+        <element_id>toon_img</element_id>
+        <post_process_script_list>
+            <post_process_script>download_image.py</post_process_script>
+        </post_process_script_list>
+        <render_js>true</render_js>
+    </extraction>
+    <rss>
+        <title><![CDATA[백은아란전::Funbe]]></title>
+        <description><![CDATA[백은아란전::Funbe - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/story_of_baekeun_aran.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/story_of_baekeun_aran.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Funbe. All rights reserved.]]></copyright>
+        <language>ko</language>
+        <url_prefix_for_guid>https://funbe.site</url_prefix_for_guid>
+    </rss>
+</configuration>
+
