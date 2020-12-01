@@ -9,8 +9,8 @@
             <!-- 한국웹툰, 최신, 다운만 -->
             <list_url><![CDATA[https://manatoki88.net/webtoon/46711]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_manatoki.py -n 5</item_capture_script>
         <render_js>true</render_js>
+        <item_capture_script>../capture_item_manatoki.py -n 5</item_capture_script>
     </collection>
     <extraction>
         <element_class>view-padding</element_class>
