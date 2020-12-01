@@ -17,7 +17,8 @@ def main():
             m = re.search(r'comic/(?P<prefix>\w+)\/', img_url)
             if m:
                 img_url_prefix_list.append(m.group("prefix"))
-
+    #print("img_url_prefix_list=", img_url_prefix_list)
+      
     # 예외적인 url prefix 식별
     prefix_count_map: Dict[str, int] = {}
     for prefix in img_url_prefix_list:
@@ -26,6 +27,7 @@ def main():
         else:
             prefix_count_map[prefix] = 1
     prefix_count_map = sorted(prefix_count_map.items(), key=lambda x: x[1], reverse=True)
+    #print("prefix_count_map=", prefix_count_map)
 
     # 제외 패턴 조합
     exclude_pattern_prefix = r'comic/(?:'
@@ -41,19 +43,17 @@ def main():
 
             #print(prefix, count)
             i += 1
-
-    exclude_pattern_str += ")"
-    #print(exclude_pattern_str)
+        exclude_pattern_str += ")"
+    else:
+        exclude_pattern_str = None
+    #print("exclude_pattern_str=", exclude_pattern_str)
 
     # 출력
     hardcoded_exclude_pattern_str = r'(?:cang[0-9].jpg|blank.gif)'
     for line in line_list:
-        # 제외 패턴
-        m = re.search(exclude_pattern_str, line)
-        if m:
+        if exclude_pattern_str and re.search(exclude_pattern_str, line):
             continue
-        m = re.search(hardcoded_exclude_pattern_str, line)
-        if m:
+        if re.search(hardcoded_exclude_pattern_str, line):
             continue
         print(line, end='')
 
