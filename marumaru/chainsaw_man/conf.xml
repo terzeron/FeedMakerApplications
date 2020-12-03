@@ -6,14 +6,15 @@
         <unit_size_per_day>1</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://marumaru.loan/bbs/cmoic/19992]]></list_url>
+            <list_url><![CDATA[https://marumaru.farm/bbs/cmoic/19992]]></list_url>
         </list_url_list>
         <element_id>content</element_id>
         <item_capture_script>../capture_item_marumaru.py -n 5</item_capture_script>
     </collection>
     <extraction>
+        <copy_images_from_canvas>true</copy_images_from_canvas>
         <element_list>
-            <element_class>view-img</element_class>
+            <element_class>images_from_canvas</element_class>
         </element_list>
         <post_process_script_list>
             <post_process_script>download_image.py</post_process_script>
