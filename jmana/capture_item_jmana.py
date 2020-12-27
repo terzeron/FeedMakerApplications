@@ -7,10 +7,11 @@ import sys
 import re
 import getopt
 from typing import List, Tuple
-from feed_maker_util import IO
+from feed_maker_util import IO, URL
 
 
 def main() -> int:
+    url_prefix: str = ""
     link: str = ""
     title: str = ""
     num: int = 0
@@ -26,21 +27,20 @@ def main() -> int:
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<h2 class="entry-title">', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^/]+)[^"]*">', line)
             if m:
+                url_prefix = m.group("url_prefix")
                 state = 1
-            if re.search(r'<div class="latest-news-wrapper">', line):
-                break
         elif state == 1:
-            m = re.search(r'<a [^>]*href="(?P<link>https?://[^"]+)"[^>]*>(?P<title>.+)</a>', line)
+            m = re.search(r'<a\s+class="tit\b[^"]*"\s+href="(?P<link>[^"]+)"\s+id="[^"]+">(?P<title>.+)</a>', line)
             if m:
-                link = m.group("link")
+                #link = URL.concatenate_url(url_prefix, m.group("link"))
+                link = url_prefix + m.group("link")
                 title = m.group("title")
                 link = re.sub(r'&amp;', '&', link)
                 link = re.sub(r' ', '+', link)
                 title = re.sub(r"\s+", " ", title)
                 result_list.append((link, title))
-                state = 0
 
     num = len(result_list)
     for (link, title) in result_list[:num_of_recent_feeds]:
