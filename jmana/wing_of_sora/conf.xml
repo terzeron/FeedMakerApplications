@@ -8,7 +8,7 @@
         <list_url_list>
             <list_url><![CDATA[https://jmana10.aboutdron.net/comic_list_title?bookname=소라의+날개]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_jmana.py -n 10</item_capture_script>
+        <item_capture_script>../capture_item_jmana.py -n 5</item_capture_script>
         <render_js>true</render_js>
         <referer><![CDATA[https://jmana.net]]></referer>
     </collection>
