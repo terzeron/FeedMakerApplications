@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\t(\d+) ]]></sort_field_pattern>
+        <unit_size_per_day>0.1</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[https://docs.nestjs.com/first-steps]]></list_url>
+        </list_url_list>
+        <render_js>true</render_js>
+        <item_capture_script><![CDATA[./capture_item_nestjs.py -n 69]]></item_capture_script>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>content</element_class>
+        </element_list>
+        <render_js>true</render_js>
+    </extraction>
+    <rss>
+        <title><![CDATA[NestJS]]></title>
+        <description><![CDATA[NestJS - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/nestjs.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/nestjs.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) nestjs.com. All Rights Reserved]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
