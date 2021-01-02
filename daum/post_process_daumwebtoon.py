@@ -4,17 +4,11 @@
 import sys
 import re
 import json
-import feed_maker_util
 from feed_maker_util import IO
-from crawler import Method, Crawler
+from crawler import Crawler
 
 
 def main():
-    img_prefix = ""
-    img_index = -1
-    img_ext = "jpg"
-    num_units = 25
-
     for line in IO.read_stdin_as_line_list():
         line = line.rstrip()
         m = re.search(r"^<img src", line)
@@ -25,16 +19,12 @@ def main():
     m = re.search(r"http://cartoon\.media\.daum\.net/(?P<mobile>m/)?webtoon/viewer/(?P<episode_id>\d+)$", post_link)
     if m:
         episode_id = m.group("episode_id")
-        cmd = ""
         url = "http://webtoon.daum.net/data/pc/webtoon/viewer_images/" + episode_id
         crawler = Crawler()
-        result = crawler.run(url)
+        result, _ = crawler.run(url)
         if not result:
             print("can't download the page html from '%s'" % (url))
             sys.exit(-1)
-        img_file_arr = []
-        img_url_arr = []
-        img_size_arr = []
         try:
             content = json.loads(result)
         except json.decoder.JSONDecodeError:
