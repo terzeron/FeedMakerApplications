@@ -6,7 +6,7 @@
         <unit_size_per_day>1</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://wtwt53.com/c1?toon=12276]]></list_url>
+            <list_url><![CDATA[https://wtwt54.com/c1?toon=12276]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_wtwt.py -n 5</item_capture_script>
         <encoding>cp949</encoding>
