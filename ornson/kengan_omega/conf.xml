@@ -3,7 +3,7 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[/(\d+)\t]]></sort_field_pattern>
-        <unit_size_per_day>0.5</unit_size_per_day>
+        <unit_size_per_day>4</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <list_url><![CDATA[http://5rs-a31.com/board/켄간-오메가?&page=3]]></list_url>
