@@ -7,7 +7,7 @@
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <!-- 한국웹툰, 최신(5개), 다운만 -->
-            <list_url><![CDATA[https://manatoki92.net/webtoon/313]]></list_url>
+            <list_url><![CDATA[https://manatoki93.net/webtoon/313]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_manatoki.py -n 5</item_capture_script>
     </collection>
