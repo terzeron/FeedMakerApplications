@@ -7,7 +7,7 @@ import sys
 import re
 import getopt
 from typing import List, Tuple
-from feed_maker_util import IO, URL
+from feed_maker_util import IO
 
 
 def main() -> int:
@@ -32,9 +32,8 @@ def main() -> int:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a\s+class="tit\b[^"]*"\s+href="(?P<link>[^"]+)"\s+id="[^"]+">(?P<title>.+)</a>', line)
+            m = re.search(r'<a\s+class="tit\b[^"]*"[^>]+href="(?P<link>[^"]+)"[^>]+id="[^"]+">(?P<title>.+)</a>', line)
             if m:
-                #link = URL.concatenate_url(url_prefix, m.group("link"))
                 link = url_prefix + m.group("link")
                 title = m.group("title")
                 link = re.sub(r'&amp;', '&', link)
