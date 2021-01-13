@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId= 762071]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=762071]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_naverwebtoon.py</item_capture_script>
     </collection>
