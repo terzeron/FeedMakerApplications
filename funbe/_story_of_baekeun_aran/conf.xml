@@ -6,7 +6,7 @@
         <unit_size_per_day>24</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://terzeron.guru/story_of_baekeun_aran.html]]></list_url>
+            <list_url><![CDATA[https://terzeron.art/story_of_baekeun_aran.html]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_funbe.py -n 200</item_capture_script>
         <referer><![CDATA[https://funbe.site]]></referer>
