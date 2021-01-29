@@ -9,7 +9,7 @@
             <list_url><![CDATA[https://marumaru.watch/bbs/cmoic/20595]]></list_url>
         </list_url_list>
         <element_id>content</element_id>
-        <item_capture_script>../capture_item_marumaru.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_marumaru.py -n 10</item_capture_script>
     </collection>
     <extraction>
         <copy_images_from_canvas>true</copy_images_from_canvas>
