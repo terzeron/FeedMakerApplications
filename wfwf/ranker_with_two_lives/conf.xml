@@ -7,7 +7,7 @@
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <!-- 최신, 다운만 -->
-            <list_url><![CDATA[https://wfwf131.com/list?toon=3871]]></list_url>
+            <list_url><![CDATA[https://wfwf132.com/list?toon=3871]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_wfwf.py -n 5</item_capture_script>
         <encoding>cp949</encoding>
