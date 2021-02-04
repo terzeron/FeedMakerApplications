@@ -6,7 +6,7 @@
         <unit_size_per_day>1</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://marumaru.watch/bbs/cmoic/20896]]></list_url>
+            <list_url><![CDATA[https://marumaru.mom/bbs/cmoic/20896]]></list_url>
         </list_url_list>
         <element_id>content</element_id>
         <item_capture_script>../capture_item_marumaru.py -n 10</item_capture_script>
