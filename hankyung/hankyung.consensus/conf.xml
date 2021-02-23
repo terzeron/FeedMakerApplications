@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>false</is_completed>
+        <unit_size_per_day>240</unit_size_per_day>
+        <sort_field_pattern><![CDATA[report_idx=(\d+)]]></sort_field_pattern>
+        <list_url_list>
+            <list_url><![CDATA[http://consensus.hankyung.com/apps.analysis/analysis.list?pagenum=80]]></list_url>
+            <list_url><![CDATA[http://consensus.hankyung.com/apps.analysis/analysis.list?pagenum=80&now_page=2]]></list_url>
+            <list_url><![CDATA[http://consensus.hankyung.com/apps.analysis/analysis.list?pagenum=80&now_page=3]]></list_url>
+        </list_url_list>
+        <encoding>cp949</encoding>
+    </collection>
+    <extraction>
+        <bypass_element_extraction>true</bypass_element_extraction>
+        <post_process_script_list>
+            <post_process_script>convert_pdf_to_image.py</post_process_script>
+        </post_process_script_list>
+    </extraction>
+    <rss>
+        <title><![CDATA[컨센서스::한경]]></title>
+        <description><![CDATA[컨센서스::한경 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/hankyung.consensus.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/hankyung.consensus.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Hankyung.com. All rights reserved.]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
