@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>false</is_completed>
+        <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
-        <unit_size_per_day>4</unit_size_per_day>
+        <unit_size_per_day>0.5</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <list_url><![CDATA[https://jmana2.iipython.net/comic_list_title?bookname=군청전기]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_jmana.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_jmana.py -n 100</item_capture_script>
         <render_js>true</render_js>
         <referer><![CDATA[https://jmana.net]]></referer>
     </collection>
@@ -22,7 +22,7 @@
         </post_process_script_list>
     </extraction>
     <rss>
-        <title><![CDATA[군텅전기::제이마나]]></title>
+        <title><![CDATA[군청전기::제이마나]]></title>
         <description><![CDATA[군청전기::제이마나 - 모바일 버전 RSS Feed]]></description>
         <feed_url><![CDATA[https://terzeron.com/story_of_ultramarine_war.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/story_of_ultramarine_war.xml]]></link>
