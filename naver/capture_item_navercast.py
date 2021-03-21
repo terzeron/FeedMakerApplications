@@ -14,7 +14,7 @@ def main():
     state = 0
 
     num_of_recent_feeds = 30
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
@@ -26,7 +26,7 @@ def main():
             if m:
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="/(?P<url>entry\.nhn\?[^"]+)"[^>]*>(?P<title>[^<]+)</a>', line)
+            m = re.search(r'<a href="/(?P<url>entry\.naver\?[^"]+)"[^>]*>(?P<title>[^<]+)</a>', line)
             if m:
                 url = m.group("url")
                 url = re.sub(r'&amp;', '&', url)
