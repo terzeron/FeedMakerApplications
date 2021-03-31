@@ -9,6 +9,7 @@
             <!-- 일본만화, 최신, 다운만 -->
             <list_url><![CDATA[https://manatoki95.net/comic/150792]]></list_url>
         </list_url_list>
+        <render_js>true</render_js>
         <item_capture_script>../capture_item_manatoki.py -n 5</item_capture_script>
     </collection>
     <extraction>
