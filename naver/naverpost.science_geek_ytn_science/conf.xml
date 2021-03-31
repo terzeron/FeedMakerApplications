@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[volumeNo=(\d+)]]></sort_field_pattern>
         <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=1]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=2]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=3]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=4]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=5]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=6]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=7]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=8]]></list_url>
-            <list_url><![CDATA[http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=9]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_naverpost.py -n 165</item_capture_script>
+        <item_capture_script>../capture_item_naverpost.py -n 5</item_capture_script>
     </collection>
     <extraction>
         <element_list>
