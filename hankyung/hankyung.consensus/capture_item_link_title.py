@@ -26,7 +26,7 @@ def main():
             if m:
                 state = 1
         elif state == 1:
-            m = re.search(r'<strong>(?P<title>.+)</strong>', line)
+            m = re.search(r'<strong>\s*(?P<title>.+)\s*</strong>', line)
             if m:
                 title = m.group("title")
                 state = 2
@@ -45,6 +45,7 @@ def main():
                     result_list.append((link, title))
                 state = 0
 
+    result_list = sorted(result_list, key = lambda x: x[1])
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
