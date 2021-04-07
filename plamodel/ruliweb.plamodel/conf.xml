@@ -17,7 +17,7 @@
         </list_url_list>
         <item_capture_script>./capture_item_link_title.py -n 50</item_capture_script>
         <post_process_script_list>
-            <post_process_script>egrep -v -i "(sd|프레임.*걸|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\s?아미|고우라이|가오가이가|판타시스타|사이버\s?포뮬라|록맨|자우라|키카이오|메탈가루몬|캡틴\s?사우루스|핸드스케일걸)"</post_process_script>
+            <post_process_script>egrep -v -i "(sd|프레임.*걸|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\s?아미|고우라이|가오가이가|판타시스타|사이버\s?포뮬라|록맨|자우라|키카이오|메탈가루몬|캡틴\s?사우루스|핸드스케일걸|드라몬|그레이몬)"</post_process_script>
         </post_process_script_list>
     </collection>
     <extraction>
