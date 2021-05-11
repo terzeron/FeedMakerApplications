@@ -3,13 +3,13 @@
     <collection>
         <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
-        <unit_size_per_day>1</unit_size_per_day>
+        <unit_size_per_day>2</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <!-- 일본만화, 전체(300개), 다운만 -->
             <list_url><![CDATA[https://manatoki95.net/comic/205383]]></list_url>
         </list_url_list>
-        <render_js>true</render_js>
+        <render_js>false</render_js>
         <item_capture_script>../capture_item_manatoki.py -n 143</item_capture_script>
     </collection>
     <extraction>
