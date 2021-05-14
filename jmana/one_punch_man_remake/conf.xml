@@ -10,10 +10,8 @@
         </list_url_list>
         <item_capture_script>../capture_item_jmana.py -n 10</item_capture_script>
         <render_js>true</render_js>
-        <referer><![CDATA[https://jmana.net]]></referer>
     </collection>
     <extraction>
-        <referer><![CDATA[https://jmana.net]]></referer>
         <element_class>view-con</element_class>
         <post_process_script_list>
             <post_process_script>post_process_only_for_images.py -u</post_process_script>
