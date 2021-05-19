@@ -41,7 +41,7 @@ def main():
             m = re.search(r'<a href="(?P<link>[^"]+)"[^>]*><img src="/images/btn_attached.gif"', line)
             if m:
                 link = url_prefix + m.group("link")
-                if not re.search(r'(\(\d\d\d\d\d\d\)|시장\s*지표|Daily|Today|오늘|Overnight|Start with IBKS|Global Market Insight|Morning|Oneday|Eugene|Volatility)', title, re.IGNORECASE):
+                if not re.search(r'(\(\d\d\d\d\d\d\)|시장\s*지표|Daily|Today|오늘|Overnight|Start with IBKS|Global Market Insight|Morning|Oneday|Eugene|Volatility)', title, re.IGNORECASE) and re.search(r'(주간|weekly|월간|monthly)', title, re.IGNORECASE):
                     result_list.append((link, title))
                 state = 0
 
