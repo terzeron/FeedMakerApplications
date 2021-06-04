@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>false</is_completed>
+        <unit_size_per_day>1</unit_size_per_day>
+        <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
+        <list_url_list>
+            <list_url><![CDATA[https://page.stibee.com/archives/105380/emails]]></list_url>
+        </list_url_list>
+        <render_js>false</render_js>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>public-email</element_class>
+        </element_list>
+    </extraction>
+    <rss>
+        <title><![CDATA[델타 월딩]]></title>
+        <description><![CDATA[델타 월딩]]></description>
+        <feed_url><![CDATA[https://terzeron.com/delta_worlding.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/delta_worlding.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) 델타 월딩. All Rights Reserved]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
+
