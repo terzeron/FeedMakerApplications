@@ -1,0 +1,3196 @@
+<head>
+	<title>제이마나</title>
+	<meta charset="utf-8" content="text/html" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script src="https://www.googletagservices.com/activeview/js/current/osd.js"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=jmana1.jjmana.net&amp;callback=_gfp_s_&amp;client=ca-pub-2616219098752595"></script><script src="https://pagead2.googlesyndication.com/pagead/js/r20210601/r20190131/show_ads_impl.js" id="google_shimpl"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-113616704-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-113616704-3');
+	</script>
+    
+            <!-- js -->
+		    <script src="/resouce/js/jquery-3.4.1.js?version=13"></script>
+		    <script src="/resouce/dist/js/bootstrap.js?version=13"></script>
+		    <script src="/resouce/dist/js/slick.js?version=13"></script>
+		    <script src="/resouce/js/script.js?version=13"></script>
+		    <script src="/resouce/js/jquery.cookie.js?version=13"></script>
+		    <script src="/resouce/js/jquery.validate.min.js?version=13"></script>
+		    <script src="/resouce/js/localization/messages_ko.min.js?version=13"></script>
+		    <script src="/resouce/js/waitMe.js?version=13"></script>
+			<!-- css -->
+		    <link rel="stylesheet" type="text/css" href="/resouce/dist/css/bootstrap.css?version=13">
+		    <link rel="stylesheet" type="text/css" href="/resouce/css/reset.css?version=13">
+		    <link rel="stylesheet" type="text/css" href="/resouce/css/layout.css?version=130">
+		    <link rel="stylesheet" type="text/css" href="/resouce/css/common.css?version=133">
+		    <link rel="stylesheet" type="text/css" href="/resouce/css/style.css?version=15">
+		    <link rel="stylesheet" type="text/css" href="/resouce/css/mycss.css?version=13">
+		    <link rel="stylesheet" href="/resouce/css/waitMe.css?version=13">
+       
+    
+        
+        <script async="" data-ad-client="ca-pub-2616219098752595" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
+		
+		
+        		
+    
+    <link rel="stylesheet" type="text/css" href="/resouce/dist/css/slick.css?version=12">
+	<link rel="stylesheet" type="text/css" href="/resouce/dist/css/slick-theme.css?version=12">
+<meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="preload" href="https://adservice.google.co.kr/adsid/integrator.js?domain=jmana1.jjmana.net" as="script"><script type="text/javascript" src="https://adservice.google.co.kr/adsid/integrator.js?domain=jmana1.jjmana.net"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=jmana1.jjmana.net" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=jmana1.jjmana.net"></script><meta property="og:url" content="https://jmana1.jjmana.net/comic_list_title?bookname=%EC%9B%90%ED%8E%80%EB%A7%A8+%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC"></head>
+<body>
+    <div class="container">
+        <!-- s: 왼쪽 영역 -->
+        <div class="wrap left">
+            <!-- s: header -->
+            	
+		<div class="header">
+<!-- 	        <div class="util-wrap"> -->
+<!-- 	            <a sec:authorize="!isAuthenticated()" href="/register">회원가입</a> -->
+<!-- 	            <a href="/mypage">마이페이지</a> -->
+<!-- 	        </div> -->
+	        <a href="/"><h1 class="logo">제이마나</h1></a>
+	        <div class="search-wrap">
+	            <input id="Search" placeholder="검색어 입력" type="text">
+	            <button class="btn-ic btn-search" id="SearchBtn">검색</button>
+	        </div>
+	        <div class="menu-wrap">
+	            <ul>
+	                <li><!-- 활성화: on -->
+	                    <a href="/">HOME</a>
+	                </li>
+	                <li>
+	                    <a href="/comic_list">만화목록</a>
+	                </li>
+	                <li>
+	                    <a href="/comic_recent">업데이트</a>
+	                </li>
+	                <li class="depth2">
+	                    <a href="#none">게시판</a>
+	                    <ul>
+	                        <li><a href="/bbs_free">자유게시판</a></li>
+	                        <li><a href="/bbs_humor">유머게시판</a></li>
+	                        <li><a href="/bbs_request">수정요청게시판</a></li>
+	                        <li><a href="/bbs_manga_request">만화요청게시판</a></li>
+	                        <li><a href="/bbs_origin">원본게시판</a></li>
+	                        <li><a href="/bbs_transfree">역식자게시판</a></li>
+	                        <li><a href="/bbs_notice">공지사항</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	            <button class="btn-ic btn-account tp-toggle" data-toggle-target="layoutR">오른쪽 영역</button>
+	        </div>
+	    </div>
+    
+            <!-- //e: header -->
+            <!-- s: content 시작 -->
+            <div class="content">
+                <div class="books-list-detail">
+                    <div class="books-db-detail">
+                        <div class="books-thumnail">
+                            <img alt="" src="/thumbnail2/202012/9bc2a474-80a8-4957-901b-fb179e1cb7d1.JPEG">
+                        </div>
+                        
+						
+						    <a class="tit" href="#">원펀맨 리메이크</a>
+						
+                        <div class="books-d-wrap">
+                            <dl>
+                                <a href="/comic_list?author=무라타 유스케">작가 : 무라타 유스케</a>
+                            </dl>
+                            <dl>
+                                <a href="/comic_list?tag=액션">장르 : 액션</a>
+                            </dl>
+                            <dl>
+                                <a href="/comic_list?tag=판타지">장르 : 판타지</a>
+                            </dl>
+                            <dl>
+                                <a href="/comic_list?tag=개그">장르 : 개그</a>
+                            </dl>
+                            <dl>
+                                <a href="/comic_list?tag=애니화">장르 : 애니화</a>
+                            </dl>
+                            <div class="u-reaction-wrap">
+                                <div class="inner">
+                                    <button class="btn btn-first" id="view_first" data-id="233453">첫화보기</button>
+                                    <button class="btn btn-turn" id="view_sort">정렬순서</button>
+                                    <button class="btn btn-good">332</button>
+                                    <button class="btn btn-bookmark" id="bookmark">1810</button>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tit-wrap stl1 lg">
+                        <h2 class="tit">전편목록</h2>
+                    </div>
+                    <div class="lst-wrap stl5">
+                        <ul>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=452536" id="452536">원펀맨 리메이크 190-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">20</span>
+                                            <span class="txt-view">21984</span>
+                                            <span class="txt-comment">12</span>
+                                        </div>
+                                        <p class="date">21-05-29 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=452498" id="452498">원펀맨 리메이크 190-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">17</span>
+                                            <span class="txt-view">21414</span>
+                                            <span class="txt-comment">7</span>
+                                        </div>
+                                        <p class="date">21-05-29 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=448204" id="448204">원펀맨 리메이크 189화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">17</span>
+                                            <span class="txt-view">28026</span>
+                                            <span class="txt-comment">19</span>
+                                        </div>
+                                        <p class="date">21-05-15 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=441558" id="441558">원펀맨 리메이크 188화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">20</span>
+                                            <span class="txt-view">31913</span>
+                                            <span class="txt-comment">26</span>
+                                        </div>
+                                        <p class="date">21-05-01 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=439495" id="439495">원펀맨 리메이크 187-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">22</span>
+                                            <span class="txt-view">30987</span>
+                                            <span class="txt-comment">23</span>
+                                        </div>
+                                        <p class="date">21-04-21 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=439494" id="439494">원펀맨 리메이크 187-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">16</span>
+                                            <span class="txt-view">27287</span>
+                                            <span class="txt-comment">9</span>
+                                        </div>
+                                        <p class="date">21-04-21 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=434481" id="434481">원펀맨 리메이크 186화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">15</span>
+                                            <span class="txt-view">32932</span>
+                                            <span class="txt-comment">13</span>
+                                        </div>
+                                        <p class="date">21-04-03 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=432075" id="432075">원펀맨 리메이크 185화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">12</span>
+                                            <span class="txt-view">33953</span>
+                                            <span class="txt-comment">10</span>
+                                        </div>
+                                        <p class="date">21-03-23 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=427392" id="427392">원펀맨 리메이크 184화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">13</span>
+                                            <span class="txt-view">37754</span>
+                                            <span class="txt-comment">6</span>
+                                        </div>
+                                        <p class="date">21-03-03 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=416237" id="416237">원펀맨 리메이크 183화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">14</span>
+                                            <span class="txt-view">44964</span>
+                                            <span class="txt-comment">24</span>
+                                        </div>
+                                        <p class="date">21-01-26 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=412099" id="412099">원펀맨 리메이크 182화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">14</span>
+                                            <span class="txt-view">39701</span>
+                                            <span class="txt-comment">16</span>
+                                        </div>
+                                        <p class="date">21-01-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=409299" id="409299">원펀맨 리메이크 181-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">15</span>
+                                            <span class="txt-view">19495</span>
+                                            <span class="txt-comment">12</span>
+                                        </div>
+                                        <p class="date">20-12-25 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=409298" id="409298">원펀맨 리메이크 181-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">5</span>
+                                            <span class="txt-view">17169</span>
+                                            <span class="txt-comment">6</span>
+                                        </div>
+                                        <p class="date">20-12-25 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406910" id="406910">원펀맨 리메이크 180-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">4</span>
+                                            <span class="txt-view">12185</span>
+                                            <span class="txt-comment">5</span>
+                                        </div>
+                                        <p class="date">20-12-01 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406909" id="406909">원펀맨 리메이크 180-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">8</span>
+                                            <span class="txt-view">11864</span>
+                                            <span class="txt-comment">3</span>
+                                        </div>
+                                        <p class="date">20-12-01 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=399309" id="399309">원펀맨 리메이크 179화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">87257</span>
+                                            <span class="txt-comment">12</span>
+                                        </div>
+                                        <p class="date">20-10-02 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=398669" id="398669">원펀맨 리메이크 178-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">6</span>
+                                            <span class="txt-view">69967</span>
+                                            <span class="txt-comment">10</span>
+                                        </div>
+                                        <p class="date">20-09-26 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=396787" id="396787">원펀맨 리메이크 178-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">95544</span>
+                                            <span class="txt-comment">12</span>
+                                        </div>
+                                        <p class="date">20-09-12 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=396267" id="396267">원펀맨 리메이크 177화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">85428</span>
+                                            <span class="txt-comment">15</span>
+                                        </div>
+                                        <p class="date">20-09-08 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=396337" id="396337">원펀맨 리메이크 176화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">28249</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-09-04 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=369694" id="369694">원펀맨 리메이크 175화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">6</span>
+                                            <span class="txt-view">113494</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-07-07 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=263839" id="263839">원펀맨 리메이크 174화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">182205</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-04-23 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=194868" id="194868">원펀맨 리메이크 173화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">171789</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-04-04 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=183101" id="183101">원펀맨 리메이크 172화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">186832</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-03-24 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=181431" id="181431">원펀맨 리메이크 171화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">212582</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-03-10 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=395980" id="395980">원펀맨 리메이크 170화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">16946</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-08-31 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236763" id="236763">원펀맨 리메이크 169-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">4</span>
+                                            <span class="txt-view">32082</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236749" id="236749">원펀맨 리메이크 169-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">5</span>
+                                            <span class="txt-view">28857</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236723" id="236723">원펀맨 리메이크 168화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">27804</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236707" id="236707">원펀맨 리메이크 167화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">25597</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236672" id="236672">원펀맨 리메이크 166화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">24793</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236662" id="236662">원펀맨 리메이크 165화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">24998</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236635" id="236635">원펀맨 리메이크 164화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">23644</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236614" id="236614">원펀맨 리메이크 163화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">23356</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236596" id="236596">원펀맨 리메이크 162화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">23551</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236576" id="236576">원펀맨 리메이크 161화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">23117</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236552" id="236552">원펀맨 리메이크 160화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">24201</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236530" id="236530">원펀맨 리메이크 159화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">21226</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236515" id="236515">원펀맨 리메이크 158화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">21953</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236487" id="236487">원펀맨 리메이크 157-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">20493</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236469" id="236469">원펀맨 리메이크 157-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">20886</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236452" id="236452">원펀맨 리메이크 156화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">22581</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=434206" id="434206">원펀맨 리메이크 155화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">17151</span>
+                                            <span class="txt-comment">10</span>
+                                        </div>
+                                        <p class="date">21-03-31 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236434" id="236434">원펀맨 리메이크 155화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">22758</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236397" id="236397">원펀맨 리메이크 154화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">22607</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236373" id="236373">원펀맨 리메이크 153화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">4</span>
+                                            <span class="txt-view">27308</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406120" id="406120">원펀맨 리메이크 153-3화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">4619</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-09-28 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406116" id="406116">원펀맨 리메이크 153-2화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">4414</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-09-28 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406112" id="406112">원펀맨 리메이크 153-1화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">4868</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-09-28 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=401314" id="401314">원펀맨 리메이크 152화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">64670</span>
+                                            <span class="txt-comment">4</span>
+                                        </div>
+                                        <p class="date">20-10-19 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236327" id="236327">원펀맨 리메이크 151화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">23353</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406131" id="406131">원펀맨 리메이크 150화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">4992</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-09-28 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236308" id="236308">원펀맨 리메이크 150화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">21552</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236277" id="236277">원펀맨 리메이크 149화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">18103</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406127" id="406127">원펀맨 리메이크 149-2화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">4677</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-09-28 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=406123" id="406123">원펀맨 리메이크 149-1화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">5137</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-09-28 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=442323" id="442323">원펀맨 리메이크 148-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">1364</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-04-27 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=442322" id="442322">원펀맨 리메이크 148-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">1151</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-04-27 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=442321" id="442321">원펀맨 리메이크 147-2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">1128</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">21-04-27 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=442320" id="442320">원펀맨 리메이크 147-1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">1137</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-04-27 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=442319" id="442319">원펀맨 리메이크 146화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">1263</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-04-27 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=442317" id="442317">원펀맨 리메이크 145화 수정판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">1233</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-04-27 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422749" id="422749">원펀맨 리메이크 22-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">4311</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422746" id="422746">원펀맨 리메이크 22-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">3753</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422743" id="422743">원펀맨 리메이크 21-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">3373</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422741" id="422741">원펀맨 리메이크 21-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">3562</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422740" id="422740">원펀맨 리메이크 20-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">3267</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422738" id="422738">원펀맨 리메이크 20-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">3634</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422737" id="422737">원펀맨 리메이크 19-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">3137</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422736" id="422736">원펀맨 리메이크 19-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">3649</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422735" id="422735">원펀맨 리메이크 18-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2968</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422734" id="422734">원펀맨 리메이크 18-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">3203</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422733" id="422733">원펀맨 리메이크 17-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">2906</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422731" id="422731">원펀맨 리메이크 17-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2835</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422724" id="422724">원펀맨 리메이크 16-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2336</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422718" id="422718">원펀맨 리메이크 16-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">2672</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422712" id="422712">원펀맨 리메이크 15-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">2535</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422709" id="422709">원펀맨 리메이크 15-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">2729</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422707" id="422707">원펀맨 리메이크 14-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">2428</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422705" id="422705">원펀맨 리메이크 14-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2669</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422702" id="422702">원펀맨 리메이크 13-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2267</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422699" id="422699">원펀맨 리메이크 13-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">2397</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422696" id="422696">원펀맨 리메이크 12-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">2214</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422695" id="422695">원펀맨 리메이크 12-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2288</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422694" id="422694">원펀맨 리메이크 11-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">2148</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422693" id="422693">원펀맨 리메이크 11-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2316</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422692" id="422692">원펀맨 리메이크 10-2권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">2211</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=422691" id="422691">원펀맨 리메이크 10-1권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">2540</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=234730" id="234730">원펀맨 리메이크 09권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">11124</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=234646" id="234646">원펀맨 리메이크 08권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">10007</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=234552" id="234552">원펀맨 리메이크 07권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">9370</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=234450" id="234450">원펀맨 리메이크 06권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">9576</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=234337" id="234337">원펀맨 리메이크 05권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">9888</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=234206" id="234206">원펀맨 리메이크 04권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">9854</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=234098" id="234098">원펀맨 리메이크 03권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">9714</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233966" id="233966">원펀맨 리메이크 02권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">11162</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233827" id="233827">원펀맨 리메이크 01권</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">2</span>
+                                            <span class="txt-view">18262</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233713" id="233713">원펀맨 리메이크 특별편-킹의휴일같으면서평일</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">24293</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233698" id="233698">원펀맨 리메이크 특별편-전대</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">15909</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233676" id="233676">원펀맨 리메이크 특별편-재해레벨</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">16686</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233662" id="233662">원펀맨 리메이크 특별편-스타</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">12593</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233640" id="233640">원펀맨 리메이크 특별편-수학</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">13434</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233376" id="233376">원펀맨 리메이크 캐치&amp;스매쉬</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">12533</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233621" id="233621">원펀맨 리메이크 번외편-자신</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">12507</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233610" id="233610">원펀맨 리메이크 번외편-성장과정</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">13719</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233595" id="233595">원펀맨 리메이크 번외편-목격</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">13488</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233582" id="233582">원펀맨 리메이크 번외12화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">18058</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233573" id="233573">원펀맨 리메이크 번외9화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">13714</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233561" id="233561">원펀맨 리메이크 번외8화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">13889</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233545" id="233545">원펀맨 리메이크 번외6화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">14526</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233526" id="233526">원펀맨 리메이크 번외5화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">15085</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233506" id="233506">원펀맨 리메이크 번외4화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">15675</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233493" id="233493">원펀맨 리메이크 번외3화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">16581</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233480" id="233480">원펀맨 리메이크 번외2화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">18889</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233462" id="233462">원펀맨 리메이크 번외1화</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">35210</span>
+                                            <span class="txt-comment">1</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233386" id="233386">원펀맨 리메이크 SEED출장판</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">81931</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=421097" id="421097">원펀맨 리메이크 23권 번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">6</span>
+                                            <span class="txt-view">14463</span>
+                                            <span class="txt-comment">9</span>
+                                        </div>
+                                        <p class="date">21-02-06 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=399983" id="399983">원펀맨 리메이크 22권 번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">42370</span>
+                                            <span class="txt-comment">7</span>
+                                        </div>
+                                        <p class="date">20-10-05 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236693" id="236693">원펀맨 리메이크 21권 번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">5246</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236409" id="236409">원펀맨 리메이크 20권 번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">4456</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236252" id="236252">원펀맨 리메이크 19권번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">4282</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=236051" id="236051">원펀맨 리메이크 18권번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">1</span>
+                                            <span class="txt-view">4996</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233436" id="233436">원펀맨 리메이크 11권번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">5450</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233418" id="233418">원펀맨 리메이크 10권번외편-타츠마키의휴일</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">5872</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233409" id="233409">원펀맨 리메이크 9권번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">3</span>
+                                            <span class="txt-view">5097</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top-layout-m">
+                                    <div class="inner">
+                                        <a class="tit my_visited" target="_blank" href="/bookdetail?bookdetailid=233399" id="233399">원펀맨 리메이크 7권번외편</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="btm-layout-m">
+                                    <div class="inner">
+                                        <div class="u-reaction-result-wrap">
+                                            <span class="txt-good">0</span>
+                                            <span class="txt-view">5782</span>
+                                            <span class="txt-comment">0</span>
+                                        </div>
+                                        <p class="date">20-02-13 </p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <ul class="nav stl2" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#workTabPanel1" id="workTabItem1" role="tab">이 만화 작가의 다른 작품</a>
+                        </li>
+                        <!-- 
+							<li class="nav-item">
+	                            <a class="nav-link" id="workTabItem2" data-toggle="tab" href="#workTabPanel2" role="tab">이 책을 고른 사람이 좋아하는 작품</a>
+	                        </li>                        
+                         -->
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="workTabPanel1" role="tabpanel">
+                            <div class="img-slider-wrap">
+                                <div class="img-slider slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 564px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 141px;"><div><div class="img-slider-item stl1" style="width: 100%; display: inline-block;">
+                                    	<a class="img-wrap" href="comic_list_title?bookname=%EC%9B%90%ED%8E%80%EB%A7%A8+%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC" tabindex="0">
+                                        	<img alt="" class="main_img" data-id="원펀맨 리메이크" src="/thumbnail2/202012/9bc2a474-80a8-4957-901b-fb179e1cb7d1.JPEG">
+                                        </a>
+                                        <div class="txt-wrap">
+                                            <a class="tit" href="comic_list_title?bookname=%EC%9B%90%ED%8E%80%EB%A7%A8+%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC" tabindex="0">원펀맨 리메이크</a>
+                                            <div class="reaction-wrap">
+                                                <span class="txt-good">330</span>
+	                                            <span class="txt-bookmark">1810</span>
+                                            </div>
+                                        </div>
+                                    </div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 141px;"><div><div class="img-slider-item stl1" style="width: 100%; display: inline-block;">
+                                    	<a class="img-wrap" href="comic_list_title?bookname=%EC%95%84%EC%9D%B4%EC%8B%A4%EB%93%9C21" tabindex="0">
+                                        	<img alt="" class="main_img" data-id="아이실드21" src="/thumbnail/아이실드21.JPEG">
+                                        </a>
+                                        <div class="txt-wrap">
+                                            <a class="tit" href="comic_list_title?bookname=%EC%95%84%EC%9D%B4%EC%8B%A4%EB%93%9C21" tabindex="0">아이실드21</a>
+                                            <div class="reaction-wrap">
+                                                <span class="txt-good">21</span>
+	                                            <span class="txt-bookmark">19</span>
+                                            </div>
+                                        </div>
+                                    </div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 141px;"><div><div class="img-slider-item stl1" style="width: 100%; display: inline-block;">
+                                    	<a class="img-wrap" href="comic_list_title?bookname=%EB%A7%8C%ED%99%94%EA%B0%80+%EC%95%BC%EC%8B%9D%EC%97%B0%EA%B5%AC%EC%86%8C" tabindex="0">
+                                        	<img alt="" class="main_img" data-id="만화가 야식연구소" src="/thumbnail/만화가 야식연구소.JPEG">
+                                        </a>
+                                        <div class="txt-wrap">
+                                            <a class="tit" href="comic_list_title?bookname=%EB%A7%8C%ED%99%94%EA%B0%80+%EC%95%BC%EC%8B%9D%EC%97%B0%EA%B5%AC%EC%86%8C" tabindex="0">만화가 야식연구소</a>
+                                            <div class="reaction-wrap">
+                                                <span class="txt-good">0</span>
+	                                            <span class="txt-bookmark">3</span>
+                                            </div>
+                                        </div>
+                                    </div></div></div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 141px;"><div><div class="img-slider-item stl1" style="width: 100%; display: inline-block;">
+                                    	<a class="img-wrap" href="comic_list_title?bookname=%EA%B3%BC%ED%95%99%EA%B3%BC+%EB%A7%88%EB%B2%95%EC%9D%98+%EA%B2%A9%ED%88%AC%EA%B0%80%EB%93%A4" tabindex="0">
+                                        	<img alt="" class="main_img" data-id="과학과 마법의 격투가들" src="/thumbnail/과학과 마법의 격투가들.JPEG">
+                                        </a>
+                                        <div class="txt-wrap">
+                                            <a class="tit" href="comic_list_title?bookname=%EA%B3%BC%ED%95%99%EA%B3%BC+%EB%A7%88%EB%B2%95%EC%9D%98+%EA%B2%A9%ED%88%AC%EA%B0%80%EB%93%A4" tabindex="0">과학과 마법의 격투가들</a>
+                                            <div class="reaction-wrap">
+                                                <span class="txt-good">0</span>
+	                                            <span class="txt-bookmark">0</span>
+                                            </div>
+                                        </div>
+                                    </div></div></div></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-banner-wrap stl2">
+                        <div class="ad-item">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //e: content 시작 -->
+        </div>
+        <!-- //e: 왼쪽 영역 -->
+        <!-- s: 오른쪽 영역 -->
+        
+
+<style> 
+   .vertical-center { 
+   margin: 0; 
+   position: absolute; 
+   top: 50%; 
+   -ms-transform: translateY(-50%); 
+   transform: translateY(-50%); 
+ }
+ .icon {  
+  position: relative;
+  width: 30px;
+  height:30px;
+  float: right;
+}
+ .pulse-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+	}
+.pulse-orbit {
+  position: absolute;
+  top: -11px;
+  right: -10px;
+  height: 32px;
+  width: 32px;    
+  z-index: 10;  
+  border: 4px solid #FFA520;
+  border-radius: 70px;
+  animation: pulse 1s ease-out infinite;
+}
+
+.pulse-nucleus {
+  position: absolute;
+  top: -0px;
+  right: 1px;
+  height: 18px;
+  width: 18px;  
+  border-radius: 50%;
+  background: #FFA520;
+	font-size: 11px;
+	color: white;
+	text-align: center;
+	line-height:18px;
+}
+
+
+@keyframes pulse {
+  0% {
+      -webkit-transform: scale(0);
+      opacity: 0.0;
+  }
+
+  25% {
+      -webkit-transform: scale(0.1);
+      opacity: 0.1;
+  }
+
+  50% {
+      -webkit-transform: scale(0.5);
+      opacity: 0.3;
+  }
+
+  75% {
+      -webkit-transform: scale(0.8);
+      opacity: 0.5;
+    }
+
+  100% {
+      -webkit-transform: scale(1);
+      opacity: 0.0;
+  }
+} 
+</style> 
+		<div class="wrap right" id="layoutR">
+            <div class="content">
+                <div class="side-wrap">
+                    <div class="set-wrap">
+                        
+                        <a class="btn-ic btn-shuffle" href="/book_by_shuffle"></a>
+                        <!-- 
+                        	<div class="icon">
+								<div class="pulse-badge">
+									<div class="pulse-orbit"></div>
+									<div class="pulse-nucleus">23</div>
+								</div>
+								<a class="btn-ic btn-alarm"></a>
+							</div>
+                         -->
+                        
+                    </div>
+                    <div class="log-wrap">
+                    	
+                        <!-- case1: 비로그인시 -->
+                        
+                        <form id="top-login" method="post" role="form" action="/login/login">
+                        	<input class="inp-id" id="loginid" name="usernm" placeholder="아이디" type="text">
+                        	<input class="inp-pw" id="loginpw" name="password" placeholder="비밀번호" type="password">
+                        	<button class="btn stl1 lg btn-login" id="login" type="submit">로그인</button> 
+                        <input type="hidden" name="_csrf" value="ee3579f6-7cb6-46f9-819e-106636d2bc4d"></form>
+                        
+                        
+                        <div class="login-check">
+                            <label class="auto-log"><input id="isAuto" type="checkbox"><span>자동로그인</span></label>
+                            <div class="user-choice">
+                                <a href="/register">회원가입</a>
+                                <!-- <a href="/userinfo">정보찾기</a> -->
+                            </div>
+                        </div> 
+					</div>
+					
+
+					
+	                
+	                
+					<div class="notice-lst-wrap">
+                        <div class="tit-wrap stl1 sm">
+                            <h2 class="tit">나의 글 반응</h2>
+                        </div>
+                        <div class="lst-wrap stl1">
+                            
+                        </div>
+                    </div>
+                    <div class="notice-lst-wrap">
+                        <div class="tit-wrap stl1 sm">
+                            <h2 class="tit">나의 댓글 반응</h2>
+                        </div>
+                        <div class="lst-wrap stl1">
+                            
+                        </div>
+                    </div>
+                    <div class="notice-lst-wrap">
+                        <div class="tit-wrap stl1 sm">
+                            <h2 class="tit">공지사항</h2>
+                        </div>
+                        <div class="lst-wrap stl1">
+                            <ul>
+                                <li>
+                                   <a class="txt-tit" href="/bbs_notice_detail?id=97">이미지 서버 복구되었습니다.다</a>
+                                        <p class="txt-comment">16</p>
+                                        <p class="txt-date">00:18</p>
+                                </li>
+                                <li>
+                                   <a class="txt-tit" href="/bbs_notice_detail?id=95">수위조절!!! 해주세요 ㅎㅎㅎ</a>
+                                        <p class="txt-comment">16</p>
+                                        <p class="txt-date">02:32</p>
+                                </li>
+                                <li>
+                                   <a class="txt-tit" href="/bbs_notice_detail?id=94">당분간 새창열기 하지 마시기를 권합니다.</a>
+                                        <p class="txt-comment">16</p>
+                                        <p class="txt-date">21:33</p>
+                                </li>
+                                <li>
+                                   <a class="txt-tit" href="/bbs_notice_detail?id=93">알람기능 오픈</a>
+                                        <p class="txt-comment">3</p>
+                                        <p class="txt-date">23:51</p>
+                                </li>
+                                <li>
+                                   <a class="txt-tit" href="/bbs_notice_detail?id=91">뷰어 기능 오픈</a>
+                                        <p class="txt-comment">17</p>
+                                        <p class="txt-date">18:53</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="toon-lst-wrap">
+                        <div class="tit-wrap stl1 sm">
+                            <h2 class="tit">북마크</h2>
+                            <div class="rgt-wrap">
+                                <ul class="nav stl1" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#" id="tabItem1" role="tab" target="_blank">더보기</a>
+                                        
+                                        
+                                        
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </div>
+                        <div class="lst-wrap stl1">
+                            <p class="txt-login">로그인이 필요합니다.</p>
+                        </div>
+                        
+                                                
+                    </div>
+
+
+                    <div class="toon-lst-wrap">
+                        <div class="tit-wrap stl1 sm">
+                            <h2 class="tit">북마크업데이트</h2>
+                            <div class="rgt-wrap">
+                                <ul class="nav stl1" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#" id="tabItem1" role="tab" target="_blank">더보기</a>
+                                        
+                                        
+                                        
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </div>
+                        <div class="lst-wrap stl1">
+                            <p class="txt-login">로그인이 필요합니다.</p>
+                        </div>
+                        
+                                                
+                    </div>
+
+
+                    <div class="ranking-lst-wrap">
+                    	<div class="tit-wrap stl1 sm">
+                            <h2 class="tit">주간랭킹 TOP30</h2>
+                            <div class="rgt-wrap">
+                                <ul class="nav stl1" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabPanel1" id="tabItem1" role="tab">1~15위</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabPanel2" id="tabItem2" role="tab">15~30위</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tabPanel1" role="tabpanel">
+                                <div class="lst-wrap stl2">
+                                    <ul>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=452536">
+                                            	<span class="num">1</span>
+                                            	원펀맨 리메이크 190-2화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=452498">
+                                            	<span class="num">2</span>
+                                            	원펀맨 리메이크 190-1화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=452281">
+                                            	<span class="num">3</span>
+                                            	전생했더니 슬라임이었던 건에 대하여 84-2화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=452190">
+                                            	<span class="num">4</span>
+                                            	전생했더니 슬라임이었던 건에 대하여 84-1화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=452381">
+                                            	<span class="num">5</span>
+                                            	전생했는데 제7왕자라서 멋대로 마술을 누립니다 47화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=451995">
+                                            	<span class="num">6</span>
+                                            	원피스(ONE PIECE) 1014화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=451461">
+                                            	<span class="num">7</span>
+                                            	이세계 미궁에서 하렘을 19-2화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=451959">
+                                            	<span class="num">8</span>
+                                            	만년 D랭크의 중년 모험자, 술김에 전설의 검을 뽑아낸다 3화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=454608">
+                                            	<span class="num">9</span>
+                                            	회복술사의 재시작 36-1화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=453608">
+                                            	<span class="num">10</span>
+                                            	「크크큭……. 놈은 사천왕 중에서도 최약이지」라고 해고된 나, 왠지 용사와 성녀의 스승이 되었다 4-1화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=451456">
+                                            	<span class="num">11</span>
+                                            	만년 D랭크의 중년 모험자, 술김에 전설의 검을 뽑아낸다 2화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=454328">
+                                            	<span class="num">12</span>
+                                            	고블린 슬레이어 60-1화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=454842">
+                                            	<span class="num">13</span>
+                                            	숨은 실력자가 되고싶어서! 29-2화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=454840">
+                                            	<span class="num">14</span>
+                                            	숨은 실력자가 되고싶어서! 29-1화
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="txt-tit" href="/bookdetail?bookdetailid=453500">
+                                            	<span class="num">15</span>
+                                            	만년 D랭크의 중년 모험자, 술김에 전설의 검을 뽑아낸다 4화
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabPanel2" role="tabpanel">
+                            	<div class="lst-wrap stl2">
+                            		<ul>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=453110">
+		                                    	<span class="num">16</span>
+		                                    	용사 파티에서 추방당한 비스트 테이머, 최강종인 고양이귀 소녀와 만나다 51화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454329">
+		                                    	<span class="num">17</span>
+		                                    	고블린 슬레이어 60-2화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=455127">
+		                                    	<span class="num">18</span>
+		                                    	믿었던 동료들에게 던전 오지에서 살해당할 뻔했지만 기프트 『무한 가챠』로 레벨 9999의 동료들을 손에 넣어 전 파티 멤버와 세계에 복수&amp;『참교육!』합니다! 3-2화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=452031">
+		                                    	<span class="num">19</span>
+		                                    	나의 히어로 아카데미아 314화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=453094">
+		                                    	<span class="num">20</span>
+		                                    	꽝 스킬 &lt;가챠&gt;로 추방당한 나는, 이기적인 소꿉친구를 손절하고 각성한다 3-3화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454284">
+		                                    	<span class="num">21</span>
+		                                    	꽝 스킬 &lt;가챠&gt;로 추방당한 나는, 이기적인 소꿉친구를 손절하고 각성한다 4-1화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454350">
+		                                    	<span class="num">22</span>
+		                                    	만년 D랭크의 중년 모험자, 술김에 전설의 검을 뽑아낸다 5화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454302">
+		                                    	<span class="num">23</span>
+		                                    	연인을 빼앗기고, 용사파티에서 추방당했지만, EX스킬 [고정 데미지]에 눈을 떠 무적의 존재로. 자, 복수를 시작하자 7-1화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454397">
+		                                    	<span class="num">24</span>
+		                                    	꽝 스킬 &lt;가챠&gt;로 추방당한 나는, 이기적인 소꿉친구를 손절하고 각성한다 4-2화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454260">
+		                                    	<span class="num">25</span>
+		                                    	「크크큭……. 놈은 사천왕 중에서도 최약이지」라고 해고된 나, 왠지 용사와 성녀의 스승이 되었다 4-2화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=455132">
+		                                    	<span class="num">26</span>
+		                                    	믿었던 동료들에게 던전 오지에서 살해당할 뻔했지만 기프트 『무한 가챠』로 레벨 9999의 동료들을 손에 넣어 전 파티 멤버와 세계에 복수&amp;『참교육!』합니다! 3-1화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=453410">
+		                                    	<span class="num">27</span>
+		                                    	악마에 입문했습니다! 이루마 군 205화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454836">
+		                                    	<span class="num">28</span>
+		                                    	전생귀족 감정 스킬로 성공한다~약소영지를 이어받아서, 우수한 인재를 늘리다보니, 최강영지가 되었다~ 36화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=454326">
+		                                    	<span class="num">29</span>
+		                                    	양아치녀한테 끌려서 올해도 수험에 실패할 것 같습니다 20화
+		                                    </a>
+		                                </li>
+	                                    <li>
+		                                    <a class="txt-tit" href="/bookdetail?bookdetailid=451446">
+		                                    	<span class="num">30</span>
+		                                    	시간정지용사~수명 3일 설정으로 세계를 구하기엔 너무 짧잖아~ 20-2화
+		                                    </a>
+		                                </li>
+	                                </ul>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+					
+                <div class="side-banner-wrap">
+                	
+    
+	<ins class="adsbygoogle" data-ad-client="ca-pub-2616219098752595" data-ad-format="auto" data-ad-slot="2415593398" style="display:inline-block;min-width: 100px;max-width: 4000px; width: 100%;height: 100px;"></ins>
+     
+         
+    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <!-- Modal -->
+        
+
+        
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>  
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>  
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-performance.js"></script>
+
+
+
+<script src="/resouce/js/my_fcm.js?ver=5"></script>
+
+
+
+
+<script>
+
+/*<![CDATA[*/
+var server_fcm_token = null;
+var is_new_window = true;
+var b_isIE = 'N';
+/*]]>*/
+	
+	$(document).ready(function(){
+		var $ = jQuery.noConflict();
+	
+		
+		$("#newwindow").prop("checked", is_new_window);
+		
+		$("#newwindow").click( function(){
+			var isChecked = false;   
+			if( $(this).is(':checked') ){
+				isChecked = true;
+			}else{
+				isChecked = false;
+			}
+			   
+			   $.ajax({
+					dataType: "json",
+					data : { "isChecked" : isChecked },
+	 			url: '/switch_newwindow',
+	 			cache: false,
+	 			success: function(data) {
+	 				alert("만화 새창열기가 변경되었습니다.");
+	 				location.reload();
+	 			},
+	 			error:function(err){
+	 				alert("error");
+	 			}
+	 		});	
+			});
+		
+		$("#mylogout").click(function() {
+            location.href = "/login/logout";
+        });		
+		
+		$("#login").click(function() {
+
+			var action = $("#top-login").attr("action");
+			var isAuto = $("#isAuto").is(":checked");
+			
+			var targetUrl = encodeURIComponent(location.href);
+
+			$("#top-login").attr("action", action+"?targetUrl="+targetUrl+"&isAuto="+isAuto);
+            $("#top-login").submit();
+        });
+		
+		$("#loginMsgBtn").click(function() {
+			$("#loginMsg").css("display","none"); 
+        });
+		
+
+		function myfcm_isSupported(){
+			var isFcm = false;
+			try{
+		        isFcm = firebase.messaging.isSupported();
+			}catch(err)  {
+				isFcm = false;
+			}
+			
+		    return isFcm;
+		};
+		
+		
+		if(myfcm_isSupported())  {
+		    if(myfcm_isPermission())  {
+		    
+				var fcm_token = $.cookie("fcm_token");
+				if(fcm_token==null || fcm_token==undefined)  {
+					$("#fcm").prop("checked", false);
+				}else if(fcm_token!=server_fcm_token)  {
+ 					$.ajax({
+						dataType: "json",
+						data : { "fcm_token" : fcm_token },
+			 			url: '/login/fcm',
+			 			cache: false,
+			 			success: function(data) {
+			 				console.log("fcm 동기화");
+			 			},
+			 			error:function(err){
+			 				alert("error");
+			 			}
+					});
+ 					$("#fcm").prop("checked", true);
+				}else {
+					$("#fcm").prop("checked", true);	
+				}
+		    }else {
+		    	
+		    }	
+		}else {
+		}
+		
+		
+		
+		$("#fcm").click( function(){
+			if(myfcm_isSupported()==false)  {
+				alert("해당 플랫폼은 지원하지 않습니다.");
+				return false;
+			}
+			if($(this).is(':checked')==false){
+				$.removeCookie("fcm_token");
+
+				$.ajax({
+					dataType: "json",
+					data : { "fcm_token" : null },
+			 		url: '/login/fcm',
+			 		cache: false,
+			 		success: function(data) {
+			 			alert("알람을 사용하지 않습니다.");
+			 		},
+			 		error:function(err){
+			 			alert("error");
+			 		}
+				});
+				
+			}else {
+
+				myfcm_prepareToken();
+			}
+		});
+	});
+    	
+</script>
+		
+
+
+        
+    
+        <!-- //e: 오른쪽 영역 -->
+        <div class="footer">
+            <h1 class="logo">제이마나</h1>
+        </div>
+    </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2616219098752595&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1622764651&amp;plat=1%3A32776%2C2%3A32776%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fjmana1.jjmana.net%2Fcomic_list_title%3Fbookname%3D%25EC%259B%2590%25ED%258E%2580%25EB%25A7%25A8%2B%25EB%25A6%25AC%25EB%25A9%2594%25EC%259D%25B4%25ED%2581%25AC&amp;ea=0&amp;flash=0&amp;pra=5&amp;wgl=1&amp;uach=WyIiLCIiLCIiLCIiLCIiLFtdXQ..&amp;dt=1622764651582&amp;bpp=6&amp;bdt=904&amp;idt=358&amp;shv=r20210601&amp;cbv=%2Fr20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=5396218994903&amp;frm=20&amp;pv=2&amp;ga_vid=170232010.1622764652&amp;ga_sid=1622764652&amp;ga_hid=524033613&amp;ga_fc=0&amp;u_tz=540&amp;u_his=2&amp;u_java=0&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=0&amp;u_nmime=0&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1905&amp;bih=1080&amp;scr_x=0&amp;scr_y=0&amp;eid=44744016%2C31061047&amp;oid=3&amp;pvsid=4497911784808649&amp;pem=840&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1080%2C1920%2C1080&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=390" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="conversion-measurement 'src'" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_9136523807588" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe>
+    
+    
+    
+    <div class="modal-dialog modal-dialog-centered vertical-center" id="msg" style="display:none">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">정보</h1>
+                <button class="close" data-dismiss="modal" type="button">닫기</button>
+            </div>
+            <div class="modal-body">
+
+                <p class="txt" id="msgTxt">메일인증을 하셔야 합니다.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn lg stl5" data-dismiss="modal" id="msgBtn" type="button">확인</button>
+            </div>
+        </div>
+    </div>
+    
+        
+    
+            <script type="text/javascript">
+
+            	var $ = jQuery.noConflict();
+			    
+            	var searchFn = function () {
+	            	var $ = jQuery.noConflict();
+			    	if($('#Search').val() == ""){
+						alert('만화이름을 입력하세요.');
+					}else{
+						window.location.href = '/comic_list?keyword='+$('#Search').val();
+					}
+			    } 
+			    $('#Search').on("keypress", function (event) {
+					if (event.keyCode == 13) {
+						searchFn();
+					}
+				});
+			    
+			    $('#SearchBtn').click(function(){
+					searchFn();
+			    });
+            </script>
+       
+    <script>
+	    /*<![CDATA[*/
+		var issort = false;
+	    var encodeTitle = '%EC%9B%90%ED%8E%80%EB%A7%A8+%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC';
+		var b_title = '\uC6D0\uD380\uB9E8 \uB9AC\uBA54\uC774\uD06C';
+		
+		/*]]>*/
+		
+		var tmptags;
+	    $(document).ready(function(){
+	    	var $ = jQuery.noConflict();	
+	    	
+	    	$('#clipcopy').click(function(){
+	    		var $temp = $("<input>");
+	    		$("body").append($temp);
+	    		$temp.val(b_title).select();
+	    		document.execCommand("copy");
+	    		$temp.remove();
+	    	});
+	    	$('#view_first').click(function(){
+	    		if($(this).attr("data-id")==null){
+	    			alert('오류발생! 운영자를 닥달해주세요!!');
+	    		}else{
+		    		window.location.href = '/bookdetail?bookdetailid='+$(this).attr("data-id");
+	    		}
+	    	});
+	    	
+	    	$('#view_sort').click(function(){
+	    		issort = !issort;
+	    		window.location.href = '/comic_list_title?bookname='+encodeTitle+'&issort='+issort;
+	    	});
+	    
+			$("#msg").click(function(){
+				var $ = jQuery.noConflict();
+				$("#msg").hide();
+			});
+
+			
+			$("#bookmark").click(function(){
+
+	 			$.ajax({
+	 				dataType: "json",
+	 				data : { "title" : encodeTitle},
+		 			url: '/bookmark',
+		 			cache: false,
+		 			success: function(data) {
+		 				if(data.result=="1")  {
+		 					$('#msgTxt').text("북마크가 되었습니다.");
+		 					$("#msg").show();
+		 				}else if(data.result=="2")  {
+		 					$('#msgTxt').text("로그인이 필요합니다.");
+		 					$("#msg").show();
+		 				}else if(data.result=="3")  {
+		 					$('#msgTxt').text("북마크 갯수를 초과했습니다. 북마크를 정리하시고 다시 시도해보세요.");
+		 					$("#msg").show();
+		 				}else {
+		 					$('#msgTxt').text("이미 북마크가 되어 있습니다.");
+		 					$("#msg").show();
+		 				}
+		 			},
+		 			error:function(err){
+		 				alert("errorrrr");
+		 				alert(JSON.stringify(err));
+		 			}
+		 		});
+			});	
+	    	
+	    });
+	    
+	    
+    </script>
+
+
+</body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20210601/r20190131/zrt_lookup.html" style="display: none;"></iframe>

@@ -23,21 +23,23 @@ def main():
     fm_cwd = os.getenv("FEED_MAKER_WORK_DIR")
 
     test_subjects = {
-        "study/javabeat": [ "./capture_item_link_title.py" ],
         "naver/navercast": [ "../capture_item_navercast.py" ],
         "naver/naverblog.pjwwoo": [ "../capture_item_naverblog.py" ],
         "naver/dice": [ "../capture_item_naverwebtoon.py" ],
         "naver/naverwebtoon": [ "./capture_item_link_title.py" ],
         "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
-        #"myktoon/myktoon": [ "./capture_item_link_title.py" ],
-        #"myktoon/god_of_poverty": [ "../capture_item_myktoon.py", "../post_process_myktoon.py 'https://v2.myktoon.com/web/works/viewer.kt?timesseq=141841'" ],
-        "egloos/oblivion": [ "../capture_item_link_title.py" ],
+        "kakao/monk_xuanzang": [ "../capture_item_kakaowebtoon.py" ],
+        "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
         "daum/matchless_abi": [ "../capture_item_daumwebtoon.py", "../post_process_daumwebtoon.py 'http://cartoon.media.daum.net/m/webtoon/viewer/45820'" ],
         "daum/daumwebtoon": [ "./capture_item_link_title.py" ],
-        "khan/hammer": [ "./capture_item_link_title.py" ],
         "tistory/nasica1": [ "../capture_item_tistory.py" ],
-        #"kakao/higher_than_my_shoulders": [ "../capture_item_kakaowebtoon.py" ],
-        "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
+        "egloos/oblivion": [ "../capture_item_link_title.py" ],
+        "study/javabeat": [ "./capture_item_link_title.py" ],
+        "manatoki/level_up_alone" : [ "../capture_item_manatoki.py" ],
+        "jmana/one_punch_man_remake" : [ "../capture_item_jmana.py" ],
+        "wfwf/warrior_at_fff_level" : [ "../capture_item_wfwf.py" ],
+        "wtwt/login_alone" : [ "../capture_item_wtwt.py" ],
+        "marumaru/ride_on_king" : [ "../capture_item_marumaru.py" ],
     }
     
     for (feed, scripts) in test_subjects.items():
