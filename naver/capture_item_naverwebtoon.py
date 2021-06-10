@@ -33,7 +33,7 @@ def main():
         |
         bestChallenge
         )
-        /detail\.nhn
+        /detail\.(?:nhn|naver)
         [^"]*
         no=(?P<title1>\d+)
         [^"]*

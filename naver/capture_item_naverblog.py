@@ -11,7 +11,7 @@ from feed_maker_util import IO
 def main():
     link = ""
     title = ""
-    url_prefix = "http://blog.naver.com/PostView.nhn?blogId="
+    url_prefix = "http://blog.naver.com/PostView.(?:nhn|naver)?blogId="
 
     num_of_recent_feeds = 30
     optlist, _ = getopt.getopt(sys.argv[1:], "n:")

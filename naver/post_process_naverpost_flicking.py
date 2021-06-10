@@ -23,7 +23,7 @@ def main():
         print(line)
 
     failureCount = 0
-    link_prefix = "http://m.post.naver.com/viewer/clipContentJson.nhn?volumeNo=%d&memberNo=%d&clipNo=" % (volumeNo, memberNo)
+    link_prefix = "http://m.post.naver.com/viewer/clipContentJson.(?:nhn|naver)?volumeNo=%d&memberNo=%d&clipNo=" % (volumeNo, memberNo)
     for clipNo in range(30):
         link = link_prefix + str(clipNo)
         cmd = 'wget.sh "%s" utf8' % (link)
