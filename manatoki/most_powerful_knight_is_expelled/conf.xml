@@ -20,7 +20,7 @@
         </post_process_script_list>
         <render_js>true</render_js>
         <simulate_scrolling>true</simulate_scrolling>
-        <timeout>60</timeout>
+        <timeout>120</timeout>
     </extraction>
     <rss>
         <title><![CDATA[최강 용사는 토사구팽-마왕이 되면 계속해서 나의 무쌍 턴::마나토끼]]></title>
