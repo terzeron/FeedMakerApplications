@@ -2,14 +2,14 @@
 <configuration>
     <collection>
         <is_completed>true</is_completed>
-        <sort_field_pattern><![CDATA[num=(\d+)\t]]></sort_field_pattern>
+        <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>2</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <!-- 한국웹툰, 전체(200개), 다운만 -->
             <list_url><![CDATA[https://copytoon142.com/현혹]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_copytoon.py -n 300 | tail -30</item_capture_script>
+        <item_capture_script>../capture_item_copytoon.py -n 300 | head -20</item_capture_script>
     </collection>
     <extraction>
         <element_id>bo_v_con</element_id>
