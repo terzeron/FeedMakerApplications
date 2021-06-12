@@ -15,9 +15,9 @@
             <!-- 제목+본문: 아크릴 -->
             <!--list_url><![CDATA[https://bbs.ruliweb.com/hobby/board/300082/read/30582248?view_best=1&search_type=subject_content&search_key=아크릴&page=1]]></list_url-->
         </list_url_list>
-        <item_capture_script>./capture_item_link_title.py -n 50</item_capture_script>
+        <item_capture_script>./capture_item_link_title.py -n 10</item_capture_script>
         <post_process_script_list>
-            <post_process_script>egrep -v -i "(sd|프레임.*걸|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\s?아미|고우라이|가오가이가|판타시스타|사이버\s?포뮬라|록맨|자우라|키카이오|메탈가루몬|캡틴\s?사우루스|핸드스케일걸|드라몬|그레이몬)"</post_process_script>
+            <post_process_script>egrep -v -i "(sd|프레임.*걸|프암걸|포뮬러|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\s?아미|고우라이|가오가이가|판타시스타|사이버\s?포뮬라|록맨|자우라|키카이오|메탈가루몬|캡틴\s?사우루스|핸드스케일걸|드라몬|그레이몬|아야카|유우키|마도카|루덴스|코토리|흐레스벨그)"</post_process_script>
         </post_process_script_list>
     </collection>
     <extraction>
