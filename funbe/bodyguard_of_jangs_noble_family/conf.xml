@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
+        <unit_size_per_day>4</unit_size_per_day>
+        <ignore_old_list>true</ignore_old_list>
+        <list_url_list>
+            <list_url><![CDATA[https://funbe.ink/장씨세가-호위무사]]></list_url>
+        </list_url_list>
+        <item_capture_script>../capture_item_funbe.py -n 200</item_capture_script>
+        <referer><![CDATA[https://funbe.ink/]]></referer>
+    </collection>
+    <extraction>
+        <referer><![CDATA[https://funbe.ink/]]></referer>
+        <element_id>toon_img</element_id>
+        <post_process_script_list>
+            <post_process_script>download_image.py</post_process_script>
+        </post_process_script_list>
+        <render_js>true</render_js>
+    </extraction>
+    <rss>
+        <title><![CDATA[장씨세가 호위무사::Funbe]]></title>
+        <description><![CDATA[장씨세가 호위무사::Funbe - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/bodyguard_of_jangs_noble_family.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/bodyguard_of_jangs_noble_family.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Funbe. All rights reserved.]]></copyright>
+        <language>ko</language>
+        <url_prefix_for_guid>https://funbe.site</url_prefix_for_guid>
+    </rss>
+</configuration>
+
