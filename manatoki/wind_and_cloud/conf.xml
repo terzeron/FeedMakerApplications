@@ -15,12 +15,11 @@
     <extraction>
         <element_class>view-padding</element_class>
         <post_process_script_list>
-            <post_process_script>../remove_anchor_images.py</post_process_script>
+            <!--post_process_script>../remove_anchor_images.py</post_process_script-->
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
-        <simulate_scrolling>true</simulate_scrolling>
-        <timeout>120</timeout>
+        <timeout>240</timeout>
     </extraction>
     <rss>
         <title><![CDATA[풍운::마나토끼]]></title>
