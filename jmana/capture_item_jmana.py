@@ -27,12 +27,12 @@ def main() -> int:
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^/]+)[^"]*">', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^/]+)[^"]*"\s*/?>', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a\s+class="tit\b[^"]*"[^>]+href="(?P<link>[^"]+)"[^>]+id="[^"]+">(?P<title>.+)</a>', line)
+            m = re.search(r'<a\s+class="tit[^"]*"[^>]*href="(?P<link>[^"]+bookdetail[^"]+)"[^>]*>(?P<title>.+)</a>', line)
             if m:
                 link = url_prefix + m.group("link")
                 title = m.group("title")

@@ -9,7 +9,6 @@
             <list_url><![CDATA[https://jmana1.jjmana.net/comic_list_title?bookname=군청전기]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_jmana.py -n 10</item_capture_script>
-        <render_js>true</render_js>
     </collection>
     <extraction>
         <element_class>view-con</element_class>

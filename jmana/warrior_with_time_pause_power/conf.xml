@@ -9,7 +9,6 @@
             <list_url><![CDATA[https://jmana1.jjmana.net/comic_list_title?bookname=시간정지용사~수명+3일+설정으로+세계를+구하기엔+너무+짧잖아~]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_jmana.py -n 5</item_capture_script>
-        <render_js>true</render_js>
     </collection>
     <extraction>
         <element_class>view-con</element_class>

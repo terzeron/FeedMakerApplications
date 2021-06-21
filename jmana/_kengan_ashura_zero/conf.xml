@@ -8,7 +8,7 @@
         <list_url_list>
             <list_url><![CDATA[https://jmana1.jjmana.net/comic_list_title?bookname=켄간+아슈라+제로]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_jmana.py -n 20 | tail -1</item_capture_script>
+        <item_capture_script>../capture_item_jmana.py -n 20  "https://jmana1.jjman.net"| tail -1</item_capture_script>
     </collection>
     <extraction>
         <element_class>view-con</element_class>
