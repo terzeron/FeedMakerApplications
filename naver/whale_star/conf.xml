@@ -8,8 +8,16 @@
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767]]></list_url>
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=2]]></list_url>
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=3]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=4]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=5]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=6]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=7]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=8]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=9]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=10]]></list_url>
+            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=729767&page=11]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_naverwebtoon.py -n 100</item_capture_script>
+        <item_capture_script>../capture_item_naverwebtoon.py -n 300</item_capture_script>
     </collection>
     <extraction>
         <element_list>
