@@ -6,7 +6,7 @@
         <unit_size_per_day>24</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://funbe.gold/절대무신]]></list_url>
+            <list_url><![CDATA[https://funbe.fund/절대무신]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_funbe.py -n 5</item_capture_script>
         <referer><![CDATA[https://funbe.ink/]]></referer>
