@@ -6,19 +6,26 @@ import re
 import json
 import getopt
 from typing import List, Tuple
-from feed_maker_util import IO, URL
+from feed_maker_util import IO, URL, Config
+
+
+def get_url_from_config():
+    config = Config()
+    collection = config.get_collection_configs()
+    url = collection["list_url_list"][0]
+    return url
 
 
 def main() -> int:
     link = ""
     title = ""
+    url = get_url_from_config()
 
     num_of_recent_feeds = 1000
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
-    url = args[0]
 
     content = IO.read_stdin()
     result_list: List[Tuple[str, str]] = []
@@ -29,10 +36,8 @@ def main() -> int:
         title = item["t"]
         result_list.append((link, title))
         
-    num = len(result_list)
     for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%03d. %s" % (link, num, title))
-        num = num - 1
+        print("%s\t%s" % (link, title))
 
     return 0
 
