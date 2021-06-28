@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[wr_id=(\d+)]]></sort_field_pattern>
+        <unit_size_per_day>48</unit_size_per_day>
+        <ignore_old_list>true</ignore_old_list>
+        <list_url_list>
+            <list_url><![CDATA[https://buzztoon103.com/bbs/board.php?bo_table=webtoon&wr_id=672]]></list_url>
+        </list_url_list>
+        <item_capture_script>../capture_item_buzztoon.py -n 300</item_capture_script>
+    </collection>
+    <extraction>
+        <element_class>view-content</element_class>
+        <post_process_script_list>
+            <post_process_script>download_image.py</post_process_script>
+        </post_process_script_list>
+    </extraction>
+    <rss>
+        <title><![CDATA[철보::버즈툰]]></title>
+        <description><![CDATA[철보::버즈툰 - 모바일 버전 RSS Feed]]></description>
+        <feed_url><![CDATA[https://terzeron.com/cheolbo.xml]]></feed_url>
+        <link><![CDATA[https://terzeron.com/cheolbo.xml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) 버즈툰. All rights reserved.]]></copyright>
+        <language>ko</language>
+        <url_prefix_for_guid>https://buzztoon103.com</url_prefix_for_guid>
+    </rss>
+</configuration>
+
