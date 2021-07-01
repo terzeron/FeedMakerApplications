@@ -6,7 +6,7 @@
         <unit_size_per_day>24</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://buzztoon103.com/bbs/board.php?bo_table=webtoon&wr_id=290]]></list_url>
+            <list_url><![CDATA[https://buzztoon104.com/bbs/board.php?bo_table=webtoon&wr_id=290]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_buzztoon.py -n 5</item_capture_script>
     </collection>
