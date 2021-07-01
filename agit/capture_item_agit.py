@@ -36,7 +36,7 @@ def main() -> int:
         title = item["t"]
         result_list.append((link, title))
         
-    for (link, title) in result_list[:num_of_recent_feeds]:
+    for (link, title) in result_list[-num_of_recent_feeds:]:
         print("%s\t%s" % (link, title))
 
     return 0
