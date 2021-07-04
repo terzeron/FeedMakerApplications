@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>false</is_completed>
-        <sort_field_pattern><![CDATA[wr_id=(\d+)]]></sort_field_pattern>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\b(\d+(-\d+)?)화]]></sort_field_pattern>
         <unit_size_per_day>24</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
-            <list_url><![CDATA[https://buzztoon104.com/bbs/board.php?bo_table=webtoon&wr_id=111695]]></list_url>
+            <list_url><![CDATA[https://buzztoon104.com/bbs/board.php?bo_table=comics&wr_id=2661]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_buzztoon.py -n 5</item_capture_script>
+        <item_capture_script>../capture_item_buzztoon.py -n 300</item_capture_script>
     </collection>
     <extraction>
         <element_class>view-content</element_class>
         <post_process_script_list>
+            <post_process_script>../../manatoki/remove_anchor_images.py</post_process_script>
             <post_process_script>download_image.py</post_process_script>
         </post_process_script_list>
     </extraction>

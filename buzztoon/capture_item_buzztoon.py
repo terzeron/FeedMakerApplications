@@ -33,7 +33,7 @@ def main() -> int:
                 link = re.sub(r'&amp;', '&', link)
                 state = 2
         elif state == 2:
-            m = re.search(r'^\s+(?P<title>\S.+\S)\s+</a>', line)
+            m = re.search(r'^\s*(?:<span[^>]*>\s*</span>)?\s*(?P<title>\S.+\S)\s+</a>', line)
             if m:
                 title = m.group("title")
                 title = re.sub(r"\s+", " ", title)
