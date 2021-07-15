@@ -13,7 +13,7 @@ def main():
     url_prefix = "http://comic.naver.com"
 
     for line in IO.read_stdin_as_line_list():
-        m = re.search(r'<a[^>]*href="(?P<url>/webtoon/list.nhn\?titleId=\d+)[^"]*"[^>]*title="(?P<title>[^"]+)"[^>]*/?>', line)
+        m = re.search(r'<a[^>]*href="(?P<url>/webtoon/list\?titleId=\d+)[^"]*"[^>]*title="(?P<title>[^"]+)"[^>]*/?>', line)
         if m:
             url = m.group("url")
             title = m.group("title")

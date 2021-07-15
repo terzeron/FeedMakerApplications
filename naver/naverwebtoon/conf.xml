@@ -5,12 +5,17 @@
             <list_url><![CDATA[http://comic.naver.com/webtoon/weekday.nhn]]></list_url>
         </list_url_list>
         <ignore_old_list>true</ignore_old_list>
+        <post_process_script_list>
+            <post_process_script>shuf</post_process_script>
+        </post_process_script_list>
     </collection>
     <extraction>
         <element_list>
             <element_class>comicinfo</element_class>
         </element_list>
-        <force_sleep_between_articles>true</force_sleep_between_articles>
+        <post_process_script_list>
+            <post_process_script>./post_process_naverwebtoon.py</post_process_script>
+        </post_process_script_list>
     </extraction>
     <rss>
         <title><![CDATA[네이버웹툰목록]]></title>
