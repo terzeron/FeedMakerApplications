@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
+        <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>24</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
@@ -9,7 +9,7 @@
             <!-- 한국웹툰, 전체(200개), 다운만 -->
             <list_url><![CDATA[https://copytoon142.com/나-홀로-주문-사용자]]></list_url>
         </list_url_list>
-        <item_capture_script>../capture_item_copytoon.py -n 300</item_capture_script>
+        <item_capture_script>../capture_item_copytoon.py -n 5</item_capture_script>
     </collection>
     <extraction>
         <element_id>bo_v_con</element_id>
