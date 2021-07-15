@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
-import io
-import os
 import sys
-import re
+import json
 import getopt
 import feed_maker_util
 from feed_maker_util import IO
@@ -21,19 +19,19 @@ def main():
         if o == '-n':
             num_of_recent_feeds = int(a)
 
-    line_list = IO.read_stdin_as_line_list()
+    content = IO.read_stdin()
     result_list = []
-    for line in line_list:
-        p = re.compile(r'"id":(?P<id>\d+),"episode":(?P<episode>\d+),"title":"(?P<title>[^"]+)",')
-        for m in p.finditer(line):
-            md = m.groupdict()
-            id = md['id']
-            episode = int(md['episode'])
-            title = md['title']
-            title = re.sub(r'\\u0027', '\'', title)
-            link = link_prefix + id
-            title = "%04d. %s" % (episode, title)
-            result_list.append((link, title))
+    json_data = json.loads(content)
+    if "data" in json_data:
+        if "webtoon" in json_data["data"]:
+            if "webtoonEpisodes" in json_data["data"]["webtoon"]:
+                for episode in json_data["data"]["webtoon"]["webtoonEpisodes"]:
+                    if "title" in episode:
+                        title = episode["title"]
+                    if "articleId" in episode:
+                        link = link_prefix + str(episode["articleId"])
+                    if title and link:
+                        result_list.append((link, title))
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))

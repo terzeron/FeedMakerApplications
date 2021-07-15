@@ -14,13 +14,15 @@
             <list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/list_serialized/sun]]></list_url>
         </list_url_list>
         <ignore_old_list>true</ignore_old_list>
+        <post_process_script_list>
+            <post_process_script>shuf</post_process_script>
+        </post_process_script_list>
     </collection>
     <extraction>
         <bypass_element_extraction>true</bypass_element_extraction>
         <post_process_script_list>
             <post_process_script>./post_process_daumwebtoon.py</post_process_script>
         </post_process_script_list>
-        <force_sleep_between_articles>true</force_sleep_between_articles>
     </extraction>
     <rss>
         <title><![CDATA[다음웹툰목록]]></title>
