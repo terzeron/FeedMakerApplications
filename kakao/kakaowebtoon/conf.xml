@@ -2,84 +2,19 @@
 <configuration>
     <collection>
         <list_url_list>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=0&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=1&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=2&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=3&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=4&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=5&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=6&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=7&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=8&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=9&day=1&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=0&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=1&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=2&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=3&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=4&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=5&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=6&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=7&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=8&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=9&day=2&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=0&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=1&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=2&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=3&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=4&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=5&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=6&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=7&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=8&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=9&day=3&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=0&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=1&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=2&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=3&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=4&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=5&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=6&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=7&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=8&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=9&day=4&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=0&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=1&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=2&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=3&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=4&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=5&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=6&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=7&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=8&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=9&day=5&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=0&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=1&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=2&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=3&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=4&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=5&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=6&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=7&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=8&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=9&day=6&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=0&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=1&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=2&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=3&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=4&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=5&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=6&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=7&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=8&day=7&bm=A]]></list_url>
-            <list_url><![CDATA[https://api2-page.kakao.com/api/v2/store/day_of_week_top/list?category=10&subcategory=0&page=9&day=7&bm=A]]></list_url>
+            <list_url><![CDATA[https://api2-page.kakao.com/api/v9/store/section_container/list?agent=web&category=10&position=1000&day=0]]></list_url>
         </list_url_list>
         <bypass_element_extraction>true</bypass_element_extraction>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
+        <post_process_script_list>
+            <post_process_script>shuf</post_process_script>
+        </post_process_script_list>
     </collection>
     <extraction>
-        <element_list>
-            <element_path><![CDATA[//*[@id="root"]/div[3]/div/div/div[1]]]></element_path>
-        </element_list>
+        <bypass_element_extraction>true</bypass_element_extraction>
+        <post_process_script_list>
+            <post_process_script>./post_process_kakaowebtoon.py</post_process_script>
+        </post_process_script_list>
         <referer><![CDATA[https://page.kakao.com]]></referer>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
         <render_js>true</render_js>
