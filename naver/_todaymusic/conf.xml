@@ -325,7 +325,6 @@
     <rss>
         <title><![CDATA[오늘의뮤직::네이버뮤직]]></title>
         <description><![CDATA[오늘의 뮤직::네이버 뮤직 - 모바일 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/todaymusic.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/todaymusic.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All Rights Reserved]]></copyright>

@@ -25,7 +25,6 @@
     <rss>
         <title><![CDATA[InterBiz::네이버]]></title>
         <description><![CDATA[InterBiz::네이버]]></description>
-        <feed_url><![CDATA[https://terzeron.com/naverpost.businessinsight.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/naverpost.businessinsight.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp & InterBiz. All rights reserved.]]></copyright>

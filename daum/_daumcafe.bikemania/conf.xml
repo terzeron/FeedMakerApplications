@@ -32,7 +32,6 @@
     <rss>
         <title><![CDATA[바이크매니아]]></title>
         <description><![CDATA[바이크매니아 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/daumcafe.bikemania2.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/daumcafe.bikemania2.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>

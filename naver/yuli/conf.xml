@@ -22,7 +22,6 @@
     <rss>
         <title><![CDATA[율리::네이버]]></title>
         <description><![CDATA[율리::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/yuli.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/yuli.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>

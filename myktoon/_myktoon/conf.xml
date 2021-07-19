@@ -19,7 +19,6 @@
     <rss>
         <title><![CDATA[케이툰웹툰목록]]></title>
         <description><![CDATA[케이툰 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/myktoon.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/myktoon.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) KT Corp. All Rights Reserved]]></copyright>

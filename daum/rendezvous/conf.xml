@@ -21,7 +21,6 @@
     <rss>
         <title><![CDATA[랑데부::다음]]></title>
         <description><![CDATA[랑데부::다음 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/rendezvous.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/rendezvous.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>

@@ -21,7 +21,6 @@
     <rss>
         <title><![CDATA[나 홀로 로그인::W툰]]></title>
         <description><![CDATA[나 홀로 로그인::W툰 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/login_alone.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/login_alone.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) W툰. All rights reserved.]]></copyright>

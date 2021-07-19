@@ -21,7 +21,6 @@
     <rss>
         <title><![CDATA[사이언스타임즈]]></title>
         <description><![CDATA[사이언스타임즈 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/sci-tech.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/sci-tech.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) KOFAC. All Rights Reserved]]></copyright>

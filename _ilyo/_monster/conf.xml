@@ -18,7 +18,6 @@
     <rss>
         <title><![CDATA[몬스터::일요신문]]></title>
         <description><![CDATA[몬스터::일요신문 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/monster.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/monster.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) 일요신문. All Rights Reserved]]></copyright>

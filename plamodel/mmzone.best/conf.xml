@@ -26,7 +26,6 @@
     <rss>
         <title><![CDATA[MMZ 베스트]]></title>
         <description><![CDATA[MMZ 베스트 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/mmzone.best.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/mmzone.best.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) mmzone.com. All Rights Reserved]]></copyright>

@@ -44,7 +44,6 @@
     <rss>
         <title><![CDATA[신도림::네이버]]></title>
         <description><![CDATA[신도림::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/shindorim.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/shindorim.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>

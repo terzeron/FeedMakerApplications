@@ -27,7 +27,6 @@
     <rss>
         <title><![CDATA[다음웹툰목록]]></title>
         <description><![CDATA[다음웹툰목록 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/daumwebtoon.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/daumwebtoon.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>

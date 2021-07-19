@@ -36,7 +36,6 @@
     <rss>
         <title><![CDATA[일렉시드::네이버]]></title>
         <description><![CDATA[일렉시드::네이버 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/eleceed.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/eleceed.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All rights reserved.]]></copyright>

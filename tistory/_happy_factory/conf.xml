@@ -22,7 +22,6 @@
     <rss>
         <title><![CDATA[Happy Factory::티스토리]]></title>
         <description><![CDATA[Happy Factory::티스토리 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/happy_factory.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/happy_factory.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Tistory. All rights reserved.]]></copyright>

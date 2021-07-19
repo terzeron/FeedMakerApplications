@@ -17,7 +17,6 @@
     <rss>
         <title><![CDATA[Baeldung]]></title>
         <description><![CDATA[Baeldung - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/baeldung.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/baeldung.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Baeldung.com. All Rights Reserved]]></copyright>

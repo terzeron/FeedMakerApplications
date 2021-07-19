@@ -24,7 +24,6 @@
     <rss>
         <title><![CDATA[삼장전::카카오]]></title>
         <description><![CDATA[삼장전::카카오 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/monk_xuanzang.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/monk_xuanzang.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Kakao Corp. All Rights Reserved]]></copyright>

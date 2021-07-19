@@ -24,7 +24,6 @@
     <rss>
         <title><![CDATA[풍운::마나토끼]]></title>
         <description><![CDATA[풍운::마나토끼 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/wind_and_cloud.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/wind_and_cloud.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Manatoki. All rights reserved.]]></copyright>

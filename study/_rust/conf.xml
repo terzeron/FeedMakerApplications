@@ -18,7 +18,6 @@
     <rss>
         <title><![CDATA[Rust]]></title>
         <description><![CDATA[Rust - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/rust.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/rust.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) hanbum.gitbooks.io. All Rights Reserved]]></copyright>

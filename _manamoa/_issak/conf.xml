@@ -25,7 +25,6 @@
     <rss>
         <title><![CDATA[이삭::마나모아]]></title>
         <description><![CDATA[이삭::마나모아 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/issak.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/issak.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Manamoa. All rights reserved.]]></copyright>

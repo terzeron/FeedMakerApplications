@@ -13,7 +13,6 @@
     <rss>
         <title><![CDATA[오늘의영화::네이버영화]]></title>
         <description><![CDATA[오늘의 영화::네이버 영화 - 모바일 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/todaymovie.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/todaymovie.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) NAVER Corp. All Rights Reserved]]></copyright>

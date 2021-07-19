@@ -19,7 +19,6 @@
     <rss>
         <title><![CDATA[NestJS]]></title>
         <description><![CDATA[NestJS - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/nestjs.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/nestjs.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) nestjs.com. All Rights Reserved]]></copyright>

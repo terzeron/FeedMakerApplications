@@ -30,7 +30,6 @@
     <rss>
         <title><![CDATA[MMZ Forum]]></title>
         <description><![CDATA[MMZ Forum - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/mmzone.forum.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/mmzone.forum.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) mmzone.com. All Rights Reserved]]></copyright>

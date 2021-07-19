@@ -14,7 +14,6 @@
     <rss>
         <title><![CDATA[뉴스::Popit]]></title>
         <description><![CDATA[뉴스::Popit]]></description>
-        <feed_url><![CDATA[https://terzeron.com/popit.news.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/popit.news.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Popit. All rights reserved.]]></copyright>

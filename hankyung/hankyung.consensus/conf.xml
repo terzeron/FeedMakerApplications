@@ -20,7 +20,6 @@
     <rss>
         <title><![CDATA[컨센서스::한경]]></title>
         <description><![CDATA[컨센서스::한경 - 모바일 버전 RSS Feed]]></description>
-        <feed_url><![CDATA[https://terzeron.com/hankyung.consensus.xml]]></feed_url>
         <link><![CDATA[https://terzeron.com/hankyung.consensus.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Hankyung.com. All rights reserved.]]></copyright>
