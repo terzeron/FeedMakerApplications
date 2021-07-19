@@ -2,7 +2,7 @@
 <configuration>
     <collection>
         <is_completed>false</is_completed>
-        <unit_size_per_day>240</unit_size_per_day>
+        <unit_size_per_day>6</unit_size_per_day>
         <sort_field_pattern><![CDATA[report_idx=(\d+)]]></sort_field_pattern>
         <list_url_list>
             <list_url><![CDATA[http://consensus.hankyung.com/apps.analysis/analysis.list?pagenum=80]]></list_url>
