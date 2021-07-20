@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>false</is_completed>
+        <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[no=(\d+)]]></sort_field_pattern>
         <unit_size_per_day>5</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=0&keyword=%EC%95%84%ED%81%AC%EB%A6%B4&where=0]]></list_url>
-            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B정보%5D&start_page=0&keyword=%EC%95%84%ED%81%AC%EB%A6%B4&where=0]]></list_url>
-            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=0&keyword=%EC%95%84%ED%81%AC%EB%A6%B4&where=0]]></list_url>
-            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B자료%5D&start_page=0&keyword=%EC%95%84%ED%81%AC%EB%A6%B4&where=0]]></list_url>
-            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B질답%5D&start_page=0&keyword=%EC%95%84%ED%81%AC%EB%A6%B4&where=0]]></list_url>
+            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=35&where=0]]></list_url>
+            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=70&where=0]]></list_url>
+            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=105&where=0]]></list_url>
+            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=140&where=0]]></list_url>
+            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=175&where=0]]></list_url>
+            <list_url><![CDATA[http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=210&where=0]]></list_url>
         </list_url_list>
-        <item_capture_script>./capture_item_link_title.py -n 5</item_capture_script>
+        <item_capture_script>./capture_item_link_title.py -n 300</item_capture_script>
         <post_process_script_list>
             <!--post_process_script>grep -v '[질답]'</post_process_script-->
         </post_process_script_list>
