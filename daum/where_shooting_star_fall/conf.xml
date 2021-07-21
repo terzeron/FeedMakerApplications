@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <collection>
+        <is_completed>true</is_completed>
+        <sort_field_pattern><![CDATA[\/(\d+)\t]]></sort_field_pattern>
+        <unit_size_per_day>4</unit_size_per_day>
+        <list_url_list>
+            <list_url><![CDATA[http://cartoon.media.daum.net/data/pc/webtoon/view/shootingstar]]></list_url>
+        </list_url_list>
+        <item_capture_script>../capture_item_daumwebtoon.py -n 300</item_capture_script>
+    </collection>
+    <extraction>
+        <element_list>
+            <element_class>img_wrap</element_class>
+        </element_list>
+        <post_process_script_list>
+            <post_process_script>../post_process_daumwebtoon.py</post_process_script>
+        </post_process_script_list>
+        <force_sleep_between_articles>true</force_sleep_between_articles>
+    </extraction>
+    <rss>
+        <title><![CDATA[별똥별이 떨어지는 그 곳에서::다음]]></title>
+        <description><![CDATA[별똥별이 떨어지는 그 곳에서::다음 - 모바일 버전 RSS Feed]]></description>
+        <link><![CDATA[https://terzeron.com/where_shooting_star_fallsxml]]></link>
+        <generator><![CDATA[Terzeron's Feed Generator]]></generator>
+        <copyright><![CDATA[Copyright (c) Daum Communications. All rights reserved.]]></copyright>
+        <language>ko</language>
+    </rss>
+</configuration>
