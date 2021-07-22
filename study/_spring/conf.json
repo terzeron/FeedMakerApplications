@@ -1,0 +1,79 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": true,
+      "item_capture_script": "./capture_item_link_title.py",
+      "sort_field_pattern": "\\t(\\d+-\\d+-\\d+)",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 0.2,
+      "list_url_list": [
+        "https://spring.io/blog",
+        "https://spring.io/blog?page=1",
+        "https://spring.io/blog?page=2",
+        "https://spring.io/blog?page=3",
+        "https://spring.io/blog?page=4",
+        "https://spring.io/blog?page=5",
+        "https://spring.io/blog?page=6",
+        "https://spring.io/blog?page=7",
+        "https://spring.io/blog?page=8",
+        "https://spring.io/blog?page=9",
+        "https://spring.io/blog?page=10",
+        "https://spring.io/blog?page=11",
+        "https://spring.io/blog?page=12",
+        "https://spring.io/blog?page=13",
+        "https://spring.io/blog?page=14",
+        "https://spring.io/blog?page=15",
+        "https://spring.io/blog?page=16",
+        "https://spring.io/blog?page=17",
+        "https://spring.io/blog?page=18",
+        "https://spring.io/blog?page=19",
+        "https://spring.io/blog?page=20",
+        "https://spring.io/blog?page=21",
+        "https://spring.io/blog?page=22",
+        "https://spring.io/blog?page=23",
+        "https://spring.io/blog?page=24",
+        "https://spring.io/blog?page=25",
+        "https://spring.io/blog?page=26",
+        "https://spring.io/blog?page=27",
+        "https://spring.io/blog?page=28",
+        "https://spring.io/blog?page=29",
+        "https://spring.io/blog?page=30"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "blog--post"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "Spring",
+      "rss_description": "Spring - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) spring.io. All Rights Reserved",
+      "rss_link": "https://terzeron.com/spring.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

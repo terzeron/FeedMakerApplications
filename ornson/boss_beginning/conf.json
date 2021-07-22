@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_ornson.py -n 5",
+      "sort_field_pattern": "/(\\d+)\\t",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "http://5rs-a36.com/board/총수-비기닝"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [
+        "post-content"
+      ],
+      "element_class_list": [],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "총수-비기닝::오른손닷컴",
+      "rss_description": "총수-비기닝::오른손닷컴 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) 오른손닷컴. All rights reserved.",
+      "rss_link": "https://terzeron.com/boss_beginning.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": "https://5rs-wc21.com"
+    }
+  }
+}

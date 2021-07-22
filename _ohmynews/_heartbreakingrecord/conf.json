@@ -1,0 +1,72 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_ohmynews.pl",
+      "sort_field_pattern": "CNTN_CD=A(\\d+)",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 12,
+      "list_url_list": [
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=23",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=22",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=21",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=20",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=19",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=18",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=17",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=16",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=15",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=14",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=13",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=12",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=11",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=11",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=10",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=9",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=8",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=7",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=6",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=5",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=4",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=3",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=2",
+        "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=1"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "article_view"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "단장기::오마이뉴스",
+      "rss_description": "단장기::오마이뉴스 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) OhmyNews. All Rights Reserved",
+      "rss_link": "https://terzeron.com/heartbreakingrecord.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

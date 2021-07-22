@@ -1,0 +1,49 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_sisain.py -n 5",
+      "sort_field_pattern": "idxno=(\\d+)",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "https://www.sisain.co.kr/news/ajaxArticleListPaging.php?total=176&list_per_page=20&page_per_page=10&page=1&sc_area=A&sc_word=%EB%B3%B8%EA%B2%A9+%EC%8B%9C%EC%82%AC%EC%9D%B8+%EB%A7%8C%ED%99%94&view_type=sm"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [
+        "article-view-content-div"
+      ],
+      "element_class_list": [],
+      "element_path_list": [],
+      "post_process_script_list": [],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "본격 시사인 만화::시사IN",
+      "rss_description": "본격 시사인 만화::시사IN",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) 시사IN & @amaciunas. All rights reserved.",
+      "rss_link": "https://terzeron.com/sisain.cartoon.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

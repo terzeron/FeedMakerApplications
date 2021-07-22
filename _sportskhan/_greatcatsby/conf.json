@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_link_title.py",
+      "sort_field_pattern": "page=(\\d+)",
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "http://sports.khan.co.kr/comics/cartoon_view.html?comics=b2c&sec_id=550114"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [
+        "NewsAdContent"
+      ],
+      "element_class_list": [],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "../post_process_sportskhan.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "위대한 캣츠비::스포츠경향",
+      "rss_description": "위대한 캣츠비::스포츠경향 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) The Kyunghyang Shinmun. All Rights Reserved",
+      "rss_link": "https://terzeron.com/greatcatsby.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

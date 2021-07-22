@@ -1,0 +1,62 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_daumcafe.py -n 50",
+      "sort_field_pattern": [
+        "(\\d+)\\t",
+        "\\b(\\d+)\\."
+      ],
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 8,
+      "list_url_list": [
+        "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0004ozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003gzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=",
+        "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0000czzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=00001zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=6&page=1&listnum=50&sortType=",
+        "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=000FDzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=000EAzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=",
+        "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=000GDzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=000FFzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType=",
+        "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=00009zzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=00006zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=5&page=1&listnum=50&sortType=",
+        "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=0004czzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003Szzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType="
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [
+        "wrap",
+        "user_contents"
+      ],
+      "element_class_list": [
+        "subject"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "바이크매니아",
+      "rss_description": "바이크매니아 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) Daum Communications. All rights reserved.",
+      "rss_link": "https://terzeron.com/daumcafe.bikemania2.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

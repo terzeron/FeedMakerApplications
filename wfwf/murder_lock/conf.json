@@ -1,0 +1,52 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wfwf.py -n 5",
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://wfwf156.com/cl?toon=12589"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "image-view"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "머더 락::늑대닷컴",
+      "rss_description": "머더 락::늑대닷컴 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "rss_link": "https://terzeron.com/murder_lock.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": "https://wfwf24.com"
+    }
+  }
+}

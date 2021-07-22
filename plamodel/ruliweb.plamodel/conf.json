@@ -1,0 +1,53 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "./capture_item_link_title.py -n 10",
+      "sort_field_pattern": "read\\/(\\d+)",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 30,
+      "list_url_list": [
+        "https://bbs.ruliweb.com/family/232/board/300082?view_best=1&page=1"
+      ],
+      "post_process_script_list": [
+        "egrep -v -i \"(sd|프레임.*걸|프암걸|포뮬러|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\\s?아미|고우라이|가오가이가|판타시스타|사이버\\s?포뮬라|록맨|자우라|키카이오|메탈가루몬|캡틴\\s?사우루스|핸드스케일걸|드라몬|그레이몬|아야카|유우키|마도카|루덴스|코토리|흐레스벨그)\""
+      ]
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": true,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "board_main_view"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "프라모델 캐릭터모형 갤러리::루리웹",
+      "rss_description": "프라모델 캐릭터모형 갤러리::루리웹 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) ruliweb.com, 프라모델 캐릭터모형 갤러리. All Rights Reserved",
+      "rss_link": "https://terzeron.com/ruliweb.plamodel.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

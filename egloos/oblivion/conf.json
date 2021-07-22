@@ -1,0 +1,54 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_link_title.py",
+      "sort_field_pattern": "(\\d+)\\t",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "http://oblivion.egloos.com/",
+        "http://oblivion.egloos.com/page/2",
+        "http://oblivion.egloos.com/page/3",
+        "http://oblivion.egloos.com/page/4",
+        "http://oblivion.egloos.com/page/5"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "post_view",
+        "post_body"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "타인에게 말걸기::이글루스",
+      "rss_description": "타인에게 말걸기::이글루스",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) oblivion & Egloos. All Rights Reserved",
+      "rss_link": "https://terzeron.com/oblivion.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

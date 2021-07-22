@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_naverpost.py",
+      "sort_field_pattern": "volumeNo=(\\d+)",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "http://m.post.naver.com/async/my.nhn?memberNo=9048182&postListViewType=0&isExpertMy=true&fromNo=1"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": true,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [
+        "cont"
+      ],
+      "element_class_list": [],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "바이커즈랩::네이버",
+      "rss_description": "바이커즈랩::네이버",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) NAVER Corp & 바이커즈랩. All rights reserved.",
+      "rss_link": "https://terzeron.com/naverpost.bikerslab.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

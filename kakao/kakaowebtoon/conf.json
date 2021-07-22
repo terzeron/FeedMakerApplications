@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "./capture_item_link_title.py",
+      "sort_field_pattern": null,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": null,
+      "list_url_list": [
+        "https://api2-page.kakao.com/api/v9/store/section_container/list?agent=web&category=10&position=1000&day=0"
+      ],
+      "post_process_script_list": [
+        "shuf"
+      ]
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": true,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
+      "encoding": "utf8",
+      "referer": "https://page.kakao.com",
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "./post_process_kakaowebtoon.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "카카오웹툰목록",
+      "rss_description": "카카오웹툰목록 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) Daum Kakao Corp. All Rights Reserved",
+      "rss_link": "https://terzeron.com/kakaowebtoon.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

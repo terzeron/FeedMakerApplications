@@ -1,0 +1,52 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_buzztoon.py -n 5",
+      "sort_field_pattern": "\\b(\\d+(-\\d+)?)화",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "https://buzztoon105.com/bbs/board.php?bo_table=comics&wr_id=2661"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "view-content"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "../../manatoki/remove_anchor_images.py",
+        "download_image.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "카구야님은 고백받고 싶어 ~천재들의 연애 두뇌전~::버즈툰",
+      "rss_description": "카구야님은 고백받고 싶어 ~천재들의 연애 두뇌전~::버즈툰 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) 버즈툰. All rights reserved.",
+      "rss_link": "https://terzeron.com/girl_who_want_to_be_confessed.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": "https://buzztoon103.com"
+    }
+  }
+}

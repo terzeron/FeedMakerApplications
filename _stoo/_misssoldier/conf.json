@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_stoo2.pl -n 10",
+      "sort_field_pattern": null,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": null,
+      "list_url_list": [
+        "http://stoo.asiae.co.kr/cartoon/ctlist.php?pg=1&strForm=s_list&sc3=103&sc2=ing"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "ctview"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "../post_process_stoo.pl"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "미스 군통령::스투닷컴",
+      "rss_description": "미스 군통령::스투닷컴 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) STOO.COM. All rights reserved.",
+      "rss_link": "https://terzeron.com/misssoldier.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

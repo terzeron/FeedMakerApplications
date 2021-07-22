@@ -1,0 +1,69 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_naverblog.py -n 200",
+      "sort_field_pattern": "&logNo=(\\d+)",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=0&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=1&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=2&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=3&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=4&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=5&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=6&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=7&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=8&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=9&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=10&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=11&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=12&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=13&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=14&categoryNo=39&parentCategoryNo=39&countPerPage=30",
+        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=15&categoryNo=39&parentCategoryNo=39&countPerPage=30"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": true,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [
+        "postViewArea"
+      ],
+      "element_class_list": [
+        "se_component_wrap",
+        "se-main-container"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "Old but Real - Realens::네이버",
+      "rss_description": "Old but Real - Realens::네이버",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) NAVER Corp & econophysics@naver.com. All rights reserved.",
+      "rss_link": "https://terzeron.com/naverblog.tigerahn2013.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

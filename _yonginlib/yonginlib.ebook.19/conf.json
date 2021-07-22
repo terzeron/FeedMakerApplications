@@ -1,0 +1,49 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_yonginlib.pl",
+      "sort_field_pattern": null,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": null,
+      "list_url_list": [
+        "http://ebook.yonginlib.go.kr/Kyobo_T3/Content/ebook/ebook_List.asp?product_cd=001&category_id=19&content_all=Y&order_key=pub_ymd&search_keyword=&search_type=&search_product_cd=&list_type=&now_page=1"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [
+        "contents"
+      ],
+      "element_class_list": [],
+      "element_path_list": [],
+      "post_process_script_list": [],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "역사풍속신화::용인디지털정보도서관",
+      "rss_description": "역사풍속신화::용인디지털정보도서관 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) Yongin City Library. All Rights Reserved",
+      "rss_link": "https://terzeron.com/yonginlib.ebook.19.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

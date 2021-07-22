@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_daumwebtoon.py -n 10",
+      "sort_field_pattern": "\\b(\\d+)\\.",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "http://cartoon.media.daum.net/data/pc/webtoon/view/weakteacher"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": true,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "img_wrap"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "../post_process_daumwebtoon.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "허약선생::다음",
+      "rss_description": "허약선생::다음 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) Daum Communications. All rights reserved.",
+      "rss_link": "https://terzeron.com/weak_teacher.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

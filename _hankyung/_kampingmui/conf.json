@@ -1,0 +1,70 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": true,
+      "item_capture_script": "./capture_item_link_title.py",
+      "sort_field_pattern": "no=(\\d+)",
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 6,
+      "list_url_list": [
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=1&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=2&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=3&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=4&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=5&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=6&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=7&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=8&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=9&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=10&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=11&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=12&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=13&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=14&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=15&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=16&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=17&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=18&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=19&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=20&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=21&ch=comm",
+        "http://w.hankyung.com/board/list.php?id=community_kbm&category=22&ch=comm"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "cp949",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "article"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "금병매::한경닷컴",
+      "rss_description": "금병매::한경닷컴 - 모바일 버전 RSS Feed",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) 한경닷컴. All Rights Reserved",
+      "rss_link": "https://terzeron.com/kampingmui.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}

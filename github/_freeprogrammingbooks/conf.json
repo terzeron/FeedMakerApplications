@@ -1,0 +1,49 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "./capture_item_link_title.py",
+      "sort_field_pattern": "^(http\\S+)\\t",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": true,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "./post_process.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "rss_title": "Free Programming Books::vhf",
+      "rss_description": "Free Programming Books::vhf",
+      "rss_generator": "Terzeron's Feed Generator",
+      "rss_copyright": "Copyright (c) TeamSEGO. All rights reserved.",
+      "rss_link": "https://terzeron.com/freeprogrammingbooks.xml",
+      "rss_language": "ko",
+      "rss_url_prefix_for_guid": null
+    }
+  }
+}
