@@ -31,17 +31,10 @@ def main():
                 title = m.group("title")
                 state = 2
         elif state == 2:
-            m = re.search(r'<li>(?P<subtitle>.+?)</li>', line)
-            if m:
-                subtitle = m.group("subtitle")
-                if subtitle not in title:
-                    title = title + " - " + subtitle
-                state = 5
-        elif state == 5:
             m = re.search(r'<a href="(?P<link>[^"]+)"[^>]*><img src="/images/btn_attached.gif"', line)
             if m:
                 link = url_prefix + m.group("link")
-                if not re.search(r'(\(\d\d\d\d\d\d\)|시장\s*지표|Daily|Today|오늘|Overnight|Start with IBKS|Global Market Insight|Morning|Oneday|Eugene|Volatility)', title, re.IGNORECASE) and re.search(r'(주간|weekly|월간|monthly)', title, re.IGNORECASE):
+                if re.search(r'(주간|weekly|월간|monthly|연간|yearly)', title, re.IGNORECASE):
                     result_list.append((link, title))
                 state = 0
 
