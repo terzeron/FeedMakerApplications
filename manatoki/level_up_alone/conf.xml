@@ -20,7 +20,7 @@
         </post_process_script_list>
         <render_js>true</render_js>
         <simulate_scrolling>true</simulate_scrolling>
-        <timeout>480</timeout>
+        <timeout>600</timeout>
     </extraction>
     <rss>
         <title><![CDATA[나혼자만 레벨업::마나토끼]]></title>
