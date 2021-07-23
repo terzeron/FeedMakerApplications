@@ -41,13 +41,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "하이스코어 걸 Dash::제이마나",
-      "rss_description": "하이스코어 걸 Dash::제이마나 - 모바일 버전 RSS Feed",
+      "title": "하이스코어 걸 Dash::제이마나",
+      "description": "하이스코어 걸 Dash::제이마나 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) JMana. All rights reserved.",
-      "rss_link": "https://terzeron.com/highscore_girl_dash.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://aboutdron.net"
+      "copyright": "Copyright (c) JMana. All rights reserved.",
+      "link": "https://terzeron.com/highscore_girl_dash.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://aboutdron.net"
     }
   }
 }

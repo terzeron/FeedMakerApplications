@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "신의 게임의 신::늑대닷컴",
-      "rss_description": "신의 게임의 신::늑대닷컴 - 모바일 버전 RSS Feed",
+      "title": "신의 게임의 신::늑대닷컴",
+      "description": "신의 게임의 신::늑대닷컴 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
-      "rss_link": "https://terzeron.com/master_of_game_of_god.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://wfwf24.com"
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "link": "https://terzeron.com/master_of_game_of_god.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://wfwf24.com"
     }
   }
 }

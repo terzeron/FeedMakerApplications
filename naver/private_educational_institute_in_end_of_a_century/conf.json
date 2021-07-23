@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "세기말 풋사과 보습학원::네이버",
-      "rss_description": "세기말 풋사과 보습학원​::네이버 - 모바일 버전 RSS Feed",
+      "title": "세기말 풋사과 보습학원::네이버",
+      "description": "세기말 풋사과 보습학원​::네이버 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "rss_link": "https://terzeron.com/private_educational_institute_in_end_of_a_century.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/private_educational_institute_in_end_of_a_century.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

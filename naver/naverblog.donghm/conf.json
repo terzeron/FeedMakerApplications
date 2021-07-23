@@ -42,13 +42,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "박회계사의 투자이야기::네이버",
-      "rss_description": "박회계사의 투자이야기::네이버",
+      "title": "박회계사의 투자이야기::네이버",
+      "description": "박회계사의 투자이야기::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & donghm@naver.com. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverblog.donghm.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & donghm@naver.com. All rights reserved.",
+      "link": "https://terzeron.com/naverblog.donghm.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

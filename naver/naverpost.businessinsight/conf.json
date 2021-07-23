@@ -42,13 +42,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "InterBiz::네이버",
-      "rss_description": "InterBiz::네이버",
+      "title": "InterBiz::네이버",
+      "description": "InterBiz::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & InterBiz. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverpost.businessinsight.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & InterBiz. All rights reserved.",
+      "link": "https://terzeron.com/naverpost.businessinsight.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

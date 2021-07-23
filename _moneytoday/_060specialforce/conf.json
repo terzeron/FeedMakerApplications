@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "060특수부대::머니투데이",
-      "rss_description": "060특수부대::머니투데이 - 모바일 버전 RSS Feed",
+      "title": "060특수부대::머니투데이",
+      "description": "060특수부대::머니투데이 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) MoneyToday. All rights reserved.",
-      "rss_link": "https://terzeron.com/060specialforce.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) MoneyToday. All rights reserved.",
+      "link": "https://terzeron.com/060specialforce.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

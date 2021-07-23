@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "오합지존::아지트",
-      "rss_description": "오합지존::아지트 - 모바일 버전 RSS Feed",
+      "title": "오합지존::아지트",
+      "description": "오합지존::아지트 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 아지트. All rights reserved.",
-      "rss_link": "https://terzeron.com/untrained_warrior_to_summit.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://agit59.com"
+      "copyright": "Copyright (c) 아지트. All rights reserved.",
+      "link": "https://terzeron.com/untrained_warrior_to_summit.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://agit59.com"
     }
   }
 }

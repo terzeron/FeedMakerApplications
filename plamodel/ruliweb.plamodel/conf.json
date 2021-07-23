@@ -41,13 +41,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "프라모델 캐릭터모형 갤러리::루리웹",
-      "rss_description": "프라모델 캐릭터모형 갤러리::루리웹 - 모바일 버전 RSS Feed",
+      "title": "프라모델 캐릭터모형 갤러리::루리웹",
+      "description": "프라모델 캐릭터모형 갤러리::루리웹 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) ruliweb.com, 프라모델 캐릭터모형 갤러리. All Rights Reserved",
-      "rss_link": "https://terzeron.com/ruliweb.plamodel.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) ruliweb.com, 프라모델 캐릭터모형 갤러리. All Rights Reserved",
+      "link": "https://terzeron.com/ruliweb.plamodel.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

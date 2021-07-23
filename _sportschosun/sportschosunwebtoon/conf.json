@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "스포츠조선웹툰목록",
-      "rss_description": "스포츠조선웹툰목록 - 모바일 버전 RSS Feed",
+      "title": "스포츠조선웹툰목록",
+      "description": "스포츠조선웹툰목록 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) SPORTSCHOSUN.COM. All Rights Reserved",
-      "rss_link": "https://terzeron.com/sportschosunwebtoon.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) SPORTSCHOSUN.COM. All Rights Reserved",
+      "link": "https://terzeron.com/sportschosunwebtoon.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

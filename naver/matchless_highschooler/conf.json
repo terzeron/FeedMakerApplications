@@ -49,13 +49,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "고삼무쌍::네이버",
-      "rss_description": "고삼무쌍::네이버 - 모바일 버전 RSS Feed",
+      "title": "고삼무쌍::네이버",
+      "description": "고삼무쌍::네이버 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "rss_link": "https://terzeron.com/matchless_highschooler.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/matchless_highschooler.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

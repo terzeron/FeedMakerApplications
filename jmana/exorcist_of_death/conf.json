@@ -41,13 +41,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "임종의 퇴마사 - 엔더 가이스터::제이마나",
-      "rss_description": "임종의 퇴마사 - 엔더 가이스터::제이마나 - 모바일 버전 RSS Feed",
+      "title": "임종의 퇴마사 - 엔더 가이스터::제이마나",
+      "description": "임종의 퇴마사 - 엔더 가이스터::제이마나 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) JMana. All rights reserved.",
-      "rss_link": "https://terzeron.com/exorcist_of_death.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://aboutdron.net"
+      "copyright": "Copyright (c) JMana. All rights reserved.",
+      "link": "https://terzeron.com/exorcist_of_death.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://aboutdron.net"
     }
   }
 }

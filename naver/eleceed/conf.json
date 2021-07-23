@@ -53,13 +53,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "일렉시드::네이버",
-      "rss_description": "일렉시드::네이버 - 모바일 버전 RSS Feed",
+      "title": "일렉시드::네이버",
+      "description": "일렉시드::네이버 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "rss_link": "https://terzeron.com/eleceed.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/eleceed.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

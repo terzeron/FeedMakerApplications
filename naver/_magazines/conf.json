@@ -43,13 +43,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "매거진S::네이버스포츠",
-      "rss_description": "매거진S::네이버스포츠 - 모바일 버전 RSS Feed",
+      "title": "매거진S::네이버스포츠",
+      "description": "매거진S::네이버스포츠 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
-      "rss_link": "https://terzeron.com/magazines.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
+      "link": "https://terzeron.com/magazines.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

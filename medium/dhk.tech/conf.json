@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "Delivery Tech::DHK",
-      "rss_description": "Delivery Tech::DHK - 모바일 버전 RSS Feed",
+      "title": "Delivery Tech::DHK",
+      "description": "Delivery Tech::DHK - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) DHK. All rights reserved.",
-      "rss_link": "https://terzeron.com/dhk.tech.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) DHK. All rights reserved.",
+      "link": "https://terzeron.com/dhk.tech.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

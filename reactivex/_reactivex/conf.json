@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "ReactiveX",
-      "rss_description": "ReactiveX - 모바일 버전 RSS Feed",
+      "title": "ReactiveX",
+      "description": "ReactiveX - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) mobile3. All Rights Reserved",
-      "rss_link": "https://terzeron.com/reactivex.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) mobile3. All Rights Reserved",
+      "link": "https://terzeron.com/reactivex.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

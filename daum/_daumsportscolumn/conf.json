@@ -41,13 +41,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "다음스포츠칼럼::다음",
-      "rss_description": "다음스포츠칼럼::다음 - 모바일 버전 RSS Feed",
+      "title": "다음스포츠칼럼::다음",
+      "description": "다음스포츠칼럼::다음 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Daum Communications. All rights reserved.",
-      "rss_link": "https://terzeron.com/daumsportscolumn.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Daum Communications. All rights reserved.",
+      "link": "https://terzeron.com/daumsportscolumn.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

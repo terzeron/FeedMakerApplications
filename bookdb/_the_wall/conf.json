@@ -47,13 +47,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "[우영창] The Wall::BookDB",
-      "rss_description": "[우영창] The Wall::BookDB - 모바일 버전 RSS Feed",
+      "title": "[우영창] The Wall::BookDB",
+      "description": "[우영창] The Wall::BookDB - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Interpark Corporation. All Rights Reserved",
-      "rss_link": "https://terzeron.com/the_wall.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Interpark Corporation. All Rights Reserved",
+      "link": "https://terzeron.com/the_wall.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

@@ -38,13 +38,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "건담 UC::마나모아",
-      "rss_description": "건담 UC::마나모아 - 모바일 버전 RSS Feed",
+      "title": "건담 UC::마나모아",
+      "description": "건담 UC::마나모아 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Manamoa. All rights reserved.",
-      "rss_link": "https://terzeron.com/gundam_uc.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://manamoa6.net"
+      "copyright": "Copyright (c) Manamoa. All rights reserved.",
+      "link": "https://terzeron.com/gundam_uc.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://manamoa6.net"
     }
   }
 }

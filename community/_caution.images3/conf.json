@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "후방주의",
-      "rss_description": "후방주의 - 모바일 버전 RSS Feed",
+      "title": "후방주의",
+      "description": "후방주의 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) CLIEN.NET. All rights reserved.",
-      "rss_link": "https://terzeron.com/caution.images3.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) CLIEN.NET. All rights reserved.",
+      "link": "https://terzeron.com/caution.images3.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

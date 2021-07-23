@@ -111,13 +111,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "산들산들::티스토리",
-      "rss_description": "산들산들::티스토리 - 모바일 버전 RSS Feed",
+      "title": "산들산들::티스토리",
+      "description": "산들산들::티스토리 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Tistory. All rights reserved.",
-      "rss_link": "https://terzeron.com/surplusperson.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Tistory. All rights reserved.",
+      "link": "https://terzeron.com/surplusperson.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

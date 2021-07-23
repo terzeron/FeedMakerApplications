@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "Den::네이버",
-      "rss_description": "Den::네이버",
+      "title": "Den::네이버",
+      "description": "Den::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & Den. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverpost.den.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & Den. All rights reserved.",
+      "link": "https://terzeron.com/naverpost.den.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

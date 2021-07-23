@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "천검의 마술사라 불린 검사::마나모아",
-      "rss_description": "천검의 마술사라 불린 검사::마나모아 - 모바일 버전 RSS Feed",
+      "title": "천검의 마술사라 불린 검사::마나모아",
+      "description": "천검의 마술사라 불린 검사::마나모아 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Manamoa. All rights reserved.",
-      "rss_link": "https://terzeron.com/swordsman_called_as_magician_with_thousand_swords.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://manamoa6.net"
+      "copyright": "Copyright (c) Manamoa. All rights reserved.",
+      "link": "https://terzeron.com/swordsman_called_as_magician_with_thousand_swords.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://manamoa6.net"
     }
   }
 }

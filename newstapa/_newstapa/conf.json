@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "뉴스::뉴스타파",
-      "rss_description": "뉴스::뉴스타파 - 모바일 버전 RSS Feed",
+      "title": "뉴스::뉴스타파",
+      "description": "뉴스::뉴스타파 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) KCIJ. All Rights Reserved",
-      "rss_link": "https://terzeron.com/newstapa.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) KCIJ. All Rights Reserved",
+      "link": "https://terzeron.com/newstapa.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

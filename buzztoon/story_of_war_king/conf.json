@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "전왕전기::버즈툰",
-      "rss_description": "전왕전기::버즈툰 - 모바일 버전 RSS Feed",
+      "title": "전왕전기::버즈툰",
+      "description": "전왕전기::버즈툰 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 버즈툰. All rights reserved.",
-      "rss_link": "https://terzeron.com/story_of_war_king.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://buzztoon103.com"
+      "copyright": "Copyright (c) 버즈툰. All rights reserved.",
+      "link": "https://terzeron.com/story_of_war_king.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://buzztoon103.com"
     }
   }
 }

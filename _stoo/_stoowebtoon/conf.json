@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "스투웹툰목록",
-      "rss_description": "스투웹툰목록 - 모바일 버전 RSS Feed",
+      "title": "스투웹툰목록",
+      "description": "스투웹툰목록 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) STOO.COM. All rights reserved.",
-      "rss_link": "https://terzeron.com/stoowebtoon.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) STOO.COM. All rights reserved.",
+      "link": "https://terzeron.com/stoowebtoon.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

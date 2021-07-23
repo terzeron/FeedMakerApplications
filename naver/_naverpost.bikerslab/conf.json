@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "바이커즈랩::네이버",
-      "rss_description": "바이커즈랩::네이버",
+      "title": "바이커즈랩::네이버",
+      "description": "바이커즈랩::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & 바이커즈랩. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverpost.bikerslab.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & 바이커즈랩. All rights reserved.",
+      "link": "https://terzeron.com/naverpost.bikerslab.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "절세무신::Funbe",
-      "rss_description": "절세무신::Funbe - 모바일 버전 RSS Feed",
+      "title": "절세무신::Funbe",
+      "description": "절세무신::Funbe - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Funbe. All rights reserved.",
-      "rss_link": "https://terzeron.com/extraordinary_god_of_martial_arts.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://funbe.site"
+      "copyright": "Copyright (c) Funbe. All rights reserved.",
+      "link": "https://terzeron.com/extraordinary_god_of_martial_arts.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://funbe.site"
     }
   }
 }

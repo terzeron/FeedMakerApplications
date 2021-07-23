@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "본격 시사인 만화::시사IN",
-      "rss_description": "본격 시사인 만화::시사IN",
+      "title": "본격 시사인 만화::시사IN",
+      "description": "본격 시사인 만화::시사IN",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 시사IN & @amaciunas. All rights reserved.",
-      "rss_link": "https://terzeron.com/sisain.cartoon.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) 시사IN & @amaciunas. All rights reserved.",
+      "link": "https://terzeron.com/sisain.cartoon.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

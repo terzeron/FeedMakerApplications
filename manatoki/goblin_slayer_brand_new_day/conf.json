@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "고블린 슬레이어 외전: 브랜드 뉴 데이::마나토끼",
-      "rss_description": "고블린 슬레이어 외전: 브랜드 뉴 데이::마나토끼 - 모바일 버전 RSS Feed",
+      "title": "고블린 슬레이어 외전: 브랜드 뉴 데이::마나토끼",
+      "description": "고블린 슬레이어 외전: 브랜드 뉴 데이::마나토끼 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Manatoki. All rights reserved.",
-      "rss_link": "https://terzeron.com/goblin_slayer_brand_new_day.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://newtoki17.com"
+      "copyright": "Copyright (c) Manatoki. All rights reserved.",
+      "link": "https://terzeron.com/goblin_slayer_brand_new_day.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://newtoki17.com"
     }
   }
 }

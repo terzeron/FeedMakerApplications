@@ -42,13 +42,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "Second Coming::네이버",
-      "rss_description": "Second Coming::네이버",
+      "title": "Second Coming::네이버",
+      "description": "Second Coming::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & breitner@naver.com. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverblog.breitner.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & breitner@naver.com. All rights reserved.",
+      "link": "https://terzeron.com/naverblog.breitner.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

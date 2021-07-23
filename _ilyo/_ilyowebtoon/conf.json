@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "일요신문웹툰목록",
-      "rss_description": "일요신문웹툰목록 - 모바일 버전 RSS Feed",
+      "title": "일요신문웹툰목록",
+      "description": "일요신문웹툰목록 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 일요신문. All Rights Reserved",
-      "rss_link": "https://terzeron.com/ilyowebtoon.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) 일요신문. All Rights Reserved",
+      "link": "https://terzeron.com/ilyowebtoon.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

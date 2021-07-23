@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "Tech notes::쿠팡",
-      "rss_description": "Tech notes::쿠팡 - 모바일 버전 RSS Feed",
+      "title": "Tech notes::쿠팡",
+      "description": "Tech notes::쿠팡 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Coupang. All rights reserved.",
-      "rss_link": "https://terzeron.com/coupang.tech.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Coupang. All rights reserved.",
+      "link": "https://terzeron.com/coupang.tech.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "장씨세가 호위무사::버즈툰",
-      "rss_description": "장씨세가 호위무사::버즈툰 - 모바일 버전 RSS Feed",
+      "title": "장씨세가 호위무사::버즈툰",
+      "description": "장씨세가 호위무사::버즈툰 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 버즈툰. All rights reserved.",
-      "rss_link": "https://terzeron.com/bodyguard_of_jangs_noble_family.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://buzztoon103.com"
+      "copyright": "Copyright (c) 버즈툰. All rights reserved.",
+      "link": "https://terzeron.com/bodyguard_of_jangs_noble_family.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://buzztoon103.com"
     }
   }
 }

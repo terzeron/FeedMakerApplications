@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "쿠오바디스와 행로난::경향",
-      "rss_description": "쿠오바디스와 행로난::경향 - 모바일 버전 RSS Feed",
+      "title": "쿠오바디스와 행로난::경향",
+      "description": "쿠오바디스와 행로난::경향 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) The Kyunghyang Shinmun. All Rights Reserved",
-      "rss_link": "https://terzeron.com/quovadis.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) The Kyunghyang Shinmun. All Rights Reserved",
+      "link": "https://terzeron.com/quovadis.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

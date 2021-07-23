@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "스포츠칼럼::Nate스포츠",
-      "rss_description": "스포츠칼럼::Nate스포츠 - 모바일 버전 RSS Feed",
+      "title": "스포츠칼럼::Nate스포츠",
+      "description": "스포츠칼럼::Nate스포츠 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) SK Communications. All rights reserved.",
-      "rss_link": "https://terzeron.com/natespopubcolumn.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) SK Communications. All rights reserved.",
+      "link": "https://terzeron.com/natespopubcolumn.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

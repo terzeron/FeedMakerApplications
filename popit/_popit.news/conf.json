@@ -35,13 +35,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "뉴스::Popit",
-      "rss_description": "뉴스::Popit",
+      "title": "뉴스::Popit",
+      "description": "뉴스::Popit",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Popit. All rights reserved.",
-      "rss_link": "https://terzeron.com/popit.news.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Popit. All rights reserved.",
+      "link": "https://terzeron.com/popit.news.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

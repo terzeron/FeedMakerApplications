@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "카구야님은 고백받고 싶어 ~천재들의 연애 두뇌전~::버즈툰",
-      "rss_description": "카구야님은 고백받고 싶어 ~천재들의 연애 두뇌전~::버즈툰 - 모바일 버전 RSS Feed",
+      "title": "카구야님은 고백받고 싶어 ~천재들의 연애 두뇌전~::버즈툰",
+      "description": "카구야님은 고백받고 싶어 ~천재들의 연애 두뇌전~::버즈툰 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 버즈툰. All rights reserved.",
-      "rss_link": "https://terzeron.com/girl_who_want_to_be_confessed.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://buzztoon103.com"
+      "copyright": "Copyright (c) 버즈툰. All rights reserved.",
+      "link": "https://terzeron.com/girl_who_want_to_be_confessed.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://buzztoon103.com"
     }
   }
 }

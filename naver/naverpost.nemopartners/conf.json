@@ -42,13 +42,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "네모파트너즈AG::네이버",
-      "rss_description": "네모파트너즈AG::네이버",
+      "title": "네모파트너즈AG::네이버",
+      "description": "네모파트너즈AG::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & 네모파트너즈AG. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverpost.nemopartners.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & 네모파트너즈AG. All rights reserved.",
+      "link": "https://terzeron.com/naverpost.nemopartners.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

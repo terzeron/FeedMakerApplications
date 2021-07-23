@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "건강의학::용인디지털정보도서관",
-      "rss_description": "건강의학::용인디지털정보도서관 - 모바일 버전 RSS Feed",
+      "title": "건강의학::용인디지털정보도서관",
+      "description": "건강의학::용인디지털정보도서관 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Yongin City Library. All Rights Reserved",
-      "rss_link": "https://terzeron.com/yonginlib.ebook.26.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Yongin City Library. All Rights Reserved",
+      "link": "https://terzeron.com/yonginlib.ebook.26.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

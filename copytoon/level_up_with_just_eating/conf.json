@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "밥만 먹고 레벨업::카피툰",
-      "rss_description": "밥만 먹고 레벨업::카피툰 - 모바일 버전 RSS Feed",
+      "title": "밥만 먹고 레벨업::카피툰",
+      "description": "밥만 먹고 레벨업::카피툰 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 카피툰. All rights reserved.",
-      "rss_link": "https://terzeron.com/level_up_with_just_eating.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://copytoon142.com"
+      "copyright": "Copyright (c) 카피툰. All rights reserved.",
+      "link": "https://terzeron.com/level_up_with_just_eating.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://copytoon142.com"
     }
   }
 }

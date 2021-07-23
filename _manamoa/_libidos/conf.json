@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "리비도즈::마나모아",
-      "rss_description": "리비도즈::마나모아 - 모바일 버전 RSS Feed",
+      "title": "리비도즈::마나모아",
+      "description": "리비도즈::마나모아 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Manamoa. All rights reserved.",
-      "rss_link": "https://terzeron.com/libidos.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://manamoa6.net"
+      "copyright": "Copyright (c) Manamoa. All rights reserved.",
+      "link": "https://terzeron.com/libidos.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://manamoa6.net"
     }
   }
 }

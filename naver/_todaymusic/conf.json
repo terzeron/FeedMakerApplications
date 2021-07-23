@@ -344,13 +344,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "오늘의뮤직::네이버뮤직",
-      "rss_description": "오늘의 뮤직::네이버 뮤직 - 모바일 RSS Feed",
+      "title": "오늘의뮤직::네이버뮤직",
+      "description": "오늘의 뮤직::네이버 뮤직 - 모바일 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
-      "rss_link": "https://terzeron.com/todaymusic.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
+      "link": "https://terzeron.com/todaymusic.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

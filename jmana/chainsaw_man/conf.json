@@ -41,13 +41,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "체인소맨::제이마나",
-      "rss_description": "체인소맨::제이마나 - 모바일 버전 RSS Feed",
+      "title": "체인소맨::제이마나",
+      "description": "체인소맨::제이마나 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) JMana. All rights reserved.",
-      "rss_link": "https://terzeron.com/chainsaw_man.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://aboutdron.net"
+      "copyright": "Copyright (c) JMana. All rights reserved.",
+      "link": "https://terzeron.com/chainsaw_man.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://aboutdron.net"
     }
   }
 }

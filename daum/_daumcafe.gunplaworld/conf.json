@@ -64,13 +64,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "민봉기의 건프라월드",
-      "rss_description": "민봉기의 건프라월드 - 모바일 버전 RSS Feed",
+      "title": "민봉기의 건프라월드",
+      "description": "민봉기의 건프라월드 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Daum Communications. All rights reserved.",
-      "rss_link": "https://terzeron.com/daumcafe.gunplaworld.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Daum Communications. All rights reserved.",
+      "link": "https://terzeron.com/daumcafe.gunplaworld.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

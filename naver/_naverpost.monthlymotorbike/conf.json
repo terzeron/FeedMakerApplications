@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "월간 모터바이크::네이버",
-      "rss_description": "월간 모터바이크::네이버",
+      "title": "월간 모터바이크::네이버",
+      "description": "월간 모터바이크::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & 월간 모터바이크. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverpost.monthlymotorbike.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & 월간 모터바이크. All rights reserved.",
+      "link": "https://terzeron.com/naverpost.monthlymotorbike.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

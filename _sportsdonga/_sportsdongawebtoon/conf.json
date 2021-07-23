@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "스포츠동아웹툰목록",
-      "rss_description": "스포츠동아웹툰목록 - 모바일 버전 RSS Feed",
+      "title": "스포츠동아웹툰목록",
+      "description": "스포츠동아웹툰목록 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright sports.donga.com. All Rights Reserved",
-      "rss_link": "https://terzeron.com/oneplusone.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright sports.donga.com. All Rights Reserved",
+      "link": "https://terzeron.com/oneplusone.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

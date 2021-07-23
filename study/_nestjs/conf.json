@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "NestJS",
-      "rss_description": "NestJS - 모바일 버전 RSS Feed",
+      "title": "NestJS",
+      "description": "NestJS - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) nestjs.com. All Rights Reserved",
-      "rss_link": "https://terzeron.com/nestjs.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) nestjs.com. All Rights Reserved",
+      "link": "https://terzeron.com/nestjs.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

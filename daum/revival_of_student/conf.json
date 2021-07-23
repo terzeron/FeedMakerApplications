@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "학사재생::다음",
-      "rss_description": "학사재생::다음 - 모바일 버전 RSS Feed",
+      "title": "학사재생::다음",
+      "description": "학사재생::다음 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Daum Communications. All rights reserved.",
-      "rss_link": "https://terzeron.com/revival_of_student.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Daum Communications. All rights reserved.",
+      "link": "https://terzeron.com/revival_of_student.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

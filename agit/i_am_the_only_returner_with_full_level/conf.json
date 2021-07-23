@@ -40,13 +40,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "나 혼자 만렙 귀환자::아지트",
-      "rss_description": "나 혼자 만렙 귀환자::아지트 - 모바일 버전 RSS Feed",
+      "title": "나 혼자 만렙 귀환자::아지트",
+      "description": "나 혼자 만렙 귀환자::아지트 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 아지트. All rights reserved.",
-      "rss_link": "https://terzeron.com/i_am_the_only_returner_with_full_level.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://agit59.com"
+      "copyright": "Copyright (c) 아지트. All rights reserved.",
+      "link": "https://terzeron.com/i_am_the_only_returner_with_full_level.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://agit59.com"
     }
   }
 }

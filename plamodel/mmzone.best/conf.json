@@ -44,13 +44,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "MMZ 베스트",
-      "rss_description": "MMZ 베스트 - 모바일 버전 RSS Feed",
+      "title": "MMZ 베스트",
+      "description": "MMZ 베스트 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) mmzone.com. All Rights Reserved",
-      "rss_link": "https://terzeron.com/mmzone.best.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) mmzone.com. All Rights Reserved",
+      "link": "https://terzeron.com/mmzone.best.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

@@ -41,13 +41,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "nasica::티스토리",
-      "rss_description": "nasica::티스토리 - 모바일 버전 RSS Feed",
+      "title": "nasica::티스토리",
+      "description": "nasica::티스토리 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Tistory. All rights reserved.",
-      "rss_link": "https://terzeron.com/nasica1.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) Tistory. All rights reserved.",
+      "link": "https://terzeron.com/nasica1.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

@@ -57,13 +57,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "Old but Real - Realens::네이버",
-      "rss_description": "Old but Real - Realens::네이버",
+      "title": "Old but Real - Realens::네이버",
+      "description": "Old but Real - Realens::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & econophysics@naver.com. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverblog.tigerahn2013.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & econophysics@naver.com. All rights reserved.",
+      "link": "https://terzeron.com/naverblog.tigerahn2013.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "배가본드::마루마루",
-      "rss_description": "배가본드::마루마루 - 모바일 버전 RSS Feed",
+      "title": "배가본드::마루마루",
+      "description": "배가본드::마루마루 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Marumaru. All rights reserved.",
-      "rss_link": "https://terzeron.com/vegabond.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://marumaru.zone"
+      "copyright": "Copyright (c) Marumaru. All rights reserved.",
+      "link": "https://terzeron.com/vegabond.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://marumaru.zone"
     }
   }
 }

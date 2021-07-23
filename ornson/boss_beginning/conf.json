@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "총수-비기닝::오른손닷컴",
-      "rss_description": "총수-비기닝::오른손닷컴 - 모바일 버전 RSS Feed",
+      "title": "총수-비기닝::오른손닷컴",
+      "description": "총수-비기닝::오른손닷컴 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 오른손닷컴. All rights reserved.",
-      "rss_link": "https://terzeron.com/boss_beginning.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://5rs-wc21.com"
+      "copyright": "Copyright (c) 오른손닷컴. All rights reserved.",
+      "link": "https://terzeron.com/boss_beginning.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://5rs-wc21.com"
     }
   }
 }

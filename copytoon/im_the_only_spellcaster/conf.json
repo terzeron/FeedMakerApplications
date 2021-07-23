@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "나 홀로 주문 사용자::카피툰",
-      "rss_description": "나 홀로 주문 사용자::카피툰 - 모바일 버전 RSS Feed",
+      "title": "나 홀로 주문 사용자::카피툰",
+      "description": "나 홀로 주문 사용자::카피툰 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 카피툰. All rights reserved.",
-      "rss_link": "https://terzeron.com/im_the_only_spellcaster.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://copytoon142.com"
+      "copyright": "Copyright (c) 카피툰. All rights reserved.",
+      "link": "https://terzeron.com/im_the_only_spellcaster.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://copytoon142.com"
     }
   }
 }

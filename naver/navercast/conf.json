@@ -37,13 +37,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "네이버캐스트",
-      "rss_description": "네이버캐스트 - 모바일 버전 RSS Feed",
+      "title": "네이버캐스트",
+      "description": "네이버캐스트 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
-      "rss_link": "https://terzeron.com/navercast.new.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
+      "link": "https://terzeron.com/navercast.new.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

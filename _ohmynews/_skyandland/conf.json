@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "천지::오마이뉴스",
-      "rss_description": "천지::오마이뉴스 - 모바일 버전 RSS Feed",
+      "title": "천지::오마이뉴스",
+      "description": "천지::오마이뉴스 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) OhmyNews. All Rights Reserved",
-      "rss_link": "https://terzeron.com/skyandland.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) OhmyNews. All Rights Reserved",
+      "link": "https://terzeron.com/skyandland.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

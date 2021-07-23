@@ -44,13 +44,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "희야 모터사이클::네이버",
-      "rss_description": "희야 모터사이클::네이버",
+      "title": "희야 모터사이클::네이버",
+      "description": "희야 모터사이클::네이버",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) NAVER Corp & 희야 모터사이클. All rights reserved.",
-      "rss_link": "https://terzeron.com/naverpost.huiyamotorcycle.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) NAVER Corp & 희야 모터사이클. All rights reserved.",
+      "link": "https://terzeron.com/naverpost.huiyamotorcycle.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

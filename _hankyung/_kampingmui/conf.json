@@ -58,13 +58,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "금병매::한경닷컴",
-      "rss_description": "금병매::한경닷컴 - 모바일 버전 RSS Feed",
+      "title": "금병매::한경닷컴",
+      "description": "금병매::한경닷컴 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) 한경닷컴. All Rights Reserved",
-      "rss_link": "https://terzeron.com/kampingmui.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) 한경닷컴. All Rights Reserved",
+      "link": "https://terzeron.com/kampingmui.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

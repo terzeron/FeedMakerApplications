@@ -42,13 +42,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "타인에게 말걸기::이글루스",
-      "rss_description": "타인에게 말걸기::이글루스",
+      "title": "타인에게 말걸기::이글루스",
+      "description": "타인에게 말걸기::이글루스",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) oblivion & Egloos. All Rights Reserved",
-      "rss_link": "https://terzeron.com/oblivion.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) oblivion & Egloos. All Rights Reserved",
+      "link": "https://terzeron.com/oblivion.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

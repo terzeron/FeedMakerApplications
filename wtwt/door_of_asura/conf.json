@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "수라의 문::W툰",
-      "rss_description": "수라의 문::W툰 - 모바일 버전 RSS Feed",
+      "title": "수라의 문::W툰",
+      "description": "수라의 문::W툰 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) W툰. All rights reserved.",
-      "rss_link": "https://terzeron.com/door_of_asura.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://wtoon40.com"
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "link": "https://terzeron.com/door_of_asura.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://wtoon40.com"
     }
   }
 }

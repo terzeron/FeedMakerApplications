@@ -72,13 +72,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "달콤한 나의 도시::조선일보",
-      "rss_description": "달콤한 나의 도시::조선일보 - 모바일 버전 RSS Feed",
+      "title": "달콤한 나의 도시::조선일보",
+      "description": "달콤한 나의 도시::조선일보 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) chosun.com. All Rights Reserved",
-      "rss_link": "https://terzeron.com/mysweetcity.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) chosun.com. All Rights Reserved",
+      "link": "https://terzeron.com/mysweetcity.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

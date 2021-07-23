@@ -41,13 +41,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "기가 도쿄 토이박스::제이마나",
-      "rss_description": "기가 도쿄 토이박스::제이마나 - 모바일 버전 RSS Feed",
+      "title": "기가 도쿄 토이박스::제이마나",
+      "description": "기가 도쿄 토이박스::제이마나 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) JMana. All rights reserved.",
-      "rss_link": "https://terzeron.com/giga_tokyo_toybox.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://aboutdron.net"
+      "copyright": "Copyright (c) JMana. All rights reserved.",
+      "link": "https://terzeron.com/giga_tokyo_toybox.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://aboutdron.net"
     }
   }
 }

@@ -38,13 +38,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "리뷰::씨네21",
-      "rss_description": "리뷰::씨네21 - 모바일 버전 RSS Feed",
+      "title": "리뷰::씨네21",
+      "description": "리뷰::씨네21 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) CINE21 CO., LTD. All rights reserved.",
-      "rss_link": "https://terzeron.com/cine21.review.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": null
+      "copyright": "Copyright (c) CINE21 CO., LTD. All rights reserved.",
+      "link": "https://terzeron.com/cine21.review.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
     }
   }
 }

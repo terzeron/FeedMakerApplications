@@ -39,13 +39,13 @@
       "header_list": []
     },
     "rss": {
-      "rss_title": "화산전생::마나토끼",
-      "rss_description": "화산전생::마나토끼 - 모바일 버전 RSS Feed",
+      "title": "화산전생::마나토끼",
+      "description": "화산전생::마나토끼 - 모바일 버전 RSS Feed",
       "rss_generator": "Terzeron's Feed Generator",
-      "rss_copyright": "Copyright (c) Manatoki. All rights reserved.",
-      "rss_link": "https://terzeron.com/former_life_in_hwasan.xml",
-      "rss_language": "ko",
-      "rss_url_prefix_for_guid": "https://newtoki17.com"
+      "copyright": "Copyright (c) Manatoki. All rights reserved.",
+      "link": "https://terzeron.com/former_life_in_hwasan.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://newtoki17.com"
     }
   }
 }
