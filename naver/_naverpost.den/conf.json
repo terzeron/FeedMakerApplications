@@ -42,7 +42,7 @@
     "rss": {
       "title": "Den::네이버",
       "description": "Den::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & Den. All rights reserved.",
       "link": "https://terzeron.com/naverpost.den.xml",
       "language": "ko",

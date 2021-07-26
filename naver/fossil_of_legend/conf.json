@@ -40,8 +40,8 @@
     },
     "rss": {
       "title": "전설의 화석::네이버",
-      "description": "전설의 화석​::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "description": "전설의 화석::네이버 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/fossil_of_legend.xml",
       "language": "ko",

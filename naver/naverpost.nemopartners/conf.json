@@ -44,7 +44,7 @@
     "rss": {
       "title": "네모파트너즈AG::네이버",
       "description": "네모파트너즈AG::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & 네모파트너즈AG. All rights reserved.",
       "link": "https://terzeron.com/naverpost.nemopartners.xml",
       "language": "ko",

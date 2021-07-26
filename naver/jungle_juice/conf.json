@@ -41,7 +41,7 @@
     "rss": {
       "title": "정글쥬스::네이버",
       "description": "정글쥬스::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/jungle_juice.xml",
       "language": "ko",

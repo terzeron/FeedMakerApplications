@@ -44,7 +44,7 @@
     "rss": {
       "title": "박회계사의 투자이야기::네이버",
       "description": "박회계사의 투자이야기::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & donghm@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.donghm.xml",
       "language": "ko",

@@ -44,7 +44,7 @@
     "rss": {
       "title": "Second Coming::네이버",
       "description": "Second Coming::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & breitner@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.breitner.xml",
       "language": "ko",

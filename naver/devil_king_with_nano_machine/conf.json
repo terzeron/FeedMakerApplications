@@ -41,7 +41,7 @@
     "rss": {
       "title": "나노마신::네이버",
       "description": "나노마신::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/devil_king_with_nano_machine.xml",
       "language": "ko",

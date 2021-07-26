@@ -59,7 +59,7 @@
     "rss": {
       "title": "Old but Real - Realens::네이버",
       "description": "Old but Real - Realens::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & econophysics@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.tigerahn2013.xml",
       "language": "ko",

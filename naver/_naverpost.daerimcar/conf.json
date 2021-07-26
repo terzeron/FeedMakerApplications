@@ -41,7 +41,7 @@
     "rss": {
       "title": "대림자동차::네이버",
       "description": "대림자동차::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & 대림자동차. All rights reserved.",
       "link": "https://terzeron.com/naverpost.daerimcar.xml",
       "language": "ko",

@@ -41,7 +41,7 @@
     "rss": {
       "title": "동네 몬스터::네이버",
       "description": "동네 몬스터::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/village_monster.xml",
       "language": "ko",

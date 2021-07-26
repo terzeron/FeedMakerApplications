@@ -44,7 +44,7 @@
     "rss": {
       "title": "경영지도법인 한국진단::네이버",
       "description": "경영지도법인 한국진단::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & dreamblue724@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.dreamblue724.xml",
       "language": "ko",

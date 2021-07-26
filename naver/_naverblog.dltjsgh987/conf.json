@@ -61,7 +61,7 @@
     "rss": {
       "title": "낭만::네이버",
       "description": "낭만::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & dltjsgh987@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.dltjsgh987.xml",
       "language": "ko",

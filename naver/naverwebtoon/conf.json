@@ -43,7 +43,7 @@
     "rss": {
       "title": "네이버웹툰목록",
       "description": "네이버웹툰목록 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
       "link": "https://terzeron.com/naverwebtoon.xml",
       "language": "ko",

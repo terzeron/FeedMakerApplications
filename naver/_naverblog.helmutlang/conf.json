@@ -46,7 +46,7 @@
     "rss": {
       "title": "줄리아의 친절한 미술관::네이버",
       "description": "줄리아의 친절한 미술관::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & helmut_lang@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.helmutlang.xml",
       "language": "ko",

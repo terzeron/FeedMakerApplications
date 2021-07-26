@@ -44,7 +44,7 @@
     "rss": {
       "title": "과학덕후 YTNscience::네이버",
       "description": "과학덕후 YTNscience::네이버",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & InterBiz. All rights reserved.",
       "link": "https://terzeron.com/naverpost.science_geek_ytn_science.xml",
       "language": "ko",

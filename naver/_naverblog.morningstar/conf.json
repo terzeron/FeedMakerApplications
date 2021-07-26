@@ -46,7 +46,7 @@
     "rss": {
       "title": "개밥바라기 별::네이버",
       "description": "개밥바라기 별::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & wacho@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.morningstar.xml",
       "language": "ko",

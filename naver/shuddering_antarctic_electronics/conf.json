@@ -40,8 +40,8 @@
     },
     "rss": {
       "title": "후덜덜덜 남극전자::네이버",
-      "description": "후덜덜덜 남극전자​::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "description": "후덜덜덜 남극전자::네이버 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/shuddering_antarctic_electronics.xml",
       "language": "ko",

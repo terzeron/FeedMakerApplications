@@ -40,8 +40,8 @@
     },
     "rss": {
       "title": "아르세니아의 마법사::네이버",
-      "description": "아르세니아의 마법사​::네이버 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "description": "아르세니아의 마법사::네이버 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/wizard_of_arsenia.xml",
       "language": "ko",
