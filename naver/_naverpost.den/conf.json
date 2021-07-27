@@ -1,16 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_naverpost.py",
       "sort_field_pattern": "volumeNo=(\\d+)",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 4,
       "list_url_list": [
         "http://m.post.naver.com/async/my.nhn?memberNo=23210486&postListViewType=0&isExpertMy=true&fromNo=1"
@@ -18,16 +11,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "cont"
       ],
@@ -45,8 +29,7 @@
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & Den. All rights reserved.",
       "link": "https://terzeron.com/naverpost.den.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

@@ -1,19 +1,12 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_daumblog.py -n 100",
       "sort_field_pattern": [
         "&articleno=(\\d+)",
         "\\b(\\d+)\\."
       ],
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "http://blog.daum.net/_blog/BlogTypeMain.do?blogid=0HpkV&admin="
@@ -21,16 +14,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "cContent"
       ],
@@ -42,11 +26,10 @@
     "rss": {
       "title": "Nasica::다음",
       "description": "Nasica::다음 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Communications. All rights reserved.",
       "link": "https://terzeron.com/daumblog.nasica.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

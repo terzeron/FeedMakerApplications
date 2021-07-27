@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
       "is_completed": true,
       "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "Total_ID=(\\d+)",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 6,
       "list_url_list": [
         "http://find.joins.com/mediaSearch/news_search.asp?kwd=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&pageNum=4&srchFd=&cate=news&subcate=new&sort=default&radio=&selectBox1=&selectBox2=&detail1=&detail2=&relation=&relation2=&relationFlg=0&preKwd=&sdate=&edate=&section=&selectoption=&sldPeriodBox=&q=%EB%82%98%EC%9D%98+%EC%86%90%EC%9D%80+%EB%A7%90%EA%B5%BD%EC%9C%BC%EB%A1%9C+%EB%B3%80%ED%95%98%EA%B3%A0&chk=",
@@ -21,16 +15,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "article_content"
@@ -42,11 +27,10 @@
     "rss": {
       "title": "나의 손은 말굽으로 변하고::중앙일보",
       "description": "나의 손은 말굽으로 변하고::중앙일보 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) JoongAng Ilbo Co., Ltd. All Rights Reserved",
       "link": "https://terzeron.com/horseshoe.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

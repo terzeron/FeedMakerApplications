@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
       "is_completed": true,
       "item_capture_script": "../capture_item_naverblog.py -n 200",
       "sort_field_pattern": "&logNo=(\\d+)",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 4,
       "list_url_list": [
         "http://blog.naver.com/PostTitleListAsync.nhn?blogId=tigerahn2013&viewdate=&currentPage=0&categoryNo=39&parentCategoryNo=39&countPerPage=30",
@@ -33,16 +27,8 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
       "force_sleep_between_articles": true,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "postViewArea"
       ],
@@ -62,8 +48,7 @@
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & econophysics@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.tigerahn2013.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

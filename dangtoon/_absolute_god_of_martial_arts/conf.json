@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
       "ignore_old_list": true,
-      "is_completed": false,
       "item_capture_script": "../capture_item_dangtoon.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 24,
       "list_url_list": [
         "https://dangtoon57.com/절대무신"
@@ -19,15 +13,7 @@
     },
     "extraction": {
       "render_js": true,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "toon_img"
       ],
@@ -41,7 +27,7 @@
     "rss": {
       "title": "절대무신::당근툰",
       "description": "절대무신::당근툰 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 당근툰. All rights reserved.",
       "link": "https://terzeron.com/absolute_god_of_martial_arts.xml",
       "language": "ko",

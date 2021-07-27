@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
       "is_completed": true,
       "item_capture_script": "../capture_item_tistory.py -n 100",
       "sort_field_pattern": "/(\\d+)\\t",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://man4love.tistory.com/category/%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%9D%B4%EC%95%BC%EA%B8%B0?page=1",
@@ -21,16 +15,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "area_view",
@@ -44,11 +29,10 @@
     "rss": {
       "title": "Happy Factory::티스토리",
       "description": "Happy Factory::티스토리 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Tistory. All rights reserved.",
       "link": "https://terzeron.com/happy_factory.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

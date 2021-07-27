@@ -1,16 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_link_title.py",
       "sort_field_pattern": "\\t제(\\d+)화",
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "http://bookdb.co.kr/bdb/SeriesOfArtists.do?_method=NovelListByAuthor&sc.themeNo=391&sc.row=10&sc.page=1"
@@ -18,16 +11,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "conWrap"
@@ -41,11 +25,10 @@
     "rss": {
       "title": "애인의 애인에게::BookDB",
       "description": "애인의 애인에게::BookDB - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Interpark Corporation. All Rights Reserved",
       "link": "https://terzeron.com/to_lover_of_my_lover.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

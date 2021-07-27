@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
       "ignore_old_list": true,
-      "is_completed": false,
       "item_capture_script": "../capture_item_copytoon.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 6,
       "list_url_list": [
         "https://copytoon142.com/나-홀로-주문-사용자"
@@ -18,16 +12,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "bo_v_con"
       ],
@@ -41,7 +26,7 @@
     "rss": {
       "title": "나 홀로 주문 사용자::카피툰",
       "description": "나 홀로 주문 사용자::카피툰 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 카피툰. All rights reserved.",
       "link": "https://terzeron.com/im_the_only_spellcaster.xml",
       "language": "ko",

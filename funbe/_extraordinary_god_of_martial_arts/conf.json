@@ -1,33 +1,22 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
       "ignore_old_list": true,
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "user_agent": null,
       "encoding": "utf-8",
       "referer": "https://funbe.ink/",
-      "timeout": null,
       "unit_size_per_day": 24,
       "list_url_list": [
-        "https://funbe.pink/절세무신"
+        "https://funbe.kim/절세무신"
       ],
       "post_process_script_list": []
     },
     "extraction": {
       "render_js": true,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
       "referer": "https://funbe.ink/",
-      "timeout": null,
       "element_id_list": [
         "toon_img"
       ],
@@ -41,7 +30,7 @@
     "rss": {
       "title": "절세무신::Funbe",
       "description": "절세무신::Funbe - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Funbe. All rights reserved.",
       "link": "https://terzeron.com/extraordinary_god_of_martial_arts.xml",
       "language": "ko",

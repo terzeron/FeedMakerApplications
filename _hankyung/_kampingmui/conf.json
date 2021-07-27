@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
       "is_completed": true,
       "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "no=(\\d+)",
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 6,
       "list_url_list": [
         "http://w.hankyung.com/board/list.php?id=community_kbm&category=1&ch=comm",
@@ -39,16 +33,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "article"
@@ -60,11 +45,10 @@
     "rss": {
       "title": "금병매::한경닷컴",
       "description": "금병매::한경닷컴 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 한경닷컴. All Rights Reserved",
       "link": "https://terzeron.com/kampingmui.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

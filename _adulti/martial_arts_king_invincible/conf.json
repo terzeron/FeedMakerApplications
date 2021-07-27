@@ -2,15 +2,10 @@
   "configuration": {
     "collection": {
       "render_js": true,
-      "verify_ssl": true,
-      "ignore_old_list": false,
       "is_completed": true,
       "item_capture_script": "../capture_item_adulti.py -n 200",
       "sort_field_pattern": "(\\d+)(\\-\\d+)?(?:화|권|부|편)",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 2,
       "list_url_list": [
         "https://adulti123.com/웹툰/권왕무적"
@@ -19,15 +14,7 @@
     },
     "extraction": {
       "render_js": true,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "contents"
@@ -41,7 +28,7 @@
     "rss": {
       "title": "신인류 보고서::어른아이닷컴",
       "description": "신인류 보고서::어른아이닷컴 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Adulti. All rights reserved.",
       "link": "https://terzeron.com/neanthropic_report.xml",
       "language": "ko",

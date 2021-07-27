@@ -1,19 +1,12 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_daumcafe.py -n 50",
       "sort_field_pattern": [
         "(\\d+)\\t",
         "\\b(\\d+)\\."
       ],
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 8,
       "list_url_list": [
         "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0004ozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003gzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=",
@@ -26,16 +19,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "wrap",
         "user_contents"
@@ -52,11 +36,10 @@
     "rss": {
       "title": "바이크매니아",
       "description": "바이크매니아 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Communications. All rights reserved.",
       "link": "https://terzeron.com/daumcafe.bikemania2.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

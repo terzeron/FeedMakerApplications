@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
       "is_completed": true,
       "item_capture_script": "../capture_item_chosun.pl",
       "sort_field_pattern": "(\\d+)\\.html",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 6,
       "list_url_list": [
         "https://web.archive.org/web/20051124213605/http://www.chosun.com/w21data/html/list/fh000.html",
@@ -53,16 +47,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "article"
       ],
@@ -74,11 +59,10 @@
     "rss": {
       "title": "달콤한 나의 도시::조선일보",
       "description": "달콤한 나의 도시::조선일보 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) chosun.com. All Rights Reserved",
       "link": "https://terzeron.com/mysweetcity.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

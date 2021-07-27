@@ -1,16 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_sciencetimes.py",
       "sort_field_pattern": "\\t(\\d+\\.\\d+\\.\\d+)",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 0.2,
       "list_url_list": [
         "https://www.sciencetimes.co.kr/category/sci-tech/science/page/1/",
@@ -22,16 +15,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "view_content"
@@ -43,11 +27,10 @@
     "rss": {
       "title": "사이언스타임즈",
       "description": "사이언스타임즈 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) KOFAC. All Rights Reserved",
       "link": "https://terzeron.com/sci-tech.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

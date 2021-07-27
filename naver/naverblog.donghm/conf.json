@@ -1,16 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_naverblog.py -n 5",
       "sort_field_pattern": "&logNo=(\\d+)",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "http://blog.naver.com/PostTitleListAsync.nhn?blogId=donghm&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
@@ -18,16 +11,8 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
       "force_sleep_between_articles": true,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "postViewArea"
       ],
@@ -47,8 +32,7 @@
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & donghm@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.donghm.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

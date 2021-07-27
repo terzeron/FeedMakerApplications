@@ -1,33 +1,15 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_naverwebtoon.py",
-      "sort_field_pattern": null,
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
-      "unit_size_per_day": null,
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=655749"
       ],
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "wt_viewer"
@@ -44,8 +26,7 @@
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/doctor_frost.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

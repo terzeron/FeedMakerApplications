@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_kakaowebtoon.py -n 10",
       "sort_field_pattern": "productId=(\\d+)",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://page.kakao.com/home/54989365?orderby=desc"
@@ -18,16 +12,10 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
       "bypass_element_extraction": true,
       "force_sleep_between_articles": true,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [],
       "element_path_list": [],
@@ -40,11 +28,10 @@
     "rss": {
       "title": "승리호::카카오",
       "description": "승리호::카카오 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Kakao Corp. All Rights Reserved",
       "link": "https://terzeron.com/victory.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

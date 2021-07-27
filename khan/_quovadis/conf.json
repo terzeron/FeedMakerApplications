@@ -1,16 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_khannews.py",
       "sort_field_pattern": "artid=(\\d+)",
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "http://search.khan.co.kr/search.html?stb=khan&q=%EC%BF%A0%EC%98%A4%EB%B0%94%EB%94%94%EC%8A%A4%EC%99%80%20%ED%96%89%EB%A1%9C%EB%82%9C&pg=1&sort=1"
@@ -18,16 +11,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "art_body"
@@ -39,11 +23,10 @@
     "rss": {
       "title": "쿠오바디스와 행로난::경향",
       "description": "쿠오바디스와 행로난::경향 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) The Kyunghyang Shinmun. All Rights Reserved",
       "link": "https://terzeron.com/quovadis.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

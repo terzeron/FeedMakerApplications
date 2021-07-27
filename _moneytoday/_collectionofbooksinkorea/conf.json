@@ -1,16 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_moneytoday.py",
       "sort_field_pattern": "cno=(\\d+)",
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://comic.mt.co.kr/comicDetail.htm?nComicSeq=87&nPage=1"
@@ -18,16 +11,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "cartoonBox"
@@ -41,11 +25,10 @@
     "rss": {
       "title": "해동총화::머니투데이",
       "description": "해동총화::머니투데이 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) MoneyToday. All rights reserved.",
       "link": "https://terzeron.com/collectionofbooksinkorea.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

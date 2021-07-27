@@ -1,16 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_naverpost.py",
       "sort_field_pattern": "volumeNo=(\\d+)",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 4,
       "list_url_list": [
         "http://m.post.naver.com/async/my.nhn?memberNo=17247994&postListViewType=0&isExpertMy=true&fromNo=1"
@@ -19,15 +12,7 @@
     },
     "extraction": {
       "render_js": true,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [
         "cont"
       ],
@@ -45,8 +30,7 @@
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & 월간 모터바이크. All rights reserved.",
       "link": "https://terzeron.com/naverpost.monthlymotorbike.xml",
-      "language": "ko",
-      "url_prefix_for_guid": null
+      "language": "ko"
     }
   }
 }

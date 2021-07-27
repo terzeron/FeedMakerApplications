@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
       "ignore_old_list": true,
-      "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 5",
       "sort_field_pattern": "num=(\\d+)\\t",
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://wtwt85.com/c1?toon=12658"
@@ -18,16 +12,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "cp949",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "wbody"
@@ -41,7 +26,7 @@
     "rss": {
       "title": "종말의 하렘::W툰",
       "description": "종말의 하렘::W툰 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) W툰. All rights reserved.",
       "link": "https://terzeron.com/harem_of_doomsday.xml",
       "language": "ko",

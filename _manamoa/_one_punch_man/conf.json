@@ -2,15 +2,9 @@
   "configuration": {
     "collection": {
       "render_js": true,
-      "verify_ssl": true,
-      "ignore_old_list": false,
-      "is_completed": false,
       "item_capture_script": "../capture_item_manamoa.py -n 10",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://manamoa53.net/bbs/page.php?hid=manga_detail&manga_id=4395"
@@ -19,15 +13,7 @@
     },
     "extraction": {
       "render_js": true,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "view-content",
@@ -42,7 +28,7 @@
     "rss": {
       "title": "원펀맨 리메이크::마나모아",
       "description": "원펀맨 리메이크::마나모아 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Manamoa. All rights reserved.",
       "link": "https://terzeron.com/one_punch_man.xml",
       "language": "ko",

@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
       "ignore_old_list": true,
-      "is_completed": false,
       "item_capture_script": "../capture_item_marumaru.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://marumaru.cloud/bbs/cmoic/20722"
@@ -19,15 +13,9 @@
     },
     "extraction": {
       "render_js": true,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
       "force_sleep_between_articles": true,
       "copy_images_from_canvas": true,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "images_from_canvas"
@@ -41,7 +29,7 @@
     "rss": {
       "title": "배가본드::마루마루",
       "description": "배가본드::마루마루 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Marumaru. All rights reserved.",
       "link": "https://terzeron.com/vegabond.xml",
       "language": "ko",

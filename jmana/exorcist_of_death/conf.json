@@ -1,16 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "render_js": false,
-      "verify_ssl": true,
       "ignore_old_list": true,
-      "is_completed": false,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "user_agent": null,
       "encoding": "utf-8",
-      "referer": null,
-      "timeout": null,
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://jmana1.jjmana.net/comic_list_title?bookname=임종의+퇴마사-엔더+가이스터-"
@@ -18,16 +12,7 @@
       "post_process_script_list": []
     },
     "extraction": {
-      "render_js": false,
-      "verify_ssl": true,
-      "bypass_element_extraction": false,
-      "force_sleep_between_articles": false,
-      "copy_images_from_canvas": false,
-      "simulate_scrolling": false,
-      "user_agent": null,
       "encoding": "utf8",
-      "referer": null,
-      "timeout": null,
       "element_id_list": [],
       "element_class_list": [
         "view-con"
@@ -43,7 +28,7 @@
     "rss": {
       "title": "임종의 퇴마사 - 엔더 가이스터::제이마나",
       "description": "임종의 퇴마사 - 엔더 가이스터::제이마나 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) JMana. All rights reserved.",
       "link": "https://terzeron.com/exorcist_of_death.xml",
       "language": "ko",
