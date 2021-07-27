@@ -2,21 +2,14 @@
   "configuration": {
     "collection": {
       "item_capture_script": "./capture_item_title.pl",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://www.hani.co.kr/kisa/section-009000000/home01.html"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "article-text"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "그림판::한겨레",

@@ -4,7 +4,6 @@
       "is_completed": true,
       "item_capture_script": "./capture_item_link_title.py -n 300",
       "sort_field_pattern": "no=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 24,
       "list_url_list": [
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=35&where=0",
@@ -13,18 +12,12 @@
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=140&where=0",
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=175&where=0",
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=210&where=0"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "./append_iframe_content.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "MMZ Forum",

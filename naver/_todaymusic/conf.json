@@ -2,9 +2,7 @@
   "configuration": {
     "collection": {
       "is_completed": true,
-      "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "startDate=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 30,
       "list_url_list": [
         "http://music.naver.com/recommend/magazineList.nhn?page=308",
@@ -315,19 +313,13 @@
         "http://music.naver.com/recommend/magazineList.nhn?page=3",
         "http://music.naver.com/recommend/magazineList.nhn?page=2",
         "http://music.naver.com/recommend/magazineList.nhn?page=1"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "force_sleep_between_articles": true,
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "tm_end"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "오늘의뮤직::네이버뮤직",

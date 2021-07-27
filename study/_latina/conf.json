@@ -4,22 +4,15 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_github_io.py https://kabbala.github.io/grammatica_latina/",
       "sort_field_pattern": "\\t(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 0.2,
       "list_url_list": [
         "https://kabbala.github.io/grammatica_latina/index.html"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "document"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "고전 라틴어 핸드북",

@@ -1,22 +1,16 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
       "encoding": "cp949",
       "list_url_list": [
         "http://news.khan.co.kr/kh_cartoon/khan_index.html?mode=list&code=361102"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
-      "element_id_list": [],
       "element_class_list": [
         "mpview"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "장도리::경향",

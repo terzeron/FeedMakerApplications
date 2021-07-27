@@ -4,26 +4,20 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_jmana.py -n 10",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://jmana1.jjmana.net/comic_list_title?bookname=원펀맨+리메이크"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "view-con"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "post_process_only_for_images.py -u",
         "download_image.py",
         "../remove_anchor_images.sh"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "원펀맨 리메이크::제이마나",

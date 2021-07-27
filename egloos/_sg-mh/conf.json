@@ -3,7 +3,6 @@
     "collection": {
       "item_capture_script": "capture_item_title_link.pl",
       "sort_field_pattern": "(\\d+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://sg-mh.com/page/253",
@@ -259,18 +258,12 @@
         "http://sg-mh.com/page/3",
         "http://sg-mh.com/page/2",
         "http://sg-mh.com/page/1"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "hentry"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "세계의 만화",

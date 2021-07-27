@@ -4,7 +4,6 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_ohmynews.pl",
       "sort_field_pattern": "CNTN_CD=A(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 12,
       "list_url_list": [
         "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=23",
@@ -31,18 +30,12 @@
         "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=3",
         "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=2",
         "http://www.ohmynews.com/NWS_Web/Issue/series_pg.aspx?srscd=0000010378&pageno=1"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "article_view"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "단장기::오마이뉴스",

@@ -4,7 +4,6 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_chosun.pl",
       "sort_field_pattern": "(\\d+)\\.html",
-      "encoding": "utf-8",
       "unit_size_per_day": 6,
       "list_url_list": [
         "https://web.archive.org/web/20051124213605/http://www.chosun.com/w21data/html/list/fh000.html",
@@ -43,18 +42,13 @@
         "https://web.archive.org/web/20061007163250/http://www.chosun.com/svc/list/f0000.html?pcode=fh000&page=6",
         null,
         null
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
       "element_id_list": [
         "article"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "달콤한 나의 도시::조선일보",

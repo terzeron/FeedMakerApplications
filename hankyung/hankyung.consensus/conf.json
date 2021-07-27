@@ -1,7 +1,6 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "report_idx=(\\d+)",
       "encoding": "cp949",
       "unit_size_per_day": 6,
@@ -9,19 +8,13 @@
         "http://consensus.hankyung.com/apps.analysis/analysis.list?pagenum=80",
         "http://consensus.hankyung.com/apps.analysis/analysis.list?pagenum=80&now_page=2",
         "http://consensus.hankyung.com/apps.analysis/analysis.list?pagenum=80&now_page=3"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true,
-      "encoding": "utf8",
-      "element_id_list": [],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "convert_pdf_to_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "컨센서스::한경",

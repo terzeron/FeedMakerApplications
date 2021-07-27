@@ -3,7 +3,6 @@
     "collection": {
       "item_capture_script": "../capture_item_naverpost.py",
       "sort_field_pattern": "volumeNo=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 4,
       "list_url_list": [
         "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=1",
@@ -11,21 +10,16 @@
         "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=3",
         "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=4",
         "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=5"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "cont"
       ],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_naverpost_flicking.py",
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "희야 모터사이클::네이버",

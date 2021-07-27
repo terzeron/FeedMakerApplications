@@ -1,22 +1,16 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
       "encoding": "cp949",
       "list_url_list": [
         "http://movie.nate.com/mag"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
-      "element_id_list": [],
       "element_class_list": [
         "articleBox"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "매거진::Nate영화",

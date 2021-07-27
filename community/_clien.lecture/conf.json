@@ -4,21 +4,13 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_clien.py",
       "sort_field_pattern": "no=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://clien.net/cs2/bbs/board.php?bo_table=lecture&sca=%5B기타%5D"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "bypass_element_extraction": true,
-      "encoding": "utf8",
-      "element_id_list": [],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      "bypass_element_extraction": true
     },
     "rss": {
       "title": "강좌::클량",

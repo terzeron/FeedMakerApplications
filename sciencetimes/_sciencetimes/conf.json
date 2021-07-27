@@ -3,7 +3,6 @@
     "collection": {
       "item_capture_script": "../capture_item_sciencetimes.py",
       "sort_field_pattern": "\\t(\\d+\\.\\d+\\.\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 0.2,
       "list_url_list": [
         "https://www.sciencetimes.co.kr/category/sci-tech/science/page/1/",
@@ -11,18 +10,12 @@
         "https://www.sciencetimes.co.kr/category/sci-culture/science/page/2/",
         "https://www.sciencetimes.co.kr/category/sci-people/science/page/4/",
         "https://www.sciencetimes.co.kr/category/sci-culumn/science/page/5/"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "view_content"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "사이언스타임즈",

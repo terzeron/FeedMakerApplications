@@ -1,26 +1,18 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "webtoonSeq=(\\d+)",
-      "encoding": "utf-8",
       "referer": "https://www.myktoon.com",
       "unit_size_per_day": 24,
       "list_url_list": [
         "https://www.myktoon.com/web/webtoon/works_list.kt"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "thmb",
         "summary"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "케이툰웹툰목록",

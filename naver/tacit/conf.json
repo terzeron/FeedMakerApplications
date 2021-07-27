@@ -4,26 +4,20 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
       "sort_field_pattern": "no=(\\d+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 24,
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=766966",
         "http://comic.naver.com/webtoon/list.nhn?titleId=766966&page=2",
         "http://comic.naver.com/webtoon/list.nhn?titleId=766966&page=3"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "wt_viewer"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "태시트::네이버",

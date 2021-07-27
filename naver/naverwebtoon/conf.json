@@ -2,8 +2,6 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "./capture_item_link_title.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://comic.naver.com/webtoon/weekday.nhn"
       ],
@@ -12,16 +10,12 @@
       ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "comicinfo"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "./post_process_naverwebtoon.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "네이버웹툰목록",

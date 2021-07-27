@@ -1,22 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://ilyo.co.kr/?ac=list&cate_id=118"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "headBnr"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "일요신문웹툰목록",

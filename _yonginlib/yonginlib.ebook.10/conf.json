@@ -5,18 +5,13 @@
       "encoding": "cp949",
       "list_url_list": [
         "http://ebook.yonginlib.go.kr/Kyobo_T3/Content/ebook/ebook_List.asp?product_cd=001&category_id=10&content_all=Y&order_key=pub_ymd&search_keyword=&search_type=&search_product_cd=&list_type=&now_page=1"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
       "element_id_list": [
         "contents"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "시에세이::용인디지털정보도서관",

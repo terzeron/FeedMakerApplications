@@ -3,21 +3,14 @@
     "collection": {
       "item_capture_script": "../capture_item_dblp.pl",
       "sort_field_pattern": "\\b((19|20)\\d\\d)\\b",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://www.informatik.uni-trier.de/~ley/db/conf/vldb/"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "data"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "VLDB::DBLP",

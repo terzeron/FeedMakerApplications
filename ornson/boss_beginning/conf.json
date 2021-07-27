@@ -4,24 +4,18 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_ornson.py -n 5",
       "sort_field_pattern": "/(\\d+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://5rs-a36.com/board/총수-비기닝"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "post-content"
       ],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "총수-비기닝::오른손닷컴",

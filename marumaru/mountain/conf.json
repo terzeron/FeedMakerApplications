@@ -4,26 +4,20 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_marumaru.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 0.2,
       "list_url_list": [
         "https://marumaru.cloud/bbs/cmoic/21290"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "render_js": true,
       "copy_images_from_canvas": true,
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "images_from_canvas"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_merge_split.py -b 0 -t 1 -s 1000 -n 2 -c blackorwhite -l -v"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "산::마루마루",

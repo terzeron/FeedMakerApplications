@@ -2,23 +2,17 @@
   "configuration": {
     "collection": {
       "item_capture_script": "../capture_item_naverwebtoon.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=775141"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "wt_viewer"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "66666년 만에 환생한 흑마법사::네이버",

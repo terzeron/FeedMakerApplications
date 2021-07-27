@@ -4,27 +4,21 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_manatoki.py -n 5",
       "sort_field_pattern": "\\/(\\d+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 2.5,
       "list_url_list": [
         "https://manatoki95.net/webtoon/46711"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "render_js": true,
       "simulate_scrolling": true,
-      "encoding": "utf8",
       "timeout": 600,
-      "element_id_list": [],
       "element_class_list": [
         "view-padding"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "나혼자만 레벨업::마나토끼",

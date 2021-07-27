@@ -4,7 +4,6 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_tistory.py -n 1000",
       "sort_field_pattern": "/(\\d+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 3,
       "list_url_list": [
         "https://kissdei.tistory.com/category/Pictures?page=1",
@@ -25,20 +24,14 @@
         "https://kissdei.tistory.com/category/ETC?page=4",
         "https://kissdei.tistory.com/category/ETC?page=5",
         "https://kissdei.tistory.com/category/ETC?page=6"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "area_view",
         "article",
         "entry-content"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "사진의 숲::티스토리",

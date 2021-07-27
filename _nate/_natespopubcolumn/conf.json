@@ -2,22 +2,16 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "./capture_item_link_title.py",
       "encoding": "cp949",
       "list_url_list": [
         "http://sports.news.nate.com/spopub/column"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
       "element_id_list": [
         "cntArea"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "스포츠칼럼::Nate스포츠",

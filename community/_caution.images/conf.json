@@ -3,25 +3,19 @@
     "collection": {
       "item_capture_script": "../capture_item_community_caution.py",
       "sort_field_pattern": "no=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://www.bobaedream.co.kr/list?code=strange&or_gu=&info3=&s_select=Subject&s_key=%ED%9B%84%EB%B0%A9",
         "http://www.bobaedream.co.kr/list?code=strange&or_gu=&info3=&s_select=Subject&s_key=%ED%9B%84%EB%B0%A9&page=2"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "docuCont03"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "후방주의",

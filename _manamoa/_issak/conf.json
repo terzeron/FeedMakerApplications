@@ -5,26 +5,20 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_manamoa.py -n 10",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://manamoa53.net/bbs/page.php?hid=manga_detail&manga_id=12831"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true,
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "view-content"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "../convert_img_list_to_html.py",
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "이삭::마나모아",

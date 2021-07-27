@@ -3,26 +3,21 @@
     "collection": {
       "item_capture_script": "../capture_item_naverblog.py -n 50",
       "sort_field_pattern": "&logNo=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "http://blog.naver.com/PostTitleListAsync.nhn?blogId=leakxx&viewdate=&currentPage=1&categoryNo=0&parentCategoryNo=&countPerPage=30"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "postViewArea"
       ],
       "element_class_list": [
         "se_textView"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "iHole::네이버",

@@ -1,25 +1,17 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "^(http\\S+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true,
-      "encoding": "utf8",
-      "element_id_list": [],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "./post_process.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "Free Programming Books::vhf",

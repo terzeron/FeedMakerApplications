@@ -3,29 +3,23 @@
     "collection": {
       "item_capture_script": "../capture_item_naverpost.py -n 5",
       "sort_field_pattern": "volumeNo=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=1"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true,
       "force_sleep_between_articles": true,
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "se_doc_viewer",
         "se_card_container"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_naverpost.py",
         "extract.py",
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "과학덕후 YTNscience::네이버",

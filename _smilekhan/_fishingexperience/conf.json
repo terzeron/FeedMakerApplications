@@ -7,20 +7,16 @@
       "unit_size_per_day": 6,
       "list_url_list": [
         "http://smile.khan.co.kr/cartoon/index.html?category=10"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
-      "element_id_list": [],
       "element_class_list": [
         "manpyung_view"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_sportskhan.pl"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "손맛::스포츠경향",

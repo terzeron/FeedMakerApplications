@@ -1,24 +1,16 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "\\t(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 0.2,
       "list_url_list": [
         "https://horizon.kias.re.kr/category/archives/"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "post-detail"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "과학의 지평 Horizon",

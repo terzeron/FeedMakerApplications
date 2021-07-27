@@ -1,22 +1,16 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
       "encoding": "cp949",
       "list_url_list": [
         "http://sports.chosun.com/cartoon/main.htm/"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
-      "element_id_list": [],
       "element_class_list": [
         "c_list1_cen"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "스포츠조선웹툰목록",

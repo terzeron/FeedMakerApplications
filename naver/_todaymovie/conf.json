@@ -1,22 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://today.movie.naver.com/today/month_view.nhn"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "MCC"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "오늘의영화::네이버영화",

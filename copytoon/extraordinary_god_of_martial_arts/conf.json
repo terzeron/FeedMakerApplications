@@ -4,24 +4,18 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_copytoon.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "https://copytoon142.com/절세무신"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "bo_v_con"
       ],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "절세무신::카피툰",

@@ -3,22 +3,15 @@
     "collection": {
       "item_capture_script": "../capture_item_link_title.py -n 5",
       "sort_field_pattern": "\\/(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 0.5,
       "list_url_list": [
         "https://api.brunch.co.kr/v1/magazine/37474/articles"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "wrap_body"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "야사와 만화로 배우는 인공지능::브런치",

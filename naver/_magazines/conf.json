@@ -1,16 +1,12 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://sports.news.naver.com/sports/new/magazineS/list.nhn"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "force_sleep_between_articles": true,
-      "encoding": "utf8",
       "element_id_list": [
         "dynamic_data"
       ],
@@ -18,12 +14,10 @@
         "cover",
         "content_list"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "./post_process_magazines.py",
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "매거진S::네이버스포츠",

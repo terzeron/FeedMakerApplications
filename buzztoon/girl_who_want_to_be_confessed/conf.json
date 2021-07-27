@@ -4,25 +4,19 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_buzztoon.py -n 5",
       "sort_field_pattern": "\\b(\\d+(-\\d+)?)화",
-      "encoding": "utf-8",
       "unit_size_per_day": 4,
       "list_url_list": [
         "https://buzztoon105.com/bbs/board.php?bo_table=comics&wr_id=2661"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "view-content"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "../../manatoki/remove_anchor_images.py",
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "카구야님은 고백받고 싶어 ~천재들의 연애 두뇌전~::버즈툰",

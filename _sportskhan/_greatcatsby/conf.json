@@ -7,20 +7,16 @@
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://sports.khan.co.kr/comics/cartoon_view.html?comics=b2c&sec_id=550114"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
       "element_id_list": [
         "NewsAdContent"
       ],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_sportskhan.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "위대한 캣츠비::스포츠경향",

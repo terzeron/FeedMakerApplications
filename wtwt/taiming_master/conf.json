@@ -8,20 +8,16 @@
       "unit_size_per_day": 2,
       "list_url_list": [
         "https://wtwt85.com/v1?toon=5246"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
-      "element_id_list": [],
       "element_class_list": [
         "wbody"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "테이밍 마스터::W툰",

@@ -4,27 +4,20 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_tistory.py -n 100",
       "sort_field_pattern": "/(\\d+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://man4love.tistory.com/category/%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%9D%B4%EC%95%BC%EA%B8%B0?page=1",
         "https://man4love.tistory.com/category/%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%9D%B4%EC%95%BC%EA%B8%B0?page=2",
         "https://man4love.tistory.com/category/%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%9D%B4%EC%95%BC%EA%B8%B0?page=3",
         "https://man4love.tistory.com/category/%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%9D%B4%EC%95%BC%EA%B8%B0?page=4"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "area_view",
         "article",
         "entry-content"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "Happy Factory::티스토리",

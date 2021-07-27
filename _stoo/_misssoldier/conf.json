@@ -5,20 +5,16 @@
       "encoding": "cp949",
       "list_url_list": [
         "http://stoo.asiae.co.kr/cartoon/ctlist.php?pg=1&strForm=s_list&sc3=103&sc2=ing"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
-      "element_id_list": [],
       "element_class_list": [
         "ctview"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_stoo.pl"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "미스 군통령::스투닷컴",

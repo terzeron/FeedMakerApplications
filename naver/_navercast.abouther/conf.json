@@ -4,23 +4,16 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_navercastpc.pl",
       "sort_field_pattern": "contents_id=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://navercast.naver.com/list.nhn?category_type=series&list_type=image&category_id=105",
         "http://navercast.naver.com/list.nhn?category_type=series&list_type=image&category_id=105&sort=update&list_type=image&page=2&start=26&paged=25"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "smarteditor_area"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "그녀에 대하여::네이버캐스트",

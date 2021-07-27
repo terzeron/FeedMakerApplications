@@ -4,26 +4,20 @@
       "render_js": true,
       "item_capture_script": "../capture_item_manamoa.py -n 10",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://manamoa53.net/bbs/page.php?hid=manga_detail&manga_id=811"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "render_js": true,
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "view-content",
         "images_from_canvas"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "보안관 에반스의 거짓말::마나모아",

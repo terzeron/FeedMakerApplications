@@ -5,18 +5,13 @@
       "encoding": "cp949",
       "list_url_list": [
         "http://stoo.asiae.co.kr/cartoon/"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
-      "element_id_list": [],
       "element_class_list": [
         "ct_topdesc"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "스투웹툰목록",

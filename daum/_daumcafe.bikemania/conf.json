@@ -6,7 +6,6 @@
         "(\\d+)\\t",
         "\\b(\\d+)\\."
       ],
-      "encoding": "utf-8",
       "unit_size_per_day": 8,
       "list_url_list": [
         "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=COA&firstbbsdepth=0004ozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003gzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=",
@@ -15,8 +14,7 @@
         "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=NpvM&firstbbsdepth=000GDzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=000FFzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType=",
         "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=00009zzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=00006zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=5&page=1&listnum=50&sortType=",
         "http://cafe.daum.net/_c21_/bbs_list?grpid=EVs&mgrpid=&fldid=2zgH&firstbbsdepth=0004czzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=0003Szzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType="
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
@@ -27,11 +25,9 @@
       "element_class_list": [
         "subject"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "바이크매니아",

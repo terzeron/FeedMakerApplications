@@ -1,0 +1,25 @@
+{
+  "configuration": {
+    "collection": {
+      "sort_field_pattern": "\\b(\\d+)\\.",
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "http://sports.media.daum.net/sports/column/",
+        "http://sports.media.daum.net/proxy/api/mc2/contents/find.json?service=sports&clusterType=expert&pageSize=19&page=1"
+      ]
+    },
+    "extraction": {
+      "element_class_list": [
+        "content"
+      ]
+    },
+    "rss": {
+      "title": "다음스포츠칼럼::다음",
+      "description": "다음스포츠칼럼::다음 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Daum Communications. All rights reserved.",
+      "link": "https://terzeron.com/daumsportscolumn.xml",
+      "language": "ko"
+    }
+  }
+}

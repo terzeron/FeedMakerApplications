@@ -2,9 +2,7 @@
   "configuration": {
     "collection": {
       "is_completed": true,
-      "item_capture_script": "./capture_item_link_title.py",
       "sort_field_pattern": "(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "http://www.ikoreatimes.com/Article/list.aspx?p=67&page=6&q=",
@@ -13,18 +11,12 @@
         "http://www.ikoreatimes.com/Article/list.aspx?p=67&page=3&q=",
         "http://www.ikoreatimes.com/Article/list.aspx?p=67&page=2&q=",
         "http://www.ikoreatimes.com/Article/list.aspx?p=67&page=1&q="
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "mainArtBody"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "여울물소리::한국일보",

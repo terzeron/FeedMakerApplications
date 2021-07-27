@@ -7,20 +7,16 @@
       "unit_size_per_day": 4,
       "list_url_list": [
         "http://sports.khan.co.kr/comics/cartoon_view.html?comics=b2c&sec_id=550135"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "encoding": "cp949",
       "element_id_list": [
         "NewsAdContent"
       ],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_sportskhan.pl"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "낚신::스포츠경향",

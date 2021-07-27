@@ -6,22 +6,15 @@
         "&articleno=(\\d+)",
         "\\b(\\d+)\\."
       ],
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "http://blog.daum.net/_blog/BlogTypeMain.do?blogid=0HpkV&admin="
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "cContent"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "Nasica::다음",

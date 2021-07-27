@@ -3,16 +3,13 @@
     "collection": {
       "item_capture_script": "../capture_item_naverblog.py -n 5",
       "sort_field_pattern": "&logNo=(\\d+)",
-      "encoding": "utf-8",
       "unit_size_per_day": 4,
       "list_url_list": [
         "http://blog.naver.com/PostTitleListAsync.nhn?blogId=bankertofu&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "force_sleep_between_articles": true,
-      "encoding": "utf8",
       "element_id_list": [
         "postViewArea"
       ],
@@ -20,11 +17,9 @@
         "se_component_wrap",
         "se-main-container"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "뱅커두부의 잃지않는 투자,행복한 삶::네이버",

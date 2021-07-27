@@ -3,22 +3,15 @@
     "collection": {
       "item_capture_script": "./capture_item_link_title.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 120,
       "list_url_list": [
         "https://newstapa.org/recent/page/1"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "archive-contents"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "뉴스::뉴스타파",

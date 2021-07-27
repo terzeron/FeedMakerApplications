@@ -3,25 +3,19 @@
     "collection": {
       "item_capture_script": "../capture_item_daumwebtoon.py -n 10",
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 4,
       "list_url_list": [
         "http://cartoon.media.daum.net/data/pc/webtoon/view/rendezvous"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "force_sleep_between_articles": true,
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "img_wrap"
       ],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_daumwebtoon.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "랑데부::다음",

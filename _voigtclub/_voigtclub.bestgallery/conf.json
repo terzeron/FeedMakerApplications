@@ -2,21 +2,14 @@
   "configuration": {
     "collection": {
       "item_capture_script": "../capture_item_voigtclub.pl",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://www.voigtclub.com/gallery.php"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
-      "element_class_list": [],
       "element_path_list": [
         "/html/body/table[3]/tbody/tr/td/table[1]"
-      ],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "베스트갤러리::포클",

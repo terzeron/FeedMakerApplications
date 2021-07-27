@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_daumcafe.py -n 50",
+      "sort_field_pattern": "\\b(\\d+)\\.",
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004rozzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004qwzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004qvzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004q4zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=3&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004q3zzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004pCzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=3&page=4&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004q3zzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004pCzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=3&page=4&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004pBzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004o9zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=4&page=5&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004o3zzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004n0zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=5&page=6&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004mzzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004mBzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=6&page=7&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004mAzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004lIzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=7&page=8&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004lHzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004kRzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=8&page=9&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1PxP&firstbbsdepth=004kQzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=004jSzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=9&page=10&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003eazzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003dlzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=1&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003fQzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003ebzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=1&page=2&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003eazzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003dlzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=2&page=3&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003dkzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003cczzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=3&page=4&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003cazzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003bWzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=4&page=5&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003bUzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003aezzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=5&page=6&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003adzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003Zizzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=6&page=7&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003Zgzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003Yqzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=7&page=8&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003Ypzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003Xyzzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=8&page=9&listnum=50&sortType=",
+        "http://cafe336.daum.net/_c21_/bbs_list?grpid=wsj8&mgrpid=&fldid=1Pz2&firstbbsdepth=003Xxzzzzzzzzzzzzzzzzzzzzzzzzz&lastbbsdepth=003X8zzzzzzzzzzzzzzzzzzzzzzzzz&prev_page=9&page=10&listnum=50&sortType="
+      ]
+    },
+    "extraction": {
+      "element_id_list": [
+        "wrap",
+        "user_contents"
+      ],
+      "element_class_list": [
+        "subject"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "민봉기의 건프라월드",
+      "description": "민봉기의 건프라월드 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Daum Communications. All rights reserved.",
+      "link": "https://terzeron.com/daumcafe.gunplaworld.xml",
+      "language": "ko"
+    }
+  }
+}

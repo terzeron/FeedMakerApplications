@@ -2,21 +2,14 @@
   "configuration": {
     "collection": {
       "item_capture_script": "../capture_item_cine21.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://www.cine21.com/news/list/?idx=8"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "news_content"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "정훈이만화::씨네21",

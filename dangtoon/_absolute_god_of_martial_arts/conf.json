@@ -4,25 +4,19 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_dangtoon.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 24,
       "list_url_list": [
         "https://dangtoon57.com/절대무신"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "render_js": true,
-      "encoding": "utf8",
       "element_id_list": [
         "toon_img"
       ],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "절대무신::당근툰",

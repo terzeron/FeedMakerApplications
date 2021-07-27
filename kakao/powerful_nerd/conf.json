@@ -4,26 +4,19 @@
       "item_capture_script": "../capture_item_kakaowebtoon.py -n 10",
       "sort_field_pattern": "productId=(\\d+)",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
-      "encoding": "utf-8",
       "unit_size_per_day": 2,
       "list_url_list": [
         "https://page.kakao.com/home/57217068?orderby=desc"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true,
       "force_sleep_between_articles": true,
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
-      "encoding": "utf8",
-      "element_id_list": [],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "../post_process_kakaowebtoon.py",
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "강력크한 지지리::카카오",

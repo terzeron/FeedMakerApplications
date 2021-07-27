@@ -5,24 +5,17 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_manamoa.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "encoding": "utf-8",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://manamoa53.net/bbs/page.php?hid=manga_detail&manga_id=12221"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "copy_images_from_canvas": true,
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "view-content",
         "images_from_canvas"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "건담 UC::마나모아",

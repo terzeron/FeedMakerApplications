@@ -4,26 +4,20 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_agit.py -n 5",
       "sort_field_pattern": "num=(\\d+)\\t",
-      "encoding": "utf-8",
       "referer": "https://agit59.com",
       "unit_size_per_day": 4,
       "list_url_list": [
         "https://agit59.com/data/toonlist/9400.js"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "toon_content_imgs"
       ],
-      "element_class_list": [],
-      "element_path_list": [],
       "post_process_script_list": [
         "../convert_agit_url_to_blacktoon.py",
         "download_image.py"
-      ],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "오합지존::아지트",

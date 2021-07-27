@@ -2,22 +2,15 @@
   "configuration": {
     "collection": {
       "item_capture_script": "../capture_item_medium.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "https://medium.com/deliverytechkorea/tagged/post"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
       "render_js": true,
-      "encoding": "utf8",
-      "element_id_list": [],
-      "element_class_list": [],
       "element_path_list": [
         "//*[@id=\"root\"]/div/article/div"
-      ],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "Delivery Tech::DHK",

@@ -3,23 +3,16 @@
     "collection": {
       "item_capture_script": "../capture_item_cine21.py",
       "sort_field_pattern": "mag_id=(\\d+)\\t",
-      "encoding": "utf-8",
       "unit_size_per_day": 6,
       "list_url_list": [
         "http://www.cine21.com/news/list/?idx=3",
         "http://www.cine21.com/news/list/?idx=6"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
       "element_id_list": [
         "news_content"
-      ],
-      "element_class_list": [],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "리뷰::씨네21",

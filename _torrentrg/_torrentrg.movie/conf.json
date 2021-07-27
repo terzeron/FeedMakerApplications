@@ -2,24 +2,16 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "./capture_item_link_title.py",
-      "encoding": "utf-8",
       "list_url_list": [
         "http://www.torrentrg.com/bbs/board.php?bo_table=torrent_movie&page=1",
         "http://www.torrentrg.com/bbs/board.php?bo_table=torrent_movie&page=2",
         "http://www.torrentrg.com/bbs/board.php?bo_table=torrent_movie&page=3"
-      ],
-      "post_process_script_list": []
+      ]
     },
     "extraction": {
-      "encoding": "utf8",
-      "element_id_list": [],
       "element_class_list": [
         "mw_basic_view_content"
-      ],
-      "element_path_list": [],
-      "post_process_script_list": [],
-      "header_list": []
+      ]
     },
     "rss": {
       "title": "영화::토렌트알지",
