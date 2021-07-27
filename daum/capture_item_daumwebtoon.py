@@ -26,6 +26,9 @@ def main():
         if "webtoon" in json_data["data"]:
             if "webtoonEpisodes" in json_data["data"]["webtoon"]:
                 for episode in json_data["data"]["webtoon"]["webtoonEpisodes"]:
+                    if "price" in episode and episode["price"] > 0:
+                        continue
+                        
                     if "title" in episode:
                         title = episode["title"]
                     if "articleId" in episode:
