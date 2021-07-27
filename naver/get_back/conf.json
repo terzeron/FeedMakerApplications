@@ -1,0 +1,69 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": false,
+      "verify_ssl": true,
+      "ignore_old_list": false,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "user_agent": null,
+      "encoding": "utf-8",
+      "referer": null,
+      "timeout": null,
+      "unit_size_per_day": 24,
+      "list_url_list": [
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=2",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=3",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=4",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=5",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=6",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=7",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=8",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=9",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=10",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=11",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=12",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=13",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=14",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=15",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=16",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=17",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=18",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=19"
+      ],
+      "post_process_script_list": []
+    },
+    "extraction": {
+      "render_js": false,
+      "verify_ssl": true,
+      "bypass_element_extraction": false,
+      "force_sleep_between_articles": false,
+      "copy_images_from_canvas": false,
+      "simulate_scrolling": false,
+      "user_agent": null,
+      "encoding": "utf8",
+      "referer": null,
+      "timeout": null,
+      "element_id_list": [],
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "element_path_list": [],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "header_list": []
+    },
+    "rss": {
+      "title": "겟백::네이버",
+      "description": "겟백::네이버 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/get_back.xml",
+      "language": "ko",
+      "url_prefix_for_guid": null
+    }
+  }
+}

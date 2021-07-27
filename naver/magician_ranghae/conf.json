@@ -5,15 +5,15 @@
       "verify_ssl": true,
       "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_daumwebtoon.py -n 5",
-      "sort_field_pattern": "\\b(\\d+)\\.",
+      "item_capture_script": "../capture_item_naverwebtoon.py",
+      "sort_field_pattern": null,
       "user_agent": null,
       "encoding": "utf-8",
       "referer": null,
       "timeout": null,
-      "unit_size_per_day": 4,
+      "unit_size_per_day": null,
       "list_url_list": [
-        "http://cartoon.media.daum.net/data/pc/webtoon/view/sunbishow"
+        "http://comic.naver.com/webtoon/list.nhn?titleId=776655"
       ],
       "post_process_script_list": []
     },
@@ -21,7 +21,7 @@
       "render_js": false,
       "verify_ssl": true,
       "bypass_element_extraction": false,
-      "force_sleep_between_articles": true,
+      "force_sleep_between_articles": false,
       "copy_images_from_canvas": false,
       "simulate_scrolling": false,
       "user_agent": null,
@@ -30,20 +30,20 @@
       "timeout": null,
       "element_id_list": [],
       "element_class_list": [
-        "img_wrap"
+        "wt_viewer"
       ],
       "element_path_list": [],
       "post_process_script_list": [
-        "../post_process_daumwebtoon.py"
+        "download_image.py"
       ],
       "header_list": []
     },
     "rss": {
-      "title": "대선비쇼::다음",
-      "description": "대선비쇼::다음 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
-      "copyright": "Copyright (c) Daum Communications. All rights reserved.",
-      "link": "https://terzeron.com/show_of_classical_scholar.xml",
+      "title": "마법사랑해::네이버",
+      "description": "마법사랑해::네이버 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/magician_ranghae.xml",
       "language": "ko",
       "url_prefix_for_guid": null
     }

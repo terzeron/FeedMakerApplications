@@ -4,16 +4,16 @@
       "render_js": false,
       "verify_ssl": true,
       "ignore_old_list": false,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_daumwebtoon.py -n 5",
-      "sort_field_pattern": "\\b(\\d+)\\.",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_daumwebtoon.py -n 300",
+      "sort_field_pattern": "\\/(\\d+)\\t",
       "user_agent": null,
       "encoding": "utf-8",
       "referer": null,
       "timeout": null,
       "unit_size_per_day": 4,
       "list_url_list": [
-        "http://cartoon.media.daum.net/data/pc/webtoon/view/sunbishow"
+        "http://cartoon.media.daum.net/data/pc/webtoon/view/leekangjin"
       ],
       "post_process_script_list": []
     },
@@ -39,11 +39,11 @@
       "header_list": []
     },
     "rss": {
-      "title": "대선비쇼::다음",
-      "description": "대선비쇼::다음 - 모바일 버전 RSS Feed",
-      "rss_generator": "Terzeron's Feed Generator",
+      "title": "관존 이강진::다음",
+      "description": "관존 이강진::다음 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Communications. All rights reserved.",
-      "link": "https://terzeron.com/show_of_classical_scholar.xml",
+      "link": "https://terzeron.com/summit_leekangjin.xml",
       "language": "ko",
       "url_prefix_for_guid": null
     }
