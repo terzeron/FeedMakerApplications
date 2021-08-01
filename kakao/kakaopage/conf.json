@@ -14,15 +14,15 @@
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
       "referer": "https://page.kakao.com",
       "post_process_script_list": [
-        "./post_process_kakaowebtoon.py"
+        "./post_process_kakaopage.py"
       ]
     },
     "rss": {
-      "title": "카카오웹툰목록",
-      "description": "카카오웹툰목록 - 모바일 버전 RSS Feed",
+      "title": "카카오페이지목록",
+      "description": "카카오페이지목록 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Kakao Corp. All Rights Reserved",
-      "link": "https://terzeron.com/kakaowebtoon.xml",
+      "link": "https://terzeron.com/kakaopage.xml",
       "language": "ko"
     }
   }

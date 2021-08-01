@@ -13,16 +13,16 @@
     <extraction>
         <bypass_element_extraction>true</bypass_element_extraction>
         <post_process_script_list>
-            <post_process_script>./post_process_kakaowebtoon.py</post_process_script>
+            <post_process_script>./post_process_kakaopage.py</post_process_script>
         </post_process_script_list>
         <referer><![CDATA[https://page.kakao.com]]></referer>
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
         <render_js>false</render_js>
     </extraction>
     <rss>
-        <title><![CDATA[카카오웹툰목록]]></title>
-        <description><![CDATA[카카오웹툰목록 - 모바일 버전 RSS Feed]]></description>
-        <link><![CDATA[https://terzeron.com/kakaowebtoon.xml]]></link>
+        <title><![CDATA[카카오페이지목록]]></title>
+        <description><![CDATA[카카오페이지목록 - 모바일 버전 RSS Feed]]></description>
+        <link><![CDATA[https://terzeron.com/kakaopage.xml]]></link>
         <generator><![CDATA[Terzeron's Feed Generator]]></generator>
         <copyright><![CDATA[Copyright (c) Daum Kakao Corp. All Rights Reserved]]></copyright>
         <language>ko</language>
