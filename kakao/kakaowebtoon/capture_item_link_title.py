@@ -26,24 +26,29 @@ def main():
     result_list = []
     json_data = json.loads(content)
     if "data" in json_data:
-        if "content" in json_data["data"]:
-            for item in json_data["data"]["content"]:
-                if not item["adult"]:
-                    link = "%s/%s/%s" % (link_prefix, item["seoId"], item["id"])
-                    title = item["title"]
-                    result_list.append((link, title))
+        if "sections" in json_data["data"]:
+            for section in json_data["data"]["sections"]:
+                if "cardGroups" in section:
+                    for card_group in section["cardGroups"]:
+                        if "cards" in card_group:
+                            for card in card_group["cards"]:
+                                if "content" in card:
+                                    item = card["content"]
+                                    if not item["adult"]:
+                                        link = "%s/%s/%s" % (link_prefix, item["seoId"], item["id"])
+                                        title = item["title"]
+                                        result_list.append((link, title))
                     
-                    # 특수한 처리 - extraction 단계를 여기서 수행
-                    description = "<div><span>%s</span>\n<span>%s</span>\n<span>%s</span>\n<span><img src='%s'></span>\n<div>\n" % (item["title"], item["genre"], item["catchphraseTwoLines"], item["backgroundImage"] + ".jpg")
-                    file_path = os.path.join("html", URL.get_short_md5_name(URL.get_url_path(link)) + ".html")
+                                        # 특수한 처리 - extraction 단계를 여기서 수행
+                                        description = "<div><span>%s</span>\n<span>%s</span>\n<span>%s</span>\n<span><img src='%s'></span>\n<div>\n" % (item["title"], ", ".join(item["seoKeywords"]), item["catchphraseTwoLines"], item["backgroundImage"] + ".jpg")
+                                        file_path = os.path.join("html", URL.get_short_md5_name(URL.get_url_path(link)) + ".html")
 
-                    if os.path.isfile(file_path):
-                        continue
-                    with open(file_path, 'w') as fp:
-                        fp.write(header_str)
-                        fp.write(description)
-                        fp.write(FeedMaker.get_image_tag_str("kakaowebtoon.xml", link))
-
+                                        if os.path.isfile(file_path):
+                                            continue
+                                        with open(file_path, 'w') as fp:
+                                            fp.write(header_str)
+                                            fp.write(description)
+                                            fp.write(FeedMaker.get_image_tag_str("kakaowebtoon.xml", link))
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))

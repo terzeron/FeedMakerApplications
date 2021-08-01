@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_kakaowebtoon.py -n 300",
+      "sort_field_pattern": "\\b(\\d+)\\.",
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1381/episodes?sort=-NO&offset=0&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1381/episodes?sort=-NO&offset=30&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1381/episodes?sort=-NO&offset=60&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1381/episodes?sort=-NO&offset=90&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1381/episodes?sort=-NO&offset=120&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1381/episodes?sort=-NO&offset=150&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1381/episodes?sort=-NO&offset=180&limit=30"
+      ]
+    },
+    "extraction": {
+      "element_path_list": [
+        "//*[@id=\"root\"]/main/div/div/div/div[1]/div[2]/div[1]"
+      ]
+    },
+    "rss": {
+      "title": "후크::카카오",
+      "description": "후크::카카오 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
+      "link": "https://terzeron.com/hook.xml",
+      "language": "ko"
+    }
+  }
+}

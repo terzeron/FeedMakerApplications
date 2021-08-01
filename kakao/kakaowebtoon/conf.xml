@@ -5,15 +5,11 @@
         <sort_field_pattern><![CDATA[\b(\d+)\.]]></sort_field_pattern>
         <unit_size_per_day>4</unit_size_per_day>
         <list_url_list>
-            <list_url><![CDATA[https://gateway-kw.kakao.com/search/v1/content?limit=30&offset=0&word=%23액션%2F무협]]></list_url>
-            <list_url><![CDATA[https://gateway-kw.kakao.com/search/v1/content?limit=30&offset=0&word=%23드라마]]></list_url>
-            <list_url><![CDATA[https://gateway-kw.kakao.com/search/v1/content?limit=30&offset=0&word=%23판타지%20드라마]]></list_url>
-            <list_url><![CDATA[https://gateway-kw.kakao.com/search/v1/content?limit=30&offset=0&word=%23코믹%2F일상]]></list_url>
-            <list_url><![CDATA[https://gateway-kw.kakao.com/search/v1/content?limit=30&offset=0&word=%23학원%2F판타지]]></list_url>
+            <list_url><![CDATA[https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays]]></list_url>
+            <list_url><![CDATA[https://gateway-kw.kakao.com/section/v1/pages/general-weekdays]]></list_url>
         </list_url_list>
         <post_process_script_list>
             <post_process_script>shuf</post_process_script>
-            <post_process_script>tail -20</post_process_script>
         </post_process_script_list>
         <render_js>true</render_js>
     </collection>
