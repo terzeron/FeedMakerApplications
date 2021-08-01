@@ -8,6 +8,7 @@
         <user_agent><![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36]]></user_agent>
         <post_process_script_list>
             <post_process_script>shuf</post_process_script>
+            <post_process_script>tail -20</post_process_script>
         </post_process_script_list>
     </collection>
     <extraction>

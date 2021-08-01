@@ -7,6 +7,7 @@
         <ignore_old_list>true</ignore_old_list>
         <post_process_script_list>
             <post_process_script>shuf</post_process_script>
+            <post_process_script>tail -20</post_process_script>
         </post_process_script_list>
     </collection>
     <extraction>

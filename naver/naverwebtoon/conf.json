@@ -6,7 +6,8 @@
         "http://comic.naver.com/webtoon/weekday.nhn"
       ],
       "post_process_script_list": [
-        "shuf"
+        "shuf",
+        "tail -20"
       ]
     },
     "extraction": {
