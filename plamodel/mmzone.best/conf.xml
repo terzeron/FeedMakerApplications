@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <collection>
-        <is_completed>true</is_completed>
         <sort_field_pattern><![CDATA[no=(\d+)]]></sort_field_pattern>
-        <unit_size_per_day>24</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=0]]></list_url>
             <list_url><![CDATA[https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=1]]></list_url>
-            <list_url><![CDATA[https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=2]]></list_url>
-            <list_url><![CDATA[https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=3]]></list_url>
             <list_url><![CDATA[https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=4]]></list_url>
-            <list_url><![CDATA[https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=5]]></list_url>
         </list_url_list>
-        <item_capture_script>./capture_item_link_title.py -n 300</item_capture_script>
+        <item_capture_script>./capture_item_link_title.py -n 5</item_capture_script>
         <post_process_script_list>
             <!--post_process_script>grep -v '[질답]'</post_process_script-->
         </post_process_script_list>
