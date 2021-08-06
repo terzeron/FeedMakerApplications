@@ -40,7 +40,13 @@ def main():
                                         result_list.append((link, title))
                     
                                         # 특수한 처리 - extraction 단계를 여기서 수행
-                                        description = "<div><span>%s</span>\n<span>%s</span>\n<span>%s</span>\n<span><img src='%s'></span>\n<div>\n" % (item["title"], ", ".join(item["seoKeywords"]), item["catchphraseTwoLines"], item["backgroundImage"] + ".jpg")
+                                        description = "<div>"
+                                        description += "<div>%s</div>\n" % item["title"]
+                                        description += "<div>%s</div>\n" % ", ".join(item["seoKeywords"])
+                                        description += "<div>%s</div>\n" % item["catchphraseTwoLines"]
+                                        description += "<div><a href='%s'>%s</a></div>\n" % (link, link)
+                                        description += "<div><img src='%s'></div>\n" % item["featuredCharacterImageA"] + ".png"
+                                        description += "<div>\n"
                                         file_path = os.path.join("html", URL.get_short_md5_name(URL.get_url_path(link)) + ".html")
 
                                         if os.path.isfile(file_path):
