@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wfwf.py -n 300",
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "encoding": "cp949",
+      "unit_size_per_day": 8,
+      "list_url_list": [
+        "https://wfwf159.com/list?toon=5533"
+      ]
+    },
+    "extraction": {
+      "encoding": "cp949",
+      "element_class_list": [
+        "image-view"
+      ],
+      "post_process_script_list": [
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "title": "화산권마::늑대닷컴",
+      "description": "화산권마::늑대닷컴 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "link": "https://terzeron.com/hwasan_fist_devil.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://wfwf24.com"
+    }
+  }
+}
