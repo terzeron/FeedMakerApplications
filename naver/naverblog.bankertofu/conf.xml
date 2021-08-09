@@ -3,7 +3,7 @@
     <collection>
         <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[&logNo=(\d+)]]></sort_field_pattern>
-        <unit_size_per_day>4</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[http://blog.naver.com/PostTitleListAsync.nhn?blogId=bankertofu&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30]]></list_url>
         </list_url_list>

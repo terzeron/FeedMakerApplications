@@ -12,18 +12,6 @@
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=5]]></list_url>
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=6]]></list_url>
             <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=7]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=8]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=9]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=10]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=11]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=12]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=13]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=14]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=15]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=16]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=17]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=18]]></list_url>
-            <list_url><![CDATA[http://comic.naver.com/webtoon/list.nhn?titleId=727798&page=19]]></list_url>
         </list_url_list>
         <item_capture_script>../capture_item_naverwebtoon.py -n 300</item_capture_script>
     </collection>

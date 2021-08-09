@@ -3,7 +3,7 @@
     <collection>
         <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[\b(\d+)\.]]></sort_field_pattern>
-        <unit_size_per_day>4</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <list_url_list>
             <list_url><![CDATA[https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays]]></list_url>
             <list_url><![CDATA[https://gateway-kw.kakao.com/section/v1/pages/general-weekdays]]></list_url>

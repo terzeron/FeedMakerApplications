@@ -3,7 +3,7 @@
     <collection>
         <is_completed>false</is_completed>
         <sort_field_pattern><![CDATA[\t(\d+)\.]]></sort_field_pattern>
-        <unit_size_per_day>24</unit_size_per_day>
+        <unit_size_per_day>1</unit_size_per_day>
         <ignore_old_list>true</ignore_old_list>
         <list_url_list>
             <list_url><![CDATA[https://dangtoon57.com/절대무신]]></list_url>
