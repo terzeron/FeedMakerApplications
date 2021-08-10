@@ -31,13 +31,17 @@ def main():
         "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
         "tistory/nasica1": [ "../capture_item_tistory.py" ],
         "egloos/oblivion": [ "../capture_item_link_title.py" ],
-        "manatoki/level_up_alone" : [ "../capture_item_manatoki.py" ],
+        "agit/gang_with_sword" : [ "../capture_item_agit.py" ],
+        "buzztoon/devil_sword_king" : [ "../capture_item_buzztoon.py" ],
+        "copytoon/extraordinary_god_of_martial_arts" : [ "../capture_item_copytoon.py" ],
         "jmana/one_punch_man_remake" : [ "../capture_item_jmana.py" ],
+        "manatoki/level_up_alone" : [ "../capture_item_manatoki.py" ],
+        "marumaru/ride_on_king" : [ "../capture_item_marumaru.py" ],
+        "ornson/weird_taoist_of_mudang" : [ "../capture_item_ornson.py" ],
         "wfwf/warrior_at_fff_level" : [ "../capture_item_wfwf.py" ],
         "wtwt/login_alone" : [ "../capture_item_wtwt.py" ],
-        "marumaru/ride_on_king" : [ "../capture_item_marumaru.py" ],
     }
-    
+
     for (feed, scripts) in test_subjects.items():
         index = 0
         for script in scripts:

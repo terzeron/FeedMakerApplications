@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=979">
+<meta name="google-site-verification" content="PgkSplZqwbpaquKBKbbByIr5_gbz-Jwz-wbSr-poAQg" />
+<meta name="google-site-verification" content="sufmWUj7U2H9uk9pjlEOMYJ3cCdiVf50onI2mQMOzNY" />
+<meta name="descripiton" content="성인웹툰 19금웹툰 무료웹툰사이트 무료웹툰 추천웹툰 웹툰 오른손 오른손닷컴 무료웹툰모음">
+<meta name="msvalidate.01" content="D3A267DB062ED9A15BE6CE5FABA15812" />
+<title>무당기협 - 오른손</title>
+<meta name="description" content="최신웹툰들을 무료로 즐기실 수 있습니다!"><meta name="keywords" content="무료웹툰, 성인웹툰, 19금웹툰, 무료웹툰사이트, 웹툰추천, 유료웹툰, 밤토끼, 오른손, 호두코믹스, 웹툰주소, 펀툰, 늑대닷컴, 야부리, 레깅스, 섹시, ㄷㄲ, 검스, 유부녀, 미씨, 아이돌, 은꼴, 움짤"><meta name="author" content="오른손 5RSON"><link rel="shortcut icon" type="image/x-icon" href="http://5rs-a36.com/uploads/favicon/a3a1b0a8104b73c4d216e7c3f72837f1.ico" /><link rel="stylesheet" type="text/css" href="http://5rs-a36.com/views/_layout/basic/css/style.css?930032" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css" />
+
+				<link rel="stylesheet" type="text/css" href="http://5rs-a36.com/views/board/basic/css/style.css" />
+				<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+// 자바스크립트에서 사용하는 전역변수 선언
+var cb_url = "http://5rs-a36.com";
+var cb_cookie_domain = "";
+var cb_charset = "UTF-8";
+var cb_time_ymd = "2021-08-10";
+var cb_time_ymdhis = "2021-08-10 13:53:53";
+var layout_skin_path = "_layout/basic";
+var view_skin_path = "board/basic";
+var is_member = "";
+var is_admin = "";
+var cb_admin_url = "";
+var cb_board = "무당기협";
+var cb_board_url = cb_url + "/board/무당기협";
+var cb_device_type = "desktop";
+var cb_csrf_hash = "4152d3f7b30a854d559ff7006e511c8b";
+var cookie_prefix = "";
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137789828-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137789828-1');
+</script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://5rs-a36.com/assets/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="http://5rs-a36.com/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://5rs-a36.com/assets/js/common.js"></script>
+<script type="text/javascript" src="http://5rs-a36.com/assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://5rs-a36.com/assets/js/jquery.validate.extension.js"></script>
+<script type="text/javascript" src="http://5rs-a36.com/assets/js/sideview.js"></script>
+<script type="text/javascript" src="http://5rs-a36.com/assets/js/js.cookie.js"></script>
+<meta property="og:url" content="http://5rs-a36.com/board/%EB%AC%B4%EB%8B%B9%EA%B8%B0%ED%98%91"/>
+</head>
+<body >
+<div class="wrapper">
+	<script>
+
+			$(function () {
+				
+				$('.sexmoa_close').click( function() {
+					$( '.sexmoa_banner' ).hide();
+				});
+
+			});
+	</script>
+	
+	<!------- 성인모아 배너 ------>
+	<div class="sexmoa_banner" style="display:none;">
+		<div class="sexmoa_close"><img src="/imgs/sexmoa_close.png" alt="닫기" /></div>
+		<a href="http://sexmoa.net/" title="성인모아접속하기" target="_blank">
+			<img src="/imgs/banner/pc_sexmoa_banner.png" alt="성인모아접속하기" />
+		</a>
+	</div>
+	<!------- /// 성인모아 배너 ------>
+
+	<!------- 서버에러 배너 ------>
+	<div class="sexmoa_banner" style="display:none;">
+		<div class="sexmoa_close"><img src="/imgs/sexmoa_close.png" alt="닫기" /></div>
+		<img src="/imgs/banner/pc_error_banner.png?1" alt="서버이전작업 배너" />
+	</div>
+	<!------- /// 서버에러 배너 ------>
+
+    <!-- header start -->
+    <header class="header">
+        <div class="container">
+			<!-------  기존 접속방법 배너 
+			<div class="pageway">
+				<a href="/https_notice" class="upper_link" title="오른손접속방법"><img src="/imgs/banner/pageway_banner.gif?2241" alt="오른손접속방법" /></a>
+			</div>
+			------------->
+			<div class="pageway">
+				<a href="http://xn--1-3k1fg1s5ze.com/" class="upper_link" title="오른손실시간주소"><img src="/imgs/banner/pageway_banner2.gif?22241" alt="오른손실시간주소" /></a>
+			</div>
+            <ul class="header-top-menu">
+                                                    <li><a href="http://5rs-a36.com/login?url=http%3A%2F%2F5rs-a36.com%2Fboard%2F%25EB%25AC%25B4%25EB%258B%25B9%25EA%25B8%25B0%25ED%2598%2591" title="로그인">로그인</a></li>
+                    <li><a href="http://5rs-a36.com/register" title="회원가입">회원가입</a></li>
+                                					<li><a href="https://t.me/info_5rson" title="배너문의"><img src="/imgs/telegram_icon.png?1" alt="텔레그램배너문의" style="margin-top:4px;" /></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100044739722782" target="_blank" title="오른손페이스북"><img style="width:22px; margin-top:4px;" src="/imgs/facebook_icon.png?1" alt="오른손페이스북" /></a></li>
+					<li><a href="https://www.instagram.com/webtoon5rnson/?hl=ko" target="_blank" title="오른손인스타그램"><img style="width:22px; margin-top:4px;" src="/imgs/insta_icon.png?1" alt="오른손인스타그램" /></a></li>
+					<li><a href="https://twitter.com/5rson_com" target="_blank" title="오른손트위터"><img style="width:22px; margin-top:4px;" src="/imgs/twit_icon.png?1" alt="오른손트위터" /></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- nav start -->
+    <nav class="navbar">
+        <div class="container">
+			<div class="logo pull-left">
+				<a href="http://5rs-a36.com/" title="오른손"><img src="/imgs/logo.png?1" alt="무료웹툰사이트 오른손닷컴" /></a>
+			</div>
+			<div class="nav_menu">
+				<ul>
+					<li><a href="/webtoon" class="menu" title="웹툰"><img src="/imgs/nav_menu_01.png?122" alt="웹툰" /></a></li>
+					<li><a href="/comics" class="menu" title="만화책"><img src="/imgs/nav_menu_02.png?12222" alt="만화책" /></a></li>
+					<li><a href="/novel?is_end=1" class="menu" title="야설"><img src="/imgs/nav_menu_03.png?122" alt="야설" /></a></li>
+					<li><a href="/phototoon" class="menu" title="포토툰"><img src="/imgs/nav_menu_04.png?22221" alt="포토툰" /></a></li>
+					<li><a href="/mangga" class="menu" title="망가"><img src="/imgs/nav_menu_05.png?122" alt="망가" /></a></li>
+				</ul>
+			</div>
+			<div class="search_area">
+				<div class="search_box">
+					<form name="header_search" id="header_search" action="http://5rs-a36.com/search" onSubmit="return headerSearch(this);">
+						<input type="text" placeholder="#콘텐츠를 검색해주세요" class="search_input" name="skeyword" accesskey="s" />
+						<button type="submit" class="search_btn"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+			</div>
+			<script type="text/javascript">
+			//<![CDATA[
+			$(function() {
+				$('.dropdown').hover(function() {
+					$(this).addClass('open');
+				}, function() {
+					$(this).removeClass('open');
+				});
+			});
+			function headerSearch(f) {
+				var skeyword = f.skeyword.value.replace(/(^\s*)|(\s*$)/g,'');
+				if (skeyword.length < 1) {
+					alert('검색어를 입력 후 검색해 주세요');
+					f.skeyword.focus();
+					return false;
+				}
+				return true;
+			}
+			//]]>
+			</script>
+		</div>
+    </nav>
+    <!-- nav end -->
+	<script>
+		$(function () {
+
+			$(".left_conts .list_area").hide();
+			$(".left_conts .list_area:first").show();
+
+			$(".left_conts  dl.tabs dt").click(function () {
+				$(".left_conts  dl.tabs dt").removeClass("active").css("color", "#333");
+				$(this).addClass("active").css("color", "#2f83d2");
+				$(".left_conts .list_area").hide()
+				var activeTab = $(this).attr("rel");
+				$("#" + activeTab).fadeIn()
+			});
+
+		});
+
+		$(function () {
+
+			$(".right_conts .list_area").hide();
+			$(".right_conts .list_area:first").show();
+
+			$(".right_conts  dl.tabs dt").click(function () {
+				$(".right_conts  dl.tabs dt").removeClass("active").css("color", "#333");
+				$(this).addClass("active").css("color", "#2f83d2");
+				$(".right_conts .list_area").hide()
+				var activeTab = $(this).attr("rel");
+				$("#" + activeTab).fadeIn()
+			});
+
+		});
+	</script>
+
+    
+	<!-- main start -->
+    <div class="main">
+		
+		<!-- 메인배너영역 -->
+		<div class="main_top_area">
+			<div class="main_banner">
+				<div class="layout_fix">	
+					<div class="left_banner"><div class="medal"><img src="/imgs/medal.png" alt="보증업체" /></div><a href="https://curekor.com/affiliates/?btag=443751_l125116" target="blank" title="큐어벳"><img src="/imgs/banner/curebet.gif?1" alt="큐어벳"></a></div><!--<a href="/sands" target="blank" title="샌즈"><img src="/imgs/banner/sands.gif" alt="샌즈"></a>-->
+					<div class="info_banner">
+						
+						
+						 <img src="/imgs/banner/orson_main_banner.png" alt="메인배너">
+						<!---- 업로드 오류일때 <img src="/imgs/banner/main_banner_error.png" alt="오류배너"> ---->
+						<!---- 업로드 정상일때 <img src="/imgs/banner/orson_main_banner.png" alt="메인배너"> ---->
+											</div>
+					<div class="right_banner"><div class="medal"><img src="/imgs/medal.png" alt="보증업체" /></div><a href="https://tslot5.com" target="blank" title="트리플"><img src="/imgs/banner/m_premium_triple.gif" alt="트리플"></a></div>
+				</div>
+			</div>
+			<div class="layout_fix">	
+				<div class="rank_page">
+					<a href="/rank" title="랭킹페이지바로가기"><img src="/imgs/rank_page.png?1" alt="랭킹페이지바로가기" /></a>
+					<a href="/plan" title="기획페이지바로가기"><img src="/imgs/plan_page.png?1" alt="기획페이지바로가기" /></a>
+				</div>
+				
+				<!------------------------------------------ /////////// 메인 비쥬얼배너 ------------------------------------------>
+						</div>
+		</div>
+		
+		
+        <div class="container">
+            
+            <!-- 본문 시작 -->
+            <style type="text/css">
+	.main_contents {display:none;}
+	.spon_banner {display:none;}
+	.container {position:relative;}
+	.table tr {cursor:pointer;}
+	.table tr:hover {background:#eee;}
+	.table tr:first-child td {border-top:0;}
+	.new_write_btn {border:1px solid #ddd; padding:10px 20px; margin-top:20px; display:block;}
+	.left_area {width:830px; border-collapse:collapse; border-spacing:0; float:left; margin-bottom:20px;}
+	.right_area {width:350px; float:right;}
+	.right_area .cover {overflow:hidden; position:relative; height:160px;}
+	.right_area .cover img {width:100%; height:100%;}
+	.right_area .cover .date {position:absolute; top:10px; left:10px; background:#2f83d2; color:#fff; padding:2px 5px;}
+	.right_area .cover .lookup {position:absolute; bottom:10px; right:10px; z-index:2; background:url('/imgs/heart_icon.png') center left no-repeat; color:#eee; background-size:14px; padding-left:20px; font-size:12px; font-weight:bold;}
+	.right_area .cover .genre_area {background:url('/imgs/cover_bg.png'); position:absolute; bottom:0; left:0; width:100%; height:54px; line-height:68px;}
+	.right_area .cover .genre {color:#fff; margin-left:10px; font-size:16px; }
+	.right_area .info_box {overflow:hidden;}
+	.right_area .info_box dt {padding:10px 5px 5px 5px; font-size:20px; color:#000; font-weight:bold;}
+	.right_area .info_box dd {padding:0 5px 10px 5px; font-size:14px}
+	.right_area .info_box .first_btn {height:45px; line-height:45px; text-align:center; background:#2f83d2;}
+	.right_area .info_box .first_btn a {display:block; color:#fff; font-size:16px;}
+	.right_area .info_box .report_btn {height:45px; line-height:45px; text-align:center; border:1px solid #ddd; margin-top:5px;}
+	.right_area .info_box .report_btn a {display:block; color:#111; font-size:16px; background:#fff;}
+	.right_area .info_box .report_btn img {width:40px;}
+	.pagination {clear:both;}
+	.admin_checkbox {width:26px; height:26px; background:#fff; border:1px solid #000;}
+	.item {cursor:pointer;}
+	.admin_btn {position:fixed; bottom:50px; left:300px; cursor:pointer; border-radius:500px; width:60px; height:60px; line-height:60px; text-align:center;background:#d73838; font-weight:bold; color:#fff;}
+	.admin_btn:hover {background:#333;}
+	.admin_btn1 {position:fixed; bottom:50px; left:230px; cursor:pointer; border-radius:500px; width:60px; height:60px; line-height:60px; text-align:center;background:#38d738; font-weight:bold; color:#fff;}
+	.admin_btn1:hover {background:#333;}
+	#del_bookmark {background:#888; color:#fff;}
+	.control_box {position:absolute; bottom:40px; left:10px; z-index:1;}
+	.control_box label {background:#d20707; color:#fff; font-weight:bold; padding:0 4px; height:28px; line-height:28px; display:inline-block; border-radius:30px;}
+	.control_box label:nth-child(2) {background:#b128ba;}
+	.control_box label:nth-child(3) {background:#3a8acf;}
+	.control_box label:nth-child(4) {background:#ff8400;}
+	.control_box label:last-child {background:#000; margin-left:4px;} 
+	.control_box label input[type=radio] {background:none; width:20px; height:20px; border:none;}
+	.control_box label input[type=checkbox] {background:none; width:18px; height:18px; border:none;}
+</style>
+
+<div class="board">
+    
+    <form action="http://5rs-a36.com/board/%EB%AC%B4%EB%8B%B9%EA%B8%B0%ED%98%91" name="fboardlist" id="fboardlist" method="post" accept-charset="utf-8">
+               <input type="hidden" name="csrf_test_name" value="4152d3f7b30a854d559ff7006e511c8b" />
+        <table class="table left_area">
+			<colgroup>
+				<col width="10%" />
+				<col width="80%" />
+				<col width="10%" />
+			</colgroup>
+            <tbody>
+            	
+                <tr>
+					<td>
+												41					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/544067';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/544067" style="
+                                                    " title="무당기협 40화 시즌1 완결">
+						무당기협 40화 시즌1 완결						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+						03-07						</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												40					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/544066';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/544066" style="
+                                                    " title="무당기협 39화">
+						무당기협 39화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+						03-07						</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												39					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/542731';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/542731" style="
+                                                    " title="무당기협 38화">
+						무당기협 38화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+						02-21						</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												38					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/542730';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/542730" style="
+                                                    " title="무당기협 37화">
+						무당기협 37화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+						02-21						</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												37					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/542053';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/542053" style="
+                                                    " title="무당기협 36화">
+						무당기협 36화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+						02-14						</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												36					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/541464';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/541464" style="
+                                                    " title="무당기협 35화">
+						무당기협 35화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												35					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/540749';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/540749" style="
+                                                    " title="무당기협 34화">
+						무당기협 34화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												34					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/539891';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/539891" style="
+                                                    " title="무당기협 33화">
+						무당기협 33화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												33					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/539161';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/539161" style="
+                                                    " title="무당기협 32화">
+						무당기협 32화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												32					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/538240';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/538240" style="
+                                                    " title="무당기협 31화">
+						무당기협 31화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												31					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/537602';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/537602" style="
+                                                    " title="무당기협 30화">
+						무당기협 30화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												30					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/537487';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/537487" style="
+                                                    " title="무당기협 29화">
+						무당기협 29화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												29					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/536842';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/536842" style="
+                                                    " title="무당기협 28화">
+						무당기협 28화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												28					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/536157';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/536157" style="
+                                                    " title="무당기협 27화">
+						무당기협 27화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												27					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/536156';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/536156" style="
+                                                    " title="무당기협 19 20화">
+						무당기협 19 20화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												26					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/535105';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/535105" style="
+                                                    " title="무당기협 26화">
+						무당기협 26화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												25					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/534248';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/534248" style="
+                                                    " title="무당기협 25화">
+						무당기협 25화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												24					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/533527';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/533527" style="
+                                                    " title="무당기협 24화">
+						무당기협 24화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												23					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/530892';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/530892" style="
+                                                    " title="무당기협 23화">
+						무당기협 23화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												22					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529266';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529266" style="
+                                                    " title="무당기협 22화">
+						무당기협 22화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												21					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529265';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529265" style="
+                                                    " title="무당기협 21화">
+						무당기협 21화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												20					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529264';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529264" style="
+                                                    " title="무당기협 20화">
+						무당기협 20화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												19					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529263';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529263" style="
+                                                    " title="무당기협 19화">
+						무당기협 19화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												18					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529262';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529262" style="
+                                                    " title="무당기협 18화">
+						무당기협 18화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												17					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529261';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529261" style="
+                                                    " title="무당기협 17화">
+						무당기협 17화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												16					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529260';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529260" style="
+                                                    " title="무당기협 16화">
+						무당기협 16화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												15					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529259';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529259" style="
+                                                    " title="무당기협 15화">
+						무당기협 15화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												14					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529258';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529258" style="
+                                                    " title="무당기협 14화">
+						무당기협 14화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												13					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529257';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529257" style="
+                                                    " title="무당기협 13화">
+						무당기협 13화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												12					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529256';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529256" style="
+                                                    " title="무당기협 12화">
+						무당기협 12화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												11					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529255';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529255" style="
+                                                    " title="무당기협 11화">
+						무당기협 11화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												10					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529254';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529254" style="
+                                                    " title="무당기협 10화">
+						무당기협 10화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												9					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529253';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529253" style="
+                                                    " title="무당기협 9화">
+						무당기협 9화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												8					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529252';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529252" style="
+                                                    " title="무당기협 8화">
+						무당기협 8화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												7					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529251';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529251" style="
+                                                    " title="무당기협 7화">
+						무당기협 7화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												6					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529250';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529250" style="
+                                                    " title="무당기협 6화">
+						무당기협 6화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												5					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529249';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529249" style="
+                                                    " title="무당기협 5화">
+						무당기협 5화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												4					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529248';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529248" style="
+                                                    " title="무당기협 4화">
+						무당기협 4화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												3					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529247';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529247" style="
+                                                    " title="무당기협 3화">
+						무당기협 3화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												2					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529246';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529246" style="
+                                                    " title="무당기협 2화">
+						무당기협 2화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+            	
+                <tr>
+					<td>
+												1					</td>
+					<td onclick="document.location.href='http://5rs-a36.com/무당기협/post/529245';">
+                                                                        <a href="http://5rs-a36.com/무당기협/post/529245" style="
+                                                    " title="무당기협 1화">
+						무당기협 1화						</a>
+                        					</td>
+                    <td>
+						<span class="date">
+												</span>
+					</td>
+                </tr>
+                        </tbody>
+        </table>
+    </form>	
+		<div class="right_area">
+		<div class="cover">
+			<img src="http://wc.windi-web.com//assets/webtoon/무당기협/thumb.jpg" alt="무당기협" />
+						<div class="date">
+																												일요일								완결			</div>
+			<div class="lookup">40851</div>
+			<div class="genre_area">
+								<span class="genre">#웹툰</span>
+												<span class="genre">#판타지</span>				<span class="genre">#액션</span>																							</div>
+		</div>
+		<div class="info_box">
+			<dl>
+				<dt>무당기협</dt>
+				<dd>필사적으로 불로초를 삼켰더니, 믿지 못하겠지만 살았다. 꿈은 아닐 거라 생각하며 눈을 떴을 때 웬 영감들이 나를 둘러싸고 있네?! 여기가 어딘고 하니— 무당산 무당파?!!</dd>
+			</dl>
+			<div class="first_btn">
+				<a href="/무당기협/post/529245" title="첫화보기">첫화보기</a>
+			</div>
+						<div class="report_btn">
+							<a href="#" title="북마크하기" id="add_bookmark">북마크하기</a>
+						</div>
+		</div>
+		<div class="similar_webtoon">
+			<div class="title_box">무당기협와 유사한 작품 추천</div>
+			<ul>
+							<li>
+					<a href="/board/첫사랑의-딸" class="upper_link" title="첫사랑의 딸"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/첫사랑의-딸/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="첫사랑의 딸" />
+						<div class="lookup">289719</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>첫사랑의 딸</dt>
+							<dd>내 자신보다 사랑했지만 지키지 못한 첫사랑 그녀 잊고 있던 그녀를 대신해 그녀의 딸이 내게 왔다....</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/원룸히어로" class="upper_link" title="원룸히어로"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/원룸히어로/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="원룸히어로" />
+						<div class="lookup">382430</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>원룸히어로</dt>
+							<dd>모태솔로에 동정, 섹스는 야동으로 배운 신입생 강민구..온갖 망상을 하며 에로한 캠퍼스 생활을 꿈꿨..</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/지옥의-끝에서" class="upper_link" title="지옥의 끝에서"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/지옥의-끝에서/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="지옥의 끝에서" />
+						<div class="lookup">117439</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>지옥의 끝에서</dt>
+							<dd>인간과 테리안- 서로 다른 종족들의 공동의 목표를 위해 세워진 조직. 그것이 써드이며 그것이 그들의..</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/스폰서-투믹스" class="upper_link" title="스폰서 투믹스"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/스폰서-투믹스/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="스폰서 투믹스" />
+						<div class="lookup">129782</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>스폰서 투믹스</dt>
+							<dd>지루하던 내 인생에 찾아 온 일탈, 자신의 스폰서가 되어달라는 그녀의 유혹에서 나는 벗어날 수 없다..</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/안나" class="upper_link" title="안나"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/안나/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="안나" />
+						<div class="lookup">101810</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>안나</dt>
+							<dd>선생님, 왜 저를 찾아오셨어요?</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/왕자님을-인터뷰하는-법" class="upper_link" title="왕자님을 인터뷰하는 법"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/왕자님을-인터뷰하는-법/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="왕자님을 인터뷰하는 법" />
+						<div class="lookup">267284</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>왕자님을 인터뷰하는 법</dt>
+							<dd>사랑해 마지않는 나의 왕자님 키알. 그는 갇혀있다, 모니터 속에···. 매일 연예인과 만나 얘기를 ..</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/트라이앵글" class="upper_link" title="트라이앵글"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/트라이앵글/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="트라이앵글" />
+						<div class="lookup">433914</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>트라이앵글</dt>
+							<dd>각으로 이루어진 세계, 원을 찾아 떠나는 모험</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/블랙아크" class="upper_link" title="블랙아크"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/블랙아크/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="블랙아크" />
+						<div class="lookup">96103</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>블랙아크</dt>
+							<dd>블랙야크라 불리는 건달 강태풍에게 조직을 잃은 보스는 그를 파멸시키기 위해 여동생게게 접근하는데..</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/진짜-진짜-하고싶은-그것" class="upper_link" title="진짜 진짜 하고싶은 그것"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/진짜-진짜-하고싶은-그것/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="진짜 진짜 하고싶은 그것" />
+						<div class="lookup">25226</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>진짜 진짜 하고싶은 그것</dt>
+							<dd>친구지만 서로 다른 세 여자들이 펼쳐내는 앙큼발랄 色다른 이야기!</dd>
+						</dl>
+					</div>
+				</li>
+							<li>
+					<a href="/board/학교대표" class="upper_link" title="학교대표"></a>
+					<div class="img_box">
+						<img src="http://wc.windi-web.com//assets/webtoon/학교대표/thumb.jpg" onerror="this.src='/imgs/none_img.jpg'" alt="학교대표" />
+						<div class="lookup">98938</div>
+						<div class="genre_area">
+														<span class="genre">판타지</span>							<span class="genre">액션</span>																																									</div>
+					</div>
+					<div class="text_box">
+						<dl>
+							<dt>학교대표</dt>
+							<dd>진화된 축구 전채들의 네게 도전기</dd>
+						</dl>
+					</div>
+				</li>
+						</ul>
+		</div>
+	</div>
+	
+
+    
+    <nav></nav>
+</div>
+
+ 
+
+<script type="text/javascript">
+//<![CDATA[
+    $(document).on('click', '#del_bookmark', function() {
+				alert('북마크에 추가되지 않은 작품입니다.');
+		});
+
+    $(document).on('click', '#add_bookmark', function() {
+
+				if (confirm('로그인이 필요한 서비스 입니다. 로그인페이지로 이동하시겠습니까?')) {
+				location.href = '/login?url='+'http%3A%2F%2F5rs-a36.com%2Fboard%2F%25EB%25AC%25B4%25EB%258B%25B9%25EA%25B8%25B0%25ED%2598%2591';
+			}
+	
+    });
+
+
+ //]]>
+
+</script>
+
+
+<!--
+<script>
+	$(window).scroll(function()  
+	{  
+		$('.right_area').animate({top:$(window).scrollTop()+"px" },{queue: false, duration: 350});    
+	});  
+
+</script>
+-->            <!-- 본문 끝 -->
+
+            
+        </div>
+		
+    </div>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div>
+                <ul class="company">
+                    <li><a href="http://5rs-a36.com/document/aboutus" title="회사소개">회사소개</a></li>
+                    <li><a href="http://5rs-a36.com/document/provision" title="이용약관">이용약관</a></li>
+                    <li><a href="http://5rs-a36.com/document/privacy" title="개인정보 취급방침">개인정보 취급방침</a></li>
+                    <li><a href="http://5rs-a36.com/pointranking" title="포인트 전체랭킹">포인트 전체랭킹</a></li>
+                    <li><a href="http://5rs-a36.com/pointranking/month" title="포인트 월별랭킹" >포인트 월별랭킹</a></li>
+                    <li><a href="http://5rs-a36.com/levelup" title="레벨업">레벨업</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                                                                            </div>
+            <div class="copyright">
+                                                                                <span>Copyright&copy; 오른손. All Rights Reserved.</span>
+            </div>
+                            <div class="see_mobile"><a href="http://5rs-a36.com/board/%EB%AC%B4%EB%8B%B9%EA%B8%B0%ED%98%91" class="btn btn-primary btn-xs viewmobileversion">모바일 버전으로 보기</a></div>
+                    </div>
+    </footer>
+    <!-- footer end -->
+</div>
+
+<script type="text/javascript">
+$(document).on('click', '.viewpcversion', function(){
+    Cookies.set('device_view_type', 'desktop', { expires: 1 });
+});
+$(document).on('click', '.viewmobileversion', function(){
+    Cookies.set('device_view_type', 'mobile', { expires: 1 });
+});
+</script>
+
+<!--
+Layout Directory : _layout/basic,
+Layout URL : http://5rs-a36.com/views/_layout/basic,
+Skin Directory : board/basic,
+Skin URL : http://5rs-a36.com/views/board/basic,
+-->
+
+</body>
+</html>
+
