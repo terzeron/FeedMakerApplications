@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_medium.py",
       "list_url_list": [
-        "https://medium.com/deliverytechkorea/tagged/post"
+        "https://medium.com/deliverytechkorea/"
       ]
     },
     "extraction": {
