@@ -2,11 +2,11 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_ornson.py -n 5",
+      "item_capture_script": "../capture_item_ornson.py -n 10",
       "sort_field_pattern": "/(\\d+)\\t",
       "unit_size_per_day": 2,
       "list_url_list": [
-        "http://5rs-a36.com/board/총수-비기닝"
+        "http://5rs-a38.com/board/총수-비기닝"
       ]
     },
     "extraction": {
