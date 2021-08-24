@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_buzztoon.py -n 5",
+      "list_url_list": [
+        "https://buzztoon107.com/bbs/board.php?bo_table=webtoon&wr_id=102033"
+      ],
+      "sort_field_pattern": "\\b(\\d+(-\\d+)?)화",
+      "unit_size_per_day": 4
+    },
+    "extraction": {
+      "element_class_list": [
+        "view-content"
+      ],
+      "post_process_script_list": [
+        "../../manatoki/remove_anchor_images.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 버즈툰. All rights reserved.",
+      "description": "최강 용사는 토사구팽::버즈툰 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/most_powerful_knight_is_expelled.xml",
+      "title": "최강 용사는 토사구팽::버즈툰",
+      "url_prefix_for_guid": "https://buzztoon103.com"
+    }
+  }
+}
