@@ -6,9 +6,9 @@
       "item_capture_script": "../capture_item_wtwt.py -n 300",
       "sort_field_pattern": "num=(\\d+)\\t",
       "encoding": "cp949",
-      "unit_size_per_day": 12,
+      "unit_size_per_day": 4,
       "list_url_list": [
-        "https://wtwt90.com/v1?toon=5258"
+        "https://wtwt91.com/v1?toon=5258"
       ]
     },
     "extraction": {
