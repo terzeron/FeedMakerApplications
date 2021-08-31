@@ -1,16 +1,16 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": true,
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
-      "sort_field_pattern": "no=(\\d+)\\t",
-      "unit_size_per_day": 1,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=739113",
         "http://comic.naver.com/webtoon/list.nhn?titleId=739113&page=2",
         "http://comic.naver.com/webtoon/list.nhn?titleId=739113&page=3",
         "http://comic.naver.com/webtoon/list.nhn?titleId=739113&page=4"
-      ]
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
@@ -21,12 +21,12 @@
       ]
     },
     "rss": {
-      "title": "기억흔적::네이버",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "description": "기억흔적::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
-      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "language": "ko",
       "link": "https://terzeron.com/trace_of_memory.xml",
-      "language": "ko"
+      "title": "기억흔적::네이버"
     }
   }
 }
