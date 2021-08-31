@@ -1,32 +1,32 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_wtwt.py -n 300",
-      "sort_field_pattern": "num=(\\d+)\\t",
       "encoding": "cp949",
-      "unit_size_per_day": 4,
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
         "https://wtwt91.com/v1?toon=5258"
-      ]
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
     },
     "extraction": {
-      "encoding": "cp949",
       "element_class_list": [
         "wbody"
       ],
+      "encoding": "cp949",
       "post_process_script_list": [
         "download_image.py"
       ]
     },
     "rss": {
-      "title": "학사귀환::W툰",
+      "copyright": "Copyright (c) W툰. All rights reserved.",
       "description": "학사귀환::W툰 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
-      "copyright": "Copyright (c) W툰. All rights reserved.",
-      "link": "https://terzeron.com/return_of_student.xml",
       "language": "ko",
+      "link": "https://terzeron.com/return_of_student.xml",
+      "title": "학사귀환::W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
   }
