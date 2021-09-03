@@ -1,6 +1,7 @@
 {
   "configuration": {
     "collection": {
+      "is_completed": false,
       "item_capture_script": "../capture_item_naverwebtoon.py",
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=765157"
@@ -15,12 +16,12 @@
       ]
     },
     "rss": {
-      "title": "좀비 파이트::네이버",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "description": "좀비 파이트::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
-      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "language": "ko",
       "link": "https://terzeron.com/zombie_fight.xml",
-      "language": "ko"
+      "title": "좀비 파이트::네이버"
     }
   }
 }
