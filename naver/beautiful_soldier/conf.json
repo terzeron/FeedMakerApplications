@@ -3,8 +3,6 @@
     "collection": {
       "is_completed": true,
       "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
-      "sort_field_pattern": "no=(\\d+)\\t",
-      "unit_size_per_day": 2,
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=648419&page=1",
         "http://comic.naver.com/webtoon/list.nhn?titleId=648419&page=2",
@@ -26,7 +24,9 @@
         "http://comic.naver.com/webtoon/list.nhn?titleId=648419&page=18",
         "http://comic.naver.com/webtoon/list.nhn?titleId=648419&page=19",
         "http://comic.naver.com/webtoon/list.nhn?titleId=648419&page=20"
-      ]
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 2
     },
     "extraction": {
       "element_class_list": [
@@ -37,12 +37,12 @@
       ]
     },
     "rss": {
-      "title": "뷰티풀 군바리::네이버",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "description": "뷰티풀 군바리::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
-      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "language": "ko",
       "link": "https://terzeron.com/beautiful_soldier.xml",
-      "language": "ko"
+      "title": "뷰티풀 군바리::네이버"
     }
   }
 }
