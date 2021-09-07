@@ -2,12 +2,12 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_agit.py -n 10",
+      "item_capture_script": "../capture_item_agit.py -n 5",
       "sort_field_pattern": "num=(\\d+)\\t",
       "referer": "https://agit59.com",
       "unit_size_per_day": 6,
       "list_url_list": [
-        "https://agit59.com/data/toonlist/8623.js"
+        "https://agit70.com/data/toonlist/8623.js"
       ]
     },
     "extraction": {
