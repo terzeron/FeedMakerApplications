@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
+      "list_url_list": [
+        "http://comic.naver.com/webtoon/list.nhn?titleId=753478",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=753478&page=2",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=753478&page=3",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=753478&page=4",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=753478&page=5",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=753478&page=6"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "데드퀸::네이버 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/dead_queen.xml",
+      "title": "데드퀸::네이버"
+    }
+  }
+}
