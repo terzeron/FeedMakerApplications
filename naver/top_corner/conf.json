@@ -4,15 +4,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=2",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=3",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=4",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=5",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=6",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=7",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=8",
-        "http://comic.naver.com/webtoon/list.nhn?titleId=732021&page=9"
+        "http://comic.naver.com/webtoon/list.nhn?titleId=732021"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 4
