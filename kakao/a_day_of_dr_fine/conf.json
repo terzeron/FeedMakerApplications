@@ -1,6 +1,7 @@
 {
   "configuration": {
     "collection": {
+      "is_completed": true,
       "item_capture_script": "../capture_item_kakaowebtoon.py -n 300",
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1827/episodes?sort=-NO&offset=0&limit=30",
@@ -10,8 +11,7 @@
       ],
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "unit_size_per_day": 1,
-      "is_completed": true
+      "unit_size_per_day": 2
     },
     "extraction": {
       "element_path_list": [
@@ -20,7 +20,7 @@
     },
     "rss": {
       "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
-      "description": "닥터 파인의 하루::카카오 - 모바일 버전 RSS Feed",
+      "description": "닥터 파인의 하루::카카오",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/a_day_of_dr_fine.xml",
