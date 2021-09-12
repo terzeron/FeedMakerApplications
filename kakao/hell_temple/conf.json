@@ -14,7 +14,7 @@
       ],
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_path_list": [
@@ -23,7 +23,7 @@
     },
     "rss": {
       "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
-      "description": "지옥 사원::카카오 - 모바일 버전 RSS Feed",
+      "description": "지옥 사원::카카오",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/hell_temple.xml",
