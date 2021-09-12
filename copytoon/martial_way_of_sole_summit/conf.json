@@ -8,7 +8,7 @@
         "https://copytoon204.com/무도독존"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 3
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_id_list": [
@@ -20,7 +20,7 @@
     },
     "rss": {
       "copyright": "Copyright (c) 카피툰. All rights reserved.",
-      "description": "무도독존:카피툰 - 모바일 버전 RSS Feed",
+      "description": "무도독존::카피툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/martial_way_of_sole_summit.xml",
