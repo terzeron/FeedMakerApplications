@@ -9,7 +9,7 @@
         "https://wtwt93.com/v1?toon=4583"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
@@ -22,7 +22,7 @@
     },
     "rss": {
       "copyright": "Copyright (c) W툰. All rights reserved.",
-      "description": "던전 리셋::W툰 - 모바일 버전 RSS Feed",
+      "description": "던전 리셋::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/dungeon_reset.xml",
