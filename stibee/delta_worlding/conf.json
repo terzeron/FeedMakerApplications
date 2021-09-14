@@ -1,6 +1,7 @@
 {
   "configuration": {
     "collection": {
+      "item_capture_script": "./capture_item_link_title.py -n 5",
       "is_completed": false,
       "list_url_list": [
         "https://page.stibee.com/archives/105380/emails"
