@@ -1,14 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_tistory.py -n 100",
-      "sort_field_pattern": "/(\\d+)\\t",
-      "unit_size_per_day": 1,
+      "item_capture_script": "../capture_item_tistory.py -n 5",
       "list_url_list": [
         "http://nasica1.tistory.com/?page=1",
         "http://nasica1.tistory.com/?page=2",
         "http://nasica1.tistory.com/?page=3"
-      ]
+      ],
+      "sort_field_pattern": "/(\\d+)\\t",
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
@@ -18,12 +18,12 @@
       ]
     },
     "rss": {
-      "title": "nasica::티스토리",
-      "description": "nasica::티스토리 - 모바일 버전 RSS Feed",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Tistory. All rights reserved.",
+      "description": "nasica::티스토리",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
       "link": "https://terzeron.com/nasica1.xml",
-      "language": "ko"
+      "title": "nasica::티스토리"
     }
   }
 }
