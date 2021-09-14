@@ -22,7 +22,7 @@ def main():
     result_list = []
     for line in IO.read_stdin_as_line_list():
         if state == 0:
-            m = re.search(r'<div id="content_\d+" class="[^"]+">', line)
+            m = re.search(r'<td class="first txt_number">', line)
             if m:
                 state = 1
         elif state == 1:
@@ -34,7 +34,7 @@ def main():
             m = re.search(r'<a href="(?P<link>[^"]+)"[^>]*><img src="/images/btn_attached.gif"', line)
             if m:
                 link = url_prefix + m.group("link")
-                if re.search(r'(주간|weekly|월간|monthly|연간|yearly)', title, re.IGNORECASE):
+                if re.search(r'(주간|week(ly)?|월간?|month(ly)?|연간|년|year(ly)?)', title, re.IGNORECASE):
                     result_list.append((link, title))
                 state = 0
 
