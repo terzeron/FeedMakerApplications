@@ -1,1 +1,7 @@
-{"url": "https://manatoki96.net/comic/124573", "keyword": "원펀맨", "render_js": false, "num_retries": 3, "timeout": 120}
+{
+  "keyword": "원펀맨",
+  "num_retries": 2,
+  "render_js": false,
+  "timeout": 120,
+  "url": "https://manatoki96.net/comic/124573"
+}

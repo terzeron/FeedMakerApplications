@@ -1,1 +1,7 @@
-{"url": "https://jmana1.jjmana.net/comic_list_title?bookname=거침없이+한+획", "keyword": "거침없이", "render_js": false, "num_retries": 3}
+{
+  "keyword": "거침없이",
+  "num_retries": 2,
+  "render_js": false,
+  "timeout": 120,
+  "url": "https://jmana1.jjmana.net/comic_list_title?bookname=거침없이+한+획"
+}
