@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py",
+      "list_url_list": [
+        "https://comic.naver.com/webtoon/list?titleId=778284"
+      ]
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "은둔코인::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/secluded_coin.xml",
+      "title": "은둔코인::네이버"
+    }
+  }
+}
