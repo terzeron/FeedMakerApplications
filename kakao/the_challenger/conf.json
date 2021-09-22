@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_kakaowebtoon.py -n 5",
+      "list_url_list": [
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2536/episodes?sort=-NO&offset=0&limit=30"
+      ],
+      "render_js": true,
+      "sort_field_pattern": "\\b(\\d+)\\.",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_path_list": [
+        "//*[@id=\"root\"]/main/div/div/div/div[1]/div[2]/div[1]"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
+      "description": "더 챌린저::카카오",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/the_challenger.xml",
+      "title": "더 챌린저::카카오"
+    }
+  }
+}
