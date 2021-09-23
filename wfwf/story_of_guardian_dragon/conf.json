@@ -1,6 +1,7 @@
 {
   "configuration": {
     "collection": {
+      "is_completed": true,
       "encoding": "cp949",
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 300",
