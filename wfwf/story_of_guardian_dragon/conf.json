@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_wfwf.py -n 5",
+      "list_url_list": [
+        "https://wfwf167.com/list?toon=5920"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "image-view"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "description": "수호룡기::늑대닷컴",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/story_of_guardian_dragon.xml",
+      "title": "수호룡기::늑대닷컴",
+      "url_prefix_for_guid": "https://wfwf24.com"
+    }
+  }
+}
