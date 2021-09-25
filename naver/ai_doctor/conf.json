@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
+      "is_completed": true,
       "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=765804",
