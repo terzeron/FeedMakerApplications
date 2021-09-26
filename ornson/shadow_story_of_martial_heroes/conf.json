@@ -1,8 +1,8 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": false,
-      "is_completed": true,
+      "ignore_old_list": true,
+      "is_completed": false,
       "item_capture_script": "../capture_item_ornson.py -n 5",
       "list_url_list": [
         "http://5rs-a38.com/board/강호협영록"
