@@ -6,9 +6,7 @@
       "item_capture_script": "../capture_item_ornson.py -n 300",
       "list_url_list": [
         "http://5rs-a38.com/board/이-말세의-구세주--나란-남자",
-        "http://5rs-a38.com/board/이-말세의-구세주--나란-남자&page=2",
-        "http://5rs-a38.com/board/이-말세의-구세주--나란-남자&page=3",
-        "http://5rs-a38.com/board/이-말세의-구세주--나란-남자&page=4"
+        "http://5rs-a38.com/board/이-말세의-구세주--나란-남자?&page=2"
       ],
       "sort_field_pattern": "/(\\d+)\\t",
       "unit_size_per_day": 2
