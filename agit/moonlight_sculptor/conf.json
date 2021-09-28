@@ -1,10 +1,11 @@
 {
   "configuration": {
     "collection": {
+      "render_js": true,
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_agit.py -n 5",
       "list_url_list": [
-        "https://agit74.com/data/toonlist/2093.js"
+        "https://agit74.com/azi_toon/2093.html"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1

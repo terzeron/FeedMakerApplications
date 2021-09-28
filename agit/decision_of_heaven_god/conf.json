@@ -1,13 +1,15 @@
 {
   "configuration": {
     "collection": {
+      "render_js": true,
+      "is_completed": true,
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_agit.py -n 300",
       "list_url_list": [
-        "https://agit73.com/data/toonlist/9323.js"
+        "https://agit73.com/azi_toon/9323.html"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 2
     },
     "extraction": {
       "element_id_list": [

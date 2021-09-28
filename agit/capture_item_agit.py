@@ -19,7 +19,7 @@ def get_url_from_config():
 def main() -> int:
     link = ""
     title = ""
-    url = get_url_from_config()
+    site_url = get_url_from_config()
 
     num_of_recent_feeds = 1000
     optlist, _ = getopt.getopt(sys.argv[1:], "n:")
@@ -27,16 +27,17 @@ def main() -> int:
         if o == '-n':
             num_of_recent_feeds = int(a)
 
-    content = IO.read_stdin()
+    line_list = IO.read_stdin_as_line_list()
     result_list: List[Tuple[str, str]] = []
-    content = re.sub(r';$', '', re.sub(r'^var\s+clist\s*=\s*', '', content))
-    data = json.loads(content)
-    for item in data:
-        link = URL.concatenate_url(url, item["u"])
-        title = item["t"]
-        result_list.append((link, title))
+    for chunk in line_list:
+        for line in chunk.split("</p>"):
+            m = re.search(r'<a href="(?P<link>[^"]+)"[^>]*>\s*<div [^>]*>\s*<p [^>]*>(?P<title>[^<]+)', line)
+            if m:
+                link = URL.concatenate_url(site_url, m.group("link"))
+                title = m.group("title")
+                result_list.append((link, title))
         
-    for (link, title) in result_list[-num_of_recent_feeds:]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
     return 0
