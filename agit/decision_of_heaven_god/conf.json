@@ -8,7 +8,7 @@
       "list_url_list": [
         "https://agit73.com/azi_toon/9323.html"
       ],
-      "sort_field_pattern": "num=(\\d+)\\t",
+      "sort_field_pattern": "\\b(\\d+)화",
       "unit_size_per_day": 2
     },
     "extraction": {
@@ -16,8 +16,7 @@
         "toon_content_imgs"
       ],
       "post_process_script_list": [
-        "../convert_agit_url_to_blacktoon.py",
-        "download_image.py"
+        "../convert_agit_url_to_blacktoon.py"
       ]
     },
     "rss": {
