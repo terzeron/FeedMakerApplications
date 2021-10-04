@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverwebtoon.py",
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=758674"
       ]
@@ -15,12 +15,12 @@
       ]
     },
     "rss": {
-      "title": "스트러글::네이버",
-      "description": "스트러글::네이버 - 모바일 버전 RSS Feed",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "스트러글::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
       "link": "https://terzeron.com/struggle.xml",
-      "language": "ko"
+      "title": "스트러글::네이버"
     }
   }
 }
