@@ -1,29 +1,29 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverwebtoon.py",
-      "sort_field_pattern": "no=(\\d+)",
-      "unit_size_per_day": 1,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=316909&page=1"
-      ]
+      ],
+      "sort_field_pattern": "no=(\\d+)",
+      "unit_size_per_day": 1
     },
     "extraction": {
-      "force_sleep_between_articles": true,
       "element_class_list": [
         "wt_viewer"
       ],
+      "force_sleep_between_articles": true,
       "post_process_script_list": [
         "download_image.py"
       ]
     },
     "rss": {
-      "title": "그 판타지 세계에서 사는 법::네이버",
-      "description": "그 판타지 세계에서 사는 법::네이버 - 모바일 버전 RSS Feed",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "그 판타지 세계에서 사는 법::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
       "link": "https://terzeron.com/how_to_live_in_the_fantasy_world.xml",
-      "language": "ko"
+      "title": "그 판타지 세계에서 사는 법::네이버"
     }
   }
 }
