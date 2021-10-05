@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py",
+      "list_url_list": [
+        "http://comic.naver.com/webtoon/list.nhn?titleId=780253"
+      ]
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "두 번 사는 프로듀서::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/producer_who_lives_twice.xml",
+      "title": "두 번 사는 프로듀서::네이버"
+    }
+  }
+}
