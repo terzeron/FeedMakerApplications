@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "list_url_list": [
+        "http://comic.naver.com/webtoon/list.nhn?titleId=742105",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=742105&page=2",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=742105&page=3",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=742105&page=4",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=742105&page=5",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=742105&page=6"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "미래의 골동품 가게::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/antique_shop_of_mirae.xml",
+      "title": "미래의 골동품 가게::네이버"
+    }
+  }
+}
