@@ -1,0 +1,38 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
+      "list_url_list": [
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=2",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=3",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=4",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=5",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=6",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=7",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=8",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=9",
+        "http://comic.naver.com/webtoon/list.nhn?titleId=736989&page=10"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 3
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "더 복서::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/the_boxer.xml",
+      "title": "더 복서::네이버"
+    }
+  }
+}
