@@ -6,7 +6,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_agit.py -n 300",
       "list_url_list": [
-        "https://agit73.com/azi_toon/9323.html"
+        "https://agit75.com/azi_toon/9323.html"
       ],
       "sort_field_pattern": "\\b(\\d+)화",
       "unit_size_per_day": 2
