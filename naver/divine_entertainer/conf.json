@@ -1,7 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverwebtoon.py",
+      "unit_size_per_day": 1,
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
       "list_url_list": [
         "http://comic.naver.com/webtoon/list.nhn?titleId=762781",
         "http://comic.naver.com/webtoon/list.nhn?titleId=762781&page=2",
