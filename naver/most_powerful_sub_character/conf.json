@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py",
+      "list_url_list": [
+        "http://comic.naver.com/webtoon/list.nhn?titleId=778580"
+      ]
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "최강부캐::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/most_powerful_sub_character.xml",
+      "title": "최강부캐::네이버"
+    }
+  }
+}
