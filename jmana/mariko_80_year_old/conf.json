@@ -1,14 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "is_completed": true,
-      "item_capture_script": "../capture_item_jmana.py -n 50",
-      "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 1,
+      "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
         "https://jmana1.jjmana.net/comic_list_title?bookname=80세+마리코"
-      ]
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
@@ -21,12 +21,12 @@
       ]
     },
     "rss": {
-      "title": "80세 마리코::제이마나",
-      "description": "80세 마리코::제이마나 - 모바일 버전 RSS Feed",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) JMana. All rights reserved.",
-      "link": "https://terzeron.com/mariko_80_year_old.xml",
+      "description": "80세 마리코::제이마나",
+      "generator": "Terzeron's Feed Generator",
       "language": "ko",
+      "link": "https://terzeron.com/mariko_80_year_old.xml",
+      "title": "80세 마리코::제이마나",
       "url_prefix_for_guid": "https://aboutdron.net"
     }
   }
