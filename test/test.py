@@ -7,11 +7,11 @@ import filecmp
 from feed_maker_util import exec_cmd
 
 
-def test_script(feed, script, work_dir, test_dir, index):
+def test_script(script, work_dir, test_dir, index):
     os.chdir(work_dir)
     cmd = "cat %s/input.%d.txt | %s > %s/result.%d.temp" % (test_dir, index, script, test_dir, index)
     #print(cmd)
-    (result, error) = exec_cmd(cmd)
+    _, error = exec_cmd(cmd)
     if not error:
         os.chdir(test_dir)
         return filecmp.cmp("result.%d.temp" % (index), "expected.output.%d.txt" % (index)), "", cmd
@@ -19,8 +19,11 @@ def test_script(feed, script, work_dir, test_dir, index):
     return False, error, cmd
 
 
-def main():
+def main() -> int:
     fm_cwd = os.getenv("FEED_MAKER_WORK_DIR")
+    if not fm_cwd:
+        print("can't get environment variable 'FEED_MAKER_WORK_DIR'")
+        return -1
 
     test_subjects = {
         "naver/navercast": [ "../capture_item_navercast.py" ],
@@ -35,8 +38,8 @@ def main():
         "buzztoon/devil_sword_king" : [ "../capture_item_buzztoon.py" ],
         "copytoon/extraordinary_god_of_martial_arts" : [ "../capture_item_copytoon.py" ],
         "jmana/one_punch_man_remake" : [ "../capture_item_jmana.py" ],
-        "manatoki/level_up_alone" : [ "../capture_item_manatoki.py" ],
-        "marumaru/ride_on_king" : [ "../capture_item_marumaru.py" ],
+        #"manatoki/level_up_alone" : [ "../capture_item_manatoki.py" ],
+        "marumaru/vegabond" : [ "../capture_item_marumaru.py" ],
         "ornson/weird_taoist_of_mudang" : [ "../capture_item_ornson.py" ],
         "wfwf/warrior_at_fff_level" : [ "../capture_item_wfwf.py" ],
         "wtwt/login_alone" : [ "../capture_item_wtwt.py" ],
@@ -49,12 +52,13 @@ def main():
             print(feed)
             work_dir = fm_cwd + "/" + feed
             test_dir = fm_cwd + "/test/" + feed
-            result, error, cmd = test_script(feed, script, work_dir, test_dir, index)
+            _, error, cmd = test_script(script, work_dir, test_dir, index)
             if error:
                 print("Error in %s of %s\n%s\n%s" % (feed, script, cmd, error))
                 return -1
     print("Ok")
-    
-                
+    return 0
+
+
 if __name__ == "__main__":
-   sys.exit(main())
+    sys.exit(main())
