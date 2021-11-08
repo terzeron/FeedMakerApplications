@@ -9,7 +9,7 @@
         "https://wtwt103.com/v1?toon=6511"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 4
     },
     "extraction": {
       "element_class_list": [
