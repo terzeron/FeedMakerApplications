@@ -13,7 +13,7 @@
         "http://comic.naver.com/webtoon/list.nhn?titleId=712362&page=7"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
-      "unit_size_per_day": 4
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
