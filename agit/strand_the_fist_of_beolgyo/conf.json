@@ -8,8 +8,8 @@
         "https://agit100.com/azi_toon/1573.html"
       ],
       "render_js": true,
-      "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 4
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_id_list": [
