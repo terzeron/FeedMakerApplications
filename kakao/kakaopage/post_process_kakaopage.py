@@ -2,12 +2,20 @@
 
 
 import sys
+import os
 import re
+import getopt
+import json
+import logging
+import logging.config
 from typing import List
-import requests
+from pathlib import Path
 import feed_maker_util
+from crawler import Crawler, Method
 
 
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+LOGGER = logging.getLogger(__name__)
 exclude_keywords: List[str] = ["로맨스", "연인", "연애", "키스", "짝사랑", "고백", "유부녀", "황후", "왕후", "왕비", "공녀", "첫사랑", "재벌", "순정", "후궁", "로판", "로맨스판타지", "멜로"]
 
 
@@ -19,26 +27,34 @@ def exclude_keyword_filter(text: str) -> bool:
 
 
 def main() -> int:
-    url = sys.argv[1]
+    feed_dir_path = Path.cwd()
     series_id: str = ""
     content: str = ""
+
+    optlist, args = getopt.getopt(sys.argv[1:], "f:")
+    for o, a in optlist:
+        if o == "-f":
+            feed_dir_path = Path(a)    
 
     for _ in sys.stdin:
         pass
 
-    content += feed_maker_util.header_str
+    url = args[0]
 
     m = re.search(r'seriesId=(?P<series_id>\d+)', url)
     if m:
         series_id = m.group("series_id")
-
     if not series_id:
         return -1
 
     info_url = "https://api2-page.kakao.com/api/v4/store/seriesdetail?seriesid=" + series_id
-    response = requests.post(info_url, headers={})
-
-    data = response.json()
+    crawler = Crawler(render_js=False, method=Method.POST)
+    result, error = crawler.run(info_url)
+    if error:
+        LOGGER.error(f"Error: can't get data from '{info_url}'")
+        return -1
+    data = json.loads(result)
+    content += feed_maker_util.header_str
     content += "<div>\n"
     if "seriesdetail" in data:
         detail = data["seriesdetail"]
