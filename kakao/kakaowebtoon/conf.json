@@ -7,18 +7,14 @@
       ],
       "post_process_script_list": [
         "shuf",
-        "tail -20"
+        "tail -100"
       ],
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 1
     },
     "extraction": {
-      "element_class_list": [
-        "Layout_main__ge1tL"
-      ],
-      "render_js": true,
-      "simulate_scrolling": true
+      "bypass_element_extration": true
     },
     "rss": {
       "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
