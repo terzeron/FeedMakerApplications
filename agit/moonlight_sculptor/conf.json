@@ -5,7 +5,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_agit.py -n 5",
       "list_url_list": [
-        "https://agit100.com/azi_toon/2093.html"
+        "https://agit111.com/azi_toon/2093.html"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1
