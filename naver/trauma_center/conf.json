@@ -5,7 +5,7 @@
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "http://comic.naver.com/webtoon/list.nhn?titleId=738174"
+        "https://comic.naver.com/webtoon/list?titleId=738174"
       ]
     },
     "extraction": {

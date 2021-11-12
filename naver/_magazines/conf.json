@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "list_url_list": [
-        "http://sports.news.naver.com/sports/new/magazineS/list.nhn"
+        "https://sports.news.naver.com/sports/new/magazineS/list"
       ]
     },
     "extraction": {

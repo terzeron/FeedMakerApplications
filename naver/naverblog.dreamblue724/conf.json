@@ -5,7 +5,7 @@
       "sort_field_pattern": "&logNo=(\\d+)",
       "unit_size_per_day": 0.4,
       "list_url_list": [
-        "https://blog.naver.com/PostTitleListAsync.nhn?blogId=dreamblue724&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
+        "https://blog.naver.com/PostTitleListAsync?blogId=dreamblue724&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
       ]
     },
     "extraction": {

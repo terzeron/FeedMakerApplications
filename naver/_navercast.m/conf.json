@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "list_url_list": [
-        "http://m.navercast.naver.com/"
+        "https://m.navercast.naver.com/"
       ]
     },
     "extraction": {

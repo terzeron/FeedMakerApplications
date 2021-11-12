@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "list_url_list": [
-        "http://today.movie.naver.com/today/month_view.nhn"
+        "https://today.movie.naver.com/today/month_view"
       ]
     },
     "extraction": {

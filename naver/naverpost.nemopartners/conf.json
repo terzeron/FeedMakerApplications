@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_naverpost.py -n 5",
       "list_url_list": [
-        "http://m.post.naver.com/async/my.nhn?memberNo=46063234"
+        "https://m.post.naver.com/async/my?memberNo=46063234"
       ],
       "sort_field_pattern": "volumeNo=(\\d+)",
       "unit_size_per_day": 1

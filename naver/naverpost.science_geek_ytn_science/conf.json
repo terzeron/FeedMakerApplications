@@ -5,7 +5,7 @@
       "sort_field_pattern": "volumeNo=(\\d+)",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "http://m.post.naver.com/async/my.nhn?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=1"
+        "https://m.post.naver.com/async/my?memberNo=12127589&postListViewType=0&isExpertMy=true&fromNo=1"
       ]
     },
     "extraction": {

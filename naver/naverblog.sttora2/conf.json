@@ -5,7 +5,7 @@
       "sort_field_pattern": "&logNo=(\\d+)",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "http://blog.naver.com/PostTitleListAsync.nhn?blogId=sttora2&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
+        "https://blog.naver.com/PostTitleListAsync?blogId=sttora2&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
       ]
     },
     "extraction": {

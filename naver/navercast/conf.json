@@ -5,7 +5,7 @@
       "sort_field_pattern": "docId=(\\d+)",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "http://terms.naver.com/list.nhn?cid=58737&categoryId=58737"
+        "https://terms.naver.com/list?cid=58737&categoryId=58737"
       ]
     },
     "extraction": {

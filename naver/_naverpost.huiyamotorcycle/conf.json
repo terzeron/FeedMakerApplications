@@ -5,11 +5,11 @@
       "sort_field_pattern": "volumeNo=(\\d+)",
       "unit_size_per_day": 4,
       "list_url_list": [
-        "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=1",
-        "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=2",
-        "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=3",
-        "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=4",
-        "http://m.post.naver.com/async/my.nhn?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=5"
+        "https://m.post.naver.com/async/my?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=1",
+        "https://m.post.naver.com/async/my?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=2",
+        "https://m.post.naver.com/async/my?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=3",
+        "https://m.post.naver.com/async/my?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=4",
+        "https://m.post.naver.com/async/my?memberNo=201141&postListViewType=0&isExpertMy=true&fromNo=5"
       ]
     },
     "extraction": {

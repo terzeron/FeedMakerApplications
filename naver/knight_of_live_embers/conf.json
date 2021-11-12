@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_naverwebtoon.py",
       "list_url_list": [
-        "http://comic.naver.com/webtoon/list.nhn?titleId=768536"
+        "https://comic.naver.com/webtoon/list?titleId=768536"
       ]
     },
     "extraction": {

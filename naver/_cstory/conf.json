@@ -3,7 +3,7 @@
     "collection": {
       "encoding": "cp949",
       "list_url_list": [
-        "http://movie.naver.com/movie/mzine/cstory_list.nhn"
+        "https://movie.naver.com/movie/mzine/cstory_list"
       ]
     },
     "extraction": {

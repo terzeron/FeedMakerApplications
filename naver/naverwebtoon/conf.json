@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "list_url_list": [
-        "http://comic.naver.com/webtoon/weekday.nhn"
+        "https://comic.naver.com/webtoon/weekday"
       ],
       "post_process_script_list": [
         "shuf",
