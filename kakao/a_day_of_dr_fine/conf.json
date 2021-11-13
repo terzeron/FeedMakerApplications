@@ -1,13 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": true,
+      "is_completed": false,
       "item_capture_script": "../capture_item_kakaowebtoon.py -n 300",
       "list_url_list": [
-        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1827/episodes?sort=-NO&offset=0&limit=30",
-        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1827/episodes?sort=-NO&offset=30&limit=30",
-        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1827/episodes?sort=-NO&offset=60&limit=30",
-        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1827/episodes?sort=-NO&offset=90&limit=30"
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1827/episodes?sort=-NO&offset=0&limit=30"
       ],
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
