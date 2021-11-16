@@ -2,27 +2,38 @@
 
 
 import sys
+import os
 import re
 import getopt
+from pathlib import Path
+import logging.config
 from feed_maker_util import Config, IO, URL
 
 
-def get_url_from_config():
-    config = Config()
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+LOGGER = logging.getLogger(__name__)
+
+
+def get_url_from_config(feed_dir_path: Path):
+    config = Config(feed_dir_path=feed_dir_path)
     collection = config.get_collection_configs()
     url = collection["list_url_list"][0]
     return url
 
 
 def main():
-    url = get_url_from_config()
-    url = URL.get_url_scheme(url) + "://" + URL.get_url_domain(url) + "/"
-
+    feed_dir_path = Path.cwd()
     num_of_recent_feeds = 1000
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+
+    optlist, _ = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
-        if o == '-n':
+        if o == '-f':
+            feed_dir_path = Path(a)
+        elif o == '-n':
             num_of_recent_feeds = int(a)
+
+    url = get_url_from_config(feed_dir_path)
+    url = URL.get_url_scheme(url) + "://" + URL.get_url_domain(url) + "/"
 
     line_list = IO.read_stdin_as_line_list()
     result_list = []

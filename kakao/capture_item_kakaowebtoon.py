@@ -4,7 +4,6 @@ import sys
 import re
 import json
 import getopt
-import feed_maker_util
 from feed_maker_util import IO
 
 
@@ -14,7 +13,7 @@ def main():
     title = ""
 
     num_of_recent_feeds = 1000
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)

@@ -10,7 +10,7 @@ from feed_maker_util import IO
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 
 def convert_list_to_count_list(l: List[str]) -> List[Tuple[str, int]]:

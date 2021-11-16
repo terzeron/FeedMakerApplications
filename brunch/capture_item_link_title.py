@@ -13,7 +13,7 @@ def main():
     url_prefix = "https://brunch.co.kr/@"
 
     num_of_recent_feeds = 1000
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)

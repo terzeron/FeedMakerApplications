@@ -4,14 +4,14 @@
 import sys
 import os
 import filecmp
-from feed_maker_util import exec_cmd
+from feed_maker_util import Process
 
 
 def test_script(script, work_dir, test_dir, index):
     os.chdir(work_dir)
     cmd = "cat %s/input.%d.txt | %s > %s/result.%d.temp" % (test_dir, index, script, test_dir, index)
     #print(cmd)
-    _, error = exec_cmd(cmd)
+    _, error = Process.exec_cmd(cmd)
     if not error:
         os.chdir(test_dir)
         return filecmp.cmp("result.%d.temp" % (index), "expected.output.%d.txt" % (index)), "", cmd

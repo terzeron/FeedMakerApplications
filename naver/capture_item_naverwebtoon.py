@@ -10,10 +10,10 @@ from feed_maker_util import IO
 def main():
     link = ""
     title = ""
-    url_prefix = "http://comic.naver.com/"
+    url_prefix = "https://comic.naver.com/"
 
     num_of_recent_feeds = 1000
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)

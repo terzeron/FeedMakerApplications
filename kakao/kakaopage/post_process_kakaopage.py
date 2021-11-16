@@ -48,8 +48,8 @@ def main() -> int:
         return -1
 
     info_url = "https://api2-page.kakao.com/api/v4/store/seriesdetail?seriesid=" + series_id
-    crawler = Crawler(render_js=False, method=Method.POST)
-    result, error = crawler.run(info_url)
+    crawler = Crawler(dir_path=feed_dir_path, render_js=False, method=Method.POST)
+    result, error, _ = crawler.run(info_url)
     if error:
         LOGGER.error(f"Error: can't get data from '{info_url}'")
         return -1

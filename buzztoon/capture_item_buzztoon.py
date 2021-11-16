@@ -4,6 +4,7 @@
 import sys
 import re
 import getopt
+from pathlib import Path
 from typing import List, Tuple
 from feed_maker_util import IO
 
@@ -14,9 +15,9 @@ def main() -> int:
     state = 0
 
     num_of_recent_feeds = 1000
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
-        if o == '-n':
+        if o == "-n":
             num_of_recent_feeds = int(a)
 
     line_list = IO.read_stdin_as_line_list()

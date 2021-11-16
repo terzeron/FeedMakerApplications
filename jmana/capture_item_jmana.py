@@ -6,11 +6,13 @@
 import sys
 import re
 import getopt
+from pathlib import Path
 from typing import List, Tuple
 from feed_maker_util import IO
 
 
 def main() -> int:
+    feed_dir_path = Path.cwd()
     url_prefix: str = ""
     link: str = ""
     title: str = ""
@@ -18,9 +20,11 @@ def main() -> int:
     state: int = 0
 
     num_of_recent_feeds: int = 1000
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
-        if o == '-n':
+        if o == "-f":
+            feed_dir_path = Path(a)
+        elif o == "-n":
             num_of_recent_feeds = int(a)
 
     line_list: List[str] = IO.read_stdin_as_line_list()

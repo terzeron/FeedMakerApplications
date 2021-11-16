@@ -14,7 +14,7 @@ def main():
     nickname = ""
 
     num_of_recent_feeds = 1000
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, args = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
