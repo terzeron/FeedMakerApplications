@@ -15,7 +15,7 @@ def main() -> int:
     state = 0
 
     num_of_recent_feeds = 1000
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
