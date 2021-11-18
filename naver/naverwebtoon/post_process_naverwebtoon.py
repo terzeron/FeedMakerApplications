@@ -7,7 +7,7 @@ import re
 import logging
 import logging.config
 from typing import List
-from feed_maker_util import IO, exec_cmd, Config, URL
+from feed_maker_util import IO, Process, Config, URL
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")

@@ -5,7 +5,7 @@
       "sort_field_pattern": "volumeNo=(\\d+)",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "https://m.post.naver.com/async/my?memberNo=35786474&postListViewType=0&isExpertMy=true&fromNo=1"
+        "https://m.post.naver.com/async/my.naver?memberNo=35786474"
       ]
     },
     "extraction": {
@@ -17,7 +17,7 @@
       ],
       "post_process_script_list": [
         "../post_process_naverpost.py",
-        "extract.py",
+        "extractor.py",
         "download_image.py"
       ]
     },
@@ -26,7 +26,7 @@
       "description": "InterBiz::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & InterBiz. All rights reserved.",
-      "link": "https://terzeron.com/naverpost.businessinsight.xml",
+      "link": "https://terzeron.com/naverpost.interbiz.xml",
       "language": "ko"
     }
   }

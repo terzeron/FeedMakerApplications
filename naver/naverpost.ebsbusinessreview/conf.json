@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_naverpost.py -n 10",
       "list_url_list": [
-        "https://m.post.naver.com/async/my?memberNo=51538039&postListViewType=0&isExpertMy=true&fromNo=1"
+        "https://m.post.naver.com/async/my.naver?memberNo=51538039"
       ],
       "sort_field_pattern": "volumeNo=(\\d+)",
       "unit_size_per_day": 1
@@ -17,7 +17,7 @@
       "force_sleep_between_articles": true,
       "post_process_script_list": [
         "../post_process_naverpost.py",
-        "extract.py",
+        "extractor.py",
         "download_image.py"
       ]
     },

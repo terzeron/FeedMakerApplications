@@ -1,7 +1,8 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_kakaopage.py -n 10",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_kakaopage.py -n 300",
       "list_url_list": [
         "https://page.kakao.com/home/57652567?orderby=desc"
       ],
