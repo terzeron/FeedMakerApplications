@@ -16,14 +16,14 @@ from crawler import Crawler, Method
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
 LOGGER = logging.getLogger(__name__)
-exclude_keywords: List[str] = ["로맨스", "연인", "연애", "키스", "짝사랑", "고백", "유부녀", "황후", "왕후", "왕비", "공녀", "첫사랑", "재벌", "순정", "후궁", "로판", "로맨스판타지", "멜로"]
+excluded_keywords: List[str] = ["로맨스", "연인", "연애", "키스", "짝사랑", "고백", "유부녀", "황후", "왕후", "왕비", "공녀", "첫사랑", "재벌", "순정", "후궁", "로판", "로맨스판타지", "멜로"]
 
 
-def exclude_keyword_filter(text: str) -> bool:
-    for exclude_keyword in exclude_keywords:
-        if exclude_keyword in text:
-            return True
-    return False
+def excluded_keyword_filter(text: str) -> str:
+    for excluded_keyword in excluded_keywords:
+        if excluded_keyword in text:
+            return excluded_keyword
+    return ""
 
 
 def main() -> int:
@@ -59,21 +59,29 @@ def main() -> int:
     if "seriesdetail" in data:
         detail = data["seriesdetail"]
         if "title" in detail:
-            if exclude_keyword_filter(detail["title"]):
+            excluded_keyword = excluded_keyword_filter(detail["title"])
+            if excluded_keyword:
+                print("<p>제외어: %s</p>\n" % excluded_keyword)
                 return 0
             content += "<p>제목: %s</p>\n" % detail["title"]
         if "author_name" in detail["author_name"]:
             content += "<p>작가: %s</p>\n" % detail["author_name"]
         if "description" in detail:
-            if exclude_keyword_filter(detail["description"]):
+            excluded_keyword = excluded_keyword_filter(detail["description"])
+            if excluded_keyword:
+                print("<p>제외어: %s</p>\n" % excluded_keyword)
                 return 0
             content += "<p>소개: %s</p>\n" % detail["description"]
         if "category" in detail:
-            if exclude_keyword_filter(detail["category"]):
+            excluded_keyword = excluded_keyword_filter(detail["category"])
+            if excluded_keyword:
+                print("<p>제외어: %s</p>\n" % excluded_keyword)
                 return 0
             content += "<p>장르: %s</p>\n" % detail["category"]
         if "sub_category" in detail:
-            if exclude_keyword_filter(detail["sub_category"]):
+            excluded_keyword = excluded_keyword_filter(detail["sub_category"])
+            if excluded_keyword:
+                print("<p>제외어: %s</p>\n" % excluded_keyword)
                 return 0
             content += "<p>장르: %s</p>\n" % detail["sub_category"]
     if "authors_other" in data:
