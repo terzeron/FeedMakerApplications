@@ -7,7 +7,7 @@
       "list_url_list": [
         "https://newtoki112.com/webtoon/2275818/CELL?stx=cell"
       ],
-      "sort_field_pattern": "\\/(\\d+)\\t",
+      "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 2
     },
     "extraction": {
@@ -15,6 +15,7 @@
         "view-padding"
       ],
       "post_process_script_list": [
+        "../../manatoki/remove_anchor_images.py",
         "download_image.py"
       ],
       "render_js": true,

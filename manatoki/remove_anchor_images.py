@@ -77,9 +77,7 @@ def main():
     # 출력
     hardcoded_exclude_pattern_str = r'(?:cang[0-9].jpg|blank.gif)'
     for line in line_list:
-        if domain_excl_pattern_str and re.search(domain_excl_pattern_str, line):
-            continue
-        if prefix_excl_pattern_str and re.search(prefix_excl_pattern_str, line):
+        if domain_excl_pattern_str and re.search(domain_excl_pattern_str, line) and prefix_excl_pattern_str and re.search(prefix_excl_pattern_str, line):
             continue
         if re.search(hardcoded_exclude_pattern_str, line):
             continue
