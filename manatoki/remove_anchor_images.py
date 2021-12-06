@@ -3,10 +3,11 @@
 import sys
 import os
 import re
+import getopt
 import logging
 import logging.config
 from typing import List, Dict, Tuple
-from feed_maker_util import IO
+from feed_maker_util import IO, URL
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
@@ -40,26 +41,28 @@ def get_minors_pattern_from_count_list(l: List[Tuple[str, int]]) -> str:
             #logger.debug("pattern_str=%s", pattern_str)
         pattern_str += ')'
     else:
-        pattern_str = ""
+        pattern_str = l[0][0]
 
     return pattern_str
 
 
 def main():
+    _, args = getopt.getopt(sys.argv[1:], "n:f:")
+
     line_list = IO.read_stdin_as_line_list()
     domain_list: List[str] = []
     prefix_list: List[str] = []
     for line in line_list:
-        m = re.search(r'<img src=\'(?P<img_url>https?://[^\'>]+)\'(\s+width=.*)?/?>', line)
+        m = re.search(r'<img src=\'(?P<img_url>https?://[^\'>]+)\'(\S+width=.*)?/?>', line)
         if m:
             img_url = m.group("img_url")
             #logger.debug("img_url=%s", img_url)
-            m = re.search(r'(?P<domain>https?://[^/]+)/(?P<prefix>[^\.]+)/\S+\.(?:jpg|png|gif)', img_url)
+            m = re.search(r'(?P<domain>https?://[^/]+)(?P<prefix>/[^\.]+)/[^/]+\.(?:jpg|png|gif)', img_url)
             if m:
                 domain_list.append(m.group("domain"))
                 prefix_list.append(m.group("prefix"))
-    logger.debug("domain_list=%r", domain_list)
-    logger.debug("prefix_list=%r", prefix_list)
+    #logger.debug("domain_list=%r", domain_list)
+    #logger.debug("prefix_list=%r", prefix_list)
 
     # 예외적인 url domain 식별
     domain_count_list = convert_list_to_count_list(domain_list)
@@ -76,8 +79,10 @@ def main():
 
     # 출력
     hardcoded_exclude_pattern_str = r'(?:cang[0-9].jpg|blank.gif)'
+    new_pattern = r'' + domain_excl_pattern_str + prefix_excl_pattern_str + r'/[^/]+\.(?:jpg|png|gif)'
+    logger.debug("new_pattern=%s", new_pattern)
     for line in line_list:
-        if domain_excl_pattern_str and re.search(domain_excl_pattern_str, line) and prefix_excl_pattern_str and re.search(prefix_excl_pattern_str, line):
+        if domain_excl_pattern_str and prefix_excl_pattern_str and re.search(new_pattern, line):
             continue
         if re.search(hardcoded_exclude_pattern_str, line):
             continue
