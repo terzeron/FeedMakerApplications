@@ -14,7 +14,7 @@ def main():
     url_prefix = "http://blog.naver.com/PostView.naver?blogId="
 
     num_of_recent_feeds = 30
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)

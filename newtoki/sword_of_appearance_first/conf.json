@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../../manatoki/capture_item_manatoki.py -n 300",
+      "list_url_list": [
+        "https://newtoki112.com/webtoon/11779643"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_class_list": [
+        "view-padding"
+      ],
+      "post_process_script_list": [
+        "../../manatoki/remove_anchor_images.py",
+        "download_image.py"
+      ],
+      "render_js": true,
+      "simulate_scrolling": false,
+      "timeout": 480
+    },
+    "rss": {
+      "copyright": "Copyright (c) Manatoki. All rights reserved.",
+      "description": "신수제일검::마나토끼",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/sword_of_appearance_first.xml",
+      "title": "신수제일검::마나토끼",
+      "url_prefix_for_guid": "https://newtoki17.com"
+    }
+  }
+}

@@ -7,7 +7,7 @@
       ],
       "post_process_script_list": [
         "shuf",
-        "tail -100"
+        "tail -20"
       ]
     },
     "extraction": {
