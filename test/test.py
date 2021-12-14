@@ -30,7 +30,7 @@ def main() -> int:
         "naver/naverblog.pjwwoo": [ "../capture_item_naverblog.py" ],
         "naver/private_educational_institute_in_end_of_a_century": [ "../capture_item_naverwebtoon.py" ],
         "naver/naverwebtoon": [ "./capture_item_link_title.py" ],
-        "naver/naverpost.businessinsight": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
+        "naver/naverpost.interbiz": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
         "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
         "tistory/nasica1": [ "../capture_item_tistory.py" ],
         "egloos/oblivion": [ "../capture_item_link_title.py" ],
