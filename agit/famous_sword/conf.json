@@ -8,15 +8,16 @@
         "https://agit112.com/azi_toon/398.html"
       ],
       "render_js": true,
-      "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 1
+      "sort_field_pattern": "/(\\d+)\\.html",
+      "unit_size_per_day": 2
     },
     "extraction": {
       "element_id_list": [
         "toon_content_imgs"
       ],
       "post_process_script_list": [
-        "../convert_agit_url_to_blacktoon.py"
+        "../convert_agit_url_to_blacktoon.py",
+        "download_image.py"
       ]
     },
     "rss": {
