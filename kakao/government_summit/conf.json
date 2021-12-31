@@ -10,9 +10,15 @@
       ]
     },
     "extraction": {
-      "element_path_list": [
-        "//*[@id=\"root\"]/main/div/div/div/div[1]/div[2]/div[1]"
-      ]
+      "element_class_list": [
+        "page"
+      ],
+      "post_process_script_list": [
+        "download_image.py",
+        "post_process_only_for_images.py"
+      ],
+      "render_js": true,
+      "blob_to_dataurl": true
     },
     "rss": {
       "title": "관존::카카오",
