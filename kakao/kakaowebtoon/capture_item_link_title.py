@@ -83,7 +83,7 @@ def main():
                                         with open(file_path, 'w', encoding="utf-8") as fp:
                                             fp.write(header_str)
                                             fp.write(description)
-                                            fp.write(FeedMaker.get_image_tag_str("kakaowebtoon.xml", link))
+                                            fp.write(FeedMaker.get_image_tag_str("https://terzeron.com", "kakaowebtoon.xml", link))
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
