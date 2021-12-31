@@ -8,7 +8,7 @@ from feed_maker_util import IO
 
 
 def main():
-    link_prefix = "http://webtoon.kakao.com/viewer"
+    link_prefix = "https://webtoon.kakao.com/viewer"
     link = ""
     title = ""
 
