@@ -16,7 +16,8 @@
         "toon_content_imgs"
       ],
       "post_process_script_list": [
-        "../convert_agit_url_to_blacktoon.py"
+        "../convert_agit_url_to_blacktoon.py",
+        "download_image.py"
       ]
     },
     "rss": {
