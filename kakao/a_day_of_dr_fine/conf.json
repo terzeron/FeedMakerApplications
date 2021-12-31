@@ -16,7 +16,7 @@
       ],
       "post_process_script_list": [
         "download_image.py",
-        "post_process_only_for_images.py"
+        "post_process_only_for_images.py -r"
       ],
       "render_js": true,
       "simulate_scrolling": true,
