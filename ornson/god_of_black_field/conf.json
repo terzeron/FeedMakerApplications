@@ -1,0 +1,31 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_ornson.py -n 300",
+      "list_url_list": [
+        "http://5rs-mt5.com/board/갓-오브-블랙필드"
+      ],
+      "sort_field_pattern": "/(\\d+)\\t",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_id_list": [
+        "post-content"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 오른손닷컴. All rights reserved.",
+      "description": "갓 오브 블랙필드::오른손닷컴",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/god_of_black_field.xml",
+      "title": "갓 오브 블랙필드::오른손닷컴",
+      "url_prefix_for_guid": "https://5rs-wc21.com"
+    }
+  }
+}
