@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../../manatoki/capture_item_manatoki.py -n 300",
       "list_url_list": [
-        "https://newtoki119.com/webtoon/15912501"
+        "https://newtoki120.com/webtoon/15912501"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 2
