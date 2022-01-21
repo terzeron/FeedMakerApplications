@@ -2,15 +2,13 @@
   "configuration": {
     "collection": {
       "item_capture_script": "../capture_item_link_title.py",
-      "sort_field_pattern": "(\\d+)\\t",
-      "unit_size_per_day": 1,
       "list_url_list": [
         "http://oblivion.egloos.com/",
         "http://oblivion.egloos.com/page/2",
-        "http://oblivion.egloos.com/page/3",
-        "http://oblivion.egloos.com/page/4",
-        "http://oblivion.egloos.com/page/5"
-      ]
+        "http://oblivion.egloos.com/page/3"
+      ],
+      "sort_field_pattern": "(\\d+)\\t",
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
@@ -19,12 +17,12 @@
       ]
     },
     "rss": {
-      "title": "타인에게 말걸기::이글루스",
+      "copyright": "Copyright (c) oblivion & Egloos. All Rights Reserved",
       "description": "타인에게 말걸기::이글루스",
       "generator": "Terzeron's Feed Generator",
-      "copyright": "Copyright (c) oblivion & Egloos. All Rights Reserved",
+      "language": "ko",
       "link": "https://terzeron.com/oblivion.xml",
-      "language": "ko"
+      "title": "타인에게 말걸기::이글루스"
     }
   }
 }
