@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverpost.py -n 10",
+      "item_capture_script": "../capture_item_naverpost.py -n 5",
       "list_url_list": [
         "https://m.post.naver.com/async/my.naver?memberNo=51538039"
       ],
