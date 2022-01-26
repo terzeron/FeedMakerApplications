@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverpost.py",
+      "item_capture_script": "../capture_item_naverpost.py -n 5",
       "sort_field_pattern": "volumeNo=(\\d+)",
       "unit_size_per_day": 4,
       "list_url_list": [
