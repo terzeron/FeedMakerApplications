@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
-        "https://comic.naver.com/webtoon/list?titleId=783590"
+        "https://comic.naver.com/webtoon/list?titleId=789979"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1
@@ -18,11 +18,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "description": "용사참수인::네이버",
+      "description": "world_after_destruction::네이버",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/executioner_of_warrior.xml",
-      "title": "용사참수인::네이버"
+      "title": "world_after_destruction::네이버"
     }
   }
 }
