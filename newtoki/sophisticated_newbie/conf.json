@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../../manatoki/capture_item_manatoki.py -n 300",
+      "item_capture_script": "../../manatoki/capture_item_manatoki.py -n 5",
       "list_url_list": [
         "https://newtoki123.com/webtoon/9337654"
       ],
