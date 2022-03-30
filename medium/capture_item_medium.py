@@ -12,7 +12,7 @@ def main():
     link = ""
     title = ""
     state = 0
-    
+
     num_of_recent_feeds = 1000
     optlist, args = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
@@ -41,7 +41,9 @@ def main():
                                 item_data = json_data["references"]["Post"][item]
                                 if "title" in item_data and "uniqueSlug" in item_data:
                                     if "content" in item_data and "subtitle" in item_data["content"]:
-                                        title = item_data["title"] + " " + item_data["content"]["subtitle"]
+                                        main_title = re.sub(r'\n', ' ', item_data["title"])
+                                        sub_title = re.sub(r'\n', ' ', item_data["content"]["subtitle"])
+                                        title = main_title + " " + sub_title
                                         link = page_url + "/" + item_data["uniqueSlug"]
                                         result_list.append((link, title))
 

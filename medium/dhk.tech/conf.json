@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_medium.py",
       "list_url_list": [
-        "https://medium.com/deliverytechkorea/"
+        "https://techblog.yogiyo.co.kr"
       ]
     },
     "extraction": {
@@ -13,8 +13,8 @@
       ]
     },
     "rss": {
-      "title": "Delivery Tech::DHK",
-      "description": "Delivery Tech::DHK - 모바일 버전 RSS Feed",
+      "title": "요기요 기술 블로그",
+      "description": "요기요 기술 블로그 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) DHK. All rights reserved.",
       "link": "https://terzeron.com/dhk.tech.xml",
