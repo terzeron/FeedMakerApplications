@@ -29,7 +29,7 @@ def main() -> int:
                 link = re.sub(r'&amp;', '&', link)
                 state = 1
         elif state == 1:
-            m = re.search(r'^\s*(?P<title>\S+.*\S)\s*(?:<span class="count[^"]*">\d+</span>|</a>)$', line)
+            m = re.search(r'^\s*(?P<title>\S+.*\S)\s*(?:<span class="count[^"]*">\d+</span>|</a>)\r?$', line)
             if m:
                 title = m.group("title")
                 title = re.sub(r'\s+', ' ', title)
