@@ -4,16 +4,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_zlibrary.py -n 1000",
       "list_url_list": [
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=1",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=2",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=3",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=4",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=5",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=6",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=7",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=8",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=9",
-        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=10"
+        "https://kr1lib.org/s/?languages%5B0%5D=korean&page=1"
       ],
       "sort_field_pattern": "(\\w+)\t",
       "unit_size_per_day": 24
