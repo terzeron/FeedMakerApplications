@@ -6,8 +6,8 @@
         "https://comic.naver.com/webtoon/weekday"
       ],
       "post_process_script_list": [
-        "shuf",
-        "tail -20"
+        "/usr/bin/shuf",
+        "/usr/bin/tail -20"
       ]
     },
     "extraction": {

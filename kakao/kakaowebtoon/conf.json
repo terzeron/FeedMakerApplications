@@ -6,8 +6,8 @@
         "https://gateway-kw.kakao.com/section/v1/pages/general-weekdays"
       ],
       "post_process_script_list": [
-        "shuf",
-        "tail -20"
+        "/usr/bin/shuf",
+        "/usr/bin/tail -20"
       ],
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",

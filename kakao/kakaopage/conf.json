@@ -6,8 +6,8 @@
         "https://api2-page.kakao.com/api/v9/store/section_container/list?agent=web&category=10&position=1000&day=0"
       ],
       "post_process_script_list": [
-        "shuf",
-        "tail -20"
+        "/usr/bin/shuf",
+        "/usr/bin/tail -20"
       ]
     },
     "extraction": {
