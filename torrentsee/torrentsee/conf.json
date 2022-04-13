@@ -1,0 +1,45 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_torrentsee.py -n 5",
+      "list_url_list": [
+        "https://torrentsee105.com/topic/index?category1=1&category2=10",
+        "https://torrentsee105.com/topic/index?category1=1&category2=11",
+        "https://torrentsee105.com/topic/index?category1=1&category2=110",
+        "https://torrentsee105.com/topic/index?category1=1&category2=113",
+        "https://torrentsee105.com/topic/index?category1=1&category2=109",
+        "https://torrentsee105.com/topic/index?category1=3&category2=14",
+        "https://torrentsee105.com/topic/index?category1=102&category2=103",
+        "https://torrentsee105.com/topic/index?category1=5&category2=23",
+        "https://torrentsee105.com/topic/index?category1=7&category2=27"
+      ],
+      "post_process_script_list": [
+        "/usr/bin/shuf",
+        "/usr/bin/tail -20"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_class_list": [
+        "sub_content"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "render_js": false,
+      "simulate_scrolling": false
+    },
+    "rss": {
+      "copyright": "Copyright (c) Manatoki. All rights reserved.",
+      "description": "토렌트씨",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/torrentsee.xml",
+      "title": "토렌트씨",
+      "url_prefix_for_guid": "https://torrentsee105.com"
+    }
+  }
+}
