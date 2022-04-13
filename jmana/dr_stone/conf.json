@@ -2,8 +2,6 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "render_js": true,
-      "disable_headless": true,
       "item_capture_script": "../capture_item_jmana.py -n 10",
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 1,
@@ -12,8 +10,6 @@
       ]
     },
     "extraction": {
-      "render_js": true,
-      "disable_headless": true,
       "element_class_list": [
         "view-con"
       ],

@@ -2,8 +2,6 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "render_js": true,
-      "disable_headless": true,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
         "https://jmana1.jjmana.net/comic_list_title?bookname=빈란드+사가"
@@ -12,8 +10,6 @@
       "unit_size_per_day": 0.5
     },
     "extraction": {
-      "render_js": true,
-      "disable_headless": true,
       "element_class_list": [
         "view-con"
       ],
