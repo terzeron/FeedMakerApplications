@@ -3,24 +3,21 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_torrentsee.py -n 5",
+      "item_capture_script": "../capture_item_torrentsee.py -n 10",
       "list_url_list": [
-        "https://torrentsee105.com/topic/index?category1=1&category2=10",
-        "https://torrentsee105.com/topic/index?category1=1&category2=11",
-        "https://torrentsee105.com/topic/index?category1=1&category2=110",
-        "https://torrentsee105.com/topic/index?category1=1&category2=113",
-        "https://torrentsee105.com/topic/index?category1=1&category2=109",
-        "https://torrentsee105.com/topic/index?category1=3&category2=14",
-        "https://torrentsee105.com/topic/index?category1=102&category2=103",
-        "https://torrentsee105.com/topic/index?category1=5&category2=23",
-        "https://torrentsee105.com/topic/index?category1=7&category2=27"
+        "https://torrentsee106.com/topic/index?category1=1&category2=10",
+        "https://torrentsee106.com/topic/index?category1=1&category2=11",
+        "https://torrentsee106.com/topic/index?category1=1&category2=110",
+        "https://torrentsee106.com/topic/index?category1=3&category2=14",
+        "https://torrentsee106.com/topic/index?category1=102&category2=103"
       ],
       "post_process_script_list": [
+        "/usr/bin/egrep -v '(엉덩이 ?탐정|헬로 ?카봇)'",
         "/usr/bin/shuf",
         "/usr/bin/tail -20"
       ],
-      "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 2
+      "sort_field_pattern": "topic/(\\d+)",
+      "unit_size_per_day": 120
     },
     "extraction": {
       "element_class_list": [
