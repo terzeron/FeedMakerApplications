@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_buzztoon.py -n 5",
       "list_url_list": [
-        "https://buzztoon163.com/bbs/board.php?bo_table=webtoon&wr_id=270401"
+        "https://buzztoon164.com/bbs/board.php?bo_table=webtoon&wr_id=270401"
       ],
       "sort_field_pattern": "\\b(\\d+(-\\d+)?)화",
       "unit_size_per_day": 1
