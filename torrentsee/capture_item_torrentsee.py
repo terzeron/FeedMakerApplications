@@ -29,22 +29,20 @@ def main() -> int:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="(?P<link>/topic/\d+)">\s*(?P<title>[^<]+)\s*</a>', line)
+            m = re.search(r'<div class="\s*sub_title\s*">', line)
+            if m:
+                state = 2
+        elif state == 2:
+            m = re.search(r'^\s*<a href="(?P<link>/topic/\d+)">\s*$', line)
             if m:
                 link = url_prefix + m.group("link")
-                title = m.group("title")
-                result_list.append((link, title))
-            else:
-                m = re.search(r'^\s*<a href="(?P<link>/topic/\d+)">\s*$', line)
-                if m:
-                    link = url_prefix + m.group("link")
-                    state = 2
-        elif state == 2:
+                state = 3
+        elif state == 3:
             m = re.search(r'^\s*(?P<title>.+)\s*$', line)
             if m:
                 title = m.group("title")
                 result_list.append((link, title))
-                state = 1
+                state = 2
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
