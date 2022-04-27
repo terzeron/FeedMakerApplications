@@ -1,0 +1,31 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_copytoon.py -n 5",
+      "list_url_list": [
+        "https://copytoon265.com/영주님의-코인이-줄지-않음"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_id_list": [
+        "bo_v_con"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 카피툰. All rights reserved.",
+      "description": "영주님의 코인이 줄지 않음::카피툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/coin_of_lord_dont_decrease.xml",
+      "title": "영주님의 코인이 줄지 않음::카피툰",
+      "url_prefix_for_guid": "https://copytoon142.com"
+    }
+  }
+}
