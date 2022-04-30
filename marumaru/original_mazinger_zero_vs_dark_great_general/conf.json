@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_marumaru.py -n 5",
+      "item_capture_script": "../capture_item_marumaru.py -n 300",
       "list_url_list": [
         "https://marumaru256.com/bbs/cmoic/22605"
       ],
