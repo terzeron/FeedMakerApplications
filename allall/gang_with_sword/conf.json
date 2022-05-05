@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_allall.py -n 5",
       "list_url_list": [
-        "https://allall8.com/completion//weblist/10187"
+        "https://allall8.com/completion//weblist/1588"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)\\t",
@@ -21,11 +21,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 올넷. All rights reserved.",
-      "description": "달빛조각사::올넷",
+      "description": "검계::올넷",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/gang_with_sword.xml",
-      "title": "달빛조각사::올넷",
+      "title": "검계::올넷",
       "url_prefix_for_guid": "https://allall8.com"
     }
   }
