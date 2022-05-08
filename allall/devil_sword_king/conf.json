@@ -8,7 +8,7 @@
         "https://allall9.com/completion//weblist/1322"
       ],
       "render_js": false,
-      "sort_field_pattern": "(\\d+)\\t",
+      "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1
     },
     "extraction": {
