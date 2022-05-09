@@ -5,11 +5,11 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_torrentsee.py -n 10",
       "list_url_list": [
-        "https://torrentsee108.com/topic/index?category1=1&category2=10",
-        "https://torrentsee108.com/topic/index?category1=1&category2=11",
-        "https://torrentsee108.com/topic/index?category1=1&category2=110",
-        "https://torrentsee108.com/topic/index?category1=3&category2=14",
-        "https://torrentsee108.com/topic/index?category1=102&category2=103"
+        "https://torrentsee109.com/topic/index?category1=1&category2=10",
+        "https://torrentsee109.com/topic/index?category1=1&category2=11",
+        "https://torrentsee109.com/topic/index?category1=1&category2=110",
+        "https://torrentsee109.com/topic/index?category1=3&category2=14",
+        "https://torrentsee109.com/topic/index?category1=102&category2=103"
       ],
       "post_process_script_list": [
         "/usr/bin/egrep -v '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'",
