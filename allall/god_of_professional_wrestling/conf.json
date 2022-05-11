@@ -2,14 +2,21 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_allall.py -n 5",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_allall.py -n 300",
       "list_url_list": [
-        "https://allall9.com/completion//weblist/15780"
+        "https://allall9.com/completion//weblist/15780",
+        "https://allall9.com/publish/weblist/15780/page/2",
+        "https://allall9.com/publish/weblist/15780/page/3",
+        "https://allall9.com/publish/weblist/15780/page/4",
+        "https://allall9.com/publish/weblist/15780/page/5",
+        "https://allall9.com/publish/weblist/15780/page/6",
+        "https://allall9.com/publish/weblist/15780/page/7",
+        "https://allall9.com/publish/weblist/15780/page/8"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 2
     },
     "extraction": {
       "element_class_list": [
