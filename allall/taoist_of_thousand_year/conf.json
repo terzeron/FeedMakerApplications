@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_allall.py -n 5",
+      "list_url_list": [
+        "https://allall9.com/completion//weblist/16786"
+      ],
+      "render_js": false,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 올넷. All rights reserved.",
+      "description": "천년방사::올넷",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/taoist_of_thousand_year.xml",
+      "title": "천년방사::올넷",
+      "url_prefix_for_guid": "https://allall8.com"
+    }
+  }
+}
