@@ -4,7 +4,7 @@
       "render_js": true,
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
-      "sort_field_pattern": "num=(\\d+)\\t",
+      "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://blacktoon172.com/webtoon/2503.html"

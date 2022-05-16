@@ -7,7 +7,7 @@
         "https://blacktoon172.com/webtoon/9415.html"
       ],
       "render_js": true,
-      "sort_field_pattern": "num=(\\d+)\\t",
+      "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1
     },
     "extraction": {
