@@ -21,6 +21,7 @@
     },
     "extraction": {
       "element_class_list": [
+        "notice_table",
         "sub_content"
       ],
       "post_process_script_list": [
