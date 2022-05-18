@@ -1,1 +1,7 @@
-{"keyword": "명탐정 코난", "num_retries": 2, "render_js": false, "timeout": 120, "url": "http://11toon7.com/bbs/board.php?bo_table=toons&is=47"}
+{
+  "keyword": "명탐정 코난",
+  "num_retries": 2,
+  "render_js": false,
+  "timeout": 120,
+  "url": "http://11toon7.com/bbs/board.php?bo_table=toons&is=47"
+}
