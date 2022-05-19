@@ -3,11 +3,13 @@
     "collection": {
       "item_capture_script": "../capture_item_kakaowebtoon.py -n 5",
       "list_url_list": [
-        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2583/episodes?sort=-NO&offset=0&limit=30"
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2583/episodes?sort=-NO&offset=0&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2583/episodes?sort=-NO&offset=30&limit=30"
       ],
+      "is_completed": true,
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 2
     },
     "extraction": {
       "blob_to_dataurl": true,
