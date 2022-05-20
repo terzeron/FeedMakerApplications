@@ -1,0 +1,38 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_allall.py -n 300",
+      "list_url_list": [
+        "https://allall10.com/completion//weblist/15800",
+        "https://allall10.com/publish/weblist/15800/page/2",
+        "https://allall10.com/publish/weblist/15800/page/3",
+        "https://allall10.com/publish/weblist/15800/page/4",
+        "https://allall10.com/publish/weblist/15800/page/5",
+        "https://allall10.com/publish/weblist/15800/page/6",
+        "https://allall10.com/publish/weblist/15800/page/7"
+      ],
+      "render_js": false,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 올넷. All rights reserved.",
+      "description": "천마, 리치왕의 무림을 부수다::올넷",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/sky_devil_destroys_martial_world_of_lich_king.xml",
+      "title": "천마, 리치왕의 무림을 부수다::올넷",
+      "url_prefix_for_guid": "https://allall8.com"
+    }
+  }
+}
