@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "item_capture_script": "../capture_item_kakaowebtoon.py -n 300",
+      "list_url_list": [
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2046/episodes?sort=-NO&offset=0&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2046/episodes?sort=-NO&offset=30&limit=30",
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2046/episodes?sort=-NO&offset=60&limit=30"
+      ],
+      "render_js": true,
+      "sort_field_pattern": "\\b(\\d+)\\.",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "blob_to_dataurl": true,
+      "element_class_list": [
+        "page"
+      ],
+      "post_process_script_list": [
+        "download_image.py",
+        "post_process_only_for_images.py -r"
+      ],
+      "render_js": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
+      "description": "개목걸이::카카오",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/dog_collar.xml",
+      "title": "개목걸이::카카오"
+    }
+  }
+}
