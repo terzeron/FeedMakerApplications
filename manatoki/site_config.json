@@ -1,1 +1,7 @@
-{"keyword": "원펀맨", "num_retries": 2, "render_js": false, "timeout": 120, "url": "https://manatoki132.net/comic/124573"}
+{
+  "keyword": "원펀맨",
+  "num_retries": 2,
+  "render_js": false,
+  "timeout": 120,
+  "url": "https://manatoki132.net/comic/124573"
+}
