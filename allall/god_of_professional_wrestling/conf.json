@@ -5,14 +5,14 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_allall.py -n 300",
       "list_url_list": [
-        "https://allall10.com/completion//weblist/15780",
-        "https://allall10.com/publish/weblist/15780/page/2",
-        "https://allall10.com/publish/weblist/15780/page/3",
-        "https://allall10.com/publish/weblist/15780/page/4",
-        "https://allall10.com/publish/weblist/15780/page/5",
-        "https://allall10.com/publish/weblist/15780/page/6",
-        "https://allall10.com/publish/weblist/15780/page/7",
-        "https://allall10.com/publish/weblist/15780/page/8"
+        "https://allall11.com/completion//weblist/15780",
+        "https://allall11.com/publish/weblist/15780/page/2",
+        "https://allall11.com/publish/weblist/15780/page/3",
+        "https://allall11.com/publish/weblist/15780/page/4",
+        "https://allall11.com/publish/weblist/15780/page/5",
+        "https://allall11.com/publish/weblist/15780/page/6",
+        "https://allall11.com/publish/weblist/15780/page/7",
+        "https://allall11.com/publish/weblist/15780/page/8"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
