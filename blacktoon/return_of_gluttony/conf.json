@@ -8,7 +8,7 @@
         "https://blacktoon172.com/webtoon/3564.html"
       ],
       "render_js": true,
-      "sort_field_pattern": "(\\d+)화",
+      "sort_field_pattern": "(\\d+)\\.html",
       "unit_size_per_day": 6
     },
     "extraction": {
