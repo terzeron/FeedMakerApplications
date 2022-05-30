@@ -2,11 +2,12 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_blacktoon.py -n 5",
+      "item_capture_script": "../capture_item_blacktoon.py -n 300",
       "list_url_list": [
         "https://blacktoon172.com/webtoon/8544.html"
       ],
       "render_js": true,
+      "is_completed": true,
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1
     },
