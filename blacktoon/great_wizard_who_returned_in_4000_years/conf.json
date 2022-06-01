@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_blacktoon.py -n 300",
+      "list_url_list": [
+        "https://blacktoon172.com/webtoon/4225.html"
+      ],
+      "render_js": true,
+      "sort_field_pattern": "\\t(\\d+)",
+      "unit_size_per_day": 3
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_content_imgs"
+      ],
+      "post_process_script_list": [
+        "../convert_blacktoon_url_to_blacktoon.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 블랙툰. All rights reserved.",
+      "description": "4000년 만에 귀환한 대마도사::블랙툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/great_wizard_who_returned_in_4000_years.xml",
+      "title": "4000년 만에 귀환한 대마도사::블랙툰",
+      "url_prefix_for_guid": "https://blacktoon172.com"
+    }
+  }
+}
