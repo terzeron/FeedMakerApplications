@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wtwt.py -n 5",
+      "list_url_list": [
+        "https://wtwt136.com/c1?toon=12599"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "wbody"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "이세계 NTR - 절친의 여자를 최강 스킬로 함락시키는 방법::W툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/ntr_in_the_world.xml",
+      "title": "이세계 NTR - 절친의 여자를 최강 스킬로 함락시키는 방법::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
