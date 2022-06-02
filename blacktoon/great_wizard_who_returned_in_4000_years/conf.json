@@ -8,8 +8,8 @@
         "https://blacktoon172.com/webtoon/4225.html"
       ],
       "render_js": true,
-      "sort_field_pattern": "\\t(\\d+)",
-      "unit_size_per_day": 3
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 4
     },
     "extraction": {
       "element_id_list": [
