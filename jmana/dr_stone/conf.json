@@ -2,12 +2,12 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_jmana.py -n 10",
-      "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 1,
+      "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
         "https://jmana1.jjmana.net/comic_list_title?bookname=닥터+스톤(Dr+Stone)"
-      ]
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
@@ -20,12 +20,12 @@
       ]
     },
     "rss": {
-      "title": "닥터 스톤::제이마나",
-      "description": "닥터 스톤::제이마나 - 모바일 버전 RSS Feed",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) JMana. All rights reserved.",
-      "link": "https://terzeron.com/dr_stone.xml",
+      "description": "닥터 스톤::제이마나",
+      "generator": "Terzeron's Feed Generator",
       "language": "ko",
+      "link": "https://terzeron.com/dr_stone.xml",
+      "title": "닥터 스톤::제이마나",
       "url_prefix_for_guid": "https://aboutdron.net"
     }
   }
