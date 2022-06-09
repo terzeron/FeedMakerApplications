@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_allall.py -n 5",
       "list_url_list": [
-        "https://allall11.com/completion//weblist/10144"
+        "https://allall12.com/completion//weblist/10144"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
