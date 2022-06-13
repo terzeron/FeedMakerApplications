@@ -1,13 +1,13 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_kakaopage.py -n 300",
+      "is_completed": false,
+      "item_capture_script": "../capture_item_kakaopage.py -n 6",
       "list_url_list": [
         "https://page.kakao.com/home/59460508?orderby=desc"
       ],
       "sort_field_pattern": "productId=(\\d+)",
       "unit_size_per_day": 2,
-      "is_completed": true,
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36"
     },
     "extraction": {
