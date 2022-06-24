@@ -40,7 +40,7 @@ def main() -> int:
                 link = re.sub(r'&amp;', '&', link)
                 title = m.group("title")
                 title = re.sub(r'</?\w+( \w+="[^"]+")*>', '', title)
-                if "보증업체" not in title and "보증제휴" not in title and "타 사이트 워터마크" not in title and "삭제" not in title:
+                if "보증업체" not in title and "보증제휴" not in title and "타 사이트 워터마크" not in title and "삭제" not in title and "신고누적으로 블라인드" not in title:
                     result_list.append((link, title))
                 state = 1
             else:
