@@ -1,0 +1,45 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_torrentdia.py -n 10",
+      "list_url_list": [
+        "https://torrentdia24.com/bbs/ranking.php",
+        "https://torrentdia24.com/bbs/board.php?bo_table=torrent_movieko",
+        "https://torrentdia24.com/bbs/board.php?bo_table=torrent_movieov",
+        "https://torrentdia24.com/bbs/board.php?bo_table=torrent_netflix",
+        "https://torrentdia24.com/bbs/board.php?bo_table=torrent_disneyplus",
+        "https://torrentdia24.com/bbs/board.php?bo_table=torrent_appletv",
+        "https://torrentdia24.com/bbs/board.php?bo_table=torrent_primevideo",
+        "https://torrentdia24.com/bbs/board.php?bo_table=torrent_hbo"
+      ],
+      "post_process_script_list": [
+        "/usr/bin/egrep -v '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'",
+        "/usr/bin/shuf",
+        "/usr/bin/tail -20"
+      ],
+      "sort_field_pattern": "topic/(\\d+)",
+      "unit_size_per_day": 120
+    },
+    "extraction": {
+      "element_class_list": [
+        "view-wrap"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "render_js": false,
+      "simulate_scrolling": false
+    },
+    "rss": {
+      "copyright": "Copyright (c) Torrentdia. All rights reserved.",
+      "description": "토렌트다이아",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/torrentdia.xml",
+      "title": "토렌트다이아",
+      "url_prefix_for_guid": "https://torrentdia24.com"
+    }
+  }
+}
