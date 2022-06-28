@@ -40,9 +40,15 @@ def main() -> int:
                 link = re.sub(r'&amp;', '&', link)
                 title = m.group("title")
                 title = re.sub(r'</?\w+( \w+="[^"]+")*>', '', title)
-                if "보증업체" not in title and "보증제휴" not in title and "타 사이트 워터마크" not in title and "삭제" not in title and "신고누적으로 블라인드" not in title:
+                if re.search(r'(\bS\d\dE\d\d\b|\bE\d\d\d?\.\d\d\d\d\d\d\b|보증\s*(업체|제휴)|타\s*사이트\s*워터마크|삭제|블라인드)', title, re.IGNORECASE):
+                    link = ""
+                    title = ""
+                    state = 1
+                    continue
+
+                if link and title:
                     result_list.append((link, title))
-                state = 1
+                    state = 1
             else:
                 m = re.search(r'^\s*<a href="https?://torrentdia\d+\.com(?P<link>[^"]*wr_id=\d+[^"]*)"[^>]*>', line)
                 if m:
@@ -54,9 +60,15 @@ def main() -> int:
             if m:
                 title = m.group("title")
                 title = re.sub(r'</?\w+( \w+="[^"]+")*>', '', title)
-                if "보증업체" not in title and "보증제휴" not in title and "타 사이트 워터마크" not in title and "삭제" not in title:
+                if re.search(r'(\bS\d\dE\d\d\b|\bE\d\d\d?\.\d\d\d\d\d\d\b|보증\s*(업체|제휴)|타\s*사이트\s*워터마크|삭제|블라인드)', title, re.IGNORECASE):
+                    title = ""
+                    link = ""
+                    state = 1
+                    continue
+
+                if link and title:
                     result_list.append((link, title))
-                state = 1
+                    state = 1
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
