@@ -18,11 +18,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "description": "1초::네이버",
+      "description": "영웅&마왕&악당::네이버",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/hero_and_devil_and_villain.xml",
-      "title": "1초::네이버"
+      "title": "영웅&마왕&악당::네이버"
     }
   }
 }
