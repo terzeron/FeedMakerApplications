@@ -1,0 +1,28 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "list_url_list": [
+        "https://comic.naver.com/webtoon/list?titleId=796827"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "회귀한 천재 헌터의 슬기로운 청소생활::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "thttps://terzeron.com/smart_cleaning_life_of_returned_genius_hunter.xml",
+      "title": "회귀한 천재 헌터의 슬기로운 청소생활::네이버"
+    }
+  }
+}
