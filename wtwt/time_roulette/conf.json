@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
+      "list_url_list": [
+        "https://wtwt142.com/v1?toon=6374"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "wbody"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "타임룰렛::W툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/time_roulette.xml",
+      "title": "타임룰렛::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
