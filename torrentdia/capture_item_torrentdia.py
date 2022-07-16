@@ -30,11 +30,11 @@ def main() -> int:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<td class="\s*list-subject', line)
+            m = re.search(r'<td class="list-subject web-subject', line)
             if m:
                 state = 2
         elif state == 2:
-            m = re.search(r'^\s*<a href="https?://torrentdia\d+\.com(?P<link>[^"]*wr_id=\d+[^"]*)"[^>]*>\s*(?P<title>\S.+)\s*</a>$', line)
+            m = re.search(r'^\s*<a[^>]*href="https?://torrentdia\d+\.com(?P<link>[^"]*wr_id=\d+[^"]*)"[^>]*>\s*(?P<title>\S.+)\s*</a>$', line)
             if m:
                 link = url_prefix + m.group("link")
                 link = re.sub(r'&amp;', '&', link)

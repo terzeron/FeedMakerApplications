@@ -23,7 +23,7 @@
     },
     "extraction": {
       "element_class_list": [
-        "view-wrap-pad"
+        "view-content"
       ],
       "post_process_script_list": [
         "/usr/bin/grep -v -E 'https://torrentdia[0-9][0-9]*.com/data/to_list/215'",
