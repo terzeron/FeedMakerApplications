@@ -4,7 +4,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_naverblog.py -n 5",
       "list_url_list": [
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=elusivebeauty&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=elusivebeauty&viewdate=&currentPage=1&categoryNo=0&parentCategoryNo=&countPerPage=30"
       ],
       "sort_field_pattern": "&logNo=(\\d+)",
       "unit_size_per_day": 1
