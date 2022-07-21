@@ -5,9 +5,9 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_allall.py -n 300",
       "list_url_list": [
-        "https://allall16.com/completion/weblist/19539",
-        "https://allall16.com/completion/weblist/19539/page/2",
-        "https://allall16.com/completion/weblist/19539/page/3"
+        "https://allall17.com/completion/weblist/19539",
+        "https://allall17.com/completion/weblist/19539/page/2",
+        "https://allall17.com/completion/weblist/19539/page/3"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
