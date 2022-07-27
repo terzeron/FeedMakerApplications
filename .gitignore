@@ -24,3 +24,5 @@ www/work
 result.*.temp
 .*login*
 cookies*.json
+*.lock
+.*.lock
