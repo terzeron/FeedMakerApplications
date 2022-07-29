@@ -9,7 +9,7 @@
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)\\.html",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 2
     },
     "extraction": {
       "element_id_list": [
