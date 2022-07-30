@@ -3,11 +3,9 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": true,
-      "item_capture_script": "../capture_item_allall.py -n 300",
+      "item_capture_script": "../capture_item_allall.py -n 5",
       "list_url_list": [
-        "https://allall18.com/completion/weblist/19539",
-        "https://allall18.com/completion/weblist/19539/page/2",
-        "https://allall18.com/completion/weblist/19539/page/3"
+        "https://allall18.com/completion/weblist/19539"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
