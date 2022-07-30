@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": true,
+      "is_completed": false,
       "item_capture_script": "../capture_item_allall.py -n 5",
       "list_url_list": [
         "https://allall18.com/completion/weblist/19539"
