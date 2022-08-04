@@ -2,10 +2,10 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_copytoon.py -n 300",
+      "is_completed": false,
+      "item_capture_script": "../capture_item_copytoon.py -n 5",
       "list_url_list": [
-        "https://copytoon292.com/막장드라마의-제왕"
+        "https://copytoon292.com/환생표사"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 1
@@ -20,11 +20,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 카피툰. All rights reserved.",
-      "description": "막장드라마의 제왕::카피툰",
+      "description": "환생표사::카피툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/returned_delivery_warrior.xml",
-      "title": "막장드라마의 제왕::카피툰",
+      "title": "환생표사::카피툰",
       "url_prefix_for_guid": "https://copytoon142.com"
     }
   }
