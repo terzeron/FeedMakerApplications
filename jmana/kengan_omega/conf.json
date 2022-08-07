@@ -21,11 +21,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) JMana. All rights reserved.",
-      "description": "ㅈ::제이마나",
+      "description": "켄간 오메가::제이마나",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/kengan_omega.xml",
-      "title": "ㅈ::제이마나",
+      "title": "켄간 오메가::제이마나",
       "url_prefix_for_guid": "https://aboutdron.net"
     }
   }
