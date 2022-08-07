@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wfwf.py -n 300",
+      "list_url_list": [
+        "https://wfwf219.com/list?toon=15731"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "image-view"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "description": "흑철의 발할리안::늑대닷컴",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/valhalian_of_black_steel.xml",
+      "title": "흑철의 발할리안::늑대닷컴",
+      "url_prefix_for_guid": "https://wfwf24.com"
+    }
+  }
+}
