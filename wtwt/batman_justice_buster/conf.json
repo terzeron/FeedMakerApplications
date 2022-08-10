@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wtwt.py -n ㅠ",
+      "list_url_list": [
+        "https://wtwt146.com/c1?toon=15823"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "wbody"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "배트맨 저스티스 버스터::W툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/batman_justice_buster.xml",
+      "title": "배트맨 저스티스 버스터::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
