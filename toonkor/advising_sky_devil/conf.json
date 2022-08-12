@@ -8,7 +8,7 @@
         "https://toonkor133.com/훈수-두는-천마님"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 24
+      "unit_size_per_day": 2
     },
     "extraction": {
       "element_id_list": [
