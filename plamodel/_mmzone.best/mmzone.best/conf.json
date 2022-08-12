@@ -1,0 +1,28 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "./capture_item_link_title.py -n 5",
+      "list_url_list": [
+        "https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=0"
+      ],
+      "sort_field_pattern": "no=(\\d+)",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_id_list": [
+        "sc_photo_block"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) mmzone.com. All Rights Reserved",
+      "description": "MMZ 베스트 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/mmzone.best.xml",
+      "title": "MMZ 베스트"
+    }
+  }
+}
