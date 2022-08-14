@@ -7,6 +7,7 @@
         "https://gateway-kw.kakao.com/episode/v2/views/content-home/contents/2614/episodes?sort=-NO&offset=30&limit=30"
       ],
       "render_js": true,
+      "is_completed": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 1
     },
