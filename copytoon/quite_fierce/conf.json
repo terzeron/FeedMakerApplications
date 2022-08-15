@@ -1,0 +1,31 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_copytoon.py -n 300",
+      "list_url_list": [
+        "https://copytoon294.com/뒤끝작렬"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_id_list": [
+        "bo_v_con"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 카피툰. All rights reserved.",
+      "description": "막뒤끝작렬::카피툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/quite_fierce.xml",
+      "title": "막뒤끝작렬::카피툰",
+      "url_prefix_for_guid": "https://copytoon142.com"
+    }
+  }
+}
