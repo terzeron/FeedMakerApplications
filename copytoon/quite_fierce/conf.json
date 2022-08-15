@@ -20,11 +20,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 카피툰. All rights reserved.",
-      "description": "막뒤끝작렬::카피툰",
+      "description": "뒤끝작렬::카피툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/quite_fierce.xml",
-      "title": "막뒤끝작렬::카피툰",
+      "title": "뒤끝작렬::카피툰",
       "url_prefix_for_guid": "https://copytoon142.com"
     }
   }
