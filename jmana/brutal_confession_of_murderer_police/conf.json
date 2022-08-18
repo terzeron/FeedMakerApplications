@@ -2,8 +2,8 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_jmana.py -n 300",
+      "is_completed": false,
+      "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
         "https://jmana1.jjmana.net/comic_list_title?bookname=브루탈+살인경찰관의+고백"
       ],
