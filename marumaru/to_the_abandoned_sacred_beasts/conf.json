@@ -3,30 +3,30 @@
     "collection": {
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_marumaru.py -n 5",
-      "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 1,
       "list_url_list": [
-        "https://marumaru.com/bbs/cmoic/22100"
-      ]
+        "https://marumaru205.com/bbs/cmoic/22100"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 1
     },
     "extraction": {
-      "render_js": true,
-      "force_sleep_between_articles": true,
       "copy_images_from_canvas": true,
       "element_class_list": [
         "images_from_canvas"
       ],
+      "force_sleep_between_articles": true,
       "post_process_script_list": [
         "download_image.py"
-      ]
+      ],
+      "render_js": true
     },
     "rss": {
-      "title": "한때는 신이었던 짐승들에게::마루마루",
-      "description": "한때는 신이었던 짐승들에게::마루마루 - 모바일 버전 RSS Feed",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Marumaru. All rights reserved.",
-      "link": "https://terzeron.com/to_the_abandoned_sacred_beasts.xml",
+      "description": "한때는 신이었던 짐승들에게::마루마루",
+      "generator": "Terzeron's Feed Generator",
       "language": "ko",
+      "link": "https://terzeron.com/to_the_abandoned_sacred_beasts.xml",
+      "title": "한때는 신이었던 짐승들에게::마루마루",
       "url_prefix_for_guid": "https://marumaru.zone"
     }
   }
