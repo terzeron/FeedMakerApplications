@@ -7,9 +7,7 @@
       "sort_field_pattern": "\\t(\\d+)\\.",
       "referer": "https://funbe.ink/",
       "unit_size_per_day": 24,
-      "list_url_list": [
-        "https://funbe/절세무신"
-      ]
+      "list_url_list": []
     },
     "extraction": {
       "render_js": true,
