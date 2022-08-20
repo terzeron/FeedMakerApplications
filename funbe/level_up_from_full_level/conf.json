@@ -4,9 +4,7 @@
       "ignore_old_list": true,
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
-      "list_url_list": [
-        "https://funbe/만렙부터-레벨업"
-      ],
+      "list_url_list": [],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 3
     },
