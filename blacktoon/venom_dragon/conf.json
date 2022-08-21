@@ -4,7 +4,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
-        "https://blacktoon180.com/webtoon/9305.html"
+        "https://blacktoon185.com/webtoon/9305.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
