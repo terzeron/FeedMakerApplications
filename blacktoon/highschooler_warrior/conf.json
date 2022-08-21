@@ -1,14 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "render_js": true,
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
-      "sort_field_pattern": "(\\d+)화",
-      "unit_size_per_day": 1,
       "list_url_list": [
         "https://blacktoon185.com/webtoon/2503.html"
-      ]
+      ],
+      "render_js": true,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_id_list": [
@@ -20,12 +20,12 @@
       ]
     },
     "rss": {
-      "title": "고등무사::블랙툰",
-      "description": "고등무사::블랙툰 - 모바일 버전 RSS Feed",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 블랙툰. All rights reserved.",
-      "link": "https://terzeron.com/highschooler_warrior.xml",
+      "description": "고등무사::블랙툰",
+      "generator": "Terzeron's Feed Generator",
       "language": "ko",
+      "link": "https://terzeron.com/highschooler_warrior.xml",
+      "title": "고등무사::블랙툰",
       "url_prefix_for_guid": "https://blacktoon172.com"
     }
   }
