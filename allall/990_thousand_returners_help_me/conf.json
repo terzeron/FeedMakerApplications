@@ -5,11 +5,11 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_allall.py -n 300",
       "list_url_list": [
-        "https://allall25.com/completion/weblist/16613",
-        "https://allall25.com/completion/weblist/16613/page/2",
-        "https://allall25.com/completion/weblist/16613/page/3",
-        "https://allall25.com/completion/weblist/16613/page/4",
-        "https://allall25.com/completion/weblist/16613/page/5"
+        "https://allall26.com/completion/weblist/16613",
+        "https://allall26.com/completion/weblist/16613/page/2",
+        "https://allall26.com/completion/weblist/16613/page/3",
+        "https://allall26.com/completion/weblist/16613/page/4",
+        "https://allall26.com/completion/weblist/16613/page/5"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
