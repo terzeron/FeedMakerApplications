@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": true,
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_agit.py -n 5",
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://agit116.com/azi_toon/9400.html"
+      ]
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_content_imgs"
+      ],
+      "post_process_script_list": [
+        "../convert_agit_url_to_blacktoon.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "오합지존::아지트",
+      "description": "오합지존::아지트 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) 아지트. All rights reserved.",
+      "link": "https://terzeron.com/untrained_warrior_to_summit.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://agit59.com"
+    }
+  }
+}
