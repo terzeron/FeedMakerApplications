@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_copytoon.py -n 300",
       "list_url_list": [
-        "https://copytoon295.com/막장드라마의-제왕"
+        "https://copytoon296.com/막장드라마의-제왕"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 2
