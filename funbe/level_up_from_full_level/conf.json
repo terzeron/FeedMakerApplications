@@ -2,8 +2,8 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_funbe.py -n 300",
+      "is_completed": false,
+      "item_capture_script": "../capture_item_funbe.py -n 5",
       "list_url_list": [
         "https://funbe158.com/만렙부터-레벨업"
       ],
