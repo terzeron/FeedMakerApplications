@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
-        "https://funbe158.com/이차원-용병"
+        "https://funbe159.com/이차원-용병"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 4
