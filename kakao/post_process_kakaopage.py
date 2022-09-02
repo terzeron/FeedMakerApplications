@@ -18,7 +18,7 @@ LOGGER = logging.getLogger(__name__)
 
 def main() -> int:
     feed_dir_path = Path.cwd()
-    img_url_prefix = "https://page-edge-jz.kakao.com/sdownload/resource/"
+    img_url_prefix = "https://page-edge.kakao.com/sdownload/resource?kid="
 
     optlist, args = getopt.getopt(sys.argv[1:], "f:")
     for o, a in optlist:
@@ -59,7 +59,6 @@ def main() -> int:
         if "members" in data["downloadData"]:
             if "files" in data["downloadData"]["members"]:
                 for file in data["downloadData"]["members"]["files"]:
-                    #pprint.pprint(file)
                     img_url = img_url_prefix + file["secureUrl"]
                     print("<img src='%s'>" % img_url)
 
