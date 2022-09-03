@@ -4,7 +4,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_zlibrary.py -n 50",
       "list_url_list": [
-        "https://kr1lib.org/s/?languages%5B%5D=korean&order=date&page=7",
+        "https://kr1lib.org/s/?languages%5B%5D=korean&order=date&page=5",
         "https://kr1lib.org/s/?languages%5B%5D=korean&order=date&page=6"
       ],
       "post_process_script_list": [
