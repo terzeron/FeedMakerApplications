@@ -5,7 +5,7 @@
       "item_capture_script": "../capture_item_zlibrary.py -n 50",
       "list_url_list": [
         "https://kr1lib.org/s/?languages%5B%5D=korean&order=date&page=3",
-        "https://kr1lib.org/s/?languages%5B%5D=korean&order=date&page=4"
+        "https://kr1lib.org/s/?languages%5B%5D=korean&order=date&page=2"
       ],
       "post_process_script_list": [
         "/usr/bin/shuf"
