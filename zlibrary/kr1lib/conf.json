@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "is_completed": true,
-      "item_capture_script": "../capture_item_zlibrary.py -n 300",
+      "item_capture_script": "../capture_item_zlibrary.py -n 1000",
       "list_url_list": [
         "https://terzeron.com/zlib.recent.html"
       ],
