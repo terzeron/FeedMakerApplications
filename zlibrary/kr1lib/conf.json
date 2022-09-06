@@ -1,8 +1,8 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
-      "item_capture_script": "../capture_item_zlibrary.py -n 50",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_zlibrary.py -n 300",
       "list_url_list": [
         "https://terzeron.com/zlib.recent.html"
       ],
@@ -10,7 +10,7 @@
         "/usr/bin/shuf"
       ],
       "sort_field_pattern": "(\\w+)\t",
-      "unit_size_per_day": 24
+      "unit_size_per_day": 100
     },
     "extraction": {
       "element_class_list": [
