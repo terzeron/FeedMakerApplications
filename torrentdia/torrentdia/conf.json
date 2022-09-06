@@ -10,7 +10,7 @@
       ],
       "post_process_script_list": [
         "/usr/bin/grep -vP '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'",
-        "/usr/bin/grep -P '20[0-9][0-9]'",
+        "/usr/bin/grep -P '20[1-9][0-9]'",
         "/usr/bin/shuf",
         "/usr/bin/tail -20"
       ],
