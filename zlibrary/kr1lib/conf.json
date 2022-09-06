@@ -4,7 +4,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_zlibrary.py -n 500",
       "list_url_list": [
-        "https://terzeron.com/recent.html"
+        "https://terzeron.com/x00"
       ],
       "post_process_script_list": [
         "/usr/bin/shuf"
