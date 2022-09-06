@@ -1,8 +1,8 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
-      "item_capture_script": "../capture_item_zlibrary.py -n 500",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_zlibrary.py -n 1000",
       "list_url_list": [
         "https://terzeron.com/total.html",
         "https://kr1lib.org/s/?languages%5B%5D=korean&order=date"
