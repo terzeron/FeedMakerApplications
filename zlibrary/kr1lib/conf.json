@@ -10,7 +10,7 @@
         "/usr/bin/shuf"
       ],
       "sort_field_pattern": "(\\w+)\t",
-      "unit_size_per_day": 50
+      "unit_size_per_day": 192
     },
     "extraction": {
       "element_class_list": [
