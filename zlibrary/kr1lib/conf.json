@@ -4,7 +4,6 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_zlibrary.py -n 5000",
       "list_url_list": [
-        "https://terzeron.com/x00",
         "https://kr1lib.org/s/?languages%5B%5D=korean&order=date"
       ],
       "post_process_script_list": [
@@ -16,7 +15,8 @@
     "extraction": {
       "element_class_list": [
         "cardBooks"
-      ]
+      ],
+      "force_sleep_between_articles": true
     },
     "rss": {
       "copyright": "Copyright (c) zlibrary. All rights reserved.",
