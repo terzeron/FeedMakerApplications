@@ -2,9 +2,9 @@
   "configuration": {
     "collection": {
       "is_completed": true,
-      "item_capture_script": "../capture_item_zlibrary.py -n 1000",
+      "item_capture_script": "../capture_item_zlibrary.py -n 500",
       "list_url_list": [
-        "https://terzeron.com/zlib.recent.html"
+        "https://terzeron.com/recent.html"
       ],
       "post_process_script_list": [
         "/usr/bin/shuf"
