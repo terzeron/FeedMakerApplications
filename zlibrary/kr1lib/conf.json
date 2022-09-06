@@ -4,7 +4,8 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_zlibrary.py -n 500",
       "list_url_list": [
-        "https://terzeron.com/x00"
+        "https://terzeron.com/total.html",
+        "https://kr1lib.org/s/?languages%5B%5D=korean&order=date"
       ],
       "post_process_script_list": [
         "/usr/bin/shuf"
