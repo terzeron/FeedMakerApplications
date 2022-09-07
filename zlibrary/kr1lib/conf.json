@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": false,
+      "ignore_old_list": true,
       "is_completed": true,
       "item_capture_script": "../capture_item_zlibrary.py -n 5000",
       "list_url_list": [
