@@ -1,9 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_blacktoon.py -n 300",
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
         "https://blacktoon185.com/webtoon/9751.html"
       ],
