@@ -1,8 +1,8 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": true,
-      "item_capture_script": "../capture_item_kakaowebtoon.py -n 300",
+      "is_completed": false,
+      "item_capture_script": "../capture_item_kakaowebtoon.py -n 5",
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v2/views/content-home/contents/2614/episodes?sort=-NO&offset=0&limit=30",
         "https://gateway-kw.kakao.com/episode/v2/views/content-home/contents/2614/episodes?sort=-NO&offset=30&limit=30"
