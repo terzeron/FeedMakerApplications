@@ -9,7 +9,7 @@
       ],
       "sort_field_pattern": "(\\w+)\t",
       "unit_size_per_day": 96,
-      "window_size": 20
+      "window_size": 30
     },
     "extraction": {
       "element_class_list": [
