@@ -6,7 +6,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_wfwf.py -n 300",
       "list_url_list": [
-        "https://wfwf225.com/list?toon=6767"
+        "https://wfwf226.com/list?toon=6767"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 4
