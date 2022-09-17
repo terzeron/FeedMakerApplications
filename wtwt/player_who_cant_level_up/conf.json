@@ -2,9 +2,9 @@
   "configuration": {
     "collection": {
       "encoding": "cp949",
-      "ignore_old_list": false,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_wtwt.py -n 5",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
         "https://wtwt153.com/v1?toon=5556"
       ],
