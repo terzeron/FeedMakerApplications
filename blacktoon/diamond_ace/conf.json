@@ -17,7 +17,8 @@
       ],
       "post_process_script_list": [
         "../convert_blacktoon_url_to_blacktoon.py",
-        "download_image.py"
+        "download_image.py",
+        "perl -pe 's/\\<img src=\"(.*)\"\\s?/\\>/\\<img src=\"\\1\" width=\"100%\"/\\>/'"
       ]
     },
     "rss": {
