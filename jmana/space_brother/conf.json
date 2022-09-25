@@ -8,7 +8,7 @@
         "https://jmana1.jjmana.net/comic_list_title?bookname=우주+형제"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 5
+      "unit_size_per_day": 1
     },
     "extraction": {
       "element_class_list": [
