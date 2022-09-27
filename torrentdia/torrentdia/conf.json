@@ -5,8 +5,8 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_torrentdia.py -n 10",
       "list_url_list": [
-        "https://torrentdia2.com/bbs/board.php?bo_table=torrent_movieov",
-        "https://torrentdia2.com/bbs/board.php?bo_table=torrent_movieko"
+        "https://torrentdia.com/bbs/board.php?bo_table=torrent_movieov",
+        "https://torrentdia.com/bbs/board.php?bo_table=torrent_movieko"
       ],
       "post_process_script_list": [
         "/usr/bin/grep -vP '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'",
