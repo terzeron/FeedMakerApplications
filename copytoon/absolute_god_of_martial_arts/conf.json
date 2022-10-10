@@ -5,9 +5,7 @@
       "item_capture_script": "../capture_item_copytoon.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 2,
-      "list_url_list": [
-        "https://copytoon/-절대무신"
-      ]
+      "list_url_list": []
     },
     "extraction": {
       "element_id_list": [

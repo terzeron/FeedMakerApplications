@@ -5,9 +5,7 @@
       "item_capture_script": "../capture_item_copytoon.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 6,
-      "list_url_list": [
-        "https://copytoon/밥만-먹고-레벨업"
-      ]
+      "list_url_list": []
     },
     "extraction": {
       "element_id_list": [
