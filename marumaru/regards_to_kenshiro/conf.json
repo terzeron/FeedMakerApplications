@@ -3,9 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_marumaru.py -n 5",
-      "list_url_list": [
-        "https://marumaru/bbs/cmoic/26171"
-      ],
+      "list_url_list": [],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 1
     },
