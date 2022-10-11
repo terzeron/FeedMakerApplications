@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "is_completed": false,
       "item_capture_script": "../capture_item_funbe.py -n 10",
       "list_url_list": [
