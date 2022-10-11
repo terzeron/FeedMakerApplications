@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_kakaopage.py -n 5",
       "list_url_list": [
-        "https://page.kakao.com/home/59974817?orderby=desc"
+        "https://page.kakao.com/content/59974817"
       ],
       "sort_field_pattern": "productId=(\\d+)",
       "unit_size_per_day": 2,

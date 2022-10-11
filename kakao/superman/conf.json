@@ -4,7 +4,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_kakaopage.py -n 5",
       "list_url_list": [
-        "https://page.kakao.com/home/56901634?orderby=desc"
+        "https://page.kakao.com/content/56901634"
       ],
       "sort_field_pattern": "productId=(\\d+)",
       "unit_size_per_day": 2,
