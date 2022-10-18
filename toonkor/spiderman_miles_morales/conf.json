@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
-        "https://toonkor152.com/스파이더맨-마일스-모랄레스"
+        "https://toonkor152.com/삼장전"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 2
@@ -21,11 +21,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) ToonKor. All rights reserved.",
-      "description": "스파이더맨 마일스 모랄레스::ToonKor",
+      "description": "삼장전::ToonKor",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/spiderman_miles_morales.xml",
-      "title": "스파이더맨 마일스 모랄레스::ToonKor",
+      "title": "삼장전::ToonKor",
       "url_prefix_for_guid": "https://toonkor132.com"
     }
   }
