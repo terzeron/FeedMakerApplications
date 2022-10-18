@@ -21,11 +21,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) ToonKor. All rights reserved.",
-      "description": "삼장전::ToonKor",
+      "description": "스파이더맨 마일스 모랄레스::ToonKor",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/spiderman_miles_morales.xml",
-      "title": "삼장전::ToonKor",
+      "title": "스파이더맨 마일스 모랄레스::ToonKor",
       "url_prefix_for_guid": "https://toonkor132.com"
     }
   }
