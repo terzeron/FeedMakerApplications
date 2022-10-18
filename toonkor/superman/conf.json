@@ -21,11 +21,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) ToonKor. All rights reserved.",
-      "description": "수퍼맨::ToonKor",
+      "description": "슈퍼맨::ToonKor",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/superman.xml",
-      "title": "수퍼맨::ToonKor",
+      "title": "슈퍼맨::ToonKor",
       "url_prefix_for_guid": "https://toonkor132.com"
     }
   }
