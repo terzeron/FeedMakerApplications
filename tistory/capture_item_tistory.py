@@ -24,7 +24,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -43,7 +43,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -57,7 +57,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -71,7 +71,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -90,7 +90,26 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'url: "(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
+            if m:
+                url_prefix = m.group("url_prefix")
+                state = 1
+        elif state == 1:
+            m = re.search(r'<li><a href="(?P<article_id>[^"\?]+)(?:\?category=\d+)?">', line)
+            if m:
+                link = url_prefix + m.group("article_id")
+                state = 2
+        elif state == 2:
+            m = re.search(r'<strong class="tit_blog"[^>]*>(?P<title>.*?)</strong>', line)
+            if m:
+                title = m.group("title")
+                result_list.append((link, title))
+                state = 1
+
+    state = 0
+    for line in html:
+        if state == 0:
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
