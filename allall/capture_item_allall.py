@@ -32,6 +32,7 @@ def main() -> int:
         LOGGER.error(f"can't find such a directory '{feed_dir_path}'")
         return -1
 
+    url_prefix = ""
     link = ""
     title = ""
     state = 0
@@ -40,16 +41,25 @@ def main() -> int:
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<a href="?(?P<link>[^" ]+)[^>]*class="episode', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^/]+)', line)
             if m:
-                link = m.group("link")
+                url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<span>(?P<title>[^<]+)</span>', line)
+            m = re.search(r'<div class="body">', line)
             if m:
+                state = 2
+        elif state == 2:
+            m = re.search(r'</ul>', line)
+            if m:
+                break
+            
+            m = re.search(r'<li [^>]*onclick="location.href=\'(?P<link>[^\']+)\'"[^>]*><p>(?P<title>[^<]+)', line)
+            if m:
+                link = url_prefix + m.group("link")
                 title = m.group("title")
+                title = re.sub(r'&nbsp;', '', title)
                 result_list.append((link, title))
-                state = 0
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))

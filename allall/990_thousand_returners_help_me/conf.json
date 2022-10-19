@@ -5,15 +5,16 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_allall.py -n 5",
       "list_url_list": [
-        "https://allall33.com/completion/weblist/16613"
+        "https://allall33.com/webtoons/weblist/16613"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 2,
+      "referer": "https://allall33.com"
     },
     "extraction": {
       "element_class_list": [
-        "wt_viewer"
+        "view"
       ],
       "post_process_script_list": [
         "download_image.py"
