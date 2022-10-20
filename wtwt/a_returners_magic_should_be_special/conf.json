@@ -6,9 +6,7 @@
       "sort_field_pattern": "num=(\\d+)\\t",
       "encoding": "cp949",
       "unit_size_per_day": 1,
-      "list_url_list": [
-        "https://wtwt/v1?toon=2232"
-      ]
+      "list_url_list": []
     },
     "extraction": {
       "encoding": "cp949",

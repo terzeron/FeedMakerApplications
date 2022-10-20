@@ -5,9 +5,7 @@
       "ignore_old_list": true,
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 5",
-      "list_url_list": [
-        "https://wtwt/c1?toon=12599"
-      ],
+      "list_url_list": [],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1
     },
