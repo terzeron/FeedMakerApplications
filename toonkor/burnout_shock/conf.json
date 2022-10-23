@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_toonkor.py -n 5",
+      "list_url_list": [
+        "https://toonkor153.com/번아웃쇼크"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_img"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "render_js": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) ToonKor. All rights reserved.",
+      "description": "번아웃쇼크::ToonKor",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/burnout_shock.xml",
+      "title": "번아웃쇼크::ToonKor",
+      "url_prefix_for_guid": "https://toonkor132.com"
+    }
+  }
+}
