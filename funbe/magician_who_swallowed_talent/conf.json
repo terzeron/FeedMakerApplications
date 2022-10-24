@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_funbe.py -n 5",
+      "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
         "https://funbe174.com/재능-삼킨-마법사"
       ],
