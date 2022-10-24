@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_funbe.py -n 5",
+      "list_url_list": [
+        "https://funbe174.com/재능-삼킨-마법사"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 3
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_img"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "render_js": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) Funbe. All rights reserved.",
+      "description": "재능 삼킨 마법사::Funbe",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/magician_who_swallowed_talent.xml",
+      "title": "재능 삼킨 마법사::Funbe",
+      "url_prefix_for_guid": "https://funbe.site"
+    }
+  }
+}
