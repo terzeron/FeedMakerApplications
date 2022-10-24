@@ -3,5 +3,6 @@
   "num_retries": 2,
   "render_js": false,
   "timeout": 120,
+  "referer": "https://www.allall34.com",
   "url": "https://www.allall34.com/webtoons/weblist/16276"
 }
