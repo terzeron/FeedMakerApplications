@@ -1,12 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
       "list_url_list": [
         "https://comic.naver.com/webtoon/list?titleId=784417"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 1,
+      "is_completed": true,
+      "ignore_old_list": true
     },
     "extraction": {
       "element_class_list": [
