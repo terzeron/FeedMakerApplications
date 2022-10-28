@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_funbe.py -n 300",
+      "list_url_list": [
+        "https://funbe175.com/풍뢰도"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_img"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "render_js": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) Funbe. All rights reserved.",
+      "description": "풍뢰도::Funbe",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/sword_of_wind_and_thunder.xml",
+      "title": "풍뢰도::Funbe",
+      "url_prefix_for_guid": "https://funbe.site"
+    }
+  }
+}
