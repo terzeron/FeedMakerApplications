@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_agit.py -n 300",
+      "list_url_list": [
+        "https://agit164.com/azi_toon/11700.html"
+      ],
+      "render_js": true,
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_content_imgs"
+      ],
+      "post_process_script_list": [
+        "../convert_agit_url_to_blacktoon.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 아지트. All rights reserved.",
+      "description": "금강야차::아지트",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/vajrayaksa.xml",
+      "title": "금강야차::아지트",
+      "url_prefix_for_guid": "https://agit59.com"
+    }
+  }
+}
