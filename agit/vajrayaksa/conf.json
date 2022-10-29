@@ -8,7 +8,7 @@
         "https://agit164.com/azi_toon/11700.html"
       ],
       "render_js": true,
-      "sort_field_pattern": "num=(\\d+)\\t",
+      "sort_field_pattern": "\\t(\\d+) -",
       "unit_size_per_day": 1
     },
     "extraction": {
