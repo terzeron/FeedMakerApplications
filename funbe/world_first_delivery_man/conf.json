@@ -2,8 +2,8 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_funbe.py -n 5",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
         "https://funbe177.com/천하제일-표사"
       ],
