@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_funbe.py -n 5",
+      "list_url_list": [
+        "https://funbe177.com/천하제일-표사"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 3
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_img"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "render_js": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) Funbe. All rights reserved.",
+      "description": "천하제일 표사::Funbe",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/world_first_delivery_man.xml",
+      "title": "천하제일 표사::Funbe",
+      "url_prefix_for_guid": "https://funbe.site"
+    }
+  }
+}
