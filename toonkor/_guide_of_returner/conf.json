@@ -11,13 +11,11 @@
       "unit_size_per_day": 24
     },
     "extraction": {
-      "element_id_list": [
-        "toon_img"
-      ],
+      "bypass_element_extraction": true,
       "post_process_script_list": [
+        "../post_process_toonkor.py",
         "download_image.py"
-      ],
-      "render_js": true
+      ]
     },
     "rss": {
       "copyright": "Copyright (c) ToonKor. All rights reserved.",
