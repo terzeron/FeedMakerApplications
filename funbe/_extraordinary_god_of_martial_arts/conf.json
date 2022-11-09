@@ -10,12 +10,9 @@
       "list_url_list": []
     },
     "extraction": {
-      "render_js": true,
-      "referer": "https://funbe.ink/",
-      "element_id_list": [
-        "toon_img"
-      ],
+      "bypass_element_extraction": true,
       "post_process_script_list": [
+        "../post_process_funbe.py",
         "download_image.py"
       ]
     },
