@@ -1,170 +1,430 @@
-<div class="post_contents_list">
-<h3 class="blind">내이글루 글 목록</h3>
-<ul>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            어린해는 숫양 속에서 자신의 길을 반밖에 오지않았네!
-                                        </strong>
-<p class="text">이런것이었습니다! - 아스트로라브의 구조(2)을 올리고 일주일이 지날 동안 평소보다 더 없어진 덧글에 그나마 친절하게 어려웠다고 하시는 바람에 역시 과학분야의 글을 쉽게 쓰는 것은 정말 탈렌트가 필요한 것이구나 하는 것을 새삼 깨닫았습니다. 아무튼 아스트로라브라는 게 왜 아날로그 컴퓨터라고 하는지는 일단 빙산의 일각은 맛본거로 하고 이제 얘기는 다시 중세로</p>
-<p class="info">
-<span>2018-02-12 08:57</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3572782" target="_parent">덧글 3</a></span>
-</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>	<meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv='pragma' content='no-cache' />
+    <meta http-equiv='cache-control' content='no-cache' />
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8' />
+    <meta name="author" content="달을향한사다리" />
+    <meta name="keywords" content="타인에게 말걸기" />
+            <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:site" content="@egloos_zum">
+    <meta property="og:url" content="http://oblivion.egloos.com" />
+    <meta property="og:title" content="타인에게 말걸기" />
+    <meta property="og:description" content="마음은 바람보다 쉽게 흐른다" />
+    <meta property="og:image" content="http://pds2.egloos.com/logo/1/200609/21/91/a0002991.jpg" />
+    
+  <link rel="shortcut icon" href="http://md.egloos.com/img/favicon.ico" />
+    <link rel="pingback" href="https://rpc.egloos.com/rpc1" />
+    <title>타인에게 말걸기</title>
+    <script type="text/javascript" src="http://md.egloos.com/js/ap.js?ver=20170110"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/gd.js?ver=1.002"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/eg.js?ver=20170317"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/eg_new.js?ver=20170317"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/cr.js?ver=1.002"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/page/ins.js?ver=1.4"></script>
+
+    <script type="text/javascript" src="http://md.egloos.com/js/lib/prototype_v1511.js"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/control/Control.js"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/control/Control.ImgModal.js?ver=1.004"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/page/blog/compatible.js"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/player.js"></script>
+    <script type="text/javascript" src="http://md.egloos.com/js/finder/egloos_search.js"></script>
+
+<link type="text/css" rel="stylesheet" href="http://logo18.egloos.com/skin/css/a/000/29/a0002991_t.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://md.egloos.com/css/style_comment.css?ver=1.1" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://md.egloos.com/css/skin2_common.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://logo15.egloos.com/skin/css/00/00/00/00000062.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://md.egloos.com/css/egloo_navibar.css?ver=20190927" media="screen" />
+
+<link type="text/css" rel="stylesheet" href="http://md.egloos.com/css/common/popup.css?ver=2.00" />
+<link type="text/css" rel="stylesheet" href="http://md.egloos.com/css/common/button.css" />
+<link type="text/css" rel="stylesheet" href="http://md.egloos.com/css/search/blog_search.css" />
+<link type="text/css" rel="stylesheet" href="http://md.egloos.com/css/common/egloos_post_style.css?ver=2016122716">
+<link rel="stylesheet" type="text/css" href="http://md.egloos.com/css/event/settle_2016/year_end2016_post.css?ver=20170315" />
+<script type="text/javascript" src="http://md.egloos.com/js/modal/Modal.js"></script>
+<script type="text/javascript" src="http://md.egloos.com/js/modal/Modal.Center.js"></script>
+<script type="text/javascript" src="http://md.egloos.com/js/page/blog/Modal.BookmarkDlg.js?ver=1.002"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function() {
+    new Modal.BookmarkDlg('egloo_bookmark', {overlay: true,
+                'groupURL'     : "/exec/egloo_bookmark_group.php",
+                'remoteURL'    : "/exec/egloo_insbookmark_exec.php"});
+    if(''==''){
+            copy_contents('oblivion.egloos.com','달을향한사다리','2');
+    }
+});
+//]]>
+</script></head>
+<body>
+<iframe name="cmtviewfrm" id="cmtviewfrm" src="about:blank" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="display:block;border:0px;"></iframe>
+<div id="navibar_login">
+  <a onclick="sendGnbClick('zum_logo');" href="http://zum.com/page/go" target="_blank">ZUM</a> |
+  <a href="http://www.egloos.com/">이글루스</a> | 
+  <a href="https://sec.egloos.com/login.php?returnurl=http%3A%2F%2Foblivion.egloos.com%2F">로그인</a>
 </div>
-<div class="thumb"><img alt="어린해는 숫양 속에서 자신의 길을 반밖에 오지않았네!" height="100" src="http://thumbnail.egloos.net/460x0/http://pds26.egloos.com/pds/201802/12/46/e0087746_5a80bef531c94.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3572782" target="_parent"><span class="blind">포스트 링크</span></a>
+<div class="body">
+  <div class="container">
+    <div class="header">
+      <h1>
+        <a href="http://oblivion.egloos.com" title="타인에게 말걸기">타인에게 말걸기</a>
+      </h1>
+      <p class="url">
+        <a href="/" title="http://oblivion.egloos.com">oblivion.egloos.com</a>
+      </p>
+      <p class="topmenu">
+        <a href="/photo/" title="포토로그">포토로그</a> 
+      </p>
+    </div>
+    <hr class="line" />
+    
+    <div class="content_wrap">
+      
+      <div id="section_widemenu1" class="widemenu"></div>
+      <hr class="line" />
+      
+      <div id="section_content" class="content">
+        
+        <div>
+          <div class="post_view">
+            
+              
+              <div class="post_title_area">
+                <div class="post_title">
+                  <h2 class="entry-title" title="#">
+                    <a href="/4213005" name="4213005" title="10월 독서 목록">10월 독서 목록</a> <span class="post_title_category"><a href="/category/Yujin%27s%20Book%20Story">Yujin's Book Story</a></span>
+                  </h2>
+                </div>
+                <ul class="post_info">
+                  <li class="post_info_author">
+                    <span class="by">by</span> 달을향한사다리
+                  </li>
+                  <li class="post_info_date"><abbr class="published" title="2022/11/03 15:05">2022/11/03 15:05</abbr>
+                  </li>
+                  <li class="post_info_link"><a href="/4213005">oblivion.egloos.com/4213005</a>
+                  </li>
+                  <li class="post_info_cmtcount">
+                    <span class="txt">덧글수 :</span> 1
+                  </li>
+                </ul>
+              </div>
+              <div class="post_content entry-content">
+                <div class='hentry '><span class='copyright_entry' style='display:block;' title='10월 독서 목록@@**@@http://oblivion.egloos.com/4213005'></span>1. <b>미스틱 리버 상.하(데니스 루헤인, 최필원 역. 황금가지. 2005. 329쪽, 376쪽)</b><br/>: 케이티가 살해당했다. 남자친구와 함께 어린 시절부터 벗어나지 못했던 지긋지긋한 동네를 떠나기로 한 전날 밤에. 케이티는 친구들과 술에 만취해 있었고, 케이티에게 집착하는 전남친의 폭력적인 친구들과 마주치기도 했다. 그리고, 그 술집에는 케이티의 아버지 지미의 어린 시절 친구인 데이브도 있었다. 역시 지미의 어린 시절 친구였던 형사 숀이 케이티의 사건을 맡는다. 숀과 지미는 어릴 때 같은 공장에 다니던 아버지들 때문에 종종 함께 놀았고, 가끔은 데이브도 끼워주곤 했다. 어느 날 그들 앞에 차가 한 대 서고, 차에 타고 있던 남자들은 자신들이 경찰이라며 가난한 우범지대인 평지에 산다는 이유로 데이브를 데려갔다. 데이브는 며칠 후에야 돌아왔다.<br/><br/>어릴 때부터 알고 지냈던 세 명의 다른 삶. 다만 책 뒷표지의 설명처럼 그 사건 때문은 아니다. 무엇이 지미를 그 길로 이끌었을까? 단지 곶이 아니라 평지에 살아서? 아버지가 실직해서 가정 형편이 어려워져서? 지미는 그 차에 타지 않았다. 차에 탔던 데이브에게 마음 깊은 곳에 심연이 생긴 건 마음 아프지만 당연한 일일 것이다. 하지만 지미는? 결국 성악설인가? <br/><br/>비극이다. 케이티를 살해한 범인의 이야기도 그러하지만 세 남자 사이의 일이, 특히 가엾은 데이브의 결말이. 난 이 모든 게 지미의 탓인 것만 같다. 그래서 지미의 마음이 가장 궁금하다. 조금은 알 것도 같지만. 어쨌든 이 작가의 책들 중 가장 좋았다. 흔히 말하는 흡인력이나 흥미로운 전개와는 상관없이, 삶의 의외성, 하나의 사건과 한 번의 의심이 불러오는 나비효과를 잘 보여주기 때문에. <br/><br/><br/>2. <b>머더봇 다이어리:시스템 통제불능(마샤 웰스, 고호관 역. 알마. 2019. 216쪽)</b><br/>: 나는 보안유닛이다. 늘 장갑을 입고 헬멧을 쓴 채 고객이 내외부의 위험에 처하지 않도록 환경과 고객 자신을 통제한다. 나는 스스로를 살인봇이라고 부른다. 이유는, 비록 기억은 삭제되었지만 과거 언젠가 대량 살상을 한 적이 있기 때문이다. 지금은 나 자신의 지배모듈을 해킹해서 반드시 명령에 따르지 않아도 되는 상태지만 여전히 회사 소속으로 행성의 테라포밍 사전조사를 하는 학자 집단에 파견되어 일을 하고 있다. 그리고, 엔터테인먼트 피드에서 상당량의 드라마를 다운받아 티내지 않고 보고 있다.<br/><br/>기껏 통제에서 벗어나 한 일이 엔터테인먼트 컨텐츠 보기라니, 귀엽잖아. 게다가 들키지 않기 위해 여전히 회사의 통제하에서 보안유닛이라면 마땅히 해야 할 행동들을 하며 현상유지하는 안드로이드라니, 나랑 사고방식이 너무 비슷한 거 아냐? 난 책 소개만 보고 반했다. 하지만 기대만큼 아기자기하거나 쉽지는 않았다. 말랑한 초보자용이 아닌 꽤 본격적인 SF다. 세계관이 확실하고 은근 복잡하다. 그래도 이제 막 여정의 시작이니만큼 잘 따라가 볼 생각이다.<br/><br/><br/>3. <b>머더봇 다이어리:인공상태(마샤 웰스, 고호관 역. 알마. 2020. 225쪽)</b><br/>: 나는 멘사 박사를 떠났다. 일단 나 자신의 과거를 알아보기로 한다. 정말 학살이 있었나? 나 자신이 대량 학살을 일으켰나? 그곳으로 가기 위해 우주선 조종사봇을 구슬려 올라탄 나는 조종사봇이 이제껏 마주쳤던 단순하고 기능 위주의 안드로이드가 아니란 걸 알게된다. 그를 ART(Asshole Research Tranport. 재수없는 연구용 수송선)라 부르며 그와 함께 드라마를 보며 도착한 곳에서 나는 보안 전문가가 필요한 인간들과 마주친다.<br/><br/>주인공이 알고 싶었던 사건의 진상은 길지 않다. 단순한 건 아니지만 그냥 주인공의 마음을 위로하는 정도? 이 얘기에서 중요한 건 지배모듈을 풀어냈음에도 불구하고 인간을 보호해야 하는 본능(?)에서 벗어나지 못하고 이타적으로 행동하는 주인공의 모습을 통해 진짜 인간성이란 무엇인지를 보여준다. 비록 주인공은 인간이 되고 싶어하기는커녕 인간들 사이에 있고 싶어하지도 않지만. 인간을 위하는 모습은 ART에게서도 보인다. 주인공과 ART는 인간을 대하는 태도는 상반되지만 결국은 인간을 구하기 위한다는 점에서는 상통한다. 이걸 단순히 원래부터 그렇게 만들어진 인공존재라서, 라고 말할 수 있을까? 같은 인간끼리 겨우 돈 몇 푼에 서로를 베어대는 세상에서? 캐릭터의 매력이 폭발한 에피소드였다.<br/><br/><br/>4. <b>머더봇 다이어리:로그 프로토콜(마샤 웰스, 고호관 역. 알마. 2020. 232쪽)</b><br/>: 1권의 사건이 여전히 진행중이다. 주인공은 가해자임이 명백한 그레이크리스가 행한 불법 행위의 증거를 찾으려 테라포밍이 중단된 황폐한 행성으로 향하고, 그곳을 재활용하려 투입된 조사원들을 발견한다. 그리고 그들과 함께 있는 안드로이드 미키에게 증강인간 보안요원이라는 거짓말로 접근한다,<br/><br/>사실 이 시리즈를 읽으면서 처음엔 세계관이 너무 낯설다고 생각했다. 캐릭터는 명확했고 맘에 들었다. 하지만 은근히 진도가 느렸고 난 그 이유를 내가 SF적 세계관에 익숙치 않아서라고 생각했다. 그런데 3권을 읽다가 꺠달았다. 세계관보다는 공간이 낯설었다. 원래도 소설 속 공간을 구체적으로 머릿속에 그려내는 데에는 큰 재능이 없는 편이긴 하지만 이 시리즈는 더더욱 상상이 안 됐다. 용어가 낯선 탓도 있겠고.<br/><br/>그래도 재밌다. 말했듯 캐릭터가 좋다. 특히 미키. 저자가 로봇들을 바라보는 따뜻한 시선이 그대로 투영됐다. 서서히 성장하는 주인공의 모습도 사랑스럽고.<br/><br/><br/>5. <b>배신당한 유언들(밀란 쿤데라, 김병욱 역. 민음사. 2013. 416쪽)</b><br/>: 저자의 노벨 문학상 수상을 응원하며 10월 6일에 읽었다. 하지만 올해도 불발. 근현대 작가, 작곡가 들의 작품과 번역가, 지휘자들까지 저자가 보기에 오해당한(?) 예술가들을 이야기한다. 루슈디, 카프카, 스트라빈스키를 거쳐 다시 카프가의 번역을 분석하다가 헤밍웨이에게로 빠지기도 한다. 챕터 하나하나가 쉽지는 않았다. 하지만 그 안에서 보석을 발견하는 기쁨이 있었다. 탓할 건 나의 무지 뿐. 저자의 소설들이 현실에 단단히 발 딛고 있다고 생각한 내게, 저자가 사실임직함을 뛰어넘는 소설들을 이야기해 주고 실세계에서 도피하기 위해서가 아니라 실세계를 더욱 잘 파악하기 위해서(79쪽)라고 얘기해 주어서 더 좋았다. <br/><br/>아, 카프카의 『아메리카』를 읽기 전에 디킨스의 『데이비드 코퍼필드』를 먼저 읽을 것(116-117쪽 참고).<br/><br/><br/>6. <b>머더봇 아이어리:탈출전략(마샤 웰스, 고호관 역. 알마. 2021. 241쪽)</b><br/>: 3권에서 찾은 증거들은 멘사 박사에게 직접 전해주기로 한 주인공. 그런데 멘사가 보존연합이나 자유 무역항에 있지 않고 적인 그레이크리스 영역에 있다는 뉴스를 본다. 게다가 보존연합에서는 그들의 협박에 협상을 하려 1권의 동료들을 이곳에 보냈다.<br/><br/>시리즈의 마지막 이야기답게 1권에서 벌려 놓은 사건이 얼추 수습되는 듯 보인다. 하지만 다는 아니다. 역시나 주인공의 성장에 초점이 맞춰진다. 주인공은 멘사를 구출한다. 이것까지는 지금까지의 행동들과 다르지 않다. 보안 유닛의 기본적인 기능이기도 하고. 하지만 주인공은 단순히 구출에 대해서만 숙고하는 게 아니다. 멘사가 여전히 자신을 친구로 대해줄 지, 마주하면 어색할 지를 걱정한다.<br/><br/>사실 주인공이 인간적이 되는 걸 과연 성장으로 볼 수 있을까 고민됐다. 주인공은 인간이 되는 걸 원하지 않기도 하고 나 또한 고전적인 의미의 착하기만 한 주인공을 이런 시리즈에서 원하지 않기 때문이다. 하지만 단순히 인간과 비슷해지는 게 아니라, 주인공이 자신이 원하는 게 뭔지 알아차리고 자신의 진심을 들여다 볼 줄 알게 되는 게 진짜 성장이라는 생각이 들었다.<br/><br/>아직 떡밥이 모두 회수된 게 아니다. 과거 학살 사건의 배후와 진실, 그레이크리스와 회사, 보존연합 등이 얽힌 재판 등 저자가 맘만 먹으면 풀어낼 이야기들이 많다. 시리즈가 계속되길 원한다는 소리다. <br/><br/><br/>7. <b>넬라의 비밀 약방(사라 페너, 이미정 역. 하빌리스. 2022. 420쪽)</b><br/>: "2월 4일 새벽, 주인마님의 남편. 아침식사". 앳된 얼굴의 하녀 엘리자가 넬라에게 건넨 쪽지이다. 넬라는 약방의 가벽 뒤로 돌아가 독이 든 달걀을 제조한다. 아침식사에 쓸 수 있도록. 18세기, 넬라의 약방에는 알음알음으로 정보를 갖고 있는 여성들만 드나든다. 자신을 학대하고 괴롭히는 남성들에게 줄 독약을 구입하기 위해. 200년 후 런던 여행객 캐롤라인. 남편의 외도로 결혼기념 여행을 혼자 와버렸다. 템즈강 진흙을 뒤지는 체험에 참가한 캐롤라인은 빈 약병을 하나 발견한다.<br/><br/>사실 이런 식으로 과거와 현재의 이야기가 교차되는 전개 방식은 별로 좋아하지 않는다. 난 그냥 18세기 넬라의 독약들이 사용된 사연들이 궁금했을 뿐이다. 게다가 캐롤라인의 남편 극혐. 이기적이고 찌질하다. 예상대로 18세기 이야기들은 흥미진진했다. 어쩌면 클리셰일 수도 있겠지만. 어떤 방식으로든 여성들의 이름을 남기고자 했던 넬라의 마음이 안쓰러우면서도 고맙기도 했고, 또 한편으로는 당장의 생존을 도모하는 게 맞지 않나 싶다가도 애초에 그런 생각이었으면 넬라가 일반 약품도 팔았겠지 싶기도 했고. 물론 이 이야기는 해피엔딩이지만 - 과거, 현재 모두 - 여전히 독약을 입에 부어넣고 싶은 남자들은 존재한다.<br/><br/><br/>8. <b>마법소녀 은퇴합니다(박서련. 창비. 2022. 206쪽)</b><br/>: 화자는 신용카드 빚을 감당할 수 없어서 죽기로 결심한다. 한강 다리 위에 서있는데 택시가 멈추더니 하얀 옷을 입은 여자가 내려서는, 자신은 예언의 마법소녀 아로아라며 화자에게 마법소녀가 될 운명이라고 얘기한다. 화자는 곧 전마협(전국마법소녀협회)으로 가서 자신이 어떤 마법소녀가 될 것인지를 알아보기로 한다.<br/><br/>곧 빌런도 나타나고, 사랑 얘기도 전개된다. 얇지만 작가가 하고픈 이야기도 명확하고, 이야기가 진행되는 방식도 편안하다. 막 새롭거나 신박한 부분은 소재 뿐이다. 그나마 꽤나 현실적이기도 하다. 하지만 그 명확한 주제가 꽤나 위로가 된다. 별거 아니지만 내게도 능력은 있고, 그게 살아갈 이유가 될 수도 있다는 거. <br/><br/><br/>9. <b>멕시칸 고딕(실비아 모레노-가르시아, 공보경 역. 황금가지. 2022. 472쪽)</b><br/>: (약스포)1950년. 멕시코시티에서 적당히 놀며 지내는 대학생 노에미에게 어릴 때부터 함께 자란 사촌언니 카탈리나의 편지가 전달된다. 영국인과 결혼해서 폐쇄된 은광 근처의 저택에 살고 있는 카탈리나의 편지는 횡설수설과 공포로 가득차 있다. 그러잖아도 조카의 결혼이 마뜩찮았던 노에미의 아버지는 카탈리나를 살펴보고 가능하면 멕시코시티로 데려오라고 노에미를 보낸다. 카탈리나가 살고 있는 도일 가문의 저택 '하이 플레이스'에 도착한 노에미는 가문의 수장 하워드 도일이 병중에도 불구하고 집안 전체를 장악했고, 그가 열렬한 우생학 추종자라는 걸 알게 된다.<br/><br/>호러 소설은 맞다. 근데 읽는 동안보다는 다 읽고 나서 이 소설에 대해 반추해봤을 때가 더 소름끼쳤다. 읽는 동안에는 그저 장소가 문제일까, 사람이 문제일까 하는 생각을 했다. 결국은 둘 다 문제이긴 했다. 치료사 마르타의 말대로 집과 가족 둘 다 저주받았으니(188쪽). <br/><br/>장소에 사람이 묶여버리긴 했다. 그리고 그건 그 방법으로 자신이 영원한 힘을 가질 수 있을 거라고 믿은 남성들의 어리석음의 결과였다. 여성을, 원주민을 수단으로만 대하는 인간들. 그들을 여성들이 연대함으로써 벌하는 결말은 속시원했다. 노에미와 카탈리나 뿐 아니라 루스와 아그네스의 영혼까지. 최종적으로 저주가 끝나는 건 결국 여성의 고통이 해소됨으로써 가능했다. 이는 타인의 고통에 공감할 수 있는 여성만이 할 수 있는 일이었다(남성이지만 도움을 주고 싶어했던 프랜시스도 결국엔 저주에 묶여 끌려가는 모습을 보인다). 저주는 새롭지 않았으나 저주가 행해지고 쌓인 방식은 멕시코적이었고, 마지막까지 독자를 꽤 긴장시키는 소설이었다.<br/><br/><br/>10. <b>더 로스트 키친(에린 프렌치, 임슬애 역. 월북. 2021. 396쪽)</b><br/>: 소설처럼 읽히는 에세이. 유명 식당 '로스트 키친'의 오너 셰프인 저자의 인생 이야기이다. 얘기했듯 마치 소설처럼 흘러간다. 어릴 때부터 요리에 재능을 보였던 저자. 아버지가 운영하는 '다이너'에서 아르바이트로 요리를 시작한다. 저자에게 다이너는 애증의 대상이다. 자신에게 요리를 배우게 해줬고 돈을 벌 수도 있었으며 저자가 어릴 때다이너에서 일했던 조부모님의 따뜻한 기억도 있다. 하지만 폭력적이고 성차별적인 아버지에게 상처받은 곳이기도 하다. 저자의 아버지는 저자가 딸이라는 이유만으로 어릴 때부터 애정을 주지 않았고, 그나마 저자가 다이너에서 제 몫을 하게 되자 식당을 어린 딸에게 맡겨놓고는 폭주족 친구들을 불러모아 놀고먹기까지 한다. 대학에서 덜컥 싱글맘이 되어버린 저자가 부모님집으로 돌아와서 아버지의 눈치를 보며 덜덜 떠는 모습은 정말 미치도록 안쓰러웠다. 아이가 아들이라는 간호사 말에 엄마랑 안도하며 울고(98쪽) (저자의 아들)제임이 대를 이어줄 것(104쪽)이라고 하는 게 마치 우리나라의 80년대 이야기 같은 익숙한 불쾌함을 줬다. 이 책의 주요 등장 남성들은 내내 그런 느낌을 준다.<br/><br/>에세이에 이렇게 과몰입하기는 처음이다. 빌런은 처음부터 알아봤고, 저자가 그에게 빠진 마음도 가슴으로는 받아들일 수 없었지만 머리로는 이해했다. 그래도 그 놈이 한 짓은 정말 혈압 올라서 계속 쉬었다 읽어야 했다. 하지만, "이 난장판에서 얻어낸 것이 이런 작은 일상에 대한 감사밖에 없을지라도, 그것은 의미 있었다. 어쩌면 삶을 다시 시작하기에는 그것만으로도 충분했다(262쪽)"는 저자의 말 한 줄이면 충분했다. <br/><br/><br/>11. <b>경계선(욘 아이비데 린트크비스트, 남명성 역. 문학동네. 2021. 385쪽)</b><br/>: 『렛미인』 저자의 단편집. 사실 이 저자의 작품은 처음이다. 『렛미인』도 영화로, 그것도 할리웃 판으로 봤다. 그래서 솔직히, 신비로운 사랑 이야기들을 기대하긴 했다. 하지만 그보다는 그로테스크쪽에 가깝다. 그래서 가장 좋았던 작품은 「지나간 꿈은 흘려보내고」. 『렛미인』의 또다른 이야기이다. 작가의 말에서 또다른 사랑이야기였다는 말을 읽자 더 좋아졌다. 나도 오스카르의 미래가 가슴 아팠으니까. 다른 작품들도 싫은 건 아니었다. 필력이 좋은 작가다. 다른 장편을 읽어보고 싶다.<br/><br/><br/>12. <b>크림슨서클 살인사건(에드거 월리스, 양희경 역. 양파. 2021. 360쪽)</b><br/>: 사이코메트리 능력을 가진 탐정 데릭 예일. 잔악무도한 범죄집단 크림슨서클의 협박 편지를 받은 사업가 제임스 비어드모어의 요청으로 그의 시골 저택을 방문한다. 그런데 제임스가 총에 맞아 사망하는 사건이 발생한다. 제임스의 아들 잭은 옆집 이웃이자 제임스와 함께 일을 한 적이 있는 하비의 비서 탈리아 드러먼드를 짝사랑하지만 탈리아는 그를 밀어내기만 하고, 제임스가 총에 맞아 죽던 날 탈리아는 수상한 행적을 보인다. <br/><br/>연쇄 살인이 일어나고, 범인은 모두 붉은 동그라미 표식을 남긴다. 크림슨서클이다. 이 집단은 점조직으로 운영되어 서로가 서로를 모르며, 오직 수장만이 그들을 영입하고 운용한다. 하지만 수장의 얼굴은 늘 그림자 속에 숨어 있다. 이 수장이 누구일지가 이 소설의 가장 큰 궁금증이다. 그리고 난 못 맞췄다. 중간에 의심하긴 했고 복선 비슷한 것도 발견했는데 그냥 지나쳤다. 나중에 알고 나니 뇌 구석에서 희미하게 기억이 날락말락 하더라. 나쁘지 않았다.<br/><br/><br/>13. <b>어몽어스:우주의 배신자(로라 리비에르, 유민정 역. 빚은책들. 2021. 224쪽)</b><br/>: 승무원 10명의 우주선 안에서 시체가 발견됐다. 누가봐도 타살인 정황. 범인은 우리 중에 있다. 팀원들은 투표를 통해 범인을 방출하기로 한다.<br/><br/>내용이 매우 단순하고 결말도 고전적이다. 처음 살인이 일어나고 첫 방출까지가 너무 빠르고 근거가 부족해서 당황했다(우주복 안에 사람 있어요!). 게임을 바탕으로 쓰여진 소설이라는 걸 알고는 있었지만 정작 게임에 대해 너무 몰라서 더더욱 그랬다. 세계관과 캐릭터를 내가 잘 몰라서 그런지 모르겠지만 화자 외엔 다들 생각이 짧고 경솔한 캐릭터 같았다. 사건 전개도 단순하고. 그래도 난 기대가 없었고 머리 식히려고 읽은 거라 나쁘지 않았다. 게임을 좋아하는 사람들도 재밌게 읽었는지 궁금하다.<br/><br/><br/>14. <b>레크리스:거울 저편의 세계(코넬리아 푼케, 함미라 역. 꿈소담이. 2010. 470쪽)</b><br/>: 제이콥의 아버지가 1년 전 갑자기 사라지고, 어머니는 무기력하기만 하다. 제이콥은 한밤중에 아버지의 서재에 몰래 들어갔다가 거울을 통해 다른 세상으로 들어간다. 이후 제이콥은 두 세계를 오가며 살아간다. 그러다 어느날, 동생 빌이 형을 따라 거울 세계로 왔다가 고일족의 발톱에 부상을 당해 점점 고일족으로 변해가는데...<br/><br/>판타지답지 않게 차분하고 가라앉은 문체가 좋았다. 원래 이런 건지 아니면 번역자의 역량인 건지. 내용은 어렵지 않았으나 역시 역자의 단어 선택이 꽤나 묵직했다. 초등학생한테 읽히려면 고학년, 그것도 독서 내공이 어느정도 있는 아이라야 할 것 같다. 거울 속 세계는 현실 세계의 조금 늦춰진 버전 같다. 점점 현실 세계의 상품들을 따라한다. 사진이나 영상이라든가, 기차라든가. 물론 이종족도 있고 마법도 있다. 그리고 우리에게 익숙한 동화들이 변주되기도 한다. 현실 세계처럼 거울 세계도 살기는 쉽지 않고, 권력은 잔악하며 배신과 권모술수가 난무한다. 물론 그럼에도 불구하고 판타지답게 해피엔딩이기는 하다. 이야기가 계속될 것 같은 암시는 있지만. <br/><br/><br/>15. <b>클래스(프랑수아 베고도, 이승재 역. 문학동네. 2010. 299쪽)</b><br/>: 저자 자신의 경험이 반영된, 파리 외곽 지역의 중학교 이야기. 책 소개에는 따뜻한 시선 어쩌구 했는데 솔직히 못 느꼈다. 엉망진창인 학생들과 무기력한 직장인일 뿐인 선생들. 학생들은 기본적인 태도조차 갖추지 못했다. 이유는 가정형편? 대부분이 이민자 가정이고 부모와 함께 살지 못하는 경우도 있다. 초등학생인 동생을 학교에 데려다 주기 위해 지각하는 경우도 있을 정도. 그렇다고 선생들이 아이들에게 진심인 것 같지도 않다. 그래. 선생들이 지친 건 이해는 간다. 하지만 그렇다고 막말을 하기까지. 아무리 2000년대 초반이라지만 여학생에게 창녀같다고 해도 되는 거야? 2000년대 초반 파리 외곽지역 중학교 교육의 실상이 궁금한 사람이 아니라면 지루할 것 같다. 내가 그랬다.<br/><br/><br/>16. <b>당신의 간을 배달하기 위하여(임태운 외. 사계절. 2022. 288쪽)</b><br/>: 옛 이야기들을 SF로 다시 썼다. 첫 작품인 심청전을 다시 쓴 박애진의「깊고 푸른」이 재밌어서 열심히 읽고 있었는데 별주부전을 재해석한 「당신의 간을 배달하기 위하여-코닐리오의 간」(임태운)이 너무나 내 스타일의 이야기여서 기분이 급상승했다. 정말정말 좋았다. 뒷이야기들이 시시하게 느껴질 만큼. 「부활행성-홍련의 모험」도 맘에 들었지만 표제작만큼은 아니었다. 대부분의 이야기들이 약자의 편에서, 약자들의 연대를 이야기한다는 점에서 좋았지만 그런 맥락에서 김성희의 작품은 좀...<br/><br/><br/>17. <b>날개가 닮았네(미하엘 크베팅, 전은경 역. 책세상. 2019. 275쪽)</b><br/>: 독일 기초과학연구소 연구원 저자가 비행 연구 프로젝트를 위해 기러기를 부화시키고 키운다. 일곱 마리의 새끼를 부화시키는 데 성공한 저자는 캠핑카에서 생활하며 기러기가 처음 각인한 순간부터 모이를 먹이고 연못에서 처음 헤엄을 가르치고 깃털이 자라며 비행을 시작하는 순간들을 이야기한다. <br/><br/>예상했던 것만큼의 사랑스러움이나 감동은 없었지만 담담한 서술에서 은근한 위로를 받았다. 특히 야생 기러기를 필연적으로 떠나보내는 장면들에서. 신파나 눈물바람이 아니어서 좋았다. 또한 저자는 자신이 모든 것을 가르치려 하지만 기러기들은 놀라운 자생력으로 스스로 많은 것들을 깨우친다. 기다리면 언젠가는 이룬다는 것. 그게 또한 위로가 되었다.<br/><br/><br/>18. <b>이중연인(전경린. 나무옆의자. 2019. 207쪽)</b><br/>: 잡지사 기자 수완. 모임에서 눈이 가는 남자 이열을 만나지만 그와의 관계를 발전시키려는 찰나에 그의 과거 여자가 잠시 나타났다 사라지고, 그 틈새로 2년 전 딱 한 번 강한 느낌을 주었던 황경오와 깊은 사이가 된다. 이열은 수완에게 자신을 향한 문을 열어두라 하고, 수완은 이열에게 황경오와의 관계에 대해 숨김없이 얘기한다.<br/><br/>'마음을 열고 한 사람을 받아들이면 다른 사람이 동시에 다가온다.'(98쪽) 드문 경험은 아닐 것이다. 뭐, 연애는 타이밍이니까. 내가 연애를 막 시작해서 아름답게 빛이 나면, 그 빛은 내 연인에게만 보이는 게 아니다. 어쩌면 수완의 행동이 이열을 배려하지 않는 어장관리처럼 보일 지 모르겠지만 난 이열을 끊어내지 않은 수완이 기특했다. 기다려준 이열도 고맙고. 작가 특유의 극적인 전개는 엷어지긴 했지만 여전히 남아 있다. 그리고 난 그게 퍽 맘에 든다, 여전히. <br/><br/><br/>19. <b>당신을 기다리고 있어(김보영. 파란미디어. 2020. 142쪽)</b><br/>: 행성 여행이 일반화 된 가까운 미래. 행성으로 이주하는 가족을 배웅 간 약혼녀를 기다리는 남자의 편지들이다. 지구 시간으로는 9년, 여자의 체감 시간은 4개월. 남자는 기다리는 시간을 줄이기 위해 지구 주위를 광속으로 도는 배에 탑승해서 기간을 4년 6개월로 줄이기로 한다. 하지만 둘의 일정은 계속 어긋난다.<br/><br/>시간은 누구에게나 공평하게 흐르는 거였는데. 예전(그리고 현실의) 연인들은 거리만 극복하면 됐다. 근데 성간 여행이 일반적이 되고 나니 이렇게 연인이 어느 시간을 헤매고 있는지조차 모를 수도 있구나. <br/><br/>프로포즈를 위해 작가의 지인인 남자가 작가에게 특별히 부탁해서 쓴 소설이라는데, 읽으면서 의아했다. 둘이 계속 어긋나기만 해서. 마음 아프지만, 이쯤되면 온 우주가 이들의 결합을 반대하고 있는게 아닐까 하는 생각도 한 번은 해봐야 하는 거 아냐? 다행히 해피엔딩이다. 현실도 해피하다니 더 다행이다.<br/><br/><br/>20. <b>당신에게 가고 있어(김보영. 파란미디어. 2020. 152쪽)</b><br/>: 『당신을 기다리고 있어』의 여성 입장에서의 편지들이다. 남자는, 물론 여러 외부 상황 때문에 방황하기는 하지만 대부분의 위협이 상황으로부터 온다. 하지만 여자에게 가해지는 위협은, 물론 상황 때문이기는 하지만, 사람에게서 직접적으로, 구체적으로 온다. 읽으면서 남자보다 여자가 더 고생을 많이 한 게 마음 아팠다. 하지만 현실에서도 그건 마찬가지잖아. 사람과 사회에 더 크게 치이는 건 항상 여자들이지. 해피엔딩은 좋기는 한데, 너무 오랜 시간이 걸렸다는 게 여전히 마음아프다.<br/><br/><br/>21. <b>미래로 가는 사람들(김보영. 파란미디어. 2020. 240쪽)</b><br/>: SF ‘스텔라 오디세이 트릴로지’중 마지막 권이기는 한데 쓰여지기는 가장 먼저 쓰여졌다고 한다. 위의 두 권은 이 책의 주인공 성하의 부모님 이야기로 상상해서 쓴 것이라고. 성하는 '시간 여행자'다. 늘 우주를 떠돈다. 광속에 가깝게 여행하면서 지구의 문명이 멸망하고 다시 세워지는 걸 반복해서 본다. 그는 우주의 끝으로 가고 싶다.<br/><br/>성하가 마주치는 초기 문명과 그 안의 사람들 이야기는 심상하게 읽었는데, 마지막 챕터가 압도적으로 좋았다. 솔직히 초기 문명의 이야기를 읽으며 어쩌면 작가의 이 상상이 세계의 진실일지도 모른다는 생각도 들었다. 왜, 세계 몇 대 미스터리 그런 거 있잖아. 이 작가의 상상대로라면 다 설명된다. 어쨌든 마지막 챕터 읽으면서 결말 부분의 묘사들에서 앞의 두 권과는 또다른 아름다움을 보았다. 우주는 이렇게 죽고 이렇게 부활한다.<br/><br/><br/>22. <b>그곳은 평화롭겠지(헤르브란트 바커르, 신석순 역. 문학과지성사. 2011. 354쪽)</b><br/>: 헬머는 아비를 위층 침실로 옮기고 아래층을 정돈하고 페인트칠을 한다. 30년이 넘는 시간 동안 이 농장에서 일해왔다. 쌍둥이 동생 헹크가 죽은 이후로. 아비는 곧 죽을 것이다. 헬머는 아비를 잘 들여다보지도 않는다. 아비가 더 아꼈던 쪽은 헹크였다. 헹크는 아비와 농장일을 함께 하곤 했고 헬머는 아비 말에 따르면 단어 따위나 배우러 대학에 다녔다. 하지만 헹크가 여자친구 리트가 모는 차에 탄 채로 강에 빠져 죽었다.<br/><br/>아름답지만 마냥 평화롭지는 않다. 부엌 창 밖 물푸레나무 가지 위에 항상 앉아있는 뿔까마귀처럼, 성가신 일들은 계속된다. 특히 리트. 진짜 두 모자가 정서적으로 이해가 되질 않았다. 헬머는 벽에 지도를 붙여놓고 덴마크의 지명을 손으로 짚는다. 읽는 내내 헬머가 진짜 평화를 갖기를 바랐다. 우울과 적막과 원망을 몰아내지 못하더라도, 고요하기를. 지난 시간을 후회하지는 않더라도 남은 시간만은 온전히 그의 것이기를. <br/><br/>해피엔딩이다. 마지막 문장이 정말정말 좋았다. <br/><br/><br/>23. <b>미스터리한 이방인(마크 트웨인, 오경희 역. 책읽는귀족. 2015. 238쪽)</b><br/>: 1590년 오스트리아 시골 마을. 세 명의 소년 니콜라우스, 테오도르, 세피는 늘 함께 다닌다. 셋은 어느날 숲 속에서 신비한 능력을 가진 아름다운 소년을 만난다. 해맑게 여러 물건과 음식들을 만들어내고, 생명을 만들었다가 아무렇지 않게 죽이기도 하는 이 소년은 자신의 이름이 사탄이라고 한다. 니콜라우스와 친구들은 마침 고통을 당하고 있던 마을의 피터 신부를 위해 사탄에게 부탁들 한다.<br/><br/>저자의 성악설에 기반한 신학적 통찰력이 보인다. 내내 사회와 개인에 대해 비판적이고 냉소적이다. 뒤편의 해설에서 당시 저자의 개인적/사회적 상황이 좋지 않았음을 알게 되었지만 단지 그 이유만은 아닐 것이다. 살면서 내내 성악설을 믿을 만한 일들을 겪었겠지, 나처럼. 표제작 외에도 세 편의 콩트가 함께 실려 있는데 이 세 편은 저자의 기존 작품들과 결을 같이하고 있다.<br/><br/><br/>24. <b>위스퍼 네트워크(챈들러 베이커, 이동교 역. 문학동네. 2021. 501쪽)</b><br/>: 스포츠 의류 브랜드 트루비브의 법무팀 세 여성 변호사 슬론, 아디, 그레이스. 슬론은 초등학생 딸을 키우고 있고 결혼 직전에 여기에 입사했다. 그레이스는 막 출산 휴가에서 복귀했다. 아디는 이혼 후 혼자 아들을 키우고 있으면서 역시 싱글맘인 회사 청소원 로살리타를 조금씩 도와준다. 3월 20일, 오랜 시간동안 재직했던 CEO가 갑작스레 심장마비로 사망하고, 법무팀의 대표 변호사인 에임스 개릿이 차기 CEO로 급부상한다. 그리고 약 3주 후 4월 12일 회사 고층 사무실에서 추락사고가 발생한다.<br/><br/>잘 쓴 소설이지만 난 너무 읽기 힘들었다. 일단 난 현실에 너무 비근한 소설을 좋아하지 않는다. 그렇다고 꽃길에서, 구름 속에서 둥둥 떠다니는 얘기만 읽고 싶다는 게 아니라, 현실에서 매일매일 듣고 겪고 보는 일들을 소설에서까지 읽고 싶지 않다는 뜻이다. 그런 면에서 이 소설은 나와 맞지 않았다. 빌런이 죽는다는 건 처음부터 짐작이 가능하기는 하지만, 죽기까지의 괴로운 이야기가 너무 길었다. 게다가 시기적으로도 회사에서 일에 한창 치일 때여서 이 소설을 읽는 이틀 내내 스트레스였다. 하지만 말했듯 잘 쓴 소설이다. 현실을 잘 반영한 이야기를 읽으며 분개하고 싶은 사람이라면 잘 맞을 것 같다. <br/><br/>아, 그 문서는 현실에서도 있었으면 하지만 역시 좀 위험하겠지, 여러 면에서.<br/><br/><br/>25. <b>나인(천선란. 창비. 2021. 426쪽)</b><br/>: 열일곱 살 유나인. 식물원을 하는 이모와 둘이 살고 있고, 학교에서는 미래, 현재와 친하다. 교문 앞에서 실종된 선배를 찾는 전단지를 나눠주는 선배의 아버지를 본 날, 저멀리서 나인을 바라보고 있는 또래의 낯선 남자애도 발견한다. 그리고 나인의 귀에는 소란스러운 소곤거림이 들리고, 손톱 사이에서는 새싹이 자라난다.<br/><br/><br/>나인은 강하다. 단지 누브족이어서, 혹은 누브족 중에서 강한 게 아니다. 진실을 알게 되었을 때 외면하지 않을 만큼, 진실을 알아야 할 사람들에게 알려주기 위해 노력할 만큼 강하다. 사람 한 명이 사라진다는 건 그 한 명의 멸종이라고 말할 만큼 강하다. 나인의 그 말이 얼마나 위로가 되어주었는지. 한 명의 멸종을 잊지 않아 준 나인이 고맙다.<br/>
+       <!--
+       <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		    xmlns:dc="http://purl.org/dc/elements/1.1/"
+		    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+       <rdf:Description
+	        rdf:about="http://oblivion.egloos.com/4213005"
+	        dc:identifier="http://oblivion.egloos.com/4213005"
+	        dc:title="10월 독서 목록"
+	        trackback:ping="http://oblivion.egloos.com/tb/4213005"/>
+       </rdf:RDF>
+       -->
+<div style="line-height:12px;padding:35px 0 5px">
+                  <a href="#신고" onclick="window.open('http://www.egloos.com/report/popup.php?posturl='+decodeURIComponent('http://oblivion.egloos.com/4213005'), 'pop_badreport','width=500, height=460'); return false">
+                    <img src="http://md.egloos.com/img/icon/ico_badreport.png" alt="신고" style="vertical-align:top;padding-right:3px"><span style="font-size:11px;letter-spacing:-1px">신고</span>
+                  </a>
+                </div></div> <div class="post_taglist f_clear"><strong>태그 : </strong><a href="/tag/미스틱리버" rel="tag">미스틱리버</a>, <a href="/tag/머더봇" rel="tag">머더봇</a>, <a href="/tag/배신당한유언들" rel="tag">배신당한유언들</a>, <a href="/tag/비밀약방" rel="tag">비밀약방</a>, <a href="/tag/마법소녀" rel="tag">마법소녀</a>, <a href="/tag/멕시칸고딕" rel="tag">멕시칸고딕</a>, <a href="/tag/크림슨서클" rel="tag">크림슨서클</a>, <a href="/tag/경계선" rel="tag">경계선</a>, <a href="/tag/로스트키친" rel="tag">로스트키친</a>, <a href="/tag/당신의간을배달하기위하여" rel="tag">당신의간을배달하기위하여</a>, <a href="/tag/이중연인" rel="tag">이중연인</a>, <a href="/tag/당신에게가고있어" rel="tag">당신에게가고있어</a>, <a href="/tag/당신을기다리고있어" rel="tag">당신을기다리고있어</a>, <a href="/tag/미래로가는사람들" rel="tag">미래로가는사람들</a>, <a href="/tag/나인" rel="tag">나인</a></div> 
+              </div>
+              <div class="post_footer_area f_clear">
+                <div class="post_tail">
+                  <a href="#trb" onclick="feedbackview('post_trackback', 'a0002991', 4213005, 1, 1);return false;" class="post_tail_trbk">트랙백(<span id="trbcnt4213005" class="count">0</span>)</a><a href="#cmt" onclick="feedbackview('post_comment', 'a0002991', 4213005, 1, 1);return false;"  class="post_tail_cmmt">덧글(<span id="cmtcnt4213005" class="count">1</span>)</a>
+                </div>
+                <div class="post_admin">
+                  
+                </div>
+              </div>
+              <hr class="line" />
+              <div class="post_link" id="post_link_4213005" style="display:none"></div>  
+            
+            
+            
+            
+          </div><div class="post_paging">
+          
+          <span class="page"><strong> 1 </strong><a href="/page/2"> 2 </a><a href="/page/3"> 3 </a><a href="/page/4"> 4 </a><a href="/page/5"> 5 </a><a href="/page/6"> 6 </a><a href="/page/7"> 7 </a><a href="/page/8"> 8 </a><a href="/page/9"> 9 </a><a href="/page/10"> 10 </a></span><span class="next"><a href="/page/11">다음</a></span> 
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <hr class="line" />
+      
+      <div id="section_widemenu2" class="widemenu"></div>
+      <hr class="line" />
+      <hr class="line" />
+    </div>
+    <div id="section_sidebar1" class="column">
+      <div>
+        <div class="widget widget_M00000001">
+   <h3 style="display:none;"> </h3>
+   <div class="widget_content">
+    
+    </div>
 </div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            이런것이었습니다! - 아스트로라브의 구조(2)
-                                        </strong>
-<p class="text">둥근 하늘을 캡처해봅시다! - 아스트로라브의 구조 (1)에서 실수를 크게 하여서 이거 이거 면목이 없습니다. 아무튼 잘못된 그림과 내용은 수정을 했습니다. 이번엔 이어서 아스트로라브의 뒷면으로 갑니다.아스트로라브의 버전이 워낙 많지만 일단 제일 표준적인 모습을 한번 봅시다.실은 뒷면도 버전이 많습니다만, 일단 기본형으로 설명을 드리겠습니다. 앞면은 원래 둥</p>
-<p class="info">
-<span>2018-02-04 14:17</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3572491" target="_parent">덧글 8</a></span>
-</p>
+      </div>
+      <div class="widget menu_calendar">
+        
+        <h3>달력</h3>
+        <div class="widget_content">
+                      <div class="cal_month f_clear">
+            <span class="prev"><a title="이전달" href="/archives/2022/10">이전달</a></span>
+            <span class="now"><a title="2022년 11월" href="/archives/2022/11">2022년 11월</a></span>
+            <span class="next"><a title="다음달" href="/archives/2022/12">다음달</a></span>
+            </div>
+            <table class="tb_cal">
+            <caption>2022년 11월</caption>
+            <tbody>
+            <tr>
+            <th class="sun">S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th class="sat">S</th>
+            </tr>
+<tr>
+  <td class="sun"></td>
+  <td></td>
+  <td>1</td>
+  <td>2</td>
+  <td class="on"><a href="/archives/2022/11/3">3</a></td>
+  <td>4</td>
+  <td class="sat">5</td>
+</tr>
+<tr>
+  <td class="sun">6</td>
+  <td>7</td>
+  <td>8</td>
+  <td>9</td>
+  <td>10</td>
+  <td class="today">11</td>
+  <td class="sat">12</td>
+</tr>
+<tr>
+  <td class="sun">13</td>
+  <td>14</td>
+  <td>15</td>
+  <td>16</td>
+  <td>17</td>
+  <td>18</td>
+  <td class="sat">19</td>
+</tr>
+<tr>
+  <td class="sun">20</td>
+  <td>21</td>
+  <td>22</td>
+  <td>23</td>
+  <td>24</td>
+  <td>25</td>
+  <td class="sat">26</td>
+</tr>
+<tr>
+  <td class="sun">27</td>
+  <td>28</td>
+  <td>29</td>
+  <td>30</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+            </tbody>
+            </table>
+            
+        </div>
+      </div>
+      <div class="widget menu_category">
+        
+        <h3>카테고리</h3>
+        <ul class="widget_content">
+          <li class=""><a href="/category/Without%20Him">Without Him</a><span class="count">(18)</span>
+          </li><li class=""><a href="/category/%EA%B8%B0%EC%96%B5%EC%9D%98%20%EC%A0%80%ED%8E%B8">기억의 저편</a><span class="count">(10)</span>
+          </li><li class=""><a href="/category/%EA%B7%B8%EB%85%80%EC%9D%98%20%EB%8F%85%EB%B0%B1">그녀의 독백</a><span class="count">(59)</span>
+          </li><li class=""><a href="/category/%ED%9E%98%EB%82%B4%EC%84%9C%20%EC%82%B4%EC%95%84%EA%B0%80%EA%B8%B0">힘내서 살아가기</a><span class="count">(274)</span>
+          </li><li class=""><a href="/category/Yujin%27s%20Book%20Story">Yujin's Book Story</a><span class="count">(539)</span>
+          </li><li class=""><a href="/category/For%20.NET">For .NET</a><span class="count">(78)</span>
+          </li><li class=""><a href="/category/For%20Architecture">For Architecture</a><span class="count">(63)</span>
+          </li><li class=""><a href="/category/For%20DB">For DB</a><span class="count">(13)</span>
+          </li><li class=""><a href="/category/For%20Ajax">For Ajax</a><span class="count">(12)</span>
+          </li><li class=""><a href="/category/For%20System">For System</a><span class="count">(10)</span>
+          </li><li class=""><a href="/category/For%20Financial">For Financial</a><span class="count">(178)</span>
+          </li><li class=""><a href="/category/For%20Fund">For Fund</a><span class="count">(73)</span>
+          </li><li class=""><a href="/category/For%20Housing">For Housing</a><span class="count">(36)</span>
+          </li><li class=""><a href="/category/For%20Info">For Info</a><span class="count">(160)</span>
+          </li>
+        </ul>
+      </div>
+      <div class="widget menu_comment" id="widget_menu_comment">
+        
+        <h3>최근 덧글</h3>
+        <div class="widget_content">
+          <ul>
+            <li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4211945#8893314.01">제임스 선생 단편집 진짜 추천입니당ㅎㅎㅎㅎ 저도 하인라인 &lt;..</a></span><em class="fn">by 달을향한사다리</em> <em class="date">10/19</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4211945#8893314">1, 7번 보관함에 넣었습니다. 제임스 선생 장편만 읽고 단편집..</a></span><em class="fn">by 에르고숨</em> <em class="date">10/4</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4211280#8892521.01">3번은, 저자가 할 말이 많더라구요. 형식적인 면에서 욕심을 좀..</a></span><em class="fn">by 달을향한사다리</em> <em class="date">9/13</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4210315#8892404.01">네, 참 좋은 책이죠^^ 마지막 챕터가 정말 백미였던 것 같아요..</a></span><em class="fn">by 달을향한사다리</em> <em class="date">9/13</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4211280#8892521">3번 저런 내용이었군요. 읽어볼까 했는데, 마음 단단히 먹고 ..</a></span><em class="fn">by 이요</em> <em class="date">9/7</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4210315#8892404">참 오랜만에 이 블로그에 왔는데 저도 재미있게 읽은 책이 있어 ..</a></span><em class="fn">by 대쪽</em> <em class="date">9/4</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4207669#8891209.01">역시 명민하게 핵심을 짚어내시네요, 간단한 장치로 할 말을 다..</a></span><em class="fn">by 달을향한사다리</em> <em class="date">5/13</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4207669#8891209">읽고 왔습니다! 간단한 장치로 할 말을 다 하는 작품. 안타깝고 ..</a></span><em class="fn">by 에르고숨</em> <em class="date">5/11</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4207669#8891047.01">저는 조금 슬펐어요. 이웃님은 많이 슬프실 수도... 맨날 월말..</a></span><em class="fn">by 달을향한사다리</em> <em class="date">5/2</em>
+            </li><li>
+              <span class="desc"><a href="http://oblivion.egloos.com/4207669#8891047">아웅. 이거 뭐예요. 엄청 슬플 것 같아요. 보관함!
+링크 새 글에..</a></span><em class="fn">by 에르고숨</em> <em class="date">4/29</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="widget menu_tagcloud">
+        
+        <h3>태그</h3>
+        <div class="widget_content">
+          <a href="/tag/빨강파랑어쩄든찬란" rel="tag" class="tag_level_1">빨강파랑어쩄든찬란</a>
+<a href="/tag/멕시칸고딕" rel="tag" class="tag_level_1">멕시칸고딕</a>
+<a href="/tag/로스트키친" rel="tag" class="tag_level_1">로스트키친</a>
+<a href="/tag/더는잡들지못하리라" rel="tag" class="tag_level_1">더는잡들지못하리라</a>
+<a href="/tag/미래로가는사람들" rel="tag" class="tag_level_1">미래로가는사람들</a>
+<a href="/tag/리슐리외호텔살인" rel="tag" class="tag_level_1">리슐리외호텔살인</a>
+<a href="/tag/빛의눈속임" rel="tag" class="tag_level_1">빛의눈속임</a>
+<a href="/tag/당신을기다리고있어" rel="tag" class="tag_level_1">당신을기다리고있어</a>
+<a href="/tag/굿모닝미드나이트" rel="tag" class="tag_level_1">굿모닝미드나이트</a>
+<a href="/tag/미스틱리버" rel="tag" class="tag_level_1">미스틱리버</a>
+<a href="/tag/배신당한유언들" rel="tag" class="tag_level_1">배신당한유언들</a>
+<a href="/tag/당신에게가고있어" rel="tag" class="tag_level_1">당신에게가고있어</a>
+<a href="/tag/빛이드는법" rel="tag" class="tag_level_1">빛이드는법</a>
+<a href="/tag/이중연인" rel="tag" class="tag_level_1">이중연인</a>
+<a href="/tag/별을위한시간" rel="tag" class="tag_level_1">별을위한시간</a>
+<a href="/tag/붉은실끝의아이들" rel="tag" class="tag_level_1">붉은실끝의아이들</a>
+<a href="/tag/굿모닝" rel="tag" class="tag_level_1">굿모닝</a>
+<a href="/tag/나인" rel="tag" class="tag_level_1">나인</a>
+<a href="/tag/비밀약방" rel="tag" class="tag_level_1">비밀약방</a>
+<a href="/tag/머더봇" rel="tag" class="tag_level_1">머더봇</a>
+<a href="/tag/크림슨서클" rel="tag" class="tag_level_1">크림슨서클</a>
+<a href="/tag/마법소녀" rel="tag" class="tag_level_1">마법소녀</a>
+<a href="/tag/겨우살이살인사건" rel="tag" class="tag_level_1">겨우살이살인사건</a>
+<a href="/tag/리시안셔스" rel="tag" class="tag_level_1">리시안셔스</a>
+<a href="/tag/엔드오브맨" rel="tag" class="tag_level_1">엔드오브맨</a>
+<a href="/tag/외로움의습도" rel="tag" class="tag_level_1">외로움의습도</a>
+<a href="/tag/희망의질감" rel="tag" class="tag_level_1">희망의질감</a>
+<a href="/tag/밤으로의자전거여행" rel="tag" class="tag_level_1">밤으로의자전거여행</a>
+<a href="/tag/경계선" rel="tag" class="tag_level_1">경계선</a>
+<a href="/tag/당신의간을배달하기위하여" rel="tag" class="tag_level_1">당신의간을배달하기위하여</a>
+
+          <div class="allview">
+            <a href="/tag">태그 전체보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="widget menu_rss">
+        
+        <h3>RSS</h3>
+        <div class="widget_content">
+          <a href="http://rss.egloos.com/blog/oblivion" target="_blank"><img src="http://md.egloos.com/skn/tpl/menu_rss/1/rss_practika_64.png" alt="RSS" /></a>
+        </div>
+      </div>
+      <div class="widget menu_logo">
+        
+        <h3>이글루스 로고</h3>
+        <div class="widget_content">
+          <a href="http://www.egloos.com/" title="이글루스"><img src="http://md.egloos.com/skn/tpl/menu_logo/1/banner_ffffff.gif" alt="이글루스" /></a>
+        </div>
+      </div>
+      <div id="sidebar1_blank" class="blank"></div>
+    </div>
+    <hr class="line" />
+    <div class="footer f_clear">
+      <div class="license">
+        <span class="copyright"><a href="http://oblivion.egloos.com" title="powered by egloos.com">oblivion.egloos.com</a> is powered by <a href="http://www.egloos.com/">Egloos</a>.</span> Subscribe to <a href="http://rss.egloos.com/blog/oblivion" target="_blank" title="RSS">RSS</a> <span class="skinby">Skin design by
+        <a href="http://skin2make.egloos.com" target="_blank">egloos</a>.</span>
+      </div>
+    </div>
+  </div>
+</div><iframe src="http://statweb.egloos.com/estat/send?bid=a0002991&ref=&uid=&mbid=&openflag=" style="width: 0px; height: 0px; border: 0px solid #fff;"></iframe>
+<img width="0" height="0" border="0" src="http://oblivion.egloos.com/egloo_pds.php?eid=a0002991" alt="" style="display:none;" />
+<form id="trackfrom" name="trackfrom" method="post" action="">
+<input type="hidden" name="url" value="" />
+<input type="hidden" name="title" value="" />
+<input type="hidden" name="trburl" value="" />
+</form>
+<div style="z-index:9901;top:764px;left:169px;display:none;" id="egloo_bookmark" class="popupWrap">
+    <div class="popupTitle">이글루링크 추가하기</div>
+    <dl class="popupBody">
+        <dt class="no-arrow" style="background:none;font-size:12px;text-align:center;">
+            <span id="egloo-bookmark-url" style="color:#0F71A1;"></span>
+            (<span id="egloo-bookmark-name"></span>)을(를)</dt>
+        <dd class="notice" style="margin:0;padding:0 0 0 8px;line-height:1.8em;color:#000;font-size:12px;text-align:center;">이글루링크로 추가하시겠습니까? 추가하시려면 그룹선택을 하세요.</dd>
+        <dd class="notice weak" style="margin:0;padding:0 0 0 8px;line-height:1.8em;font-size:11px;color:#666666;text-align:center;">(그룹선택 하지 않는 경우, 최상단 목록에 추가됩니다.)</dd>
+        <dd class="egloo-bookmark-group" style="margin:0;padding:10px 0 8px;line-height:1.8em;text-align:center;color:#333;font-size:12px;text-align:center;">그룹선택 :
+            <select name="groupID" id="egloo-bookmark-groupID" style="font-family:'돋움','dotum','Trebuchet MS',Sans-serif;margin-left:10px;"><option value="000">그룹선택없음</option></select></dd>
+        <dd class="buttons">
+            <input type="button" value="지금 확인" onfocus="blur();" onclick="Modal.insertBookmark(true);" class="button btn24 btn_bold"/>
+            <input type="button" value="나중에 확인" onfocus="blur();" onclick="Modal.insertBookmark(false);" class="button btn24 btn_weak"/>
+        </dd>
+        <dd class="close" onclick="Modal.close();"><img src="http://md.egloos.com/img/www/btn/button_popup_close.gif" alt="이글루링크 취소" title="이글루링크 취소" /></dd>
+    </dl>
 </div>
-<div class="thumb"><img alt="이런것이었습니다! - 아스트로라브의 구조(2)" height="100" src="http://thumbnail.egloos.net/460x0/http://pds27.egloos.com/pds/201802/04/46/e0087746_5a7665b25d19f.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3572491" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            둥근 하늘을 캡처해봅시다! - 아스트로라브의 구조 (1)
-                                        </strong>
-<p class="text">**먼저 사과 말씀을 드립니다. 일주일만에 이어지는 얘기를 쓰려고 다시 읽어보다가 제가 완전 반대로 그림을 그려서 설명을 잘못한 부분을 발견했습니다. 아래 '레테'를 설명하는 부분을 다시 썼습니다. 안그래도 저자신도 헷갈리는 내용인데 큰소리만 치더니 이렇게 틀린 내용으로 혼동을 드려 죄송합니다. 아스트로라브의 여신들에서 대략 아스트로라브가 고대 그리스에</p>
-<p class="info">
-<span>2018-01-29 12:39</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3572309" target="_parent">덧글 8</a></span>
-</p>
-</div>
-<div class="thumb"><img alt="둥근 하늘을 캡처해봅시다! - 아스트로라브의 구조 (1)" height="100" src="http://thumbnail.egloos.net/460x0/http://pds27.egloos.com/pds/201801/29/46/e0087746_5a6e485908654.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3572309" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            연경의 하란국 조공사절단-한 세계가 끝나갈즈음
-                                        </strong>
-<p class="text">아스트로라브 이야기를 하던 도중 마침 이웃의 남중생님이 [네덜란드 풍설서] 항해 전에 바타비아에서 미리 써서 갔을까?라는 재미있는 포스팅을 올리셨는데, 이삭 티칭이라는 VOC 인물에 대해 그동안 제가 썼던 글들을 링크를 해주셨었습니다. 이삭 티칭(Isaac Titsingh, 1745-1812)은 18세기 후반-19세기 초반 유럽과 동아시아 중간에서 대단히</p>
-<p class="info">
-<span>2018-01-22 10:53</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3572100" target="_parent">덧글 10</a></span>
-</p>
-</div>
-<div class="thumb"><img alt="연경의 하란국 조공사절단-한 세계가 끝나갈즈음" height="100" src="http://thumbnail.egloos.net/460x0/http://pds27.egloos.com/pds/201801/22/46/e0087746_5a650d127862f.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3572100" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            아스트로라브의 여신들
-                                        </strong>
-<p class="text">마라게 천문대의 밤의 뒷부분 원사(元史)에서 인용한 올속도아랄부 즉 아스트로라브의 기사를 다시 설명드립니다.兀速都兒剌不，定漢言，晝夜時刻之器。其制以銅如圓鏡而可掛，面刻十二辰位、晝夜時刻，上加銅條綴其中，可以圓轉。銅條兩端，各屈其首為二竅以對望，晝則視日影，夜則窺星辰，以定時刻，以測休咎。背嵌鏡片，三面刻其圖凡七，以辨東西南北日影長短之不同、星辰向背之有異，故各異其圖，以畫天地之變焉</p>
-<p class="info">
-<span>2018-01-16 07:27</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3571891" target="_parent">덧글 12</a></span>
-</p>
-</div>
-<div class="thumb"><img alt="아스트로라브의 여신들" height="100" src="http://thumbnail.egloos.net/460x0/http://pds27.egloos.com/pds/201801/16/46/e0087746_5a5ceeceb3ba6.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3571891" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            마라게 천문대의 밤
-                                        </strong>
-<p class="text">1259년 여름, 엇갈리는 운명의 배경설명을 염두에 두고 본론으로 들어가 봅시다.일반적으로 초창기 몽골은 무자비한 야만인의 이미지인데, 불과 얼마되지않아 초제국을 운영하는 심지어 중세의 세계답지않게 종교적 갈등조차 해소한 문명인의 이미지로 재해석됩니다. 그 이유는 아마도 여러가지이겠지만 전해오는 얘기에는 이런게 있습니다. 여진족이 세운 금나라에 이전의 요나</p>
-<p class="info">
-<span>2018-01-15 12:25</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3571851" target="_parent">덧글 11</a></span>
-</p>
-</div>
-<div class="thumb"><img alt="마라게 천문대의 밤" height="100" src="http://thumbnail.egloos.net/460x0/http://pds21.egloos.com/pds/201801/15/46/e0087746_5a5c07653025f.gif" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3571851" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            1259년 여름, 엇갈리는 운명
-                                        </strong>
-<p class="text">1308년의 개력(改曆), 새 이야기 시작합니다.의 짧은 미리보기로 전해드린 본격 유라시아 이야기를 시작하겠습니다.먼저 저는 17,18세기는 제법 우쭐대며 아는척하기도 하지만 그 이전의 중세사라든가 몽골사는 실제 잘알못입니다. 하지만 그동안 세계사의 시작이라는 측면에서 관심은 늘 있어서 기웃거리기는 하고 있습니다만, 아무튼 그러합니다. 이번 글도 그렇고 기</p>
-<p class="info">
-<span>2018-01-14 13:25</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3571813" target="_parent">덧글 12</a></span>
-</p>
-</div>
-<div class="thumb"><img alt="1259년 여름, 엇갈리는 운명" height="100" src="http://thumbnail.egloos.net/460x0/http://pds27.egloos.com/pds/201801/14/46/e0087746_5a5ac1492df84.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3571813" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            1308년의 개력(改曆), 새 이야기 시작합니다.
-                                        </strong>
-<p class="text">1308년 이지르부카는 당시 세계 최대의 제국 예케몽골 울루스의 카안이 직접 다스리는 카안 울루스의 수도 칸발리크에서 자신의 영지인 굴린 울루스(guulin ulus)로 돌아옵니다. 1298년 즉위 후 7개월의 짧은 재임 이후 거의 10년간 카안 울루스로 소환당하면서 폐위당하였던 왕위를 회복하고 명실상부한 카안 울루스의 핵심인물 중의 하나가 되어 돌아옵니다</p>
-<p class="info">
-<span>2018-01-12 11:54</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3571746" target="_parent">덧글 14</a></span>
-</p>
-</div>
-<div class="thumb"><img alt="1308년의 개력(改曆), 새 이야기 시작합니다." height="100" src="http://thumbnail.egloos.net/460x0/http://pds21.egloos.com/pds/201801/12/46/e0087746_5a5820a6db708.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3571746" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-<span class="icon ico_app">앱으로 작성한 글</span>
-                                            새해 복 많이 받으세요!
-                                        </strong>
-<p class="text">지난 연말에 업무가 너무 바빠서 거의 모든 SNS 중독증을 고칠뻔 했습니다. 게다가 집에 손님도 연말연시 계속 있어서 차분히 앉아 한해를 회고할 분위기 역시 무리였구요ㅠㅠ아무튼 2018년 새해 인사 전합니다.제 블로그를 아직도 찾아와서 같이 얘기 나눠주시는 분들께 진심으로 감사 드립니다.그럭저럭 올해 블로그를 개설한지 10년이 됩니다. 첫 포스팅이 2008</p>
-<p class="info">
-<span>2018-01-06 03:00</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3571530" target="_parent">덧글 16</a></span>
-</p>
-</div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3571530" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-<li>
-<div class="post_wrap">
-<div class="cnt">
-<strong class="title">
-                                            파울볼 인생
-                                        </strong>
-<p class="text">그는 정말 그걸 믿었던 것일까? - 만주국의 민족협화에서 말씀드렸듯이 이번 시리즈의 마지막 편입니다. 고교야구 영화에서 시작한 이 이야기가 아무튼 배타고 산으로 가버린지 오래라서 도대체 어떻게 마무리를 지어야 할지 고민을 좀 했습니다. 실은 아직 그 과정에서 자료가 아직 불충분해서 혹은 이야기 연결에 이어지지않아서 언급하지 못하고 넘어가는 내용들이 적지않습</p>
-<p class="info">
-<span>2017-11-15 13:08</span>
-<span class="commt_link"><a href="http://dylanzhai.egloos.com/m/comment/3569721" target="_parent">덧글 27</a></span>
-</p>
-</div>
-<div class="thumb"><img alt="파울볼 인생" height="100" src="http://thumbnail.egloos.net/460x0/http://pds26.egloos.com/pds/201711/15/46/e0087746_5a0b9ed88cc49.jpg" width="100"/></div>
-<a class="post_link" href="http://dylanzhai.egloos.com/m/3569721" target="_parent"><span class="blind">포스트 링크</span></a>
-</div>
-</li>
-</ul>
-<ul id="list_loading">
-<li class="loading">
-<span><img alt="" height="35" src="http://static.egloos.net/resources/images/common/loading.gif" width="47"/></span>
-</li>
-</ul>
-</div>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,"script","https://connect.facebook.net/en_US/fbevents.js");
+
+    fbq("init", "654342331381106");
+    fbq("track", "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=654342331381106&ev=PageView&noscript=1"
+    /></noscript>
+<!-- End Facebook Pixel Code -->
+<script type="text/javascript">
+    (function() {
+      var at = document.createElement("script");
+      at.type = "text/javascript";
+      at.async = true;
+      at.src = "//estat.zum.com/scripts/at.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(at, s);
+    })();
+	function sendGnbClick(cm) {
+		var obj = event.currentTarget || event.srcElement;
+		var estatData = {
+			"cm":cm,
+			"pos":"egloos_gnb",
+			"url": document.location.href,
+			"referrer":document.referrer
+		};
+		if(cm != "more") {
+			estatData['outurl'] = obj.href;
+		}
+		ESTatTracker.push(["@Click", estatData]);    
+	}
+</script>
+</body>
+</html>
+

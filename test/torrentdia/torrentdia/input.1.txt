@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>해외영화 1 페이지 토렌트다이아</title>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta name="description" content="해외영화 1 페이지 토렌트다이아" />
+<meta name="keywords" content="토렌트,torrent,마그넷,download,토렌트다운로드,토렌트사이트,토렌트다이아" />
+<meta name="robots" content="index, follow" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" media="screen">
+<link rel="stylesheet" href="https://torrentdia59.com/css/default.min.css" media="screen">
+<link rel="stylesheet" href="https://torrentdia59.com/thema/site/assets/bs3/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="https://torrentdia59.com/thema/site/colorset/color/colorset.min.css" type="text/css" class="thema-colorset">
+<link rel="stylesheet" href="https://torrentdia59.com/plugin/loadmask/jquery.loadmask3.css">
+<link rel="stylesheet" href="https://torrentdia59.com/css/board/board.min.css" media="screen">
+<!--[if IE 7]>
+  <link rel="stylesheet" href="https://torrentdia59.com/css/ie7/font-awesome/css/font-awesome-ie7.min.css" media="screen">
+<![endif]-->
+<!--[if lte IE 8]>
+<script src="https://torrentdia59.com/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://torrentdia59.com";
+var g5_bbs_url   = "https://torrentdia59.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "torrent_movieov";
+var g5_sca       = "";
+var g5_pim       = "";
+var g5_editor    = "ckeditor_work_n";
+var g5_responsive    = "1";
+var g5_cookie_domain = ".torrentdia59.com";
+</script>
+<script src="https://torrentdia59.com/js/jquery-1.11.3.min.js"></script>
+<script src="https://torrentdia59.com/js/common_all.js"></script>
+<script src="https://torrentdia59.com/js/board.js"></script>
+<script src="https://torrentdia59.com/plugin/loadmask/jquery.loadmask.min.js"></script>
+<meta property="og:url" content="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov"/>
+</head>
+<body class="responsive is-pc">
+<script>
+$('.menu-btn', '.logo').on({ 'touchstart' : function () { $(this).addClass('fake-active'); }, 'touchend' : function () { $(this).removeClass('fake-active'); } });
+</script><div id="hd_ppops">
+</div>
+<script>
+$(document).ready(function(){
+   $(".newmodal_1, .newmodal_2, .newmodal_3").modal("toggle");
+});
+$(function() {
+    $(".hd_pops_reject_1").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+        $(".newmodal_1").modal("toggle");
+    });
+    $(".hd_pops_reject_2").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+        $(".newmodal_2").modal("toggle");
+    });
+    $(".hd_pops_reject_3").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+        $(".newmodal_3").modal("toggle");
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+
+<div class="wrapper en boxed">
+<style type="text/css">
+.urgency_bn {background:#555;color:#eee;}
+.urgency_bn a {color:#eee;}
+</style>
+<div id="pr_notice" class="urgency_bn">
+<div class="pr_notice">
+<ul class="bncenter">
+<li class="noticeleft2"></li>
+<li class="noticeleft">
+<span><a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=161&amp;url=https%3A%2F%2F%ED%86%A0%EB%A0%8C%ED%8A%B8%EC%82%AC%EC%9D%B4%ED%8A%B8.net" target="_blank" rel="nofollow">(주소공지 사이트 변경 알림) 주소 공지는 한글도메인 https://토렌트사이트.net 에서 확인할 수 있습니다. 즐겨찾기 해주세요.</span></a>
+</li>
+<li class="noticeright"><a rel="nofollow" href="javascript:popup_pr_main_notice_hide_cookie()"><i class="fas fa-times"></i></a></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    if( $.cookie("show_popup_pr_main_notice") == "false" ) {
+        //close_pr_main_notice_popup(); // show_popup_pr_main_notice의 값이 false이면 배너창을 닫도록한다
+		$("#pr_notice").hide();
+		$("#pr_notice").css("display", "none");
+		$("#sidebar").css("top", "56px");
+		$("#sidebar").css("margin-top", "56px");
+		//$("#sidebar").css("padding-bottom", "56px");
+		$("#sidebarsmall").css("top", "56px");
+		$("#main-wrapper").css("margin-top", "66px");
+		$("#bg-content").css("padding-top", "0px");
+		$(".header").css("min-height", "56px");
+		$(".header").css("top", "0");
+    } else {
+        $("#pr_notice").show();
+        $("#sidebar").css("margin-top", "106px");
+        $("#sidebarsmall.pushy").css({"top": "+=50px"});
+        $("#main-wrapper").css({"margin-top": "+=50px"});
+        $(".header").css({"top": "50px"});
+    }
+});
+</script>
+<header class="header main-top-bg">
+<div class="sidebar-toggle-box">
+<div id="btn-menu-bar" class="fas fa-bars"></div>
+</div>
+<div class="menu-btn pull-left hidden-lg hidden-md5 hidden-md4 hidden-md3 hidden-md2  hidden-md1 hidden-sm">
+<i class="fas fa-bars"></i>
+</div>
+
+<a href="https://torrentdia59.com" class="logo raleway hidden-xxxxs">
+<b>토렌트다이아</b>
+</a>
+
+<section id="search" class="pull-left">
+<form id="headsearchform" name="topsearch" action="https://torrentdia59.com/bbs/search.php" method="get" class="form-horizontal pull-left" role="form">
+<input type="hidden" name="search_flag" value="search" />
+<div id="pc_search" class="hidden-lg hidden-md5 hidden-md4 hidden-md3 hidden-md2 hidden-md1 hidden-sm2 hidden-sm1">
+<div class="header-search pull-left tbtn hidden-lg hidden-md5 hidden-md4 hidden-md3 hidden-md2 hidden-md1 hidden-sm2 hidden-sm1">
+<a href="javascript:;" id="searcht"><i class="fas fa-search"></i></a>
+</div>
+<div id="searchheadmenu">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<div class="header-search header-search-modal pull-left">
+<div class="input-group input-group-sm search_flag_gr">
+<div class="pull-left search_sflag">
+<input type="text" name="stx" class="form-control form-control3 form-control4 input-sm" value="" placeholder="토렌트 검색" maxlength="20" minlength="2" />
+<button type="submit" class="btn-search ease"><i class="fas fa-search fa-lg ease"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="m_search" class="hidden-xs hidden-xxs hidden-xxxs">
+<div class="header-search pull-left tbtn hidden-lg hidden-md5 hidden-md4 hidden-md3 hidden-md2 hidden-md1 hidden-sm2 hidden-sm1">
+<a href="javascript:;" id="searcht"><i class="fas fa-search"></i></a>
+</div>
+<div class="header-search">
+<div class="input-group input-group-sm search_flag_gr">
+<div class="pull-left">
+<input type="text" name="stx" class="form-control form-control3 input-sm" value="" placeholder="토렌트 검색" maxlength="20" minlength="2" />
+<button type="submit" class="btn-search ease"><i class="fas fa-search fa-lg ease"></i></button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</section>
+<script type="text/javascript">
+            $( "#search-modal_flag_1" ).on("click", function() {
+                $( ".search_flag_2" ).removeClass("btn-color");
+                $( ".search_flag_1" ).addClass("btn-color");
+                $("[name=search_flag]").val("search");
+                $.cookie('search_flag', 'search', { expires: 30 } );
+            });
+            $( "#search-modal_flag_2" ).on("click", function() {
+                $( ".search_flag_1" ).removeClass("btn-color");
+                $( ".search_flag_2" ).addClass("btn-color");
+                $("[name=search_flag]").val("searchcse");
+                $.cookie('search_flag', 'searchcse', { expires: 30 } );
+            });
+
+            $( "#search_flag_1" ).on("click", function() {
+                $( ".search_flag_2" ).removeClass("btn-color");
+                $( ".search_flag_1" ).addClass("btn-color");
+                $("[name=search_flag]").val("search");
+                $.cookie('search_flag', 'search', { expires: 30 } );
+            });
+            $( "#search_flag_2" ).on("click", function() {
+                $( ".search_flag_1" ).removeClass("btn-color");
+                $( ".search_flag_2" ).addClass("btn-color");
+                $("[name=search_flag]").val("searchcse");
+                $.cookie('search_flag', 'searchcse', { expires: 30 } );
+            });
+
+            $('#headsearchform button[type=submit]').on('click',function(event){
+                var search_flag = $("[name=search_flag]").val();
+                var stx = $('#headsearchform [name=stx]:visible');
+                // $('#headsearchform [name=stx]:hidden').val(stx.val());
+                if (stx.val().length < 2) {
+                    alert('검색어는 두글자 이상 입력하세요.');
+                    stx.focus();
+                    return false;
+                }
+
+                $('#headsearchform [name=stx]:hidden').prop('disabled', true);
+
+                if( search_flag == 'searchcse' ) {
+                    $('#headsearchform').attr('action', '/bbs/searchcse.php');
+                } else {
+                    $('#headsearchform').attr('action', '/bbs/search.php');
+                }
+            });
+        </script>
+
+<div class="pull-right">
+
+<div class="nav notify-row pull-right" id="top_menu">
+<div id="gnbt" class="mobile hd_div hidden-lg hidden-md5 hidden-md4 hidden-md3 hidden-xxxs">
+<ul class="nav top-menu">
+<li class="tbtn">
+<a href="javascript:;">M<span class="hidden-xxs">ENU</span> <i class="fas fa-angle-down"></i></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg hidden-md5 hidden-md4 hidden-md3 hidden-xxxs">
+<div id="gnbheadmenu">
+<ul>
+
+
+
+
+<li>
+<a href="https://torrentdia59.com/bbs/login.php" rel="nofollow" class="bold">
+<i class="far fa-user"></i> <span>로그인</span>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/register.php" rel="nofollow" class="bold">
+<i class="fas fa-pen"></i> <span>회원가입</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class="nav top-menu hidden-md2 hidden-md1 hidden-sm2 hidden-sm1 hidden-xs hidden-xxs hidden-xxxs">
+
+
+
+
+<li class="tbtn">
+<a href="https://torrentdia59.com/bbs/login.php" rel="nofollow" class="bold" title="로그인">
+<i class="far fa-user"></i> <span>로그인</span>
+</a>
+</li>
+<li class="tbtn">
+<a href="https://torrentdia59.com/bbs/register.php" rel="nofollow" class="bold" title="회원가입">
+<i class="fas fa-pencil-alt"></i> <span>회원가입</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearfix"></div>
+</header>
+
+<aside class="main-sidebar">
+<nav id="sidebar" class="pushy pushy-left">
+
+
+<div class="clearfix"></div>
+<div id="page-sidebar" class="page-sidebar">
+
+
+<div class="page-sidebar-wrapper scrollbar-dynamic" id="main-menu-wrapper">
+<ul>
+
+<li class="col-xs-4">
+<a href="/bbs/ranking.php">
+<span class="auto_menu_icon"><i class='fab fa-hotjar'></i></span><span class="auto_menu_text">인기</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/latest.php">
+<span class="auto_menu_icon"><i class='fas fa-cloud-upload-alt'></i></span><span class="auto_menu_text">최근</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_movieko">
+<span class="auto_menu_icon"><i class='fas fa-play'></i></span><span class="auto_menu_text">한국영화</span> </a>
+</li>
+
+<li class="col-xs-4 open">
+<a href="/bbs/board.php?bo_table=torrent_movieov">
+<span class="auto_menu_icon"><i class='fas fa-play'></i></span><span class="auto_menu_text">해외영화</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_drama">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">드라마</span>  </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_ent">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">예능</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_docu">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">다큐/교양</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_tvend">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">국내완결</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_netflix">
+<span class="auto_menu_icon"><i class='far fa-caret-square-right'></i></span><span class="auto_menu_text">넷플릭스</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_disneyplus">
+<span class="auto_menu_icon"><i class='fas fa-hat-wizard'></i></span><span class="auto_menu_text">디즈니+</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_appletv">
+<span class="auto_menu_icon"><i class='fab fa-apple'></i></span><span class="auto_menu_text">애플TV</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_primevideo">
+<span class="auto_menu_icon"><i class='fab fa-amazon'></i></span><span class="auto_menu_text">primevideo</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_hbo">
+<span class="auto_menu_icon"><i class='far fa-caret-square-right'></i></span><span class="auto_menu_text">HBO</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_ftv">
+<span class="auto_menu_icon"><i class='far fa-play-circle'></i></span><span class="auto_menu_text">해외방송</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_music">
+<span class="auto_menu_icon"><i class='fab fa-itunes-note'></i></span><span class="auto_menu_text">음악</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_ani">
+<span class="auto_menu_icon"><i class='fas fa-carrot'></i></span><span class="auto_menu_text">애니</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_idol">
+<span class="auto_menu_icon"><i class='far fa-star'></i></span><span class="auto_menu_text">IDOL방송</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_sports">
+<span class="auto_menu_icon"><i class='fas fa-futbol'></i></span><span class="auto_menu_text">스포츠</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_kids">
+<span class="auto_menu_icon"><i class='fab fa-waze'></i></span><span class="auto_menu_text">키즈방송</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_util">
+<span class="auto_menu_icon"><i class='fas fa-tools'></i></span><span class="auto_menu_text">유틸</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_game">
+<span class="auto_menu_icon"><i class='fas fa-gamepad'></i></span><span class="auto_menu_text">GAME</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_mobile">
+<span class="auto_menu_icon"><i class='fas fa-cube'></i></span><span class="auto_menu_text">Apps</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_toon">
+<span class="auto_menu_icon"><i class='fas fa-book'></i></span><span class="auto_menu_text">만화/도서</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=torrent_classic">
+<span class="auto_menu_icon"><i class='far fa-snowflake'></i></span><span class="auto_menu_text">추억자료</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=forum_request">
+<span class="auto_menu_icon"><i class='fas fa-hand-holding-heart'></i></span><span class="auto_menu_text">자료요청</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=community">
+<span class="auto_menu_icon"><i class='fas fa-user-friends'></i></span><span class="auto_menu_text">커뮤니티</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=community_issue">
+<span class="auto_menu_icon"><i class='far fa-comment-alt'></i></span><span class="auto_menu_text">이슈/뉴스</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=community_f">
+<span class="auto_menu_icon"><i class='far fa-grin-tongue-squint'></i></span><span class="auto_menu_text">유머힐링짤</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=community_p">
+<span class="auto_menu_icon"><i class='far fa-grin-stars'></i></span><span class="auto_menu_text">후방짤</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=point_send">
+<span class="auto_menu_icon"><i class='fab fa-product-hunt'></i></span><span class="auto_menu_text">포인트거래</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/page/guide">
+<span class="auto_menu_icon"><i class='fas fa-book-medical'></i></span><span class="auto_menu_text">포인트안내</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/board.php?bo_table=none">
+<span class="auto_menu_icon"><i class='fas fa-exclamation-circle'></i></span><span class="auto_menu_text">이용안내</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="https://xn--sm2bu1n2xfsllblbca.net/" target="_blank" rel="nofollow">
+<span class="auto_menu_icon"><i class='fas fa-exclamation-triangle'></i></span><span class="auto_menu_text">주소공지</span> </a>
+</li>
+
+<li class="col-xs-4">
+<a href="/bbs/write_qa.php?bo_table=qa">
+<span class="auto_menu_icon"><i class='fab fa-telegram-plane'></i></span><span class="auto_menu_text">문의</span> </a>
+</li>
+
+
+<li>
+<div class="h10"></div>
+</li>
+<li>
+<div class="left_banner clearfix">
+<div class="fleft">
+<div class="pr_main_left_1">
+</div></div>
+<div class="fleft">
+<div class="pr_main_left_3">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=200&amp;url=https%3A%2F%2Fpartner.bybit.com%2Fb%2Ftorrent" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/200" title="" class="max-w100"></a>
+</div></div>
+</div>
+</li>
+<li>
+<div class="h50"></div>
+</li>
+</ul>
+</div>
+ 
+</div>
+
+</nav>
+<nav id="sidebarsmall" class="pushy pushy-open">
+
+
+<div class="clearfix"></div>
+<div id="page-sidebar" class="page-sidebar">
+
+
+<div class="page-sidebar-wrapper scrollbar-dynamic page-smallsidebar" id="main-menu-wrapper">
+<ul>
+
+<li>
+<a href="/bbs/ranking.php">
+<span class="auto_menu_icon"><i class='fab fa-hotjar'></i></span><span class="auto_menu_text">인기</span> </a>
+</li>
+
+<li>
+<a href="/bbs/latest.php">
+<span class="auto_menu_icon"><i class='fas fa-cloud-upload-alt'></i></span><span class="auto_menu_text">최근</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_movieko">
+<span class="auto_menu_icon"><i class='fas fa-play'></i></span><span class="auto_menu_text">한국영화</span> </a>
+</li>
+
+<li class="open">
+<a href="/bbs/board.php?bo_table=torrent_movieov">
+<span class="auto_menu_icon"><i class='fas fa-play'></i></span><span class="auto_menu_text">해외영화</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_drama">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">드라마</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_ent">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">예능</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_docu">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">다큐/교양</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_tvend">
+<span class="auto_menu_icon"><i class='fas fa-play-circle'></i></span><span class="auto_menu_text">국내완결</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_netflix">
+<span class="auto_menu_icon"><i class='far fa-caret-square-right'></i></span><span class="auto_menu_text">넷플릭스</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_disneyplus">
+<span class="auto_menu_icon"><i class='fas fa-hat-wizard'></i></span><span class="auto_menu_text">디즈니+</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_appletv">
+<span class="auto_menu_icon"><i class='fab fa-apple'></i></span><span class="auto_menu_text">애플TV</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_primevideo">
+<span class="auto_menu_icon"><i class='fab fa-amazon'></i></span><span class="auto_menu_text">primevideo</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_hbo">
+<span class="auto_menu_icon"><i class='far fa-caret-square-right'></i></span><span class="auto_menu_text">HBO</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_ftv">
+<span class="auto_menu_icon"><i class='far fa-play-circle'></i></span><span class="auto_menu_text">해외방송</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_music">
+<span class="auto_menu_icon"><i class='fab fa-itunes-note'></i></span><span class="auto_menu_text">음악</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_ani">
+<span class="auto_menu_icon"><i class='fas fa-carrot'></i></span><span class="auto_menu_text">애니</span> </a>
+ </li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_idol">
+<span class="auto_menu_icon"><i class='far fa-star'></i></span><span class="auto_menu_text">IDOL방송</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_sports">
+<span class="auto_menu_icon"><i class='fas fa-futbol'></i></span><span class="auto_menu_text">스포츠</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_kids">
+<span class="auto_menu_icon"><i class='fab fa-waze'></i></span><span class="auto_menu_text">키즈방송</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_util">
+<span class="auto_menu_icon"><i class='fas fa-tools'></i></span><span class="auto_menu_text">유틸</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_game">
+<span class="auto_menu_icon"><i class='fas fa-gamepad'></i></span><span class="auto_menu_text">GAME</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_mobile">
+<span class="auto_menu_icon"><i class='fas fa-cube'></i></span><span class="auto_menu_text">Apps</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_toon">
+<span class="auto_menu_icon"><i class='fas fa-book'></i></span><span class="auto_menu_text">만화/도서</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=torrent_classic">
+<span class="auto_menu_icon"><i class='far fa-snowflake'></i></span><span class="auto_menu_text">추억자료</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=forum_request">
+<span class="auto_menu_icon"><i class='fas fa-hand-holding-heart'></i></span><span class="auto_menu_text">자료요청</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=community">
+<span class="auto_menu_icon"><i class='fas fa-user-friends'></i></span><span class="auto_menu_text">커뮤니티</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=community_issue">
+<span class="auto_menu_icon"><i class='far fa-comment-alt'></i></span><span class="auto_menu_text">이슈/뉴스</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=community_f">
+<span class="auto_menu_icon"><i class='far fa-grin-tongue-squint'></i></span><span class="auto_menu_text">유머힐링짤</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=community_p">
+<span class="auto_menu_icon"><i class='far fa-grin-stars'></i></span><span class="auto_menu_text">후방짤</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=point_send">
+<span class="auto_menu_icon"><i class='fab fa-product-hunt'></i></span><span class="auto_menu_text">포인트거래</span> </a>
+</li>
+
+<li>
+<a href="/page/guide">
+<span class="auto_menu_icon"><i class='fas fa-book-medical'></i></span><span class="auto_menu_text">포인트안내</span> </a>
+</li>
+
+<li>
+<a href="/bbs/board.php?bo_table=none">
+<span class="auto_menu_icon"><i class='fas fa-exclamation-circle'></i></span><span class="auto_menu_text">이용안내</span> </a>
+</li>
+
+<li>
+<a href="https://xn--sm2bu1n2xfsllblbca.net/" target="_blank" rel="nofollow">
+<span class="auto_menu_icon"><i class='fas fa-exclamation-triangle'></i></span><span class="auto_menu_text">주소공지</span> </a>
+</li>
+
+<li>
+<a href="/bbs/write_qa.php?bo_table=qa">
+<span class="auto_menu_icon"><i class='fab fa-telegram-plane'></i></span><span class="auto_menu_text">문의</span> </a>
+</li>
+<li class="etc">
+<a href="https://bit.ly/3ysgXs5" target="_blank">
+<span class="auto_menu_icon"><i class="fas fa-heartbeat"></i></span>
+<span class="auto_menu_text">19방송</span>
+</a>
+</li>
+</ul>
+</div>
+ 
+</div>
+<div class="site-overlay"></div>
+</nav>
+</aside>
+
+<section id="main-content" class="bg-main">
+<section id="main-wrapper" class="main-wrapper">
+<div class="bg-content" id="bg-content">
+<div class="row mrow">
+<div class="col-md-9 col-md-pull-0 m-col-mb-9">
+<div class="top_bimg view_bimg">
+<div class="fleft">
+<div class="pr_main_top_2">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=145&amp;url=http%3A%2F%2Fwb-tt.com%2F" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/145" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_3">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=227&amp;url=http%3A%2F%2Fdc-1004.com%2F" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/227" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_4">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=238&amp;url=https%3A%2F%2Fozy80.com%2F" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/238" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_5">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=90&amp;url=https%3A%2F%2Fseda15.bet%2F%3Faffiliate%3D3535" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/90" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_6">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=226&amp;url=https%3A%2F%2Faffiliates.apb27.com%2Flinks%2F%3Fbtag%3D599935" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/226" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_7">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=218&amp;url=https%3A%2F%2Frs-888.com%2F%3Fref%3D357" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/218" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_8">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=212&amp;url=http%3A%2F%2Forak-kkk.com" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/212" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_9">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=219&amp;url=https%3A%2F%2Fpp-002.com%2F%3Fref%3Ddia" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/219" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_10">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=201&amp;url=http%3A%2F%2Fnar-rrr.com" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/201" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_11">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=237&amp;url=http%3A%2F%2Fkor-2536.com" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/237" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_12">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=190&amp;url=http%3A%2F%2Fkor-2536.com" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/190" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_13">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=231&amp;url=http%3A%2F%2Fbtq-wd.com" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/231" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_14">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=232&amp;url=http%3A%2F%2Fjgt-zzz.com" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/232" title="" class="max-w100"></a>
+</div></div>
+<div class="fleft">
+<div class="pr_main_top_1">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=171&amp;url=http%3A%2F%2Fwww.evol8888.com" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/171" title="" class="max-w100"></a>
+</div></div>
+</div>
+<div class="clearfix"></div>
+<div class="h10"></div>
+
+
+<script>
+					if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+					window.location = 'microsoft-edge:' + window.location;
+
+					setTimeout(function() {
+					window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+					}, 1);
+
+					}
+					</script>
+
+<style type="text/css">
+	#pqohfgekuirnsjlmt	.loadmask {
+		background-color: #FFFFFF;
+	}
+
+	#pqohfgekuirnsjlmt	.loadmask-msg {
+		background: #ffffff;
+	}
+
+	#pqohfgekuirnsjlmt	.loadmask-msg div {
+		border: none;
+	}
+</style>
+<div id="pqohfgekuirnsjlmt" class="com_ranking_widget">
+<div class="ranking_content">
+<div class="title2">
+<ul>
+<li>
+<button type="button" class="prev btn btn-color" rel="20221110">
+<i class="fas fa-chevron-left"></i>
+이전
+</button>
+</li>
+<li><h1>해외영화 인기 2022-11-11</h1></li>
+<li>
+<button type="button" class="next btn btn-color" rel="20221112">
+다음
+<i class="fas fa-chevron-right"></i>
+</button>
+</li>
+</ul>
+<div id="" class="clearfix"></div>
+</div>
+<div class="row rankrow rowdown">
+<ul class="col-md-6">
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=614357" class="ellipsis" target="_blank"> <span class="num">1</span>
+
+<span class="subject">오르가즘 주식회사: 쾌락을 판 어느 회사의 진실.2022.1080p.WEBRip.x264-RARBG[한글자막]</span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=611999" class="ellipsis" target="_blank"> <span class="num">2</span>
+
+<span class="subject">[11월3일 개봉] 분노의 추격자.Last.Seen.Alive.2022.720P.1080P등 자체자막과 저용량~고화질 까지 (제라드 버틀러 주연)</span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=620470" class="ellipsis" target="_blank"> <span class="num">3</span>
+
+<span class="subject">[공식한글.5월26일 개봉] 개인 레슨.Women.2021.1080p.WEBRip.x265-RARBG등 (범죄 스릴러)</span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=615246" class="ellipsis" target="_blank"> <span class="num">4</span>
+
+<span class="subject">더 시스템.The.System.2022.WEBRip.720p/1080p/2160p (액션 스릴러)</span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=614009" class="ellipsis" target="_blank"> <span class="num">5</span>
+
+<span class="subject">여배우에 관한 모든 것 All About Actresses (2009) [1080p] [WEBRip] [5.1] [YTS.MX]</span> </a>
+</li>
+</ul>
+<ul class="col-md-6">
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=" class="ellipsis" target="_blank"> <span class="num">6</span>
+<span class="subject"></span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=614260" class="ellipsis" target="_blank"> <span class="num">7</span>
+
+<span class="subject">[영문자막] 알.아이.피.디. 2.R.I.P.D.2.Rise of the Damned.2022.1080p.Bluray.DTS-HD.MA.5.1.X264-EVO</span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=622427" class="ellipsis" target="_blank"> <span class="num">8</span>
+
+<span class="subject">[3월3일 개봉, 배급사 한글] 나이트 레이더스.Night.Raider.2021.1080p.BluRay.H264.AAC-RARBG (액션,SF, 스릴러)</span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=611248" class="ellipsis" target="_blank"> <span class="num">9</span>
+
+<span class="subject">더 우먼 킹.The.Woman.King.2022.720P/1080p.Webrip-Phun Psyz, AOC릴 등</span> </a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=612807" class="ellipsis" target="_blank"> <span class="num">10</span>
+
+<span class="subject">[Netflix 공식한글자막] 에놀라 홈즈 2 Enola.Holmes.2.2022.1080p.WEBRip.x264-RARBG</span> </a>
+</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<div class="top_rankingn_btn">
+<div id="loading" class="displaynone"><img id="loading-image" src="https://torrentdia59.com/img/loading2.gif" alt="Loading..." /></div>
+<div id="fachevronup" class="fachevronup pointer"><i class="fas fa-chevron-up"></i></div>
+<div id="fachevrondown" class="fachevrondown pointer displaynone"><i class="fas fa-chevron-down"></i></div>
+</div>
+<script>
+$( ".rankrow" ).addClass("rowdown");
+if(get_cookie('fachevronup')) {
+    $( ".fachevrondown" ).removeClass("displaynone");
+    $( ".fachevronup" ).addClass("displaynone");
+    $( ".rankrow" ).addClass("rowdown");
+    //$( ".com_ranking_widget" ).css({"height": "80px"});
+} else {
+    $( ".fachevronup" ).removeClass("displaynone");
+    $( ".fachevrondown" ).addClass("displaynone");
+    $( ".rankrow" ).removeClass("rowdown");
+    //$( ".rowdown" ).css({"height": "110px"});
+    //$( ".com_ranking_widget" ).css({"height": "190px"});
+}
+
+$("#fachevrondown").click(function(){
+    //$("#loading").show();
+    $( ".fachevronup" ).removeClass("displaynone");
+    $( ".fachevrondown" ).addClass("displaynone");
+    $( ".rankrow" ).removeClass("rowdown");
+    //$( ".rowdown" ).css({"height": "110px"});
+    //$( ".com_ranking_widget" ).css({"height": "190px"});
+    set_cookie('fachevrondown', 1, 60*60*24*365);
+    delete_cookie('fachevronup');
+    /*setTimeout(function() {
+        $("#loading").hide();
+    },200);*/
+});
+
+$("#fachevronup").click(function(){
+    //$("#loading").show();
+    $( ".fachevrondown" ).removeClass("displaynone");
+    $( ".fachevronup" ).addClass("displaynone");
+    $( ".rankrow" ).addClass("rowdown");
+    //$( ".com_ranking_widget" ).css({"height": "80px"});
+    set_cookie('fachevronup', 1, 60*60*24*365);
+    delete_cookie('fachevrondown');
+    /*setTimeout(function() {
+        $("#loading").hide();
+    },200); */
+});
+</script> </div>
+<ul>
+</ul>
+</div>
+<script type="text/javascript">
+	$(function () {
+		//var rHeight = $("#pqohfgekuirnsjlmt .ranking_content").height();
+		//$("#pqohfgekuirnsjlmt .ranking_content").height(rHeight);
+		$('#pqohfgekuirnsjlmt').on('click', 'button.prev,button.next', function () {
+			var selectDate = $(this).attr('rel');
+			if (selectDate > '20221111' || selectDate < '20160625') {
+				alert('해달 날짜의 랭킹 정보가 없습니다.');
+				return false;
+			}
+
+			$("#pqohfgekuirnsjlmt .ranking_content div").fadeOut();
+			$("#pqohfgekuirnsjlmt").mask("");
+
+			setTimeout(function () {
+				$.get(g5_bbs_url + '/ranking_widget.php', {
+					date: selectDate,
+					bo_table: 'torrent_movieov'
+				}, function (html) {
+					$("#pqohfgekuirnsjlmt .ranking_content").html($(html).find('.ranking_content').html());
+					$("#pqohfgekuirnsjlmt .ranking_content").fadeIn();
+					$("#pqohfgekuirnsjlmt").unmask();
+				});
+			}, 300);
+
+//			$('#// .ranking-content').load('index2', function() {
+//				$("#active-content").html($("#ajax-content").html());
+//				$("#ajax-content").html("");
+//				$("#ajax-content").css("position", "relative");
+//			});
+		});
+	});
+
+</script><div class="clearfix h10"></div>
+<section class="board-list">
+<aside class="list-category">
+<div class="div-tab-box tabs trans-top hidden-xs hidden-xxs hidden-xxxs">
+<ul class="nav nav-tabs">
+<li class="active">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov">
+전체
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=2022">
+2022
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EB%93%9C%EB%9D%BC%EB%A7%88%2F%EB%A9%9C%EB%A1%9C">
+드라마/멜로
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EC%95%A1%EC%85%98%2F%EC%8A%A4%EB%A6%B4%EB%9F%AC">
+액션/스릴러
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EC%BD%94%EB%AF%B8%EB%94%94">
+코미디
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EA%B3%B5%ED%8F%AC">
+공포
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=SF">
+SF
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EB%8B%A4%ED%81%90">
+다큐
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EA%B8%B0%ED%83%80">
+기타
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EA%B3%A0%ED%99%94%EC%A7%88">
+고화질
+</a>
+</li>
+</ul>
+</div>
+<div class="dropdown visible-xs">
+<a id="categoryLabel" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-color btn-block">
+전체
+</a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="categoryLabel">
+<li class="selected">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov">전체</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=2022">2022</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EB%93%9C%EB%9D%BC%EB%A7%88%2F%EB%A9%9C%EB%A1%9C">드라마/멜로</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EC%95%A1%EC%85%98%2F%EC%8A%A4%EB%A6%B4%EB%9F%AC">액션/스릴러</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EC%BD%94%EB%AF%B8%EB%94%94">코미디</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EA%B3%B5%ED%8F%AC">공포</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=SF">SF</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EB%8B%A4%ED%81%90">다큐</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EA%B8%B0%ED%83%80">기타</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;sca=%EA%B3%A0%ED%99%94%EC%A7%88">고화질</a>
+</li>
+</ul>
+</div>
+</aside>
+<div class="clearfix"></div>
+<div class="list-btn-box3">
+<div class="form-group2 list-btn ">
+<div class="btn-group">
+<div class="fsearchform">
+<form name="fsearch" method="get" role="form" class="form" action="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov">
+<input type="hidden" name="bo_table" value="torrent_movieov">
+<input type="hidden" name="sca" value="">
+
+
+<div class="form-group2">
+<label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+<input type="text" name="stx" value="" required id="stx" class="form-control2 input-sm pull-left" maxlength="20" minlength="2" placeholder="해외영화 검색">
+<button type="submit" class="btn btn-color0"><i class="fas fa-search"></i></button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="list-wrap">
+<form name="fboardlist" id="fboardlist" action="./board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post" role="form" class="form">
+<input type="hidden" name="bo_table" value="torrent_movieov">
+<input type="hidden" name="sfl" value="">
+<input type="hidden" name="stx" value="">
+<input type="hidden" name="spt" value="">
+<input type="hidden" name="sca" value="">
+<input type="hidden" name="sst" value="wr_num, wr_reply">
+<input type="hidden" name="sod" value="">
+<input type="hidden" name="page" value="1">
+<input type="hidden" name="sw" value="">
+<style type="text/css">
+@media (max-width: 1100px) {
+    .imgframe {
+        width:70px;
+        height:100.8px;
+        overflow:hidden;
+    }
+    .list-img {width:70px;}
+    .noimg {line-height:100.8px;}
+}
+@media (min-width: 1101px) {
+    .imgframe {
+        width:100px;
+        height:144px;
+        overflow:hidden;
+    }
+    .list-img {width:100px;}
+    .noimg {line-height:144px;}
+}
+</style>
+<!--[if lte IE 9]>
+<style type="text/css">
+    .imgframe {
+        width:70px;
+        height:100.8px;
+        overflow:hidden;
+    }
+    .list-img {width:70px;}
+    .noimg {line-height:100.8px;}
+</style>
+<![endif]-->
+<div class="">
+<table class="table div-table list-pc bg-white">
+<thead>
+<tr>
+<th scope="col">분류</th>
+<th scope="col">이미지</th>
+<th scope="col">제목</th>
+<th scope="col">용량</th>
+<th scope="col">등록일</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td class="td_category text-center"><span class="text-muted">AD</span></td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=228&amp;url=board.php%3Fbo_table%3Dad_ad%26wr_id%3D1" target="_blank"><img itemprop="image" content="https://torrentdia59.com/data/to_list/228" src="https://torrentdia59.com/data/to_list/thumb-228_100x144.png" alt="[다이아 보증제휴] EOS 유로파워볼 보글파워볼 사다리게임" class="img-tag" /></a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject pr_subject">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=228&amp;url=board.php%3Fbo_table%3Dad_ad%26wr_id%3D1" target="_blank"><a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=228&amp;url=board.php%3Fbo_table%3Dad_ad%26wr_id%3D1" target="_blank">[다이아 보증제휴] EOS 유로파워볼 보글파워볼 사다리게임</a>
+<span class="wr-icon wr-hot"><i class="fas fa-fire-alt"></i></span>
+</td>
+<td class="td_size2600"></td>
+<td class="td_date2 text-center"></td>
+</tr>
+<tr>
+<td class="td_category text-center"><span class="text-muted">AD</span></td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=173&amp;url=board.php%3Fbo_table%3Dad_ad%26wr_id%3D207" target="_blank"><img itemprop="image" content="https://torrentdia59.com/data/to_list/173" src="https://torrentdia59.com/data/to_list/thumb-173_100x144.png" alt="[다이아 보증제휴] 라이트닝 카지노 5+3 10+5 20+10 페이백이벤트 빠른 출금서비스" class="img-tag" /></a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject pr_subject">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=173&amp;url=board.php%3Fbo_table%3Dad_ad%26wr_id%3D207" target="_blank"><a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=173&amp;url=board.php%3Fbo_table%3Dad_ad%26wr_id%3D207" target="_blank">[다이아 보증제휴] 라이트닝 카지노 5+3 10+5 20+10 페이백이벤트 빠른 출금서비스</a>
+<span class="wr-icon wr-hot"><i class="fas fa-fire-alt"></i></span>
+</td>
+<td class="td_size2600"></td>
+<td class="td_date2 text-center"></td>
+</tr>
+
+<tr class="active">
+<td class="td_category text-center">
+<span class="text-muted">공지</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=169267">
+<div class="noimg">NONE</div>
+<img src="https://torrentdia59.com/skin/board/torrent_thum/img/thumb-no-img_100x144.png" alt="[제보포인트지급] 영상에 타 사이트 워터마크나 토렌트파일내에 타 사이트링크가 포함되어 있으면 벌점과 함께 삭제 됩니다.">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject notice">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=169267">
+[제보포인트지급] 영상에 타 사이트 워터마크나 토렌트파일내에 타 사이트링크가 포함되어 있으면 벌점과 함께 삭제 됩니다. </a>
+<span class="wr_good"><i class="far fa-thumbs-up"></i> 5</span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">54</span></span></span>
+</td>
+<td class="td_size2600">
+</td>
+<td class="td_date2 text-center">2021</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">SF</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624400">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-f657429380d9b178054b9d288cd30d21_1668171818_7967_100x144.jpg" alt="아름다운 별 A.Beautiful.Star.2017.BluRay.1080p.DTS-HD.MA.5.1.x265.10bit-Xiaomi">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624400">
+<span class="smi_red">[자막]</span> 아름다운 별 A.Beautiful.Star.2017.BluRay.<b>1080</b>p.DTS-HD.MA.5.1.x265.10bit-Xiaomi </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> </td>
+<td class="td_size2600">
+10.5G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">22:02</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">2022</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624397">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-667e0002bba9a6a727b89712aefe62c9_1668171578_5677_100x144.jpg" alt="[Netflix 공식한글포함] 홀드 유어 브레스: 아이스 다이빙.Hold.Your.Breath.The.Ice.Dive.2022.1080p.WEBRip.x264-RARBG">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624397">
+<span class="smi_red">[자막]</span> [Netflix 공식한글포함] 홀드 유어 브레스: 아이스 다이빙.Hold.Your.Breath.The.Ice.Dive.2022.<b>1080</b>p.WEB… </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> </td>
+<td class="td_size2600">
+797M <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:59</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">코미디</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+ <div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624387">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-f6ba779abbc13f422b72341904204970_1668170980_9633_100x144.png" alt="구품지마관 Hail.the.Judge.1994.Bluray.1080p.x265.10bit.DTS.5.1.2Audio-MOMOHD">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624387">
+<span class="smi_red">[자막]</span> 구품지마관 Hail.the.Judge.1994.Bluray.<b>1080</b>p.x265.10bit.DTS.5.1.2Audio-MOMOHD </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">2</span></span></span>
+</td>
+<td class="td_size2600">
+7.7G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:48</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">액션/스릴러</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624382">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-f503d549c1e2d0430a90b6c4e3964e9a_1668170539_7183_100x144.jpg" alt="모스맨 The.Mothman.Prophecies.2002.BDRip.2160p.SDR.HEVC.DD5.1.gerald99">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624382">
+<span class="smi_red">[자막]</span> 모스맨 The.Mothman.Prophecies.2002.BDRip.<b>2160</b>p.SDR.HEVC.DD5.1.gerald99 </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">1</span></span></span>
+</td>
+<td class="td_size2600">
+9.3G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:41</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">액션/스릴러</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624381">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-23f727f30b4c4439fe670fb9f7def079_1668170500_0648_100x144.jpg" alt="헬터 스켈터 Helter.Skelter.2012.1080p.BluRay.DTS.x265-10bit-TAGHD">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624381">
+<span class="smi_red">[자막]</span> 헬터 스켈터 Helter.Skelter.2012.<b>1080</b>p.BluRay.DTS.x265-10bit-TAGHD </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> </td>
+<td class="td_size2600">
+13.1G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:40</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">액션/스릴러</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624380">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-461ae0bab03972339b2db1e96675f537_1668170460_7745_100x144.jpg" alt="안달루시아 여신의 보복 Andarushia.Megami.No.Houfuku.2011.JP.BluRay.1080p.DTS.5.1.x265.10bit-Xiaomi">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624380">
+<span class="smi_red">[자막]</span> 안달루시아 여신의 보복 Andarushia.Megami.No.Houfuku.2011.JP.BluRay.<b>1080</b>p.DTS.5.1.x265.10bi… </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> </td>
+<td class="td_size2600">
+7.5G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:40</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">드라마/멜로</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624342">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-6e3f6714fac0ee749e2e19eb2d163dd3_1668169246_8663_100x144.png" alt="이보다 좋을 순 없다 As.Good.as.It.Gets.1997.2160p.UHD.BluRay.x265.10bit.HDR.TrueHD.7.1.Atmos-RARBG">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624342">
+<span class="smi_red">[자막]</span> 이보다 좋을 순 없다 As.Good.as.It.Gets.1997.<b>2160</b>p.UHD.BluRay.x265.10bit.HDR.TrueHD.7.1.A… </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">4</span></span></span>
+</td>
+<td class="td_size2600">
+12.3G + <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:19</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">드라마/멜로</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624338">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-6032d641a287948330f481c87bed4d49_1668169200_6754_100x144.png" alt="사랑의 신세계 New.Love.in.Tokyo.1994.1080p.BluRay.DD.2.0.x265-10bit-TAGHD">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624338">
+<span class="smi_red">[자막]</span> 사랑의 신세계 New.Love.in.Tokyo.1994.<b>1080</b>p.BluRay.DD.2.0.x265-10bit-TAGHD </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">2</span></span></span>
+</td>
+<td class="td_size2600">
+9.9G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:19</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">드라마/멜로</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624334">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-f70ee0ff9ef5aee1c21c7709e6a54151_1668169157_8387_100x144.jpg" alt="너에게만 슈퍼히어로 A.Choo.2020.BluRay.1080p.TrueHD.5.1.x265.10bit-Xiaomi">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624334">
+<span class="smi_red">[자막]</span> 너에게만 슈퍼히어로 A.Choo.2020.BluRay.<b>1080</b>p.TrueHD.5.1.x265.10bit-Xiaomi </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">1</span></span></span>
+</td>
+<td class="td_size2600">
+7.1G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:18</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">드라마/멜로</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624329">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-c503fe24ceac520f29fd9cd6ffeeb5db_1668169117_1303_100x144.jpg" alt="동년왕사 A.Time.to.Live,.a.Time.to.Die.1985.BluRay.1080p.DTS.HD.MA1.0.x265.10bit-Xiaomi">
+ </a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624329">
+<span class="smi_red">[자막]</span> 동년왕사 A.Time.to.Live,.a.Time.to.Die.1985.BluRay.<b>1080</b>p.DTS.HD.MA1.0.x265.10bit-Xia… </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">6</span></span></span>
+</td>
+<td class="td_size2600">
+6.0G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:17</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">드라마/멜로</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624327">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-f9c9a749d3fa9f6290f8b99988d9699c_1668169074_8215_100x144.png" alt="촌마게 푸딩 A.Boy.and.His.Samurai.2010.1080p.BluRay.DTS-HD.MA.5.1.x265.10bit-Xiaomi">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624327">
+<span class="smi_red">[자막]</span> 촌마게 푸딩 A.Boy.and.His.Samurai.2010.<b>1080</b>p.BluRay.DTS-HD.MA.5.1.x265.10bit-Xiaomi </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">1</span></span></span>
+</td>
+<td class="td_size2600">
+6.5G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:16</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">드라마/멜로</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624324">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-034f2978a581692f24ca3cfaaae42647_1668169034_3195_100x144.jpg" alt="청천벽력 A.Bolt.from.the.Blue.2014.BluRay.1080p.DTS-HD.MA.5.1.x265.10bit-Xiaomi">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624324">
+<span class="smi_red">[자막]</span> 청천벽력 A.Bolt.from.the.Blue.2014.BluRay.<b>1080</b>p.DTS-HD.MA.5.1.x265.10bit-Xiaomi </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">1</span></span></span>
+</td>
+<td class="td_size2600">
+6.1G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">21:16</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">2022</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624310">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-667e0002bba9a6a727b89712aefe62c9_1668168092_2124_100x144.jpg" alt="[Netflix 공식한글포함] 엘머의 모험.My.Fathers.Dragon.2022.1080p.WEBRip.x264-RARBG">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624310">
+[Netflix 공식한글포함] 엘머의 모험.My.Fathers.Dragon.2022.<b>1080</b>p.WEBRip.x264-RARBG </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">3</span></span></span>
+</td>
+<td class="td_size2600">
+2.0G </td>
+<td class="td_date2 text-center">21:02</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">액션/스릴러</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624288">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-cecf7a2605fe89dea46e7770e0fb456b_1668166297_5843_100x144.jpg" alt="Autumn.Beat.2022.ITALIAN.1080p.WEBRip.x264-VXT">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624288">
+Autumn.Beat.2022.ITALIAN.<b>1080</b>p.WEBRip.x264-VXT </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">3</span></span></span>
+</td>
+<td class="td_size2600">
+2.0G </td>
+<td class="td_date2 text-center">20:30</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">2022</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624286">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-f7fca4a9656a7dadb34dbb87d9047aec_1668166179_1608_100x144.jpg" alt="암스테르담.Amsterdam.2022.1080p.WEBRip.x265-RARBG">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624286">
+암스테르담.Amsterdam.2022.<b>1080</b>p.WEBRip.x265-RARBG </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="wr_good"><i class="far fa-thumbs-up"></i> 1</span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">3</span></span></span>
+</td>
+<td class="td_size2600">
+2.1G </td>
+<td class="td_date2 text-center">20:28</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">2022</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624238">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-thumb-watermark-3d1da976f31dbe51bb22c3b466b1ae9c_1668084541_1014_800x1184_100x144.jpg" alt="블랙 팬서 : 와칸다 포에버.Black Panther Wakanda Forever 2022 720p CAMRip HINDI DUB 1XBET">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624238">
+블랙 팬서 : 와칸다 포에버.Black Panther Wakanda Forever 2022 <b>720</b>p CAMRip HINDI DUB 1XBET </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="wr-icon wr-hot"><i class="fas fa-fire-alt"></i></span> <span class="wr_good"><i class="far fa-thumbs-up"></i> 2</span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">8</span></span></span>
+</td>
+<td class="td_size2600">
+1.2G </td>
+<td class="td_date2 text-center">20:10</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">2022</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624200">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-f7fca4a9656a7dadb34dbb87d9047aec_1668163757_3283_100x144.jpg" alt="Bar.Fight.2022.1080p.WEBRip.x265-RARBG">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624200">
+Bar.Fight.2022.<b>1080</b>p.WEBRip.x265-RARBG </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">5</span></span></span>
+</td>
+<td class="td_size2600">
+1.3G </td>
+<td class="td_date2 text-center">19:48</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">고화질</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624191">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-d899a6998cfd2fcb37e6031ba7904e2c_1668163176_0462_100x144.png" alt="더 브릿지 Causeway.2022.2160p.4K.WEB.x265.10bit.AAC5.1-[YTS.MX]">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624191">
+<span class="smi_red">[자막]</span> 더 브릿지 Causeway.2022.<b>2160</b>p.4K.WEB.x265.10bit.AAC5.1-[YTS.MX] </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span>  <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">10</span></span></span>
+</td>
+<td class="td_size2600">
+4.2G + <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">19:38</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">공포</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624153">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-watermark-8a3449f0b4d89db9735c218b4e8e45df_1668160761_9136_100x144.jpg" alt="아미티빌 3 Amityville 3-D (1983) (1080p BluRay x265 10bit Tigole)">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624153">
+<span class="smi_red">[자막]</span> 아미티빌 3 Amityville 3-D (1983) (<b>1080</b>p BluRay x265 10bit Tigole) </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">7</span></span></span>
+</td>
+<td class="td_size2600">
+4.0G <i class="fas fa-download"></i> </td>
+<td class="td_date2 text-center">18:58</td>
+</tr>
+<tr>
+<td class="td_category text-center">
+<span class="text-muted">2022</span>
+</td>
+<td class="list-img text-center">
+<div class="imgframe">
+<div class="img-wrap">
+<div class="img-item">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624146">
+<img src="https://torrentdia59.com/data/editor/2211/thumb-thumb-watermark-3d1da976f31dbe51bb22c3b466b1ae9c_1668084541_1014_800x1184_100x144.jpg" alt="블랙 팬서 : 와칸다 포에버.Black Panther Wakanda Forever 2022 Hindi 480/720p PDVDRip x264 AAC CineVood">
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="list-subject web-subject">
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624146">
+블랙 팬서 : 와칸다 포에버.Black Panther Wakanda Forever 2022 Hindi <b>480</b>/<b>720</b>p PDVDRip x264 A… </a>
+<span class="wr-icon wr-new"><i class="fas fa-caret-square-up"></i></span> <span class="wr-icon wr-hot"><i class="fas fa-fire-alt"></i></span> <span class="comment_cnt"><i class="fas fa-comment"></i><span class="cnt_cmt"><span class="cnt_cmt">9</span></span></span>
+</td>
+<td class="td_size2600">
+526M + </td>
+<td class="td_date2 text-center">18:55</td>
+</tr>
+</tbody>
+</table>
+</div> <div class="list-btn-box">
+<div class="form-group list-btn ">
+<div class="btn-group">
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</form>
+<div class="list-page text-center">
+<ul class="pagination pagination-sm en">
+<li class="disabled"><a><i class="fas fa-angle-double-left"></i></a></li><li class="disabled"><a><i class="fas fa-angle-left"></i></a></li><li class="active"><a>1</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=2">2</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=3">3</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=4">4</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=5">5</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=6">6</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=7">7</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=8">8</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=9">9</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=10">10</a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=11"><i class="fas fa-angle-right"></i></a></li><li><a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;page=3748"><i class="fas fa-angle-double-right"></i></a></li> </ul>
+</div>
+<div class="clearfix"></div>
+<div class="list-btn-box2">
+<div class="form-group2 list-btn ">
+<div class="btn-group">
+<div class="fsearchform">
+<form name="fsearch" method="get" role="form" class="form" action="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov">
+<input type="hidden" name="bo_table" value="torrent_movieov">
+<input type="hidden" name="sca" value="">
+
+
+<div class="form-group2">
+<label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+<input type="text" name="stx" value="" required id="stx" class="form-control2 input-sm" maxlength="20" minlength="2" placeholder="토렌트 검색" style="float:left;">
+<button type="submit" class="btn btn-color0"><i class="fas fa-search"></i></button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</section>
+
+</div>
+<div class="col-md-3 col-md-push-0  m-col-mb-3">
+<div class="idx-sidebox">
+
+
+<div class="side_bimg clearfix">
+<div class="fleft">
+<div class="pr_main_right_1">
+<a rel="nofollow" href="https://torrentdia59.com/bbs/bannerhit.php?bn_id=176&amp;url=https%3A%2F%2Fwww.bambest6.com%2F" target="_blank"><img alt="" src="https://torrentdia59.com/data/to_list/176" title="" class="max-w100"></a>
+</div></div>
+</div>
+<div class="clearfix"></div>
+<div class="sidebox-main">
+
+<div role="tabpanel">
+
+<ul class="nav nav-tabs nav-justified" role="tablist">
+<li role="presentation" class="active"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab"><i class="fas fa-search"></i> <h1>실시간검색</h1></a></li>
+<li role="presentation" class=""><a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab"><i class="fas fa-search-plus"></i> <h1>주간검색</h1></a></li>
+</ul>
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active search" id="home2">
+<div class="widget-basic-popular-list">
+<ul>
+<li class="btnbs10">
+<a href="https://torrentdia59.com/bbs/search.php?stx=%ED%98%95%EC%82%AC%EB%A1%9D" title="형사록">
+형사록 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%AA%B8%EA%B0%92" title="몸값">
+몸값 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%A7%84%EA%B2%80%EC%8A%B9%EB%B6%80" title="진검승부">
+진검승부 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=3%EC%9D%B8%EC%B9%AD" title="3인칭">
+3인칭 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B8%94%EB%9E%99%EC%95%84%EB%8B%B4" title="블랙아담">
+블랙아담 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%96%BC%EC%96%B4%EC%A3%BD%EC%9D%84" title="얼어죽을">
+얼어죽을 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B2%9C%EC%9B%90%EC%A7%9C%EB%A6%AC" title="천원짜리">
+천원짜리 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9B%94%EC%88%98%EA%B8%88" title="월수금">
+월수금 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%BC%AC%EB%A6%AC%EC%97%90" title="꼬리에">
+꼬리에 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9D%BC%EB%8B%B9%EB%B0%B1" title="일당백">
+일당백 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8A%88%EB%A3%B9" title="슈룹">
+슈룹 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9D%B8%EC%83%9D%EC%9D%80" title="인생은">
+인생은 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=221110" title="221110">
+2211… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%BD%94%EB%82%9C" title="코난">
+코난 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B0%90%EC%B9%9C" title="찐친">
+찐친 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B2%9C%EC%9B%90" title="천원">
+천원 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8B%AC%EC%95%BC%EA%B4%B4%EB%8B%B4%ED%9A%8C" title="심야괴담회">
+심야괴담… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%95%88%EB%8F%84%EB%A5%B4" title="안도르">
+안도르 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B9%98%EC%96%BC%EC%97%85" title="치얼업">
+치얼업 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%BB%A4%ED%8A%BC%EC%BD%9C" title="커튼콜">
+커튼콜 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9B%94%EC%88%98%EA%B8%88%ED%99%94%EB%AA%A9%ED%86%A0" title="월수금화목토">
+월수금화… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9B%90%ED%94%BC%EC%8A%A4" title="원피스">
+원피스 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%8D%94%EB%B9%99" title="더빙">
+더빙 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=k2s" title="k2s">
+k2s </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B8%94%EB%A6%AC%EC%B9%98" title="블리치">
+블리치 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B8%88%EC%88%98%EC%A0%80" title="금수저">
+금수저 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%97%B0%EC%98%88%EC%9D%B8" title="연예인">
+연예인 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B0%94%ED%80%B4" title="바퀴">
+바퀴 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8B%AC%EC%95%BC" title="심야">
+심야 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B3%B5%EC%A1%B0" title="공조">
+공조 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%A7%84%EA%B2%80" title="진검">
+진검 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9D%BC%EB%8B%B9%EB%B0%B1%EC%A7%91%EC%82%AC" title="일당백집사">
+일당백집… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%96%B4%EC%84%9C%EC%99%80" title="어서와">
+어서와 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9C%A0%ED%80%B4%EC%A6%88" title="유퀴즈">
+유퀴즈 </a>
+ <a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B0%80%EC%9A%B0%EC%8A%A4" title="가우스">
+가우스 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%82%98%EB%8A%94" title="나는">
+나는 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%ED%8E%98%EB%A6%AC%ED%8D%BC%EB%9F%B4" title="페리퍼럴">
+페리퍼럴 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%95%84%EB%A6%84%EB%8B%A4%EC%9B%8C" title="아름다워">
+아름다워 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%ED%95%9C%EB%AC%B8%EC%B2%A0" title="한문철">
+한문철 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B2%8C%EA%B1%B0%EB%B2%97%EC%9D%80" title="벌거벗은">
+벌거벗은 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8B%A0%EB%9E%91%EC%88%98%EC%97%85" title="신랑수업">
+신랑수업 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B3%A8%EB%95%8C%EB%A6%AC%EB%8A%94" title="골때리는">
+골때리는 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=e%EB%B6%81" title="e북">
+e북 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%A9%9C%EB%A1%A0" title="멜론">
+멜론 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=solo" title="solo">
+solo </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=2022" title="2022">
+2022 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8A%A4%ED%8A%B8%EB%A6%BF" title="스트릿">
+스트릿 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B2%B0%ED%98%BC%EC%97%90" title="결혼에">
+결혼에 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9E%84%EC%98%81%EC%9B%85" title="임영웅">
+임영웅 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B3%B5%EC%A1%B02" title="공조2">
+공조2 </a>
+</li>
+</ul>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane  search" id="profile2">
+<div class="widget-basic-popular-list">
+<ul>
+<li class="btnbs10">
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%AA%B8%EA%B0%92" title="몸값">
+몸값 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%ED%98%95%EC%82%AC%EB%A1%9D" title="형사록">
+형사록 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B2%9C%EC%9B%90%EC%A7%9C%EB%A6%AC" title="천원짜리">
+천원짜리 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8A%88%EB%A3%B9" title="슈룹">
+슈룹 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B8%94%EB%9E%99%EC%95%84%EB%8B%B4" title="블랙아담">
+블랙아담 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B2%9C%EC%9B%90" title="천원">
+천원 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B8%88%EC%88%98%EC%A0%80" title="금수저">
+금수저 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%97%AC%EA%B5%B0%EC%B4%88%EC%83%81%EC%8B%9D" title="여군초상식">
+여군초상… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B0%80%EC%9A%B0%EC%8A%A4" title="가우스">
+가우스 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%AC%B5%EA%B2%80%ED%96%A5" title="묵검향">
+묵검향 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%BB%A4%ED%8A%BC%EC%BD%9C" title="커튼콜">
+커튼콜 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%A7%84%EA%B2%80%EC%8A%B9%EB%B6%80" title="진검승부">
+진검승부 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%96%BC%EC%96%B4%EC%A3%BD%EC%9D%84" title="얼어죽을">
+얼어죽을 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B8%94%EB%9D%BC%EC%9D%B8%EB%93%9C" title="블라인드">
+블라인드 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B3%B5%EC%A1%B0" title="공조">
+공조 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%9F%B0%EB%8B%9D%EB%A7%A8" title="런닝맨">
+런닝맨 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9B%90%ED%94%BC%EC%8A%A4" title="원피스">
+원피스 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%86%80%EB%A9%B4" title="놀면">
+놀면 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B9%98%EC%96%BC%EC%97%85" title="치얼업">
+치얼업 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B8%94%EB%A6%AC%EC%B9%98" title="블리치">
+블리치 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%95%88%EB%8F%84%EB%A5%B4" title="안도르">
+안도르 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8B%AD%EC%98%A4%EC%95%BC" title="십오야">
+십오야 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B3%80%ED%98%B8%EC%82%AC" title="변호사">
+변호사 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9B%94%EC%88%98%EA%B8%88" title="월수금">
+월수금 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%ED%8E%98%EB%A6%AC%ED%8D%BC%EB%9F%B4" title="페리퍼럴">
+페리퍼럴 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%8F%84%EC%8B%9C%EC%96%B4%EB%B6%80" title="도시어부">
+도시어부 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%99%80%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B4%ED%81%AC" title="와이프라이크">
+와이프라… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B3%B5%EC%A1%B02" title="공조2">
+공조2 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%9D%BC%EB%8B%B9%EB%B0%B1" title="일당백">
+일당백 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%8D%94%EB%B9%99" title="더빙">
+더빙 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%BD%94%EB%82%9C" title="코난">
+코난 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%8C%80%EB%AC%B4%EA%B0%80" title="대무가">
+대무가 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=k2s" title="k2s">
+k2s </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=e%EB%B6%81" title="e북">
+e북 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B0%80%EC%9A%B0%EC%8A%A4%EC%A0%84%EC%9E%90" title="가우스전자">
+가우스전… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%8A%A4%ED%8A%B8%EB%A6%BF" title="스트릿">
+스트릿 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%97%90%EB%86%80%EB%9D%BC" title="에놀라">
+에놀라 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%82%98%ED%98%BC%EC%9E%90" title="나혼자">
+나혼자 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%87%BC%EB%AF%B8" title="쇼미">
+쇼미 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC" title="드래곤볼">
+드래곤볼 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EA%B3%A8%EB%95%8C%EB%A6%AC%EB%8A%94" title="골때리는">
+골때리는 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=2022" title="2022">
+2022 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%97%B0%EC%98%88%EC%9D%B8" title="연예인">
+연예인 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%8B%A5%ED%84%B0W" title="닥터W">
+닥터W </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%A9%9C%EB%A1%A0" title="멜론">
+멜론 </a>
+ <a href="https://torrentdia59.com/bbs/search.php?stx=%ED%82%AC%EB%A6%AC%EB%A7%8C%EC%9E%90%EB%A1%9C" title="킬리만자로">
+킬리만자… </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%B5%9C%EA%B0%95%EC%95%BC%EA%B5%AC" title="최강야구">
+최강야구 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%A0%88%EC%8A%AC%EB%9F%AC" title="레슬러">
+레슬러 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EB%B2%8C%EA%B1%B0%EB%B2%97%EC%9D%80" title="벌거벗은">
+벌거벗은 </a>
+<a href="https://torrentdia59.com/bbs/search.php?stx=%EC%87%BC%EB%AF%B8%EB%8D%94%EB%A8%B8%EB%8B%88" title="쇼미더머니">
+쇼미더머… </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="clearfix"></div>
+<div class="h10"></div>
+<div class="sidebox-main">
+
+<div role="tabpanel">
+
+<ul class="nav nav-tabs nav-justified" role="tablist">
+<li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab"><i class="fas fa-fire-alt"></i> <h1>실시간인기</h1></a></li>
+<li role="presentation" class=""><a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab"><i class="fas fa-download"></i> <h1>최근등록</h1></a></li>
+</ul>
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home1">
+<div class="widget-exciting-post-list">
+<ul>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieko&amp;wr_id=449192" class="">
+<span class="pull-right count color">349</span>
+<div class="subject pull-left">성덕 Fanatic.2022.720p.HDRip.H264.AAC-iMBC</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieko&amp;wr_id=451301" class="">
+<span class="pull-right count color">376</span>
+<div class="subject pull-left">미혹 The.Other.Child.2022.1080p.SZ.WEB-DL.H264.AAC-GNom</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=614357" class="">
+<span class="pull-right count color">162</span>
+<div class="subject pull-left">오르가즘 주식회사: 쾌락을 판 어느 회사의 진실.2022.1080p.WEBRip.x264-RARBG[한글자막]</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=614260" class="">
+<span class="pull-right count color">189</span>
+<div class="subject pull-left">[영문자막] 알.아이.피.디. 2.R.I.P.D.2.Rise of the Damned.2022.1080p.Bluray.DTS-HD.MA.5.1.X264-EVO</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_drama&amp;wr_id=628971" class="">
+<span class="pull-right count color">315</span>
+<div class="subject pull-left">천원짜리 변호사.E11.221105.720p-NEXT</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieko&amp;wr_id=448362" class="">
+<span class="pull-right count color">328</span>
+<div class="subject pull-left">욕망의 독 중독 (2014)</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=614009" class="">
+<span class="pull-right count color">118</span>
+<div class="subject pull-left">여배우에 관한 모든 것 All About Actresses (2009) [1080p] [WEBRip] [5.1] [YTS.MX]</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ent&amp;wr_id=1071089" class="">
+<span class="pull-right count color">235</span>
+<div class="subject pull-left">뜨겁게 안녕.E01.221107.720p-NEXT [첫방송]</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieko&amp;wr_id=453191" class="">
+<span class="pull-right count color">211</span>
+<div class="subject pull-left">악에바쳐.2022.1080p.FHDRip.H264.AAC-Bucket</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=615246" class="">
+<span class="pull-right count color">120</span>
+<div class="subject pull-left">더 시스템.The.System.2022.WEBRip.720p/1080p/2160p (액션 스릴러)</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieko&amp;wr_id=451735" class="">
+<span class="pull-right count color">286</span>
+<div class="subject pull-left">인생은 아름다워 Life is Beautiful.2022.720p.HDRip.H264.AAC-iMBC</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ent&amp;wr_id=1067318" class="">
+<span class="pull-right count color">182</span>
+<div class="subject pull-left">런닝맨.E627.221106.720p-NEXT</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieko&amp;wr_id=451226" class="">
+<span class="pull-right count color">159</span>
+<div class="subject pull-left">성덕.2022.1080p-CJH</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ent&amp;wr_id=1076414" class="">
+<span class="pull-right count color">255</span>
+<div class="subject pull-left">라디오스타.E792.221109.720p-NEXT</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ent&amp;wr_id=1063351" class="">
+<span class="pull-right count color">226</span>
+<div class="subject pull-left">히든싱어7.E12.221104.720p-NEXT</div>
+</a>
+</li>
+</ul>
+</div> </div>
+<div role="tabpanel" class="tab-pane " id="profile1">
+<div class="widget-exciting-post-list">
+<ul>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_docu&amp;wr_id=266631" class="">
+<div class="subject pull-left">궁금한 이야기 Y.E612.221111.720p.H264-F1RST</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ent&amp;wr_id=1080853" class="">
+<div class="subject pull-left">맛있는 녀석들.E403.221111.720p-NEXT</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624400" class="">
+<div class="subject pull-left">아름다운 별 A.Beautiful.Star.2017.BluRay.1080p.DTS-HD.MA.5.1.x265.10bit-Xiaomi</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624397" class="">
+<div class="subject pull-left">[Netflix 공식한글포함] 홀드 유어 브레스: 아이스 다이빙.Hold.Your.Breath.The.Ice.Dive.2022.1080p.WEBRip.x264-RARBG</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_music&amp;wr_id=304346" class="">
+<div class="subject pull-left">V.A - 아싸 신나는 트로트 모음집</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_music&amp;wr_id=304345" class="">
+<div class="subject pull-left">전추영 - PUMP 트롯디스코：연지곤지</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ftv&amp;wr_id=184068" class="">
+<div class="subject pull-left">[한글자막]설녀와 게를 먹다 EP01~04 1080P</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_netflix&amp;wr_id=126147" class="">
+<div class="subject pull-left">[Netflix 내장한글] 홀드 유어 브레스: 아이스 다이빙.Hold.Your.Breath.The.Ice.Dive.2022.720p/1080p.WEB.h264-KOGi</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ftv&amp;wr_id=184066" class="">
+<div class="subject pull-left">[한글자막]사일런트 EP01~02 1080P</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ftv&amp;wr_id=184065" class="">
+<div class="subject pull-left">[한글자막]바보 녀석의 키스 EP01~02 1080P</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ent&amp;wr_id=1080820" class="">
+<span class="pull-right count color">1</span>
+<div class="subject pull-left">맛있는 녀석들.E403.221111.1080p.H264-F1RST</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ent&amp;wr_id=1080817" class="">
+<span class="pull-right count color">1</span>
+<div class="subject pull-left">요즘 육아 금쪽같은 내 새끼.E122.221111.1080p.H264-F1RST</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ftv&amp;wr_id=184064" class="">
+<span class="pull-right count color">1</span>
+<div class="subject pull-left">[한글자막]다시 하고 싶은 퍼스트 키스 EP01~02 1080P</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_movieov&amp;wr_id=624387" class="">
+<span class="pull-right count color">1</span>
+<div class="subject pull-left">구품지마관 Hail.the.Judge.1994.Bluray.1080p.x265.10bit.DTS.5.1.2Audio-MOMOHD</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=torrent_ftv&amp;wr_id=184063" class="">
+<span class="pull-right count color">2</span>
+<div class="subject pull-left">[한글자막]A LIFE _사랑스러운 사람 EP01~06 1080P</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+</ul>
+</div> </div>
+</div>
+</div>
+
+</div>
+<div class="clearfix"></div>
+<div class="h10"></div>
+<div class="sidebox-main">
+
+<div role="tabpanel">
+ 
+<ul class="nav nav-tabs nav-justified" role="tablist">
+<li role="presentation" class="active"><a href="#home3" aria-controls="home1" role="tab" data-toggle="tab"><i class="fas fa-fire-alt"></i> <h1>커뮤니티인기</h1></a></li>
+<li role="presentation" class=""><a href="#profile4" aria-controls="profile1" role="tab" data-toggle="tab"><i class="fas fa-download"></i> <h1>커뮤니티</h1></a></li>
+</ul>
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home3">
+<div class="widget-exciting-post-list">
+<ul>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172047" class="">
+<span class="pull-right count color">54</span>
+<div class="subject pull-left">흑인학생이 아시아계 학생에게 칼부림</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172032" class="">
+<span class="pull-right count color">94</span>
+<div class="subject pull-left">예능 다 결방이네 ㅅㅂ</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172334" class="">
+<span class="pull-right count color">65</span>
+<div class="subject pull-left">성공한 사람들이 흔히 하는 대단한 착각</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172343" class="">
+<span class="pull-right count color">110</span>
+<div class="subject pull-left">이태원 핼러윈 인파의 대한 대책</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172546" class="">
+<span class="pull-right count color">85</span>
+<div class="subject pull-left">조립pc 추천이 어려운 이유...</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172664" class="">
+<span class="pull-right count color">37</span>
+<div class="subject pull-left">혐주의) 역사속의 잔인한 형벌 모음</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172788" class="">
+<span class="pull-right count color">47</span>
+<div class="subject pull-left">일본에서 일어난 기적의 사건</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173036" class="">
+<span class="pull-right count color">41</span>
+<div class="subject pull-left">부실 급식을 폭로한 영국 군인들의 최후</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172050" class="">
+<span class="pull-right count color">70</span>
+<div class="subject pull-left">누군가의 스승님 말씀 듣고 가실께요~~</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172210" class="">
+<span class="pull-right count color">57</span>
+<div class="subject pull-left">재미있는 드라마 추천해주세요</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173323" class="">
+<span class="pull-right count color">73</span>
+<div class="subject pull-left">전 세계에서 중국인이 가장 많이 거주하는 국가</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173353" class="">
+<span class="pull-right count color">32</span>
+<div class="subject pull-left">사랑스러운 아내였다</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172644" class="">
+<span class="pull-right count color">31</span>
+<div class="subject pull-left">토지소유주 땅아래 금도 땅주인 것이 아니다.</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=172890" class="">
+<span class="pull-right count color">27</span>
+<div class="subject pull-left">할머니가 보고 싶은데요.</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173689" class="">
+<span class="pull-right count color">14</span>
+<div class="subject pull-left">요즘 군대 건의사항</div>
+</a>
+</li>
+</ul>
+</div> </div>
+<div role="tabpanel" class="tab-pane " id="profile4">
+<div class="widget-exciting-post-list">
+<ul>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173972" class="">
+<div class="subject pull-left">[스팀] Poly Bridge 2 82%세일</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173971" class="">
+<span class="pull-right count color">1</span>
+<div class="subject pull-left">양심없는 환불자들</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173958" class="">
+<span class="pull-right count color">6</span>
+<div class="subject pull-left">만화/도서 란에 E북이라고 써져있는건 컴퓨터로 볼수있는 방법이 있을까요?</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173873" class="">
+<span class="pull-right count color">3</span>
+<div class="subject pull-left">22년11월11일 트래커목록입니다</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173863" class="">
+<span class="pull-right count color">4</span>
+<div class="subject pull-left">콜오브듀티 모던워페어2 리부트</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173794" class="">
+<span class="pull-right count color">5</span>
+<div class="subject pull-left">스틸라이징 트레이너</div>
+<div class="newicon pull-left"><span class="bgnew"><i class="fas fa-caret-square-up"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173753" class="">
+<span class="pull-right count color">5</span>
+<div class="subject pull-left">젠하이저 CX Plus True Wireless 이어폰 구매하실 분 필독요!!</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173745" class="">
+<span class="pull-right count color">4</span>
+<div class="subject pull-left">요즘...</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173693" class="">
+<span class="pull-right count color">12</span>
+<div class="subject pull-left">옛 원조&#034;공작왕&#034;만화작가</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173689" class="">
+<span class="pull-right count color">14</span>
+<div class="subject pull-left">요즘 군대 건의사항</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173622" class="">
+<span class="pull-right count color">4</span>
+<div class="subject pull-left">한국형 어린이 슈퍼 히어로의 탄생, TV 최초 공개 번개맨 프리퀄 '번개망토의 비밀' 11월 11일 첫 방송</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173620" class="">
+<div class="subject pull-left">2022년3차 EBS애니메이션 공동제작 프로젝트공모결과</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173609" class="">
+<span class="pull-right count color">17</span>
+<div class="subject pull-left">건강검진을 받았는데... 수면 상태 혈압이 일반 혈압?</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173587" class="">
+<span class="pull-right count color">6</span>
+<div class="subject pull-left">22년11월10일 트래커 목록입니다</div>
+</a>
+</li>
+<li>
+<a href="https://torrentdia59.com/bbs/board.php?bo_table=community&amp;wr_id=173530" class="">
+<span class="pull-right count color">4</span>
+<div class="subject pull-left">거의 10년만에 토렌토 사이트를 이용하면서</div>
+</a>
+</li>
+</ul>
+</div> </div>
+</div>
+</div>
+
+</div>
+<div class="clearfix"></div>
+<div class="h10"></div>
+</div> </div>
+<div class="clearfix"></div>
+<footer class="at-footer">
+<div id="pr_popup">
+<button class="psmall pop1" data-bpopup='{"transition":"slideDown","speed":850,"easing":"easeOutBack"}'>Pop up</button>
+</div>
+<div class="at-map">
+<div class="text-center pull-left"><p><a href="https://torrentdia59.com/bbs/dmca.php" rel="nofollow"><span>DMCA</span></a></p></div>
+<div class="text-center pull-left"><p><a href="https://torrentdia59.com/bbs/write_qa.php?bo_table=qa" rel="nofollow"><span>문의</span></a></p></div>
+<div class="text-center pull-left"><p><a href="#device" onclick="device('mobile'); return false;" rel="alternate"><i class="fas fa-mobile-alt"></i> <span>MOBILE</span></a></p></div>
+<div class="clearfix"></div>
+<div class="copyright text-center pull-left"><p>토렌트다이아</p></div>
+</div>
+</footer>
+</div>
+</div>
+</section>
+</section>
+<div class="clearfix"></div>
+
+</div> 
+
+<script>
+    function device(mode)
+    {
+        if(mode == 'pc'){
+            jQuery.cookie('device', null, {path: "/", domain: ".torrentdia59.com", expires: -1});
+            document.location.href = 'https://torrentdia59.com';
+        } else {
+            jQuery.cookie('device', mode, {path: "/", domain: ".torrentdia59.com"});
+            document.location.href = 'https://torrentdia59.com';
+        }
+    }
+</script>
+
+<script>
+    //$(".header .header-search").css({"margin-left": "30px"});
+
+    $('#headsearchform button[type=submit]').on('click',function(event){
+        var search_flag = $("[name=search_flag]").val();
+        var stx = $('#headsearchform [name=stx]:visible');
+        $('#headsearchform [name=stx]:hidden').val(stx.val());
+        if (stx.val().length < 2) {
+            alert('검색어는 두글자 이상 입력하세요.');
+            stx.focus();
+            return false;
+        }
+
+        $('#headsearchform').attr('action', '/bbs/search.php');
+    });
+</script>
+<script type="text/javascript" src="https://torrentdia59.com/thema/site/assets/js/common-scripts.js"></script>
+<script type="text/javascript" src="https://torrentdia59.com/thema/site/assets/bs3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://torrentdia59.com/thema/site/assets/js/common_tail_jquery.js"></script>
+<script type="text/javascript" src="https://torrentdia59.com/js/common_tail.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.0/respond.js"></script>
+<script type="text/javascript" src="https://torrentdia59.com/thema/site/assets/js/ie-bootstrap-carousel.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+<script type="text/javascript">
+	$(function() {
+		$(".view-content img").lazyload({
+			scrollDirection: 'vertical',
+			effect: 'fadeIn',
+			placeholder: "/img/loading.gif",
+			visibleOnly: true,
+			skip_invisible: false,
+			throttle: 1000,
+			onError: function(element) {
+				jQuery(element).attr('src', jQuery(element).attr('data-original'));
+			}
+		});
+	});
+</script>
+</body>
+</html>
+
+

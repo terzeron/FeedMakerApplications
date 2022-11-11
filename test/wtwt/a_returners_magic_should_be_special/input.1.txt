@@ -1,0 +1,2865 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="euc-kr" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="juicyads-site-verification" content="78d742ec22f51ac9f47c4fbc0812cb55">
+
+<!-- favicon -->
+<link rel="icon" href="/assets/img/favicon.ico?v=1">
+<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico?v=1"/>
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/img/favicon.png?v=1" />
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<link href="/assets/css/common.css?v=24" rel="stylesheet" type="text/css">
+<link href="/assets/css/font-awesome.css?v=24" rel="stylesheet" type="text/css">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CP833R9QTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CP833R9QTQ');
+</script>
+
+
+<meta name="title" content="귀환자의 마법은 특별해야 합니다">
+<meta name="subject" content="귀환자의 마법은 특별해야 합니다">
+<meta name="publisher" content="w툰">
+<meta name="author" content="w툰">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="귀환자의 마법은 특별해야 합니다">
+
+<meta name="description" content="귀환자의 마법은 특별해야 합니다">
+<meta property="og:title" content="귀환자의 마법은 특별해야 합니다">
+<meta property="og:site_name" content="w툰">
+<meta property="og:author" content="w툰">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wtwt161.com">
+<meta property="og:description" content="귀환자의 마법은 특별해야 합니다">
+<title>귀환자의 마법은 특별해야 합니다</title>
+
+</head>
+
+<body>
+<!-- header -->
+<header>
+	<div class="wrap">
+		<div class="row top">
+			<div class="container">
+				<div class="logo"><a href="/"><img src="assets/img/logo.png"></a></div> 
+				<div class="banner" style="margin-right:10px;"><a href="https://t.me/toonw" target="_blank"><img src="assets/img/banneri.png?v=2" alt="배너문의"></a></div>
+			</div>
+		</div>
+		<div class="row menu">
+			<div class="container">
+				<div class="left">
+					<ul>
+						<li class="active"><a href="/w1">연재툰</a></li>
+						<li class=""><a href="/w2">완결툰</a></li>
+						<li class=""><a href="/w5">만화책</a></li>
+						<li class=""><a href="/w6">보증토토</a></li>
+						<!--<li class=""><a href="/w3">포토툰</a></li>-->
+						<li class=""><a href="/w4">북마크</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="btn_login"><a href="#login" class="login_open">로그인</a></li>
+						<li>
+						<form id="search_form1" method="post" class="search-box" action="/sh">
+							<input name="search_txt" type="text" style="background-color:#d1d1d1;" id="search_txt1">
+							<button type="button" id="search_btn1"><i class="fa fa-search"></i></button>
+						</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header><!-- //header -->
+<nav class="menu-mobile"><span></span><span></span><span></span></nav>
+<nav class="menu">
+	<div class="search-box">
+		<form id="search_form2" method="post" class="search-box" action="/sh">
+			<input name="search_txt" type="text" id="search_txt2">
+			<button type="button" id="search_btn2"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+	<div class="member-box">
+		<ul>
+			<li class="header">회원 메뉴</li>
+			<li>
+				<a href="#login" class="btn btn-dark login_open">로그인</a>
+			</li>
+		</ul>
+	</div>
+	<div class="menu-box">
+		<ul>
+			<li class="header">WTOON 메뉴</li>
+			<li class="active"><a href="/w1"><i class="fa fa-book"></i> 연재툰</a></li>
+			<li class=""><a href="/w2"><i class="fa fa-book"></i> 완결툰</a></li>
+			<li class=""><a href="/w5"><i class="fa fa-book"></i> 만화책</a></li>
+			<li class=""><a href="/w6"><i class="fa fa-check-circle"></i> 보증토토</a></li>
+			<!--<li class=""><a href="/w3"><i class="fa fa-camera"></i> 포토툰</a></li>-->
+			<li class=""><a href="/w4"><i class="fa fa-bookmark"></i> 북마크</a></li>
+		</ul>
+		<div class="banner"><a href="https://t.me/toonw" target="_blank"><img src="assets/img/banneri.png?v=2" alt="배너문의"></a></div>
+	</div>
+	<div class="bottom-box">
+		<span>Copyright&copy; WTOON</span>
+	</div>
+</nav>
+
+
+<div class="bg_mask"></div>
+<div class="login_box layer_box">
+	<form name="signup" action="#">
+	<h3 class="hide">로그인</h3><div class="layer_box_close btn_layer_close"></div>
+	<ul>
+		<li class="header">
+			<img src="assets/img/logo.png">
+			<h1>로그인</h1>
+		</li>
+		
+		<li class="message">
+			<i class="fa fa-bookmark" aria-hidden="true"></i><strong>북마크 사용을 위해선<br>로그인이 필요합니다.</strong>
+		</li>
+		<li class="input">
+			<input type="text" placeholder="아이디" id="login_id" onkeyup="if(event.keyCode==13){$('#btn_login').click();}">
+			<input type="password" placeholder="비밀번호" id="login_pw" onkeyup="if(event.keyCode==13){$('#btn_login').click();}">
+		</li>
+		<li class="button">
+			<button type="button" class="login_button" id="btn_login">로그인</button>
+		</li>
+		<li class="bottom">
+			<span>쿠키설정차단시 로그인이 불가능합니다<br>쿠키설정을 허용하세요</span> <button type="button" class="signup_open">회원가입</button>
+		</li>
+		
+	</ul>
+	</form>
+</div>
+<div class="signup_box layer_box">
+	<form name="signup" action="#">
+	<ul>
+		<li class="header">
+			<img src="assets/img/logo.png">
+			<h1>회원가입</h1>
+			<div class="layer_box_close btn_layer_close"></div>
+		</li>
+		<li class="block"></li>
+		<li class="input"><input type="text" placeholder="아이디" id="memreg_id"></li>
+		<li class="input"><input type="password" placeholder="비밀번호" id="memreg_pw"></li>
+		<li class="input"><input type="password" placeholder="비밀번호 확인" id="memreg_pw_check"></li>
+		<li class="button">
+			<button type="button" class="memreg_button layer_box_close">가입하기</button>
+		</li>
+	</ul>
+	</form>
+</div>
+<!-- //header -->
+
+<!-- section.body -->
+<section class="body"><div class="container bg-white">
+	<div class="row">
+		<div class="banner">
+			
+			<div class="bnr-col3">
+			
+					<a href="http://심슨주소.com" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/simson1.jpeg"></a>
+			
+					<a href="https://machuja-985.com/?ref=3280" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/machuja_1.gif?v=1"></a>
+			
+					<a href="https://simba05.com/#/sports/pregame?partner=woweb" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/simba320_1.gif"></a>
+			
+					<a href="http://white119.com" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/whitebet4.gif"></a>
+			
+					<a href="http://mul-25.com" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/question_1.gif"></a>
+			
+					<a href="http://we-b1105.com" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/mealwf3.gif"></a>
+			
+			</div>
+			
+			<div class="bnr-col2">
+			
+					<a href="http://wn-st.com/" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/winner452w.gif"></a>
+			
+					<a href="http://ww-ot.com" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/nwin45280.gif"></a>
+			
+			</div>
+			
+			<div class="bnr-col1">
+			
+					<a href="http://we-b1105.com" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/mealwt1.gif"></a>
+			
+					<a href="http://wb-kk.com/" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/winw1.gif"></a>
+			
+					<a href="https://slot0508.com/?aff=3534" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/eggw1.gif"></a>
+			
+					<a href="https://spin589.com/?aff=2591" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/spin9041.gif"></a>
+			
+					<a href="http://bs-dg.com" target="_blank" style="font-size:0;"><img src="https://imgcloud13.net/betsafe904_1.gif"></a>
+			
+			</div>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="wvlist">
+			<div class="wbox">
+				<div class="img-box"><img src="https://i2.vcloud17.com/2232/90f314fcd14885a65f4c92f5f49ef037185134bc366af605229b21957dae59c9_0.jpg" alt="귀환자의 마법은 특별해야 합니다"></div>
+				<div class="text-box">
+					<h1>귀환자의 마법은 특별해야 합니다</h1>
+					<div class="sub"><strong>장르 :</strong> 판타지</div>
+					<div class="txt">귀환자의 마법은 특별해야 합니다</div>
+					<div class="button">
+						<input type="hidden" id="cookies_toonnum" value="2232"><input type="hidden" id="cookies_titlenum" value="1">
+						<a href="#bookmark" class="btn btn-yellow login_open" style="border-radius:5px;"><i class="fa fa-bookmark" aria-hidden="true"></i> <span id='book_id' style="font-size:16px;">첫회 북마크</span></a>
+						<a href="javascript:firstview();"  class="btn btn-dark" style="border-radius:5px;">첫회보기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="wvlist">
+			<div class="left-box">
+				
+				<div class="banner p-0">
+					<div class="bnr-col1">
+				
+						<a href="http://tm-1155.com" target="_blank"><img src="https://imgcloud13.net/tomap3.gif"></a>
+				
+						<a href="https://noca54.com" target="_blank"><img src="https://imgcloud13.net/nocawf17.gif"></a>
+				
+						<a href="https://www.mt-police04.com" target="_blank"><img src="https://imgcloud13.net/mt3.gif"></a>
+				
+						<a href="https://simba05.com/#/sports/pregame?partner=woweb" target="_blank"><img src="https://imgcloud13.net/simba715_1.gif"></a>
+				
+				</div>
+				</div>
+				
+				<div class="line-block"></div>
+				<div class="whead">
+					<h1>귀환자의 마법은 특별해야 합니다</h1>
+				</div>
+				<div class="wbody">
+					<ul class="list">
+
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=209">
+                        <div class="list-box">
+                            <div class="num">209</div>
+                            <div class="subject"><div class='badge-box green'><span class='text'>6일전</span></div>귀환자의 마법은 특별해야 합니다 209화</div>
+                            <div class="date">2022-11-05</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=208">
+                        <div class="list-box">
+                            <div class="num">208</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 208화</div>
+                            <div class="date">2022-10-29</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=207">
+                        <div class="list-box">
+                            <div class="num">207</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 207화</div>
+                            <div class="date">2022-10-22</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=206">
+                        <div class="list-box">
+                            <div class="num">206</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 206화</div>
+                            <div class="date">2022-10-08</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=205">
+                        <div class="list-box">
+                            <div class="num">205</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 205화</div>
+                            <div class="date">2022-10-01</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=204">
+                        <div class="list-box">
+                            <div class="num">204</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 204화</div>
+                            <div class="date">2022-09-24</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=203">
+                        <div class="list-box">
+                            <div class="num">203</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 203화</div>
+                            <div class="date">2022-09-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=202">
+                        <div class="list-box">
+                            <div class="num">202</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 202화</div>
+                            <div class="date">2022-09-03</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=201">
+                        <div class="list-box">
+                            <div class="num">201</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 201화</div>
+                            <div class="date">2022-08-27</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=200">
+                        <div class="list-box">
+                            <div class="num">200</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 200화</div>
+                            <div class="date">2022-08-13</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=199">
+                        <div class="list-box">
+                            <div class="num">199</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 199화</div>
+                            <div class="date">2022-08-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=198">
+                        <div class="list-box">
+                            <div class="num">198</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 198화</div>
+                            <div class="date">2022-07-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=197">
+                        <div class="list-box">
+                            <div class="num">197</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 197화</div>
+                            <div class="date">2022-07-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=196">
+                        <div class="list-box">
+                            <div class="num">196</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 196화</div>
+                            <div class="date">2022-07-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=195">
+                        <div class="list-box">
+                            <div class="num">195</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 195화</div>
+                            <div class="date">2022-07-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=194">
+                        <div class="list-box">
+                            <div class="num">194</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 194화</div>
+                            <div class="date">2022-06-25</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=193">
+                        <div class="list-box">
+                            <div class="num">193</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 193화</div>
+                            <div class="date">2022-06-18</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=192">
+                        <div class="list-box">
+                            <div class="num">192</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 192화</div>
+                            <div class="date">2022-06-11</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=191">
+                        <div class="list-box">
+                            <div class="num">191</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 191화</div>
+                            <div class="date">2022-06-04</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=190">
+                        <div class="list-box">
+                            <div class="num">190</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 190화</div>
+                            <div class="date">2022-05-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=189">
+                        <div class="list-box">
+                            <div class="num">189</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 189화</div>
+                            <div class="date">2022-05-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=188">
+                        <div class="list-box">
+                            <div class="num">188</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 188화</div>
+                            <div class="date">2022-05-07</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=187">
+                        <div class="list-box">
+                            <div class="num">187</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 187화</div>
+                            <div class="date">2022-04-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=186">
+                        <div class="list-box">
+                            <div class="num">186</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 186화</div>
+                            <div class="date">2022-04-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=185">
+                        <div class="list-box">
+                            <div class="num">185</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 185화</div>
+                            <div class="date">2022-04-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=184">
+                        <div class="list-box">
+                            <div class="num">184</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 184화</div>
+                            <div class="date">2022-04-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=183">
+                        <div class="list-box">
+                            <div class="num">183</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 183화</div>
+                            <div class="date">2022-03-26</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=182">
+                        <div class="list-box">
+                            <div class="num">182</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 182화</div>
+                            <div class="date">2022-03-19</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=181">
+                        <div class="list-box">
+                            <div class="num">181</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 181화</div>
+                            <div class="date">2022-03-05</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=180">
+                        <div class="list-box">
+                            <div class="num">180</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 180화</div>
+                            <div class="date">2022-02-26</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=179">
+                        <div class="list-box">
+                            <div class="num">179</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 179화</div>
+                            <div class="date">2022-02-19</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=178">
+                        <div class="list-box">
+                            <div class="num">178</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 178화</div>
+                            <div class="date">2022-02-12</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=177">
+                        <div class="list-box">
+                            <div class="num">177</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 177화</div>
+                            <div class="date">2022-02-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=176">
+                        <div class="list-box">
+                            <div class="num">176</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 176화</div>
+                            <div class="date">2022-02-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=175">
+                        <div class="list-box">
+                            <div class="num">175</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 175화</div>
+                            <div class="date">2022-02-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=174">
+                        <div class="list-box">
+                            <div class="num">174</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 174화 시즌3 완결</div>
+                            <div class="date">2021-11-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=173">
+                        <div class="list-box">
+                            <div class="num">173</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 173화</div>
+                            <div class="date">2021-11-13</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=172">
+                        <div class="list-box">
+                            <div class="num">172</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 172화</div>
+                            <div class="date">2021-11-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=171">
+                        <div class="list-box">
+                            <div class="num">171</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 171화</div>
+                            <div class="date">2021-10-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=170">
+                        <div class="list-box">
+                            <div class="num">170</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 170화</div>
+                            <div class="date">2021-10-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=169">
+                        <div class="list-box">
+                            <div class="num">169</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 169화</div>
+                            <div class="date">2021-10-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=168">
+                        <div class="list-box">
+                            <div class="num">168</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 168화</div>
+                            <div class="date">2021-10-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=167">
+                        <div class="list-box">
+                            <div class="num">167</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 167화</div>
+                            <div class="date">2021-10-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=166">
+                        <div class="list-box">
+                            <div class="num">166</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 166화</div>
+                            <div class="date">2021-09-25</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=165">
+                        <div class="list-box">
+                            <div class="num">165</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 165화</div>
+                            <div class="date">2021-09-18</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=164">
+                        <div class="list-box">
+                            <div class="num">164</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 164화</div>
+                            <div class="date">2021-09-04</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=163">
+                        <div class="list-box">
+                            <div class="num">163</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 163화</div>
+                            <div class="date">2021-08-28</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=162">
+                        <div class="list-box">
+                            <div class="num">162</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 162화</div>
+                            <div class="date">2021-08-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=161">
+                        <div class="list-box">
+                            <div class="num">161</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 161화</div>
+                            <div class="date">2021-08-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=160">
+                        <div class="list-box">
+                            <div class="num">160</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 160화</div>
+                            <div class="date">2021-08-07</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=159">
+                        <div class="list-box">
+                            <div class="num">159</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 159화</div>
+                            <div class="date">2021-08-01</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=158">
+                        <div class="list-box">
+                            <div class="num">158</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 158화</div>
+                            <div class="date">2021-07-25</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=157">
+                        <div class="list-box">
+                            <div class="num">157</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 157화</div>
+                            <div class="date">2021-07-18</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=156">
+                        <div class="list-box">
+                            <div class="num">156</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 156화</div>
+                            <div class="date">2021-07-11</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=155">
+                        <div class="list-box">
+                            <div class="num">155</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 155화</div>
+                            <div class="date">2021-07-04</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=154">
+                        <div class="list-box">
+                            <div class="num">154</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 154화</div>
+                            <div class="date">2021-06-27</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=153">
+                        <div class="list-box">
+                            <div class="num">153</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 153화</div>
+                            <div class="date">2021-06-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=152">
+                        <div class="list-box">
+                            <div class="num">152</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 152화</div>
+                            <div class="date">2021-06-13</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=151">
+                        <div class="list-box">
+                            <div class="num">151</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 151화</div>
+                            <div class="date">2021-06-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=150">
+                        <div class="list-box">
+                            <div class="num">150</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 150화</div>
+                            <div class="date">2021-05-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=149">
+                        <div class="list-box">
+                            <div class="num">149</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 149화</div>
+                            <div class="date">2021-05-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=148">
+                        <div class="list-box">
+                            <div class="num">148</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 148화</div>
+                            <div class="date">2021-05-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=147">
+                        <div class="list-box">
+                            <div class="num">147</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 147화</div>
+                            <div class="date">2021-05-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=146">
+                        <div class="list-box">
+                            <div class="num">146</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 146화</div>
+                            <div class="date">2021-05-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=145">
+                        <div class="list-box">
+                            <div class="num">145</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 145화</div>
+                            <div class="date">2021-04-25</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=144">
+                        <div class="list-box">
+                            <div class="num">144</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 144화</div>
+                            <div class="date">2021-04-18</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=143">
+                        <div class="list-box">
+                            <div class="num">143</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 143화</div>
+                            <div class="date">2021-04-11</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=142">
+                        <div class="list-box">
+                            <div class="num">142</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 142화</div>
+                            <div class="date">2021-04-04</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=141">
+                        <div class="list-box">
+                            <div class="num">141</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 141화</div>
+                            <div class="date">2021-03-28</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=140">
+                        <div class="list-box">
+                            <div class="num">140</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 140화</div>
+                            <div class="date">2021-03-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=139">
+                        <div class="list-box">
+                            <div class="num">139</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 139화</div>
+                            <div class="date">2021-03-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=138">
+                        <div class="list-box">
+                            <div class="num">138</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 138화</div>
+                            <div class="date">2021-03-07</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=137">
+                        <div class="list-box">
+                            <div class="num">137</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 137화</div>
+                            <div class="date">2021-02-28</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=136">
+                        <div class="list-box">
+                            <div class="num">136</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 136화</div>
+                            <div class="date">2021-02-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=135">
+                        <div class="list-box">
+                            <div class="num">135</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 135화</div>
+                            <div class="date">2021-02-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=134">
+                        <div class="list-box">
+                            <div class="num">134</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 134화</div>
+                            <div class="date">2021-02-07</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=133">
+                        <div class="list-box">
+                            <div class="num">133</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 133화</div>
+                            <div class="date">2021-01-31</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=132">
+                        <div class="list-box">
+                            <div class="num">132</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 132화</div>
+                            <div class="date">2021-01-24</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=131">
+                        <div class="list-box">
+                            <div class="num">131</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 131화</div>
+                            <div class="date">2021-01-17</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=130">
+                        <div class="list-box">
+                            <div class="num">130</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 130화</div>
+                            <div class="date">2021-01-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=129">
+                        <div class="list-box">
+                            <div class="num">129</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 129화</div>
+                            <div class="date">2021-01-03</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=128">
+                        <div class="list-box">
+                            <div class="num">128</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 128화</div>
+                            <div class="date">2020-12-27</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=127">
+                        <div class="list-box">
+                            <div class="num">127</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 127화</div>
+                            <div class="date">2020-12-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=126">
+                        <div class="list-box">
+                            <div class="num">126</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 126화</div>
+                            <div class="date">2020-12-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=125">
+                        <div class="list-box">
+                            <div class="num">125</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 125화</div>
+                            <div class="date">2020-12-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=124">
+                        <div class="list-box">
+                            <div class="num">124</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 124화 시즌2 최종화</div>
+                            <div class="date">2020-10-11</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=123">
+                        <div class="list-box">
+                            <div class="num">123</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 123화</div>
+                            <div class="date">2020-10-04</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=122">
+                        <div class="list-box">
+                            <div class="num">122</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 122화</div>
+                            <div class="date">2020-09-27</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=121">
+                        <div class="list-box">
+                            <div class="num">121</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 121화</div>
+                            <div class="date">2020-09-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=120">
+                        <div class="list-box">
+                            <div class="num">120</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 120화</div>
+                            <div class="date">2020-09-13</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=119">
+                        <div class="list-box">
+                            <div class="num">119</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 119화</div>
+                            <div class="date">2020-09-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=118">
+                        <div class="list-box">
+                            <div class="num">118</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 118화</div>
+                            <div class="date">2020-08-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=117">
+                        <div class="list-box">
+                            <div class="num">117</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 117화</div>
+                            <div class="date">2020-08-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=116">
+                        <div class="list-box">
+                            <div class="num">116</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 116화</div>
+                            <div class="date">2020-08-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=115">
+                        <div class="list-box">
+                            <div class="num">115</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 115화</div>
+                            <div class="date">2020-08-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=114">
+                        <div class="list-box">
+                            <div class="num">114</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 114화</div>
+                            <div class="date">2020-08-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=113">
+                        <div class="list-box">
+                            <div class="num">113</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 113화</div>
+                            <div class="date">2020-07-26</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=112">
+                        <div class="list-box">
+                            <div class="num">112</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 112화</div>
+                            <div class="date">2020-07-19</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=111">
+                        <div class="list-box">
+                            <div class="num">111</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 111화</div>
+                            <div class="date">2020-07-12</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=110">
+                        <div class="list-box">
+                            <div class="num">110</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 110화</div>
+                            <div class="date">2020-07-05</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=109">
+                        <div class="list-box">
+                            <div class="num">109</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 109화</div>
+                            <div class="date">2020-06-28</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=108">
+                        <div class="list-box">
+                            <div class="num">108</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 108화</div>
+                            <div class="date">2020-06-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=107">
+                        <div class="list-box">
+                            <div class="num">107</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 107화</div>
+                            <div class="date">2020-06-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=106">
+                        <div class="list-box">
+                            <div class="num">106</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 106화</div>
+                            <div class="date">2020-05-31</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=105">
+                        <div class="list-box">
+                            <div class="num">105</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 105화</div>
+                            <div class="date">2020-05-24</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=104">
+                        <div class="list-box">
+                            <div class="num">104</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 104화</div>
+                            <div class="date">2020-05-17</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=103">
+                        <div class="list-box">
+                            <div class="num">103</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 103화</div>
+                            <div class="date">2020-05-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=102">
+                        <div class="list-box">
+                            <div class="num">102</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 102화</div>
+                            <div class="date">2020-05-03</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=101">
+                        <div class="list-box">
+                            <div class="num">101</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 101화</div>
+                            <div class="date">2020-04-26</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=100">
+                        <div class="list-box">
+                            <div class="num">100</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 100화</div>
+                            <div class="date">2020-04-19</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=99">
+                        <div class="list-box">
+                            <div class="num">99</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 99화</div>
+                            <div class="date">2020-04-12</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=98">
+                        <div class="list-box">
+                            <div class="num">98</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 98화</div>
+                            <div class="date">2020-04-05</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=97">
+                        <div class="list-box">
+                            <div class="num">97</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 97화</div>
+                            <div class="date">2020-03-29</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=96">
+                        <div class="list-box">
+                            <div class="num">96</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 96화</div>
+                            <div class="date">2020-03-22</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=95">
+                        <div class="list-box">
+                            <div class="num">95</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 95화</div>
+                            <div class="date">2020-03-15</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=94">
+                        <div class="list-box">
+                            <div class="num">94</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 94화</div>
+                            <div class="date">2020-03-08</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=93">
+                        <div class="list-box">
+                            <div class="num">93</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 93화</div>
+                            <div class="date">2020-03-01</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=92">
+                        <div class="list-box">
+                            <div class="num">92</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 92화</div>
+                            <div class="date">2020-02-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=91">
+                        <div class="list-box">
+                            <div class="num">91</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 91화</div>
+                            <div class="date">2020-02-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=90">
+                        <div class="list-box">
+                            <div class="num">90</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 90화</div>
+                            <div class="date">2020-02-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=89">
+                        <div class="list-box">
+                            <div class="num">89</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 89화</div>
+                            <div class="date">2020-02-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=88">
+                        <div class="list-box">
+                            <div class="num">88</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 88화</div>
+                            <div class="date">2020-01-26</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=87">
+                        <div class="list-box">
+                            <div class="num">87</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 87화</div>
+                            <div class="date">2020-01-11</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=86">
+                        <div class="list-box">
+                            <div class="num">86</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 86화</div>
+                            <div class="date">2020-01-05</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=85">
+                        <div class="list-box">
+                            <div class="num">85</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 85화</div>
+                            <div class="date">2019-12-28</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=84">
+                        <div class="list-box">
+                            <div class="num">84</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 84화</div>
+                            <div class="date">2019-12-22</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=83">
+                        <div class="list-box">
+                            <div class="num">83</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 83화</div>
+                            <div class="date">2019-12-15</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=82">
+                        <div class="list-box">
+                            <div class="num">82</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 82화</div>
+                            <div class="date">2019-12-08</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=81">
+                        <div class="list-box">
+                            <div class="num">81</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 81화</div>
+                            <div class="date">2019-12-01</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=80">
+                        <div class="list-box">
+                            <div class="num">80</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 80화</div>
+                            <div class="date">2019-11-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=79">
+                        <div class="list-box">
+                            <div class="num">79</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 79화</div>
+                            <div class="date">2019-11-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=78">
+                        <div class="list-box">
+                            <div class="num">78</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 78화</div>
+                            <div class="date">2019-11-12</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=77">
+                        <div class="list-box">
+                            <div class="num">77</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 77화</div>
+                            <div class="date">2019-11-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=76">
+                        <div class="list-box">
+                            <div class="num">76</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 76화</div>
+                            <div class="date">2019-11-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=75">
+                        <div class="list-box">
+                            <div class="num">75</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 75화</div>
+                            <div class="date">2019-11-02</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=74">
+                        <div class="list-box">
+                            <div class="num">74</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 74화</div>
+                            <div class="date">2019-10-26</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=73">
+                        <div class="list-box">
+                            <div class="num">73</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 73화</div>
+                            <div class="date">2019-10-26</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=72">
+                        <div class="list-box">
+                            <div class="num">72</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 72화</div>
+                            <div class="date">2019-10-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=71">
+                        <div class="list-box">
+                            <div class="num">71</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 71화</div>
+                            <div class="date">2019-10-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=70">
+                        <div class="list-box">
+                            <div class="num">70</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 70화 시즌1 최종화</div>
+                            <div class="date">2019-07-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=69">
+                        <div class="list-box">
+                            <div class="num">69</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 69화</div>
+                            <div class="date">2019-06-29</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=68">
+                        <div class="list-box">
+                            <div class="num">68</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 68화</div>
+                            <div class="date">2019-06-22</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=67">
+                        <div class="list-box">
+                            <div class="num">67</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 67화</div>
+                            <div class="date">2019-06-15</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=66">
+                        <div class="list-box">
+                            <div class="num">66</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 66화</div>
+                            <div class="date">2019-06-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=65">
+                        <div class="list-box">
+                            <div class="num">65</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 65화</div>
+                            <div class="date">2019-05-25</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=64">
+                        <div class="list-box">
+                            <div class="num">64</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 64화</div>
+                            <div class="date">2019-05-19</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=63">
+                        <div class="list-box">
+                            <div class="num">63</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 63화</div>
+                            <div class="date">2019-05-12</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=62">
+                        <div class="list-box">
+                            <div class="num">62</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 62화</div>
+                            <div class="date">2019-05-04</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=61">
+                        <div class="list-box">
+                            <div class="num">61</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 61화</div>
+                            <div class="date">2019-04-28</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=60">
+                        <div class="list-box">
+                            <div class="num">60</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 60화</div>
+                            <div class="date">2019-04-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=59">
+                        <div class="list-box">
+                            <div class="num">59</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 59화</div>
+                            <div class="date">2019-04-13</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=58">
+                        <div class="list-box">
+                            <div class="num">58</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 58화</div>
+                            <div class="date">2019-04-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=57">
+                        <div class="list-box">
+                            <div class="num">57</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 57화</div>
+                            <div class="date">2019-03-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=56">
+                        <div class="list-box">
+                            <div class="num">56</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 56화</div>
+                            <div class="date">2019-03-24</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=55">
+                        <div class="list-box">
+                            <div class="num">55</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 55화</div>
+                            <div class="date">2019-03-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=54">
+                        <div class="list-box">
+                            <div class="num">54</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 54화</div>
+                            <div class="date">2019-03-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=53">
+                        <div class="list-box">
+                            <div class="num">53</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 53화</div>
+                            <div class="date">2019-03-03</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=52">
+                        <div class="list-box">
+                            <div class="num">52</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 52화</div>
+                            <div class="date">2019-02-24</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=51">
+                        <div class="list-box">
+                            <div class="num">51</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 51화</div>
+                            <div class="date">2019-02-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=50">
+                        <div class="list-box">
+                            <div class="num">50</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 50화</div>
+                            <div class="date">2019-02-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=49">
+                        <div class="list-box">
+                            <div class="num">49</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 49화</div>
+                            <div class="date">2019-02-03</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=48">
+                        <div class="list-box">
+                            <div class="num">48</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 48화</div>
+                            <div class="date">2019-01-27</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=47">
+                        <div class="list-box">
+                            <div class="num">47</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 47화</div>
+                            <div class="date">2019-01-20</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=46">
+                        <div class="list-box">
+                            <div class="num">46</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 46화</div>
+                            <div class="date">2019-01-13</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=45">
+                        <div class="list-box">
+                            <div class="num">45</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 45화</div>
+                            <div class="date">2019-01-06</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=44">
+                        <div class="list-box">
+                            <div class="num">44</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 44화</div>
+                            <div class="date">2018-12-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=43">
+                        <div class="list-box">
+                            <div class="num">43</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 43화</div>
+                            <div class="date">2018-12-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=42">
+                        <div class="list-box">
+                            <div class="num">42</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 42화</div>
+                            <div class="date">2018-12-15</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=41">
+                        <div class="list-box">
+                            <div class="num">41</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 41화</div>
+                            <div class="date">2018-12-09</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=40">
+                        <div class="list-box">
+                            <div class="num">40</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 40화</div>
+                            <div class="date">2018-11-24</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=39">
+                        <div class="list-box">
+                            <div class="num">39</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 39화</div>
+                            <div class="date">2018-11-17</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=38">
+                        <div class="list-box">
+                            <div class="num">38</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 38화</div>
+                            <div class="date">2018-11-11</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=37">
+                        <div class="list-box">
+                            <div class="num">37</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 37화</div>
+                            <div class="date">2018-11-03</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=36">
+                        <div class="list-box">
+                            <div class="num">36</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 35화</div>
+                            <div class="date">2018-10-30</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=35">
+                        <div class="list-box">
+                            <div class="num">35</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 36화</div>
+                            <div class="date">2018-10-27</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=34">
+                        <div class="list-box">
+                            <div class="num">34</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 34화</div>
+                            <div class="date">2018-10-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=33">
+                        <div class="list-box">
+                            <div class="num">33</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 33화</div>
+                            <div class="date">2018-10-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=32">
+                        <div class="list-box">
+                            <div class="num">32</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 32화</div>
+                            <div class="date">2018-10-21</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=31">
+                        <div class="list-box">
+                            <div class="num">31</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 31화</div>
+                            <div class="date">2018-10-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=30">
+                        <div class="list-box">
+                            <div class="num">30</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 30화</div>
+                            <div class="date">2018-10-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=29">
+                        <div class="list-box">
+                            <div class="num">29</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 29화</div>
+                            <div class="date">2018-10-14</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=28">
+                        <div class="list-box">
+                            <div class="num">28</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 28화</div>
+                            <div class="date">2018-08-18</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=27">
+                        <div class="list-box">
+                            <div class="num">27</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 27화</div>
+                            <div class="date">2018-08-11</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=26">
+                        <div class="list-box">
+                            <div class="num">26</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 26화</div>
+                            <div class="date">2018-08-05</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=25">
+                        <div class="list-box">
+                            <div class="num">25</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 25화</div>
+                            <div class="date">2018-07-29</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=24">
+                        <div class="list-box">
+                            <div class="num">24</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 24화</div>
+                            <div class="date">2018-07-22</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=23">
+                        <div class="list-box">
+                            <div class="num">23</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 23화</div>
+                            <div class="date">2018-07-15</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=22">
+                        <div class="list-box">
+                            <div class="num">22</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 22화</div>
+                            <div class="date">2018-07-15</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=21">
+                        <div class="list-box">
+                            <div class="num">21</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 21화</div>
+                            <div class="date">2018-07-15</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=20">
+                        <div class="list-box">
+                            <div class="num">20</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 20화</div>
+                            <div class="date">2018-07-08</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=19">
+                        <div class="list-box">
+                            <div class="num">19</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 19화</div>
+                            <div class="date">2018-07-08</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=18">
+                        <div class="list-box">
+                            <div class="num">18</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 18화</div>
+                            <div class="date">2018-07-08</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=17">
+                        <div class="list-box">
+                            <div class="num">17</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 17화</div>
+                            <div class="date">2018-07-01</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=16">
+                        <div class="list-box">
+                            <div class="num">16</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 16화</div>
+                            <div class="date">2018-07-01</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=15">
+                        <div class="list-box">
+                            <div class="num">15</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 15화</div>
+                            <div class="date">2018-07-01</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=14">
+                        <div class="list-box">
+                            <div class="num">14</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 14화</div>
+                            <div class="date">2018-06-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=13">
+                        <div class="list-box">
+                            <div class="num">13</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 13화</div>
+                            <div class="date">2018-06-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=12">
+                        <div class="list-box">
+                            <div class="num">12</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 12화</div>
+                            <div class="date">2018-06-23</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=11">
+                        <div class="list-box">
+                            <div class="num">11</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 11화</div>
+                            <div class="date">2018-06-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=10">
+                        <div class="list-box">
+                            <div class="num">10</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 10화</div>
+                            <div class="date">2018-06-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=9">
+                        <div class="list-box">
+                            <div class="num">9</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 9화</div>
+                            <div class="date">2018-06-16</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=8">
+                        <div class="list-box">
+                            <div class="num">8</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 8화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=7">
+                        <div class="list-box">
+                            <div class="num">7</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 7화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=6">
+                        <div class="list-box">
+                            <div class="num">6</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 6화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=5">
+                        <div class="list-box">
+                            <div class="num">5</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 5화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=4">
+                        <div class="list-box">
+                            <div class="num">4</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 4화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=3">
+                        <div class="list-box">
+                            <div class="num">3</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 3화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=2">
+                        <div class="list-box">
+                            <div class="num">2</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 2화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+					
+                    <a href="/v2?toon=2232&num=1">
+                        <div class="list-box">
+                            <div class="num">1</div>
+                            <div class="subject">귀환자의 마법은 특별해야 합니다 1화</div>
+                            <div class="date">2018-06-10</div>
+                        </div>
+                    </a>
+                </li>
+
+
+
+					</ul>
+				</div>
+			</div>
+			<div class="right-box">
+				<div class="whead">
+					<h1>인기웹툰</h1>
+					<div class="btn_sorting">
+						<a href="#rcmd1" class="active"><span>동일장르</span></a>
+						<a href="#rcmd2"><span>인기</span></a>
+					</div>
+				</div>
+				<div class="wbody sidelist">
+					<ul class="list rcmd active" id="rcmd1">
+					
+						<li><a href="/v1?toon=7481">
+							<div class="list-box">
+							<div class="img"><img src="https://i8.ba7cloud.com/7481/f72d2ea98dc072b026b3008525481017ae2432d4840bd2c321e7a3222048b5a5_0.jpg" alt="2022 서브병에 빠지다!" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>2022 서브병에 빠지다!</p>
+								<p>액션/드라마/판타지</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=2184">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/2184/9501a966297ce6631a14b7483e11a17c84fc37742c90f013061220048b19998c_0.jpg" alt="누설" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>누설</p>
+								<p>판타지/액션</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=5242">
+							<div class="list-box">
+							<div class="img"><img src="https://i6.bacloud2.com/5242/94c0c237f71086ba1acff7b6f301bb7625b46fbc7b54422ec5eab58448d0121a_0.jpg" alt="무당기협" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>무당기협</p>
+								<p>판타지/스릴러</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=2043">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/2043/38eddf672f630e5d55e9e6f3044ce4c2b34f748de0bf002c05a09945b1293b8f_0.jpg" alt="JADE" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>JADE</p>
+								<p>공포/스릴러/판타지</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=1562">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/1562/9e4bf98aa4a1cfa9d5360843ccf29d30af0ac1672f836727e8cf661c20ca0185_0.jpg" alt="레이어즈" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>레이어즈</p>
+								<p>판타지/학원/초능력</p>
+							</div>
+							<div class='badge red'><span class='text'>완결</span></div>
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=5759">
+							<div class="list-box">
+							<div class="img"><img src="https://i0.scloud17.com/5759/c983c797ec478866cfa2fb682a97515d4f2e40dbd90b13c9b0a29338fc28289d_0.jpg" alt="트리거(네이버)" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>트리거(네이버)</p>
+								<p>판타지</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=3466">
+							<div class="list-box">
+							<div class="img"><img src="https://i4.vcloud17.com/3466/8e87269f015e0a7ea5854c0775b653cd7bedc89e60fe7f2ce7e54d928065591d_0.jpg" alt="시리우스" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>시리우스</p>
+								<p>드라마/판타지/로맨스</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=393">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/l1q/c1ddf93ab7b8d8e41f5de50c0613aeda82de61a7a61110e47c8c22e3347f806c_0.jpg" alt="태양의 시" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>태양의 시</p>
+								<p>판타지/액션/퇴마</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=915">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/915/51a17bc72536e3582ac33053c6e2a053b12d3c4d8bf9b491f36618108e749108_0.jpg" alt="장야" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>장야</p>
+								<p>판타지/무협</p>
+							</div>
+							<div class='badge red'><span class='text'>완결</span></div>
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=567">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/ll2/ee914aa4dbb84c98e2b0c29d9c195e154743b1a1bdb9bb2c9400119647d41e7b_0.jpg" alt="이름 없는 가게" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>이름 없는 가게</p>
+								<p>미스터리/판타지</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+					</ul>
+					<ul class="list rcmd " id="rcmd2">
+					
+						<li><a href="/v1?toon=3529">
+							<div class="list-box">
+							<div class="img"><img src="https://i4.vcloud17.com/3529/98f3a3e0c052cc91772a9a26733209f7068896c95c68902d62f410f23f5ce544_0.jpg" alt="동네 누나" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>동네 누나</p>
+								<p>성인/로맨스</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=781">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/781/f69a7b0999c6bab1bbf48708bc24fc87e3df1b078323c7e4e1d65d2dd3eb479c_0.jpg" alt="나 혼자만 레벨업" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>나 혼자만 레벨업</p>
+								<p>판타지</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=208">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/l1m/90c7717d9c2cc04f1c82a892a89773d25b89dd183eb1f87b8e00861719a41323_0.jpg" alt="집주인 딸내미" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>집주인 딸내미</p>
+								<p>드라마</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=633">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/633/e3cf2f7fa6d1c98c6db90eb2fc9aa1e497981504b6e8854572d6b216710b40b0_0.jpg" alt="외모지상주의" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>외모지상주의</p>
+								<p>드라마/스토리/판타지</p>
+							</div>
+							<div class='badge green'><span class='text'>하루전</span></div>
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=3283">
+							<div class="list-box">
+							<div class="img"><img src="https://i3.vcloud17.com/3283/8aff615c15054d67ac30a8a5611b02b72510ed67e3272001bc3fa0dbc147a5f8_0.jpg" alt="그남자의 자취방" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>그남자의 자취방</p>
+								<p>성인/일상</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=453">
+							<div class="list-box">
+							<div class="img"><img src="https://i2.vcloud17.com/l0a/75e165bb848b8e710d899df9dadb9279bfedbb4663488608d8a32446bac9707b_0.jpg" alt="거절 못하는 여자" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>거절 못하는 여자</p>
+								<p>성인/드라마</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=3608">
+							<div class="list-box">
+							<div class="img"><img src="https://i4.vcloud17.com/3608/b691cd59da0ec86dc5c9ffc728d1f1de0164bd8bb43d700b2ea14c492e673f05_0.jpg" alt="재수 좋은 남자" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>재수 좋은 남자</p>
+								<p>성인/로맨스</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=3122">
+							<div class="list-box">
+							<div class="img"><img src="https://i3.vcloud17.com/3122/9e8e8c37a53bac77a653d590b783b2508e8ed2fed040a278bf4f4703bbd5d82d_0.jpg" alt="첩" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>첩</p>
+								<p>성인/로맨스</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=3139">
+							<div class="list-box">
+							<div class="img"><img src="https://i3.vcloud17.com/3139/21495175f1a3649f191410cbd0020317d4152f6b05aa278a5f3b7cb0b4a54e9d_0.jpg" alt="이웃사촌" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>이웃사촌</p>
+								<p>성인/로맨스/드라마</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+						<li><a href="/v1?toon=3351">
+							<div class="list-box">
+							<div class="img"><img src="https://i3.vcloud17.com/3351/54b56f4577fb0093395bd62f72cd31635de8f669ce1123b74263669bbbf48362_0.jpg" alt="잘난것도 없으면서!" style="width:60px;height:60px;"></div>
+							<div class="subject">
+								<p>잘난것도 없으면서!</p>
+								<p>성인/학원</p>
+							</div>
+							
+							</div>
+						</a></li>
+					
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="group show768">
+		<center></center>
+		</div>
+		<div class="group">
+		<center>
+		<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+		<ins id="788525" data-width="300" data-height="112"></ins>
+		<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':788525});</script>
+		</center>
+		</div>
+
+		
+		<div class="line-block"></div>
+	</div>
+</section>
+
+<!--footer-->
+<footer>
+	<div class="container">
+		<div class="row">
+			<h2><a href="/"><img src="/assets/img/logo.png"></a></h2>
+			<ul>
+				<li><a href="/w1">연재웹툰</a></li>
+				<li><a href="/w2">완결웹툰</a></li>
+				<li><a href="/w5">만화책</a></li>
+				<li><a href="/w3">포토툰</a></li>
+				<li><a href="/w4">북마크</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!--//footer-->
+<div id="loading-wrap" class="hide"><div id="loading"></div></div>
+<div class="scrolltop-wrap"><div class="row"><a href="#top"><img src="assets/img/icon_top.png"><br>TOP</a></div></div>
+<script src="/assets/js/ajax_jquery_1.12.0/jquery.min.js?v=3"></script>
+<script src="/assets/js/ajax_jqueryui_1.11.4/jquery-ui.min.js?v=3"></script>
+<script src='/assets/js/jquery.simple-sidebar.min.js?v=3'></script>
+<script src="/assets/js/swiper.min.js?v=3"></script>
+<script src="/assets/plugin/lazyload/jquery.lazyload.js"></script>
+<script src="/assets/js/common.js?v=3"></script>
+
+
+<script defer="defer">
+	function firstview(){
+		var filter = "win16|win32|win64|mac|macintel"; 
+		if ( navigator.platform ) { 
+			if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
+				location.href = '/v2?toon=2232&num=1';
+				return;
+			} 
+			else { 
+				location.href = '/v2?toon=2232&num=1';
+				return;
+				var opt = "channelmode=1,fullscreen=1,toolbar=0,location=0,directories=0,status=0,menubar=0,resizable=1";
+				opt += ",top=0,left=0";
+				opt += ",width=" + eval(screen.availWidth - 25);
+				opt += ",height=" + eval(screen.availHeight - 80);
+				window.open("/v2?toon=2232&num=1", "view_open", opt);
+				return false;
+			} 
+		}
+	}
+</script>
+
+</body></html>

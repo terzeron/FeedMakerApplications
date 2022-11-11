@@ -1,0 +1,4601 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="title" content="마존현세강림기" />
+<meta name="publisher" content="툰코" />
+<meta name="author" content="툰코" />
+<meta name="description" content="마존현세강림기 작가 UGPP,마요랑,월백 총편수 총 142화 첫 번째 삶. 불의의 사고로 가족과 두 다리를 잃고 스스로 목숨을 끊었다. 두 번째 삶. 중원에서 적천마존이라는 명성을 얻었지만 가장 신뢰하던 이에게 배신당해 죽게 됐다. 그리고 맞게 된 세 번째 삶. 다시 돌아온 현대에서 강진호 자신은 평범한 삶을 살 거라 다짐하지만... 평범한 인간으로 살기엔 이미 중원의 삶에 너무 익숙해져 버린 것 ! '난 평범하게 살고 싶었어. 하지만 먼저 날 건드린 건 너희들이다. 각오는 돼 있겠지?' 다가오는 위기 속에서 강" />
+<meta name="keywords" content="툰코,네이버웹툰,다음웹툰,카카오웹툰,레진웹툰,웹툰미리보기,유료만화,무료만화,망가,만화미리보기,레진코믹스,무료웹툰,유료웹툰" />
+<meta name="robots" content="index,follow" />		
+<meta property="og:title" content="마존현세강림기" />
+<meta property="og:site_name" content="툰코" />
+<meta property="og:author" content="툰코" />
+<meta property="og:type" content="" />
+<meta property="og:url" content="https://toonkor159.com/%EB%A7%88%EC%A1%B4%ED%98%84%EC%84%B8%EA%B0%95%EB%A6%BC%EA%B8%B0" />
+<meta name="juicyads-site-verification" content="dfd1dc94eac05193a17127e785bbf576">
+<link rel="canonical" href="https://toonkor159.com/%EB%A7%88%EC%A1%B4%ED%98%84%EC%84%B8%EA%B0%95%EB%A6%BC%EA%B8%B0" />
+<title>마존현세강림기</title>
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://toonkor159.com/skin/board/bt_webtoon/style.css?ver=171222">
+<link rel="stylesheet" href="https://toonkor159.com/skin/board/bt_webtoon/js/colorbox/colorbox.css?ver=171222">
+<link rel="stylesheet" type="text/css" href="https://toonkor159.com/skin/board/bt_webtoon/css/font-awesome.min.css?v=1" />
+<link rel="stylesheet" href="https://toonkor159.com/theme/bootstrap_basic2/css/default.css?v=1">
+<link rel="stylesheet" href="https://toonkor159.com/theme/bootstrap_basic2/css/bootstrap.min.css?v=33"> 
+<link rel="stylesheet" href="https://toonkor159.com/theme/bootstrap_basic2/css/font-awesome.min.css?v=1"><!-- 폰트어썸 스타일 -->
+<link rel="stylesheet" href="https://toonkor159.com/theme/bootstrap_basic2/css/j2web_base.css?v=1"><!-- j2web 기본 스타일 -->
+<!--[if lte IE 8]>
+<script src="https://toonkor159.com/js/html5.js"></script>
+<![endif]-->
+
+<!-- ie 스크롤 오류 해결 -->
+<!--[if IE]><!-->
+<style type="text/css" >
+	
+</style>
+<!--<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://toonkor159.com";
+var g5_bbs_url   = "https://toonkor159.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "wtoon";
+var g5_sca       = "4646";
+var g5_editor    = "smarteditor2";
+var g5_cookie_domain = "";
+</script>
+<script src="https://toonkor159.com/js/jquery-1.8.3.min.js"></script>
+<script src="https://toonkor159.com/theme/bootstrap_basic2/js/jquery-1.12.4.min.js"></script>
+<script src="https://toonkor159.com/js/jquery.menu.js?ver=171222"></script>
+<script src="https://toonkor159.com/js/common.js?ver=171222"></script>
+<script src="https://toonkor159.com/js/wrest.js?ver=171222"></script>
+<script src="https://toonkor159.com/js/js.cookie.js"></script>
+<script src="https://toonkor159.com/theme/bootstrap_basic2/js/bootstrap.min.js"></script><!-- 부트스트랩 스크립트 -->
+<script src="/js/fuckadblock.js"></script>
+
+<script src="https://toonkor159.com/js/jquery.lazy.min.js"></script>
+
+
+<script>
+/*
+function adBlockDetected() {
+	location.replace("/adblock.php");
+}
+if(typeof fuckAdBlock === 'undefined') {
+	adBlockDetected();
+}
+*/
+</script>
+<script src="/js/sly.min.js"></script>
+<script>
+$(function() {
+	
+	$('#mobile_nav').sly({
+		horizontal: 1,
+		itemNav: 'centered', //basic
+		smart: 1,
+		mouseDragging: 1,
+		touchDragging: 1,
+		releaseSwing: 1,
+		speed: 300,
+		elasticBounds: 1,
+		dragHandle: 1,
+		dynamicHandle: 1
+    });
+	
+});
+</script>
+<script type="text/javascript" src="https://toonkor159.com/skin/board/bt_webtoon/js/colorbox/jquery.colorbox.js"></script>
+</head>
+<body id="body_sec" > 
+<style>
+div#containerCol {padding:0;}
+.form.form-inline {
+    width: 185px;
+}
+
+#searchWrap1{display:block;}
+#searchWrap2{display:none;}
+#mSearchBox{display:none;}
+.m_nav{display:none;}
+#mobile_nav{display:none;}
+@media (max-width: 767px) {
+
+	.form.form-inline {
+		width: 130px;
+	}
+	body#body_sec {
+		padding-top: 0px !important;
+	}
+	section.bn.bnt { margin-top: 0px !important;}
+	
+	/*모바일 메뉴,검색 관련*/
+	#searchWrap1{display:block;}
+	#searchWrap2{display:none;}
+	.m_nav{display:block;}
+	#mobile_nav{display:block;}
+	
+	.nav{/*display:block !important;margin: 10px 0px;*/
+			width: 100%;
+            height: 41px;
+			margin: -9px 0 0px 0px !important;
+            background-color: #f0f0f0;
+	}
+	.navbar-collapse{float:left; display:block !important;}
+	.nav .m_none{display:none;}
+	.nav>li {/*float:left;margin: 3px 0px 0px 4px;background-color: #fff; border: 1px solid #ddd;*/
+			display: table-cell;
+		    white-space: nowrap;
+			
+	}
+	.nav>li>a {
+		/*padding: 10px 15px;*/
+		padding: 5px 10px;
+		margin: 4px 0 0 4px;
+		background-color: #fff;
+    	border: 1px solid #ddd;
+	}
+	.nav>li>a:link,.nav>li>a:visited,.nav>li>a:active,.nav>li>a:active{
+		background-color: #fff;
+	}
+	#mSearchBox{display:none;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        z-index: 100;
+        top: 60px;}
+		
+}
+.col-md-12.mobile-banner {
+    padding: 0;
+}
+.top_hr {margin-top:71px;}
+.navbar-default .navbar-nav>li>a:hover {color:#ff0000;}
+.nav>li>a:focus, .nav>li>a:hover{background:none;}
+.navbar-default .navbar-nav >.on> a, .navbar-nav >.on> a{color:#ff0000;}
+
+.btn-search{
+	float: right;
+    padding-top: 18px;
+    padding-right: 20px;
+}
+.btn-logina{
+    float: right;
+    padding-top: 10px;
+    padding-right: 25px;
+}
+.btn-loginb{
+	float: right;
+    margin-top: 15px;
+	background: rgb(34, 34, 34);
+    padding: 5px 10px;
+    color: #fff;
+}
+.blogin{
+	cursor:pointer;
+}
+.alogin{
+	
+	width:30px;
+}
+.alogin img{
+	width:40px;
+	border:1px solid #ccc;
+	border-radius:20px;
+	margin-top:-47px;
+	cursor:pointer;
+}
+.alogin p{
+	position: relative;
+    bottom: -0.125em;
+    width: 1.5em;
+    height: 1.5em;
+	top:20px;
+	left:28px;
+    border: 1.5px solid rgba(0,0,0,0.15);
+    border-radius: 50%;
+    background-image: url(/img/profile-icon.png);
+    background-size: cover;
+	cursor:pointer;
+}
+.btn-search input[type=text]:focus {border:2px #ef1432 solid; border-radius:15px; width:200px;}
+.btn-search input[type=text] {border:1px solid #ccc;; border-radius:15px; width:140px;}
+.m_btn-search input[type=text]:focus {border:2px #ef1432 solid; border-radius:15px;}
+.m_btn-search input[type=text] {border:1px solid #ccc;; border-radius:15px;}
+
+img.logo {width:150px;}
+.fa-searchs {position: absolute; top: 23px; margin-left: 170px; color: #ccc;}
+.form-group.input-group.input-group-sm {width:185px;}
+
+@media (max-width:769px) {
+
+img.logo {width:120px; padding-top:3px;}
+.form-group.input-group.input-group-sm {width:130px;/*width:33px;*/}
+.fa-searchs {position: absolute; top: 23px; margin-left: 110px; color: #ccc;}
+
+}
+</style>
+
+<nav class="navbar navbar-default navbar-static-top" style="box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);">
+	<div class="container" style="padding:0 15px;">
+		<div class="navbar-header pull-left">
+			<a class="navbar-brand" href="https://toonkor159.com/" style="margin-right:15px; margin-top:2px;"><img src="/img/tk_logo.png" alt="" class="logo"></a>
+            
+				      
+            
+		</div>
+
+		<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+			<!--피씨 메뉴 { -->
+			<ul class="nav navbar-nav hidden-xs text-center">       
+		    				<li class="on   ">
+                
+													<a href="https://toonkor159.com/웹툰" target="_self" alt="웹툰" >
+					                    
+						웹툰					</a>			
+
+									</li>
+								<li class="   ">
+                
+													<a href="https://toonkor159.com/애니" target="_blank" alt="애니" >
+					                    
+						애니					</a>			
+
+									</li>
+								<li class="   ">
+                
+													<a href="https://toonkor159.com/단행본" target="_self" alt="단행본" >
+					                    
+						단행본					</a>			
+
+									</li>
+								<li class="   ">
+                
+													<a href="https://toonkor159.com/망가" target="_self" alt="망가" >
+					                    
+						망가					</a>			
+
+									</li>
+								<li class="   ">
+                
+													<a href="https://toonkor159.com/포토툰" target="_self" alt="포토툰" >
+					                    
+						포토툰					</a>			
+
+									</li>
+								<li class="   ">
+                
+													<a href="https://toonkor159.com/토토보증업체" target="_blank" alt="토토보증업체" >
+					                    
+						토토보증업체					</a>			
+
+									</li>
+								<li class="   ">
+                
+													<a href="https://toonkor159.com/코사이트" target="_blank" alt="코사이트" >
+					                    
+						코사이트					</a>			
+
+									</li>
+								<li class="   ">
+                
+													<a href="https://toonkor159.com/주소알림" target="_blank" alt="주소알림" >
+					                    
+						주소알림					</a>			
+
+									</li>
+								<li class=" dropdown m_none ">
+                
+					                           		<a href="/notice" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" alt="고객센터" >	 
+                                        
+						고객센터 <i class="fa fa-caret-down"></i>					</a>			
+
+					<ul class="dropdown-menu" role="menu">
+						<li>
+							<a href="/notice" target="_self" alt="공지사항" >
+							공지사항							</a>
+						</li>					
+											<li>
+							<a href="/bbs/qalist.php" target="_self" alt="1:1문의" >
+							1:1문의							</a>
+						</li>					
+					</ul>
+				</li>
+							</ul>
+			<!--피씨 메뉴 } -->
+		</div>
+		<div style="float: right; margin-top: 13px;" >
+            <div class="blogin pull-right" id="sidebar" style=" margin-left:10px; color: #4d4d4d; padding: 7px 10px; cursor: pointer;">
+                <i class="fa fa-bars fa-lg"></i>
+                
+                				<div style="position: fixed; margin: 31px 0 0 95px;">
+					<!--
+                    <img src="/img/banner_mun.png"  style="margin-bottom:5px;"/>
+                    -->
+					
+				</div>
+				                
+            </div>
+            
+            <fieldset class="pull-right" id="searchWrap1">
+                    <legend class="hidden">사이트 내 전체검색</legend>
+                    <form name="fsearchbox" method="get" action="https://toonkor159.com/bbs/search.php" onsubmit="return fsearchbox_submit(this);" class="form-inline"  role="form">
+                            <input type="hidden" name="sfl" value="wr_subject||wr_content">
+                            <div class="form-group input-group input-group-sm" style="margin-top:1px;">
+                                <label for="sch_stx" class="sr-only sound_only">검색어<b class="sr-only sound_only"> 필수</b></label>
+                                <input type="text" name="stx" id="sch_stx" style="border-radius: 30px 0px 0px 30px;" maxlength="20" class="form-control" placeholder="제목/작품 검색">
+                                
+                                <span class="input-group-btn">
+                                <button type="submit" class="btn btn-navy btn-sm" style="color: #fff !important; border: 1px solid rgb(40, 40, 50); background-color: rgb(50, 60, 70); border-radius: 0px 30px 30px 0px;"><i class="fa fa-search"></i></button>
+                            </span>
+                            </div>
+                    </form>
+            </fieldset>
+            
+            <!-- 모바일 용 -->
+            <fieldset class="pull-right" id="searchWrap2">
+                <div class="form-group input-group input-group-sm" style="margin-top:3px;">
+                    <span class="input-group-btn">
+                        <button type="button" onclick='srcBoxOnOff();' class="btn btn-navy btn-sm" style="color: #fff !important; border: 1px solid rgb(40, 40, 50); background-color: rgb(50, 60, 70); border-radius: 0px;">
+                        	<i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </fieldset>        
+		</div>       
+	</div>
+     
+    <!-- 모바일 용 -->  
+    <div id='mSearchBox'>
+        <form name="fsearchbox" method="get" action="https://toonkor159.com/bbs/search.php" onsubmit="return fsearchbox_submit(this);" class="form-inline"  role="form">
+            <input type="hidden" name="sfl" value="wr_subject||wr_content">
+            <input type="text" name="stx" id="sch_stx" maxlength="100" placeholder="제목/작품 검색" style = 'padding: 5px 5px 5px 12px; border: 5px solid #696969; width:100%; height: 50px;' />
+        </form>    
+    </div>
+  
+</nav>
+
+<aside class="kt_login at-sidebar" style="display:none;">
+	<div id="blogin" class="close-box asideButton">
+		<i class="fa fa-chevron-right"></i>
+	</div>
+	<div class="sidebar-wrap no-scrollbar">
+			<div class="sidebar-box">
+			 			   <!-- 아웃로그인 Start// -->
+						   <div class="main-box">
+						      <div class="widget-miso-outlogin">
+							  <!-- 로그인 전 외부로그인 -->
+                              <style>
+.btn.btn-color {
+    color: #fff !important;
+    border-image: none !important;
+    background-image: none !important;
+    border: 1px solid rgb(213, 7, 15);
+    background-color: rgb(233, 27, 35);
+}
+</style>
+    <form name="foutlogin" action="https://toonkor159.com/bbs/login_check.php" onsubmit="return fhead_submit(this);" method="post" autocomplete="off" class="form">
+        <input type="hidden" name="url" value="https%3A%2F%2Ftoonkor159.com%2F%EB%A7%88%EC%A1%B4%ED%98%84%EC%84%B8%EA%B0%95%EB%A6%BC%EA%B8%B0">
+			<div class="form-group">	
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user gray"></i></span>
+					<input type="text" name="mb_id" id="ol_id" class="form-control input-sm" placeholder="아이디" tabindex="91">
+				</div>
+			</div>
+			<div class="form-group">	
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock gray"></i></span>
+					<input type="password" name="mb_password" id="ol_pw" class="form-control input-sm" placeholder="비밀번호" tabindex="92">
+				</div>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-color btn-block" tabindex="93">Login</button>    
+			</div>	
+
+			<label class="text-muted" style="letter-spacing:-1px;">
+				<input type="checkbox" name="auto_login" value="1" id="remember_me" class="remember-me" tabindex="94">
+				Remember Me
+			</label>
+</form>
+<script>
+$omi = $('#ol_id');
+$omp = $('#ol_pw');
+//$omp.css('display','inline-block').css('width',104);
+$omi_label = $('#ol_idlabel');
+$omi_label.addClass('ol_idlabel');
+$omp_label = $('#ol_pwlabel');
+$omp_label.addClass('ol_pwlabel');
+
+$(function() {
+    $omi.focus(function() {
+        $omi_label.css('visibility','hidden');
+    });
+    $omp.focus(function() {
+        $omp_label.css('visibility','hidden');
+    });
+    $omi.blur(function() {
+        $this = $(this);
+        if($this.attr('id') == "ol_id" && $this.attr('value') == "") $omi_label.css('visibility','visible');
+    });
+    $omp.blur(function() {
+        $this = $(this);
+        if($this.attr('id') == "ol_pw" && $this.attr('value') == "") $omp_label.css('visibility','visible');
+    });
+
+    $("#auto_login").click(function(){
+        if ($(this).is(":checked")) {
+            if(!confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?"))
+                return false;
+        }
+    });
+});
+
+function fhead_submit(f)
+{
+    return true;
+}
+</script>
+                             
+                              							  </div>
+							</div>
+							<!-- //End -->
+			</div>
+		
+				<h5 class="sidebar-title">MEMBER</h5>
+		<div class="sidebar-nav">
+			<ul>
+				<li><a href="https://toonkor159.com/bbs/register.php"><i class="fa fa-sign-in"></i> 회원가입</a></li>
+				<li><a href="https://toonkor159.com/bbs/password_lost.php" id="ol_password_lost"><i class="fa fa-search"></i> 정보찾기</a></li>
+			</ul>
+		</div>
+		
+		<h5 class="sidebar-title">MENU</h5>
+		<div class="sidebar-nav">
+        	<!--
+			<ul>
+				<li><a href="https://toonkor159.com/bbs/board.php?bo_table=webtoon"><i class="fa fa-book"></i> 웹툰</a></li>
+				<li><a href="https://toonkor159.com/bbs/board.php?bo_table=comics&cat=cat"><i class="fa fa-book"></i> 단행본</a></li>
+				<li><a href="https://toonkor159.com/bbs/board.php?bo_table=notice"><i class="fa fa-commenting-o"></i> 공지사항</a></li>
+				<li><a href="https://toonkor159.com/bbs/qalist.php"><i class="fa fa-commenting-o"></i> 1:1문의</a></li>
+				<li><a href="https://toonkor159.com/bbs/board.php?bo_table=board"><i class="fa fa-commenting-o"></i> 배너업체안내</a></li>
+			</ul>
+            -->
+            <ul>
+            				                
+				                    <li>
+                        <a href="/웹툰">
+                        <i class="fa fa-book"></i>웹툰                        </a>
+                    </li>			
+                				                
+				                    <li>
+                        <a href="/애니">
+                        <i class="fa fa-book"></i>애니                        </a>
+                    </li>			
+                				                
+				                    <li>
+                        <a href="/단행본">
+                        <i class="fa fa-book"></i>단행본                        </a>
+                    </li>			
+                				                
+				                    <li>
+                        <a href="/망가">
+                        <i class="fa fa-book"></i>망가                        </a>
+                    </li>			
+                				                
+				                    <li>
+                        <a href="/포토툰">
+                        <i class="fa fa-book"></i>포토툰                        </a>
+                    </li>			
+                				                
+				                    <li>
+                        <a href="/토토보증업체">
+                        <i class="fa fa-book"></i>토토보증업체                        </a>
+                    </li>			
+                				                
+				                    <li>
+                        <a href="/코사이트">
+                        <i class="fa fa-book"></i>코사이트                        </a>
+                    </li>			
+                				                
+				                    <li>
+                        <a href="/주소알림">
+                        <i class="fa fa-book"></i>주소알림                        </a>
+                    </li>			
+                				                
+									<li>
+						<a href="/notice">
+						<i class="fa fa-commenting-o"></i>공지사항						</a>
+					</li>					
+									<li>
+						<a href="/bbs/qalist.php">
+						<i class="fa fa-commenting-o"></i>1:1문의						</a>
+					</li>					
+									
+			</ul>
+			<!--피씨 메뉴 } -->
+		</div>
+       
+		
+		<br>
+	</div>
+</aside>
+<style>
+
+/* Sidebar */
+.at-sidebar { top: 0px; width: 280px; height: 100%; right: 0px; display: none; position: fixed; z-index:99999; background: rgb(34, 34, 34); border-left-color: rgb(51, 51, 51); border-left-width: 1px; border-left-style: solid; color: rgb(136, 136, 136); margin-left:40px; }
+.at-sidebar label { line-height:12px; font-size: 12px; font-weight: normal; cursor: pointer; }
+.at-sidebar .close-box { position:absolute; top:0; left:0; margin-left:-35px; margin-top:65px; background: rgb(34, 34, 34); color: rgb(255, 255, 255); text-align:center; width:36px; height:36px; z-index:999999; line-height:36px; border:1px solid rgb(51, 51, 51); border-right:0px; -webkit-backface-visibility: hidden; cursor:pointer; }
+.at-sidebar .close-box i { font-size: 16px; font-weight: 300 !important; }
+.at-sidebar .sidebar-wrap { overflow:auto; height:100%; }
+.at-sidebar .sidebar-title { margin: 0px; padding: 8px 20px; color: rgb(97, 97, 97); text-transform: uppercase; overflow: hidden; font-size: 11px; position: relative;  }
+.at-sidebar .sidebar-title::after { background: rgb(51, 51, 51); left: 15px; top: 26px; width: 80px; height: 1px; position: absolute; content: "";  }
+.at-sidebar .sidebar-box { padding: 20px; }
+.at-sidebar .sidebar-box h5 { font-size: 12px; }
+.at-sidebar .sidebar-nav { margin-bottom:20px; }
+.at-sidebar .sidebar-nav > ul { list-style: none; margin: 0px; padding: 0px; }
+.at-sidebar .sidebar-nav > ul > li { border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid; }
+.at-sidebar .sidebar-nav > ul > li > a { padding: 6px 20px; color: rgb(176, 176, 176); display: block; }
+.at-sidebar .sidebar-nav > ul > li > a:hover { background: rgb(41, 41, 41); color: rgb(255, 255, 255); text-decoration: none; }
+.at-sidebar .sidebar-nav > ul > li > a > i { margin-right: 5px; }
+.at-sidebar .profile-box { padding: 20px 20px 0px; }
+/*임시
+.at-sidebar .profile { height:95px; }
+.at-sidebar .profile h3 { color: rgb(255, 255, 255); font-size:20px; line-height:30px; padding:8px 0px; margin:0px; 
+*/
+letter-spacing:-1px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.at-sidebar .profile p { color: rgb(138, 138, 138); padding:0px; margin:0px; }
+.at-sidebar .badge { font-weight:normal; }
+.at-sidebar .profile-photo { width:80px; height:80px; margin:0px; margin-right:15px; border-radius: 50%; border:4px solid #000; -webkit-box-shadow: 0 0 0 5px rgb(34,34,34), 0 0 10px 0 rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0 0 5px rgb(34,34,34), 0 0 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 0 5px rgb(34,34,34), 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+.at-sidebar .profile-photo img { width:100%; height:100%; border-radius: 50%; }
+.at-sidebar .profile-photo i { width:100%; height:100%; font-size:40px; line-height:72px; text-align:center; color:#666;}
+.at-sidebar .btn-admin,
+.at-sidebar .btn-upload,
+.at-sidebar .btn-logout { border: 1px solid rgb(223, 17, 25); border-image: none; color: rgb(255, 255, 255) !important; background-color: rgb(223, 27, 35); background-image: none; }
+.at-sidebar .btn-admin:hover, 
+.at-sidebar .btn-admin:focus, 
+.at-sidebar .btn-admin:active,
+.at-sidebar .btn-upload:hover, 
+.at-sidebar .btn-upload:focus, 
+.at-sidebar .btn-upload:active,
+.at-sidebar .btn-logout:hover, 
+.at-sidebar .btn-logout:focus, 
+.at-sidebar .btn-logout:active { border-color: rgb(213, 7, 15); color: rgb(255, 255, 255) !important; background-color: rgb(213, 7, 15); background-image: none; }
+
+/* Side List */
+.at-slist { top: 0px; width: 280px; height: 100%; right: 0px; display: none; position: fixed; z-index:99999; background: #fff; border-left:1px solid #ddd; margin-left:40px; }
+.at-slist .slist-close { position:absolute; top:0; left:0; margin-left:-35px; margin-top:65px; background: #fff; text-align:center; width:36px; height:36px; z-index:1; line-height:36px; border:1px solid #ddd; border-right:0px; -webkit-backface-visibility: hidden; cursor:pointer; }
+.at-slist .slist-close i { font-size: 16px; font-weight: 300 !important; }
+.at-slist .slist-wrap { overflow:auto; height:100%; padding:15px; }
+.at-slist .slist-wrap .div-title-underline-thin { margin-bottom:8px; }
+.at-slist .slist-wrap .media { border-bottom:1px solid #eee; margin:0px 0px 8px; padding:0px 0px 8px; line-height:20px; }
+.at-slist .slist-wrap .slist-photo i { border-radius: 50%; padding: 8px; width: 40px; height: 40px; text-align: center; font-size: 25px; display: inline-block; }
+.at-slist .slist-wrap .slist-photo img { border-radius: 50%; width: 40px !important; height: 40px !important; display:inline-block; }
+.at-slist .slist-wrap .slist-details i { margin-left:10px; }
+.at-slist .slist-wrap .slist-details i:first-child { margin-left:0px; }
+</style>
+<script type="text/javascript">
+
+    jQuery('#sidebar,#alogin,#blogin,#m_alogin,#m_blogin').click(function () {
+        jQuery('.kt_login').toggle();
+    });
+
+    jQuery(function () {
+        $('.navbar-collapse').on('show.bs.collapse', function (e) {
+            $('.navbar-collapse').not(this).collapse('hide');
+        });
+    });
+
+    //검색 전처리
+    function fsearchbox_submit(f) {
+        if (f.stx.value.length < 1) {
+            alert("검색어는 한글자 이상 입력하십시오.");
+            f.stx.select();
+            f.stx.focus();
+            return false;
+        }
+
+        // 검색에 많은 부하가 걸리는 경우 이 주석을 제거하세요.
+        var cnt = 0;
+        for (var i = 0; i < f.stx.value.length; i++) {
+            if (f.stx.value.charAt(i) == ' ')
+                cnt++;
+        }
+
+        if (cnt > 1) {
+            alert("빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다.");
+            f.stx.select();
+            f.stx.focus();
+            return false;
+        }
+
+        return true;
+    }
+
+    $('#btnmn').click(function () {
+        $('#onblock').removeClass('none');
+        $('#onblock').addClass('block');
+        setTimeout("limitt()", 15000);
+    });
+
+    function limitt() {
+        $('#onblock').removeClass('block');
+        $('#onblock').addClass('none');
+    }
+
+    $('#btnmn1').click(function () {
+        $('#onblock1').removeClass('none');
+        $('#onblock1').addClass('block');
+    });
+
+    function srcBoxOnOff() {
+        $('#mSearchBox').toggle();
+    }
+       
+</script>
+<script type="text/javascript">
+
+    if(top != window) {
+
+        top.location = window.location;
+
+    }
+
+</script>
+<div class="row h1"><p class="hidden">한줄간격주기</p></div>
+
+<!-- } 상단 끝 -->
+
+<hr class="hidden">
+
+<!-- 콘텐츠 시작 { -->
+
+<div class="section mobile-banner top_hr">
+ 
+	<div class="container">
+		
+		<div class="row">
+			
+            <div id="mobile_nav" style="overflow:hidden; margin:-8px 0 5px 0; padding-top:8px; border-bottom: 1px solid #d6d6d6; height:41px;">
+                <ul class="nav navbar-nav m_nav text-center" >
+                    
+                                        <li class="on   ">
+                        
+                                                            <a href="https://toonkor159.com/웹툰" target="_self" alt="웹툰" >
+                                                
+                            웹툰                        </a>			
+    
+                                            </li>
+                                        <li class="   ">
+                        
+                                                            <a href="https://toonkor159.com/애니" target="_blank" alt="애니" >
+                                                
+                            애니                        </a>			
+    
+                                            </li>
+                                        <li class="   ">
+                        
+                                                            <a href="https://toonkor159.com/단행본" target="_self" alt="단행본" >
+                                                
+                            단행본                        </a>			
+    
+                                            </li>
+                                        <li class="   ">
+                        
+                                                            <a href="https://toonkor159.com/망가" target="_self" alt="망가" >
+                                                
+                            망가                        </a>			
+    
+                                            </li>
+                                        <li class="   ">
+                        
+                                                            <a href="https://toonkor159.com/포토툰" target="_self" alt="포토툰" >
+                                                
+                            포토툰                        </a>			
+    
+                                            </li>
+                                        <li class="   ">
+                        
+                                                            <a href="https://toonkor159.com/토토보증업체" target="_blank" alt="토토보증업체" >
+                                                
+                            토토보증업체                        </a>			
+    
+                                            </li>
+                                        <li class="   ">
+                        
+                                                            <a href="https://toonkor159.com/코사이트" target="_blank" alt="코사이트" >
+                                                
+                            코사이트                        </a>			
+    
+                                            </li>
+                                        <li class="   ">
+                        
+                                                            <a href="https://toonkor159.com/주소알림" target="_blank" alt="주소알림" >
+                                                
+                            주소알림                        </a>			
+    
+                                            </li>
+                                        <li class=" dropdown m_none ">
+                        
+                                                            <a href="/notice" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" alt="고객센터" >	 
+                                                
+                            고객센터 <i class="fa fa-caret-down"></i>                        </a>			
+    
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="/notice" target="_self" alt="공지사항" >
+                                공지사항                                </a>
+                            </li>					
+                                                    <li>
+                                <a href="/bbs/qalist.php" target="_self" alt="1:1문의" >
+                                1:1문의                                </a>
+                            </li>					
+                        </ul>
+                    </li>
+                                    </ul>
+		    </div>        
+			<div class="col-md-12 mobile-banner" style="">
+								
+<link rel="StyleSheet" href="https://toonkor159.com/skin/banner/basic/style.css" type="text/css" />
+<style>
+
+	/*.col-md-4.col-sm-6.col-xs-6.text-center.banner_m {padding-bottom: 15px;}*/
+	section.row.clearfix.top_banner{margin:0 -3px;}
+	.col-md-4.col-sm-6.col-xs-6.text-center.banner_m{width:25%;padding:0 3px 6px;box-sizing: border-box; }
+	.main_top_bann2 { margin-top : 6px; }
+	@media (max-width: 767px){
+		
+		section.row.clearfix.top_banner {margin:0 0 0 -10px;}
+		.col-md-4.col-sm-6.col-xs-6.text-center.banner_m {width: 50%; padding:0 0 3px 3px; box-sizing: border-box;}
+		.main_top_bann{margin:0 0 3px -6px;}\
+		.main_top_bann2{margin:0 0 0 -6px;  margin-top : 3px !important;}\
+	}
+	
+	.bn div a img{
+		width:100%
+	}
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+		line-height: 1;
+	}
+	.carousel {
+		position: relative;
+	}
+</style>
+<section class="row clearfix top_banner">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td>
+		
+        <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://ww-ot.com" target=_blank ><img src="/images/win-375x100-222.jpg" alt="윈" style="width:100%;"></a>
+        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://wn-st.com" target=_blank><img src="/images/winner-375x100-815.jpg" alt="위너" style="width:100%;"></a>
+        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://wb-kk.com" target=_blank><img src="/images/375X100-tcc.jpg" alt="윈윈" style="width:100%;"></a>
+        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://sun-4488.com/?regcode=4444" target=_blank><img src="/images/suncity-375x100.jpg" alt="선시티" style="width:100%;"></a>
+            
+            
+            
+                        
+            
+        </div>
+    </td>
+</tr>
+<tr>
+	<td>    
+	
+	        <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://ww-ot.com" target=_blank><img src="/images/win-375x100-222.jpg" alt="윈" style="width:100%;"></a>
+        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://wn-st.com" target=_blank><img src="/images/winner-375x100-815.jpg" alt="위너" style="width:100%;"></a>
+        </div>
+      
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://wb-kk.com" target=_blank><img src="/images/375X100-tcc.jpg" alt="윈윈" style="width:100%;"></a>
+        </div>
+        
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center banner_m">
+            <a href="http://sun-4488.com/?regcode=4444" target=_blank><img src="/images/suncity-375x100.jpg" alt="선시티" style="width:100%;"></a>
+        </div>     
+        
+    </td>
+</tr>    
+</table>    
+</section>
+<div class="main_top_bann">
+	<a href="http://wn-st.com" target=_blank><img src="/images/winner-1370x100-815.jpg" alt="위너" style="width:100%;  "></a>
+</div>
+
+<div class="main_top_bann main_top_bann2">
+	<a href="http://ww-ot.com/" target=_blank><img src="/images/win-1370x100-222.jpg" alt="윈" style="width:100%;  "></a>
+</div>                
+				            	
+            </div>
+		
+			<div class="col-md-12" id="containerCol" style="margin-top: 10px; width:100%;float:left;">				
+
+<!--<h2 id="container_title">웹툰<span class="sound_only">웹툰홈</span></h2>-->
+
+<style>
+.col-md-4.col-sm-6.col-xs-6.text-center.banner_m {
+    /*padding: 0 15px 15px 15px;*/
+}
+@media (max-width: 767px) {
+body#body_sec {
+    padding-top: 0px !important;
+}
+@media (min-width: 1220px){
+.col-md-push-10 {
+    left: 0%;
+}
+}
+@media (min-width: 1220px){
+.col-md-pull-2 {
+    right: 0%; 
+}
+}
+</style>
+
+<style>
+@media (max-width:1020px){
+	.bt{
+		margin-top: 180px;
+	}
+}
+@media (max-width: 767px){
+.col-md-4.col-sm-6.col-xs-6.text-center.banner_m { /* padding:0 0 0 3px !important */}
+}
+@media (min-width:700px){ 
+	
+	.bt_view1{
+		width:100%;
+		display:block;
+	}
+	.bt_view2{
+		width:100%;
+		display:none;
+	}
+	.bt_thumb{
+		padding: 8px;
+		width: 55%;
+	}
+	.bt_title{
+		padding:19px 0px 13px 14px;
+		color:#fff;
+		font-size:1.5rem;
+		font-weight: bold;
+	}
+	.bt_label{
+		color: #fff;
+		padding-left: 8px;
+		font-size: 1.2rem;
+	}
+	.bt_data{
+		color:#fff;
+		font-size: 1.2rem;
+	}
+	.bt_over{
+		color: #fff;
+		padding-left: 17px;
+		padding-top: 10px;
+		padding-right: 17px;
+		font-size: 1.2rem;
+	}
+	.btn1{
+		width: 100%;
+		padding-top:6px;
+		padding-bottom:6px;
+		text-align:center;
+		border-right: 1px solid #ef1432;
+		background: #ef1432;
+		color:#fff;
+		float:left;
+		cursor:pointer;
+		font-size: 1.3rem;
+	}
+	.btn2{
+		width: 100%;
+		padding-top:6px;
+		padding-bottom:6px;
+		text-align:center;
+		border-right: 1px solid #66676b;
+		background: #66676b;
+		color:#fff;
+		float:left;
+		cursor:pointer;
+		font-size: 1.3rem;
+	}
+	.bt_btns{
+		width:19%;
+		padding-right:1%
+	}
+}
+@media (max-width:700px){
+	
+	.bt_view1{
+		width:100%;
+		display:none;
+	}
+	.bt_view2{
+		width:100%;
+		display:block;
+	}
+	.bt_thumb{
+		padding: 8px;
+		width: 100%;
+	}
+	.bt_title{
+		padding:19px 0px 13px 14px;
+		color:#fff;
+		font-size:1.5rem;
+		font-weight: bold;
+	}
+	.bt_label{
+		color: #fff;
+		padding-left: 8px;
+		font-size: 1.2rem;
+	}
+	.bt_data{
+		color:#fff;
+		font-size: 1.2rem;
+	}
+	.bt_over{
+		color: #fff;
+		padding-left: 17px;
+		padding-top: 10px;
+		padding-bottom:1%;
+		font-size: 1.2rem;
+	}
+	.btn1{
+		width: 100%;
+		padding-top:6px;
+		padding-bottom:6px;
+		text-align:center;
+		border-right: 1px solid #ef1432;
+		background: #ef1432;
+		color:#fff;
+		float:left;
+		cursor:pointer;
+		font-size: 1.3rem;
+	}
+	.btn2{
+		width: 100%;
+		padding-top:6px;
+		padding-bottom:6px;
+		text-align:center;
+		border-right: 1px solid #66676b;
+		background: #66676b;
+		color:#fff;
+		float:left;
+		cursor:pointer;
+		font-size: 1.3rem;
+	}
+	.bt_btns{
+		width:19%;
+		padding-right:1%;
+		padding-bottom:1%;
+	}
+}
+</style>
+	<div class="col-md-9 bt" id="containerCol" style="padding-right:0px; margin-top:0px;">
+
+	<table class="bt_view1">
+		<tbody style="background:#38393d;">
+			<tr>
+				<td class="bt_thumb">
+					<a href="#"><img src="/data/wtoon/20191103_182756_41104.jpg" style="width:100%; min-width: 548px; max-height:300px;" alt="마존현세강림기"></a>
+				</td>
+				<td style="width:45%; height:100%">
+					<table style="width:100%; height: 290px;">
+						<tr style="height:10%">
+							<td class="bt_title" colspan="4">마존현세강림기</td>
+						</tr>
+						<tr style="height:10%">
+							<td class="bt_label" colspan="4">
+																<span class="bt_label">작가</span> 
+								<span class="bt_data">UGPP,마요랑,월백</span>
+																<span class="bt_label">총편수</span> 
+								<span class="bt_data">총 142화</span>
+							</td>
+						</tr>
+						<tr style="height: 50%; vertical-align: top;">
+							<td class="bt_over" colspan="4">첫 번째 삶. 불의의 사고로 가족과 두 다리를 잃고 스스로 목숨을 끊었다. 두 번째 삶. 중원에서 적천마존이라는 명성을 얻었지만 가장 신뢰하던 이에게 배신당해 죽게 됐다. 그리고 맞게 된 세 번째 삶. 다시 돌아온 현대에서 강진호 자신은 평범한 삶을 살 거라 다짐하지만... 평범한 인간으로 살기엔 이미 중원의 삶에 너무 익숙해져 버린 것 ! '난 평범하게 살고 싶었어. 하지만 먼저 날 건드린 건 너희들이다. 각오는 돼 있겠지?' 다가오는 위기 속에서 강</td>
+						</tr>
+						<tr>
+                        								<!--<td class="bt_btns" name="first_view" data-role="/bbs/board.php?bo_table=wtoon&wr_id=232182&sca=4646&pview=">-->
+							<td class="bt_btns" name="first_view" data-role="/마존현세강림기_1화.html">
+                            	<span class="btn1" alt="마존현세강림기">첫화보기</span>
+							</td>
+							<td class="bt_btns" name="fil1"><span class="btn2">정주행</span></td>
+							<td class="bt_btns" name="fil2"><span class="btn2">최신화</span></td>
+							<td class="bt_btns" name="toon_like" ref="4646" mb_id="" wt_idx="4646">
+                            	<span class="btn2">
+                                	<i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 
+                                    <span name="wt_like">755</span>
+                                </span>
+                            </td>
+                            <td class="bt_btns btn-bookmark "  ref="4646" name="mark" >
+                            	<span class="btn2">
+                            		<i class="fa fa-bookmark-o" aria-hidden="true" style="color:#ee243a;margin-right:3px;"></i>북마크
+                                </span>    
+                            </td>
+						</tr> 
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<table class="bt_view2">
+		<tbody style="background:#38393d;">
+			<tr>
+				<td class="bt_thumb">
+					<a href="#">
+						<img src="/data/wtoon/20191103_182756_41104.jpg" style="width:100%" alt="마존현세강림기">
+					</a>
+				</td>
+			</tr>
+			<tr>
+				
+				<td style="width:100%; height:100%">
+					<table style="width:100%; height:100%">
+						<tr style="height:10%">
+							<td class="bt_title" colspan="4">마존현세강림기</td>
+						</tr>
+						<tr style="height:10%">
+							<td class="bt_label" colspan="4">
+								<span class="bt_label">작가</span> 
+								<span class="bt_data">UGPP,마요랑,월백</span> 
+								<span class="bt_label">총편수</span> 
+								<span class="bt_data">총 142화</span>
+							</td>
+						</tr>
+						<tr style="height: 50%; vertical-align: top;">
+							<td class="bt_over" colspan="4">첫 번째 삶. 불의의 사고로 가족과 두 다리를 잃고 스스로 목숨을 끊었다. 두 번째 삶. 중원에서 적천마존이라는 명성을 얻었지만 가장 신뢰하던 이에게 배신당해 죽게 됐다. 그리고 맞게 된 세 번째 삶. 다시 돌아온 현대에서 강진호 자신은 평범한 삶을 살 거라 다짐하지만... 평범한 인간으로 살기엔 이미 중원의 삶에 너무 익숙해져 버린 것 ! '난 평범하게 살고 싶었어. 하지만 먼저 날 건드린 건 너희들이다. 각오는 돼 있겠지?' 다가오는 위기 속에서 강</td>
+						</tr>
+						<tr>
+							<td class="bt_btns" style="padding-left:1%;" name="first_view" data-role="/마존현세강림기_1화.html">
+								<span class="btn1" alt="마존현세강림기">첫화보기</span>
+							</td>
+							<td class="bt_btns" name="fil1"><span class="btn2">정주행</span></td>
+							<td class="bt_btns" name="fil2"><span class="btn2">최신화</span></td>
+							<td class="bt_btns" name="toon_like" ref="4646" mb_id="" wt_idx="4646"><span class="btn2"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> <span name="wt_like">755</span></span></td>
+                            <td class="bt_btns btn-bookmark "  ref="4646" name="mark" >
+                            	<span class="btn2">
+                            		<i class="fa fa-bookmark-o" aria-hidden="true" style="color:#ee243a;margin-right:3px;"></i>북마크
+                                </span>    
+                            </td>
+						</tr> 
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+<script>
+
+$("td[name='first_view']").on('click',function() {
+	var vlink = $(this).attr("data-role");
+	location.href=vlink; 
+});
+
+var curl = "https://toonkor159.com/마존현세강림기";
+$("td[name='fil2']").on('click',function() {
+	/* 
+	if(curl.indexOf( "fil") != -1){
+		curl = curl.split("fil")[0];
+	}
+	location.href = curl+"&fil=1";	
+	*/
+	curl = curl.replace('/정주행','');
+	curl = curl.replace('/최신화','');
+	
+	if(curl.indexOf( "sfil") != -1){
+		curl = curl.split("?sfil")[0];
+		location.href = curl+"/최신화?sfil=";
+	}else{
+		location.href = curl+"/최신화";
+	}
+	
+});
+
+
+$("td[name='fil1']").click(function() {
+	/*
+	if(curl.indexOf( "fil") != -1){
+		curl = curl.split("&fil")[0];
+	}
+	location.href = curl+"&fil=2";
+	*/
+	curl = curl.replace('/정주행','');
+	curl = curl.replace('/최신화','');
+	
+	if(curl.indexOf( "sfil") != -1){
+		curl = curl.split("?sfil")[0];
+		location.href = curl+"/정주행?sfil=";
+	}else{
+		location.href = curl+"/정주행";
+	}
+	
+});
+
+
+
+$("td[name='toon_like']").click(function() {
+	var idx = $(this).attr("ref");
+	var id = $(this).attr("mb_id");
+	$.ajax({
+		url:'/bbs/new_good.php',
+		type:'post',
+		data:'idx='+idx+'&mb_id='+id,
+		success:function(data){
+			if(data.indexOf("MSG:") > -1){
+				$MSG = data.split(":");
+				alert($MSG[1]);
+			}else{
+				window.location.reload();
+				
+			}
+		}
+	});
+});
+
+$('.btn-bookmark').on('click', function(e) {
+		
+		alert("로그인이 필요한 서비스 입니다.");
+	
+		
+});
+	
+</script><div id="bo_list" style="width:100%; float:left">
+<style>
+
+.botext{
+	display: inline;
+    margin-left: 0.25rem;
+    color: rgba(0,0,0,0.87);
+    font-size: 15px;
+    font-weight: bold;
+}
+.fil{
+	cursor:pointer;
+}
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: grey;
+}
+
+</style>
+
+<div class="clearfix">
+<link rel="StyleSheet" href="https://toonkor159.com/skin/banner/basic/style.css" type="text/css" />
+<style>
+@media (min-width: 767px)and(max-width: 1220px){
+	.bnt{
+		margin-top:0px;
+	}
+}
+@media (min-width: 1220px){
+	.bnt{
+		margin-top:12px;
+	}
+}
+
+@media (min-width: 1025px){
+	
+	.bn div{
+		padding:0 3px 6px;	
+		width:33.33333%;
+		float:left;
+	}
+	
+}
+@media (max-width: 1025px){
+	
+	.bn{
+		z-index:9999;
+	}	
+	
+	.bn div{
+		padding:0 3px 6px;	
+		width:33.33333%;
+		float:left;
+	}
+
+}
+
+@media (max-width: 767px){
+	.bnt{
+		margin-top:-40px;    display: inline;
+	}
+	.bn div{
+		padding:3px 3px 0px 0px;	
+		width:50%;
+		float:left;
+	}
+	
+	.bn .bancol2{padding-right:0px;}
+	.bn .bancol4{padding-right:0px;}
+	.bn .bancol6{padding-right:0px;}
+	
+	.bn div a img{
+		/*height:55px;*/
+	}
+	
+}
+
+.bo_fx{clear:both;}
+
+.bn div a img{
+	width:100%;	
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+}
+.carousel {
+    position: relative;
+}
+
+</style> 
+<div class="bn bnt" width="100%">
+	
+    <div class="bancol">
+		<a href="http://ww-ot.com" target=_blank ><img src="/images/win-375x100-222.jpg" alt="윈"></a>
+	</div>
+	<div class="bancol2">
+		<a href="http://wb-kk.com" target=_blank><img src="/images/winwin-375X100-tcc.jpg" alt="윈윈"></a>
+	</div>
+    
+	
+    <div class="bancol3">
+		<a href="http://sun-4488.com/?regcode=4444" target=_blank ><img src="/images/suncity-375x100.jpg" alt="선시티"></a>
+	</div>
+	<div class="bancol4">
+		<a href="http://wn-st.com" target=_blank><img src="/images/winner-375x100-815.jpg" alt="위너"></a>
+	</div>
+    
+	
+    <div class="bancol5" >
+		<a href="http://ww-ot.com" target=_blank ><img src="/images/win-375x100-222.jpg" alt="윈"></a>
+	</div>
+	<div class="bancol6" >
+		<a href="http://ww-ot.com" target=_blank><img src="/images/win-375x100-222.jpg" alt="윈"></a>
+	</div>        
+</div>
+</div>
+	<div class="bo_fx" style="border-bottom:1px solid #bfbfbf">
+        <div id="bo_list_total">
+			<span class="tcnt">마존현세강림기&nbsp;&nbsp;|&nbsp;&nbsp;총&nbsp;142&nbsp;화</span>
+        </div>
+                <ul class="btn_bo_user">
+            <li><a href="https://toonkor159.com/bbs/rss.php?bo_table=wtoon" class="btn_b01">RSS</a></li>						                    </ul>
+            </div>
+<script>
+$(function(){
+	$('.btn-edit').click(function(){
+		location.href='./manager_form.php?bo_table=wtoon&wt_idx=4646';
+	});
+});
+</script>
+    <!-- } 게시판 페이지 정보 및 버튼 끝 -->
+
+    <form name="fboardlist" id="fboardlist" action="./board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
+    <input type="hidden" name="bo_table" value="wtoon">
+    <input type="hidden" name="sfl" value="">
+    <input type="hidden" name="stx" value="">
+    <input type="hidden" name="spt" value="-548461">
+    <input type="hidden" name="sca" value="4646">
+    <input type="hidden" name="sst" value="wr_num, wr_reply">
+    <input type="hidden" name="sod" value="">
+    <input type="hidden" name="page" value="1">
+    <input type="hidden" name="sw" value="">
+<style>
+@media (min-width:768px) {
+	.web_list{
+		width:100%; 
+		height:115px;
+		
+	}
+	.he1{
+		height:30px;
+	}
+	.he2{
+		height:80px;
+	}
+	.episode__index {
+		z-index: 90;
+		color: #bebebe;
+		font-size: 1.6rem;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.content__title {
+		margin-top: 1rem;
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+	.info__updated-at {
+		color: rgba(0,0,0,0.54);
+		font-size: 1.5rem;
+		font-weight: normal;
+	}
+	.thumb_cat{
+		width:100%;
+		height:100px;
+		overflow:hidden;
+	}
+	.he_img{
+		width:166px;
+	}
+	.clear_fix{
+		height:10px;
+	}
+}
+@media (max-width:768px) {
+	.web_list{
+		width:100%;
+		height:71px;
+	}
+	.he1{
+		height:10px;
+	}
+	.he2{
+		height:20px;
+	}
+	.episode__index {
+		z-index: 90;
+		color: #bebebe;
+		font-size: 1.1rem;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.content__title {
+		margin-top: 1rem;
+		font-size: 1.525rem;
+		font-weight: bold;
+	}
+	.info__updated-at {
+		color: rgba(0,0,0,0.54);
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	.thumb_cat{
+		width:100%;
+		height:70px;
+		overflow:hidden;
+	}
+	.he_img{
+		width:124px;
+	}
+	.clear_fix{
+		height:3px;
+	}
+}
+.tborder{
+	border-bottom:solid 1px #bfbfbf; 
+	cursor:pointer;
+	transition: background .2s ease;
+}
+
+.tborder:hover {
+    background-color: #e6e4e4;
+}
+
+.read_icon{ margin:-4px 0 0 10px;}
+
+</style>	
+		<table width="100%" class="web_list">
+			<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=501989&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/06/09/1654780690831.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_141화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_141화.html" alt="마존현세강림기 141화"> 
+					마존현세강림기 141화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_141화.html" alt="마존현세강림기 141화">2022-06-09</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=499433&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/06/02/16541758305072.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_140화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_140화.html" alt="마존현세강림기 140화"> 
+					마존현세강림기 140화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_140화.html" alt="마존현세강림기 140화">2022-06-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=496796&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/05/26/16535707577192.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_139화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_139화.html" alt="마존현세강림기 139화"> 
+					마존현세강림기 139화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_139화.html" alt="마존현세강림기 139화">2022-05-26</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=494088&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/05/19/1652966665703.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_138화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_138화.html" alt="마존현세강림기 138화"> 
+					마존현세강림기 138화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_138화.html" alt="마존현세강림기 138화">2022-05-19</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=491348&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/05/12/16523611802372.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_137화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_137화.html" alt="마존현세강림기 137화"> 
+					마존현세강림기 137화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_137화.html" alt="마존현세강림기 137화">2022-05-12</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=489071&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/05/05/16517575394156.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_136화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_136화.html" alt="마존현세강림기 136화"> 
+					마존현세강림기 136화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_136화.html" alt="마존현세강림기 136화">2022-05-05</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=489024&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/05/05/16517563385089.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/백작가의_사생아가_결혼하면_30화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/백작가의_사생아가_결혼하면_30화.html" alt="백작가의 사생아가 결혼하면 30화"> 
+					백작가의 사생아가 결혼하면 30화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/백작가의_사생아가_결혼하면_30화.html" alt="백작가의 사생아가 결혼하면 30화">2022-05-05</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=486437&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/04/28/16511515494293.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_135화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_135화.html" alt="마존현세강림기 135화"> 
+					마존현세강림기 135화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_135화.html" alt="마존현세강림기 135화">2022-04-28</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=483851&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/04/21/16505470692836.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_134화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_134화.html" alt="마존현세강림기 134화"> 
+					마존현세강림기 134화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_134화.html" alt="마존현세강림기 134화">2022-04-21</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=481095&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/04/14/1649941940435.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_133화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_133화.html" alt="마존현세강림기 133화"> 
+					마존현세강림기 133화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_133화.html" alt="마존현세강림기 133화">2022-04-14</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=478662&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/04/07/16493371970763.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_132화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_132화.html" alt="마존현세강림기 132화"> 
+					마존현세강림기 132화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_132화.html" alt="마존현세강림기 132화">2022-04-07</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=473684&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/03/24/16481313218216.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_131화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_131화.html" alt="마존현세강림기 131화"> 
+					마존현세강림기 131화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_131화.html" alt="마존현세강림기 131화">2022-03-24</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=471324&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/03/17/1647524243912.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_130화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_130화.html" alt="마존현세강림기 130화"> 
+					마존현세강림기 130화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_130화.html" alt="마존현세강림기 130화">2022-03-17</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=468910&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/03/10/16469178822975.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_129화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_129화.html" alt="마존현세강림기 129화"> 
+					마존현세강림기 129화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_129화.html" alt="마존현세강림기 129화">2022-03-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=466542&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/03/03/1646315120496.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_128화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_128화.html" alt="마존현세강림기 128화"> 
+					마존현세강림기 128화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_128화.html" alt="마존현세강림기 128화">2022-03-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=458295&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/02/10/16444988887376.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_127화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_127화.html" alt="마존현세강림기 127화"> 
+					마존현세강림기 127화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_127화.html" alt="마존현세강림기 127화">2022-02-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=455812&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/02/03/16438940364993.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_126화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_126화.html" alt="마존현세강림기 126화"> 
+					마존현세강림기 126화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_126화.html" alt="마존현세강림기 126화">2022-02-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=453293&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/01/27/16432893013955.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_125화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_125화.html" alt="마존현세강림기 125화"> 
+					마존현세강림기 125화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_125화.html" alt="마존현세강림기 125화">2022-01-27</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=450912&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/01/20/16426845555123.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_124화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_124화.html" alt="마존현세강림기 124화"> 
+					마존현세강림기 124화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_124화.html" alt="마존현세강림기 124화">2022-01-20</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=448369&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/01/13/16420794805002.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_123화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_123화.html" alt="마존현세강림기 123화"> 
+					마존현세강림기 123화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_123화.html" alt="마존현세강림기 123화">2022-01-13</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=445364&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2022/01/06/16414749836853.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_122화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_122화.html" alt="마존현세강림기 122화"> 
+					마존현세강림기 122화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_122화.html" alt="마존현세강림기 122화">2022-01-06</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=442846&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/12/30/16408697553865.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_121화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_121화.html" alt="마존현세강림기 121화"> 
+					마존현세강림기 121화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_121화.html" alt="마존현세강림기 121화">2021-12-30</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=439596&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/12/23/16402651276336.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_120화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_120화.html" alt="마존현세강림기 120화"> 
+					마존현세강림기 120화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_120화.html" alt="마존현세강림기 120화">2021-12-23</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=436693&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/12/16/16396605394792.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_119화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_119화.html" alt="마존현세강림기 119화"> 
+					마존현세강림기 119화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_119화.html" alt="마존현세강림기 119화">2021-12-16</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=434010&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/12/09/16390557993276.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_118화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_118화.html" alt="마존현세강림기 118화"> 
+					마존현세강림기 118화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_118화.html" alt="마존현세강림기 118화">2021-12-09</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=431526&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/12/02/16384510309937.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_117화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_117화.html" alt="마존현세강림기 117화"> 
+					마존현세강림기 117화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_117화.html" alt="마존현세강림기 117화">2021-12-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=429315&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/11/25/16378462193234.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_116화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_116화.html" alt="마존현세강림기 116화"> 
+					마존현세강림기 116화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_116화.html" alt="마존현세강림기 116화">2021-11-25</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=427151&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/11/18/16372411221758.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_115화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_115화.html" alt="마존현세강림기 115화"> 
+					마존현세강림기 115화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_115화.html" alt="마존현세강림기 115화">2021-11-18</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=425073&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/11/11/16366366866238.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_114화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_114화.html" alt="마존현세강림기 114화"> 
+					마존현세강림기 114화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_114화.html" alt="마존현세강림기 114화">2021-11-11</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=422914&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/11/04/16360319602196.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_113화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_113화.html" alt="마존현세강림기 113화"> 
+					마존현세강림기 113화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_113화.html" alt="마존현세강림기 113화">2021-11-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=420589&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/10/28/16354272854532.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_112화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_112화.html" alt="마존현세강림기 112화"> 
+					마존현세강림기 112화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_112화.html" alt="마존현세강림기 112화">2021-10-28</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=418343&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/10/21/16348220612606.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_111화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_111화.html" alt="마존현세강림기 111화"> 
+					마존현세강림기 111화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_111화.html" alt="마존현세강림기 111화">2021-10-21</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=415842&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/10/14/16342173148708.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_110화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_110화.html" alt="마존현세강림기 110화"> 
+					마존현세강림기 110화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_110화.html" alt="마존현세강림기 110화">2021-10-14</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=413599&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/10/07/16336131361058.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_109화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_109화.html" alt="마존현세강림기 109화"> 
+					마존현세강림기 109화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_109화.html" alt="마존현세강림기 109화">2021-10-07</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=411251&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/30/16330078535488.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_108화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_108화.html" alt="마존현세강림기 108화"> 
+					마존현세강림기 108화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_108화.html" alt="마존현세강림기 108화">2021-09-30</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=408790&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/23/16324031554836.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_107화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_107화.html" alt="마존현세강림기 107화"> 
+					마존현세강림기 107화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_107화.html" alt="마존현세강림기 107화">2021-09-23</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=406418&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/16/16317982673813.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_106화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_106화.html" alt="마존현세강림기 106화"> 
+					마존현세강림기 106화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_106화.html" alt="마존현세강림기 106화">2021-09-16</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=403968&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/09/1631193837149.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_105화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_105화.html" alt="마존현세강림기 105화"> 
+					마존현세강림기 105화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_105화.html" alt="마존현세강림기 105화">2021-09-09</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=401235&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/02/16305896540109.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_104화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_104화.html" alt="마존현세강림기 104화"> 
+					마존현세강림기 104화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_104화.html" alt="마존현세강림기 104화">2021-09-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=401234&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/02/1630589610985.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_103화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_103화.html" alt="마존현세강림기 103화"> 
+					마존현세강림기 103화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_103화.html" alt="마존현세강림기 103화">2021-09-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=401233&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/02/16305895687379.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_102화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_102화.html" alt="마존현세강림기 102화"> 
+					마존현세강림기 102화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_102화.html" alt="마존현세강림기 102화">2021-09-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=401218&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/09/02/16305889006282.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_101화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_101화.html" alt="마존현세강림기 101화"> 
+					마존현세강림기 101화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_101화.html" alt="마존현세강림기 101화">2021-09-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=358569&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/05/21/1621524036559.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_100화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_100화.html" alt="마존현세강림기 100화"> 
+					마존현세강림기 100화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_100화.html" alt="마존현세강림기 100화">2021-05-21</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=354910&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/05/14/16209296322177.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_99화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_99화.html" alt="마존현세강림기 99화"> 
+					마존현세강림기 99화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_99화.html" alt="마존현세강림기 99화">2021-05-14</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=351781&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/05/07/16203146755342.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_98화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_98화.html" alt="마존현세강림기 98화"> 
+					마존현세강림기 98화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_98화.html" alt="마존현세강림기 98화">2021-05-07</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=348562&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/04/30/16197095330749.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_97화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_97화.html" alt="마존현세강림기 97화"> 
+					마존현세강림기 97화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_97화.html" alt="마존현세강림기 97화">2021-04-30</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=345541&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/04/23/16191051490587.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_96화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_96화.html" alt="마존현세강림기 96화"> 
+					마존현세강림기 96화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_96화.html" alt="마존현세강림기 96화">2021-04-23</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=341713&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/04/16/16185003106776.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_95화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_95화.html" alt="마존현세강림기 95화"> 
+					마존현세강림기 95화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_95화.html" alt="마존현세강림기 95화">2021-04-16</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=337885&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/04/09/16178956300922.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_94화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_94화.html" alt="마존현세강림기 94화"> 
+					마존현세강림기 94화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_94화.html" alt="마존현세강림기 94화">2021-04-09</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=333861&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/04/02/16172904664016.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_93화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_93화.html" alt="마존현세강림기 93화"> 
+					마존현세강림기 93화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_93화.html" alt="마존현세강림기 93화">2021-04-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=329535&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/03/26/1616685924923.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_92화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_92화.html" alt="마존현세강림기 92화"> 
+					마존현세강림기 92화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_92화.html" alt="마존현세강림기 92화">2021-03-26</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=321823&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/03/19/16160814916818.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_91화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_91화.html" alt="마존현세강림기 91화"> 
+					마존현세강림기 91화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_91화.html" alt="마존현세강림기 91화">2021-03-19</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=313499&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/03/12/16154789797193.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_90화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_90화.html" alt="마존현세강림기 90화"> 
+					마존현세강림기 90화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_90화.html" alt="마존현세강림기 90화">2021-03-12</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=304062&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/03/05/16148844654309.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_89화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_89화.html" alt="마존현세강림기 89화"> 
+					마존현세강림기 89화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_89화.html" alt="마존현세강림기 89화">2021-03-05</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=301982&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/02/26/1614269027963.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_88화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_88화.html" alt="마존현세강림기 88화"> 
+					마존현세강림기 88화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_88화.html" alt="마존현세강림기 88화">2021-02-26</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=300715&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/02/19/16136649361356.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_87화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_87화.html" alt="마존현세강림기 87화"> 
+					마존현세강림기 87화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_87화.html" alt="마존현세강림기 87화">2021-02-19</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=299517&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/02/12/16130591145763.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_86화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_86화.html" alt="마존현세강림기 86화"> 
+					마존현세강림기 86화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_86화.html" alt="마존현세강림기 86화">2021-02-12</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=298480&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/02/05/16124635036762.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_85화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_85화.html" alt="마존현세강림기 85화"> 
+					마존현세강림기 85화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_85화.html" alt="마존현세강림기 85화">2021-02-05</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=297021&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/01/29/16118544540663.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_84화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_84화.html" alt="마존현세강림기 84화"> 
+					마존현세강림기 84화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_84화.html" alt="마존현세강림기 84화">2021-01-29</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=295847&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/01/22/16112460497044.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_83화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_83화.html" alt="마존현세강림기 83화"> 
+					마존현세강림기 83화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_83화.html" alt="마존현세강림기 83화">2021-01-22</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=294791&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/01/15/16107097704605.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_82화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_82화.html" alt="마존현세강림기 82화"> 
+					마존현세강림기 82화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_82화.html" alt="마존현세강림기 82화">2021-01-15</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=292307&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2021/01/01/16094324125296.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_81화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_81화.html" alt="마존현세강림기 81화"> 
+					마존현세강림기 81화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_81화.html" alt="마존현세강림기 81화">2021-01-01</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=291310&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/12/25/16088305001303.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_80화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_80화.html" alt="마존현세강림기 80화"> 
+					마존현세강림기 80화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_80화.html" alt="마존현세강림기 80화">2020-12-25</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=290248&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/12/18/16082258093431.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_79화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_79화.html" alt="마존현세강림기 79화"> 
+					마존현세강림기 79화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_79화.html" alt="마존현세강림기 79화">2020-12-18</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=289422&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/12/11/16076636728996.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_78화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_78화.html" alt="마존현세강림기 78화"> 
+					마존현세강림기 78화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_78화.html" alt="마존현세강림기 78화">2020-12-11</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=288513&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/12/04/16070137528517.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_77화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_77화.html" alt="마존현세강림기 77화"> 
+					마존현세강림기 77화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_77화.html" alt="마존현세강림기 77화">2020-12-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=287785&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/11/27/1606466884423.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_76화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_76화.html" alt="마존현세강림기 76화"> 
+					마존현세강림기 76화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_76화.html" alt="마존현세강림기 76화">2020-11-27</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=286673&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/11/20/16058579821421.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_75화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_75화.html" alt="마존현세강림기 75화"> 
+					마존현세강림기 75화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_75화.html" alt="마존현세강림기 75화">2020-11-20</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=285739&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/11/13/16052012781776.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_74화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_74화.html" alt="마존현세강림기 74화"> 
+					마존현세강림기 74화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_74화.html" alt="마존현세강림기 74화">2020-11-13</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=284922&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/11/06/16045931639231.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_73화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_73화.html" alt="마존현세강림기 73화"> 
+					마존현세강림기 73화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_73화.html" alt="마존현세강림기 73화">2020-11-06</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=284134&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/10/30/16039962651623.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_72화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_72화.html" alt="마존현세강림기 72화"> 
+					마존현세강림기 72화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_72화.html" alt="마존현세강림기 72화">2020-10-30</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=283165&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/10/23/16033880080928.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_71화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_71화.html" alt="마존현세강림기 71화"> 
+					마존현세강림기 71화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_71화.html" alt="마존현세강림기 71화">2020-10-23</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=282278&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/10/16/16027804487897.jpg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_70화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_70화.html" alt="마존현세강림기 70화"> 
+					마존현세강림기 70화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_70화.html" alt="마존현세강림기 70화">2020-10-16</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=281149&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/10/09/16021846889113.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_69화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_69화.html" alt="마존현세강림기 69화"> 
+					마존현세강림기 69화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_69화.html" alt="마존현세강림기 69화">2020-10-09</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=280254&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/10/02/16015761368808.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_68화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_68화.html" alt="마존현세강림기 68화"> 
+					마존현세강림기 68화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_68화.html" alt="마존현세강림기 68화">2020-10-02</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=279224&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/09/25/16009687995896.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_67화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_67화.html" alt="마존현세강림기 67화"> 
+					마존현세강림기 67화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_67화.html" alt="마존현세강림기 67화">2020-09-25</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=278355&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/09/18/16003683529554.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_66화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_66화.html" alt="마존현세강림기 66화"> 
+					마존현세강림기 66화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_66화.html" alt="마존현세강림기 66화">2020-09-18</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=277261&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/09/11/15997597642952.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_65화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_65화.html" alt="마존현세강림기 65화"> 
+					마존현세강림기 65화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_65화.html" alt="마존현세강림기 65화">2020-09-11</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=276475&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/09/04/15991560002461.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_64화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_64화.html" alt="마존현세강림기 64화"> 
+					마존현세강림기 64화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_64화.html" alt="마존현세강림기 64화">2020-09-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=275685&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/08/28/15985968430412.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_63화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_63화.html" alt="마존현세강림기 63화"> 
+					마존현세강림기 63화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_63화.html" alt="마존현세강림기 63화">2020-08-28</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=274695&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/08/21/15979420298375.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_62화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_62화.html" alt="마존현세강림기 62화"> 
+					마존현세강림기 62화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_62화.html" alt="마존현세강림기 62화">2020-08-21</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=273433&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/08/14/15973886110751.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_61화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_61화.html" alt="마존현세강림기 61화"> 
+					마존현세강림기 61화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_61화.html" alt="마존현세강림기 61화">2020-08-14</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=272312&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/08/07/1596734125821.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_60화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_60화.html" alt="마존현세강림기 60화"> 
+					마존현세강림기 60화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_60화.html" alt="마존현세강림기 60화">2020-08-07</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=271379&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/07/31/15961264179139.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_59화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_59화.html" alt="마존현세강림기 59화"> 
+					마존현세강림기 59화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_59화.html" alt="마존현세강림기 59화">2020-07-31</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=270166&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/07/24/15955202317003.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_58화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_58화.html" alt="마존현세강림기 58화"> 
+					마존현세강림기 58화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_58화.html" alt="마존현세강림기 58화">2020-07-24</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=268923&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/07/17/15949170960225.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_57화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_57화.html" alt="마존현세강림기 57화"> 
+					마존현세강림기 57화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_57화.html" alt="마존현세강림기 57화">2020-07-17</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=268177&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/07/10/15943107332892.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_56화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_56화.html" alt="마존현세강림기 56화"> 
+					마존현세강림기 56화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_56화.html" alt="마존현세강림기 56화">2020-07-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=267295&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/07/03/15937061763812.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_55화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_55화.html" alt="마존현세강림기 55화"> 
+					마존현세강림기 55화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_55화.html" alt="마존현세강림기 55화">2020-07-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=266446&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/06/26/15931014883203.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_54화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_54화.html" alt="마존현세강림기 54화"> 
+					마존현세강림기 54화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_54화.html" alt="마존현세강림기 54화">2020-06-26</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=265668&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/06/19/15924962904451.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_53화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_53화.html" alt="마존현세강림기 53화"> 
+					마존현세강림기 53화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_53화.html" alt="마존현세강림기 53화">2020-06-19</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=264706&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/06/12/15918964647635.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_52화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_52화.html" alt="마존현세강림기 52화"> 
+					마존현세강림기 52화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_52화.html" alt="마존현세강림기 52화">2020-06-12</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=263948&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/06/05/15913455950754.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_51화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_51화.html" alt="마존현세강림기 51화"> 
+					마존현세강림기 51화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_51화.html" alt="마존현세강림기 51화">2020-06-05</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=263034&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/05/29/15907370713192.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_50화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_50화.html" alt="마존현세강림기 50화"> 
+					마존현세강림기 50화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_50화.html" alt="마존현세강림기 50화">2020-05-29</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=262240&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/05/22/15900754944572.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_49화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_49화.html" alt="마존현세강림기 49화"> 
+					마존현세강림기 49화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_49화.html" alt="마존현세강림기 49화">2020-05-22</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=261351&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15894794367115.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_48화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_48화.html" alt="마존현세강림기 48화"> 
+					마존현세강림기 48화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_48화.html" alt="마존현세강림기 48화">2020-05-15</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=259356&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15882639499164.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_47화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_47화.html" alt="마존현세강림기 47화"> 
+					마존현세강림기 47화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_47화.html" alt="마존현세강림기 47화">2020-05-01</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=258456&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15876610682058.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_46화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_46화.html" alt="마존현세강림기 46화"> 
+					마존현세강림기 46화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_46화.html" alt="마존현세강림기 46화">2020-04-24</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=257693&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/04/17/15870584275696.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_45화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_45화.html" alt="마존현세강림기 45화"> 
+					마존현세강림기 45화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_45화.html" alt="마존현세강림기 45화">2020-04-17</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=256755&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/04/10/15864658475222.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_44화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_44화.html" alt="마존현세강림기 44화"> 
+					마존현세강림기 44화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_44화.html" alt="마존현세강림기 44화">2020-04-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=255403&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15858857787521.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_43화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_43화.html" alt="마존현세강림기 43화"> 
+					마존현세강림기 43화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_43화.html" alt="마존현세강림기 43화">2020-04-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=254126&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/1585236768766.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_42화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_42화.html" alt="마존현세강림기 42화"> 
+					마존현세강림기 42화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_42화.html" alt="마존현세강림기 42화">2020-03-27</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=252763&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/03/20/15846386781415.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_41화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_41화.html" alt="마존현세강림기 41화"> 
+					마존현세강림기 41화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_41화.html" alt="마존현세강림기 41화">2020-03-20</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=252760&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/03/20/15846386044782.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_40화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_40화.html" alt="마존현세강림기 40화"> 
+					마존현세강림기 40화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_40화.html" alt="마존현세강림기 40화">2020-03-20</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=249954&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15834372885019.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_39화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_39화.html" alt="마존현세강림기 39화"> 
+					마존현세강림기 39화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_39화.html" alt="마존현세강림기 39화">2020-03-06</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=248774&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15828282385215.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_38화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_38화.html" alt="마존현세강림기 38화"> 
+					마존현세강림기 38화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_38화.html" alt="마존현세강림기 38화">2020-02-28</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=248773&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15828281763144.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_37화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_37화.html" alt="마존현세강림기 37화"> 
+					마존현세강림기 37화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_37화.html" alt="마존현세강림기 37화">2020-02-28</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=247653&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15822406864444.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_36화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_36화.html" alt="마존현세강림기 36화"> 
+					마존현세강림기 36화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_36화.html" alt="마존현세강림기 36화">2020-02-21</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=246552&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15816085477856.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_35화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_35화.html" alt="마존현세강림기 35화"> 
+					마존현세강림기 35화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_35화.html" alt="마존현세강림기 35화">2020-02-14</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=245595&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15810051411659.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_34화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_34화.html" alt="마존현세강림기 34화"> 
+					마존현세강림기 34화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_34화.html" alt="마존현세강림기 34화">2020-02-07</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=244422&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/01/31/15804066413559.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_33화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_33화.html" alt="마존현세강림기 33화"> 
+					마존현세강림기 33화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_33화.html" alt="마존현세강림기 33화">2020-01-31</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=244421&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/2020/01/31/15804065754074.jpeg'/>">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_32화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_32화.html" alt="마존현세강림기 32화"> 
+					마존현세강림기 32화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_32화.html" alt="마존현세강림기 32화">2020-01-31</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=242255&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15791889886531.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_31화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_31화.html" alt="마존현세강림기 31화"> 
+					마존현세강림기 31화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_31화.html" alt="마존현세강림기 31화">2020-01-16</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=241389&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15786375561195.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_30화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_30화.html" alt="마존현세강림기 30화"> 
+					마존현세강림기 30화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_30화.html" alt="마존현세강림기 30화">2020-01-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=240429&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15779828037815.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_29화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_29화.html" alt="마존현세강림기 29화"> 
+					마존현세강림기 29화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_29화.html" alt="마존현세강림기 29화">2020-01-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=239204&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/1577378633.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_28화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_28화.html" alt="마존현세강림기 28화"> 
+					마존현세강림기 28화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_28화.html" alt="마존현세강림기 28화">2019-12-27</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=238162&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15767700275082.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_27화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_27화.html" alt="마존현세강림기 27화"> 
+					마존현세강림기 27화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_27화.html" alt="마존현세강림기 27화">2019-12-20</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=236976&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15762292342233.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_26화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_26화.html" alt="마존현세강림기 26화"> 
+					마존현세강림기 26화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_26화.html" alt="마존현세강림기 26화">2019-12-13</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=236367&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15757214594963.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_25화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_25화.html" alt="마존현세강림기 25화"> 
+					마존현세강림기 25화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_25화.html" alt="마존현세강림기 25화">2019-12-07</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=235391&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15750966890092.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_24화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_24화.html" alt="마존현세강림기 24화"> 
+					마존현세강림기 24화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_24화.html" alt="마존현세강림기 24화">2019-11-30</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=234403&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15743546594866.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_23화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_23화.html" alt="마존현세강림기 23화"> 
+					마존현세강림기 23화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_23화.html" alt="마존현세강림기 23화">2019-11-22</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=233578&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15738138653875.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_22화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_22화.html" alt="마존현세강림기 22화"> 
+					마존현세강림기 22화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_22화.html" alt="마존현세강림기 22화">2019-11-15</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232957&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15733663959513.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_21화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_21화.html" alt="마존현세강림기 21화"> 
+					마존현세강림기 21화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_21화.html" alt="마존현세강림기 21화">2019-11-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232956&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15733663829559.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_20화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_20화.html" alt="마존현세강림기 20화"> 
+					마존현세강림기 20화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_20화.html" alt="마존현세강림기 20화">2019-11-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232955&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15733663773844.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_19화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_19화.html" alt="마존현세강림기 19화"> 
+					마존현세강림기 19화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_19화.html" alt="마존현세강림기 19화">2019-11-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232954&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15733663723616.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_18화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_18화.html" alt="마존현세강림기 18화"> 
+					마존현세강림기 18화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_18화.html" alt="마존현세강림기 18화">2019-11-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232953&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15733663672108.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_17화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_17화.html" alt="마존현세강림기 17화"> 
+					마존현세강림기 17화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_17화.html" alt="마존현세강림기 17화">2019-11-10</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232533&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15730332978365.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_16화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_16화.html" alt="마존현세강림기 16화"> 
+					마존현세강림기 16화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_16화.html" alt="마존현세강림기 16화">2019-11-06</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232532&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15730332927238.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_15화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_15화.html" alt="마존현세강림기 15화"> 
+					마존현세강림기 15화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_15화.html" alt="마존현세강림기 15화">2019-11-06</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232531&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15730332878762.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_14화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_14화.html" alt="마존현세강림기 14화"> 
+					마존현세강림기 14화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_14화.html" alt="마존현세강림기 14화">2019-11-06</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232342&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15728758754085.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_13화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_13화.html" alt="마존현세강림기 13화"> 
+					마존현세강림기 13화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_13화.html" alt="마존현세강림기 13화">2019-11-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232316&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15728660186981.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_12화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_12화.html" alt="마존현세강림기 12화"> 
+					마존현세강림기 12화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_12화.html" alt="마존현세강림기 12화">2019-11-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232315&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15728660127665.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_11화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_11화.html" alt="마존현세강림기 11화"> 
+					마존현세강림기 11화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_11화.html" alt="마존현세강림기 11화">2019-11-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232314&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15728660043814.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_10화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_10화.html" alt="마존현세강림기 10화"> 
+					마존현세강림기 10화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_10화.html" alt="마존현세강림기 10화">2019-11-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232313&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15728659970497.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_9화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_9화.html" alt="마존현세강림기 9화"> 
+					마존현세강림기 9화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_9화.html" alt="마존현세강림기 9화">2019-11-04</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232189&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734724886.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_8화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_8화.html" alt="마존현세강림기 8화"> 
+					마존현세강림기 8화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_8화.html" alt="마존현세강림기 8화">2019-11-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232188&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734667505.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_7화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_7화.html" alt="마존현세강림기 7화"> 
+					마존현세강림기 7화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_7화.html" alt="마존현세강림기 7화">2019-11-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232187&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734603623.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_6화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_6화.html" alt="마존현세강림기 6화"> 
+					마존현세강림기 6화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_6화.html" alt="마존현세강림기 6화">2019-11-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232186&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734541718.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_5화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_5화.html" alt="마존현세강림기 5화"> 
+					마존현세강림기 5화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_5화.html" alt="마존현세강림기 5화">2019-11-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232185&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734478076.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_4화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_4화.html" alt="마존현세강림기 4화"> 
+					마존현세강림기 4화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_4화.html" alt="마존현세강림기 4화">2019-11-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232184&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734392629.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_3화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_3화.html" alt="마존현세강림기 3화"> 
+					마존현세강림기 3화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_3화.html" alt="마존현세강림기 3화">2019-11-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232183&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734312207.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_2화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_2화.html" alt="마존현세강림기 2화"> 
+					마존현세강림기 2화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_2화.html" alt="마존현세강림기 2화">2019-11-03</td>
+							</tr>
+				<tr class="tborder">
+				<!--<td width="10%" style="padding: 7px 0 7px 7px;">
+					<div class="thumb_cat">
+					<a href="/bbs/board.php?bo_table=wtoon&wr_id=232182&sca=4646&pview=">
+						<img class="he_img" src="/data/file/wtoon/15727734217196.jpg">
+					</a>
+					</div>
+				</td>-->
+                                
+				<td width="2%" name="view_list" data-role="/마존현세강림기_1화.html">
+                	<img src='/img/read5.png' class='read_icon' >                </td>
+				<td style="padding: 2%;" class="content__title" name="view_list" data-role="/마존현세강림기_1화.html" alt="마존현세강림기 1화"> 
+					마존현세강림기 1화				</td>
+				<td width="13%"class="episode__index" name="view_list" data-role="/마존현세강림기_1화.html" alt="마존현세강림기 1화">2019-11-03</td>
+							</tr>
+			</table>
+<script>
+function view(target, display) { 
+    var obj = document.getElementById("test_h").getElementsByTagName("div"); 
+    for(var i=0; i<obj.length ; i++) { 
+        if(obj[i].id == target) { 
+            obj[i].style.display = display; 
+        } 
+    } 
+} 
+$("td[name=view_list]").click(function(){
+	var vlink = $(this).attr("data-role");
+	location.href=vlink; 
+});
+
+$(".fil").click(function() {
+	var curl = "https://toonkor159.com/%EB%A7%88%EC%A1%B4%ED%98%84%EC%84%B8%EA%B0%95%EB%A6%BC%EA%B8%B0";
+	if(curl.indexOf( "fil") != -1){
+		curl = curl.split("&fil")[0];
+	}
+	if("1" == "1")
+		location.href = curl+"&fil=2";
+	else
+		location.href = curl+"&fil=1";
+});	
+</script>
+
+
+    </form>
+</div>
+</div>
+
+
+
+
+<link rel="StyleSheet" href="/skin/board/bt_webtoon/style.css" type="text/css" />
+<style>
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 3px;
+    padding-left: 0px;
+}
+.sub-nav{
+	width:100%;
+}
+
+
+@media (min-width: 100px){
+	#wt_list .sub-nav #nav_fin {
+		width: 100%;
+		height:36px;
+		margin-bottom:0px;
+	}
+}
+#wt_list .sub-nav #nav_fin:after {
+    display: block;
+    content: '';
+    clear: both;
+    margin-bottom: 0px;
+}
+</style>
+<style>
+@media (min-width:1143px) {
+	#web_left .web_list{
+		width: 100.3%;
+		height:71px;
+	}
+	#web_left .he1{
+		height:10px;
+	}
+	#web_left .he2{
+		height:20px;
+	}
+	#web_left .episode__index {
+		width:40px;
+		z-index: 90;
+		color: #bebebe;
+		font-size: 1.1rem;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: center;
+	}
+	#web_left .content__title {
+		margin-top: 0;
+		font-size: 13px;
+		font-weight: bold;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	#web_left .content__date{
+		font-size:10px;
+	}
+	#web_left .info__updated-at {
+		color: rgba(0,0,0,0.54);
+		font-size: 1rem;
+		font-weight: normal; 
+	}
+	#web_left .he_img{
+		width:100px;
+		height:50px;
+	}
+	#web_left .clear_fix{
+		height:3px;
+	}
+}
+
+@media (min-width:1020px) and (max-width:1143px){
+	#web_left .content__title {
+		margin-top: 0;
+		font-size: 11px;
+		font-weight: bold;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	#web_left .content__date{
+		font-size:9px;
+	}
+	#web_left .web_list{
+		width: 100.3%;
+		height:71px;
+	}
+	#web_left .he1{
+		height:10px;
+	}
+	#web_left .he2{
+		height:20px;
+	}
+	#web_left .episode__index {
+		width:40px;
+		z-index: 90;
+		color: #bebebe;
+		font-size: 1.1rem;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: center;
+	}
+	#web_left .info__updated-at {
+		color: rgba(0,0,0,0.54);
+		font-size: 1rem;
+		font-weight: normal; 
+	}
+	#web_left .he_img{
+		width:80px;
+		height:40px;
+	}
+	#web_left .clear_fix{
+		height:3px;
+	}
+}
+
+@media (min-width:769px) and (max-width:1019px){
+	.col-md-3{
+		position: relative;
+		min-height: 1px;
+		padding-right: 3px;
+		padding-left: 0px;
+		margin-top:331px;
+	}
+	.wt_mb{
+		margin-top:20px;
+	}
+	#web_left .web_list{
+		width:100%;
+		height: 137px; 
+		
+	}
+	#web_left .he1{
+		height:30px;
+	}
+	#web_left .he2{
+		height:80px;
+	}
+	#web_left .episode__index {
+		width:80px;
+		z-index: 90;
+		color: #bebebe;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: center;
+	}
+	#web_left .content__title {
+		margin-top: 0;
+		font-size: 2.125rem;
+		font-weight: bold;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	#web_left .info__updated-at {
+		color: rgba(0,0,0,0.54);
+		font-size: 1.5rem;
+		font-weight: normal;
+	}
+	#web_left .he_img{
+		width:166px;
+		height:83px;
+	}
+	#web_left .clear_fix{
+		height:10px;
+	}
+}
+@media (max-width:768px) {
+	.col-md-3{
+		position: relative;
+		min-height: 1px;
+		padding-right: 3px;
+		padding-left: 0px;
+	}
+	.wt_mb{
+		margin-top:20px;
+	}
+	#web_left .web_list{
+		width: 100%;
+		height:71px;
+	}
+	#web_left .web_list .he1{
+		height:10px;
+	}
+	#web_left .he2{
+		height:20px;
+	}
+	#web_left .episode__index {
+		z-index: 90;
+		color: #bebebe;
+		font-size: 1.1rem;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: center;
+	}
+	#web_left .content__title {
+		margin-top: 0;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#web_left .info__updated-at {
+		color: rgba(0,0,0,0.54);
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	#web_left .he_img{
+		width:124px;
+		height:62px;
+	}
+	#web_left .clear_fix{
+		height:3px;
+	}
+	#web_left .content__date{
+		font-size:9px;
+	}
+}
+#web_left .tborder{
+	border-bottom:solid 1px #bfbfbf; 
+	border-top:0; 
+	cursor:pointer;
+}
+</style>
+<script>
+var view_status = Cookies.getJSON('view_status') || {};
+if (!view_status.toon)
+	view_status.toon = {};
+
+function viewTop10(data) {
+	$('#nav_fin li').each(function(k, v) {
+		if ($(v).hasClass('on')) {
+			$(v).removeClass('on');
+			$('#web_left .view_'+$(v).attr('id')).hide();
+		}
+		if ($(v).attr('id')==data) {
+			$(v).addClass('on');
+			$('#web_left .view_'+data).show();
+		}
+	});
+}
+$(function() {
+	viewTop10(view_status.toon.top10 || 'ma1');
+
+	$('#nav_fin li').on('click', function(e) {
+		if($(this).hasClass('on')==false) {
+			var data = $(this).attr('id');
+			viewTop10(data);
+			view_status.toon.top10 = data;
+			Cookies.set('view_status', view_status);
+		}
+	});
+});
+</script>	
+	
+<div class="col-md-3" style="padding-left:6px; float:left"> 
+	<div id="wt_list" class="wt_mb">
+		<div class="sub-nav" >
+			<ul id="nav_fin">
+				<!--
+                <li id="ma1" class="on" style="width:50%; border-radius:0px">
+                	<a href="https://toonkor159.com/%EB%A7%88%EC%A1%B4%ED%98%84%EC%84%B8%EA%B0%95%EB%A6%BC%EA%B8%B0?sfil=1">인기TOP10</a></li> 
+				<li id="ma2" class="" style="width:50%; border-radius:0px">
+					<a href="https://toonkor159.com/%EB%A7%88%EC%A1%B4%ED%98%84%EC%84%B8%EA%B0%95%EB%A6%BC%EA%B8%B0?sfil=2">업데이트</a>
+				</li>
+                -->
+                <li id="ma1" class="" style="width:50%; border-radius:0px">
+                	인기TOP10
+                </li> 
+				<li id="ma2" class="" style="width:50%; border-radius:0px">
+					업데이트
+				</li>
+			</ul>
+		</div>
+		<div id="web_left">
+			
+                        <div class="view_ma1" style="display:none;">
+            <table width="100%" class="web_list" style="border: solid 1px #bfbfbf;">
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3046&sfil=1" alt="나 혼자만 레벨업">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3046" alt="나 혼자만 레벨업">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/나-혼자만-레벨업?sfil=1">-->
+						<a href="/나-혼자만-레벨업">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20180419_235538_48888_150x150.jpg" alt="나 혼자만 레벨업" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20180419_235538_48888.jpg" alt="나 혼자만 레벨업">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/나-혼자만-레벨업" alt="나 혼자만 레벨업">
+								나 혼자만 레벨업								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/나-혼자만-레벨업" alt="나 혼자만 레벨업">
+							2021-12-29							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 8206</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3853&sfil=1" alt="동네 누나">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3853" alt="동네 누나">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/동네-누나?sfil=1">-->
+						<a href="/동네-누나">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20190215_234530_34723_150x150.jpg" alt="동네 누나" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20190215_234530_34723.jpg" alt="동네 누나">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/동네-누나" alt="동네 누나">
+								동네 누나								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/동네-누나" alt="동네 누나">
+							2022-02-04							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 4312</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2676&sfil=1" alt="집주인 딸내미">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2676" alt="집주인 딸내미">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/집주인-딸내미?sfil=1">-->
+						<a href="/집주인-딸내미">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20180221_215724_21473_150x150.jpg" alt="집주인 딸내미" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20180221_215724_21473.jpg" alt="집주인 딸내미">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/집주인-딸내미" alt="집주인 딸내미">
+								집주인 딸내미								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/집주인-딸내미" alt="집주인 딸내미">
+							2022-09-25							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 3855</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3642&sfil=1" alt="어느 날 공주가 되..">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3642" alt="어느 날 공주가 되..">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/어느-날-공주가-되어버렸다?sfil=1">-->
+						<a href="/어느-날-공주가-되어버렸다">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20190216_004141_05888_150x150.jpg" alt="어느 날 공주가 되어버렸다" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20190216_004141_05888.jpg" alt="어느 날 공주가 되..">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/어느-날-공주가-되어버렸다" alt="어느 날 공주가 되..">
+								어느 날 공주가 되..								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/어느-날-공주가-되어버렸다" alt="어느 날 공주가 되..">
+							2022-04-30							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 3311</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3318&sfil=1" alt="귀환자의 마법은 특..">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=3318" alt="귀환자의 마법은 특..">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/귀환자의-마법은-특별해야-합니다?sfil=1">-->
+						<a href="/귀환자의-마법은-특별해야-합니다">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20210425_111103_36868_150x150.jpg" alt="귀환자의 마법은 특별해야 합니다" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20210425_111103_36868.jpg" alt="귀환자의 마법은 특..">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/귀환자의-마법은-특별해야-합니다" alt="귀환자의 마법은 특..">
+								귀환자의 마법은 특..								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/귀환자의-마법은-특별해야-합니다" alt="귀환자의 마법은 특..">
+							2022-11-05							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 2415</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2472&sfil=1" alt="BJ 알렉스">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2472" alt="BJ 알렉스">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/BJ-알렉스?sfil=1">-->
+						<a href="/BJ-알렉스">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20171210_234647_65299_150x150.jpg" alt="BJ 알렉스" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20171210_234647_65299.jpg" alt="BJ 알렉스">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/BJ-알렉스" alt="BJ 알렉스">
+								BJ 알렉스								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/BJ-알렉스" alt="BJ 알렉스">
+							2020-08-07							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 2167</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=4247&sfil=1" alt="도굴왕">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=4247" alt="도굴왕">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/도굴왕?sfil=1">-->
+						<a href="/도굴왕">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20190705_223218_76051_150x150.jpg" alt="도굴왕" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20190705_223218_76051.jpg" alt="도굴왕">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/도굴왕" alt="도굴왕">
+								도굴왕								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/도굴왕" alt="도굴왕">
+							2022-11-10							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 2095</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=4219&sfil=1" alt="야화첩">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=4219" alt="야화첩">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/야화첩?sfil=1">-->
+						<a href="/야화첩">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20190614_173510_27155_150x150.jpg" alt="야화첩" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20190614_173510_27155.jpg" alt="야화첩">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/야화첩" alt="야화첩">
+								야화첩								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/야화첩" alt="야화첩">
+							2022-08-12							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 2068</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2760&sfil=1" alt="그녀가 공작저로 가..">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2760" alt="그녀가 공작저로 가..">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/그녀가-공작저로-가야-했던-사정?sfil=1">-->
+						<a href="/그녀가-공작저로-가야-했던-사정">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20180308_035016_56396_150x150.jpg" alt="그녀가 공작저로 가야 했던 사정" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20180308_035016_56396.jpg" alt="그녀가 공작저로 가..">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/그녀가-공작저로-가야-했던-사정" alt="그녀가 공작저로 가..">
+								그녀가 공작저로 가..								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/그녀가-공작저로-가야-했던-사정" alt="그녀가 공작저로 가..">
+							2021-03-22							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 2019</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2592&sfil=1" alt="겨울 지나 벚꽃">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=2592" alt="겨울 지나 벚꽃">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/겨울-지나-벚꽃?sfil=1">-->
+						<a href="/겨울-지나-벚꽃">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20180125_201921_96237_150x150.jpg" alt="겨울 지나 벚꽃" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20180125_201921_96237.jpg" alt="겨울 지나 벚꽃">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/겨울-지나-벚꽃" alt="겨울 지나 벚꽃">
+								겨울 지나 벚꽃								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/겨울-지나-벚꽃" alt="겨울 지나 벚꽃">
+							2022-02-19							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 1935</td>
+				</tr>
+				
+			</table>
+            </div>
+            
+                <div class="view_ma2" style="display:none;">
+            <table width="100%" class="web_list" style="border: solid 1px #bfbfbf;">
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=313&sfil=1" alt="고교전설">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=313" alt="고교전설">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/고교전설?sfil=1">-->
+						<a href="/고교전설">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20180212_141754_58022_150x150.jpg" alt="고교전설" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20180212_141754_58022.jpg" alt="고교전설">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/고교전설" alt="고교전설">
+								고교전설								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/고교전설" alt="고교전설">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 48</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=8055&sfil=1" alt="장풍전">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=8055" alt="장풍전">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/장풍전?sfil=1">-->
+						<a href="/장풍전">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20220220_082101_95859_150x150.jpg" alt="장풍전" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20220220_082101_95859.jpg" alt="장풍전">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/장풍전" alt="장풍전">
+								장풍전								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/장풍전" alt="장풍전">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 13</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=8358&sfil=1" alt="주인님을 잡아먹는 ..">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=8358" alt="주인님을 잡아먹는 ..">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/주인님을-잡아먹는-방법?sfil=1">-->
+						<a href="/주인님을-잡아먹는-방법">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20220503_005846_33551_150x150.jpg" alt="주인님을 잡아먹는 방법" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20220503_005846_33551.jpg" alt="주인님을 잡아먹는 ..">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/주인님을-잡아먹는-방법" alt="주인님을 잡아먹는 ..">
+								주인님을 잡아먹는 ..								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/주인님을-잡아먹는-방법" alt="주인님을 잡아먹는 ..">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 40</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7627&sfil=1" alt="소년 검사">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7627" alt="소년 검사">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/소년-검사?sfil=1">-->
+						<a href="/소년-검사">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20211211_100655_15680_150x150.jpg" alt="소년 검사" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20211211_100655_15680.jpg" alt="소년 검사">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/소년-검사" alt="소년 검사">
+								소년 검사								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/소년-검사" alt="소년 검사">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 33</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=8762&sfil=1" alt="아슈타르테">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=8762" alt="아슈타르테">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/아슈타르테?sfil=1">-->
+						<a href="/아슈타르테">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20220801_001028_74338_150x150.jpg" alt="아슈타르테" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20220801_001028_74338.jpg" alt="아슈타르테">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/아슈타르테" alt="아슈타르테">
+								아슈타르테								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/아슈타르테" alt="아슈타르테">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 31</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=9137&sfil=1" alt="인자강">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=9137" alt="인자강">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/인자강?sfil=1">-->
+						<a href="/인자강">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20221030_185241_19125_150x150.jpg" alt="인자강" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20221030_185241_19125.jpg" alt="인자강">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/인자강" alt="인자강">
+								인자강								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/인자강" alt="인자강">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 11</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=9119&sfil=1" alt="신 고구려전기">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=9119" alt="신 고구려전기">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/신-고구려전기?sfil=1">-->
+						<a href="/신-고구려전기">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20221027_014305_24715_150x150.jpg" alt="신 고구려전기" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20221027_014305_24715.jpg" alt="신 고구려전기">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/신-고구려전기" alt="신 고구려전기">
+								신 고구려전기								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/신-고구려전기" alt="신 고구려전기">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 10</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7707&sfil=1" alt="피그맨">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7707" alt="피그맨">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/피그맨?sfil=1">-->
+						<a href="/피그맨">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20211217_083430_08534_150x150.jpg" alt="피그맨" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20211217_083430_08534.jpg" alt="피그맨">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/피그맨" alt="피그맨">
+								피그맨								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/피그맨" alt="피그맨">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 4</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7706&sfil=1" alt="물고기의 밤">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7706" alt="물고기의 밤">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/물고기의-밤?sfil=1">-->
+						<a href="/물고기의-밤">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20211217_083021_86364_150x150.jpg" alt="물고기의 밤" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20211217_083021_86364.jpg" alt="물고기의 밤">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/물고기의-밤" alt="물고기의 밤">
+								물고기의 밤								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/물고기의-밤" alt="물고기의 밤">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 3</td>
+				</tr>
+			
+
+
+				<!--<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7704&sfil=1" alt="세브리깡">-->
+				<tr class="tborder" name="view_list" data-role="/bbs/board.php?bo_table=wtoon&sca=7704" alt="세브리깡">
+                	<td width="15%" style="padding: 7px 0 7px 7px;">
+                    
+                    	                    
+						<!--<a href="/세브리깡?sfil=1">-->
+						<a href="/세브리깡">
+                        	
+                            <img src="https://toonkor159.com/data/wtoon/thumb-20211217_082324_63913_150x150.jpg" alt="세브리깡" width="100%" >								
+                            <!--<img class="he_img" src="/data/wtoon/20211217_082324_63913.jpg" alt="세브리깡">  -->
+						</a>
+					</td>
+					<td width="2%"></td>
+					<td class="condata">
+						<div class="content__title">
+							<a href="/세브리깡" alt="세브리깡">
+								세브리깡								</a>
+						</div>
+						
+						<div class="content__date">
+							<a href="/세브리깡" alt="세브리깡">
+							2022-11-11							</a>
+						</div>
+					</td>
+					<td class="episode__index"><i class="fa fa-heart" aria-hidden="true" style="color:#ee243a"></i> 3</td>
+				</tr>
+				
+			</table>
+            </div>
+            
+                
+        </div>
+
+	</div>
+
+</div>
+
+ 
+
+<!-- 게시판 목록 시작 { -->
+    
+    
+
+
+<input type="hidden" id="device" value="pc">
+
+<script type="text/javascript">
+<!--
+
+
+$(function(){
+	
+	if($('#device').val()=='pc'){
+		$(".bt-viewer").colorbox({
+			iframe:true,
+			width:'90%',
+			height:'1000px',
+			scrolling:false
+		}, function(){
+			$('#cboxLoadedContent iframe').load(function(){
+				
+				//$('body').scrollTop(0);
+				
+				var height = $(this).contents().find('body').height();
+				$.colorbox.resize({
+			        innerHeight:height
+			    });
+			    
+			});
+		});
+	}
+});
+//-->
+</script>
+
+<!-- } 게시판 목록 끝 -->
+</div>
+
+	<div class="list-page text-center" style="visibility:hidden">
+		<ul class="wtpagination">
+			<nav class="pg_wrap"><span class="pg"><span class="sound_only">열린</span><strong class="pg_current">1</strong><span class="sound_only">페이지</span>
+			<a href="./board.php?bo_table=wtoon&amp;&amp;wpage=2" class="pg_page">2<span class="sound_only">페이지</span></a>
+			<a href="./board.php?bo_table=wtoon&amp;&amp;wpage=2" class="pg_page pg_end">맨끝</a>
+			</span></nav>					
+		</ul>
+	</div>
+
+			</div><!-- */ end col -->
+
+		</div><!-- */ end row -->
+
+		<div class="row h4"><p class="hidden">한줄간격주기</p></div>
+
+	</div><!-- */ end container -->
+
+
+<!-- } 콘텐츠 끝 -->
+
+<hr class="hidden">
+
+<!-- 하단 시작 { -->
+<footer class="section bg-info">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12 text-center" style="background: rgba(77,77,77,0.6); float:left">
+
+				<div class="row h4"><p class="hidden">한줄간격주기</p></div>
+
+				<img src="/img/tk_logo.png" alt="툰코" style="width:20%; margin-top:5px">
+				<br>
+				<br>
+				<script id="_wau3t2">var _wau = _wau || []; _wau.push(["small", "2e7zlmq5tx", "3t2"]);</script><script async src="//waust.at/s.js"></script>
+				<div class="row h4 hidden visible-xs"><p class="hidden">한줄간격주기</p></div>
+				<div class="container-fluid bg-primary">
+						<div class="col-lg-12 text-center h5">
+							Copyright &copy; <b>TOONKOR 툰코</b> All rights reserved.<br>
+						</div>
+
+
+				</div><!-- */end container -->
+
+			</div>
+
+		</div><!-- */end row -->
+
+
+
+	</div><!-- */end container -->
+
+<!-- */end container-fluid -->
+
+</footer>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("containerCol", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,3857374,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3857374&101" alt="counter code" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+
+<!-- <script type="text/javascript">
+//<![CDATA[
+var owa_baseUrl = '/owa/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', '592a119df1f0bab25e646e737f9217f0']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+owa_cmds.push(['trackDomStream']);
+
+(function() {
+	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>
+</script> -->
+
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+</body>
+</html>
+
+<!-- 사용스킨 : bt_webtoon -->
+
