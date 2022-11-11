@@ -38,7 +38,7 @@ def main() -> int:
         "allall/990_thousand_returners_help_me" : [ "../capture_item_allall.py" ],
         #"buzztoon/_cheolbo" : [ "../capture_item_buzztoon.py", "../remove_anchor_images.py" ],
         #"copytoon/absolute_god_of_martial_arts" : [ "../capture_item_copytoon.py" ],
-        "funbe/coin_of_lord_dont_decrease" : [ "../capture_item_funbe.py" ],
+        "funbe/coin_of_lord_dont_decrease" : [ "../capture_item_funbe.py", "../post_process_funbe.py" ],
         "jmana/one_punch_man_remake" : [ "../capture_item_jmana.py", "../remove_anchor_images.sh" ],
         #"manatoki/level_up_alone" : [ "../capture_item_manatoki.py" ],
         #"marumaru/vegabond" : [ "../capture_item_marumaru.py" ],
