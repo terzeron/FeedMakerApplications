@@ -1,59 +1,60 @@
-<!doctype html>
-<html lang="ko">
+<!doctype html> <html lang="ko">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi,viewport-fit=cover">
 <meta name="format-detection" content="telephone=no,address=no,email=no"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="robots" content="index,follow" />
-<meta name="apple-mobile-web-app-capable" content="yes"> 
-<meta name="mobile-web-app-capable" content="yes">
-
+<meta name="referrer" content="always" />
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://m.post.naver.com/viewer/postView.nhn?volumeNo=11413091&memberNo=35786474">
-	<meta property="og:image" content="http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/IukDdnlHJe3vklxE05Qn17Q41nPc.jpg?type=w400">
-	<meta property="og:description" content="[BY InterBiz 인터비즈] &lsquo;비트코인&rsquo;지폐나 동전과 달리 물리적인 형태가 없는 온라인 가상화폐(암호화..." />
-	<meta property="og:title" content="비트코인 채굴로 난방하는 시베리아│인터비즈">
-	<meta property="post:sharer_text" content="비트코인 채굴로 난방하는 시베리아│인터비즈
+	<meta property="og:url" content="https://m.post.naver.com/viewer/postView.naver?volumeNo=34018927&memberNo=35786474">
+	<meta property="og:image" content="https://post-phinf.pstatic.net/MjAyMjA2MjRfMTEx/MDAxNjU2MDU2MTQ5NDAz.YJLUXFeR00gqe9vmzlAtvenbOt9y7RgFX58sQ-DijLEg.xp6DzmpdelLAOs6ArvJlptRa1odh4HN4unWAbFrFbrog.JPEG/II1dlpnCSGmuv8Emic4aq5O4fnlw.jpg?type=w400">
+	<meta property="og:description" content="[BY InterBiz 인터비즈] 레오나르도 다 빈치는 이렇게 말했죠. 단순함이야말로 최상의 세련됨이라고. 볼..." />
+	<meta property="og:title" content="Simple is the best, Volvo C40 Recharge">
+	<meta property="post:sharer_text" content="Simple is the best, Volvo C40 Recharge
 {{_SHORT_URL_}}
 출처: InterBiz 인터비즈 | 네이버 포스트" >
+    <meta property="og:createdate" content="2022.06.27. 08:00:24" >
 	<meta property="og:author" content="InterBiz 인터비즈">
-	<meta property="og:author_image" content="http://post.phinf.naver.net/MjAxNzExMzBfNjUg/MDAxNTEyMDAyNzE3MTA0.CDB9MMy7eHTQJqZid8-rdZQLbroVwj_5SYqtOYM_XL8g.nrZPMO7daD6zCLdCDib6G3KJ5VNDQ3GtcJKLyjmoMgog.PNG/post_2060968545232126757.png?type=f120_120">
+	<meta property="og:author_image" content="https://post-phinf.pstatic.net/MjAxODA3MDlfMjI4/MDAxNTMxMTE0ODcwOTAx.2KxtEu6FxWSzlo2Pc5qczoWj_EbLWDGk1P2GBbtPkuwg.bCcKmXgh3rYHwv2oEPMzaiZzl5pFBnwnKJmiI3JqfTkg.PNG/post_3550370289393885126.png?type=f120_120">
 	
 	<meta property="nv:ticket" content="post02">
-	<meta property="nv:object_id" content="11413091_35786474">
-	<meta property="nv:like_id" content="11413091_35786474">
+	<meta property="nv:object_id" content="34018927_35786474">
+	<meta property="nv:like_id" content="34018927_35786474">
 	
 	<meta property="og:ticket" content="post02">
-	<meta property="og:object_id" content="11413091_35786474">
+	<meta property="og:object_id" content="34018927_35786474">
 	
-	<meta property="nv:news:volume_no" content="11413091">
-	<meta property="nv:news:title" content="비트코인 채굴로 난방하는 시베리아│인터비즈">
-	<meta property="nv:news:contents" content="&amp;lsquo;비트코인&amp;rsquo;지폐나 동전과 달리 물리적인 형태가 없는 온라인 가상화폐&amp;#40;암호화 화폐&amp;#41;. 2008년 &amp;lsquo;나카모토 사토시&amp;rsquo;라는 이름의 정체불명 컴퓨터 프로그래머가 창안.지난 해 12월 31일 968.23달러였던 비트코인 가격이 2017년 12월 17일 1만 8890달러까지 급등해 최고가를 경신합니다. 1년 사">
-	<meta property="nv:news:date" content="Wed Dec 20 14:59:02 KST 2017">
+	<meta property="nv:news:volume_no" content="34018927">
+	<meta property="nv:news:title" content="Simple is the best, Volvo C40 Recharge">
+	<meta property="nv:news:contents" content="레오나르도 다 빈치는 이렇게 말했죠. 단순함이야말로 최상의 세련됨이라고. 볼보가 그렇습니다.여름을 맞아 정리한 옷장 속엔 화이트, 블랙, 그레이 등 무채색 계열의 무지 티셔츠만 가득했습니다. 멋진 것보다 질리지 않는 디자인의 질 샌더 화이트 셔츠처럼요. 자동차를 바라보는 시선도 간결함으로 변했습니다. 중국 지리 자동차와 함께한 지 십 년이 넘어가면서 완숙기">
+	<meta property="nv:news:date" content="Mon Jun 27 08:00:24 KST 2022">
 	<meta property="nv:news:author_no" content="35786474">
-	<meta property="nv:news:authorhome" content="http://m.post.naver.com/my.nhn?memberNo=35786474">
+	<meta property="nv:news:authorhome" content="https://m.post.naver.com/my.naver?memberNo=35786474">
+	<title>Simple is the best, Volvo C40 Recharge : 네이버 포스트</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://ssl.pstatic.net/static.post/image/icon/n_160311/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://static.post.naver.net/image/icon/n_180620/post_ico_144X144.png">
 
-	<title>비트코인 채굴로 난방하는 시베리아│인터비즈 : 네이버 포스트</title>
-	<link rel="shortcut icon" type="image/x-icon" href="http://static.post.naver.net/image/icon/n_160311/favicon.ico">
-<link rel="apple-touch-icon-precomposed" href="http://static.post.naver.net/image/icon/n_160311/post_ico_144X144.png">
+<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.post/static/m/202211090957/css/min/likeItList_post.css">
+<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.post/static/m/202211090957/css/min/end_common.css"> 
+	<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.post/static/m/202211090957/css/min/end.css">
+<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.post/static/m/202211090957/css/min/patron_post.css">
+<script type="text/javascript">
+nhn=window.nhn||{};mug=nhn.mug=window.mug||{};mug.$=mug.$||{};mug.$.User={isLoggedIn:false,id:null,memberNo:null,type:"AUTHOR",blockType:""};mug.$.UserAgent={isInapp:false,isMobile:false,isTablet:false,isLolipopNaverApp:false,isInNaverApp:false,osName:"Etc",osVersion:"0",isEditProfileSupport:false,appSVC:"",appVer:"",isInBlogApp:false,isRos:false,urlExtension:"naver"};mug.$.Props={jsDir:"https://ssl.pstatic.net/static.post/static/m/202211090957/js/min",cssDir:"https://ssl.pstatic.net/static.post/static/m/202211090957/css/min",ugcEditorUrl:"https://post.editor.naver.com",ugcEditorFlag:"true"==="true"};window.__jsLoad__=window.__jsLoad__||{};document.documentElement.setAttribute("data-useragent",navigator.userAgent);window.__mugFnList__=[];if(!window.location.origin){window.location.origin=window.location.protocol+"//"+window.location.hostname+(window.location.port?":"+window.location.port:"")};</script><link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.editor/static/viewer/common/se_viewer.css?bd12dcf035-20221107135731">
+	<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.editor/static/viewer/common/se_viewer_post.css?bd12dcf035-20221107135731">
+</head>
 
-<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/likeItList_post.css">
-<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/end_common.css"> 
-		<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/end.css">
-		<link rel="stylesheet" type="text/css" href="http://static.post.naver.net/static/m/2018020601/css/min/se3_card_end.css">
-	<script type="text/javascript">
-nhn=window.nhn||{};mug=nhn.mug=window.mug||{};mug.$=mug.$||{};mug.$.User={isLoggedIn:false,id:null,memberNo:null,type:"AUTHOR",blockType:""};mug.$.UserAgent={isInapp:false,isMobile:false,isTablet:false,isLolipopNaverApp:false,isInNaverApp:false,osName:"Etc",osVersion:"0",isEditProfileSupport:false,appSVC:"",appVer:"",isInBlogApp:false};mug.$.Props={jsDir:"http://static.post.naver.net/static/m/2018020601/js/min",cssDir:"http://static.post.naver.net/static/m/2018020601/css/min",ugcEditorUrl:"http://post.editor.naver.com",ugcEditorFlag:"true"==="true"};window.__jsLoad__=window.__jsLoad__||{};document.domain="naver.com";document.documentElement.setAttribute("data-useragent",navigator.userAgent);window.__mugFnList__=[];</script><link rel="stylesheet" href="http://static.editor.naver.net/static/viewer/common/se_viewer_card.css?3122714398-20180208111204"  />
-</head><body data-templateType="ugccard"
+<body data-templateType="ugcsimple"
 	
-		class="gr viewer pc"
+		class="gr viewer pc chrome"
 		
 	style="">
-
-
+<div class="blind" aria-hidden="true"><a href="#cont">본문 바로가기</a></div>
 <div id="wrap">
+	<!-- 엔드화면용 헤더 -->
 	<div id="header" class="sub end" role="banner">
-        <div class="gnb"
+		<div class="gnb"
 
 >
 	<a href="#" onclick="mug.common.util.goBack();return false;" class="btn_gnb_prev"><i class="blind" aria-hidden="true">이전화면으로 가기</i></a>
@@ -65,7 +66,7 @@ nhn=window.nhn||{};mug=nhn.mug=window.mug||{};mug.$=mug.$||{};mug.$.User={isLogg
 		<button class="btn_flw on __unfollowAnchor" onclick="mug.contents.util.unfollow(jQuery('.__followAnchor'), jQuery('.__unfollowAnchor'), 35786474, 'PERSON', 'InterBiz 인터비즈'); return false;" style="display:none" aria-pressed="true"><span>팔로잉</span></button>
 		<!-- [D] 내글일때 삭제 버튼 표시 (PC 전용) -->
 		<!-- [D] 공유하기 (PC 전용) -->
-		<button type="button" class="btn_t1 share naver-splugin" data-title="비트코인 채굴로 난방하는 시베리아│인터비즈" data-source-name="InterBiz 인터비즈" onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'meb.share');return false;" role="button" aria-haspopup="true" aria-expanded="false">
+		<button type="button" class="btn_t1 share naver-splugin" data-title="Simple is the best, Volvo C40 Recharge" data-source-name="InterBiz 인터비즈" onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'meb.share');return false;" role="button" aria-haspopup="true" aria-expanded="false">
 			<span>공유하기</span>
 		</button>
 
@@ -74,1491 +75,1891 @@ nhn=window.nhn||{};mug=nhn.mug=window.mug||{};mug.$=mug.$||{};mug.$.User={isLogg
 		<div class="overflow_menu_area">
 			<button type="button" class="btn_overflow_menu" role="button" aria-haspopup="true" aria-expanded="false"><span class="sp"></span></button>
 			<ul class="ly_more t2 __gnb_overview_menu">
-				<li class="go_end"><a href="#" onclick="window.__toggleOverflowMenu(1000);mug.viewer.util.moveLast();return false;">마지막 페이지</a></li>
-				<li class="editor "><a href="/my.nhn?memberNo=35786474" onclick="__toggleOverflowMenu(1000);">작성자 보기</a></li>
-				<li class="share as_first"><a href="#" class="naver-splugin" data-title="비트코인 채굴로 난방하는 시베리아│인터비즈" data-source-name="InterBiz 인터비즈" onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'meb.share');return false;">공유하기</a></li>
+				<li class="font">
+					<a href="#" class="btn_default __viewer_size_down_font" onclick="window.ViewerFont.sizeDownFont();return false;"><span class="u_hc">기본</span></a>
+					<span class="ic"></span>
+					<a href="#" class="btn_bigger __viewer_size_up_font" onclick="window.ViewerFont.sizeUpFont();return false;"><span class="u_hc">크게</span></a>
+				</li>
+				<li class="editor "><a href="/my.naver?memberNo=35786474" onclick="__toggleOverflowMenu(1000);">작성자 보기</a></li>
+				<li class="share as_first"><a href="#" class="naver-splugin" data-title="Simple is the best, Volvo C40 Recharge" data-source-name="InterBiz 인터비즈" onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'meb.share');return false;">공유하기</a></li>
 				<li class="url __bt_url" style="display:none"><a href="#">URL 복사</a></li>
 				<li class="bookmark __bt_bookmark" style="display:none"><a href="#">네이버 북마크</a></li>
-				<li class="app"><a href="#" onclick="__toggleOverflowMenu(1000);mug.common.nclick(this, 'meb.appdown');window.__openViewerToApp(35786474, 11413091);return false;">앱으로 보기</a></li>
+				<li class="app"><a href="#" onclick="__toggleOverflowMenu(1000);mug.common.nclick(this, 'meb.appdown');window.__openViewerToApp(35786474, 34018927);return false;">앱으로 보기</a></li>
 
-				<li class="report"><a href="/viewer/reportForm.nhn?volumeNo=11413091&memberNo=35786474" onclick="__toggleOverflowMenu(1000);" target="_blank">신고</a></li>
+				<li class="report"><a href="/viewer/reportForm.naver?volumeNo=34018927&memberNo=35786474" onclick="window.open(this.href, 'SRP', `height=800,width=580,scrollbars=yes,menubar=no,toolbar=no,location=no`); __toggleOverflowMenu(1000); return false;" target="_blank">신고</a></li>
 				</ul>
 		</div>
 	</div>
 </div></div>
-    <div id="cont" class="end end_se3_spread" role="main">
-        <div class="se_body_wrap se_card_wrap se_spread se_scale se_theme_card_purpleline is-imgBg">
-	        <!-- 컨텐츠 내용 {{ -->
-			<script type="x-clip-content" id="__clipContent">
-				<!-- background {{-->
-				<div class="se_card_document_bg __se_bg_lazy"
-     style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb200_q20'); background-position:44.246% 50%"
-     data-imgsrc="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=w1200">
-        <div class="se_card_bg_exception">
-            <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb200_q20" alt="" class="se_card_bg_img">
-        </div>
-        <div class="se_dim"></div>
-</div>
-<div class="se_card_document_bg __se_bg_org"
-     style="display:none;background-position:44.246% 50%">
-        <div class="se_card_bg_exception">
-            <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=w1200" alt="" class="se_card_bg_img">
-        </div>
-        <div class="se_dim"></div>
-</div>
-<!-- background }}-->
-
-				<div class="se_card_container">
-				
-
-    <!-- coverCard -->
-    <div class="__se_card_cover se_card se_coverCard bottomTitle">
-        <div class="se_card_content">
-            <div class="se_card_cover_wrap ">
-                <div class="se_card_cover_wrapView">
-                    
-<!-- $SE3-TITLE_TOP Post Service placeholder -->
-<a href="/my/series/detail.nhn?seriesNo=350574&memberNo=35786474&prevVolumeNo=11413091" onclick="mug.common.nclick(this, 'tit.series');"><div class="se_series"><i class="se_ico_series" style="display:none">스타에디터3</i><i class="se_ico_series" style="">시리즈</i><i class="se_ico_groupseries" style="display:none">콜라보</i>이슈앤트렌드</div></a>
-<!-- ]]]$SE3-TITLE_TOP Post Service placeholder -->
-
-                        <!-- sectionTitle -->
-<div class="se_component se_sectionTitle">
-    <div class="se_sectionArea se_align-left">
-        <div class="se_viewArea se_ff_nanumgothic se_fs_H2 
-" style="color: ;
-text-decoration: inherit;
-font-style: inherit;">
-            <div class="se_textView">
-                <h5 class="se_textarea"><!-- SE3-TEXT { -->비트코인 채굴로 난방하는 시베리아│인터비즈<!-- } SE3-TEXT --></h5>
-            </div>
-        </div>
-    </div>
-</div>
-<!--// sectionTitle -->
-
-                    
-<!-- $SE3-TITLE_CONTENTS Post Service placeholder[[[ -->
-<div class="se_container">
-<a href="/my.nhn?memberNo=35786474" class="se_thumbnail" onclick="mug.common.nclick(this, 'tit.profile');">
-<img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzExMzBfNjUg/MDAxNTEyMDAyNzE3MTA0.CDB9MMy7eHTQJqZid8-rdZQLbroVwj_5SYqtOYM_XL8g.nrZPMO7daD6zCLdCDib6G3KJ5VNDQ3GtcJKLyjmoMgog.PNG/post_2060968545232126757.png?type=f120_120" onerror="this.onerror=null;this.src='http://static.post.naver.net/image/im/img_default.gif'" alt="InterBiz 인터비즈님의 프로필 사진">
-</a>
-<div class="se_group">
-<a href="/my.nhn?memberNo=35786474" class="se_author" onclick="mug.common.nclick(this, 'tit.name');">InterBiz 인터비즈</a>
-<span style="display:none" class="ico_official_big"><i class="blind">공식</i></span>
-<i class="se_divide_dot" style="display:none"></i>
-<span class="se_follower" style="display:none">{=badgeName}</span>
-<p class="se_detail">
-<span class="se_publishDate">2017.12.20. 14:59 </span>
-<i class="se_divide_line"></i>
-<span class="se_view" style="">58,569 읽음</span>
-<span class="se_secret" style="display:none">비밀글</span>
-</p>
-</div>
-<button type="button" class="se_card_btn_follower __se3_follow_btn __card_start_follow" style="display:none">
-<span class="se_card_btn_bg"></span><span class="se_card_btn_line"></span><span class="se_card_btn_txt">팔로우</span></button>
-<a href="#" class="se_card_btn_stats __se3_stat_btn" style="display:none" onclick="mug.common.nclick(this, 'tit.stat');" target="_blank"><span>통계</span></a>
-</div>
-<!-- ]]]$SE3-TITLE_CONTENTS Post Service placeholder -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- textCard -->
-<div class="se_card se_textCard transparentBg se_card_first __se_card_first">
-            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
-            <div class="se_card_bg_exception">
-                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
-            </div>
-            <div class="se_dim"></div>
-        </div>
-
-    <div class="se_card_vertical_content">
-	<div class="se_card_vertical_alignArea">
-		<div class="se_card_vertical_alignView">
-			<div class="se_card_content">
-				<div class="se_card_titleArea">
-					<div class="se_card_titleView">
-					<div class="se_card_titleView_inner">
-						<!--섹션 컴퍼넌트-->
-					        <!-- sectionTitle -->
-<div class="se_component se_sectionTitle">
-    <div class="se_sectionArea se_align-center">
-        <div class="se_viewArea se_ff_nanummyeongjo se_fs_H2 
-" style="color: ;
-text-decoration: inherit;
-font-style: inherit;">
-            <div class="se_textView">
-                <h5 class="se_textarea"><!-- SE3-TEXT { -->&lsquo;비트코인&rsquo;<!-- } SE3-TEXT --></h5>
-            </div>
-        </div>
-    </div>
-</div>
-<!--// sectionTitle -->
-
-						<!--//섹션 컴퍼넌트-->
-					</div>
-					</div>
-				</div>
-				<!--텍스트 컴퍼넌트-->
-			        <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>지폐나 동전과 달리 물리적인 형태가 없는 온라인 가상화폐(암호화 화폐). </span><span style='color:rgb(247,247,247);'>2008년 ‘나카모토 사토시’라는 이름의 정체불명 컴퓨터 프로그래머가 창안. </span><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-				<!--//텍스트 컴퍼넌트-->
-			</div>
-		</div>        
-	</div>
-	</div>
-</div>
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_2">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfNTUg/MDAxNTEzNzQ4NTczOTI3.JS2SG0kX0geOsi7G3cWe5D89pTWzthz6c2K5XmtwPuEg.kRNTdfyiRHeHat58KiV1xjHCUzWn1v73znj1JBz6kQgg.JPEG/GettyImages-886800342.jpg?type=w1200'); background-position:43.8739% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_2_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfNTUg/MDAxNTEzNzQ4NTczOTI3.JS2SG0kX0geOsi7G3cWe5D89pTWzthz6c2K5XmtwPuEg.kRNTdfyiRHeHat58KiV1xjHCUzWn1v73znj1JBz6kQgg.JPEG/GettyImages-886800342.jpg?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfNTUg/MDAxNTEzNzQ4NTczOTI3.JS2SG0kX0geOsi7G3cWe5D89pTWzthz6c2K5XmtwPuEg.kRNTdfyiRHeHat58KiV1xjHCUzWn1v73znj1JBz6kQgg.JPEG/GettyImages-886800342.jpg?type=w1200" data-attachment-id="Ia64XNZsPRoE6rTKJG7kOacEwkNo" id="SEDOC-1513904828246--1738205029_image_2_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { -->지난 해 12월 31일 968.23달러였던 비트코인 가격이 2017년 12월 17일 1만 8890달러까지 급등해 최고가를 경신합니다. 1년 사이 100만 원대에서 2000만원 대로 오른 것이죠. <!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_3">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMjU2/MDAxNTEzNzYwNzI5MzA2.7hdew6K6A2NPEiwe0jeEND1nFbcAC1yW_sm3lqvU_m0g.7EQAQHjP3fukyOpGiVij90tiQxW7nZHHMOu0JYof7Wwg.PNG/donga_db1.png?type=w1200'); background-position:50% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_3_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMjU2/MDAxNTEzNzYwNzI5MzA2.7hdew6K6A2NPEiwe0jeEND1nFbcAC1yW_sm3lqvU_m0g.7EQAQHjP3fukyOpGiVij90tiQxW7nZHHMOu0JYof7Wwg.PNG/donga_db1.png?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMjU2/MDAxNTEzNzYwNzI5MzA2.7hdew6K6A2NPEiwe0jeEND1nFbcAC1yW_sm3lqvU_m0g.7EQAQHjP3fukyOpGiVij90tiQxW7nZHHMOu0JYof7Wwg.PNG/donga_db1.png?type=w1200" data-attachment-id="ItasS7bcgTJ5Ur4YAjJDgdBul180" id="SEDOC-1513904828246--1738205029_image_3_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span>전에 없던 가격상승에 남녀노소 일확천금을 꿈꾸고 가상화폐에 투자(또는 투기)하고 있는데요.<br></span><span><br></span>전 세계 금융기관은 물론 정부도 이를 주시하고 있습니다.<!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_4">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfNDEg/MDAxNTEzNzYxNTIyMDEy.h8bnfQa0RxoI0paFATuZBxEJSxtsCn751BqbPPRWn3Qg.6rt4uFwPYCg7-WJ-4tOAP_KEGP_XwXKONHDmzTcii5Eg.JPEG/GettyImages-895643218.jpg?type=w1200'); background-position:81.1694% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_4_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfNDEg/MDAxNTEzNzYxNTIyMDEy.h8bnfQa0RxoI0paFATuZBxEJSxtsCn751BqbPPRWn3Qg.6rt4uFwPYCg7-WJ-4tOAP_KEGP_XwXKONHDmzTcii5Eg.JPEG/GettyImages-895643218.jpg?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfNDEg/MDAxNTEzNzYxNTIyMDEy.h8bnfQa0RxoI0paFATuZBxEJSxtsCn751BqbPPRWn3Qg.6rt4uFwPYCg7-WJ-4tOAP_KEGP_XwXKONHDmzTcii5Eg.JPEG/GettyImages-895643218.jpg?type=w1200" data-attachment-id="Im1lVShCaIknQThQUY5ABLVx0oXw" id="SEDOC-1513904828246--1738205029_image_4_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { -->비트코인은 개인이 컴퓨터로 직접 채굴해 얻을 수도 있어 아예 채굴을 전담하는 회사도 생겼습니다. <br>하지만 생산을 위해 컴퓨터를 계속 켜둬야해서 전력소모가 만만찮죠.<!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- textCard -->
-<div class="se_card se_textCard transparentBg ">
-            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
-            <div class="se_card_bg_exception">
-                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
-            </div>
-            <div class="se_dim"></div>
-        </div>
-
-    <div class="se_card_vertical_content">
-	<div class="se_card_vertical_alignArea">
-		<div class="se_card_vertical_alignView">
-			<div class="se_card_content">
-				<div class="se_card_titleArea">
-					<div class="se_card_titleView">
-					<div class="se_card_titleView_inner">
-						<!--섹션 컴퍼넌트-->
-					        <!-- sectionTitle -->
-<div class="se_component se_sectionTitle">
-    <div class="se_sectionArea se_align-center">
-        <div class="se_viewArea se_ff_nanummyeongjo se_fs_H2 
-" style="color: ;
-text-decoration: inherit;
-font-style: inherit;">
-            <div class="se_textView">
-                <h5 class="se_textarea"><!-- SE3-TEXT { -->그.런.데<!-- } SE3-TEXT --></h5>
-            </div>
-        </div>
-    </div>
-</div>
-<!--// sectionTitle -->
-
-						<!--//섹션 컴퍼넌트-->
-					</div>
-					</div>
-				</div>
-				<!--텍스트 컴퍼넌트-->
-			        <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-				<!--//텍스트 컴퍼넌트-->
-			</div>
-		</div>        
-	</div>
-	</div>
-</div>
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_5">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/cryptohouse.png?type=w1200'); background-position:2.11546% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_5_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/cryptohouse.png?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMTc0/MDAxNTEzNzQ4NjUxMjY5.xJ9dIgOTZJWBMKemmbkWgjAmqZJ9mgC31N1O-U5gZvUg.jEQ5Lg_lZHQw1QTWKxo5eXBEb5Tc3OScIbzR35oE8f0g.PNG/cryptohouse.png?type=w1200" data-attachment-id="IukDdnlHJe3vklxE05Qn17Q41nPc" id="SEDOC-1513904828246--1738205029_image_5_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-center">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span><b><span style="color: rgb(255, 179, 155);">비트코인 채굴전용집을</span></b><br></span><span><b><span style="color: rgb(255, 179, 155);"></span></b></span><span><b><span style="color: rgb(255, 179, 155);">만들어 파는 비즈니스가</span><span style="color: rgb(255, 179, 155);">&nbsp;나타났다?</span></b></span><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_6">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMTQy/MDAxNTEzODQ3MjIxNTUz.yDFKL_Dq2bJxUAdqWYgqGhiaGSiQGtikZLEmAdEQB_Ig.aAqUUxqRCqCzYDWvwpKxZGfAgvV2Jrv8dse4jm8v3_wg.JPEG/ddd.JPG?type=w1200'); background-position:31.6088% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_6_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMTQy/MDAxNTEzODQ3MjIxNTUz.yDFKL_Dq2bJxUAdqWYgqGhiaGSiQGtikZLEmAdEQB_Ig.aAqUUxqRCqCzYDWvwpKxZGfAgvV2Jrv8dse4jm8v3_wg.JPEG/ddd.JPG?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMTQy/MDAxNTEzODQ3MjIxNTUz.yDFKL_Dq2bJxUAdqWYgqGhiaGSiQGtikZLEmAdEQB_Ig.aAqUUxqRCqCzYDWvwpKxZGfAgvV2Jrv8dse4jm8v3_wg.JPEG/ddd.JPG?type=w1200" data-attachment-id="IA77v3s8QvQa0yjAi0vGkLhivnGk" id="SEDOC-1513904828246--1738205029_image_6_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	<div class="se_card_titleView_inner">
-		<div class="se_component se_sectionTitle">
-		    <div class="se_sectionArea se_align-center">
-		        <div class="se_viewArea se_ff_nanummyeongjo se_fs_H2 
-" style="color: ;
-text-decoration: inherit;
-font-style: inherit;">
-		            <div class="se_textView">
-		                <h5 class="se_textarea"><!-- SE3-TEXT { -->&ldquo;크립토하우스&rdquo;<!-- } SE3-TEXT --></h5>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-	</div>
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(241,241,241);'>이 집은 암호화 화폐를 뜻하는 ‘크립토커런시(Cryptocurrency)’와 집을 뜻하는 ‘하우스(House)’를 결합해 ‘크립토하우스(Cryptohouse)’라고 불리는데요.</span><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_7">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMTAz/MDAxNTEzODQ3NTUzMzIx.676GEDPulhtlv_efITTEghzik2K3P_MgEotM-hyrb4og.jxbB3ARtGvZ_gW_bUSeAhtnFIDx5B1s4V-FVAQxdT5gg.JPEG/dgd.JPG?type=w1200'); background-position:50% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_7_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMTAz/MDAxNTEzODQ3NTUzMzIx.676GEDPulhtlv_efITTEghzik2K3P_MgEotM-hyrb4og.jxbB3ARtGvZ_gW_bUSeAhtnFIDx5B1s4V-FVAQxdT5gg.JPEG/dgd.JPG?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMTAz/MDAxNTEzODQ3NTUzMzIx.676GEDPulhtlv_efITTEghzik2K3P_MgEotM-hyrb4og.jxbB3ARtGvZ_gW_bUSeAhtnFIDx5B1s4V-FVAQxdT5gg.JPEG/dgd.JPG?type=w1200" data-attachment-id="IirvCrC94b9O8rUuUxn6_EAzVXMk" id="SEDOC-1513904828246--1738205029_image_7_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { -->집 안에는 비트코인을 채굴하는 과정에서 발생하는 열을 이용해 난방을 할 수 있는 시스템이 마련돼 있습니다.<!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- imageCard -->
-<div class="se_card se_singleMediaCard transparentBg ">
-	        <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
-            <div class="se_card_bg_exception">
-                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
-            </div>
-            <div class="se_dim"></div>
-        </div>
-
-	<div class="se_card_content">
-		<!--미디어 컴퍼넌트-->
-		    	<div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_8">
-    <div class="se_component se_image noBgImage se_image_w" style="">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_8_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMjI0/MDAxNTEzNzQ5MDYxOTkz.dyIXFV3kLRtx97C60n-wSwoK7UVTX4BgCz6ocCgM9ikg.EQ-_tdeFfIghb0YyEcIW0ByJxADLvZ94eQTG5Pj5wDkg.JPEG/33.JPG?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_imageArea">
-                    <img alt="" class="__se_img_el" style=""  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMjI0/MDAxNTEzNzQ5MDYxOTkz.dyIXFV3kLRtx97C60n-wSwoK7UVTX4BgCz6ocCgM9ikg.EQ-_tdeFfIghb0YyEcIW0ByJxADLvZ94eQTG5Pj5wDkg.JPEG/33.JPG?type=w1200" data-attachment-id="IJymahEwgMm-OCVXnKE9uaEnSKcs" id="SEDOC-1513904828246--1738205029_image_8_img" style="background-position:84.2549% 50%"/>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-		<!--//미디어 컴퍼넌트-->
-	</div>
-</div>
-
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_9">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMTQg/MDAxNTEzNzQ5MTg2MTIy.3LuzFUR997vA7-4v0DdHn0szNu52cREn7ZKVlGDyrCIg.qMlPkshoKjhRtkutTiISTVBCGoc3RgRybUex07MgRrMg.PNG/kkk.png?type=w1200'); background-position:90.8465% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_9_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMTQg/MDAxNTEzNzQ5MTg2MTIy.3LuzFUR997vA7-4v0DdHn0szNu52cREn7ZKVlGDyrCIg.qMlPkshoKjhRtkutTiISTVBCGoc3RgRybUex07MgRrMg.PNG/kkk.png?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMTQg/MDAxNTEzNzQ5MTg2MTIy.3LuzFUR997vA7-4v0DdHn0szNu52cREn7ZKVlGDyrCIg.qMlPkshoKjhRtkutTiISTVBCGoc3RgRybUex07MgRrMg.PNG/kkk.png?type=w1200" data-attachment-id="Ic4HIm-dSKLoVumVBz_UPAGRZ0xg" id="SEDOC-1513904828246--1738205029_image_9_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { -->럭셔리하진 않아도 침대, 의자, 씽크대, 취사도구는 물론 <span style="color:rgb(241,241,241);">화장실까지 모두 구비되어 있죠.</span><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_10">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjBfMTEx/MDAxNTEzNzQ4OTM1MjIx.C8HpCvCiHTptJVlJb2Ef0DDLn-AkbOvIp7fwd17mD28g.-3vNNjhauE9kCXh0ABwx44BD8gDb76oZJHtBNMJEMpgg.PNG/engineer.png?type=w1200'); background-position:50% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_10_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjBfMTEx/MDAxNTEzNzQ4OTM1MjIx.C8HpCvCiHTptJVlJb2Ef0DDLn-AkbOvIp7fwd17mD28g.-3vNNjhauE9kCXh0ABwx44BD8gDb76oZJHtBNMJEMpgg.PNG/engineer.png?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjBfMTEx/MDAxNTEzNzQ4OTM1MjIx.C8HpCvCiHTptJVlJb2Ef0DDLn-AkbOvIp7fwd17mD28g.-3vNNjhauE9kCXh0ABwx44BD8gDb76oZJHtBNMJEMpgg.PNG/engineer.png?type=w1200" data-attachment-id="IUHVk9MMmQUfhwdGGUlpzq6VlZsE" id="SEDOC-1513904828246--1738205029_image_10_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style="color:rgb(247,247,247);">이 비트코인 채굴전용집을 만든 이리아 프롤로브</span><span style="color:rgb(247,247,247);">(</span><span style="color:rgb(247,247,247);">Ilya Frolov) 공동 창업자는 “(비트코인 채굴 시) 계산 과정에서 발생하는 열을 사용해 집을 난방하는 콘셉트”라고 말합니다.</span><br><br><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_11">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNTAg/MDAxNTEzODQ4Nzg5MzIw.o4-QWLddkdUxvb_5Y7kic5kAvVu1tO5BAVLagRqTkdgg.envTeyblaOvQvZqQN2kocc6JjLjO7DusdrMVDGqJu-Eg.PNG/gggg.png?type=w1200'); background-position:96.5383% 50%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_11_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfNTAg/MDAxNTEzODQ4Nzg5MzIw.o4-QWLddkdUxvb_5Y7kic5kAvVu1tO5BAVLagRqTkdgg.envTeyblaOvQvZqQN2kocc6JjLjO7DusdrMVDGqJu-Eg.PNG/gggg.png?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNTAg/MDAxNTEzODQ4Nzg5MzIw.o4-QWLddkdUxvb_5Y7kic5kAvVu1tO5BAVLagRqTkdgg.envTeyblaOvQvZqQN2kocc6JjLjO7DusdrMVDGqJu-Eg.PNG/gggg.png?type=w1200" data-attachment-id="IupCrNmGKPFP4qJxO-zrjioI5odY" id="SEDOC-1513904828246--1738205029_image_11_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>그는 비트코인 채굴에서 중요한 요인이  전기료이며, 따라서 전기료가 모스크바의 20%밖에 안되는 이곳 ‘이르쿠츠크 주(Irkutsk, 시베리아 동부)’가 적합하다고 말합니다. </span><br><br><br><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- textCard -->
-<div class="se_card se_textCard default ">
-    <div class="se_card_vertical_content">
-	<div class="se_card_vertical_alignArea">
-		<div class="se_card_vertical_alignView">
-			<div class="se_card_content">
-				<div class="se_card_titleArea">
-					<div class="se_card_titleView">
-					<div class="se_card_titleView_inner">
-						<!--섹션 컴퍼넌트-->
-						<!--//섹션 컴퍼넌트-->
-					</div>
-					</div>
-				</div>
-				<!--텍스트 컴퍼넌트-->
-			        <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>수력 발전소가 모여 있는 이르쿠츠크주의 전기요금은 kwh당 평균 1루블(약 18원)입니다. 모스크바 전기료(kwh당 5루블)에 비해 80%나 저렴한 것인데요. </span><br><br><span style='color:rgb(247,247,247);'>크립토하우스는 한 채당 8500달러(920만 원)이지만 매달 850달러(2017년 12월 15일 기준) 가치의 비트코인을 채굴할 수 있습니다. </span><br><br><span style='color:rgb(247,247,247);'>이 집은 2020년까지 2000채가 공급될 예정입니다. </span><br><br><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-				<!--//텍스트 컴퍼넌트-->
-			</div>
-		</div>        
-	</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-<!-- textCard -->
-<div class="se_card se_textCard transparentBg ">
-            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
-            <div class="se_card_bg_exception">
-                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
-            </div>
-            <div class="se_dim"></div>
-        </div>
-
-    <div class="se_card_vertical_content">
-	<div class="se_card_vertical_alignArea">
-		<div class="se_card_vertical_alignView">
-			<div class="se_card_content">
-				<div class="se_card_titleArea">
-					<div class="se_card_titleView">
-					<div class="se_card_titleView_inner">
-						<!--섹션 컴퍼넌트-->
-						<!--//섹션 컴퍼넌트-->
-					</div>
-					</div>
-				</div>
-				<!--텍스트 컴퍼넌트-->
-			        <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-center">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style="color:rgb(241,241,241);">시베리아가 비트코인 채굴 산지로 적합하다고 <br></span><span style="color:rgb(241,241,241);"></span><span style="color:rgb(241,241,241);">여기는 것은 크립토하우스 창업자만이 아닙니다.</span><br><br><span style="color:rgb(247,247,247);">러시아 정부도 이 비즈니스의 가능성을 </span><br><span style="color:rgb(247,247,247);">검토 중이라고 하는데요.</span><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-				<!--//텍스트 컴퍼넌트-->
-			</div>
-		</div>        
-	</div>
-	</div>
-</div>
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_12">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMjk0/MDAxNTEzODUwMzQ4MjUy.uHq1KemGsnheRcfSuf1rAAOEAeIvruat4TP8jirSRzQg.qTh_Mu4NlWTJBgsIRN9-tiI3Qpn4tYyASiw3LtMtMzYg.JPEG/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%BE%D0%B2.jpg?type=w1200'); background-position:50% 42.6247%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_12_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMjk0/MDAxNTEzODUwMzQ4MjUy.uHq1KemGsnheRcfSuf1rAAOEAeIvruat4TP8jirSRzQg.qTh_Mu4NlWTJBgsIRN9-tiI3Qpn4tYyASiw3LtMtMzYg.JPEG/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%BE%D0%B2.jpg?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMjk0/MDAxNTEzODUwMzQ4MjUy.uHq1KemGsnheRcfSuf1rAAOEAeIvruat4TP8jirSRzQg.qTh_Mu4NlWTJBgsIRN9-tiI3Qpn4tYyASiw3LtMtMzYg.JPEG/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%BE%D0%B2.jpg?type=w1200" data-attachment-id="IIfAGXRrD-3MMqMqTryJt_Mr3DxE" id="SEDOC-1513904828246--1738205029_image_12_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>첫 시작은 러시아 의원 보리스 체르니쇼브(</span><span style='color:rgb(247,247,247);'>Boris Chernyshov)의 제안이었습니다.</span><br><br><span style='color:rgb(247,247,247);'>현재 이 </span><span style='color:rgb(247,247,247);'>제안은 러시아 산업부 장관, 정보통신부 장관에까지 전해졌다고 하네요.</span><br><br><br><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- textCard -->
-<div class="se_card se_textCard default ">
-    <div class="se_card_vertical_content">
-	<div class="se_card_vertical_alignArea">
-		<div class="se_card_vertical_alignView">
-			<div class="se_card_content">
-				<div class="se_card_titleArea">
-					<div class="se_card_titleView">
-					<div class="se_card_titleView_inner">
-						<!--섹션 컴퍼넌트-->
-						<!--//섹션 컴퍼넌트-->
-					</div>
-					</div>
-				</div>
-				<!--텍스트 컴퍼넌트-->
-			        <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(241,241,241);se_ff_nanummyeongjo' class=' se_ff_nanummyeongjo'><i>“채굴도시 내 사람들은 수익을 창출해 집과 필요한 것들을 살 수 있다. 해당 도시로부터의 세수 확보는 정부 예산을 보충할 것이다. </i></span><br><br><span style='color:rgb(241,241,241);se_ff_nanummyeongjo' class=' se_ff_nanummyeongjo'><i>그리고 만약 중국과 인접한 곳에 들어서면 해당 도시는 관련 산업의 비즈니스 허브가 될 것이다. </i></span><br><br><span style='color:rgb(241,241,241);se_ff_nanummyeongjo' class=' se_ff_nanummyeongjo'><i>이는 해외투자금의 유입으로 연결된다. 해당 프로젝트는 성장의 동인이다.”</i></span><br><br><span style='color:rgb(247,247,247);'>- 러시아 의원 보리스 체르니쇼프 -</span><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-				<!--//텍스트 컴퍼넌트-->
-			</div>
-		</div>        
-	</div>
-	</div>
-</div>
-
-    <!-- basicMediaCard -->
-    <div class="se_card se_basicMediaCard topMedia ">
-        <div class="se_card_content">
-                <div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_13">
-    <div class="se_component se_image default">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link se_imageArea" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfMzUg/MDAxNTEzODUxNjMwODM5.vzK0hVXsxVtzMUe9Tz2a6l25-TyedYLUFYrRlDtGtWYg.SdN9x4hL-QVdNbmYuw_wqvu_HFSoVJtQ9BT_oYW3_fYg.PNG/hghgh.png?type=w1200'); background-position:50% 4.40993%" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_13_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfMzUg/MDAxNTEzODUxNjMwODM5.vzK0hVXsxVtzMUe9Tz2a6l25-TyedYLUFYrRlDtGtWYg.SdN9x4hL-QVdNbmYuw_wqvu_HFSoVJtQ9BT_oYW3_fYg.PNG/hghgh.png?type=w1200", "linkUse" : "false","link" : ""}'>
-                <div class="se_border"></div>
-                <div class="se_card_exception">
-                    <img alt="" class="__se_img_el se_card_exception_img"  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfMzUg/MDAxNTEzODUxNjMwODM5.vzK0hVXsxVtzMUe9Tz2a6l25-TyedYLUFYrRlDtGtWYg.SdN9x4hL-QVdNbmYuw_wqvu_HFSoVJtQ9BT_oYW3_fYg.PNG/hghgh.png?type=w1200" data-attachment-id="I40YCjaWz-5n52mrUyKZjjMBEoGY" id="SEDOC-1513904828246--1738205029_image_13_img" />
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-                
-                
-                
-                <!-- sectionTitle -->
-<div class="se_card_titleArea">
-	<div class="se_card_titleView">
-	</div>
-</div>
-<!--// sectionTitle -->
-
-                
-                
-                
-                <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style='color:rgb(247,247,247);'>한편 블라디미르 푸틴 러시아 대통령은 2018년 7월까지 비트코인 등 암호화 화폐, 채굴, 가상화폐공개(ICO)를 관리하는 법안을 입법하고, 디지털 화폐와 관련한 모든 것을 규정할 것을 지시했습니다.</span><br><br><br><br><br><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- textCard -->
-<div class="se_card se_textCard transparentBg ">
-            <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
-            <div class="se_card_bg_exception">
-                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
-            </div>
-            <div class="se_dim"></div>
-        </div>
-
-    <div class="se_card_vertical_content">
-	<div class="se_card_vertical_alignArea">
-		<div class="se_card_vertical_alignView">
-			<div class="se_card_content">
-				<div class="se_card_titleArea">
-					<div class="se_card_titleView">
-					<div class="se_card_titleView_inner">
-						<!--섹션 컴퍼넌트-->
-						<!--//섹션 컴퍼넌트-->
-					</div>
-					</div>
-				</div>
-				<!--텍스트 컴퍼넌트-->
-			        <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-center">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { --><span style="color:rgb(247,247,247);"><b>크립토하우스 프로젝트는 과연</b></span><br><span style="color:rgb(247,247,247);"><b>성공</b></span><span style="color: rgb(247, 247, 247);"><b>할 수 있을까요?</b></span><span style="color: rgb(247, 247, 247);"><br></span><br><span style="color:rgb(247,247,247);"><b>그리고 시베리아는 전 세계의 </b><br></span><span style="color:rgb(247,247,247);"><b>비트코인 ATM이 될 수 있을까요?</b></span><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-				<!--//텍스트 컴퍼넌트-->
-			</div>
-		</div>        
-	</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-<!-- textCard -->
-<div class="se_card se_textCard default ">
-    <div class="se_card_vertical_content">
-	<div class="se_card_vertical_alignArea">
-		<div class="se_card_vertical_alignView">
-			<div class="se_card_content">
-				<div class="se_card_titleArea">
-					<div class="se_card_titleView">
-					<div class="se_card_titleView_inner">
-						<!--섹션 컴퍼넌트-->
-						<!--//섹션 컴퍼넌트-->
-					</div>
-					</div>
-				</div>
-				<!--텍스트 컴퍼넌트-->
-			        <!-- paragraph -->
-<div class="se_card_textArea">
-    <div class="se_card_textView">
-    <div class="se_card_textView_inner">
-        <div class="se_card_scroll">
-            <!--텍스트 컴퍼넌트-->
-            <div class="se_component se_paragraph">
-                <div class="se_sectionArea se_align-left">
-                    <div class="se_editArea">
-                        <div class="se_viewArea se_ff_nanumgothic" style="">
-                            <div class="se_editView">
-                                <div class="se_textView">
-                                    <p class="se_textarea"><!-- SE3-TEXT { -->사진 출처 및 참고 영상<br><a href="https://youtu.be/nfoS1b51x18 " class="se_link" target="_blank">https://youtu.be/nfoS1b51x18</a><br><br><!-- } SE3-TEXT --></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//텍스트 컴퍼넌트-->
-        </div>
-    </div>
-    </div>
-</div>
-<!--// paragraph -->
-
-				<!--//텍스트 컴퍼넌트-->
-			</div>
-		</div>        
-	</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-<!-- imageCard -->
-<div class="se_card se_singleMediaCard transparentBg ">
-	        <div class="se_card_document_bg" style="background-image: url('http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1'); background-position:44.246% 50%">
-            <div class="se_card_bg_exception">
-                <img  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjUg/MDAxNTEzODQ2MjYzNDg5.5yDFebp6Pfqh-mSyK_FKuGZbQ7rUh2-CVaVCOgRqZAYg.K9a2r0IyA3wMXjzOqOYo8obTqTeZN97ZAWj9OArU9ucg.PNG/kinggood.png?type=wb800_1" alt="" class="se_card_bg_img">
-            </div>
-            <div class="se_dim"></div>
-        </div>
-
-	<div class="se_card_content">
-		<!--미디어 컴퍼넌트-->
-		    	<div class="se_card_mediaArea">
-    <div class="se_card_mediaView">
-<!-- image -->
-<div class="se_card_mediaView_inner" id="SEDOC-1513904828246--1738205029_image_14">
-    <div class="se_component se_image noBgImage se_image_h __se_center_img" style="$CARD_HEIGHT$">
-        <div class="se_sectionArea">
-            <a class="__se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1513904828246--1738205029_image_14_img", "src" : "http://post.phinf.naver.net/MjAxNzEyMjFfNjEg/MDAxNTEzODQ1NTU5NTY5.ITyj1VuGd9O95O_xaarpOT-EcvSFJmRrMFVVOmFiml8g.lX8vu_3PvwybN3ySlnxTFE1hrEySCgPgSDUJtXDpP48g.PNG/%EB%84%A4%EC%9D%B4%EB%B2%84%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4_%EC%84%A4%EC%A0%95_%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B2%84%EC%A0%84.png?type=w1200", "linkUse" : "true","link" : "http://m.naver.com/naverapp/?version=1&amp;cmd=addMenu&amp;menuCode=BUSINESS"}'>
-                <div class="se_imageArea">
-                    <img alt="" class="__se_img_el" style=""  src="http://static.post.naver.net/image/m/im/bg_white.png" data-src="http://post.phinf.naver.net/MjAxNzEyMjFfNjEg/MDAxNTEzODQ1NTU5NTY5.ITyj1VuGd9O95O_xaarpOT-EcvSFJmRrMFVVOmFiml8g.lX8vu_3PvwybN3ySlnxTFE1hrEySCgPgSDUJtXDpP48g.PNG/%EB%84%A4%EC%9D%B4%EB%B2%84%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4_%EC%84%A4%EC%A0%95_%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B2%84%EC%A0%84.png?type=w1200" data-attachment-id="ILv0SjszA9XRmtRNgiwJWKB_pxms" id="SEDOC-1513904828246--1738205029_image_14_img" style="background-position:50% 50%"/>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- //image -->
-
-
-
-    </div>
-</div>
-
-		<!--//미디어 컴퍼넌트-->
-	</div>
-</div>
-
-</div>
-			</script>
-
-			<div id="__tmp_clipContent" style="height:1000px;background:white;padding-top: 80px;text-align: center;">
-
-			</div>
-
-			<!-- }} 컨텐츠 내용 -->
-
-
-        </div>
+	<!-- //엔드화면용 헤더 -->
+
+	<div id="cont" class="end __viewer_container" role="main">
+	<!-- 컨텐츠 내용 {{ -->
+
+	<script type="x-clip-content" id="__clipContent">
+		<div id="SEDOC-1659681412239--1895836570" class="se_doc_viewer se_body_wrap se_theme_default " data-docversion="1.0">
+<div class="se_doc_header_start" id="SEDOC-1659681412239--1895836570_se_doc_header_start"></div>
+<!-- SE_DOC_HEADER_START -->
+<div id="SEDOC-1659681412239--1895836570_viewer_head" class="se_viewer_head"></div>
+<div class="se_component_wrap">
+<div class="se_component se_documentTitle default  is-fill">
+    <div class="se_sectionArea is-fill se_align-left">
+        <!-- $SE3-TITLE_TOP Post Service placeholder --><a href="/my/series/detail.naver?seriesNo=350574&memberNo=35786474&prevVolumeNo=34018927" onclick="mug.common.nclick(this, 'tit.series');"><div class="se_series"><i class="se_ico_series" style="display:none">스타에디터3</i><i class="se_ico_series" style="">시리즈</i><i class="se_ico_groupseries" style="display:none">콜라보</i>이슈앤트렌드</div></a><!-- $SE3-TITLE_TOP Post Service placeholder -->
+        <!-- SE_DOC_HEADER_TITLE_TOP-->
+     	<div id="SEDOC-1659681412239--1895836570_se_doc_title_top" class="se_doc_title_top"></div>
+        <div class="se_editArea">
+        	<div class="se_viewArea se_ff_nanumgothic se_fs_D2">
+	            <div class="se_editView se_title">
+	                <div class="se_textView">
+                        <h3 class="se_textarea">
+                            
+                            Simple is the best, Volvo C40 Recharge
+                        </h3>
+                        
+                        
+	                </div>
+	            </div>
+	        </div>
+        </div><!-- SE_DOC_HEADER_TITLE_MIDDLE-->
+        <div id="SEDOC-1659681412239--1895836570_se_doc_title_middle" class="se_doc_title_middle"></div>
+        <!-- SE_DOC_HEADER_CONTENTS_START -->
+        <!-- $SE3-TITLE_CONTENTS Post Service placeholder --><div class="se_container"><a href="/my.naver?memberNo=35786474" onclick="mug.common.nclick(this, 'tit.profile');" class="se_thumbnail"><img  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAxODA3MDlfMjI4/MDAxNTMxMTE0ODcwOTAx.2KxtEu6FxWSzlo2Pc5qczoWj_EbLWDGk1P2GBbtPkuwg.bCcKmXgh3rYHwv2oEPMzaiZzl5pFBnwnKJmiI3JqfTkg.PNG/post_3550370289393885126.png?type=f120_120" onerror="this.onerror=null;this.src='https://ssl.pstatic.net/static.post/image/im/img_default.gif'" alt="InterBiz 인터비즈님의 프로필 사진"></a><div class="se_group"><div class="se_author_area"><p><a href="/my.naver?memberNo=35786474" onclick="mug.common.nclick(this, 'tit.name');"><span class="se_author">InterBiz 인터비즈</span></a></p><p style=""><span class="ico_official"><i class="blind">공식</i></span></p><p><i class="se_divide_dot" style=""></i><span class="se_follower" style="">2만 팔로워</span></p></div><p class="se_detail"><span class="se_publishDate">2022.06.27. 08:00</span><i class="se_divide_line"></i><span class="se_view" style="">332 읽음 </span><span class="se_secret" style="display:none">비밀글</span></p></div><div class="flw_area"><a href="#" class="btn_stats __se3_stat_btn" style="display:none" onclick="mug.common.nclick(this, 'tit.stat');" target="_blank"><span>통계</span></a>
+</div></div><!-- $SE3-TITLE_CONTENTS Post Service placeholder -->
+        <!-- SE_DOC_HEADER_CONTENTS_END -->
+        <!-- SE_DOC_HEADER_TITLE_BOTTOM-->
+        <div id="SEDOC-1659681412239--1895836570_se_doc_title_bottom" class="se_doc_title_bottom"></div>
+    </div>
+</div>
+
+</div>
+<!-- {{{$SE3-CONTENTS_HEADER}}} -->
+<!-- SE_DOC_HEADER_END -->
+<div class="se_doc_header_end" id="SEDOC-1659681412239--1895836570_se_doc_header_end"></div>
+<div class="se_doc_contents_start" id="SEDOC-1659681412239--1895836570_se_doc_contents_start"></div>
+<!-- SE_DOC_CONTENTS_START -->
+<div class="se_component_wrap sect_dsc __se_component_area">
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_0_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMTEx/MDAxNjU2MDU2MTQ5NDAz.YJLUXFeR00gqe9vmzlAtvenbOt9y7RgFX58sQ-DijLEg.xp6DzmpdelLAOs6ArvJlptRa1odh4HN4unWAbFrFbrog.JPEG/281925_Volvo_C40_Recharge_Dawn_Silver.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_0_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMTEx/MDAxNjU2MDU2MTQ5NDAz.YJLUXFeR00gqe9vmzlAtvenbOt9y7RgFX58sQ-DijLEg.xp6DzmpdelLAOs6ArvJlptRa1odh4HN4unWAbFrFbrog.JPEG/281925_Volvo_C40_Recharge_Dawn_Silver.jpg?type=w1200" width="4533" height="3400" data-attachment-id="II1dlpnCSGmuv8Emic4aq5O4fnlw" alt="">
         
-        <div class="editor_section as_se3">
+        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-left" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { -->레오나르도 다 빈치는 이렇게 말했죠. 단순함이야말로 최상의 세련됨이라고. 볼보가 그렇습니다.<!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<div class="se_component se_horizontalLine line3">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="viewArea">
+                <div class="se_horizontalLineView">
+                    <div class="se_hr"><hr></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-left" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { -->여름을 맞아 정리한 옷장 속엔 화이트, 블랙, 그레이 등 무채색 계열의 무지 티셔츠만 가득했습니다. 멋진 것보다 질리지 않는 디자인의 질 샌더 화이트 셔츠처럼요. <br /> <br /><span>자동차를 바라보는 시선도 간결함으로 변했습니다. 중국 지리 자동차와 함께한 지 십 년이 넘어가면서 완숙기에 접어든 볼보는 새로운 프리미엄 시장을 주도하고 있습니다. 그리고 ‘전동화’라는 새로운 목표를 향해 달려가고 있죠. 그 서막을 알린 볼보의 C40 리차지. 과연 전동화라는 여정 속에서도 북유럽의 매력은 여전할까요?<br /></span><span></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_1_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjg3/MDAxNjU2MDU2ODQwOTA0.DFIDWOzVA2--AVAcZcIjYrW0syvelsbFbWPC4AgsnxYg.PFq-4yJMrg3vBSe9ecEsuWrPCbL65FrXC-0MJT_zkeog.JPEG/The_Volvo_C40_left_juxtaposed_with_the_car_that_inspired_its_creation_the.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_1_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjg3/MDAxNjU2MDU2ODQwOTA0.DFIDWOzVA2--AVAcZcIjYrW0syvelsbFbWPC4AgsnxYg.PFq-4yJMrg3vBSe9ecEsuWrPCbL65FrXC-0MJT_zkeog.JPEG/The_Volvo_C40_left_juxtaposed_with_the_car_that_inspired_its_creation_the.jpg?type=w1200" width="1000" height="650" data-attachment-id="ITQOSKlmNJAU5p0PTVx-y7UXYLWs" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">볼보 C40 리차지(왼쪽)와 XC40 리차지(오른쪽)</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="se_component se_quotation quotation_line">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_fs_T3">
+                <div class="se_editView" >
+                    <div class="se_textView">
+                        <blockquote class="se_textarea"><!-- SE3-TEXT { -->어서와, 리차지는 처음이지?<!-- } SE3-TEXT --></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>리차지, 볼보의 순수 전기차 라인입니다. 브랜드의 미래를 책임질 리차지는 2019년 미국 로스앤젤레스에서 데뷔했죠. 국내에서 준중형 SUV로 분류되는 XC40의 전기차 버전 &#39;XC40 리차지&#39;를 예리하게 손질한 쿠페형 SUV &#39;C40 리차지&#39;가 라인업에 추가됐습니다. <br /> <br />두 모델 모두 CMA(Compact Modular Architecture) 플랫폼 위에 완성됐습니다. 2017년 데뷔한 이 플랫폼은 엔진과 모터 모두 담을 수 있습니다. 하나의 플랫폼으로 하이브리드 모델과 전기차 생산이 가능한 거죠. 뼈대는 같더라도 생김새는 다릅니다. <br /> <br />디자인을 총괄하는 로빈 페이지 볼보 수석 부사장은 C40 리차지를 두고 역동성과 날렵함이 더해진 모던한 SUV라고 표현하며 전동화를 상징화한 모델이라고 강조한 바 있습니다. 낮은 자세, 날카롭게 떨어지는 루프, 새롭게 디자인된 3 스포크 블랙 다이아몬드 컷 20인치 휠 등 다방면으로 공기역학적 요소가 고려된 C40 리차지는 보다 효율적이고 역동적입니다.<br /></span><span></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_2_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjIz/MDAxNjU2MDU2NzA4NzY1.ke3UWubhDVuf1S9kIXG-wNYIGoAWud3wHGImn2bVNcYg.n979JLhnAI9TD7hhu4rmDwaoCrjO3Zax0ZSxIFyP50wg.JPEG/%EB%B3%BC%EB%B3%B4_%EA%B7%B8%EB%9E%98%ED%94%842-01.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_2_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjIz/MDAxNjU2MDU2NzA4NzY1.ke3UWubhDVuf1S9kIXG-wNYIGoAWud3wHGImn2bVNcYg.n979JLhnAI9TD7hhu4rmDwaoCrjO3Zax0ZSxIFyP50wg.JPEG/%EB%B3%BC%EB%B3%B4_%EA%B7%B8%EB%9E%98%ED%94%842-01.jpg?type=w1200" width="1000" height="620" data-attachment-id="I8Ax-6aPyauWtRA5dyy-o1Z146Os" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">그래픽 : 바이브랜드</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>일단 1회 충전으로 갈 수 있는 거리가 더 깁니다. LG 에너지솔루션의 78kWh 고전압 배터리가 동일하게 탑재되지만 C40 리차지가 XC40 리차지보다 19km 더 달릴 수 있습니다. 서울역에서 정부 고양지방합동청사까지의 거리니까 꽤 차이가 나는 거죠. <br /></span><span><br /></span><span>0-100km/h 가속까지 도달하는 데도 C40 리차지가 0.2초 더 빠릅니다. 공기 저항 계수, ECU, 모터 튜닝에 따른 결과입니다. 가격도 약 100만 원 더 비싼데요, 볼보가 챙겨준 것이 있습니다. 바로 픽셀 LED 헤드램프와 파노라믹 글라스 루프. <br /> <br />헤드램프에는 84개의 LED가 들어갑니다. 볼보의 최첨단 픽셀 기술인데요, 전면 카메라에서 인식한 주행 환경을 분석해 LED가 독립적으로 활동합니다. 운전자의 시야를 최적화하는 동시에 마주 오는 운전자의 눈부심 방지도 잊지 않습니다. ‘조명회사’ 아우디의 디지털 매트릭스 LED 헤드라이트에 버금가는 솜씨죠. <br /> </span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_3_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjk1/MDAxNjU2MDU3MjEzNjcw.WWlsoz-Asqcjf97EyOiaYhM0yZ5b51DT2Pce4aqJlPMg.VIqlWtCln89GeXqH1xliYhpeGtBvBwbTgOQt_gy9x9og.JPEG/287342_Volvo_C40_Recharge_interior.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_3_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjk1/MDAxNjU2MDU3MjEzNjcw.WWlsoz-Asqcjf97EyOiaYhM0yZ5b51DT2Pce4aqJlPMg.VIqlWtCln89GeXqH1xliYhpeGtBvBwbTgOQt_gy9x9og.JPEG/287342_Volvo_C40_Recharge_interior.jpg?type=w1200" width="5000" height="3333" data-attachment-id="IcNupYNcLaiYE_kFK8kfaFxfKpHA" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">파노라믹 글라스 루프</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>C40 리차지에는 전동식 파노라마 선루프 대신 고정식 파노라믹 글라스 루프도 적용됩니다. 대형 SUV가 득세하는 요즘 상대적으로 좁아 보일 수 있는 실내에 개방감을 선사합니다. 블라인드는 따로 없지만, ‘자외선 차단’이라는 역할에는 충실합니다. IR 코팅을 거쳤기 때문에 실내로 유입되는 복사열의 약 80%가 걸러집니다. <br /></span><span><br /></span><span>전기차에선 실내 온도 조절 및 유지는 에너지 효율과 직결되는 중요한 사안인데요, 개방감과 효율성을 모두 챙긴 점은 주목할 만합니다. 그렇다고 해서 C40 리차지가 XC40 리차지보다 더 좋다는 말은 아닙니다. 취향의 차이죠. <br /> <br />그럼 설명은 이쯤하고, 도로로 나가보겠습니다.<br /></span><span></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_4_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjE5/MDAxNjU2MDU2OTM3Mzky.1nTDCgsI7z4o8LNYlpN1ATgBxxVLrYThiskTDXYDMBAg.VzdXqc0A26K8Gshl7H8z7dCo3C1_FymTi4Se-n9B8BQg.JPEG/%EA%B7%B8%EB%9E%B2-02-1024x473.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_4_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjE5/MDAxNjU2MDU2OTM3Mzky.1nTDCgsI7z4o8LNYlpN1ATgBxxVLrYThiskTDXYDMBAg.VzdXqc0A26K8Gshl7H8z7dCo3C1_FymTi4Se-n9B8BQg.JPEG/%EA%B7%B8%EB%9E%B2-02-1024x473.jpg?type=w1200" width="1024" height="473" data-attachment-id="IMaWtgxVqVhct7vO01Q-Vj7yQqNU" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">도로 상황과 주행 스타일 등 여러 요인에 따라 달라질 수 있습니다_그래픽 : 바이브랜드</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="se_component se_quotation quotation_line">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_fs_T3">
+                <div class="se_editView" >
+                    <div class="se_textView">
+                        <blockquote class="se_textarea"><!-- SE3-TEXT { -->담백한 차, 오너가 곧 조미료<!-- } SE3-TEXT --></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>목적지는 서울 용산구 이촌 한강공원. 언제 이동하느냐에 따라 다르겠지만, 서소문로에서 마포대로를 거쳐 강변북로로 이어지는 경로는 원활보다는 지체나 서행인 경우가 많습니다. 날씨는 흐리고 길은 막히지만 도로 위 여유를 즐기고자 가속 페달을 살며시 밟습니다. 고요하게 나아갑니다. 매끄러운 바닥만큼이나 부드러운 움직임이 마음에 듭니다. <br /> <br />시동 버튼이 따로 없는 C40 리차지는 키를 가지고 시트에 앉아 브레이크 밟고 ‘D’로 변속하면 됩니다. 테슬라처럼요. 다만 시동 버튼이 있던 곳의 마감은 주변 부위와 상이한 색깔로 마무리되어 아쉬움이 남습니다. 내부 볼거리보단 창밖 세상이 괜찮네요.<br /></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_5_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjU1/MDAxNjU2MDU3MDc4NTYz.rI2xl4vm0GOk-dJI_ZbXLJuTycaQG0v-EGpuVqCfBXIg.oQu2QrF_f5YipqBYMD8ABM_XSf6AP0UBiY5GGD4JyEQg.JPEG/DSC09364-001.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_5_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjU1/MDAxNjU2MDU3MDc4NTYz.rI2xl4vm0GOk-dJI_ZbXLJuTycaQG0v-EGpuVqCfBXIg.oQu2QrF_f5YipqBYMD8ABM_XSf6AP0UBiY5GGD4JyEQg.JPEG/DSC09364-001.jpg?type=w1200" width="2807" height="1963" data-attachment-id="IMPt8QbVgj1m0VhhFvdp7-gx9tfU" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">출처 : 바이브랜드</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span><span style="color:rgb( 0 , 0 , 0 )">빠르게 내달릴 수 있는 상황이 아니기에 기능 한 가지를 시험해 봅니다. 바로 원페달 드라이브. C40 리차지에서 회생제동은 딱 두 가지로 제공됩니다. 일반 주행과 원페달 드라이브. 우선 원페달 드라이브 기능을 활성화하면 가속 페달을 밟았다 떼기만 해도 속도 조절이 가능하고 에너지 효율까지 높일 수 있습니다. 9인치 센터 디스플레이에서 설정하면 됩니다. 물리 버튼이 없거든요. 스티어링 휠의 감도도 일반과 무거움뿐입니다. 큰 차이는 없는 것 같지만 조금이라도 묵직한 운전대에서 안정감을 느낄 수 있었습니다.</span><br /><br /><span style="color:rgb( 0 , 0 , 0 )">페달 하나로 제어할 수 있는 편안함보다 어색함이 더 큽니다. 생각보다 제동력이 강하기 때문이죠. C40 리차지의 원페달 드라이브는 부드럽게 이어지는 승차감보다는 정확한 가감속과 정차를 통한 에너지 회수에 초점이 맞춰져 있습니다. 네 발 달린 ESG네요. 오른발의 세심한 컨트롤이 요구되는 이유입니다. 속도를 높일 때는 운동 에너지를 최대한 활용하는 편이 효율적이라 고속주행에서는 원페달 드라이브 기능은 해제하는 게 낫습니다.</span></span><span><br /></span><span> </span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_6_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjkx/MDAxNjU2MDU3MTEyMTg0.XB1uwQ7lJMMGEK0JOlg2reUZlTkbvwnl7aLrrCjGFG8g.O0kfSi6hc98H0HMz0aEZYcBI_ApZZJ01rPMNa0r6Qyog.JPEG/87466-1024x644.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_6_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjkx/MDAxNjU2MDU3MTEyMTg0.XB1uwQ7lJMMGEK0JOlg2reUZlTkbvwnl7aLrrCjGFG8g.O0kfSi6hc98H0HMz0aEZYcBI_ApZZJ01rPMNa0r6Qyog.JPEG/87466-1024x644.jpg?type=w1200" width="1024" height="644" data-attachment-id="IJR_WSIl5wBGRocawHnZTgXElfUo" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">출처 : 바이브랜드</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span style="color:rgb( 0 , 0 , 0 )">카메라에 담기 위해 차를 세웁니다. 프론트 그릴이 막혀있다는 것 말고는 특별할 건 없는 전면입니다. 앞 유리 상단에 위치하던 통합형 모듈은 분리되어 레이더가 전면, ASDM 센서가 후면으로 이동했습니다. 지난해 출시됐던 볼보 XC60의 2세대 부분변경 모델도 마찬가지였는데요, 기존보다 진화된 ADAS 시스템이 구현됐다는 것이 제조사의 설명입니다.</span><br /><br /><span style="color:rgb( 0 , 0 , 0 )">측면에서 이 차의 매력은 극대화됩니다. 짧은 앞뒤 오버행, 블랙 하이그로시가 더해진 투톤 컬러의 루프는 세련된 분위기를 자아냅니다. 벨트라인이 조금 높아 키가 커 보이기도 합니다. 단순히 멋 때문이 아니라 달릴 때 다운포스를 증가시켜 안정성을 높이는 리어 스포일러도 두 개나 됩니다. 형상으로 보자면 브랜드의 다른 모델들과 그 궤를 같이 하는 리어 램프지만, 디테일이 조금 다릅니다. 웰컴 라이트 기능도 추가됐고요.</span><br /><br /><span style="color:rgb( 0 , 0 , 0 )">앞에서 뒤로 갈수록 C40 리차지의 외관 디자인은 과감해집니다. 그렇다고 해도 요즘 신차와 비교하면 심심한 외모죠. 하지만 민낯이 예쁘기는 쉽지 않죠. 청바지에 흰티 하나 입고 멋지기도 힘들고요. 그 힘든 걸 C40 리차지가 해냅니다. 그렇다면 실내는 어떨까요?</span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_7_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMTgw/MDAxNjU2MDU3MzQ3Nzg1.i3tfiiqdASjIhKBb9vFYH9qEIE291bDbt0tRjHx60Vwg.JqMBcrSYNASnXsfCL_UE4oZ8vyylmwtG9ISsZrktTCwg.JPEG/%EC%82%AC%EC%A7%84%EC%9E%90%EB%A3%8C_%EB%B3%BC%EB%B3%B4%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%B8%8C%EB%9E%9C%EB%93%9C_%EC%B5%9C%EC%B4%88%EC%9D%98_%EC%BF%A0%ED%8E%98%ED%98%95_%EC%88%9C%EC%88%98_%EC%A0%84%EA%B8%B0%EC%B0%A8_C40_%EB%A6%AC%EC%B0%A8%EC%A7%80_.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_7_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMTgw/MDAxNjU2MDU3MzQ3Nzg1.i3tfiiqdASjIhKBb9vFYH9qEIE291bDbt0tRjHx60Vwg.JqMBcrSYNASnXsfCL_UE4oZ8vyylmwtG9ISsZrktTCwg.JPEG/%EC%82%AC%EC%A7%84%EC%9E%90%EB%A3%8C_%EB%B3%BC%EB%B3%B4%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%B8%8C%EB%9E%9C%EB%93%9C_%EC%B5%9C%EC%B4%88%EC%9D%98_%EC%BF%A0%ED%8E%98%ED%98%95_%EC%88%9C%EC%88%98_%EC%A0%84%EA%B8%B0%EC%B0%A8_C40_%EB%A6%AC%EC%B0%A8%EC%A7%80_.jpg?type=w1200" width="3000" height="2000" data-attachment-id="Islelj4bAnzsrxsEUbgzFcxgpKkc" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">인간 중심 철학이 반영된 실내</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="se_component se_quotation quotation_line">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_fs_T3">
+                <div class="se_editView" >
+                    <div class="se_textView">
+                        <blockquote class="se_textarea"><!-- SE3-TEXT { -->말로 다 되는데 &#39;코리안 패치&#39;까지 완료<!-- } SE3-TEXT --></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>기교를 구태여 드러내지 않는 태도는 안에서도 여전합니다. 필요한 것만 추려서 복잡함을 최소화하는 것. 볼보의 매력이자, 스웨덴의 매력이기도 합니다. 실용성과 단순함은 이케아가 잘하는 것이기도 하니까요. <br /> <br />목적과 실용성이 뚜렷한 공간에서 심미적 기능을 담당하는 것도 있긴 있습니다. 1열 도어와 대시보드인데요, 여기엔 하만카돈의 스피커와 함께 토포그라피 디자인 데코 패널이 적용됐습니다. 스웨덴 아비스코 국립공원의 지형을 형상화한 이 패널은 반사층, 투명 아크릴, 폴리카보네이트 등 총 세 개의 레이어로 구성되어 있습니다. 밝을 때 보면 그냥 무늬에 지나지 않지만 어두워지면 LED 빛이 발산되면서 독특한 분위기를 연출합니다. <br /></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_8_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMTAg/MDAxNjU2MDU3Mzg1MTQ0.RPCSeomOq51akSa1QVzqpDfY52tx-xLHmUbOxOSjZBYg.9eENYKkWpS6psgWzeWLdPMHoEJuJtmUIMIyLRbx4Co8g.JPEG/287327_Volvo_C40_Recharge_interior.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_8_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMTAg/MDAxNjU2MDU3Mzg1MTQ0.RPCSeomOq51akSa1QVzqpDfY52tx-xLHmUbOxOSjZBYg.9eENYKkWpS6psgWzeWLdPMHoEJuJtmUIMIyLRbx4Co8g.JPEG/287327_Volvo_C40_Recharge_interior.jpg?type=w1200" width="5000" height="3333" data-attachment-id="IAi0QLxAta7Als4G5nKXpvfYi31o" alt="">
+        
+        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>형태와 구성뿐만 아니라 기능도 북유럽 디자인의 본질적 가치에 힘을 실어줍니다. 수입차 내비게이션이라면 응당 불편해야 하는데, 최근에는 현지화가 잘 이뤄지고 있습니다. 볼보도 그중 하나인데, ‘한국 패치’를 위해 300억 원을 쏟아부어 SK텔레콤과 함께 한국형 통합 인포테인먼트 시스템을 구축했습니다. 전기차 전용 탐색 알고리즘이 적용된 티맵(TMAP), AI 음성인식 비서 누구(NUGU), 뮤직 플랫폼 플로(FLO)를 모두 누릴 수 있습니다. 추가로 무선 업데이트 OTA도 15년간 무상으로 제공됩니다. <br /> <br />시동 버튼도 누를 필요가 없는데, 내비를 찍는 과정도 건너뜁니다. 그저 ‘아리’를 부르면 됩니다. ‘아리야’라는 음성 발화어를 통해 목적지를 말하면 되니까요. 예를 들면 이런 식입니다. ‘아리야 세종로 공영주차장으로 가줘’. 에어컨, 열선 시트 등 기능 제어부터 ‘감성대화’까지 가능합니다. 아무 말이라도 정성껏 대답해주죠. 외롭다고 하니 좋은 친구가 되어주겠다고 합니다. 음성인식은 매우 훌륭합니다. 한국어, 영어 모두요. <br /></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_9_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfOCAg/MDAxNjU2MDU3MjU2OTU0.pbyTd3JGfoO7wmY2MltVS6Zr0BPeh9xKhQl4KHM6aEAg.BUS28IDfcsz7V_MNhFjNj92u7tlf4FV5cmH8iqtPR28g.JPEG/%EA%B7%B8%EB%9E%B2-03-1024x473.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_9_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfOCAg/MDAxNjU2MDU3MjU2OTU0.pbyTd3JGfoO7wmY2MltVS6Zr0BPeh9xKhQl4KHM6aEAg.BUS28IDfcsz7V_MNhFjNj92u7tlf4FV5cmH8iqtPR28g.JPEG/%EA%B7%B8%EB%9E%B2-03-1024x473.jpg?type=w1200" width="1024" height="473" data-attachment-id="IdSj2o2kT8lhj8RNqF4MHIVlTFGU" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">그래픽 : 바이브랜드</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>비 오는 출근길, 경부고속도로는 차들로 가득합니다. 언제나 그렇듯 판교 IC부터 서초 IC까지 약 12km에 이르는 구간은 ‘헬’입니다. 38분가량 지연된다는 구체적인 안내에 따라 오른발을 페달에서 뗍니다. 그리고 ‘파일럿 어시스트’를 활성화합니다. <br /> <br />운전대 왼쪽 키 패드에 있는 버튼 하나 누르면 활성화되는 파일럿 어시스트는 주행 보조 시스템입니다. 어댑티브 크루즈 컨트롤과 스티어링 휠 자동 조향 등 반자율 주행 기능을 포함합니다. 설정한 속도와 앞차와의 거리를 자동차가 도로 상황에 맞춰 스스로 조절하고, 차로를 벗어나지 않도록 운전대도 제어합니다. 물론 운전대에서 손을 떼면 안되죠. 운전자가 스티어링 휠에서 손을 떼고 있다고 판단되면 파일럿 어시스트는 비활성화됩니다. <br /> <br />조금이라도 빨리 가고 싶은 마음에 틈이 생기면 옆에서 끼어들기 마련입니다. 이런 경우에도 어댑티브 크루즈 컨트롤은 안전하게 대응합니다. 미리 감속하면서 말이죠. 아침 출근길, (여자)아이들 미연의 노래만큼 큰 힘이 되는 파일럿 어시스트입니다.</span><span><br /></span><span></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_10_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfOTIg/MDAxNjU2MDU3NDM2OTE2.O1JB_KzIUBEgRxigwMq_rOH--UdNPQbU61yJ_T_J1Cgg.LgcLl7jmSem-0w1T1TAeRVWmK-GzRNx1mFr7bFHhZ_Yg.PNG/%EB%B3%BC%EB%B3%B4_%EA%B7%B8%EB%9E%98%ED%94%842-04.png", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_10_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfOTIg/MDAxNjU2MDU3NDM2OTE2.O1JB_KzIUBEgRxigwMq_rOH--UdNPQbU61yJ_T_J1Cgg.LgcLl7jmSem-0w1T1TAeRVWmK-GzRNx1mFr7bFHhZ_Yg.PNG/%EB%B3%BC%EB%B3%B4_%EA%B7%B8%EB%9E%98%ED%94%842-04.png?type=w1200" width="1000" height="657" data-attachment-id="IFAWSixIx_EabA098LATwzsAhFaI" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">그래픽 : 바이브랜드</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="se_component se_quotation quotation_line">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_fs_T3">
+                <div class="se_editView" >
+                    <div class="se_textView">
+                        <blockquote class="se_textarea"><!-- SE3-TEXT { -->달리기도 안전도 볼보가 볼보할 뿐<!-- } SE3-TEXT --></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>속 시원하게 달려 볼 순서이기에 밥부터 먹입니다. 볼보에 따르면 80%까지 충전하는 데 소요되는 시간은 40분입니다. 센터 디스플레이에서 충전 한도를 40%~100% 사이에서 선택할 수 있습니다. 전류 한도 조절 및 타이머 설정도 가능합니다. 충전 시간은 걸리지만 전국 평균 휘발유 가격이 2,000원을 넘어선 요즘 충전 비용은 정말 ‘혜자’입니다. 출퇴근길이 30km가 넘는다면 전기차는 좋은 선택지가 되지 않을까요? <br /><br />강변북로를 지나 자유로로 들어서며 가속 페달을 힘껏 밟습니다. 순식간에 앞차와의 거리를 좁혀갑니다. 최고출력 408마력, 최대토크 67.3kg·m를 발휘하는 C40 리차지는 제원 상 정지 상태에서 시속 100km 가속까지 5초가 채 걸리지 않습니다. 앞뒤 두 개의 모터에서 발현되는 즉각적인 성능 때문인지 오른발에 힘이 더 실립니다. <br /> <br />머뭇거림이나 울부짖는 엔진 소음 없이 빠르게 속도를 높여가는 쾌적함은 전기차에서만 누릴 수 있는 특권입니다. 단, 최고 속도는 시속 180km로 제한됩니다. 듀얼 모터가 탑재된 사륜구동 시스템이 적용된 C40 리차지는 주행 상황에 맞춰 앞뒤로 동력 분배를 조절합니다. 하지만 가속 중에는 최적화된 트랙션을 위해 뒤쪽에 더 많은 동력을 전달해 가속 페달에 대한 응답성과 주행 안정성을 높이죠. C40 리차지의 앞뒤 바퀴 사이즈가 다른 이유이기도 합니다. <br /> </span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_11_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjM5/MDAxNjU2MDU3NDcyMDcz.XuohgxiZpwArxz9lFTLQqGSiSej78MzR8lU-0ExgeA0g.NCpqZmRsOLI6_aAHRmXlsFRW6Vuy8lCLXCyYccYsCx0g.JPEG/%EC%A3%BC%ED%96%89.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_11_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjM5/MDAxNjU2MDU3NDcyMDcz.XuohgxiZpwArxz9lFTLQqGSiSej78MzR8lU-0ExgeA0g.NCpqZmRsOLI6_aAHRmXlsFRW6Vuy8lCLXCyYccYsCx0g.JPEG/%EC%A3%BC%ED%96%89.jpg?type=w1200" width="1000" height="650" data-attachment-id="IVjp3OCcf4dW-aR3bcnvZUSUGQsQ" alt="">
+        
+        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>급격하게 스티어링 휠을 돌려도 흐트러짐이 없는 거동을 보여줍니다. 특히 자잘한 움직임이 적어 경박하지 않습니다. 차체 하단에 자리 잡은 고전압 배터리 패키지는 낮은 무게중심으로 안정적인 주행을 돕죠. 프론트와 리어 액슬 사이에 위치한 500kg의 배터리 패키지는 균등한 무게 배분에도 이바지합니다. 이는 섬세한 조향감과 함께 어우러져 보다 민첩하고 역동적인 주행감을 선사하죠. 요철을 지날 때의 충격도 잘 흡수해 흔들림이 짧은 편입니다. 단단한 세팅에도 불구하고 승차감은 불편하지 않습니다. <br /><br />볼보는 속도를 즐기면서 타는 차가 아닙니다. 안전을 위해 고르는 경우가 많죠. 볼보 스스로도 안전과 관련해선 타협하지 않는다고 강조하기도 하고요. 말린 에크 홀름 볼보 안전 센터의 책임자는 ‘모든 모델은 엄격한 안전 표준을 준수’하고 있으며 안전 분야의 리더를 목표로 하고 있다고 말한 바 있습니다. <br /> </span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_12_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMTIy/MDAxNjU2MDU3NTA2NTk0.ww0XBVSKWu1i14hoelM_PgNI5VJSiLkNYhvjbGGTPH4g.h9xll-nlQsbVHRWpk9i1ARhDdtrC99Dmr49t1HrB0gUg.JPEG/301588_Fully_electric_C40_Recharge_continues_Volvo_Cars_five-star_streak_in_Euro.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_12_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMTIy/MDAxNjU2MDU3NTA2NTk0.ww0XBVSKWu1i14hoelM_PgNI5VJSiLkNYhvjbGGTPH4g.h9xll-nlQsbVHRWpk9i1ARhDdtrC99Dmr49t1HrB0gUg.JPEG/301588_Fully_electric_C40_Recharge_continues_Volvo_Cars_five-star_streak_in_Euro.jpg?type=w1200" width="1920" height="1080" data-attachment-id="IucC5e6SaVvRJbl7qfQXdThvmcbk" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">유로 NCAP 테스트</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>C40 리차지도 예외는 아닙니다. 지난달 25일, 볼보는 C40 리차지가 ‘2022 유로 NCAP 테스트’에서 최고 등급인 파이브-스타(Five-star)를 획득했다고 밝혔습니다. 미국 고속도로 안전보험협회(IIHS)에서 톱 세이프티 픽 플러스 등급에 이어서 말이죠. 유로 NCAP은 1997년부터 유럽에서 판매되는 자동차 안전에 대한 현실적이고 독립적인 평가를 시행해 온 걸로 유명합니다. 주로 자동차 탑승자, 보행자가 부상을 입거나 사망할 수 있는 사고 시나리오를 바탕으로 안전성을 검증하죠. <br /> <br />C40 리차지는 탑승자 안전 및 운전자 보조 시스템에서 높은 점수를 획득했다고 합니다. 쉽게 말해 주행 중 발생할 수 있는 수많은 사고 가능성을 낮춰준다는 겁니다. 예컨대 충돌을 감지하고 피하며, 도로를 이탈하지 않도록 말이죠. <br /></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_13_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjc4/MDAxNjU2MDU3NTYzNzM0.EFonMZ5ypA_gCUPfhZVkQnSl6xptaGfyyEbyWfbEOH0g.XeBCNNPTLW4h3_dkV7JB9ogtrXyN_vJlQlfY9ZU2JEIg.JPEG/289257_C40_Recharge_test_drive_powertrain_and_safety_structure.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_13_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjc4/MDAxNjU2MDU3NTYzNzM0.EFonMZ5ypA_gCUPfhZVkQnSl6xptaGfyyEbyWfbEOH0g.XeBCNNPTLW4h3_dkV7JB9ogtrXyN_vJlQlfY9ZU2JEIg.JPEG/289257_C40_Recharge_test_drive_powertrain_and_safety_structure.jpg?type=w1200" width="5100" height="2869" data-attachment-id="IMzBHY7ldWGz9HT1APNX3k9Wz43I" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">C40 리차지 안전 구조</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>배터리에 대한 안전도 눈여겨볼 만합니다. 앞서 언급했듯 C40 리차지의 뼈대인 CMA 플랫폼은 하이브리드에도 적용됩니다. 앞쪽에 엔진이 없는 전기차의 경우 재설계와 보강이 필요하다는 말이죠. 그래서 강화된 하부 충돌 기둥을 추가하고 조수석 공간 주변에도 여러 강철이 더해졌습니다. 충격을 분산시키기 위해 재질을 바꾸고 새로운 블록 형태를 더하는 변화도 있고요. <br /> <br />더불어 배터리 보호도 잊지 않았습니다. 이른바 ‘배터리 세이프티 케이지’라고 불리는 알루미늄 압출 프레임을 뼈대에 통합시킨 겁니다. 이를 통해 케이지 자체가 섀시의 역할도 하면서 충돌에 대한 강성뿐만 아니라 비틀림 강성도 높였습니다. 최근 전기차 화재 사고가 잇따르면서 배터리 폭발에 대한 우려가 높아지고 있는 가운데 볼보의 안전에 시선이 가는 이유입니다.</span><span><br /></span><span></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-justify">
+				<div class="se_editArea">
+					<div class="se_viewArea" >
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_14_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjM5/MDAxNjU2MDU3NTgzMDgy.fOKLgJz6PVCvcboCaU5QXfgjYisxhHXudXabs062WVEg.qyuUKTr-NwwksRTwwg89psCGgeIykX9MwNJetfB_icAg.JPEG/096342-1024x695.jpg", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_14_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjM5/MDAxNjU2MDU3NTgzMDgy.fOKLgJz6PVCvcboCaU5QXfgjYisxhHXudXabs062WVEg.qyuUKTr-NwwksRTwwg89psCGgeIykX9MwNJetfB_icAg.JPEG/096342-1024x695.jpg?type=w1200" width="1024" height="695" data-attachment-id="IyHKZxcUropdeZGtGjD2yX0acIVs" alt="">
+        
+        </a>
+							<div class="se_editView">
+								<div class="se_textView se_mediaCaption">
+                                        <span class="se_textarea">출처 : 바이브랜드</span>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="se_component se_quotation quotation_line">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_fs_T3">
+                <div class="se_editView" >
+                    <div class="se_textView">
+                        <blockquote class="se_textarea"><!-- SE3-TEXT { -->벤·비·아엔 없지만 볼보엔 있는 것<!-- } SE3-TEXT --></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-justify" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span>아쉬운 점도 있습니다. 미국보다 거의 900만 원 가까이 저렴하지만 고민되는 가격입니다. 한 번 충전으로 400km까지 달리지 못하고 첨단 운전자 지원 시스템(ADAS)도 부족한 편입니다. 한국에서 엔진보다 중요한 통풍 시트도 없으며 후방 시야도 제한적이라 답답합니다. 게다가 2열은 등받이 각도 조절이 불가해 실내 거주성도 떨어지죠. <br /></span><span><br />그럼에도 불구하고 C40 리차지의 매력은 온전히 전달된 것 같습니다. 올해 3월 2022년 물량 1천 500대가 완판됐죠. 사전계약 실시 5일 만에 이룬 쾌거입니다. <br /> <br />메르세데스-벤츠처럼 고급스럽지도 BMW만큼 쫄깃하게 달릴 수도 아우디처럼 화려하진 않지만 볼보는 자신의 영역을 꿋꿋이 지켜왔습니다. 가식과 치장보다 잘 할 수 있는 것에 집중해왔죠. 그래서 볼보의 심플함은 결핍이 아니라 완전함에 가깝지 않나 생각해 봅니다. 프랑스 소설가 생텍쥐페리의 말처럼 완전함은 더 이상 보탤 것이 없는 상태가 아니라 더 이상 뺄 것이 없는 상태니까요.<br /></span><span> <br /></span><span><br /></span><span style="color:rgb( 0 , 118 , 200 )"><br /><span style="color:rgb( 0 , 0 , 0 )"></span></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-center" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><span class="se-ff-nanumgothic se-fs15 __se-node" style="color:rgb( 0 , 0 , 0 )"><b>글</b><span> </span>이순민 ㅣ</span><span class="se-ff-nanumgothic se-fs15 __se-node" style="color:rgb( 0 , 0 , 0 )"><b><span> 사진</span></b></span><span class="se-ff-nanumgothic se-fs15 __se-node" style="color:rgb( 0 , 0 , 0 )"><span> Volvo Cars Global Newsroom, 볼보자동차코리아 </span></span><br /><span class="se-ff-nanumgothic se-fs15 __se-node" style="color:rgb( 0 , 0 , 0 )">royalblue&#64;donga.com<br /></span><span class="se-ff-nanumgothic se-fs15 __se-node" style="color:rgb( 0 , 0 , 0 )"><br /></span><span class="se-ff-nanumgothic se-fs15 __se-node" style="color:rgb( 0 , 0 , 0 )"></span><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="se_component se_quotation quotation_corner">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_fs_T3">
+                <div class="se_editView" >
+                    <div class="se_textView">
+                        <blockquote class="se_textarea"><!-- SE3-TEXT { -->내가 좋아하는 브랜드의 이야기가 궁금하다면?<!-- } SE3-TEXT --></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-center">
+				<div class="se_editArea">
+					<div class="se_viewArea" style="max-width:500px">
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_15_img", "src" : "https://post-phinf.pstatic.net/MjAyMjA2MjRfMjg3/MDAxNjU2MDU3NjU0ODIy.wOCRkVnhAC81-0c67NiuJy6e3VUbRk_n-2FfQy4bGGEg.kBtP3ERLZFmvX0snIVzt7hv33zaiVc3zRBK6sCTMV3Eg.JPEG/%EB%B0%94%EC%9D%B4%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B0%B0%EB%84%88.jpg", "linkUse" : "true", "link" : "https://buybrand.kr/"}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_15_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMjA2MjRfMjg3/MDAxNjU2MDU3NjU0ODIy.wOCRkVnhAC81-0c67NiuJy6e3VUbRk_n-2FfQy4bGGEg.kBtP3ERLZFmvX0snIVzt7hv33zaiVc3zRBK6sCTMV3Eg.JPEG/%EB%B0%94%EC%9D%B4%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B0%B0%EB%84%88.jpg?type=w1200" width="500" height="119" data-attachment-id="I8vZE4gtgHQFrn-Pl9aBWDjKd0Kg" alt="">
+        
+        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<div class="se_component se_horizontalLine default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="viewArea">
+                <div class="se_horizontalLineView">
+                    <div class="se_hr"><hr></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+		<div class="se_component se_image default">
+			<div class="se_sectionArea se_align-center">
+				<div class="se_editArea">
+					<div class="se_viewArea" style="max-width:209px">
+        <a href="#" onclick="return false;" class="se_mediaArea __se_image_link __se_link" data-linktype="img" data-linkdata='{"imgId" : "SEDOC-1659681412239--1895836570_image_16_img", "src" : "https://post-phinf.pstatic.net/MjAyMTAzMzFfMjQ2/MDAxNjE3MTYzODkxMzU5.RtT_hreuXLY49L00PpRErWAxDPmHIKQfM26H5hTpPfIg.hY6ucK0-F__XewhHJpX0c8IuYxMhs_JS4xPGMALTfBwg.PNG/%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%82%AC-%EB%8D%94-%EB%B3%B4%EA%B8%B0.png?type&#61;w1200", "linkUse" : "false", "link" : ""}'>
+                            <img id="SEDOC-1659681412239--1895836570_image_16_img" class="se_mediaImage __se_img_el"  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://post-phinf.pstatic.net/MjAyMTAzMzFfMjQ2/MDAxNjE3MTYzODkxMzU5.RtT_hreuXLY49L00PpRErWAxDPmHIKQfM26H5hTpPfIg.hY6ucK0-F__XewhHJpX0c8IuYxMhs_JS4xPGMALTfBwg.PNG/%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%82%AC-%EB%8D%94-%EB%B3%B4%EA%B8%B0.png?type&#61;w1200&type=w1200" width="209" height="73" data-attachment-id="" alt="">
+        
+        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<div class="se_component se_oglink og_bSize ">
+    <div class="se_sectionArea se_align-center">
+        <div class="se_editArea" id="SEDOC-1659681412239--1895836570_oglink_0">
+            <div class="se_viewArea se_og_wrap">
+                <a class="se_og_box  __se_link" href="https://buybrand.kr/story/amgseoul/" target="_blank" data-linktype="link" data-linkdata='{"link" : "https://buybrand.kr/story/amgseoul/"}'>
+                    <div class="se_og_thumb">
+                        <img  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://dthumb-phinf.pstatic.net/?src&#61;%22https%3A%2F%2Fbuybrand.kr%2Fwp-content%2Fuploads%2F2022%2F04%2Famg_%25EC%258D%25B8%25EB%2584%25A4%25EC%259D%25BC.jpg%22&amp;type&#61;ff500_300" alt="">
+					</div>
+                    <div class="se_og_txt">
+                            <div class="se_og_tit">새로운 접속, 메르세데스-AMG를 서울에서 만나다 - 바이브랜드 BUYBRAND</div>
+                                <div class="se_og_desc">약 6개월 전, 국내 수입차 시장을 주도하는 메르세데스-벤츠도 서울에 브랜드 거점을 마련했습니다. 그런데 이름이 조금 낯서네요. AMG 서울? 전 세계에서 여섯 번째로 마련된 브랜드 체험 공간이라고 하는데, 여기 뭐 하는 곳일까요?</div>
+                            <div class="se_og_cp">buybrand.kr</div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--script type="text/data" class="__se_module_data" data-module='{"type":"v1_oglink", "docVersion" : "1.0", "id" :"SEDOC-1659681412239--1895836570_oglink_0" , "data" : {"viewId" : "SEDOC-1659681412239--1895836570_oglink_0", "link" : "https://buybrand.kr/story/amgseoul/", "isVideo" : "false", "thumbnail" : "https://dthumb-phinf.pstatic.net/?src&#61;%22https%3A%2F%2Fbuybrand.kr%2Fwp-content%2Fuploads%2F2022%2F04%2Famg_%25EC%258D%25B8%25EB%2584%25A4%25EC%259D%25BC.jpg%22&amp;type&#61;ff500_300"}}'></script-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<div class="se_component se_oglink og_bSize ">
+    <div class="se_sectionArea se_align-center">
+        <div class="se_editArea" id="SEDOC-1659681412239--1895836570_oglink_1">
+            <div class="se_viewArea se_og_wrap">
+                <a class="se_og_box  __se_link" href="https://buybrand.kr/pick/sonywalkman/" target="_blank" data-linktype="link" data-linkdata='{"link" : "https://buybrand.kr/pick/sonywalkman/"}'>
+                    <div class="se_og_thumb">
+                        <img  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://dthumb-phinf.pstatic.net/?src&#61;%22https%3A%2F%2Fbuybrand.kr%2Fwp-content%2Fuploads%2F2022%2F06%2F%25EC%2586%258C%25EB%258B%2588_%25EC%258D%25B8%25EB%2584%25AC.png%22&amp;type&#61;ff500_300" alt="">
+					</div>
+                    <div class="se_og_txt">
+                            <div class="se_og_tit">이 워크맨은 고급유가 필요합니다 - 바이브랜드 BUYBRAND</div>
+                                <div class="se_og_desc">소니는 프리미엄 음향기기로 꾸준히 대중의 소비에 큰 축을 담당하고 있습니다. 이어폰 이야기가 아닙니다. MP3플레이어와 결이 비슷한 휴대용 프리미엄 음향기기를 만나보시죠. 프레타포르테를 추구하는 워크맨의 진화.</div>
+                            <div class="se_og_cp">buybrand.kr</div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--script type="text/data" class="__se_module_data" data-module='{"type":"v1_oglink", "docVersion" : "1.0", "id" :"SEDOC-1659681412239--1895836570_oglink_1" , "data" : {"viewId" : "SEDOC-1659681412239--1895836570_oglink_1", "link" : "https://buybrand.kr/pick/sonywalkman/", "isVideo" : "false", "thumbnail" : "https://dthumb-phinf.pstatic.net/?src&#61;%22https%3A%2F%2Fbuybrand.kr%2Fwp-content%2Fuploads%2F2022%2F06%2F%25EC%2586%258C%25EB%258B%2588_%25EC%258D%25B8%25EB%2584%25AC.png%22&amp;type&#61;ff500_300"}}'></script-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<div class="se_component se_oglink og_bSize ">
+    <div class="se_sectionArea se_align-center">
+        <div class="se_editArea" id="SEDOC-1659681412239--1895836570_oglink_2">
+            <div class="se_viewArea se_og_wrap">
+                <a class="se_og_box  __se_link" href="https://buybrand.kr/story/gazeshop/" target="_blank" data-linktype="link" data-linkdata='{"link" : "https://buybrand.kr/story/gazeshop/"}'>
+                    <div class="se_og_thumb">
+                        <img  src="https://ssl.pstatic.net/static.post/image/m/im/bg_white.png" data-src="https://dthumb-phinf.pstatic.net/?src&#61;%22https%3A%2F%2Fbuybrand.kr%2Fwp-content%2Fuploads%2F2022%2F06%2F%25EA%25B2%258C%25EC%259D%25B4%25EC%25A6%2588-%25EC%258D%25B8%25EB%2584%25A4%25EC%259D%25BC.png%22&amp;type&#61;ff500_300" alt="">
+					</div>
+                    <div class="se_og_txt">
+                            <div class="se_og_tit">건조한 일상을 촉촉하게, 게이즈 - 바이브랜드 BUYBRAND</div>
+                                <div class="se_og_desc">누군가 그러더군요. 사치란 ‘자신이 관심 없는 분야에 타인이 돈을 쓰는 행위’라고. 게이즈(Gaze)는 독특한 시선(Gaze)으로 선별된 제품을 통해 사치를 유발합니다. 있으면 좋겠지만 없어도 그만인 것들만 특별히 골라서 말이죠.</div>
+                            <div class="se_og_cp">buybrand.kr</div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--script type="text/data" class="__se_module_data" data-module='{"type":"v1_oglink", "docVersion" : "1.0", "id" :"SEDOC-1659681412239--1895836570_oglink_2" , "data" : {"viewId" : "SEDOC-1659681412239--1895836570_oglink_2", "link" : "https://buybrand.kr/story/gazeshop/", "isVideo" : "false", "thumbnail" : "https://dthumb-phinf.pstatic.net/?src&#61;%22https%3A%2F%2Fbuybrand.kr%2Fwp-content%2Fuploads%2F2022%2F06%2F%25EA%25B2%258C%25EC%259D%25B4%25EC%25A6%2588-%25EC%258D%25B8%25EB%2584%25A4%25EC%259D%25BC.png%22&amp;type&#61;ff500_300"}}'></script-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="se_component se_paragraph default">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_ff_nanumgothic se_fs_T3 se_align-center" >
+                <div class="se_editView">
+                    <div class="se_textView">
+                        <p class="se_textarea"><!-- SE3-TEXT { --><!-- } SE3-TEXT --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- SE_DOC_CONTENTS_END -->
+<div class="__se_doc_title_end" id="se_doc_contents_end"></div>
+<div id="SEDOC-1659681412239--1895836570_se_doc_footer" class="se_doc_footer"></div>
+</div>
+</script>
+
+	<div id="__tmp_clipContent" style="height:1000px;background:white;padding-top: 80px;text-align: center;">
+	</div>
+
+<!-- }} 컨텐츠 내용 -->
+
+	<script type="text/javascript" >
+        window.__mugFnList__.push(function() {
+            !function($, window) {
+                if (mug.common.isDev()) {
+                    console.log("asyncGet funding");
+                }
+                function asyncGet() {
+                	// 간단 페이지에서 요청 제외
+					var onSimplePage = 'false' === 'true';
+					if (onSimplePage) {
+						if (mug.common.isDev()) {
+							console.log("[SIMPLE] getSe3FundingView disabled.");
+						}
+						return;
+					}
+
+                    $.ajax({
+                        url: "getSe3FundingView.naver",
+                        dataType:"html",
+                        data: {
+                            authorNo: "35786474",
+                            seriesNo: "350574"
+                        },
+                        success: function(resultHtml){
+                            if (mug.common.isDev()) {
+                                console.log("asyncGet funding success!!");
+                            }
+                            resultHtml = $.trim(resultHtml);
+                            $("#__tmp_fundingView").replaceWith(resultHtml);
+                            $(window).trigger("viewerFundingLoad");
+                        },
+                        error: function(resp) {
+                            console.log(resp);
+                        }
+                    });
+                }
+                $(window).load(function() {
+                    setTimeout(asyncGet, 1);
+                });
+
+            }(jQuery, window);
+        });
+        </script>
+        <div id="__tmp_fundingView">
+
+        </div>
+
+    <script type="text/javascript" >
+	window.__mugFnList__.push(function() {
+		!function($, window) {
+			if (mug.common.isDev()) {
+				console.log("asyncGet event");
+			}
+			function asyncGet() {
+				// 간단 페이지에서 요청 제외
+				var onSimplePage = 'false' === 'true';
+				if (onSimplePage) {
+					if (mug.common.isDev()) {
+						console.log("[SIMPLE] getEventView disabled.");
+					}
+					return;
+				}
+
+				$.ajax({
+					url: "getEventView.naver",
+					dataType:"html",
+					data: {
+						volumeNo: "34018927",
+						memberNo: "35786474"
+					},
+					success: function(resultHtml){
+						if (mug.common.isDev()) {
+							console.log("asyncGet event success!!");
+						}
+						resultHtml = $.trim(resultHtml);
+						$("#__tmp_eventView").replaceWith(resultHtml);
+						if (resultHtml != "") {
+							try {window.__viewer._resizePan();}catch(e){};
+						}
+						$(window).trigger("viewerEventLoad");
+					},
+					error: function(resp) {
+						console.log(resp);
+					}
+				});
+			}
+			$(window).load(function() {
+				setTimeout(asyncGet, 1);
+			});
+
+		}(jQuery, window);
+	});
+
+
+	</script>
+	<div id="__tmp_eventView">
+
+	</div>
+<div class="editor_section as_se3">
 	<div class="state_line"></div>
 	<!-- 태그 -->
+	<div class="sect_tag_area">
+		<div class="sect_inner">
+			<div class="tag_related_wrap">
+				<div class="tag_area">
+					<a href="/tag/overView.naver?tag=%EB%B3%BC%EB%B3%B4" class="tag __search_tag" data-tagname="볼보" onclick="mug.common.nclick(this, 'end.tag');">#볼보</a>
+					<a href="/tag/overView.naver?tag=%EB%B3%BC%EB%B3%B4%EC%A0%84%EA%B8%B0%EC%B0%A8" class="tag __search_tag" data-tagname="볼보전기차" onclick="mug.common.nclick(this, 'end.tag');">#볼보전기차</a>
+					<a href="/tag/overView.naver?tag=%EB%B3%BC%EB%B3%B4%EB%A6%AC%EC%B0%A8%EC%A7%80" class="tag __search_tag" data-tagname="볼보리차지" onclick="mug.common.nclick(this, 'end.tag');">#볼보리차지</a>
+					<a href="/tag/overView.naver?tag=%EB%B3%BC%EB%B3%B4C40%EB%A6%AC%EC%B0%A8%EC%A7%80" class="tag __search_tag" data-tagname="볼보C40리차지" onclick="mug.common.nclick(this, 'end.tag');">#볼보C40리차지</a>
+					<a href="/tag/overView.naver?tag=C40%EB%A6%AC%EC%B0%A8%EC%A7%80" class="tag __search_tag" data-tagname="C40리차지" onclick="mug.common.nclick(this, 'end.tag');">#C40리차지</a>
+					<a href="/tag/overView.naver?tag=XC40%EB%A6%AC%EC%B0%A8%EC%A7%80" class="tag __search_tag" data-tagname="XC40리차지" onclick="mug.common.nclick(this, 'end.tag');">#XC40리차지</a>
+					<a href="/tag/overView.naver?tag=%EC%A0%84%EA%B8%B0%EC%B0%A8" class="tag __search_tag" data-tagname="전기차" onclick="mug.common.nclick(this, 'end.tag');">#전기차</a>
+					</div>
+			</div>
+		</div>
+	</div>
 	<!-- //태그 -->
-
-	<p class="write_by_smarteditor3">
-		<a href="http://post.naver.com/viewer/postView.nhn?volumeNo=3590526&memberNo=201497"><span class="se3_logo" aria-label="스마트에디터3.0"></span>으로 쓴 글입니다. <span class="go_detail">자세히보기</span></a>
-	</p>
-	<script type="text/javascript">
+<script type="text/javascript" src="https://common-patron.pstatic.net/dist/patron.init.js?v=20221111"></script>
+    <script type="text/javascript">
         window.__mugFnList__.push(function() {
             !function($, window) {
                 if (mug.common.isDev()) {
                     console.log("asyncGet");
                 }
                 function asyncGet() {
+					// 간단 페이지에서 요청 제외
+					var onSimplePage = 'false' === 'true';
+					if (onSimplePage) {
+						if (mug.common.isDev()) {
+							console.log("[SIMPLE] getRecommendPostView2 & asyncCommentForm disabled.");
+						}
+						$("#__tmp_recPostView").replaceWith('');
+						return;
+					}
+
                     $.ajax({
-                        url: "getRecommendPostView2.nhn",
+                        url: "getRecommendPostView2.naver",
                         dataType:"html",
                         data: {
-                            volumeNo: "11413091",
+                            volumeNo: "34018927",
                             memberNo: "35786474",
                             vType: "NO_SELECT",
                             searchKeyword: "",
@@ -1594,16 +1995,20 @@ font-style: inherit;">
 
                             }
 
+                            var elPatron = $("#patron_wrapper");
+                            if(!!elPatron.length) {
+                                patronInit();
+                            }
 
                             /**
                              * 댓글폼을 불러온다.
                              */
                             setTimeout(function() {
                                 $.ajax({
-                                    url: "/viewer/asyncCommentForm.nhn",
+                                    url: "/viewer/asyncCommentForm.naver",
                                     dataType:"html",
                                     data: {
-                                        volumeNo: "11413091",
+                                        volumeNo: "34018927",
                                         memberNo: "35786474"
                                     },
                                     success: function(html) {
@@ -1625,6 +2030,20 @@ font-style: inherit;">
                         }
                     });
                 }
+                function patronInit(){
+                    patron.init({
+                        serviceCode: "post",
+                        categoryId: "s",
+                        productId: "350574",
+                        useServiceCss: true,
+                        uiType: "typeA",
+                        wrapper: document.getElementById("patron_wrapper"),
+                        defaultLocale: "en_US",
+                        serviceLocale: "ko_KR",
+                        buttonLabel: "",
+                        patronButtonReady: function() {}
+                    });
+                }
                 $(window).load(function() {
                     setTimeout(asyncGet, 200);
                 });
@@ -1633,42 +2052,38 @@ font-style: inherit;">
     </script>
     <div id="__tmp_recPostView">
         <div id="more_loading_img" class="loading_t1" style="display:;padding-top:10px">
-            <img src="http://static.post.naver.net/image/m/im/loader.gif" width="24" height="24" alt="로딩중">
+            <img src="https://ssl.pstatic.net/static.post/image/m/im/loader.gif" width="24" height="24" alt="로딩중">
         </div>
     </div>
 
 <script>
-
 </script></div>
-<div class="btn_area_btm  __viewer_footer"> <div class="btn_w">
-       <a href="#" 
-	       onclick="mug.common.nclick(this, 'men.prev');mug.common.util.goBack();return false;" 
-       class="btn_gnb_prev"><i class="blind" aria-hidden="true">이전화면으로 가기</i></a>
-		<div class="btn_like">
+</div>
+<!-- cont 끝 -->
+
+<div class="dim __toggle_sidenav"></div>
+</div>
+<div class="btn_area_btm __viewer_footer">
+	<div class="btn_w">
+		<a href="#" class="btn_gnb_prev" onclick="mug.common.util.goBackForNaverApp();return false;"><i class="blind" aria-hidden="true">이전화면으로 가기</i></a>
+        <div class="btn_like">
 			<div class="u_likeit_list_module">
-				<a href="#" onclick="mug.common.nclick(this, 'men.like');" class="u_likeit_list_btn u_type_bright u_none_txt" role="button" data-sid="POST" data-did="POST" data-cid="11413091_35786474" data-likeit="0" data-rparam=""><span class="u_ico"></span><em class="u_txt"></em><em class="u_cnt"></em></a>
+				<a href="#" onclick="mug.common.nclick(this, 'men.like');" class="u_likeit_list_btn u_type_bright u_none_txt" role="button" data-sid="POST" data-did="POST" data-cid="34018927_35786474" data-likeit="0" data-rparam=""><span class="u_ico"></span><em class="u_txt"></em><em class="u_cnt"></em></a>
 			</div>
 		</div>
-	   <a href="/like/likeMembers.nhn?volumeNo=11413091&volumeMemberNo=35786474" class="_likeit_btn_more btn_more" target="_self"><i class="btn_s_more"></i>좋아요 한 사람 보러가기</a>
-        <div class="btn_comment"><button onclick="mug.common.nclick(this, 'men.cmt'); location.href='/viewer/commentsView.nhn?volumeNo=11413091&memberNo=35786474'"><i class="btn_s_comment"></i><p class="blind">덧글</p><span class="__comment_count"></span></button></div>
-
-        <div class="btn_share"><button class="naver-splugin" data-title="비트코인 채굴로 난방하는 시베리아│인터비즈" data-source-name="InterBiz 인터비즈"
-		onclick="mug.common.Sharer.init({elBtn:this});mug.common.nclick(this, 'men.share'); return false;" role="button" aria-haspopup="true" aria-expanded="false"><i class="btn_s_share"></i><p class="blind">공유하기</p></button></div>
-    </div>
+		<a href="/like/likeMembers.naver?volumeNo=34018927&volumeMemberNo=35786474" class="_likeit_btn_more btn_more" target="_self"><i class="btn_s_more"></i>좋아요 한 사람 보러가기</a>
+		<div class="btn_comment"><button onclick="mug.common.nclick(this, 'men.cmt'); location.href='/viewer/commentsView.naver?volumeNo=34018927&memberNo=35786474'"><i class="btn_s_comment"></i><p class="blind">덧글</p><span class="__comment_count"></span></button></div>
+		</div>
 </div>
 
-<!-- [D] 플리킹, 스크롤 안내 토스트 팝업-->
-<div class="ly_toast toast_f __toast __toast_h" style="display:none">
-	<img src="http://static.post.naver.net/image/im/end/toast_flick.png" alt="좌우로 넘겨 보세요">
-</div>
+
+<!-- [D] 플리킹, 스크롤 안내 토스트 팝업 -->
 <div class="ly_toast toast_s __toast __toast_v" style="display:none">
-	<img src="http://static.post.naver.net/image/im/end/toast_scroll_150611.png" alt="상하로 스크롤 하세요">
-</div></div><!-- #cont end -->
-</div><!-- #wrap end -->
-
-
-<script src="http://static.editor.naver.net/static/viewer/common/se_init.min.js?3122714398-20180208111204"></script>
-<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/post_m_base.js"></script>
+	<img src="https://ssl.pstatic.net/static.post/image/im/end/toast_scroll_150611.png" alt="상하로 스크롤 하세요">
+</div>
+<!-- //[D] 플리킹, 스크롤 안내 토스트 팝업 -->
+<script type="text/javascript" src="https://ssl.pstatic.net/static.editor/static/viewer/common/se_init.min.js?bd12dcf035-20221107135731"></script>
+<script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/post_m_base.js"></script>
 	<script type="text/javascript">
 function __fnExecMugFnList__() {
 	if (!!window.__mugFnList__ && __mugFnList__.length > 0) {
@@ -1682,7 +2097,19 @@ function __fnExecMugFnList__() {
 }
 __fnExecMugFnList__();
 </script>
-<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/renewal/nil.js"></script>
+<script type="text/javascript" src="https://common.like.naver.com/static/js/likeIt.list.js?v=202211111910"></script>
+<script>
+    var __likeWebUrl__ = "https://common.like.naver.com";
+</script>
+<script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/viewer/webViewer_like_tag_scripts_run_common.js"></script>
+<script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/viewer/webViewer_like_tag_scripts_run.js"></script>
+<script type="text/x-mug-layer-template" id="__template_editor_warning">
+<div class="__template_editor_warning"> <div class="popup_w pop_link app_link" style="display:block;"> <div class="popup"> <div class="pop_cont"> 포스트앱/PC에서 작성한 글은<br/> 모바일웹에서 수정할 수 없습니다.<br/> 포스트앱에서 수정하시겠습니까? <button type="button" class="btn_t1" onclick="window.top.location.href='https://post.naver.com/appLauncher.naver?scheme=open%3FvolumeNo%3D{=volumeNo}%26memberNo%3D{=memberNo}%26version%3D1'; return false;"><span>앱에서 수정하기</span></button> </div> <button class="btn_close" onclick="jQuery('.__template_editor_warning').remove(); return false;"><i class="blind">팝업닫기</i></button> </div> </div> <div class="dim on"></div> </div></script>
+<script type="text/x-mug-layer-template" id="__template_popular_editor_follow_MYFEED">
+	<div class="__template_popular_editor_follow"> <div class="popup_layer layer_myfeed_follow"> <div class="cont_area"> <div class="spot"> <img src="https://ssl.pstatic.net/static/post/img_my_feed_follow.png" alt="팔로우하고 네이버홈 추천·구독으로 받아보세요."> </div> <div class="cont"> 팔로우하셨군요! <br/>다음 글은 <em>네이버홈 추천·구독</em>에서 <br/> 쉽게 받아보세요. </div> </div> <div class="btn_area"> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.close');jQuery('.__template_popular_editor_follow').remove(); return false;">닫기</a> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.add');mug.contents.util.applyMyFeedNoti('35786474', '');">확인</a> </div> </div> <div class="dim on" onclick="mug.common.nclick(this, 'mfo.close');jQuery('.__template_popular_editor_follow').remove(); return false;"></div> </div></script>
+
+<script type="text/x-mug-layer-template" id="__template_popular_editor_follow_MYFEED_2nd">
+	<div class="__template_popular_editor_follow"> <div class="popup_layer layer_myfeed"> <div class="cont_area"> <div class="spot"> <img src="https://ssl.pstatic.net/static/post/img_my_feed_follow.png" alt="팔로우하고 네이버홈 추천·구독으로 받아보세요."> </div> <div class="cont"> <em>InterBiz 인터비즈</em>님의 포스트를 <br/> 네이버홈에서 받아보기 </div> <div class="description">팔로우하고 네이버홈 추천·구독으로 받아보세요.</div> </div> <div class="btn_area"> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.close2');jQuery('.__template_popular_editor_follow').remove(); return false;">취소</a> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.add2');mug.contents.util.followAndMyFeedNoti('35786474', '', myFeedKey);">확인</a> </div> </div> <div class="dim on" onclick="mug.common.nclick(this, 'mfo.close2');jQuery('.__template_popular_editor_follow').remove(); return false;"></div> </div></script>
 <script type="text/javascript">
 !function($, window, document) {
 	function __closeOverflowMenu(delay) {
@@ -1750,7 +2177,7 @@ __fnExecMugFnList__();
 	});
 	$("#header .gnb button.__series").on("click", function(ev) {
 		ev.preventDefault();
-		location.href = "/my/series/detail.nhn?seriesNo=350574&memberNo=35786474&prevVolumeNo=11413091";
+		location.href = "/my/series/detail.naver?seriesNo=350574&memberNo=35786474&prevVolumeNo=34018927";
 	});
 
 
@@ -1819,65 +2246,52 @@ __fnExecMugFnList__();
 		});
 		window.refreshFollowBtnsForSE3 = refreshFollowBtnsForSE3;
 	})(jQuery, document, window);
-</script><script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/post_se3_viewer.js"></script>
-<script type="text/javascript" src="http://common.like.naver.com/static/js/likeIt.list.js?v=20180215"></script>
-<script type="text/javascript">
-var __volumeMetaJson = {
+</script><script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/post_se3_viewer.js"></script>
+<div id="floating_inf"></div>
+<script type="text/javascript" src="https://apollo-cdn.pstatic.net/influencer-sdk/influencer-sdk-0.0.6.cdn.js"></script>
+<link rel="stylesheet" type="text/css" href="https://apollo-cdn.pstatic.net/influencer-sdk/influencer-sdk-0.0.6.css"/>
+<script>
+	if(false == true) {
+		new mug.viewer.web.InfluencerSDKController(35786474, 6);
+	}
+</script><script type="text/javascript">
+window.__volumeMetaJson = {
 	volumeStatusType: "PUBLISHED"
 };
-window.__templateType__ = mug.viewer.templateType.UGC_CARD;
-(function(){
-	var bIsInapp = false;
-	var bIsViewRtLayer = 'false' === 'true';
-	var nVolumeNo = "11413091", nAuthorNo = "35786474";
-	var sProtectType = "0";
-	mug.viewer.se3.PcCardViewer.init({
-		"bIsInapp": bIsInapp, 
-		"bIsViewRtLayer": bIsViewRtLayer, 
-		"nVolumeNo": nVolumeNo,
-		"nAuthorNo": nAuthorNo,
-		"sProtectType": sProtectType,
-		"sLikeDomain": "http://common.like.naver.com",
-		"sStickerDomain": "http://m.gfmarket.naver.com"
+(function($, document, window) {
+	mug.viewer.se3.SimpleViewer.init({
+		volumeNo: 34018927,
+		authorNo: 35786474,
+		protectType: "0",
+		deviceType: "desktop",
+		stickerDomain: "http://m.gfmarket.naver.com",
+		isViewRestrictionLayer: 'false',
+		statUrl: 'https://post.stat.naver.com/post/article/34018927/cv',
+		isAuthorSelf: "false"
 	});
-})();
-(function(window, $) {
-	var isSoundPlatformSupported = "";
-	var se3Body = $(".se_body_wrap");
-	var soundPlayBtn = $(".__sound_play_info_div");
-	if (isSoundPlatformSupported == "true") {
-		$(window).scroll(function() {
-			if (isSoundPlatformSupported == "true") {
-				var fadePoint = $(se3Body).offset().top + $(se3Body).height() - 250;
-				
-				if (fadePoint < $(document).scrollTop() && soundPlayBtn.is(":visible")) {
-					soundPlayBtn.fadeOut();
-				} else if (fadePoint >= $(document).scrollTop() && !$(".__sound_play_info_div").is(":visible")) {
-					soundPlayBtn.fadeIn();
-				}
-				
-				if (!!window.__soundViewer) {
-					window.__soundViewer.scroll($(document).scrollTop());
-				}
-			}
-		});
-	}
-})(window, jQuery);
+})(jQuery, document, window);
 </script>
-<script type="text/x-mug-layer-template" id="__template_editor_warning">
-<div class="__template_editor_warning"> <div class="popup_w pop_link app_link" style="display:block;"> <div class="popup"> <div class="pop_cont"> 포스트앱/PC에서 작성한 글은<br/> 모바일웹에서 수정할 수 없습니다.<br/> 포스트앱에서 수정하시겠습니까? <button type="button" class="btn_t1" onclick="location.href='http://post.naver.com/appLauncher.nhn?scheme=open%3FvolumeNo%3D{=volumeNo}%26memberNo%3D{=memberNo}%26version%3D1'; return false;"><span>앱에서 수정하기</span></button> </div> <button class="btn_close" onclick="jQuery('.__template_editor_warning').remove(); return false;"><i class="blind">팝업닫기</i></button> </div> </div> <div class="dim on"></div> </div></script>
-<script type="text/x-mug-layer-template" id="__template_popular_editor_follow_MYFEED">
-	<div class="__template_popular_editor_follow"> <div class="popup_layer layer_myfeed_follow"> <div class="cont_area"> <div class="spot"> <img src="https://ssl.pstatic.net/static.post/image/im/layer_myfeed_171129.jpg" alt=""> </div> <div class="cont"> 팔로우하셨군요! <br/>다음 글은 <em>네이버홈 MY구독</em>에서 <br/> 쉽게 받아보세요. </div> </div> <div class="btn_area"> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.close');jQuery('.__template_popular_editor_follow').remove(); return false;">닫기</a> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.add');mug.contents.util.applyMyFeedNoti('35786474', '');">확인</a> </div> </div> <div class="dim on" onclick="mug.common.nclick(this, 'mfo.close');jQuery('.__template_popular_editor_follow').remove(); return false;"></div> </div></script>
 
-<script type="text/x-mug-layer-template" id="__template_popular_editor_follow_MYFEED_2nd">
-	<div class="__template_popular_editor_follow"> <div class="popup_layer layer_myfeed"> <div class="cont_area"> <div class="spot"> <img src="https://ssl.pstatic.net/static.post/image/im/layer_myfeed_171129.jpg" alt="팔로우하고 MY구독으로 받아보세요."> </div> <div class="cont"> <em>InterBiz 인터비즈</em>님의 포스트를 <br/> 네이버홈에서 받아보기 </div> <div class="description">팔로우하고 MY구독으로 받아보세요.</div> </div> <div class="btn_area"> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.close2');jQuery('.__template_popular_editor_follow').remove(); return false;">취소</a> <a href="#" class="btn" onclick="mug.common.nclick(this, 'mfo.add2');mug.contents.util.followAndMyFeedNoti('35786474', '', myFeedKey);">확인</a> </div> </div> <div class="dim on" onclick="mug.common.nclick(this, 'mfo.close2');jQuery('.__template_popular_editor_follow').remove(); return false;"></div> </div></script>
+<script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/renewal/naverTagManager.js"></script>
+<script type="text/javascript">
+	mug.common._nilSendInfo = {
+		"channelId" : '35786474',
+		"gdid" : '00055f7ca0_000207166f',
+		"volumeNo" : '34018927',
+		"isAuthorSelf" : 'false',
+		"isFollowingAuthor" :  'false',
+		"eventCategory" : 'post_view',
+		"seriesNo" : '350574'
+	}
+</script>
+<script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/renewal/mug.common.nil.js"></script>
 <script type="text/x-mug-layer-template" id="__custom_alert_layer_template">
 	<div class="ly_msg" id="__custom_alert_layer" style="z-index:5000;display:none;position:fixed;display:block;-webkit-animation:disappear {=duration}s ease-in-out;-webkit-animation-fill-mode:forwards">
 		<span>{=message}</span>
 	</div>
 </script>
 
-<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/renewal/gnbhandler.js"></script>
+<script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/renewal/gnbhandler.js"></script>
 
 
 
@@ -1895,25 +2309,13 @@ window.__templateType__ = mug.viewer.templateType.UGC_CARD;
 }(jQuery);
 
 </script>
-<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/lib/splog_m.js"></script>
+<script type="text/javascript" src="https://ssl.pstatic.net/static.post/static/m/202211090957/js/min/lib/splog_m.js"></script>
 <script type="text/javascript">
-	var splog_url = "http://sp.naver.com/sp";
+	var splog_url = "https://sp.naver.com/sp";
 	BMR.run(splog_url);
 </script>
 <script type="text/javascript">
-		mug.common._nilSendInfo = {
-			"channelId" : '35786474',
-			"gdid" : '00055f7ca0_0000ae2663',
-			"volumeNo" : '11413091',
-			"isAuthorSelf" : 'false',
-			"isFollowingAuthor" :  'false',
-			"eventCategory" : 'post_view',
-			"seriesNo" : '350574'
-		}
-	</script>
-	<script type="text/javascript" src="http://static.post.naver.net/static/m/2018020601/js/min/renewal/mug.common.nil.js"></script>
-<script type="text/javascript">
-window.nsc = "Mpost.viewer";
+	window.nsc = "Mpost.viewer";
 </script>
 </body>
 </html>

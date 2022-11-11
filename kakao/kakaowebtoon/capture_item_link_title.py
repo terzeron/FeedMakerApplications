@@ -45,7 +45,7 @@ def main():
     link = ""
     title = ""
     num_of_recent_feeds = 1000
-    feed_dir_path = Path(os.environ["FEED_MAKER_WORK_DIR"])
+    feed_dir_path = Path.cwd()
 
     optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
