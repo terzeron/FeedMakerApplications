@@ -34,7 +34,7 @@ def main() -> int:
         "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
         "tistory/nasica1": [ "../capture_item_tistory.py" ],
         "egloos/oblivion": [ "../capture_item_link_title.py" ],
-        "agit/vajrayaksa" : [ "../capture_item_agit.py", "../convert_agit_url_to_blacktoon.py" ],
+        "agit/_vajrayaksa" : [ "../capture_item_agit.py", "../convert_agit_url_to_blacktoon.py" ],
         "allall/990_thousand_returners_help_me" : [ "../capture_item_allall.py" ],
         #"buzztoon/_cheolbo" : [ "../capture_item_buzztoon.py", "../remove_anchor_images.py" ],
         #"copytoon/absolute_god_of_martial_arts" : [ "../capture_item_copytoon.py" ],
