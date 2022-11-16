@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
-        "https://funbe160.com/막장드라마의-제왕"
+        "https://funbe161.com/막장드라마의-제왕"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 2
