@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "list_url_list": [
+        "https://comic.naver.com/webtoon/list?titleId=802278"
+      ]
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "천하제일 대사형::네이버",
+      "description": "천하제일 대사형::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/world_first_eldest_brother_of_martial_family.xml",
+      "language": "ko"
+    }
+  }
+}
