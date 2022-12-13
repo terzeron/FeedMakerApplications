@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
+      "list_url_list": [
+        "https://comic.naver.com/webtoon/list?titleId=800770"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "재벌집 막내아들::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/youngest_son_of_business_tycoon_family.xml",
+      "title": "재벌집 막내아들::네이버"
+    }
+  }
+}
