@@ -1,36 +1,33 @@
 {
   "configuration": {
     "collection": {
+      "encoding": "cp949",
       "ignore_old_list": true,
       "is_completed": true,
-      "item_capture_script": "../capture_item_jmana.py -n 1000",
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
-        "https://jmana1.jjmana.net/comic_list_title?bookname=%ED%92%8D%EC%9A%B4+1%EB%B6%80",
-        "https://jmana1.jjmana.net/comic_list_title?bookname=%ED%92%8D%EC%9A%B4+2%EB%B6%80",
-        "https://jmana1.jjmana.net/comic_list_title?bookname=%ED%92%8D%EC%9A%B4+3%EB%B6%80",
-        "https://jmana1.jjmana.net/comic_list_title?bookname=%ED%92%8D%EC%9A%B4+4%EB%B6%80"
+        "https://wtwt169.com/v1?toon=3734"
       ],
-      "sort_field_pattern": "\\t(\\d+)\\.",
+      "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 0
     },
     "extraction": {
       "element_class_list": [
-        "view-con"
+        "wbody"
       ],
+      "encoding": "cp949",
       "post_process_script_list": [
-        "post_process_only_for_images.py -u",
-        "download_image.py",
-        "../remove_anchor_images.sh"
+        "download_image.py"
       ]
     },
     "rss": {
-      "copyright": "Copyright (c) JMana. All rights reserved.",
-      "description": "풍운::제이마나",
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "풍운::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/wind_and_cloud.xml",
-      "title": "풍운::제이마나",
-      "url_prefix_for_guid": "https://aboutdron.net"
+      "title": "풍운::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
     }
   }
 }
