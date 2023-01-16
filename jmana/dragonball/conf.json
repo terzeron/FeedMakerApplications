@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_jmana.py -n 300",
+      "list_url_list": [
+        "https://jmana1.jjmana.net/comic_list_title?bookname=드래곤볼+풀컬러+1부+소년편"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "view-con"
+      ],
+      "post_process_script_list": [
+        "post_process_only_for_images.py -u",
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) JMana. All rights reserved.",
+      "description": "드래곤볼::제이마나",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/dragonball.xml",
+      "title": "드래곤볼::제이마나",
+      "url_prefix_for_guid": "https://aboutdron.net"
+    }
+  }
+}
