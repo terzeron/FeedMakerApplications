@@ -35,7 +35,7 @@ def main() -> int:
         "tistory/nasica1": [ "../capture_item_tistory.py" ],
         "egloos/oblivion": [ "../capture_item_link_title.py" ],
         "agit/_vajrayaksa" : [ "../capture_item_agit.py", "../convert_agit_url_to_blacktoon.py" ],
-        "allall/990_thousand_returners_help_me" : [ "../capture_item_allall.py" ],
+        "allall/long_live_the_king" : [ "../capture_item_allall.py" ],
         #"buzztoon/_cheolbo" : [ "../capture_item_buzztoon.py", "../remove_anchor_images.py" ],
         #"copytoon/absolute_god_of_martial_arts" : [ "../capture_item_copytoon.py" ],
         "funbe/coin_of_lord_dont_decrease" : [ "../capture_item_funbe.py", "../post_process_funbe.py" ],
