@@ -2,12 +2,12 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_wfwf.py -n 10",
+      "item_capture_script": "../capture_item_wfwf.py -n 20",
       "sort_field_pattern": "num=(\\d+)\\t",
       "encoding": "cp949",
       "unit_size_per_day": 8,
       "list_url_list": [
-        "https://wfwf252.com/list?toon=4132"
+        "https://wfwf251.com/list?toon=4132"
       ]
     },
     "extraction": {
