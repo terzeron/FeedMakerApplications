@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
-        "https://funbe210.com/대도오"
+        "https://funbe211.com/대도오"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 3
