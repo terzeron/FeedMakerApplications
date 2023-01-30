@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_torrenttt.py -n 300",
+      "list_url_list": [
+        "https://torrenttt61.com/c/5/23?page=1"
+      ],
+      "post_process_script_list": [
+        "/usr/bin/grep -vP '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'"
+      ],
+      "sort_field_pattern": "t/(\\w+)",
+      "unit_size_per_day": 10
+    },
+    "extraction": {
+      "element_class_list": [
+        "w-full shadow-sm px-2 py-3 text-xs"
+      ],
+      "post_process_script_list": [],
+      "render_js": false,
+      "simulate_scrolling": false
+    },
+    "rss": {
+      "copyright": "Copyright (c) torrenttt. All rights reserved.",
+      "description": "토렌트티티",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/torrenttt.xml",
+      "title": "토렌트티티",
+      "url_prefix_for_guid": "https://torrenttt60.com"
+    }
+  }
+}
