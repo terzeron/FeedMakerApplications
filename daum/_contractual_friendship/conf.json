@@ -2,6 +2,7 @@
   "configuration": {
     "collection": {
       "item_capture_script": "../capture_item_daumwebtoon.py -n 10",
+      "window_size": 10,
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 4,
       "list_url_list": [

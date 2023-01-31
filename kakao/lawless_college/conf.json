@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "is_completed": false,
-      "item_capture_script": "../capture_item_kakaowebtoon.py -n 6",
+      "item_capture_script": "../capture_item_kakaowebtoon.py",
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2517/episodes?sort=-NO&offset=0&limit=30"
       ],

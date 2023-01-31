@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 10",
+      "item_capture_script": "../capture_item_naverwebtoon.py",
       "list_url_list": [
         "https://comic.naver.com/webtoon/list?titleId=784417"
       ],

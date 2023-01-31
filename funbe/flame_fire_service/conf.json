@@ -4,6 +4,7 @@
       "ignore_old_list": true,
       "is_completed": false,
       "item_capture_script": "../capture_item_funbe.py -n 10",
+      "window_size": 10,
       "list_url_list": [
         "https://funbe211.com/불꽃-소방대"
       ],

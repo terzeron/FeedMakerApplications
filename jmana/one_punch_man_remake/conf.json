@@ -3,6 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_jmana.py -n 10",
+      "window_size": 10,
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 1,
       "list_url_list": [
