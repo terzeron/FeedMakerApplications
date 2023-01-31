@@ -1,7 +1,7 @@
 {
   "keyword": "오늘부터 성주",
   "num_retries": 2,
-  "render_js": false,
+  "render_js": true,
   "timeout": 120,
   "url": "https://agit178.com/azi_toon/9316.html"
 }
