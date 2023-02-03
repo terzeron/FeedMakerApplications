@@ -39,7 +39,7 @@
       "description": "토렌트다이아",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/torrentdia.xml",
+      "link": "https://terzeron.com/torrentmode.xml",
       "title": "토렌트다이아",
       "url_prefix_for_guid": "https://torrentdia24.com"
     }
