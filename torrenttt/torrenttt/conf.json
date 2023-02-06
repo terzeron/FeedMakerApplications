@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": true,
-      "item_capture_script": "../capture_item_torrenttt.py -n 300",
+      "item_capture_script": "../capture_item_torrenttt.py -n 2000",
       "list_url_list": [
         "https://torrenttt61.com/c/5/23?page=46",
         "https://torrenttt61.com/c/5/23?page=45",
@@ -53,11 +53,11 @@
         "https://torrenttt61.com/c/5/23?page=1"
       ],
       "post_process_script_list": [
-        "/usr/bin/grep -vP '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'"
+        "/usr/bin/grep -vP '\\d+화'"
       ],
       "sort_field_pattern": "t/(\\w+)",
-      "unit_size_per_day": 10,
-      "window_size": 10
+      "unit_size_per_day": 20,
+      "window_size": 20
     },
     "extraction": {
       "element_class_list": [
