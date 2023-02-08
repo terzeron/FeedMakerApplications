@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
-        "https://toonkor184.com/패왕의-별"
+        "https://toonkor185.com/패왕의-별"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 2
