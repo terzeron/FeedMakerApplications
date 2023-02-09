@@ -56,8 +56,8 @@
         "/usr/bin/grep -vP '\\d+화'"
       ],
       "sort_field_pattern": "t/(\\w+)",
-      "unit_size_per_day": 20,
-      "window_size": 20
+      "unit_size_per_day": 40,
+      "window_size": 40
     },
     "extraction": {
       "element_class_list": [
