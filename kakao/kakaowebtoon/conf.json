@@ -7,11 +7,12 @@
       ],
       "post_process_script_list": [
         "/usr/bin/shuf",
-        "/usr/bin/tail -10"
+        "/usr/bin/tail -20"
       ],
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 1,
+      "window_size": 20
     },
     "extraction": {
       "bypass_element_extraction": true
