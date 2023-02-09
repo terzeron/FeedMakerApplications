@@ -7,7 +7,7 @@
       ],
       "post_process_script_list": [
         "/usr/bin/shuf",
-        "/usr/bin/tail -20"
+        "/usr/bin/tail -10"
       ],
       "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
