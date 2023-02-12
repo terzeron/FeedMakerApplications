@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
+      "list_url_list": [
+        "https://wtwt174.com/c1?toon=14606"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_class_list": [
+        "wbody"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "묵시록의 사기사::W툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/four_knights_of_the_apocalypse.xml",
+      "title": "묵시록의 사기사::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
