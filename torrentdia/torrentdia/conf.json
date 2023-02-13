@@ -1,10 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_torrentdia.py -n 10",
-      "window_size": 10,
+      "item_capture_script": "../capture_item_torrentdia.py -n 20",
+      "window_size": 120,
       "list_url_list": [
         "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieov",
         "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieov&page=2",
@@ -15,10 +15,8 @@
       ],
       "post_process_script_list": [
         "/usr/bin/grep -vP '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'",
-        "/usr/bin/grep -P '20[1-9][0-9]'",
-        "/usr/bin/grep -P '[가-힣]'",
-        "/usr/bin/shuf",
-        "/usr/bin/tail -20"
+        "/usr/bin/grep -P '20[0-9][0-9]'",
+        "/usr/bin/grep -P '[가-힣]'"
       ],
       "sort_field_pattern": "topic/(\\d+)",
       "unit_size_per_day": 120

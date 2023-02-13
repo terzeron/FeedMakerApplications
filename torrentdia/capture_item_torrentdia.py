@@ -34,7 +34,7 @@ def main() -> int:
             if m:
                 state = 2
         elif state == 2:
-            m = re.search(r'^\s*<a[^>]*href="https?://torrentdia\d+\.com(?P<link>[^"]*wr_id=\d+[^"&]*)(&page=\d+)?"[^>]*>\s*(?P<title>\S.+)\s*</a>$', line)
+            m = re.search(r'^\s*<a[^>]*href="https?://torrentdia\d+\.com(?P<link>[^"]*wr_id=\d+[^"&]*)(&amp;page=\d+)?"[^>]*>\s*(?P<title>\S.+)\s*</a>$', line)
             if m:
                 link = url_prefix + m.group("link")
                 link = re.sub(r'&amp;', '&', link)
@@ -50,7 +50,7 @@ def main() -> int:
                     result_list.append((link, title))
                     state = 1
             else:
-                m = re.search(r'^\s*<a href="https?://torrentdia\d+\.com(?P<link>[^"]*wr_id=\d+[^"&]*)(&page=\d+)?"[^>]*>', line)
+                m = re.search(r'^\s*<a href="https?://torrentdia\d+\.com(?P<link>[^"]*wr_id=\d+[^"&]*)(&amp;page=\d+)?"[^>]*>', line)
                 if m:
                     link = url_prefix + m.group("link")
                     link = re.sub(r'&amp;', '&', link)
