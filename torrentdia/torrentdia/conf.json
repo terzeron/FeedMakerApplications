@@ -6,12 +6,12 @@
       "item_capture_script": "../capture_item_torrentdia.py -n 20",
       "window_size": 120,
       "list_url_list": [
-        "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieov",
-        "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieov&page=2",
-        "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieov&page=3",
-        "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieko",
-        "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieko&page=2",
-        "https://torrentdia90.com/bbs/board.php?bo_table=torrent_movieko&page=3"
+        "https://torrentdia91.com/bbs/board.php?bo_table=torrent_movieov",
+        "https://torrentdia91.com/bbs/board.php?bo_table=torrent_movieov&page=2",
+        "https://torrentdia91.com/bbs/board.php?bo_table=torrent_movieov&page=3",
+        "https://torrentdia91.com/bbs/board.php?bo_table=torrent_movieko",
+        "https://torrentdia91.com/bbs/board.php?bo_table=torrent_movieko&page=2",
+        "https://torrentdia91.com/bbs/board.php?bo_table=torrent_movieko&page=3"
       ],
       "post_process_script_list": [
         "/usr/bin/grep -vP '(엉덩이 ?탐정|헬로 ?카봇|보증업체)'",
