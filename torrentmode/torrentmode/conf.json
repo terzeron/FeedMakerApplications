@@ -1,9 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": false,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_torrentmode.py -n 2000",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_torrentmode.py -n 4000",
       "window_size": 20,
       "list_url_list": [
         "https://torrentmode26.com/ani/p76?sca=극장판",
