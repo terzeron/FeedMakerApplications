@@ -1,10 +1,10 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_torrentsee.py -n 10",
-      "window_size": 10,
+      "item_capture_script": "../capture_item_torrentsee.py -n 100",
+      "window_size": 100,
       "list_url_list": [
         "https://torrentsee152.com/topic/index?category1=1&category2=10",
         "https://torrentsee152.com/topic/index?category1=1&category2=11",
