@@ -13,7 +13,7 @@
         "https://torrentsee152.com/topic/index?category1=102&category2=103"
       ],
       "post_process_script_list": [
-        "/usr/bin/grep -v -P '(엉덩이 ?탐정|헬로 ?카봇|보증업체|롤링토너먼트|상금|베팅|배팅|윈윈|마일리지)'",
+        "/usr/bin/grep -v -P '(엉덩이탐정|헬로 ?카봇|보증업체|롤링토너먼트|상금|베팅|배팅|윈윈|마일리지)'",
         "/usr/bin/grep -P '[가-힣]'"
       ],
       "sort_field_pattern": "topic/(\\d+)",
