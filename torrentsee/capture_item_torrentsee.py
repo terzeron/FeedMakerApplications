@@ -41,8 +41,9 @@ def main() -> int:
             m = re.search(r'^\s*(?P<title>.+?)\s*(</?\w+[^>]*>)?$', line)
             if m:
                 title = m.group("title")
-                if "보증업체" not in title:
-                    result_list.append((link, title))
+                title = re.sub(r'\s*</?\w+[^>]*>', '', title)
+                title = re.sub(r'\s*\[email&#160;protected\]', '', title)
+                result_list.append((link, title))
                 state = 2
 
     for (link, title) in result_list[:num_of_recent_feeds]:
