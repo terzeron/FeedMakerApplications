@@ -1,7 +1,8 @@
 {
   "keyword": "신조협려",
   "num_retries": 2,
-  "render_js": true,
+  "render_js": false,
   "timeout": 120,
+  "referer": "https://www.skytoon81.com",
   "url": "https://www.skytoon81.com/webtoon/weblist/17305"
 }

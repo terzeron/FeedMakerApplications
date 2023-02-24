@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_skytoon.py -n 5",
+      "list_url_list": [
+        "https://www.skytoon81.com/webtoons/weblist/17305"
+      ],
+      "render_js": true,
+      "referer": "https://www.skytoon81.com/",
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "view"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 스카이툰. All rights reserved.",
+      "description": "신조협려::스카이툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/return_of_condor_heroes.xml",
+      "title": "신조협려::스카이툰",
+      "url_prefix_for_guid": "https://skytoon81.com"
+    }
+  }
+}
