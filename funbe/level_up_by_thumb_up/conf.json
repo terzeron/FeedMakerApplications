@@ -19,11 +19,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) Funbe. All rights reserved.",
-      "description": "따봉으로 래벨업::Funbe",
+      "description": "따봉으로 레벨업::Funbe",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/level_up_by_thumb_up.xml",
-      "title": "따봉으로 래벨업::Funbe",
+      "title": "따봉으로 레벨업::Funbe",
       "url_prefix_for_guid": "https://funbe.site"
     }
   }
