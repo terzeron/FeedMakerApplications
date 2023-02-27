@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_funbe.py -n 300",
+      "list_url_list": [
+        "https://funbe218.com/리버스-빌런"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 3
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "post_process_script_list": [
+        "../post_process_funbe.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) Funbe. All rights reserved.",
+      "description": "리버스 빌런::Funbe",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/reverse_villain.xml",
+      "title": "리버스 빌런::Funbe",
+      "url_prefix_for_guid": "https://funbe.site"
+    }
+  }
+}
