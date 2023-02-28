@@ -3,8 +3,8 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_torrentsee.py -n 10",
-      "window_size": 60,
+      "item_capture_script": "../capture_item_torrentsee.py -n 5",
+      "window_size": 30,
       "list_url_list": [
         "https://torrentsee152.com/topic/index?category1=1&category2=10",
         "https://torrentsee152.com/topic/index?category1=1&category2=11",
