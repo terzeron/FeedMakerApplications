@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_torrenttt.py -n 20",
       "list_url_list": [
-        "https://torrenttt64.com/c/5/23"
+        "https://torrenttt65.com/c/5/23"
       ],
       "post_process_script_list": [
         "/usr/bin/grep -vP '\\d+화'"
