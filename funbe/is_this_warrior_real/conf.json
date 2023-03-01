@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
-        "https://funbe218.com/이-용사-실화냐"
+        "https://funbe220.com/이-용사-실화냐"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 3
