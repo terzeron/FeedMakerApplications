@@ -8,7 +8,8 @@
       "post_process_script_list": [
         "/usr/bin/shuf",
         "/usr/bin/tail -20"
-      ]
+      ],
+      "render_js": true
     },
     "extraction": {
       "element_class_list": [

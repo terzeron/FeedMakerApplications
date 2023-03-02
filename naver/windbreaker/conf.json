@@ -4,7 +4,8 @@
       "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
         "https://comic.naver.com/webtoon/list?titleId=602910"
-      ]
+      ],
+      "render_js": true
     },
     "extraction": {
       "force_sleep_between_articles": true,

@@ -6,7 +6,8 @@
       "unit_size_per_day": 8,
       "list_url_list": [
         "https://comic.naver.com/webtoon/list?titleId=746534"
-      ]
+      ],
+      "render_js": true
     },
     "extraction": {
       "force_sleep_between_articles": true,

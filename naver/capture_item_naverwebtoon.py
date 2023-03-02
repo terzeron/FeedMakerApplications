@@ -4,7 +4,7 @@
 import sys
 import re
 import getopt
-from feed_maker_util import IO
+from feed_maker_util import IO, URL
 
 
 def main():
@@ -21,38 +21,15 @@ def main():
     line_list = IO.read_stdin_as_line_list()
     result_list = []
     for line in line_list:
-        m = re.search(r'''
-        <a
-        \s+
-        href="/
-        (?P<url>
-        (?:
-        webtoon
-        |
-        challenge
-        |
-        bestChallenge
-        )
-        /detail
-        (?:\.(?:nhn|naver))?
-        [^"]*
-        no=(?P<title1>\d+)
-        [^"]*
-        )
-        "
-        [^>]*
-        >
-        (?P<title2>.+)
-        </a>
-        ''', line, re.VERBOSE)
-        if m:
-            url = m.group("url")
+        matches = re.findall(r'<a href="([^"]+)" class="EpisodeListList[^"]*">(?:\s*<div[^>]*>)?(?:\s*<img[^>]*>)?(?:\s*</div>)?(?:\s*<div[^>]*>)?(?:\s*<p[^>]*>)?\s*<span class="EpisodeListList[^"]*">\s*(.*?)\s*</span>', line)
+        for match in matches:
+            url = match[0]
+            title = match[1]
             if re.search(r'no=\d+IBUS', url):
                 continue
             url = re.sub("&amp;", "&", url)
             url = re.sub(r"&week(day)?=\w\w\w", "", url)
-            link = url_prefix + url
-            title = "%04d. %s" % (int(m.group("title1")), m.group("title2"))
+            link = URL.concatenate_url(url_prefix, url)
             result_list.append((link, title))
 
     for (link, title) in result_list[:num_of_recent_feeds]:
