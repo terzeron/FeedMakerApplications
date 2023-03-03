@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
-        "https://comic.naver.com/webtoon/list?titleId=785727"
+        "https://comic.naver.com/webtoon/list?titleId=785727&sort=DESC"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1,
