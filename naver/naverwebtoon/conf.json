@@ -6,6 +6,8 @@
         "https://comic.naver.com/api/webtoon/titlelist/weekday?order=user"
       ],
       "post_process_script_list": [
+        "/usr/bin/shuf",
+        "/usr/bin/tail -40"
       ],
       "window_size": 100
     },
@@ -20,7 +22,7 @@
     },
     "rss": {
       "title": "네이버웹툰목록",
-      "description": "네이버웹툰목록 - 모바일 버전 RSS Feed",
+      "description": "네이버웹툰목록",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
       "link": "https://terzeron.com/naverwebtoon.xml",
