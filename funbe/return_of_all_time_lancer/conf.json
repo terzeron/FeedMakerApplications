@@ -19,11 +19,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) Funbe. All rights reserved.",
-      "description": "1레벨 플레이어::Funbe",
+      "description": "역대급 창기사의 귀환::Funbe",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/return_of_all_time_lancer.xml",
-      "title": "1레벨 플레이어::Funbe",
+      "title": "역대급 창기사의 귀환::Funbe",
       "url_prefix_for_guid": "https://funbe.site"
     }
   }
