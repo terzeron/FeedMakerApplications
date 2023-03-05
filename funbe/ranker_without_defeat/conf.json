@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
-        "https://funbe220.com/무패의-랭커"
+        "https://funbe221.com/무패의-랭커"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 3
