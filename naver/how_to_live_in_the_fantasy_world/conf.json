@@ -10,10 +10,10 @@
       "render_js": true
     },
     "extraction": {
+      "force_sleep_between_articles": true,
       "element_class_list": [
         "wt_viewer"
       ],
-      "force_sleep_between_articles": true,
       "post_process_script_list": [
         "download_image.py"
       ]
