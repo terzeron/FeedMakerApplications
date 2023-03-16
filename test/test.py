@@ -28,8 +28,8 @@ def main() -> int:
     test_subjects = {
         "naver/navercast": [ "../capture_item_navercast.py" ],
         "naver/naverblog.pjwwoo": [ "../capture_item_naverblog.py" ],
-        "naver/private_educational_institute_in_end_of_a_century": [ "../capture_item_naverwebtoon.py" ],
-        "naver/naverwebtoon": [ "./capture_item_link_title.py", "./post_process_naverwebtoon.py" ],
+        "naver/castle": [ "../capture_item_naverwebtoon.py" ],
+        "naver/naverwebtoon": [ "./capture_item_link_title.py", "./post_process_naverwebtoon.py 'http://comic.naver.com/webtoon/list?titleId=801711'" ],
         "naver/naverpost.interbiz": [ "../capture_item_naverpost.py", "../post_process_naverpost.py" ],
         "kakao/kakaowebtoon": [ "./capture_item_link_title.py" ],
         "tistory/nasica1": [ "../capture_item_tistory.py" ],
@@ -44,7 +44,7 @@ def main() -> int:
         #"marumaru/vegabond" : [ "../capture_item_marumaru.py" ],
         #"ornson/weird_taoist_of_mudang" : [ "../capture_item_ornson.py" ],
         "toonkor/devil_king_in_this_world" : [ "../capture_item_toonkor.py", "../post_process_toonkor.py" ],
-        "torrentdia/torrentdia" : [ "../capture_item_torrentdia.py" ],
+        "torrentsee/torrentsee" : [ "../capture_item_torrentsee.py" ],
         "wfwf/warrior_at_fff_level" : [ "../capture_item_wfwf.py", "../remove_anchor_images.sh" ],
         "wtwt/a_returners_magic_should_be_special" : [ "../capture_item_wtwt.py" ],
     }
