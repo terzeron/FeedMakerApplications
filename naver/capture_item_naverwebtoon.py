@@ -4,33 +4,35 @@
 import sys
 import re
 import getopt
+import json
 from feed_maker_util import IO, URL
 
 
 def main():
     link = ""
     title = ""
-    url_prefix = "https://comic.naver.com/"
+    url_template = "https://comic.naver.com/webtoon/detail?titleId=%d&no=%d"
 
     num_of_recent_feeds = 1000
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
+    optlist, args = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
 
-    line_list = IO.read_stdin_as_line_list()
+    content = IO.read_stdin()
+    data = json.loads(content)
     result_list = []
-    for line in line_list:
-        matches = re.findall(r'<a href="([^"]+)" class="EpisodeListList[^"]*">(?:\s*<div[^>]*>)?(?:\s*<img[^>]*>)?(?:\s*</div>)?(?:\s*<div[^>]*>)?(?:\s*<p[^>]*>)?\s*<span class="EpisodeListList[^"]*">\s*(.*?)\s*</span>', line)
-        for match in matches:
-            url = match[0]
-            title = match[1]
-            if re.search(r'no=\d+IBUS', url):
-                continue
-            url = re.sub("&amp;", "&", url)
-            url = re.sub(r"&week(day)?=\w\w\w", "", url)
-            link = URL.concatenate_url(url_prefix, url)
-            result_list.append((link, title))
+    if "titleId" in data and data["titleId"]:
+        title_id = data["titleId"]
+        if "articleList" in data and data["articleList"]:
+            article_list = data["articleList"]
+            for article in article_list:
+                if "no" in article and article["no"]:
+                    no = article["no"]
+                    link = url_template % (title_id, no)
+                if "subtitle" in article and article["subtitle"]:
+                    title = article["subtitle"]
+                result_list.append((link, title))
 
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))

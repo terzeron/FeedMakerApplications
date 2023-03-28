@@ -5,9 +5,9 @@
       "sort_field_pattern": "no=(\\d+)",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "https://comic.naver.com/webtoon/list?titleId=765470&sort=DESC"
+        "https://comic.naver.com/api/article/list?titleId=765470&sort=DESC"
       ],
-      "render_js": true
+      "render_js": false
     },
     "extraction": {
       "force_sleep_between_articles": true,

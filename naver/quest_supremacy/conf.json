@@ -3,14 +3,14 @@
     "collection": {
       "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
       "list_url_list": [
-        "https://comic.naver.com/webtoon/list?titleId=783052&sort=DESC",
-        "https://comic.naver.com/webtoon/list?titleId=783052&page=2&sort=DESC",
-        "https://comic.naver.com/webtoon/list?titleId=783052&page=3&sort=DESC",
-        "https://comic.naver.com/webtoon/list?titleId=783052&page=4&sort=DESC"
+        "https://comic.naver.com/api/article/list?titleId=783052&sort=DESC",
+        "https://comic.naver.com/api/article/list?titleId=783052&page=2&sort=DESC",
+        "https://comic.naver.com/api/article/list?titleId=783052&page=3&sort=DESC",
+        "https://comic.naver.com/api/article/list?titleId=783052&page=4&sort=DESC"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1,
-      "render_js": true,
+      "render_js": false,
       "is_completed": true,
       "ignore_old_list": true
     },
