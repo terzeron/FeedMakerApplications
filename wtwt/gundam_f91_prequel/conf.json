@@ -7,10 +7,11 @@
       "encoding": "cp949",
       "unit_size_per_day": 2,
       "list_url_list": [
-        "https://wtwt180.com/c1?toon=14526"
+        "https://wtwt181.com/c1?toon=14526"
       ]
     },
     "extraction": {
+      "force_sleep_between_articles": true,
       "encoding": "cp949",
       "element_class_list": [
         "wbody"

@@ -6,12 +6,13 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
-        "https://wtwt180.com/v1?toon=5514"
+        "https://wtwt181.com/v1?toon=5514"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 2
     },
     "extraction": {
+      "force_sleep_between_articles": true,
       "element_class_list": [
         "wbody"
       ],
