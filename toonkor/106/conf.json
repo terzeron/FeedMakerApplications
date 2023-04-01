@@ -2,8 +2,8 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_toonkor.py -n 300",
+      "is_completed": false,
+      "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
         "https://toonkor199.com/106"
       ],
