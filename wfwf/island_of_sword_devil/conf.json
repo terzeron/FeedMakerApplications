@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_wfwf.py -n 5",
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "encoding": "cp949",
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://wfwf264.com/list?toon=9692"
+      ]
+    },
+    "extraction": {
+      "encoding": "cp949",
+      "element_class_list": [
+        "image-view"
+      ],
+      "post_process_script_list": [
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "title": "검마도::늑대닷컴",
+      "description": "검마도::늑대닷컴",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "link": "https://terzeron.com/island_of_sword_devil.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://wfwf24.com"
+    }
+  }
+}
