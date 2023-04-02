@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_funbe.py -n 5",
+      "item_capture_script": "../capture_item_funbe.py -n 20",
       "list_url_list": [
         "https://funbe228.com/검술명가-막내아들"
       ],
