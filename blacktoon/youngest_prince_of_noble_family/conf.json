@@ -1,6 +1,7 @@
 {
   "configuration": {
     "collection": {
+      "is_completed": true,
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_blacktoon.py -n 300",
       "list_url_list": [
