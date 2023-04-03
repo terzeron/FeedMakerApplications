@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_funbe.py -n 300",
+      "list_url_list": [
+        "https://funbe229.com/성자는-개뿔-현대의학의-힘이다"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 3
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "post_process_script_list": [
+        "../post_process_funbe.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) Funbe. All rights reserved.",
+      "description": "성자는 개뿔 현대 의학의 힘이다::Funbe",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/saint_is_bullshit_and_this_is_power_of_modern_medicine.xml",
+      "title": "성자는 개뿔 현대 의학의 힘이다::Funbe",
+      "url_prefix_for_guid": "https://funbe.site"
+    }
+  }
+}
