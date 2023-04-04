@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_agit.py -n 300",
       "list_url_list": [
-        "https://agit186.com/azi_toon/11700.html"
+        "https://agit187.com/azi_toon/11700.html"
       ],
       "render_js": true,
       "sort_field_pattern": "\\t(\\d+) -",
