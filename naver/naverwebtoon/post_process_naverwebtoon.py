@@ -8,7 +8,6 @@ import json
 import getopt
 import logging
 import logging.config
-import pprint
 from typing import List
 from pathlib import Path
 from feed_maker_util import IO, Process, Config, URL, header_str
@@ -53,7 +52,7 @@ def main() -> int:
             print("<p>" + json_data["synopsis"] + "</p>")
         if "thumbnailUrl" in json_data:
             print("<p><img src='" + json_data["thumbnailUrl"] + "'></p>")
-    
+
     config = Config(feed_dir_path)
     if not config:
         LOGGER.error("can't read configuration")

@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "list_url_list": [
-        "https://comic.naver.com/api/api/article/titlelist/weekday?order=user"
+        "https://comic.naver.com/api/webtoon/titlelist/weekday?order=user"
       ],
       "post_process_script_list": [
         "/usr/bin/shuf",
@@ -12,12 +12,12 @@
       "window_size": 100
     },
     "extraction": {
-      "render_js": false,
+      "render_js": true,
       "element_class_path": [
         "//*[@id='content']/div[1]"
       ],
       "post_process_script_list": [
-        "./post_process_naverapi/article.py"
+        "./post_process_naverwebtoon.py"
       ]
     },
     "rss": {
@@ -25,7 +25,7 @@
       "description": "네이버웹툰목록",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
-      "link": "https://terzeron.com/naverapi/article.xml",
+      "link": "https://terzeron.com/naverwebtoon.xml",
       "language": "ko"
     }
   }
