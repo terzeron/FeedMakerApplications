@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
-        "https://toonkor201.com/마인화산"
+        "https://toonkor202.com/마인화산"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 3
