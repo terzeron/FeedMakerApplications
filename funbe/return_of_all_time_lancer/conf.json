@@ -1,11 +1,11 @@
-
+{
   "configuration": {
     "collection": {
       "ignore_old_list": true,
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
-        "https://funbe220.com/역대급-창기사의-회귀"
+        "https://funbe233.com/역대급-창기사의-회귀"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 3

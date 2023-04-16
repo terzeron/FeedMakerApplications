@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "list_url_list": [
-        "https://funbe232.com/잠만-자도-랭커"
+        "https://funbe233.com/잠만-자도-랭커"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 3
