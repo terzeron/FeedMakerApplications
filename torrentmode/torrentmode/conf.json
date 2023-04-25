@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_torrentmode.py -n 300",
+      "item_capture_script": "../capture_item_torrentmode.py -n 5",
       "list_url_list": [
         "https://torrentmode33.com/ani/p1?sca=극장판"
       ],
