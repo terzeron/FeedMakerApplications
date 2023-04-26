@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_torrentmode.py -n 5",
       "list_url_list": [
-        "https://torrentmode33.com/ani/p1?sca=극장판"
+        "https://torrentmode35.com/ani/p1?sca=극장판"
       ],
       "post_process_script_list": [],
       "sort_field_pattern": "/\\w+/(\\d+)",
