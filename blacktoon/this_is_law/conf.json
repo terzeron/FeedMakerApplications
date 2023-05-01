@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
-        "https://blacktoon237.com/webtoon/9751.html"
+        "https://blacktoon238.com/webtoon/9751.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
