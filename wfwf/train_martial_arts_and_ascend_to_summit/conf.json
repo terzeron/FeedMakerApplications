@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_wfwf.py -n 10",
+      "item_capture_script": "../capture_item_wfwf.py -n 20",
       "window_size": 10,
       "sort_field_pattern": "num=(\\d+)\\t",
       "encoding": "cp949",
