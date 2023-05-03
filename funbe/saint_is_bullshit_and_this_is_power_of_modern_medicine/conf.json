@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_funbe.py -n 5",
       "list_url_list": [
-        "https://funbe237.com/성자는-개뿔-현대의학의-힘이다"
+        "https://funbe238.com/성자는-개뿔-현대의학의-힘이다"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 3
