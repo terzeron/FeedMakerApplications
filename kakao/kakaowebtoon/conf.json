@@ -7,12 +7,16 @@
       ],
       "post_process_script_list": [
         "/usr/bin/shuf",
-        "/usr/bin/tail -20"
+        "/usr/bin/tail -40"
       ],
-      "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 1,
-      "window_size": 20
+      "window_size": 20,
+      "header_list": [
+        {
+          "accept-language": "ko"
+        }
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true
