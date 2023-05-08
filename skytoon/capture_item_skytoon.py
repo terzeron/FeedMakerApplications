@@ -46,15 +46,19 @@ def main() -> int:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<div class="body">', line)
+            m = re.search(r'회차선택', line)
             if m:
                 state = 2
         elif state == 2:
+            m = re.search(r'<div class="body">', line)
+            if m:
+                state = 3
+        elif state == 3:
             m = re.search(r'</ul>', line)
             if m:
                 break
-            
-            m = re.search(r'<li [^>]*onclick="location.href=\'(?P<link>[^\']+)\'"[^>]*><p>(?P<title>[^<]+)', line)
+
+            m = re.search(r'<li [^>]*><a href="(?P<link>[^"]+)"><p>(?P<title>.+)</p>', line)
             if m:
                 link = url_prefix + m.group("link")
                 title = m.group("title")

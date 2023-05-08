@@ -5,10 +5,9 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_skytoon.py -n 300",
       "list_url_list": [
-        "https://www.skytoon92.com/webtoons/weblist/17305"
+        "https://www.skytoon92.com/webtoon/weblist/17305"
       ],
-      "render_js": true,
-      "referer": "https://www.skytoon81.com/",
+      "referer": "https://www.skytoon92.com/",
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1
     },
