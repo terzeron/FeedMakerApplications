@@ -5,9 +5,11 @@
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2511/episodes?sort=-NO&offset=0&limit=30"
       ],
-      "render_js": true,
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 1,
+      "header_list": [
+        { "accept-language": "ko" }
+      ]
     },
     "extraction": {
       "element_class_list": [

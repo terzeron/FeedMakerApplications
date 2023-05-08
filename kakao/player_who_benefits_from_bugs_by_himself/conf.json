@@ -1,12 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "render_js": true,
       "item_capture_script": "../capture_item_kakaowebtoon.py -n 5",
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/1929/episodes?sort=-NO&offset=0&limit=30"
+      ],
+      "header_list": [
+        { "accept-language": "ko" }
       ]
     },
     "extraction": {
