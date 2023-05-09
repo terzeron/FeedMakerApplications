@@ -7,9 +7,7 @@
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2043/episodes?sort=-NO&offset=0&limit=30"
       ],
-      "header_list": [
-        { "accept-language": "ko" }
-      ]
+      "headers": { "accept-language": "ko" }
     },
     "extraction": {
       "element_class_list": [

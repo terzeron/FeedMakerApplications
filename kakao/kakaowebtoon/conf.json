@@ -12,11 +12,7 @@
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 1,
       "window_size": 40,
-      "header_list": [
-        {
-          "accept-language": "ko"
-        }
-      ]
+      "headers": { "accept-language": "ko" }
     },
     "extraction": {
       "bypass_element_extraction": true

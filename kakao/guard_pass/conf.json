@@ -7,9 +7,7 @@
       ],
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 1,
-      "header_list": [
-        { "accept-language": "ko" }
-      ]
+      "headers": { "accept-language": "ko" }
     },
     "extraction": {
       "element_class_list": [
