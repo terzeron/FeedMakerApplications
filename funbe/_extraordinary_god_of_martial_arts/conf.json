@@ -5,9 +5,10 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 300",
       "sort_field_pattern": "(\\d+)화",
-      "referer": "https://funbe.ink/",
       "unit_size_per_day": 24,
-      "list_url_list": []
+      "list_url_list": [
+        "https://funbe240.com/절세무신"
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true,
