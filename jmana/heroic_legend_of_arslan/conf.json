@@ -6,7 +6,7 @@
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "https://jmana1.jjmana.net/comic_list_title?bookname=아르슬란+전기"
+        "https://kr23.jmana24/comic_list_title?bookname=아르슬란+전기"
       ]
     },
     "extraction": {
