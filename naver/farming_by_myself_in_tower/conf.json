@@ -1,0 +1,28 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "list_url_list": [
+        "https://comic.naver.com/api/article/list?titleId=808389&sort=DESC"
+      ],
+      "render_js": false
+    },
+    "extraction": {
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "나 혼자 탑에서 농사::네이버",
+      "description": "나 혼자 탑에서 농사::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/farming_by_myself_in_tower.xml",
+      "language": "ko"
+    }
+  }
+}
