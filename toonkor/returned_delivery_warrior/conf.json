@@ -7,7 +7,7 @@
       "list_url_list": [
         "https://tkr220.com/webtoon/8756"
       ],
-      "sort_field_pattern": "\\t(\\d+)\\.",
+      "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2
     },
     "extraction": {
