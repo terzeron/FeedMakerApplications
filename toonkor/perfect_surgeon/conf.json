@@ -5,9 +5,9 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_toonkor.py -n 300",
       "list_url_list": [
-        "https://tkr220.com/webtoon/8190"
+        "https://tkr219.com/webtoon/8190"
       ],
-      "sort_field_pattern": "\\t(\\d+)\\.",
+      "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 1
     },
     "extraction": {
