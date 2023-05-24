@@ -18,7 +18,7 @@ def main():
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'var toon_img\s*=\s*\x27(?P<str>[^\x27]+)\x27', line)
+            m = re.search(r'var tnimg\s*=\s*\x27(?P<str>[^\x27]+)\x27', line)
             if m:
                 str = m.group("str")
                 html = base64.b64decode(str).decode("utf-8")
