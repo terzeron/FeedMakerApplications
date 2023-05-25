@@ -7,7 +7,7 @@
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 4,
       "list_url_list": [
-        "https://kr24.jmana25/comic_list_title?bookname=더+페이블%28The+Fable%29"
+        "https://kr25.jmana.one/comic_list_title?bookname=더+페이블%28The+Fable%29"
       ]
     },
     "extraction": {
