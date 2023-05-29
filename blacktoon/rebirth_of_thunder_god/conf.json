@@ -4,7 +4,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
-        "https://blacktoon241.com/webtoon/9415.html"
+        "https://blacktoon242.com/webtoon/9415.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
