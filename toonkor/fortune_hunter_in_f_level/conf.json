@@ -8,7 +8,7 @@
         "https://tkr223.com/webtoon/10261"
       ],
       "sort_field_pattern": "\\t(\\d+)",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 1
     },
     "extraction": {
       "bypass_element_extraction": true,
