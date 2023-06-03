@@ -6,7 +6,7 @@
       "item_capture_script": "../capture_item_jmana.py -n 10",
       "window_size": 10,
       "list_url_list": [
-        "https://kr25.jmana.one/comic_list_title?bookname=우주+형제"
+        "https://kr25.jmana26/comic_list_title?bookname=우주+형제"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 4
