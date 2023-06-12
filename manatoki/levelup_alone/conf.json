@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "render_js": true,
+      "item_capture_script": "../capture_item_manatoki.py -n 300",
+      "sort_field_pattern": "\\/(\\d+)\\t",
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "https://newtoki292.com/webtoon/46711"
+      ]
+    },
+    "extraction": {
+      "render_js": true,
+      "simulate_scrolling": true,
+      "timeout": 480,
+      "element_class_list": [
+        "view-padding"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "나 혼자만 레벨업::마나토끼",
+      "description": "나 혼자만 레벨업::마나토끼",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Manatoki. All rights reserved.",
+      "link": "https://terzeron.com/levelup_alone.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://manatoki217.com"
+    }
+  }
+}
