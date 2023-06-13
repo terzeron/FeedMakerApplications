@@ -3,12 +3,13 @@
     "collection": {
       "encoding": "cp949",
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_wtwt.py -n 5",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
         "https://wtwt191.com/v1?toon=781"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 3
     },
     "extraction": {
       "force_sleep_between_articles": true,
@@ -22,7 +23,7 @@
     },
     "rss": {
       "copyright": "Copyright (c) W툰. All rights reserved.",
-      "description": "나 혼자만 레벨업::W툰 - 모바일 버전 RSS Feed",
+      "description": "나 혼자만 레벨업::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/level_up_alone.xml",
