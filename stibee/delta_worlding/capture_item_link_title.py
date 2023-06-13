@@ -32,10 +32,8 @@ def main():
                 title = item["subject"]
                 result_list.append((link, title))
 
-    num = 1
     for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%003d. %s" % (link, num, title))
-        num = num + 1
+        print("%s\t%s" % (link, title))
                 
             
 if __name__ == "__main__":
