@@ -8,7 +8,7 @@
         "https://blacktoon245.com/webtoon/13560.html"
       ],
       "render_js": true,
-      "sort_field_pattern": "(\\d+)화",
+      "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2
     },
     "extraction": {
