@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_toonkor.py -n 300",
+      "list_url_list": [
+        "https://tkr230.com/webtoon/9752"
+      ],
+      "sort_field_pattern": "\\t(\\d+)",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "post_process_script_list": [
+        "../post_process_toonkor.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) ToonKor. All rights reserved.",
+      "description": "잘 보이는 무림티비::ToonKor",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/good_looking_martial_world_tv.xml",
+      "title": "잘 보이는 무림티비::ToonKor",
+      "url_prefix_for_guid": "https://toonkor132.com"
+    }
+  }
+}
