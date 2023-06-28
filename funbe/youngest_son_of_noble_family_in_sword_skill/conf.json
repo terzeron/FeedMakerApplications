@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_funbe.py -n 20",
       "list_url_list": [
-        "https://funbe261.com/검술명가-막내아들"
+        "https://funbe262.com/검술명가-막내아들"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 3,
