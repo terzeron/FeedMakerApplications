@@ -8,9 +8,7 @@
       "ignore_old_list": true,
       "list_url_list": [
         "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30",
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=2&categoryNo=&parentCategoryNo=&countPerPage=30",
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=3&categoryNo=&parentCategoryNo=&countPerPage=30",
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=4&categoryNo=&parentCategoryNo=&countPerPage=30"
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=2&categoryNo=&parentCategoryNo=&countPerPage=30"
       ]
     },
     "extraction": {
