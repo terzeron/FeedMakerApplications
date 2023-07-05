@@ -4,7 +4,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
-        "https://kr29.jmana.one/comic_list_title?bookname=성녀의+마력은+만능입니다"
+        "https://kr30.jmana.one/comic_list_title?bookname=성녀의+마력은+만능입니다"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 0.5
