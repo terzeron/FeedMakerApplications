@@ -1,14 +1,13 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverblog.py -n 300",
+      "item_capture_script": "../capture_item_naverblog.py -n 5",
       "sort_field_pattern": "&logNo=(\\d+)",
       "unit_size_per_day": 2,
-      "is_completed": true,
-      "ignore_old_list": true,
+      "is_completed": false,
+      "ignore_old_list": false,
       "list_url_list": [
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30",
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=2&categoryNo=&parentCategoryNo=&countPerPage=30"
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=ranto28&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
       ]
     },
     "extraction": {
