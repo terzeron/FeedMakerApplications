@@ -5,7 +5,7 @@
       "ignore_old_list": false,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
-        "https://blacktoon248.com/webtoon/12010.html"
+        "https://blacktoon249.com/webtoon/12010.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",

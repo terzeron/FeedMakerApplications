@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_blacktoon.py -n 300",
       "list_url_list": [
-        "https://blacktoon248.com/webtoon/9576.html"
+        "https://blacktoon249.com/webtoon/9576.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
