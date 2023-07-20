@@ -7,9 +7,7 @@
       "is_completed": false,
       "ignore_old_list": false,
       "list_url_list": [
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=professionaldog&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30",
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=professionaldog&viewdate=&currentPage=2&categoryNo=&parentCategoryNo=&countPerPage=30",
-        "https://blog.naver.com/PostTitleListAsync.naver?blogId=professionaldog&viewdate=&currentPage=3&categoryNo=&parentCategoryNo=&countPerPage=30"
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=professionaldog&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
       ]
     },
     "extraction": {
