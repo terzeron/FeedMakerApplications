@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
         "https://kr32.jmana.one/comic_list_title?bookname=빈란드+사가"
@@ -21,7 +21,7 @@
     },
     "rss": {
       "copyright": "Copyright (c) JMana. All rights reserved.",
-      "description": "빈란드 사가::제이마나 - 모바일 버전 RSS Feed",
+      "description": "빈란드 사가::제이마나",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/vinland_saga.xml",
