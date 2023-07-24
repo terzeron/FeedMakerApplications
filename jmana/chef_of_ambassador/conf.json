@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_jmana.py -n 300",
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 4,
+      "list_url_list": [
+        "https://kr32.jmana.one/comic_list_title?bookname=대사각하의+요리사"
+      ]
+    },
+    "extraction": {
+      "element_class_list": [
+        "view-con"
+      ],
+      "post_process_script_list": [
+        "post_process_only_for_images.py -u",
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "title": "대사각하의 요리사::제이마나",
+      "description": "대사각하의 요리사::제이마나",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) JMana. All rights reserved.",
+      "link": "https://terzeron.com/chef_of_ambassador.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://aboutdron.net"
+    }
+  }
+}
