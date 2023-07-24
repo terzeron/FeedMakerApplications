@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 1,
@@ -21,7 +21,7 @@
     },
     "rss": {
       "title": "터무니 없는 스킬로 이세계 방랑밥::제이마나",
-      "description": "터무니 없는 스킬로 이세계 방랑밥::제이마나 - 모바일 버전 RSS Feed",
+      "description": "터무니 없는 스킬로 이세계 방랑밥::제이마나",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) JMana. All rights reserved.",
       "link": "https://terzeron.com/cooking_with_special_skills_in_the_different_world.xml",
