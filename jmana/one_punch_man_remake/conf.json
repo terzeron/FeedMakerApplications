@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "item_capture_script": "../capture_item_jmana.py -n 10",
       "window_size": 10,
       "sort_field_pattern": "\\t(\\d+)\\.",
@@ -22,7 +22,7 @@
     },
     "rss": {
       "title": "원펀맨 리메이크::제이마나",
-      "description": "원펀맨 리메이크::제이마나 - 모바일 버전 RSS Feed",
+      "description": "원펀맨 리메이크::제이마나",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) JMana. All rights reserved.",
       "link": "https://terzeron.com/one_punch_man_remake.xml",
