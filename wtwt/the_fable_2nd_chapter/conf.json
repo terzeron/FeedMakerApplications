@@ -9,7 +9,7 @@
         "https://wtwt198.com/c1?toon=15736"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 3
+      "unit_size_per_day": 1
     },
     "extraction": {
       "force_sleep_between_articles": true,
