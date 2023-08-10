@@ -6,7 +6,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
-        "https://wtwt199.com/v1?toon=9147"
+        "https://wtwt200.com/v1?toon=9147"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1
