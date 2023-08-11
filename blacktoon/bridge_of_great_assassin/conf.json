@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_blacktoon.py -n 5",
+      "list_url_list": [
+        "https://blacktoon252.com/webtoon/13812.html"
+      ],
+      "render_js": true,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "element_id_list": [
+        "toon_content_imgs"
+      ],
+      "post_process_script_list": [
+        "../convert_blacktoon_url_to_blacktoon.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 블랙툰. All rights reserved.",
+      "description": "대자객교::블랙툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/bridge_of_great_assassin.xml",
+      "title": "대자객교::블랙툰",
+      "url_prefix_for_guid": "https://blacktoon172.com"
+    }
+  }
+}
