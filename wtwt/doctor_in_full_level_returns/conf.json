@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
+      "list_url_list": [
+        "https://wtwt200.com/v1?toon=70366"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wbody"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "만렙 닥터 리턴즈::W툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/doctor_in_full_level_returns.xml",
+      "title": "만렙 닥터 리턴즈::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
