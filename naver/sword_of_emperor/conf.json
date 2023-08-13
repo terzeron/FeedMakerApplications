@@ -8,8 +8,8 @@
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1,
       "render_js": false,
-      "is_complete": true,
-      "ignore_old_list": true
+      "is_complete": false,
+      "ignore_old_list": false
     },
     "extraction": {
       "force_sleep_between_articles": true,
