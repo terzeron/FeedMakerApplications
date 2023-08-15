@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverblog.py -n 300",
+      "item_capture_script": "../capture_item_naverblog.py -n 3000",
       "sort_field_pattern": "&logNo=(\\d+)",
       "unit_size_per_day": 1,
       "is_completed": true,
