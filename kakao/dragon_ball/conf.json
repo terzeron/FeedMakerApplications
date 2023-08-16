@@ -10,8 +10,8 @@
       "headers": { "accept-language": "ko" }
     },
     "extraction": {
-      "element_class_list": [
-        "page"
+      "element_id_list": [
+        "root"
       ],
       "post_process_script_list": [
         "download_image.py",
