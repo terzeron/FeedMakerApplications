@@ -6,17 +6,24 @@
       "sort_field_pattern": "no=(\\d+)",
       "unit_size_per_day": 48,
       "list_url_list": [
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=735&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=770&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=805&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=840&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=875&where=0",
-
+        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=0&where=0",
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=35&where=0",
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=70&where=0",
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=105&where=0",
         "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=140&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=175&where=0"
+        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=175&where=0",
+        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=210&where=0",
+        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=245&where=0",
+        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=280&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=0&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=35&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=70&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=105&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=140&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=175&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=210&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=245&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=280&where=0"
       ]
     },
     "extraction": {
@@ -26,7 +33,7 @@
     },
     "rss": {
       "title": "MMZ Forum",
-      "description": "MMZ Forum - 모바일 버전 RSS Feed",
+      "description": "MMZ Forum",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) mmzone.com. All Rights Reserved",
       "link": "https://terzeron.com/mmzone.forum.xml",
