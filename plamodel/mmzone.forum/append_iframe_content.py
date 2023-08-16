@@ -43,7 +43,6 @@ def main() -> int:
     if error:
         LOGGER.error(error)
         return 0
-    print(response)
     print(process_html(iframe_url, response))
 
     reply_url = re.sub(r'mt_view.php', 'mms_tool_reply_list.php', url)
@@ -52,7 +51,6 @@ def main() -> int:
     if error:
         LOGGER.error(error)
         return 0
-    print(response)
     print(process_html(reply_url, response))
 
     return 0
