@@ -1,0 +1,44 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "item_capture_script": "./capture_item_link_title.py -n 300",
+      "sort_field_pattern": "no=(\\d+)",
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/18/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/17/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/16/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/15/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/14/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/13/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/12/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/11/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/10/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/9/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/8/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/7/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/6/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/5/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/4/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/3/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/2/",
+        "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/1/"
+      ]
+    },
+    "extraction": {
+      "element_class_list": [ "tdb_single_content" ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "MMZ Forum",
+      "description": "MMZ Forum",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) mmzone.com. All Rights Reserved",
+      "link": "https://terzeron.com/mmzone.forum.xml",
+      "language": "ko"
+    }
+  }
+}
