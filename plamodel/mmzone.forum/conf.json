@@ -6,15 +6,6 @@
       "sort_field_pattern": "no=(\\d+)",
       "unit_size_per_day": 48,
       "list_url_list": [
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=0&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=35&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=70&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=105&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=140&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B전체%5D&start_page=175&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=210&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=245&where=0",
-        "http://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_forum&mms_cat=%5B기법%5D&start_page=280&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=0&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=35&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=70&where=0",
@@ -23,12 +14,17 @@
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=175&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=210&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=245&where=0",
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=280&where=0"
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=280&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=35&keyword=아크릴&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=70&keyword=아크릴&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=105&keyword=아크릴&where=0",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=140&keyword=아크릴&where=0"
       ]
     },
     "extraction": {
       "post_process_script_list": [
-        "./append_iframe_content.py"
+        "./append_iframe_content.py",
+        "download_image.py"
       ]
     },
     "rss": {

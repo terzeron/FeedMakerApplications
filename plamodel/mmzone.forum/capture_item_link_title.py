@@ -12,7 +12,7 @@ def main():
     url_prefix_for_forum = "http://mmzone.co.kr/mms_tool/"
     url_prefix_for_album = "http://mmzone.co.kr/album/"
     num_of_recent_feeds = 1000
-    optlist, args = getopt.getopt(sys.argv[1:], "n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
