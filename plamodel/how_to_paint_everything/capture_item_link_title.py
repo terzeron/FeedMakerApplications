@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 
-import os
 import sys
 import re
 import getopt
@@ -29,11 +28,14 @@ def main():
                 title = m.group("title")
                 title = re.sub(r'&#8217;', '\'', title)
                 title = re.sub(r'&#8211;', '-', title)
-                result_list.append((link, title))
-
-            m = re.search(r'<aside id="media_image', line)
+                state = 2
+        elif state == 2:
+            m = re.search(r'<span class="td-post-date"><time class="entry-date updated td-module-date" datetime="(?P<date>\d+-\d+-\d+)T\d+:\d+:\d+\+\d+:\d+"', line)
             if m:
-                break
+                date_str = m.group("date")
+                title = f"{title} {date_str}"
+                result_list.append((link, title))
+                state = 1
                               
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
