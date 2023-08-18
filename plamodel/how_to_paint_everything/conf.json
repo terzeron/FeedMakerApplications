@@ -33,11 +33,11 @@
       ]
     },
     "rss": {
-      "title": "MMZ Forum",
-      "description": "MMZ Forum",
+      "title": "How to Paint Everything",
+      "description": "How to Print Everything",
       "generator": "Terzeron's Feed Generator",
-      "copyright": "Copyright (c) mmzone.com. All Rights Reserved",
-      "link": "https://terzeron.com/mmzone.forum.xml",
+      "copyright": "Copyright (c) goonhammer.com. All Rights Reserved",
+      "link": "https://terzeron.com/how_to_paint_everything.xml",
       "language": "ko"
     }
   }
