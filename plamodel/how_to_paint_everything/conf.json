@@ -3,7 +3,7 @@
     "collection": {
       "is_completed": true,
       "item_capture_script": "./capture_item_link_title.py -n 300",
-      "sort_field_pattern": " (\\d+-\\d+-\\d+)$",
+      "sort_field_pattern": "no=(\\d+)",
       "unit_size_per_day": 1,
       "list_url_list": [
         "https://www.goonhammer.com/category/hobby/how-to-paint-everything/page/18/",
@@ -27,14 +27,14 @@
       ]
     },
     "extraction": {
-      "element_class_list": [ "tdb_single_content" ],
       "post_process_script_list": [
+        "./append_iframe_content.py",
         "download_image.py"
       ]
     },
     "rss": {
       "title": "How to Paint Everything",
-      "description": "How to Print Everything",
+      "description": "How to Paint Everything",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) goonhammer.com. All Rights Reserved",
       "link": "https://terzeron.com/how_to_paint_everything.xml",
