@@ -6,7 +6,7 @@ import re
 import getopt
 import json
 from bs4 import BeautifulSoup
-from feed_maker_util import IO
+from bin.feed_maker_util import IO
 
     
 def main():

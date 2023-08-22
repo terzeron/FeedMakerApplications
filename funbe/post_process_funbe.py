@@ -4,7 +4,7 @@ import sys
 import re
 import base64
 from bs4 import BeautifulSoup
-from feed_maker_util import IO, URL
+from bin.feed_maker_util import IO, URL
 
 
 def main():

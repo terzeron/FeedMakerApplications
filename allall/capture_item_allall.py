@@ -7,7 +7,7 @@ import json
 import getopt
 from pathlib import Path
 from typing import List, Tuple
-from feed_maker_util import IO, URL, Config
+from bin.feed_maker_util import IO, URL, Config
 
 
 def get_url_from_config(feed_dir_path: Path):

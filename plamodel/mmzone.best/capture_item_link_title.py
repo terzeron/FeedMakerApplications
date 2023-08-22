@@ -5,7 +5,7 @@ import os
 import sys
 import re
 import getopt
-from feed_maker_util import IO
+from bin.feed_maker_util import IO
 
 def main():
     state = 0

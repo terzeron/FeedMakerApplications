@@ -9,8 +9,8 @@ from typing import List
 import logging
 import logging.config
 from pathlib import Path
-from feed_maker_util import IO, URL, header_str
-from feed_maker import FeedMaker
+from bin.feed_maker_util import IO, URL, header_str
+from bin.feed_maker import FeedMaker
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")

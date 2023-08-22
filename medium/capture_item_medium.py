@@ -5,7 +5,7 @@ import sys
 import re
 import getopt
 import json
-from feed_maker_util import IO, URL
+from bin.feed_maker_util import IO, URL
 
 
 def main():

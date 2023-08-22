@@ -5,7 +5,7 @@ import sys
 import re
 import http.client
 import feed_maker_util
-from feed_maker_util import IO
+from bin.feed_maker_util import IO
 
 
 def main():

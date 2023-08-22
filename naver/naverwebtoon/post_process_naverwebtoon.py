@@ -10,8 +10,8 @@ import logging
 import logging.config
 from typing import List
 from pathlib import Path
-from feed_maker_util import IO, Process, Config, URL, header_str
-from crawler import Crawler
+from bin.feed_maker_util import IO, Process, Config, URL, header_str
+from bin.crawler import Crawler
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")

@@ -4,8 +4,8 @@
 import sys
 import re
 import json
-from feed_maker_util import IO
-from crawler import Crawler
+from bin.feed_maker_util import IO
+from bin.crawler import Crawler
 
 
 def main():

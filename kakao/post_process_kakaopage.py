@@ -8,8 +8,8 @@ import logging
 import logging.config
 import getopt
 from pathlib import Path
-from feed_maker_util import Config
-from crawler import Crawler, Method
+from bin.feed_maker_util import Config
+from bin.crawler import Crawler, Method
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")

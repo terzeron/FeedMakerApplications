@@ -7,7 +7,7 @@ import sys
 import re
 import getopt
 import collections
-from feed_maker_util import IO
+from bin.feed_maker_util import IO
 
 
 def get_next_page_url(page_content_line_list, form_name):

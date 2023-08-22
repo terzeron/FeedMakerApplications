@@ -7,7 +7,7 @@ import re
 import getopt
 from pathlib import Path
 import logging.config
-from feed_maker_util import Config, IO, URL
+from bin.feed_maker_util import Config, IO, URL
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")

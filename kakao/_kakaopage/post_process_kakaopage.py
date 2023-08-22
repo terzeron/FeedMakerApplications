@@ -11,7 +11,7 @@ import logging.config
 from typing import List
 from pathlib import Path
 import feed_maker_util
-from crawler import Crawler, Method
+from bin.crawler import Crawler, Method
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
