@@ -4,7 +4,7 @@
 import sys
 import os
 import filecmp
-from feed_maker_util import Process
+from bin.feed_maker_util import Process
 
 
 def test_script(script, work_dir, test_dir, index):

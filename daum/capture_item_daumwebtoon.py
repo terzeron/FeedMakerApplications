@@ -4,7 +4,7 @@ import sys
 import json
 import getopt
 import feed_maker_util
-from feed_maker_util import IO
+from bin.feed_maker_util import IO
 
 
 def main():

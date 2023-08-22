@@ -7,7 +7,7 @@ import getopt
 import logging
 import logging.config
 from typing import List, Dict, Tuple
-from feed_maker_util import IO, URL
+from bin.feed_maker_util import IO, URL
 
 
 logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")

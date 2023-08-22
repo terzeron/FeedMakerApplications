@@ -4,7 +4,7 @@
 import os
 import sys
 import re
-from feed_maker_util import Process
+from bin.feed_maker_util import Process
 
 
 def main(url):

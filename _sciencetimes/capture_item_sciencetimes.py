@@ -5,7 +5,7 @@ import io
 import os
 import sys
 import re
-from feed_maker_util import IO
+from bin.feed_maker_util import IO
 
 
 def main():
