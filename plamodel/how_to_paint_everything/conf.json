@@ -27,8 +27,10 @@
       ]
     },
     "extraction": {
+      "element_class_list": [
+        "tdb_single_content"
+      ],
       "post_process_script_list": [
-        "./append_iframe_content.py",
         "download_image.py"
       ]
     },
