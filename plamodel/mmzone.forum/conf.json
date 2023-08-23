@@ -6,17 +6,13 @@
       "sort_field_pattern": "no=(\\d+)",
       "unit_size_per_day": 8,
       "list_url_list": [
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=0&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=35&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=70&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=105&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=140&where=0",
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=175&where=0",
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech&mms_cat=%5B전체%5D&start_page=210&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=35&keyword=아크릴&where=0",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=70&keyword=아크릴&where=0",
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=105&keyword=아크릴&where=0",
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=140&keyword=아크릴&where=0"
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&mms_cat=%5B전체%5D&start_page=0&keyword=붓도색&where=0"
       ]
     },
     "extraction": {
