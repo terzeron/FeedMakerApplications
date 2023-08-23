@@ -14,7 +14,7 @@ import feed_maker_util
 from bin.crawler import Crawler, Method
 
 
-logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/logging.conf")
 LOGGER = logging.getLogger(__name__)
 excluded_keywords: List[str] = ["로맨스", "연인", "연애", "키스", "짝사랑", "고백", "유부녀", "황후", "왕후", "왕비", "공녀", "첫사랑", "재벌", "순정", "후궁", "로판", "로맨스판타지", "멜로"]
 

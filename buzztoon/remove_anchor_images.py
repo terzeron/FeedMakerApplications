@@ -9,7 +9,7 @@ from typing import List, Dict, Tuple
 from bin.feed_maker_util import IO
 
 
-logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/logging.conf")
 logger = logging.getLogger(__name__)
 
 
