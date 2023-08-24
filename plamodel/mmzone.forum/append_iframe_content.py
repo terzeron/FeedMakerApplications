@@ -8,12 +8,11 @@ import getopt
 import logging
 import logging.config
 from typing import List, Optional
-from bs4 import BeautifulSoup
-from bin.feed_maker_util import IO, Process
 from bin.crawler import Method, Crawler
+from bin.feed_maker_util import IO
 
 
-logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/bin/logging.conf")
+logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/logging.conf")
 LOGGER = logging.getLogger()
 
 
