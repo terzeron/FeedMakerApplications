@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_tistory.py -n 5",
+      "list_url_list": [
+        "https://theroniz.tistory.com/category/아크릴%20도색?page=1",
+        "https://theroniz.tistory.com/category/아크릴%20도색?page=2",
+        "https://theroniz.tistory.com/category/제작%20방법%20%26%20팁?page=1",
+        "https://theroniz.tistory.com/category/제작%20방법%20%26%20팁?page=2",
+        "https://theroniz.tistory.com/category/제작%20방법%20%26%20팁?page=3",
+        "https://theroniz.tistory.com/category/건담%20제작%26완성?page=1",
+        "https://theroniz.tistory.com/category/건담%20제작%26완성?page=2",
+        "https://theroniz.tistory.com/category/건담%20제작%26완성?page=3",
+        "https://theroniz.tistory.com/category/건담%20제작%26완성?page=4",
+        "https://theroniz.tistory.com/category/건담%20제작%26완성?page=5"
+      ],
+      "sort_field_pattern": "/(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "element_class_list": [
+        "area_view",
+        "article",
+        "entry-content"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) Tistory. All rights reserved.",
+      "description": "Londo Bell::티스토리",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/londo_bell.xml",
+      "title": "Londo Bell::티스토리"
+    }
+  }
+}
