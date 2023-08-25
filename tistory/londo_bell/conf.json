@@ -1,7 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_tistory.py -n 5",
+      "is_completed": true,
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_tistory.py -n 300",
       "list_url_list": [
         "https://theroniz.tistory.com/category/아크릴%20도색?page=1",
         "https://theroniz.tistory.com/category/아크릴%20도색?page=2",
