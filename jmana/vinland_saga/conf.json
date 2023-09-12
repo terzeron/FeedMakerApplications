@@ -4,7 +4,7 @@
       "ignore_old_list": false,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
-        "https://kr37.jmana.one/comic_list_title?bookname=빈란드+사가"
+        "https://kr38.jmana.one/comic_list_title?bookname=빈란드+사가"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 0.5
