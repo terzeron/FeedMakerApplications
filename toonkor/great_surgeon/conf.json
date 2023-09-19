@@ -5,17 +5,19 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
-        "https://tkr257.com/webtoon/10432"
+        "https://tkr259.com/webtoon/10432"
       ],
       "sort_field_pattern": "\\t(\\d+)",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 1,
+      "render_js": true
     },
     "extraction": {
       "bypass_element_extraction": true,
       "post_process_script_list": [
         "../post_process_toonkor.py",
         "download_image.py"
-      ]
+      ],
+      "force_sleep_between_articles": true
     },
     "rss": {
       "copyright": "Copyright (c) ToonKor. All rights reserved.",
