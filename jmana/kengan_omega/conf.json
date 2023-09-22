@@ -4,7 +4,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "list_url_list": [
-        "https://kr38.jmana.one/comic_list_title?bookname=켄간+오메가"
+        "https://kr39.jmana.one/comic_list_title?bookname=켄간+오메가"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 1
