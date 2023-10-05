@@ -1,0 +1,1767 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Simpson - 웹툰 미리보기, 다시보기, 네이버 웹툰, 성인웹툰, 19금 웹툰</title>
+<link rel="stylesheet" href="https://tkr263.com/css/default.css?ver=180820">
+<link rel="stylesheet" href="https://tkr263.com/css/apms.css?ver=180820">
+
+<link rel="stylesheet" href="https://tkr263.com/thema/webtoon/assets/bs3/css/bootstrap.min.css" type="text/css" class="thema-mode">
+<link rel="stylesheet" href="https://tkr263.com/thema/webtoon/colorset/Basic/colorset.css?v=1.6" type="text/css" class="thema-colorset">
+<link rel="stylesheet" href="https://tkr263.com/skin/board/webtoon/style.css?ver=180820">
+<link rel="stylesheet" href="https://tkr263.com/skin/board/webtoon/css/jquery.rateyo.min.css?ver=180820">
+<link rel="stylesheet" href="https://tkr263.com/thema/webtoon/widget/basic-sidebar/widget.css?ver=180820">
+<link rel="stylesheet" href="https://tkr263.com/css/level/basic.css?ver=180820">
+<!--[if lte IE 8]>
+<script src="https://tkr263.com/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://tkr263.com";
+var g5_bbs_url   = "https://tkr263.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "webtoon";
+var g5_sca       = "8190";
+var g5_pim       = "";
+var g5_editor    = "smarteditor2";
+var g5_responsive    = "1";
+var g5_cookie_domain = "";
+var g5_purl = "";
+</script>
+<script src="https://tkr263.com/js/jquery-1.11.3.min.js"></script>
+<script src="https://tkr263.com/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://tkr263.com/lang/korean/lang.js?ver=180820"></script>
+<script src="https://tkr263.com/js/common.js?ver=180820"></script>
+<script src="https://tkr263.com/js/wrest.js?ver=180820"></script>
+<script src="https://tkr263.com/js/placeholders.min.js"></script>
+<script src="https://tkr263.com/js/js.cookie.js"></script>
+<script src="https://tkr263.com/js/apms.js?ver=180820"></script>
+<link rel="stylesheet" href="https://tkr263.com/js/font-awesome/css/font-awesome.min.css">
+
+<meta name="publisher" content="Simpson - 웹툰 미리보기, 다시보기, 네이버 웹툰, 성인웹툰, 19금 웹툰,심슨코믹스" />
+<meta name="author" content="Simpson - 웹툰 미리보기, 다시보기, 네이버 웹툰, 성인웹툰, 19금 웹툰,심슨코믹스" />
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="Simpson, 무료웹툰, 웹툰미리보기, 성인웹툰, 웹툰다시보기, 네이버 웹툰, 다음웹툰, 카카오웹툰, 레진코믹스, 탑툰, 투믹스, 늑대닷컴, 버즈툰, 뉴토끼, 밤토끼, 망가, 헬븐넷, 성인19, 외모지상주의, 신의탑, 갓오브하이스쿨, 연애혁명, 세상은 돈과권력, 요신기, 스위트홈, 원피스, 원펀맨, 나루토, Simpson, 네이버웹툰 다시보기, 네이버웹툰 미리보기, 성인웹툰 미리보기, 성인웹툰 무료, 19웹툰, 히토미, 어른아이, 마루마루, 마나모아, 무료공유, 웹툰 보는곳, 최신야동, 야애니, Simpson - 웹툰 미리보기, 다시보기, 19금 웹툰,심슨코믹스" />
+<meta name="description" content="국내 최대 웹툰 미리보기, 다시보기, 성인웹툰 최다보유 Simpson 입니다 매일 가장 빠르게 많이 업데이트 되며 최고의 인터페이스 속도를 지원합니다 가장 빠르고 다양한 웹툰 미리보기, 다시보기, 성인웹툰, 19망가를 Simpson 에서 경험해보세요" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:title" content="" />
+<meta property="og:site_name" content="Simpson - 웹툰 미리보기, 다시보기, 네이버 웹툰, 성인웹툰, 19금 웹툰,심슨코믹스" />
+<meta property="og:author" content="Simpson - 웹툰 미리보기, 다시보기, 네이버 웹툰, 성인웹툰, 19금 웹툰,심슨코믹스" />
+
+
+
+<script src="https://tkr263.com/plugin/apms/js/jquery.mobile.swipe.min.js"></script>
+<script type="text/javascript" src="https://tkr263.com/skin/board/webtoon/js/jquery.rateyo.min.js"></script>
+<script type="text/javascript" src="https://tkr263.com/skin/board/webtoon/js/drm.js"></script>
+<meta property="og:url" content="https://tkr263.com/webtoon/672105/8190"/>
+</head>
+<body class="responsive is-pc">
+
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 --><style>
+		.at-container {max-width:1370px;}
+	.no-responsive .wrapper, .no-responsive .at-container-wide { min-width:1370px; }
+	.no-responsive .boxed.wrapper, .no-responsive .at-container { width:1370px; }
+	.at-menu .nav-height { height:60px; line-height:60px !important; }
+	.pc-menu, .pc-menu .nav-full-back, .pc-menu .nav-full-height { height:60px; }
+	.pc-menu .nav-top.nav-float .menu-a { padding:0px 15px; }
+	.pc-menu .nav-top.nav-float .sub-1div::before { left: 15px; }
+	.pc-menu .subm-w { width:100px; }
+	@media all and (min-width:1200px) {
+		.responsive .boxed.wrapper { max-width:1370px; }
+	}
+</style>
+
+<style>
+
+.m-menu .m-nav ul li:nth-child(n+1):nth-child(-n+4) { min-width:45px; }
+.m-menu .m-nav ul li:nth-child(n+5):nth-child(-n+6) { min-width:65px; }
+
+.m-menu .m-nav ul li.active {
+    background: #ea2727 !important; 
+    min-width:60px;
+}
+#nav_fin li.on a {background:#ea2727 !important;}
+.pc-menu .nav-top .menu-a:hover {color:#ea2727 !important}
+.pc-menu .nav-top .menu-li:hover .menu-a, .pc-menu .nav-top .menu-li.on .menu-a {color:#ea2727 !important}
+.btn-danger {background:#ea2727 !important;border-color:#ea2727 !important;}
+.toon-up {background-color: #ea2727 !important;}
+.btn1 {background:#ea2727 !important;border-color:#ea2727 !important;}
+#wt_list .sub-nav #nav_fin li.on {background:#ea2727 !important;border-color:#ea2727 !important;}
+
+.section-item-photo a img {height:120px;width: 220% !important;max-width: 350px !important;margin-left: -55% !important;}
+
+.form-group.input-group.input-group-sm {
+	width: 120px;
+	margin-bottom: 0px;
+	margin-right:0px;
+	!important;
+}
+
+</style>
+
+
+<div id="thema_wrapper" class="wrapper  ko" >
+
+	<!-- LNB -->
+	<aside class="at-lnb">
+		<div class="at-container">
+		</div>
+	</aside>
+
+	<!-- PC Header -->
+	<header class="pc-header" style="display:none">
+		<div class="at-container">
+		</div>
+	</header>	
+
+	<!-- Menu -->
+	<nav class="at-menu">
+		<!-- PC Menu -->
+		<div class="pc-menu" >
+			<!-- Menu Button & Right Icon Menu -->
+			<div class="at-container">
+				<div class="nav-right nav-rw nav-height">
+					<ul>						
+						<li>
+							<fieldset class="pull-right">
+								<form name="fsearchbox" role="form" onsubmit="return fsearchbox_submit(this);" action="https://tkr263.com/bbs/search_webtoon.php" method="get">
+									<div class="form-group input-group input-group-sm">
+										<input name="stx" class="form-control form-fix" style="height: 28px;width:200px;" type="text" maxlength="20" placeholder="웹툰/애니/만화/망가 제목" value=""  required="">
+											<span class="input-group-btn" style="margin-top:-8px">
+												<button class="btn btn-sm btn-navy search_btn" type="submit">
+													<i class="fa fa-search">
+													</i>
+												</button>
+											</span>
+										</div>
+									</form>
+								</fieldset>
+							</li>
+						<li>
+							<a href="javascript:;" class="login_open">
+						<!--	<a href="javascript:;" onclick="sidebar_open('sidebar-menu');" title="유저"> //-->
+								<span class="sidebar-btn-box">
+									<span class="sidebar-btn">
+										<i class="fa fa-lg fa-user" style="font-size:25px;"></i>
+									</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			
+
+	<div class="nav-visible">
+		<div class="at-container">
+			<div class="nav-top nav-float nav-slide">
+				<div style="float:left;margin:20px 0px 0 7px">
+					<a href="https://tkr263.com"><img src="/img/tk_logo.png" class="limg"  title="웹툰미리보기"></a>
+				</div>
+				<ul class="menu-ul">
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="/업데이트">							
+														웹툰 														
+						</a>
+											</li>
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="/최신만화">							
+														만화 														
+						</a>
+											</li>
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="http://yadongyas.com" target="_blank">							
+														최신야동 														
+						</a>
+											</li>
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="/망가">							
+														망가 														
+						</a>
+											</li>
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="/마이툰">							
+														북마크 														
+						</a>
+											</li>
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="http://vipkkhh.com" target="_blank">							
+														보증토토 														
+						</a>
+											</li>
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="https://hlbam9.com" target="_blank">							
+														성인 														
+						</a>
+											</li>
+									<li class="menu-li off">
+						<a class="menu-a nav-height" href="https://t.me/tkrhddz" target="_blank">							
+														광고문의 														
+						</a>
+											</li>
+								
+				</ul>
+			</div><!-- .nav-top -->
+		</div>	<!-- .nav-container -->
+	</div><!-- .nav-visible -->
+
+
+			<div class="clearfix"></div>
+			<div class="nav-back"></div>
+		</div><!-- .pc-menu -->
+
+		<!-- Mobile Header -->
+	<header class="m-header">
+		<div class="at-container">
+			<div class="header-wrap">				
+				<div class="header-logo en" style="text-align:left">
+					<!-- Mobile Logo -->				
+					<a class="navbar-brand" href="https://tkr263.com" style="margin-right:15px; margin-bottom:5px; padding:5px;"><img src="/img/tk_logo.png" class="logo" alt='tkr263.com' style="margin-top:10px"></a>
+				</div>
+				<div class="m-search">
+					<fieldset class="pull-right">
+						<form name="fsearchbox" role="form" onsubmit="return fsearchbox_submit(this);" action="https://tkr263.com/bbs/search_webtoon.php" method="get">
+							<div class="form-group input-group input-group-sm" style="margin-right:0px;">
+								<input name="stx" class="form-control form-fix" style="height: 28px;" type="text" maxlength="20" placeholder="웹툰/애니/만화/망가 제목" value=""  required="">
+									<span class="input-group-btn" style="margin-top:-8px">
+										<button class="btn btn-sm btn-navy search_btn" type="submit">
+										<i class="fa fa-search">
+										</i>
+										</button>
+									</span>
+								</div>
+							</form>
+					</fieldset>	
+				</div>
+				<div class="header-icon">
+					<a href="javascript:;" class="login_open">
+					<!-- <a href="javascript:;" onclick="sidebar_open('sidebar-user');" > //-->
+						<i class="fa fa-user" style="margin-left: 0px; color: #4d4d4d; padding: 15px 0px; cursor: pointer;font-size:25px;"></i>
+					</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</header>
+
+		<!-- Mobile Menu -->
+		<div class="m-menu">
+			
+<div class="m-wrap">
+	<div class="at-container">
+		<div class="m-table en">
+			<div class="m-list">
+				<div class="m-nav" id="mobile_nav">
+					<ul class="clearfix">
+											<li>
+							<a href="/업데이트">
+								웹툰															</a>
+						</li>
+											<li>
+							<a href="/최신만화">
+								만화															</a>
+						</li>
+											<li>
+							<a href="http://yadongyas.com" target="_blank">
+								최신야동															</a>
+						</li>
+											<li>
+							<a href="/망가">
+								망가															</a>
+						</li>
+											<li>
+							<a href="/마이툰">
+								북마크															</a>
+						</li>
+											<li>
+							<a href="http://vipkkhh.com" target="_blank">
+								보증토토															</a>
+						</li>
+											<li>
+							<a href="https://hlbam9.com" target="_blank">
+								성인															</a>
+						</li>
+											<li>
+							<a href="https://t.me/tkrhddz" target="_blank">
+								광고문의															</a>
+						</li>
+										</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+
+			
+		</div><!-- .m-menu -->		
+	</nav><!-- .at-menu -->
+
+	<div class="clearfix"></div>
+
+	<div class="at-body">
+					<div class="at-container">
+							<div class="at-content">				
+								
+<!-- <div id="mobile_nav" style="overflow:hidden; margin:-3px 0 0 0; padding-top:8px; border-bottom: 1px solid #d6d6d6; height:41px;">
+</div> -->
+
+<style>
+.bg_mask {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	opacity: .5;
+	z-index: 9998;
+	top: 0;
+	left: 0
+}
+
+.bg_mask.active {
+	display: block
+}
+
+.signup_box.layer_box {
+	display: none;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	z-index: 9999;
+	background-color: #fff;
+	width: 100%;
+	max-width: 400px;
+	min-height: 340px;
+	margin-left: -200px;
+	border-radius: 10px;
+	border: 2px solid #ea2727;
+	text-align: center;
+	box-shadow: 3px 3px 10px 0 #000;
+	padding-bottom: 20px
+}
+
+.signup_box.active {
+	display: block
+}
+
+.signup_box>h3 {
+	padding: 30px 0 10px;
+	color: #ea2727;
+	width: 100%;
+	font-size: 30px;
+	text-align: center
+}
+
+.signup_box>h3>i {
+	color: #ea2727;
+	font-size: 50px
+}
+
+.signup_box ul {
+	padding-top: 10px
+}
+
+.signup_box ul>li {
+	float: left
+}
+
+.signup_box ul>li.input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 30px
+}
+
+.signup_box ul>li.input>input {
+	width: 100%;
+	border: 1px solid #ced4f5;
+	box-sizing: border-box;
+	height: 40px;
+	margin: 5px 0;
+	padding-left: 10px;
+	border-radius: 5px
+}
+
+.signup_box ul>li.button {
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 30px
+}
+
+.signup_box ul>li.button>button {
+	width: 100%;
+	height: 50px;
+	font-weight: 700;
+	border: 2px solid #ea2727;
+	background-color: #ea2727;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer
+}
+
+.signup_box ul>li.button>button:hover {
+	opacity: .7
+}
+
+.signup_box ul>li.bottom {
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 10px;
+	text-align: center
+}
+
+.signup_box ul>li.bottom>button {
+	width: 130px;
+	height: 40px;
+	font-weight: 700;
+	border: 2px solid #ea2727;
+	background-color: #fff;
+	color: #ea2727;
+	opacity: .7;
+	cursor: pointer
+}
+
+.signup_box ul>li.bottom>button:hover {
+	opacity: 1
+}
+
+.login_box.layer_box {
+	display: none;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	z-index: 9999;
+	background-color: #fff;
+	width: 100%;
+	max-width: 400px;
+	min-height: 310px;
+	margin-left: -200px;
+	border-radius: 10px;
+	border: 2px solid #ea2727;
+	text-align: center;
+	box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .5);
+	padding-bottom: 20px
+}
+
+.login_box.active {
+	display: block
+}
+
+.login_box.layer_box>h3 {
+	color: #ea2727;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	font-size: 30px;
+	text-align: center
+}
+
+.login_box>h3 {
+	position: relative
+}
+
+.login_box>h3>a {
+	width: 100px;
+	height: 34px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	line-height: 34px;
+	font-size: 14px;
+	color: #ddd;
+	font-weight: 550
+}
+
+.login_box ul>li.message {
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 10px 10px;
+	text-align: center;
+	font-size: 16px;
+	color: #333;
+	font-weight: 700;
+	line-height: 1.5em
+}
+
+.login_box ul>li.message i {
+	font-size: 50px;
+	color: #ea2727 
+}
+
+.login_box ul>li.message strong {
+	font-size: 15px;
+	color: #333
+}
+
+.login_box ul>li.input {
+	box-sizing: border-box;
+	padding: 10px 30px
+}
+
+.login_box ul>li.input>input {
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #ced4f5;
+	box-sizing: border-box;
+	height: 40px;
+	margin: 5px 0;
+	border-radius: 5px
+}
+
+.login_box ul>li.button {
+	box-sizing: border-box;
+	padding: 0 30px 10px
+}
+
+.login_box ul>li.button>button {
+	width: 100%;
+	height: 60px;
+	font-weight: 700;
+	border: 2px solid #ea2727;
+	background-color: #ea2727;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer
+}
+
+.login_box ul>li.button>button:hover {
+	opacity: .7
+}
+
+.login_box ul>li.bottom2 {
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	text-align: center
+}
+
+.login_box ul>li.bottom2>a {
+	height: auto;
+	padding: 5px!important;
+	border: none
+}
+
+.login_box ul>li.bottom {
+	clear: both;
+	width: 100%;
+	font-size: 13px;
+	box-sizing: border-box;
+	padding: 10px 30px;
+	text-align: center
+}
+
+.login_box ul>li.bottom:after {
+	content: "";
+	clear: both;
+	display: block
+}
+
+.login_box ul>li.bottom>span {
+	float: left;
+	text-align: left;
+	padding-top: 10px
+}
+
+.login_box ul>li.bottom>button {
+	float: right;
+	width: 130px;
+	height: 40px;
+	font-weight: 900;
+	border: 2px solid #ea2727;
+	background-color: #fff;
+	color: #ea2727;
+	border-radius: 5px;
+	cursor: pointer
+}
+
+.login_box ul>li.bottom>button:hover {
+	opacity: .7
+}
+
+li {
+    list-style-type: none;
+}
+
+</style>
+
+<script>
+var redate ='';
+$(document).on("click", ".login_open", function() {
+        $(".layer_box").removeClass("active");
+        $(".bg_mask").addClass("active");
+        $(".login_box").addClass("active");
+            $.ajax({
+                type: "POST",
+                url: "/bbs/loginOpen.php",
+                data: "i=0",
+                dataType: "text",
+                contentType: 'application/x-www-form-urlencoded;charset=euc-kr',
+                beforeSend: function(jqXHR) {
+                    jqXHR.overrideMimeType('application/x-www-form-urlencoded;charset=euc-kr');
+                },
+                error: function() {
+                    alert('접속자가많아 지연되고있습니다.잠시후 다시 이용해주세요.');
+                },
+                success: function(data) {
+                 	redata = data.trim();
+                }
+            });
+    });
+    $(document).on("click", ".signup_open", function() {
+        $(".layer_box").removeClass("active");
+        $(".bg_mask").addClass("active");
+        $(".signup_box").addClass("active");
+    });
+    $(document).on("click", ".signup_end_open", function() {
+        $(".layer_box").removeClass("active");
+        $(".bg_mask").addClass("active");
+        $(".signup_end").addClass("active");
+    });
+    $(document).on("click", ".layer_box_close, .bg_mask", function() {
+        $(".layer_box").removeClass("active");
+        $(".bg_mask").removeClass("active");
+    });
+    $(document).on("click", ".login_button", function() {
+        var id = $('#login_id').val();
+        var pw = $('#login_pw').val();
+        if (id.length < 4 || id.length > 14) {
+            alert('ID는 4-14자이내만 가능합니다.');
+		return;
+        } else if (/[^0-9a-zA-Z_]/.test(id) == true) {
+            alert('ID는 영문숫자만 가능합니다.');
+		return;
+        } else if (pw.length < 4 || pw.length > 16) {
+            alert('비밀번호는 4-16자이내만 가능합니다.');
+		return;
+	}
+            $.ajax({
+                type: "POST",
+                url: "/bbs/loginAcheck.php",
+                data: "i=" + id + "&p=" + pw + "&token="+redata,
+                dataType: "text",
+                contentType: 'application/x-www-form-urlencoded;charset=euc-kr',
+                beforeSend: function(jqXHR) {
+                    jqXHR.overrideMimeType('application/x-www-form-urlencoded;charset=euc-kr');
+                },
+                error: function() {
+                    alert('접속자가많아 지연되고있습니다.잠시후 다시 이용해주세요.');
+                },
+                success: function(data) {
+                    var rtndata = data.trim();
+                    if (rtndata == "2") {
+                        alert('로그아웃후 다시 시도해주세요.');
+                        document.location.reload();
+                    } else if (rtndata == "0") {
+                        alert('존재하지않는 ID 또는 비밀번호가 틀립니다.');
+                    } else if (rtndata == "3") {
+                        alert('로그인 접근이 올바르지 않습니다. 다시 시도해주세요');
+                        document.location.reload();
+                    } else if (rtndata == "1") {
+                        document.location.reload();
+                    } else if (rtndata == "9") {
+                        alert('연속 로그인이 실패했습니다. 잠시후 시도해주세요.');
+                        document.location.reload();
+                    } else {
+                        alert('알수없는 오류입니다.');
+                        document.location.reload();
+                    }
+                }
+            });
+    });
+    $(document).on("click", ".logout_button", function() {
+            $.ajax({
+                type: "POST",
+                url: "/bbs/logoutAcheck.php",
+                data: "a=o",
+                dataType: "text",
+                contentType: 'application/x-www-form-urlencoded;charset=euc-kr',
+                beforeSend: function(jqXHR) {
+                    jqXHR.overrideMimeType('application/x-www-form-urlencoded;charset=euc-kr');
+                },
+                error: function() {
+                    alert('접속자가많아 지연되고있습니다.잠시후 다시 이용해주세요.');
+                },
+                success: function(data) {
+                    document.location.reload();
+                }
+            });
+    });
+    $(document).on("click", ".memreg_button", function() {
+        var id = $('#memreg_id').val();
+        var pw = $('#memreg_pw').val();
+        var pwcheck = $('#memreg_pw_check').val();
+        if (id.length < 4 || id.length > 14) {
+            alert('ID는 4-14자이내만 가능합니다.');
+		return;
+        } else if (/[^0-9a-zA-Z_]/.test(id) == true) {
+            alert('ID는 영문숫자만 가능합니다.');
+		return;
+        } else if (pw.length < 4 || pw.length > 16) {
+            alert('비밀번호는 4-16자이내만 가능합니다.');
+		return;
+        } else if (pw != pwcheck) {
+            alert('비밀번호 확인이 다릅니다.');
+		return;
+	}
+            $.ajax({
+                type: "POST",
+                url: "/bbs/regAcheck.php",
+                data: "i=" + id + "&p=" + pw + "&token="+redata,
+                dataType: "text",
+                contentType: 'application/x-www-form-urlencoded;charset=euc-kr',
+                beforeSend: function(jqXHR) {
+                    jqXHR.overrideMimeType('application/x-www-form-urlencoded;charset=euc-kr');
+                },
+                error: function() {
+                    alert('접속자가많아 지연되고있습니다.잠시후 다시 이용해주세요.');
+                },
+                success: function(data) {
+                    var rtndata = data.trim();
+                    if (rtndata == "6") {
+                        alert('로그아웃후 다시 시도해주세요.');
+                        document.location.reload();
+                    } else if (rtndata == "3") {
+                        alert('로그인 접근이 올바르지 않습니다. 다시 시도해주세요');
+                        document.location.reload();
+                    } else if (rtndata == "7") {
+                        alert('ID는 4-14자이내로 입력해주세요.');
+                    } else if (rtndata == "8") {
+                        alert('비밀번호는 4-16자이내로 입력해주세요.');
+                    } else if (rtndata == "9") {
+                        alert('연속 회원가입이 실패했습니다.  잠시후 시도해주세요.');
+                        document.location.reload();
+                    } else if (rtndata == "11") {
+                        alert('이미 등록된 ID입니다.');
+                    } else if (rtndata == "12") {
+                        alert('가입완료.북마크를 사용하실수있습니다.');
+                        document.location.reload();
+                    } else {
+                        alert('알수없는 오류입니다.');
+			alert(rtndata);
+                        document.location.reload();
+                    }
+                }
+            });
+    });
+
+</script>
+
+<div class="bg_mask"></div>
+<div class="login_box layer_box">
+		<h3 class="hide">로그인</h3><div class="layer_box_close btn_layer_close"></div>
+		<ul>
+			<li class="message">
+				<i class="fa fa-bookmark" aria-hidden="true"></i><br>북마크 사용을 위해선<br>로그인이 필요합니다.
+			</li>
+			<li class="input">
+				<input type="text" placeholder="아이디" id="login_id" onkeyup="if(event.keyCode ==13){$('#btn_login').click();}">
+				<input type="password" placeholder="비밀번호" id="login_pw" onkeyup="if(event.keyCode ==13){$('#btn_login').click();}">
+			</li>
+			<li class="button">
+				<button type="button" class="login_button" id="btn_login">로그인</button>
+			</li>
+			<li class="bottom">
+				<span>쿠키설정차단시 로그인이 불가능합니다<br>쿠키설정을 허용하세요</span> <button type="button" class="signup_open">회원가입</button>
+			</li>
+			
+		</ul>
+
+	</div>
+
+
+
+<div class="signup_box layer_box">
+		<h3><i class="fa fa-pencil-square-o"></i><br>회원가입</h3><div class="layer_box_close btn_layer_close"></div>
+		<form name="signup" action="#">
+		<ul>
+			<li class="input"><input type="text" placeholder="아이디" id="memreg_id"></li>
+			<li class="input"><input type="password" placeholder="비밀번호" id="memreg_pw"></li>
+			<li class="input"><input type="password" placeholder="비밀번호 확인" id="memreg_pw_check"></li>
+			<li class="button">
+				<button type="button" class="memreg_button">가입하기</button>
+			</li>
+		</ul>
+		</form>
+	</div>
+
+
+
+
+<style>
+
+/* 배너 스킨 */
+.bn {display:block; background:#fff}
+.bn_link {margin-bottom:10px; text-align:center}
+.bn_link img{width:100%}
+
+.col-md-12.mobile-banner {
+    padding: 0;
+	margin-bottom:4px;
+}
+
+section.row.clearfix.top_banner{margin:0 -2px;}
+
+.col-md-4.col-sm-6.col-xs-6.text-center{width:25%;padding:0 2px 3px;box-sizing: border-box; }
+.col-md-4.col-sm-6.col-xs-6.text-center a img { width:100%; height:80px; }
+
+.col-md-12.col-sm-12.col-xs-12.text-center{width:100%;padding:0 2px 3px;box-sizing: border-box; }
+.col-md-12.col-sm-12.col-xs-12.text-center a img { width:10%; height:80px; }
+
+.main_top_bann a img { width:100%; height:80px; }
+.main_top_bann1 img { width:100%; height:80px; }
+
+@media (max-width: 991px){
+	/*.col-md-12.mobile-banner { margin-top:5px; margin-bottom:5px; }*/
+	section.row.clearfix.top_banner {margin:0 0 0 -2px;}
+
+	.col-md-4.col-sm-6.col-xs-6.text-center {width: 50%; padding:0 0 2px 2px; box-sizing: border-box;}
+	.col-md-4.col-sm-6.col-xs-6.text-center a img { width:100%; height:60px; }
+
+	.col-md-12.col-sm-12.col-xs-12.text-center{width:100%;padding:0 3px 2px;box-sizing: border-box; }
+	.col-md-12.col-sm-12.col-xs-12.text-center a img { width:100%; height:60px; }
+
+	.main_top_bann a img { width:100%; height:60px; }
+	.main_top_bann1 img { width:100%; height:60px; }
+}
+
+#banner_top_center1, #banner_top_center1 {
+    table-layout: fixed;
+    width: 100%;
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.banners img {
+    width: 100%;
+    height: 80px;
+}
+
+@media (max-width: 991px) {
+	.banners img { width: 100%; height: 50px; }
+}
+</style>
+
+<div class="col-md-12 mobile-banner" style="margin-top: 2px;">
+
+<section class="row clearfix top_banner">
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+<tbody>
+
+<tr>
+	<td>	
+		<div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://atom-kk.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgPkSOORl5pvXxbJ4PmYebA482-fOUQ5fA658pLMThUI1sI3Etm0WaCvns60nPPhZBsujAo6PIpVhVk1yW12it4OXzVS9oeqfZlr1mXNsl7uw76ZJBoFABRJ8g3dD7Lrz4KClMhwuSdE4n6q2-wx_jN1vPNA932jAPZILCSdlumKqeOv4DFYRbz6kHs_Pxe" style=" width:100% " title="">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>		</div>
+		<div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://svsv-tt.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgDcGvTWTwjrC5VZJFbuT8x1pCQU91Zrc5E-OweBy7Uoq7NSk63xeIw5hqf-04KpwG-Lt--W6ZZHIeGZUJlpWZyDlHc5yZlTw5WZuxntphGKSIg-yq1lK4WYbQKu6xXhNofP7CUXrP9sQfuw6rcFPPXvpN8gcQW4Mw_6cC51gOfnULUfeI7DLtzpDFpgHUo" style=" width:100% " title="">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>		</div>
+		<div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://sph-aaa.com" target="_blank"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEi4gnsGsacYtBBisGArhW-NVO6vXtucirEPDhWHKRfuHzD4pf7D7Fk8LrZ_Ff1kQQIoz7RXNgV-aazg0iS92KuoanV99m9hU3IYPBipFymCjZ_VMJxAEShT2kGfImJdchmuwcaCt4qCAVkP2oKoQBLcF9QxP1qqLjlOP3AriYub1BQzA1Dfl3HWnefKTLbh"></a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>		</div>
+		 <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			 <a href="http://orak-kkk.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgYNHH_r3ZTIaLpIRsaAymOqP0iErcLa9UGXXK6ALFsbVlVROfP6yaFwGUKXfb1MB2TbmvXtKq5eCWXlpziDvZKHPLA5McJRPiskO4HJnO1lBQxJrGJI5VruiEUjAr0ZMLZoDQbYMkV87OMua-CVBn8tLl9TENnzYb50PwIXCeo7XVMYmrVRqJ7TBkoib8-" style=" width:100% " title="">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>		</div>
+	</td>
+</tr>
+
+<tr>
+	<td>    
+		<div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://mul-bbq.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgXChVrhnG7SwR8Nl0_cgAjakTSbIaOCa7CeKiHT2c1LJprEqlbjTc_fwShm8TLYMvikaXGT1opEXOb7p8KFXqNRCcLQkhlRP7WIWclWHwnk9kTgGzsinkfxr61Ct6GOFR46JX4MZTnU58FoDmNDBbOHn9enCJ6ES48G9au_8Vshabf407cAfvWZNIR7LBF" style=" width:100% ">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://mul-bbq.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgXChVrhnG7SwR8Nl0_cgAjakTSbIaOCa7CeKiHT2c1LJprEqlbjTc_fwShm8TLYMvikaXGT1opEXOb7p8KFXqNRCcLQkhlRP7WIWclWHwnk9kTgGzsinkfxr61Ct6GOFR46JX4MZTnU58FoDmNDBbOHn9enCJ6ES48G9au_8Vshabf407cAfvWZNIR7LBF" style=" width:100% ">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://wn-st.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYVrEkFXRMrR4Q5eo-qEuaD5qE8kc06XDXJ0akMB0KAZ1p89EbX_ISdX68AcesrmT5tK6Lu_VUOo_dsxgijio-IgBkWbMEL1I4XX5sy_wer11xnasOBC5HVCU_jCWWBqeJJo12UXUUUfaqc0ULEoC-eu5p2suNitlwbci-6FJTl8F5SiRd0xemxsFfoA/s1600/vLr3m7x.gif" style="width:100%">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="https://www.mmb16.com/?momotag=tok8" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhFkPpm9eri-0rziwts6fz8tVTO4Ml2tC_6Ei0Ubk5Q8U1OvrxTGxXM3HAMBu7WODKm8qKx9vePE92lHAxpoWYvmEGSVhuE8uckwM63jpGtuFc1atnSRHbhM8uEpAw7YK7uxjWOxFoy7_AEHolc9lTBQSfceVJA96dqd-Iaejh0NdnDpKXM4wWnuKp34Ke8" style=" width:100% " title="">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>     
+    </td>
+</tr>
+
+<tr>
+	<td>    
+		<div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://sph-aaa.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEi4gnsGsacYtBBisGArhW-NVO6vXtucirEPDhWHKRfuHzD4pf7D7Fk8LrZ_Ff1kQQIoz7RXNgV-aazg0iS92KuoanV99m9hU3IYPBipFymCjZ_VMJxAEShT2kGfImJdchmuwcaCt4qCAVkP2oKoQBLcF9QxP1qqLjlOP3AriYub1BQzA1Dfl3HWnefKTLbh" style=" width:100% " title="">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="http://bnn-rrr.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhNfgk7wnj8vSHXKn0ZXkZupPRDKfeEFx0p_4nKzMAvNiZBAWBPDvRO5m_w6hf7zFxxqYMbF6PTSe23NakFiKeI3mz-gOHIjIuVqzGQTnbRs7SjO1fGUObuqi9eP5iuit_avVWStqFNsgIZfcewPQVa-CY2MJaPFujah6UlOngq8qps3lYQxSdSMQYxwemu" style=" width:100% " title="">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="https://ask-band.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX24gjHIDJ1U2vdUeVEkFW7i0Vl8MpTxJIe1VWvBhggOIzWlJKN3C9cdty-_CaexPTOhfQ_plI1JZS8AD8nHOlfZ0qbrmYa8GPxOKqxjNdPnqIkxJHVHiDQLjl_4uT7N6xKsI4WLiFIbVq81MuwX5zeRlzaO1Kg4mgZZLzoNb2X7dEaZefs2kRCfGxlg/s1600/F0JLSPg.gif" style=" width:100% ">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+			<a href="https://ask-band.com" target="_blank">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX24gjHIDJ1U2vdUeVEkFW7i0Vl8MpTxJIe1VWvBhggOIzWlJKN3C9cdty-_CaexPTOhfQ_plI1JZS8AD8nHOlfZ0qbrmYa8GPxOKqxjNdPnqIkxJHVHiDQLjl_4uT7N6xKsI4WLiFIbVq81MuwX5zeRlzaO1Kg4mgZZLzoNb2X7dEaZefs2kRCfGxlg/s1600/F0JLSPg.gif" style=" width:100% ">
+</a><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script>        </div>
+    </td>
+</tr>
+<tr>
+	<td>
+		
+		<style>
+						.mobile-banners {display:block;}
+						.pc-banners {display:none;}
+						
+						@media (min-width: 768px) { 
+						.mobile-banners {display:none;}
+						.pc-banners {display:block;}
+						}
+						
+						</style>
+					  
+								<div class="col-md-12 col-sm-12 col-xs-12 text-center pc-banners" >
+									<a href="https://affiliates.121apb.com/links/?btag=758648" target="_blank">
+									<img src="https://blogger.googleusercontent.com/img/a/AVvXsEiW3Q23m0WOj3uoqET1rN-ZOwb_WfwPsM0j4t0A8dcdl-wGw2i3R_76nzgQO-MeGKZUDL2oYufaN2VXxO6ZqqRCmDBpRJMGv_IrUeHlEnmU8Xi0mnT01ufsXG713j5akyDNLvfjbqZVOhcEl1WbCF8tawPyZFpaMRUyuXf2jorTG-AyKVhTI3AObxy8Jlcc" style="width:100%;height:70px;" height="70">
+									</a>
+									<a href="http://jgt-zzz.com" target="_blank">
+									<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjXQuDsI8Mvp7N0YNzWSItzKNsFxZrVuWQYgBwAIZJmZJxIaGXc3exjQqhCa1Xp0A7IztEdbnQ-EGKIeTiq8IBmOLSAKakoS-IWwn0d2Xe89PwJDaUK2r2JeEQQOlcYAUog8YVS8SpcdjK71oQ_zsPa9JlvgODEzZIzNe1n1ju8oZdrhyjvEWhNCah1opJG" style="width:100%;height:70px;" height="70">
+									</a>
+									<a href="http://sm-ddff.com" target="_blank">
+									<img src="https://blogger.googleusercontent.com/img/a/AVvXsEi2bTfo73MGUPS-VGrkQX3Wu1Gx-rxuqE2pDpZQHrcO6XFt5GzwtZCdXEAHCAn-TNJ2Roj_u7GrgGgMhzbGsxS543Trfy3CieFc8EqGgGO2kDrShzHAb8lkER4a95h4jTyqC6yVbKFm7HROmgtBsU5gp39nSihdaaAd-bPfZxhfQo4SLGB9ukoGVE52YpyC" style="width:100%;height:70px;" height="70">
+									</a>
+							   </div>
+							
+								<div class="col-md-12 col-sm-12 col-xs-12 text-center mobile-banners" >
+									<a href="https://affiliates.121apb.com/links/?btag=758648" target="_blank">
+									<img src="https://blogger.googleusercontent.com/img/a/AVvXsEiW3Q23m0WOj3uoqET1rN-ZOwb_WfwPsM0j4t0A8dcdl-wGw2i3R_76nzgQO-MeGKZUDL2oYufaN2VXxO6ZqqRCmDBpRJMGv_IrUeHlEnmU8Xi0mnT01ufsXG713j5akyDNLvfjbqZVOhcEl1WbCF8tawPyZFpaMRUyuXf2jorTG-AyKVhTI3AObxy8Jlcc" height="70">
+									</a>
+									<a href="http://jgt-zzz.com"" target="_blank">
+									<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjXQuDsI8Mvp7N0YNzWSItzKNsFxZrVuWQYgBwAIZJmZJxIaGXc3exjQqhCa1Xp0A7IztEdbnQ-EGKIeTiq8IBmOLSAKakoS-IWwn0d2Xe89PwJDaUK2r2JeEQQOlcYAUog8YVS8SpcdjK71oQ_zsPa9JlvgODEzZIzNe1n1ju8oZdrhyjvEWhNCah1opJG" style="width:100%;height:70px;" height="70">
+									</a>
+									<a href="http://sm-ddff.com" target="_blank">
+									<img src="https://blogger.googleusercontent.com/img/a/AVvXsEi2bTfo73MGUPS-VGrkQX3Wu1Gx-rxuqE2pDpZQHrcO6XFt5GzwtZCdXEAHCAn-TNJ2Roj_u7GrgGgMhzbGsxS543Trfy3CieFc8EqGgGO2kDrShzHAb8lkER4a95h4jTyqC6yVbKFm7HROmgtBsU5gp39nSihdaaAd-bPfZxhfQo4SLGB9ukoGVE52YpyC" style="width:100%;height:70px;" height="70">
+									</a>
+							   </div>
+		
+	</td>
+</tr>
+
+
+
+</tbody>
+</table>    
+</section>
+
+</div>
+
+<table id="banner_top_center1" class="banners" border="0" style="margin-bottom:1px;">
+<tbody>
+<tr>
+<td><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script></td>
+<td width="3"></td>
+<td><script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script></td>
+</tr>
+</tbody>
+</table>
+
+<div class="col-md-12 mobile-banner" style="margin-top: -4px;">
+<div class="main_top_bann1">
+	<script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script></div>
+</div>
+
+<div class="col-md-12 mobile-banner" style="margin-top: 2px;">
+<div class="main_top_bann1">
+	<script type="text/javascript">
+function adClick(target) {
+	window.open(target, '_blank');
+};
+</script></div>
+</div>
+
+
+							
+
+
+
+
+<script>
+        var view_status = Cookies.getJSON('view_status') || {};
+        if (!view_status.toon)
+            view_status.toon = {};
+</script>
+
+<style type="text/css">
+body {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.view-wrap h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 50px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px 10px;
+    color: rgb(59,62,67);
+    letter-spacing: -1px;
+}
+footer { display:none; }
+.view-wrap { position:static; }
+.btn-resource { background:url(/img/btn.resource.png) no-repeat; }
+.btn-prev { position:fixed; top:50%; margin-left:-1px; margin-top:-19px; z-index:100; background-position:-212px -10px; width:38px; height:73px; }
+.btn-next { position:fixed; top:50%; margin-top:-19px; right:0; z-index:100; background-position: -268px -10px; width:38px; height:73px; }
+@media (min-width: 1170px) {
+	.btn-next {	 left:50%; margin-left:646px; }
+}
+.btn-prev a { display:block; width:inherit; height:inherit; }
+.btn-next a { display:block; width:inherit; height:inherit; }
+.btn-resource a span { display:none; }
+.contents { position:realtive; }
+.contents img { display:block; margin:auto; width:600px !important; }
+</style>
+
+<script src="https://tkr263.com/js/viewimageresize.js"></script>
+<script type="text/javascript" src="https://tkr263.com/skin/board/webtoon/js/cmm.lib.js"></script>
+
+<div class="view-wrap">
+<h1>0087 - 퍼펙트 써전 87화 (시즌2 완결)</h1>
+<div class="btn-resource btn-prev at-tip" data-original-title="0086 - 퍼펙트 써전 86화" data-toggle="tooltip" data-placement="right"><a href="/webtoon/669802/8190" alt="0086 - 퍼펙트 써전 86화"><span>0086 - 퍼펙트 써전 86화</span></a></div>
+ 
+<div class="contents panel panel-default view-head no-attach">
+<br style="line-height:1%;">
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="http://1bet1.vip" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHUlfdkAg9uSP48b8tauEfgRQWpI7i4lWNkVFUY4R8pI7Vrno8yHaQsUDIyxufLjI9Cuaf3RNuBKoV_BN2jxIPG8C_6b4i5LpT1mqaPOeCeyzwXQUKfHAprjWYg8k0zy4InH3kWhKRPCpCraTQCYfOa6UNQV4NImTvC9wCqrbN3sbxllbQ-V06xY38sg/s320/WDowIxN.gif"></a></div>
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="http://카림도메인.com?join=kdgk" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX1XqO_6xDFfZvJwhyAo65iWXxmpEwySK6-b6SEEvEGv1CmJqNXAAOH_J4TQKlUZaCiOjLDyzb5-jSEQ8JvXlPpVn5pSVZFk3IDYgwt7Ulr1XrmBaKRlKM0DZHSqP61eGi7gwLJayeuemLNsYnLQZGlynrT3YCU_S6QG9CwT7dEdDBzYQaLiyFdjrAYQ/s320/LnGspxi.gif"></a></div>
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="http://btq-wd.com" target="_blank"><img src=" https://blogger.googleusercontent.com/img/a/AVvXsEiuSKizqs8uljBbDyVbLtqfnqB0_pj469fq9pRc4oW8e-VTd3ET6z7qm6p1cRFLno6wH59kBJ0q1NpiU_NquneZJ6c1ViQPX1IjoVkPVoSg4ocIc4Dve6A-aLGlAEAlYKsaxyM0jBD3o-YR-tq_ZPUcNzFpuipFvG35EnkU1pgurwlg234kGD5cZQNQQvnz"></a></div>
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="http://www.otkingshop.com" target="_blank"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEi9g9tnm-_45DVNw1LQ_zgVdkzuyMj6CGdRNO53LgpdG7DiRPZ5UXHeubo6dA36MpUn3s6qOTlXJx_ZFWDfUn2huQVVyXuxup4oGEbS0is8oHUJs-_KlKSwhx-mROusmrbjlmaFB-zSMMNg01ZawSvVjkV7dfiWXp9vf3pon_QjRQ2gbEY7nJXuSmbwDn-E"></a></div>
+<div id="tnimg">
+
+
+
+
+</div>
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="http://br-ddd.com" target="_blank"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEjTOxqL3BA149VFPwYHMZXvlHQo_Tz0GB3NQTrgZ6LJVnwxfKqJzp8n4MdKp5pQw1jr9RsEdmq0aGdnE9uWNaIu7iJuAK6ISpbqUPC6rCc-AF3zJDYwFGIvmKM7yNu3_-D-KEvXWn_nl5L1fs06Ci7IXjcDXfI8pmRIgwCTjZUa4aC8B4W9HSIAkrTlhTZN"></a></div>
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="https://mmb16.com/?momotag=tok8" target="_blank"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgkrjvp7vv-AUUoDSImunZtjCOXolh-QEeljginsnF4OvKdZKHVPObF1UN9oy2JSNFwU0cHFx_Gm2LyWTq_Q9JipLTrVm9oLirja2dTJQpNGk0RQK4NgZGzsc5DNStTzi65TtJv2RgeIphKtzOys-ghCzAmV10gisHI87bO5vEae8Xkup3A7Owmd2yjbRZe"></a></div>
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="https://bncrs.kr" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqticixlofqh7ltIWAIdajLz53jd5O0sxoOdyutwkY5m2n89ep9xViD48bw5B0uAzTOCTJNbwv32EKSH9rnBk4e7GmAaYwS6Z8Cow3FJ3Whr-4W4CV9GGnPQ9Idx012m3NxMYy2yYYVvWyih0bJ1PRqau09QGIv-qv5sx21p88RBwpzvsxXI_2LNYnbQ/s320/%EB%B2%84%EB%8B%9D800x133.gif"></a></div>
+	<div style="width:100%;max-width:800px; margin:0 auto;"><a href="https://oplove16.com/bbs/board.php?bo_table=after_best" target="_blank"><img src="https://imgsuperpower.com/oplove/2302/48856c0f3012c9ef9daf1dc9d9f78679_1677060776_3431.gif"></a></div>
+<div class="clearfix"></div>
+<div id class="navbar-mobile btn-group btn-group-justified " style="display:;height:60px">
+<a href="/webtoon/669802/8190" class="btn btn-default" style="border:0"><span class="fa fa-arrow-circle-left colored" style="font-size:30px"></span><span class="text"><br/>0086 - 퍼펙트 써전 86화</span></a>
+<a href="/wt" class="btn btn-default" style="border:0"><span class="fa fa-home colored" style="font-size:30px"></span><span class="text"><br/>웹툰 홈</span></a>
+<a href="/webtoon/8190" class="btn btn-default" style="border:0"><span class="fa fa-list at-tip colored" style="font-size:30px"></span><span class="text"><br/>웹툰 목록</span></a>
+<span class="btn btn-default" style="border:0"><i class="fa fa-arrow-circle-right colored fa-disabled" ria-hidden="true" style="font-size:30px"></i></span>
+</div>
+</div>
+</div>
+<style>
+div.mgNavigator {
+	width:140px;
+	height:600px ;
+}
+div.mgViewport {
+	width:100%;
+	height:200px ;
+}
+.bottom-navbar { left:0; position:fixed; bottom:0; background-color:#fff; width:100%; box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); z-index: 1000; }
+.bottom-navbar .container { position:relative; height:50px; margin:auto; font-size:15px; padding-top:5px; }
+.bottom-navbar .container i { font-size:40px; }
+.toon-info { position:relative; display:inline-block; vertical-align:top; width:400px; }
+.toon-icon { width:40px; height:40px; }
+.toon-title { position:absolute; top:0; left:50px; }
+.toon-total { color:#999; }
+.toon-section { position:absolute; top:20px; left:50px; color:#999999; font-size:13px; }
+.toon-nav { position:absolute; top:5px; right:5px; }
+.content-zoom img { width:100% !important; }
+.btn-zoom { cursor:pointer; }
+.fa-disabled { color:#ccc; }
+</style>
+
+<div class="container">
+<div class="at-content">
+
+<div class="bottom-navbar">
+ 
+<div class="container" style="width:1335px">
+<div class="toon-info">
+ <div class="toon-title">0087 - 퍼펙트 써전 87화 (시즌2 완결) <span class="toon-total">(총87화)</span></div>
+<div class="toon-section"></div>
+</div>
+<div class="toon-nav">
+<a href="/wt"><i class="fa fa-home" data-original-title="홈" aria-hidden="true" data-toggle="tooltip" data-placement="top"></i></a>
+&nbsp;
+<a href="/webtoon/8190"><i class="fa fa-list at-tip" data-original-title="목록" aria-hidden="true" data-toggle="tooltip" data-placement="top"></i></a>
+&nbsp;
+<i class="fa fa-search btn-zoom at-tip" aria-hidden="true" data-original-title="확대/축소" data-toggle="tooltip" data-placement="top"></i>
+&nbsp;
+<a href="/webtoon/669802/8190"><i class="fa fa-chevron-circle-left at-tip" data-original-title="0086 - 퍼펙트 써전 86화" aria-hidden="true" data-toggle="tooltip" data-placement="top"></i></a>
+&nbsp;
+<i class="fa fa-chevron-circle-right fa-disabled" aria-hidden="true"></i>
+</div>
+</div>
+</div>
+<script>
+function board_move(href) {
+		window.open(href, "boardmove", "left=50, top=50, width=500, height=550, scrollbars=1");
+}
+
+var _show_menu = true;
+$(function() {
+	$(window).scroll(function(e) {
+		if ($(this).scrollTop()<200) {
+			if (_show_menu == false)
+				$('.at-menu').show();
+		} else {
+			if (_show_menu == false)
+				$('.at-menu').hide();
+		}
+	});	
+$('.contents').on('click', function(e) {
+		if (_show_menu) {
+			if ($(window).scrollTop()>100)
+			$('.at-menu').hide();
+			$('.btn-resource').hide();
+			$('.bottom-navbar').hide();
+		} else {
+			$('.at-menu').show();
+			$('.btn-resource').show();
+			$('.bottom-navbar').show();
+		}
+		_show_menu = !_show_menu;
+	});
+});
+$('.btn-zoom').on('click', function(e) {
+		var zoom = $('.contents').hasClass('content-zoom');
+		if (zoom)
+			$('.contents').removeClass('content-zoom');
+		else
+			$('.contents').addClass('content-zoom');
+		view_status.toon.zoom = !zoom;
+		Cookies.set('view_status', view_status);
+	});
+
+$(function() {
+
+	$('#bo_v_con img').each(function(i, e){
+		$(e).img_original_size(function(e, w, h){
+			//console.log(w + ':' + h);
+			$(e).css('max-width', w);
+			$(e).css('max-height', h);
+			$(e).css('width', '100%');
+			//$(e).after('<br>');
+		})
+	});
+});
+
+// 삭제 검사 확인 (타겟을 parent로 하기위해 오버라이딩 함)
+function del(href)
+{
+		if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
+				var iev = -1;
+				if (navigator.appName == 'Microsoft Internet Explorer') {
+						var ua = navigator.userAgent;
+						var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+						if (re.exec(ua) != null)
+								iev = parseFloat(RegExp.$1);
+				}
+
+				// IE6 이하에서 한글깨짐 방지
+				if (iev != -1 && iev < 7) {
+						parent.document.location.href = encodeURI(href);
+				} else {
+						parent.document.location.href = href;
+				}
+		}
+}
+//var tn_imgs = 'PGltZyBpdGVtcHJvcD0iaW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vaW1nLmltZ2ltZ2ltZ2RvZG9kby5jb20vZGF0YS9maWxlL3dlYnRvb25CSzIvODE5MC82NERGNzY3RDIwMjY2LmpwZyIgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0QyMDI2Ni5qcGciIGFsdD0iNjRERjc2N0QyMDI2Ni5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0Q5NkIyMS5qcGciIGFsdD0iNjRERjc2N0Q5NkIyMS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0UyQkRBMS5qcGciIGFsdD0iNjRERjc2N0UyQkRBMS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0VDMEQwNy5qcGciIGFsdD0iNjRERjc2N0VDMEQwNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0Y0NEY4My5qcGciIGFsdD0iNjRERjc2N0Y0NEY4My5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0ZENDAyOC5qcGciIGFsdD0iNjRERjc2N0ZENDAyOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODA1NkJFOS5qcGciIGFsdD0iNjRERjc2ODA1NkJFOS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODBEODI5QS5qcGciIGFsdD0iNjRERjc2ODBEODI5QS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODE2QkMyNy5qcGciIGFsdD0iNjRERjc2ODE2QkMyNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODFFRTUzNy5qcGciIGFsdD0iNjRERjc2ODFFRTUzNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODI3RkJBNy5qcGciIGFsdD0iNjRERjc2ODI3RkJBNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODMwQjc1NS5qcGciIGFsdD0iNjRERjc2ODMwQjc1NS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODM5Q0YzMC5qcGciIGFsdD0iNjRERjc2ODM5Q0YzMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODQyMTE2Qi5qcGciIGFsdD0iNjRERjc2ODQyMTE2Qi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODQ4NzU1RS5qcGciIGFsdD0iNjRERjc2ODQ4NzU1RS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODUwNzA3OC5qcGciIGFsdD0iNjRERjc2ODUwNzA3OC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODU3QzcyRi5qcGciIGFsdD0iNjRERjc2ODU3QzcyRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODYwREFDMy5qcGciIGFsdD0iNjRERjc2ODYwREFDMy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODY4MENFNi5qcGciIGFsdD0iNjRERjc2ODY4MENFNi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODcxMTVFRi5qcGciIGFsdD0iNjRERjc2ODcxMTVFRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODc5MTlEQS5qcGciIGFsdD0iNjRERjc2ODc5MTlEQS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODgyRUVENC5qcGciIGFsdD0iNjRERjc2ODgyRUVENC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODhBNkEzQy5qcGciIGFsdD0iNjRERjc2ODhBNkEzQy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODkyRDU3NS5qcGciIGFsdD0iNjRERjc2ODkyRDU3NS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODlCMzgwOC5qcGciIGFsdD0iNjRERjc2ODlCMzgwOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEE4MzgwRi5qcGciIGFsdD0iNjRERjc2OEE4MzgwRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEIwNTMxRC5qcGciIGFsdD0iNjRERjc2OEIwNTMxRC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEI3QTYzNC5qcGciIGFsdD0iNjRERjc2OEI3QTYzNC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEJFQzY4My5qcGciIGFsdD0iNjRERjc2OEJFQzY4My5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEM2RDZGQi5qcGciIGFsdD0iNjRERjc2OEM2RDZGQi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OENFOTAyNy5qcGciIGFsdD0iNjRERjc2OENFOTAyNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEQ3NTUwOS5qcGciIGFsdD0iNjRERjc2OEQ3NTUwOS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEUwMUM0OC5qcGciIGFsdD0iNjRERjc2OEUwMUM0OC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEU4QkFFMy5qcGciIGFsdD0iNjRERjc2OEU4QkFFMy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEYyQ0VERS5qcGciIGFsdD0iNjRERjc2OEYyQ0VERS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEY5RkZCOC5qcGciIGFsdD0iNjRERjc2OEY5RkZCOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTAxRTE0MS5qcGciIGFsdD0iNjRERjc2OTAxRTE0MS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTBBMzkxNS5qcGciIGFsdD0iNjRERjc2OTBBMzkxNS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTI3NzRDMC5qcGciIGFsdD0iNjRERjc2OTI3NzRDMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTMwRUQ3OC5qcGciIGFsdD0iNjRERjc2OTMwRUQ3OC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTM4OUZFMi5qcGciIGFsdD0iNjRERjc2OTM4OUZFMi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTQyRTZERi5qcGciIGFsdD0iNjRERjc2OTQyRTZERi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTRBNDVGOC5qcGciIGFsdD0iNjRERjc2OTRBNDVGOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTUzNzZGOS5qcGciIGFsdD0iNjRERjc2OTUzNzZGOS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTVCNzIzMy5qcGciIGFsdD0iNjRERjc2OTVCNzIzMy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTYzNzIxRS5qcGciIGFsdD0iNjRERjc2OTYzNzIxRS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTZBRkIwMC5qcGciIGFsdD0iNjRERjc2OTZBRkIwMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTc0MjAyNC5qcGciIGFsdD0iNjRERjc2OTc0MjAyNC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTdCNUY2Qi5qcGciIGFsdD0iNjRERjc2OTdCNUY2Qi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTg0NEY3RS5qcGciIGFsdD0iNjRERjc2OTg0NEY3RS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OThDMDNGQi5qcGciIGFsdD0iNjRERjc2OThDMDNGQi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTk0NDdFMS5qcGciIGFsdD0iNjRERjc2OTk0NDdFMS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTlDN0RENi5qcGciIGFsdD0iNjRERjc2OTlDN0RENi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUE1QzZDQy5qcGciIGFsdD0iNjRERjc2OUE1QzZDQy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUFEOTBFRi5qcGciIGFsdD0iNjRERjc2OUFEOTBFRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUI2MTIwMC5qcGciIGFsdD0iNjRERjc2OUI2MTIwMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUJGMDMzNy5qcGciIGFsdD0iNjRERjc2OUJGMDMzNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUM4NDY0NS5qcGciIGFsdD0iNjRERjc2OUM4NDY0NS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUQwQ0FCNi5qcGciIGFsdD0iNjRERjc2OUQwQ0FCNi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUQ3RDZFOC5qcGciIGFsdD0iNjRERjc2OUQ3RDZFOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUUwMkMzRC5qcGciIGFsdD0iNjRERjc2OUUwMkMzRC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUU2OEExQi5qcGciIGFsdD0iNjRERjc2OUU2OEExQi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUVEQ0IwNC5qcGciIGFsdD0iNjRERjc2OUVEQ0IwNC5qcGciIGNsYXNzPSJpbWctdGFnICIvPg==';
+var tnimg = 'PGltZyBpdGVtcHJvcD0iaW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vaW1nLmltZ2ltZ2ltZ2RvZG9kby5jb20vZGF0YS9maWxlL3dlYnRvb25CSzIvODE5MC82NERGNzY3RDIwMjY2LmpwZyIgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0QyMDI2Ni5qcGciIGFsdD0iNjRERjc2N0QyMDI2Ni5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0Q5NkIyMS5qcGciIGFsdD0iNjRERjc2N0Q5NkIyMS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0UyQkRBMS5qcGciIGFsdD0iNjRERjc2N0UyQkRBMS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0VDMEQwNy5qcGciIGFsdD0iNjRERjc2N0VDMEQwNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0Y0NEY4My5qcGciIGFsdD0iNjRERjc2N0Y0NEY4My5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2N0ZENDAyOC5qcGciIGFsdD0iNjRERjc2N0ZENDAyOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODA1NkJFOS5qcGciIGFsdD0iNjRERjc2ODA1NkJFOS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODBEODI5QS5qcGciIGFsdD0iNjRERjc2ODBEODI5QS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODE2QkMyNy5qcGciIGFsdD0iNjRERjc2ODE2QkMyNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODFFRTUzNy5qcGciIGFsdD0iNjRERjc2ODFFRTUzNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODI3RkJBNy5qcGciIGFsdD0iNjRERjc2ODI3RkJBNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODMwQjc1NS5qcGciIGFsdD0iNjRERjc2ODMwQjc1NS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODM5Q0YzMC5qcGciIGFsdD0iNjRERjc2ODM5Q0YzMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODQyMTE2Qi5qcGciIGFsdD0iNjRERjc2ODQyMTE2Qi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODQ4NzU1RS5qcGciIGFsdD0iNjRERjc2ODQ4NzU1RS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODUwNzA3OC5qcGciIGFsdD0iNjRERjc2ODUwNzA3OC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODU3QzcyRi5qcGciIGFsdD0iNjRERjc2ODU3QzcyRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODYwREFDMy5qcGciIGFsdD0iNjRERjc2ODYwREFDMy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODY4MENFNi5qcGciIGFsdD0iNjRERjc2ODY4MENFNi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODcxMTVFRi5qcGciIGFsdD0iNjRERjc2ODcxMTVFRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODc5MTlEQS5qcGciIGFsdD0iNjRERjc2ODc5MTlEQS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODgyRUVENC5qcGciIGFsdD0iNjRERjc2ODgyRUVENC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODhBNkEzQy5qcGciIGFsdD0iNjRERjc2ODhBNkEzQy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODkyRDU3NS5qcGciIGFsdD0iNjRERjc2ODkyRDU3NS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2ODlCMzgwOC5qcGciIGFsdD0iNjRERjc2ODlCMzgwOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEE4MzgwRi5qcGciIGFsdD0iNjRERjc2OEE4MzgwRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEIwNTMxRC5qcGciIGFsdD0iNjRERjc2OEIwNTMxRC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEI3QTYzNC5qcGciIGFsdD0iNjRERjc2OEI3QTYzNC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEJFQzY4My5qcGciIGFsdD0iNjRERjc2OEJFQzY4My5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEM2RDZGQi5qcGciIGFsdD0iNjRERjc2OEM2RDZGQi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OENFOTAyNy5qcGciIGFsdD0iNjRERjc2OENFOTAyNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEQ3NTUwOS5qcGciIGFsdD0iNjRERjc2OEQ3NTUwOS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEUwMUM0OC5qcGciIGFsdD0iNjRERjc2OEUwMUM0OC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEU4QkFFMy5qcGciIGFsdD0iNjRERjc2OEU4QkFFMy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEYyQ0VERS5qcGciIGFsdD0iNjRERjc2OEYyQ0VERS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OEY5RkZCOC5qcGciIGFsdD0iNjRERjc2OEY5RkZCOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTAxRTE0MS5qcGciIGFsdD0iNjRERjc2OTAxRTE0MS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTBBMzkxNS5qcGciIGFsdD0iNjRERjc2OTBBMzkxNS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTI3NzRDMC5qcGciIGFsdD0iNjRERjc2OTI3NzRDMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTMwRUQ3OC5qcGciIGFsdD0iNjRERjc2OTMwRUQ3OC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTM4OUZFMi5qcGciIGFsdD0iNjRERjc2OTM4OUZFMi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTQyRTZERi5qcGciIGFsdD0iNjRERjc2OTQyRTZERi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTRBNDVGOC5qcGciIGFsdD0iNjRERjc2OTRBNDVGOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTUzNzZGOS5qcGciIGFsdD0iNjRERjc2OTUzNzZGOS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTVCNzIzMy5qcGciIGFsdD0iNjRERjc2OTVCNzIzMy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTYzNzIxRS5qcGciIGFsdD0iNjRERjc2OTYzNzIxRS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTZBRkIwMC5qcGciIGFsdD0iNjRERjc2OTZBRkIwMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTc0MjAyNC5qcGciIGFsdD0iNjRERjc2OTc0MjAyNC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTdCNUY2Qi5qcGciIGFsdD0iNjRERjc2OTdCNUY2Qi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTg0NEY3RS5qcGciIGFsdD0iNjRERjc2OTg0NEY3RS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OThDMDNGQi5qcGciIGFsdD0iNjRERjc2OThDMDNGQi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTk0NDdFMS5qcGciIGFsdD0iNjRERjc2OTk0NDdFMS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OTlDN0RENi5qcGciIGFsdD0iNjRERjc2OTlDN0RENi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUE1QzZDQy5qcGciIGFsdD0iNjRERjc2OUE1QzZDQy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUFEOTBFRi5qcGciIGFsdD0iNjRERjc2OUFEOTBFRi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUI2MTIwMC5qcGciIGFsdD0iNjRERjc2OUI2MTIwMC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUJGMDMzNy5qcGciIGFsdD0iNjRERjc2OUJGMDMzNy5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUM4NDY0NS5qcGciIGFsdD0iNjRERjc2OUM4NDY0NS5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUQwQ0FCNi5qcGciIGFsdD0iNjRERjc2OUQwQ0FCNi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUQ3RDZFOC5qcGciIGFsdD0iNjRERjc2OUQ3RDZFOC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUUwMkMzRC5qcGciIGFsdD0iNjRERjc2OUUwMkMzRC5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUU2OEExQi5qcGciIGFsdD0iNjRERjc2OUU2OEExQi5qcGciIGNsYXNzPSJpbWctdGFnICIvPjxpbWcgc3JjPSJodHRwczovL2ltZy5pbWdpbWdpbWdkb2RvZG8uY29tL2RhdGEvZmlsZS93ZWJ0b29uQksyLzgxOTAvNjRERjc2OUVEQ0IwNC5qcGciIGFsdD0iNjRERjc2OUVEQ0IwNC5qcGciIGNsYXNzPSJpbWctdGFnICIvPg==';
+function resizeMovie(){
+	$('#bo_v_con iframe').each(function(){
+		var w = $(this).width();
+		var h = $(this).height();
+		$(this).parent().css({'height':$(this).parent().height()});
+
+		$(this).css({
+					'max-width':w+'px',
+					'max-height':h+'px',
+					'width':'100%',
+					'height':'100%'
+				});
+	});
+}
+var tnimg = Base.decode(tnimg);
+function setRating(rating, rateYoInstance){
+
+	$.ajax({
+		url: $('#board_skin_url').val() + '/set_userrate.php',
+		data: {
+			actmode: 'rating',
+			bo_table: $('#bo_table').val(),
+			wr_id: $('#wr_id').val(),
+			wt_idx: $('#sca').val(),
+			rating: rating
+		},
+		type: 'post',
+		dataType: 'json'
+	})
+	.done(function(result){
+		if(result===undefined || result===null || result.data==='FAIL'){
+			alert('평가하기에 실패하였습니다');
+			return;
+		}
+		if(result.data==='EXIST'){
+			alert('이미 평가하셧습니다');
+		}else if(result.data==='SUCCESS'){
+			alert('자료에 대한 평가에 감사드립니다');
+		}
+	})
+	.fail(function(x, r){
+		console.log(r);
+	});
+}
+$('#tnimg').html(tnimg);
+$(function(){
+	resizeMovie();
+	$('#btn_close').click(function(){
+		parent.$.colorbox.close();
+	});
+	parent.$('body').scrollTop(0);
+
+
+	$('.rating').rateYo({
+			rating: 3,
+			fullStar: true,
+			onSet: setRating
+		});
+})
+</script>
+</div>
+</div>
+
+ 
+<div class="h40"><p class="hidden">한줄간격주기</p></div>
+<style>
+.tail-logo { width:20% }
+@media all and (max-width:991px) {
+	.tail-logo { width:50% }
+}
+</style>
+
+									</div><!-- .at-content -->
+						</div><!-- .at-container -->
+			</div><!-- .at-body -->
+
+			<footer class="section">
+			 
+			<div class="container" style="width:1370px">
+						<div class="row">
+				<div class="col-md-12 text-center" style="background: #fff; float:left">
+					<div class="row h4"><p class="hidden">한줄간격주기</p></div>
+					<img src="/img/tk_logo.png" alt="웹툰미리보기" class="tail-logo">
+					<div class="row h4 hidden visible-xs"><p class="hidden">한줄간격주기</p></div>
+						<div class="container-fluid bg-primary">
+							<div class="col-lg-12 text-center h5" style="color:black">
+								Copyright © <b>툰코</b> All rights reserved.
+								<script id="_wau5mv">var _wau = _wau || []; _wau.push(["dynamic", "czve24e7ol", "5mv", "ffffff20124d", "small"]);</script><script async src="//waust.at/d.js"></script>
+								<br>
+							</div>
+					</div>
+				</div>
+			</div><!-- */end row -->
+		</div><!-- */end container -->
+	</footer>
+<div class="at-go">
+	<div id="go-btn" class="go-btn">
+		<span class="go-top cursor"><i class="fa fa-chevron-up"></i></span>
+		<span class="go-bottom cursor"><i class="fa fa-chevron-down"></i></span>
+	</div>
+</div>
+
+</div><!-- .wrapper -->
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://tkr263.com/thema/webtoon/assets/js/respond.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script>
+var sub_show = "slide";
+var sub_hide = "";
+var menu_startAt = "0";
+var menu_sub = "";
+var menu_subAt = "0";
+</script>
+
+
+
+
+<script src="https://tkr263.com/thema/webtoon/assets/bs3/js/bootstrap.min.js"></script>
+<script src="https://tkr263.com/thema/webtoon/assets/js/sly.min.js"></script>
+<script src="https://tkr263.com/thema/webtoon/assets/js/custom.js"></script>
+<script src="https://tkr263.com/thema/webtoon/assets/js/sticky.js"></script>
+
+
+
+<!-- pop start -->
+
+<style type="text/css">
+	.alert_windows{
+		display:none;
+		position:absolute;
+		z-index:999999;
+		width:320px;
+		height:400px;
+		background:#2085da;
+		border-radius:20px;
+		padding:15px;
+		box-shadow:10px 20px 60px rgba(0, 0, 0, 0.7);
+
+		background: linear-gradient(#061c2d, #575757);
+	}
+
+	.alert_windows span{
+		float:right;
+		width:100%;
+		height:30px;
+		text-align:center;
+		font:15px/30px Microsoft Yahei;
+		cursor:pointer;
+		border-radius:5px;
+		color:#bec5cc;
+	}
+
+	.alert_windows span:hover{
+		color:#EEE;
+	}
+
+	.popup-links {display:block;width:100%;padding:10px 0px;background:#ff3d3d;text-align:center;color:#fff;margin-bottom:10px;text-decoration:none;border-radius:15px;transition: .5s;box-shadow:5px 5px 15px rgba(218, 46, 46, 0.4); }
+	.popup-links:hover {background:#e13636;}
+
+	.alert_windows h2 {color:#fff;text-align:center;margin-bottom:10px;font-size:25px;}
+	.alert_windows p.cut-text {margin-top:10px;margin-bottom:15px;border:1px solid
+	#fad67f;color:#fad67f;padding:10px;border-radius:15px;text-align:center;}
+	.alert_windows p.long-text {color:#bec5cc;font-size:15px;margin-bottom:15px;}
+
+	.close {background:#0019d6;box-shadow:5px 5px 15px rgba(0, 0, 0, 0.4);}
+	.close:hover {background:#282a2c;}
+
+</style>
+<script>
+	/*jquery.cookie start*/
+jQuery.cookie = function(name, value, options) {
+	  if (typeof value != 'undefined') {
+				options = options || {};
+				if (value === null) {
+						  value = '';
+						  options = $.extend({}, options);
+						  options.expires = -1;
+				}
+				var expires = '';
+				if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+						  var date;
+						  if (typeof options.expires == 'number') {
+									date = new Date();
+									date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+						  } else {
+									date = options.expires;
+						  }
+						  expires = '; expires=' + date.toUTCString();
+				}
+				var path = options.path ? '; path=' + (options.path) : '';
+				var domain = options.domain ? '; domain=' + (options.domain) : '';
+				var secure = options.secure ? '; secure' : '';
+				document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+	  } else {
+				var cookieValue = null;
+				if (document.cookie && document.cookie != '') {
+						  var cookies = document.cookie.split(';');
+						  for (var i = 0; i < cookies.length; i++) {
+									var cookie = jQuery.trim(cookies[i]);
+									if (cookie.substring(0, name.length + 1) == (name + '=')) {
+											  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+											  break;
+									}
+						  }
+				}
+				return cookieValue;
+	  }
+};
+/* jquery.cookie end */
+</script>
+<script>
+$(window).load( function() {
+
+		//	openChat();
+		/*
+	var cName = "hong_chat_open_yn";
+	rName = new RegExp(cName + '=([^;]*)');
+	rName = rName.test(document.cookie) ? unescape(RegExp.$1) : '';
+	
+	if( rName == "" ) {
+		openChat();
+		document.cookie=cName+'='+escape('Y');
+	}*/
+});
+</script>
+<!-- 팝업 AND -->
+
+<script>
+var sidebar_url = "https://tkr263.com/thema/webtoon/widget/basic-sidebar";
+var sidebar_time = "30";
+</script>
+<script src="https://tkr263.com/thema/webtoon/widget/basic-sidebar/sidebar.js"></script>
+
+<!-- sidebar Box -->
+<aside id="sidebar-box" class="ko">
+
+	<!-- Head Line -->
+	<div class="sidebar-head"></div>
+
+	<!-- sidebar Wing -->
+	<div class="sidebar-wing">
+		<!-- sidebar Wing Close -->
+		<div class="sidebar-wing-close sidebar-close en" title="닫기">
+			<i class="fa fa-times"></i>
+		</div>
+	</div>
+
+	<!-- sidebar Content -->
+	<div id="sidebar-content" class="sidebar-content">
+
+		<!-- Common -->
+		<div class="sidebar-common">
+
+
+
+			<div class="h15"></div>
+
+		</div>
+
+		<!-- Menu -->
+		<div id="sidebar-menu" class="sidebar-item">
+			
+<div class="sidebar-login">
+	
+		<form id="sidebar_login_form" name="sidebar_login_form" method="post" action="https://tkr263.com/bbs/login_check.php" autocomplete="off" role="form" class="form" onsubmit="return sidebar_login(this);">
+		<input type="hidden" name="url" value="https://tkr263.com/webtoon/672105/8190">
+			<div class="form-group">	
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user gray"></i></span>
+					<input type="text" name="mb_id" id="sidebar_mb_id" class="form-control input-sm" placeholder="아이디" tabindex="91">
+				</div>
+			</div>
+			<div class="form-group">	
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock gray"></i></span>
+					<input type="password" name="mb_password" id="sidebar_mb_password" class="form-control input-sm" placeholder="비밀번호" tabindex="92">
+				</div>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-navy btn-block" tabindex="93">Login</button>    
+			</div>	
+
+			<label class="text-muted" style="letter-spacing:-1px;">
+				<input type="checkbox" name="auto_login" value="1" id="sidebar_remember_me" class="remember-me" tabindex="94">
+				자동로그인 및 로그인 상태 유지
+			</label>
+		</form>
+
+		
+		<div class="h10"></div>
+
+		
+		<!-- Member -->
+		<div class="div-title-underline-thin en">
+			<b>MEMBER</b>
+		</div>
+		<ul class="sidebar-list list-links">
+			<li><a href="https://tkr263.com/bbs/register.php">회원가입</a></li>
+			<li><a href="https://tkr263.com/bbs/password_lost.php" class="win_password_lost">정보찾기</a></li>
+		</ul>
+		
+	</div>
+
+<div class="h20"></div>
+
+<!-- Categroy -->
+<div class="div-title-underline-thin en">
+	<b>MENU</b>
+</div>
+
+<div class="sidebar-menu panel-group" id="sidebar_menu" role="tablist" aria-multiselectable="true">
+						<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="/업데이트" class="no-sub">
+						웹툰											</a>
+				</div>
+			</div>
+								<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="/최신만화" class="no-sub">
+						만화											</a>
+				</div>
+			</div>
+								<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="http://yadongyas.com" target="_blank" class="no-sub">
+						최신야동											</a>
+				</div>
+			</div>
+								<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="/망가" class="no-sub">
+						망가											</a>
+				</div>
+			</div>
+								<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="/마이툰" class="no-sub">
+						북마크											</a>
+				</div>
+			</div>
+								<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="http://vipkkhh.com" target="_blank" class="no-sub">
+						보증토토											</a>
+				</div>
+			</div>
+								<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="https://hlbam9.com" target="_blank" class="no-sub">
+						성인											</a>
+				</div>
+			</div>
+								<div class="panel">
+				<div class="ca-head" role="tab">
+					<a href="https://t.me/tkrhddz" target="_blank" class="no-sub">
+						광고문의											</a>
+				</div>
+			</div>
+			</div>		</div>
+
+		<!-- Search -->
+		<div id="sidebar-search" class="sidebar-item">
+			
+<!-- Search -->
+<div class="div-title-underline-thin en">
+	<b>SEARCH</b>
+</div>
+<div class="sidebar-search">
+	<form id="ctrlSearch" name="ctrlSearch" method="get" onsubmit="return sidebar_search(this);" role="form" class="form">
+		<div class="row">
+			<div class="col-xs-6">
+				<select name="url" class="form-control input-sm">
+					<option value="https://tkr263.com/bbs/search.php">게시물</option>
+										<option value="https://tkr263.com/bbs/tag.php">태그</option>
+				</select>
+			</div>
+			<div class="col-xs-6">
+				<select name="sop" class="form-control input-sm">
+					<option value="or">또는</option>
+					<option value="and">그리고</option>
+				</select>	
+			</div>
+		</div>
+		<div class="input-group input-group-sm" style="margin-top:8px;">
+			<input type="text" name="stx" class="form-control input-sm" value="" placeholder="검색어는 두글자 이상">
+			<span class="input-group-btn">
+				<button type="submit" class="btn btn-navy btn-sm"><i class="fa fa-search"></i></button>
+			</span>
+		</div>
+	</form>				
+</div>
+		</div>
+
+		<!-- User -->
+		<div id="sidebar-user" class="sidebar-item">
+			<div class="sidebar-login">
+	
+		<form id="sidebar_login_form" name="sidebar_login_form" method="post" action="https://tkr263.com/bbs/login_check.php" autocomplete="off" role="form" class="form" onsubmit="return sidebar_login(this);">
+		<input type="hidden" name="url" value="https://tkr263.com/webtoon/672105/8190">
+			<div class="form-group">	
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user gray"></i></span>
+					<input type="text" name="mb_id" id="sidebar_mb_id" class="form-control input-sm" placeholder="아이디" tabindex="91">
+				</div>
+			</div>
+			<div class="form-group">	
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock gray"></i></span>
+					<input type="password" name="mb_password" id="sidebar_mb_password" class="form-control input-sm" placeholder="비밀번호" tabindex="92">
+				</div>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-navy btn-block" tabindex="93">Login</button>    
+			</div>	
+
+			<label class="text-muted" style="letter-spacing:-1px;">
+				<input type="checkbox" name="auto_login" value="1" id="sidebar_remember_me" class="remember-me" tabindex="94">
+				자동로그인 및 로그인 상태 유지
+			</label>
+		</form>
+
+		
+		<div class="h10"></div>
+
+		
+		<!-- Member -->
+		<div class="div-title-underline-thin en">
+			<b>MEMBER</b>
+		</div>
+		<ul class="sidebar-list list-links">
+			<li><a href="https://tkr263.com/bbs/register.php">회원가입</a></li>
+			<li><a href="https://tkr263.com/bbs/password_lost.php" class="win_password_lost">아이디/비밀번호 찾기</a></li>
+		</ul>
+		
+	</div>
+
+<div class="h20"></div>		</div>
+
+		<!-- Response -->
+		<div id="sidebar-response" class="sidebar-item">
+			<div id="sidebar-response-list"></div>
+		</div>
+
+		
+		<div class="h30"></div>
+	</div>
+
+</aside>
+
+<div id="sidebar-box-mask" class="sidebar-close"></div>
+
+
+<!-- 아미나빌더 1.8.11 / 그누보드 5.3.2.4 -->
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+</body>
+</html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177364207-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-177364207-1');
+</script>
+
+<!-- 사용스킨 : webtoon -->
+
