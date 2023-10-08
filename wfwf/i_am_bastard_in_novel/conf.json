@@ -6,12 +6,13 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wfwf.py -n 5",
       "list_url_list": [
-        "https://wfwf291.com/list?toon=5142"
+        "https://wfwf292.com/list?toon=5142"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 2
     },
     "extraction": {
+      "ignore_html_with_incomplete_image": true,
       "element_class_list": [
         "image-view"
       ],

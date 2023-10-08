@@ -8,10 +8,11 @@
       "encoding": "cp949",
       "unit_size_per_day": 4,
       "list_url_list": [
-        "https://wfwf291.com/list?toon=5427"
+        "https://wfwf292.com/list?toon=5427"
       ]
     },
     "extraction": {
+      "ignore_html_with_incomplete_image": true,
       "encoding": "cp949",
       "element_class_list": [
         "image-view"

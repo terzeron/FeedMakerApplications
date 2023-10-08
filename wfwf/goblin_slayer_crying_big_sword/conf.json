@@ -5,12 +5,13 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 5",
       "list_url_list": [
-        "https://wfwf291.com/cl?toon=11622"
+        "https://wfwf292.com/cl?toon=11622"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1
     },
     "extraction": {
+      "ignore_html_with_incomplete_image": true,
       "element_class_list": [
         "image-view"
       ],
