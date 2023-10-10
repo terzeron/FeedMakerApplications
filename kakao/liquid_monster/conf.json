@@ -1,14 +1,17 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
-      "item_capture_script": "../capture_item_kakaowebtoon.py -n 5",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_kakaowebtoon.py -n 300",
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/2147/episodes?sort=-NO&offset=0&limit=30"
       ],
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 2,
-      "headers": { "accept-language": "ko" }
+      "headers": {
+        "accept-language": "ko"
+      }
     },
     "extraction": {
       "blob_to_dataurl": true,
