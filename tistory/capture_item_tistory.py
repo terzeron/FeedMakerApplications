@@ -21,10 +21,12 @@ def main():
     result_list = []
     html = IO.read_stdin_as_line_list()
 
+    meta_og_url_tag_pattern = r'<meta property="og:url" content="(?P<url_prefix>https?://[^/"]+).*"'
+
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(meta_og_url_tag_pattern, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -43,7 +45,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(meta_og_url_tag_pattern, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -57,7 +59,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(meta_og_url_tag_pattern, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -71,7 +73,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(meta_og_url_tag_pattern, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -90,7 +92,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(meta_og_url_tag_pattern, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -109,7 +111,7 @@ def main():
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https?://[^"]+)"', line)
+            m = re.search(meta_og_url_tag_pattern, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
