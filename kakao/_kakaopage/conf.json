@@ -11,6 +11,7 @@
       ]
     },
     "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
       "bypass_element_extraction": true,
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
       "referer": "https://page.kakao.com",

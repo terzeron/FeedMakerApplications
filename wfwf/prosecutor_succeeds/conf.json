@@ -12,7 +12,7 @@
       ]
     },
     "extraction": {
-      "ignore_html_with_incomplete_image": true,
+      "threshold_to_remove_html_with_incomplete_image": 5,
       "encoding": "cp949",
       "element_class_list": [
         "image-view"

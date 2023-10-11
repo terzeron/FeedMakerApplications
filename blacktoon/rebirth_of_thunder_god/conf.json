@@ -12,6 +12,7 @@
       "unit_size_per_day": 1
     },
     "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
       "force_sleep_between_articles": true,
       "element_id_list": [
         "toon_content_imgs"

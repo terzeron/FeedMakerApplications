@@ -11,6 +11,7 @@
       "headers": { "accept-language": "ko" }
     },
     "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
       "blob_to_dataurl": true,
       "element_id_list": [
         "root"

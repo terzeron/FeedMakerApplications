@@ -12,6 +12,7 @@
       "window_size": 20
     },
     "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
       "bypass_element_extraction": true,
       "post_process_script_list": [
         "../post_process_funbe.py",

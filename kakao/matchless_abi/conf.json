@@ -10,6 +10,7 @@
       "headers": { "accept-language": "ko" }
     },
     "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
       "element_id_list": [
         "root"
       ],
