@@ -2,7 +2,7 @@
   "timeout": 120,
   "encoding": "cp949",
   "keyword": "쟈건",
-  "num_retries": 2,
+  "num_retries": 3,
   "render_js": false,
   "url": "https://wtwt213.com/c1?toon=12683"
 }
