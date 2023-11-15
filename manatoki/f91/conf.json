@@ -1,14 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
-      "is_completed": true,
+      "ignore_old_list": false,
+      "is_completed": false,
       "render_js": true,
       "item_capture_script": "../capture_item_manatoki.py -n 1",
       "sort_field_pattern": "\\/(\\d+)\\t",
-      "unit_size_per_day": 2,
+      "unit_size_per_day": 0,
       "list_url_list": [
-        "https://manatoki314.net/comic/6597728"
+        "https://manatoki314.net/comic/6483157"
       ]
     },
     "extraction": {
