@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_jmana.py -n 300",
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 0,
+      "list_url_list": [
+        "https://kr42.jmana.one/comic_list_title?bookname=기동전사+건담+C+D+A+젊은+혜성의+초상"
+      ]
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "element_class_list": [
+        "view-con"
+      ],
+      "post_process_script_list": [
+        "post_process_only_for_images.py -u",
+        "download_image.py",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "title": "건담 CDA 젊은 혜성의 초상::제이마나",
+      "description": "건담 CDA 젊은 혜성의 초상::제이마나",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) JMana. All rights reserved.",
+      "link": "https://terzeron.com/gundam_cda.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://aboutdron.net"
+    }
+  }
+}
