@@ -1,13 +1,13 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_jmana.py -n 300",
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_jmana.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 0,
       "list_url_list": [
-        "https://kr42.jmana.one/comic_list_title?bookname=기동전사+크로스본+건담"
+        "https://kr43.jmana.one/comic_list_title?bookname=기동전사+크로스본+건담"
       ]
     },
     "extraction": {

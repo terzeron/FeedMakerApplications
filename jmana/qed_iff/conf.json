@@ -5,9 +5,9 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_jmana.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
-      "unit_size_per_day": 4,
+      "unit_size_per_day": 1,
       "list_url_list": [
-        "https://kr43.jmana.one/comic_list_title?bookname=더+페이블%28The+Fable%29"
+        "https://kr43.jmana.one/comic_list_title?bookname=Ｑ+Ｅ+Ｄ++iff+-증명종료-"
       ]
     },
     "extraction": {
@@ -22,11 +22,11 @@
       ]
     },
     "rss": {
-      "title": "더 페이블::제이마나",
-      "description": "더 페이블::제이마나",
+      "title": "QED iff 증명종료::제이마나",
+      "description": "QED iff 증명종료::제이마나",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) JMana. All rights reserved.",
-      "link": "https://terzeron.com/the_fable.xml",
+      "link": "https://terzeron.com/qed_iff.xml",
       "language": "ko",
       "url_prefix_for_guid": "https://aboutdron.net"
     }

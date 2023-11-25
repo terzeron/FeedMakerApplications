@@ -3,11 +3,11 @@
     "collection": {
       "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "../capture_item_jmana.py -n 300",
+      "item_capture_script": "../capture_item_jmana.py -n 5",
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 0,
       "list_url_list": [
-        "https://kr42.jmana.one/comic_list_title?bookname=건담+-+Lost+War+Chronicles"
+        "https://kr43.jmana.one/comic_list_title?bookname=건담+-+Lost+War+Chronicles"
       ]
     },
     "extraction": {
