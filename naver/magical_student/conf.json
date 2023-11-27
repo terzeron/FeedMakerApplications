@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
       "list_url_list": [
         "https://comic.naver.com/api/article/list?titleId=791062&sort=DESC"
       ],
