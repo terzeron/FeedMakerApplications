@@ -4,7 +4,7 @@
       "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
       "list_url_list": [
         "https://comic.naver.com/api/article/list?titleId=791062&sort=DESC",
-        "https://comic.naver.com/api/article/list?titleId=791062&sort=DESC&page=1"
+        "https://comic.naver.com/api/article/list?titleId=791062&sort=DESC&page=2"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1,
