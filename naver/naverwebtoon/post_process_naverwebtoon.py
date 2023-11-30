@@ -10,7 +10,7 @@ import logging
 import logging.config
 from typing import List
 from pathlib import Path
-from bin.feed_maker_util import IO, Process, Config, URL, header_str
+from bin.feed_maker_util import IO, Config, URL, header_str
 from bin.crawler import Crawler
 
 
@@ -21,7 +21,7 @@ LOGGER = logging.getLogger()
 def main() -> int:
     feed_dir_path = Path.cwd()
     url_prefix = "https://comic.naver.com/api/article/list/info?titleId="
-    exclude_keywords = ["로맨스", "연인", "연애", "키스", "짝사랑", "고백", "유부녀", "황후", "왕후", "왕비", "공녀", "첫사랑", "재벌", "순정", "후궁", "로판", "로맨스판타지", "멜로"]
+    exclude_keywords = ["로맨스", "연인", "연애", "키스", "짝사랑", "고백", "유부녀", "황후", "왕후", "왕비", "공녀", "첫사랑", "재벌", "순정", "후궁", "로판", "로맨스판타지", "멜로", "혐관로맨스", "힐링", "연상연하", "아이돌", "감성", "감성드라마", "무해한", "일상", "사이다", "러블리", "햇살캐", "계략여주", "괴담", "까칠남" ]
 
     IO.read_stdin()
 
@@ -30,10 +30,11 @@ def main() -> int:
         if o == "-f":
             feed_dir_path = Path(a)
         if o == "-n":
-            num_of_recent_feeds = int(a)
+            _ = int(a)
 
     print(header_str)
 
+    tag_list: List = []
     page_url = args[0]
     m = re.search(r'titleId=(?P<title_id>\d+)', page_url)
     if m:
@@ -46,12 +47,28 @@ def main() -> int:
             return -1
 
         json_data = json.loads(result)
+        
+        if "curationTagList" in json_data:
+            for curation in json_data["curationTagList"]:
+                if "tagName" in curation:
+                    if curation["tagName"] in exclude_keywords:
+                        return 0
+                    tag_list.append(curation["tagName"])
+                    
         if "titleName" in json_data:
-            print("<p>" + json_data["titleName"] + "</p>")
+            title_name = json_data["titleName"]
         if "synopsis" in json_data:
-            print("<p>" + json_data["synopsis"] + "</p>")
+            synopsis = json_data["synopsis"]
         if "thumbnailUrl" in json_data:
-            print("<p><img src='" + json_data["thumbnailUrl"] + "'></p>")
+            thumbnail_url = json_data["thumbnailUrl"]
+            
+        print("<p>" + title_name + "</p>")
+        print("<p>" + synopsis + "</p>")
+        print("<p><img src='" + thumbnail_url + "'></p>")
+        print("<ul>")
+        for tag in tag_list:
+            print("<li>#" + tag + "</li>")
+        print("</ul>")
 
     config = Config(feed_dir_path)
     if not config:
