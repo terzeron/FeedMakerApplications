@@ -27,7 +27,7 @@ def main():
         result_list = []
         for line in data["html"].split("\n"):
             if state == 0:
-                m = re.search(r'<a href="(?P<url>/viewer/postView\.(?:nhn|naver)\?volumeNo=\d+&memberNo=\d+)"', line)
+                m = re.search(r'<a href="(?P<url>/viewer/postView\.naver\?volumeNo=\d+&memberNo=\d+)"', line)
                 if m:
                     url = m.group("url")
                     url = re.sub(r'&lt;', '<', url)
@@ -52,8 +52,6 @@ def main():
                 m = re.search(r'\s*(?P<title>\S+.*\S+)\s*', line)
                 if m:
                     title = m.group("title")
-                    if re.search(r'^\s*\[대림자동차\s*공식\s*포스트\]\s*$', title):
-                        continue
                     title = re.sub(r'^\s+|\s+$', '', title)
                     title = re.sub(r'&#39;', '\'', title)
                     title = re.sub(r'&#40;', ')', title)
@@ -62,15 +60,14 @@ def main():
                     title = re.sub(r'&gt;', '>', title)
                     title = re.sub(r'&nbsp;', ' ', title)
                     title = re.sub(r'&quot;', '"', title)
-                    title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
                     title = re.sub(r'</h3>', '', title)
                     if link and title:
                         result_list.append((link, title))
                     state = 0
             elif state == 4:
-                m = re.search(r'(<i class="[^"]+" aria-label="[^"]+"></i>)?(?P<title_postfix>.*)</strong>', line)
+                m = re.search(r'(<i class="[^"]+" aria-label="[^"]+"></i>)?(?P<title>.*)</strong>', line)
                 if m:
-                    title += m.group("title_postfix") + " "
+                    title = m.group("title")
                     title = re.sub(r'^\s+|\s+$', '', title)
                     title = re.sub(r'&#39;', '\'', title)
                     title = re.sub(r'&#40;', ')', title)
@@ -79,7 +76,6 @@ def main():
                     title = re.sub(r'&gt;', '>', title)
                     title = re.sub(r'&nbsp;', ' ', title)
                     title = re.sub(r'&quot;', '"', title)
-                    title = re.sub(r'\[대림자동차\s*공식\s*포스트\]\s*', '', title)
                     title = re.sub(r'</h3>', '', title)
                     if link and title:
                         result_list.append((link, title))
@@ -88,7 +84,7 @@ def main():
                     line = re.sub(r'<i class="[^"]+" aria-label="[^"]+"></i>', '', line)
                     title += line
 
-    for (link, title) in result_list[-num_of_recent_feeds:]:
+    for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
 
