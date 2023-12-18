@@ -18,6 +18,19 @@ logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/logging.conf")
 LOGGER = logging.getLogger()
 
 
+def print_img_tag(feed_dir_path: Path, page_url: str) -> None:
+    config = Config(feed_dir_path)
+    if not config:
+        LOGGER.error("can't read configuration")
+        return
+    rss_conf = config.get_rss_configs()
+    m = re.search(r'https://[^/]+/(?P<rss_file_name>.+\.xml)', rss_conf["rss_link"])
+    if m:
+        rss_file_name = m.group("rss_file_name")
+        md5_name = URL.get_short_md5_name(URL.get_url_path(page_url))
+        print("<img src='https://terzeron.com/img/1x1.jpg?feed=%s&item=%s'/>" % (rss_file_name, md5_name))
+
+
 def main() -> int:
     feed_dir_path = Path.cwd()
     url_prefix = "https://comic.naver.com/api/article/list/info?titleId="
@@ -31,8 +44,6 @@ def main() -> int:
             feed_dir_path = Path(a)
         if o == "-n":
             _ = int(a)
-
-    print(header_str)
 
     tag_list: List = []
     page_url = args[0]
@@ -62,6 +73,7 @@ def main() -> int:
         if "thumbnailUrl" in json_data:
             thumbnail_url = json_data["thumbnailUrl"]
             
+        print(header_str)
         print("<p>" + title_name + "</p>")
         print("<p>" + synopsis + "</p>")
         print("<p><img src='" + thumbnail_url + "'></p>")
@@ -69,17 +81,7 @@ def main() -> int:
         for tag in tag_list:
             print("<li>#" + tag + "</li>")
         print("</ul>")
-
-    config = Config(feed_dir_path)
-    if not config:
-        LOGGER.error("can't read configuration")
-        return -1
-    rss_conf = config.get_rss_configs()
-    m = re.search(r'https://[^/]+/(?P<rss_file_name>.+\.xml)', rss_conf["rss_link"])
-    if m:
-        rss_file_name = m.group("rss_file_name")
-        md5_name = URL.get_short_md5_name(URL.get_url_path(page_url))
-        print("<img src='https://terzeron.com/img/1x1.jpg?feed=%s&item=%s'/>" % (rss_file_name, md5_name))
+        print_img_tag(feed_dir_path, page_url)
 
     return 0
 
