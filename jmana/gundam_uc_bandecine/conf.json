@@ -7,7 +7,7 @@
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 0,
       "list_url_list": [
-        "https://kr44.jmana.one/comic_list_title?bookname=기동전사+건담+UC+반데시네"
+        "https://kr45.jmana.one/comic_list_title?bookname=기동전사+건담+UC+반데시네"
       ],
       "post_process_script_list": [
         "/usr/bin/awk -F'=' '$2 > 300000 { print $0; }'"
