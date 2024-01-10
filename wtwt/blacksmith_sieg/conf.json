@@ -2,14 +2,14 @@
   "configuration": {
     "collection": {
       "encoding": "cp949",
-      "ignore_old_list": true,
+      "ignore_old_list": false,
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
-        "https://wtwt224.com/v1?toon=5009"
+        "https://wtwt224.com/v1?toon=70689"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 1
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
@@ -24,11 +24,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) W툰. All rights reserved.",
-      "description": "아빠가 너무 강함::W툰",
+      "description": "대장장이 지그::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/dad_is_too_strong.xml",
-      "title": "아빠가 너무 강함::W툰",
+      "link": "https://terzeron.com/blacksmith_sieg.xml",
+      "title": "대장장이 지그::W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
   }
