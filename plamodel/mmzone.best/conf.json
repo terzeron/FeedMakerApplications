@@ -4,7 +4,9 @@
       "item_capture_script": "./capture_item_link_title.py -n 10",
       "list_url_list": [
         "https://mmzone.co.kr/album/showcase_section.php?dbname=gallerymain&section=0",
-        "https://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=0"
+        "https://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=0",
+        "https://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=2",
+        "https://mmzone.co.kr/album/showcase_section.php?dbname=smz_main&section=4"
       ],
       "sort_field_pattern": "no=(\\d+)",
       "unit_size_per_day": 1,
