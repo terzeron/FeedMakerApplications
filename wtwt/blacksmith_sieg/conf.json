@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wtwt.py -n 5",
+      "list_url_list": [
+        "https://wtwt224.com/v1?toon=70689"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wbody"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "대장장이 지그::W툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/blacksmith_sieg.xml",
+      "title": "대장장이 지그::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
