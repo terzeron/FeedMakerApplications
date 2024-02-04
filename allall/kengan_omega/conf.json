@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_allall.py -n 5",
       "list_url_list": [
-        "https://www.allall112.com/webtoons/weblist/13361"
+        "https://www.allall112.com/cartoons/weblist/9194"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
@@ -22,11 +22,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 올넷. All rights reserved.",
-      "description": "궁귀검신::올넷",
+      "description": "켄간 오메가::올넷",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/bow_ghost_sword_god.xml",
-      "title": "궁귀검신::올넷",
+      "link": "https://terzeron.com/kengan_omega.xml",
+      "title": "켄간 오메가::올넷",
       "url_prefix_for_guid": "https://allall8.com"
     }
   }

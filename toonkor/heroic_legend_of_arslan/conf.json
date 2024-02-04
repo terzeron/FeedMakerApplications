@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_toonkor.py -n 5",
+      "list_url_list": [
+        "https://tkr298.com/manhua/7540"
+      ],
+      "sort_field_pattern": "\\t(\\d+)",
+      "unit_size_per_day": 2,
+      "render_js": true
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "ignore_html_with_incomplete_image": true,
+      "bypass_element_extraction": true,
+      "post_process_script_list": [
+        "../post_process_toonkor.py",
+        "download_image.py"
+      ],
+      "force_sleep_between_articles": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) ToonKor. All rights reserved.",
+      "description": "아르슬란 전기::ToonKor",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/heroic_legend_of_arslan.xml",
+      "title": "아르슬란 전기::ToonKor",
+      "url_prefix_for_guid": "https://toonkor132.com"
+    }
+  }
+}
