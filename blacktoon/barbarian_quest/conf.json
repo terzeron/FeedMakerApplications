@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
-        "https://blacktoon277.com/webtoon/12317.html"
+        "https://blacktoon277.com/webtoon/11452.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
@@ -23,11 +23,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 블랙툰. All rights reserved.",
-      "description": "구천구검::블랙툰",
+      "description": "바바리안 퀘스트::블랙툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/sword_deliberating_nine_skies.xml",
-      "title": "구천구검::블랙툰",
+      "link": "https://terzeron.com/barbarian_quest.xml",
+      "title": "바바리안 퀘스트::블랙툰",
       "url_prefix_for_guid": "https://blacktoon172.com"
     }
   }
