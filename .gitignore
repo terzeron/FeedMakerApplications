@@ -26,3 +26,4 @@ result.*.temp
 cookies*.json
 *.lock
 .*.lock
+.env
