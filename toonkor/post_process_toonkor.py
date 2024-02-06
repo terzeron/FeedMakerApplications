@@ -4,7 +4,7 @@ import sys
 import re
 import base64
 from bs4 import BeautifulSoup
-from bin.feed_maker_util import IO, URL
+from bin.feed_maker_util import IO, URL, header_str
 
 
 def main():
@@ -16,6 +16,7 @@ def main():
             m = re.search(r'<meta property="og:url" content="(?P<url_prefix>http[^"]+)"', line)
             if m:
                 url_prefix = m.group("url_prefix")
+                print(header_str)
                 state = 1
         elif state == 1:
             m = re.search(r'var tnimg\s*=\s*\x27(?P<str>[^\x27]+)\x27', line)

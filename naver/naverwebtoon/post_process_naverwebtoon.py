@@ -14,7 +14,7 @@ from bin.feed_maker_util import IO, Config, URL, header_str
 from bin.crawler import Crawler
 
 
-logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/logging.conf")
+logging.config.fileConfig(os.environ["FM_HOME_DIR"] + "/logging.conf")
 LOGGER = logging.getLogger()
 
 
@@ -28,7 +28,7 @@ def print_img_tag(feed_dir_path: Path, page_url: str) -> None:
     if m:
         rss_file_name = m.group("rss_file_name")
         md5_name = URL.get_short_md5_name(URL.get_url_path(page_url))
-        print("<img src='https://terzeron.com/img/1x1.jpg?feed=%s&item=%s'/>" % (rss_file_name, md5_name))
+        print(f"<img src='https://terzeron.com/img/1x1.jpg?feed={rss_file_name}&item={md5_name}'/>")
 
 
 def main() -> int:
@@ -54,25 +54,26 @@ def main() -> int:
         crawler = Crawler(dir_path=feed_dir_path)
         result, error, _ = crawler.run(link)
         if error:
-            LOGGER.error(f"Error: can't get data from '{link}'")
+            LOGGER.error("Error: can't get data from '%s'", link)
             return -1
 
         json_data = json.loads(result)
-        
+
         if "curationTagList" in json_data:
             for curation in json_data["curationTagList"]:
                 if "tagName" in curation:
                     if curation["tagName"] in exclude_keywords:
+                        LOGGER.error("Error: can't include this feed item due to exclusion_keyword '%s'", curation["tagName"])
                         return 0
                     tag_list.append(curation["tagName"])
-                    
+
         if "titleName" in json_data:
             title_name = json_data["titleName"]
         if "synopsis" in json_data:
             synopsis = json_data["synopsis"]
         if "thumbnailUrl" in json_data:
             thumbnail_url = json_data["thumbnailUrl"]
-            
+
         print(header_str)
         print("<p>" + title_name + "</p>")
         print("<p>" + synopsis + "</p>")

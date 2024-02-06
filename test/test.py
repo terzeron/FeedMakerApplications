@@ -20,9 +20,9 @@ def test_script(script, work_dir, test_dir, index):
 
 
 def main() -> int:
-    fm_cwd = os.getenv("FEED_MAKER_WORK_DIR")
+    fm_cwd = os.getenv("FM_WORK_DIR")
     if not fm_cwd:
-        print("can't get environment variable 'FEED_MAKER_WORK_DIR'")
+        print("can't get environment variable 'FM_WORK_DIR'")
         return -1
 
     test_subjects = {

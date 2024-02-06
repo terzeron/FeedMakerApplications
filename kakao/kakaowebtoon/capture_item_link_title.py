@@ -13,7 +13,7 @@ from bin.feed_maker_util import IO, URL, header_str
 from bin.feed_maker import FeedMaker
 
 
-logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/logging.conf")
+logging.config.fileConfig(os.environ["FM_HOME_DIR"] + "/logging.conf")
 LOGGER = logging.getLogger()
 
 

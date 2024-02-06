@@ -12,7 +12,7 @@ from bin.feed_maker_util import Config
 from bin.crawler import Crawler, Method
 
 
-logging.config.fileConfig(os.environ["FEED_MAKER_HOME_DIR"] + "/logging.conf")
+logging.config.fileConfig(os.environ["FM_HOME_DIR"] + "/logging.conf")
 LOGGER = logging.getLogger(__name__)
 
 
