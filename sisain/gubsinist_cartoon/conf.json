@@ -1,0 +1,27 @@
+{
+  "configuration": {
+    "collection": {
+      "list_url_list": [
+        "https://www.sisain.co.kr/news/articleList.html?sc_area=A&sc_word=%EA%B5%BD%EC%8B%9C%EB%8B%88%EC%8A%A4%ED%8A%B8&view_type=sm"
+      ]
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "element_class_list": [
+        "article-body"
+      ],
+      "post_process_script_list": [
+        "./post_process_sisaincartoon.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "굽시니스트 시사 만화::시사인",
+      "description": "굽시니스트 시사 만화::시사인 - 모바일 버전 RSS Feed",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) 시사IN. All rights reserved.",
+      "link": "https://terzeron.com/gubsinist_cartoon.xml",
+      "language": "ko"
+    }
+  }
+}
