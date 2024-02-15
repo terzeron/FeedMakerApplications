@@ -1,0 +1,27 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_hackernoon.py -n 5",
+      "sort_field_pattern": "&logNo=(\\d+)",
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://hackernoon.com/c/programming"
+      ]
+    },
+    "extraction": {
+      "force_sleep_between_articles": true,
+      "bypass_element_extraction": true,
+      "post_process_script_list": [
+        "../post_process_hackernoon.py"
+      ]
+    },
+    "rss": {
+      "title": "Programming::Hackernoon",
+      "description": "Programming::Hackernoon",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Hackernoon. All rights reserved.",
+      "link": "https://terzeron.com/hackernoon.programming.xml",
+      "language": "ko"
+    }
+  }
+}
