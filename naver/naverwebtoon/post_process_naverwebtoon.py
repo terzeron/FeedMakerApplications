@@ -63,7 +63,7 @@ def main() -> int:
             for curation in json_data["curationTagList"]:
                 if "tagName" in curation:
                     if curation["tagName"] in exclude_keywords:
-                        LOGGER.error("Error: can't include this feed item due to exclusion_keyword '%s'", curation["tagName"])
+                        LOGGER.warning("Warning: can't include this feed item due to exclusion_keyword '%s'", curation["tagName"])
                         return 0
                     tag_list.append(curation["tagName"])
 
