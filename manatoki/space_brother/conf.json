@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": false,
+      "is_completed": false,
+      "render_js": true,
+      "item_capture_script": "../capture_item_manatoki.py -n 5",
+      "sort_field_pattern": "\\/(\\d+)\\t",
+      "unit_size_per_day": 0,
+      "list_url_list": [
+        "https://manatoki325.net/comic/9594843"
+      ]
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "render_js": true,
+      "simulate_scrolling": true,
+      "timeout": 480,
+      "element_class_list": [
+        "view-padding"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "우주 형제::마나토끼",
+      "description": "우주 형제::마나토끼",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Manatoki. All rights reserved.",
+      "link": "https://terzeron.com/space_brother.xml",
+      "language": "ko",
+      "url_prefix_for_guid": "https://manatoki217.com"
+    }
+  }
+}
