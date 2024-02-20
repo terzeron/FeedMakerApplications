@@ -3,7 +3,7 @@
     "collection": {
       "item_capture_script": "../capture_item_medium.py",
       "list_url_list": [
-        "https://medium.com/coupang-tech"
+        "https://medium.com/coupang-engineering"
       ]
     },
     "extraction": {
@@ -14,7 +14,7 @@
     },
     "rss": {
       "title": "Tech notes::쿠팡",
-      "description": "Tech notes::쿠팡 - 모바일 버전 RSS Feed",
+      "description": "Tech notes::쿠팡",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Coupang. All rights reserved.",
       "link": "https://terzeron.com/coupang.tech.xml",
