@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_funbe.py -n 100",
       "list_url_list": [
-        "https://funbe338.com/사마쌍협"
+        "https://funbe339.com/사마쌍협"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1
