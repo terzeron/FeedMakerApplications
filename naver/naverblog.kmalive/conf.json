@@ -1,0 +1,52 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverblog.py -n 5",
+      "sort_field_pattern": "&logNo=(\\d+)",
+      "unit_size_per_day": 0.4,
+      "list_url_list": [
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=2&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=3&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=4&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=5&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=6&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=7&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=8&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=9&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=10&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=11&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=12&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=13&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=14&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=15&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=16&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=17&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=18&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=19&categoryNo=&parentCategoryNo=&countPerPage=30",
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=20&categoryNo=&parentCategoryNo=&countPerPage=30"
+      ]
+    },
+    "extraction": {
+      "force_sleep_between_articles": true,
+      "element_id_list": [
+        "postViewArea"
+      ],
+      "element_class_list": [
+        "se_component_wrap",
+        "se-main-container"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "남자들의 소소한 취미생활::네이버",
+      "description": "남자들의 소소한 취미생활::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp & dreamblue724@naver.com. All rights reserved.",
+      "link": "https://terzeron.com/naverblog.kmalive.xml",
+      "language": "ko"
+    }
+  }
+}
