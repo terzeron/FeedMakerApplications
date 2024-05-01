@@ -5,7 +5,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_naverblog.py -n 5",
       "sort_field_pattern": "&logNo=(\\d+)",
-      "unit_size_per_day": 0.4,
+      "unit_size_per_day": 1,
       "list_url_list": [
         "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30",
         "https://blog.naver.com/PostTitleListAsync.naver?blogId=kmalive&viewdate=&currentPage=2&categoryNo=&parentCategoryNo=&countPerPage=30",
