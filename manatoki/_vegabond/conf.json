@@ -4,11 +4,11 @@
       "ignore_old_list": false,
       "is_completed": false,
       "render_js": true,
-      "item_capture_script": "../capture_item_manatoki.py -n 1",
+      "item_capture_script": "../capture_item_manatoki.py -n 5",
       "sort_field_pattern": "\\/(\\d+)\\t",
       "unit_size_per_day": 0,
       "list_url_list": [
-        "https://manatoki337.net/comic/6483157"
+        "https://manatoki337.net/comic/6007473"
       ]
     },
     "extraction": {
@@ -24,11 +24,11 @@
       ]
     },
     "rss": {
-      "title": "건담 F91::마나토끼",
-      "description": "건담 F91::마나토끼",
+      "title": "배가본드::마나토끼",
+      "description": "배가본드::마나토끼",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Manatoki. All rights reserved.",
-      "link": "https://terzeron.com/f91.xml",
+      "link": "https://terzeron.com/vegabond.xml",
       "language": "ko",
       "url_prefix_for_guid": "https://manatoki217.com"
     }
