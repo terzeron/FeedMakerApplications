@@ -1,15 +1,21 @@
 {
   "configuration": {
     "collection": {
+      "is_completed": true,
       "ignore_old_list": true,
-      "item_capture_script": "./capture_item_link_title.py -n 10",
+      "item_capture_script": "./capture_item_link_title.py -n 300",
       "sort_field_pattern": "read\\/(\\d+)",
-      "unit_size_per_day": 30,
+      "unit_size_per_day": 1,
       "list_url_list": [
-        "https://bbs.ruliweb.com/family/232/board/300082?view_best=1&page=1"
+        "https://bbs.ruliweb.com/family/232/board/300079?view_best=1&page=1",
+        "https://bbs.ruliweb.com/family/232/board/300079?view_best=1&page=2",
+        "https://bbs.ruliweb.com/family/232/board/300082?view_best=1&page=1",
+        "https://bbs.ruliweb.com/family/232/board/300082?view_best=1&page=2",
+        "https://bbs.ruliweb.com/family/232/board/300083?view_best=1&page=1",
+        "https://bbs.ruliweb.com/family/232/board/300083?view_best=1&page=2"
       ],
       "post_process_script_list": [
-        "/usr/bin/egrep -v -i \"(sd|프레임.*걸|프암걸|포뮬러|삼국지|메가미|종이접기|PSO2|이노센트|티어즈|데스크탑\\s?아미|고우라이|가오가이가|판타시스타|사이버\\s?포뮬라|록맨|자우라|키카이오|메탈가루몬|캡틴\\s?사우루스|핸드스케일걸|드라몬|그레이몬|아야카|유우키|마도카|루덴스|코토리|흐레스벨그)\""
+        "/usr/bin/egrep -i \"(HG|RG|MG|PG)\""
       ]
     },
     "extraction": {
@@ -23,7 +29,7 @@
     },
     "rss": {
       "title": "프라모델 캐릭터모형 갤러리::루리웹",
-      "description": "프라모델 캐릭터모형 갤러리::루리웹 - 모바일 버전 RSS Feed",
+      "description": "프라모델 캐릭터모형 갤러리::루리웹",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) ruliweb.com, 프라모델 캐릭터모형 갤러리. All Rights Reserved",
       "link": "https://terzeron.com/ruliweb.plamodel.xml",
