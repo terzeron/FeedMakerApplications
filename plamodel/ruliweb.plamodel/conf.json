@@ -5,7 +5,7 @@
       "ignore_old_list": true,
       "item_capture_script": "./capture_item_link_title.py -n 300",
       "sort_field_pattern": "read\\/(\\d+)",
-      "unit_size_per_day": 1,
+      "unit_size_per_day": 3,
       "list_url_list": [
         "https://bbs.ruliweb.com/family/232/board/300079?view_best=1&page=1",
         "https://bbs.ruliweb.com/family/232/board/300079?view_best=1&page=2",
