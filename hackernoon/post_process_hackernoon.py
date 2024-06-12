@@ -19,13 +19,10 @@ def main():
                 page_props = props["pageProps"]
                 if "data" in page_props:
                     d = page_props["data"]
-                    if "parsed" in d:
-                        parsed = d["parsed"]
-                        print(parsed)
-                    elif "articleBody" in d:
-                        article_body = d["articleBody"]
-                        article_body = re.sub(r"\. ", ".<br>\n", article_body)
-                        print(article_body)
+                    if "markup" in d and d["markup"]:
+                        print(d["markup"])
+                    elif "parsed" in d and d["parsed"]:
+                        print(d["parsed"])
                         
 
 if __name__ == "__main__":
