@@ -22,6 +22,11 @@ def main():
                     if "parsed" in d:
                         parsed = d["parsed"]
                         print(parsed)
+                    elif "articleBody" in d:
+                        article_body = d["articleBody"]
+                        article_body = re.sub(r"\. ", ".<br>\n", article_body)
+                        print(article_body)
+                        
 
 if __name__ == "__main__":
     sys.exit(main())
