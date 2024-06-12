@@ -9,7 +9,6 @@
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2,
-      "render_js": true
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
