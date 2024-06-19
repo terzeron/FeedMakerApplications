@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_funbe.py -n 5",
       "list_url_list": [
-        "https://funbe391.com/신조협려"
+        "https://funbe392.com/신조협려"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1

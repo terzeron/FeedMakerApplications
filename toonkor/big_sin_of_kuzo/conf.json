@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_toonkor.py -n 300",
+      "list_url_list": [
+        "https://tkr338.com/manhua/1107"
+      ],
+      "sort_field_pattern": "\\t(\\d+)",
+      "unit_size_per_day": 3
+    },
+    "extraction": {
+      "render_js": true,
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "ignore_html_with_incomplete_image": true,
+      "element_id_list": [
+        "tnimg"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "force_sleep_between_articles": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) ToonKor. All rights reserved.",
+      "description": "쿠죠의 대죄::ToonKor",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/big_sin_of_kuzo.xml",
+      "title": "쿠죠의 대죄::ToonKor",
+      "url_prefix_for_guid": "https://toonkor132.com"
+    }
+  }
+}
