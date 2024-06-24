@@ -21,7 +21,7 @@ def main():
     result_list = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<div id="md_text_title" onclick="location.href=\'(?P<link>[^"]+no=\d+)&[^"]+\'"[^>]*>(?P<title>.+)</div>', line)
+            m = re.search(r'<div id="title"[^>]*onclick="location.href=\'(?P<link>[^"]+no=\d+)&[^"]+\'"[^>]*>(?P<title>.+)</div>', line)
             if m:
                 if m.group("link").startswith("javascript"):
                     continue
