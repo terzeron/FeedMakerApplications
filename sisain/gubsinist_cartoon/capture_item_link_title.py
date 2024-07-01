@@ -22,23 +22,18 @@ def main():
     result_list = []
     for line in IO.read_stdin_as_line_list():
         if state == 0:
-            m = re.search(r'<a href="/news/articleView.html[^"]*"[^>]*class="thumb">', line)
-            if m:
-                state = 1
-        elif state == 1:
-            m = re.search(r'<a href="(?P<link>/news/articleView.html[^"]+)"[^>]*>(?P<title>.+)</a>', line)
+            m = re.search(r'<a href="(?P<link>/news/articleView.html\?idxno=\d+)" target="_top">', line)
             if m:
                 link = url_prefix + m.group("link")
+                state = 1
+        elif state == 1:
+            m = re.search(r'\s*(?P<title>.+?)\s*</a>', line)
+            if m:
                 title = m.group("title")
+                if "굽시니스트" in title:
+                    result_list.append((link, title))
                 state = 2
         elif state == 2:
-            m = re.search(r'<em class="name">(?P<author>.+)</em>', line)
-            if m:
-                author = m.group("author")
-                if "굽시니스트" in author:
-                    result_list.append((link, title))
-                state = 3
-        elif state == 3:
             m = re.search(r'</li>', line)
             if m:
                 state = 0
