@@ -2,9 +2,9 @@
   "configuration": {
     "collection": {
       "encoding": "cp949",
-      "is_completed": true,
-      "ignore_old_list": true,
-      "item_capture_script": "../capture_item_wfwf.py -n 300",
+      "is_completed": false,
+      "ignore_old_list": false,
+      "item_capture_script": "../capture_item_wfwf.py -n 5",
       "list_url_list": [
         "https://wfwf337.com/cl?toon=12163"
       ],
