@@ -1,13 +1,21 @@
+https://comic.naver.com/api/article/list/info?titleId=811707
+{'id': 811707, 'tagName': '판타지', 'urlPath': '/webtoon?tab=genre&genre=FANTASY', 'curationType': 'GENRE_FANTASY'}
+판타지
+{'id': 811707, 'tagName': '소설원작', 'urlPath': '/curation/list?type=NOVEL_ORIGIN', 'curationType': 'NOVEL_ORIGIN'}
+소설원작
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 <style>img { max-width: 100%; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; } table { border-width: thin; border-style: dashed; }</style>
 
 
-<p>시한부인 줄 알았어요!</p>
-<p>3개월 시한부 진단을 받은 블랑셰 공작가의 공녀, 라리에트.
-어차피 죽을 몸, 버킷리스트(라 쓰고 미친 짓이라 읽는) 달성을 해보기로 했다.
-첫째. 사랑하지도 않는 나이 많은 약혼자 엿 먹이기.
-둘째. 괴물 공작 아스라한과 3개월 간 연애하기! 
-그러나 그에게서 도망치고 나서야 깨닫고 말았다. 시한부 진단이 완벽한 오진이라는 사실을!</p>
-<p><img src='https://image-comic.pstatic.net/webtoon/801711/thumbnail/thumbnail_IMAG21_bf581fbe-7d3d-4ff6-bfd3-a973f3c65aa1.jpg'></p>
-<img src='https://terzeron.com/img/1x1.jpg?feed=naverwebtoon.xml&item=3b655b4'/>
+<p>플레이어가 과거를 숨김</p>
+<p>가상현실게임 '아르카나 대륙전기'가 현실과 동화되면서, 자신의 게임 캐릭터와 동화된 '플레이어'가 등장해 세계를 지키기 시작한다.
+평범한 직장인 이호열 역시, 중2때 만든 흑역사 가득 캐릭터 "그랑펠 클라우디 아르페우스 로미오"에 빙의되는데?!
+평상시에는 망직이지만 악마족의 천적이라는 "악마 사냥꾼"의 직업을 가진 그랑펠, 그의 긍지는 악마 앞에서 가장 드높아지니!
+이 세상 유일한 악마사냥꾼 그랑펠(=이호열)이 움직이기 시작한다!</p>
+<p><img src='https://image-comic.pstatic.net/webtoon/811707/thumbnail/thumbnail_IMAG21_a4202254-2f7b-4933-b1e5-3308888cb7bb.jpg'></p>
+<ul>
+<li>#판타지</li>
+<li>#소설원작</li>
+</ul>
+<img src='https://terzeron.com/img/1x1.jpg?feed=naverwebtoon.xml&item=f59f10d'/>
