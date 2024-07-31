@@ -1,13 +1,15 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 10",
+      "is_completed": true,
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
       "list_url_list": [
-        "https://comic.naver.com/api/article/list?titleId=826670&sort=DESC"
+        "https://comic.naver.com/api/article/list?titleId=822114&sort=DESC",
+        "https://comic.naver.com/api/article/list?titleId=822114&sort=DESC&page=2"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1,
-      "window_size": 10,
       "render_js": false
     },
     "extraction": {
@@ -22,11 +24,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "description": "아수라::네이버",
+      "description": "짜장 한 그릇에 제갈세가 데릴사위::네이버",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/asura.xml",
-      "title": "아수라::네이버"
+      "link": "https://terzeron.com/to_become_son_in_law_of_noble_family_for_a_dish_of_food.xml",
+      "title": "짜장 한 그릇에 제갈세가 데릴사위::네이버"
     }
   }
 }
