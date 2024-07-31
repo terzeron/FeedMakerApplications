@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
+      "is_completed": true,
+      "ignore_old_list": true,
+      "list_url_list": [
+        "https://comic.naver.com/api/article/list?titleId=821597&sort=DESC",
+        "https://comic.naver.com/api/article/list?titleId=821597&sort=DESC&page=2"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 1,
+      "render_js": false
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "괴력 난신::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/monster_with_weird_power.xml",
+      "title": "괴력 난신::네이버"
+    }
+  }
+}
