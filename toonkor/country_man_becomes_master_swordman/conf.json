@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": false,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_toonkor.py -n 5",
+      "list_url_list": [
+        "https://tkr349.com/manhua/13196"
+      ],
+      "sort_field_pattern": "\\t(\\d+)",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "render_js": true,
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "ignore_html_with_incomplete_image": true,
+      "element_id_list": [
+        "tnimg"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ],
+      "force_sleep_between_articles": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) ToonKor. All rights reserved.",
+      "description": "촌구석의 아저씨, 검성이 되다~그냥 시골 검술사범이었는데, 대성한 제자들이 나를 내버려주지 않는 건~::ToonKor",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/country_man_becomes_master_swordman.xml",
+      "title": "촌구석의 아저씨, 검성이 되다~그냥 시골 검술사범이었는데, 대성한 제자들이 나를 내버려주지 않는 건~::ToonKor",
+      "url_prefix_for_guid": "https://toonkor132.com"
+    }
+  }
+}
