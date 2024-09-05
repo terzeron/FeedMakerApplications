@@ -14,7 +14,7 @@
     },
     "extraction": {
       "element_id_list": [
-        "sc_photo_block"
+        "showcase-frame"
       ],
       "post_process_script_list": [
         "download_image.py"
