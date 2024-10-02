@@ -14,6 +14,8 @@ def main():
         if o == '-n':
             num_of_recent_feeds = int(a)
 
+    keyword_exclusion_list = ["가면라이더", "헥사기어", "Warhammer", "워해머", "아수라", "키즈나", "메가미", "카나메", "반간", "다간", "리베르 나이트", "창채소녀", "판타지 포레스트", "리벨 나이트", "루나마리아", "FRS", "젠레스", "니콜 데마라"]
+
     state = 0
     line_list = IO.read_stdin_as_line_list()
     result_list = []
@@ -29,6 +31,10 @@ def main():
                 link = re.sub(r'&amp;', '&', link)
                 title = m.group("title")
                 state = 2
+                for keyword in keyword_exclusion_list:
+                    if keyword in title:
+                        state = 0
+                        break
         elif state == 2:
             m = re.search(r'class="writer', line)
             if m:
