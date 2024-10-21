@@ -1,15 +1,15 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": false,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_blacktoon.py -n 5",
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_blacktoon.py -n 300",
       "list_url_list": [
-        "https://blacktoon325.com/webtoon/9305.html"
+        "https://blacktoon325.com/webtoon/16815.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 2
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
@@ -23,11 +23,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 블랙툰. All rights reserved.",
-      "description": "수라전설 독룡::블랙툰",
+      "description": "무림맹주 막내제자::블랙툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/venom_dragon.xml",
-      "title": "수라전설 독룡::블랙툰",
+      "link": "https://terzeron.com/youngest_disciple_of_leader_of_martial_arts_world.xml",
+      "title": "무림맹주 막내제자::블랙툰",
       "url_prefix_for_guid": "https://blacktoon172.com"
     }
   }
