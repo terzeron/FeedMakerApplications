@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
-        "https://blacktoon326.com/webtoon/12293.html"
+        "https://blacktoon327.com/webtoon/12293.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
