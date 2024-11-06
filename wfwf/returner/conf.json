@@ -5,7 +5,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 5",
       "list_url_list": [
-        "https://wfwf355.com/list?toon=4471"
+        "https://wfwf356.com/list?toon=4471"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1
