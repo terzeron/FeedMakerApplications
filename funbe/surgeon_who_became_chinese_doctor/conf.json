@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_funbe.py -n 5",
       "list_url_list": [
-        "https://funbe462.com/화타가-된-외과의사"
+        "https://funbe463.com/화타가-된-외과의사"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1
