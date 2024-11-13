@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
+      "list_url_list": [
+        "https://wtwt285.com/c1?toon=10336"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wbody"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "description": "3월의 라이온::W툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/march_comes_in_like_a_lion.xml",
+      "title": "3월의 라이온::W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
