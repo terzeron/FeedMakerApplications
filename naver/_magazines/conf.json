@@ -16,7 +16,7 @@
       ],
       "post_process_script_list": [
         "./post_process_magazines.py",
-        "download_image.py"
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
       ]
     },
     "rss": {

@@ -18,7 +18,7 @@
       ],
       "post_process_script_list": [
         "../convert_blacktoon_url_to_blacktoon.py",
-        "download_image.py"
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
       ]
     },
     "rss": {

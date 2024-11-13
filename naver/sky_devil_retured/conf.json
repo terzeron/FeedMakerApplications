@@ -19,7 +19,7 @@
         "wt_viewer"
       ],
       "post_process_script_list": [
-        "download_image.py"
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
       ]
     },
     "rss": {
