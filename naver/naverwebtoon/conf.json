@@ -2,17 +2,16 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
+      "is_complete": true,
       "list_url_list": [
         "https://comic.naver.com/api/webtoon/titlelist/weekday?order=user"
       ],
-      "post_process_script_list": [
-        "/usr/bin/shuf",
-        "/usr/bin/tail -40"
-      ],
-      "window_size": 100
+      "sort_field_pattern": "titleId=(\\d+)",
+      "unit_size_per_day": 24
     },
     "extraction": {
       "render_js": true,
+      "force_sleep_between_articles": true,
       "element_class_path": [
         "//*[@id='content']/div[1]"
       ],

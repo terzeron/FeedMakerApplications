@@ -5,14 +5,13 @@
         "https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays",
         "https://gateway-kw.kakao.com/section/v1/pages/general-weekdays"
       ],
-      "post_process_script_list": [
-        "/usr/bin/shuf",
-        "/usr/bin/tail -40"
-      ],
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "unit_size_per_day": 1,
-      "window_size": 40,
-      "headers": { "accept-language": "ko" }
+      "is_complete": true,
+      "ignore_old_list": true,
+      "unit_size_per_day": 24,
+      "headers": {
+        "accept-language": "ko"
+      }
     },
     "extraction": {
       "bypass_element_extraction": true
