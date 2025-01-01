@@ -5,11 +5,11 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
-        "https://blacktoon343.com/webtoon/9751.html"
+        "https://blacktoon343.com/webtoon/17536.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
-      "unit_size_per_day": 4
+      "unit_size_per_day": 2
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
@@ -23,11 +23,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 블랙툰. All rights reserved.",
-      "description": "이것이 법이다::블랙툰",
+      "description": "천하제일 무공교관::블랙툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/this_is_law.xml",
-      "title": "이것이 법이다::블랙툰",
+      "link": "https://terzeron.com/world_first_martial_coach.xml",
+      "title": "천하제일 무공교관::블랙툰",
       "url_prefix_for_guid": "https://blacktoon172.com"
     }
   }
