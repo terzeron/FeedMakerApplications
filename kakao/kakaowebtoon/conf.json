@@ -1,14 +1,15 @@
 {
   "configuration": {
     "collection": {
+      "is_completed": true,
+      "ignore_old_list": true,
       "list_url_list": [
         "https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays",
         "https://gateway-kw.kakao.com/section/v1/pages/general-weekdays"
       ],
-      "sort_field_pattern": "\\b(\\d+)\\.",
-      "is_complete": true,
-      "ignore_old_list": true,
-      "unit_size_per_day": 24,
+      "sort_field_pattern": "\\x2F(\\d+)\\t",
+      "unit_size_per_day": 80,
+      "window_size": 24,
       "headers": {
         "accept-language": "ko"
       }
