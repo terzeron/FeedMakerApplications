@@ -12,11 +12,12 @@ def main():
     link = ""
     title = ""
     state = 0
-    url_prefix = "http://comic.naver.com/webtoon/list?titleId="
+    url_prefix = "https://comic.naver.com/webtoon/list?titleId="
     result_list = []
 
     content = IO.read_stdin()
     json_data = json.loads(content)
+
     if "titleListMap" in json_data:
         for _, data_list in json_data["titleListMap"].items():
             for data_item in data_list:

@@ -34,7 +34,6 @@ def print_img_tag(feed_dir_path: Path, page_url: str) -> None:
 def main() -> int:
     feed_dir_path = Path.cwd()
     url_prefix = "https://comic.naver.com/api/article/list/info?titleId="
-    exclude_keywords = ["로맨스", "연인", "연애", "키스", "짝사랑", "고백", "유부녀", "황후", "왕후", "왕비", "공녀", "첫사랑", "재벌", "순정", "후궁", "로판", "로맨스판타지", "멜로", "혐관로맨스", "힐링", "연상연하", "아이돌", "감성", "감성드라마", "무해한", "일상", "사이다", "러블리", "햇살캐", "계략여주", "괴담", "까칠남", "캠퍼스로맨스", "구원서사", "소꿉친구", "청춘로맨스", "친구>연인", "하이틴", "학원로맨스", "현실로맨스", "다정남", "집착물", "연예계", "인플루언서", "걸크러시", "하이틴", "성별반전", "육아물", "삼각관계", "사이비종교", "궁중로맨스"]
 
     IO.read_stdin()
 
@@ -53,6 +52,7 @@ def main() -> int:
         link = url_prefix + title_id
         crawler = Crawler(dir_path=feed_dir_path)
         result, error, _ = crawler.run(link)
+        del crawler
         if error:
             LOGGER.error("Error: can't get data from '%s'", link)
             return -1
@@ -62,9 +62,6 @@ def main() -> int:
         if "curationTagList" in json_data:
             for curation in json_data["curationTagList"]:
                 if "tagName" in curation:
-                    if curation["tagName"] in exclude_keywords:
-                        LOGGER.warning("Warning: can't include this feed item due to exclusion_keyword '%s'", curation["tagName"])
-                        return 0
                     tag_list.append(curation["tagName"])
 
         if "titleName" in json_data:

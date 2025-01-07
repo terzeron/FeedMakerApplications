@@ -7,7 +7,7 @@
         "https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays",
         "https://gateway-kw.kakao.com/section/v1/pages/general-weekdays"
       ],
-      "sort_field_pattern": "\\x2F(\\d+)\\t",
+      "sort_field_pattern": "\\t(\\d\\d\\d\\d-\\d\\d-\\d\\d)",
       "unit_size_per_day": 80,
       "window_size": 24,
       "headers": {
