@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 300",
+      "list_url_list": [
+        "https://comic.naver.com/api/article/list?titleId=818888&sort=DESC",
+        "https://comic.naver.com/api/article/list?titleId=818888&sort=DESC&page=2",
+        "https://comic.naver.com/api/article/list?titleId=818888&sort=DESC&page=3"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 1,
+      "render_js": false,
+      "is_completed": true,
+      "ignore_old_list": true
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "description": "어느 마법사의 식당::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/restaurant_of_wizard.xml",
+      "title": "어느 마법사의 식당::네이버"
+    }
+  }
+}
