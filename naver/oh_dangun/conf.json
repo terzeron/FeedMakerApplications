@@ -5,8 +5,7 @@
       "ignore_old_list": false,
       "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
-        "https://comic.naver.com/api/article/list?titleId=820602&sort=DESC",
-        "https://comic.naver.com/api/article/list?titleId=820602&sort=DESC&page=2"
+        "https://comic.naver.com/api/article/list?titleId=820602&sort=DESC"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 1,
