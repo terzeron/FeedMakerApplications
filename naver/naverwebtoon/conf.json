@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": false,
       "is_completed": false,
-      "item_capture_script": "./capture_item_link_title.py -n 10",
+      "item_capture_script": "./capture_item_link_title.py -n 20",
       "list_url_list": [
         "https://comic.naver.com/api/webtoon/titlelist/new?order=update"
       ],

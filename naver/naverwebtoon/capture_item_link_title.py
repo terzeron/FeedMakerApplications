@@ -24,13 +24,14 @@ def main():
 
     if "titleList" in json_data:
         for data_item in json_data["titleList"]:
-            if not data_item["adult"]:
-                if "titleId" in data_item:
-                    title_id = data_item["titleId"]
-                    link = url_prefix + str(title_id)
-                if "titleName" in data_item:
-                    title = data_item["titleName"]
-                    result_list.append((link, title))
+            if "titleId" in data_item:
+                title_id = data_item["titleId"]
+                link = url_prefix + str(title_id)
+            if "titleName" in data_item:
+                title = data_item["titleName"]
+                if "adult" in data_item and data_item["adult"]:
+                    title += " (성인)"
+                result_list.append((link, title))
 
     for link, title in result_list[:num_of_recent_feeds]:
         print(f"{link}\t{title}")
