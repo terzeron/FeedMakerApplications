@@ -10,7 +10,7 @@
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 2,
-      "num_retries": 2
+      "num_retries": 3
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
@@ -21,7 +21,7 @@
         "../convert_blacktoon_url_to_blacktoon.py",
         "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
       ],
-      "num_retries": 2
+      "num_retries": 3
     },
     "rss": {
       "copyright": "Copyright (c) 블랙툰. All rights reserved.",

@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "is_completed": false,
-      "ignore_old_list": false,
+      "ignore_old_list": true,
       "item_capture_script": "../capture_item_blacktoon.py -n 5",
       "list_url_list": [
         "https://blacktoon345.com/webtoon/12010.html"
