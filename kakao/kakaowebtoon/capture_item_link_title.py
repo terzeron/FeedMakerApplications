@@ -99,8 +99,6 @@ def main() -> int:
                     continue
 
                 item = card["content"]
-                if "adult" in item and item["adult"]:
-                    continue
 
                 date_str = "1970-01-01"
                 if "serialRestartDateTime" in item and item["serialRestartDateTime"]:
@@ -111,6 +109,8 @@ def main() -> int:
                 link = "%s/%s/%s" % (link_prefix, item["seoId"], item["id"])
                 item_id = URL.get_short_md5_name(URL.get_url_path(link))
                 title = date_str + " " + item["title"]
+                if "adult" in item and item["adult"]:
+                    title += " (성인)"
                 result_list.append((link, title))
 
                 # 특수한 처리 - extraction 단계를 여기서 수행
