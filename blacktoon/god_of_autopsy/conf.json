@@ -9,7 +9,7 @@
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
-      "unit_size_per_day": 1,
+      "unit_size_per_day": 2,
       "num_retries": 3
     },
     "extraction": {
