@@ -20,11 +20,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) Funbe. All rights reserved.",
-      "description": "화타가된 외과의사::Funbe",
+      "description": "화타가 된 외과의사::Funbe",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/surgeon_who_became_chinese_doctor.xml",
-      "title": "화타가된 외과의사::Funbe",
+      "title": "화타가 된 외과의사::Funbe",
       "url_prefix_for_guid": "https://funbe.site"
     }
   }
