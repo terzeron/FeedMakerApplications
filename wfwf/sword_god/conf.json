@@ -1,14 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": false,
+      "ignore_old_list": true,
       "is_completed": false,
       "item_capture_script": "../capture_item_wfwf.py -n 5",
       "sort_field_pattern": "num=(\\d+)\\t",
       "encoding": "cp949",
       "unit_size_per_day": 1,
       "list_url_list": [
-        "https://wfwf367.com/list?toon=9855"
+        "https://wfwf368.com/list?toon=9855"
       ]
     },
     "extraction": {
