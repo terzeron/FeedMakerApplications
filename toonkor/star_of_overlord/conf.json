@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": false,
+      "ignore_old_list": true,
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
