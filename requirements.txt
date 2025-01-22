@@ -21,7 +21,7 @@ mail1==4.1.0
 mccabe==0.7.0
 mypy==1.1.1
 mypy-extensions==1.0.0
-mysql-connector-python==8.0.32
+mysql-connector-python==9.1.0
 ordered-set==4.1.0
 outcome==1.2.0
 pdf2image==1.16.0
