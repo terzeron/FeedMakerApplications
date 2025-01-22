@@ -12,7 +12,6 @@
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
-      "ignore_html_with_incomplete_image": true,
       "post_process_script_list": [
         "../post_process_toonkor.py",
         "download_merge_split.py -c blackorwhite -m -b 100 -n 20"

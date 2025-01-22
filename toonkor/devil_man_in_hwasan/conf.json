@@ -13,7 +13,6 @@
     "extraction": {
       "render_js": true,
       "threshold_to_remove_html_with_incomplete_image": 5,
-      "ignore_html_with_incomplete_image": true,
       "element_id_list": [
         "tnimg"
       ],

@@ -9,7 +9,7 @@
       ],
       "sort_field_pattern": "titleId=(\\d+)",
       "unit_size_per_day": 24,
-      "window_size": 24
+      "window_size": 20
     },
     "extraction": {
       "render_js": true,
