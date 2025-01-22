@@ -33,6 +33,7 @@ def main():
                     title += " (성인)"
                 result_list.append((link, title))
 
+    result_list.sort(key=lambda obj: int(obj[0].split("=")[1]), reverse=True)
     for link, title in result_list[:num_of_recent_feeds]:
         print(f"{link}\t{title}")
                     

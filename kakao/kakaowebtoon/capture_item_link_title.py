@@ -131,6 +131,7 @@ def main() -> int:
 
                     
     del crawler
+    result_list.sort(key=lambda obj: obj[1], reverse=True)
     for (link, title) in result_list[:num_of_recent_feeds]:
         print("%s\t%s" % (link, title))
 
