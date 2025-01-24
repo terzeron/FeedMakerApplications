@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_blacktoon.py -n 300",
+      "list_url_list": [
+        "https://blacktoon346.com/webtoon/13360.html"
+      ],
+      "render_js": true,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 1,
+      "num_retries": 3
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "element_id_list": [
+        "toon_content_imgs"
+      ],
+      "post_process_script_list": [
+        "../convert_blacktoon_url_to_blacktoon.py",
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ],
+      "num_retries": 3
+    },
+    "rss": {
+      "copyright": "Copyright (c) 블랙툰. All rights reserved.",
+      "description": "오늘도 훔치러 갑니다::블랙툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/i_go_for_stealing_again_today.xml",
+      "title": "오늘도 훔치러 갑니다::블랙툰",
+      "url_prefix_for_guid": "https://blacktoon172.com"
+    }
+  }
+}
