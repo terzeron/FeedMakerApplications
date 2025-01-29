@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_funbe.py -n 5",
       "list_url_list": [
-        "https://funbe504.com/뒤끝작렬"
+        "https://funbe505.com/뒤끝작렬"
       ],
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 3
