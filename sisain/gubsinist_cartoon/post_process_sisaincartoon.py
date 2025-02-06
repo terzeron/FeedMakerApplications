@@ -3,17 +3,15 @@
 import sys
 import re
 import getopt
-import base64
 from pathlib import Path
-from bs4 import BeautifulSoup
-from bin.feed_maker_util import IO, URL
+from bin.feed_maker_util import IO, header_str
 
 
 def main() -> int:
-    optlist, args = getopt.getopt(sys.argv[1:], "f:n:")
+    optlist, _ = getopt.getopt(sys.argv[1:], "f:n:")
     for o, a in optlist:
         if o == "-f":
-            feed_dir_path = Path(a)
+            _ = Path(a)
         if o == "-n":
             _ = int(a)
 
@@ -25,14 +23,20 @@ def main() -> int:
             if m:
                 state = 1
         elif state == 1:
-            m = re.search(r'<figure class="photo', line)
-            if m:
-                result_list.append(line)
-            m = re.search(r'<div class="press">', line)
-            if m:
+            if re.search(r'<figure class="photo', line):
+                print(header_str)
+                state = 2
+        elif state == 2:
+            if re.search(r'<article class="writer">', line):
+                state = 3
                 break
+            m = re.search(r'<img[^>]*src="(?P<img_url>[^"]*)"[^>]*>', line)
+            if m:
+                img_url = m.group("img_url")
+                img_line = f"<img src='{img_url}'>"
+                result_list.append(img_line)
 
-    if len(result_list) > 1:
+    if len(result_list) > 0:
         for line in result_list:
             print(line)
         
