@@ -1,15 +1,15 @@
 {
   "configuration": {
     "collection": {
-      "ignore_old_list": true,
-      "is_completed": true,
+      "ignore_old_list": false,
+      "is_completed": false,
       "item_capture_script": "../capture_item_blacktoon.py -n 300",
       "list_url_list": [
         "https://blacktoon347.com/webtoon/14061.html"
       ],
       "render_js": true,
       "sort_field_pattern": "(\\d+)화",
-      "unit_size_per_day": 1,
+      "unit_size_per_day": 0.5,
       "num_retries": 3
     },
     "extraction": {
