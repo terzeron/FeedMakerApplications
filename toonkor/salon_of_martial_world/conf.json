@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_toonkor.py -n 300",
       "list_url_list": [
-        "https://tkr402.com/webtoon/12883"
+        "https://tkr403.com/webtoon/12883"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 0.5
