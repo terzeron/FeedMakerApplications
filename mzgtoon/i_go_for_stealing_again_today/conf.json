@@ -2,8 +2,8 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_mzgtoon.py -n 5",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_mzgtoon.py -n 300",
       "list_url_list": [
         "https://z58.mzgtoon.com/api/webtoonlist?list_id=7652&sort=desc"
       ],
