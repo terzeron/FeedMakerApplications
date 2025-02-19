@@ -1,0 +1,37 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_mzgtoon.py -n 5",
+      "list_url_list": [
+        "https://z58.mzgtoon.com/api/webtoonlist?list_id=673&sort=desc"
+      ],
+      "render_js": false,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 1,
+      "num_retries": 2
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "threshold_to_remove_html_with_incomplete_image": 4,
+      "element_id_list": [
+        "imagescroll"
+      ],
+      "post_process_script_list": [
+        "../post_process_mzgtoon.py",
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ],
+      "num_retries": 2
+    },
+    "rss": {
+      "copyright": "Copyright (c) 마징가툰. All rights reserved.",
+      "description": "천검기협::마징가툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/weird_hero_with_sky_sword.xml",
+      "title": "천검기협::마징가툰",
+      "url_prefix_for_guid": "https://z58.mzgtoon.com"
+    }
+  }
+}
