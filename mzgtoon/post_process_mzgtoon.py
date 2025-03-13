@@ -31,7 +31,7 @@ def main() -> int:
     feed_dir_path = Path.cwd()
     optlist, args = getopt.getopt(sys.argv[1:], "f:")
     for o, a in optlist:
-        if o == '-':
+        if o == "-f":
             feed_dir_path = Path(a)
 
     IO.read_stdin()
@@ -49,7 +49,7 @@ def main() -> int:
 
     print(header_str)
     
-    crawler = Crawler()
+    crawler = Crawler(dir_path=feed_dir_path)
     result, error, _ = crawler.run(api_url)
     if not result or error:
         LOGGER.error("can't get image list from API '%s'", api_url)

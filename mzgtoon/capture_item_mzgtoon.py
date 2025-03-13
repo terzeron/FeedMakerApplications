@@ -4,6 +4,7 @@
 import sys
 import getopt
 import json
+from pathlib import Path
 from bin.feed_maker_util import IO, Config, URL
 
 
@@ -12,8 +13,8 @@ class InsufficientConfigError(Exception):
         super().__init__(message)
 
 
-def get_url_prefix_from_config():
-    config = Config()
+def get_url_prefix_from_config(feed_dir_path: Path):
+    config = Config(feed_dir_path)
     conf = config.get_collection_configs()
     url_list = conf.get("list_url_list", [])
     if url_list:
@@ -25,14 +26,17 @@ def get_url_prefix_from_config():
 def main():
     link = ""
     title = ""
+    feed_dir_path = Path.cwd()
 
     num_of_recent_feeds = 1000
     optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
-        if o == '-n':
+        if o == "-n":
             num_of_recent_feeds = int(a)
+        elif o == "-f":
+            feed_dir_path = Path(a)
 
-    url_prefix = get_url_prefix_from_config()
+    url_prefix = get_url_prefix_from_config(feed_dir_path)
             
     content = IO.read_stdin()
     data = json.loads(content)
