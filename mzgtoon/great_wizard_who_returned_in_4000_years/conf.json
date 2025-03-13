@@ -4,7 +4,9 @@
       "ignore_old_list": true,
       "is_completed": false,
       "item_capture_script": "../capture_item_mzgtoon.py -n 5",
-      "list_url_list": [],
+      "list_url_list": [
+        "https://z58.mzgtoon.com/api/webtoonlist?list_id=6960&sort=desc"
+      ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
       "unit_size_per_day": 1,
