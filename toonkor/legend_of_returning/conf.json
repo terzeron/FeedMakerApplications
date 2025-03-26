@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "list_url_list": [
-        "https://tkr411.com/webtoon/7435"
+        "https://tkr412.com/webtoon/7435"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2
