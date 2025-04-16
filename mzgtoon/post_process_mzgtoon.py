@@ -37,7 +37,7 @@ def main() -> int:
     IO.read_stdin()
 
     page_url = args[0]
-    m = re.search(r'^(?P<url_prefix>http.+)/webtoon/(?P<webtoon_id>\d+)/(?P<episode_id>\d+)$', page_url)
+    m = re.search(r'^(?P<url_prefix>http.+)/webtoon/(?P<webtoon_id>\d+)/(?P<episode_id>\d+(\.\d+)?)$', page_url)
     if m:
         url_prefix = m.group("url_prefix")
         webtoon_id = m.group("webtoon_id")
