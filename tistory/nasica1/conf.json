@@ -3,9 +3,9 @@
     "collection": {
       "item_capture_script": "../capture_item_tistory.py -n 5",
       "list_url_list": [
-        "http://nasica1.tistory.com/?page=1",
-        "http://nasica1.tistory.com/?page=2",
-        "http://nasica1.tistory.com/?page=3"
+        "https://nasica1.tistory.com/?page=1",
+        "https://nasica1.tistory.com/?page=2",
+        "https://nasica1.tistory.com/?page=3"
       ],
       "sort_field_pattern": "/(\\d+)\\t",
       "unit_size_per_day": 1
