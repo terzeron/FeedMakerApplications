@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_xtoon.py -n 20",
+      "item_capture_script": "../capture_item_xtoon.py -n 5",
       "list_url_list": [
         "https://t1.xtoon2.com/comic/836284"
       ],
