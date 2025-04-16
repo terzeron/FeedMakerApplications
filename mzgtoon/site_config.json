@@ -1,7 +1,7 @@
 {
   "keyword": "콜사인",
   "num_retries": 3,
-  "render_js": false,
+  "render_js": true,
   "timeout": 120,
   "url": "https://z61.mzgtoon.com/webtoon/6605"
 }
