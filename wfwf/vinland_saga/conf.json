@@ -6,10 +6,10 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wfwf.py -n 5",
       "list_url_list": [
-        "https://wfwf386.com/list?toon=7166"
+        "https://wfwf386.com/cl?toon=11841"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 0.5
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
@@ -18,17 +18,17 @@
       ],
       "encoding": "cp949",
       "post_process_script_list": [
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 20",
+        "download_image.py",
         "../remove_anchor_images.sh"
       ]
     },
     "rss": {
       "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
-      "description": "대사형 선유::늑대닷컴",
+      "description": "빈란드 사가::늑대닷컴",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/eldest_brother_of_martial_family.xml",
-      "title": "대사형 선유::늑대닷컴",
+      "link": "https://terzeron.com/vinland_saga.xml",
+      "title": "빈란드 사가::늑대닷컴",
       "url_prefix_for_guid": "https://wfwf24.com"
     }
   }

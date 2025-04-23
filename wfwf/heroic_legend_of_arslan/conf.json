@@ -2,14 +2,14 @@
   "configuration": {
     "collection": {
       "encoding": "cp949",
-      "ignore_old_list": true,
       "is_completed": false,
+      "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 5",
       "list_url_list": [
-        "https://wfwf386.com/list?toon=7166"
+        "https://wfwf386.com/cl?toon=11354"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 1
+      "unit_size_per_day": 0.5
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
@@ -24,11 +24,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
-      "description": "대사형 선유::늑대닷컴",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/eldest_brother_of_martial_family.xml",
-      "title": "대사형 선유::늑대닷컴",
+      "link": "https://terzeron.com/heroic_legend_of_arslan.xml",
+      "title": "아르슬란 전기::늑대닷컴",
+      "description": "아르슬란 전기::늑대닷컴",
       "url_prefix_for_guid": "https://wfwf24.com"
     }
   }
