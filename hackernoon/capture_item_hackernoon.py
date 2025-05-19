@@ -4,6 +4,8 @@
 import sys
 import re
 import getopt
+import json
+from bs4 import BeautifulSoup, Comment
 from pathlib import Path
 from bin.feed_maker_util import IO
 
@@ -22,27 +24,27 @@ def main():
     state = 0
     url_prefix = "https://hackernoon.com"
     result_list = []
-    for chunk in IO.read_stdin_as_line_list():
-        for line in re.split(r'(?<=>)', chunk):
-            if state == 0:
-                m = re.search(r'<div class="title-wrapper">', line)
-                if m:
-                    state = 1
-            elif state == 1:
-                m = re.search(r'<a href="(?P<link>[^"]+)"', line)
-                if m:
-                    link = m.group("link")
-                    if link.startswith("http"):
-                        state = 0
-                        continue
-                    link = url_prefix + link
-                    state = 2
-            elif state == 2:
-                m = re.search(r'(?P<title>[^<]+)</a>', line)
-                if m:
-                    title = m.group("title")
-                    result_list.append((link, title))
-                    state = 0
+    
+    html = IO.read_stdin()
+    soup = BeautifulSoup(html, "lxml")
+    codes = [tag.string or "" for tag in soup.find_all("script", src=False)]
+    for code in codes:
+        if code.startswith("{") and code.endswith("}"):
+            data = json.loads(code)
+            if "props" in data:
+                props = data["props"]
+                if "pageProps" in props:
+                    page_props = props["pageProps"]
+                    if "topTags" in page_props:
+                        top_tags = page_props["topTags"]
+                        for tag in top_tags:
+                            if "stories" in tag:
+                                stories = tag["stories"]
+                                for story in stories:
+                                    if "title" in story and "slug" in story:
+                                        link = f"{url_prefix}/{story['slug']}"
+                                        result_list.append((link, story["title"]))
+
 
     for link, title in result_list[:num_of_recent_feeds]:
         print(f"{link}\t{title}")
