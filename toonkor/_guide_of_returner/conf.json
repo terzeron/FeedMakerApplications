@@ -5,7 +5,7 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_toonkor.py -n 300",
       "list_url_list": [
-        "https://tkr427.com/webtoon/7584"
+        "https://tkr428.com/webtoon/7584"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 24
