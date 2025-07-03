@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_joatoon.py -n 5",
+      "list_url_list": [
+        "https://joatoon64.com/toon/w/4841"
+      ],
+      "render_js": false,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 1,
+      "num_retries": 2
+    },
+    "extraction": {
+      "bypass_element_extraction": false,
+      "threshold_to_remove_html_with_incomplete_image": 4,
+      "element_id_list": [
+        "chapters"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ],
+      "num_retries": 2
+    },
+    "rss": {
+      "copyright": "Copyright (c) 조아툰. All rights reserved.",
+      "description": "나 혼자 소설 속 망나니::조아툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/i_am_bastard_in_novel.xml",
+      "title": "나 혼자 소설 속 망나니::조아툰",
+      "url_prefix_for_guid": "https://joatoon64.com"
+    }
+  }
+}

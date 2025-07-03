@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_joatoon.py -n 60",
+      "list_url_list": [
+        "https://joatoon64.com/toon/w/8661"
+      ],
+      "render_js": false,
+      "sort_field_pattern": "(\\d+)화",
+      "unit_size_per_day": 0.5,
+      "num_retries": 2
+    },
+    "extraction": {
+      "bypass_element_extraction": false,
+      "threshold_to_remove_html_with_incomplete_image": 4,
+      "element_id_list": [
+        "chapters"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ],
+      "num_retries": 2
+    },
+    "rss": {
+      "copyright": "Copyright (c) 조아툰. All rights reserved.",
+      "description": "부서진 성좌의 회귀::조아툰",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/return_of_broken_constellation_king.xml",
+      "title": "부서진 성좌의 회귀::조아툰",
+      "url_prefix_for_guid": "https://joatoon64.com"
+    }
+  }
+}

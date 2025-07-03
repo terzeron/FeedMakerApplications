@@ -1,0 +1,37 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_kakaowebtoon.py -n 30",
+      "sort_field_pattern": "\\b(\\d+)\\.",
+      "unit_size_per_day": 1,
+      "is_completed": true,
+      "ignore_old_list": true,
+      "list_url_list": [
+        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/823/episodes?sort=-NO&offset=0&limit=30"
+      ],
+      "headers": {
+        "accept-language": "ko"
+      }
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "element_id_list": [
+        "root"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20",
+        "post_process_only_for_images.py -r"
+      ],
+      "render_js": true,
+      "blob_to_dataurl": true
+    },
+    "rss": {
+      "title": "레드스톰 - 왕의 귀환::카카오",
+      "description": "레드스톰 - 왕의 귀환::카카오",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
+      "link": "https://terzeron.com/redstorm_return_of_king.xml",
+      "language": "ko"
+    }
+  }
+}

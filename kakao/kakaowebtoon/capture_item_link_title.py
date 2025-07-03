@@ -10,7 +10,7 @@ import logging
 import logging.config
 from pathlib import Path
 from datetime import datetime
-from bin.feed_maker_util import IO, URL, header_str
+from bin.feed_maker_util import IO, URL, header_str, Env
 from bin.feed_maker import FeedMaker
 from bin.crawler import Crawler
 
@@ -58,7 +58,7 @@ def download_and_merge(crawler: Crawler, download_dir_path: Path, background_ima
             LOGGER.error("can't merge images '%s' and '%s' to '%s'", cropped_background_image_path, foreground_image_path, merged_image_path)
             return ""
     
-    return os.environ["WEB_SERVICE_URL"] + "/xml/img/kakaowebtoon/" + merged_image_path.name
+    return Path(Env.get("WEB_SERVICE_IMAGE_DIR_PREFIX")) / "kakaowebtoon" / merged_image_path.name
     
 
 def main() -> int:
@@ -76,7 +76,7 @@ def main() -> int:
             feed_dir_path = Path(a)
 
     crawler = Crawler()
-    download_dir_path = Path(os.environ["WEB_SERVICE_FEEDS_DIR"]) / "img" / "kakaowebtoon"
+    download_dir_path = Path(Env.get("WEB_SERVICE_IMAGE_DIR_PREFIX")) / "kakaowebtoon"
         
     content = IO.read_stdin()
     content = re.sub(r'(^(<\S[^>]*>)+|(<\S[^>]*>)+$)', '', content)

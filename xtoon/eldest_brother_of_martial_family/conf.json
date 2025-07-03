@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_xtoon.py -n 5",
+      "list_url_list": [
+        "https://t1.xtoon2.com/comic/836335"
+      ],
+      "sort_field_pattern": "(\\d+)[\\.화편]",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "post_process_script_list": [
+        "../post_process_xtoon.py",
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) xtoon. All rights reserved.",
+      "description": "대사형 선유::xtoon",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/eldest_brother_of_martial_family.xml",
+      "title": "대사형 선유::xtoon",
+      "url_prefix_for_guid": "https://t1.xtoon2.com"
+    }
+  }
+}
