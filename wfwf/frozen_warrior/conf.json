@@ -5,7 +5,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 5",
       "list_url_list": [
-        "https://wfwf401.com/cl?toon=12739"
+        "https://wfwf401.com/list?toon=75007"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1
@@ -23,11 +23,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
-      "description": "고블린 슬레이어 이어 원::늑대닷컴 - 모바일 버전 RSS Feed",
+      "description": "냉동 무사::늑대닷컴",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/goblin_slayer_year_one.xml",
-      "title": "고블린 슬레이어 이어 원::늑대닷컴",
+      "link": "https://terzeron.com/frozen_warrior.xml",
+      "title": "냉동 무사::늑대닷컴",
       "url_prefix_for_guid": "https://wfwf24.com"
     }
   }

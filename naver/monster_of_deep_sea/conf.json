@@ -1,14 +1,15 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
-      "ignore_old_list": false,
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "is_completed": true,
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 60",
       "list_url_list": [
-        "https://comic.naver.com/api/article/list?titleId=824204&sort=DESC"
+        "https://comic.naver.com/api/article/list?titleId=824204&sort=DESC",
+        "https://comic.naver.com/api/article/list?titleId=824204&sort=DESC&page=20"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
-      "unit_size_per_day": 1,
+      "unit_size_per_day": 0.5,
       "render_js": false
     },
     "extraction": {
