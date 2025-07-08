@@ -4,12 +4,12 @@
       "encoding": "cp949",
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_wtwt.py -n 10",
+      "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
-        "https://wtwt316.com/c1?toon=10336"
+        "https://wtwt319.com/c1?toon=10336"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 0.5
+      "unit_size_per_day": 1
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
@@ -19,7 +19,7 @@
       ],
       "encoding": "cp949",
       "post_process_script_list": [
-        "download_image.py"
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
       ]
     },
     "rss": {
@@ -27,7 +27,7 @@
       "description": "3월의 라이온::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/march_comes_in_like_a_lion.xml",
+      "link": "https://terzeron.com/march_comes_in_like_lion.xml",
       "title": "3월의 라이온::W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
