@@ -1,0 +1,60 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "ignore_old_list": false,
+      "item_capture_script": "../../naver/capture_item_navercafe.py -n 10000",
+      "sort_field_pattern": "(\\d+)\\t",
+      "unit_size_per_day": 96,
+      "window_size": 48,
+      "list_url_list": [
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/99/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/409/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/93/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/294/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/94/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/94/articles?pageSize=50&sortBy=TIME&viewType=L&page=2",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=2",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=3",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=4",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=5",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=6",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=7",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=8",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=9",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=10",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=11",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=11",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=12",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=13",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=14",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=15",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=16",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=17",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=18",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=19",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=20",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=21",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/56/articles?pageSize=50&sortBy=TIME&viewType=L&page=22"
+      ]
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "force_sleep_between_articles": true,
+      "post_process_script_list": [
+        "../../naver/post_process_navercafe.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "ignore_broken_link": "always",
+      "title": "초보의 프라모델:강좌::네이버",
+      "description": "초보의 프라모델:강좌::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp & https://cafe.naver.com/zlpla. All rights reserved.",
+      "link": "https://terzeron.com/zlpla.lecture.xml",
+      "language": "ko"
+    }
+  }
+}

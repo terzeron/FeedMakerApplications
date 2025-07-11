@@ -27,3 +27,4 @@ cookies*.json
 *.lock
 .*.lock
 .env
+.failed_urls_cache
