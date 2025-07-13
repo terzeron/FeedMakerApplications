@@ -6,9 +6,9 @@
       "item_capture_script": "../capture_item_torrentsee.py -n 10",
       "window_size": 30,
       "list_url_list": [
-        "https://torrentsee293.com/topic/index?category1=1&category2=10",
-        "https://torrentsee293.com/topic/index?category1=1&category2=11",
-        "https://torrentsee293.com/topic/index?category1=5&category2=22"
+        "https://torrentsee294.com/topic/index?category1=1&category2=10",
+        "https://torrentsee294.com/topic/index?category1=1&category2=11",
+        "https://torrentsee294.com/topic/index?category1=5&category2=22"
       ],
       "post_process_script_list": [
         "/usr/bin/grep -v -P '(엉덩이탐정|헬로 ?카봇|보증업체|롤링토너먼트|상금|베팅|배팅|윈윈|마일리지)'",
