@@ -5,7 +5,7 @@
       "ignore_old_list": false,
       "item_capture_script": "../../naver/capture_item_navercafe.py -n 10000",
       "sort_field_pattern": "/(\\d+)\\t",
-      "unit_size_per_day": 48,
+      "unit_size_per_day": 240,
       "window_size": 48,
       "list_url_list": [
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=200",
@@ -171,8 +171,8 @@
     },
     "rss": {
       "ignore_broken_link": "always",
-      "title": "초보의 프라모델:건담/SF::네이버",
-      "description": "초보의 프라모델:건담/SF::네이버",
+      "title": "초보의 프라모델:건담/SF제작기::네이버",
+      "description": "초보의 프라모델:건담/SF제작기::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & https://cafe.naver.com/zlpla. All rights reserved.",
       "link": "https://terzeron.com/zlpla.gundam.xml",

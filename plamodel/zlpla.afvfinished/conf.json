@@ -1,0 +1,56 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "ignore_old_list": false,
+      "item_capture_script": "../../naver/capture_item_navercafe.py -t 1.5 -n 1000",
+      "sort_field_pattern": "(\\d+)\\t",
+      "unit_size_per_day": 48,
+      "window_size": 48,
+      "list_url_list": [
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=6",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=7",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=8",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=9",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=10",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=11",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=12",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=13",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=14",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=15",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=16",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=17",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=18",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=19",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=20",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=21",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=22",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=23",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=24",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=25",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=26",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=27",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=28",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=29",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=30"
+      ]
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "force_sleep_between_articles": true,
+      "post_process_script_list": [
+        "../../naver/post_process_navercafe.py",
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "ignore_broken_link": "always",
+      "title": "초보의 프라모델:AFV완성::네이버",
+      "description": "초보의 프라모델:AFV완성::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp & https://cafe.naver.com/zlpla. All rights reserved.",
+      "link": "https://terzeron.com/zlpla.afvfinished.xml",
+      "language": "ko"
+    }
+  }
+}
