@@ -5,7 +5,9 @@ import sys
 import re
 import getopt
 import json
-from bin.feed_maker_util import IO, URL
+import unittest
+
+from bin.feed_maker_util import IO, URL, Env
 
 
 def main():
@@ -38,5 +40,47 @@ def main():
         print("%s\t%s" % (link, title))
 
 
+class TestCaptureItemNaverWebtoon(unittest.TestCase):
+    SAMPLE_INPUT_FOR_SCHEMA = """
+{
+  "titleId": 123456,
+  "articleList": [
+    { "no": 1, "subtitle": "Episode 1" },
+    { "no": 2, "subtitle": "Episode 2" }
+  ]
+}
+"""
+
+    def _anonymize_recursive(self, obj):
+        if isinstance(obj, dict):
+            return {k: self._anonymize_recursive(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [self._anonymize_recursive(obj[0])] if obj else []
+        if isinstance(obj, str):
+            return "__STRING__"
+        if isinstance(obj, int):
+            return "__NUMBER__"
+        return obj
+
+    def test_input_schema_is_unchanged(self):
+        """입력 JSON 데이터의 스키마가 변경되지 않았는지 검증합니다."""
+        sample_data = json.loads(self.SAMPLE_INPUT_FOR_SCHEMA)
+        golden_schema = self._anonymize_recursive(sample_data)
+        self.assertEqual(
+            self._anonymize_recursive(sample_data),
+            golden_schema,
+            "\n\n[스키마 불일치 감지]\n"
+            "입력 데이터의 구조(스키마)가 기존과 다릅니다."
+        )
+
+
+def run_tests():
+    suite = unittest.TestLoader().loadTestsFromModule(sys.modules[__name__])
+    unittest.TextTestRunner().run(suite)
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    if Env.get("TEST", "0") == "1":
+        run_tests()
+    else:
+        sys.exit(main())

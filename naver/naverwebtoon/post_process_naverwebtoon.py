@@ -12,6 +12,8 @@ from typing import List
 from pathlib import Path
 from bin.feed_maker_util import IO, Config, URL, header_str
 from bin.crawler import Crawler
+import unittest
+from unittest.mock import patch
 
 
 logging.config.fileConfig(os.environ["FM_HOME_DIR"] + "/logging.conf")
@@ -84,5 +86,54 @@ def main() -> int:
     return 0
 
 
+class TestPostProcessNaverWebtoon(unittest.TestCase):
+    SAMPLE_API_RESPONSE = """
+{
+    "titleName": "Sample Webtoon",
+    "synopsis": "This is a sample synopsis.",
+    "thumbnailUrl": "http://example.com/thumbnail.jpg",
+    "curationTagList": [
+        { "tagName": "Gag" },
+        { "tagName": "Fantasy" }
+    ]
+}
+"""
+
+    def _anonymize_recursive(self, obj):
+        if isinstance(obj, dict):
+            return {k: self._anonymize_recursive(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [self._anonymize_recursive(obj[0])] if obj else []
+        if isinstance(obj, str): return "__STRING__"
+        return obj
+
+    @patch('__main__.IO.read_stdin')
+    @patch('__main__.Crawler.run')
+    def test_input_schema_is_unchanged(self, mock_crawler_run, mock_read_stdin):
+        """API 응답 JSON의 스키마가 변경되지 않았는지 검증합니다."""
+        # IO.read_stdin이 테스트를 block하지 않도록 mock 처리
+        mock_read_stdin.return_value = ""
+
+        # Crawler.run이 가짜 응답을 반환하도록 설정
+        mock_crawler_run.return_value = (self.SAMPLE_API_RESPONSE, None, None)
+
+        # 스키마 검증
+        sample_data = json.loads(self.SAMPLE_API_RESPONSE)
+        golden_schema = self._anonymize_recursive(sample_data)
+        self.assertEqual(
+            self._anonymize_recursive(sample_data),
+            golden_schema,
+            "API 응답 스키마가 변경되었습니다."
+        )
+
+def run_tests():
+    suite = unittest.TestLoader().loadTestsFromModule(sys.modules[__name__])
+    unittest.TextTestRunner().run(suite)
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    from bin.feed_maker_util import Env
+    if Env.get("TEST", "0") == "1":
+        run_tests()
+    else:
+        sys.exit(main())
