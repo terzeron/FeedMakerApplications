@@ -11,17 +11,25 @@ import unittest
 from bin.feed_maker_util import IO, Env
 
 
+
 def main():
     url_prefix = "https://m.cafe.naver.com/ca-fe/web/cafes/10503958/articles/"
 
     num_of_recent_feeds = 30
     threshold = 0.0
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:t:")
+    average = 0.0
+    stdev = 1.0
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:t:a:s:")
     for o, a in optlist:
         if o == '-n':
             num_of_recent_feeds = int(a)
         elif o == '-t':
             threshold = float(a)
+        elif o == '-a':
+            average = float(a)
+        elif o == '-s':
+            stdev = float(a)
+                  
 
     result_list = []
     content = IO.read_stdin()
@@ -38,15 +46,18 @@ def main():
                     title = f"{nickname}: {subject}"
                     
                     if threshold > 0.0:
-                        score = (log2(int(item["commentCount"]) + 1) + log2(int(item["likeCount"]) + 1)) / (log2(int(item["readCount"]) + 1) + 1) + log2(int(item["readCount"]) + 1) / log2(300)
+                        read_count = int(item["readCount"])
+                        like_count = int(item["likeCount"])
+                        comment_count = int(item["commentCount"])
+                        score = ((read_count + 5 * like_count + 50 * comment_count) - average) / stdev
                         if score < threshold:
                             continue
-                    result_list.append((link, title))
+                    result_list.append((link, title, item["readCount"], item["likeCount"], item["commentCount"]))
     except json.JSONDecodeError:
         pass # Ignore invalid JSON
         
-    for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%s" % (url_prefix + link, title))
+    for (link, title, read_count, like_count, comment_count) in result_list[:num_of_recent_feeds]:
+        print(f"{url_prefix+link}\t{title}\t{read_count}\t{like_count}\t{comment_count}")
 
 
 class TestCaptureItemNaverCafe(unittest.TestCase):
