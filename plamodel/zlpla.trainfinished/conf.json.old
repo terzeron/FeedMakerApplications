@@ -1,14 +1,14 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
+      "is_completed": true,
       "ignore_old_list": false,
-      "item_capture_script": "../../naver/capture_item_navercafe.py -t 1.8 -a 1169.90 -s 871.65 -n 10",
-      "sort_field_pattern": "\\t(.+)",
-      "unit_size_per_day": 240,
+      "item_capture_script": "../../naver/capture_item_navercafe.py -n 100000",
+      "sort_field_pattern": "(\\d+)\\t",
+      "unit_size_per_day": 120,
       "window_size": 48,
       "list_url_list": [
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=01"
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/542/articles?pageSize=50&sortBy=TIME&viewType=L&page=1"
       ]
     },
     "extraction": {
@@ -21,11 +21,11 @@
     },
     "rss": {
       "ignore_broken_link": "always",
-      "title": "초보의 프라모델:AFV제작기::네이버",
-      "description": "초보의 프라모델:AFV제작기::네이버",
+      "title": "초보의 프라모델:AFV완성::네이버",
+      "description": "초보의 프라모델:AFV완성::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & https://cafe.naver.com/zlpla. All rights reserved.",
-      "link": "https://terzeron.com/zlpla.afv.xml",
+      "link": "https://terzeron.com/zlpla.afvfinished.xml",
       "language": "ko"
     }
   }
