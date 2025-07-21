@@ -36,13 +36,22 @@ def main():
             data = json.loads(str(response.text))
             if "result" in data:
                 result = data["result"]
-                #import pprint
-                #pprint.pprint(data["result"])
 
                 print(header_str)
                 
                 # 본문
                 image_list: list[str] = []
+                i = 0
+                if "attaches" in result:
+                    attaches = result["attaches"]
+                    for attach in attaches:
+                        if attach.get("type", "") == "M":
+                            image_url = re.sub(
+                                r'https://download.blog.naver.com/\w+/(\w+)/',
+                                r'https://phinf.pstatic.net/image.nmv/\1/', 
+                                attach.get("url", ""))
+                            image_list.append(f"<img src='{image_url}' />")
+                    
                 if "article" in result:
                     article = result["article"]
 
@@ -53,6 +62,10 @@ def main():
 
                     for image_element in content_elements:
                         json_ = image_element.get("json", {})
+                        if "stickerId" in json_:
+                            image_url = json_.get("url", "")
+                            image_list.append(f"<!-- {image_url} -->")
+
                         if "image" in json_:
                             image_url = json_["image"].get("url", "")
                             if "egloos.com" in image_url or "hanafos.com" in image_url:
@@ -72,7 +85,7 @@ def main():
                     html = article.get("contentHtml", "")
                     if "scrap" in article and "contentHtml" in article.get("scrap", {}):
                         html += article["scrap"]["contentHtml"]
-                    
+
                     for i, img_tag in enumerate(image_list):
                         html = html.replace(f"[[[CONTENT-ELEMENT-{i}]]]", img_tag)
 
