@@ -1,11 +1,11 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_kakaowebtoon.py -n 30",
+      "item_capture_script": "../capture_item_kakaowebtoon.py -n 5",
       "sort_field_pattern": "\\b(\\d+)\\.",
       "unit_size_per_day": 0.5,
-      "is_completed": true,
-      "ignore_old_list": true,
+      "is_completed": false,
+      "ignore_old_list": false,
       "list_url_list": [
         "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/823/episodes?sort=-NO&offset=0&limit=30"
       ],
