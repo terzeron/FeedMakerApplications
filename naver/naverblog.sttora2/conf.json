@@ -18,12 +18,12 @@
         "se-main-container"
       ],
       "post_process_script_list": [
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+        "download_image.py"
       ]
     },
     "rss": {
       "title": "Market Philosophy::네이버",
-      "description": "Philosophy::네이버",
+      "description": "Market Philosophy::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & breitner@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.sttora2.xml",
