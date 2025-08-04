@@ -13,7 +13,7 @@ from bin.feed_maker_util import IO, Env
 
 
 def main():
-    url_prefix = "https://m.cafe.naver.com/ca-fe/web/cafes/10503958/articles/"
+    url_prefix_template = "https://m.cafe.naver.com/ca-fe/web/cafes/%d/articles/%d"
 
     num_of_recent_feeds = 30
     threshold = 0.0
@@ -40,7 +40,9 @@ def main():
             for article in data["result"]["articleList"]:
                 if "item" in article:
                     item = article["item"]
-                    link = str(item["articleId"])
+                    article_id = item["articleId"]
+                    cafe_id = item["cafeId"]
+                    link = url_prefix_template % (cafe_id, article_id)
                     nickname = re.sub(r'\n', '', item["writerInfo"]["nickName"].strip())
                     subject = re.sub(r'\n', '', item["subject"].strip())
                     title = f"{nickname}: {subject}"
@@ -57,7 +59,7 @@ def main():
         pass # Ignore invalid JSON
         
     for (link, title, read_count, like_count, comment_count) in result_list[:num_of_recent_feeds]:
-        print(f"{url_prefix+link}\t{title}\t{read_count}\t{like_count}\t{comment_count}")
+        print(f"{link}\t{title}\t{read_count}\t{like_count}\t{comment_count}")
 
 
 class TestCaptureItemNaverCafe(unittest.TestCase):
