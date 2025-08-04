@@ -1,0 +1,29 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "list_url_list": [
+        "https://comic.naver.com/api/article/list?titleId=841129&sort=DESC"
+      ],
+      "render_js": false
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+      ]
+    },
+    "rss": {
+      "title": "뒷골목 마법사의 회귀생활::네이버",
+      "description": "뒷골목 마법사의 회귀생활::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "link": "https://terzeron.com/second_life_of_back_alley_magician.xml",
+      "language": "ko"
+    }
+  }
+}

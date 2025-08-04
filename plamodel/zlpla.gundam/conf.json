@@ -3,12 +3,21 @@
     "collection": {
       "is_completed": false,
       "ignore_old_list": false,
-      "item_capture_script": "../../naver/capture_item_navercafe.py -t 1.65 -a 552.65 -s 423.92 -n 10",
+      "item_capture_script": "../../naver/capture_item_navercafe.py -t 1.1 -a 552.65 -s 423.92 -n 10000",
       "sort_field_pattern": "/(\\d+)\\t",
       "unit_size_per_day": 240,
-      "window_size": 48,
+      "window_size": 500,
       "list_url_list": [
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=1"
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=11",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=12",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=13",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=14",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=15",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=16",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=17",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=18",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=19",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/50/articles?pageSize=50&sortBy=TIME&viewType=L&page=20"
       ]
     },
     "extraction": {

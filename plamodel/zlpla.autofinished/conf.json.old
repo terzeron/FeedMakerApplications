@@ -3,10 +3,10 @@
     "collection": {
       "is_completed": true,
       "ignore_old_list": false,
-      "item_capture_script": "../../naver/capture_item_navercafe.py -n 100000",
+      "item_capture_script": "../../naver/capture_item_navercafe.py -n 10000",
       "sort_field_pattern": "(\\d+)\\t",
       "unit_size_per_day": 120,
-      "window_size": 48,
+      "window_size": 500,
       "list_url_list": [
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/15/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/15/articles?pageSize=50&sortBy=TIME&viewType=L&page=2",
