@@ -2,6 +2,6 @@
   "timeout": 120,
   "keyword": "던전 리셋",
   "num_retries": 3,
-  "render_js": false,
-  "url": "https://tkr442.com/webtoon/4430"
+  "render_js": true,
+  "url": "https://tkr443.com/webtoon/4430"
 }

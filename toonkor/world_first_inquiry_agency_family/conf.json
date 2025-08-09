@@ -4,8 +4,9 @@
       "ignore_old_list": true,
       "is_completed": false,
       "item_capture_script": "../capture_item_toonkor.py -n 5",
+      "render_js": true,
       "list_url_list": [
-        "https://tkr442.com/webtoon/10038"
+        "https://tkr443.com/webtoon/10038"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2
