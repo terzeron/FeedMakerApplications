@@ -4,9 +4,9 @@
       "encoding": "cp949",
       "ignore_old_list": true,
       "is_completed": true,
-      "item_capture_script": "../capture_item_wtwt.py -n 1000",
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
-        "https://wtwt320.com/c1?toon=10713"
+        "https://wtwt320.com/c1?toon=14100"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 0.5
@@ -24,11 +24,11 @@
     },
     "rss": {
       "copyright": "Copyright (c) W툰. All rights reserved.",
-      "description": "주술회전::W툰",
+      "description": "사카모토 데이즈::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/revolving_battle_of_curses.xml",
-      "title": "주술회전::W툰",
+      "link": "https://terzeron.com/sakamoto_days.xml",
+      "title": "사카모토 데이즈::W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
   }

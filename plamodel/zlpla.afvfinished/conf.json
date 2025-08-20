@@ -8,16 +8,16 @@
       "unit_size_per_day": 120,
       "window_size": 500,
       "list_url_list": [
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=11",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=12",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=13",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=14",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=15",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=16",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=17",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=18",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=19",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=20"
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=2",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=3",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=4",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=5",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=6",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=7",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=8",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=9",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=10"
       ]
     },
     "extraction": {
