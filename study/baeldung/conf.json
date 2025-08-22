@@ -1,0 +1,25 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "ignore_old_list": false,
+      "sort_field_pattern": "\\t(\\S+)",
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "https://feeds.feedblitz.com/baeldung&x=1"
+      ],
+      "item_capture_script": "../capture_item_from_rss.py -n 10"
+    },
+    "extraction": {
+      "bypass_element_extraction": true
+    },
+    "rss": {
+      "title": "Baeldung",
+      "description": "Baeldung",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Baeldung. All Rights Reserved",
+      "link": "https://terzeron.com/baeldung.xml",
+      "language": "ko"
+    }
+  }
+}

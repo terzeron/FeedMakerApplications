@@ -1,0 +1,27 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "ignore_old_list": false,
+      "sort_field_pattern": "\\t(\\S+)",
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "https://highscalability.com/rss/"
+      ],
+      "item_capture_script": "../capture_item_from_rss.py -n 10"
+    },
+    "extraction": {
+      "element_class_list": [
+        "post"
+      ]
+    },
+    "rss": {
+      "title": "High Scalability",
+      "description": "High Scalability",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) High Scalability. All Rights Reserved",
+      "link": "https://terzeron.com/highscalability.xml",
+      "language": "ko"
+    }
+  }
+}

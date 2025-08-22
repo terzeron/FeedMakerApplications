@@ -1,0 +1,25 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "ignore_old_list": false,
+      "sort_field_pattern": "\\t(\\S+)",
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "https://blog.redelastic.com/feed"
+      ],
+      "item_capture_script": "../capture_item_from_rss.py -n 10"
+    },
+    "extraction": {
+      "bypass_element_extraction": true
+    },
+    "rss": {
+      "title": "Red Elastic",
+      "description": "Red Elastic",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Red Elastic. All Rights Reserved",
+      "link": "https://terzeron.com/redelastic.xml",
+      "language": "ko"
+    }
+  }
+}
