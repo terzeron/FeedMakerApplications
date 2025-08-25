@@ -22,7 +22,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "description": "탑코너::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/top_corner.xml",

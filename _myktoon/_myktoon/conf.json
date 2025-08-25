@@ -16,7 +16,6 @@
     },
     "rss": {
       "title": "케이툰웹툰목록",
-      "description": "케이툰 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) KT Corp. All Rights Reserved",
       "link": "https://terzeron.com/myktoon.xml",

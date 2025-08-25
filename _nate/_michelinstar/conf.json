@@ -16,7 +16,6 @@
     },
     "rss": {
       "title": "미슐랭 스타::네이트",
-      "description": "미슐랭 스타::네이트 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) SK Communications. All rights reserved.",
       "link": "https://terzeron.com/michelinstar.xml",

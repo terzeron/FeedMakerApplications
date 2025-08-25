@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "삼국지::mobile3",
-      "description": "삼국지::mobile3 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) mobile3. All Rights Reserved",
       "link": "https://terzeron.com/threekingdoms.xml",

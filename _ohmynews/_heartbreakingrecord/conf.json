@@ -39,7 +39,6 @@
     },
     "rss": {
       "title": "단장기::오마이뉴스",
-      "description": "단장기::오마이뉴스 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) OhmyNews. All Rights Reserved",
       "link": "https://terzeron.com/heartbreakingrecord.xml",

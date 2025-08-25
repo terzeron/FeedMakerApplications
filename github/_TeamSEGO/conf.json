@@ -16,7 +16,6 @@
     },
     "rss": {
       "title": "주간 깃헙 트렌드::TeamSEGO",
-      "description": "주간 깃헙 트렌드::TeamSEGO",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) TeamSEGO. All rights reserved.",
       "link": "https://terzeron.com/TeamSEGO.xml",

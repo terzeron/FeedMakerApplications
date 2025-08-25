@@ -35,7 +35,6 @@
     },
     "rss": {
       "title": "사진의 숲::티스토리",
-      "description": "사진의 숲::티스토리 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Tistory. All rights reserved.",
       "link": "https://terzeron.com/kissdei.xml",

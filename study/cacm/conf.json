@@ -20,7 +20,6 @@
     },
     "rss": {
       "title": "Communications of the ACM",
-      "description": "Communications of the ACM",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) ACM. All Rights Reserved",
       "link": "https://terzeron.com/cacm.xml",

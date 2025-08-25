@@ -12,7 +12,6 @@
     },
     "rss": {
       "title": "일요신문웹툰목록",
-      "description": "일요신문웹툰목록 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 일요신문. All Rights Reserved",
       "link": "https://terzeron.com/ilyowebtoon.xml",

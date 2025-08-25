@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "영화::토렌트알지",
-      "description": "영화::토렌트알지 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NHN Corp. All Rights Reserved",
       "link": "https://terzeron.com/torrentrg.movie.xml",

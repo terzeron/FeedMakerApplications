@@ -19,7 +19,6 @@
     },
     "rss": {
       "title": "사이언스타임즈",
-      "description": "사이언스타임즈 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) KOFAC. All Rights Reserved",
       "link": "https://terzeron.com/sci-tech.xml",

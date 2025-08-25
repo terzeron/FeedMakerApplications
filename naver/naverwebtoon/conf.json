@@ -23,7 +23,6 @@
     },
     "rss": {
       "title": "네이버웹툰목록",
-      "description": "네이버웹툰목록",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
       "link": "https://terzeron.com/naverwebtoon.xml",

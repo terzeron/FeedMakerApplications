@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "뉴스::뉴스타파",
-      "description": "뉴스::뉴스타파 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) KCIJ. All Rights Reserved",
       "link": "https://terzeron.com/newstapa.xml",

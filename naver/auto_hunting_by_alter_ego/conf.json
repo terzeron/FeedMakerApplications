@@ -21,7 +21,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "description": "분신으로 자동사냥::네이버",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/auto_hunting_by_alter_ego.xml",

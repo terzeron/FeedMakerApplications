@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "High Scalability",
-      "description": "High Scalability",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) High Scalability. All Rights Reserved",
       "link": "https://terzeron.com/highscalability.xml",

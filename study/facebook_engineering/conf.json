@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "Facebook Engineering",
-      "description": "Facebook Engineering",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Facebook. All Rights Reserved",
       "link": "https://terzeron.com/facebook_engineering.xml",

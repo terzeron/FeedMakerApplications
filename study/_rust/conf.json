@@ -16,7 +16,6 @@
     },
     "rss": {
       "title": "Rust",
-      "description": "Rust - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) hanbum.gitbooks.io. All Rights Reserved",
       "link": "https://terzeron.com/rust.xml",

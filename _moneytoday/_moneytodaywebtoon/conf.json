@@ -14,7 +14,6 @@
     },
     "rss": {
       "title": "머니투데이웹툰목록",
-      "description": "머니투데이웹툰목록 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) moneytoday Communications. All rights reserved.",
       "link": "https://terzeron.com/moneytodaywebtoon.xml",

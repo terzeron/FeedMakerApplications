@@ -12,7 +12,6 @@
     },
     "rss": {
       "title": "오늘의영화::네이버영화",
-      "description": "오늘의 영화::네이버 영화 - 모바일 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
       "link": "https://terzeron.com/todaymovie.xml",

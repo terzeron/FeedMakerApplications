@@ -24,7 +24,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) W툰. All rights reserved.",
-      "description": "템빨::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/powered_by_items.xml",

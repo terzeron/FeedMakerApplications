@@ -19,7 +19,6 @@
     },
     "rss": {
       "title": "만렙돌파::네이버",
-      "description": "만렙돌파::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/breaking_through_highest_level.xml",

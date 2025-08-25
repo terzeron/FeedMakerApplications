@@ -23,7 +23,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) Torrentmode. All rights reserved.",
-      "description": "토렌트모드",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/torrentmode.xml",

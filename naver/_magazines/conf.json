@@ -21,7 +21,6 @@
     },
     "rss": {
       "title": "매거진S::네이버스포츠",
-      "description": "매거진S::네이버스포츠 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
       "link": "https://terzeron.com/magazines.xml",

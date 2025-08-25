@@ -23,7 +23,6 @@
     },
     "rss": {
       "title": "indizio::네이버",
-      "description": "indizio::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & indizio@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.indizio.xml",

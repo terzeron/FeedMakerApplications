@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "레슬러들::일요신문",
-      "description": "레슬러들::일요신문 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 일요신문. All Rights Reserved",
       "link": "https://terzeron.com/wrestlers.xml",

@@ -17,7 +17,6 @@
     },
     "rss": {
       "title": "보르코시건::메트로",
-      "description": "보르코시건::메트로 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 메트로신문. All Rights Reserved",
       "link": "https://terzeron.com/vorkosigan.xml",

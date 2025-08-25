@@ -19,7 +19,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "description": "두 번 사는 프로듀서::네이버",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/producer_who_lives_twice.xml",

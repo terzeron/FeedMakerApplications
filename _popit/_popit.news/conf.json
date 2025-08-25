@@ -12,7 +12,6 @@
     },
     "rss": {
       "title": "뉴스::Popit",
-      "description": "뉴스::Popit",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Popit. All rights reserved.",
       "link": "https://terzeron.com/popit.news.xml",

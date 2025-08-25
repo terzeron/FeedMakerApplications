@@ -29,7 +29,6 @@
     },
     "rss": {
       "title": "[우영창] The Wall::BookDB",
-      "description": "[우영창] The Wall::BookDB - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Interpark Corporation. All Rights Reserved",
       "link": "https://terzeron.com/the_wall.xml",

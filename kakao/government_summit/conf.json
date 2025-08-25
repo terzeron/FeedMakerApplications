@@ -23,7 +23,6 @@
     },
     "rss": {
       "title": "관존::카카오",
-      "description": "관존::카카오 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
       "link": "https://terzeron.com/government_summit.xml",

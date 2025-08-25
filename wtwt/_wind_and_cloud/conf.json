@@ -23,7 +23,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) W툰. All rights reserved.",
-      "description": "풍운::W툰 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/wind_and_cloud.xml",

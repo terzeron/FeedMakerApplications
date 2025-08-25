@@ -13,7 +13,6 @@
     },
     "rss": {
       "title": "네이트웹툰목록",
-      "description": "네이트웹툰목록 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) SK Communications. All Rights Reserved",
       "link": "https://terzeron.com/natewebtoon.xml",

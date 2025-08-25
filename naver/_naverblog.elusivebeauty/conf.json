@@ -24,7 +24,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp & bankertofu@naver.com. All rights reserved.",
-      "description": "타인에게 말하다::네이버",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/naverblog.elusivebeauty.xml",

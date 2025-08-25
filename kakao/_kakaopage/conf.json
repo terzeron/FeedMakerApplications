@@ -21,7 +21,6 @@
     },
     "rss": {
       "title": "카카오페이지목록::카카오",
-      "description": "카카오페이지목록::카카오 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Kakao Corp. All Rights Reserved",
       "link": "https://terzeron.com/kakaopage.xml",

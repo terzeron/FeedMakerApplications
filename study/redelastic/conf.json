@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "Red Elastic",
-      "description": "Red Elastic",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Red Elastic. All Rights Reserved",
       "link": "https://terzeron.com/redelastic.xml",

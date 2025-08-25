@@ -20,7 +20,6 @@
     },
     "rss": {
       "title": "계약 우정::다음",
-      "description": "계약 우정::다음 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Communications. All rights reserved.",
       "link": "https://terzeron.com/contractual_friendship.xml",

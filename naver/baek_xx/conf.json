@@ -21,7 +21,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
-      "description": "백XX::네이버",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/baek_xx.xml",

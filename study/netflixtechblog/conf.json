@@ -17,7 +17,6 @@
     },
     "rss": {
       "title": "Netflix TechBlog",
-      "description": "Netflix TechBlog",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Netflix. All Rights Reserved",
       "link": "https://terzeron.com/netflixtechblog.xml",

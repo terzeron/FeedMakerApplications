@@ -12,7 +12,6 @@
     },
     "rss": {
       "title": "스포츠동아웹툰목록",
-      "description": "스포츠동아웹툰목록 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright sports.donga.com. All Rights Reserved",
       "link": "https://terzeron.com/oneplusone.xml",

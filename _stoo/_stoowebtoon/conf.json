@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "스투웹툰목록",
-      "description": "스투웹툰목록 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) STOO.COM. All rights reserved.",
       "link": "https://terzeron.com/stoowebtoon.xml",

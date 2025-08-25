@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "Joel on Software",
-      "description": "Joel on Software",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) joelonsoftware.com. All Rights Reserved",
       "link": "https://terzeron.com/joelonsoftware.xml",

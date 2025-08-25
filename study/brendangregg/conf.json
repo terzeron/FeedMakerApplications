@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "Brendan Gregg",
-      "description": "Brendan Gregg",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Brendan Gregg. All Rights Reserved",
       "link": "https://terzeron.com/brendangregg.xml",

@@ -45,7 +45,6 @@
     },
     "rss": {
       "title": "Spring",
-      "description": "Spring - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) spring.io. All Rights Reserved",
       "link": "https://terzeron.com/spring.xml",

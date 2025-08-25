@@ -14,7 +14,6 @@
     },
     "rss": {
       "title": "스포츠경향웹툰목록",
-      "description": "스포츠경향웹툰목록 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) The Kyunghyang Shinmun. All Rights Reserved",
       "link": "https://terzeron.com/sportskhanwebtoon.xml",

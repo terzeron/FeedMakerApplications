@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "AllThingsDistributed",
-      "description": "AllThingsDistributed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) AllThingsDistributed. All Rights Reserved",
       "link": "https://terzeron.com/allthingsdistributed.xml",

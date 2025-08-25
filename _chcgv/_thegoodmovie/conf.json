@@ -19,7 +19,6 @@
     },
     "rss": {
       "title": "더굿무비",
-      "description": "더굿무비 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) CJ E&M. All Rights Reserved",
       "link": "https://terzeron.com/thegoodmovie.xml",

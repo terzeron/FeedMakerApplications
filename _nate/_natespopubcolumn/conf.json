@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "스포츠칼럼::Nate스포츠",
-      "description": "스포츠칼럼::Nate스포츠 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) SK Communications. All rights reserved.",
       "link": "https://terzeron.com/natespopubcolumn.xml",

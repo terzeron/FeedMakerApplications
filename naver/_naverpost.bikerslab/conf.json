@@ -19,7 +19,6 @@
     },
     "rss": {
       "title": "바이커즈랩::네이버",
-      "description": "바이커즈랩::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & 바이커즈랩. All rights reserved.",
       "link": "https://terzeron.com/naverpost.bikerslab.xml",

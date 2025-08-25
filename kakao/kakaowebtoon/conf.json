@@ -18,7 +18,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
-      "description": "카카오웹툰목록::카카오",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/kakaowebtoon.xml",

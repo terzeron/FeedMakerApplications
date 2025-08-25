@@ -21,7 +21,6 @@
     },
     "rss": {
       "title": "낙향문사전::네이버",
-      "description": "낙향문사전::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/story_of_retired_scholar.xml",

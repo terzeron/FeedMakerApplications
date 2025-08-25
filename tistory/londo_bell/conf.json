@@ -28,7 +28,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) Tistory. All rights reserved.",
-      "description": "Londo Bell::티스토리",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/londo_bell.xml",

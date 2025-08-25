@@ -30,7 +30,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) Torrentsee. All rights reserved.",
-      "description": "토렌트씨",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/torrentsee.xml",

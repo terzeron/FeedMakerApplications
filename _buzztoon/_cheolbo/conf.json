@@ -21,7 +21,6 @@
     },
     "rss": {
       "title": "철보::버즈툰",
-      "description": "철보::버즈툰 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 버즈툰. All rights reserved.",
       "link": "https://terzeron.com/cheolbo.xml",

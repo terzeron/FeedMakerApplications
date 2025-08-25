@@ -19,7 +19,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) zlibrary. All rights reserved.",
-      "description": "한국어 책 신규::zlibrary",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/kr1lib_new.xml",

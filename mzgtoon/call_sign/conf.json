@@ -26,7 +26,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) 마징가툰. All rights reserved.",
-      "description": "콜사인::마징가툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/call_sign.xml",

@@ -24,7 +24,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) W툰. All rights reserved.",
-      "description": "던전 리셋::W툰",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/dungeon_reset.xml",

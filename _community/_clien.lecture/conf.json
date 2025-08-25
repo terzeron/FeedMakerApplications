@@ -14,7 +14,6 @@
     },
     "rss": {
       "title": "강좌::클량",
-      "description": "강좌::클량 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NHN Corp. All rights reserved.",
       "link": "https://terzeron.com/lecture.xml",

@@ -17,7 +17,6 @@
     },
     "rss": {
       "title": "Cloud::Hackernoon",
-      "description": "Cloud::Hackernoon",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Hackernoon. All rights reserved.",
       "link": "https://terzeron.com/hackernoon.cloud.xml",

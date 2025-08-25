@@ -20,7 +20,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) ToonKor. All rights reserved.",
-      "description": "회귀자 사용설명서::ToonKor",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/guide_of_returner.xml",

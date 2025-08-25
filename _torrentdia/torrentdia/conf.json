@@ -34,7 +34,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) Torrentdia. All rights reserved.",
-      "description": "토렌트다이아",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/torrentdia.xml",

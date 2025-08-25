@@ -19,7 +19,6 @@
     },
     "rss": {
       "copyright": "Copyright (c) Tistory. All rights reserved.",
-      "description": "nasica::티스토리",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/nasica1.xml",

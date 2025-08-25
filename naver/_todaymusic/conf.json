@@ -323,7 +323,6 @@
     },
     "rss": {
       "title": "오늘의뮤직::네이버뮤직",
-      "description": "오늘의 뮤직::네이버 뮤직 - 모바일 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
       "link": "https://terzeron.com/todaymusic.xml",

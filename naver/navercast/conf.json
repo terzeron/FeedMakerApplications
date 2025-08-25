@@ -16,7 +16,6 @@
     },
     "rss": {
       "title": "네이버캐스트",
-      "description": "네이버캐스트 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All Rights Reserved",
       "link": "https://terzeron.com/navercast.new.xml",

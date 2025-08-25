@@ -14,7 +14,6 @@
     },
     "rss": {
       "title": "매거진::Nate영화",
-      "description": "매거진::Nate영화 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) SK Communications. All rights reserved.",
       "link": "https://terzeron.com/natemoviemagazine.xml",

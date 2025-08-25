@@ -21,7 +21,6 @@
     },
     "rss": {
       "title": "상남자::네이버",
-      "description": "상남자::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/macho_man.xml",

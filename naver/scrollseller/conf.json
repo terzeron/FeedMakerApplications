@@ -19,7 +19,6 @@
     },
     "rss": {
       "title": "마법스크롤 상인 지오::네이버",
-      "description": "마법스크롤 상인 지오::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/scrollseller.xml",

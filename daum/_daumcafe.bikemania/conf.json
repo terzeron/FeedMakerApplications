@@ -31,7 +31,6 @@
     },
     "rss": {
       "title": "바이크매니아",
-      "description": "바이크매니아 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Communications. All rights reserved.",
       "link": "https://terzeron.com/daumcafe.bikemania2.xml",

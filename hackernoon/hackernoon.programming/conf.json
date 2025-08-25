@@ -17,7 +17,6 @@
     },
     "rss": {
       "title": "Programming::Hackernoon",
-      "description": "Programming::Hackernoon",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Hackernoon. All rights reserved.",
       "link": "https://terzeron.com/hackernoon.programming.xml",

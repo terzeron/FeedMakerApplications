@@ -18,7 +18,6 @@
     },
     "rss": {
       "title": "Nasica::다음",
-      "description": "Nasica::다음 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Daum Communications. All rights reserved.",
       "link": "https://terzeron.com/daumblog.nasica.xml",

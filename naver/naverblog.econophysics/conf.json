@@ -23,7 +23,6 @@
     },
     "rss": {
       "title": "재미로 하는 블로그::네이버",
-      "description": "재미로 하는 블로그::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & econophysics@naver.com. All rights reserved.",
       "link": "https://terzeron.com/naverblog.econophysics.xml",

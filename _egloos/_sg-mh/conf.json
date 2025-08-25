@@ -267,7 +267,6 @@
     },
     "rss": {
       "title": "세계의 만화",
-      "description": "세계의 만화 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) sg-mh & Egloos. All Rights Reserved",
       "link": "https://terzeron.com/sg-mh.xml",

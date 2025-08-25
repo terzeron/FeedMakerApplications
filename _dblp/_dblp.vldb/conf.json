@@ -14,7 +14,6 @@
     },
     "rss": {
       "title": "VLDB::DBLP",
-      "description": "VLDB::DBLP - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NHN Corp. All Rights Reserved",
       "link": "https://terzeron.com/dblp.vldb.xml",

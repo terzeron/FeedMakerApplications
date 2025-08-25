@@ -16,7 +16,6 @@
     },
     "rss": {
       "title": "Baeldung",
-      "description": "Baeldung - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Baeldung.com. All Rights Reserved",
       "link": "https://terzeron.com/baeldung.xml",

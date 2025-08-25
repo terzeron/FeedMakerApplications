@@ -13,7 +13,6 @@
     },
     "rss": {
       "title": "그림판::한겨레",
-      "description": "그림판::한겨레 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) The Hankyoreh, LTD. All rights reserved.",
       "link": "https://terzeron.com/hanicartoon.xml",

@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "Airbnb Engineering",
-      "description": "Airbnb Engineering",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Airbnb. All Rights Reserved",
       "link": "https://terzeron.com/airbnb_engineering.xml",

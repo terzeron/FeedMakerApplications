@@ -15,7 +15,6 @@
     },
     "rss": {
       "title": "Java Specialists",
-      "description": "Java Specialists",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Java Specialists. All Rights Reserved",
       "link": "https://terzeron.com/javaspecialists.xml",

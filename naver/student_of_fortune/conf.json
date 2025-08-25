@@ -19,7 +19,6 @@
     },
     "rss": {
       "title": "입학용병::네이버",
-      "description": "입학용병::네이버 - 모바일 버전 RSS Feed",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
       "link": "https://terzeron.com/student_of_fortune.xml",
