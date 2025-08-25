@@ -1,0 +1,12 @@
+{
+    "Python to build contracts and interact with Ethereum Blockchain": "계약을 구축하고 이더리움 블록체인과 상호작용하는 Python",
+    "Apache Atlas client for Python": "Python용 Apache Atlas 클라이언트",
+    "When relational databases are not good enough": "관계형 데이터베이스가 충분하지 않은 경우",
+    "Spark streaming: simple example streaming data from HDFS": "Spark 스트리밍: HDFS에서 데이터 스트리밍하는 간단한 예제",
+    "Best data processing engine: Flink vs Spark": "최고의 데이터 처리 엔진: Flink vs Spark",
+    "Best SQL-on-hadoop tool?": "최고의 SQL 온 하둡 도구는?",
+    "Storm vs Spark": "폭풍 대 스파크",
+    "HBase or Impala over HBase ?": "HBase 또는 임팔라보다 HBase ?",
+    "HBase, Parquet or Avro ?": "HBase, Parquet 또는 Avro ?",
+    "Scala vs Python": "스칼라 대 파이썬"
+}

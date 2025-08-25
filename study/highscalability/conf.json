@@ -8,12 +8,10 @@
       "list_url_list": [
         "https://highscalability.com/rss/"
       ],
-      "item_capture_script": "../capture_item_from_rss.py -n 10"
+      "item_capture_script": "../capture_item_from_rss.py -t -n 10"
     },
     "extraction": {
-      "element_class_list": [
-        "post"
-      ]
+      "bypass_element_extraction": true
     },
     "rss": {
       "title": "High Scalability",
