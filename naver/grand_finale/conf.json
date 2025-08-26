@@ -8,7 +8,7 @@
         "https://comic.naver.com/api/article/list?titleId=838372&sort=DESC"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
-      "unit_size_per_day": 1,
+      "unit_size_per_day": 0.5,
       "render_js": false
     },
     "extraction": {
