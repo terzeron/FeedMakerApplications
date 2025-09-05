@@ -5,7 +5,6 @@ import sys
 import re
 import getopt
 import json
-from math import log2
 import unittest
 
 from bin.feed_maker_util import IO, Env
