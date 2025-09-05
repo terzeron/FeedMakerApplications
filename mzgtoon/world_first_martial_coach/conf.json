@@ -20,7 +20,7 @@
       ],
       "post_process_script_list": [
         "../post_process_mzgtoon.py",
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
       ],
       "num_retries": 2
     },

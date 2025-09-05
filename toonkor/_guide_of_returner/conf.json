@@ -14,7 +14,7 @@
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
       "post_process_script_list": [
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
       ],
       "force_sleep_between_articles": true
     },

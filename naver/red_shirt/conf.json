@@ -3,7 +3,7 @@
     "collection": {
       "is_completed": true,
       "ignore_old_list": false,
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 20",
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 30",
       "list_url_list": [
         "https://comic.naver.com/api/article/list?titleId=838553&sort=DESC"
       ],
@@ -18,7 +18,7 @@
         "wt_viewer"
       ],
       "post_process_script_list": [
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
       ]
     },
     "rss": {
