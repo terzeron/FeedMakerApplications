@@ -21,7 +21,7 @@ def process_html(url: str, html: str) -> Optional[str]:
     html = re.sub(r'<!-- ([^>])+ -->', '', html)
     html = re.sub(r'<span[^>]*>', '', html)
     html = re.sub('</span>', '', html)
-    html = re.sub(r'<(?P<tag>img|p|div|center)', '\n<\g<tag>', html)
+    html = re.sub(r'<(?P<tag>img|p|div|center)', r'\n<\g<tag>', html)
     return html
 
 
