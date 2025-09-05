@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 
-import os
 import sys
 import re
 import getopt
@@ -9,8 +8,8 @@ from bin.feed_maker_util import IO
 
 def main():
     state = 0
-    url_prefix_for_forum = "http://mmzone.co.kr/mms_tool/"
-    url_prefix_for_album = "http://mmzone.co.kr/album/"
+    url_prefix_for_forum = "https://mmzone.co.kr/mms_tool/"
+    url_prefix_for_album = "https://mmzone.co.kr/album/"
     num_of_recent_feeds = 1000
     optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
     for o, a in optlist:
