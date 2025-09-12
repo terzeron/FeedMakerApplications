@@ -1,8 +1,0 @@
-{
-    "Issue 326 - Stream Gathering with a Different Distinct Function": "326호 - 다른 고유 함수를 사용한 스트림 수집",
-    "Issue 325 - Be a Distinguished Java Engineer in the Age of Vibe Coding": "325호 - 바이브 코딩 시대의 뛰어난 Java 엔지니어 되기",
-    "Issue 324 - Sequenced LinkedHashSet": "324호 - 시퀀싱된 LinkedHashSet",
-    "Issue 323 - Visiting All Threads (Including Virtual)": "323호 - 모든 스레드 방문하기(가상 포함)",
-    "Issue 322 - Throwing InterruptedException Early": "문제 322 - 인터럽트된 예외 조기 발생",
-    "Issue 321 - StampedLock ReadWriteLock Dangers": "321호 - 스탬핑 잠금 읽기/쓰기 잠금의 위험성"
-}
