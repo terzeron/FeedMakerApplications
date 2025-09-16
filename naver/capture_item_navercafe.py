@@ -53,12 +53,13 @@ def main():
                         score = ((read_count + 5 * like_count + 50 * comment_count) - average) / stdev
                         if score < threshold:
                             continue
-                    result_list.append((link, title, item["readCount"], item["likeCount"], item["commentCount"]))
+                    result_list.append((link, title, item["blindArticle"], item["openArticle"], item["restrictMenu"], item["readCount"], item["likeCount"], item["commentCount"]))
     except json.JSONDecodeError:
         pass # Ignore invalid JSON
         
-    for (link, title, read_count, like_count, comment_count) in result_list[:num_of_recent_feeds]:
-        print(f"{link}\t{title}\t{read_count}\t{like_count}\t{comment_count}")
+    for (link, title, blind, open_, restrict, read_count, like_count, comment_count) in result_list[:num_of_recent_feeds]:
+        if not blind and open_ and not restrict:
+            print(f"{link}\t{title}\t{read_count}\t{like_count}\t{comment_count}")
 
 
 class TestCaptureItemNaverCafe(unittest.TestCase):
