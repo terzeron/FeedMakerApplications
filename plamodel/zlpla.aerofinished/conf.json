@@ -3,7 +3,7 @@
     "collection": {
       "is_completed": false,
       "ignore_old_list": false,
-      "item_capture_script": "../../naver/capture_item_navercafe.py -t 1.3 -a 3079.8 -s 562.5 -n 10000",
+      "item_capture_script": "../../naver/capture_item_navercafe.py -t 0.73 -a 1163.8 -s 804.0 -n 10000",
       "sort_field_pattern": "(\\d+)\\t",
       "unit_size_per_day": 120,
       "window_size": 500,

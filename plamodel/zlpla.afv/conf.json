@@ -3,13 +3,16 @@
     "collection": {
       "is_completed": false,
       "ignore_old_list": false,
-      "item_capture_script": "../../naver/capture_item_navercafe.py -t 1.1 -a 1169.90 -s 871.65 -n 10000",
+      "item_capture_script": "../../naver/capture_item_navercafe.py -t 1.21 -a 1019.1 -s 692.5 -n 10000",
       "sort_field_pattern": "\\t(.+)",
       "unit_size_per_day": 240,
       "window_size": 500,
       "list_url_list": [
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
-        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=2"
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=2",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=3",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=4",
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=5"
       ]
     },
     "extraction": {
