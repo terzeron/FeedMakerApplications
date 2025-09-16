@@ -37,7 +37,8 @@ def main() -> int:
                             title = match[2]
                             result_list.append((link, title))
 
-    result_list = Translation.translate(result_list[:num_of_recent_feeds])
+    translation = Translation()
+    result_list = translation.translate(result_list[:num_of_recent_feeds])
                             
     for (link, title) in result_list[:num_of_recent_feeds]:
         print(f"{link}\t{title}")
