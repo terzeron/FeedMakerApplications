@@ -3,7 +3,7 @@
     "collection": {
       "encoding": "cp949",
       "is_completed": true,
-      "ignore_old_list (copy 2)": true,
+      "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 300",
       "list_url_list": [
         "https://wfwf443.com/cl?toon=17476"
