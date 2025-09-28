@@ -3,7 +3,7 @@
     "collection": {
       "is_completed": false,
       "ignore_old_list": false,
-      "item_capture_script": "../../naver/capture_item_navercafe.py -t 0.65 -a 621.9 -s 545.2 -n 100000",
+      "item_capture_script": "../../naver/capture_item_navercafe.py -t 0.85 -a 621.9 -s 545.2 -n 100000",
       "sort_field_pattern": "(\\d+)\\t",
       "unit_size_per_day": 120,
       "window_size": 48,
@@ -25,11 +25,11 @@
     },
     "rss": {
       "ignore_broken_link": "always",
-      "title": "초보의 프라모델:AFV완성::네이버",
-      "description": "초보의 프라모델:AFV완성::네이버",
+      "title": "초보의 프라모델:기타완성::네이버",
+      "description": "초보의 프라모델:기타완성::네이버",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) NAVER Corp & https://cafe.naver.com/zlpla. All rights reserved.",
-      "link": "https://terzeron.com/zlpla.afvfinished.xml",
+      "link": "https://terzeron.com/zlpla.etcfinished.xml",
       "language": "ko"
     }
   }
