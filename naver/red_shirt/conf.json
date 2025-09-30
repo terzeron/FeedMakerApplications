@@ -1,9 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": true,
+      "is_completed": false,
       "ignore_old_list": false,
-      "item_capture_script": "../capture_item_naverwebtoon.py -n 30",
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
       "list_url_list": [
         "https://comic.naver.com/api/article/list?titleId=838553&sort=DESC"
       ],
