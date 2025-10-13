@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_wfwf.py -n 5",
+      "list_url_list": [
+        "https://wfwf443.com/list?toon=73974"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "element_class_list": [
+        "image-view"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 30",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/eunuch_who_returned_gains_sexual_power_again.xml",
+      "title": "2회차 환관이 남성을 되찾음::늑대닷컴",
+      "url_prefix_for_guid": "https://wfwf24.com"
+    }
+  }
+}
