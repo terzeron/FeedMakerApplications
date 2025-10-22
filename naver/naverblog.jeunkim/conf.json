@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverblog.py -n 10",
+      "sort_field_pattern": "&logNo=(\\d+)",
+      "unit_size_per_day": 100,
+      "is_completed": false,
+      "ignore_old_list": false,
+      "list_url_list": [
+        "https://blog.naver.com/PostTitleListAsync.naver?blogId=jeunkim&viewdate=&currentPage=1&categoryNo=&parentCategoryNo=&countPerPage=30"
+      ]
+    },
+    "extraction": {
+      "force_sleep_between_articles": true,
+      "element_id_list": [
+        "postViewArea"
+      ],
+      "element_class_list": [
+        "se_component_wrap",
+        "se-main-container"
+      ],
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "title": "피우스::네이버",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) NAVER Corp & breitner@naver.com. All rights reserved.",
+      "link": "https://terzeron.com/naverblog.jeunkim.xml",
+      "language": "ko"
+    }
+  }
+}
