@@ -6,7 +6,7 @@
       "item_capture_script": "../capture_item_toonkor.py -n 300",
       "render_js": true,
       "list_url_list": [
-        "https://tkr457.com/webtoon/7584"
+        "https://tkr460.com/webtoon/7584"
       ],
       "sort_field_pattern": "\\t(\\d+)\\.",
       "unit_size_per_day": 24
