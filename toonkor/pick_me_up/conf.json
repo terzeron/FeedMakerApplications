@@ -3,7 +3,7 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": true,
-      "item_capture_script": "../capture_item_toonkor.py -n 20",
+      "item_capture_script": "../capture_item_toonkor.py -n 42",
       "render_js": true,
       "list_url_list": [
         "https://tkr460.com/webtoon/9665"
