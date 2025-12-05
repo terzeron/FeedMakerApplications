@@ -24,9 +24,9 @@ def main() -> int:
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<script>var Mcpath = { url: \x27(?P<url_prefix>[^\x27]+)\x27', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https://[^/]+/)[^"]*" ?/>', line)
             if m:
-                url_prefix = "https://" + m.group("url_prefix")
+                url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
             m = re.search(r'<div class="chapter-list[^"]*">', line)
