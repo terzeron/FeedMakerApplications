@@ -3,9 +3,9 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_mzgtoon.py -n 5",
+      "item_capture_script": "../capture_item_joatoon.py -n 5",
       "list_url_list": [
-        "https://z61.mzgtoon.com/api/webtoonlist?list_id=10486&sort=desc"
+        "https://joatoon69.com/toon/w/3394"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
@@ -13,24 +13,23 @@
       "num_retries": 2
     },
     "extraction": {
-      "bypass_element_extraction": true,
+      "bypass_element_extraction": false,
       "threshold_to_remove_html_with_incomplete_image": 4,
       "element_id_list": [
-        "imagescroll"
+        "chapters"
       ],
       "post_process_script_list": [
-        "../post_process_mzgtoon.py",
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
+        "download_image.py"
       ],
       "num_retries": 2
     },
     "rss": {
-      "copyright": "Copyright (c) 마징가툰. All rights reserved.",
+      "copyright": "Copyright (c) 조아툰. All rights reserved.",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/invincible_man.xml",
-      "title": "무적자::마징가툰",
-      "url_prefix_for_guid": "https://z58.mzgtoon.com"
+      "link": "https://terzeron.com/flying_thunder_sword.xml",
+      "title": "비뢰도::조아툰",
+      "url_prefix_for_guid": "https://joatoon64.com"
     }
   }
 }

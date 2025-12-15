@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_toonkor.py -n 5",
+      "render_js": true,
+      "list_url_list": [
+        "https://tkr460.com/webtoon/14446"
+      ],
+      "sort_field_pattern": "\\t(\\d+)",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "render_js": true,
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "element_id_list": [
+        "tnimg"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
+      ],
+      "force_sleep_between_articles": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) ToonKor. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/world_first_martial_coach.xml",
+      "title": "천하제일 무공교관::ToonKor",
+      "url_prefix_for_guid": "https://toonkor132.com"
+    }
+  }
+}

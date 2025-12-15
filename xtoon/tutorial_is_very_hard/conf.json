@@ -3,11 +3,9 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "render_js": true,
-      "simulate_scrolling": true,
       "item_capture_script": "../capture_item_xtoon.py -n 5",
       "list_url_list": [
-        "https://t2.xtoon2.com/comic/843435"
+        "https://t2.xtoon2.com/comic/845353"
       ],
       "sort_field_pattern": "(\\d+)[\\.화편]",
       "unit_size_per_day": 1
@@ -23,8 +21,8 @@
       "copyright": "Copyright (c) xtoon. All rights reserved.",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/senator_helps_me.xml",
-      "title": "의원님이 보우하사::xtoon",
+      "link": "https://terzeron.com/tutorial_is_very_hard.xml",
+      "title": "튜토리얼이 너무 어렵다::xtoon",
       "url_prefix_for_guid": "https://t1.xtoon2.com"
     }
   }

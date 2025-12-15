@@ -24,7 +24,7 @@ def main() -> int:
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https://[^/]+/)[^"]*" ?/>', line)
+            m = re.search(r'<meta property="og:url" content="(?P<url_prefix>https://[^/]+/)[^"]*" ?/?>', line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1

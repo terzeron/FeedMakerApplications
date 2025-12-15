@@ -6,7 +6,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
-        "https://wtwt322.com/v1?toon=6056"
+        "https://wtwt322.com/v1?toon=8489"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 2
@@ -26,8 +26,8 @@
       "copyright": "Copyright (c) W툰. All rights reserved.",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/constellation_who_returned_from_hell.xml",
-      "title": "지옥에서 돌아온 성좌님::W툰",
+      "link": "https://terzeron.com/youngest_prince_of_noble_family.xml",
+      "title": "남궁세가 막내공자::W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
   }

@@ -3,9 +3,11 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
+      "render_js": true,
+      "simulate_scrolling": true,
       "item_capture_script": "../capture_item_xtoon.py -n 5",
       "list_url_list": [
-        "https://t1.xtoon2.com/comic/836333"
+        "https://t2.xtoon2.com/comic/836333"
       ],
       "sort_field_pattern": "(\\d+)[\\.화편]",
       "unit_size_per_day": 1
@@ -14,7 +16,7 @@
       "bypass_element_extraction": true,
       "post_process_script_list": [
         "../post_process_xtoon.py",
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 20"
+        "download_image.py"
       ]
     },
     "rss": {

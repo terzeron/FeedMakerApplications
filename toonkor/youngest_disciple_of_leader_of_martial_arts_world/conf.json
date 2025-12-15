@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_toonkor.py -n 5",
+      "render_js": true,
+      "list_url_list": [
+        "https://tkr469.com/webtoon/13745"
+      ],
+      "sort_field_pattern": "\\t(\\d+)",
+      "unit_size_per_day": 2
+    },
+    "extraction": {
+      "render_js": true,
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "element_id_list": [
+        "tnimg"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
+      ],
+      "force_sleep_between_articles": true
+    },
+    "rss": {
+      "copyright": "Copyright (c) ToonKor. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/youngest_disciple_of_leader_of_martial_arts_world.xml",
+      "title": "무림맹주 막내제자::ToonKor",
+      "url_prefix_for_guid": "https://toonkor132.com"
+    }
+  }
+}

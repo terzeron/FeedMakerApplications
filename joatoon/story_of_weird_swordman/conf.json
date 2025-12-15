@@ -3,9 +3,9 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_mzgtoon.py -n 5",
+      "item_capture_script": "../capture_item_joatoon.py -n 5",
       "list_url_list": [
-        "https://z61.mzgtoon.com/api/webtoonlist?list_id=6605&sort=desc"
+        "https://joatoon69.com/toon/w/4629"
       ],
       "render_js": false,
       "sort_field_pattern": "(\\d+)화",
@@ -13,24 +13,23 @@
       "num_retries": 2
     },
     "extraction": {
-      "bypass_element_extraction": true,
+      "bypass_element_extraction": false,
       "threshold_to_remove_html_with_incomplete_image": 4,
       "element_id_list": [
-        "imagescroll"
+        "chapters"
       ],
       "post_process_script_list": [
-        "../post_process_mzgtoon.py",
         "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
       ],
       "num_retries": 2
     },
     "rss": {
-      "copyright": "Copyright (c) 마징가툰. All rights reserved.",
+      "copyright": "Copyright (c) 조아툰. All rights reserved.",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/call_sign.xml",
-      "title": "콜사인::마징가툰",
-      "url_prefix_for_guid": "https://z58.mzgtoon.com"
+      "link": "https://terzeron.com/story_of_weird_swordman.xml",
+      "title": "괴공유록::조아툰",
+      "url_prefix_for_guid": "https://joatoon64.com"
     }
   }
 }

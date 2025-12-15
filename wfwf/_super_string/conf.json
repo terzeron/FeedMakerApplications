@@ -17,7 +17,7 @@
         "image-view"
       ],
       "post_process_script_list": [
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 30",
+        "download_image.py",
         "../remove_anchor_images.sh"
       ]
     },

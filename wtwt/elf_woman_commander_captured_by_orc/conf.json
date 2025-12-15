@@ -6,7 +6,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
-        "https://wtwt322.com/v1?toon=6056"
+        "https://wtwt322.com/v1?toon=7094"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 2
@@ -26,8 +26,8 @@
       "copyright": "Copyright (c) W툰. All rights reserved.",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/constellation_who_returned_from_hell.xml",
-      "title": "지옥에서 돌아온 성좌님::W툰",
+      "link": "https://terzeron.com/elf_woman_commander_captured_by_orc.xml",
+      "title": "오크의 포로가 된 엘프 여사령관::W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
   }
