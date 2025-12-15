@@ -10,4 +10,6 @@ dependencies = [
     "ordered-set>=4.1.0",
     "urllib3>=2.5.0",
     "requests>=2.32.5",
+    "psutil>=7.1.0",
+    "termcolor>=3.1.0",
 ]
