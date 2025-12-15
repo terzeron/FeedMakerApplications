@@ -34,15 +34,12 @@ def main():
                 props = data["props"]
                 if "pageProps" in props:
                     page_props = props["pageProps"]
-                    if "topTags" in page_props:
-                        top_tags = page_props["topTags"]
-                        for tag in top_tags:
-                            if "stories" in tag:
-                                stories = tag["stories"]
-                                for story in stories:
-                                    if "title" in story and "slug" in story:
-                                        link = f"{url_prefix}/{story['slug']}"
-                                        result_list.append((link, story["title"]))
+                    if "featuredStories" in page_props:
+                        stories = page_props["featuredStories"]
+                        for story in stories:
+                            if "title" in story and "slug" in story:
+                                link = f"{url_prefix}/{story['slug']}"
+                                result_list.append((link, story["title"]))
 
     translation = Translation()
     result_list = translation.translate(result_list[:num_of_recent_feeds])

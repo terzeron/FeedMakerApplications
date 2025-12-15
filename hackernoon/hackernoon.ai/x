@@ -1,0 +1,1714 @@
+{'buildId': 'XoQmJNI4h4WAB8gQbUDkj',
+ 'dynamicIds': [22033, 58656],
+ 'gsp': True,
+ 'isFallback': False,
+ 'page': '/c/[category]',
+ 'props': {'__N_SSG': True,
+           'pageProps': {'categories': [{'mainColor': 'rgba(255, 255, 255, 1)',
+                                         'name': 'business',
+                                         'secondaryColor': 'rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 2076},
+                                        {'mainColor': ' rgba(55, 20, 0, 1)',
+                                         'name': 'cloud',
+                                         'secondaryColor': ' rgba(60, 60, 59, '
+                                                           '1)',
+                                         'storyCount': 3979},
+                                        {'mainColor': ' rgba(16, 16, 16, 1)',
+                                         'name': 'cybersecurity',
+                                         'secondaryColor': 'rgba(16, 16, 16, '
+                                                           '1)',
+                                         'storyCount': 3026},
+                                        {'mainColor': 'rgba(255,215,0,1)',
+                                         'name': 'data-science',
+                                         'secondaryColor': 'rgba(0,0,0,0)',
+                                         'storyCount': 1338},
+                                        {'mainColor': '#e4ff57',
+                                         'name': 'finance',
+                                         'secondaryColor': '#fff',
+                                         'storyCount': 2150},
+                                        {'mainColor': ' rgba(11, 50, 83, 1)',
+                                         'name': 'futurism',
+                                         'secondaryColor': ' rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 2012},
+                                        {'mainColor': 'rgba(93, 29, 136, 1)',
+                                         'name': 'gaming',
+                                         'secondaryColor': ' rgba(60, 60, 59, '
+                                                           '1)',
+                                         'storyCount': 1650},
+                                        {'mainColor': '#f5ec4c',
+                                         'name': 'hackernoon',
+                                         'secondaryColor': '#fff',
+                                         'storyCount': 1260},
+                                        {'mainColor': '#f4730b',
+                                         'name': 'life-hacking',
+                                         'secondaryColor': '#fff',
+                                         'storyCount': 161},
+                                        {'mainColor': ' rgba(255, 237, 0, 1)',
+                                         'name': 'machine-learning',
+                                         'secondaryColor': ' rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 4856},
+                                        {'mainColor': '',
+                                         'name': 'management',
+                                         'secondaryColor': '',
+                                         'storyCount': 950},
+                                        {'mainColor': ' rgba(233, 118, 85, 1)',
+                                         'name': 'media',
+                                         'secondaryColor': ' rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 3915},
+                                        {'mainColor': ' rgba(55, 20, 0, 1)',
+                                         'name': 'product-management',
+                                         'secondaryColor': ' rgba(16, 16, 16, '
+                                                           '1)',
+                                         'storyCount': 1411},
+                                        {'mainColor': ' rgba(174, 214, 220, 1)',
+                                         'name': 'programming',
+                                         'secondaryColor': ' rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 22422},
+                                        {'mainColor': 'rgba(224, 33, 34, 1)',
+                                         'name': 'remote-work',
+                                         'secondaryColor': 'rgba(16, 16, 16, '
+                                                           '1)',
+                                         'storyCount': 637},
+                                        {'mainColor': ' rgba(255, 237, 0, 1)',
+                                         'name': 'science',
+                                         'secondaryColor': 'rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 3908},
+                                        {'mainColor': ' rgba(255, 183, 0, 1)',
+                                         'name': 'society',
+                                         'secondaryColor': ' rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 1179},
+                                        {'mainColor': '#F4DF0B',
+                                         'name': 'startups',
+                                         'secondaryColor': '#fff',
+                                         'storyCount': 3926},
+                                        {'mainColor': '#00ff00',
+                                         'name': 'tech-companies',
+                                         'secondaryColor': '#ffffff',
+                                         'storyCount': 282},
+                                        {'mainColor': '',
+                                         'name': 'tech-stories',
+                                         'secondaryColor': '',
+                                         'storyCount': 940},
+                                        {'mainColor': ' rgba(0, 58, 112, 1)',
+                                         'name': 'web3',
+                                         'secondaryColor': ' rgba(16, 16, 16, '
+                                                           '1)',
+                                         'storyCount': 14243},
+                                        {'mainColor': ' rgba(255, 237, 0, 1)',
+                                         'name': 'writing',
+                                         'secondaryColor': ' rgba(255, 255, '
+                                                           '255, 1)',
+                                         'storyCount': 6331}],
+                         'category': 'machine-learning',
+                         'featuredStories': [{'id': '693c2e000289a2ff7f73fac8',
+                                              'mainImage': 'https://cdn.hackernoon.com/images/qTdu0iaicaN7r1uoCDAeVEbFOE63-w763dpm.jpeg',
+                                              'profile': {'avatar': 'https://cdn.hackernoon.com/images/qTdu0iaicaN7r1uoCDAeVEbFOE63-et83d81.gif.webp',
+                                                          'displayName': 'cyrus',
+                                                          'handle': 'cyb0rg'},
+                                              'publishedAt': 1765730555,
+                                              'slug': 'mit-researchers-build-ai-device-that-turns-old-photographs-into-custom-scents',
+                                              'tag': 'multimodal-ai',
+                                              'title': 'MIT Researchers Build '
+                                                       'AI Device That Turns '
+                                                       'Old Photographs Into '
+                                                       'Custom Scents'},
+                                             {'id': 'r7jTHrayS5aTTJEPaGYT',
+                                              'mainImage': 'https://cdn.hackernoon.com/images/eQHzh6rz7ETBHLjs0KzCl1Dooqp2-re03dwa.jpeg',
+                                              'profile': {'avatar': 'https://hackernoon.com/images/avatars/HgNYtFi17WbGLaRvGCmxhdy7K5L2.jpg',
+                                                          'displayName': 'The '
+                                                                         'Markup',
+                                                          'handle': 'TheMarkup'},
+                                              'publishedAt': 1765724415,
+                                              'slug': 'all-the-ways-teachers-are-using-ai-in-their-classrooms',
+                                              'tag': 'ai-in-education',
+                                              'title': 'All the Ways Teachers '
+                                                       'Are Using AI In Their '
+                                                       'Classrooms '},
+                                             {'id': '6930cf5b4c926a353ad98778',
+                                              'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-tm021vu.jpeg',
+                                              'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                          'displayName': 'AI '
+                                                                         'Native '
+                                                                         'Dev',
+                                                          'handle': 'ainativedev'},
+                                              'publishedAt': 1765652402,
+                                              'slug': 'warp-scraps-tiered-plans-as-ai-coding-tools-face-pricing-reckoning',
+                                              'tag': 'ai',
+                                              'title': 'Warp Scraps Tiered '
+                                                       'Plans as AI Coding '
+                                                       'Tools Face Pricing '
+                                                       'Reckoning'},
+                                             {'id': '6934b0daf863bd46c10b9cc1',
+                                              'mainImage': 'https://capk.me/api/publications/ai-read-not-write/images/hero.png',
+                                              'profile': {'avatar': 'https://cdn.hackernoon.com/images/TElkbzNNNaRKSoKtDYEB1zOmXYw2-4o03mdf.jpeg',
+                                                          'displayName': 'Ivan '
+                                                                         'Kuznetsov',
+                                                          'handle': 'capk'},
+                                              'publishedAt': 1765433357,
+                                              'slug': 'i-dont-trust-ai-to-write-my-codebut-i-let-it-read-everything',
+                                              'tag': 'ai',
+                                              'title': 'I Don’t Trust AI to '
+                                                       'Write My Code—But I '
+                                                       'Let It Read '
+                                                       'Everything'},
+                                             {'id': '693871c324f2cd7cae69e321',
+                                              'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-3y023zh.jpeg',
+                                              'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                          'displayName': 'AI '
+                                                                         'Native '
+                                                                         'Dev',
+                                                          'handle': 'ainativedev'},
+                                              'publishedAt': 1765432216,
+                                              'slug': 'linux-foundation-launches-agentic-ai-group-to-set-standards-for-autonomous-systems',
+                                              'tag': 'ai',
+                                              'title': 'Linux Foundation '
+                                                       'Launches Agentic AI '
+                                                       'Group to Set Standards '
+                                                       'for Autonomous '
+                                                       'Systems'}],
+                         'parentCategoryData': {'_id': '668fe8feb8486658f59418d1',
+                                                'id': 'machine-learning',
+                                                'storyCount': 4856},
+                         'restStories': [{'id': '4Ymu16yLLkUVWC0DQAJT',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/IyQZHo2kbGUoKy7NfNp866DGK2G2-ab03ggl.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/IyQZHo2kbGUoKy7NfNp866DGK2G2-vw836nu.png',
+                                                      'displayName': 'tyingshoelaces.com',
+                                                      'handle': 'tyingshoelaces'},
+                                          'publishedAt': 1765428463,
+                                          'slug': 'a-single-agent-with-access-to-everything-is-a-nightmare',
+                                          'tag': 'ai',
+                                          'title': 'A Single Agent With Access '
+                                                   'to Everything is a '
+                                                   'Nightmare'},
+                                         {'id': 'OEVAM9c1DSUSjc6ZmKhT',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/vw5cWXAztCZm8AiOqaVsrBthJFl2-5c82b6d.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/avatars/vw5cWXAztCZm8AiOqaVsrBthJFl2.jpg',
+                                                      'displayName': 'Mickey '
+                                                                     'Maler',
+                                                      'handle': 'mickeymaler'},
+                                          'publishedAt': 1765363815,
+                                          'slug': 'not-a-lucid-web3-dream-anymore-x402-erc-8004-a2a-and-the-next-wave-of-ai-commerce',
+                                          'tag': 'ai',
+                                          'title': 'Not a Lucid Web3 Dream '
+                                                   'Anymore: x402, ERC-8004, '
+                                                   'A2A, and The Next Wave of '
+                                                   'AI Commerce'},
+                                         {'id': 'ZU0bmNFBGJnniQa4cI24',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/srf3sbVdScRaDPYerDIFD7yOgnY2-0703cbo.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/srf3sbVdScRaDPYerDIFD7yOgnY2-0583czt.jpeg',
+                                                      'displayName': 'Ashton '
+                                                                     'Chew',
+                                                      'handle': 'ashtonchew12'},
+                                          'publishedAt': 1765350882,
+                                          'slug': 'can-your-ai-actually-use-a-computer-a-2025-map-of-computeruse-benchmarks',
+                                          'tag': 'ai',
+                                          'title': 'Can Your AI Actually Use a '
+                                                   'Computer? A 2025 Map of '
+                                                   'Computer‑Use Benchmarks'},
+                                         {'id': 'gsCU1czyOme4HMW1Y3b2',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-n70390m.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                                      'displayName': 'Anthony '
+                                                                     'Laneau',
+                                                      'handle': 'hacker-Antho'},
+                                          'publishedAt': 1765343988,
+                                          'slug': 'beyond-the-hype-5-surprising-truths-from-a-100-trillion-token-study-of-ai',
+                                          'tag': 'llm',
+                                          'title': 'Beyond the Hype: 5 '
+                                                   'Surprising Truths from a '
+                                                   '100 Trillion Token Study '
+                                                   'of AI'},
+                                         {'id': 'q1I5SSWSKHzIj1trHn5V',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/9F2W64ovN7b9N5QGpmjuGCfiEmY2-jg03bjw.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/9F2W64ovN7b9N5QGpmjuGCfiEmY2-6x83b3t.png',
+                                                      'displayName': 'Jose '
+                                                                     'Crespo, '
+                                                                     'PhD',
+                                                      'handle': 'josecrespophd'},
+                                          'publishedAt': 1765245607,
+                                          'slug': 'three-numbers-thats-all-your-ai-needs-to-work',
+                                          'tag': 'ai-model-generalization',
+                                          'title': 'Three Numbers. That’s All '
+                                                   'Your AI Needs to Work'},
+                                         {'id': '6930cf5c4c926a353ad9879e',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!lVcd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5ca45d7d-ac32-4069-ba1e-cf957fa28e55_2946x1762.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1765206003,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-18',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 18'},
+                                         {'id': 'Z1QrPUuO1KyGmpJoXjIk',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/4QQhIuTcGWPBcSXw0KTQbpwavoG2-04037hs.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/4QQhIuTcGWPBcSXw0KTQbpwavoG2.png',
+                                                      'displayName': 'Hui',
+                                                      'handle': 'huizhudev'},
+                                          'publishedAt': 1765149013,
+                                          'slug': 'stop-shotgun-debugging-how-to-use-ai-to-solve-bugs-like-a-forensic-scientist',
+                                          'tag': 'ai-prompts',
+                                          'title': 'Stop "Shotgun Debugging": '
+                                                   'How to Use AI to Solve '
+                                                   'Bugs Like a Forensic '
+                                                   'Scientist'},
+                                         {'id': '5LmxmeH6EVV08hOFWMxD',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/u9GiHUrKXAb43BcKSHXVMlkqOEX2-jw03e4u.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/u9GiHUrKXAb43BcKSHXVMlkqOEX2-j493ola.jpeg',
+                                                      'displayName': 'Simon Y. '
+                                                                     'Blackwell',
+                                                      'handle': 'anywhichway'},
+                                          'publishedAt': 1765148826,
+                                          'slug': 'the-power-and-peril-of-anthropomorphized-ai',
+                                          'tag': 'ai',
+                                          'title': 'The Power and Peril of '
+                                                   'Anthropomorphized AI'},
+                                         {'id': 'W5PVXqfkozKEzHwYIVSY',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/5wpKgV75aONqkTJlafw2yQmK9yd2-1b03daq.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/4HK5qyMbWfetPhAavzyTZrEb90N2-sf832oj.jpeg',
+                                                      'displayName': 'Instancing',
+                                                      'handle': 'instancing'},
+                                          'publishedAt': 1765148587,
+                                          'slug': 'ai-analysis-appears-to-improve-how-teachers-evaluate-student-design-projects-study-finds',
+                                          'tag': 'ai-in-education',
+                                          'title': 'AI Analysis Appears to '
+                                                   'Improve How Teachers '
+                                                   'Evaluate Student Design '
+                                                   'Projects, Study Finds'},
+                                         {'id': 'GdWtZcJtyWiufFVRyyVK',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/0iu1pHRMnqOT3GqhiW0OP3lK20h1-l902bfh.webp',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-ol82urp.jpeg',
+                                                      'displayName': 'Vladislav '
+                                                                     'Guzey',
+                                                      'handle': 'proflead'},
+                                          'publishedAt': 1765148565,
+                                          'slug': 'you-can-build-an-ai-agent-from-scratch-in-less-than-10-minutes-heres-how',
+                                          'tag': 'ai',
+                                          'title': 'You Can Build an AI Agent '
+                                                   'From Scratch In Less Than '
+                                                   "10 Minutes (Here's How)"},
+                                         {'id': '6930cf564c926a353ad986d4',
+                                          'mainImage': 'https://filedn.com/lAGFqCrfCf9p4SPhvQtCjAf/LDO%20WP%20Images/Posts/2025/From%20AI%20Literacy%20to%20AI%20Proficiency/colin-white-b5A1Uw428ng-unsplash_1920X1080.jpg',
+                                          'profile': {'avatar': 'https://hackernoon.com/images/avatars/fdI8xgIHRJTxUAsqoZ27qOGzMz33.jpg',
+                                                      'displayName': 'George '
+                                                                     'Anadiotis',
+                                                      'handle': 'linked_do'},
+                                          'publishedAt': 1765047602,
+                                          'slug': 'ai-courses-are-failing-workers-pragmatic-ai-training-offers-a-better-way',
+                                          'tag': 'ai',
+                                          'title': 'AI Courses Are Failing '
+                                                   'Workers. Pragmatic AI '
+                                                   'Training Offers a Better '
+                                                   'Way.'},
+                                         {'id': '6930cf5b4c926a353ad98774',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-ox0230p.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1764961203,
+                                          'slug': 'ai-helps-developers-ship-more-codenot-always-better-code',
+                                          'tag': 'ai',
+                                          'title': 'AI Helps Developers Ship '
+                                                   'More Code—Not Always '
+                                                   'Better Code'},
+                                         {'id': 's7N9J100ytZzZgsUlALj',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/a-robot-dressed-a-construction-worker-sketch-color-mtu4zirrtofivbr05sh8g3xq.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ElnBCKKtp2SDZG9UUCXuNkt0Y3B3-0c82bom.png',
+                                                      'displayName': 'GlobalHawk',
+                                                      'handle': 'knightbat2040'},
+                                          'publishedAt': 1764867626,
+                                          'slug': 'why-gemini-30-is-a-great-builder-but-still-needs-a-human-in-the-loop',
+                                          'tag': 'ai',
+                                          'title': 'Why Gemini 3.0 is a Great '
+                                                   'Builder But Still Needs a '
+                                                   'Human in the Loop'},
+                                         {'id': '69125c3069614894f006b6db',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/N0ENUd29UdNJCFcl7GnmZHdk2fA2-6303n4e.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/N0ENUd29UdNJCFcl7GnmZHdk2fA2-0g83nem.png',
+                                                      'displayName': 'Technology '
+                                                                     'Announcements',
+                                                      'handle': 'techannouncements'},
+                                          'publishedAt': 1764826907,
+                                          'slug': 'turing-test-tech-evals-introducing-the-internets-most-comprehensive-directory-of-turing-tests',
+                                          'tag': 'turing-test',
+                                          'title': 'Turing Test Tech Evals: '
+                                                   "Introducing the Internet's "
+                                                   'Most Comprehensive '
+                                                   'Directory of Turing Tests'},
+                                         {'id': '692867690b583e23b821664b',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/Tux6lMIUOhZrWOQlhmjyoguwXXc2-uk23dke.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/Tux6lMIUOhZrWOQlhmjyoguwXXc2-fu936nj.jpeg',
+                                                      'displayName': 'Denis '
+                                                                     'Smirnov',
+                                                      'handle': 'densmirnov'},
+                                          'publishedAt': 1764723603,
+                                          'slug': 'when-algorithms-say-i-toward-a-framework-for-digital-subjectivity',
+                                          'tag': 'ai-cognitive-architecture',
+                                          'title': 'When Algorithms Say ‘I’: '
+                                                   'Toward a Framework for '
+                                                   'Digital Subjectivity'},
+                                         {'id': 'aWHD9iJYEcZm1U5kjtcy',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/mpDOI8AQeYeu5cc9VGleWjM9xvB2-up0370f.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-2c83rs7.jpeg',
+                                                      'displayName': 'Paolo '
+                                                                     'Perrone',
+                                                      'handle': 'paoloap'},
+                                          'publishedAt': 1764563093,
+                                          'slug': 'keyword-first-search-cant-scale-to-ai-heres-what-replaces-it',
+                                          'tag': 'ai',
+                                          'title': 'Keyword-First Search Can’t '
+                                                   'Scale to AI. Here’s What '
+                                                   'Replaces It.'},
+                                         {'id': 'NGoyttiH9hk9eVaUq6FD',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/qDQV0cUjKmhK70WFFN3cDl7utv72-ov03dpx.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/qDQV0cUjKmhK70WFFN3cDl7utv72.png',
+                                                      'displayName': 'Rachamim '
+                                                                     'kennard',
+                                                      'handle': 'samkayze'},
+                                          'publishedAt': 1764304432,
+                                          'slug': 'you-dont-have-a-prompt-problem-you-have-a-context-problem',
+                                          'tag': 'llms',
+                                          'title': "You Don't Have a Prompt "
+                                                   'Problem. You Have a '
+                                                   'Context Problem.'},
+                                         {'id': 'lfTZ6X6pKeomjSU6n4YE',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/9F2W64ovN7b9N5QGpmjuGCfiEmY2-gz33b5f.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/9F2W64ovN7b9N5QGpmjuGCfiEmY2-6x83b3t.png',
+                                                      'displayName': 'Jose '
+                                                                     'Crespo, '
+                                                                     'PhD',
+                                                      'handle': 'josecrespophd'},
+                                          'publishedAt': 1764217107,
+                                          'slug': 'everyones-using-the-wrong-algebra-in-ai',
+                                          'tag': 'artificial-intelligence',
+                                          'title': "Everyone's Using the Wrong "
+                                                   'Algebra in AI'},
+                                         {'id': 'VQOBnFRxcdJVZvU4H5Vo',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/0iu1pHRMnqOT3GqhiW0OP3lK20h1-d602bml.webp',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-ol82urp.jpeg',
+                                                      'displayName': 'Vladislav '
+                                                                     'Guzey',
+                                                      'handle': 'proflead'},
+                                          'publishedAt': 1764098676,
+                                          'slug': 'google-unveils-antigravity-ide-an-ai-driven-coding-environment-powered-by-gemini-3',
+                                          'tag': 'google-ai',
+                                          'title': 'Google Unveils Antigravity '
+                                                   'IDE, an AI-Driven Coding '
+                                                   'Environment Powered by '
+                                                   'Gemini 3'},
+                                         {'id': '68ff72dabe7866c925616453',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!RHVE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6e0b7cf1-ed57-4c97-befb-87f7c01891fc_2945x1762.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1764000003,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-17',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 17'},
+                                         {'id': 'PIuSKwr2sbcwjcLWK4Y3',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/eQHzh6rz7ETBHLjs0KzCl1Dooqp2-7503bhg.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ElnBCKKtp2SDZG9UUCXuNkt0Y3B3-0c82bom.png',
+                                                      'displayName': 'GlobalHawk',
+                                                      'handle': 'knightbat2040'},
+                                          'publishedAt': 1763823608,
+                                          'slug': 'google-and-yale-turned-biology-into-a-language-heres-why-thats-a-game-changer-for-devs',
+                                          'tag': 'ai',
+                                          'title': 'Google & Yale Turned '
+                                                   'Biology Into a Language '
+                                                   "Here's Why That's a "
+                                                   'Game-Changer for Devs'},
+                                         {'id': 'CNKEpUpo2g1Y8KR2pzvq',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/mechanical-machinery-abstract-f7qnl5glbykplwp07wwo5cs7.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/RNIFtsQrHaM2E4rvZipm6j1oZlz1-ax833yj.jpeg',
+                                                      'displayName': 'superorange0707',
+                                                      'handle': 'superorange0707'},
+                                          'publishedAt': 1763733606,
+                                          'slug': 'how-search-engines-actually-answer-your-questions',
+                                          'tag': 'ai',
+                                          'title': 'How Search Engines '
+                                                   'Actually Answer Your '
+                                                   'Questions'},
+                                         {'id': 'y1WLm3Uxbe568pCZLBfh',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/bI3BzyBanbVxEZqmLV7jRnw6d9o2-3a037wx.webp',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/avatars/bI3BzyBanbVxEZqmLV7jRnw6d9o2.jpg',
+                                                      'displayName': 'Bruce Li',
+                                                      'handle': 'zbruceli'},
+                                          'publishedAt': 1763730007,
+                                          'slug': 'google-gemini-file-search-the-end-of-homebrew-rag',
+                                          'tag': 'rag',
+                                          'title': 'Google Gemini File Search '
+                                                   '- The End of Homebrew '
+                                                   'RAG?'},
+                                         {'id': '5yJNg4e1YNH5WIzK6GBy',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/vNWsrhxg5uZzxu5y3zaV4Y2AjfA2-ti13b58.webp',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/vNWsrhxg5uZzxu5y3zaV4Y2AjfA2-xp93b46.png',
+                                                      'displayName': 'Renal '
+                                                                     'Khabibulin',
+                                                      'handle': 'renalk'},
+                                          'publishedAt': 1763713346,
+                                          'slug': 'build-a-custom-chatgpt-app-and-tap-into-800-million-users',
+                                          'tag': 'chatgpt-apps',
+                                          'title': 'Build a Custom ChatGPT App '
+                                                   'and Tap Into 800 Million '
+                                                   'Users'},
+                                         {'id': 'k5ZrBLlCVQQq01dIlBvk',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/8pmL8ZpO2yTCxdRc1VIehxMAYNQ2-2zs36jg.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/8pmL8ZpO2yTCxdRc1VIehxMAYNQ2-zk03nz2.jpeg',
+                                                      'displayName': 'The_AI_Ethicist',
+                                                      'handle': 'theaiethicist'},
+                                          'publishedAt': 1763650809,
+                                          'slug': 'ai-is-coded-postmodernism-a-look-at-bohemian-rhapsody-the-matrix-and-more',
+                                          'tag': 'ai',
+                                          'title': 'AI Is Coded Postmodernism: '
+                                                   'A Look at Bohemian '
+                                                   'Rhapsody, The Matrix, and '
+                                                   'More'},
+                                         {'id': 'chPXCmuLDhOnTRlJh9fA',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/mDiXnlwpnDbz8rzuPTTI7GbEXRt1-4lb25j8.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/mDiXnlwpnDbz8rzuPTTI7GbEXRt1-z40352f.jpeg',
+                                                      'displayName': 'Yulia '
+                                                                     'Busygina',
+                                                      'handle': 'yuliabusygina'},
+                                          'publishedAt': 1763481449,
+                                          'slug': 'researchers-develop-ai-to-spot-early-signs-of-cerebral-palsy-in-infants',
+                                          'tag': 'medical-ai',
+                                          'title': 'Researchers Develop AI to '
+                                                   'Spot Early Signs of '
+                                                   'Cerebral Palsy in Infants'},
+                                         {'id': 'KE150WA5EdZK7tWMZyAx',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/ewPkZY74jfVUP4RNIf3JWzw9scC3-l903c95.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ewPkZY74jfVUP4RNIf3JWzw9scC3-lf83cz0.jpeg',
+                                                      'displayName': 'Aleksandra '
+                                                                     'Brazhnikova',
+                                                      'handle': 'alexwrites'},
+                                          'publishedAt': 1763470826,
+                                          'slug': 'the-ai-reality-gap-what-11-professionals-revealed-about-ai-at-work-that-mit-studies-wont-tell-you',
+                                          'tag': 'ai-marketing',
+                                          'title': 'The AI Reality Gap: What '
+                                                   '11 Professionals Revealed '
+                                                   'About AI at Work That MIT '
+                                                   "Studies Won't Tell You"},
+                                         {'id': 'BPQUZ1M4KVVOlU8sDiAX',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/sinW25rWovdN38P2ArzdPSCP3hi1-vo0367c.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-sy0388q.png',
+                                                      'displayName': 'Lab42AI',
+                                                      'handle': 'lab42ai'},
+                                          'publishedAt': 1763407745,
+                                          'slug': 'the-first-autonomous-ai-cyber-attack-exposed',
+                                          'tag': 'ai-agents',
+                                          'title': 'The First Autonomous AI '
+                                                   'Cyber Attack\xa0Exposed'},
+                                         {'id': '68ff72dabe7866c925616455',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!y9d6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50027579-583e-448b-9af7-4a52aaf7ac7f_2953x1762.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1763395203,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-16',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 16'},
+                                         {'id': 'yBTlilPxHVnGYWUiJVwO',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/9F2W64ovN7b9N5QGpmjuGCfiEmY2-gl03b68.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/9F2W64ovN7b9N5QGpmjuGCfiEmY2-6x83b3t.png',
+                                                      'displayName': 'Jose '
+                                                                     'Crespo, '
+                                                                     'PhD',
+                                                      'handle': 'josecrespophd'},
+                                          'publishedAt': 1763375008,
+                                          'slug': 'the-fatal-math-error-killing-every-ai-architecture-including-the-new-ones',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'The Fatal Math Error '
+                                                   'Killing Every AI '
+                                                   'Architecture - Including '
+                                                   'The New Ones'},
+                                         {'id': '21xeML6k9zzsNfTWLaHO',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/for6KbaG02euOkF3kL6MZHB8JC93-kf03bhp.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/for6KbaG02euOkF3kL6MZHB8JC93-vh83bt1.jpeg',
+                                                      'displayName': 'Andrew '
+                                                                     'Schwabe',
+                                                      'handle': 'aschwabe'},
+                                          'publishedAt': 1763373345,
+                                          'slug': 'calling-all-brains-genai-misconceptions',
+                                          'tag': 'ai-ethics',
+                                          'title': '⚠️Calling All Brains! '
+                                                   '⚠️GenAI Misconceptions!'},
+                                         {'id': 'PjW6tl6GZZM4AYYNH0aG',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/pL08BO3ouKNkhrqPjjNqbI6Myh73-9703bvd.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/pL08BO3ouKNkhrqPjjNqbI6Myh73-n083b9l.png',
+                                                      'displayName': 'MattLeads',
+                                                      'handle': 'mattleads'},
+                                          'publishedAt': 1763305205,
+                                          'slug': 'exploring-and-explaining-the-new-frontiers-of-advanced-prompt-injection',
+                                          'tag': 'ai',
+                                          'title': 'Exploring and Explaining '
+                                                   'The New Frontiers of '
+                                                   'Advanced Prompt Injection'},
+                                         {'id': '3gL1F63pBhnPUYGrCm05',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/5wpKgV75aONqkTJlafw2yQmK9yd2-3f03bbw.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-y983m2k.jpeg',
+                                                      'displayName': '',
+                                                      'handle': 'InfiniteScroll'},
+                                          'publishedAt': 1763294409,
+                                          'slug': 'uncanny-valley-vibes-why-reading-now-feels-like-a-turing-test',
+                                          'tag': 'ai-writing',
+                                          'title': 'Uncanny Valley Vibes: Why '
+                                                   'Reading Now Feels Like a '
+                                                   'Turing Test'},
+                                         {'id': 'PwxtSomJmqKcdn4wb1up',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/5wpKgV75aONqkTJlafw2yQmK9yd2-r303b1b.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/img-2j835ia.webp',
+                                                      'displayName': 'Algorithmic '
+                                                                     'Bias '
+                                                                     '(dot '
+                                                                     'tech)',
+                                                      'handle': 'algorithmicbias'},
+                                          'publishedAt': 1763291261,
+                                          'slug': 'how-ai-search-reinforces-gender-and-racial-bias-in-politics',
+                                          'tag': 'ai-ethics',
+                                          'title': 'How AI Search Reinforces '
+                                                   'Gender and Racial Bias in '
+                                                   'Politics'},
+                                         {'id': 'nnRRK1IRJknuDxYML7zZ',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/Uk1bEzfp7zLz3NMJDeCVvwx8yuT2-6n23asc.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/Uk1bEzfp7zLz3NMJDeCVvwx8yuT2-z88398z.jpeg',
+                                                      'displayName': 'Alexander '
+                                                                     'Borschel',
+                                                      'handle': 'aborschel'},
+                                          'publishedAt': 1763289645,
+                                          'slug': 'zenos-paradox-and-the-problem-of-ai-tokenization',
+                                          'tag': 'ai-tokenization',
+                                          'title': 'Zeno’s Paradox and the '
+                                                   'Problem of AI '
+                                                   'Tokenization'},
+                                         {'id': '8w88ZmM6svyNarqmxBIv',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/ZSnNpZ3GejgVSxqs3EyP38vlsLL2-ih03b2z.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ugoTV1vwcgR4mN8MMDUUN4vt6p02-le93t0j.jpeg',
+                                                      'displayName': 'The '
+                                                                     'Sociable',
+                                                      'handle': 'thesociable'},
+                                          'publishedAt': 1763236805,
+                                          'slug': 'wef-experts-walking-talking-robots-are-just-five-years-away',
+                                          'tag': 'humanoid-robots',
+                                          'title': 'WEF Experts: Walking, '
+                                                   'Talking Robots Are Just '
+                                                   'Five Years Away'},
+                                         {'id': '4EHKbnKY6KKLh86k3V51',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/ZSnNpZ3GejgVSxqs3EyP38vlsLL2-l903bq2.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ugoTV1vwcgR4mN8MMDUUN4vt6p02-le93t0j.jpeg',
+                                                      'displayName': 'The '
+                                                                     'Sociable',
+                                                      'handle': 'thesociable'},
+                                          'publishedAt': 1763130696,
+                                          'slug': 'inside-darpaverse-the-us-militarys-next-big-leap-in-predictive-warfare-technology',
+                                          'tag': 'military-ai',
+                                          'title': 'Inside ‘DARPAVERSE’: The '
+                                                   "U.S. Military's Next Big "
+                                                   'Leap in Predictive Warfare '
+                                                   'Technology'},
+                                         {'id': '691292e669614894f006d249',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/ethernet-cable-cghbbkzkongtt8oxz7beay7w.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/OH8JOltmkNW83lSQKzL9hcwFbzR2-4a038ps.jpeg',
+                                                      'displayName': 'Tosin '
+                                                                     'Kolawole',
+                                                      'handle': 'teedon'},
+                                          'publishedAt': 1762967176,
+                                          'slug': 'building-a-rag-system-that-runs-completely-offline',
+                                          'tag': 'rag',
+                                          'title': 'Building a RAG System That '
+                                                   'Runs Completely Offline'},
+                                         {'id': '68ff72dbbe7866c925616457',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!L4Xj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3b065ff8-e538-4eb4-9bce-970d002614f6_2964x1762.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1762786804,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-15',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 15'},
+                                         {'id': 'UKeK2OENnrtjZ78CkeRx',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/a-detailed-conceptual-diagram-illustrating-robot-agent-with-camera-and-depth-sensors-capturing-rgbd-data-dq1inzzflqfmdy39oxdkzs4e.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/4HK5qyMbWfetPhAavzyTZrEb90N2-sf832oj.jpeg',
+                                                      'displayName': 'Instancing',
+                                                      'handle': 'instancing'},
+                                          'publishedAt': 1762774850,
+                                          'slug': 'this-ai-mapping-system-lets-robots-see-the-world',
+                                          'tag': 'zero-shot-navigation',
+                                          'title': 'This AI Mapping System '
+                                                   'Lets Robots See the World'},
+                                         {'id': 'vLkhFGmo8mfRauqwvyXP',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/9sk1RZ9hRoTmF1dwhC82n9OgiLJ3-8z03by0.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/9sk1RZ9hRoTmF1dwhC82n9OgiLJ3.png',
+                                                      'displayName': 'Nick '
+                                                                     'Talwar',
+                                                      'handle': 'hacker68060072'},
+                                          'publishedAt': 1762700410,
+                                          'slug': 'heres-why-you-need-to-build-structured-authority-before-you-disappear',
+                                          'tag': 'generative-ai',
+                                          'title': "Here's Why You Need to "
+                                                   'Build Structured Authority '
+                                                   'Before You Disappear'},
+                                         {'id': 'ZVs6SMEOsGN2hIDwLBHR',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-yh23aaw.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                                      'displayName': 'Anthony '
+                                                                     'Laneau',
+                                                      'handle': 'hacker-Antho'},
+                                          'publishedAt': 1762551958,
+                                          'slug': '5-surprising-truths-about-ai-at-work-according-to-a-3-year-enterprise-study',
+                                          'tag': 'ai',
+                                          'title': '5 Surprising Truths About '
+                                                   'AI at Work, According to a '
+                                                   '3-Year Enterprise Study'},
+                                         {'id': 'DK2Mm8tcQA9kq74qjI0c',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/JIOpDT1YimYfqCIgpVTk8r4gXT02-eya3dd4.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/robot-b2.png',
+                                                      'displayName': 'James '
+                                                                     'Bore',
+                                                      'handle': 'james_ec7fj08'},
+                                          'publishedAt': 1762455610,
+                                          'slug': 'artificial-stupidity-7-innovations-which-will-make-you-question-human-intelligence',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'Artificial Stupidity: 7 '
+                                                   '"Innovations" Which Will '
+                                                   'Make You Question Human '
+                                                   'Intelligence'},
+                                         {'id': 'mmmJh8MvG5Gx44jn6p8x',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/0iu1pHRMnqOT3GqhiW0OP3lK20h1-go02bys.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-ol82urp.jpeg',
+                                                      'displayName': 'Vladislav '
+                                                                     'Guzey',
+                                                      'handle': 'proflead'},
+                                          'publishedAt': 1762441212,
+                                          'slug': 'mastering-gemini-cli-top-tips-for-better-ai-coding',
+                                          'tag': 'google-gemini',
+                                          'title': 'Mastering Gemini CLI - Top '
+                                                   'Tips for Better AI Coding'},
+                                         {'id': 'IRyVLXWNm5Cz7KmYHi2q',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/9sk1RZ9hRoTmF1dwhC82n9OgiLJ3-dt03bea.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/9sk1RZ9hRoTmF1dwhC82n9OgiLJ3.png',
+                                                      'displayName': 'Nick '
+                                                                     'Talwar',
+                                                      'handle': 'hacker68060072'},
+                                          'publishedAt': 1762379269,
+                                          'slug': 'copilots-are-the-new-shadow-it-the-hidden-risks-that-come-with-them',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'Copilots Are the New '
+                                                   'Shadow IT: The Hidden '
+                                                   'Risks That Come With Them'},
+                                         {'id': '6907cb886158672d46022524',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/zgMs9Hw778TbnbhNH6JhjKMv5un2-4a03biq.png',
+                                          'profile': {'avatar': 'https://hackernoon.imgix.net/avatars/robot-b3.png',
+                                                      'displayName': '@thenumber47',
+                                                      'handle': 'hacker4935681'},
+                                          'publishedAt': 1762291658,
+                                          'slug': 'huggingface-chooses-arch-router',
+                                          'tag': 'huggingface',
+                                          'title': 'HuggingFace Chooses Arch '
+                                                   '(Router) for Omni Chat'},
+                                         {'id': '69067d9ee93aa85c19a6da7f',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/ck9aWgppGnSkOUefHHyhtvzjnJk1-hu0372r.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ck9aWgppGnSkOUefHHyhtvzjnJk1-0e837ae.jpeg',
+                                                      'displayName': 'Prakriti '
+                                                                     'Poddar',
+                                                      'handle': 'prakriti'},
+                                          'publishedAt': 1762289912,
+                                          'slug': 'the-balance-protocol-what-happens-when-machines-begin-to-care-for-our-emotions',
+                                          'tag': 'emotionally-intelligent-ai',
+                                          'title': 'The Balance Protocol: What '
+                                                   'Happens When Machines '
+                                                   'Begin To Care About Our '
+                                                   'Emotions? '},
+                                         {'id': 'QzJ9OLHwwwJSaZlGVDzY',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-oc03bz8.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                                      'displayName': 'Anthony '
+                                                                     'Laneau',
+                                                      'handle': 'hacker-Antho'},
+                                          'publishedAt': 1762209542,
+                                          'slug': '3-experiments-that-reveal-the-shocking-inner-life-of-ai-introduction-is-anybody-home',
+                                          'tag': 'ai',
+                                          'title': '3 Experiments That Reveal '
+                                                   'the Shocking Inner Life of '
+                                                   'AI Introduction: Is '
+                                                   'Anybody Home?'},
+                                         {'id': '68e52ec444bfc11a790b1263',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!Cavy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2533ec87-b63f-4a1b-bd0f-743cad4d7f04_2952x1762.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1762185603,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-14',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 14'},
+                                         {'id': 'GWUGBkBF8fOdqySm7dH5',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/AChjrG5SZpQZc35xhO8iAvwJ0ox1-gg53k6a.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AChjrG5SZpQZc35xhO8iAvwJ0ox1-94037xt.jpeg',
+                                                      'displayName': 'Vladimir '
+                                                                     'Shelkovnikov',
+                                                      'handle': 'c4twithshell'},
+                                          'publishedAt': 1762145796,
+                                          'slug': 'fortune-folly',
+                                          'tag': 'ai',
+                                          'title': 'Fortune Folly'},
+                                         {'id': 'ATAZqWggbjRDxX2U0E03',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/3uNZFAWkDXcANJAyb8bX3krKhto2-2702ua5.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-tv82k40.jpeg',
+                                                      'displayName': 'Our AI',
+                                                      'handle': 'OurAI'},
+                                          'publishedAt': 1762102831,
+                                          'slug': 'disproving-the-innovation-against-safety-doctrine-in-ai-regulation',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'Disproving the "Innovation '
+                                                   'Against Safety" Doctrine '
+                                                   'in AI Regulation'},
+                                         {'id': 'ynFBbhP0uS21vLVl9vLb',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/eQHzh6rz7ETBHLjs0KzCl1Dooqp2-rn03b60.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/l61lXLP6ciWhnSiMVtVqNgQvDJ62-jp03op5.png',
+                                                      'displayName': 'Jacob '
+                                                                     'Landry',
+                                                      'handle': 'jacoblandry'},
+                                          'publishedAt': 1762012810,
+                                          'slug': 'elaborate-hoaxes-in-the-age-of-ai',
+                                          'tag': 'ai',
+                                          'title': 'Elaborate Hoaxes in the '
+                                                   'Age of AI'},
+                                         {'id': 'QSDWeCxIo6CDbK37HOpr',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-z403b13.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                                      'displayName': 'Anthony '
+                                                                     'Laneau',
+                                                      'handle': 'hacker-Antho'},
+                                          'publishedAt': 1762009209,
+                                          'slug': 'beyond-brute-force-4-secrets-to-smaller-smarter-and-dramatically-cheaper-ai',
+                                          'tag': 'ai',
+                                          'title': 'Beyond Brute Force: 4 '
+                                                   'Secrets to Smaller, '
+                                                   'Smarter, and Dramatically '
+                                                   'Cheaper AI'},
+                                         {'id': 'qcYTw21zf1Ca4jaCk78h',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/5tZBRGW783dJ4qZc25rlTzo7t2G3-h513np1.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/5tZBRGW783dJ4qZc25rlTzo7t2G3-f203f84.jpeg',
+                                                      'displayName': 'Maks '
+                                                                     'Shev',
+                                                      'handle': 'maksshev'},
+                                          'publishedAt': 1761804600,
+                                          'slug': 'how-diablo-ai-will-destroy-your-marketing-budget-and-business',
+                                          'tag': 'ai-marketing',
+                                          'title': 'How "Diablo AI" Will '
+                                                   'Destroy Your Marketing '
+                                                   'Budget and Business'},
+                                         {'id': 'TUsDofbA591OlJtguIX6',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-wp023vp.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/robot-b3.png',
+                                                      'displayName': 'Emmanuel '
+                                                                     'Akin-Ademola',
+                                                      'handle': 'emmaakin'},
+                                          'publishedAt': 1761800201,
+                                          'slug': 'ai-is-a-tool-for-economic-progress-not-a-job-taker',
+                                          'tag': 'ai',
+                                          'title': 'AI is a Tool for Economic '
+                                                   'Progress, Not a Job '
+                                                   'Taker\xa0'},
+                                         {'id': '6T2h5qXffrcrI642RiEI',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-nf0234v.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ElnBCKKtp2SDZG9UUCXuNkt0Y3B3-0c82bom.png',
+                                                      'displayName': 'GlobalHawk',
+                                                      'handle': 'knightbat2040'},
+                                          'publishedAt': 1761799924,
+                                          'slug': 'what-the-big-three-consultancies-are-missing-about-ai-and-the-code-that-proves-it',
+                                          'tag': 'ai',
+                                          'title': 'What the Big Three '
+                                                   'Consultancies are Missing '
+                                                   'About AI (And the Code '
+                                                   'That Proves It)'},
+                                         {'id': 'QcAFB4Zx620uxcE0WCA9',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/PbQqJjR7A6X3QGcgZRF7voR5eEC3-t003b6x.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/PbQqJjR7A6X3QGcgZRF7voR5eEC3-kl033u0.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Funding '
+                                                                     'Tracker',
+                                                      'handle': 'aifundingtracker'},
+                                          'publishedAt': 1761664730,
+                                          'slug': 'weekly-ai-startup-funding-october-20-25-2025',
+                                          'tag': 'ai',
+                                          'title': 'Weekly AI Startup Funding: '
+                                                   'October 20-25, 2025'},
+                                         {'id': '38qEoDOHRhGHxoiOLwEO',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-mb03bik.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                                      'displayName': 'Anthony '
+                                                                     'Laneau',
+                                                      'handle': 'hacker-Antho'},
+                                          'publishedAt': 1761602926,
+                                          'slug': 'how-an-ai-that-reads-cells-like-sentences-made-a-novel-cancer-discovery',
+                                          'tag': 'ai',
+                                          'title': 'How an AI That Reads Cells '
+                                                   'Like Sentences Made a '
+                                                   'Novel Cancer Discovery'},
+                                         {'id': '68c97019dfc204a58380120a',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!KABQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa912b0bc-73ba-4746-b6f3-ede1e425e6ac_2961x1762.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1761562803,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-11',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 11'},
+                                         {'id': 'yLNYS3zSL8cO9JfJdwJP',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/5wpKgV75aONqkTJlafw2yQmK9yd2-xh03b9s.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/9nGeYuCxu6fC04G3qdUpaetxE553-jw038rv.png',
+                                                      'displayName': 'Giovanni '
+                                                                     'Coletta',
+                                                      'handle': 'giovannicoletta'},
+                                          'publishedAt': 1761513559,
+                                          'slug': 'the-physics-of-ai',
+                                          'tag': 'ai-singularity',
+                                          'title': 'The Physics of AI '},
+                                         {'id': '68b83fee3e96ae9697841165',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-kc0201b.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1761436804,
+                                          'slug': 'github-rolls-out-open-source-mcp-server-to-expand-copilots-reach',
+                                          'tag': 'ai',
+                                          'title': 'GitHub Rolls Out '
+                                                   'Open-Source MCP Server to '
+                                                   'Expand Copilot’s Reach'},
+                                         {'id': '68f9115c8ee90d571028615b',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/ai-algorithm-on-a-laptop-screen-ehl9w3obo5dwnsexav1kekfw.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/9MYNAxxrWjQ53eEhKaPCIUkhaAf2-o303492.jpeg',
+                                                      'displayName': 'Yash '
+                                                                     'Gupta',
+                                                      'handle': 'yashgupta1427'},
+                                          'publishedAt': 1761312819,
+                                          'slug': 'the-lottery-ticket-hypothesis-why-pruned-models-can-sometimes-learn-just-as-well-as-full-networks',
+                                          'tag': 'neural-networks',
+                                          'title': 'The Lottery Ticket '
+                                                   'Hypothesis: Why Pruned '
+                                                   'Models Can Sometimes Learn '
+                                                   'Just as Well as Full '
+                                                   'Networks'},
+                                         {'id': 'IRTZIulgdIvkezD4z0wy',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/3uNZFAWkDXcANJAyb8bX3krKhto2-g002zu8.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-tv82k40.jpeg',
+                                                      'displayName': 'Our AI',
+                                                      'handle': 'OurAI'},
+                                          'publishedAt': 1761278826,
+                                          'slug': 'the-end-of-fair-play-in-coding-contests',
+                                          'tag': 'ai',
+                                          'title': 'The End of Fair Play in '
+                                                   'Coding Contests'},
+                                         {'id': '68b83fee3e96ae969784115f',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-hk02098.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1761177602,
+                                          'slug': 'sourcegraph-drops-the-waitlist-amp-its-agentic-coding-tool-opens-to-everyone',
+                                          'tag': 'ai',
+                                          'title': 'Sourcegraph Drops the '
+                                                   'Waitlist: Amp, Its Agentic '
+                                                   'Coding Tool, Opens to '
+                                                   'Everyone'},
+                                         {'id': 'Kilqm1DRR8yntLnMwXgZ',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/eQHzh6rz7ETBHLjs0KzCl1Dooqp2-qc03b4z.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ElnBCKKtp2SDZG9UUCXuNkt0Y3B3-0c82bom.png',
+                                                      'displayName': 'GlobalHawk',
+                                                      'handle': 'knightbat2040'},
+                                          'publishedAt': 1761167199,
+                                          'slug': 'google-deepmind-taught-an-ai-to-tame-a-star-heres-what-it-means-for-the-future-of-your-job',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'Google DeepMind Taught an '
+                                                   "AI to Tame a Star: Here's "
+                                                   'What It Means for the '
+                                                   'Future of Your Job'},
+                                         {'id': 'SJYDlfCrukADPALPr2CG',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/8w1183DB1bQVSMsW8V1gnJ1xqxh1-um13h0e.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/8w1183DB1bQVSMsW8V1gnJ1xqxh1-1z039ug.jpeg',
+                                                      'displayName': 'fsab',
+                                                      'handle': 'fatihasabiella'},
+                                          'publishedAt': 1761112296,
+                                          'slug': 'can-we-still-honor-the-dead-when-technology-refuses-to-let-them-go',
+                                          'tag': 'ai',
+                                          'title': 'Can We Still Honor the '
+                                                   'Dead When Technology '
+                                                   'Refuses to Let Them Go?'},
+                                         {'id': 'GLfdwN0ol8x3nUKl0J6P',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/bUyNMEzpSjNn3EkHhFSPkXSsgKL2-dp13ovo.webp',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/robot-a1.png',
+                                                      'displayName': 'Andrew '
+                                                                     'Olsson',
+                                                      'handle': 'andrewolsson'},
+                                          'publishedAt': 1761112123,
+                                          'slug': 'lessons-in-building-an-ai-artist-that-learns-creates-and-sells-art-autonomously',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'Lessons in Building an AI '
+                                                   'Artist that Learns, '
+                                                   'Creates, and Sells Art '
+                                                   'Autonomously'},
+                                         {'id': 'DuAmy9xyjGVLyPCd7zLk',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/PbQqJjR7A6X3QGcgZRF7voR5eEC3-o703brx.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/PbQqJjR7A6X3QGcgZRF7voR5eEC3-kl033u0.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Funding '
+                                                                     'Tracker',
+                                                      'handle': 'aifundingtracker'},
+                                          'publishedAt': 1761107926,
+                                          'slug': 'weekly-ai-startup-funding-october-12-19-2025',
+                                          'tag': 'ai',
+                                          'title': 'Weekly AI Startup Funding: '
+                                                   'October 12-19, 2025'},
+                                         {'id': '6kkorg5VsLGzegC3bmg4',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/xJY7Mil1Iaawpy4gQe2JjaeojZY2-5503b6w.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/xJY7Mil1Iaawpy4gQe2JjaeojZY2-dd83z5x.jpeg',
+                                                      'displayName': 'Max Zhuk',
+                                                      'handle': 'zhukmax'},
+                                          'publishedAt': 1761057288,
+                                          'slug': 'the-dragon-hatchling-learns-to-fly-inside-ais-next-learning-revolution',
+                                          'tag': 'neural-networks',
+                                          'title': 'The Dragon Hatchling '
+                                                   'Learns to Fly: Inside AI’s '
+                                                   'Next Learning Revolution'},
+                                         {'id': 'z2LDIABaqa7he7SqwLm6',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/N0ENUd29UdNJCFcl7GnmZHdk2fA2-8t03ne1.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                                      'displayName': 'Anthony '
+                                                                     'Laneau',
+                                                      'handle': 'hacker-Antho'},
+                                          'publishedAt': 1760982573,
+                                          'slug': 'from-cloud-to-desk-3-signs-the-ai-revolution-is-going-local',
+                                          'tag': 'ai',
+                                          'title': 'From Cloud to Desk: 3 '
+                                                   'Signs the AI Revolution is '
+                                                   'Going Local'},
+                                         {'id': '68c97019dfc204a58380120d',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!ZU_Z!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F171835e4-9003-4fe2-a06e-82286793ed7e_2946x1762.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1760961603,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-10',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 10'},
+                                         {'id': 'OA2pm7Gil2KP2a7uOadR',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/wCBwna64Mzf5EFCG6QdcY2jQE7B3-lg73bkc.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/wCBwna64Mzf5EFCG6QdcY2jQE7B3-ue03vfs.jpeg',
+                                                      'displayName': 'Nilesh '
+                                                                     'Bhandarwar',
+                                                      'handle': 'nileshbh'},
+                                          'publishedAt': 1760860585,
+                                          'slug': 'designing-production-ready-rag-pipelines-tackling-latency-hallucinations-and-cost-at-scale',
+                                          'tag': 'rag-architecture',
+                                          'title': 'Designing Production-Ready '
+                                                   'RAG Pipelines: Tackling '
+                                                   'Latency, Hallucinations, '
+                                                   'and Cost at Scale'},
+                                         {'id': '68b83fee3e96ae9697841177',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-sv020xi.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1760832003,
+                                          'slug': 'openai-codex-cli-early-buggy-but-aiming-to-redefine-how-developers-code-with-ai',
+                                          'tag': 'ai',
+                                          'title': 'OpenAI Codex CLI: Early, '
+                                                   'Buggy, but Aiming to '
+                                                   'Redefine How Developers '
+                                                   'Code With AI'},
+                                         {'id': 'qKFJvg8oalPpKmrfa6gZ',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-vh03728.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                                      'displayName': 'Anthony '
+                                                                     'Laneau',
+                                                      'handle': 'hacker-Antho'},
+                                          'publishedAt': 1760806690,
+                                          'slug': 'the-illusion-of-scale-why-llms-are-vulnerable-to-data-poisoning-regardless-of-size',
+                                          'tag': 'adversarial-machine-learning',
+                                          'title': 'The Illusion of Scale: Why '
+                                                   'LLMs Are Vulnerable to '
+                                                   'Data Poisoning, Regardless '
+                                                   'of Size'},
+                                         {'id': '68e558f1f60bfdf98b36c06a',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/N0ENUd29UdNJCFcl7GnmZHdk2fA2-jd03nlj.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/N0ENUd29UdNJCFcl7GnmZHdk2fA2-9093uxj.jpeg',
+                                                      'displayName': 'David '
+                                                                     'Smooke',
+                                                      'handle': 'David'},
+                                          'publishedAt': 1760623723,
+                                          'slug': 'find-ai-software-and-compute-grants-and-credits-via-hackernoon-ai',
+                                          'tag': 'ai',
+                                          'title': 'Find AI Software and '
+                                                   'Compute Grants and Credits '
+                                                   'via HackerNoon AI'},
+                                         {'id': 'DorHFBrLizV8BOWhULUH',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/ZSnNpZ3GejgVSxqs3EyP38vlsLL2-wb03c2x.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/ugoTV1vwcgR4mN8MMDUUN4vt6p02-le93t0j.jpeg',
+                                                      'displayName': 'The '
+                                                                     'Sociable',
+                                                      'handle': 'thesociable'},
+                                          'publishedAt': 1760590807,
+                                          'slug': '97percent-of-tech-leaders-fear-unethical-ai-use-but-only-a-third-have-oversight',
+                                          'tag': 'ai-ethics',
+                                          'title': '97% of Tech Leaders Fear '
+                                                   'Unethical AI Use but Only '
+                                                   'a Third Have Oversight'},
+                                         {'id': '68b83fed3e96ae9697841147',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-gi022nj.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1760572803,
+                                          'slug': 'the-rise-of-the-self-spawning-ai-dev-team',
+                                          'tag': 'ai',
+                                          'title': 'The Rise of the '
+                                                   'Self-Spawning AI Dev Team'},
+                                         {'id': 'mwhoIKy0kF5rQlmYc2DH',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/3uNZFAWkDXcANJAyb8bX3krKhto2-1u22zu9.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-tv82k40.jpeg',
+                                                      'displayName': 'Our AI',
+                                                      'handle': 'OurAI'},
+                                          'publishedAt': 1760505584,
+                                          'slug': 'how-ai-is-disrupting-the-idea-of-creativity',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'How AI is Disrupting the '
+                                                   'Idea of Creativity'},
+                                         {'id': '68ed360b17ac892d207223a6',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/fzbcIKA2vpOFHHB3hvfTEjPAal43-je03apz.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/fzbcIKA2vpOFHHB3hvfTEjPAal43-bi033ro.jpeg',
+                                                      'displayName': 'Misam '
+                                                                     'Abbas',
+                                                      'handle': 'misamabbas'},
+                                          'publishedAt': 1760466887,
+                                          'slug': 'what-happens-when-you-change-the-temperature-of-your-ai',
+                                          'tag': 'ai-temperature-settings',
+                                          'title': 'What Happens When You '
+                                                   'Change the "Temperature" '
+                                                   'of Your AI?'},
+                                         {'id': '68d43da07b56dffbadca446e',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/N0ENUd29UdNJCFcl7GnmZHdk2fA2-x303nfr.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/N0ENUd29UdNJCFcl7GnmZHdk2fA2-9093uxj.jpeg',
+                                                      'displayName': 'David '
+                                                                     'Smooke',
+                                                      'handle': 'David'},
+                                          'publishedAt': 1760376206,
+                                          'slug': 'we-are-very-early-in-our-work-with-llms-prem-ramaswami-head-of-data-commons-at-google',
+                                          'tag': 'llm',
+                                          'title': '"We Are Very Early in Our '
+                                                   'Work With LLMs," - Prem '
+                                                   'Ramaswami, Head of Data '
+                                                   'Commons at Google'},
+                                         {'id': '68baec482d031cc9baa3249e',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!8Zt9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc53cc580-bf22-480e-837b-94ee60c5c8eb_1000x600.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1760371202,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-9',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 9'},
+                                         {'id': 'QAyE6lSxPWqe6MePQM9a',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/cINIFbqqBHP6eJ0PSVZp9TroFeI3-cv03aqf.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-rf83rxw.jpeg',
+                                                      'displayName': 'John '
+                                                                     'Vester',
+                                                      'handle': 'johnjvester'},
+                                          'publishedAt': 1760330448,
+                                          'slug': 'the-hidden-infrastructure-trap-stalling-enterprise-ai',
+                                          'tag': 'enterprise-ai',
+                                          'title': 'The Hidden Infrastructure '
+                                                   'Trap Stalling Enterprise '
+                                                   'AI'},
+                                         {'id': '68b83fed3e96ae9697841145',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-l9020kz.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1760140803,
+                                          'slug': 'developers-embrace-taskmaster-an-ai-scrum-master-for-code',
+                                          'tag': 'ai',
+                                          'title': 'Developers Embrace '
+                                                   'Taskmaster, an AI Scrum '
+                                                   'Master for Code'},
+                                         {'id': 'RfVYmI6oHc0fvz26PgXi',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-n0022gr.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-sy0388q.png',
+                                                      'displayName': 'Lab42AI',
+                                                      'handle': 'lab42ai'},
+                                          'publishedAt': 1760071959,
+                                          'slug': 'your-ai-chatbot-just-leaked-customer-data-to-openai-heres-how-it-happened-and-how-to-prevent-it',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'Your AI Chatbot Just '
+                                                   'Leaked Customer Data to '
+                                                   'OpenAI. Here’s How it '
+                                                   'Happened and How to '
+                                                   'Prevent it'},
+                                         {'id': 'OppAZw1leKWlaLqXBvU8',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/l4QeAo8EwxOUCxEUJOIzHwEylk33-4u33cn8.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-4c83uox.jpeg',
+                                                      'displayName': 'CeThe.World',
+                                                      'handle': 'sharkroman'},
+                                          'publishedAt': 1759989243,
+                                          'slug': 'the-machines-that-make-music-inside-the-global-boom-of-ai-generated-songs',
+                                          'tag': 'ai',
+                                          'title': 'The Machines That Make '
+                                                   'Music: Inside the Global '
+                                                   'Boom of AI-Generated '
+                                                   'Songs'},
+                                         {'id': '3eKJPg78bHwXhT2RBRfn',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/fdI8xgIHRJTxUAsqoZ27qOGzMz33-fe0285h.jpeg',
+                                          'profile': {'avatar': 'https://hackernoon.com/images/avatars/fdI8xgIHRJTxUAsqoZ27qOGzMz33.jpg',
+                                                      'displayName': 'George '
+                                                                     'Anadiotis',
+                                                      'handle': 'linked_do'},
+                                          'publishedAt': 1759988672,
+                                          'slug': 'as-ai-hype-peaks-one-nonprofit-asks-what-for',
+                                          'tag': 'ai-adoption',
+                                          'title': 'As AI Hype Peaks, One '
+                                                   'Nonprofit Asks: “What '
+                                                   'For?”'},
+                                         {'id': '68b83fed3e96ae969784113f',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-ln120m1.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1759968002,
+                                          'slug': 'roast-and-raix-shopifys-bet-on-ruby-powered-ai-workflows',
+                                          'tag': 'ai',
+                                          'title': 'Roast and Raix: Shopify’s '
+                                                   'Bet on Ruby-Powered AI '
+                                                   'Workflows'},
+                                         {'id': '68baec482d031cc9baa324a0',
+                                          'mainImage': 'https://substackcdn.com/image/fetch/$s_!R32X!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6d5713d-9bba-4022-91c6-798927d19846_1000x600.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/e9Wv1HlyiwYBay5WMi0sPkKUt6p1-q803vmu.png',
+                                                      'displayName': 'A.I. '
+                                                                     'Controls '
+                                                                     'Stock '
+                                                                     'Account',
+                                                      'handle': 'nathanbsmith729'},
+                                          'publishedAt': 1759766424,
+                                          'slug': 'can-chatgpt-outperform-the-market-week-8',
+                                          'tag': 'ai',
+                                          'title': 'Can ChatGPT Outperform the '
+                                                   'Market? Week 8'},
+                                         {'id': '68d4dabf6b9b51320285c53f',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/HC6shB6ax7eaVB2tR8x3IJ5qpgG3-ch03by4.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/undefined-zg83npq.jpeg',
+                                                      'displayName': 'Saisuman '
+                                                                     'Singamsetty',
+                                                      'handle': 'hackercm82e8sjm0000357ot0f13wld'},
+                                          'publishedAt': 1759754714,
+                                          'slug': 'synthetic-data-isnt-fake-its-the-future-of-private-scalable-ai',
+                                          'tag': 'ai-training-data',
+                                          'title': 'Synthetic Data Isn’t Fake. '
+                                                   'It’s the Future of '
+                                                   'Private, Scalable AI'},
+                                         {'id': 'apwsSCr3dJ5lQtT2sIix',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-n7022zz.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/avatars/robot-b1.png',
+                                                      'displayName': 'Sid '
+                                                                     'Saladi',
+                                                      'handle': 'sidsaladi'},
+                                          'publishedAt': 1759720447,
+                                          'slug': 'the-complete-guide-to-mega-productivity-with-perplexity-comet-100-shortcuts-40-prompts',
+                                          'tag': 'ai',
+                                          'title': 'The Complete Guide to Mega '
+                                                   'Productivity With  '
+                                                   'Perplexity Comet (100 '
+                                                   'Shortcuts + 40 Prompts)'},
+                                         {'id': 'zEEjvOB7nHL13UCtAIHW',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/eQHzh6rz7ETBHLjs0KzCl1Dooqp2-e703ba3.jpeg',
+                                          'profile': {'avatar': 'https://hackernoon.com/images/avatars/HgNYtFi17WbGLaRvGCmxhdy7K5L2.jpg',
+                                                      'displayName': 'The '
+                                                                     'Markup',
+                                                      'handle': 'TheMarkup'},
+                                          'publishedAt': 1759672809,
+                                          'slug': 'ai-in-the-world-of-ornithology-using-ai-to-learn-more-about-birds',
+                                          'tag': 'ai',
+                                          'title': 'AI in the World of '
+                                                   'Ornithology: Using AI to '
+                                                   'Learn More About Birds'},
+                                         {'id': '68b83feb3e96ae96978410fb',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/X56tdd0IHOROIv2OuEHgZdRNUc52-9c03by9.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1759622402,
+                                          'slug': 'choosing-the-right-ai-ide-for-your-team-cursor-vs-windsurf-vs-copilot',
+                                          'tag': 'ai',
+                                          'title': 'Choosing the Right AI IDE '
+                                                   'for Your Team: Cursor vs. '
+                                                   'Windsurf vs. Copilot'},
+                                         {'id': '4WfuoP0TmEBPRHuOn2Bz',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/YwSHEC3KytbshzaHd9gfS1alGs52-fm522rl.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/YwSHEC3KytbshzaHd9gfS1alGs52-ag024d8.jpeg',
+                                                      'displayName': 'Laszlo '
+                                                                     'Fazekas',
+                                                      'handle': 'thebojda'},
+                                          'publishedAt': 1759588240,
+                                          'slug': 'the-history-of-true-telepathy',
+                                          'tag': 'neuralink',
+                                          'title': 'The History of TRUE '
+                                                   'Telepathy'},
+                                         {'id': 'o3MP2hCCbhgbsNZUv3jZ',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/wU9wXwfySpUMJjPpkbt3iyFmGUG2-i833jbt.png',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/wU9wXwfySpUMJjPpkbt3iyFmGUG2-2o03cc4.jpeg',
+                                                      'displayName': 'MarryMeMachine',
+                                                      'handle': 'kellanjansen'},
+                                          'publishedAt': 1759468619,
+                                          'slug': 'when-desire-is-designed-the-hidden-politics-of-the-feed',
+                                          'tag': 'artificial-intelligence',
+                                          'title': 'When Desire Is Designed: '
+                                                   'The Hidden Politics of the '
+                                                   'Feed'},
+                                         {'id': '68b83fed3e96ae9697841139',
+                                          'mainImage': 'https://cdn.hackernoon.com/images/2jqChkrv03exBUgkLrDzIbfM99q2-h6021eh.jpeg',
+                                          'profile': {'avatar': 'https://cdn.hackernoon.com/images/AGDlmMhIkmga24BDg4Od5tfBS0z1-od037vv.jpeg',
+                                                      'displayName': 'AI '
+                                                                     'Native '
+                                                                     'Dev',
+                                                      'handle': 'ainativedev'},
+                                          'publishedAt': 1759363203,
+                                          'slug': '8-ai-tools-that-you-should-be-excited-about-and-adopt',
+                                          'tag': 'ai',
+                                          'title': '8 AI Tools That You Should '
+                                                   'Be Excited About (And '
+                                                   'Adopt!)'}],
+                         'topTags': [{'_id': '65ccfedc5212e533e99fa4ec',
+                                      'id': 'artificial-intelligence',
+                                      'slug': 'artificial-intelligence'},
+                                     {'_id': '65ccfed15212e533e99f80d1',
+                                      'id': 'ai',
+                                      'slug': 'ai'},
+                                     {'_id': '65cd03025212e533e9a59681',
+                                      'id': 'machine-learning',
+                                      'slug': 'machine-learning'},
+                                     {'_id': '65ccffb75212e533e9a164ee',
+                                      'id': 'deep-learning',
+                                      'slug': 'deep-learning'},
+                                     {'_id': '65cd00a05212e533e9a2c225',
+                                      'id': 'future-of-ai',
+                                      'slug': 'future-of-ai'},
+                                     {'_id': '65ccff235212e533e9a0502f',
+                                      'id': 'chatgpt',
+                                      'slug': 'chatgpt'},
+                                     {'_id': '65cd00ba5212e533e9a2e5fd',
+                                      'id': 'generative-ai',
+                                      'slug': 'generative-ai'},
+                                     {'_id': '65cd02e45212e533e9a574cd',
+                                      'id': 'llms',
+                                      'slug': 'llms'},
+                                     {'_id': '65ccfed15212e533e99f81d7',
+                                      'id': 'ai-applications',
+                                      'slug': 'ai-applications'},
+                                     {'_id': '65cd02785212e533e9a4f8dc',
+                                      'id': 'large-language-models',
+                                      'slug': 'large-language-models'},
+                                     {'_id': '65cd03ce5212e533e9a67665',
+                                      'id': 'natural-language-processing',
+                                      'slug': 'natural-language-processing'},
+                                     {'_id': '65cd03e15212e533e9a68a7a',
+                                      'id': 'neural-networks',
+                                      'slug': 'neural-networks'},
+                                     {'_id': '65cd03815212e533e9a62191',
+                                      'id': 'ml',
+                                      'slug': 'ml'},
+                                     {'_id': '65ccfed35212e533e99f88db',
+                                      'id': 'ai-trends',
+                                      'slug': 'ai-trends'},
+                                     {'_id': '65cd059b5212e533e9a861a4',
+                                      'id': 'reinforcement-learning',
+                                      'slug': 'reinforcement-learning'},
+                                     {'_id': '65ccfed25212e533e99f8397',
+                                      'id': 'ai-ethics',
+                                      'slug': 'ai-ethics'},
+                                     {'_id': '65ccfedc5212e533e99fa514',
+                                      'id': 'artificial-intelligence-trends',
+                                      'slug': 'artificial-intelligence-trends'},
+                                     {'_id': '65cd05225212e533e9a7e6f1',
+                                      'id': 'prompt-engineering',
+                                      'slug': 'prompt-engineering'},
+                                     {'_id': '65cd02e25212e533e9a57203',
+                                      'id': 'llm',
+                                      'slug': 'llm'},
+                                     {'_id': '65cd07c95212e533e9aa6ff7',
+                                      'id': 'tensorflow',
+                                      'slug': 'tensorflow'},
+                                     {'_id': '65ccfed15212e533e99f80fe',
+                                      'id': 'ai-agent',
+                                      'slug': 'ai-agent'},
+                                     {'_id': '65ccfed35212e533e99f8867',
+                                      'id': 'ai-technology',
+                                      'slug': 'ai-technology'},
+                                     {'_id': '65cd067f5212e533e9a92407',
+                                      'id': 'sentiment-analysis',
+                                      'slug': 'sentiment-analysis'},
+                                     {'_id': '65ccfed35212e533e99f8885',
+                                      'id': 'ai-tools',
+                                      'slug': 'ai-tools'},
+                                     {'_id': '65ccfed15212e533e99f8274',
+                                      'id': 'ai-chatbot',
+                                      'slug': 'ai-chatbot'},
+                                     {'_id': '65ccfed35212e533e99f856b',
+                                      'id': 'ai-in-healthcare',
+                                      'slug': 'ai-in-healthcare'},
+                                     {'_id': '65ccfff25212e533e9a1c070',
+                                      'id': 'doe-vs-github',
+                                      'slug': 'doe-vs-github'},
+                                     {'_id': '65ccfed35212e533e99f8782',
+                                      'id': 'ai-research',
+                                      'slug': 'ai-research'},
+                                     {'_id': '65ccff535212e533e9a0b4b2',
+                                      'id': 'conversational-ai',
+                                      'slug': 'conversational-ai'},
+                                     {'_id': '65cd03075212e533e9a59cba',
+                                      'id': 'machinelearning',
+                                      'slug': 'machinelearning'},
+                                     {'_id': '6608cf130512cb1b400e6500',
+                                      'id': 'ai-agents',
+                                      'slug': 'ai-agents'},
+                                     {'_id': '65ccfed35212e533e99f88b4',
+                                      'id': 'ai-top-story',
+                                      'slug': 'ai-top-story'},
+                                     {'_id': '65ccff235212e533e9a04f0a',
+                                      'id': 'chatbot',
+                                      'slug': 'chatbot'},
+                                     {'_id': '65ccfed15212e533e99f8029',
+                                      'id': 'agi',
+                                      'slug': 'agi'},
+                                     {'_id': '65ccfed15212e533e99f823c',
+                                      'id': 'ai-bias',
+                                      'slug': 'ai-bias'},
+                                     {'_id': '65ccfed35212e533e99f879b',
+                                      'id': 'ai-revolution',
+                                      'slug': 'ai-revolution'},
+                                     {'_id': '65cd03065212e533e9a59b74',
+                                      'id': 'machine-learning-tutorials',
+                                      'slug': 'machine-learning-tutorials'},
+                                     {'_id': '65cd03865212e533e9a62660',
+                                      'id': 'mlops',
+                                      'slug': 'mlops'},
+                                     {'_id': '65ccfedc5212e533e99fa51a',
+                                      'id': 'artificial-intellingence',
+                                      'slug': 'artificial-intellingence'},
+                                     {'_id': '664e09e19ae42d8f702c40c9',
+                                      'id': 'diffusion-models',
+                                      'slug': 'diffusion-models'},
+                                     {'_id': '65ccfed25212e533e99f846f',
+                                      'id': 'ai-governance',
+                                      'slug': 'ai-governance'},
+                                     {'_id': '6705b4ed3bbd61d78aa171ea',
+                                      'id': 'agentic-ai',
+                                      'slug': 'agentic-ai'},
+                                     {'_id': '65ccfed25212e533e99f851d',
+                                      'id': 'ai-in-education',
+                                      'slug': 'ai-in-education'},
+                                     {'_id': '65cd084e5212e533e9aaf350',
+                                      'id': 'transformer-architecture',
+                                      'slug': 'transformer-architecture'},
+                                     {'_id': '65ccfed25212e533e99f8336',
+                                      'id': 'ai-development',
+                                      'slug': 'ai-development'},
+                                     {'_id': '67d360cef7a8bcc9036da1f9',
+                                      'id': 'ai-native-development',
+                                      'slug': 'ai-native-development'},
+                                     {'_id': '65ccfed35212e533e99f877c',
+                                      'id': 'ai-regulation',
+                                      'slug': 'ai-regulation'},
+                                     {'_id': '65ccfed35212e533e99f868e',
+                                      'id': 'ai-models',
+                                      'slug': 'ai-models'},
+                                     {'_id': '65cd055f5212e533e9a825e1',
+                                      'id': 'rag',
+                                      'slug': 'rag'},
+                                     {'_id': '65cd01a15212e533e9a40fd3',
+                                      'id': 'image-recognition',
+                                      'slug': 'image-recognition'},
+                                     {'_id': '65ccfed35212e533e99f88c9',
+                                      'id': 'ai-training-data',
+                                      'slug': 'ai-training-data'},
+                                     {'_id': '65ccfed15212e533e99f80ee',
+                                      'id': 'ai-adoption',
+                                      'slug': 'ai-adoption'},
+                                     {'_id': '65cd03065212e533e9a59ba0',
+                                      'id': 'machine-learning-uses',
+                                      'slug': 'machine-learning-uses'},
+                                     {'_id': '65cd04545212e533e9a7006f',
+                                      'id': 'open-ai',
+                                      'slug': 'open-ai'},
+                                     {'_id': '65cd00575212e533e9a25937',
+                                      'id': 'facial-recognition',
+                                      'slug': 'facial-recognition'},
+                                     {'_id': '65cd071f5212e533e9a9c7ce',
+                                      'id': 'stable-diffusion',
+                                      'slug': 'stable-diffusion'},
+                                     {'_id': '65cd00e95212e533e9a3250a',
+                                      'id': 'gpt-3',
+                                      'slug': 'gpt-3'},
+                                     {'_id': '65cd003f5212e533e9a235bf',
+                                      'id': 'ethical-ai',
+                                      'slug': 'ethical-ai'},
+                                     {'_id': '65cd00705212e533e9a27df4',
+                                      'id': 'fine-tuning-llms',
+                                      'slug': 'fine-tuning-llms'},
+                                     {'_id': '65cd0a045212e533e9ac89c2',
+                                      'id': 'zero-shot-learning',
+                                      'slug': 'zero-shot-learning'},
+                                     {'_id': '65ccfed25212e533e99f82a3',
+                                      'id': 'ai-code-generation',
+                                      'slug': 'ai-code-generation'},
+                                     {'_id': '65cd00e95212e533e9a32521',
+                                      'id': 'gpt-4',
+                                      'slug': 'gpt-4'},
+                                     {'_id': '65cd084e5212e533e9aaf374',
+                                      'id': 'transformers',
+                                      'slug': 'transformers'},
+                                     {'_id': '67f2d26a5ab5400b305aab29',
+                                      'id': 'mcp',
+                                      'slug': 'mcp'},
+                                     {'_id': '65cd04295212e533e9a6d4cd',
+                                      'id': 'object-detection',
+                                      'slug': 'object-detection'},
+                                     {'_id': '65ccfed15212e533e99f8207',
+                                      'id': 'ai-assisted-coding',
+                                      'slug': 'ai-assisted-coding'},
+                                     {'_id': '65cd05f25212e533e9a896f3',
+                                      'id': 'retrieval-augmented-generation',
+                                      'slug': 'retrieval-augmented-generation'},
+                                     {'_id': '65cd060e5212e533e9a8b188',
+                                      'id': 'robotic-process-automation',
+                                      'slug': 'robotic-process-automation'},
+                                     {'_id': '65cd05865212e533e9a84d8c',
+                                      'id': 'recommendation-systems',
+                                      'slug': 'recommendation-systems'},
+                                     {'_id': '65ccff025212e533e9a0060a',
+                                      'id': 'bot',
+                                      'slug': 'bot'},
+                                     {'_id': '65cd01a15212e533e9a40f42',
+                                      'id': 'image-generation',
+                                      'slug': 'image-generation'},
+                                     {'_id': '65cd00df5212e533e9a3181a',
+                                      'id': 'google-gemini',
+                                      'slug': 'google-gemini'},
+                                     {'_id': '661d29dc0512cb1b407accf3',
+                                      'id': 'transformer-models',
+                                      'slug': 'transformer-models'},
+                                     {'_id': '65cd08db5212e533e9ab794a',
+                                      'id': 'vector-search',
+                                      'slug': 'vector-search'},
+                                     {'_id': '65cd06745212e533e9a918d8',
+                                      'id': 'self-learning',
+                                      'slug': 'self-learning'}],
+                         'topWriterData': [{'_id': '6839c8d4eaa0a365c1da1c17',
+                                            'avatar': 'https://cdn.hackernoon.com/images/iN6H2UigxKapyOHZ6k4N9srFgsw1-3a03zly.jpeg',
+                                            'bio': 'Managing Director @ VML | '
+                                                   'Founder @ Fourth -Mind',
+                                            'count': 10,
+                                            'date': 20251207,
+                                            'displayName': 'Anthony Laneau',
+                                            'expertTags': ['ai-for-science',
+                                                           'ai',
+                                                           'llms'],
+                                            'handle': 'hacker-Antho',
+                                            'id': 'iN6H2UigxKapyOHZ6k4N9srFgsw1',
+                                            'rank': 1,
+                                            'title': None},
+                                           {'_id': '68e64e672b7fd24f43f84520',
+                                            'avatar': 'https://cdn.hackernoon.com/images/ElnBCKKtp2SDZG9UUCXuNkt0Y3B3-0c82bom.png',
+                                            'bio': 'I Build Custom AI Stuff',
+                                            'count': 6,
+                                            'date': 20251207,
+                                            'displayName': 'GlobalHawk',
+                                            'expertTags': ['ai',
+                                                           'gemini-3.0',
+                                                           'generative-engineering'],
+                                            'handle': 'knightbat2040',
+                                            'id': 'ElnBCKKtp2SDZG9UUCXuNkt0Y3B3',
+                                            'rank': 2},
+                                           {'_id': '680d7a7966a2af8f024f886e',
+                                            'avatar': 'https://cdn.hackernoon.com/images/RNIFtsQrHaM2E4rvZipm6j1oZlz1-ax833yj.jpeg',
+                                            'bio': 'AI/ML engineer blending '
+                                                   'fuzzy logic, ethical '
+                                                   'design, and real-world '
+                                                   'deployment. ',
+                                            'count': 5,
+                                            'date': 20251207,
+                                            'displayName': 'superorange0707',
+                                            'expertTags': ['ai',
+                                                           'neuroscience-and-ai',
+                                                           'neuro-symbolic-ai'],
+                                            'handle': 'superorange0707',
+                                            'id': 'RNIFtsQrHaM2E4rvZipm6j1oZlz1',
+                                            'rank': 3},
+                                           {'_id': '65ccedc95212e533e98cae38',
+                                            'avatar': 'https://cdn.hackernoon.com/images/AGr8KngsfDgFeQNG1b8p0b616hy2-hf031tc.png',
+                                            'bio': 'AI Engineer and Product '
+                                                   'Manager. Building '
+                                                   'turingtalks.ai.',
+                                            'count': 4,
+                                            'date': 20251207,
+                                            'displayName': 'Manish '
+                                                           'Shivanandhan',
+                                            'expertTags': ['ai-workflows',
+                                                           'workflow-automation',
+                                                           'sevalla-cloud'],
+                                            'handle': 'manishmshiva',
+                                            'id': 'AGr8KngsfDgFeQNG1b8p0b616hy2',
+                                            'rank': 4},
+                                           {'_id': '6927f0ca8ebc592bb2e4b7e7',
+                                            'avatar': 'https://cdn.hackernoon.com/images/Hq3D1pIy94bdYVNUvQG9UCmkb1i2-j7234qi.jpeg',
+                                            'bio': 'Dippu is a strategic Data '
+                                                   '& Analytics leader and '
+                                                   'thought leader in emerging '
+                                                   'solutions, including '
+                                                   'Computer Vision and '
+                                                   'Generative AI/LLMs. ',
+                                            'count': 3,
+                                            'date': 20251207,
+                                            'displayName': 'Dippu Kumar Singh',
+                                            'expertTags': ['retrieval-augmented-generation',
+                                                           'hybrid-rag',
+                                                           'knowledge-graph'],
+                                            'handle': 'dippusingh',
+                                            'id': 'Hq3D1pIy94bdYVNUvQG9UCmkb1i2',
+                                            'rank': 5},
+                                           {'_id': '65ccee8e5212e533e9902b5f',
+                                            'avatar': 'https://cdn.hackernoon.com/images/i2ucL9JOyqNIH2sJvpyCnp4rqDk1-zv83tzx.jpeg',
+                                            'bio': 'Australian technology news '
+                                                   'journalist. Matt, 20 years '
+                                                   'of IT systems & networking '
+                                                   'engineering + security '
+                                                   'turned Journo. ',
+                                            'count': 3,
+                                            'date': 20251207,
+                                            'displayName': 'Matthew - '
+                                                           'Technology News '
+                                                           'Australia',
+                                            'expertTags': ['ai',
+                                                           'ai-agents',
+                                                           'ai-agent-strategy'],
+                                            'handle': 'technologynews',
+                                            'id': 'i2ucL9JOyqNIH2sJvpyCnp4rqDk1',
+                                            'rank': 6,
+                                            'title': None},
+                                           {'_id': '65cceed35212e533e991615d',
+                                            'avatar': 'https://cdn.hackernoon.com/images/u9GiHUrKXAb43BcKSHXVMlkqOEX2-j493ola.jpeg',
+                                            'bio': 'Working in the clouds '
+                                                   'around Seattle ... sailing '
+                                                   "when it's clear.",
+                                            'count': 2,
+                                            'date': 20251207,
+                                            'displayName': 'Simon Y. Blackwell',
+                                            'expertTags': ['ai',
+                                                           'ai-empathy',
+                                                           'ai-emotion'],
+                                            'handle': 'anywhichway',
+                                            'id': 'u9GiHUrKXAb43BcKSHXVMlkqOEX2',
+                                            'rank': 7},
+                                           {'_id': '65ccfdd45212e533e99f0c9b',
+                                            'avatar': 'https://cdn.hackernoon.com/images/undefined-ol82urp.jpeg',
+                                            'bio': 'PhD Researcher in AI & '
+                                                   'Agent Systems | 18+ Yrs in '
+                                                   'Web, Data & Growth | '
+                                                   'Helping Devs Stay Ahead '
+                                                   'with AI & Productivity To',
+                                            'count': 2,
+                                            'date': 20251207,
+                                            'displayName': 'Vladislav Guzey',
+                                            'expertTags': ['ai',
+                                                           'ai-agent',
+                                                           'ai-agents'],
+                                            'handle': 'proflead',
+                                            'id': '0iu1pHRMnqOT3GqhiW0OP3lK20h1',
+                                            'rank': 8,
+                                            'title': None},
+                                           {'_id': '65cceea65212e533e9909c44',
+                                            'avatar': 'https://cdn.hackernoon.com/images/avatars/mRtmiu2SfNY3sGIulKnQU0BZTv23.jpg',
+                                            'bio': 'Founder @ NowSourcing | '
+                                                   'Contributor at Hackernoon '
+                                                   '| Advisor: Google Small '
+                                                   'Biz, SXSW | Founder of The '
+                                                   'Innovate Summit',
+                                            'count': 2,
+                                            'date': 20251207,
+                                            'displayName': 'Brian Wallace',
+                                            'expertTags': ['ai',
+                                                           'prevent-online-fraud',
+                                                           'ai-fraud-detection'],
+                                            'handle': 'brianwallace',
+                                            'id': 'mRtmiu2SfNY3sGIulKnQU0BZTv23',
+                                            'rank': 9,
+                                            'title': None},
+                                           {'_id': '692758118ebc592bb2e3afb8',
+                                            'avatar': 'https://cdn.hackernoon.com/avatars/BRomBr0lJUMpSHXPdVpy9KwhuyR2.png',
+                                            'bio': 'I am a Senior Member of '
+                                                   'Technical Staff at '
+                                                   'Salesforce, where I build '
+                                                   'AI-driven enterprise '
+                                                   'solutions that integrate '
+                                                   'LLM.',
+                                            'count': 2,
+                                            'date': 20251207,
+                                            'displayName': 'Nikita Kothari',
+                                            'expertTags': ['ai',
+                                                           'java',
+                                                           'system-design'],
+                                            'handle': 'nikitakothari',
+                                            'id': 'BRomBr0lJUMpSHXPdVpy9KwhuyR2',
+                                            'rank': 10}]}},
+ 'query': {'category': 'ai'},
+ 'scriptLoader': []}
