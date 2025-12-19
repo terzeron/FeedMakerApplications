@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "collection": {
+      "item_capture_script": "../capture_item_naverwebtoon.py -n 5",
+      "list_url_list": [
+        "https://comic.naver.com/api/article/list?titleId=845515&sort=DESC"
+      ],
+      "sort_field_pattern": "no=(\\d+)\\t",
+      "unit_size_per_day": 1,
+      "render_js": false
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wt_viewer"
+      ],
+      "post_process_script_list": [
+        "download_merge_split.py -c blackorwhite -m -b 100 -n 30"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) NAVER Corp. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/training_camp_in_fantasy.xml",
+      "title": "판타지 입소대::네이버"
+    }
+  }
+}
