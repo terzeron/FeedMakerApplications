@@ -6,10 +6,10 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
-        "https://wtwt322.com/v1?toon=1075"
+        "https://wtwt322.com/v1?toon=4864"
       ],
       "sort_field_pattern": "\\t(\\d+)",
-      "unit_size_per_day": 5,
+      "unit_size_per_day": 24,
       "window_size": 10
     },
     "extraction": {
@@ -27,8 +27,8 @@
       "copyright": "Copyright (c) W툰. All rights reserved.",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/lone_wolf.xml",
-      "title": "독고::W툰",
+      "link": "https://terzeron.com/lone_wolf3.xml",
+      "title": "독고3 :: W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
   }

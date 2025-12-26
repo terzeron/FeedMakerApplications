@@ -8,8 +8,9 @@
       "list_url_list": [
         "https://wtwt322.com/v1?toon=1105"
       ],
-      "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 0.1
+      "sort_field_pattern": "num=(\\d+)",
+      "unit_size_per_day": 24,
+      "window_size": 10
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
