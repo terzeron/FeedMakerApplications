@@ -3,8 +3,8 @@
     "collection": {
       "encoding": "cp949",
       "ignore_old_list": true,
-      "is_completed": true,
-      "item_capture_script": "../capture_item_wtwt.py -n 300",
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
         "https://wtwt322.com/v1?toon=4864"
       ],
