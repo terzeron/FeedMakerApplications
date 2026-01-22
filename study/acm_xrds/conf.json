@@ -1,0 +1,28 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "ignore_old_list": false,
+      "item_capture_script": "./capture_item_link_title.py -n 300",
+      "sort_field_pattern": "\\t(\\S+)",
+      "unit_size_per_day": 2,
+      "render_js": true,
+      "list_url_list": [
+        "https://xrds.acm.org/archives.cfm"
+      ],
+      "window_size": 10
+    },
+    "extraction": {
+      "element_class_list": [
+        "article-a"
+      ]
+    },
+    "rss": {
+      "title": "ACM XRDS",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) ACM. All Rights Reserved",
+      "link": "https://terzeron.com/acm_xrds.xml",
+      "language": "ko"
+    }
+  }
+}

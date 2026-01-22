@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "ignore_old_list": false,
+      "sort_field_pattern": "\\t(\\S+)",
+      "unit_size_per_day": 5,
+      "list_url_list": [
+        "https://cacm.acm.org/issues",
+        "https://cacm.acm.org/issues/2025",
+        "https://cacm.acm.org/issues/2024",
+        "https://cacm.acm.org/issues/2023",
+        "https://cacm.acm.org/issues/2022",
+        "https://cacm.acm.org/issues/2021",
+        "https://cacm.acm.org/issues/2020"
+      ],
+      "window_size": 10
+    },
+    "extraction": {
+      "element_class_list": [
+        "article-header__subtitle",
+        "article_header__meta",
+        "article-table-of-contents",
+        "article-contents"
+      ]
+    },
+    "rss": {
+      "title": "Communications of the ACM",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) ACM. All Rights Reserved",
+      "link": "https://terzeron.com/acm_communications.xml",
+      "language": "ko"
+    }
+  }
+}

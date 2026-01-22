@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "ignore_old_list": false,
+      "sort_field_pattern": "\\t(\\S+)",
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://queue.acm.org/rss/feeds/queuecontent.xml"
+      ],
+      "item_capture_script": "../capture_item_from_rss.py -t"
+    },
+    "extraction": {
+      "element_class_list": [
+        "container"
+      ]
+    },
+    "rss": {
+      "title": "ACM Queue",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) ACM. All Rights Reserved",
+      "link": "https://terzeron.com/acm_queue.xml",
+      "language": "ko"
+    }
+  }
+}
