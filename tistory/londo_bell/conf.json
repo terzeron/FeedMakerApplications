@@ -1,9 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
-      "ignore_old_list": false,
-      "item_capture_script": "../capture_item_tistory.py -n 5",
+      "is_completed": true,
+      "ignore_old_list": true,
+      "item_capture_script": "../capture_item_tistory.py -n 300",
       "list_url_list": [
         "https://theroniz.tistory.com/category/아크릴%20도색?page=1",
         "https://theroniz.tistory.com/category/아크릴%20도색?page=2",
@@ -17,7 +17,8 @@
         "https://theroniz.tistory.com/category/건담%20제작%26완성?page=5"
       ],
       "sort_field_pattern": "/(\\d+)\\t",
-      "unit_size_per_day": 4
+      "unit_size_per_day": 24,
+      "window_size": 12
     },
     "extraction": {
       "element_class_list": [
