@@ -3,13 +3,13 @@
     "collection": {
       "is_completed": false,
       "ignore_old_list": false,
-      "item_capture_script": "./capture_item_link_title.py -n 5",
+      "item_capture_script": "../mmzone.best/capture_item_link_title.py -n 5",
       "sort_field_pattern": "no=(\\d+)",
       "unit_size_per_day": 1,
       "window_size": 10,
       "list_url_list": [
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_tech",
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?mms_db_name=mmz_qa&keyword=아크릴"
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?category=tech",
+        "https://mmzone.co.kr/mms_tool/mms_tool.php?category=qa"
       ]
     },
     "extraction": {
