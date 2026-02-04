@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(crawler.py:*)",
+      "Bash(python3:*)",
+      "Bash(./post_process.py:*)",
+      "Bash(echo:*)",
+      "Bash(env)"
+    ]
+  }
+}

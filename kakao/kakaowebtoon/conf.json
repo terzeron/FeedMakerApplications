@@ -4,8 +4,7 @@
       "is_completed": false,
       "ignore_old_list": false,
       "list_url_list": [
-        "https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays",
-        "https://gateway-kw.kakao.com/section/v1/pages/general-weekdays"
+        "https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays"
       ],
       "sort_field_pattern": "\\t(\\d\\d\\d\\d-\\d\\d-\\d\\d)",
       "window_size": 20,
@@ -14,7 +13,11 @@
       }
     },
     "extraction": {
-      "bypass_element_extraction": true
+      "bypass_element_extraction": true,
+      "referer": "https://webtoon.kakao.com",
+      "post_process_script_list": [
+        "./post_process.py"
+      ]
     },
     "rss": {
       "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
