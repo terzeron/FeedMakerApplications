@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python capture_item_link_title.py:*)"
+    ]
+  }
+}

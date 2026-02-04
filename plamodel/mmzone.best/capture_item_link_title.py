@@ -19,9 +19,13 @@ def main():
     result_list = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<div class="gallery-title">', line)
+            m = re.search(r'<div class="like-value">L:(?P<like_count>\d+)</div>', line)
             if m:
-                state = 1
+                like_count = int(m.group("like_count"))
+                if like_count > 40:
+                    state = 1
+                else:
+                    state = 0
         elif state == 1:
             m = re.search(r'<div>(?P<title>.+)</div>', line)
             if m:
