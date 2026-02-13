@@ -2,7 +2,7 @@
   "configuration": {
     "render_js": true,
     "collection": {
-      "item_capture_script": "./capture_item_link_title.py -n 20 -t",
+      "item_capture_script": "./capture_item_link_title.py -n 300 -t",
       "list_url_list": [
         "https://hobby.dengeki.com/tag/howto",
         "https://hobby.dengeki.com/tag/howto/page/2",
@@ -14,9 +14,9 @@
         "https://hobby.dengeki.com/plumo_seiha/"
       ],
       "is_completed": true,
-      "sort_field_pattern": "\/(\\d+)",
-      "unit_size_per_day": 1,
-      "window_size": 20
+      "sort_field_pattern": "/(\\d+)",
+      "unit_size_per_day": 4,
+      "window_size": 10
     },
     "extraction": {
       "element_class_list": [
