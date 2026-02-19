@@ -25,7 +25,8 @@
       "post_process_script_list": [
         "download_image.py"
       ],
-      "force_sleep_between_articles": true
+      "force_sleep_between_articles": true,
+      "exclude_ad_images": true
     },
     "rss": {
       "copyright": "Copyright (c) hobby.dengeki.com. All Rights Reserved",

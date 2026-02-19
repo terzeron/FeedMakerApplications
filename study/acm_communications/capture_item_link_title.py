@@ -25,12 +25,13 @@ def main() -> int:
     line_list = IO.read_stdin_as_line_list()
     result_list: List[Tuple[str, str]] = []
     issue_links_set = set()
-    crawler = Crawler(render_js=False, timeout=60)
+    crawler = Crawler(render_js=True, timeout=60)
 
     current_link = None
     for line in line_list:
         # communication_archive.html:
         # <a class="archive-issue-timeline-issues-item" href="https://cacm.acm.org/issue/january-2026/">
+        # <figure>...</figure>
         # <span class="archive-issue-timeline-issues-item-title">
         # January 2026
         m = re.search(r'<a class="archive-issue-timeline-issues-item" href="([^"]+)">', line)
@@ -39,8 +40,8 @@ def main() -> int:
             continue
 
         if current_link:
-            # title이 있는 줄 찾기 (</span> 태그 포함 가능)
-            title_match = re.search(r'^\s*([A-Za-z]+\s+\d{4})\s*(?:</span>)?', line)
+            # title이 있는 줄 찾기 (탭/공백으로 시작, Month Year 형식)
+            title_match = re.search(r'^\s*([A-Za-z]+\s+\d{4})\s*(?:</span>)?$', line)
             if title_match:
                 issue_link = current_link
                 if issue_link not in issue_links_set:

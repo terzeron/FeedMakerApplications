@@ -25,9 +25,12 @@ def main() -> int:
     line_list = IO.read_stdin_as_line_list()
     result_list: List[Tuple[str, str]] = []
     issue_links_set = set()
-    crawler = Crawler(render_js=False, timeout=60)
+    crawler = None
+    max_volumes = 10  # 처음 10개 볼륨만 크롤링
 
     for line in line_list:
+        if len(issue_links_set) >= max_volumes:
+            break
         # xrds_archive.html: <h3><a href="archives.cfm?iid=3764099">Summer 2025 | Volume 31, No. 4</a></h3>
         m = re.search(r'<h3><a href="(archives\.cfm\?iid=\d+)">', line)
         if m:
@@ -36,7 +39,14 @@ def main() -> int:
                 issue_links_set.add(issue_link)
                 print(f"Crawling {issue_link}...", file=sys.stderr)
 
-                html, error, _ = crawler.run(issue_link)
+                try:
+                    if crawler is None:
+                        crawler = Crawler(render_js=True, timeout=60)
+                    html, error, _ = crawler.run(issue_link)
+                except Exception as e:
+                    print(f"  Browser error, restarting: {e}", file=sys.stderr)
+                    crawler = Crawler(render_js=True, timeout=60)
+                    html, error, _ = crawler.run(issue_link)
 
                 if debug and html:
                     iid = m.group(1).split('=')[1]
