@@ -9,9 +9,7 @@
       "unit_size_per_day": 5,
       "list_url_list": [
         "https://cacm.acm.org/issues",
-        "https://cacm.acm.org/issues/2025",
-        "https://cacm.acm.org/issues/2024",
-        "https://cacm.acm.org/issues/2023"
+        "https://cacm.acm.org/issues/2025"
       ],
       "window_size": 10
     },
