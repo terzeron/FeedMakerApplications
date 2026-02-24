@@ -5,11 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "bs4>=0.0.2",
-    "feedparser>=6.0.12",
-    "ordered-set>=4.1.0",
-    "urllib3>=2.5.0",
-    "requests>=2.32.5",
-    "psutil>=7.1.0",
-    "termcolor>=3.1.0",
+      "fm",
+      "feedparser>=6.0.12",
+      "termcolor>=3.1.0",
 ]
+
+[tool.uv.sources]
+fm = { path = "../fm", editable = true }
