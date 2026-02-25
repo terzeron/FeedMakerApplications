@@ -1,0 +1,25 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "ignore_old_list": false,
+      "sort_field_pattern": "\\t(\\S+)",
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "https://rss.slashdot.org/Slashdot/slashdotMain"
+      ],
+      "item_capture_script": "../capture_item_from_rss.py -t -n 100"
+    },
+    "extraction": {
+      "render_js": true,
+      "bypass_element_extraction": true
+    },
+    "rss": {
+      "title": "Slashdot",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Slashdot.org. All Rights Reserved",
+      "link": "https://terzeron.com/slashdot.xml",
+      "language": "ko"
+    }
+  }
+}

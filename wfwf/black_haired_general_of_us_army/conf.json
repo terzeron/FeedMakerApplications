@@ -4,31 +4,31 @@
       "encoding": "cp949",
       "ignore_old_list": true,
       "is_completed": true,
-      "item_capture_script": "../capture_item_wtwt.py -n 300",
+      "item_capture_script": "../capture_item_wfwf.py -n 300",
       "list_url_list": [
-        "https://wtwt322.com/c1?toon=14100"
+        "https://wfwf447.com/list?toon=75873"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 0.5
+      "unit_size_per_day": 2
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
-      "force_sleep_between_articles": true,
       "element_class_list": [
-        "wbody"
+        "image-view"
       ],
       "encoding": "cp949",
       "post_process_script_list": [
-        "download_image.py"
+        "download_image.py",
+        "../remove_anchor_images.sh"
       ]
     },
     "rss": {
-      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/sakamoto_days.xml",
-      "title": "사카모토 데이즈::W툰",
-      "url_prefix_for_guid": "https://wtoon40.com"
+      "link": "https://terzeron.com/black_haired_general_of_us_army.xml",
+      "title": "검은머리 미군 대원수 :: 늑대닷컴",
+      "url_prefix_for_guid": "https://wfwf24.com"
     }
   }
 }
