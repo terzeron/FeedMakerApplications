@@ -4,12 +4,17 @@
     "collection": {
       "item_capture_script": "./capture_item_link_title.py -n 300 -t",
       "list_url_list": [
+        "https://hobby.dengeki.com/tag/howto/page/1",
         "https://hobby.dengeki.com/tag/howto/page/2",
+        "https://hobby.dengeki.com/tag/howto/page/3",
+        "https://hobby.dengeki.com/tag/howto/page/4",
+        "https://hobby.dengeki.com/tag/howto/page/5",
+        "https://hobby.dengeki.com/tag/howto/page/6",
         "https://hobby.dengeki.com/plumo_seiha/"
       ],
       "is_completed": true,
       "sort_field_pattern": "/(\\d+)",
-      "unit_size_per_day": 6,
+      "unit_size_per_day": 18,
       "window_size": 10
     },
     "extraction": {
