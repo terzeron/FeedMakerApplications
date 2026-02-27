@@ -4,13 +4,7 @@
     "collection": {
       "item_capture_script": "./capture_item_link_title.py -n 300 -t",
       "list_url_list": [
-        "https://hobby.dengeki.com/tag/howto",
         "https://hobby.dengeki.com/tag/howto/page/2",
-        "https://hobby.dengeki.com/tag/howto/page/3",
-        "https://hobby.dengeki.com/tag/howto/page/4",
-        "https://hobby.dengeki.com/tag/howto/page/5",
-        "https://hobby.dengeki.com/tag/howto/page/6",
-        "https://hobby.dengeki.com/tag/howto/page/7",
         "https://hobby.dengeki.com/plumo_seiha/"
       ],
       "is_completed": true,
@@ -23,6 +17,7 @@
         "entry_body"
       ],
       "post_process_script_list": [
+        "translation.py",
         "download_image.py"
       ],
       "force_sleep_between_articles": true,
@@ -32,7 +27,7 @@
       "copyright": "Copyright (c) hobby.dengeki.com. All Rights Reserved",
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
-      "link": "https://terzeron.com/dengeki.xml",
+      "link": "https://terzeron.com/dengeki1.xml",
       "title": "電撃ホビーウェブ"
     }
   }
