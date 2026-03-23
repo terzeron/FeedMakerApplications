@@ -8,7 +8,8 @@
       "list_url_list": [
         "https://blog.redelastic.com/feed"
       ],
-      "item_capture_script": "../capture_item_from_rss.py -t -n 10"
+      "item_capture_script": "../capture_item_from_rss.py -t -n 10",
+      "verify_ssl": false
     },
     "extraction": {
       "bypass_element_extraction": true
