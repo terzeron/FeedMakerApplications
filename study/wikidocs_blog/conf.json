@@ -1,0 +1,23 @@
+{
+  "configuration": {
+    "collection": {
+      "render_js": true,
+      "is_completed": false,
+      "ignore_old_list": false,
+      "item_capture_script": "./capture_item_link_title.py -n 20",
+      "sort_field_pattern": "/(\\d+)/",
+      "unit_size_per_day": 5,
+      "list_url_list": ["https://wikidocs.net/blog/main/"]
+    },
+    "extraction": {
+      "bypass_element_extraction": true
+    },
+    "rss": {
+      "title": "위키독스 블로그",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) wikidocs.net. All Rights Reserved",
+      "link": "https://terzeron.com/wikidocs_blog.xml",
+      "language": "ko"
+    }
+  }
+}
