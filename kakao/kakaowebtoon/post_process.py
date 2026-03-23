@@ -24,9 +24,26 @@ def compose_description(item, link) -> str:
     description += "    <div>%s</div>\n" % item.get("genre", "")
     description += "    <div>%s</div>\n" % item.get("synopsis", "")[:200]
     description += "    <div><a href='%s'>%s</a></div>\n" % (link, link)
-    description += "    <div><img src='%s'></div>\n" % (item["mergedImage"])
+    if item.get("mergedImage"):
+        description += "    <div><img src='%s'></div>\n" % (item["mergedImage"])
     description += "</div>\n"
     return description
+
+
+def _download_with_retry(crawler: Crawler, url: str, file_path: Path, label: str) -> bool:
+    """이미지 다운로드를 시도하고, 실패 시 5초 후 1회 재시도한다."""
+    import time
+
+    result, error, _ = crawler.run(url, download_file=file_path)
+    if result and not error:
+        return True
+    LOGGER.warning("failed to download %s image '%s' (%s), retrying...", label, url, error)
+    time.sleep(5)
+    result, error, _ = crawler.run(url, download_file=file_path)
+    if result and not error:
+        return True
+    LOGGER.error("can't download %s image '%s' to '%s', %s", label, url, file_path, error)
+    return False
 
 
 def download_and_merge(crawler: Crawler, download_dir_path: Path, background_image_url: str, foreground_image_url: str, item_id: str) -> str:
@@ -35,15 +52,11 @@ def download_and_merge(crawler: Crawler, download_dir_path: Path, background_ima
     merged_image_path = download_dir_path / (item_id + ".png")
 
     if not background_image_path.is_file() or background_image_path.stat().st_size == 0:
-        result, error, _ = crawler.run(background_image_url, download_file=background_image_path)
-        if not result or error:
-            LOGGER.error("can't download background image '%s' to '%s', %s", background_image_url, background_image_path, error)
+        if not _download_with_retry(crawler, background_image_url, background_image_path, "background"):
             return ""
 
     if not foreground_image_path.is_file() or foreground_image_path.stat().st_size == 0:
-        result, error, _ = crawler.run(foreground_image_url, download_file=foreground_image_path)
-        if not result or error:
-            LOGGER.error("can't download foreground image '%s' to '%s', %s", foreground_image_url, foreground_image_path, error)
+        if not _download_with_retry(crawler, foreground_image_url, foreground_image_path, "foreground"):
             return ""
 
     if not merged_image_path.is_file() or merged_image_path.stat().st_size == 0:
@@ -102,7 +115,7 @@ def main() -> int:
         content_id = None
         if item_url:
             # URL에서 ID 추출 (예: .../3802)
-            id_match = re.search(r'/(\d+)$', item_url)
+            id_match = re.search(r"/(\d+)$", item_url)
             if id_match:
                 content_id = id_match.group(1)
 
@@ -127,19 +140,12 @@ def main() -> int:
     item_id = URL.get_short_md5_name(URL.get_url_path(link))
 
     # 이미지 다운로드 및 병합
-    merged_image_url = download_and_merge(
-        crawler,
-        download_dir_path,
-        item["bgImg"],
-        item["mainImg"],
-        item_id
-    )
+    merged_image_url = download_and_merge(crawler, download_dir_path, item["bgImg"], item["mainImg"], item_id)
 
     del crawler
 
     if not merged_image_url:
-        LOGGER.error("can't download and merge images")
-        return -1
+        LOGGER.warning("can't download and merge images, continuing without image")
 
     item["mergedImage"] = merged_image_url
 
