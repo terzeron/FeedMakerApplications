@@ -6,8 +6,11 @@
       "ignore_old_list": false,
       "item_capture_script": "./capture_item_link_title.py -n 20",
       "sort_field_pattern": "/(\\d+)/",
+      "window_size": 20,
       "unit_size_per_day": 5,
-      "list_url_list": ["https://wikidocs.net/blog/main/"]
+      "list_url_list": [
+        "https://wikidocs.net/blog/main/"
+      ]
     },
     "extraction": {
       "bypass_element_extraction": true
