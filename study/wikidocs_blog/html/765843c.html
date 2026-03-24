@@ -1,0 +1,950 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="[SV] Class 의 Polymorphism (다형성)">
+    <meta property="og:type" content="[SV] Class 의 Polymorphism (다형성)">
+    <meta property="og:title" content="[SV] Class 의 Polymorphism (다형성)">
+    <meta property="og:description" content="[SV] Class 의 Polymorphism (다형성)">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/5432/image_202510312009.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@Veri_Fun/5432/">
+
+        
+    <title>[SV] Class 의 Polymorphism (다형성)
+        - 즐거운 검증
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@Veri_Fun/5298/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">[SV] Class 의 Polymorphism (다형성)</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@Veri_Fun/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @Veri_Fun
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 10월 31일 8:13 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@Veri_Fun/?tag=2505"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            클래스
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@Veri_Fun/?tag=2504"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            회로검증
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@Veri_Fun/?tag=2469"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            검증
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@Veri_Fun/?tag=2467"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            시스템베릴로그
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@Veri_Fun/?tag=2466"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Systemverilog
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@Veri_Fun/?tag=2465"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Verification
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@Veri_Fun/?tag=2464"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            회로
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="1-systemverilog-polymorphism">1. SystemVerilog 에서의 Polymorphism</h2>
+<ul>
+<li>Object Oriented Programming(OOP) 에서 Polymorphism(다형성) 은 하나의 인터페이스로 여러 가지 형태의 동작을 구현할 수 있는 특성을 이야기 함</li>
+<li>SystemVerilog 에서의 polymorphism 은 superclass type의 variable 을 사용하여 subclass 의 object 를 reference 할 때, superclass 의 variable 을 사용하여 subclass 의 method 를 access 할 수 있도록 함으로써 구현 된다</li>
+<li>이렇게 하기 위해서는 class 에 정의된 method 를 virtual 로 선언해야 함</li>
+<li>virtual 로 선언되지 않은 method 는 subclass object 를 superclass type variable로 referencing 할 때, superclass 에서 선언된 method 를 access 하게 됨</li>
+<li>그래서 SystemVerilog 의 Polymorphism 은 base class 로 만들어 놓은 infra 를 extend 된 class 들이 extended 된 class 의 기능을 가지고 이용하도록 하는 효과를 제공함</li>
+<li>이 특징은 재사용, 확장성 측면에서 매우 유용한 benefit 을 제공함 </li>
+</ul>
+<h2 id="2-sv-class-polymorphism">2. SV Class polymorphism 이해</h2>
+<ul>
+<li>Base class 와 extend 된 class 가 아래와 같이 있다고 가정한다</li>
+<li>method_a() 는 non-virtual 이고, method_b() 는 virtual 로 선언되어 있다</li>
+<li>
+<p>그리고 method_a() 와 method_b() 모두 extend 된 class 에서 재정의 하였다<br />
+<img alt="" src="https://wikidocs.net/images/blog/5432/image_202510312009.png" /><br />
+[ BasePacket 과 NewPacket 의 정의 ]</p>
+</li>
+<li>
+<p>각각 BasePacket 과 NewPacket 의 type handle 로 생성된 object 를 reference 한다면 아래와 같이 access 된다<br />
+<img alt="" src="https://wikidocs.net/images/blog/5432/image_202510312009_1LBerpn.png" /><br />
+[ Class 들의 생성과 Access ]</p>
+</li>
+<li>
+<p>만약, BasePacket type 의 variable, 즉 handle 로 NewPacket 의 object 를 referencing 한다면, method 의 type 에 따라서 아래의 그림과 같이 handle 로 reference 해서 access 할때 virtual 과 non-virtual 은 다르게 access 된다</p>
+</li>
+<li>Non-virtual type 인 method_a()는 BP.method_a() 로 access 하면, BasePacket 에서 정의된 method_a() 가 access 되고</li>
+<li>Virtual type 인 method_b() 는 BP.method_b() 로 access 하면, NewPacket 에서 정의된 method_b() 가 access 된다</li>
+<li>Virtual 로 정의된 method는 이렇게 superclass 에서 정의된 method 가 subclass의 method로 override 되어지고, 이는 polymorphism 의 핵심 특징으로 사용된다<br />
+<img alt="" src="https://wikidocs.net/images/blog/5432/image_202510312010.png" /><br />
+[BasePacket handle로 NewPacket object 엑세스]</li>
+</ul>
+<h2 id="3-sv-class-polymorphism">3. SV Class Polymorphism 응용</h2>
+<ul>
+<li>Polymorphism 은 다음과 같이 응용된다</li>
+<li>
+<p>아래의 그림과 같이 BasePacket 에서 ErrPacket, NewPacket, 그리고 NewPacket 에서 NewErrPacket 이 extend 되고, 각 class에서 virtual 인 method_a() 가 재정의 되었다고 가정하자<br />
+<img alt="" src="https://wikidocs.net/images/blog/5432/image_202510312010_e1f0my1.png" /><br />
+[ Class의 확장과 method override ]</p>
+</li>
+<li>
+<p>첫번째 경우로, BasePacket type 으로 BP_Array 가 5개의 array variable 로 선언된 경우, BP_Array[n] 은 BasePacket type 의 handle 이다</p>
+</li>
+<li>이때 BasePacket, NewPacket, ErrPacket, NewErrPacket type 으로 handle 을 선언하고, 각각 object 를 생성하여 assign 하고, BP_Array[0] ~ BP_Array[3] 까지 assign 한다.  BP_Array[n] element 은 base class 이므로 extended class 들 object 를 assign 하는 것은 문제 없는 assign 이다</li>
+<li>그리고, 그리고, BP_Array[n].method_a() 를 호출하면 각각 element 에 연결되어 있는 object 의 class type 에서 정의된 method_a() 들이 access 된다</li>
+<li>
+<p>이는 BP_Array[n] 이라는 하나의 type 의 인터페이스로 여러 type 형태의 동작을 구현할 수 있게 해 준다<br />
+<img alt="" src="https://wikidocs.net/images/blog/5432/image_202510312011.png" /><br />
+[ BasePacket type array에 응용 ]</p>
+</li>
+<li>
+<p>두번째 경우로, BasePacket type 을 argument 로 하는 trans_pkt() 라는 task 가 구현되어 있다고 가정하고, task 내에서는 argument 인 PKT의 method_a() 를 호출해서 사용하는 경우를 생각해 보자</p>
+</li>
+<li>BasePacket, NewPacket, ErrPacket, NewErrPacket type 의 handle 을 선언하고, 각각의 type별로 object 를 생성하여 assign 되었다고 하자</li>
+<li>그리고 각 type의 handle 을 tran_pkt() 에 argument 로 전달할 때, tran_pkt() 내에서 실행되는 PKT.method_a() 는 전달되는 class 의 type 에 따라서 각 type에서 정의된 method_a() 가 실행되게 된다</li>
+<li>
+<p>즉, trans_pkt( BasePacket PKT ) 라는 하나의 인터페이스를 사용하여 여러 형태의 동작 기능이 구현될 수 있도록 해 주는 것이다<br />
+<img alt="" src="https://wikidocs.net/images/blog/5432/image_202510312012.png" /><br />
+[ BasePacket type argument의 trans_pkt() 활용 ]</p>
+</li>
+<li>
+<p>이와 같이 SystemVerilog 의 Class 에서 polymorphism 은 virtual method 를 사용하여 구현되며, 이는 재사용성, 확장성 활용을 극대화 시켜주며, UVM 등의 methodology 를 제공할 수 있는 특징이 된다</p>
+</li>
+</ul>
+<h2 id="_1">참고</h2>
+<p><a href="https://inf.run/kD1ep">[인프런] SystemVerilog Testbench</a><br />
+<a href="https://wikidocs.net/book/8302">위키독스 - UVM TB</a></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 10월 31일 8:15 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@Veri_Fun/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/KakaoTalk_20230927_093417413.jpg"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@Veri_Fun/">@Veri_Fun</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/352/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/352/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/5432/add_comment/"
+                      method="post"
+                      hx-post="/blog/5432/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="U41r4QuqvqFUiZIs6gr9ACIZHVKrt6FRaO9LpTF6bM1R3yhlNfDk3RyA3PnwVTGB">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @Veri_Fun 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@Veri_Fun/5432/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            [SV] Class 의 Polymorphism (다형성)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 10월 31일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@Veri_Fun/5298/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [SV] Class의 Inheritance(상속)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 10월 15일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@Veri_Fun/5179/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [SV] Class 의 이해
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 10월 01일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@Veri_Fun/3299/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [좋은 글] 게으름 박살 내는 4가지 성공 비결
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 01일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@Veri_Fun/2366/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [좋은 글] 나태한 나를 정신 번쩍 들게 한 5가지 문장
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 2
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/352/5432/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @Veri_Fun 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/8302">
+                    
+                        <img src="https://static.wikidocs.net/images/book/UVM_TB_표지.png"
+                             alt="UVM Testbench 작성"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/8302"
+                           class="hover:text-red-500 dark:hover:text-red-400">UVM Testbench 작성</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        이 책을 통하여 UVM을 사용한 Testbench를 이해하고, 직접 구현해 볼 수 있도록 제반 사항을 설명합니다.
+
+읽는 분에 대한 가정 :   
+  
+ Verilog 에…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 10월 1일 11:30 오전</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">153</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-5432"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-5432"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/5432/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@Veri_Fun/5298/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/5298/image_202510151636.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            [SV] Class의 Inheritance(상속)
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                1. Class 의 확장
+ 정의된 Class 를 확장하여 새로운 형태의 class 를 정…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>5개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@Veri_Fun/5179/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/5179/image_202510011740.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            [SV] Class 의 이해
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                1. Class 설명
+ SystemVerilog 에서의 Class 는 하나의 type 으…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>5개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=765843c'/>

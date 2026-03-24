@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="SSD 하드 드라이브 포맷 완전 가이드">
+    <meta property="og:type" content="SSD 하드 드라이브 포맷 완전 가이드">
+    <meta property="og:title" content="SSD 하드 드라이브 포맷 완전 가이드">
+    <meta property="og:description" content="SSD 하드 드라이브 포맷 완전 가이드">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/9464/Erase_ssd_hard_drive.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@Amrita/9464/">
+
+        
+    <title>SSD 하드 드라이브 포맷 완전 가이드
+        - Erase SSD Hard Drive
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">SSD 하드 드라이브 포맷 완전 가이드</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@Amrita/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @Amrita
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 19일 8:08 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>여러 가지 이유로 SSD 하드 드라이브를 완전히 삭제하고 싶은 상황에 처한 적이 한두 번이 아닐 것입니다. 컴퓨터를 판매할 계획이 있거나, 지속적인 시스템 문제를 해결하려는 경우, 혹은 단순히 새로운 시작을 원할 때 등 그 이유는 다양합니다. 이유가 무엇이든, 주저 없이 SSD를 완전히 초기화해야 합니다. 따라서 파일을 삭제하거나 휴지통을 비우는 것만으로는 충분하지 않습니다. 적절한 도구를 사용하면 개인 데이터가 복구될 가능성이 있기 때문입니다. 그렇기 때문에 SSD 하드 드라이브를 완전히 삭제해야만 개인 정보가 안전하게 보호되고, 드라이브가 깨끗하게 정리되어 다시 사용할 준비가 됩니다. 이 글에서는 왜 삭제가 필요한지, 몇 가지 간단한 방법, 그리고 피해야 할 흔한 실수들에 대해 알아보겠습니다. </p>
+<h4 id="ssd">SSD 하드 드라이브란?</h4>
+<p>SSD 하드 드라이브를 포맷해야 하는 이유를 살펴보기 전에, 먼저 기본 용어를 알아두는 것이 중요합니다. 일반적으로 SSD(Solid State Drive) 하드 드라이브는 문서, 사진, 동영상 등 중요한 데이터를 한곳에 안전하게 보관하는 메모리 드라이브입니다. 누구나 자신의 데이터를 안전하게 보호하고 기밀을 유지하고 싶어하기 때문입니다. 때로는 사용자가 파일을 영구적으로 삭제하더라도, 데이터 복구 도구를 통해 데이터를 복구할 가능성이 높습니다. 그렇기 때문에 SSD 하드 드라이브를 완전히 초기화하는 것이 중요하며, 이를 통해 무단 접근으로부터 개인 정보를 보호할 수 있습니다. 또한, Dell 컴퓨터에서 데이터를 안전하게 <a href="https://www.systoolsgroup.com/updates/dell-data-wipe/">초기화하려면 이 가이드를 참고하시기 바랍니다.</a></p>
+<h3 id="ssd_1">SSD 하드 드라이브를 올바르게 포맷해야 하는 이유</h3>
+<p>때로는 사용자가 파일을 삭제하거나 휴지통을 비우는 것만으로도 데이터가 완전히 제거된다고 생각할 수 있습니다. 안타깝게도 이는 사실이 아니며, 대부분의 경우 데이터는 여전히 복구될 수 있습니다. 따라서 흔적을 남기지 않고 SSD 하드 드라이브를 올바르게 초기화하는 것이 중요합니다. 그렇다면 SSD 하드 드라이브를 정리해야 하는 몇 가지 이유를 알아보겠습니다: <br />
+타인이 귀하의 개인 파일, 비밀번호, 사진 또는 중요한 문서를 복구하지 못하도록 방지합니다.<br />
+기기를 판매하거나 기부하기 전에 정보를 안전하게 보호해야 합니다.<br />
+새로 시작하기만 해도 손상된 파일이나 숨겨진 오류가 모두 제거됩니다.<br />
+드라이브를 제대로 초기화하면 더 원활하게 작동합니다.<br />
+민감한 정보가 잘못된 사람의 손에 들어가지 않도록 항상 주의하십시오.</p>
+<h3 id="ssd_2">SSD 하드 드라이브를 포맷하는 간단한 방법</h3>
+<p>때로는 사용자가 SSD 하드 드라이브를 어떻게 정리해야 할지 잘 모르는 경우가 있습니다. 다행히도, 누구나 쉽게 SSD 하드 드라이브의 데이터를 지울 수 있는 몇 가지 간편한 방법이 있습니다. 사용자는 자신의 필요와 요구 사항에 따라 적합한 방법을 선택할 수 있습니다. 따라서 자동화 도구를 사용하든 공장 초기화를 선택하든, 두 방법 모두 데이터를 올바르게 삭제하는 데 도움이 될 것입니다. </p>
+<h3 id="ssd_3">. SSD 하드 드라이브를 삭제하는 간단한 자동화 절차</h3>
+<p>SSD 하드 드라이브의 데이터를 영구적으로 삭제하고자 하는 사용자는 <a href="https://www.systoolsgroup.com/data-wipe/">SysTools Data Wipe</a>와 같은 전문 소프트웨어를 사용하여 이를 수행할 수 있습니다. 이 도구는 숨겨진 파일이나 기밀 파일을 포함한 모든 저장 데이터를 드라이브에 손상을 주지 않고 완전히 제거해 줍니다. 이러한 도구는 개인용 및 업무용 모두에 적합하며, SSD를 판매하거나, 양도하거나, 기부하거나, 폐기할 계획일 때 유용하게 사용할 수 있습니다.<br />
+삭제하기 전에 중요한 파일은 외장 드라이브나 클라우드 저장소에 반드시 백업해 두십시오.<br />
+이제 시작 메뉴를 열고 설정을 클릭하여 계속 진행하십시오.<br />
+다음으로 복구 섹션을 찾아 선택하십시오.<br />
+시작하려면 재설정 옵션을 클릭하십시오.<br />
+이 옵션은 SSD의 모든 데이터를 삭제합니다.<br />
+작업이 완료되면 모든 데이터가 완전히 삭제되었는지 확인하십시오.<br />
+컴퓨터를 재시작하여 SSD를 다시 사용할 수 있도록 준비하십시오.</p>
+<h3 id="windows">. Windows 공장 초기화 옵션</h3>
+<p>컴퓨터를 판매할 계획이거나 시스템이 느리게 작동한다면, Windows 공장 초기화 기능을 사용하는 것이 더 나은 선택입니다. 이 기능을 사용하면 개인 파일과 설치된 프로그램이 모두 삭제되어 깨끗한 상태로 시작할 수 있습니다. 따라서 공장 초기화 기능이 데이터를 신속하게 정리해 주므로 별도의 소프트웨어를 설치할 필요가 없습니다.<br />
+먼저, 시작 버튼을 클릭하여 설정을 엽니다.<br />
+그런 다음, 복구를 선택하여 시스템으로 이동합니다.<br />
+이제 &#x27;이 PC 초기화&#x27;에서 &#x27;시작하기&#x27;를 클릭하여 시작합니다.<br />
+모든 데이터를 지우려면 &#x27;모든 항목 제거&#x27;를 선택합니다.<br />
+다음으로, 선호하는 방식에 따라 ‘로컬 재설치’ 또는 &#x27;클라우드 다운로드&#x27;를 선택합니다.<br />
+선택 사항을 확인한 후 &#x27;초기화&#x27;를 클릭합니다.<br />
+작업이 완료될 때까지 기다리세요. PC가 재시작되고 공장 출하 시 설정으로 돌아갑니다.</p>
+<h3 id="ssd_4">SSD 하드 드라이브를 포맷할 때 피해야 할 실수들</h3>
+<p>몇 가지 간단한 습관과 방법을 따르기만 하면 데이터를 쉽게 보호할 수 있습니다. 이 과정에서 사소한 실수 하나만으로도 데이터 손실이나 불완전한 삭제 결과가 발생할 수 있습니다. 따라서 SSD 하드 드라이브를 지울 때는 어떤 오류도 발생하지 않도록 주의하며 신중하게 진행해야 합니다.<br />
+중요한 파일은 반드시 다른 드라이브나 클라우드 서비스에 정기적으로 백업해 두십시오.<br />
+파일을 단순히 삭제한다고 해서 SSD에서 데이터가 완전히 제거되는 것은 아닙니다.<br />
+삭제 과정을 시작하기 전에 올바른 SSD를 선택했는지 확인하십시오.<br />
+재설정 중에 시스템을 끄면 기술적인 문제가 발생할 수 있습니다.<br />
+제대로 삭제하지 않으면 데이터가 복구될 수 있습니다.</p>
+<h4 id="_1">끝맺음</h4>
+<p>요약하자면, SSD 하드 드라이브를 포맷하는 것은 데이터를 보호하거나 컴퓨터를 새롭게 시작하기 위한 중요한 단계임이 분명합니다. 단순히 파일을 삭제하는 것만으로는 충분하지 않다는 사실을 이제 알게 되었는데, 전문적인 도구를 사용하면 여전히 파일을 복구할 수 있기 때문입니다. 따라서 SSD 하드 드라이브를 포맷할 때는 올바른 방법을 선택하는 것이 매우 중요합니다. 이때 사용자는 주의를 기울여 문제를 일으킬 수 있는 실수를 피해야 합니다. 따라서 드라이브를 재사용할 수 있도록 준비하려면 반드시 올바르게 삭제해야 합니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 19일 8:08 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@Amrita/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@Amrita/">@Amrita</a>
+                        </h1>
+                        
+                            <p class="text-gray-600 dark:text-gray-400">Erase SSD Hard Drive</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1405/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1405/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9464/add_comment/"
+                      method="post"
+                      hx-post="/blog/9464/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="fHxizoFYq5IwPD6FtwAJ3HjUyQK2F6GQYH0rHIv0ERAiPSDKNoQpjAnIr9qG2XZ7">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">32</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9464"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9464"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9464/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=daf06a4'/>

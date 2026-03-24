@@ -1,0 +1,1187 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="[PythonRobotics] [Autonomous Navigation] [Localization] 04. Histogram filter localization (RFID 필요)">
+    <meta property="og:type" content="[PythonRobotics] [Autonomous Navigation] [Localization] 04. Histogram filter localization (RFID 필요)">
+    <meta property="og:title" content="[PythonRobotics] [Autonomous Navigation] [Localization] 04. Histogram filter localization (RFID 필요)">
+    <meta property="og:description" content="[PythonRobotics] [Autonomous Navigation] [Localization] 04. Histogram filter localization (RFID 필요)">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@hueykim/3979/">
+
+        
+    <title>[PythonRobotics] [Autonomous Navigation] [Localization] 04. Histogram filter localization (RFID 필요)
+        - 따라쟁이의 로봇 공부방
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@hueykim/3900/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@hueykim/4124/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">[PythonRobotics] [Autonomous Navigation] [Localization] 04. Histogram filter localization (RFID 필요)</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@hueykim/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @hueykim
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 5월 19일 10:10 오전</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@hueykim/?tag=1849"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Histogramfilterlocalization
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@hueykim/?tag=1610"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Localization
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@hueykim/?tag=1609"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Autonomousnavigation
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@hueykim/?tag=1519"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Pythonrobotics
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="4-histogram-filter-localization">4. Histogram filter localization</h2>
+<ol>
+<li>Extended Kalman Filter Localization</li>
+<li>Ensamble Kalman Filter Localization</li>
+<li>Unscented Kalman Filter localization</li>
+<li><strong>Histogram filter localization</strong></li>
+<li>Particle filter localization</li>
+</ol>
+<p>준비된 5가지 localization 방법 중에 네번째 Histogram filter localization을 알아봅시다.</p>
+<p><img alt="HFL" src="https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/histogram_filter/animation.gif" /></p>
+<p>위 gif는 Histogram filter를 적용한 2D localization 예시입니다. </p>
+<h3 id="histogram-filter-localization">📊 시각화: Histogram filter localization</h3>
+<ul>
+<li>red cross: 실제 위치 </li>
+<li>black points: RFID 위치</li>
+<li>blue grid: histogram filter의 position probability</li>
+</ul>
+<p>위 시뮬레이션에서, 우리는 로봇의 yaw orientation과 RFID의 위치는 알고 있지만, x,y 위치는 모른다고 가정합니다.</p>
+<p>이 filter는 RFID로부터 speed input과 observations 범위를 사용하여 localization을 수행합니다.</p>
+<p>초기 위치 정보는 필요하지 않습니다. </p>
+<h3 id="rfid">🤖 로봇에서 RFID는?</h3>
+<p>로봇이 위치를 추정할 때, 공간 내에 고정된 RFID 태그들이 있으면,<br />
+로봇이 태그에 가까이 갔을 때 태그 신호의 세기 또는 거리를 측정하여<br />
+&quot;내가 대략 이 근처에 있다&quot;는 정보를 얻을 수 있습니다.</p>
+<p>이게 바로 Histogram Filter나 Particle Filter에서 센서 측정값으로 활용됩니다.</p>
+<h3 id="_1">📌 정리</h3>
+<ul>
+<li>RFID는 무선으로 물체를 인식하는 기술</li>
+<li>로봇에서는 환경에 설치된 RFID 태그를 기준으로 위치 추정에 활용</li>
+<li>GPS를 사용할 수 없는 실내에서 유용</li>
+</ul>
+<p>코드: <a href="https://github.com/AtsushiSakai/PythonRobotics/blob/master/Localization/histogram_filter/histogram_filter.py#L60">histogram_filter.py</a></p>
+<hr />
+<h2 id="1-histogram-filter-localization">🧠 1. Histogram filter localization?</h2>
+<p>Histogram Filter Localization은 로봇이 자신의 위치를 추정할 때 사용하는 확률 기반(localization) 기법 중 하나로, 로봇의 상태(위치와 방향)를 이산적인 격자(grid) 형태로 표현하여 각 위치에서 로봇이 있을 확률을 업데이트합니다. 이는 Bayes 필터(Bayes Filter)의 한 형태로, 공간을 연속적으로 다루지 않고 격자 셀(cell) 단위로 나누어 계산하는 것이 핵심입니다.</p>
+<h2 id="_2">📌 핵심 개념 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기반 이론</strong></td>
+<td>Bayes 필터</td>
+</tr>
+<tr>
+<td><strong>공간 표현</strong></td>
+<td>격자(Grid), 이산화된 상태 공간</td>
+</tr>
+<tr>
+<td><strong>특징</strong></td>
+<td>각 셀에 대해 로봇이 그 셀에 있을 확률을 저장</td>
+</tr>
+<tr>
+<td><strong>장점</strong></td>
+<td>비선형 모델, 복잡한 환경에서도 적용 가능</td>
+</tr>
+<tr>
+<td><strong>단점</strong></td>
+<td>고해상도 격자를 쓸수록 계산량 증가</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">✅ 장점</h2>
+<ul>
+<li>불확실한 환경(센서 오류, 복잡한 맵)에서도 강인함</li>
+<li>비선형, 비가우시안 분포도 표현 가능</li>
+<li>비교적 단순한 개념으로 구현 쉬움</li>
+</ul>
+<h2 id="_4">❌ 단점</h2>
+<ul>
+<li>격자 크기가 작아질수록 계산량 급증 (고해상도일수록 느림)</li>
+<li>연속적인 공간 표현에는 부적절</li>
+<li>3차원 이상 공간에서는 차원의 저주(curse of dimensionality) 발생</li>
+</ul>
+<h2 id="_5">🧠 작동 원리</h2>
+<ol>
+<li>
+<p>초기화 (Initialization)</p>
+<ul>
+<li>전체 공간을 격자 셀로 나누고, 각 셀에 로봇이 있을 확률을 균등하거나 초기 센서 정보 기반으로 설정합니다.</li>
+</ul>
+</li>
+<li>
+<p>예측 단계 (Prediction / Motion Update)</p>
+<ul>
+<li>로봇의 움직임 모델(예: odometry)을 이용해, 현재 위치 확률 분포를 이동시킵니다.</li>
+<li>각 셀의 확률을 움직임 불확실성을 고려해 인접 셀로 확산시킴.</li>
+</ul>
+</li>
+<li>
+<p>갱신 단계 (Correction / Measurement Update)</p>
+<ul>
+<li>센서 측정(예: 거리 센서, LiDAR)을 바탕으로 각 셀에서의 측정값과 실제 센서값을 비교하여, 일치하는 정도에 따라 확률을 조정합니다.</li>
+</ul>
+</li>
+<li>
+<p>정규화 (Normalization)</p>
+<ul>
+<li>모든 셀의 확률 합이 1이 되도록 정규화합니다.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="filtering-algorithm">Filtering algorithm</h2>
+<ul>
+<li>Histogram filter는 연속 공간에서의 discrete Bayes filter입니다.</li>
+<li>로봇의 존재 확률을 관리하기 위해 규칙적인 그리드를 사용합니다.</li>
+<li>그리드의 확률이 높을수록 로봇이 그곳에 있을 가능성이 높다는 것을 의미합니다.</li>
+<li>해당 시뮬레이션에서는 x-y 위치를 추정하고자 하므로 2D 그리드 데이터를 사용합니다.</li>
+<li>histogram filter가 확률 분포를 추정하는 데는 4단계가 있습니다.</li>
+</ul>
+<h2 id="step1-filter-initialization">Step1: Filter initialization</h2>
+<ul>
+<li>Histogram filter에는 <strong>초기 위치 정보</strong>가 필요하지 않습니다.</li>
+<li>이 경우, 각 그리드 확률을 같은 값으로 초기화할 수 있습니다.</li>
+<li>초기 위치 정보를 활용할 수 있다면, 이를 기반으로 초기 확률을 설정할 수 있습니다.</li>
+<li>초기 위치 정보가 gaussian distribution으로 제공되는 경우 <a href="https://atsushisakai.github.io/PythonRobotics/modules/3_mapping/gaussian_grid_map/gaussian_grid_map.html">Gaussian grid map</a> 가 유용할 수 있습니다.</li>
+</ul>
+<h2 id="step2-predict-probability-by-motion">Step2: Predict probability by motion</h2>
+<ul>
+<li>Histogram filter에서 로봇이 다음 격자로 이동할 때 각 격자의 모든 확률 정보가 이동 방향으로 이동합니다.</li>
+<li>이 과정은 로봇이 움직일 때 확률 분포가 변화하는 것을 나타냅니다.</li>
+<li>로봇이 움직인 후에, 확률 분포가 움직임으로 인한 estimation error를 반영해야 합니다.</li>
+</ul>
+<p>예를 들어, position probability은 관찰에 따라 정점을 이룹니다:<br />
+<img alt="이미지1" src="https://atsushisakai.github.io/PythonRobotics/_images/1.png" /></p>
+<p>그러나 observations 없이는 확률이 불확실해집니다:<br />
+<img alt="이미지2" src="https://atsushisakai.github.io/PythonRobotics/_images/2.png" /></p>
+<p>gaussian filter는 시뮬레이션에서 노이즈를 추가하는 데 사용됩니다.</p>
+<h2 id="step3-update-probability-by-observation">Step3: Update probability by observation</h2>
+<ul>
+<li>이 단계에서는 모든 확률이 관찰 결과에 따라 업데이트됩니다. 이는 bayesian filter의 업데이트 단계입니다.</li>
+<li>확률 업데이트 공식은 사용된 센서 모델에 따라 다릅니다.</li>
+<li>이 시뮬레이션은 range observation model을 사용합니다.</li>
+<li>다음 수식에 의해 각 그리드의 확률이 업데이트 됩니다. </li>
+</ul>
+<p>$$<br />
+p_t = p_{t-1} * h(z)<br />
+$$</p>
+<p>$$<br />
+h(z) = \frac{\text{exp}(-(d - z)^2 /  2 )}{\sqrt{2\pi}}<br />
+$$</p>
+<ul>
+<li>$p_t$는 time $t$에 대한 probability </li>
+<li>$h(z)$는 observation $z$에 대한 observation probability</li>
+<li>$d$는 RD-ID에서 grid center까지의 known distance</li>
+</ul>
+<p>예를 들어 $d$가 3.0일때, $h(z)$ distribution은 다음과 같습니다:<br />
+<img alt="그래프1" src="https://atsushisakai.github.io/PythonRobotics/_images/4.png" /></p>
+<p>RF-ID가 과측될떄, observation probability distribution은 원형을 보입니다:<br />
+<img alt="그래프2" src="https://atsushisakai.github.io/PythonRobotics/_images/3.png" /></p>
+<h2 id="step4-estimate-position-from-probability">Step4: Estimate position from probability</h2>
+<ul>
+<li>각 시간 단계에서 현재 확률 분포로부터 최종 로봇 위치를 계산할 수 있습니다.</li>
+<li>최종 위치를 계산하는 2가지 방법이 있습니다:<ul>
+<li>maximum probability grid position을 사용하는 방법</li>
+<li>average of probability weighted grind position을 사용하는 방법</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="_6">코드 분석하기</h2>
+<h2 id="_7">🧭 시뮬레이션 개요</h2>
+<ul>
+<li><strong>시나리오</strong>: 로봇은 2D 공간을 이동하며, <code>x</code>, <code>y</code> 위치는 모름. 단, <code>yaw</code> 방향은 알고 있다고 가정합니다.</li>
+<li><strong>센서</strong>: RFID 위치가 알려져 있고, 로봇은 각 RFID까지의 거리(오차 포함)를 측정합니다.</li>
+<li><strong>목표</strong>: 시뮬레이션을 통해 로봇의 위치를 확률적으로 추정해나갑니다.</li>
+</ul>
+<hr />
+<h2 id="_8">🧠 알고리즘 구조</h2>
+<h3 id="histogram_filter">histogram_filter 주요 코드</h3>
+<pre><code class="language-python">
+def histogram_filter_localization(grid_map, u, z, yaw):
+    grid_map = motion_update(grid_map, u, yaw)
+
+    grid_map = observation_update(grid_map, z, RANGE_STD)
+
+    return grid_map
+
+def main():
+    print(__file__ + &quot; start!!&quot;)
+
+    # RF_ID positions [x, y]
+    RF_ID = np.array([[10.0, 0.0],
+                      [10.0, 10.0],
+                      [0.0, 15.0],
+                      [-5.0, 20.0]])
+
+    time = 0.0
+
+    xTrue = np.zeros((4, 1))
+    grid_map = init_grid_map(XY_RESOLUTION, MIN_X, MIN_Y, MAX_X, MAX_Y)
+    mx, my = calc_grid_index(grid_map)  # for grid map visualization
+
+    while SIM_TIME &gt;= time:
+        time += DT
+        print(f&quot;{time=:.1f}&quot;)
+
+        u = calc_control_input()
+
+        yaw = xTrue[2, 0]  # Orientation is known
+        xTrue, z, ud = observation(xTrue, u, RF_ID)
+
+        grid_map = histogram_filter_localization(grid_map, u, z, yaw)
+
+        if show_animation:
+            plt.cla()
+            # for stopping simulation with the esc key.
+            plt.gcf().canvas.mpl_connect(
+                'key_release_event',
+                lambda event: [exit(0) if event.key == 'escape' else None])
+            draw_heat_map(grid_map.data, mx, my)
+            plt.plot(xTrue[0, :], xTrue[1, :], &quot;xr&quot;)
+            plt.plot(RF_ID[:, 0], RF_ID[:, 1], &quot;.k&quot;)
+            for i in range(z.shape[0]):
+                plt.plot([xTrue[0, 0], z[i, 1]],
+                         [xTrue[1, 0], z[i, 2]],
+                         &quot;-k&quot;)
+            plt.title(&quot;Time[s]:&quot; + str(time)[0: 4])
+            plt.pause(0.1)
+
+    print(&quot;Done&quot;)    
+
+</code></pre>
+<h3 id="1-init_grid_map">1. 그리드 맵 초기화 (<code>init_grid_map</code>)</h3>
+<p>공간을 <code>0.5m</code> 해상도의 격자로 나눠 각 셀에 확률을 균등하게 초기화합니다.<br />
+초기 확률 분포는 정규화됩니다</p>
+<pre><code class="language-python">def init_grid_map(xy_resolution, min_x, min_y, max_x, max_y):
+    grid_map = GridMap()
+
+    grid_map.xy_resolution = xy_resolution
+    grid_map.min_x = min_x
+    grid_map.min_y = min_y
+    grid_map.max_x = max_x
+    grid_map.max_y = max_y
+    grid_map.x_w = int(round((grid_map.max_x - grid_map.min_x)
+                             / grid_map.xy_resolution))
+    grid_map.y_w = int(round((grid_map.max_y - grid_map.min_y)
+                             / grid_map.xy_resolution))
+
+    # 공간을 `0.5m` 해상도의 격자로 나눠 각 셀에 확률을 균등하게 초기화합니다.
+    grid_map.data = [[1.0 for _ in range(grid_map.y_w)]
+                     for _ in range(grid_map.x_w)]
+      # 초기 확률 분포는 정규화됩니다
+    grid_map = normalize_probability(grid_map)
+
+    return grid_map
+
+</code></pre>
+<h3 id="2-motion_update">2. 이동 모델 (motion_update)</h3>
+<pre><code class="language-python">
+def motion_update(grid_map, u, yaw):
+    grid_map.dx += DT * math.cos(yaw) * u[0]
+    grid_map.dy += DT * math.sin(yaw) * u[0]
+
+    x_shift = grid_map.dx // grid_map.xy_resolution
+    y_shift = grid_map.dy // grid_map.xy_resolution
+
+    if abs(x_shift) &gt;= 1.0 or abs(y_shift) &gt;= 1.0:  # map should be shifted
+        grid_map = map_shift(grid_map, int(x_shift[0]), int(y_shift[0]))
+        grid_map.dx -= x_shift * grid_map.xy_resolution
+        grid_map.dy -= y_shift * grid_map.xy_resolution
+
+    # Add motion noise
+    grid_map.data = gaussian_filter(grid_map.data, sigma=MOTION_STD)
+
+    return grid_map
+
+</code></pre>
+<p>로봇이 이동하면, 확률 분포도 함께 움직여야 합니다. 여기서는 이동 거리에 따라 그리드 맵을 shift하며, 가우시안 블러로 이동 오차를 반영합니다.</p>
+<h3 id="3-observation_update">3. 센서 업데이트 (observation_update)</h3>
+<pre><code class="language-python">
+def calc_gaussian_observation_pdf(grid_map, z, iz, ix, iy, std):
+    # predicted range
+    x = ix * grid_map.xy_resolution + grid_map.min_x
+    y = iy * grid_map.xy_resolution + grid_map.min_y
+    d = math.hypot(x - z[iz, 1], y - z[iz, 2])
+
+    # likelihood
+    pdf = norm.pdf(d - z[iz, 0], 0.0, std)
+
+    return pdf
+
+
+def observation_update(grid_map, z, std):
+    for iz in range(z.shape[0]):
+        for ix in range(grid_map.x_w):
+            for iy in range(grid_map.y_w):
+                grid_map.data[ix][iy] *= calc_gaussian_observation_pdf(
+                    grid_map, z, iz, ix, iy, std)
+
+    grid_map = normalize_probability(grid_map)
+
+    return grid_map
+
+</code></pre>
+<p>센서로부터 거리 측정 값을 받고, 각 셀에서 해당 측정값이 얼마나 그럴듯한지(likelihood) 를 계산하여 확률을 보정합니다.</p>
+<pre><code class="language-python">pdf = norm.pdf(측정거리 - 예상거리, 0.0, std)
+</code></pre>
+<p>센서 업데이트 후에도 다시 확률을 정규화합니다.</p>
+<h3 id="4-draw_heat_map">4. 시각화 (draw_heat_map)</h3>
+<p>matplotlib을 통해 현재 grid map 상에서의 위치 확률 분포를 히트맵으로 시각화합니다.<br />
+- 🔵 파란색이 진할수록 그 위치에 있을 확률이 높습니다.<br />
+- 🔴 붉은 점은 로봇의 실제 위치입니다.<br />
+- ⚫ RFID 위치가 흑점으로 표시됩니다.</p>
+<h3 id="5">5. 🔍 실행 흐름</h3>
+<pre><code class="language-python">while SIM_TIME &gt;= time:
+    u = calc_control_input()
+    xTrue, z, ud = observation(xTrue, u, RF_ID)
+    grid_map = histogram_filter_localization(grid_map, u, z, yaw)
+    draw_heat_map(...)
+
+</code></pre>
+<p>제어 입력 계산 → 실제 위치 이동 및 센서 측정 → 히스토그램 필터로 확률 갱신 → 시각화 </p>
+<h2 id="_9">📌 정리</h2>
+<ul>
+<li>Histogram Filter Localization은 격자 기반의 위치 추정 알고리즘으로, 확률 분포를 직접 시각화하고 이해하기 쉬운 장점이 있습니다.</li>
+<li>Kalman Filter 계열이 가우시안 분포 가정을 한다면, Histogram Filter는 임의의 분포 형태를 가질 수 있어 비선형/복잡한 환경에 적합합니다.</li>
+<li>다만 계산 비용이 커지는 단점이 있으므로, 로봇이 작고 폐쇄된 공간을 다닐 때 유용하게 사용됩니다.</li>
+</ul></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 6월 4일 10:33 오전
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@hueykim/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@hueykim/">@hueykim</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/600/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/600/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">1</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/3979/add_comment/"
+                      method="post"
+                      hx-post="/blog/3979/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="yOFDFnAxHHanMMxMgRKwvzGjOodzy71Q46kt8DtrYRsxqUD7j2GErhOiOai3iCAg">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @hueykim 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@hueykim/4124/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [PythonRobotics] [Autonomous Navigation] [Localization] 05. Particle filter localization (RFID 필요)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 06월 04일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@hueykim/3979/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            [PythonRobotics] [Autonomous Navigation] [Localization] 04. Histogram filter localization (RFID 필요)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@hueykim/3900/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [PythonRobotics] [Autonomous Navigation] [Localization] 03. Unscented Kalman Filter localization
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 14일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@hueykim/3762/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [PythonRobotics] [Autonomous Navigation] [Localization] 02. Ensamble Kalman Filter Localization
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 09일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@hueykim/3200/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [PythonRobotics] [Autonomous Navigation] [Localization] 01. Extended Kalman Filter Localization
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 30일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 3
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/600/3979/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @hueykim 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17483">
+                    
+                        <img src="https://static.wikidocs.net/images/book/isaacsimkr프로필_zw4LV2w_UZpTrOx_7XefYLr_l0fZCdm.png"
+                             alt="따라하면서 배우는 Isaac Sim 입문"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17483"
+                           class="hover:text-red-500 dark:hover:text-red-400">따라하면서 배우는 Isaac Sim 입문</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        Physical AI가 주목받고 있는 시대, 
+인공지능을 활용하여 물리적 결과물을 내고싶다면, 
+로봇을 배우고 싶다면,
+디지털 트윈, 스마트 팩토리, 스마트 팜 
+하고 싶…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 4월 22일 9:34 오전</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">223</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-3979"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-3979"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/3979/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@hueykim/3196/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            [PythonRobotics] [Introduction] 05. Robotics 기술
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                로봇공학 기술
+
+
+로봇공학 분야는 기계공학, 전기공학,  컴퓨터 공학, 인공지능(AI) …
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>10개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@hueykim/3198/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            [PythonRobotics] [Autonomous Navigation] [Localization] Localization
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                Localization
+
+Localization (위치추정)은 로봇이 GNSS(Globa…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>10개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=56c24c8'/>

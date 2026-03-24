@@ -1,0 +1,1354 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="전기기사를 위한 전기 기초 이론">
+    <meta property="og:type" content="전기기사를 위한 전기 기초 이론">
+    <meta property="og:title" content="전기기사를 위한 전기 기초 이론">
+    <meta property="og:description" content="전기기사를 위한 전기 기초 이론">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@volty/3984/">
+
+        
+    <title>전기기사를 위한 전기 기초 이론
+        - 전기노트
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@volty/3983/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">전기기사를 위한 전기 기초 이론</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@volty/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @volty
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 5월 19일 3:20 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@volty/?tag=1850"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            전기기초
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="_1">전기기사를 위한 전기 기초 이론</h2>
+<h2 id="_2">핵심 개념 &amp; 기본 법칙 가이드</h2>
+<hr />
+<p><strong>[제작 목적]</strong><br />
+본 자료는 전기기사 시험을 준비하는 분들이 전기 분야의 기본적인 이론과 핵심 개념을 체계적으로 이해하고 학습할 수 있도록 돕기 위해 제작되었습니다. 전기기사 학습의 기초를 튼튼히 다지는 데 필요한 필수적인 내용들을 담고 있습니다.</p>
+<hr />
+<h3 id="_3">이 자료를 사용하는 목적</h3>
+<p>전기기사 시험은 전기 이론 전반에 대한 깊이 있는 이해를 요구합니다. 본 자료는 그 시작점으로서, 전기의 본질부터 기본적인 회로 이론, 전자기 유도 및 안전 수칙에 이르기까지 전기 학습에 필수적인 기초 지식을 제공합니다. 각 섹션은 전기 현상을 설명하는 기본 개념과 법칙, 그리고 실제 응용에 필요한 부품의 특성을 다루어, 앞으로 심화 학습을 위한 발판을 마련하는 데 집중합니다.</p>
+<h3 id="_4">어떻게 활용할까요?</h3>
+<ol>
+<li><strong>새로운 학습 시작:</strong> 전기 이론을 처음 접하거나 기초부터 다시 다지고 싶은 학습자에게 길잡이가 될 수 있습니다.</li>
+<li><strong>개념 이해 및 복습:</strong> 특정 개념이 혼란스러울 때 해당 섹션을 찾아보며 이해를 명확히 하고 복습하는 자료로 활용하세요.</li>
+<li><strong>심화 학습 전 준비:</strong> 전기기사 필기 과목(전기자기학, 회로이론 등)을 본격적으로 학습하기 전에 전체적인 기초를 다지는 용도로 사용하세요.</li>
+</ol>
+<h3 id="_5">꼭 기억하세요</h3>
+<p>본 자료는 전기기사 학습의 &#x27;기초&#x27;에 해당되는 내용입니다. 실제 전기기사 시험은 이보다 더 깊이 있고 광범위한 내용을 다루므로, 이 자료를 통해 기본기를 다진 후에는 반드시 전기자기학, 회로이론, 전기기기, 전력공학, 설비기준 등 각 과목별 심화 학습과 충분한 문제 풀이를 병행해야 합니다.</p>
+<hr />
+<p><strong>여러분의 전기기사 학습 여정을 응원합니다!</strong></p>
+<hr />
+<h2 id="i">I. 전기의 기본 개념</h2>
+<h3 id="1">1. 전기의 본질</h3>
+<h4 id="_6">원자 구조와 전자</h4>
+<p>모든 물질은 더 이상 쪼갤 수 없는 작은 입자인 원자로 이루어져 있습니다. 원자의 중심에는 (+)전하를 띤 원자핵이 있고, 그 주위를 (-)전하를 띤 전자가 돌고 있습니다.<br />
+* 원자핵: 양성자(+)와 중성자(전하 없음)로 구성됩니다.<br />
+* 전자: (-)전하를 가지며, 원자핵 주위의 특정 궤도를 따라 움직입니다.</p>
+<p>일반적으로 원자는 양성자의 수와 전자의 수가 같아 전기적으로 중성 상태입니다.</p>
+<h4 id="electric-charge">전하 (Electric Charge)</h4>
+<ul>
+<li>정의: 물체가 지니고 있는 전기적인 성질을 나타내는 물리량입니다.</li>
+<li>종류:<ul>
+<li>양전하 (+): 전자를 잃은 상태의 원자 또는 물체가 띠는 전하입니다.</li>
+<li>음전하 (-): 전자를 얻은 상태의 원자 또는 물체가 띠는 전하입니다.</li>
+</ul>
+</li>
+<li>특징:<ul>
+<li>같은 종류의 전하끼리는 서로 밀어내는 힘(척력)이 작용합니다.</li>
+<li>다른 종류의 전하끼리는 서로 끌어당기는 힘(인력)이 작용합니다.</li>
+</ul>
+</li>
+<li>전하량 보존의 법칙: 고립된 계에서 전하의 총량은 항상 일정하게 보존됩니다. 즉, 전하는 새로 생기거나 없어지지 않고 이동만 합니다.</li>
+<li>단위: 쿨롬(C)을 사용합니다. 전자 1개의 전하량은 약 $-1.602 \times 10^{-19} C$ 입니다.</li>
+</ul>
+<h4 id="electric-current">전류 (Electric Current)</h4>
+<ul>
+<li>정의: 전하의 흐름, 즉 단위 시간 동안 도선의 한 단면을 통과하는 전하의 양입니다.</li>
+<li>전류의 방향: 역사적으로 양전하가 이동하는 방향으로 정의되었으나, 실제 도체 내에서는 (-)전하를 띤 자유전자가 이동합니다. 따라서 전류의 방향은 전자의 이동 방향과 반대입니다.</li>
+<li>단위: 암페어(A)를 사용합니다. 1A는 1초 동안 1쿨롬의 전하가 이동하는 것을 의미합니다. ($1 A = 1 C/s$).</li>
+</ul>
+<h4 id="voltage">전압 (Voltage)</h4>
+<ul>
+<li>정의: 전기장 내에서 단위 전하가 갖는 전기적인 위치 에너지의 차이, 즉 전기를 흐르게 하는 능력(압력)입니다.</li>
+<li>전위 (Electric Potential): 전기장 내의 한 점이 갖는 전기적 위치 에너지입니다.</li>
+<li>전위차 (Potential Difference): 전기장 내의 두 점 사이의 전위의 차이로, 이것이 곧 전압입니다. 전위가 높은 곳에서 낮은 곳으로 전류가 흐릅니다.</li>
+<li>기전력 (Electromotive Force, EMF): 전류를 지속적으로 흐르게 하는 원동력으로, 전지나 발전기 등이 제공하는 전압을 의미합니다.</li>
+<li>단위: 볼트(V)를 사용합니다. 1V는 1쿨롬의 전하가 두 점 사이를 이동할 때 1줄(J)의 일을 하는 경우의 전위차입니다 ($1 V = 1 J/C$).</li>
+</ul>
+<h4 id="resistance">저항 (Resistance)</h4>
+<ul>
+<li>정의: 전류의 흐름을 방해하는 정도를 나타내는 물리량입니다.</li>
+<li>발생 원인: 도체 내를 이동하는 전자가 원자들과 충돌하면서 발생합니다.</li>
+<li>저항에 영향을 미치는 요인:<ul>
+<li>물질의 종류: 물질마다 고유한 비저항 값을 가집니다.</li>
+<li>도선의 길이: 길이가 길수록 저항이 커집니다.</li>
+<li>도선의 단면적: 단면적이 넓을수록 저항이 작아집니다.</li>
+<li>온도: 일반적으로 금속 도체는 온도가 높아지면 저항이 커집니다.</li>
+</ul>
+</li>
+<li>단위: 옴($\Omega$)을 사용합니다. 1$\Omega$은 도체에 1V의 전압을 가했을 때 1A의 전류가 흐르는 경우의 저항값입니다.</li>
+</ul>
+<h3 id="2">2. 도체, 부도체, 반도체</h3>
+<p>물질은 전기 전도성에 따라 다음과 같이 분류할 수 있습니다.<br />
+* <strong>도체 (Conductor):</strong> 전기가 잘 통하는 물질입니다. 자유전자(원자핵의 구속에서 벗어나 비교적 자유롭게 이동할 수 있는 전자)가 많아 전하의 이동이 쉽습니다. 예: 구리, 은, 금, 알루미늄 등의 금속, 흑연, 전해질 용액 등.<br />
+* <strong>부도체 (Insulator) 또는 절연체:</strong> 전기가 잘 통하지 않는 물질입니다. 자유전자가 거의 없어 전하의 이동이 매우 어렵습니다. 예: 유리, 고무, 플라스틱, 자기, 종이, 공기 등.<br />
+* <strong>반도체 (Semiconductor):</strong> 도체와 부도체의 중간 정도 전기 전도성을 가지는 물질입니다. 특정 조건(온도, 불순물 첨가 등)에 따라 전기 전도성이 변하는 특징이 있습니다. 예: 규소(실리콘, Si), 저마늄(게르마늄, Ge) 등. 트랜지스터, 다이오드, 집적회로(IC) 등 전자 부품의 핵심 재료로 사용됩니다.</p>
+<h3 id="3">3. 전기 용어 및 단위 정리</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">용어</th>
+<th style="text-align: left;">기호</th>
+<th style="text-align: left;">정의</th>
+<th style="text-align: left;">단위</th>
+<th style="text-align: left;">단위 기호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">전류</td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">전하의 흐름</td>
+<td style="text-align: left;">암페어</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr>
+<td style="text-align: left;">전압 (전위차)</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">전기를 흐르게 하는 압력</td>
+<td style="text-align: left;">볼트</td>
+<td style="text-align: left;">V</td>
+</tr>
+<tr>
+<td style="text-align: left;">저항</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;">전류의 흐름을 방해하는 정도</td>
+<td style="text-align: left;">옴</td>
+<td style="text-align: left;">$\Omega$</td>
+</tr>
+<tr>
+<td style="text-align: left;">전력</td>
+<td style="text-align: left;">P</td>
+<td style="text-align: left;">단위 시간 동안 소비하거나 생산하는 전기 에너지</td>
+<td style="text-align: left;">와트</td>
+<td style="text-align: left;">W</td>
+</tr>
+<tr>
+<td style="text-align: left;">전력량 (전기 에너지)</td>
+<td style="text-align: left;">W</td>
+<td style="text-align: left;">일정 시간 동안 소비하거나 생산한 총 전기 에너지</td>
+<td style="text-align: left;">와트시, 줄</td>
+<td style="text-align: left;">Wh, J</td>
+</tr>
+<tr>
+<td style="text-align: left;">전하량</td>
+<td style="text-align: left;">Q</td>
+<td style="text-align: left;">물체가 띤 전기의 양</td>
+<td style="text-align: left;">쿨롬</td>
+<td style="text-align: left;">C</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ii">II. 기본 전기 법칙</h2>
+<h3 id="1-ohms-law">1. 옴의 법칙 (Ohm&#x27;s Law)</h3>
+<ul>
+<li>정의: 도체에 흐르는 전류의 세기는 두 점 사이의 전압에 비례하고, 전기 저항에 반비례한다는 법칙입니다.</li>
+<li>공식: $V = IR$ 여기서,<ul>
+<li>$V$: 전압 (단위: V)</li>
+<li>$I$: 전류 (단위: A)</li>
+<li>$R$: 저항 (단위: $\Omega$)</li>
+</ul>
+</li>
+<li>공식의 변형:<ul>
+<li>전류 계산: $I = V/R$</li>
+<li>저항 계산: $R = V/I$</li>
+</ul>
+</li>
+<li>관계 설명:<ul>
+<li>전압과 전류: 저항이 일정할 때, 전압이 커지면 전류도 커집니다 (비례 관계).</li>
+<li>저항과 전류: 전압이 일정할 때, 저항이 커지면 전류는 작아집니다 (반비례 관계).</li>
+</ul>
+</li>
+<li>활용 예시:<ul>
+<li>12V 전원에 6$\Omega$의 저항을 연결하면 흐르는 전류는? $I = V/R = 12V / 6\Omega = 2A$.</li>
+<li>어떤 전열기에 220V 전압을 가했더니 5A의 전류가 흘렀다면 이 전열기의 저항은? $R = V/I = 220V / 5A = 44\Omega$.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-electric-power-electrical-energy">2. 전력 (Electric Power) 및 전력량 (Electrical Energy)</h3>
+<h4 id="electric-power">전력 (Electric Power)</h4>
+<ul>
+<li>정의: 단위 시간(1초) 동안 전기 장치에 의해 소모되거나 공급되는 전기 에너지의 양입니다. 즉, 전기가 단위 시간 동안 하는 일의 비율입니다.</li>
+<li>단위: 와트(W)를 사용합니다. 1W는 1초 동안 1줄(J)의 전기 에너지를 사용하는 비율입니다 ($1 W = 1 J/s$).</li>
+<li>계산 공식:<ul>
+<li>$P = VI$ (전압 $\times$ 전류)</li>
+<li>옴의 법칙($V=IR$)을 이용하여 변형하면:<ul>
+<li>$P = I^2R$</li>
+<li>$P = V^2/R$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>일상생활 예시:<ul>
+<li>전구: 60W 전구는 100W 전구보다 소비하는 전력이 작아 덜 밝습니다.</li>
+<li>헤어드라이어: 1200W 헤어드라이어는 600W 헤어드라이어보다 더 많은 전력을 소비하여 더 강한 바람과 열을 냅니다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="electrical-energy">전력량 (Electrical Energy)</h4>
+<ul>
+<li>정의: 일정 시간 동안 사용하거나 생산한 총 전기 에너지의 양입니다.</li>
+<li>단위:<ul>
+<li>와트시(Wh): 1W의 전력을 1시간 동안 사용했을 때의 전력량입니다 (1Wh = 3600J).</li>
+<li>킬로와트시(kWh): 1kW의 전력을 1시간 동안 사용했을 때의 전력량입니다 (1kWh = 1000Wh). 전기 요금 계산 시 주로 사용됩니다.</li>
+<li>줄(J): 에너지의 기본 단위입니다.</li>
+</ul>
+</li>
+<li>계산 공식: $W = Pt$ 여기서,<ul>
+<li>$W$: 전력량</li>
+<li>$P$: 전력 (단위: W 또는 kW)</li>
+<li>$t$: 시간 (단위: h 또는 s)</li>
+</ul>
+</li>
+<li>일상생활 예시:<ul>
+<li>100W 전구를 5시간 동안 사용했다면 소비 전력량은? $W = Pt = 100W \times 5h = 500Wh = 0.5kWh$.</li>
+<li>전기 요금은 이 kWh 단위로 계산됩니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-kirchhoffs-laws-">3. 키르히호프의 법칙 (Kirchhoff&#x27;s Laws) - (심화)</h3>
+<p>복잡한 회로를 해석하는 데 사용되는 중요한 법칙입니다.</p>
+<h4 id="kcl-kirchhoffs-current-law-1">키르히호프의 전류 법칙 (KCL: Kirchhoff&#x27;s Current Law, 제1법칙, 접합점 법칙)</h4>
+<ul>
+<li>정의: 회로 내의 어느 한 접합점(분기점)으로 흘러 들어오는 전류의 총합은 그 접합점에서 흘러 나가는 전류의 총합과 같습니다. 이는 전하량 보존 법칙에 근거합니다.</li>
+<li>수식 표현: $\sum I_{in} = \sum I_{out}$</li>
+<li>의미: 접합점에서 전류가 새로 생기거나 없어지지 않습니다.</li>
+</ul>
+<h4 id="kvl-kirchhoffs-voltage-law-2">키르히호프의 전압 법칙 (KVL: Kirchhoff&#x27;s Voltage Law, 제2법칙, 폐회로 법칙)</h4>
+<ul>
+<li>정의: 회로 내의 임의의 닫힌 루프(폐회로)에서, 모든 전압 상승(기전력)의 합은 모든 전압 강하(저항에 의한 전압 손실)의 합과 같습니다. 또는, 폐회로를 따라 한 바퀴 돌 때 모든 전위차의 대수적 합은 0입니다. 이는 에너지 보존 법칙에 근거합니다.</li>
+<li>수식 표현: $\sum V_{source} = \sum V_{drop}$ 또는 $\sum V = 0$ (폐회로 내에서).</li>
+<li>의미: 폐회로를 따라 한 바퀴 돌면 다시 원래의 전위로 돌아옵니다.</li>
+</ul>
+<h2 id="iii-dc">III. 직류 (DC) 회로</h2>
+<p>직류 (Direct Current, DC): 시간이 지나도 전류의 방향과 크기가 일정한 전류입니다. 건전지, 배터리, 직류 전원 공급 장치 등에서 얻을 수 있습니다.</p>
+<h3 id="1_1">1. 회로의 기본 구성 요소</h3>
+<p>전기 회로는 전류가 흐를 수 있도록 연결된 경로를 의미하며, 일반적으로 다음과 같은 요소들로 구성됩니다.</p>
+<ul>
+<li><strong>전원 (Source):</strong> 회로에 전기 에너지를 공급하는 부분입니다. 전류를 지속적으로 흐르게 하는 기전력을 제공합니다. 예: 건전지, 배터리, 직류 전원 공급 장치 등.</li>
+<li><strong>부하 (Load):</strong> 공급된 전기 에너지를 소비하여 빛, 열, 동력 등 다른 형태의 에너지로 변환하는 부분입니다. 예: 저항기, 전구, 전동기(모터), 발열체 등.</li>
+<li><strong>스위치 (Switch):</strong> 전류의 흐름을 연결하거나 끊는(개폐하는) 역할을 합니다. 회로를 제어하는 데 사용됩니다.</li>
+<li><strong>도선 (Wire):</strong> 전원, 부하, 스위치 등을 연결하여 전류가 흐르는 통로 역할을 합니다. 일반적으로 저항이 매우 작은 도체를 사용합니다 (예: 구리선).</li>
+</ul>
+<h3 id="2_1">2. 저항의 연결</h3>
+<p>회로에서 저항은 필요에 따라 여러 개를 연결하여 사용합니다. 연결 방식에 따라 전체 저항(합성 저항)과 각 저항에 걸리는 전압, 흐르는 전류가 달라집니다.</p>
+<h4 id="series-connection">직렬 연결 (Series Connection)</h4>
+<ul>
+<li>정의: 여러 개의 저항을 한 줄로 이어서 연결하는 방식입니다. 전류가 흐르는 길이 하나뿐입니다.</li>
+<li>특징:<ul>
+<li>전류: 각 저항에 흐르는 전류는 전체 전류와 같습니다 ($I_{total} = I_1 = I_2 = I_3 = ...$).</li>
+<li>전압: 전체 전압은 각 저항에 걸리는 전압의 합과 같습니다 ($V_{total} = V_1 + V_2 + V_3 + ...$).</li>
+<li>합성 저항 ($R_s$): 각 저항의 합과 같습니다. $R_s = R_1 + R_2 + R_3 + ...$.</li>
+<li>하나의 저항이 끊어지면 전체 회로에 전류가 흐르지 않습니다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="parallel-connection">병렬 연결 (Parallel Connection)</h4>
+<ul>
+<li>정의: 여러 개의 저항을 나란히 연결하여 각 저항의 양 끝을 공통된 두 점에 접속하는 방식입니다. 전류가 여러 길로 나뉘어 흐릅니다.</li>
+<li>특징:<ul>
+<li>전압: 각 저항에 걸리는 전압은 전체 전압과 같습니다 ($V_{total} = V_1 = V_2 = V_3 = ...$).</li>
+<li>전류: 전체 전류는 각 저항에 흐르는 전류의 합과 같습니다 ($I_{total} = I_1 + I_2 + I_3 = ...$).</li>
+<li>합성 저항 ($R_p$): 각 저항의 역수의 합의 역수와 같습니다. $1/R_p = 1/R_1 + 1/R_2 + 1/R_3 + ...$ 만약 저항이 두 개($R_1, R_2$) 병렬 연결된 경우: $R_p = (R_1 \times R_2) / (R_1 + R_2)$.</li>
+<li>하나의 저항이 끊어져도 다른 저항에는 전류가 계속 흐를 수 있습니다.</li>
+<li>병렬 연결 시 합성 저항은 연결된 저항 중 가장 작은 저항보다도 작아집니다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="series-parallel-combination-circuit-">직병렬 혼합 회로 (Series-Parallel Combination Circuit) - (심화)</h4>
+<ul>
+<li>정의: 직렬 연결과 병렬 연결이 혼합되어 있는 복잡한 회로입니다.</li>
+<li>해석 방법:<ul>
+<li>회로를 부분적으로 나누어 병렬 연결 부분을 하나의 합성 저항으로 계산합니다.</li>
+<li>다시 직렬 연결 부분을 하나의 합성 저항으로 계산합니다.</li>
+<li>이 과정을 반복하여 전체 합성 저항을 구합니다.</li>
+<li>전체 합성 저항과 전체 전압을 이용하여 전체 전류를 구합니다.</li>
+<li>각 부분의 전류와 전압을 옴의 법칙과 키르히호프의 법칙을 이용하여 차례로 계산합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3_1">3. 간단한 직류 회로 해석</h3>
+<p>옴의 법칙과 저항의 연결 방법을 이용하여 간단한 직류 회로의 전류, 전압, 저항을 계산할 수 있습니다.</p>
+<ul>
+<li>
+<p><strong>예제 1: 직렬 회로</strong><br />
+    3V 전원에 2$\Omega$ 저항과 4$\Omega$ 저항이 직렬로 연결되어 있을 때,</p>
+<ul>
+<li>합성 저항 ($R_s$)은? $R_s = 2\Omega + 4\Omega = 6\Omega$</li>
+<li>회로에 흐르는 전체 전류 ($I_{total}$)는? $I_{total} = V_{total} / R_s = 3V / 6\Omega = 0.5A$.</li>
+<li>각 저항에 걸리는 전압 ($V_1, V_2$)은?<ul>
+<li>$V_1 = I_{total} \times R_1 = 0.5A \times 2\Omega = 1V$</li>
+<li>$V_2 = I_{total} \times R_2 = 0.5A \times 4\Omega = 2V$</li>
+<li>(확인: $V_1 + V_2 = 1V + 2V = 3V = V_{total}$)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>예제 2: 병렬 회로</strong><br />
+    6V 전원에 3$\Omega$ 저항과 6$\Omega$ 저항이 병렬로 연결되어 있을 때,</p>
+<ul>
+<li>합성 저항 ($R_p$)은? $1/R_p = 1/3\Omega + 1/6\Omega = 2/6\Omega + 1/6\Omega = 3/6\Omega = 1/2\Omega$. 따라서 $R_p = 2\Omega$ (또는 $R_p = (3\Omega \times 6\Omega) / (3\Omega + 6\Omega) = 18/9 \Omega = 2\Omega$).</li>
+<li>회로에 흐르는 전체 전류 ($I_{total}$)는? $I_{total} = V_{total} / R_p = 6V / 2\Omega = 3A$.</li>
+<li>각 저항에 흐르는 전류 ($I_1, I_2$)는? (각 저항에는 동일하게 6V 전압이 걸림).<ul>
+<li>$I_1 = V_{total} / R_1 = 6V / 3\Omega = 2A$</li>
+<li>$I_2 = V_{total} / R_2 = 6V / 6\Omega = 1A$</li>
+<li>(확인: $I_1 + I_2 = 2A + 1A = 3A = I_{total}$)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="iv-ac">IV. 교류 (AC) 회로 기초</h2>
+<p>교류 (Alternating Current, AC): 시간이 지남에 따라 전류의 크기와 방향이 주기적으로 변하는 전류입니다. 발전소에서 생산되어 가정이나 산업 현장으로 공급되는 전기가 대표적인 교류입니다.</p>
+<h3 id="1_2">1. 교류의 기본 개념</h3>
+<ul>
+<li>직류와의 차이점:<ul>
+<li>직류(DC): 방향과 크기가 일정 (예: 건전지)</li>
+<li>교류(AC): 방향과 크기가 주기적으로 변함 (예: 가정용 전기)</li>
+</ul>
+</li>
+<li>교류의 발생 원리 (간단히): 자기장 속에서 코일(도선)을 회전시키면 코일을 통과하는 자기장의 변화로 인해 유도 전류가 발생합니다 (전자기 유도 현상). 코일이 회전함에 따라 전류의 방향과 크기가 주기적으로 변하는 교류가 만들어집니다. 발전기가 이러한 원리를 이용합니다.</li>
+<li>파형 (Waveform): 교류의 시간적 변화를 그래프로 나타낸 모양입니다.<ul>
+<li>정현파 (Sine wave): 가장 기본적인 교류 파형으로, 사인 함수($y=sinx$)의 형태로 나타납니다. 가정용 전기는 대부분 정현파 교류입니다.</li>
+<li>기타 파형: 구형파, 삼각파, 톱니파 등 특수한 목적에 사용됩니다.</li>
+</ul>
+</li>
+<li>주요 용어:<ul>
+<li>주기 (Period, $T$): 파형이 한 번 반복되는 데 걸리는 시간입니다. (단위: 초, s).</li>
+<li>주파수 (Frequency, $f$): 1초 동안 파형이 반복되는 횟수입니다. 주파수는 주기의 역수 관계입니다 ($f=1/T$). (단위: 헤르츠, Hz). 우리나라 가정용 전기의 주파수는 60Hz입니다 (1초에 60번 방향이 바뀜).</li>
+<li>진폭 (Amplitude): 파형의 중심선에서 최댓값 또는 최솟값까지의 크기입니다.</li>
+<li>위상 (Phase): 파형이 시작되는 시점 또는 파형 간의 시간적 차이를 나타냅니다. (단위: 도($^\circ$) 또는 라디안(rad)).</li>
+</ul>
+</li>
+</ul>
+<h3 id="2_2">2. 교류의 표현</h3>
+<p>교류는 크기가 계속 변하기 때문에 특정 값을 대표값으로 사용합니다.</p>
+<ul>
+<li>순싯값 (Instantaneous value, $i(t), v(t)$): 임의의 특정 순간에서의 전류 또는 전압 값입니다. 정현파 교류의 경우: $v(t) = V_m \sin(\omega t + \phi)$<ul>
+<li>$V_m$: 최댓값</li>
+<li>$\omega$: 각주파수 ($\omega = 2\pi f = 2\pi/T$)</li>
+<li>$\phi$: 초기 위상</li>
+</ul>
+</li>
+<li>최댓값 (Peak value, $V_m, I_m$): 교류 파형이 가질 수 있는 가장 큰 값 (진폭)입니다.</li>
+<li>실효값 (RMS value, Root Mean Square value, $V_{rms}, I_{rms}$ 또는 $V_e, I_e$):<ul>
+<li>교류가 직류와 동일한 일을 할 때의 직류 값으로 환산한 값입니다. 즉, 교류의 평균적인 효과를 나타내는 값입니다.</li>
+<li>일반적으로 교류 전압이나 전류를 말할 때는 실효값을 의미합니다.</li>
+<li>정현파 교류의 경우:<ul>
+<li>실효값 = 최댓값 / $\sqrt{2}$ ($V_{rms} = V_m / \sqrt{2} \approx 0.707 V_m$).</li>
+<li>실효값 = 최댓값 / $\sqrt{2}$ ($I_{rms} = I_m / \sqrt{2} \approx 0.707 I_m$).</li>
+</ul>
+</li>
+<li>가정용 전압 220V는 실효값입니다. 따라서 최댓값은 $220V \times \sqrt{2} \approx 311V$ 입니다.</li>
+</ul>
+</li>
+<li>평균값 (Average value, $V_{avg}, I_{avg}$):<ul>
+<li>교류 파형의 한 주기 동안의 평균적인 크기입니다.</li>
+<li>정현파 교류의 경우, 한 주기 전체에 대한 평균값은 0입니다 (양의 반주기와 음의 반주기가 상쇄).</li>
+<li>보통 반주기에 대한 평균값을 이야기하며, 정현파의 반주기 평균값은 최댓값의 약 0.637배입니다 ($V_{avg} = (2/\pi) V_m \approx 0.637 V_m$).</li>
+<li>주로 정류 회로 등에서 사용됩니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-impedance-z">3. (선택) 임피던스 (Impedance, $Z$)의 기초 개념</h3>
+<ul>
+<li>정의: 교류 회로에서 전류의 흐름을 방해하는 모든 요소(저항, 코일, 축전기)의 종합적인 저항 성분입니다. 직류 회로의 저항(Resistance)과 유사한 개념이지만, 위상 변화까지 고려합니다.</li>
+<li>구성 요소:<ul>
+<li>저항 (Resistance, $R$): 에너지 소비 요소, 위상 변화 없음.</li>
+<li>리액턴스 (Reactance, $X$): 에너지 저장 요소 (코일, 축전기), 위상 변화 발생.<ul>
+<li>유도성 리액턴스 ($X_L$): 코일(인덕터)에 의해 발생. 주파수가 높을수록, 인덕턴스가 클수록 커짐 ($X_L = \omega L = 2\pi f L$). 전류의 위상이 전압보다 90$^\circ$ 뒤짐.</li>
+<li>용량성 리액턴스 ($X_C$): 축전기(커패시터)에 의해 발생. 주파수가 높을수록, 커패시턴스가 클수록 작아짐 ($X_C = 1/(\omega C) = 1/(2\pi f C)$). 전류의 위상이 전압보다 90$^\circ$ 앞섬.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>임피던스 계산 (직렬 RLC 회로의 경우): $Z = \sqrt{R^2 + (X_L - X_C)^2}$.</li>
+<li>단위: 옴($\Omega$)을 사용합니다.</li>
+<li>교류에서의 옴의 법칙: $V=IZ$ (여기서 $V, I, Z$는 크기와 위상을 모두 고려한 페이저 또는 복소수 형태이지만, 기초 단계에서는 크기 관계로 이해해도 무방합니다.)</li>
+</ul>
+<h2 id="v">V. 기본적인 전기 부품</h2>
+<h3 id="1-resistor">1. 저항기 (Resistor)</h3>
+<ul>
+<li>역할:<ul>
+<li>회로에 흐르는 전류의 크기를 제한하거나 조절합니다.</li>
+<li>전압을 분배(강하)시키는 역할을 합니다.</li>
+<li>전기 에너지를 열에너지로 소비합니다.</li>
+</ul>
+</li>
+<li>종류:<ul>
+<li>고정 저항기: 저항값이 일정한 저항기입니다. 탄소 피막 저항기, 금속 피막 저항기, 시멘트 저항기 등 재료와 구조에 따라 다양합니다.</li>
+<li>가변 저항기 (Potentiometer, Rheostat): 저항값을 조절할 수 있는 저항기입니다. 볼륨 조절기, 조명 밝기 조절기 등에 사용됩니다.</li>
+</ul>
+</li>
+<li>색 코드 읽는 법 (띠 저항):<ul>
+<li>고정 저항기 표면에 표시된 여러 색깔의 띠를 통해 저항값과 오차 범위를 알 수 있습니다. 일반적으로 4색 또는 5색 띠를 사용합니다.</li>
+<li>각 색깔은 특정 숫자를 의미하며, 띠의 위치에 따라 값, 승수, 오차를 나타냅니다. (예시: 갈색(1)-검은색(0)-빨간색($10^2$)-금색($\pm$5) $\rightarrow 10 \times 10^2 \Omega = 1000\Omega = 1k\Omega$, 오차 $\pm$5).</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-capacitor">2. 축전기 (Capacitor, 콘덴서)</h3>
+<ul>
+<li>구조: 두 개의 도체판(전극) 사이에 절연체(유전체)를 끼워 넣은 구조입니다.</li>
+<li>원리 및 역할:<ul>
+<li>전하를 저장하는 기능: 전압이 가해지면 두 도체판에 각각 양전하와 음전하가 축적됩니다.</li>
+<li>직류 차단: 직류 전압이 안정적으로 가해지면 충전이 완료된 후에는 전류가 흐르지 않습니다 (개방 회로처럼 동작).</li>
+<li>교류 통과 (필터링): 교류에 대해서는 주파수가 높을수록 잘 통과시키는 특성이 있습니다 ($X_C = 1/(2\pi f C)$).</li>
+<li>전압 안정화, 노이즈 제거, 타이밍 회로, 필터 회로 등에 사용됩니다.</li>
+</ul>
+</li>
+<li>용량 (Capacitance, $C$): 축전기가 전하를 저장할 수 있는 능력입니다.</li>
+<li>단위: 패럿(F)을 사용합니다. (1F는 매우 큰 단위이므로 보통 마이크로패럿($\mu$F), 나노패럿(nF), 피코패럿(pF) 등을 사용합니다.) $1\mu F = 10^{-6} F$, $1nF = 10^{-9} F$, $1pF = 10^{-12} F$.</li>
+<li>종류: 전해 축전기, 세라믹 축전기, 필름 축전기, 탄탈 축전기 등 유전체의 종류와 구조에 따라 다양합니다. 전해 축전기는 극성이 있으므로 연결 시 주의해야 합니다.</li>
+</ul>
+<h3 id="3-inductor">3. 인덕터 (Inductor, 코일)</h3>
+<ul>
+<li>구조: 도선을 나선형으로 여러 번 감아 놓은 형태입니다. 내부에 철심(코어)을 넣기도 합니다.</li>
+<li>원리 및 역할:<ul>
+<li>전류의 급격한 변화를 억제하는 성질 (관성): 코일에 전류가 흐르면 주변에 자기장이 형성되고, 이 자기장의 변화를 방해하려는 방향으로 유도 기전력이 발생합니다 (렌츠의 법칙). 이로 인해 전류가 갑자기 변하는 것을 막습니다.</li>
+<li>에너지를 자기장 형태로 저장: 전류가 흐를 때 자기 에너지를 저장했다가 전류가 감소하면 방출합니다.</li>
+<li>교류 흐름 방해 (필터링): 교류에 대해서는 주파수가 높을수록 잘 통과시키지 못하는 특성이 있습니다 ($X_L = 2\pi f L$).</li>
+<li>노이즈 필터, 공진 회로, 변압기, 전동기 등에 사용됩니다.</li>
+</ul>
+</li>
+<li>인덕턴스 (Inductance, $L$): 전류의 변화에 대해 유도 기전력을 발생시키는 능력, 즉 코일이 자기 에너지를 저장하는 능력입니다.</li>
+<li>단위: 헨리(H)를 사용합니다. (보통 밀리헨리(mH), 마이크로헨리($\mu$H) 등을 사용합니다.) $1mH = 10^{-3} H$, $1\mu H = 10^{-6} H$.</li>
+<li>종류: 공심 코일, 철심 코일, 페라이트 코어 코일 등 코어의 재질과 권선 방법에 따라 다양합니다.</li>
+</ul>
+<h2 id="vi-magnetism-electromagnetic-induction">VI. 자기 (Magnetism)와 전자기 유도 (Electromagnetic Induction)</h2>
+<p>전기와 자기는 매우 밀접하게 관련된 현상입니다.</p>
+<h3 id="1-magnetic-field">1. 자석과 자기장 (Magnetic Field)</h3>
+<ul>
+<li>자석 (Magnet): 쇠붙이를 끌어당기는 성질을 가진 물체입니다. 종류: 영구 자석 (스스로 자성을 띰), 전자석 (전류가 흐를 때만 자성을 띰).</li>
+<li>N극과 S극: 자석의 양 끝부분으로 자기력이 가장 강하게 작용하는 부분입니다.<ul>
+<li>같은 극끼리는 밀어내는 힘(척력)이 작용합니다 (N-N, S-S).</li>
+<li>다른 극끼리는 끌어당기는 힘(인력)이 작용합니다 (N-S).</li>
+</ul>
+</li>
+<li>자기장 (Magnetic Field): 자석의 힘(자기력)이 미치는 공간입니다. 눈에 보이지 않지만, 나침반이나 철 가루를 이용하여 그 존재와 모양을 확인할 수 있습니다.</li>
+<li>자기력선 (Magnetic Line of Force): 자기장의 방향과 세기를 시각적으로 나타낸 선입니다. N극에서 나와 S극으로 들어갑니다. 도중에 끊어지거나 서로 교차하지 않습니다. 자기력선이 촘촘할수록 자기장이 강합니다.</li>
+</ul>
+<h3 id="2_3">2. 전류에 의한 자기장</h3>
+<p>덴마크의 과학자 외르스테드(Oersted)는 전류가 흐르는 도선 주위에 자기장이 형성된다는 사실을 발견했습니다.</p>
+<ul>
+<li>앙페르의 오른나사 법칙 (또는 오른손 법칙):<ul>
+<li>직선 도선: 오른손의 엄지손가락을 전류의 방향으로 향하게 했을 때, 나머지 네 손가락이 감아쥐는 방향이 자기장의 방향이 됩니다. (동심원 모양의 자기장 형성).</li>
+<li>원형 도선 (코일, 솔레노이드): 오른손의 네 손가락을 코일에 감긴 전류의 방향으로 감아쥐었을 때, 엄지손가락이 가리키는 방향이 코일 내부의 자기장 방향(N극 방향)이 됩니다.</li>
+</ul>
+</li>
+<li>솔레노이드 (Solenoid): 도선을 촘촘하게 원통형으로 여러 번 감은 코일입니다. 내부에 비교적 균일하고 강한 자기장을 만들 수 있습니다. 전자석의 기본 구조입니다.</li>
+</ul>
+<h3 id="3-electromagnetic-induction">3. 전자기 유도 (Electromagnetic Induction)</h3>
+<p>영국의 과학자 패러데이(Faraday)는 자기장의 변화가 도선에 전류를 흐르게 한다는 전자기 유도 현상을 발견했습니다. 이는 발전기의 기본 원리입니다.</p>
+<ul>
+<li>패러데이의 전자기 유도 법칙:<ul>
+<li>코일(폐회로)을 통과하는 자기장(정확히는 자기 선속)이 변할 때, 코일에는 전류를 흐르게 하는 유도 기전력이 발생합니다.</li>
+<li>유도 기전력의 크기는 코일을 감은 횟수와 단위 시간당 자기 선속의 변화율에 비례합니다. $V_{ind} = -N (\Delta \Phi_B / \Delta t)$.<ul>
+<li>$V_{ind}$: 유도 기전력</li>
+<li>$N$: 코일의 감은 수</li>
+<li>$\Delta \Phi_B$: 자기 선속의 변화량</li>
+<li>$\Delta t$: 시간 변화량</li>
+</ul>
+</li>
+<li>(-) 부호는 렌츠의 법칙을 의미합니다.</li>
+</ul>
+</li>
+<li>렌츠의 법칙 (Lenz&#x27;s Law): 유도 전류는 코일을 통과하는 자기장의 변화를 방해하는 방향으로 흐릅니다. (변화를 싫어하는 청개구리 성질).</li>
+<li>발전기의 원리 (간단히):<ul>
+<li>자기장 속에서 코일을 회전시키거나, 코일 주변에서 자석을 회전시키면 코일을 통과하는 자기 선속이 계속 변하게 됩니다.</li>
+<li>이 변화로 인해 코일에는 교류 형태의 유도 전류가 발생합니다.</li>
+<li>역학적 에너지(회전 운동)를 전기 에너지로 변환하는 장치입니다.</li>
+</ul>
+</li>
+<li>변압기의 원리 (간단히):<ul>
+<li>전자기 유도 현상을 이용하여 교류 전압의 크기를 바꾸는 장치입니다.</li>
+<li>하나의 철심에 두 개의 코일(1차 코일, 2차 코일)을 감은 구조입니다.</li>
+<li>1차 코일에 교류 전압을 가하면 변화하는 자기장이 철심을 통해 2차 코일에도 전달되어, 2차 코일에 유도 기전력이 발생합니다.</li>
+<li>1차 코일과 2차 코일의 감은 수의 비율에 따라 전압이 변합니다. $V_1/V_2 = N_1/N_2$ (단, 에너지 손실이 없다고 가정할 때 전력은 보존되므로 $I_1/I_2 = N_2/N_1$ 관계도 성립).</li>
+</ul>
+</li>
+</ul>
+<h2 id="vii">VII. 전기 안전</h2>
+<p>전기는 우리 생활에 매우 유용하지만, 잘못 사용하면 감전, 화재 등 큰 위험을 초래할 수 있습니다. 따라서 전기 안전 수칙을 잘 지키는 것이 중요합니다.</p>
+<h3 id="1_3">1. 감전의 위험성 및 인체에 미치는 영향</h3>
+<ul>
+<li>감전 (Electric Shock): 인체에 전류가 흘러서 충격을 받는 현상입니다.</li>
+<li>인체에 미치는 영향 (전류의 크기, 통전 시간, 통전 경로, 주파수 등에 따라 다름):<ul>
+<li>약한 전류 (수 mA): 찌릿한 느낌, 불쾌감.</li>
+<li>어느 정도 전류 (10~25mA): 근육 수축 (손을 뗄 수 없게 됨), 호흡 곤란.</li>
+<li>강한 전류 (25mA 이상): 심실세동 (심장 기능 마비, 사망 위험 매우 높음), 심한 화상, 신경 손상, 호흡 정지.</li>
+</ul>
+</li>
+<li>인체의 저항은 피부 상태(건조, 젖음), 접촉 면적 등에 따라 크게 달라집니다. 물에 젖으면 저항이 매우 낮아져 작은 전압에도 위험한 전류가 흐를 수 있습니다.</li>
+</ul>
+<h3 id="2_4">2. 전기 안전 수칙</h3>
+<ul>
+<li>젖은 손으로 전기 기기 만지지 않기: 물은 전기가 잘 통하므로 감전 위험이 매우 커집니다.</li>
+<li>플러그를 뽑을 때는 몸체를 잡고 뽑기: 전선을 잡아당기면 내부 단선이나 피복 손상으로 위험할 수 있습니다.</li>
+<li>하나의 콘센트에 여러 개의 플러그를 무리하게 꽂아 사용하지 않기 (문어발식 사용 자제): 과부하로 인해 화재 위험이 있습니다.</li>
+<li>전선 피복 손상 여부 확인: 피복이 벗겨진 전선은 누전이나 합선 위험이 있으므로 즉시 교체하거나 절연 처리해야 합니다.</li>
+<li>사용하지 않는 전기 기기의 플러그는 뽑아두기: 대기 전력 차단 및 예기치 않은 사고 예방.</li>
+<li>누전 차단기 정기적으로 점검하기: 시험 버튼을 눌러 정상 작동하는지 확인합니다.</li>
+<li>전기 설비 수리 및 증설은 반드시 전문가에게 의뢰하기.</li>
+<li>어린이가 전기 콘센트나 기기에 함부로 접근하지 않도록 주의시키고 안전 커버 사용하기.</li>
+<li>물기가 많은 장소(욕실, 주방)에서는 전기 사용에 더욱 주의하기.</li>
+</ul>
+<h3 id="3_2">3. 보호 장치</h3>
+<p>전기 사고를 예방하고 피해를 줄이기 위한 여러 보호 장치가 있습니다.</p>
+<ul>
+<li><strong>퓨즈 (Fuse):</strong> 회로에 과도한 전류(과전류)가 흐르면 스스로 녹아서 끊어져 전류를 차단하는 장치입니다. 납과 주석의 합금 등 녹는점이 낮은 금속으로 만들어집니다. 한 번 끊어지면 새것으로 교체해야 합니다. 회로를 과전류로부터 보호합니다.</li>
+<li><strong>배선용 차단기 (MCCB: Molded Case Circuit Breaker) 또는 회로 차단기 (CB: Circuit Breaker):</strong> 퓨즈와 유사하게 과전류(과부하 전류 및 단락 전류)가 흐르면 자동으로 회로를 차단합니다. 퓨즈와 달리 차단 후 원인 제거 후 스위치를 다시 올려 재사용할 수 있습니다 (일부 소형 차단기는 교체형도 있음). 일반적으로 가정의 분전반에 설치됩니다.</li>
+<li><strong>누전 차단기 (ELB: Earth Leakage Breaker 또는 RCD: Residual Current Device):</strong> 전기가 정상적인 회로 밖으로 새어 나가는 현상(누전)을 감지하여 자동으로 회로를 차단하는 장치입니다. 감전 사고 예방에 매우 중요한 역할을 합니다. 보통 배선용 차단기 기능과 함께 있는 경우가 많습니다. 월 1회 정도 시험 버튼을 눌러 정상 작동 여부를 확인해야 합니다.</li>
+<li><strong>접지 (Grounding, Earthing):</strong> 전기 기기의 금속 외함 등을 도선으로 땅과 연결하는 것입니다. 기기에 누전이 발생했을 때, 누설 전류를 안전하게 땅으로 흘려보내 인체 감전을 방지하고 기기를 보호합니다. 콘센트의 접지극, 전기 기기의 접지 단자를 통해 이루어집니다. 매우 중요한 안전 장치입니다.</li>
+</ul>
+<h2 id="viii">VIII. 부록</h2>
+<h3 id="1_4">1. 주요 전기 기호</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">명칭</th>
+<th style="text-align: left;">기호 (이미지 또는 설명)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">전원 (직류)</td>
+<td style="text-align: left;">직류 전원 기호 이미지 (긴 쪽이 +, 짧은 쪽이 -)</td>
+</tr>
+<tr>
+<td style="text-align: left;">전원 (교류)</td>
+<td style="text-align: left;">교류 전원 기호 이미지 (물결 모양)</td>
+</tr>
+<tr>
+<td style="text-align: left;">저항기</td>
+<td style="text-align: left;">저항기 기호 이미지 (지그재그 또는 직사각형)</td>
+</tr>
+<tr>
+<td style="text-align: left;">가변 저항기</td>
+<td style="text-align: left;">가변 저항기 기호 이미지 (저항기 기호에 화살표 추가)</td>
+</tr>
+<tr>
+<td style="text-align: left;">축전기 (일반)</td>
+<td style="text-align: left;">일반 축전기 기호 이미지 (평행한 두 선)</td>
+</tr>
+<tr>
+<td style="text-align: left;">축전기 (전해)</td>
+<td style="text-align: left;">전해 축전기 기호 이미지 (한쪽 판이 곡선 또는 + 표시)</td>
+</tr>
+<tr>
+<td style="text-align: left;">인덕터 (코일)</td>
+<td style="text-align: left;">인덕터 기호 이미지 (나선형 또는 여러 개의 반원)</td>
+</tr>
+<tr>
+<td style="text-align: left;">스위치 (단극단투)</td>
+<td style="text-align: left;">SPST 스위치 기호 이미지 (열리거나 닫힌 선)</td>
+</tr>
+<tr>
+<td style="text-align: left;">전구 (램프)</td>
+<td style="text-align: left;">전구 기호 이미지 (원 안에 X 또는 필라멘트 모양)</td>
+</tr>
+<tr>
+<td style="text-align: left;">전동기 (모터)</td>
+<td style="text-align: left;">모터 기호 이미지 (원 안에 M)</td>
+</tr>
+<tr>
+<td style="text-align: left;">다이오드</td>
+<td style="text-align: left;">다이오드 기호 이미지 (화살표와 막대)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LED</td>
+<td style="text-align: left;">LED 기호 이미지 (다이오드 기호에서 빛 방출 화살표 추가)</td>
+</tr>
+<tr>
+<td style="text-align: left;">트랜지스터 (NPN)</td>
+<td style="text-align: left;">NPN 트랜지스터 기호 이미지</td>
+</tr>
+<tr>
+<td style="text-align: left;">접지</td>
+<td style="text-align: left;">접지 기호 이미지 (여러 개의 수평선이 아래로 갈수록 짧아짐)</td>
+</tr>
+</tbody>
+</table>
+<p>(실제 자료에는 각 기호의 이미지를 넣어주시면 좋습니다.)</p>
+<h3 id="2_5">2. 자주 사용되는 공식 정리</h3>
+<ul>
+<li>옴의 법칙: $V=IR, I=V/R, R=V/I$</li>
+<li>전력: $P=VI=I^2R=V^2/R$</li>
+<li>전력량: $W=Pt$</li>
+<li>저항의 직렬 연결: $R_s = R_1 + R_2 + R_3 + ...$</li>
+<li>저항의 병렬 연결: $1/R_p = 1/R_1 + 1/R_2 + 1/R_3 + ...$<br />
+    (두 개 병렬 시: $R_p = (R_1 \times R_2)/(R_1 + R_2)$)</li>
+<li>정현파 교류 실효값: $V_{rms} = V_m/\sqrt{2}, I_{rms} = I_m/\sqrt{2}$</li>
+<li>유도성 리액턴스: $X_L = 2\pi f L$</li>
+<li>용량성 리액턴스: $X_C = 1/(2\pi f C)$</li>
+<li>임피던스 (직렬 RLC): $Z = \sqrt{R^2 + (X_L - X_C)^2}$</li>
+<li>패러데이의 전자기 유도 법칙: $V_{ind} = -N(\Delta \Phi_B / \Delta t)$</li>
+<li>변압기 공식: $V_1/V_2 = N_1/N_2 = I_2/I_1$</li>
+</ul>
+<hr />
+<h3 id="_7">맺음말</h3>
+<p>지금까지 전기 기초 이론의 핵심적인 내용들을 살펴보았습니다. 전기는 현대 사회를 지탱하는 매우 중요한 에너지원이자 기술입니다. 이 자료가 전기기사 학습의 첫걸음이 되기를 바라며, 더 깊이 있는 학습으로 나아가는 데 도움이 되었으면 합니다. 항상 안전하게 전기를 사용하시길 바랍니다!</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 5월 19일 3:22 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@volty/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/ChatGPT_Image_2025%EB%85%84_5%EC%9B%94_6%EC%9D%BC_%EC%98%A4%EC%A0%84_10_24_51.png"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@volty/">@volty</a>
+                        </h1>
+                        
+                            <p class="text-gray-600 dark:text-gray-400">전기기사 개념 정리하여 공유해요!  https://volty.co.kr/</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/707/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/707/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">4</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/3984/add_comment/"
+                      method="post"
+                      hx-post="/blog/3984/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="vuN1NRUn6SJjutv5Sq5x2IF38V874zj3ctXySstFeu95XI1stp8hcZAwYllu7qIf">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @volty 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@volty/3984/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            전기기사를 위한 전기 기초 이론
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">4</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@volty/3983/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            전기기사 핵심 요약노트
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">5</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="fas fa-comment"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@volty/3962/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            회로 이론 기초: 저항 연결과 휘스톤 브리지
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@volty/3960/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            퇴근 후 하루 2시간, 전기기사 필기 합격 로드맵: 4단계 루틴 &amp; 예상 소요 기간
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@volty/3958/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            5060 전기기사 수험생을 위한 &#x27;자꾸 잊어버림&#x27; 극복 전략: 퇴근 후 2시간, 효율을 높이는 방법
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 2
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/707/3984/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @volty 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17828">
+                    
+                        <img src="https://static.wikidocs.net/images/book/blog_profile_images/ChatGPT_Image_2025년_5월_6일_오전_10_24_51.png"
+                             alt="전기노트"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17828"
+                           class="hover:text-red-500 dark:hover:text-red-400">전기노트</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        이 책은 @volty님의 블로그 페이지를 엮어 만들어진 책입니다.
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">None</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">3808</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-3984"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-3984"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/3984/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">4</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=7c7c84f'/>

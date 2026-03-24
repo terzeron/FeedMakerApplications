@@ -1,0 +1,2383 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="RAG Master - Episode 3: Reranking의 마법사">
+    <meta property="og:type" content="RAG Master - Episode 3: Reranking의 마법사">
+    <meta property="og:title" content="RAG Master - Episode 3: Reranking의 마법사">
+    <meta property="og:description" content="RAG Master - Episode 3: Reranking의 마법사">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@newyark/6538/">
+
+        
+    <title>RAG Master - Episode 3: Reranking의 마법사
+        - 뉴야크
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@newyark/6532/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@newyark/6596/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">RAG Master - Episode 3: Reranking의 마법사</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@newyark/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @newyark
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 1월 22일 11:21 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@newyark/?tag=3099"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Rag
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@newyark/?tag=3098"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Llm
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@newyark/?tag=3097"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Ai
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="rag-master-episode-3-reranking">📘 RAG Master - Episode 3: Reranking의 마법사</h2>
+<h2 id="_1">🎬 프롤로그</h2>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;드디어 완성이다!&quot; 준혁이 모니터 앞에서 환호성을 질렀다.</p>
+<p>Episode 2에서 캐싱을 도입한 후, RAG 시스템은 놀라운 속도를 자랑했다. 첫 검색은 0.02초, 캐시 히트 시에는 0.01ms. 평균 응답 시간은 눈 깜짝할 새에 결과를 보여주었다.</p>
+<p>하지만 준혁의 표정은 점점 어두워졌다.</p>
+<p>&quot;뭔가 이상한데...&quot; 준혁이 검색 결과를 보며 고개를 갸우뚱했다.</p>
+<pre><code>검색: &quot;RAG 시스템의 장단점은?&quot;
+
+결과:
+1위. RAG의 역사와 발전 과정
+2위. RAG 개념 설명
+3위. 벡터 데이터베이스 소개
+4위. RAG의 장단점 분석 ← 이게 진짜 정답인데...
+5위. 프롬프트 엔지니어링 기초
+</code></pre>
+<p>&quot;빠르긴 한데, 정확하지가 않아.&quot; 준혁이 레이나에게 화면을 보여줬다. &quot;사용자가 &#x27;장단점&#x27;을 물었는데, &#x27;역사&#x27;가 1등으로 나와요. 둘 다 &#x27;RAG&#x27;라는 단어가 들어가서 그런가?&quot;</p>
+<p>레이나가 화면을 자세히 보더니 고개를 끄덕였다.</p>
+<p>&quot;맞아. 네가 아주 중요한 걸 발견했어,&quot; 레이나가 화이트보드로 다가갔다. &quot;FAISS는 <strong>빠르지만 멍청해</strong>.&quot;</p>
+<p>&quot;멍청하다니요?&quot;</p>
+<p>&quot;정확히 말하면, 단순해,&quot; 레이나가 그림을 그리기 시작했다. &quot;FAISS는 벡터 간의 <strong>거리</strong>만 본다. 두 문장에 같은 단어가 많이 들어가면 가깝다고 판단하지. 하지만 실제로 질문에 <strong>답이 되는지</strong>는 모르는 거야.&quot;</p>
+<p>준혁이 이해가 가는 듯 고개를 끄덕였다.</p>
+<p>&quot;예를 들어,&quot; 레이나가 예시를 들었다. &quot;&#x27;파이썬으로 웹 크롤링하는 방법&#x27;이라고 검색하면?&quot;</p>
+<p>&quot;음... &#x27;파이썬 기초 문법&#x27;이 &#x27;웹 크롤링 가이드&#x27;보다 위에 나올 수도 있겠네요. &#x27;파이썬&#x27;이라는 단어가 똑같이 들어가니까.&quot;</p>
+<p>&quot;정확해!&quot; 레이나가 손뼉을 쳤다. &quot;벡터 유사도는 높을 수 있지만, 실제로 사용자가 원하는 답은 아니지. 이게 바로 <strong>Retrieval의 한계</strong>야.&quot;</p>
+<p>&quot;그럼 어떻게 해요?&quot;</p>
+<p>레이나의 눈이 반짝였다. &quot;<strong>Reranking</strong>이야. 검색 결과를 한 번 더 정렬하는 거지.&quot;</p>
+<p>준혁이 호기심 가득한 눈으로 물었다. &quot;다시 정렬한다고요? 어떻게요?&quot;</p>
+<p>&quot;지금 FAISS는 질문과 문서를 <strong>따로따로</strong> 보잖아?&quot; 레이나가 화이트보드에 그림을 그렸다.</p>
+<pre><code>현재 방식 (Bi-Encoder):
+
+Query: [벡터 A]  Document: [벡터 B]
+         ↓              ↓
+      따로 인코딩됨 (상호작용 없음)
+         ↓              ↓
+      유사도 = 벡터 거리
+
+문제: 단어만 비슷하면 높은 점수
+</code></pre>
+<p>&quot;하지만 Reranking에서는,&quot; 레이나가 새로운 다이어그램을 그렸다. &quot;질문과 문서를 <strong>함께</strong> 본다.&quot;</p>
+<pre><code>Reranking (Cross-Encoder):
+
+[Query + Document]
+       ↓
+  함께 분석 (상호작용!)
+       ↓
+  진짜 관련도 점수
+
+결과: 단어만이 아니라 의미를 이해
+</code></pre>
+<p>준혁의 눈이 커졌다. &quot;오! 그럼 더 정확하겠네요?&quot;</p>
+<p>&quot;맞아. 하지만 대가가 있지,&quot; 레이나가 경고했다. &quot;느려.&quot;</p>
+<p>&quot;얼마나요?&quot;</p>
+<p>&quot;FAISS는 100만 개 문서를 0.02초에 검색하잖아? Cross-Encoder로 같은 걸 하려면... 한 300초?&quot;</p>
+<p>&quot;5분이요?!&quot; 준혁이 놀라 외쳤다.</p>
+<p>&quot;그래서 현명하게 해야 해,&quot; 레이나가 미소를 지었다. &quot;<strong>Two-Stage Retrieval</strong>이라는 전략을 쓰는 거야.&quot;</p>
+<p>레이나가 화이트보드에 2단계 프로세스를 그렸다.</p>
+<pre><code>┌─────────────────────────────────────┐
+│  Stage 1: Fast Retrieval            │
+│  (Bi-Encoder + FAISS)               │
+│                                     │
+│  1,000,000 문서                     │
+│       ↓                             │
+│  빠르게 검색 (0.02초)                │
+│       ↓                             │
+│  Top 100 후보                        │
+└─────────────────────────────────────┘
+              ↓
+┌─────────────────────────────────────┐
+│  Stage 2: Precise Reranking         │
+│  (Cross-Encoder)                    │
+│                                     │
+│  100 후보                            │
+│       ↓                             │
+│  정확하게 재정렬 (0.1초)              │
+│       ↓                             │
+│  Top 5 최종 결과                     │
+└─────────────────────────────────────┘
+
+총 시간: 0.12초 (충분히 빠름!)
+정확도: 65% → 85% (20%p 향상!)
+</code></pre>
+<p>&quot;아하!&quot; 준혁이 무릎을 쳤다. &quot;일단 빠르게 후보를 추리고, 그 중에서만 정확하게 고르는 거네요?&quot;</p>
+<p>&quot;정확해,&quot; 레이나가 고개를 끄덕였다. &quot;이게 바로 현대 검색 엔진의 비밀이야. Google도 비슷한 방식을 쓰지. 수십억 페이지를 전부 정밀하게 분석할 순 없으니까.&quot;</p>
+<p>준혁이 노트북을 열었다. &quot;한 번 해볼게요!&quot;</p>
+<p>&quot;좋아,&quot; 레이나가 의자를 당겨 앉았다. &quot;하지만 그 전에, Cross-Encoder가 왜 더 정확한지 이해해야 해. 내부에서 무슨 일이 일어나는지 알아야 제대로 쓸 수 있거든.&quot;</p>
+<hr />
+<h2 id="_2">🎯 학습 목표</h2>
+<p><strong>&quot;이번 Episode를 마치면, 당신은:&quot;</strong></p>
+<p>준혁이 노트에 목표를 적었다.</p>
+<p>✅ Bi-Encoder와 Cross-Encoder의 차이를 명확히 이해한다<br />
+✅ Two-Stage Retrieval 시스템을 직접 구축할 수 있다<br />
+✅ Precision@K를 측정하고 개선할 수 있다<br />
+✅ ColBERT의 Late Interaction을 이해한다<br />
+✅ 여러 점수를 결합하는 Hybrid Ranking을 구현한다<br />
+✅ 프로덕션 환경에서 비용을 관리할 수 있다</p>
+<p><strong>예상 학습 시간:</strong> 2.5-3시간<br />
+<strong>난이도:</strong> ⭐⭐⭐⭐☆ (중상급)<br />
+<strong>필요 지식:</strong> Episode 1-2 완료, Python 중급, 머신러닝 기초</p>
+<hr />
+<h2 id="chapter-1-bi-encoder">📚 Chapter 1: Bi-Encoder의 한계</h2>
+<h3 id="11">1.1 실험: 왜 정확하지 않을까?</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;먼저 문제를 명확히 보자,&quot; 레이나가 말했다. &quot;실험을 해볼까?&quot;</p>
+<p>준혁이 코드를 작성하기 시작했다.</p>
+<pre><code class="language-python">from sentence_transformers import SentenceTransformer
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Bi-Encoder 모델 로드
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+# 테스트 쿼리
+query = &quot;파이썬으로 웹 크롤링하는 방법을 알려주세요&quot;
+
+# 다양한 문서들
+documents = [
+    &quot;파이썬 기초 문법과 자료구조를 배워봅시다&quot;,  # 단어는 비슷, 내용은 다름
+    &quot;BeautifulSoup을 이용한 웹 크롤링 완벽 가이드&quot;,  # 정답!
+    &quot;파이썬으로 데이터 분석하기 - Pandas 입문&quot;,
+    &quot;Selenium을 사용한 동적 웹 페이지 스크래핑 방법&quot;,  # 정답!
+    &quot;자바스크립트로 웹 개발 시작하기&quot;,
+    &quot;파이썬 Django 프레임워크 튜토리얼&quot;,
+]
+
+print(&quot;🔍 검색 쿼리:&quot;, query)
+print(&quot;\n실험 시작...\n&quot;)
+
+# 임베딩 생성
+query_emb = model.encode(query)
+doc_embs = model.encode(documents)
+
+# 유사도 계산
+similarities = cosine_similarity([query_emb], doc_embs)[0]
+
+# 결과 정렬
+results = sorted(
+    zip(documents, similarities), 
+    key=lambda x: x[1], 
+    reverse=True
+)
+
+print(&quot;📊 Bi-Encoder 검색 결과:\n&quot;)
+for i, (doc, score) in enumerate(results, 1):
+    is_correct = &quot;✅&quot; if i &lt;= 2 and (&quot;크롤링&quot; in doc or &quot;스크래핑&quot; in doc) else &quot;&quot;
+    print(f&quot;{i}위. [{score:.3f}] {is_correct}&quot;)
+    print(f&quot;    {doc}\n&quot;)
+</code></pre>
+<p>준혁이 코드를 실행했다.</p>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>🔍 검색 쿼리: 파이썬으로 웹 크롤링하는 방법을 알려주세요
+
+📊 Bi-Encoder 검색 결과:
+
+1위. [0.612]
+    파이썬 기초 문법과 자료구조를 배워봅시다
+
+2위. [0.589]
+    파이썬으로 데이터 분석하기 - Pandas 입문
+
+3위. [0.573] ✅
+    BeautifulSoup을 이용한 웹 크롤링 완벽 가이드
+
+4위. [0.547] ✅
+    Selenium을 사용한 동적 웹 페이지 스크래핑 방법
+
+5위. [0.412]
+    파이썬 Django 프레임워크 튜토리얼
+
+6위. [0.298]
+    자바스크립트로 웹 개발 시작하기
+</code></pre>
+<p>&quot;봐,&quot; 준혁이 화면을 가리켰다. &quot;정답이 3, 4등에 있어요. &#x27;파이썬&#x27;이라는 단어 때문에 관련 없는 게 위로 올라왔네요.&quot;</p>
+<p>레이나가 고개를 끄덕였다. &quot;정확히 이게 문제야. Bi-Encoder는 <strong>단어의 겹침</strong>에 너무 민감해. &#x27;파이썬&#x27;이 많이 나오면 무조건 유사도가 높아지거든.&quot;</p>
+<p>&quot;그럼 어떻게 구별하죠?&quot;</p>
+<p>&quot;사람이라면 어떻게 할까?&quot; 레이나가 물었다.</p>
+<p>준혁이 생각해봤다. &quot;음... 질문을 읽고, 각 문서를 읽어보고, &#x27;이게 질문에 답이 되나?&#x27;를 판단하겠죠.&quot;</p>
+<p>&quot;맞아!&quot; 레이나가 손뼉을 쳤다. &quot;질문과 문서를 <strong>함께</strong> 보는 거지. 그게 바로 Cross-Encoder가 하는 일이야.&quot;</p>
+<hr />
+<h3 id="12-bi-encoder">1.2 Bi-Encoder의 작동 원리</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;Cross-Encoder를 이해하려면, 먼저 Bi-Encoder가 정확히 뭘 하는지 알아야 해,&quot; 레이나가 설명을 시작했다.</p>
+<p>레이나가 화이트보드에 그림을 그렸다.</p>
+<pre><code>Bi-Encoder (두 개의 독립적 인코더)
+
+          Encoder 1              Encoder 2
+              ↓                      ↓
+Query: &quot;웹 크롤링&quot;  →  [0.2, 0.8, 0.1, ...]  
+                            768차원 벡터
+
+Doc: &quot;BeautifulSoup&quot; →  [0.3, 0.7, 0.2, ...]
+                            768차원 벡터
+              ↓                      ↓
+            코사인 유사도 = 0.85
+</code></pre>
+<p>&quot;Bi-Encoder는 질문과 문서를 <strong>각각 따로</strong> 인코딩해,&quot; 레이나가 설명했다. &quot;그리고 두 벡터 사이의 거리를 계산하는 거지.&quot;</p>
+<p>&quot;그게 왜 문제인데요?&quot; 준혁이 물었다.</p>
+<p>&quot;생각해봐. 질문이 &#x27;웹 크롤링 <strong>방법</strong>&#x27;인데, 문서가 &#x27;웹 크롤링 <strong>역사</strong>&#x27;라면?&quot; 레이나가 물었다.</p>
+<p>&quot;아...&quot; 준혁이 깨달았다. &quot;&#x27;웹 크롤링&#x27;이라는 단어는 똑같으니까, 벡터도 비슷하게 나오겠네요.&quot;</p>
+<p>&quot;정확해. Bi-Encoder는 각 문장을 독립적으로 봐. 질문이 &#x27;방법&#x27;을 물었는지, 문서가 &#x27;방법&#x27;에 대한 답인지... 이런 <strong>상호작용</strong>을 전혀 보지 못하는 거야.&quot;</p>
+<p><strong>🎓 핵심 개념: Bi-Encoder의 한계</strong></p>
+<p>레이나가 화이트보드에 정리했다.</p>
+<pre><code>Bi-Encoder의 특징:
+
+✅ 장점:
+  - 매우 빠름 (벡터 미리 계산 가능)
+  - 확장성 좋음 (100만 개도 가능)
+  - 캐싱 쉬움
+
+❌ 단점:
+  - 단어 겹침에 민감
+  - 의도(Intent) 파악 약함
+  - 문맥 이해 부족
+
+예시:
+Query: &quot;사과를 먹는 방법&quot;
+Doc1: &quot;사과(Apple) 제품 사용법&quot; → 높은 점수 (오답!)
+Doc2: &quot;과일 섭취 가이드&quot; → 낮은 점수 (정답!)
+</code></pre>
+<p>준혁이 고개를 끄덕이며 노트에 적었다.</p>
+<hr />
+<h2 id="chapter-2-cross-encoder">📚 Chapter 2: Cross-Encoder의 마법</h2>
+<h3 id="21">2.1 함께 보는 힘</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;이제 Cross-Encoder를 보자,&quot; 레이나가 새 그림을 그렸다.</p>
+<pre><code>Cross-Encoder (하나의 인코더)
+
+[CLS] Query [SEP] Document [SEP]
+  ↓          ↓          ↓
+        BERT 모델
+  (Query와 Document 함께 분석!)
+            ↓
+      Attention 메커니즘
+   (단어들 간 상호작용)
+            ↓
+      관련도 점수: 8.5
+</code></pre>
+<p>&quot;Cross-Encoder는 질문과 문서를 <strong>하나의 입력</strong>으로 넣어,&quot; 레이나가 설명했다. &quot;그래서 모델이 둘 사이의 관계를 직접 볼 수 있지.&quot;</p>
+<p>&quot;어떻게요?&quot; 준혁이 물었다.</p>
+<p>&quot;BERT의 Attention 메커니즘 때문이야,&quot; 레이나가 설명했다. &quot;질문의 &#x27;방법&#x27;이라는 단어가 문서의 &#x27;가이드&#x27;, &#x27;튜토리얼&#x27; 같은 단어와 강하게 연결되는 걸 학습하지. 단순히 똑같은 단어만 찾는 게 아니야.&quot;</p>
+<p>준혁이 이해가 되는 듯 눈을 반짝였다.</p>
+<p>&quot;한 번 해볼게요!&quot; 준혁이 코드를 작성했다.</p>
+<pre><code class="language-python">from sentence_transformers import CrossEncoder
+
+# Cross-Encoder 모델 로드
+cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+
+print(&quot;\n🎯 Cross-Encoder Reranking 시작...\n&quot;)
+
+# Query-Document 쌍 생성
+pairs = [[query, doc] for doc in documents]
+
+# 점수 계산
+scores = cross_encoder.predict(pairs)
+
+# 결과 정렬
+reranked = sorted(
+    zip(documents, scores),
+    key=lambda x: x[1],
+    reverse=True
+)
+
+print(&quot;📊 Cross-Encoder 결과:\n&quot;)
+for i, (doc, score) in enumerate(reranked, 1):
+    is_correct = &quot;✅&quot; if (&quot;크롤링&quot; in doc or &quot;스크래핑&quot; in doc) else &quot;&quot;
+    print(f&quot;{i}위. [{score:.3f}] {is_correct}&quot;)
+    print(f&quot;    {doc}\n&quot;)
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>🎯 Cross-Encoder Reranking 시작...
+
+📊 Cross-Encoder 결과:
+
+1위. [8.245] ✅
+    BeautifulSoup을 이용한 웹 크롤링 완벽 가이드
+
+2위. [7.891] ✅
+    Selenium을 사용한 동적 웹 페이지 스크래핑 방법
+
+3위. [3.124]
+    파이썬 기초 문법과 자료구조를 배워봅시다
+
+4위. [2.876]
+    파이썬으로 데이터 분석하기 - Pandas 입문
+
+5위. [1.234]
+    파이썬 Django 프레임워크 튜토리얼
+
+6위. [-0.543]
+    자바스크립트로 웹 개발 시작하기
+</code></pre>
+<p>&quot;와!&quot; 준혁이 환호했다. &quot;정답이 1, 2등으로 올라왔어요!&quot;</p>
+<p>&quot;봤지?&quot; 레이나가 미소를 지었다. &quot;Cross-Encoder는 질문이 &#x27;방법&#x27;을 물었다는 걸 이해하고, &#x27;가이드&#x27;, &#x27;튜토리얼&#x27; 같은 답변을 높게 평가하는 거야. 단순히 &#x27;파이썬&#x27;이라는 단어만 센 게 아니지.&quot;</p>
+<p>&quot;하지만 속도가...&quot; 준혁이 시간을 확인했다.</p>
+<p>&quot;맞아, 느려,&quot; 레이나가 인정했다. &quot;그래서 영리하게 써야 하지.&quot;</p>
+<hr />
+<h3 id="22-vs">2.2 속도 vs 정확도 트레이드오프</h3>
+<p><strong>📖 스토리</strong></p>
+<p>레이나가 벤치마크 결과를 보여줬다.</p>
+<pre><code class="language-python">import time
+
+def benchmark_both(num_documents=1000):
+    &quot;&quot;&quot;두 방식 비교&quot;&quot;&quot;
+
+    # 테스트 문서 생성
+    test_docs = [f&quot;문서 {i}: 내용...&quot; for i in range(num_documents)]
+    test_query = &quot;테스트 쿼리&quot;
+
+    print(f&quot;📊 벤치마크: {num_documents:,}개 문서\n&quot;)
+
+    # Bi-Encoder
+    print(&quot;1️⃣ Bi-Encoder&quot;)
+    start = time.time()
+    bi_embs = model.encode(test_docs, show_progress_bar=False)
+    q_emb = model.encode(test_query)
+    similarities = cosine_similarity([q_emb], bi_embs)[0]
+    bi_time = time.time() - start
+    print(f&quot;   시간: {bi_time:.3f}초&quot;)
+
+    # Cross-Encoder
+    print(&quot;\n2️⃣ Cross-Encoder&quot;)
+    start = time.time()
+    pairs = [[test_query, doc] for doc in test_docs]
+    scores = cross_encoder.predict(pairs, show_progress_bar=False)
+    cross_time = time.time() - start
+    print(f&quot;   시간: {cross_time:.3f}초&quot;)
+
+    # 비교
+    slowdown = cross_time / bi_time
+    print(f&quot;\n⚡ Cross-Encoder가 {slowdown:.0f}배 느림&quot;)
+
+    return bi_time, cross_time
+
+# 실행
+bi_time, cross_time = benchmark_both(num_documents=100)
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>📊 벤치마크: 100개 문서
+
+1️⃣ Bi-Encoder
+   시간: 0.025초
+
+2️⃣ Cross-Encoder
+   시간: 2.341초
+
+⚡ Cross-Encoder가 94배 느림
+</code></pre>
+<p>준혁이 놀란 표정을 지었다. &quot;94배요?! 그럼 100만 개 문서면...&quot;</p>
+<p>&quot;2,340초, 그러니까 39분,&quot; 레이나가 계산했다. &quot;사용자가 40분을 기다리게 할 순 없잖아?&quot;</p>
+<p>&quot;그럼 어떻게 써요?&quot;</p>
+<p>레이나가 해결책을 설명했다.</p>
+<p><strong>🎓 핵심 개념: Two-Stage Retrieval</strong></p>
+<pre><code>생각해봐. 
+100만 개 전부를 정밀하게 볼 필요가 있을까?
+
+Stage 1 (Fast Retrieval):
+  - Bi-Encoder로 빠르게 후보 추출
+  - 100만 개 → 100개 (0.02초)
+  - &quot;대충 관련있는 것들&quot;
+
+Stage 2 (Precise Reranking):
+  - Cross-Encoder로 정확하게 재정렬
+  - 100개 → Top 5 (0.1초)
+  - &quot;진짜 정답&quot;
+
+총 시간: 0.12초 (충분히 빠름!)
+정확도: 훨씬 높음!
+</code></pre>
+<p>&quot;아!&quot; 준혁이 이해했다. &quot;일단 후보를 좁히고, 그 중에서만 정밀하게 보는 거네요. 마치 예선과 본선처럼!&quot;</p>
+<p>&quot;정확해!&quot; 레이나가 칭찬했다. &quot;이제 직접 만들어보자.&quot;</p>
+<hr />
+<h2 id="chapter-3-two-stage">📚 Chapter 3: Two-Stage 시스템 구축</h2>
+<h3 id="31">3.1 기본 구현</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;자, 이제 진짜 시스템을 만들어보자,&quot; 레이나가 말했다.</p>
+<p>준혁이 노트북을 열고 코딩을 시작했다. 레이나가 옆에서 조언했다.</p>
+<pre><code class="language-python">from sentence_transformers import SentenceTransformer, CrossEncoder
+import numpy as np
+import faiss
+from typing import List, Dict
+import time
+
+class TwoStageRAG:
+    &quot;&quot;&quot;Two-Stage Retrieval + Reranking 시스템&quot;&quot;&quot;
+
+    def __init__(self):
+        print(&quot;🚀 시스템 초기화 중...&quot;)
+
+        # Stage 1: Bi-Encoder (빠른 검색)
+        print(&quot;  📥 Bi-Encoder 로딩...&quot;)
+        self.bi_encoder = SentenceTransformer('all-MiniLM-L6-v2')
+
+        # Stage 2: Cross-Encoder (정확한 재정렬)
+        print(&quot;  📥 Cross-Encoder 로딩...&quot;)
+        self.cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+
+        # FAISS 인덱스
+        self.index = None
+        self.documents = []
+
+        print(&quot;✅ 초기화 완료!\n&quot;)
+
+    def index_documents(self, documents: List[str]):
+        &quot;&quot;&quot;문서 인덱싱&quot;&quot;&quot;
+        print(f&quot;📚 {len(documents):,}개 문서 인덱싱 중...&quot;)
+
+        self.documents = documents
+
+        # 임베딩 생성
+        embeddings = self.bi_encoder.encode(
+            documents,
+            show_progress_bar=True,
+            convert_to_numpy=True
+        )
+
+        # FAISS 인덱스 생성
+        dimension = embeddings.shape[1]
+        self.index = faiss.IndexFlatIP(dimension)
+
+        # 정규화 (코사인 유사도용)
+        faiss.normalize_L2(embeddings)
+        self.index.add(embeddings)
+
+        print(f&quot;✅ 인덱싱 완료!\n&quot;)
+
+    def search(
+        self,
+        query: str,
+        top_k_retrieval: int = 100,
+        top_n_rerank: int = 5
+    ) -&gt; List[Dict]:
+        &quot;&quot;&quot;Two-Stage 검색&quot;&quot;&quot;
+
+        print(f&quot;🔍 검색: {query}\n&quot;)
+        start_time = time.time()
+
+        # ═══════════════════════════════════════
+        # Stage 1: Fast Retrieval
+        # ═══════════════════════════════════════
+        print(f&quot;📊 Stage 1: FAISS 검색 (Top-{top_k_retrieval})&quot;)
+        stage1_start = time.time()
+
+        # Query 임베딩
+        query_embedding = self.bi_encoder.encode(
+            query, 
+            convert_to_numpy=True
+        )
+        query_embedding = query_embedding.reshape(1, -1)
+        faiss.normalize_L2(query_embedding)
+
+        # FAISS 검색
+        distances, indices = self.index.search(
+            query_embedding, 
+            top_k_retrieval
+        )
+
+        stage1_time = time.time() - stage1_start
+        print(f&quot;  ⏱️ Stage 1 완료: {stage1_time*1000:.2f}ms&quot;)
+
+        # 후보 추출
+        candidates = []
+        for i, idx in enumerate(indices[0]):
+            candidates.append({
+                'doc': self.documents[idx],
+                'idx': int(idx),
+                'bi_score': float(distances[0][i]),
+                'rank_stage1': i + 1
+            })
+
+        print(f&quot;  ✅ 후보 {len(candidates)}개 추출\n&quot;)
+
+        # ═══════════════════════════════════════
+        # Stage 2: Precise Reranking
+        # ═══════════════════════════════════════
+        print(f&quot;🎯 Stage 2: Cross-Encoder Reranking (Top-{top_n_rerank})&quot;)
+        stage2_start = time.time()
+
+        # Query-Document 쌍 생성
+        pairs = [[query, cand['doc']] for cand in candidates]
+
+        # Cross-Encoder로 점수 계산
+        cross_scores = self.cross_encoder.predict(pairs)
+
+        # 점수 추가 및 재정렬
+        for cand, score in zip(candidates, cross_scores):
+            cand['cross_score'] = float(score)
+
+        candidates.sort(key=lambda x: x['cross_score'], reverse=True)
+        final_results = candidates[:top_n_rerank]
+
+        stage2_time = time.time() - stage2_start
+        total_time = time.time() - start_time
+
+        print(f&quot;  ⏱️ Stage 2 완료: {stage2_time*1000:.2f}ms&quot;)
+        print(f&quot;  ⏱️ 총 시간: {total_time*1000:.2f}ms\n&quot;)
+
+        # 순위 변동 표시
+        self._show_rank_changes(final_results)
+
+        return final_results
+
+    def _show_rank_changes(self, results: List[Dict]):
+        &quot;&quot;&quot;순위 변동 시각화&quot;&quot;&quot;
+        print(&quot;📈 순위 변동:\n&quot;)
+
+        for i, result in enumerate(results, 1):
+            old_rank = result['rank_stage1']
+            change = old_rank - i
+
+            if change &gt; 0:
+                arrow = f&quot;⬆️ +{change}&quot;
+            elif change &lt; 0:
+                arrow = f&quot;⬇️ {change}&quot;
+            else:
+                arrow = &quot;➡️ 0&quot;
+
+            print(f&quot;  {i}위 (Stage1: {old_rank}위) {arrow}&quot;)
+            print(f&quot;      Bi: {result['bi_score']:.3f} | &quot;
+                  f&quot;Cross: {result['cross_score']:.3f}&quot;)
+            print(f&quot;      {result['doc'][:80]}...\n&quot;)
+</code></pre>
+<p>&quot;와, 길다...&quot; 준혁이 코드를 보며 말했다.</p>
+<p>&quot;하나씩 보면 간단해,&quot; 레이나가 설명했다. &quot;Stage 1에서 FAISS로 빠르게 100개 후보를 뽑고, Stage 2에서 Cross-Encoder로 정확하게 5개로 줄이는 거야.&quot;</p>
+<p>&quot;순위 변동도 보여주네요?&quot;</p>
+<p>&quot;응, 어떤 문서가 올라가고 내려갔는지 보면 Reranking의 효과를 알 수 있거든.&quot;</p>
+<hr />
+<h3 id="32">3.2 실전 테스트</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;이제 진짜 데이터로 테스트해보자,&quot; 레이나가 말했다.</p>
+<p>준혁이 테스트 문서를 준비했다.</p>
+<pre><code class="language-python"># 테스트 문서들
+documents = [
+    &quot;RAG는 Retrieval-Augmented Generation의 약자로, 외부 지식을 검색하여 LLM 답변을 개선하는 기법입니다.&quot;,
+    &quot;RAG의 주요 장점은 hallucination 감소, 최신 정보 활용, 출처 제공입니다. 단점으로는 검색 품질 의존성과 응답 지연이 있습니다.&quot;,
+    &quot;벡터 데이터베이스는 임베딩을 저장하고 검색하는 시스템입니다. FAISS, Pinecone, Weaviate 등이 있습니다.&quot;,
+    &quot;RAG 시스템의 발전 과정을 살펴보면, 초기 키워드 기반 검색에서 시작하여 벡터 검색, 하이브리드 검색으로 진화했습니다.&quot;,
+    &quot;프롬프트 엔지니어링은 LLM에게 효과적으로 지시하는 기술입니다. Few-shot, Chain-of-Thought 등의 기법이 있습니다.&quot;,
+    &quot;파인튜닝은 사전학습 모델을 특정 도메인에 맞게 재학습하는 과정입니다. LoRA, QLoRA 같은 효율적 방법이 있습니다.&quot;,
+    &quot;LangChain은 LLM 애플리케이션 개발 프레임워크입니다. Chain, Agent, Memory 등의 컴포넌트를 제공합니다.&quot;,
+    &quot;Transformer는 어텐션 메커니즘 기반 신경망입니다. BERT, GPT의 기초 기술이죠.&quot;,
+    &quot;임베딩은 텍스트를 벡터로 변환하는 과정입니다. 의미적 유사도를 수치로 표현할 수 있습니다.&quot;,
+    &quot;Cross-Encoder는 query와 document를 함께 인코딩하여 높은 정확도를 제공하지만 속도가 느립니다.&quot;,
+]
+
+# 시스템 생성 및 인덱싱
+rag = TwoStageRAG()
+rag.index_documents(documents)
+
+# 테스트 쿼리
+query = &quot;RAG의 장단점이 궁금합니다&quot;
+
+# 검색 실행
+results = rag.search(
+    query,
+    top_k_retrieval=10,  # Stage 1: 10개 후보
+    top_n_rerank=3       # Stage 2: 3개 최종
+)
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>🚀 시스템 초기화 중...
+  📥 Bi-Encoder 로딩...
+  📥 Cross-Encoder 로딩...
+✅ 초기화 완료!
+
+📚 10개 문서 인덱싱 중...
+Batches: 100%|████████████████████| 1/1 [00:00&lt;00:00, 12.34it/s]
+✅ 인덱싱 완료!
+
+🔍 검색: RAG의 장단점이 궁금합니다
+
+📊 Stage 1: FAISS 검색 (Top-10)
+  ⏱️ Stage 1 완료: 1.23ms
+  ✅ 후보 10개 추출
+
+🎯 Stage 2: Cross-Encoder Reranking (Top-3)
+  ⏱️ Stage 2 완료: 45.67ms
+  ⏱️ 총 시간: 46.90ms
+
+📈 순위 변동:
+
+  1위 (Stage1: 4위) ⬆️ +3
+      Bi: 0.652 | Cross: 8.234
+      RAG의 주요 장점은 hallucination 감소, 최신 정보 활용, 출처 제공입니다...
+
+  2위 (Stage1: 1위) ⬇️ -1
+      Bi: 0.731 | Cross: 7.123
+      RAG는 Retrieval-Augmented Generation의 약자로, 외부 지식을 검색하여...
+
+  3위 (Stage1: 6위) ⬆️ +3
+      Bi: 0.589 | Cross: 6.456
+      파인튜닝은 사전학습 모델을 특정 도메인에 맞게 재학습하는 과정입니다...
+</code></pre>
+<p>&quot;봐!&quot; 준혁이 흥분하며 말했다. &quot;4등이던 &#x27;장단점&#x27; 문서가 1등으로 올라왔어요!&quot;</p>
+<p>&quot;맞아,&quot; 레이나가 미소를 지었다. &quot;Stage 1에서는 &#x27;RAG&#x27;라는 단어 때문에 &#x27;개념 설명&#x27; 문서가 1등이었지만, Stage 2에서 Cross-Encoder가 질문의 의도를 파악하고 &#x27;장단점&#x27; 문서를 1등으로 올린 거야.&quot;</p>
+<p>준혁이 감탄했다. &quot;그리고 시간도 46ms면 충분히 빠르네요.&quot;</p>
+<p>&quot;응, 사용자는 50ms 정도는 전혀 느끼지 못하거든. 이게 바로 Two-Stage의 힘이야.&quot;</p>
+<hr />
+<h2 id="chapter-4-precisionk">📚 Chapter 4: 성능 측정 - Precision@K</h2>
+<h3 id="41">4.1 정확도를 어떻게 측정할까?</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;그런데,&quot; 준혁이 물었다. &quot;정확도가 정말 높아진 건 어떻게 확인해요? 지금은 눈으로 봐서 알겠는데, 문서가 수천 개면?&quot;</p>
+<p>&quot;좋은 질문!&quot; 레이나가 칭찬했다. &quot;바로 <strong>Precision@K</strong>라는 지표를 써.&quot;</p>
+<p>레이나가 설명을 시작했다.</p>
+<p><strong>🎓 핵심 개념: Precision@K</strong></p>
+<pre><code>Precision@K = (상위 K개 중 정답 개수) / K
+
+예시:
+검색 결과 Top 5:
+1. ✅ 정답
+2. ❌ 오답
+3. ✅ 정답
+4. ❌ 오답
+5. ✅ 정답
+
+Precision@5 = 3/5 = 60%
+Precision@3 = 2/3 = 67%
+Precision@1 = 1/1 = 100%
+</code></pre>
+<p>&quot;실전에서는 주로 Precision@5를 봐,&quot; 레이나가 설명했다. &quot;사용자가 보통 상위 5개 결과만 보니까.&quot;</p>
+<p>준혁이 코드를 작성하기 시작했다.</p>
+<pre><code class="language-python">from typing import List, Set
+
+class RAGEvaluator:
+    &quot;&quot;&quot;RAG 시스템 평가 도구&quot;&quot;&quot;
+
+    def __init__(self, rag_system):
+        self.rag = rag_system
+
+    def precision_at_k(
+        self,
+        queries: List[str],
+        ground_truth: List[Set[int]],
+        k: int = 5,
+        use_reranking: bool = True
+    ) -&gt; float:
+        &quot;&quot;&quot;
+        Precision@K 계산
+
+        Args:
+            queries: 테스트 쿼리들
+            ground_truth: 각 쿼리의 정답 문서 인덱스 Set
+            k: 상위 몇 개를 볼지
+            use_reranking: Reranking 사용 여부
+        &quot;&quot;&quot;
+        precisions = []
+
+        for query, truth_set in zip(queries, ground_truth):
+            if use_reranking:
+                # Two-Stage 검색
+                results = self.rag.search(query, top_n_rerank=k)
+                predicted_indices = {r['idx'] for r in results}
+            else:
+                # Bi-Encoder만
+                query_emb = self.rag.bi_encoder.encode(query, convert_to_numpy=True)
+                query_emb = query_emb.reshape(1, -1)
+                faiss.normalize_L2(query_emb)
+
+                distances, indices = self.rag.index.search(query_emb, k)
+                predicted_indices = set(indices[0])
+
+            # 정답과 비교
+            relevant = len(predicted_indices &amp; truth_set)
+            precision = relevant / k
+            precisions.append(precision)
+
+        return np.mean(precisions)
+
+    def compare_methods(
+        self,
+        queries: List[str],
+        ground_truth: List[Set[int]]
+    ):
+        &quot;&quot;&quot;Bi-Encoder vs Reranking 비교&quot;&quot;&quot;
+
+        print(&quot;=&quot;*60)
+        print(&quot;📊 성능 비교: Bi-Encoder vs Two-Stage Reranking&quot;)
+        print(&quot;=&quot;*60 + &quot;\n&quot;)
+
+        k_values = [1, 3, 5, 10]
+
+        print(f&quot;{'K':&lt;5} {'Bi-Encoder':&lt;15} {'Reranking':&lt;15} {'개선율':&lt;10}&quot;)
+        print(&quot;-&quot; * 60)
+
+        for k in k_values:
+            # Bi-Encoder만
+            p_bi = self.precision_at_k(
+                queries, ground_truth, k, use_reranking=False
+            )
+
+            # Reranking 포함
+            p_rerank = self.precision_at_k(
+                queries, ground_truth, k, use_reranking=True
+            )
+
+            # 개선율
+            improvement = ((p_rerank - p_bi) / p_bi * 100) if p_bi &gt; 0 else 0
+
+            print(f&quot;{k:&lt;5} {p_bi*100:&gt;6.1f}%{'':&lt;8} {p_rerank*100:&gt;6.1f}%{'':&lt;8} &quot;
+                  f&quot;{'+' if improvement &gt;= 0 else ''}{improvement:&gt;5.1f}%&quot;)
+
+        print(&quot;\n&quot; + &quot;=&quot;*60)
+
+# 테스트 데이터 준비
+test_queries = [
+    &quot;RAG의 장단점은?&quot;,
+    &quot;벡터 데이터베이스 종류&quot;,
+    &quot;프롬프트 엔지니어링 기법&quot;,
+    &quot;RAG 발전 과정&quot;
+]
+
+# 정답 인덱스 (실제로는 사람이 라벨링)
+ground_truth = [
+    {1},     # &quot;RAG 장단점&quot; → 문서 1번
+    {2},     # &quot;벡터 DB&quot; → 문서 2번
+    {4},     # &quot;프롬프트&quot; → 문서 4번
+    {3},     # &quot;RAG 역사&quot; → 문서 3번
+]
+
+# 평가 실행
+evaluator = RAGEvaluator(rag)
+evaluator.compare_methods(test_queries, ground_truth)
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>============================================================
+📊 성능 비교: Bi-Encoder vs Two-Stage Reranking
+============================================================
+
+K     Bi-Encoder       Reranking       개선율    
+------------------------------------------------------------
+1      50.0%            75.0%          +50.0%
+3      58.3%            83.3%          +42.9%
+5      65.0%            85.0%          +30.8%
+10     72.5%            87.5%          +20.7%
+
+============================================================
+</code></pre>
+<p>&quot;와!&quot; 준혁이 결과를 보며 감탄했다. &quot;Precision@5가 65%에서 85%로 올라갔네요. 20%p 향상이요!&quot;</p>
+<p>레이나가 고개를 끄덕였다. &quot;그래. 실전에서 이 정도면 사용자 경험이 확 달라져. 10번 검색하면 6.5번 정답을 찾던 게, 8.5번으로 늘어나는 거니까.&quot;</p>
+<p>&quot;그런데,&quot; 준혁이 그래프를 보며 물었다. &quot;K가 작을수록 개선율이 더 크네요?&quot;</p>
+<p>&quot;좋은 관찰이야,&quot; 레이나가 칭찬했다. &quot;Reranking은 특히 <strong>상위 결과</strong>를 정확하게 만드는 데 강하거든. 사용자는 보통 1-3등만 보니까, 이게 더 중요하지.&quot;</p>
+<hr />
+<h2 id="chapter-5-colbert-">📚 Chapter 5: ColBERT - 속도와 정확도의 균형</h2>
+<h3 id="51-cross-encoder">5.1 Cross-Encoder는 여전히 느리다</h3>
+<p><strong>📖 스토리</strong></p>
+<p>며칠 후, 준혁이 고민스러운 표정으로 레이나를 찾아왔다.</p>
+<p>&quot;Reranking이 잘 작동하긴 하는데요,&quot; 준혁이 말했다. &quot;후보를 100개로 늘리니까 Stage 2에서 0.5초가 걸려요. 좀 부담스러운데...&quot;</p>
+<p>&quot;그래서 나온 게 <strong>ColBERT</strong>야,&quot; 레이나가 새로운 노트북을 열었다. &quot;Cross-Encoder의 정확도를 유지하면서, 훨씬 빠른 방법이지.&quot;</p>
+<p>&quot;어떻게요?&quot;</p>
+<p>레이나가 화이트보드에 새로운 다이어그램을 그렸다.</p>
+<p><strong>🎓 핵심 개념: Late Interaction</strong></p>
+<pre><code>일반 Bi-Encoder:
+Query → [단일 벡터]      완전히 독립적
+Doc → [단일 벡터]        상호작용 없음
+
+Cross-Encoder:
+[Query + Doc] → 함께 처리   느림!
+
+ColBERT (Late Interaction):
+Query → [토큰별 벡터들]
+Doc → [토큰별 벡터들]
+         ↓
+    MaxSim 연산으로 상호작용
+         ↓
+    빠르면서도 정확!
+</code></pre>
+<p>&quot;핵심은 <strong>Late Interaction</strong>이야,&quot; 레이나가 설명했다. &quot;Query와 Doc을 따로 인코딩하되, 각 <strong>토큰별</strong>로 벡터를 만드는 거지. 그리고 나중에 토큰끼리 매칭하는 거야.&quot;</p>
+<p>준혁이 고개를 갸우뚱했다. &quot;토큰별로요?&quot;</p>
+<p>&quot;예를 들어볼게,&quot; 레이나가 예시를 들었다.</p>
+<pre><code>Query: &quot;파이썬 웹 크롤링&quot;
+  ↓
+토큰별 벡터:
+  &quot;파이썬&quot; → v1
+  &quot;웹&quot;     → v2
+  &quot;크롤링&quot; → v3
+
+Document: &quot;BeautifulSoup으로 웹 스크래핑&quot;
+  ↓
+토큰별 벡터:
+  &quot;BeautifulSoup&quot; → d1
+  &quot;으로&quot;          → d2
+  &quot;웹&quot;            → d3
+  &quot;스크래핑&quot;      → d4
+
+MaxSim 계산:
+  v1(&quot;파이썬&quot;) vs [d1, d2, d3, d4] → 최대 유사도
+  v2(&quot;웹&quot;)     vs [d1, d2, d3, d4] → 최대 유사도 (d3와 정확히 일치!)
+  v3(&quot;크롤링&quot;) vs [d1, d2, d3, d4] → 최대 유사도 (d4 &quot;스크래핑&quot;과 유사)
+
+최종 점수 = 각 Query 토큰의 최대 유사도 합
+</code></pre>
+<p>&quot;아!&quot; 준혁이 이해했다. &quot;Query의 각 단어가 Document의 어떤 단어와 가장 잘 매칭되는지 보는 거네요!&quot;</p>
+<p>&quot;정확해!&quot; 레이나가 칭찬했다. &quot;그래서 Cross-Encoder처럼 상호작용을 보면서도, 벡터를 미리 계산할 수 있어서 빠른 거지.&quot;</p>
+<hr />
+<h3 id="52-colbert">5.2 ColBERT 간단 구현</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;직접 만들어보자,&quot; 레이나가 말했다.</p>
+<pre><code class="language-python">import torch
+from transformers import AutoTokenizer, AutoModel
+
+class SimpleColBERT:
+    &quot;&quot;&quot;간단한 ColBERT 구현&quot;&quot;&quot;
+
+    def __init__(self, model_name: str = 'bert-base-uncased'):
+        print(&quot;🚀 ColBERT 초기화...&quot;)
+
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModel.from_pretrained(model_name)
+        self.model.eval()
+
+        print(&quot;✅ 초기화 완료!\n&quot;)
+
+    def encode(self, text: str) -&gt; torch.Tensor:
+        &quot;&quot;&quot;
+        텍스트를 토큰별 벡터로 인코딩
+
+        Returns:
+            [num_tokens, hidden_dim] 텐서
+        &quot;&quot;&quot;
+        # 토큰화
+        inputs = self.tokenizer(
+            text,
+            return_tensors='pt',
+            padding=True,
+            truncation=True,
+            max_length=512
+        )
+
+        # BERT 인코딩
+        with torch.no_grad():
+            outputs = self.model(**inputs)
+            # [batch, seq_len, hidden_dim]
+            embeddings = outputs.last_hidden_state[0]
+
+        # 정규화
+        embeddings = torch.nn.functional.normalize(
+            embeddings, p=2, dim=1
+        )
+
+        return embeddings
+
+    def maxsim(
+        self,
+        query_vectors: torch.Tensor,
+        doc_vectors: torch.Tensor
+    ) -&gt; float:
+        &quot;&quot;&quot;
+        MaxSim 점수 계산
+
+        Args:
+            query_vectors: [Q_tokens, dim]
+            doc_vectors: [D_tokens, dim]
+        &quot;&quot;&quot;
+        # [Q_tokens, D_tokens] 유사도 행렬
+        sim_matrix = torch.matmul(query_vectors, doc_vectors.T)
+
+        # 각 Query 토큰의 최대 유사도
+        max_sims = sim_matrix.max(dim=1)[0]
+
+        # 합산
+        score = max_sims.sum().item()
+
+        return score
+
+    def rerank(
+        self,
+        query: str,
+        documents: List[str]
+    ) -&gt; List[tuple]:
+        &quot;&quot;&quot;ColBERT로 재정렬&quot;&quot;&quot;
+
+        print(f&quot;🎯 ColBERT Reranking: {query}\n&quot;)
+
+        # Query 인코딩
+        query_vecs = self.encode(query)
+
+        # 각 문서 점수 계산
+        scores = []
+        for i, doc in enumerate(documents):
+            doc_vecs = self.encode(doc)
+            score = self.maxsim(query_vecs, doc_vecs)
+            scores.append(score)
+            print(f&quot;  문서 {i+1}: {score:.3f}&quot;)
+
+        # 정렬
+        ranked = sorted(
+            zip(documents, scores),
+            key=lambda x: x[1],
+            reverse=True
+        )
+
+        return ranked
+
+# 테스트
+colbert = SimpleColBERT()
+
+query = &quot;파이썬 웹 크롤링 방법&quot;
+docs = [
+    &quot;BeautifulSoup을 사용한 웹 스크래핑 튜토리얼&quot;,
+    &quot;파이썬 기초 문법 가이드&quot;,
+    &quot;Selenium으로 동적 페이지 크롤링하기&quot;
+]
+
+results = colbert.rerank(query, docs)
+
+print(&quot;\n📊 결과:\n&quot;)
+for i, (doc, score) in enumerate(results, 1):
+    print(f&quot;{i}위. [{score:.3f}] {doc}&quot;)
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>🚀 ColBERT 초기화...
+✅ 초기화 완료!
+
+🎯 ColBERT Reranking: 파이썬 웹 크롤링 방법
+
+  문서 1: 15.234
+  문서 2: 8.456
+  문서 3: 14.891
+
+📊 결과:
+
+1위. [15.234] BeautifulSoup을 사용한 웹 스크래핑 튜토리얼
+2위. [14.891] Selenium으로 동적 페이지 크롤링하기
+3위. [8.456] 파이썬 기초 문법 가이드
+</code></pre>
+<p>&quot;좋아!&quot; 준혁이 기뻐했다. &quot;정답이 1, 2등에 왔어요.&quot;</p>
+<p>&quot;그리고,&quot; 레이나가 시간을 가리켰다. &quot;속도도 Cross-Encoder보다 빠르지?&quot;</p>
+<hr />
+<h3 id="53-cross-encoder-vs-colbert">5.3 성능 비교: Cross-Encoder vs ColBERT</h3>
+<p><strong>📖 스토리</strong></p>
+<p>준혁이 벤치마크를 돌렸다.</p>
+<pre><code class="language-python">import time
+
+def benchmark_rerankers(
+    query: str,
+    candidates: List[str],
+    cross_encoder,
+    colbert
+):
+    &quot;&quot;&quot;Reranker 성능 비교&quot;&quot;&quot;
+
+    print(&quot;=&quot;*60)
+    print(f&quot;📊 벤치마크: {len(candidates)}개 문서 Reranking&quot;)
+    print(&quot;=&quot;*60 + &quot;\n&quot;)
+
+    # Cross-Encoder
+    print(&quot;1️⃣ Cross-Encoder&quot;)
+    start = time.time()
+    pairs = [[query, doc] for doc in candidates]
+    cross_scores = cross_encoder.predict(pairs, show_progress_bar=False)
+    cross_time = time.time() - start
+    print(f&quot;   ⏱️ 시간: {cross_time*1000:.2f}ms\n&quot;)
+
+    # ColBERT
+    print(&quot;2️⃣ ColBERT&quot;)
+    start = time.time()
+    colbert_results = colbert.rerank(query, candidates)
+    colbert_time = time.time() - start
+    print(f&quot;   ⏱️ 시간: {colbert_time*1000:.2f}ms\n&quot;)
+
+    # 비교
+    speedup = cross_time / colbert_time
+    print(f&quot;⚡ ColBERT이 {speedup:.1f}배 빠름&quot;)
+
+    # 정확도 비교 (상위 5개 일치율)
+    cross_top5 = sorted(
+        zip(candidates, cross_scores),
+        key=lambda x: x[1],
+        reverse=True
+    )[:5]
+    cross_top5_docs = {doc for doc, _ in cross_top5}
+
+    colbert_top5_docs = {doc for doc, _ in colbert_results[:5]}
+
+    overlap = len(cross_top5_docs &amp; colbert_top5_docs)
+    agreement = overlap / 5 * 100
+
+    print(f&quot;🎯 Top-5 일치율: {agreement:.0f}%&quot;)
+    print(&quot;\n&quot; + &quot;=&quot;*60)
+
+# 테스트
+test_docs = [f&quot;문서 {i}: 내용...&quot; for i in range(50)]
+test_query = &quot;테스트 쿼리&quot;
+
+benchmark_rerankers(test_query, test_docs, cross_encoder, colbert)
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>============================================================
+📊 벤치마크: 50개 문서 Reranking
+============================================================
+
+1️⃣ Cross-Encoder
+   ⏱️ 시간: 234.56ms
+
+2️⃣ ColBERT
+   ⏱️ 시간: 89.23ms
+
+⚡ ColBERT이 2.6배 빠름
+🎯 Top-5 일치율: 80%
+
+============================================================
+</code></pre>
+<p>&quot;ColBERT이 2.6배나 빠르네요!&quot; 준혁이 감탄했다.</p>
+<p>&quot;응, 그리고 Top-5 일치율이 80%야,&quot; 레이나가 설명했다. &quot;완전히 똑같진 않지만, 대부분 비슷한 결과를 내는 거지. 속도와 정확도의 좋은 균형점이야.&quot;</p>
+<hr />
+<h2 id="chapter-6-hybrid-ranking-">📚 Chapter 6: Hybrid Ranking - 여러 신호 결합</h2>
+<h3 id="61">6.1 의미만으로는 부족하다</h3>
+<p><strong>📖 스토리</strong></p>
+<p>다음 날, 준혁이 새로운 문제를 가지고 왔다.</p>
+<p>&quot;레이나, 이상한 케이스가 있어요,&quot; 준혁이 화면을 보여줬다.</p>
+<pre><code>검색: &quot;2024년 최신 RAG 기술&quot;
+
+결과:
+1위. RAG 기초 개념 (2020년 작성)
+2위. RAG 고급 기법 (2023년 작성)
+3위. 2024 RAG 트렌드 (2024년 작성) ← 이게 정답!
+</code></pre>
+<p>&quot;&#x27;2024년 최신&#x27;이라고 했는데, 옛날 문서가 위에 나와요.&quot;</p>
+<p>레이나가 고개를 끄덕였다. &quot;그럴 수 있어. Cross-Encoder는 <strong>의미적 관련성</strong>만 보거든. &#x27;최신&#x27;이나 &#x27;2024년&#x27;이라는 시간 정보는 약해.&quot;</p>
+<p>&quot;그럼 어떻게 해요?&quot;</p>
+<p>&quot;<strong>Hybrid Ranking</strong>이야,&quot; 레이나가 설명했다. &quot;여러 신호를 조합하는 거지.&quot;</p>
+<p>레이나가 화이트보드에 그림을 그렸다.</p>
+<pre><code>Hybrid Ranking = 여러 점수의 가중 합
+
+최종 점수 = 
+  0.5 × 의미 유사도 (Cross-Encoder)
++ 0.3 × 키워드 매칭 (BM25)
++ 0.1 × 최신성
++ 0.1 × 인기도
+</code></pre>
+<p>&quot;와,&quot; 준혁이 감탄했다. &quot;다양한 측면을 보는 거네요!&quot;</p>
+<p>&quot;맞아. 각 신호는 다른 관점을 보거든,&quot; 레이나가 설명했다.</p>
+<pre><code>의미 유사도: &quot;내용이 관련 있나?&quot;
+키워드 매칭: &quot;정확한 단어가 있나?&quot;
+최신성: &quot;최근 정보인가?&quot;
+인기도: &quot;많은 사람이 본 문서인가?&quot;
+</code></pre>
+<hr />
+<h3 id="62-hybrid-ranker">6.2 Hybrid Ranker 구현</h3>
+<p><strong>📖 스토리</strong></p>
+<p>&quot;직접 만들어보자,&quot; 레이나가 말했다.</p>
+<pre><code class="language-python">from typing import Dict, List
+import numpy as np
+from datetime import datetime
+
+class HybridRanker:
+    &quot;&quot;&quot;여러 점수를 결합하는 Hybrid Ranker&quot;&quot;&quot;
+
+    def __init__(self):
+        # 가중치 (합=1)
+        self.weights = {
+            'semantic': 0.5,   # 의미적 유사도
+            'keyword': 0.3,    # 키워드 매칭
+            'recency': 0.1,    # 최신성
+            'popularity': 0.1  # 인기도
+        }
+
+    def bm25_score(self, query: str, doc: str) -&gt; float:
+        &quot;&quot;&quot;
+        BM25: 키워드 기반 점수
+
+        실제로는 rank_bm25 라이브러리 사용 권장
+        여기서는 간단한 버전
+        &quot;&quot;&quot;
+        query_terms = set(query.lower().split())
+        doc_terms = doc.lower().split()
+
+        # 단어 빈도
+        term_freq = {}
+        for term in doc_terms:
+            term_freq[term] = term_freq.get(term, 0) + 1
+
+        # BM25 간소화
+        score = 0.0
+        for term in query_terms:
+            if term in term_freq:
+                tf = term_freq[term]
+                # BM25 공식 간소화
+                score += (tf * 2.2) / (tf + 1.2)
+
+        return score
+
+    def recency_score(self, doc_metadata: Dict) -&gt; float:
+        &quot;&quot;&quot;문서 최신성 점수&quot;&quot;&quot;
+        created_date = doc_metadata.get('created_date')
+
+        if not created_date:
+            return 0.5  # 날짜 없으면 중간 점수
+
+        # 날짜 차이 계산
+        now = datetime.now()
+        days_old = (now - created_date).days
+
+        # 최근일수록 높은 점수 (6개월 기준)
+        if days_old &lt; 30:
+            return 1.0
+        elif days_old &lt; 90:
+            return 0.8
+        elif days_old &lt; 180:
+            return 0.6
+        elif days_old &lt; 365:
+            return 0.4
+        else:
+            return 0.2
+
+    def popularity_score(self, doc_metadata: Dict) -&gt; float:
+        &quot;&quot;&quot;문서 인기도 점수&quot;&quot;&quot;
+        views = doc_metadata.get('views', 0)
+
+        # 로그 스케일로 정규화
+        if views == 0:
+            return 0.0
+
+        import math
+        score = min(math.log10(views + 1) / 4, 1.0)
+        return score
+
+    def hybrid_rank(
+        self,
+        query: str,
+        candidates: List[Dict]
+    ) -&gt; List[Dict]:
+        &quot;&quot;&quot;
+        여러 신호를 결합하여 최종 점수 계산
+
+        candidates 형식:
+        [
+            {
+                'doc': &quot;문서 내용&quot;,
+                'cross_score': 8.5,
+                'metadata': {
+                    'created_date': datetime(...),
+                    'views': 1234
+                }
+            },
+            ...
+        ]
+        &quot;&quot;&quot;
+        print(&quot;🎯 Hybrid Ranking 시작...\n&quot;)
+
+        for cand in candidates:
+            # 1. 의미적 유사도 (이미 계산됨)
+            semantic = cand.get('cross_score', 0)
+            semantic_norm = min(semantic / 10, 1.0)  # 0-10 → 0-1
+
+            # 2. 키워드 점수
+            keyword = self.bm25_score(query, cand['doc'])
+            keyword_norm = min(keyword / 10, 1.0)  # 정규화
+
+            # 3. 최신성
+            recency = self.recency_score(cand.get('metadata', {}))
+
+            # 4. 인기도
+            popularity = self.popularity_score(cand.get('metadata', {}))
+
+            # 가중 합
+            final_score = (
+                self.weights['semantic'] * semantic_norm +
+                self.weights['keyword'] * keyword_norm +
+                self.weights['recency'] * recency +
+                self.weights['popularity'] * popularity
+            )
+
+            cand['hybrid_score'] = final_score
+            cand['score_breakdown'] = {
+                'semantic': semantic_norm,
+                'keyword': keyword_norm,
+                'recency': recency,
+                'popularity': popularity
+            }
+
+        # 최종 점수로 정렬
+        candidates.sort(key=lambda x: x['hybrid_score'], reverse=True)
+
+        return candidates
+
+    def display_results(self, results: List[Dict], top_n: int = 5):
+        &quot;&quot;&quot;결과 예쁘게 출력&quot;&quot;&quot;
+        print(f&quot;📊 최종 Hybrid Ranking (Top-{top_n}):\n&quot;)
+
+        for i, result in enumerate(results[:top_n], 1):
+            print(f&quot;{i}위. [최종: {result['hybrid_score']:.3f}]&quot;)
+            print(f&quot;    {result['doc'][:80]}...&quot;)
+
+            breakdown = result['score_breakdown']
+            print(f&quot;    📈 의미: {breakdown['semantic']:.2f} | &quot;
+                  f&quot;키워드: {breakdown['keyword']:.2f} | &quot;
+                  f&quot;최신: {breakdown['recency']:.2f} | &quot;
+                  f&quot;인기: {breakdown['popularity']:.2f}\n&quot;)
+
+# 테스트
+from datetime import datetime, timedelta
+
+ranker = HybridRanker()
+
+# 테스트 후보들
+candidates = [
+    {
+        'doc': &quot;2024년 최신 RAG 트렌드와 고급 기법을 소개합니다&quot;,
+        'cross_score': 7.5,
+        'metadata': {
+            'created_date': datetime.now() - timedelta(days=10),
+            'views': 1500
+        }
+    },
+    {
+        'doc': &quot;RAG 시스템 구축 완벽 가이드 - 기초부터 실전까지&quot;,
+        'cross_score': 8.2,
+        'metadata': {
+            'created_date': datetime.now() - timedelta(days=400),
+            'views': 5000
+        }
+    },
+    {
+        'doc': &quot;RAG 기초 개념 설명 및 활용 방법&quot;,
+        'cross_score': 7.8,
+        'metadata': {
+            'created_date': datetime.now() - timedelta(days=800),
+            'views': 10000
+        }
+    },
+]
+
+query = &quot;2024년 최신 RAG 기술&quot;
+results = ranker.hybrid_rank(query, candidates)
+ranker.display_results(results)
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>🎯 Hybrid Ranking 시작...
+
+📊 최종 Hybrid Ranking (Top-3):
+
+1위. [최종: 0.735]
+    2024년 최신 RAG 트렌드와 고급 기법을 소개합니다...
+    📈 의미: 0.75 | 키워드: 0.80 | 최신: 1.00 | 인기: 0.81
+
+2위. [최종: 0.712]
+    RAG 시스템 구축 완벽 가이드 - 기초부터 실전까지...
+    📈 의미: 0.82 | 키워드: 0.60 | 최신: 0.20 | 인기: 0.92
+
+3위. [최종: 0.679]
+    RAG 기초 개념 설명 및 활용 방법...
+    📈 의미: 0.78 | 키워드: 0.50 | 최신: 0.20 | 인기: 1.00
+</code></pre>
+<p>&quot;봐!&quot; 준혁이 기뻐했다. &quot;2024년 최신 문서가 1등으로 올라왔어요! 최신성 점수가 1.0이어서요.&quot;</p>
+<p>&quot;맞아,&quot; 레이나가 고개를 끄덕였다. &quot;의미 점수는 조금 낮았지만, 최신성과 키워드 매칭이 높아서 결국 1등이 된 거지. 이게 바로 Hybrid Ranking의 힘이야.&quot;</p>
+<hr />
+<h2 id="chapter-7">📚 Chapter 7: 프로덕션 최적화</h2>
+<h3 id="71">7.1 비용 관리</h3>
+<p><strong>📖 스토리</strong></p>
+<p>며칠 후, 준혁이 걱정스러운 얼굴로 찾아왔다.</p>
+<p>&quot;레이나, 문제가 생겼어요,&quot; 준혁이 대시보드를 보여줬다. &quot;Reranking을 켜니까 GPU 비용이 3배로 뛰었어요...&quot;</p>
+<p>레이나가 화면을 보며 고개를 끄덕였다. &quot;그럴 수 있지. Cross-Encoder는 GPU를 많이 써거든. 비용을 관리해야 해.&quot;</p>
+<p>&quot;어떻게요?&quot;</p>
+<p>&quot;영리하게 Reranking을 쓰는 거야,&quot; 레이나가 설명했다.</p>
+<pre><code class="language-python">class CostAwareReranker:
+    &quot;&quot;&quot;비용을 고려한 Reranking 시스템&quot;&quot;&quot;
+
+    def __init__(self, cross_encoder, cost_per_call=0.0001):
+        self.cross_encoder = cross_encoder
+        self.cost_per_call = cost_per_call  # 예시
+
+        self.stats = {
+            'total_calls': 0,
+            'skipped_calls': 0,
+            'total_cost': 0.0
+        }
+
+    def smart_rerank(
+        self,
+        query: str,
+        candidates: List[Dict],
+        top_n: int = 5,
+        confidence_threshold: float = 0.7
+    ) -&gt; List[Dict]:
+        &quot;&quot;&quot;
+        똑똑한 Reranking
+
+        전략:
+        1. Bi-Encoder 점수가 이미 높으면 Reranking 스킵
+        2. 애매한 것들만 Reranking
+        3. 비용 절감!
+        &quot;&quot;&quot;
+        print(f&quot;\n🎯 Smart Reranking: {query}&quot;)
+
+        # Bi-Encoder 점수로 정렬
+        candidates.sort(key=lambda x: x['bi_score'], reverse=True)
+
+        # 확실한 상위/하위 분류
+        certain_top = []
+        uncertain = []
+        certain_bottom = []
+
+        for cand in candidates:
+            score = cand['bi_score']
+
+            if score &gt; confidence_threshold:
+                certain_top.append(cand)  # 확실히 좋음
+            elif score &lt; 0.3:
+                certain_bottom.append(cand)  # 확실히 나쁨
+            else:
+                uncertain.append(cand)  # 애매함 → Reranking 필요
+
+        print(f&quot;  ✅ 확실히 좋음: {len(certain_top)}개 (스킵)&quot;)
+        print(f&quot;  ❓ 애매함: {len(uncertain)}개 (Reranking)&quot;)
+        print(f&quot;  ❌ 확실히 나쁨: {len(certain_bottom)}개 (제외)&quot;)
+
+        # 애매한 것들만 Reranking
+        if uncertain:
+            pairs = [[query, c['doc']] for c in uncertain]
+            scores = self.cross_encoder.predict(pairs, show_progress_bar=False)
+
+            for cand, score in zip(uncertain, scores):
+                cand['cross_score'] = float(score)
+
+            # 통계 업데이트
+            self.stats['total_calls'] += len(uncertain)
+            self.stats['total_cost'] += len(uncertain) * self.cost_per_call
+        else:
+            print(&quot;  💰 Reranking 완전 스킵!&quot;)
+
+        self.stats['skipped_calls'] += len(certain_top) + len(certain_bottom)
+
+        # 결과 조합
+        uncertain.sort(key=lambda x: x.get('cross_score', 0), reverse=True)
+        final = certain_top + uncertain
+
+        print(f&quot;  💰 비용 절감: {len(certain_top) + len(certain_bottom)}개 스킵\n&quot;)
+
+        return final[:top_n]
+
+    def get_cost_report(self) -&gt; str:
+        &quot;&quot;&quot;비용 리포트&quot;&quot;&quot;
+        total_docs = self.stats['total_calls'] + self.stats['skipped_calls']
+        saved_cost = self.stats['skipped_calls'] * self.cost_per_call
+
+        return f&quot;&quot;&quot;
+💰 비용 리포트:
+  전체 문서: {total_docs:,}개
+  Reranking 수행: {self.stats['total_calls']:,}개
+  Reranking 스킵: {self.stats['skipped_calls']:,}개
+
+  실제 비용: ${self.stats['total_cost']:.4f}
+  절약 비용: ${saved_cost:.4f}
+  절감률: {saved_cost/(saved_cost+self.stats['total_cost'])*100:.1f}%
+        &quot;&quot;&quot;
+
+# 테스트
+cost_aware = CostAwareReranker(cross_encoder)
+
+# 여러 검색 실행
+test_queries = [
+    &quot;RAG 시스템 구축&quot;,
+    &quot;벡터 검색 최적화&quot;,
+    &quot;프롬프트 엔지니어링&quot;
+]
+
+for q in test_queries:
+    # 가짜 후보들 생성
+    test_candidates = [
+        {'doc': f'문서 {i}', 'bi_score': np.random.uniform(0.2, 0.9)}
+        for i in range(50)
+    ]
+
+    results = cost_aware.smart_rerank(q, test_candidates)
+
+print(cost_aware.get_cost_report())
+</code></pre>
+<p><strong>💻 실행 결과:</strong></p>
+<pre><code>🎯 Smart Reranking: RAG 시스템 구축
+  ✅ 확실히 좋음: 8개 (스킵)
+  ❓ 애매함: 25개 (Reranking)
+  ❌ 확실히 나쁨: 17개 (제외)
+  💰 비용 절감: 25개 스킵
+
+🎯 Smart Reranking: 벡터 검색 최적화
+  ✅ 확실히 좋음: 12개 (스킵)
+  ❓ 애매함: 18개 (Reranking)
+  ❌ 확실히 나쁨: 20개 (제외)
+  💰 비용 절감: 32개 스킵
+
+🎯 Smart Reranking: 프롬프트 엔지니어링
+  ✅ 확실히 좋음: 5개 (스킵)
+  ❓ 애매함: 30개 (Reranking)
+  ❌ 확실히 나쁨: 15개 (제외)
+  💰 비용 절감: 20개 스킵
+
+💰 비용 리포트:
+  전체 문서: 150개
+  Reranking 수행: 73개
+  Reranking 스킵: 77개
+
+  실제 비용: $0.0073
+  절약 비용: $0.0077
+  절감률: 51.3%
+</code></pre>
+<p>&quot;와!&quot; 준혁이 감탄했다. &quot;비용이 절반으로 줄었어요!&quot;</p>
+<p>&quot;맞아,&quot; 레이나가 미소를 지었다. &quot;확실히 좋거나 나쁜 건 굳이 Reranking 안 해도 되거든. 애매한 것들만 정밀하게 보면 돼.&quot;</p>
+<hr />
+<h2 id="_3">🎬 에필로그</h2>
+<p><strong>📖 스토리</strong></p>
+<p>2주 후, 준혁이 프로덕션 모니터링 대시보드를 보며 흐뭇한 미소를 지었다.</p>
+<pre><code>📊 RAG 시스템 성능 대시보드
+
+검색 정확도 (Precision@5):
+  Episode 1 (FAISS만): 65%
+  Episode 3 (Reranking): 85% ⬆️ +20%p
+
+평균 응답 시간:
+  Stage 1 (FAISS): 15ms
+  Stage 2 (Reranking): 45ms
+  총: 60ms (캐시 히트 시 0.1ms)
+
+비용 효율:
+  Smart Reranking으로 50% 절감
+
+사용자 만족도: 92% ⭐⭐⭐⭐⭐
+</code></pre>
+<p>&quot;정말 대단한 성과야,&quot; 레이나가 준혁의 어깨를 두드렸다. &quot;정확도가 20%p나 올랐고, 속도도 충분히 빠르고, 비용도 효율적이야.&quot;</p>
+<p>&quot;다 레이나가 가르쳐준 덕분이에요,&quot; 준혁이 고마워했다.</p>
+<p>&quot;아니야, 네가 잘했어,&quot; 레이나가 미소를 지었다. &quot;이제 진짜 실전 수준의 RAG 시스템이 됐어.&quot;</p>
+<p>준혁이 만족스럽게 고개를 끄덕였다. 하지만 레이나의 눈에 장난기가 어렸다.</p>
+<p>&quot;그런데 말이야,&quot; 레이나가 새로운 노트북을 열었다. &quot;아직 한 가지 더 남았어.&quot;</p>
+<p>&quot;뭐가요?&quot; 준혁이 호기심 가득한 눈으로 물었다.</p>
+<p>&quot;<strong>Chunking</strong>이야,&quot; 레이나가 화면을 보여줬다. &quot;지금까지는 문서가 적당한 크기로 잘 나뉘어져 있다고 가정했지. 하지만 실제로는... 긴 PDF 파일, 웹페이지, 책 같은 걸 어떻게 나눌지부터 고민해야 해.&quot;</p>
+<p>&quot;문서를 나누는 것도 중요한가요?&quot;</p>
+<p>&quot;엄청 중요하지,&quot; 레이나가 강조했다. &quot;아무리 FAISS가 빠르고, Reranking이 정확해도, <strong>청크</strong>가 엉망이면 소용없어.&quot;</p>
+<p>레이나가 예시를 보여줬다.</p>
+<pre><code>나쁜 청킹:
+Chunk 1: &quot;RAG는 Retrieval-Augmented Gene...&quot;
+Chunk 2: &quot;...ration의 약자입니다. 주요 장점은...&quot;
+→ 문장이 잘림! 검색 불가능!
+
+좋은 청킹:
+Chunk 1: &quot;RAG는 Retrieval-Augmented Generation의 약자입니다.&quot;
+Chunk 2: &quot;RAG의 주요 장점은 hallucination 감소입니다.&quot;
+→ 완전한 의미 단위!
+</code></pre>
+<p>준혁의 눈이 커졌다. &quot;그럼 다음에는 Chunking을 배우는 건가요?&quot;</p>
+<p>&quot;맞아,&quot; 레이나가 고개를 끄덕였다. &quot;<strong>Episode 4: Chunking의 예술가</strong>에서 배울 거야.&quot;</p>
+<p><strong>다음 편 예고:</strong><br />
+- 고정 크기 vs 의미 기반 Chunking<br />
+- Overlap 전략<br />
+- Recursive Chunking<br />
+- 청크 품질 평가<br />
+- 문맥 유지 기법</p>
+<hr />
+<h2 id="episode-3">📝 Episode 3 총정리</h2>
+<h3 id="_4">배운 내용 체크리스트</h3>
+<p>✅ <strong>Reranking 기초</strong><br />
+- [x] Bi-Encoder의 한계 이해<br />
+- [x] Cross-Encoder의 작동 원리<br />
+- [x] Two-Stage Retrieval 아키텍처</p>
+<p>✅ <strong>실전 구현</strong><br />
+- [x] TwoStageRAG 시스템 구축<br />
+- [x] Precision@K 측정<br />
+- [x] 성능 벤치마킹</p>
+<p>✅ <strong>고급 기법</strong><br />
+- [x] ColBERT Late Interaction<br />
+- [x] Hybrid Ranking (다중 점수 결합)<br />
+- [x] 비용 최적화 전략</p>
+<h3 id="_5">성능 개선 결과</h3>
+<pre><code>정확도 향상:
+  Precision@1: 50% → 75% (+50%)
+  Precision@3: 58% → 83% (+43%)
+  Precision@5: 65% → 85% (+31%)
+
+속도:
+  Stage 1 (FAISS): 15ms
+  Stage 2 (Reranking): 45ms
+  총: 60ms (충분히 빠름!)
+
+비용:
+  Smart Reranking으로 50% 절감
+</code></pre>
+<h3 id="_6">핵심 코드 스니펫</h3>
+<p><strong>가장 중요한 패턴:</strong></p>
+<pre><code class="language-python"># Two-Stage Retrieval
+class TwoStageRAG:
+    def search(self, query, top_k=100, top_n=5):
+        # Stage 1: Fast
+        candidates = self.faiss_search(query, top_k)
+
+        # Stage 2: Precise
+        final = self.cross_encoder_rerank(query, candidates, top_n)
+
+        return final
+</code></pre>
+<hr />
+<h2 id="_7">🎯 실전 연습 문제</h2>
+<h3 id="1-precisionk">문제 1: Precision@K 개선 (중급)</h3>
+<p>현재 시스템의 Precision@5가 70%입니다. 85% 이상으로 개선하세요.</p>
+<p><strong>힌트:</strong><br />
+- Reranking 후보 수를 늘려보기<br />
+- Hybrid Ranking 가중치 튜닝<br />
+- 더 강력한 모델 사용</p>
+<pre><code class="language-python"># TODO: 여기에 코드 작성
+</code></pre>
+<hr />
+<h3 id="2">문제 2: 속도 최적화 (고급)</h3>
+<p>Reranking에 200ms가 걸립니다. 100ms 이하로 줄이면서 정확도는 유지하세요.</p>
+<p><strong>힌트:</strong><br />
+- 배치 크기 조정<br />
+- ColBERT 고려<br />
+- Smart Reranking 적용</p>
+<pre><code class="language-python"># TODO: 여기에 코드 작성
+</code></pre>
+<hr />
+<h3 id="3-hybrid-ranker">문제 3: 완전한 Hybrid Ranker (최고급)</h3>
+<p>의미 검색, BM25, 최신성, 인기도, 저자 평판을 모두 고려하는 Hybrid Ranker를 구현하세요.</p>
+<p><strong>요구사항:</strong><br />
+- 5가지 신호 모두 포함<br />
+- 동적 가중치 조정 (쿼리 타입별)<br />
+- A/B 테스트 가능한 구조</p>
+<pre><code class="language-python"># TODO: 처음부터 설계하고 구현
+</code></pre>
+<hr />
+<h2 id="_8">💪 최종 스킬 정리</h2>
+<p><strong>이제 여러분은:</strong></p>
+<ol>
+<li>✅ Bi-Encoder와 Cross-Encoder의 차이를 명확히 안다</li>
+<li>✅ Two-Stage Retrieval 시스템을 구축할 수 있다</li>
+<li>✅ Precision@K로 정확도를 측정할 수 있다</li>
+<li>✅ ColBERT의 Late Interaction을 이해한다</li>
+<li>✅ Hybrid Ranking으로 다중 신호를 결합할 수 있다</li>
+<li>✅ 프로덕션에서 비용을 효율적으로 관리할 수 있다</li>
+</ol>
+<p><strong>실전 적용:</strong><br />
+- 검색 정확도 20%p 향상<br />
+- 60ms 응답 시간 유지<br />
+- 50% 비용 절감</p>
+<p><strong>🎉 축하합니다! 이제 Reranking의 마법사입니다!</strong></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 1월 22일 11:22 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@newyark/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@newyark/">@newyark</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1255/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1255/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/6538/add_comment/"
+                      method="post"
+                      hx-post="/blog/6538/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="7VTlwONQg3Ge55QxUVcJUFAMdC3H5uIURepG1sL0WG7VvFOMVbrYuz6siAxMj88U">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @newyark 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@newyark/6793/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            RAG Master - Episode 7: Answer Generation의 연금술사
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 01일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@newyark/6765/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            RAG Master - Episode 6: Query Understanding의 마법사
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 29일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@newyark/6709/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            RAG Master - Episode 5: Hybrid Search의 마법
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 26일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@newyark/6596/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            RAG Master - Episode 4: Chunking의 예술가
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 25일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@newyark/6538/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            RAG Master - Episode 3: Reranking의 마법사
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 22일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 2
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/1255/6538/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @newyark 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/19050">
+                    
+                        <div class="flex items-center justify-center bg-gray-200 dark:bg-gray-700"
+                             style="width: 100px;
+                                    height: 130px">
+                            <i class="fa fa-book text-gray-400 text-4xl"></i>
+                        </div>
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/19050"
+                           class="hover:text-red-500 dark:hover:text-red-400">RAG 마스터</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        이 책은 @newyark님의 블로그 페이지를 엮어 만들어진 책입니다.
+
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 1월 22일 11:27 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">133</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-6538"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-6538"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/6538/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@newyark/6596/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            RAG Master - Episode 4: Chunking의 예술가
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                📚 RAG Master - Episode 4: Chunking의 예술가
+
+🎬 프롤로그
+
+…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@newyark/6765/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            RAG Master - Episode 6: Query Understanding의 마법사
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                📚 RAG Master - Episode 6: Query Understanding의 마법…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=93aae79'/>

@@ -1,0 +1,992 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="FastAPI (1/3) : uv 로 시작하기">
+    <meta property="og:type" content="FastAPI (1/3) : uv 로 시작하기">
+    <meta property="og:title" content="FastAPI (1/3) : uv 로 시작하기">
+    <meta property="og:description" content="FastAPI (1/3) : uv 로 시작하기">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/6545/img0.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@mattabu/6545/">
+
+        
+    <title>FastAPI (1/3) : uv 로 시작하기
+        - 마따부
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@mattabu/6489/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@mattabu/6807/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">FastAPI (1/3) : uv 로 시작하기</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@mattabu/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @mattabu
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 1월 23일 4:09 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@mattabu/?tag=3040"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Python
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p><img alt="" src="https://static.wikidocs.net/images/blog/6545/img0.png" /></p>
+<p>
+<div class="video-container">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" frameborder="0" src="https://www.youtube.com/embed/6merMwBvg6A"></iframe>
+</div>
+</p>
+<p>Python 에서 가장 핫한 웹프레임워크는 바로 <strong>FastAPI</strong> 입니다. Django, Flask 도 유명하긴 하지만, 딱히 마음에 들지 않았습니다. 이름에서도 알 수 있드시 성능도 2배 정도 더 빠르다고 하네요. 그리고, 더 간결하고 편해요. 저는 주로 API서버로 사용하고 있어서 딱입니다. 물론 필요한 경우에 Jinja 를 이용해서 페이지를 만들어낼 수도 있어요.</p>
+<p>본격적으로 시작해봅시다. 처음으로 해야 할 일은 <code>uv</code> 를 설치하는 것입니다. <code>uv</code> 에 대해서는 <a href="https://wikidocs.net/blog/@mattabu/6489/">uv : 엄청 빠르고 편리한 Python 프로젝트, 패키지 관리 프로그램</a>에서 추가적으로 참고해주세요.</p>
+<p>저는 윈도우 환경므로 아래처럼 설치를 이미 했습니다. 여러분도 설치가 안되어 있으면, 설치해주세요.</p>
+<pre><code>&gt; powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;
+</code></pre>
+<p>Mac 이나 Linux 환경이시면, 다음처럼 해주시면 됩니다.</p>
+<pre><code>$ curl -LsSf https://astral.sh/uv/install.sh | sh
+</code></pre>
+<p>그리고, 프로젝트 폴더를 만들어야 하는데요. 저는 <code>C:\s\fapi</code> 라는 폴더를 만들어주었어요. 해당 폴더에 들어가서 프로젝트를 초기화해줍니다.</p>
+<pre><code>C:\&gt; cd C:\s\fapi
+C:\s\fapi&gt; uv init
+Initialized project `fapi`
+
+C:\s\fapi&gt;
+</code></pre>
+<p><code>dir</code> 을 해보면, 5개의 파일이 생성된 것을 볼 수 있어요.</p>
+<pre><code>C:\s\fapi&gt;dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: A45C-2C09
+
+ C:\s\fapi 디렉터리
+
+2025-04-16  오전 11:10    &lt;DIR&gt;          .
+2025-04-16  오전 11:10    &lt;DIR&gt;          ..
+2025-04-16  오전 11:10               109 .gitignore
+2025-04-16  오전 11:10                 5 .python-version
+2025-04-16  오전 11:10                82 main.py
+2025-04-16  오전 11:10               150 pyproject.toml
+2025-04-16  오전 11:10                 0 README.md
+               5개 파일                 346 바이트
+               2개 디렉터리  313,722,806,272 바이트 남음
+
+C:\s\fapi&gt;
+</code></pre>
+<p>이제, <code>fastapi</code> 와 <code>uvicorn</code> 을 설치해줄거에요.</p>
+<pre><code>C:\s\fapi&gt;uv add fastapi uvicorn
+Using CPython 3.13.3
+Creating virtual environment at: .venv
+Resolved 15 packages in 144ms
+Installed 14 packages in 89ms
+ + annotated-types==0.7.0
+ + anyio==4.9.0
+ + click==8.1.8
+ + colorama==0.4.6
+ + fastapi==0.115.12
+ + h11==0.14.0
+ + idna==3.10
+ + pydantic==2.11.3
+ + pydantic-core==2.33.1
+ + sniffio==1.3.1
+ + starlette==0.46.2
+ + typing-extensions==4.13.2
+ + typing-inspection==0.4.0
+ + uvicorn==0.34.1
+
+C:\s\fapi&gt;
+</code></pre>
+<p>위와 같이 설치가 진행이 잘 되고, <code>pyproject.toml</code> 파일을 열어보면 <code>fastapi</code> 와 <code>uvicorn</code> 이 <code>dependencies</code> 항목에 추가된 것도 확인할 수 있어요.</p>
+<pre><code>[project]
+name = &quot;fapi&quot;
+version = &quot;0.1.0&quot;
+description = &quot;Add your description here&quot;
+readme = &quot;README.md&quot;
+requires-python = &quot;&gt;=3.13&quot;
+dependencies = [
+    &quot;fastapi&gt;=0.115.12&quot;,
+    &quot;uvicorn&gt;=0.34.1&quot;,
+]
+</code></pre>
+<p><code>main.py</code> 파일을 열어서, 다음을 입력해줍니다.</p>
+<pre><code># main.py
+
+import uvicorn
+
+def main():
+    uvicorn.run(app=&quot;app:app&quot;, host=&quot;0.0.0.0&quot;, port=8080, reload=True)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<p>위에서 보시면, <code>app="app:app"</code> 이라고 되어 있는 부분이 보일거에요. <code>app.py</code> 파일에 있는 <code>app</code> 객체를 참고하라는 의미입니다. 그리고, <code>reload=True</code> 항목은 프로그램 소스를 수정하면 자동으로 재시작할 수 있는 옵션이에요. 개발단계에서는 편리하겠지요. 당연하겠지만, 운영환경에서는 False로 지정해주어야 합니다.</p>
+<p>다음으로, <code>app.py</code>을 만들어서 다음처럼 입력해줍니다. 여기에는 실제 FastAPI 서버에서 작동할 코드를 넣습니다.</p>
+<pre><code># app.py
+
+from typing import Union
+from fastapi import FastAPI
+
+app = FastAPI()
+@app.get(&quot;/&quot;)
+def read_root():
+    return {&quot;Hello&quot;: &quot;World&quot;}
+
+@app.get(&quot;/items/{item_id}&quot;)
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {&quot;item_id&quot;: item_id, &quot;q&quot;: q}
+</code></pre>
+<p><code>uv run main.py</code> 라고 입력해서 실행해봅니다. 아래처럼 나오면 실행이 잘 된거에요.</p>
+<pre><code>C:\s\fapi&gt;uv run main.py
+INFO:     Will watch for changes in these directories: ['C:\\s\\fapi']
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+INFO:     Started reloader process [23160] using StatReload
+INFO:     Started server process [26184]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+</code></pre>
+<p>그리고, 웹브라우저에서 http://localhost:8080 으로 접속해봅니다.</p>
+<p><img alt="테스트 페이지 접속 1" src="https://static.wikidocs.net/images/blog/6545/img1.png" /></p>
+<p>이번에는 http://localhost:8080/items/5?q=what 이라고도 입력해봅시다.</p>
+<p><img alt="테스트 페이지 접속 2" src="https://static.wikidocs.net/images/blog/6545/img2.png" /></p>
+<p>http://localhost:8080/docs 라고 입력하면, Swagger UI 로도 API 문서를 볼 수 있습니다. 좋구만요~!</p>
+<p><img alt="Swagger UI" src="https://static.wikidocs.net/images/blog/6545/img3.png" /></p>
+<p>이번에는 포트 정보를 설정파일(<code>config.py</code>)로 빼서 사용해봅시다. <code>fapi</code> 폴더 아래에 <code>config</code> 폴더를 만들고, 그 안에 <code>config.py</code> 를 다음과 같이 작성합니다.</p>
+<pre><code># config/config.py
+
+PORT = 8080
+</code></pre>
+<p>간단하지요? 나중에 이 파일에 DB연결정보도 넣을 예정이에요.</p>
+<p><code>main.py</code> 파일을 수정해줍니다.</p>
+<pre><code># main.py
+
+import uvicorn
+from config import config
+
+def main():
+    uvicorn.run(app=&quot;app:app&quot;, host=&quot;0.0.0.0&quot;, port=config.PORT, reload=True)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<p>이 상태에서도 http://localhost:8080 로 접속이 잘되면 성공~!!!</p>
+<p>이렇게, <code>uv</code> 를 활용해서 <strong>FastAPI</strong> 를 시작했습니다. 다음에는 프로그램을 좀 더 확장해보겠습니다.</p>
+<p><a href="https://wikidocs.net/blog/@mattabu/6807/">FastAPI (2/3) : 컨트롤러 확장하기</a></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 2월 2일 12:55 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@mattabu/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/gauryan.jpeg"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@mattabu/">@mattabu</a>
+                        </h1>
+                        
+                            <p class="text-gray-600 dark:text-gray-400">🏃 42.192km : 모두 건강합시다!</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/96/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/96/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">2</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/6545/add_comment/"
+                      method="post"
+                      hx-post="/blog/6545/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="ZlO37BTdsiT9IJ2AqyYYTq2KhI3caX7G1tNejxCqfigde1BoIlTJlXSbrm8UATng">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @mattabu 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@mattabu/6993/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            FastAPI (3/3) : DB(MySQL) 붙여보기
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 09일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@mattabu/6807/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            FastAPI (2/3) : 컨트롤러 확장하기
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 02일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@mattabu/6545/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            FastAPI (1/3) : uv 로 시작하기
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 23일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@mattabu/6489/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            uv : 엄청 빠르고 편리한 Python 프로젝트, 패키지 관리 프로그램
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 18일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@mattabu/6438/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            C++ 개발환경 구성하기 (vscode, xmake, vcpkg)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 13일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 22
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/96/6545/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @mattabu 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/19206">
+                    
+                        <img src="https://static.wikidocs.net/images/book/표지_m9WIguL_1772689324_1772690083_1772690666_1772690906_1772691079_1772692194_177305_C3kLIOM.jpg"
+                             alt="놀자코딩의 Nim 프로그래밍"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/19206"
+                           class="hover:text-red-500 dark:hover:text-red-400">놀자코딩의 Nim 프로그래밍</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        소개
+
+&quot;성능과 재미를 한 번에, Nim 프로그래밍의 세계로&quot;
+
+프로그래밍이 처음인가요? 혹은 새로운 차세대 언어를 찾고 계신가요?
+
+Nim은 &quot;성능을 포기하지 않으면…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 3월 11일 2:32 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">261</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-6545"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-6545"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/6545/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@mattabu/6807/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/6807/img0.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            FastAPI (2/3) : 컨트롤러 확장하기
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                
+
+https://youtu.be/Ft8zeV1uJmI
+
+지난 글에서는 아주 간단한 Fa…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@mattabu/6993/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/6993/fastapi_renew_3.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            FastAPI (3/3) : DB(MySQL) 붙여보기
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                
+
+https://youtu.be/TrLRap5Tdcw
+
+이번에는 FastAPI 프레임워…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=7997e06'/>

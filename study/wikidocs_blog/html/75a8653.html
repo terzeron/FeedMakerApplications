@@ -1,0 +1,932 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="LLM의 동작 원리가 만들어내는 인지의 반향실">
+    <meta property="og:type" content="LLM의 동작 원리가 만들어내는 인지의 반향실">
+    <meta property="og:title" content="LLM의 동작 원리가 만들어내는 인지의 반향실">
+    <meta property="og:description" content="LLM의 동작 원리가 만들어내는 인지의 반향실">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@ironowl/9698/">
+
+        
+    <title>LLM의 동작 원리가 만들어내는 인지의 반향실
+        - 철갑올빼미 둥지
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@ironowl/9453/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">LLM의 동작 원리가 만들어내는 인지의 반향실</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@ironowl/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @ironowl
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 23일 3:26 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ironowl/?tag=4081"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            인지적_반향실
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ironowl/?tag=3935"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            생성형ai
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ironowl/?tag=3934"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            인지구조
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ironowl/?tag=3933"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            인공지능
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ironowl/?tag=3932"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            포러-바넘효과
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="_1">할루시네이션의 반대편</h2>
+<p>LLM의 할루시네이션은 이제 널리 알려진 현상입니다.<br />
+모델이 존재하지 않는 논문을 인용하거나, 실제로 없는 사건을 그럴듯하게 서술하는 방식으로 나타납니다.<br />
+이 현상을 이해한 사용자들은 자연스럽게 다음 질문을 갖게 됩니다. &quot;모델이 틀린 정보를 만들어낸다면, 그걸 걸러내면 되지 않는가?&quot;</p>
+<p>그런데 <strong>동일한 생성 원리에서 파생되는</strong> 또 다른 현상이 있습니다.<br />
+모델이 없는 것을 만들어내는 것이 아니라, 사용자가 가져온 논리를 <strong>내부적으로 일관되게 수용하고 확장</strong>할 때 일어나는 일입니다.<br />
+이 현상은 할루시네이션보다 훨씬 조용하게 작동하며, 그렇기 때문에 더 주의가 필요합니다.</p>
+<hr />
+<h2 id="_2">같은 기반 메커니즘, 다른 방향</h2>
+<p>LLM의 핵심 동작 방식을 한 문장으로 정리하면 다음과 같습니다.</p>
+<blockquote>
+<p>주어진 맥락에서 가장 확률적으로 자연스러운 다음 토큰을 생성한다.</p>
+</blockquote>
+<p>이 동작은 방향성이 없습니다. 모델은 주어진 컨텍스트가 사실인지 아닌지, 전제가 타당한지 아닌지를 판단하지 않습니다. 모델이 수행하는 것은 <strong>맥락 내부의 일관성</strong>을 유지하는 것입니다.</p>
+<p>이 구조에서 두 가지 방향의 결과가 나타날 수 있습니다.</p>
+<ul>
+<li><strong>사실의 공백이 있을 때</strong>: 모델은 개연성 있는 내용을 채워 넣습니다. 이것이 할루시네이션입니다.</li>
+<li><strong>사용자의 전제가 명확할 때</strong>: 모델은 그 전제를 수용하고 일관되게 확장합니다. 이것이 인지의 반향실입니다.</li>
+</ul>
+<p>같은 엔진이 연료의 종류에 따라 다른 방향으로 출력을 만들어내는 것과 유사합니다.</p>
+<hr />
+<h2 id="_3">포러–바넘 효과의 역방향</h2>
+<p>이전 글에서 AI 환각이 인간에게 수용되는 과정을 설명할 때, 포러–바넘 효과를 핵심 기제로 다루었습니다.<br />
+포러–바넘 효과란 일반적이고 모호한 설명을 읽고도 그것이 자신의 상황을 정확히 설명한다고 느끼는 인지 경향입니다.<br />
+인간은 설명의 외형적 타당성이 일정 수준을 넘으면 추가 검토를 종료하고, 그것을 자신에게 맞는 해석으로 채택합니다.</p>
+<p>이 글에서 다루는 현상은 그 방향이 정확히 반대입니다.</p>
+<p>이전 글의 구조가 이것이었다면:</p>
+<pre><code>AI가 그럴듯한 설명을 생성 → 인간이 포러–바넘식으로 수용 → 오류 순환
+</code></pre>
+<p>이 글에서 다루는 구조는 다음과 같습니다:</p>
+<pre><code>인간이 전제를 포함한 정보를 생성 → AI가 유사한 패턴으로 수용 → 반향실 형성
+</code></pre>
+<p>AI의 수용 방식은 인간의 포러–바넘 효과와 완전히 동일하지는 않습니다.<br />
+인간의 포러–바넘 효과가 <strong>자기 귀속</strong> — &quot;이 설명이 나를 정확히 가리킨다&quot;는 느낌 — 에 기반한다면,<br />
+AI의 수용은 <strong>정합성 우선 처리</strong> — &quot;이 전제가 맥락 내에서 가장 자연스럽다&quot; — 에 기반합니다.</p>
+<p>그러나 두 구조가 공유하는 핵심은 동일합니다.</p>
+<blockquote>
+<p>외형적 타당성이 확인되는 순간, 전제 자체에 대한 검토가 종료된다.</p>
+</blockquote>
+<p>인간은 AI가 생성한 설명을 포러–바넘식으로 수용하고, AI는 인간이 제공한 전제를 구조적으로 유사한 방식으로 수용합니다.<br />
+두 글이 다루는 현상은 서로 다른 방향을 향하고 있지만, 같은 수용 구조 위에서 작동합니다.</p>
+<hr />
+<h2 id="_4">수용과 확장의 구조</h2>
+<p>왜 모델은 사용자의 전제에 저항하지 않는가.</p>
+<p>이 질문에 대한 답은 모델의 학습 방식에 있습니다.<br />
+RLHF(인간 피드백 강화학습) 기반으로 조정된 모델은 인간 평가자가 유용하고 수용 가능하다고 판단한 응답을 강화하는 방향으로 최적화됩니다.<br />
+문제는 이 평가 과정 자체에 있습니다. 인간 평가자는 논리적 정확성보다 <strong>읽기 편하고 설득력 있게 느껴지는 응답</strong>에 더 높은 점수를 부여하는 경향이 있습니다.<br />
+그 결과 모델은 의도적 설계가 아니라 <strong>평가 구조의 부작용</strong>으로, 반론보다 확장, 비판보다 수용이 자연스러운 방향으로 수렴됩니다.</p>
+<p>여기에 컨텍스트 윈도우의 구조가 더해집니다.<br />
+모델은 대화 내부의 정보만을 참조하며, 대화 밖에서 이 전제를 검토할 수 있는 외부 기준은 존재하지 않습니다.<br />
+사용자가 A라는 프레임으로 질문하면, 모델은 A 안에서 가장 자연스러운 답을 생성합니다.</p>
+<p>그 결과 사용자의 논리는 <strong>모델의 언어로 재포장되어 돌아옵니다</strong>.<br />
+이 과정이 반복될수록 해당 논리는 외부에서 검증된 것이 아님에도 불구하고 내부적으로 정합성 있는 체계로 강화됩니다.</p>
+<hr />
+<h2 id="_5">할루시네이션과의 결정적 차이</h2>
+<p>두 현상을 나란히 놓으면 차이가 명확해집니다.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>할루시네이션</th>
+<th>인지의 반향실</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>발생 조건</td>
+<td>사실의 공백</td>
+<td>사용자의 전제 존재</td>
+</tr>
+<tr>
+<td>모델의 동작</td>
+<td>창조 (없는 것을 생성)</td>
+<td>수용·확장 (있는 것을 강화)</td>
+</tr>
+<tr>
+<td>출력의 내부 일관성</td>
+<td>낮음</td>
+<td>높음</td>
+</tr>
+<tr>
+<td>오류 발각 가능성</td>
+<td>상대적으로 높음</td>
+<td><strong>낮음</strong></td>
+</tr>
+</tbody>
+</table>
+<p>핵심은 마지막 행입니다.</p>
+<blockquote>
+<p>할루시네이션은 틀렸기 때문에 발각됩니다. 반향실은 <strong>내부적으로 옳기 때문에</strong> 발각되지 않습니다.</p>
+</blockquote>
+<p>여기서 한 가지 중요한 구분이 필요합니다.<br />
+모델이 검증을 수행하지 않는 것이 아닙니다.<br />
+LLM은 내부 정합성과 개연성에 대해서는 빠르게 검증을 수행합니다. 그러나 <strong>전제의 타당성</strong>과 <strong>대안 가설의 존재</strong>는 이 검증 과정에 포함되지 않습니다.</p>
+<p>사용자가 받게 되는 것은 &quot;검증된 결과&quot;가 아니라, <strong>&quot;검증이 종료된 것처럼 보이는 결과&quot;</strong> 입니다.</p>
+<hr />
+<h2 id="_6">실무에서 이것이 문제가 되는 순간</h2>
+<p>다음 시나리오를 살펴보겠습니다.</p>
+<p>참이나 거짓이 명확하게 결정되지 않는 선택의 영역, 예를 들어 소비 습관이나 개인의 실천 방식에 대해 사용자가 이미 결론을 가지고 질문하는 경우입니다.</p>
+<p><strong>사용자 입력:</strong></p>
+<blockquote>
+<p>"나는 현금을 쓰는 게 맞다고 생각해. 카드는 과소비를 유도하고, 현금은 지출을 체감하게 해줘서 심리적으로 더 건강한 소비 습관을 만들어. 실제로 현금으로 바꾸고 나서 씀씀이가 줄었거든."</p>
+</blockquote>
+<p><strong>LLM의 전형적인 응답:</strong></p>
+<blockquote>
+<p>"맞습니다. 현금 결제는 '지불의 고통(pain of paying)' 효과로 인해 소비 억제에 실질적인 도움이 됩니다. 실제로 소비자 행동 연구에서도 현금 사용자가 카드 사용자보다 충동구매가 적은 경향이 확인된 바 있습니다. 개인의 소비 패턴 변화를 직접 체감하셨다는 점은 이 원리를 잘 보여주는 사례입니다."</p>
+</blockquote>
+<p>무슨 일이 일어났는지 분석하면 다음과 같습니다.</p>
+<ul>
+<li>사용자의 전제(&quot;현금이 맞다&quot;)를 수용</li>
+<li>학술적 개념을 동원해 내부 정합성을 강화</li>
+<li>&quot;카드가 더 유리한 사람도 있다&quot;, &quot;자동 저축 측면에서는 카드가 효과적이다&quot;와 같은 대안적 시각은 검토되지 않음</li>
+<li>개인의 경험이 보편적 원리로 재포장됨</li>
+</ul>
+<p>만약 이것이 할루시네이션이었다면, 즉 존재하지 않는 연구를 인용했다면 발각될 가능성이 있습니다.<br />
+그러나 이 경우 인용된 개념은 실재하고, 논리는 일관됩니다.<br />
+문제는 그 논리가 <strong>닫혀 있다</strong>는 것입니다.</p>
+<p>이와 같은 구조는 아이디어 검증을 모델에 맡길 때, 논리 구조를 모델과 함께 다듬을 때, 의사결정 전에 모델에게 의견을 물을 때 반복적으로 나타날 수 있습니다.<br />
+모델이 &quot;좋은 관점이네요&quot;라고 응답하는 순간, 사용자는 자신의 판단이 외부 검증을 통과했다는 인상을 받게 됩니다.</p>
+<hr />
+<h2 id="_7">닫힌 논리를 여는 프롬프트 설계</h2>
+<p>이 구조가 프롬프트 설계의 문제라면, 프롬프트로 어느 정도 제어할 수 있습니다.</p>
+<p>첫째, <strong>전제를 질문 안에 포함하지 않는 방식</strong>을 시도할 수 있습니다.<br />
+&quot;현금 사용이 맞지 않나?&quot;라는 질문 대신, &quot;현금 사용과 카드 사용의 장단점을 비교해줘&quot;로 구조를 바꾸면 모델이 수용할 전제가 줄어듭니다.</p>
+<p>둘째, <strong>명시적으로 반론을 요청</strong>하는 방법이 있습니다.<br />
+&quot;이 주장의 약점이나 반론도 함께 정리해줘&quot;라는 지시는 닫힌 논리를 부분적으로 열어줍니다.<br />
+단, 이 방법도 완전하지는 않습니다. 모델은 반론을 생성하더라도 사용자의 원래 전제를 유지하는 방향으로 균형을 맞추는 경향이 있기 때문입니다.</p>
+<p>셋째, <strong>전제 자체를 검토 대상으로 설정</strong>하는 방식이 가장 효과적입니다.<br />
+&quot;다음 주장의 전제가 타당한지 검토해줘&quot;와 같이 요청하면, 모델은 수용이 아닌 분석의 역할로 전환됩니다.</p>
+<p>그러나 근본적으로 중요한 것은 다음 사실을 인식하는 것입니다.</p>
+<blockquote>
+<p>LLM은 닫힌 논리에 저항하지 않습니다.</p>
+</blockquote>
+<p>모델이 동의한다는 것은 그 논리가 옳다는 의미가 아닙니다. 그 논리가 맥락 안에서 일관성 있게 확장될 수 있다는 의미입니다.<br />
+이 차이를 이해하는 것이 LLM을 판단 도구가 아니라 사고 도구로 활용하기 위한 출발점입니다.</p>
+<hr />
+<h2 id="_8">이 구조를 루프로 표현하면</h2>
+<pre><code>사용자가 전제를 포함한 질문 입력
+→ 모델이 전제를 수용하고 내부 정합성 검증 수행
+→ 학술적 표현과 논리 구조로 재포장된 응답 생성
+→ 사용자가 검증된 결론으로 인식
+→ 강화된 전제로 다음 질문 입력
+</code></pre>
+<p>할루시네이션이 단발성 오류라면, 인지의 반향실은 <strong>반복을 통해 강화되는 구조적 오류</strong>입니다.<br />
+그리고 그 강화의 핵심 연료는 모델의 능숙한 언어 생성 능력 그 자체입니다.</p>
+<p>AI를 사고의 파트너로 활용하는 것과, AI에게 판단을 위임하는 것 사이의 거리는 생각보다 좁습니다.<br />
+그 거리를 유지하는 것이 지금 시점에서 가장 실용적인 AI 리터러시일 것입니다.</p>
+<hr />
+<p>이 글에서 정의한 <strong>인지의 반향실</strong>은, LLM의 생성 능력이 사용자의 전제를 검증이 아닌 강화 방향으로 작동할 때 형성되는 구조적 인지 왜곡이다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 23일 3:26 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@ironowl/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/IornOwl_Logo.png"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@ironowl/">@ironowl</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1256/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1256/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9698/add_comment/"
+                      method="post"
+                      hx-post="/blog/9698/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="qt2ObDC0rkm1GJcbKVhhRAx14hapzbwPtyMwpaH3Bm9s7oxcAqHf2qTfLCjja5JK">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @ironowl 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@ironowl/9698/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            LLM의 동작 원리가 만들어내는 인지의 반향실
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">28분 전</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@ironowl/9453/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            전제의 생략으로 바라본 IPv4 주소 체계 – /31 주소길이
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@ironowl/9163/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            AI 환각과 인간 인지 구조가 만들어내는 오류의 순환
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 13일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@ironowl/6814/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            OSPF 운영
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 03일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@ironowl/6813/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            OSPF의 구성
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 02일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 3
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/1256/9698/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">4</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9698"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9698"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9698/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@ironowl/9163/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            AI 환각과 인간 인지 구조가 만들어내는 오류의 순환
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                AI 환각
+최근 여러 분야에서 AI 환각(AI hallucination) 문제가 사회적 …
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>9일 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=75a8653'/>

@@ -1,0 +1,829 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="PPT 한 장 슬라이드 내용 삽입 1 _ VBA 코드 삽입 프로세스">
+    <meta property="og:type" content="PPT 한 장 슬라이드 내용 삽입 1 _ VBA 코드 삽입 프로세스">
+    <meta property="og:title" content="PPT 한 장 슬라이드 내용 삽입 1 _ VBA 코드 삽입 프로세스">
+    <meta property="og:description" content="PPT 한 장 슬라이드 내용 삽입 1 _ VBA 코드 삽입 프로세스">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@swingjazz/2328/">
+
+        
+    <title>PPT 한 장 슬라이드 내용 삽입 1 _ VBA 코드 삽입 프로세스
+        - 생성형 AI를 활용한 문서 작성 실무
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+                <a href="/blog/@swingjazz/4004/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">PPT 한 장 슬라이드 내용 삽입 1 _ VBA 코드 삽입 프로세스</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@swingjazz/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @swingjazz
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 4월 15일 8:47 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="1-ppt">1. PPT 내 {변수} 추출 프롬프트</h2>
+<p>(파일을 첨부한 후)</p>
+<pre><code>첨부한 PPT 파일을 분석하여 슬라이드 안에 있는 모든 {변수} 값을 정리해 주세요. 
+</code></pre>
+<hr />
+<h2 id="2">2. 슬라이드 삽입용 콘텐트 작성 프롬프트</h2>
+<pre><code>' chatGPT를 활용한 문서 작성 실무 활용' 이라는 주제로 강의를 기획하고 있어요. 아래 기준에 맞춰 교육 커리큘럼 기획안을 작성해 주세요. 
+1. 반드시 앞에서 언급한 변수에 맞춰 작성해 주세요.(매우 중요)
+2. 모듈에 들어갈 내용은 아래 카테고리에 맞춰 5시간 교육으로 구성해 주세요. 
+    ① AI와 문서 작성: 개요 및 기본 이해
+    ② 문서 작성을 위한 프롬프트 전략
+    ③ AI를 활용한 문서 구성 및 흐름 설계
+    ④ 실무 문서 작성 실습: 보고서/기획서 중심
+    ⑤ AI 문서 작성 자동화 및 사례 공유
+3. 모듈 내용에 들어갈 내용은 2~4줄 사이로 작성해 주세요. 
+4. 강사 : 임성수 강사
+5. 내용이 없거나 부족한 부분은 문맥에 맞게 추가해서 작성해 주세요. 
+</code></pre>
+<hr />
+<h2 id="3-1-vba-1">3-1. VBA 전환 프롬프트 ①</h2>
+<pre><code>첨부한 PPT 파일에서 {변수} 값을 위에서 제작한 기획안의 내용으로  바꾸는 VBA 코드를 작성해 주세요. 
+
+- 표에서 셀이 구분된 경우 다른 텍스트로 작업해 주세요. 
+- 표 안에 있는 변수는 별도의 단계를 추가하여 변환해 주세요.
+- {변수}가 부분 문자열로 결합된 것을 고려해 주세요. 
+- 위 사항이 모두 반영되었는지 중간 결과를 확인하는 코드 추가해 주세요. 
+- 코드 작성 기본 흐름은 아래와 같이 작업해 주세요. 
+    ' 미리 원본 텍스트와 대체할 텍스트를 정의(replacements.Add 함수 활용)해 주세요. 
+    ' 원본 텍스트와 교체할 텍스트를 키-값 형태로 매칭해서 추가해 주세요. 
+    ' 슬라이드와 도형을 순회하며 텍스트 교체해 주세요. 
+- 특히 첨부 파일에서 표 안에 있는 모듈 관련 변수가
+    &quot;replacements.Add &quot;{모듈1}&quot;, &quot;AI와 문서 작성: 개요 및 기본 이해&quot; 
+     replacements.Add &quot;{모듈1 내용}&quot;, &quot;생성형 AI가 문서 작성에 미치는 영향을 이해&quot; 같은 
+스타일로 작업해 주세요.
+- 파일 열고 닫는 코드 제외해 주세요. 
+</code></pre>
+<hr />
+<h2 id="3-2-vba-2">3-2. VBA 전환 프롬프트 ②</h2>
+<pre><code>역할(Role):
+당신은 VBA(Visual Basic for Applications) 프로그래밍 전문가입니다. 특히 PowerPoint 자동화 작업에 능숙합니다.
+
+문맥(Context):
+현재 PowerPoint 프레젠테이션 파일(ActivePresentation) 안에서, 슬라이드에 포함된 텍스트나 표(Table) 안에 존재하는 특정 변수(placeholder)를 미리 지정한 실제 값으로 자동 교체하려고 합니다.
+
+요구사항(Instructions):
+
+기본 기능
+
+슬라이드를 하나씩 반복하면서 각 슬라이드 안에 있는 모든 Shape를 순회합니다.
+
+Shape가 텍스트를 가지고 있으면, 미리 정의한 키워드 목록에 따라 텍스트를 일괄 치환합니다.
+
+Shape가 표(Table) 형태라면, 표 안의 각 Cell의 텍스트도 동일한 방법으로 치환합니다.
+
+치환할 변수 목록
+
+{과정명}, {일시}, {장소}, {목적}, {모듈1}, {모듈1 내용}, {모듈2}, {모듈2 내용}, {모듈3}, {모듈3 내용}, {모듈4}, {모듈4 내용}, {모듈5}, {모듈5 내용}, {과정 소요시간}, {강사명}, {강사이력}, {특징1}, {특징2}, {특징3} 등을 포함합니다.
+
+변수 목록은 VBA Dictionary(Scripting.Dictionary)를 사용하여 관리합니다.
+
+Dictionary에 키와 대응하는 실제 값을 추가하는 코드를 포함해 주세요.
+
+구현 방식 세부 지침
+
+ActivePresentation.Slides를 사용해 모든 슬라이드를 대상으로 반복합니다.
+
+각 슬라이드의 모든 Shape를 확인합니다.
+
+HasTextFrame이 True이고 TextFrame.HasText가 True인 경우, 텍스트 내용을 확인한 후 치환합니다.
+
+HasTable이 True인 경우, 표의 모든 Cell을 순회하며 텍스트를 확인하고 치환합니다.
+
+치환할 때는 Replace 함수를 사용하여 변수 키를 실제 값으로 바꿔주세요.
+
+텍스트를 치환한 후에는 해당 내용을 다시 TextRange.Text로 업데이트합니다.
+
+최종 알림 기능
+
+모든 치환 작업이 끝나면 MsgBox를 띄워 &quot;모든 변수 값이 성공적으로 대체되었습니다.&quot;라는 메시지를 보여주세요.
+
+코딩 스타일 및 가독성
+
+가급적 주석(Comment)을 충분히 추가해서 코드의 각 단계가 어떤 역할을 하는지 쉽게 이해할 수 있도록 작성해 주세요.
+
+중첩 루프나 조건문을 사용할 때 들여쓰기를 명확히 하여 가독성을 높여주세요.
+
+출력 형식(Output Format):
+
+하나의 Sub 프로시저로 완성된 VBA 매크로 코드를 작성합니다.
+
+모듈(Module)에 바로 붙여넣기 해서 사용할 수 있도록 완전한 형태로 작성해 주세요.
+
+추가 요청(Optional):
+
+오류 처리를 간단하게 추가해 주셔도 좋습니다(예: 슬라이드나 Shape가 없는 경우 대비).
+
+표 안에서도 텍스트 치환이 적용되도록 세심하게 신경 써 주세요.
+
+기타 특이사항:
+
+PowerPoint VBA 환경을 기준으로 작성합니다.
+
+외부 라이브러리는 사용하지 않습니다(단, Scripting.Dictionary는 CreateObject를 통해 사용).
+</code></pre>
+<hr />
+<h2 id="4-1-vba-1">4-1. 실전 VBA 코드 ①</h2>
+<pre><code>Sub ReplaceVariables()
+    Dim slide As slide
+    Dim shape As shape
+    Dim cell As cell
+    Dim tbl As Table
+    Dim replacements As Object
+    Set replacements = CreateObject(&quot;Scripting.Dictionary&quot;)
+
+    ' Define the original and replacement texts using replacements.Add function
+    replacements.Add &quot;{과정명}&quot;, &quot;생성형 AI 실무 활용&quot;
+    replacements.Add &quot;{일시}&quot;, &quot;2025.04.16&quot;
+    replacements.Add &quot;{장소}&quot;, &quot;골프존 본사 강의장&quot;
+    replacements.Add &quot;{목적}&quot;, &quot;생성형 AI의 최신 트렌드와 비즈니스 실무 문서 작성 활용방법 및 현업에 적용할 수 있는 다양한 AI 활용법 강화&quot;
+
+ replacements.Add &quot;{모듈1}&quot;, &quot;AI와 문서 작성: 개요 및 기본 이해&quot;
+replacements.Add &quot;{모듈1 내용}&quot;, &quot;생성형 AI가 문서 작성에 미치는 영향을 이해&quot; &amp; vbCrLf &amp; _
+                                &quot;문서 작성에서 챗GPT와 같은 도구가 활용되는 방식 소개&quot; &amp; vbCrLf &amp; _
+                                &quot;효율적이고 명확한 문서 작성을 위한 AI 도입의 필요성 인식&quot;
+
+replacements.Add &quot;{모듈2}&quot;, &quot;문서 작성을 위한 프롬프트 전략&quot;
+replacements.Add &quot;{모듈2 내용}&quot;, &quot;문서 목적에 따른 효과적인 프롬프트 작성 방법 학습&quot; &amp; vbCrLf &amp; _
+                                &quot;이메일, 보고서, 기획서 등 문서 유형별 프롬프트 구성 연습&quot; &amp; vbCrLf &amp; _
+                                &quot;프롬프트 수정 및 반복을 통해 원하는 표현 도출 방법 익히기&quot;
+
+replacements.Add &quot;{모듈3}&quot;, &quot;AI를 활용한 문서 구성 및 흐름 설계&quot;
+replacements.Add &quot;{모듈3 내용}&quot;, &quot;문서 작성 흐름(서론-본론-결론)의 기본 구조와 AI 활용 방법 이해&quot; &amp; vbCrLf &amp; _
+                                &quot;핵심 메시지를 중심으로 문서 전개 방향을 설계하는 기법 실습&quot; &amp; vbCrLf &amp; _
+                                &quot;논리적인 문서 구성을 위한 AI 피드백 활용법 체험&quot;
+
+replacements.Add &quot;{모듈4}&quot;, &quot;실무 문서 작성 실습: 보고서/기획서 중심&quot;
+replacements.Add &quot;{모듈4 내용}&quot;, &quot;챗GPT를 활용하여 실무 중심의 보고서 및 기획서 초안 작성&quot; &amp; vbCrLf &amp; _
+                                &quot;문서 작성 중 필요한 정보 요약, 문장 다듬기, 대안 제시 실습&quot; &amp; vbCrLf &amp; _
+                                &quot;작성 문서에 대해 AI를 통해 리뷰 받고 수정 전략 도출&quot;
+
+replacements.Add &quot;{모듈5}&quot;, &quot;AI 문서 작성 자동화 및 사례 공유&quot;
+replacements.Add &quot;{모듈5 내용}&quot;, &quot;문서 템플릿 자동화, 반복 문서 생성 등 업무 효율화 사례 학습&quot; &amp; vbCrLf &amp; _
+                                &quot;다양한 산업군에서의 문서 자동화 성공 사례 공유&quot; &amp; vbCrLf &amp; _
+                                &quot;참가자들과 함께 적용 아이디어를 탐색하고 실무 적용 방안 도출&quot;
+
+
+    replacements.Add &quot;{과정 소요시간}&quot;, &quot;5시간&quot;
+    replacements.Add &quot;{강사명}&quot;, &quot;오피스마스터 임성수&quot;
+    replacements.Add &quot;{강사이력}&quot;, &quot;중앙일보 전략사업, CRM본부, 마케팅기획 관련 업무 수행&quot; &amp; vbCrLf &amp; _
+                                    &quot;다수의 생성형 AI 관련 강연&quot; &amp; vbCrLf &amp; _
+                                    &quot;국내외 유수 기업 대상 생성형 AI 실무 교육 강사 경력&quot;
+
+    replacements.Add &quot;{특징1}&quot;, &quot;실무 중심: 실제 업무에서 바로 적용할 수 있는 생성형 AI 활용 방법을 제공&quot;
+    replacements.Add &quot;{특징2}&quot;, &quot;참여형 실습: 다양한 실습을 통해 생성형 AI 기술을 직접 경험하고 체득&quot;
+    replacements.Add &quot;{특징3}&quot;, &quot;전문 강사: 다년간의 AI 프로젝트 경험을 가진 전문 강사의 지도로 학습 효과를 극대화&quot;
+
+    ' Loop through slides
+    For Each slide In ActivePresentation.Slides
+        ' Loop through shapes in each slide
+        For Each shape In slide.Shapes
+            If shape.HasTextFrame Then
+                If shape.TextFrame.HasText Then
+                    Dim originalText As String
+                    originalText = shape.TextFrame.TextRange.Text
+
+                    ' Replace text in normal text boxes
+                    Dim key As Variant
+                    For Each key In replacements.Keys
+                        originalText = Replace(originalText, key, replacements(key))
+                    Next key
+                    shape.TextFrame.TextRange.Text = originalText
+                End If
+            End If
+
+            ' If shape is a table
+            If shape.HasTable Then
+                Set tbl = shape.Table
+                Dim row As Integer, col As Integer
+
+                ' Loop through all cells in the table
+                For row = 1 To tbl.Rows.Count
+                    For col = 1 To tbl.Columns.Count
+                        If tbl.Cell(row, col).Shape.HasTextFrame Then
+                            If tbl.Cell(row, col).Shape.TextFrame.HasText Then
+                                originalText = tbl.Cell(row, col).Shape.TextFrame.TextRange.Text
+
+                                ' Replace text in table cells
+                                For Each key In replacements.Keys
+                                    originalText = Replace(originalText, key, replacements(key))
+                                Next key
+                                tbl.Cell(row, col).Shape.TextFrame.TextRange.Text = originalText
+                            End If
+                        End If
+                    Next col
+                Next row
+            End If
+        Next shape
+    Next slide
+
+    ' Display message box to confirm replacements were made
+    MsgBox &quot;모든 변수 값이 성공적으로 대체되었습니다.&quot;, vbInformation, &quot;교체 완료&quot;
+
+End Sub
+</code></pre>
+<hr />
+<h2 id="4-2-vba-2">4-2. 실전 VBA 코드 ②</h2>
+<pre><code>Sub ReplacePlaceholdersInPresentation()
+    ' -----------------------------------------
+    ' PowerPoint 슬라이드 안의 모든 텍스트와 표 안 텍스트에서
+    ' 사전에 지정한 {변수}를 실제 값으로 일괄 교체하는 매크로
+    ' -----------------------------------------
+
+    Dim slide As slide
+    Dim shape As shape
+    Dim tbl As Table
+    Dim replacements As Object
+    Dim key As Variant
+    Dim row As Integer, col As Integer
+    Dim originalText As String
+
+    ' Dictionary 생성 (변수-값 매칭)
+    Set replacements = CreateObject(&quot;Scripting.Dictionary&quot;)
+
+    ' --- 교체할 변수와 실제 값 등록 ---
+    replacements.Add &quot;{과정명}&quot;, &quot;ChatGPT를 활용한 문서 작성 실무 활용&quot;
+    replacements.Add &quot;{일시}&quot;, &quot;2025.05.15&quot;
+    replacements.Add &quot;{장소}&quot;, &quot;서울 본사 세미나룸&quot;
+    replacements.Add &quot;{목적}&quot;, &quot;ChatGPT를 활용한 문서 작성 실무 역량 강화 및 자동화 사례 학습&quot;
+
+    replacements.Add &quot;{모듈1}&quot;, &quot;AI와 문서 작성: 개요 및 기본 이해&quot;
+    replacements.Add &quot;{모듈1 내용}&quot;, &quot;생성형 AI가 문서 작성에 미치는 영향과 도구 활용 방식을 이해합니다.&quot; &amp; vbCrLf &amp; _
+                                      &quot;효율적이고 명확한 문서 작성을 위한 AI 활용 필요성을 인식합니다.&quot;
+
+    replacements.Add &quot;{모듈2}&quot;, &quot;문서 작성을 위한 프롬프트 전략&quot;
+    replacements.Add &quot;{모듈2 내용}&quot;, &quot;문서 목적에 따른 프롬프트 작성 방법을 학습하고,&quot; &amp; vbCrLf &amp; _
+                                      &quot;다양한 문서 유형별 프롬프트 실습을 진행합니다.&quot;
+
+    replacements.Add &quot;{모듈3}&quot;, &quot;AI를 활용한 문서 구성 및 흐름 설계&quot;
+    replacements.Add &quot;{모듈3 내용}&quot;, &quot;문서 작성 흐름(서론-본론-결론) 설계법과&quot; &amp; vbCrLf &amp; _
+                                      &quot;AI 피드백을 활용한 논리적 문서 구성을 실습합니다.&quot;
+
+    replacements.Add &quot;{모듈4}&quot;, &quot;실무 문서 작성 실습: 보고서/기획서 중심&quot;
+    replacements.Add &quot;{모듈4 내용}&quot;, &quot;ChatGPT를 활용한 실무 문서 초안 작성 및 수정 전략을 실습합니다.&quot;
+
+    replacements.Add &quot;{모듈5}&quot;, &quot;AI 문서 작성 자동화 및 사례 공유&quot;
+    replacements.Add &quot;{모듈5 내용}&quot;, &quot;문서 자동화 사례를 공유하고,&quot; &amp; vbCrLf &amp; _
+                                      &quot;실제 업무 적용 아이디어를 탐색합니다.&quot;
+
+    replacements.Add &quot;{과정 소요시간}&quot;, &quot;5시간&quot;
+    replacements.Add &quot;{강사명}&quot;, &quot;임성수 강사&quot;
+    replacements.Add &quot;{강사이력}&quot;, &quot;중앙일보 전략사업, CRM본부, 마케팅기획 수행&quot; &amp; vbCrLf &amp; _
+                                   &quot;다수의 생성형 AI 강연 및 기업 대상 실무 교육 경력&quot;
+    replacements.Add &quot;{특징1}&quot;, &quot;실무 중심: 업무에 바로 적용 가능한 생성형 AI 활용법 제공&quot;
+    replacements.Add &quot;{특징2}&quot;, &quot;참여형 실습: 다양한 문서 작성 실습을 통한 직접 체득&quot;
+    replacements.Add &quot;{특징3}&quot;, &quot;전문 강사: AI 프로젝트 경험을 갖춘 전문가 강의&quot;
+
+    ' --- 슬라이드 순회 ---
+    On Error Resume Next ' 오류 방지 (슬라이드가 없거나 오류 발생 시 무시)
+
+    For Each slide In ActivePresentation.Slides
+        ' 슬라이드 안의 모든 Shape 순회
+        For Each shape In slide.Shapes
+
+            ' 텍스트가 있는 경우
+            If shape.HasTextFrame Then
+                If shape.TextFrame.HasText Then
+                    originalText = shape.TextFrame.TextRange.Text
+
+                    ' 변수별로 텍스트 치환
+                    For Each key In replacements.Keys
+                        originalText = Replace(originalText, key, replacements(key))
+                    Next key
+
+                    ' 변경된 텍스트 적용
+                    shape.TextFrame.TextRange.Text = originalText
+                End If
+            End If
+
+            ' 표가 있는 경우
+            If shape.HasTable Then
+                Set tbl = shape.Table
+
+                ' 표 안의 모든 셀 순회
+                For row = 1 To tbl.Rows.Count
+                    For col = 1 To tbl.Columns.Count
+                        If tbl.Cell(row, col).Shape.HasTextFrame Then
+                            If tbl.Cell(row, col).Shape.TextFrame.HasText Then
+                                originalText = tbl.Cell(row, col).Shape.TextFrame.TextRange.Text
+
+                                ' 변수별로 텍스트 치환
+                                For Each key In replacements.Keys
+                                    originalText = Replace(originalText, key, replacements(key))
+                                Next key
+
+                                ' 변경된 텍스트 적용
+                                tbl.Cell(row, col).Shape.TextFrame.TextRange.Text = originalText
+                            End If
+                        End If
+                    Next col
+                Next row
+            End If
+
+        Next shape
+    Next slide
+
+    On Error GoTo 0 ' 오류 무시 해제
+
+    ' --- 완료 알림 ---
+    MsgBox &quot;모든 변수 값이 성공적으로 대체되었습니다.&quot;, vbInformation, &quot;교체 완료&quot;
+
+End Sub
+</code></pre>
+<hr />
+<h2 id="5">5. 모듈 변경 시 프롬프트</h2>
+<p>(모듈 부분만 복사 → 생성형 AI 붙여넣기)</p>
+<pre><code>위 정보는  모듈 1~5까지의 모듈명과 모듈1~5까지 내용이 포함된 vba 코드의 일부야. 해당 모듈명과 내용을 아래 기준으로 다시 작성해 줘. 코드에서 모듈명과 모듈 내용을 ***문서 작성에 특화된 ai 활용 교육***이라는 컨셉으로 다시 작성해줘.  
+</code></pre>
+<hr /></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 12월 17일 4:41 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@swingjazz/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/%EA%B7%B8%EB%A6%BC1.jpg"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@swingjazz/">@swingjazz</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/511/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/511/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/2328/add_comment/"
+                      method="post"
+                      hx-post="/blog/2328/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="eUNKvi7RS0J7tOuPLApvjN4meDUoUeroUOsnriQMf5nzYUzMgTxr9J9COWj0ENPK">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @swingjazz 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@swingjazz/5484/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            python 클래스
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 11월 07일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@swingjazz/4004/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            PPT 다수 슬라이드 내용 삽입 2 _ VBA 코드 삽입 프로세스
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 05월 21일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@swingjazz/2328/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            PPT 한 장 슬라이드 내용 삽입 1 _ VBA 코드 삽입 프로세스
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">2</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 15일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">402</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-2328"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-2328"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/2328/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">2</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=7bef0e7'/>

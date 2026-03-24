@@ -1,0 +1,947 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다">
+    <meta property="og:type" content="Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다">
+    <meta property="og:title" content="Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다">
+    <meta property="og:description" content="Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/9603/microgpt.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@jaehong/9603/">
+
+        
+    <title>Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다
+        - 박재홍의 실리콘밸리
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@jaehong/9602/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@jaehong/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @jaehong
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 22일 8:06 오전</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@jaehong/?tag=1028"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Ai
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>Andrej Karpathy가 10년간의 집착을 하나의 파일로 압축했다. 외부 라이브러리 없이, 순수 파이썬 200줄만으로 GPT를 학습시키고 추론까지 돌리는 microgpt를 공개한 것이다. 데이터셋 로딩, 토크나이저, 자동 미분 엔진, GPT-2 스타일 신경망 아키텍처, Adam 옵티마이저, 학습 루프, 추론 루프가 전부 들어 있다. PyTorch도, NumPy도, pip install도 필요 없다. <code>python train.py</code> 한 줄이면 맥북에서 1분 만에 이름을 생성하는 언어 모델이 만들어진다. Karpathy 본인이 &quot;이보다 더 단순화할 수 없다&quot;고 선언한 이 프로젝트는, micrograd, makemore, nanoGPT로 이어진 그의 교육 프로젝트 계보의 정점이다.</p>
+<p><img alt="thumbnail" src="https://static.wikidocs.net/images/blog/9603/microgpt.png" /></p>
+<h2 id="200">200줄 안에 뭐가 들어 있나</h2>
+<p>microgpt의 구조를 따라가면 LLM의 전체 파이프라인이 한눈에 보인다. 학습 데이터는 32,000개의 영어 이름 목록이다. 프로덕션에서는 인터넷 웹페이지 수조 토큰이 되겠지만, 핵심 알고리즘을 보여주기엔 이 정도면 충분하다.</p>
+<p>토크나이저는 가장 단순한 형태로, 데이터셋에 등장하는 고유 문자 각각에 정수 ID를 부여한다. 소문자 a-z 26개에 문서 구분자 역할의 BOS(Beginning of Sequence) 토큰 1개를 더해 어휘 크기는 27이다. GPT-4가 사용하는 tiktoken 같은 BPE(Byte Pair Encoding) 토크나이저는 약 10만 개의 하위 단어 토큰을 사용하지만, 알고리즘적으로 하는 일은 동일하다. 텍스트를 정수 시퀀스로 바꾸고 다시 되돌리는 것.</p>
+<p>가장 인상적인 부분은 자동 미분(autograd) 엔진이다. <code>Value</code>라는 단일 클래스가 스칼라 값 하나를 감싸면서 연산 그래프를 자동으로 구축한다. 덧셈, 곱셈, 거듭제곱, log, exp, ReLU 여섯 가지 기본 연산만 구현하면 된다. 각 연산은 순방향 계산(forward)과 해당 연산의 국소 기울기(local gradient)를 알고 있고, <code>backward()</code> 메서드가 역위상 순서(reverse topological order)로 그래프를 순회하며 연쇄 법칙(chain rule)을 적용한다. PyTorch의 <code>loss.backward()</code>가 하는 일과 알고리즘적으로 완전히 동일하다. 다만 텐서(다차원 배열) 대신 스칼라 하나씩 처리하므로 당연히 느리다.</p>
+<h2 id="gpt">GPT 아키텍처의 뼈대</h2>
+<p>모델 아키텍처는 GPT-2를 따르되 몇 가지를 단순화했다. LayerNorm 대신 RMSNorm, GeLU 대신 ReLU, 바이어스 제거. 파라미터는 임베딩 차원 16, 어텐션 헤드 4개, 레이어 1개, 최대 시퀀스 길이 16으로 설정되어 총 4,192개다. GPT-2의 16억 개, 최신 LLM의 수천억 개와 비교하면 장난감 수준이지만, 구조는 정확히 같다.</p>
+<p>핵심 흐름은 이렇다. 토큰 ID와 위치 ID가 각각의 임베딩 테이블에서 벡터를 가져와 더해진다. 이 벡터가 어텐션 블록을 통과하면서 이전 위치의 토큰들과 &quot;대화&quot;한다. 쿼리(Q)는 &quot;나는 무엇을 찾고 있는가&quot;, 키(K)는 &quot;나는 무엇을 담고 있는가&quot;, 밸류(V)는 &quot;선택되면 무엇을 제공하는가&quot;를 표현한다. 이 Q·K 내적으로 어텐션 가중치를 계산하고, V의 가중합을 구한다. 그 결과가 MLP 블록(2층 피드포워드 네트워크)을 통과하며 각 위치별 &quot;사고&quot;를 수행한다. 어텐션은 토큰 간 통신(communication), MLP는 각 위치에서의 연산(computation)이라는 Transformer의 핵심 설계 원리가 이 200줄에 고스란히 담겨 있다.</p>
+<p>흥미로운 점은 KV 캐시를 학습 중에도 명시적으로 사용한다는 것이다. 프로덕션 구현에서는 모든 위치를 동시에 처리하는 고도로 벡터화된 어텐션 연산 안에 KV 캐시가 숨어 있다. microgpt는 토큰을 하나씩 처리하기 때문에 캐시를 직접 구축하고, 캐시된 키와 밸류가 살아 있는 <code>Value</code> 노드이므로 역전파도 캐시를 통과한다.</p>
+<h2 id="_1">학습과 추론: 같은 루프의 두 얼굴</h2>
+<p>학습 루프는 1,000스텝 동안 문서 하나를 골라 토큰화하고, 순방향 전파로 손실을 계산하고, 역전파로 기울기를 구하고, Adam 옵티마이저로 파라미터를 갱신한다. 손실 함수는 교차 엔트로피(cross-entropy)로, 모델이 정답 토큰에 부여한 확률의 음의 로그값이다. 27개 토큰에 대한 무작위 추측의 손실이 약 3.3(<code>-log(1/27)</code>)인데, 학습이 진행되면 약 2.37까지 내려간다.</p>
+<p>Adam 옵티마이저는 단순 경사 하강(SGD)보다 영리하다. 파라미터별로 최근 기울기의 평균(모멘텀)과 기울기 제곱의 평균(적응적 학습률)을 추적한다. 이것도 프로덕션과 동일한 알고리즘이다.</p>
+<p>추론은 학습된 파라미터를 고정한 채 순방향 전파만 반복 실행한다. BOS 토큰으로 시작해서 모델이 다음 BOS를 출력할 때까지 토큰을 하나씩 샘플링한다. temperature 파라미터가 출력의 다양성을 조절하는데, 0.5로 설정하면 보수적으로, 1.0이면 모델이 학습한 분포 그대로, 0에 가까우면 항상 가장 확률 높은 토큰만 선택한다. 결과로 &quot;kamon&quot;, &quot;karai&quot;, &quot;vialan&quot; 같은 실제로는 존재하지 않지만 그럴듯한 이름들이 생성된다.</p>
+<h2 id="microgpt-chatgpt">microgpt에서 ChatGPT까지의 거리</h2>
+<p>Karpathy가 명시적으로 정리한 &quot;microgpt와 프로덕션 LLM 사이의 차이&quot; 목록이 이 프로젝트의 가치를 오히려 부각한다. 핵심은 이것이다. 차이는 전부 효율성(efficiency)의 영역이지, 알고리즘의 본질이 아니다.</p>
+<p>데이터는 3만 2천 개 이름에서 수조 토큰의 인터넷 텍스트로 확장된다. 토크나이저는 문자 단위에서 약 10만 개의 서브워드 단위로 바뀐다. 자동 미분은 파이썬 스칼라 연산에서 GPU/TPU 위의 텐서 연산으로 바뀌고, FlashAttention 같은 CUDA 커널이 여러 연산을 융합해 속도를 높인다. 아키텍처는 4,192개 파라미터에서 수천억 개로 커지고, RoPE(회전 위치 임베딩), GQA(그룹 쿼리 어텐션), MoE(전문가 혼합) 같은 추가 블록이 들어간다. 학습은 스텝당 문서 1개에서 수백만 토큰 배치로, 수천 GPU가 수개월 돌아간다. 그리고 사전 학습된 &quot;문서 완성기&quot;를 챗봇으로 만드는 후처리(SFT와 RLHF)가 추가된다.</p>
+<p>하지만 어텐션(통신)과 MLP(연산)가 잔차 연결(residual connection) 위에서 교차하는 핵심 구조, 다음 토큰 예측이라는 학습 목표, 역전파와 Adam으로 파라미터를 최적화하는 루프는 그대로다.</p>
+<h2 id="_2">이 프로젝트가 의미 있는 이유</h2>
+<p>microgpt는 단순한 교육용 토이 프로젝트가 아니다. 이것은 LLM에 대한 일종의 해부학 교과서다.</p>
+<p>현재 AI 업계의 가장 큰 문제 중 하나는 LLM을 둘러싼 과도한 신비화다. &quot;이해한다&quot;, &quot;추론한다&quot;, &quot;창발한다&quot;는 표현이 난무하지만, 실제 메커니즘은 입력 토큰을 받아 다음 토큰의 확률 분포를 출력하는 수학 함수다. microgpt는 이 사실을 200줄로 입증한다. &quot;환각(hallucination)&quot;이라 불리는 현상도 이 코드에서 직접 관찰된다. &quot;karia&quot;라는 실재하지 않는 이름을 생성하는 것과 ChatGPT가 거짓 사실을 자신 있게 말하는 것은 정확히 같은 메커니즘이다. 통계적으로 그럴듯한 시퀀스를 샘플링했을 뿐, 진위 판단 능력은 어디에도 없다.</p>
+<p>Karpathy가 제공하는 단계별 빌드업(train0.py부터 train5.py까지)도 주목할 만하다. 바이그램 카운트 테이블에서 시작해 MLP, 자동 미분, 포지션 임베딩과 싱글 헤드 어텐션, 멀티 헤드 어텐션, 마지막으로 Adam 옵티마이저까지 한 겹씩 양파를 벗기듯 쌓아 올린다. 딥러닝 입문자에게 이보다 나은 학습 경로를 찾기 어렵다.</p>
+<p>실무적 관점에서 보면, 이 프로젝트는 &quot;LLM을 쓰는 사람&quot;과 &quot;LLM을 이해하는 사람&quot; 사이의 간극을 좁히는 도구다. API를 호출해서 프롬프트를 던지는 것과, 그 API 뒤에서 어떤 수학이 돌아가는지 아는 것은 근본적으로 다른 역량이다. temperature 파라미터 하나만 해도, softmax 전에 로짓을 나누는 단순한 나눗셈이라는 걸 알면 프롬프트 엔지니어링의 직관이 완전히 달라진다.</p>
+<p>Karpathy는 이 프로젝트를 &quot;아트 프로젝트&quot;라고 불렀다. 기능적 완결성과 극한의 단순함이 만나는 지점에서 아름다움이 나온다는 선언이다. 코드가 3단 컬럼으로 완벽하게 나뉜다는 사실에 감동받았다고 쓴 건 반쯤 농담이겠지만, 복잡한 시스템의 본질을 포착하는 능력 자체가 최고 수준의 엔지니어링이라는 점에서 이 200줄은 충분히 &quot;아름답다&quot;고 할 수 있다.</p>
+<p><a href="https://karpathy.github.io/2026/02/12/microgpt/">원본 글</a></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 22일 2:15 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@jaehong/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@jaehong/">@jaehong</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/364/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/364/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">17</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9603/add_comment/"
+                      method="post"
+                      hx-post="/blog/9603/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="NMFAqAYXUeACuNcosI2LMj9eC1pPGiHyoSQZ5SzgvGZ6fEpGHSKEvJug0PNzrx4l">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @jaehong 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/9603/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 22일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/9602/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Deno의 대규모 감원, 그리고 사라진 CEO: 오픈소스 런타임의 비즈니스 모델은 가능한가
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 22일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/9601/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            FFmpeg의 내부를 들여다보다: 라이브러리 API로 직접 만드는 미디어 플레이어
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 22일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/9600/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            도박 마케팅이 중독을 심화시킨다는 &quot;인과관계&quot;가 처음으로 입증됐다
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 22일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/9599/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Flash-KMeans: 40년 된 알고리즘을 GPU에서 200배 빠르게 만든 방법
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 22일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 255
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/364/9603/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @jaehong 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/19104">
+                    
+                        <img src="https://static.wikidocs.net/images/book/claudecodeguide_book_1772272112_1772272188.jpg"
+                             alt="클로드 코드 가이드"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/19104"
+                           class="hover:text-red-500 dark:hover:text-red-400">클로드 코드 가이드</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        
+
+코드를 직접 짜는 시대는 끝났습니다. 이제는 말로 만듭니다.
+Claude Code는 Anthropic이 만든 AI 코딩 에이전트입니다. 자연어 한 줄이면 코드 작성, 디버깅,…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 3월 22일 6:53 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17550">
+                    
+                        <div class="flex items-center justify-center bg-gray-200 dark:bg-gray-700"
+                             style="width: 100px;
+                                    height: 130px">
+                            <i class="fa fa-book text-gray-400 text-4xl"></i>
+                        </div>
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17550"
+                           class="hover:text-red-500 dark:hover:text-red-400">바이브 코딩 (AI 코딩 에이전트 사용법)</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        AI 코딩 에이전트 사용법을 설명한다.
+
+Cursor, Cline, ...
+
+
+
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 3월 12일 10:56 오전</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17535">
+                    
+                        <img src="https://static.wikidocs.net/images/book/verified-5254386_1280_wW9RJ4l_e79K0qp_1773050366.jpg"
+                             alt="RLVR: 검증가능 보상 강화학습 소개"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17535"
+                           class="hover:text-red-500 dark:hover:text-red-400">RLVR: 검증가능 보상 강화학습 소개</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        RLVR (Reinforcement Learning with Verifiable Rewards) 소개
+
+검증가능한 보상을 기반으로 하는 강화학습
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 3월 15일 4:39 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">35</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9603"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9603"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9603/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@jaehong/7810/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/7810/blog-header.jpg"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            Spotify 최고의 개발자들, 12월 이후 코드를 한 줄도 안 짰다 — AI가 대신 한다
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                &quot;우리 최고의 개발자들은 12월 이후로 코드를 단 한 줄도 직접 작성하지 않았습니다.&quot; …
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@jaehong/7275/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/7275/siri-ios-26.jpg"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            Apple의 Gemini 탑재 Siri, 또다시 연기 — 대체 언제 만날 수 있을까?
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                AI 비서 전쟁이 한창인 2026년, Apple이 Google Gemini를 Siri에 …
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=bae3e35'/>

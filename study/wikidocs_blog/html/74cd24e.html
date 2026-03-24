@@ -1,0 +1,2760 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="Mastering Rust: A Complete Guide - PART-II 30. 동시성 프로그래밍">
+    <meta property="og:type" content="Mastering Rust: A Complete Guide - PART-II 30. 동시성 프로그래밍">
+    <meta property="og:title" content="Mastering Rust: A Complete Guide - PART-II 30. 동시성 프로그래밍">
+    <meta property="og:description" content="Mastering Rust: A Complete Guide - PART-II 30. 동시성 프로그래밍">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@laniakea/2370/">
+
+        
+    <title>Mastering Rust: A Complete Guide - PART-II 30. 동시성 프로그래밍
+        - 채병철의 러스트 강좌 (Mastering Rust)
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@laniakea/2295/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@laniakea/2569/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">Mastering Rust: A Complete Guide - PART-II 30. 동시성 프로그래밍</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@laniakea/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @laniakea
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 4월 16일 7:10 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><div class="toc">
+<ul>
+<li><a href="#30">30. 동시성 프로그래밍</a><ul>
+<li><a href="#301">30.1 스레드 만들기</a></li>
+<li><a href="#302-stdthread">30.2 std::thread 메서드</a></li>
+<li><a href="#303-move">30.3 move 클로저</a></li>
+<li><a href="#304-scoped-threads">30.4 범위제한 스레드(Scoped Threads)</a></li>
+<li><a href="#305-join">30.5 join</a></li>
+<li><a href="#306-send-sync">30.6 Send와 Sync</a></li>
+<li><a href="#307-channel-message-passing">30.7 Channel - Message Passing</a></li>
+<li><a href="#308-crossbeam-channel">30.8 crossbeam-channel</a></li>
+<li><a href="#309-shared-state">30.9 상태 공유(Shared-State)</a></li>
+<li><a href="#3010-atomicusize">30.10 AtomicUsize</a></li>
+<li><a href="#3011-condvar">30.11 Condvar</a></li>
+<li><a href="#3012-data-parallelism">30.12 데이터 병렬 처리(Data Parallelism)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="30">30. 동시성 프로그래밍</h2>
+<p>동시성 프로그래밍은 여러 작업이 동시에 실행되는 프로그램을 작성하는 기법을 의미한다. 순차(sequential) 실행은 하나의 프로세스가 끝나야 다음 프로세스를 실행하고, 한 번에 한 가지 일만 할 수 있다. 동시(concurrent) 실행은 두 프로세스가 하나의 CPU코어를 공유하고 작업 시간을 분할하여 수행하는 구조이다. 하나의 코어를 공유하여 사용하기 때문에 물리적으로는 한 번에 한 가지 작업만 가능하다. 두 프로세스의 전체 수행 시간은 순차 실행과 동일하다. 병렬(parallel) 실행은 두 프로세스가 각각 독립적으로 코어를 할당 받아 동시에 병렬로 작업을 수행한다.</p>
+<p>Rust의 동시성 모델은 스레드 기반 동시성과 비동기 프로그래밍 두 가지로 나뉜다. Rust의 메모리 안정성은 동시성 원칙에서 최우선 되는 속성으로 복잡한 동시성 문제를 안전하게 처리할 수 있도록 도와준다. 이 동시성을 보장하기 위해 러스트가 갖고 있는 몇 가지 규칙은 다음과 같다.</p>
+<ul>
+<li>
+<p>데이터 경쟁(Data Race) 방지</p>
+</li>
+<li>
+<p>소유권(Ownership) 시스템</p>
+</li>
+<li>
+<p>소유권 대여(Borrowing)와 수명주기(Lifetimes)</p>
+</li>
+<li>
+<p>메시지 전달(Message Passing) 방식</p>
+</li>
+<li>
+<p>동시성을 다루는 다양한 추상화(Mutex, RwLock, Condvar 등) 기능</p>
+</li>
+</ul>
+<p>특히 소유권(Ownership) 원칙은 변수의 공유를 막아 여러 스레드가 동시에 자료에 접근할 수 없도록 강제한다. 스레드 안전성을 컴파일 타임에 보장하여, 교착 상태나 경쟁 상태와 같은 동시성 문제들의 발생 가능성이 다른 언어에 비해 현저히 낮다.</p>
+<p>또한, async/await와 같이 현대 프로그래밍 언어가 제공하는 동시성 기능들을 지원하고 있으며, 이를 통해 동시성을 쉽고 간편하고 안전하게 제어할 수 있다.</p>
+<p>동시성 요소(concurrency primitives)는 여러 스레드나 프로세스가 동시에 작업을 수행할 수 있도록 하는 기본적인 도구이다. 이러한 요소는 동시성 문제를 해결하고 데이터 무결성을 유지하기 위해 사용된다. 주요 동시성 요소는 다음과 같다.</p>
+<ul>
+<li>
+<p><strong>뮤텍스(Mutex)</strong>: 상호 배제를 위한 도구로, 여러 스레드가 동시에 특정 코드 블록에 접근하지 못하도록 한다. 한 스레드가 뮤텍스를 잠그면 다른 스레드는 잠금을 해제할 때까지 대기해야 한다.</p>
+</li>
+<li>
+<p><strong>세마포어(Semaphore)</strong>: 제한된 수의 스레드가 공유 자원에 접근할 수 있도록 제어한다. 카운팅 세마포어와 바이너리 세마포어가 있으며, 카운팅 세마포어는 여러 스레드가 동시에 접근할 수 있는 수를 지정한다.</p>
+</li>
+<li>
+<p><strong>모니터(Monitor)</strong>: 뮤텍스와 조건 변수(Condvar)를 결합하여 객체의 상태를 보호하고 동기화를 쉽게 한다. 모니터 내부의 코드 블록에 대한 접근은 뮤텍스를 통해 제어되며, 조건 변수는 특정 조건이 충족될 때까지 스레드를 대기 상태로 만든다.</p>
+</li>
+<li>
+<p><strong>조건 변수(Condition Variable)</strong>: 스레드가 특정 조건이 충족될 때까지 대기하도록 하는 데 사용된다. 조건 변수를 사용할 때는 뮤텍스와 함께 사용하여 데이터의 일관성을 보장한다.</p>
+</li>
+<li>
+<p><strong>읽기-쓰기 잠금(Read-Write Lock)</strong>: 여러 스레드가 읽기 작업을 동시에 수행할 수 있도록 하지만, 쓰기 작업이 필요할 경우에는 독점적으로 잠금을 허용한다.</p>
+</li>
+<li>
+<p><strong>이벤트(Event)</strong>: 스레드가 특정 사건(예: 데이터 수신)을 기다릴 수 있도록 하는 신호 메커니즘이다. 하나의 스레드가 이벤트를 설정하면 대기 중인 다른 스레드가 실행을 재개할 수 있다.</p>
+</li>
+</ul>
+<p>두 스레드가 데이터를 공유하는 상황에서 두 스레드 모두가 나머지 하나보다 더 오래 존재한다는 사실이 보장되지 않는다면, 어떤 스레드도 데이터의 소유권을 가질 수 없다. 공유되는 데이터는 두 스레드보다 더 오래 존재해야만 한다.</p>
+<p>static 변수는 프로그램 자체가 소유권을 가지기 때문에 모든 스레드보다도 오래 존재할 수 있다. 다음 코드에서 두 스레드 모두 X에 접근할 수 있지만, X를 소유할 수는 없다.</p>
+<pre><code class="language-rust">static X: [i32; 3] = [1, 2, 3];
+
+thread::spawn(|| dbg!(&amp;X));
+thread::spawn(|| dbg!(&amp;X));
+</code></pre>
+<p>static으로 선언된 변수는 상수 값을 가지고 프로그램 시작전에 생성되어 어떤 스레드도 static변수로부터 값을 빌려올 수 있다.</p>
+<p>또 다른 데이터 공유 방법은 값의 할당을 유출시키는 방법이다. Box&lt;T&gt;는 소유권을 가지고 있는 힙 메모리에 값을 할당하며, Box의 범위가 끝나면 자동으로 해제된다. 하지만 Box::leak를 사용하면, 이 메모리를 명시적으로 해제하지 않고, 해당 값을 static 수명주기를 가지는 참조로 변환할 수 있다.</p>
+<p>이때부터Box는 프로그램이 종료될 때까지 존재하게 되고 어느 스레드에서도 값을 빌려 갈 수 있게 된다.</p>
+<pre><code class="language-rust">let x: &amp;'static [i32; 3] = Box::leak(Box::new([1, 2, 3]));
+
+thread::spawn(move || dbg!(x));
+thread::spawn(move || dbg!(x))
+</code></pre>
+<p>move 클로저가 값의 소유권을 가져가는 것처럼 보이지만, x는 단순히Box의 참조이다. &#x27;static으로 선언되었다고 해서 이 값이 프로그램 시작 전에 만들어진다는 것은 아니다. 이 값은 프로그램이 종료될 때까지 유지된다.</p>
+<p>Box를 유출시키게 되면, 메모리에 어떤 객체를 할당했지만 객체를 삭제하고 메모리 할당을 해제하지 않는 것과 같다. 이러한 패턴이 몇 번 존재하지 않고 프로그래머가 명확히 이를 관리할 수 있으면 상관이 없지만, 이러한 패턴이 반복되면 프로그램의 메모리가 점차 부족해질 것이다.</p>
+<p>스레드 사이에서 공유된 데이터가 확실히 삭제되고 메모리에서 할당 해제되게 하려면, 해당 데이터의 소유권을 포기해서는 안된다. 소유권을 공유하여 해당 데이터의 소유자들을 지속적으로 관리함으로써 더 이상 해당 데이터의 소유자가 없을 때 객체를 삭제할 수 있다.</p>
+<p>Box::leak을 사용하지 않고도 여러 스레드에서 안전하게 데이터를 공유하면서도 필요할 때 자동으로 해제되도록 하려면 소유권을 공유해야 한다. 이를 위해 Arc&lt;T&gt;와 Mutex&lt;T&gt; 혹은 RwLock&lt;T&gt; 같은 동기화 도구를 사용할 수 있다.</p>
+<h3 id="301">30.1 스레드 만들기</h3>
+<p>표준 라이브러리는 POSIX Threads(pthreads) 및 Windows Threads 위에 안전한 스레드 API를 제공한다. std::thread 모듈을 활용하여 여러 스레드를 생성하고, 데이터를 공유하며, 동기화할 수 있다.</p>
+<p>thread::spawn은 독립적으로 실행되는 새로운 스레드를 생성할 때 사용하는 함수이다. thread::spawn을 호출하면, JoinHandle이 반환되며 이를 통해 스레드의 결과를 처리하거나 종료를 기다릴 수 있다.</p>
+<p>[EX30-1-1]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let handle = thread::spawn(|| {
+        for i in 1..10 {
+            println!(&quot;새로운 스레드: {}&quot;, i);
+            std::thread::sleep(std::time::Duration::from_millis(100));
+        }
+    });
+
+    for i in 1..5 {
+        println!(&quot;메인 스레드: {}&quot;, i);
+        std::thread::sleep(std::time::Duration::from_millis(100));
+    }
+
+    handle.join().unwrap(); // 새 스레드가 종료될 때까지 대기
+}
+</code></pre>
+<ol>
+<li>
+<p>thread::spawn으로 생성된 스레드는 비동기적으로 실행된다. 생성된 스레드가 완료되기 전에 메인 스레드가 종료되면, 생성된 스레드도 종료된다.</p>
+</li>
+<li>
+<p>thread::spawn은 JoinHandle을 반환하며, join 메서드로 해당 스레드의 종료를 기다릴 수 있다. 스레드에서 반환된 값은 JoinHandle을 통해 얻을 수 있다.</p>
+</li>
+<li>
+<p>thread::spawn에 전달하는 클로저는 반드시 &#x27;static 수명을 가져야 한다.</p>
+</li>
+</ol>
+<p>아래의 예제는 클로저가 메인 스레드의 변수를 캡쳐하여 클로저의 환경으로 이동한다. 스레드에서 사용하는 변수는 클로저 내에서 move로 소유권을 가져와야 할 수 있다.</p>
+<p>[EX30-1-2]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let handle=thread::spawn(move|| {
+    let data=vec![1, 2, 3];
+        println!(&quot;Data: {:?}&quot;, data);
+    });
+
+    handle.join().unwrap();
+}
+</code></pre>
+<p>아래의 예제는 새 스레드를 생성하고 1부터 10의 합을 계산하는 클로저를 실행한다. 파라미터들은 thread::spawn 함수의 파라미터로 보내져서 join 메서드를 통해 반환 값을 받을 수 있다.</p>
+<p>[EX30-1-3]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let handle = thread::spawn(|| {
+        let sum: u32 = (1..=10).sum();
+        sum
+    });
+
+    let result = handle.join().unwrap();
+    println!(&quot;스레드에서 반환된 값: {}&quot;, result);
+}
+</code></pre>
+<p>메인 스레드의 프로그램이 완료되면 생성된 모든 스레드가 스레드의 작업이 끝나지 않아도 모두 실행을 종료하게 된다. 아래 코드의 실행 결과는 매번 다를 수 있다.</p>
+<p>[EX30-1-4]</p>
+<pre><code class="language-rust">use std::thread;
+use std::time::Duration;
+
+fn main() {
+    thread::spawn(|| {
+    for i in 1..10 {
+        println!(&quot;hi number {} from the spawned thread!&quot;, i);
+        thread::sleep(Duration::from_millis(1));
+    }
+});
+
+for i in 1..5 {
+        println!(&quot;hi number {} from the main thread!&quot;, i);
+        thread::sleep(Duration::from_millis(1));
+    }
+}
+</code></pre>
+<p>thread::sleep 함수는 짧은 시간 동안 실행을 멈추어 다른 스레드에서 코드를 실행시킬 수 있게 한다. 운영체제마다 스케쥴링 방법이 다르기 때문에 순서와 결과를 보장할 수 없다.</p>
+<p>thread::spawn을 사용할 때 클로저 대신 별도의 함수로 스레드 작업을 정의할 수도 있다. 클로저가 아닌 함수를 사용하려면 함수 시그니처와 매개변수의 소유권을 적절히 처리해야 한다.</p>
+<p>아래는 thread::spawn에서 클로저를 사용하지 않고 함수를 호출하는 예제이다.</p>
+<p>[EX30-1-5]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn thread_function(start: u32, end: u32) {
+    for i in start..end {
+        println!(&quot;스레드: {}&quot;, i);
+        std::thread::sleep(std::time::Duration::from_millis(100));
+    }
+}
+
+fn main() {
+    // thread::spawn 호출 시, 함수 포인터를 전달
+    let handle = thread::spawn(|| thread_function(1, 10));
+
+    // 메인 스레드 작업
+    for i in 1..5 {
+        println!(&quot;메인 스레드: {}&quot;, i);
+        std::thread::sleep(std::time::Duration::from_millis(100));
+    }
+
+    // 스레드 종료 대기
+    handle.join().unwrap();
+}
+</code></pre>
+<p>위 코드는 함수 thread_function을 호출하는 클로저를 전달하지만, 클로저 자체를 제거할 수도 있다.</p>
+<p>thread::spawn은 함수 포인터를 받을 수 있기 때문에 아래와 같은 코드도 가능하다</p>
+<p>[EX30-1-6]</p>
+<pre><code class="language-rust">use std::thread;
+
+// 스레드에서 실행할 함수
+fn thread_function() {
+    for i in 1..10 {
+        println!(&quot;스레드: {}&quot;, i);
+        std::thread::sleep(std::time::Duration::from_millis(100));
+    }
+}
+
+fn main() {
+    // thread::spawn에 함수 포인터 전달
+    let handle = thread::spawn(thread_function);
+
+    // 메인 스레드 작업
+    for i in 1..5 {
+        println!(&quot;메인 스레드: {}&quot;, i);
+        std::thread::sleep(std::time::Duration::from_millis(100));
+    }
+
+    // 스레드 종료 대기
+    handle.join().unwrap();
+}
+</code></pre>
+<p>thread::spawn은 FnOnce 트레잇을 구현하는 함수 포인터나 클로저를 인수로 받을 수 있다.</p>
+<p>클로저를 사용하지 않으려면 함수 포인터를 전달하면 된다. 함수에 매개변수를 전달해야 한다면, 별도의 클로저를 사용하거나 매개변수를 캡처하는 방법을 고려해야 한다.</p>
+<p>[EX30-1-7]</p>
+<pre><code class="language-rust">use std::thread;
+
+// 스레드에서 실행할 함수
+fn thread_function(start: u32, end: u32) {
+    for i in start..end {
+        println!(&quot;스레드에서: {}&quot;, i);
+        thread::sleep(std::time::Duration::from_millis(100));
+    }
+}
+
+fn main() {
+    // 클로저를 사용하여 매개변수 전달
+    let handle = thread::spawn(|| thread_function(1, 5));
+
+    for i in 1..=5 {
+        println!(&quot;메인 스레드에서: {}&quot;, i);
+        thread::sleep(std::time::Duration::from_millis(100));
+    }
+
+    handle.join().unwrap();
+}
+</code></pre>
+<p>함수 포인터와 매개변수의 조합을 지원하지 않으므로 매개변수를 전달하려면 move 클로저를 사용하여 함수 호출을 감싸야 한다.</p>
+<p>[EX30-1-8]</p>
+<pre><code class="language-rust">use std::thread;
+
+// 스레드에서 실행할 함수
+fn thread_function(start: u32, end: u32) {
+    for i in start..end {
+        println!(&quot;스레드에서: {}&quot;, i);
+        thread::sleep(std::time::Duration::from_millis(100));
+    }
+}
+
+fn main() {
+    let start = 1;
+    let end = 5;
+
+    // 클로저 없이 매개변수를 직접 전달하려면 move 클로저로 감싸야 함
+    let handle = thread::spawn(move || thread_function(start, end));
+
+    for i in 1..=5 {
+        println!(&quot;메인 스레드에서: {}&quot;, i);
+        thread::sleep(std::time::Duration::from_millis(100));
+    }
+    handle.join().unwrap();
+}
+</code></pre>
+<h3 id="302-stdthread">30.2 std::thread 메서드</h3>
+<p><a href="https://doc.rust-lang.org/std/thread/">https://doc.rust-lang.org/std/thread/</a></p>
+<p><a href="https://doc.rust-lang.org/std/thread/struct.Builder.html">https://doc.rust-lang.org/std/thread/struct.Builder.html</a></p>
+<p><strong>thread 모듈</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>함수</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>thread::spawn</strong></td>
+<td>새로운 스레드를 생성하고 실행한다. 클로저를 인수로 받아 새 스레드를 실행하며, JoinHandle&lt;T&gt;를 반환한다.</td>
+</tr>
+<tr>
+<td><strong>thread::yield_now</strong></td>
+<td>현재 실행 중인 스레드의 실행을 양보(yield)하여 다른 스레드가 실행될 수 있도록 한다.</td>
+</tr>
+<tr>
+<td><strong>thread::sleep</strong></td>
+<td>현재 스레드를 지정된 시간 동안 일시 중단(sleep)한다. (Duration을 인수로 받음)</td>
+</tr>
+<tr>
+<td><strong>thread::park</strong></td>
+<td>현재 스레드를 중단(park)하고, unpark이 호출될 때까지 대기한다.</td>
+</tr>
+<tr>
+<td><strong>thread::current</strong></td>
+<td>현재 실행 중인 스레드의 핸들을 가져온다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>std::thread::Thread 구조체</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>메서드</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Thread::id</strong></td>
+<td>현재 스레드의 고유 ID(ThreadId)를 반환한다.</td>
+</tr>
+<tr>
+<td><strong>Thread::name</strong></td>
+<td>스레드의 이름(설정된 경우)을 반환한다.</td>
+</tr>
+<tr>
+<td><strong>Thread::unpark</strong></td>
+<td>park로 중단된 스레드를 다시 실행할 수 있도록 해준다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>std::thread::JoinHandle&lt;T&gt; 구조체</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>메서드</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JoinHandle::join</strong></td>
+<td>스레드의 종료를 대기하고, 결과를 Result&lt;T&gt;로 반환한다.</td>
+</tr>
+<tr>
+<td><strong>JoinHandle::is_finished</strong></td>
+<td>스레드가 종료되었는지 여부를 확인한다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>std::thread::Builder 구조체</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>메서드</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Builder::new</strong></td>
+<td>스레드 빌더 객체를 생성한다.</td>
+</tr>
+<tr>
+<td><strong>Builder::name</strong></td>
+<td>스레드의 이름을 설정한다.</td>
+</tr>
+<tr>
+<td><strong>Builder::stack_size</strong></td>
+<td>스레드의 스택 크기를 설정한다.</td>
+</tr>
+<tr>
+<td><strong>Builder::spawn</strong></td>
+<td>빌더를 사용하여 새로운 스레드를 생성한다.</td>
+</tr>
+</tbody>
+</table>
+<p>std::thread::Builder는 thread::spawn보다 유연한 스레드 생성 기능을 제공한다. 특히 스레드 이름 설정과 스택 크기 조정이 필요할 때 사용하면 유용하다.</p>
+<table>
+<thead>
+<tr>
+<th><strong>상황</strong></th>
+<th><strong>thread::spawn 사용</strong></th>
+<th><strong>thread::Builder 사용</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단순한 스레드 실행</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>스레드의 이름을 설정해야 하는 경우</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>스택 크기를 조정해야 하는 경우</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>복잡한 설정을 추가해야 하는 경우</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>스레드를 일시 중지하고 다시 실행할 수 있도록 한다.</p>
+<p>[EX30-2-1]</p>
+<pre><code class="language-rust">use std::thread;
+use std::time::Duration;
+
+fn main() {
+    let handle = thread::spawn(|| {
+        println!(&quot;스레드 대기 중...&quot;);
+        thread::park(); // 여기서 중단됨
+        println!(&quot;스레드가 다시 실행됨!&quot;);
+    });
+
+    thread::sleep(Duration::from_secs(1));
+    handle.thread().unpark(); // 중단된 스레드를 다시 실행
+    handle.join().unwrap();
+}
+</code></pre>
+<p>스레드의 이름과 스택 크기를 지정할 수 있다. 스레드의 이름을 설정하면, 디버깅할 때 어떤 스레드가 실행 중인지 추적하기 쉬워진다</p>
+<p>[EX30-2-2]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let builder = thread::Builder::new()
+      .stack_size(4 * 1024 * 1024) // 4MB 스택 설정
+      .name(&quot;CustomThread&quot;.into());
+
+    let handle = builder.spawn(|| {
+        println!(&quot;스레드 이름: {:?}&quot;, thread::current().name());
+    }).unwrap();
+
+    handle.join().unwrap();
+}
+</code></pre>
+<h3 id="303-move">30.3 move 클로저</h3>
+<p>move 클로저는 클로저가 사용하는 외부 변수를 캡처할 때, 해당 변수의 소유권을 강제로 이동시키는 클로저이다. 이는 멀티스레딩 상황에서 유용하며, 소유권 시스템과 호환되는 안전한 방식으로 데이터를 다룰 수 있도록 한다.</p>
+<p>클로저가 외부 변수를 사용할 때 기본적으로 참조를 캡처한다. 하지만 move를 사용하면 해당 변수의 소유권이 클로저로 이동한다. 클로저는 더 이상 외부 변수에 접근할 수 없게 되고, 해당 변수는 클로저 내에서만 사용된다.</p>
+<p>스레드 모델에서 데이터의 소유권이 명확히 정의되지 않으면 데이터 경합이 발생할 수 있다. move를 사용하여 데이터의 소유권을 클로저로 이전하면, 스레드 간 데이터 경합을 방지할 수 있다.</p>
+<p>move 클로저(move || { ... })는 소유권을 이전(move)하여 캡처하는 클로저이다. 하지만 Copy 트레잇을 구현한 값은 복사할 수 있기 때문에, 클로저 내부로 이동하는 것이 아니라 복사된다.</p>
+<p>[EX30-3-1]</p>
+<pre><code class="language-rust">fn main() {
+    let x = 10; // i32는 Copy
+    let closure = move || {
+        println!(&quot;{}&quot;, x); // x가 클로저 내부로 이동하지만, Copy라서 복사됨
+    };
+
+    closure();
+
+    println!(&quot;{}&quot;, x); // 여전히 x를 사용할 수 있음!
+}
+</code></pre>
+<p>move 클로저를 사용하지 않은 경우 클로저가 x의 참조를 캡처하므로, x는 클로저 호출 이후에도 사용할 수 있다.</p>
+<p>[EX30-3-2]</p>
+<pre><code class="language-rust">fn main() {
+    let x = 10;
+    let closure = || println!(&quot;x: {}&quot;, x);
+
+    closure();
+   
+    println!(&quot;x는 여전히 사용할 수 있음: {}&quot;, x);
+
+    let message = String::from(&quot;Hello from thread!&quot;);
+    let closure = || println!(&quot;{}&quot;, message);
+
+    closure();
+
+    println!(&quot;message는 여전히 사용할 수 있음: {}&quot;, message);
+}
+</code></pre>
+<p>move 키워드를 사용했기 때문에 x, y의 소유권이 클로저로 이동한다. 이후 x, y를 사용하려 하면 컴파일 오류가 발생한다.</p>
+<p>[EX30-3-3]</p>
+<pre><code class="language-rust">fn main() {
+    let x = String::from(&quot;Hello&quot;);
+    let y = String::from(&quot;Rust&quot;);
+    let closure = move || {
+        println!(&quot;x: {}, y: {}&quot;, x, y);
+    };
+
+    closure();
+    // println!(&quot;{}&quot;, x); // 컴파일 오류: x의 소유권이 이동됨
+    // println!(&quot;{}&quot;, y); // 컴파일 오류: y의 소유권이 이동됨
+}
+</code></pre>
+<p>thread::spawn은 클로저에 전달된 데이터의 소유권이 명확히 정의되지 않으면 컴파일 오류를 발생한다. 이때 move 클로저를 사용하여 데이터의 소유권을 스레드로 이동시킬 수 있다.</p>
+<p>[EX30-3-4]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let message = String::from(&quot;Hello from thread!&quot;);
+    let handle = thread::spawn(move || {
+        println!(&quot;{}&quot;, message);
+    });
+
+    handle.join().unwrap();
+    // println!(&quot;{}&quot;, message); // 컴파일 오류: message의 소유권이 스레드로 이동됨
+}
+</code></pre>
+<p>message의 소유권이 move 클로저로 이동했기 때문에, 스레드 내부에서 안전하게 사용할 수 있다. message는 이후 메인 스레드에서 사용할 수 없다.</p>
+<h3 id="304-scoped-threads">30.4 범위제한 스레드(Scoped Threads)</h3>
+<p>std::thread::spawn을 통해 생성되는 스레드는 부모 스레드의 범위와 독립적인 수명 주기를 갖게 된다. 이렇게 독립적으로 실행되는 스레드는 move로 소유권을 가져가야 하며, 부모 범위의 변수에 접근하려면 소유권을 이전해야 하는 제약이 있다.</p>
+<p>범위 제한 스레드는 스레드의 수명을 명시적으로 제어하여<strong>,</strong> 스레드가 부모 범위의 데이터를 안전하게 참조할 수 있도록 해준다. 이를 통해 소유권 및 수명 규칙과 충돌하지 않으면서 스레드를 생성하고 사용할 수 있다. 범위 제한 스레드는 주로 std::thread::scope를 사용하여 구현된다.</p>
+<p>[EX30-4-1]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn foo() {
+    let s = String::from(&quot;Hello&quot;);
+
+    thread::spawn(|| {
+        println!(&quot;Lenght : {}&quot;, s.len());
+    });
+}
+
+fn main() {
+    foo();
+}
+</code></pre>
+<pre><code class="language-rust">5 | thread::spawn(|| {
+| ^^ may outlive borrowed value `s`
+6 | println!(&quot;Lenght : {}&quot;, s.len());
+| - `s` is borrowed here
+</code></pre>
+<p>어떤 스레드가 반드시 특정 범위에서만 존재하는 것이 확실할 경우, 이 스레드는 지역 변수의 소유권을 빌려올 수 있다. 스레드 역시 지역변수와 같이 특정 범위에서만 존재하기 때문이다.</p>
+<p>[EX30-4-2]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let s = String::from(&quot;Hello&quot;);
+
+    thread::scope(|scope| {
+        scope.spawn(|| {
+            println!(&quot;Length : {}&quot;, s.len());
+        });
+    });
+}
+</code></pre>
+<ol>
+<li>
+<p>thread::scope 함수가 완료되면 그 안에서 생성된 모든 스레드들이 종료했음이 보장되기 때문에, 그 때 빌렸던 데이터들을 다시 반환할 수 있다.</p>
+</li>
+<li>
+<p>일반적인 빌림 규칙이 적용된다: 한 스레드에 의한 가변 빌림 또는 여러 스레드에 대한 불변 빌림 중 하나만 가능하다.</p>
+</li>
+</ol>
+<p>아래 코드는 범위 제한 스레드를 사용하여 부모 범위의 데이터를 수정하는 예제이다.</p>
+<p>[EX30-4-3]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let mut data = vec![10, 20, 30];
+
+    thread::scope(|s| {
+        // 첫 번째 스레드에서만 data를 수정하도록 함
+        s.spawn(|| {
+            for i in &amp;mut data {
+                *i += 1;
+            }
+
+            println!(&quot;첫 번째 스레드에서 변경된 데이터: {:?}&quot;, data);
+        });
+    });
+
+    println!(&quot;메인 스레드에서 최종 데이터: {:?}&quot;, data);
+}
+</code></pre>
+<p>위의 코드에는 몇 가지 문제가 있다. 가장 큰 문제는 data를 여러 스레드에서 안전하게 공유하지 않고 직접 수정하려고 시도하는 것이다. Rust의 안전성 모델에서는 데이터 경쟁(data race)을 방지하기 위해 명시적인 동기화 메커니즘을 사용해야 한다<strong>.</strong></p>
+<p>아래 코드는 다중 스레드를 사용하는 예제이다.</p>
+<p>std::sync::Mutex와 std::sync::Arc를 사용하여 여러 스레드가 안전하게 데이터를 공유하고 수정할 수 있다.</p>
+<p>[EX30-4-4]</p>
+<pre><code class="language-rust">use std::sync::{Arc, Mutex}; // 동기화를 위한 Arc, Mutex 가져오기
+use std::thread; // 스레드 사용을 위한 모듈
+
+fn main() {
+    // Arc + Mutex로 데이터 보호
+    let data = Arc::new(Mutex::new(vec![10, 20, 30]));
+   
+    thread::scope(|s| {
+        let data_clone = Arc::clone(&amp;data); //  Arc를 클론하여 소유권 공유
+
+        s.spawn(move || { // 🔹 새로운 스레드 생성
+            let mut data = data_clone.lock().unwrap(); //  Mutex 잠금 (lock)
+            for i in &amp;mut *data { // 🔹 벡터 내부 요소 변경
+                *i += 1;
+            }
+
+            println!(&quot;첫 번째 스레드에서 변경된 데이터: {:?}&quot;, data);
+        });
+    });
+
+    println!(&quot;메인 스레드에서 최종 데이터: {:?}&quot;, *data.lock().unwrap());
+}
+</code></pre>
+<p><strong>범위 제한 스레드와 일반 thread::spawn 비교</strong></p>
+<table>
+<thead>
+<tr>
+<th>특징</th>
+<th>범위 제한 스레드 (std::thread::scope)</th>
+<th>일반 스레드 (thread::spawn)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>데이터 참조</td>
+<td>부모 범위의 데이터 참조 가능</td>
+<td>데이터 소유권 이동 필요</td>
+</tr>
+<tr>
+<td>스레드 종료 시점</td>
+<td>범위 종료 시점에서 보장</td>
+<td>명시적으로 join 필요</td>
+</tr>
+<tr>
+<td>동기화 필요 여부</td>
+<td>보통 필요 없음</td>
+<td>필요 (예: Arc, Mutex)</td>
+</tr>
+<tr>
+<td>사용 용도</td>
+<td>데이터 안전성과 수명 제어가 중요할 때</td>
+<td>독립적으로 실행되는 작업</td>
+</tr>
+</tbody>
+</table>
+<p><strong>어떤 방법을 선택해야 할까?</strong></p>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>특징</th>
+<th>언제 ?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;mut를</td>
+<td>한 번에 하나의 참조만 허용</td>
+<td>단일 스레드에서만 데이터를 변경할 때</td>
+</tr>
+<tr>
+<td>Mutex&lt;T&gt;</td>
+<td>한 번에 하나의 스레드만 데이터 수정 가능</td>
+<td>여러 스레드에서 데이터 변경 필요할 때</td>
+</tr>
+<tr>
+<td>Arc&lt;Mutex&lt;T&gt;&gt;</td>
+<td>여러 스레드와 메인 스레드가 데이터 공유 가능</td>
+<td>모든 스레드에서 데이터를 읽고 수정할 때</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>단일 스레드에서만 데이터를 수정하려면 &amp;mut data를 한 번만 사용</p>
+</li>
+<li>
+<p>여러 스레드가 데이터를 수정해야 한다면 Mutex&lt;T&gt; 사용</p>
+</li>
+<li>
+<p>메인 스레드에서도 데이터를 공유해야 한다면 Arc&lt;Mutex&lt;T&gt;&gt; 사용</p>
+</li>
+</ul>
+<p><strong>crossbeam::scope는</strong> 안전하게 범위 제한 스레드를 생성할 수 있게 해주는 crossbeam 라이브러리의 기능이다. std::thread::spawn은 스레드가 부모 범위의 변수에 접근하기 위해 소유권을 가져가야 하는 제약이 있다. 반면 crossbeam::scope는 부모 범위의 변수에 안전하게 접근할 수 있도록 보장하며, 범위 내에서 스레드가 모두 종료되도록 한다. 따라서 소유권을 이동(move)하지 않아도 부모 범위의 변수를 참조할 수 있어 메모리 안전성을 유지하면서 쉽게 멀티스레딩을 구현할 수 있다.</p>
+<pre><code class="language-rust">[dependencies]
+crossbeam = &quot;0.8&quot;
+</code></pre>
+<p>[EX30-4-5]</p>
+<pre><code class="language-rust">use crossbeam::scope;
+
+fn main() {
+    let numbers = vec![1, 2, 3, 4, 5];
+    let mut sum = 0;
+
+    scope(|s| {
+        // 첫 번째 스레드: 벡터의 첫 번째 절반을 더함
+        s.spawn(|_| {
+            let partial_sum: i32 = numbers[..3].iter().sum();
+            println!(&quot;첫 번째 스레드에서 부분 합계: {}&quot;, partial_sum);
+        });
+
+        // 두 번째 스레드: 벡터의 두 번째 절반을 더함
+        s.spawn(|_| {
+            let partial_sum: i32 = numbers[3..].iter().sum();
+            println!(&quot;두 번째 스레드에서 부분 합계: {}&quot;, partial_sum);
+        });
+    }).unwrap(); // 모든 스레드가 종료될 때까지 기다림
+
+    println!(&quot;전체 합계: {}&quot;, sum);
+}
+</code></pre>
+<ul>
+<li>
+<p>crossbeam::scope를 사용할 때는 스레드가 범위를 벗어나기 전에 종료되도록 코드를 작성해야 한다.</p>
+</li>
+<li>
+<p>crossbeam::scope는 블로킹 작업이나 CPU 집중 작업에 적합하며, Tokio와 같은 비동기 프레임워크 내에서는 tokio::task::spawn_blocking을 사용할 것을 권장한다.</p>
+</li>
+</ul>
+<h3 id="305-join">30.5 join</h3>
+<p>join 메서드는 스레드의 실행이 끝날 때까지 기다리고, 스레드에서 반환된 값을 가져오는 데 사용된다. 스레드가 반환한 값을 Result&lt;T, E&gt; 형식으로 반환한다.</p>
+<p>[EX30-5-1]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let handle = thread::spawn(|| {
+        for i in 1..5 {
+            println!(&quot;새 스레드: {}&quot;, i);
+            thread::sleep(std::time::Duration::from_millis(500));
+        }
+
+        42 // 스레드에서 반환할 값
+    });
+
+    // join을 호출하여 스레드가 종료될 때까지 대기
+    let result = handle.join().unwrap();
+
+    println!(&quot;스레드에서 반환된 값: {}&quot;, result);
+    println!(&quot;메인 스레드 종료&quot;);
+}
+</code></pre>
+<ol>
+<li>
+<p>join은 해당 스레드가 종료될 때까지 메인 스레드를 차단(block)한다.</p>
+<p>이를 통해 스레드가 실행을 완료할 때까지 기다릴 수 있다.</p>
+</li>
+<li>
+<p>join 메서드는 스레드에서 반환된 값을 포함하는 Result&lt;T, Box&lt;dyn Any + Send + &#x27;static&gt;&gt;를 반환한다.</p>
+</li>
+<li>
+<p>정상적으로 실행되면 Ok(T)를 반환하며, 패닉이 발생하면 Err를 반환한다.</p>
+</li>
+</ol>
+<p>스레드 내부에서 패닉이 발생하면 join은 Err를 반환하므로, 이를 적절히 처리해야 한다.</p>
+<p>예를 들어, unwrap을 호출하면 패닉이 전파된다. join 결과에 대해 unwrap을 호출하면, 스레드에서 패닉이 발생했을 때 unwrap이 다시 패닉을 유발한다. 따라서, 반드시 match나 if let을 사용하여 Err를 처리해야 한다.</p>
+<p>[EX30-5-2]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let handle = thread::spawn(|| {
+        panic!(&quot;Something went wrong in the thread!&quot;);
+    });
+
+    match handle.join() {
+        Ok(_) =&gt; println!(&quot;Thread finished successfully.&quot;),
+        Err(e) =&gt; {
+            println!(&quot;Thread panicked.&quot;);
+
+            if let Some(panic_msg) = e.downcast_ref::&lt;&amp;str&gt;() {
+                println!(&quot;Panic message: {}&quot;, panic_msg);
+            } else {
+                println!(&quot;Panic message could not be decoded.&quot;);
+            }
+        }
+    }
+}
+</code></pre>
+<p>아래는 다중 스레드에서 join을 사용하는 예제이다.</p>
+<p>[EX30-5-3]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let handles: Vec&lt;_&gt; = (1..=5)
+        .map(|i| {
+            thread::spawn(move || {
+                println!(&quot;스레드 {} 실행&quot;, i);
+                i * 2 // 스레드에서 반환된 값
+            })
+        })
+        .collect();
+
+    for handle in handles {
+        let result = handle.join().unwrap();
+
+        println!(&quot;스레드에서 반환된 값: {}&quot;, result);
+    }
+
+    println!(&quot;모든 스레드가 종료되었습니다.&quot;);
+}
+</code></pre>
+<p><strong>join의 역할</strong>:</p>
+<ul>
+<li>
+<p>스레드가 종료될 때까지 기다린다.</p>
+</li>
+<li>
+<p>스레드에서 반환된 값을 가져올 수 있다.</p>
+</li>
+<li>
+<p>패닉 발생 시 이를 처리할 수 있다.</p>
+</li>
+</ul>
+<p><strong>언제 사용할까?</strong></p>
+<ul>
+<li>
+<p>스레드의 종료를 보장해야 할 때.</p>
+</li>
+<li>
+<p>스레드에서 반환된 값을 활용해야 할 때.</p>
+</li>
+<li>
+<p>스레드 내부의 오류를 처리해야 할 때.</p>
+</li>
+</ul>
+<p>crossbeam::scope를 사용하는 경우에는 명시적으로 join을 호출하지 않아도 된다. 범위가 끝날 때까지 모든 스레드가 종료되도록 보장하므로, 스레드 종료를 명시적으로 기다릴 필요가 없다.</p>
+<p>[EX30-5-4]</p>
+<pre><code class="language-rust">use crossbeam::scope;
+
+fn main() {
+    scope(|s| {
+        s.spawn(|_| {
+            println!(&quot;스레드 1 실행 중&quot;);
+        });
+
+        s.spawn(|_| {
+            println!(&quot;스레드 2 실행 중&quot;);
+        });
+    }).unwrap(); // 모든 스레드가 종료될 때까지 기다림
+
+    println!(&quot;모든 스레드 종료.&quot;);
+}
+</code></pre>
+<h3 id="306-send-sync">30.6 Send와 Sync</h3>
+<p>Send와 Sync는 멀티스레드 환경에서의 안전한 데이터 이동 및 공유를 지원하는 중요한 마커 트레잇이다. 소유권 시스템과 함께 동작하여 데이터 경합을 방지하고, 다중 스레드 환경에서 메모리 안전성을 보장한다.</p>
+<p><strong>Send</strong> 트레잇은 한 스레드에서 다른 스레드로 소유권을 안전하게 이동할 수 있는 타입을 나타낸다.</p>
+<ul>
+<li>
+<p>기본 타입(i32, u64, String, Vec&lt;T&gt;, 등)은 대부분 Send를 자동으로 구현한다.</p>
+</li>
+<li>
+<p>스레드 안전성을 보장하지 않는 타입(예: 비동기 I/O에서 파일 핸들, Rc&lt;T&gt;)은 Send 트레잇을 구현하지 않는다.</p>
+</li>
+</ul>
+<p>[EX30-6-1]</p>
+<pre><code class="language-rust">use std::thread;
+
+fn main() {
+    let data = String::from(&quot;Hello, world!&quot;);
+    let handle = thread::spawn(move || {
+        println!(&quot;{}&quot;, data);  // data가 안전하게 다른 스레드로 이동
+    });
+
+    handle.join().unwrap();  // 스레드가 끝날 때까지 대기
+}
+</code></pre>
+<p>String 타입은 Send 트레잇을 구현하고 있어, move 키워드를 사용해 새 스레드로 안전하게 전달할 수 있다.</p>
+<p>일부 타입은 Send 트레잇을 구현하지 않는다. Rc&lt;T&gt;는 참조 카운팅을 제공하는 타입으로, 여러 스레드에서 공유하는 경우 안전하지 않기 때문에 Send를 구현하지 않는다.</p>
+<p>[EX30-6-2]</p>
+<pre><code class="language-rust">use std::rc::Rc;
+use std::thread;
+
+fn main() {
+    let data = Rc::new(5);
+
+    // 컴파일 에러: `Rc`는 `Send`를 구현하지 않음
+    let handle = thread::spawn(move || {
+        println!(&quot;{}&quot;, data);
+    });
+
+    handle.join().unwrap();
+}
+</code></pre>
+<p>Rc&lt;T&gt; 대신 스레드 안전한 참조 카운팅을 제공하는 Arc&lt;T&gt;를 사용하면 해결할 수 있다.</p>
+<p>[EX30-6-3]</p>
+<pre><code class="language-rust">use std::sync::Arc;
+use std::thread;
+
+fn main() {
+    let data = Arc::new(5);
+    let handle = thread::spawn({
+        let data = Arc::clone(&amp;data);  // Arc는 안전하게 복사 가능
+        move || {
+            println!(&quot;{}&quot;, data);
+        }
+    });
+
+    handle.join().unwrap();
+}
+</code></pre>
+<p><strong>Sync</strong> 트레잇은 여러 스레드에서 참조를 통해 동시 접근이 가능하지만, 안전하게 동작할 수 있는 타입을 나타낸다. 어떤 타입이 Sync를 구현했다면, 그 타입의 참조(&amp;T)는 여러 스레드에서 동시에 접근해도 문제가 없다.</p>
+<ul>
+<li>
+<p>모든 불변 데이터(&amp;T)는 스레드 간에 안전하게 공유될 수 있으므로 Sync를 구현한다.</p>
+</li>
+<li>
+<p>뮤텍스나 읽기-쓰기 락(Lock) 타입도 Sync를 구현하여 여러 스레드에서 동시 접근이 가능하다.</p>
+</li>
+</ul>
+<p>[EX30-6-4]</p>
+<pre><code class="language-rust">use std::sync::{Arc, Mutex};
+use std::thread;
+
+fn main() {
+    let data = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+        let data = Arc::clone(&amp;data);
+        let handle = thread::spawn(move || {
+            let mut num = data.lock().unwrap();
+            *num += 1;
+        });
+
+        handles.push(handle);
+    }
+
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+    println!(&quot;Result: {}&quot;, *data.lock().unwrap());
+}
+</code></pre>
+<p>Mutex&lt;i32&gt;는 Sync 트레잇을 구현하고 있어, 여러 스레드에서 안전하게 공유될 수 있다. Arc는 스레드 안전한 참조 카운팅을 제공하고, Mutex는 뮤텍스 락을 통해 공유 자원의 동시 접근을 가능하게 한다.</p>
+<p><strong>Send와 Sync 트레잇의 규칙</strong></p>
+<p>Send는 소유권 이동에 중점을 두고, Sync는 동시 참조에 중점을 둔다.</p>
+<p><strong>Send</strong>: 타입 T가 Send 트레잇을 구현하면, T는 다른 스레드로 이동 가능하다.</p>
+<p><strong>Sync</strong>: 타입 T가 Sync 트레잇을 구현하면, &amp;T는 여러 스레드에서 공유 가능하다.</p>
+<p>대부분의 기본 타입은 자동으로 Send와 Sync를 구현한다. 하지만, 스레드 안전하지 않은 타입(Rc&lt;T&gt;, RefCell&lt;T&gt;, UnsafeCell&lt;T&gt; 등)은 이러한 트레잇을 구현하지 않는다.</p>
+<p>스레드 간에 데이터를 이동하려면 Send가 필요하고, 스레드 간에 불변 데이터를 공유하려면 Sync가 필요하다. 안전성을 위해 기본적으로 데이터의 스레드 사용을 제한하며, 스레드 안전한 타입만 Send와 Sync를 구현할 수 있다.</p>
+<p>[EX30-6-5]</p>
+<pre><code class="language-rust">use std::rc::Rc;
+use std::sync::Arc;
+use std::thread;
+
+fn main() {
+    let data_rc = Rc::new(5);
+
+    // Rc는 Send가 아니므로 스레드 간에 사용할 수 없음
+    // thread::spawn(move || println!(&quot;{}&quot;, data_rc)); // 컴파일 에러
+    let data_arc = Arc::new(5);
+
+    thread::spawn({
+        let data = Arc::clone(&amp;data_arc);  // Arc는 Send를 구현하므로 스레드 간 이동 가능
+        move || println!(&quot;{}&quot;, data)
+    }).join().unwrap();
+
+    // Arc는 Sync를 구현하므로 여러 스레드에서 공유 가능
+    let data_sync = Arc::new(5);
+
+    thread::spawn({
+        let data = Arc::clone(&amp;data_sync);
+        move || println!(&quot;Shared data: {}&quot;, data)
+    }).join().unwrap();
+}
+</code></pre>
+<p>Rc&lt;T&gt;는 스레드 간 공유가 안전하지 않기 때문에 Send와 Sync를 구현하지 않는다.</p>
+<p>Arc&lt;T&gt;는 스레드 안전한 참조 카운팅을 제공하므로 Send와 Sync를 모두 구현하여 스레드 간에 안전하게 이동 및 공유할 수 있다.</p>
+<h3 id="307-channel-message-passing">30.7 Channel - Message Passing</h3>
+<p>채널(Channel)은 스레드 간에 데이터를 전달하기 위한 주요 방법 중 하나이다. 채널은 메시지 전달(message passing) 기반의 동시성(concurrency) 패턴을 구현하며, 공유 메모리 대신 메시지를 통해 데이터를 전달하도록 권장한다. 이는 데이터 소유권과 스레드 안전성을 자연스럽게 보장한다.</p>
+<p>표준 라이브러리의 std::sync::mpsc 모듈에서 채널 기능을 제공한다.</p>
+<ul>
+<li><strong>mpsc</strong>: &quot;multiple producer, single consumer&quot;의 약자로, 여러 생산자(Producer)와 하나의 소비자(Consumer)가 있는 채널을 의미한다. Sender와 Receiver로 구성된다.</li>
+</ul>
+<p>채널에는 송신자(Sender)와 수신자 (Receiver)가 있다. 송신자에서 데이터와 함께 호출하는 메서드들은 수신자에서 데이터를 받으며 완료된다. 송신자나 수신자둘 중에 하나가 떨어져 버리면 (drop) 채널이 닫혔다고 한다.</p>
+<p>[EX30-7-1]</p>
+<pre><code class="language-rust">use std::sync::mpsc;
+use std::thread;
+use std::time::Duration;
+
+fn main() {
+    // 채널 생성
+    let (tx, rx) = mpsc::channel();
+
+    // 새 스레드에서 메시지 전송
+    thread::spawn(move || {
+        let messages = vec![&quot;Hello&quot;, &quot;from&quot;, &quot;the&quot;, &quot;thread!&quot;];
+
+        for msg in messages {
+            tx.send(msg).unwrap(); // 메시지 전송
+            thread::sleep(Duration::from_millis(500)); // 일부러 지연
+        }
+    });
+
+    // 메시지 수신
+    for received in rx {
+        println!(&quot;Received: {}&quot;, received);
+    }
+}
+</code></pre>
+<ul>
+<li>
+<p>채널을 통해 데이터를 보낼 때 데이터의 소유권이 이동한다. 이로 인해, 데이터 경합(race condition)이 방지된다.</p>
+</li>
+<li>
+<p>채널은 기본적으로 비동기적이며, send 호출은 수신자(Receiver)가 준비되지 않아도 진행된다. 버퍼가 초과하지 않는 한 데이터는 안전하게 전송된다.</p>
+</li>
+</ul>
+<p><strong>다중 생산자(Multiple Producers)</strong><br />
+Sender를 복제(clone())하여 여러 생산자가 하나의 소비자에게 데이터를 보낼 수 있다.</p>
+<p>[EX30-7-2]</p>
+<pre><code class="language-rust">use std::sync::mpsc;
+use std::thread;
+
+fn main() {
+    let (tx, rx) = mpsc::channel();
+    let tx1 = tx.clone();
+
+    thread::spawn(move || {
+        tx1.send(&quot;Message from tx1&quot;).unwrap();
+    });
+
+    thread::spawn(move || {
+        tx.send(&quot;Message from tx&quot;).unwrap();
+    });
+
+    for received in rx {
+        println!(&quot;Received: {}&quot;, received);
+    }
+}
+</code></pre>
+<p><strong>단방향 채널과 동기화</strong></p>
+<p>기본 채널은 단방향이지만, 양방향 통신을 구현하려면 두 개의 채널을 사용할 수 있다. 하나는 요청(Request)을 보내고, 다른 하나는 응답(Response)을 받도록 설정한다.</p>
+<p>[EX30-7-3]</p>
+<pre><code class="language-rust">use std::sync::mpsc;
+use std::thread;
+
+fn main() {
+    let (req_tx, req_rx) = mpsc::channel();
+    let (res_tx, res_rx) = mpsc::channel();
+
+    thread::spawn(move || {
+        let request = req_rx.recv().unwrap();
+
+        println!(&quot;Worker received: {}&quot;, request);
+        res_tx.send(&quot;Response from worker&quot;).unwrap();
+    });
+
+    req_tx.send(&quot;Request from main&quot;).unwrap();
+
+    let response = res_rx.recv().unwrap();
+    println!(&quot;Main received: {}&quot;, response);
+}
+</code></pre>
+<p>채널은 간단하고 직관적이지만, 데이터 전송 비용(복사나 이동)이 있을 수 있다. 대안으로 뮤텍스(Mutex)와 아토믹 변수(Atomic)를 활용하거나, crossbeam-channel 크레이트을 사용하는 방법이 있다.</p>
+<p><strong>broadcast 채널</strong><br />
+이 채널은 mpsc와는 다르게, 데이터를 발행한 후 여러 소비자에게 동일한 데이터를 전달할 수 있다. broadcast 채널은 tokio와 같은 비동기 라이브러리에서 제공되며, tokio::sync::broadcast 모듈에 정의되어 있다.</p>
+<pre><code class="language-rust">[dependencies]
+tokio = { version = &quot;1&quot;, features = [&quot;full&quot;] }
+</code></pre>
+<p>[EX30-7-4]</p>
+<pre><code class="language-rust">use tokio::sync::broadcast;
+use tokio::time::{sleep, Duration};
+
+#[tokio::main]
+async fn main() {
+    // 채널 생성 (버퍼 크기 16)
+    let (tx, _) = broadcast::channel(16);
+
+    // 소비자 1
+    tokio::spawn(create_consumer(tx.subscribe(), &quot;Consumer 1&quot;));
+
+    // 소비자 2
+    tokio::spawn(create_consumer(tx.subscribe(), &quot;Consumer 2&quot;));
+
+    // 메시지를 계속 보내기 위한 루프
+    loop {
+        // 수신자가 메시지를 받을 준비가 되었는지 확인한 후 메시지 보내기
+        match tx.send(&quot;Hello to all consumers&quot;) {
+            Ok(_) =&gt; println!(&quot;Message sent to consumers.&quot;),
+            Err(e) =&gt; {
+                eprintln!(&quot;Error sending message: {:?}&quot;, e);
+                // SendError가 발생하면 해당 메시지를 수신할 수 있는 소비자가 없다는 의미
+            }
+        }
+
+        // 2초마다 메시지를 보내도록 설정
+        sleep(Duration::from_secs(2)).await;
+    }
+}
+
+async fn create_consumer(mut rx: broadcast::Receiver&lt;&amp;str&gt;, name: &amp;str) {
+    loop {
+        match rx.recv().await {
+            Ok(msg) =&gt; println!(&quot;{} received: {}&quot;, name, msg),
+            Err(e) =&gt; {
+                eprintln!(&quot;{} error: {:?}&quot;, name, e);
+                // 수신자에게 더 이상 메시지를 보낼 수 없을 때 계속 대기
+                // 잠시 대기 후 재시도
+                sleep(Duration::from_secs(1)).await;
+            }
+        }
+    }
+}
+</code></pre>
+<p><strong>경계(Bounded)와 무경계(Unbounded) 채널</strong></p>
+<p>Rust 표준 라이브러리에서 &quot;경계 채널&quot;과 &quot;무경계 채널&quot;이라는 용어는 공식적으로 정의된 개념은 아니다.</p>
+<p>(1) 경계 채널 (Bounded Channel)</p>
+<p>경계 채널은 버퍼 크기가 정해져 있는 채널이다. 즉, 채널에 일정한 수의 메시지만 저장할 수 있다. 버퍼가 가득 차면, 생산자가 메시지를 보내기 전에 소비자가 메시지를 소비할 때까지 대기하게 된다.</p>
+<ul>
+<li>
+<p>채널이 가득 차면 송신자는 대기해야 한다.</p>
+</li>
+<li>
+<p>생산자와 소비자가 동시에 작업을 할 수 있지만, 버퍼가 차면 생산자는 차례를 기다려야 한다.</p>
+</li>
+<li>
+<p>tokio::sync::mpsc::channel(n)을 사용할 때, n은 버퍼 크기를 나타내며, 이 값이 경계 채널의 크기를 결정한다.</p>
+</li>
+<li>
+<p>생산자가 너무 많은 메시지를 보낼 때, 소비자가 메시지를 소비할 수 있는 속도에 맞춰 메시지의 흐름을 제어할 수 있다.</p>
+</li>
+</ul>
+<p>[EX30-7-5]</p>
+<pre><code class="language-rust">use std::sync::mpsc;
+use std::thread;
+
+fn main() {
+    let (tx, rx) = mpsc::sync_channel(2); // 버퍼 크기 2
+
+    thread::spawn(move || {
+        tx.send(1).unwrap();
+        tx.send(2).unwrap();
+        tx.send(3).unwrap(); // 이 시점에서 채널이 가득 차면 대기
+    });
+
+    for _ in 0..3 {
+        println!(&quot;{}&quot;, rx.recv().unwrap()); // 메시지를 소비
+    }
+}
+</code></pre>
+<p>(2) 무경계 채널 (Unbounded Channel)</p>
+<p>무경계 채널은 버퍼 크기가 제한이 없는 채널이다. 이 채널은 메시지의 수에 제한이 없으며, 생산자는 메시지를 보내는 대로 소비자가 소비할 수 있다. 무경계 채널에서는 버퍼가 가득 차서 대기할 필요가 없지만, 시스템 자원이나 성능 문제로 메시지가 너무 많이 쌓일 수 있다.</p>
+<ul>
+<li>
+<p>생산자가 메시지를 보내면 소비자는 메시지를 소비할 수 있을 때까지 계속해서 수신한다.</p>
+</li>
+<li>
+<p>생산자가 빠르게 메시지를 보내고 소비자가 이를 처리하는 속도에 관계없이 메시지를 계속 전송할 수 있다.</p>
+</li>
+<li>
+<p>tokio::sync::mpsc::unbounded_channel()을 사용하여 무경계 채널을 생성할 수 있다.</p>
+</li>
+<li>
+<p>무경계 채널은 시스템의 성능에 영향을 미칠 수 있기 때문에 너무 많은 메시지가 쌓이지 않도록 관리가 필요하다.</p>
+</li>
+</ul>
+<p>[EX30-7-6]</p>
+<pre><code class="language-rust">use tokio::sync::mpsc;
+
+#[tokio::main]
+async fn main() {
+    let (tx, mut rx) = mpsc::unbounded_channel();
+
+    // 메시지 보내기
+    tx.send(&quot;Hello&quot;).unwrap();
+    tx.send(&quot;World&quot;).unwrap();
+
+    // 메시지 받기
+    while let Some(message) = rx.recv().await {
+        println!(&quot;Received: {}&quot;, message);
+    }
+}
+</code></pre>
+<h3 id="308-crossbeam-channel">30.8 crossbeam-channel</h3>
+<p>crossbeam-channel은 고성능 채널 기능을 제공하는 크레이트이다. 표준 라이브러리의 std::sync::mpsc 채널보다 더 유연하고 효율적인 메시지 전달 메커니즘을 제공한다. 고성능을 요구하는 다중 소비자(multiple consumers) 및 멀티프로듀서-멀티컨슈머(MPMC) 패턴에 적합하다.</p>
+<ul>
+<li>
+<p>멀티프로듀서-멀티컨슈머(MPMC) 지원: 여러 Sender와 여러 Receiver가 동시에 작동.</p>
+</li>
+<li>
+<p>메시지 전달 속도가 더 빠르며, 대기 중인 스레드 관리가 더 효율적이다.</p>
+</li>
+<li>
+<p>무제한(unbounded)<strong>,</strong> 고정 크기(fixed size)<strong>,</strong> 제로 크기(zero-sized) 버퍼를 지원.</p>
+</li>
+<li>
+<p>표준 라이브러리와 비슷한 API 제공</p>
+</li>
+</ul>
+<pre><code class="language-rust">[dependencies]
+crossbeam-channel = &quot;0.5&quot;
+</code></pre>
+<p><strong>단일 생산자-소비자 (Single Producer, Single Consumer)</strong></p>
+<p>[EX30-8-1]</p>
+<pre><code class="language-rust">use crossbeam_channel::unbounded;
+
+fn main() {
+    let (sender, receiver) = unbounded();
+
+    sender.send(&quot;Hello from sender&quot;).unwrap();
+
+    let msg = receiver.recv().unwrap();
+
+    println!(&quot;Received: {}&quot;, msg);
+}
+</code></pre>
+<p><strong>멀티프로듀서-멀티컨슈머 (MPMC)</strong></p>
+<p>다중 생산자-다중 소비자를 쉽게 설정할 수 있다.</p>
+<p>[EX30-8-2]</p>
+<pre><code class="language-rust">use crossbeam_channel::unbounded;
+use std::thread;
+
+fn main() {
+    let (sender, receiver) = unbounded();
+    // 여러 생산자
+    let sender1 = sender.clone();
+
+    thread::spawn(move || {
+        sender1.send(&quot;Message from producer 1&quot;).unwrap();
+    });
+
+    thread::spawn(move || {
+        sender.send(&quot;Message from producer 2&quot;).unwrap();
+    });
+
+    // 여러 소비자
+    let receiver1 = receiver.clone();
+    let handle = thread::spawn(move || {
+        for msg in receiver1 {
+            println!(&quot;Consumer 1 received: {}&quot;, msg);
+        }
+    });
+
+    for msg in receiver {
+        println!(&quot;Consumer 2 received: {}&quot;, msg);
+    }
+
+    handle.join().unwrap();
+}
+</code></pre>
+<p>crossbeam-channel은 다양한 버퍼 타입을 지원한다.</p>
+<p><strong>(1) 크기 제한 없이 메시지를 저장할 수 있다.</strong></p>
+<pre><code class="language-rust">use crossbeam_channel::unbounded;
+
+let (sender, receiver) = unbounded();
+
+sender.send(42).unwrap();
+</code></pre>
+<p><strong>(2) 제한된 크기의 버퍼, 버퍼가 가득 차면 send는 블록된다.</strong></p>
+<pre><code class="language-rust">use crossbeam_channel::bounded;
+
+let (sender, receiver) = bounded(2);
+
+sender.send(1).unwrap();
+sender.send(2).unwrap();
+// 세 번째 메시지는 버퍼가 찰 때까지 대기한다.
+</code></pre>
+<p><strong>(3) 제로 크기 버퍼 (bounded(0))</strong></p>
+<p>생산자와 소비자가 동기화되어야 한다. 동기식 채널에 적합하다.</p>
+<pre><code class="language-rust">use crossbeam_channel::bounded;
+use std::thread;
+
+let (sender, receiver) = bounded(0);
+
+thread::spawn(move || {
+    sender.send(&quot;Sync message&quot;).unwrap();
+});
+
+println!(&quot;Received: {}&quot;, receiver.recv().unwrap());
+</code></pre>
+<p>try_recv()와 같은 메서드를 사용하여 비동기적으로 메시지를 처리할 수 있다.</p>
+<p>[EX30-8-3]</p>
+<pre><code class="language-rust">use crossbeam_channel::unbounded;
+
+fn main() {
+    let (sender, receiver) = unbounded();
+
+    sender.send(&quot;Message&quot;).unwrap();
+
+    // 비동기적으로 확인
+    if let Ok(msg) = receiver.try_recv() {
+        println!(&quot;Received: {}&quot;, msg);
+    } else {
+        println!(&quot;No message available&quot;);
+    }
+}
+</code></pre>
+<p>recv_timeout 메서드를 통해 일정 시간 동안 기다릴 수 있다.</p>
+<p>[EX30-8-4]</p>
+<pre><code class="language-rust">use crossbeam_channel::{unbounded, RecvTimeoutError};
+use std::time::Duration;
+use std::thread;
+
+fn main() {
+    let (sender, receiver) = unbounded();
+
+    // 스레드를 만들어서 메시지를 전송
+    thread::spawn(move || {
+        // 메시지 전송 전에 잠시 대기
+        thread::sleep(Duration::from_secs(0)); // 0초로 설정, 즉 즉시 전송
+
+        sender.send(&quot;Hello from the other thread&quot;).unwrap();
+    });
+
+    // receiver는 1초 동안 메시지를 기다림
+    match receiver.recv_timeout(Duration::from_secs(1)) {
+        Ok(msg) =&gt; println!(&quot;Received: {}&quot;, msg),
+        Err(RecvTimeoutError::Timeout) =&gt; println!(&quot;No message within timeout&quot;),
+        Err(_) =&gt; println!(&quot;Disconnected&quot;),
+    }
+}
+</code></pre>
+<p>crossbeam-channel의 강력한 기능 중 하나는 select! 매크로이다. 여러 채널에서 비동기적으로 데이터를 기다릴 수 있다.</p>
+<p>[EX30-8-5]</p>
+<pre><code class="language-rust">use crossbeam_channel::{unbounded, select};
+use std::thread;
+
+fn main() {
+    let (sender1, receiver1) = unbounded();
+    let (sender2, receiver2) = unbounded();
+
+    thread::spawn(move || {
+        sender1.send(&quot;From channel 1&quot;).unwrap();
+    });
+
+    thread::spawn(move || {
+        sender2.send(&quot;From channel 2&quot;).unwrap();
+    });
+
+    select! {
+        recv(receiver1) -&gt; msg =&gt; println!(&quot;Received: {}&quot;, msg.unwrap()),
+        recv(receiver2) -&gt; msg =&gt; println!(&quot;Received: {}&quot;, msg.unwrap()),
+    }
+}
+</code></pre>
+<p>작업 풀(Thread Pool)을 구현하면, 작업을 여러 스레드로 효율적으로 분산할 수 있다. 작업 풀은 생산자(Producer)가 작업을 큐에 추가하고, 여러 워커(Worker) 스레드가 이를 병렬로 처리하는 구조로 동작한다.</p>
+<ul>
+<li>
+<p><strong>Sender와 Receiver</strong>: crossbeam-channel로 작업을 전달.</p>
+</li>
+<li>
+<p><strong>워커 스레드</strong>: 각 스레드가 Receiver를 통해 작업을 받는다.</p>
+</li>
+<li>
+<p><strong>Graceful Shutdown</strong>: 작업이 모두 끝났을 때 워커를 정리한다.</p>
+</li>
+</ul>
+<p>[EX30-8-6]</p>
+<p>4개의 스레드가 8개의 작업을 병렬 처리한다.</p>
+<pre><code class="language-rust">use crossbeam_channel::{bounded, Sender};
+use std::thread;
+
+struct ThreadPool {
+    workers: Vec&lt;thread::JoinHandle&lt;()&gt;&gt;,
+    sender: Sender&lt;Box&lt;dyn FnOnce() + Send + 'static&gt;&gt;,
+}
+
+impl ThreadPool {
+    /// 새로운 스레드 풀 생성
+    pub fn new(size: usize) -&gt; Self {
+        assert!(size &gt; 0);
+
+        // 작업을 주고받는 채널 생성
+        let (sender, receiver) = bounded::&lt;Box&lt;dyn FnOnce() + Send + 'static&gt;&gt;(size);
+
+        // 채널의 수신자를 여러 스레드가 공유
+        let receiver = std::sync::Arc::new(receiver);
+        let mut workers = Vec::with_capacity(size);
+
+        // 워커 스레드 생성
+        for _ in 0..size {
+            let receiver_clone = std::sync::Arc::clone(&amp;receiver);
+            let handle = thread::spawn(move || {
+                while let Ok(task) = receiver_clone.recv() {
+                    // 수신된 작업 실행
+                    task();
+                }
+            });
+
+            workers.push(handle);
+        }
+
+        ThreadPool { workers, sender }
+    }
+
+    /// 작업을 스레드 풀에 추가
+    pub fn execute&lt;F&gt;(&amp;self, task: F)
+    where
+        F: FnOnce() + Send + 'static,
+    {
+        self.sender.send(Box::new(task)).unwrap();
+    }
+}
+
+impl Drop for ThreadPool {
+    /// 스레드 풀 종료 시 모든 스레드 정리
+    fn drop(&amp;mut self) {
+        drop(&amp;self.sender); // 채널 닫기
+
+        // 모든 워커가 종료될 때까지 대기
+        for worker in self.workers.drain(..) {
+            worker.join().unwrap();
+        }
+    }
+}
+
+fn main() {
+    // 스레드 풀 생성 (스레드 4개)
+    let pool = ThreadPool::new(4);
+
+    // 작업 추가
+    for i in 0..8 {
+        pool.execute(move || {
+            println!(&quot;Task {} is running on thread {:?}&quot;, i, thread::current().id());
+
+            std::thread::sleep(std::time::Duration::from_millis(500));
+        });
+    }
+
+    println!(&quot;All tasks have been assigned.&quot;);
+} // drop 호출로 모든 스레드 종료
+</code></pre>
+<h3 id="309-shared-state">30.9 상태 공유(Shared-State)</h3>
+<p>여러 스레드나 코드 블록에서 동일한 데이터를 안전하게 접근하고 수정할 수 있도록 하는 방법을 의미한다. 채널을 이용한 방법이 값에 대해 단일 소유권을 가지는 것이라면 메모리를 공유하는 것은 동시에 하나의 메모리 주소에 대해 여러 소유권을 갖게 되는 것을 의미한다. 스레드 사이의 안전한 데이터 공유를 위해 Arc와 Mutex를 사용한다.</p>
+<p><strong>Mutex(mutual exclusion)</strong>는 특정 시점에 오직 하나의 스레드만 데이터에 접근하는 것을 허용한다. 뮤텍스 안에서 데이터를 접근하면 접근 요청을 먼저 요구한 시그널이 뮤텍스 락을 요청한다. 이 락은 뮤텍스가 데이터에 대한 상호 배타적 접근을 가능하게 하는 자료구조이다. 따라서 뮤텍스는 이러한 잠금 시스템을 통해 데이터를 보호한다.</p>
+<p>이 코드는 여러 스레드를 생성하여 counter 값을 증가시키는 예제이다. 루프를 돌면서 10개의 스레드를 생성하고 모든 스레드에 동일한 클로저를 제공한다.</p>
+<p>[EX30-9-1]</p>
+<pre><code class="language-rust">use std::thread;
+use std::sync::Mutex;
+
+fn main() {
+    let counter = Mutex::new(0);
+    let mut handles = vec\![\];
+
+    for _ in 0..10 {
+        let handle = thread::spawn(move|| {
+            let mut num = counter.lock().unwrap();
+            *num += 1;
+        });
+
+        handles.push(handle);
+    }
+
+    for handle in handles{
+        handle.join().unwrap();
+    }
+
+    println!(&quot;Result: {}&quot;, *counter.lock().unwrap());
+}
+</code></pre>
+<pre><code class="language-rust">error[E0382]: use of moved value: `counter`
+--&gt; src/main.rs:9:36
+|
+5 | let counter = Mutex::new(0);
+| ------- move occurs because `counter` has type `Mutex&lt;i32&gt;`, which does not implement the `Copy` trait
+...
+9 | let handle = thread::spawn(move || {
+| ^^^^^^^ value moved into closure here, in previous iteration of loop
+10 | let mut num = counter.lock().unwrap();
+| ------- use occurs due to use in closure
+</code></pre>
+<p>에러 메시지는 counter 값이 이전 루프에서 이관되었음을 알린다. 락된 카운터를 다른 스레드로 소유권을 이전하지 못함을 알려준다. 다른 스레드에서 락을 취득하려는 행동 자체가 소유권 문제 때문에 안된다.</p>
+<p><strong>Arc&lt;T&gt;</strong>는 Rc&lt;T&gt;타입과 유사한 기능을 하면서 동시성 요소를 구현하고 있어 스레드 간 사용해도 안전한 타입이다. 다른 타입이 원자적(Atomic)으로 구현되지 않은 이유는 해당 타입 사용이 성능 이슈를 가져올 수 있기 때문이다. 단일 스레드에서는 원자성을 강제하지 않음으로 더 빠르게 코드를 실행할 수 있다.</p>
+<p>[EX30-9-2]</p>
+<pre><code class="language-rust">use std::sync::{Arc, Mutex};
+use std::thread;
+
+fn main() {
+    let counter = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for i in 0..10 {
+        let counter = Arc::clone(&amp;counter);
+        let handle = thread::spawn(move|| {
+            let mut num = counter.lock().unwrap();
+            println!(&quot;{} th thread&quot;,i);
+            *num+=1;
+        });
+
+        println!(&quot;i traverse {} &quot;,i);
+
+        handles.push(handle);
+    }
+
+    for handle in handles {
+        println!(&quot;in handle&quot;);
+
+        handle.join().unwrap();
+        println!(&quot;Result: {}&quot;, *counter.lock().unwrap());
+    }
+}
+</code></pre>
+<p>비동기 런타임으로 많이 사용되는 Tokio와 같은 비동기 실행 환경에서는 동기화 메커니즘도 비동기적으로 작동해야 한다. Tokio의 Mutex를 사용하면, 다중 스레드 환경의 비동기 문맥에서도 안전한 상태 공유가 가능하다.</p>
+<p>일반적인 동기화 도구(std::sync::Mutex)는 태스크가 락을 기다리는 동안 스레드를 차단하지만, tokio::sync::Mutex는 비동기적으로 락을 대기하여 런타임이 다른 태스크를 실행할 수 있도록 한다.</p>
+<p>[EX30-9-3]</p>
+<pre><code class="language-rust">use std::sync::Arc;
+use tokio::sync::Mutex;
+
+#[tokio::main]
+async fn main() {
+    let data = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+        let data_clone = Arc::clone(&amp;data);
+        let handle = tokio::spawn(async move {
+            let mut num = data_clone.lock().await;
+            *num += 1;
+        });
+
+        handles.push(handle);
+    }
+
+    for handle in handles {
+        handle.await.unwrap();
+    }
+
+    println!(&quot;Final value: {}&quot;, *data.lock().await);
+}
+</code></pre>
+<p>상태 공유 시 주의할 점:</p>
+<ul>
+<li>
+<p>Mutex를 사용할 때, 락을 해제하지 않으면 데드락 발생할 수 있다.</p>
+</li>
+<li>
+<p>Rust는 범위 기반으로 락을 자동 해제하여 이를 방지한다.</p>
+</li>
+<li>
+<p>Mutex는 락-언락 과정에서 오버헤드가 발생한다.</p>
+</li>
+<li>
+<p>읽기가 많은 경우 RwLock이 더 적합하다.</p>
+</li>
+<li>
+<p>비동기 코드에서 동기 Mutex를 사용할 경우 실행이 차단(Block)될 수 있으므로 tokio::sync::Mutex를 사용해야 한다.</p>
+</li>
+</ul>
+<p>공유 상태 관리는 안전성과 성능을 균형 있게 제공하며, 필요에 따라 적합한 도구(Arc, Mutex, RwLock)를 선택할 수 있다.</p>
+<h3 id="3010-atomicusize">30.10 AtomicUsize</h3>
+<p>std::sync::atomic 모듈에서 제공하는 원자적(atomic) 타입 중 하나로, usize 타입의 값을 여러 스레드에서 안전하게 다룰 수 있도록 한다. 원자적 연산을 통해 멀티스레드 환경에서 데이터 경합(race condition)을 방지하고, 일관성 있는 값을 유지할 수 있게 해준다.</p>
+<ul>
+<li>
+<p>여러 스레드가 동시에 값을 읽거나 쓸 때, 경합을 방지하고, 스레드 안전성을 보장한다.</p>
+</li>
+<li>
+<p>제공하는 메서드를 통해, 값의 증가, 감소 등의 연산을 원자적으로 처리한다.</p>
+</li>
+<li>
+<p>연산의 순서와 동작을 제어할 수 있는 Ordering 매개변수를 제공한다.</p>
+</li>
+</ul>
+<p>AtomicUsize는 보통 멀티스레딩 환경에서 동기화를 위해 사용된다. 예를 들어, 여러 스레드가 같은 카운터를 동시에 증가시키는 경우에 유용한다. AtomicUsize는 fetch_add, fetch_sub, load, store 등의 메서드를 통해 원자적인 작업을 제공한다.</p>
+<p>[EX30-10-1]</p>
+<pre><code class="language-rust">use std::sync::atomic::{AtomicUsize, Ordering};
+use std::sync::Arc;
+use std::thread;
+
+fn main() {
+    let counter = Arc::new(AtomicUsize::new(0));  // AtomicUsize로 카운터 생성
+    let mut handles = vec![];
+
+    // 10개의 스레드에서 원자적으로 값을 증가시킴
+    for _ in 0..10 {
+        let counter_clone = Arc::clone(&amp;counter);
+        let handle = thread::spawn(move || {
+            for _ in 0..100 {
+                counter_clone.fetch_add(1, Ordering::SeqCst);  // 원자적 증가
+            }
+        });
+
+        handles.push(handle);
+    }
+
+    // 모든 스레드가 종료될 때까지 대기
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+    // 최종 카운트를 출력
+    println!(&quot;Final count: {}&quot;, counter.load(Ordering::SeqCst));
+}
+</code></pre>
+<p><strong>메모리 순서 (Ordering):</strong> AtomicUsize의 원자적 연산에서 중요한 부분은 메모리 순서이다. Ordering은 각 원자적 연산이 다른 연산과 어떻게 상호작용할지를 결정한다. 메모리 순서를 설정함으로써 스레드 간의 연산 순서를 제어할 수 있다.</p>
+<ul>
+<li>
+<p><strong>Ordering::Relaxed</strong>: 메모리 순서를 보장하지 않는다. 가장 빠른 방식으로 동작하지만, 다른 스레드에서의 읽기/쓰기 순서에 대한 보장이 없다.</p>
+</li>
+<li>
+<p><strong>Ordering::Acquire</strong>: 현재 연산이 완료된 후, 그 이전 연산이 완료될 때까지 기다린다. 다른 스레드에서의 읽기/쓰기 순서를 보장한다.</p>
+</li>
+<li>
+<p><strong>Ordering::Release</strong>: 현재 연산이 완료된 후, 그 이후 연산이 진행된다. 다른 스레드에서의 읽기/쓰기 순서를 보장한다.</p>
+</li>
+<li>
+<p><strong>Ordering::AcqRel</strong>: Acquire와 Release를 모두 적용한 방식이다.</p>
+</li>
+<li>
+<p><strong>Ordering::SeqCst</strong>: 가장 강력한 보장으로, 모든 연산이 순차적 일관성을 유지하도록 보장한다.</p>
+</li>
+</ul>
+<p>[EX30-10-2]</p>
+<pre><code class="language-rust">//AtomicUsize와 Ordering의 예시
+use std::sync::atomic::{AtomicUsize, Ordering};
+use std::sync::Arc;
+use std::thread;
+
+fn main() {
+    let atomic_val = Arc::new(AtomicUsize::new(0));
+    let handles: Vec&lt;_&gt; = (0..10).map(|_| {
+        let atomic_val = Arc::clone(&amp;atomic_val);
+
+        thread::spawn(move || {
+            atomic_val.fetch_add(1, Ordering::SeqCst);
+        })
+    }).collect();
+
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+    println!(&quot;Final value: {}&quot;, atomic_val.load(Ordering::SeqCst));
+}
+</code></pre>
+<p>위 코드에서는 여러 스레드가 fetch_add를 사용하여 AtomicUsize 값을 안전하게 증가시킨다. 각 스레드는 원자적으로 값을 증가시키며, 메모리 순서가 SeqCst로 설정되어 있기 때문에 순차적 일관성을 보장한다.</p>
+<p>아래는 AtomicUsize의 주요 메서드 기능을 설명한 내용이다.</p>
+<table>
+<thead>
+<tr>
+<th><strong>메서드</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>new(value: usize) -&gt; AtomicUsize</td>
+<td>새로운 AtomicUsize 인스턴스를 생성. 초기값을 설정해야 한다.</td>
+</tr>
+<tr>
+<td>load(order: Ordering) -&gt; usize</td>
+<td>원자적으로 현재 값을 읽어온다. 메모리 순서를 지정해야 하며, 이는 읽기 작업의 동기화를 제어한다.</td>
+</tr>
+<tr>
+<td>store(value: usize, order: Ordering)</td>
+<td>원자적으로 값을 설정. 메모리 순서를 지정해야 하며, 이는 쓰기 작업의 동기화를 제어한다.</td>
+</tr>
+<tr>
+<td>swap(value: usize, order: Ordering) -&gt; usize</td>
+<td>현재 값을 새 값으로 원자적으로 교체하고, 이전 값을 반환한다.</td>
+</tr>
+<tr>
+<td>compare_exchange(current: usize, new: usize, success: Ordering, failure: Ordering) -&gt; Result&lt;usize, usize&gt;</td>
+<td>현재 값이 current와 같다면 새 값으로 교체하고 Ok(이전 값)을 반환한다. 실패하면 Err(현재 값)을 반환한다.</td>
+</tr>
+<tr>
+<td>compare_exchange_weak(current: usize, new: usize, success: Ordering, failure: Ordering) -&gt; Result&lt;usize, usize&gt;</td>
+<td>compare_exchange와 유사하지만, 실패 시 더 가벼운 검사를 수행하며 루프에서 사용하기 적합하다.</td>
+</tr>
+<tr>
+<td>fetch_add(value: usize, order: Ordering) -&gt; usize</td>
+<td>현재 값에 value를 더하고, 이전 값을 반환한다.</td>
+</tr>
+<tr>
+<td>fetch_sub(value: usize, order: Ordering) -&gt; usize</td>
+<td>현재 값에서 value를 빼고, 이전 값을 반환한다.</td>
+</tr>
+<tr>
+<td>fetch_and(value: usize, order: Ordering) -&gt; usize</td>
+<td>현재 값과 value의 비트 AND 연산을 수행하고, 이전 값을 반환한다.</td>
+</tr>
+<tr>
+<td>fetch_or(value: usize, order: Ordering) -&gt; usize</td>
+<td>현재 값과 value의 비트 OR 연산을 수행하고, 이전 값을 반환한다.</td>
+</tr>
+<tr>
+<td>fetch_xor(value: usize, order: Ordering) -&gt; usize</td>
+<td>현재 값과 value의 비트 XOR 연산을 수행하고, 이전 값을 반환한다.</td>
+</tr>
+<tr>
+<td>fetch_update&lt;F&gt;(&amp;self, set_order: Ordering, fetch_order: Ordering, f: F) -&gt; Result&lt;usize, usize&gt;</td>
+<td>클로저 f를 사용하여 새 값을 계산한 뒤, 조건이 충족되면 원자적으로 값을 업데이트한다. 실패 시 Err(현재 값)을 반환한다.</td>
+</tr>
+<tr>
+<td>into_inner(self) -&gt; usize</td>
+<td>AtomicUsize를 해제하여 내부 값을 반환한다.</td>
+</tr>
+<tr>
+<td>get_mut(&amp;mut self) -&gt; &amp;mut usize</td>
+<td>내부 값을 직접 변경할 수 있는 가변 참조를 반환한다. (스레드 안전이 필요하지 않을 때 사용)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>값 증가</strong>:</p>
+<pre><code class="language-rust">use std::sync::atomic::{AtomicUsize, Ordering};
+
+let counter = AtomicUsize::new(0);
+
+counter.fetch_add(1, Ordering::SeqCst);
+
+println!(&quot;Counter: {}&quot;, counter.load(Ordering::SeqCst));
+</code></pre>
+<p><strong>조건부 업데이트</strong>:</p>
+<pre><code class="language-rust">use std::sync::atomic::{AtomicUsize, Ordering};
+
+let value = AtomicUsize::new(42);
+let result = value.compare_exchange(42, 100, Ordering::SeqCst, Ordering::SeqCst);
+
+match result {
+    Ok(prev) =&gt; println!(&quot;Updated from {} to 100&quot;, prev),
+    Err(current) =&gt; println!(&quot;Failed to update, current value is {}&quot;, current),
+}
+</code></pre>
+<p><strong>클로저 기반 업데이트</strong>:</p>
+<pre><code class="language-rust">use std::sync::atomic::{AtomicUsize, Ordering};
+
+let value = AtomicUsize::new(5);
+let result = value.fetch_update(Ordering::SeqCst, Ordering::SeqCst, |x| {
+    if x &lt; 10 {
+        Some(x * 2)
+    } else {
+        None
+    }
+});
+
+match result {
+    Ok(prev) =&gt; println!(&quot;Updated from {} to {}&quot;, prev, value.load(Ordering::SeqCst)),
+    Err(current) =&gt; println!(&quot;Update failed, current value is {}&quot;, current),
+}
+</code></pre>
+<h3 id="3011-condvar">30.11 Condvar</h3>
+<p>Condvar는 조건 변수를 이용하여 스레드 간 통신을 처리할 때 사용된다. Condvar는 주로 하나의 스레드가 특정 조건을 기다리는 동안 대기하고, 다른 스레드가 그 조건을 만족시킬 때 신호를 보내어 깨어나게 하는 데 사용된다.</p>
+<p>Condvar는 뮤텍스(Mutex)와 함께 사용된다. 이를 통해 여러 스레드가 안전하게 공유 데이터를 기다리거나 조건을 충족시킬 수 있다.</p>
+<ul>
+<li>
+<p><strong>wait</strong>: 스레드가 조건 변수를 기다리게 한다. 이 메서드는 뮤텍스 락을 해제하고 스레드를 대기 상태로 만든다.</p>
+</li>
+<li>
+<p><strong>notify_one</strong>: 대기 중인 스레드 하나를 깨운다.</p>
+</li>
+<li>
+<p><strong>notify_all</strong>: 대기 중인 모든 스레드를 깨운다.</p>
+</li>
+</ul>
+<p>Condvar와 Mutex를 사용하여 생산자-소비자 패턴을 구현한다. 한 스레드가 작업을 준비하면 다른 스레드가 작업을 시작하도록 신호를 보내는 방식이다. 조건이 만족될 때까지 무한정 대기하는 것이 아니라, 일정 시간 동안만 대기한 후 타임아웃이 발생하면 대기에서 빠져나오도록 할 수 있다. 이를 위해 wait_timeout 메서드를 사용한다.</p>
+<p>[EX30-11-1]</p>
+<pre><code class="language-rust">use std::sync::{Arc, Mutex, Condvar};
+use std::thread;
+use std::time::Duration;
+
+fn main() {
+    let pair = Arc::new((Mutex::new(false), Condvar::new()));
+    let pair2 = Arc::clone(&amp;pair);
+    let consumer = thread::spawn(move || {
+        let (lock, cvar) = &amp;*pair2;
+        let mut started = lock.lock().unwrap();
+        let timeout_result = cvar
+            .wait_timeout(started, Duration::from_secs(3))
+            .unwrap();
+
+        started = timeout_result.0;
+
+        if *started {
+            println!(&quot;작업 시작!&quot;);
+        } else {
+            println!(&quot;타임아웃 발생, 조건이 만족되지 않음&quot;);
+        }
+    });
+
+    let producer = thread::spawn(move || {
+        let (lock, cvar) = &amp;*pair;
+        thread::sleep(Duration::from_secs(1)); // 생산 지연
+        
+        let mut started = lock.lock().unwrap();
+        *started = true;
+        cvar.notify_one(); // 조건 만족 신호
+    });
+
+    consumer.join().unwrap();
+    producer.join().unwrap();
+}
+</code></pre>
+<ol>
+<li>
+<p>pair는 Mutex와 Condvar를 포함하는 튜플이다.</p>
+</li>
+<li>
+<p>Mutex는 공유 상태(여기서는 false로 초기화)를 보호하고, Condvar는 상태 변화에 대한 신호를 기다리기 위해 사용된다.</p>
+</li>
+<li>
+<p>Arc를 사용하여 여러 스레드에서 안전하게 접근할 수 있도록 설정한다.</p>
+</li>
+<li>
+<p>소비자는 Condvar를 통해 공유 상태가 변경되기를 기다린다.</p>
+</li>
+<li>
+<p>wait_timeout 메서드를 사용하여 최대 3초 동안 조건을 기다린다.</p>
+</li>
+<li>
+<p>조건이 충족되었는지 확인한 후, 상태를 출력한다.</p>
+</li>
+<li>
+<p>생산자가 조건을 만족시키면 소비자는 &quot;작업 시작!&quot;을 출력한다. 타임아웃이 발생하지 않는다.</p>
+</li>
+</ol>
+<p>notify_all을 사용하면 대기 중인 모든 스레드를 깨울 수 있다. 여러 스레드가 동일한 조건을 기다리고 있을 때 유용하다.</p>
+<p>[EX30-11-2]</p>
+<pre><code class="language-rust">use std::sync::{Arc, Mutex, Condvar};
+use std::thread;
+use std::time::Duration;
+
+fn main() {
+    let pair = Arc::new((Mutex::new(false), Condvar::new()));
+
+    // 여러 소비자 스레드
+    let consumer1 = {
+        let pair2 = Arc::clone(&amp;pair);
+
+        thread::spawn(move || {
+            let (lock, cvar) = &amp;*pair2;
+            let mut started = lock.lock().unwrap();
+
+            while !*started {
+                started = cvar.wait(started).unwrap();
+            }
+            println!(&quot;작업 시작1!&quot;);
+        })
+    };
+
+    let consumer2 = {
+        let pair3 = Arc::clone(&amp;pair);
+
+        thread::spawn(move || {
+            let (lock, cvar) = &amp;*pair3;
+            let mut started = lock.lock().unwrap();
+
+            while !*started {
+                started = cvar.wait(started).unwrap();
+            }
+
+            println!(&quot;작업 시작2!&quot;);
+        })
+    };
+
+    // 생산자 스레드 (조건을 만족시킴)
+    let producer = thread::spawn({
+        let pair2 = Arc::clone(&amp;pair);
+
+        move || {
+            thread::sleep(Duration::from_secs(1)); // 생산 지연
+            let (lock, cvar) = &amp;*pair2;
+            let mut started = lock.lock().unwrap();
+            *started = true; // 조건을 만족시키기 위해 true로 설정
+            cvar.notify_all(); // 모든 소비자에게 신호 보내기
+        }
+    });
+
+    consumer1.join().unwrap();
+    consumer2.join().unwrap();
+    producer.join().unwrap();
+}
+</code></pre>
+<h3 id="3012-data-parallelism">30.12 데이터 병렬 처리(Data Parallelism)</h3>
+<p>Rayon은 데이터 병렬 처리를 위한 라이브러리로, 간편하게 멀티스레드 병렬 처리를 구현할 수 있게 도와준다. Rayon 크레이트는 반복자 기반으로 병렬 처리를 지원하여, 일반적인 순차적 반복자 연산을 병렬 연산으로 변환할 수 있다.</p>
+<ul>
+<li>
+<p>.iter() 대신 .par_iter()를 사용하여 반복자의 작업을 병렬로 실행할 수 있다.</p>
+</li>
+<li>
+<p>내부적으로 작업을 자동으로 분할하고 스레드 풀을 관리하여, 안전하게 병렬 처리를 수행한다.</p>
+</li>
+<li>
+<p>기존의 반복자 기반 코드를 수정하지 않고 병렬화 할 수 있다.</p>
+</li>
+</ul>
+<pre><code class="language-rust">[dependencies]
+rayon = &quot;1.7&quot;
+</code></pre>
+<p><strong>par_iter를 통한 병렬 처리</strong></p>
+<p>벡터의 모든 요소를 제곱하는 작업을 병렬로 처리한다.</p>
+<p>[EX30-12-1]</p>
+<pre><code class="language-rust">use rayon::prelude::*;
+
+fn main() {
+    let numbers: Vec&lt;i32&gt; = (1..100).collect();
+
+    // 순차적 처리
+    let squares_sequential: Vec&lt;i32&gt; = numbers.iter().map(|&amp;x| x * x).collect();
+   
+    // 병렬 처리
+    let squares_parallel: Vec&lt;i32&gt; = numbers.par_iter().map(|&amp;x| x * x).collect();
+
+    println!(&quot;Sequential: {:?}&quot;, squares_sequential);
+    println!(&quot;Parallel: {:?}&quot;, squares_parallel);
+}
+</code></pre>
+<ol>
+<li>
+<p>par_iter()를 사용하면 iter()와 동일한 방식으로 벡터를 순회하면서 병렬로 처리한다.</p>
+</li>
+<li>
+<p>map() 연산이 여러 스레드에서 동시에 실행된다.</p>
+</li>
+<li>
+<p>collect()는 병렬 처리된 결과를 다시 벡터로 모아준다.</p>
+</li>
+</ol>
+<p><strong>par_iter_mut로 병렬 가변 처리</strong></p>
+<p>벡터의 값을 직접 변경해야 하는 경우, par_iter_mut()를 사용해 각 요소를 병렬로 수정할 수 있다.</p>
+<p>[EX30-12-2]</p>
+<pre><code class="language-rust">use rayon```::prelude::*;
+
+fn main() {
+    let mut numbers: Vec&lt;i32&gt; = (1..100).collect();
+
+    // 벡터의 값을 병렬로 수정
+    numbers.par_iter_mut().for_each(|x| {
+        *x *= 2;
+    });
+
+    println!(&quot;Modified: {:?}&quot;, numbers);
+}
+</code></pre>
+<ol>
+<li>
+<p>par_iter_mut()를 통해 벡터의 가변 참조를 얻어, 요소를 병렬로 수정한다.</p>
+</li>
+<li>
+<p>for_each()를 사용하여 각 요소를 병렬로 순회하면서 값을 변경한다.</p>
+</li>
+</ol>
+<p><strong>par_sort를 사용한 병렬 정렬</strong></p>
+<p>벡터의 정렬 작업도 병렬로 수행할 수 있다. 대용량 데이터를 정렬할 때 성능 향상이 매우 크다.</p>
+<p>[EX30-12-3]</p>
+<pre><code class="language-rust">use rayon::prelude::*;
+
+fn main() {
+    let mut numbers = vec![5, 3, 8, 6, 1, 9, 2, 7, 4];
+
+    // 병렬 정렬
+    numbers.par_sort();
+    println!(&quot;Sorted: {:?}&quot;, numbers);
+}
+</code></pre>
+<ol>
+<li>
+<p>par_sort()를 사용하여 벡터를 병렬로 정렬한다.</p>
+</li>
+<li>
+<p>내부적으로 빠른 정렬 알고리즘을 여러 스레드를 활용해 병렬로 처리한다.</p>
+</li>
+</ol>
+<p><strong>par_chunks를 사용한 병렬 청크 처리</strong></p>
+<p>par_chunks 메서드를 사용하면 데이터를 여러 청크로 나누어 병렬로 처리할 수 있다.</p>
+<p>[EX30-12-4]</p>
+<pre><code class="language-rust">use rayon::prelude::*;
+
+fn main() {
+    let numbers: Vec&lt;i32&gt; = (1..100).collect();
+
+    // 벡터를 청크 단위로 병렬 처리
+    numbers.par_chunks(10).for_each(|chunk| {
+        println!(&quot;Chunk: {:?}&quot;, chunk);
+    });
+}
+</code></pre>
+<ol>
+<li>
+<p>par_chunks()는 데이터를 일정 크기의 청크로 나누어 병렬로 처리한다.</p>
+</li>
+<li>
+<p>각 청크를 병렬로 처리하여 작업을 나눌 수 있다.</p>
+</li>
+</ol>
+<p><strong>병렬 반복 작업: reduce와 fold</strong></p>
+<p>병렬 축소 작업도 지원한다. 벡터의 모든 요소를 합산하는 작업을 병렬로 수행할 수 있다.</p>
+<p>[EX30-12-5]</p>
+<pre><code class="language-rust">use rayon::prelude::*;
+
+fn main() {
+    let numbers: Vec&lt;i32&gt; = (1..100).collect();
+
+    // 병렬로 요소들의 합을 계산
+    let sum: i32 = numbers.par_iter().cloned().reduce(|| 0, |a, b| a + b);
+
+    println!(&quot;Sum: {}&quot;, sum);
+}
+</code></pre>
+<ul>
+<li>
+<p>reduce는 병렬로 데이터를 축소(예: 합산)하는 작업을 수행한다.</p>
+</li>
+<li>
+<p>|| 0은 초기값이며, |a, b| a + b는 합산할 때 사용하는 클로저이다.</p>
+</li>
+</ul>
+<p><strong>병렬로 폴드(fold)</strong></p>
+<p>fold는 상태를 유지하면서 반복 작업을 처리할 때 유용하다. 병렬화 된 작업에서도 이를 사용하여 보다 복잡한 상태 기반 처리를 수행할 수 있다.</p>
+<p>[EX30-12-6]</p>
+<pre><code class="language-rust">use rayon::prelude::*;
+
+fn main() {
+    let numbers: Vec&lt;u64&gt; = (1..=20).collect();
+
+    // 병렬 폴드를 사용하여 모든 요소를 곱함
+    let product: u64 = numbers.par_iter()
+        .cloned()
+        .fold(|| 1, |a, b| a * b)
+        .reduce(|| 1, |a, b| a * b);
+
+    println!(&quot;Product: {}&quot;, product);
+}
+</code></pre>
+<p>출력 값은 20!로, 모든 숫자를 곱한 결과값이다.</p>
+<ol>
+<li>
+<p>numbers.par_iter():<br />
+    벡터 numbers에 대해 병렬 반복을 시작한다. 이 메서드는 벡터를 여러 스레드에서 병렬로 처리할 수 있게 한다.</p>
+</li>
+<li>
+<p>cloned():<br />
+    par_iter()는 참조를 반환하므로, cloned()를 사용하여 소유권을 이동시키고 각 요소를 i64 타입으로 복사한다.</p>
+</li>
+<li>
+<p>fold(|| 1, |a, b| a * b):<br />
+    fold()는 병렬 작업에서 각 스레드가 데이터를 처리하도록 하고, 각 스레드 내에서 곱셈을 수행한다. 첫 번째 인자 || 1은 각 스레드에서의 초기값을 설정한다.</p>
+</li>
+<li>
+<p>두 번째 인자 |a, b| a * b는 각 스레드가 계산하는 방식이다. 각 요소를 곱하는 방식으로 연산이 수행된다.</p>
+</li>
+<li>
+<p>reduce(|| 1, |a, b| a * b):<br />
+    reduce()는 병렬로 처리된 결과들을 결합하는 역할을 한다. fold()로 얻은 부분 결과들을 병합한다. 병렬 작업이 끝나면, 최종 결과를 하나로 모은다.</p>
+</li>
+</ol>
+<p><strong>scope로 병렬 작업 그룹 관리</strong></p>
+<p>scope 기능을 제공하여 서로 다른 병렬 작업을 쉽게 관리하고, 병렬 작업 간의 상호 참조도 안전하게 처리할 수 있다.</p>
+<p>[EX30-12-7]</p>
+<pre><code class="language-rust">use rayon::scope;
+
+fn main() {
+    scope(|s| {
+        s.spawn(|_| {
+            println!(&quot;Task 1&quot;);
+        });
+
+        s.spawn(|_| {
+            println!(&quot;Task 2&quot;);
+        });
+    });
+
+    println!(&quot;Main thread done&quot;);
+}
+</code></pre></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 4월 16일 7:24 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@laniakea/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@laniakea/">@laniakea</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/413/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/413/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">6</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/2370/add_comment/"
+                      method="post"
+                      hx-post="/blog/2370/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="IcHxk6oSoMchib4MMVIDKV2aNO8ILer7ju08J5qOxCigL5ajfGW3cNu5tnw6UbqG">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @laniakea 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@laniakea/2570/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Mastering Rust: A Complete Guide - PART-II 31-2. 비동기 프로그래밍
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@laniakea/2569/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Mastering Rust: A Complete Guide - PART-II 31-1. 비동기 프로그래밍
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@laniakea/2370/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            Mastering Rust: A Complete Guide - PART-II 30. 동시성 프로그래밍
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@laniakea/2295/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Mastering Rust: A Complete Guide - PART-II 29. 에러처리
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 13일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@laniakea/2284/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Mastering Rust: A Complete Guide - PART-II 28. Debugging
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 04월 11일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 7
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/413/2370/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">425</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-2370"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-2370"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/2370/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=74cd24e'/>

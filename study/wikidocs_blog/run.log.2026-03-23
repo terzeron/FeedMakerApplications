@@ -1,0 +1,461 @@
+[2026-03-23 15:53:55,068][run.py:202][DEBUG] # main()
+[2026-03-23 15:53:55,068][run.py:171][DEBUG] # determine_options()
+[2026-03-23 15:53:55,068][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-23 15:53:55,068][run.py:212][DEBUG] study/wikidocs_blog
+[2026-03-23 15:53:55,068][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-23 15:53:55,122][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:53:55,122][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-23 15:53:55,122][run.py:40][DEBUG] # make_single_feed(feed_dir_path='study/wikidocs_blog', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-23 15:53:55,122][run.py:55][INFO] * study/wikidocs_blog
+[2026-03-23 15:53:55,122][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-23 15:53:55,122][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-23 15:53:55,123][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='study/wikidocs_blog', feed_img_dir_path='img/wikidocs_blog')
+[2026-03-23 15:53:55,123][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-23 15:53:55,123][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:53:55,123][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-23 15:53:55,123][run.py:73][INFO] * making feed file 'study/wikidocs_blog/wikidocs_blog.xml'
+[2026-03-23 15:53:55,123][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=study/wikidocs_blog, do_collect_by_force=, do_collect_only=, rss_file_path=study/wikidocs_blog/wikidocs_blog.xml)
+[2026-03-23 15:53:55,123][feed_maker.py:529][DEBUG] # make()
+[2026-03-23 15:53:55,123][feed_maker.py:530][INFO] =========================================================
+[2026-03-23 15:53:55,123][feed_maker.py:531][INFO] study/wikidocs_blog
+[2026-03-23 15:53:55,123][feed_maker.py:532][INFO] =========================================================
+[2026-03-23 15:53:55,123][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:53:55,123][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-23 15:53:55,123][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-23 15:53:55,123][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-23 15:53:55,123][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': './capture_item_link_title.py -n 20', 'sort_field_pattern': '/(\\d+)/', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 5.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://wikidocs.net/blog/main/'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-23 15:53:55,123][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': [], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-23 15:53:55,123][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': '', 'rss_title': '위키독스 블로그', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) wikidocs.net. All Rights Reserved', 'rss_link': 'https://terzeron.com/wikidocs_blog.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-23 15:53:55,123][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-23 15:53:55,124][feed_maker.py:556][WARNING] Warning: can't read old feed list from files
+[2026-03-23 15:53:55,124][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-23 15:53:55,124][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=study/wikidocs_blog, collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': './capture_item_link_title.py -n 20', 'sort_field_pattern': '/(\\d+)/', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 5.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://wikidocs.net/blog/main/'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=study/wikidocs_blog/newlist/20260323.txt
+[2026-03-23 15:53:55,124][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-23 15:53:55,124][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-23 15:53:55,124][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-23 15:53:55,124][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=True, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:53:55,124][headless_browser.py:161][DEBUG] # HeadlessBrowser(dir_path=study/wikidocs_blog, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False, timeout=60)
+[2026-03-23 15:53:55,124][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:53:55,124][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=true --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://wikidocs.net/blog/main/'
+[2026-03-23 15:53:55,124][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/main/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:53:55,124][headless_browser.py:266][DEBUG] # make_request(url=https://wikidocs.net/blog/main/, download_file=None)
+[2026-03-23 15:53:55,132][headless_browser.py:298][DEBUG] Creating new Chrome driver
+[2026-03-23 15:53:55,505][headless_browser.py:327][DEBUG] getting the page 'https://wikidocs.net/blog/main/'
+[2026-03-23 15:53:59,722][headless_browser.py:352][DEBUG] executing some scripts
+[2026-03-23 15:53:59,729][headless_browser.py:358][DEBUG] executing a script for metadata
+[2026-03-23 15:53:59,731][headless_browser.py:387][DEBUG] getting inner html
+[2026-03-23 15:53:59,750][new_list_collector.py:71][DEBUG] cmd=./capture_item_link_title.py -n 20 -f '/home/terzeron/workspace/fma/study/wikidocs_blog'
+[2026-03-23 15:53:59,750][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=./capture_item_link_title.py -n 20 -f '/home/terzeron/workspace/fma/study/wikidocs_blog', dir_path=study/wikidocs_blog, input_data=125750 bytes)
+[2026-03-23 15:53:59,750][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/study/wikidocs_blog/capture_item_link_title.py', '-n', '20', '-f', '/home/terzeron/workspace/fma/study/wikidocs_blog']
+[2026-03-23 15:53:59,831][new_list_collector.py:74][WARNING] Warning: can't get result from item capture script, cmd='./capture_item_link_title.py -n 20 -f '/home/terzeron/workspace/fma/study/wikidocs_blog'', 'Traceback (most recent call last):\n  File "/home/terzeron/workspace/fma/study/wikidocs_blog/capture_item_link_title.py", line 57, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File "/home/terzeron/workspace/fma/study/wikidocs_blog/capture_item_link_title.py", line 15, in main\n    optlist, _ = getopt.getopt(sys.argv[1:], "n:")\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/terzeron/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/getopt.py", line 95, in getopt\n    opts, args = do_shorts(opts, args[0][1:], shortopts, args[1:])\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/terzeron/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/getopt.py", line 195, in do_shorts\n    if short_has_arg(opt, shortopts):\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/terzeron/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/getopt.py", line 211, in short_has_arg\n    raise GetoptError(_(\'option -%s not recognized\') % opt, opt)\ngetopt.GetoptError: option -f not recognized\n'
+[2026-03-23 15:53:59,831][new_list_collector.py:93][ERROR] Error: Can't get new list from '['https://wikidocs.net/blog/main/']'
+[2026-03-23 15:53:59,831][feed_maker.py:569][ERROR] Error: Can't get recent feed list from urls
+[2026-03-23 15:53:59,831][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='study/wikidocs_blog')
+[2026-03-23 15:53:59,831][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-23 15:53:59,831][run.py:84][INFO] # Running time analysis
+[2026-03-23 15:53:59,832][run.py:85][INFO] * Start time: 2026-03-23T06:53:55+00:00
+[2026-03-23 15:53:59,832][run.py:86][INFO] * End time: 2026-03-23T06:53:59+00:00
+[2026-03-23 15:53:59,832][run.py:87][INFO] * Elapsed time: 4.709374
+[2026-03-23 15:53:59,832][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=study/wikidocs_blog, new_feed_dir_path=)
+[2026-03-23 15:53:59,832][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 15:53:59,836][feed_manager.py:71][INFO] * The removing of config info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:53:59,836][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 15:53:59,837][feed_manager.py:197][INFO] * The removing of rss info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:53:59,838][feed_manager.py:296][INFO] * The removing of public feed info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:53:59,838][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 15:53:59,839][feed_manager.py:399][INFO] * The removing of progress info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:53:59,840][access_log_manager.py:56][INFO] * The removing of access info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:53:59,840][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='study/wikidocs_blog')
+[2026-03-23 15:53:59,842][html_file_manager.py:143][INFO] * The removing of some html files in 'study/wikidocs_blog' is done
+[2026-03-23 15:53:59,848][feed_manager.py:148][INFO] * The adding of config info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:53:59,849][feed_manager.py:242][INFO] * The adding of rss info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:53:59,849][feed_manager.py:305][ERROR] can't find a public feed file 'wikidocs_blog.xml'
+[2026-03-23 15:53:59,849][feed_manager.py:342][INFO] * The adding of public feed info of feed 'wikidocs_blog' is done. 0 items
+[2026-03-23 15:53:59,851][feed_manager.py:497][INFO] * The adding of progress info of feed 'wikidocs_blog' is done. 1 items
+[2026-03-23 15:53:59,851][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:53:59,851][html_file_manager.py:178][INFO] * The adding of some html files in 'study/wikidocs_blog' is done. 0 items
+[2026-03-23 15:53:59,851][run.py:234][INFO] # Checking problems and making report
+[2026-03-23 15:54:21,165][run.py:202][DEBUG] # main()
+[2026-03-23 15:54:21,165][run.py:171][DEBUG] # determine_options()
+[2026-03-23 15:54:21,165][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-23 15:54:21,165][run.py:212][DEBUG] study/wikidocs_blog
+[2026-03-23 15:54:21,165][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-23 15:54:21,203][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:54:21,203][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-23 15:54:21,203][run.py:40][DEBUG] # make_single_feed(feed_dir_path='study/wikidocs_blog', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-23 15:54:21,203][run.py:55][INFO] * study/wikidocs_blog
+[2026-03-23 15:54:21,203][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-23 15:54:21,203][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-23 15:54:21,204][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='study/wikidocs_blog', feed_img_dir_path='img/wikidocs_blog')
+[2026-03-23 15:54:21,204][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-23 15:54:21,204][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:54:21,204][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-23 15:54:21,204][run.py:73][INFO] * making feed file 'study/wikidocs_blog/wikidocs_blog.xml'
+[2026-03-23 15:54:21,204][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=study/wikidocs_blog, do_collect_by_force=, do_collect_only=, rss_file_path=study/wikidocs_blog/wikidocs_blog.xml)
+[2026-03-23 15:54:21,204][feed_maker.py:529][DEBUG] # make()
+[2026-03-23 15:54:21,204][feed_maker.py:530][INFO] =========================================================
+[2026-03-23 15:54:21,204][feed_maker.py:531][INFO] study/wikidocs_blog
+[2026-03-23 15:54:21,204][feed_maker.py:532][INFO] =========================================================
+[2026-03-23 15:54:21,204][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:54:21,204][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-23 15:54:21,204][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-23 15:54:21,204][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-23 15:54:21,204][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': './capture_item_link_title.py -n 20', 'sort_field_pattern': '/(\\d+)/', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 5.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://wikidocs.net/blog/main/'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-23 15:54:21,204][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': [], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-23 15:54:21,204][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': '', 'rss_title': '위키독스 블로그', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) wikidocs.net. All Rights Reserved', 'rss_link': 'https://terzeron.com/wikidocs_blog.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-23 15:54:21,204][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-23 15:54:21,204][feed_maker.py:556][WARNING] Warning: can't read old feed list from files
+[2026-03-23 15:54:21,204][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-23 15:54:21,204][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=study/wikidocs_blog, collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': './capture_item_link_title.py -n 20', 'sort_field_pattern': '/(\\d+)/', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 5.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://wikidocs.net/blog/main/'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=study/wikidocs_blog/newlist/20260323.txt
+[2026-03-23 15:54:21,204][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-23 15:54:21,204][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-23 15:54:21,204][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-23 15:54:21,204][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=True, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:21,204][headless_browser.py:161][DEBUG] # HeadlessBrowser(dir_path=study/wikidocs_blog, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False, timeout=60)
+[2026-03-23 15:54:21,204][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:21,204][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=true --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://wikidocs.net/blog/main/'
+[2026-03-23 15:54:21,204][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/main/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:21,204][headless_browser.py:266][DEBUG] # make_request(url=https://wikidocs.net/blog/main/, download_file=None)
+[2026-03-23 15:54:21,206][headless_browser.py:298][DEBUG] Creating new Chrome driver
+[2026-03-23 15:54:21,473][headless_browser.py:327][DEBUG] getting the page 'https://wikidocs.net/blog/main/'
+[2026-03-23 15:54:25,370][headless_browser.py:352][DEBUG] executing some scripts
+[2026-03-23 15:54:25,377][headless_browser.py:358][DEBUG] executing a script for metadata
+[2026-03-23 15:54:25,379][headless_browser.py:387][DEBUG] getting inner html
+[2026-03-23 15:54:25,398][new_list_collector.py:71][DEBUG] cmd=./capture_item_link_title.py -n 20 -f '/home/terzeron/workspace/fma/study/wikidocs_blog'
+[2026-03-23 15:54:25,398][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=./capture_item_link_title.py -n 20 -f '/home/terzeron/workspace/fma/study/wikidocs_blog', dir_path=study/wikidocs_blog, input_data=125760 bytes)
+[2026-03-23 15:54:25,398][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/study/wikidocs_blog/capture_item_link_title.py', '-n', '20', '-f', '/home/terzeron/workspace/fma/study/wikidocs_blog']
+[2026-03-23 15:54:25,487][new_list_collector.py:30][DEBUG] # extract_urls()
+[2026-03-23 15:54:25,488][feed_maker.py:430][DEBUG] # _diff_feeds_and_make_htmls(recent_feed_list=[('https://wikidocs.net/blog/@ironowl/9698/', 'LLM의 동작 원리가 만들어내는 인지의 반향실', []), ('https://wikidocs.net/blog/@lamsal/9686/', '디지털 시네마 카메라 시장: 글로벌 동향 및 전망 (2026년~2033년)', []), ('https://wikidocs.net/blog/@rishika/9678/', '과민성 방광(OAB) 환자 증가세에 힘입어, 글로벌 염화트로스피움 시장 2034년까지 4,970만 달러 규모 도달 전망', []), ('https://wikidocs.net/blog/@ChaejjikPT/9669/', '2026년 3월 23일 세계 투자 자산 시장 일일 보고서', []), ('https://wikidocs.net/blog/@jaehong/9603/', 'Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다', []), ('https://wikidocs.net/blog/@jaehong/9602/', 'Deno의 대규모 감원, 그리고 사라진 CEO: 오픈소스 런타임의 비즈니스 모델은 가능한가', []), ('https://wikidocs.net/blog/@jaehong/9601/', 'FFmpeg의 내부를 들여다보다: 라이브러리 API로 직접 만드는 미디어 플레이어', []), ('https://wikidocs.net/blog/@edwin/9571/', '알라딘 중고도서 묶음배송 검색 서비스 오픈! 🎊', []), ('https://wikidocs.net/blog/@wilson_lim/9570/', '인생을 즐기려면 먼저 체력부터: 마음을 살리는 건강관리의 기술', []), ('https://wikidocs.net/blog/@easyeng/9552/', 'AI Agent 설계 + iTop/GLPI 연동 + 자동조치 Runbook ==&gt; AI Agent 구축 방안', [])], old_feed_list=[])
+[2026-03-23 15:54:25,488][feed_maker.py:435][INFO] Appending 20 new items to the feed list
+[2026-03-23 15:54:25,488][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:25,488][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:25,488][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:25,488][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://wikidocs.net/blog/@ironowl/9698/'
+[2026-03-23 15:54:25,488][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@ironowl/9698/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:25,488][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@ironowl/9698/', allow_redirects=True)
+[2026-03-23 15:54:25,667][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/75a8653.html'
+[2026-03-23 15:54:25,668][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@ironowl/9698/	LLM의 동작 원리가 만들어내는 인지의 반향실	study/wikidocs_blog/html/75a8653.html (50173 bytes > 359 bytes of template)
+[2026-03-23 15:54:25,668][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:25,668][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:25,668][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:25,668][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@lamsal/9686/'
+[2026-03-23 15:54:25,668][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@lamsal/9686/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:25,668][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@lamsal/9686/', allow_redirects=True)
+[2026-03-23 15:54:25,824][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/4053041.html'
+[2026-03-23 15:54:25,824][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@lamsal/9686/	디지털 시네마 카메라 시장: 글로벌 동향 및 전망 (2026년~2033년)	study/wikidocs_blog/html/4053041.html (29602 bytes > 359 bytes of template)
+[2026-03-23 15:54:25,824][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:25,824][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:25,824][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:25,824][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@rishika/9678/'
+[2026-03-23 15:54:25,824][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@rishika/9678/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:25,824][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@rishika/9678/', allow_redirects=True)
+[2026-03-23 15:54:25,989][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/f68fe8a.html'
+[2026-03-23 15:54:25,989][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@rishika/9678/	과민성 방광(OAB) 환자 증가세에 힘입어, 글로벌 염화트로스피움 시장 2034년까지 4,970만 달러 규모 도달 전망	study/wikidocs_blog/html/f68fe8a.html (44726 bytes > 359 bytes of template)
+[2026-03-23 15:54:25,989][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:25,989][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:25,989][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:25,989][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@ChaejjikPT/9669/'
+[2026-03-23 15:54:25,989][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@ChaejjikPT/9669/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:25,989][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@ChaejjikPT/9669/', allow_redirects=True)
+[2026-03-23 15:54:26,200][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/8f7c28f.html'
+[2026-03-23 15:54:26,201][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@ChaejjikPT/9669/	2026년 3월 23일 세계 투자 자산 시장 일일 보고서	study/wikidocs_blog/html/8f7c28f.html (50497 bytes > 359 bytes of template)
+[2026-03-23 15:54:26,201][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:26,201][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:26,201][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:26,201][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@jaehong/9603/'
+[2026-03-23 15:54:26,201][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@jaehong/9603/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:26,201][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@jaehong/9603/', allow_redirects=True)
+[2026-03-23 15:54:26,435][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/bae3e35.html'
+[2026-03-23 15:54:26,436][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@jaehong/9603/	Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다	study/wikidocs_blog/html/bae3e35.html (54639 bytes > 359 bytes of template)
+[2026-03-23 15:54:26,436][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:26,436][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:26,436][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:26,436][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@jaehong/9602/'
+[2026-03-23 15:54:26,436][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@jaehong/9602/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:26,436][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@jaehong/9602/', allow_redirects=True)
+[2026-03-23 15:54:26,650][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/8b753bd.html'
+[2026-03-23 15:54:26,651][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@jaehong/9602/	Deno의 대규모 감원, 그리고 사라진 CEO: 오픈소스 런타임의 비즈니스 모델은 가능한가	study/wikidocs_blog/html/8b753bd.html (54417 bytes > 359 bytes of template)
+[2026-03-23 15:54:26,651][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:26,651][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:26,651][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:26,651][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@jaehong/9601/'
+[2026-03-23 15:54:26,651][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@jaehong/9601/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:26,651][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@jaehong/9601/', allow_redirects=True)
+[2026-03-23 15:54:27,063][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/5ecae5c.html'
+[2026-03-23 15:54:27,064][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@jaehong/9601/	FFmpeg의 내부를 들여다보다: 라이브러리 API로 직접 만드는 미디어 플레이어	study/wikidocs_blog/html/5ecae5c.html (52732 bytes > 359 bytes of template)
+[2026-03-23 15:54:27,064][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:27,064][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:27,064][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:27,064][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@edwin/9571/'
+[2026-03-23 15:54:27,064][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@edwin/9571/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:27,064][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@edwin/9571/', allow_redirects=True)
+[2026-03-23 15:54:27,243][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/c26e709.html'
+[2026-03-23 15:54:27,243][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@edwin/9571/	알라딘 중고도서 묶음배송 검색 서비스 오픈! 🎊	study/wikidocs_blog/html/c26e709.html (45850 bytes > 359 bytes of template)
+[2026-03-23 15:54:27,244][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:27,244][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:27,244][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:27,244][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@wilson_lim/9570/'
+[2026-03-23 15:54:27,244][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@wilson_lim/9570/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:27,244][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@wilson_lim/9570/', allow_redirects=True)
+[2026-03-23 15:54:27,415][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/8ae30d5.html'
+[2026-03-23 15:54:27,416][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@wilson_lim/9570/	인생을 즐기려면 먼저 체력부터: 마음을 살리는 건강관리의 기술	study/wikidocs_blog/html/8ae30d5.html (36401 bytes > 359 bytes of template)
+[2026-03-23 15:54:27,416][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:27,416][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:27,416][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:27,416][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@easyeng/9552/'
+[2026-03-23 15:54:27,416][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@easyeng/9552/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:27,416][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@easyeng/9552/', allow_redirects=True)
+[2026-03-23 15:54:27,608][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/3ff475f.html'
+[2026-03-23 15:54:27,608][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@easyeng/9552/	AI Agent 설계 + iTop/GLPI 연동 + 자동조치 Runbook ==&gt; AI Agent 구축 방안	study/wikidocs_blog/html/3ff475f.html (47322 bytes > 359 bytes of template)
+[2026-03-23 15:54:27,609][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:27,609][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:27,609][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:27,609][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@easyeng/9551/'
+[2026-03-23 15:54:27,609][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@easyeng/9551/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:27,609][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@easyeng/9551/', allow_redirects=True)
+[2026-03-23 15:54:27,782][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/4c331be.html'
+[2026-03-23 15:54:27,782][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@easyeng/9551/	AI Agent 도입 ITSM 아키텍처 = AIOps + Agent	study/wikidocs_blog/html/4c331be.html (45360 bytes > 359 bytes of template)
+[2026-03-23 15:54:27,783][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:27,783][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:27,783][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:27,783][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@easyeng/9546/'
+[2026-03-23 15:54:27,783][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@easyeng/9546/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:27,783][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@easyeng/9546/', allow_redirects=True)
+[2026-03-23 15:54:27,973][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/3ac1787.html'
+[2026-03-23 15:54:27,974][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@easyeng/9546/	ITSM, Docker, K8s, 비용 최적화하는 MSP/멀티테넌트 구조	study/wikidocs_blog/html/3ac1787.html (47161 bytes > 359 bytes of template)
+[2026-03-23 15:54:27,974][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:27,974][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:27,974][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:27,974][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@techtips/9512/'
+[2026-03-23 15:54:27,974][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@techtips/9512/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:27,974][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@techtips/9512/', allow_redirects=True)
+[2026-03-23 15:54:28,142][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/60b3e0e.html'
+[2026-03-23 15:54:28,142][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@techtips/9512/	SharePoint 목록을 다른 사이트로 마이그레이션하는 방법	study/wikidocs_blog/html/60b3e0e.html (31512 bytes > 359 bytes of template)
+[2026-03-23 15:54:28,142][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:28,142][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:28,142][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:28,142][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@eml_to_readable/9500/'
+[2026-03-23 15:54:28,142][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@eml_to_readable/9500/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:28,142][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@eml_to_readable/9500/', allow_redirects=True)
+[2026-03-23 15:54:28,300][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/2e1d9ff.html'
+[2026-03-23 15:54:28,300][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@eml_to_readable/9500/	EML을 읽을 수 있는 형식으로 변환하는 방법	study/wikidocs_blog/html/2e1d9ff.html (31054 bytes > 359 bytes of template)
+[2026-03-23 15:54:28,300][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:28,301][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:28,301][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:28,301][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@magicslides/9498/'
+[2026-03-23 15:54:28,301][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@magicslides/9498/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:28,301][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@magicslides/9498/', allow_redirects=True)
+[2026-03-23 15:54:28,460][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/321c57f.html'
+[2026-03-23 15:54:28,460][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@magicslides/9498/	PPT에 비디오 추가하는 방법: 단계별 완벽 가이드	study/wikidocs_blog/html/321c57f.html (30715 bytes > 359 bytes of template)
+[2026-03-23 15:54:28,460][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:28,460][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:28,461][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:28,461][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@ianpause/9483/'
+[2026-03-23 15:54:28,461][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@ianpause/9483/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:28,461][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@ianpause/9483/', allow_redirects=True)
+[2026-03-23 15:54:28,620][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/b132964.html'
+[2026-03-23 15:54:28,621][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@ianpause/9483/	답안냄 연작의 사고과정으로 고려대 생기부를 설계하는 방법	study/wikidocs_blog/html/b132964.html (42867 bytes > 359 bytes of template)
+[2026-03-23 15:54:28,621][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:28,621][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:28,621][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:28,621][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@philmartincollins/9469/'
+[2026-03-23 15:54:28,621][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@philmartincollins/9469/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:28,621][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@philmartincollins/9469/', allow_redirects=True)
+[2026-03-23 15:54:28,783][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/4a7e87f.html'
+[2026-03-23 15:54:28,784][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@philmartincollins/9469/	Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드	study/wikidocs_blog/html/4a7e87f.html (30168 bytes > 359 bytes of template)
+[2026-03-23 15:54:28,784][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:28,784][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:28,784][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:28,784][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@mishti/9463/'
+[2026-03-23 15:54:28,784][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@mishti/9463/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:28,784][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@mishti/9463/', allow_redirects=True)
+[2026-03-23 15:54:28,943][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/7dfa2d7.html'
+[2026-03-23 15:54:28,943][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@mishti/9463/	ICS 파일을 CSV 파일로 변환하는 방법? 최고의 해결책을 알아보세요	study/wikidocs_blog/html/7dfa2d7.html (30506 bytes > 359 bytes of template)
+[2026-03-23 15:54:28,944][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:28,944][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:28,944][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:28,944][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@mathew0406/9465/'
+[2026-03-23 15:54:28,944][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@mathew0406/9465/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:28,944][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@mathew0406/9465/', allow_redirects=True)
+[2026-03-23 15:54:29,133][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/a6b8c62.html'
+[2026-03-23 15:54:29,134][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@mathew0406/9465/	JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최고의 가이드	study/wikidocs_blog/html/a6b8c62.html (35020 bytes > 359 bytes of template)
+[2026-03-23 15:54:29,134][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 15:54:29,134][crawler.py:38][DEBUG] # RequestsClient(dir_path=study/wikidocs_blog, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': ''}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-23 15:54:29,134][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 15:54:29,134][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; ' --timeout=60 'https://wikidocs.net/blog/@Amrita/9464/'
+[2026-03-23 15:54:29,134][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/@Amrita/9464/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 15:54:29,134][crawler.py:93][DEBUG] # make_request(url='https://wikidocs.net/blog/@Amrita/9464/', allow_redirects=True)
+[2026-03-23 15:54:29,275][feed_maker.py:280][DEBUG] writing to 'study/wikidocs_blog/html/daf06a4.html'
+[2026-03-23 15:54:29,275][feed_maker.py:297][INFO] New: https://wikidocs.net/blog/@Amrita/9464/	SSD 하드 드라이브 포맷 완전 가이드	study/wikidocs_blog/html/daf06a4.html (26822 bytes > 359 bytes of template)
+[2026-03-23 15:54:29,276][feed_maker.py:441][INFO] Appending 0 old items to the feed list
+[2026-03-23 15:54:29,276][feed_maker.py:448][DEBUG] # generate_rss_feed()
+[2026-03-23 15:54:29,276][feed_maker.py:458][DEBUG] rss_file_path=study/wikidocs_blog/wikidocs_blog.xml, temp_rss_file_path=study/wikidocs_blog/wikidocs_blog.xml.20260323, old_rss_file_path=study/wikidocs_blog/wikidocs_blog.xml.old
+[2026-03-23 15:54:29,276][feed_maker.py:460][INFO] Generating rss feed file...
+[2026-03-23 15:54:29,276][feed_maker.py:464][INFO] https://wikidocs.net/blog/@jaehong/9603/	Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다	study/wikidocs_blog/html/bae3e35.html
+[2026-03-23 15:54:29,276][feed_maker.py:464][INFO] https://wikidocs.net/blog/@ChaejjikPT/9669/	2026년 3월 23일 세계 투자 자산 시장 일일 보고서	study/wikidocs_blog/html/8f7c28f.html
+[2026-03-23 15:54:29,277][feed_maker.py:464][INFO] https://wikidocs.net/blog/@rishika/9678/	과민성 방광(OAB) 환자 증가세에 힘입어, 글로벌 염화트로스피움 시장 2034년까지 4,970만 달러 규모 도달 전망	study/wikidocs_blog/html/f68fe8a.html
+[2026-03-23 15:54:29,277][feed_maker.py:464][INFO] https://wikidocs.net/blog/@lamsal/9686/	디지털 시네마 카메라 시장: 글로벌 동향 및 전망 (2026년~2033년)	study/wikidocs_blog/html/4053041.html
+[2026-03-23 15:54:29,278][feed_maker.py:464][INFO] https://wikidocs.net/blog/@ironowl/9698/	LLM의 동작 원리가 만들어내는 인지의 반향실	study/wikidocs_blog/html/75a8653.html
+[2026-03-23 15:54:29,283][feed_maker.py:512][DEBUG] is_differernt=True
+[2026-03-23 15:54:29,283][feed_maker.py:520][DEBUG] renaming 'study/wikidocs_blog/wikidocs_blog.xml.20260323' to 'study/wikidocs_blog/wikidocs_blog.xml'
+[2026-03-23 15:54:29,283][uploader.py:19][DEBUG] # upload(rss_file_path='study/wikidocs_blog/wikidocs_blog.xml'
+[2026-03-23 15:54:29,283][uploader.py:27][INFO] new rss file exists
+[2026-03-23 15:54:29,283][uploader.py:36][INFO] old rss file doesn't exist
+[2026-03-23 15:54:29,284][uploader.py:40][INFO] upload success!
+[2026-03-23 15:54:29,284][uploader.py:42][INFO] replace old rss file with new rss file
+[2026-03-23 15:54:29,284][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='study/wikidocs_blog')
+[2026-03-23 15:54:29,285][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-23 15:54:29,285][run.py:84][INFO] # Running time analysis
+[2026-03-23 15:54:29,285][run.py:85][INFO] * Start time: 2026-03-23T06:54:21+00:00
+[2026-03-23 15:54:29,285][run.py:86][INFO] * End time: 2026-03-23T06:54:29+00:00
+[2026-03-23 15:54:29,285][run.py:87][INFO] * Elapsed time: 8.081517
+[2026-03-23 15:54:29,285][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=study/wikidocs_blog, new_feed_dir_path=)
+[2026-03-23 15:54:29,285][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 15:54:29,293][feed_manager.py:71][INFO] * The removing of config info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:54:29,293][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 15:54:29,295][feed_manager.py:197][INFO] * The removing of rss info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:54:29,296][feed_manager.py:296][INFO] * The removing of public feed info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:54:29,296][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 15:54:29,299][feed_manager.py:399][INFO] * The removing of progress info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:54:29,300][access_log_manager.py:56][INFO] * The removing of access info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:54:29,300][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='study/wikidocs_blog')
+[2026-03-23 15:54:29,303][html_file_manager.py:143][INFO] * The removing of some html files in 'study/wikidocs_blog' is done
+[2026-03-23 15:54:29,308][feed_manager.py:148][INFO] * The adding of config info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:54:29,312][feed_manager.py:242][INFO] * The adding of rss info of feed 'wikidocs_blog' is done.
+[2026-03-23 15:54:29,317][feed_manager.py:342][INFO] * The adding of public feed info of feed 'wikidocs_blog' is done. 5 items
+[2026-03-23 15:54:29,320][feed_manager.py:497][INFO] * The adding of progress info of feed 'wikidocs_blog' is done. 1 items
+[2026-03-23 15:54:29,320][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 15:54:29,339][html_file_manager.py:178][INFO] * The adding of some html files in 'study/wikidocs_blog' is done. 20 items
+[2026-03-23 15:54:29,339][run.py:234][INFO] # Checking problems and making report
+[2026-03-23 17:36:38,613][run.py:202][DEBUG] # main()
+[2026-03-23 17:36:38,613][run.py:171][DEBUG] # determine_options()
+[2026-03-23 17:36:38,613][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-23 17:36:38,613][run.py:212][DEBUG] study/wikidocs_blog
+[2026-03-23 17:36:38,613][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-23 17:36:38,654][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 17:36:38,654][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-23 17:36:38,654][run.py:40][DEBUG] # make_single_feed(feed_dir_path='study/wikidocs_blog', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-23 17:36:38,654][run.py:55][INFO] * study/wikidocs_blog
+[2026-03-23 17:36:38,654][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-23 17:36:38,654][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-23 17:36:38,654][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='study/wikidocs_blog', feed_img_dir_path='img/wikidocs_blog')
+[2026-03-23 17:36:38,654][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-23 17:36:38,654][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 17:36:38,655][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-23 17:36:38,655][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/3ac1787.html')
+[2026-03-23 17:36:38,656][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/b132964.html')
+[2026-03-23 17:36:38,657][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/f68fe8a.html')
+[2026-03-23 17:36:38,658][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/3826756.html')
+[2026-03-23 17:36:38,659][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/4c331be.html')
+[2026-03-23 17:36:38,660][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/3ff475f.html')
+[2026-03-23 17:36:38,661][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/7dfa2d7.html')
+[2026-03-23 17:36:38,662][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/4053041.html')
+[2026-03-23 17:36:38,662][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/8ae30d5.html')
+[2026-03-23 17:36:38,663][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/0c0372f.html')
+[2026-03-23 17:36:38,664][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/daf06a4.html')
+[2026-03-23 17:36:38,664][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/60b3e0e.html')
+[2026-03-23 17:36:38,665][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/75a8653.html')
+[2026-03-23 17:36:38,666][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/2e1d9ff.html')
+[2026-03-23 17:36:38,667][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/4a7e87f.html')
+[2026-03-23 17:36:38,667][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/bae3e35.html')
+[2026-03-23 17:36:38,668][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/321c57f.html')
+[2026-03-23 17:36:38,669][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/28965d5.html')
+[2026-03-23 17:36:38,670][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/8f7c28f.html')
+[2026-03-23 17:36:38,671][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/c26e709.html')
+[2026-03-23 17:36:38,672][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/8b753bd.html')
+[2026-03-23 17:36:38,673][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/5ecae5c.html')
+[2026-03-23 17:36:38,674][feed_maker_util.py:750][DEBUG] # get_incomplete_image_list(html_file_path='study/wikidocs_blog/html/a6b8c62.html')
+[2026-03-23 17:36:38,674][run.py:73][INFO] * making feed file 'study/wikidocs_blog/wikidocs_blog.xml'
+[2026-03-23 17:36:38,674][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=study/wikidocs_blog, do_collect_by_force=, do_collect_only=, rss_file_path=study/wikidocs_blog/wikidocs_blog.xml)
+[2026-03-23 17:36:38,674][feed_maker.py:529][DEBUG] # make()
+[2026-03-23 17:36:38,674][feed_maker.py:530][INFO] =========================================================
+[2026-03-23 17:36:38,674][feed_maker.py:531][INFO] study/wikidocs_blog
+[2026-03-23 17:36:38,675][feed_maker.py:532][INFO] =========================================================
+[2026-03-23 17:36:38,675][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 17:36:38,675][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-23 17:36:38,675][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-23 17:36:38,675][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-23 17:36:38,675][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': './capture_item_link_title.py -n 20', 'sort_field_pattern': '/(\\d+)/', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 5.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://wikidocs.net/blog/main/'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-23 17:36:38,675][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': [], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-23 17:36:38,675][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': '', 'rss_title': '위키독스 블로그', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) wikidocs.net. All Rights Reserved', 'rss_link': 'https://terzeron.com/wikidocs_blog.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-23 17:36:38,675][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-23 17:36:38,675][feed_maker.py:173][INFO] study/wikidocs_blog/newlist/20260323.txt
+[2026-03-23 17:36:38,675][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-23 17:36:38,675][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=study/wikidocs_blog, collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': './capture_item_link_title.py -n 20', 'sort_field_pattern': '/(\\d+)/', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 5.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://wikidocs.net/blog/main/'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=study/wikidocs_blog/newlist/20260323.txt
+[2026-03-23 17:36:38,675][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-23 17:36:38,675][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-23 17:36:38,675][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-23 17:36:38,675][crawler.py:190][DEBUG] # Crawler(dir_path=study/wikidocs_blog, render_js=True, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-23 17:36:38,675][headless_browser.py:161][DEBUG] # HeadlessBrowser(dir_path=study/wikidocs_blog, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False, timeout=60)
+[2026-03-23 17:36:38,675][crawler.py:234][DEBUG] # get_option_str()
+[2026-03-23 17:36:38,675][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/study/wikidocs_blog'  --render-js=true --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://wikidocs.net/blog/main/'
+[2026-03-23 17:36:38,675][crawler.py:279][DEBUG] # run(url=https://wikidocs.net/blog/main/, data=None, download_file=None, allow_redirects=True)
+[2026-03-23 17:36:38,675][headless_browser.py:266][DEBUG] # make_request(url=https://wikidocs.net/blog/main/, download_file=None)
+[2026-03-23 17:36:38,684][headless_browser.py:298][DEBUG] Creating new Chrome driver
+[2026-03-23 17:36:39,222][headless_browser.py:327][DEBUG] getting the page 'https://wikidocs.net/blog/main/'
+[2026-03-23 17:36:42,873][headless_browser.py:352][DEBUG] executing some scripts
+[2026-03-23 17:36:42,882][headless_browser.py:358][DEBUG] executing a script for metadata
+[2026-03-23 17:36:42,886][headless_browser.py:387][DEBUG] getting inner html
+[2026-03-23 17:36:42,911][new_list_collector.py:71][DEBUG] cmd=./capture_item_link_title.py -n 20 -f '/home/terzeron/workspace/fma/study/wikidocs_blog'
+[2026-03-23 17:36:42,911][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=./capture_item_link_title.py -n 20 -f '/home/terzeron/workspace/fma/study/wikidocs_blog', dir_path=study/wikidocs_blog, input_data=125454 bytes)
+[2026-03-23 17:36:42,911][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/study/wikidocs_blog/capture_item_link_title.py', '-n', '20', '-f', '/home/terzeron/workspace/fma/study/wikidocs_blog']
+[2026-03-23 17:36:43,030][new_list_collector.py:30][DEBUG] # extract_urls()
+[2026-03-23 17:36:43,031][feed_maker.py:430][DEBUG] # _diff_feeds_and_make_htmls(recent_feed_list=[('https://wikidocs.net/blog/@rishika/9719/', '반도체 호황 속, 글로벌 다이아몬드 슬러리 시장 2032년까지 1억 7,800만 달러 규모 도달 전망', []), ('https://wikidocs.net/blog/@lamsal/9708/', 'InGaAs 포토다이오드 및 어레이 시장: 글로벌 비즈니스 전략 2026–2033', []), ('https://wikidocs.net/blog/@rishika/9705/', '웨이퍼 박화(Thinning) 트렌드에 힘입어 연평균 10%의 성장률을 기록 중인 반도체 시장용 백 그라인딩 테이프', []), ('https://wikidocs.net/blog/@ironowl/9698/', 'LLM의 동작 원리가 만들어내는 인지의 반향실', []), ('https://wikidocs.net/blog/@lamsal/9686/', '디지털 시네마 카메라 시장: 글로벌 동향 및 전망 (2026년~2033년)', []), ('https://wikidocs.net/blog/@rishika/9678/', '과민성 방광(OAB) 환자 증가세에 힘입어, 글로벌 염화트로스피움 시장 2034년까지 4,970만 달러 규모 도달 전망', []), ('https://wikidocs.net/blog/@ChaejjikPT/9669/', '2026년 3월 23일 세계 투자 자산 시장 일일 보고서', []), ('https://wikidocs.net/blog/@jaehong/9603/', 'Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다', []), ('https://wikidocs.net/blog/@jaehong/9602/', 'Deno의 대규모 감원, 그리고 사라진 CEO: 오픈소스 런타임의 비즈니스 모델은 가능한가', []), ('https://wikidocs.net/blog/@jaehong/9601/', 'FFmpeg의 내부를 들여다보다: 라이브러리 API로 직접 만드는 미디어 플레이어', [])], old_feed_list=[('https://wikidocs.net/blog/@rishika/9719/', '반도체 호황 속, 글로벌 다이아몬드 슬러리 시장 2032년까지 1억 7,800만 달러 규모 도달 전망', []), ('https://wikidocs.net/blog/@lamsal/9708/', 'InGaAs 포토다이오드 및 어레이 시장: 글로벌 비즈니스 전략 2026–2033', []), ('https://wikidocs.net/blog/@rishika/9705/', '웨이퍼 박화(Thinning) 트렌드에 힘입어 연평균 10%의 성장률을 기록 중인 반도체 시장용 백 그라인딩 테이프', []), ('https://wikidocs.net/blog/@ironowl/9698/', 'LLM의 동작 원리가 만들어내는 인지의 반향실', []), ('https://wikidocs.net/blog/@lamsal/9686/', '디지털 시네마 카메라 시장: 글로벌 동향 및 전망 (2026년~2033년)', []), ('https://wikidocs.net/blog/@rishika/9678/', '과민성 방광(OAB) 환자 증가세에 힘입어, 글로벌 염화트로스피움 시장 2034년까지 4,970만 달러 규모 도달 전망', []), ('https://wikidocs.net/blog/@ChaejjikPT/9669/', '2026년 3월 23일 세계 투자 자산 시장 일일 보고서', []), ('https://wikidocs.net/blog/@jaehong/9603/', 'Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다', []), ('https://wikidocs.net/blog/@jaehong/9602/', 'Deno의 대규모 감원, 그리고 사라진 CEO: 오픈소스 런타임의 비즈니스 모델은 가능한가', []), ('https://wikidocs.net/blog/@jaehong/9601/', 'FFmpeg의 내부를 들여다보다: 라이브러리 API로 직접 만드는 미디어 플레이어', [])])
+[2026-03-23 17:36:43,031][feed_maker.py:435][INFO] Appending 0 new items to the feed list
+[2026-03-23 17:36:43,031][feed_maker.py:441][INFO] Appending 20 old items to the feed list
+[2026-03-23 17:36:43,031][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@rishika/9719/	반도체 호황 속, 글로벌 다이아몬드 슬러리 시장 2032년까지 1억 7,800만 달러 규모 도달 전망	study/wikidocs_blog/html/0c0372f.html (36297 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,031][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@lamsal/9708/	InGaAs 포토다이오드 및 어레이 시장: 글로벌 비즈니스 전략 2026–2033	study/wikidocs_blog/html/3826756.html (32587 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,031][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@rishika/9705/	웨이퍼 박화(Thinning) 트렌드에 힘입어 연평균 10%의 성장률을 기록 중인 반도체 시장용 백 그라인딩 테이프	study/wikidocs_blog/html/28965d5.html (37804 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,032][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@ironowl/9698/	LLM의 동작 원리가 만들어내는 인지의 반향실	study/wikidocs_blog/html/75a8653.html (50260 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,032][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@lamsal/9686/	디지털 시네마 카메라 시장: 글로벌 동향 및 전망 (2026년~2033년)	study/wikidocs_blog/html/4053041.html (29689 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,032][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@rishika/9678/	과민성 방광(OAB) 환자 증가세에 힘입어, 글로벌 염화트로스피움 시장 2034년까지 4,970만 달러 규모 도달 전망	study/wikidocs_blog/html/f68fe8a.html (44813 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,032][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@ChaejjikPT/9669/	2026년 3월 23일 세계 투자 자산 시장 일일 보고서	study/wikidocs_blog/html/8f7c28f.html (50584 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,033][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@jaehong/9603/	Karpathy의 microgpt: GPT의 본질을 200줄 순수 파이썬으로 증류하다	study/wikidocs_blog/html/bae3e35.html (54726 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,033][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@jaehong/9602/	Deno의 대규모 감원, 그리고 사라진 CEO: 오픈소스 런타임의 비즈니스 모델은 가능한가	study/wikidocs_blog/html/8b753bd.html (54504 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,033][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@jaehong/9601/	FFmpeg의 내부를 들여다보다: 라이브러리 API로 직접 만드는 미디어 플레이어	study/wikidocs_blog/html/5ecae5c.html (52819 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,033][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@edwin/9571/	알라딘 중고도서 묶음배송 검색 서비스 오픈! 🎊	study/wikidocs_blog/html/c26e709.html (45937 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,034][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@wilson_lim/9570/	인생을 즐기려면 먼저 체력부터: 마음을 살리는 건강관리의 기술	study/wikidocs_blog/html/8ae30d5.html (36488 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,034][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@easyeng/9552/	AI Agent 설계 + iTop/GLPI 연동 + 자동조치 Runbook ==&gt; AI Agent 구축 방안	study/wikidocs_blog/html/3ff475f.html (47409 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,034][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@easyeng/9551/	AI Agent 도입 ITSM 아키텍처 = AIOps + Agent	study/wikidocs_blog/html/4c331be.html (45447 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,034][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@easyeng/9546/	ITSM, Docker, K8s, 비용 최적화하는 MSP/멀티테넌트 구조	study/wikidocs_blog/html/3ac1787.html (47248 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,034][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@techtips/9512/	SharePoint 목록을 다른 사이트로 마이그레이션하는 방법	study/wikidocs_blog/html/60b3e0e.html (31599 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,034][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@eml_to_readable/9500/	EML을 읽을 수 있는 형식으로 변환하는 방법	study/wikidocs_blog/html/2e1d9ff.html (31141 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,035][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@magicslides/9498/	PPT에 비디오 추가하는 방법: 단계별 완벽 가이드	study/wikidocs_blog/html/321c57f.html (30802 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,035][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@ianpause/9483/	답안냄 연작의 사고과정으로 고려대 생기부를 설계하는 방법	study/wikidocs_blog/html/b132964.html (42954 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,035][feed_maker.py:221][INFO] Old: https://wikidocs.net/blog/@philmartincollins/9469/	Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드	study/wikidocs_blog/html/4a7e87f.html (30255 bytes > 359 bytes of template)
+[2026-03-23 17:36:43,035][feed_maker.py:448][DEBUG] # generate_rss_feed()
+[2026-03-23 17:36:43,035][feed_maker.py:458][DEBUG] rss_file_path=study/wikidocs_blog/wikidocs_blog.xml, temp_rss_file_path=study/wikidocs_blog/wikidocs_blog.xml.20260323, old_rss_file_path=study/wikidocs_blog/wikidocs_blog.xml.old
+[2026-03-23 17:36:43,035][feed_maker.py:460][INFO] Generating rss feed file...
+[2026-03-23 17:36:43,035][feed_maker.py:464][INFO] https://wikidocs.net/blog/@lamsal/9686/	디지털 시네마 카메라 시장: 글로벌 동향 및 전망 (2026년~2033년)	study/wikidocs_blog/html/4053041.html
+[2026-03-23 17:36:43,035][feed_maker.py:464][INFO] https://wikidocs.net/blog/@ironowl/9698/	LLM의 동작 원리가 만들어내는 인지의 반향실	study/wikidocs_blog/html/75a8653.html
+[2026-03-23 17:36:43,036][feed_maker.py:464][INFO] https://wikidocs.net/blog/@rishika/9705/	웨이퍼 박화(Thinning) 트렌드에 힘입어 연평균 10%의 성장률을 기록 중인 반도체 시장용 백 그라인딩 테이프	study/wikidocs_blog/html/28965d5.html
+[2026-03-23 17:36:43,036][feed_maker.py:464][INFO] https://wikidocs.net/blog/@lamsal/9708/	InGaAs 포토다이오드 및 어레이 시장: 글로벌 비즈니스 전략 2026–2033	study/wikidocs_blog/html/3826756.html
+[2026-03-23 17:36:43,036][feed_maker.py:464][INFO] https://wikidocs.net/blog/@rishika/9719/	반도체 호황 속, 글로벌 다이아몬드 슬러리 시장 2032년까지 1억 7,800만 달러 규모 도달 전망	study/wikidocs_blog/html/0c0372f.html
+[2026-03-23 17:36:43,053][feed_maker.py:512][DEBUG] is_differernt=False
+[2026-03-23 17:36:43,053][uploader.py:19][DEBUG] # upload(rss_file_path='study/wikidocs_blog/wikidocs_blog.xml'
+[2026-03-23 17:36:43,053][uploader.py:27][INFO] new rss file exists
+[2026-03-23 17:36:43,065][uploader.py:32][WARNING] Warning: upload skipped, no change from old rss file
+[2026-03-23 17:36:43,065][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='study/wikidocs_blog')
+[2026-03-23 17:36:43,065][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-23 17:36:43,065][run.py:84][INFO] # Running time analysis
+[2026-03-23 17:36:43,065][run.py:85][INFO] * Start time: 2026-03-23T08:36:38+00:00
+[2026-03-23 17:36:43,065][run.py:86][INFO] * End time: 2026-03-23T08:36:43+00:00
+[2026-03-23 17:36:43,065][run.py:87][INFO] * Elapsed time: 4.410694
+[2026-03-23 17:36:43,065][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=study/wikidocs_blog, new_feed_dir_path=)
+[2026-03-23 17:36:43,065][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 17:36:43,070][feed_manager.py:71][INFO] * The removing of config info of feed 'wikidocs_blog' is done.
+[2026-03-23 17:36:43,070][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 17:36:43,072][feed_manager.py:197][INFO] * The removing of rss info of feed 'wikidocs_blog' is done.
+[2026-03-23 17:36:43,073][feed_manager.py:296][INFO] * The removing of public feed info of feed 'wikidocs_blog' is done.
+[2026-03-23 17:36:43,075][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='study/wikidocs_blog', do_remove_file=False)
+[2026-03-23 17:36:43,078][feed_manager.py:399][INFO] * The removing of progress info of feed 'wikidocs_blog' is done.
+[2026-03-23 17:36:43,081][access_log_manager.py:56][INFO] * The removing of access info of feed 'wikidocs_blog' is done.
+[2026-03-23 17:36:43,081][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='study/wikidocs_blog')
+[2026-03-23 17:36:43,084][html_file_manager.py:143][INFO] * The removing of some html files in 'study/wikidocs_blog' is done
+[2026-03-23 17:36:43,088][feed_manager.py:148][INFO] * The adding of config info of feed 'wikidocs_blog' is done.
+[2026-03-23 17:36:43,091][feed_manager.py:242][INFO] * The adding of rss info of feed 'wikidocs_blog' is done.
+[2026-03-23 17:36:43,095][feed_manager.py:342][INFO] * The adding of public feed info of feed 'wikidocs_blog' is done. 5 items
+[2026-03-23 17:36:43,097][feed_manager.py:497][INFO] * The adding of progress info of feed 'wikidocs_blog' is done. 1 items
+[2026-03-23 17:36:43,097][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=study/wikidocs_blog)
+[2026-03-23 17:36:43,111][html_file_manager.py:178][INFO] * The adding of some html files in 'study/wikidocs_blog' is done. 23 items
+[2026-03-23 17:36:43,111][run.py:234][INFO] # Checking problems and making report

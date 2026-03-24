@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드">
+    <meta property="og:type" content="Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드">
+    <meta property="og:title" content="Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드">
+    <meta property="og:description" content="Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/9469/How_to_Delete_Duplicate_MP4_Files_on_Mac.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@philmartincollins/9469/">
+
+        
+    <title>Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드
+        - Phil Martin
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@philmartincollins/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @philmartincollins
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 19일 9:25 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@philmartincollins/?tag=4056"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            중복
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@philmartincollins/?tag=4055"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Mp4
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@philmartincollins/?tag=4054"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            파일
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>개요 - Mac에서 중복된 MP4 동영상 몇 개만 찾아 삭제하는 방법을 알아본 적이 있다면, 이 글이 바로 여러분이 찾던 내용임을 알게 될 것입니다. 다음은 “Mac에서 중복된 MP4 파일을 어떻게 삭제하나요?”라는 질문을 상세히 다룬 단계별 가이드입니다.</p>
+<p>현재의 디지털 과잉 시대에 동영상 파일은 이미 우리 엔터테인먼트 생활에서 가장 흔하거나 필수적인 요소 중 하나가 되었습니다. 그래서 우리는 소중한 추억을 담을 폴더를 하나 만들지만, 어느새 그 폴더는 통제 불능 상태가 되어버리곤 합니다. 마치 아이들이 의자 놀이를 하다 보면 결국 모든 참가자가 한 자리에 모이게 되는 것과 같습니다. 이 과정에서 무심코 중복 파일을 다운로드하게 되고, 이는 파일 구조를 혼란스럽게 만들어 결국 대혼란을 초래합니다.</p>
+<p>게다가 특정 동영상 파일을 찾으려 할 때면 일이 더 어려워질 수 있습니다. 따라서 이러한 문제를 해결하기 위해, MP4 동영상을 한 번에 정리할 수 있는 수동 및 자동 방법을 추천해 드립니다. 때로는 JPEG, PNG, GIF 등 다른 파일 형식을 마주칠 수도 있습니다. 이러한 상황에 대비해, 저희는 다음과 같은 가이드를 제공합니다 <a href="https://www.systoolsgroup.com/how-to/delete-duplicate-photos/">delete duplicate photos on PC</a>?”</p>
+<h2 id="mac-mp4">Mac에 중복 MP4 파일을 보관할 때 고려해야 할 사항</h2>
+<p>하지만 Mac OS에서 시간과 비용을 절약하고 싶다면:</p>
+<p>중복 파일은 Mac의 소중한 디스크 공간을 차지합니다.<br />
+중복 파일을 제거하는 별도의 지침이 반드시 필요합니다.<br />
+중복 파일로 인해 백업 용량이 필요 이상으로 커집니다.<br />
+중복 파일이 있으면 원본 MP4 파일이 어느 것인지 구분할 수 없습니다. 시간이 지날수록 문제는 악화되어 결국 모든 파일이 손상되거나 사라질 수 있습니다!<br />
+시스템에 장애가 발생해 복구되지 않을 경우, MP4 파일이 여전히 정상인지 어떻게 확신할 수 있겠습니까?<br />
+중복 파일이 있으면 MP4 파일 검색 속도가 훨씬 느려집니다.<br />
+수동 작업 시 오류가 발생하거나 MP4 파일이 사라질 수 있습니다.</p>
+<h2 id="mac-os-mp4">Mac OS에서 파인더를 통해 중복 MP4 파일을 삭제하는 방법은?</h2>
+<p>중복 파일을 <a href="https://www.systoolsgroup.com/how-to/delete-duplicate-files/">remove duplicate files</a>: 파인더 앱 사용</p>
+<p>파인더에서 앱 디렉터리를 탐색하다 보면 ‘MP4 파일’이라는 이름의 폴더가 보일 것입니다(앞서 설명한 대로 H.264 MP4 변환 소프트웨어를 설치했다면, 이 폴더는 ‘응용 프로그램’ 폴더에서 찾을 수 있습니다).</p>
+<p>동영상 저장 폴더에서 ‘목록’ 보기로 전환한 후 이름이나 크기 순으로 정렬하세요.</p>
+<p>각 파일을 하나씩 확인하며, 페이지마다 반복되는 동일한 내용의 복사본을 그냥 넘기지 말고 같은 날짜의 MP4 파일을 선택하세요. (어떤 파일 하나를 예시로 들어보겠습니다.)</p>
+<p>이제 Command 키를 누른 상태에서 중복 파일을 마우스 오른쪽 버튼으로 클릭하고 항목 메뉴에서 “휴지통으로 이동”을 선택하세요.</p>
+<h2 id="macos">터미널을 통해 macOS에서 중복 멀티미디어 파일을 찾고 제거하는 방법은 무엇인가요?</h2>
+<p>미치기 전에 정신 차리기: 미디어 라이브러리에서 동일한 내용을 가진 MP4 파일을 미친 듯이 찾아야 한다면, 여기 기술적인 단계가 나와 있습니다.</p>
+<p>아래 단계를 실행하려면 터미널 명령어에 대한 기본적인 실무 지식이 필요합니다.</p>
+<p>이 터미널을 사용하세요 - ‘응용 프로그램’ → ‘유틸리티’ → ‘터미널’로 이동합니다.</p>
+<p>비디오 폴더로 이동 - ‘cd’ 명령어를 사용하여 비디오 폴더 안으로 들어갑니다(예: open-terminal-cd).</p>
+<p>중복 파일 찾기 - 다음 명령어를 입력하세요:</p>
+<p>find. -type f -print0 | xargs -0 md5sum |sort | uniq -w 32 -d | cut -c 33 -</p>
+<p>중복 파일 제거 - 직접 수행하세요: ‘rm’ 명령어를 사용하여 중복 파일을 찾아 이동합니다(예: rm / 중복 / 비디오 / 경로).</p>
+<p>주의 사항: 파일에 손상을 입히거나(혹은, 끔찍하게도 되돌릴 수 없는) 변경을 가하기 전에는 항상 파일을 백업하십시오.</p>
+<p>터미널 명령어로 삭제된 파일은 복구할 수 없습니다.</p>
+<h2 id="mac-mp4_1">Mac의 ‘사진’ 앱으로 중복 MP4 파일을 삭제하는 방법은?</h2>
+<p>사용자들은 이 기능이 그다지 매력적이지 않다고 생각하는 편입니다. ‘사진’ 앱은 주로 사진을 관리하기 위한 것이지만, 사실 동영상 관리에도 더 편리합니다. 물론 동영상 관리에도 충분히 활용할 수 있습니다!</p>
+<p>그럼, 어떻게 해야 할까요?</p>
+<p>먼저, ‘사진’ 앱을 실행해 봅시다.</p>
+<p>Mac에서 ‘사진’ 앱을 엽니다.</p>
+<p>MP4 파일을 하드 드라이브로 가져오기</p>
+<p>MP4 파일을 넣으려면 드래그하기만 하면 됩니다. 아직 ‘사진’ 라이브러리에 없는 MP4 파일의 경우 &#x27;가져오기&#x27;를 사용하세요.</p>
+<p>스마트 앨범 만들기</p>
+<p>메뉴 막대에서 &#x27;파일&#x27;을 클릭하세요. 드롭다운 메뉴에서 &#x27;새 스마트 앨범...&#x27;을 선택하세요.</p>
+<p>파일 이름이나 날짜와 같은 속성 기준 설정</p>
+<p>그러면 스마트 앨범이 해당 조건에 맞는 MP4 파일을 필터링하여 중복 파일이 있는 위치를 보여줍니다.</p>
+<p>스마트 앨범 탐색하기</p>
+<p>스마트 앨범에서 이름이 동일한 MP4 파일의 중복본을 검색하세요.</p>
+<p>중복 MP4 파일 삭제하기</p>
+<p>스마트 앨범 내에서 중복 파일을 선택하고 “삭제”를 누르세요. 그런 다음 확인을 누르세요.</p>
+<p>최근 삭제된 항목 제거</p>
+<p>삭제된 MP4 파일은 “최근 삭제된 항목”으로 이동합니다. 해당 폴더로 이동하여 모든 항목을 선택한 후 “모든 항목 제거” 또는 “복원”을 클릭하세요.</p>
+<h2 id="mp4">중복 MP4 파일을 제거하는 무료 솔루션의 단점</h2>
+<p>중복 MP4 파일을 정리하려는 사용자가 직면하는 몇 가지 문제점은 다음과 같습니다.</p>
+<p>일부 방법은 파일을 실제로 삭제해야 하는 반면, 다른 방법은 컴퓨터 성능을 다양한 수준으로 저하시키기도 합니다.<br />
+무료 도구를 사용할 경우 실수로 파일을 삭제하여 데이터 손실이 발생하기 쉽습니다.<br />
+수동 삭제 시 최적의 저장 공간을 확보하지 못할 수도 있습니다.<br />
+대용량이고 지속적으로 증가하는 데이터 세트의 경우 이러한 단순한 방법을 사용하는 것은 불가능합니다.<br />
+파일 명명 규칙은 정확성을 제한하지만 여전히 널리 사용되고 있습니다.<br />
+무료 중복 제거 도구는 정기적인 조정이 필요합니다.<br />
+수동 프로세스의 위험 요소로는 보안 취약점이 포함됩니다.<br />
+따라서 정상 버전과 중복 파일을 구별하기가 매우 어렵습니다.<br />
+자동화 없이는 규정 준수가 어렵습니다.<br />
+현재의 방법들은 중복 제거에 있어 까다로운 요구 사항을 가지고 있습니다.</p>
+<h2 id="macos-mp4-">macOS에서 중복 MP4 파일을 제거하는 방법 - 가장 이상적인 방법</h2>
+<p>현재 몇 가지 단점이 있지만, <a href="https://www.systoolsgroup.com/duplicates-finder/">SysTools Duplicate File Finder</a> 소프트웨어를 컴퓨터의 시스템 디렉터리에 설치하는 것입니다. 이를 통해 모든 것이 완전히 정리된 후, 외부 요소의 간섭 없이 적절히 선택된 시간대에 자체 시스템을 실행할 수 있게 됩니다.</p>
+<p>이 도구의 장점을 활용하면, 몇 번의 마우스 클릭만으로 중복 MP4 파일을 제거할 수 있습니다. 지능형 파일 스캔 엔진: 빠른 스캔<br />
+재귀적 스캔 옵션<br />
+중복 동영상 파일 이동 또는 삭제<br />
+70가지 이상의 파일 형식 스캔 (예: mp3, mp4, png, jpg)<br />
+시각적으로 동일한 이미지 감지<br />
+스캔 후 사용자 데이터는 그대로 유지됩니다.<br />
+지금 무료 버전을 사용해 보세요!</p>
+<p>Mac에서 중복 .mp4 파일을 스캔하고 제거하는 중요한 단계는 다음과 같습니다:</p>
+<p>중복 동영상 파일 찾기 도구를 다운로드하여 설치하세요.</p>
+<p>“폴더 추가”를 클릭하여 컴퓨터에서 파일이 있는 위치를 선택하세요.</p>
+<p>대화 상자에서 도구가 나중에 처리할 스캔 대상(파일 형식: MP4, AVI 등)에 대한 입력 매개변수를 설정해야 합니다. “계속”을 클릭하세요.</p>
+<h2 id="_1">결론</h2>
+<p>이 내용을 통해 macOS Ventura에서 MP4 파일을 삭제하는 방법에 대해 대략적인 이해를 하셨을 것입니다. macOS Ventura 및 이전 버전을 사용하는 시스템에서 중복된 동영상 클립을 제거하는 데는 수동 방식과 전문적인 솔루션이 있습니다. 수동 방식은 무료이지만 전문적인 기술이 필요합니다. 바로 이럴 때 전용 프로그램이 유용합니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 19일 9:25 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@philmartincollins/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@philmartincollins/">@philmartincollins</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1408/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1408/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9469/add_comment/"
+                      method="post"
+                      hx-post="/blog/9469/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="xjGA1YvxLA04MnDTKaYX0dXSZ5TOy01LWEkTIpBNUuKntBSFERJ1cRtrdKfyMliw">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">20</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9469"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9469"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9469/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=4a7e87f'/>

@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="Apple Mail 저장 용량 제한">
+    <meta property="og:type" content="Apple Mail 저장 용량 제한">
+    <meta property="og:title" content="Apple Mail 저장 용량 제한">
+    <meta property="og:description" content="Apple Mail 저장 용량 제한">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/9108/Gemini_Generated_Image_5mc4m85mc4m85mc4.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@techtips/9108/">
+
+        
+    <title>Apple Mail 저장 용량 제한
+        - techtips
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+                <a href="/blog/@techtips/9512/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">Apple Mail 저장 용량 제한</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@techtips/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @techtips
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 12일 9:50 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>Apple Mail을 매일 사용한다면 저장 공간이 빠르게 부족해질 수 있습니다. 특히 첨부 파일, 보관된 이메일, 그리고 여러 계정 동기화가 공간을 차지하기 시작하면 저장 공간 문제가 발생할 수 있습니다. 저는 여러 기기와 이메일 서비스에서 Apple Mail을 사용해 왔으며, 가장 자주 받는 질문 중 하나는 다음과 같습니다.</p>
+<p>“Apple Mail 저장 용량 제한은 얼마인가요?”</p>
+<p>간단한 답은 Apple Mail 자체에는 고정된 저장 용량 제한이 없다는 것입니다. 대신 저장 용량은 Apple Mail에 연결된 이메일 서비스(iCloud, Gmail, Outlook 등)에 따라 달라집니다. 또한 로컬 기기 저장 공간과 메일 캐시도 영향을 줄 수 있습니다.</p>
+<p>이 가이드에서는 Apple Mail 저장 방식, 다양한 이메일 서비스의 저장 용량 제한, 그리고 제가 실제로 사용하는 저장 공간 관리 방법을 설명하겠습니다.</p>
+<p>Apple Mail이란 무엇인가?</p>
+<p>Apple Mail은 iPhone, iPad, Mac과 같은 Apple 기기에 기본으로 제공되는 이메일 애플리케이션입니다. 이 앱은 메일 클라이언트로 작동하며, 이메일 서비스를 연결하여 해당 계정의 메시지를 표시합니다.</p>
+<p>Apple Mail은 이메일을 자체적으로 저장하기보다는 다음과 같은 이메일 서비스와 데이터를 동기화합니다.</p>
+<p>iCloud Mail</p>
+<p>Gmail</p>
+<p>Microsoft Outlook</p>
+<p>Yahoo Mail 및 기타 IMAP/POP 계정</p>
+<p>이러한 구조 때문에 Apple Mail 저장 용량 제한은 애플리케이션 자체가 아니라 연결된 이메일 서비스에 의해 결정됩니다.</p>
+<p>Apple Mail 저장 용량 제한 설명</p>
+<p>앞서 언급했듯이 Apple Mail은 자체적인 고정 저장 용량 제한을 설정하지 않습니다. 대신 저장 공간은 이메일 서비스 제공자 또는 기기 저장 공간에 의해 결정됩니다.</p>
+<p>아래는 Apple Mail과 함께 사용되는 대표적인 이메일 서비스의 저장 용량 제한입니다.</p>
+<ol>
+<li>iCloud Mail 저장 용량 제한</li>
+</ol>
+<p>Apple Mail을 iCloud 계정과 연결하면 저장 용량은 iCloud 요금제에 따라 결정됩니다.</p>
+<p>일반적인 저장 용량은 다음과 같습니다.</p>
+<p>무료 요금제: 총 5GB 저장 공간</p>
+<p>iCloud+ 50GB 요금제</p>
+<p>iCloud+ 200GB 요금제</p>
+<p>iCloud+ 2TB 요금제</p>
+<p>이 저장 공간은 다음과 같은 Apple 서비스와 공유됩니다.</p>
+<p>iCloud Mail</p>
+<p>사진(Photos)</p>
+<p>백업(Backups)</p>
+<p>iCloud Drive</p>
+<p>따라서 iCloud 저장 공간이 가득 차면 Apple Mail에서 새 이메일을 받을 수 없게 될 수 있습니다.</p>
+<ol>
+<li>Gmail 저장 용량 제한</li>
+</ol>
+<p>Apple Mail이 Gmail 계정과 연결되어 있다면 저장 용량은 Gmail의 저장 한도를 따릅니다.</p>
+<p>Gmail은 다음과 같은 저장 공간을 제공합니다.</p>
+<p>15GB 무료 저장 공간 (다음 서비스와 공유)</p>
+<p>Gmail</p>
+<p>Google Drive</p>
+<p>Google Photos</p>
+<p>유료 Google One 요금제를 사용하면 저장 공간이 다음과 같이 늘어납니다.</p>
+<p>100GB</p>
+<p>200GB</p>
+<p>그 이상</p>
+<p>Gmail 저장 공간이 가득 차면 다음과 같은 문제가 발생할 수 있습니다.</p>
+<p>이메일 송수신 중단</p>
+<p>첨부 파일 업로드 실패</p>
+<p>Apple Mail 동기화 오류</p>
+<ol>
+<li>Outlook 저장 용량 제한</li>
+</ol>
+<p>Apple Mail을 Outlook 계정과 연결하면 저장 공간은 Microsoft 계정 유형에 따라 달라집니다.</p>
+<p>Microsoft Outlook의 일반적인 저장 용량은 다음과 같습니다.</p>
+<p>Outlook.com 무료 계정: 15GB 메일 저장 공간</p>
+<p>Microsoft 365 구독자: 50GB 메일 저장 공간<br />
+대용량 첨부 파일은 저장 공간을 빠르게 소모할 수 있습니다.</p>
+<p>Mac에서의 Apple Mail 로컬 저장 공간</p>
+<p>메일 서버가 기본 메일함 크기를 관리하지만, Apple Mail은 기기에도 일부 데이터를 로컬로 저장합니다.</p>
+<p>여기에는 다음이 포함됩니다.</p>
+<p>이메일 캐시</p>
+<p>다운로드된 첨부 파일</p>
+<p>메일 인덱스</p>
+<p>오프라인 메시지</p>
+<p>macOS에서는 Apple Mail이 수 기가바이트 이상의 로컬 데이터를 저장하는 경우도 자주 볼 수 있습니다.</p>
+<p>대표적인 저장 위치는 다음과 같습니다.</p>
+<p>~/Library/Mail/</p>
+<p>다음과 같은 경우 이 폴더의 크기가 크게 증가할 수 있습니다.</p>
+<p>많은 첨부 파일 다운로드</p>
+<p>오프라인 메일함 동기화</p>
+<p>로컬 보관 메시지 증가</p>
+<p>Apple Mail 저장 공간 사용량 확인 방법</p>
+<p>저장 공간 문제가 의심될 때 저는 다음과 같은 간단한 방법으로 확인합니다.</p>
+<p>iPhone 또는 iPad에서</p>
+<p>설정(Settings) 열기</p>
+<p>Apple ID 선택</p>
+<p>iCloud 선택</p>
+<p>저장 공간 관리(Manage Storage) 선택</p>
+<p>여기에서 Mail이 사용 중인 저장 공간을 확인할 수 있습니다.</p>
+<p>Mac에서</p>
+<p>Apple 메뉴 클릭</p>
+<p>시스템 설정(System Settings) 선택</p>
+<p>Apple ID 열기</p>
+<p>iCloud 클릭</p>
+<p>저장 공간 관리(Manage Storage) 선택</p>
+<p>여기서 iCloud Mail이 얼마나 많은 저장 공간을 사용하고 있는지 확인할 수 있습니다.</p>
+<p>Apple Mail 저장 공간이 가득 찼을 때 나타나는 증상</p>
+<p>제 경험상 저장 공간 문제가 발생하면 다음과 같은 경고 신호가 나타납니다.</p>
+<p>이메일 동기화 중단</p>
+<p>이메일 전송 실패</p>
+<p>오류 메시지 표시</p>
+<p>첨부 파일 업로드 실패</p>
+<p>메일함 용량 초과 경고</p>
+<p>이러한 문제는 대부분 이메일 서비스 제공자의 저장 용량 제한에 도달했음을 의미합니다.</p>
+<p>이메일 로컬 백업으로 Apple Mail 저장 공간 확장하기</p>
+<p>앞서 설명했듯이 Apple Mail의 저장 용량 제한은 iCloud Mail, Gmail 또는 Microsoft Outlook과 같은 연결된 이메일 서비스에 따라 결정됩니다. 메일함이 용량 한도에 도달하면 새 이메일 송수신이 중단될 수 있습니다.</p>
+<p>이런 상황에서 제가 추천하는 실용적인 방법은 이메일을 로컬로 백업한 후 서버에서 삭제하여 저장 공간을 확보하는 것입니다.</p>
+<p>이를 위한 신뢰할 수 있는 방법 중 하나가<strong> SysTools</strong> <a href="https://www.systoolsgroup.com/imap/backup/"><strong>IMAP Backup Wizard</strong></a>을 사용하는 것입니다<br />
+**<br />
+Apple Mail은 IMAP 기반 계정과 함께 작동합니다. 이는 이메일이 메일 서버에 저장되고 메일 클라이언트와 동기화된다는 의미입니다. 시간이 지나면서 메일함 크기는 다음과 같은 이유로 증가합니다.</p>
+<p>대용량 첨부 파일</p>
+<p>보관된 이메일</p>
+<p>오래된 이메일 대화</p>
+<p>여러 폴더 동기화</p>
+<p>이때 <a href="https://www.systoolsgroup.com/mail-backup/"><strong>Email Backup Software</strong></a>를 사용하면 이메일을 안전하게 로컬 시스템으로 내보내고 저장할 수 있습니다. 백업이 완료된 후에는 중요한 데이터를 잃지 않고 서버 메일함에서 오래된 이메일을 삭제할 수 있습니다.</p>
+<p>이 방법은 Apple Mail 계정의 실제 사용 가능한 저장 공간을 효과적으로 확장하는 데 도움이 됩니다.</p>
+<p>Apple Mail 저장 공간을 효율적으로 관리하는 방법</p>
+<p>저장 공간 문제를 예방하기 위해 저는 다음과 같은 방법을 사용합니다.</p>
+<ol>
+<li>대용량 첨부 파일 삭제</li>
+</ol>
+<p>첨부 파일은 저장 공간을 가장 많이 차지합니다.</p>
+<p>정기적으로 대용량 파일이 포함된 이메일을 검색하고 필요 없는 파일을 삭제합니다.</p>
+<ol>
+<li>휴지통 비우기</li>
+</ol>
+<p>휴지통에 있는 이메일도 완전히 삭제하기 전까지는 저장 공간을 차지합니다.</p>
+<p>저는 다음 폴더를 정기적으로 정리합니다.</p>
+<p>휴지통 (Trash)</p>
+<p>스팸 (Spam)</p>
+<p>보관함 (Archive)</p>
+<ol>
+<li>오래된 이메일 보관</li>
+</ol>
+<p>수천 개의 이메일을 받은 편지함에 보관하기보다는 오래된 메시지를 보관 폴더로 이동합니다.</p>
+<p>이렇게 하면 메일함 정리가 쉬워지고 성능도 향상됩니다.</p>
+<ol>
+<li>사용하지 않는 메일 계정 제거</li>
+</ol>
+<p>Apple Mail이 여러 이메일 서비스와 연결되어 있다면 사용하지 않는 계정도 저장 공간을 사용할 수 있습니다.</p>
+<p>이 계정을 제거하면 동기화 및 캐시 데이터가 줄어듭니다.</p>
+<ol>
+<li>클라우드 저장 공간 업그레이드</li>
+</ol>
+<p>때로는 가장 간단한 해결 방법이 저장 공간 업그레이드입니다.</p>
+<p>예를 들어 다음과 같은 옵션이 있습니다.</p>
+<p>iCloud+ 요금제</p>
+<p>Google One 저장 공간</p>
+<p>Microsoft 365 구독</p>
+<p>이렇게 하면 메일함 용량을 크게 늘릴 수 있습니다.</p>
+<p>마무리</p>
+<p>여러 이메일 서비스를 통해 Apple Mail을 사용해 본 경험에서 얻은 가장 중요한 결론은 다음과 같습니다.</p>
+<p>Apple Mail 자체에는 저장 용량 제한이 없습니다.</p>
+<p>저장 공간은 다음 요소에 따라 달라집니다.</p>
+<p>이메일 제공업체 (iCloud, Gmail, Outlook)</p>
+<p>캐시를 위한 기기 저장 공간</p>
+<p>첨부 파일 크기와 보관된 이메일</p>
+<p>저는 항상 첨부 파일 정리, 보관 메시지 관리, 메일함 용량 모니터링을 정기적으로 수행할 것을 권장합니다.</p>
+<p>적절하게 관리하면 Apple Mail은 수천 개의 이메일도 문제없이 처리할 수 있으며, Apple 사용자에게 가장 안정적인 이메일 클라이언트 중 하나로 계속 활용될 수 있습니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 13일 1:07 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@techtips/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@techtips/">@techtips</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1351/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1351/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9108/add_comment/"
+                      method="post"
+                      hx-post="/blog/9108/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="Yz2qKQ7W9VK5xwBPKUMY4BXCrKj0UderIak9FZdNxN5oZTw5COU4g0loqhLW5phh">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @techtips 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@techtips/9512/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            SharePoint 목록을 다른 사이트로 마이그레이션하는 방법
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 20일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@techtips/9108/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            Apple Mail 저장 용량 제한
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 12일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">42</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9108"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9108"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9108/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=115343f'/>

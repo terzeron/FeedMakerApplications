@@ -1,0 +1,941 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="왜 인공지능은 허상(hallucination)을 만들어낼까?">
+    <meta property="og:type" content="왜 인공지능은 허상(hallucination)을 만들어낼까?">
+    <meta property="og:title" content="왜 인공지능은 허상(hallucination)을 만들어낼까?">
+    <meta property="og:description" content="왜 인공지능은 허상(hallucination)을 만들어낼까?">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/1404/img.jpg">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@empty_name/1404/">
+
+        
+    <title>왜 인공지능은 허상(hallucination)을 만들어낼까?
+        - 각종 코딩/딥러닝 관련 정보를 공유하는 그런 블로그
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@empty_name/1288/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">왜 인공지능은 허상(hallucination)을 만들어낼까?</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@empty_name/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @empty_name
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 1월 27일 10:48 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@empty_name/?tag=804"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            언어모델
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@empty_name/?tag=803"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Hallucination
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@empty_name/?tag=802"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Ai
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@empty_name/?tag=677"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            딥러닝
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@empty_name/?tag=676"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            인공지능
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>인공지능을 활용하는 사람들이 많아지면서 인공지능의 문제점에 대한 인식도 커지고 있습니다. 그 중 하나는 바로 인공지능이 만들어내는 hallucination(허상, 잘못된 정보)입니다.</p>
+<p>Hallucination이란 AI가 거짓 정보를 진짜인 것처럼 그럴 듯하게 지어내어 말하는 현상을 말합니다. 오직 객관적인 팩트와 데이터에 의거해서 말할 것만 같은 인공지능이 왜 이런 거짓말을 하게 되는 걸까요?</p>
+<p>이번 글에서는 인공지능, 특히 챗봇이 어떤 식으로 학습되는지 살펴보면서 왜 인공지능이 허상을 만들어내게 되는지에 대해서 알아 보도록 하겠습니다.</p>
+<h2 id="_1">인공지능이 학습하는 방법</h2>
+<p>지금부터 챗봇 인공지능이 학습되는 단계를 하나씩 살펴보면서 각 단계에서 어떤 문제가 발생할 수 있는지 알아보겠습니다.</p>
+<h2 id="_2">데이터 수집</h2>
+<p>인공지능 모델에 있어 가장 중요한 것은 데이터입니다. 모델 구조가 아무리 뛰어나고 아무리 많이 학습을 하더라도 결국 학습 데이터에 존재하지 않는 정보를 모델이 학습할 수는 없으니까요. 그런만큼 모델이 만들어내는 오류들 역시 대부분 데이터에서 비롯되는 경우가 많습니다. 데이터가 편향되어 있거나 잘못된 정보를 담고 있다면 모델도 똑같은 실수를 범하게 되는 것이죠.</p>
+<p>그럼 ChatGPT나 BARD와 같은 챗봇들은 어디서 데이터를 수집해서 학습할까요? 그리고 수집한 데이터들에 어떤 문제가 발생할 수 있을까요?</p>
+<p>구글 BARD의 모체가 되는 거대 언어 모델 PaLM은 인터넷에서 아래와 같은 데이터들을 수집했다고 합니다.</p>
+<ul>
+<li>소셜 미디어 대화 내용</li>
+<li>웹 페이지 문서</li>
+<li>인터넷 책</li>
+<li>깃허브</li>
+<li>위키피디아 문서</li>
+<li>뉴스</li>
+</ul>
+<p>이 중에 어떤 데이터에서 편향이나 잘못된 정보가 담겨 있을 수 있을까요?</p>
+<p>소셜 미디어 대화 내용은 사람들이 직접 대화를 주고 받은 내용인만큼 가장 잘못된 정보나 편향이 담기기 쉬울 것으로 생각됩니다. 웹 페이지 문서의 경우에도 일반인들이 마음대로 사용할 수 있는 공간인만큼 편향되고 잘못된 정보가 많을 것으로 생각됩니다.</p>
+<p>&#x27;그러면 이 데이터들을 안 쓰면 되지 않나요?&#x27; 라고 생각할 수 있습니다. 개발자들도 이런 데이터보다 더 안전하고 신뢰성 높은 데이터로만 학습하고 싶지만 성능 좋은 챗봇을 만들기 위해선 엄청난 양의 데이터가 필요합니다. PaLM 모델의 학습에 사용된 단어의 수는 7800억 개입니다. 이 중에서 소셜 미디어 대화내용과 웹 페이지 문서가 차지하는 비율은 77%라고 합니다. 현재로썬 위키피디아나 뉴스와 같은 정확한 데이터만 쓰고 싶어도 그 수가 너무 적어 거대 언어 모델을 학습하는 것이 불가능합니다.</p>
+<p>개발자들도 이런 데이터들을 그대로 사용하는 것은 위험하다는 것을 알기 때문에 최대한 필터링을 수행합니다. 사람이 모든 문서를 보고 일일이 필터링 하면 좋겠지만 아까 말했듯 7800억 개의 단어를 봐야 하기 때문에 (1,000명의 사람이 모여도 인당 약 8억개의 단어를 봐야 합니다...) 사실상 불가능합니다. 그래서 컴퓨터를 이용해 자동으로 필터링을 하죠. 하지만 이렇게 필터링을 해도 모든 잘못된 데이터를 정확히 필터링하는 것은 불가능하기 때문에 문제는 여전히 남아 있는 상태입니다. 물론 개발자들은 계속해서 더 정교한 필터링 시스템을 구축하고 더 안전한 데이터셋을 필터링하기 위해 계속해서 노력하는 중입니다.</p>
+<p>인공지능 모델이 학습하는 데이터는 인터넷에서 많이 수집됩니다. 따라서 데이터에 편향이나 오류가 존재합니다. 개발자들은 이런 요소들을 최대한 줄이기 위해 필터링 개발에 힘 쓰고 있습니다.</p>
+<h2 id="_3">데이터 처리</h2>
+<p>이렇게 수집한 데이터를 어떻게 모델에 학습시킬까요? 컴퓨터는 모든 데이터를 숫자로 처리한다는 것은 알고 계실 겁니다. 따라서 저희가 사용하는 글자도 컴퓨터가 이해할 수 있는 숫자로 바꿔줘야 합니다. 이를 &#x27;토큰화&#x27; 한다고 합니다.</p>
+<p>데이터 처리 단계에선 단어들을 숫자로 바꿔주는 토큰화를 수행합니다.<br />
+이런 토큰화 역시 사람이 직접 나눠주는 것이 아니라 규칙에 기반해서 컴퓨터를 이용해 자동으로 토큰화를 수행합니다. 자주 사용되는 단어일수록 잘 묶이고 자주 사용되지 않는 단어일수록 더 작은 단위의 단어로 나눠지게 되죠. 예를 들어 &#x27;눈사람&#x27;과 같이 &#x27;눈&#x27;과 &#x27;사람&#x27;으로 나눠질 수 있는 단어도 자주 사용되는 단어라면 &#x27;눈사람&#x27; 이라는 단어로 묶여서 토큰화 됩니다.</p>
+<p>여기에선 어떤 문제들이 발생할 수 있을까요?</p>
+<p>우선 자주 사용되지 않는 단어라면 올바르게 토큰화되지 않는 문제가 있습니다. 예를 들어 &#x27;미토콘드리아&#x27;와 같은 전문적인 단어는 데이터에 자주 등장하지 않는 단어겠죠? 그러면 &#x27;미토콘드리아&#x27;라는 단어 토큰이 존재하지 않아 &#x27;미/토/콘드/리아&#x27;와 같이 단어가 나눠질 수 있습니다. 이러면 컴퓨터가 이해할 때 문제가 발생할 수 있겠죠?</p>
+<p>또, 동음이의어를 구분하지 못한다는 문제점도 있습니다. 토큰화를 하게 되면 하늘에서 내리는 &#x27;눈&#x27;과 사람의 &#x27;눈&#x27; 모두 같은 단어 토큰을 사용합니다. &#x27;눈&#x27;은 자주 사용되는 단어이기 때문에 모델이 학습을 통해 구분할 수 있게 되지만 자주 사용되지 않는 어려운 단어라면 컴퓨터가 구분하기 어려울 수도 있습니다.</p>
+<p>다행히 위의 문제점들은 모델 학습을 통해 어느정도 극복이 가능합니다. 하지만 자주 사용되지 않는 단어는 그만큼 학습이 덜 되기 때문에 모델이 그 단어를 완벽히 이해하기 힘들 수 있습니다.</p>
+<p>단어를 컴퓨터가 이해할 수 있도록 바꿔주는 &#x27;토큰화&#x27; 과정에서 자주 사용되지 않는 어려운 단어들은 컴퓨터에게 그 의미가 제대로 전달되지 않을 수도 있습니다.</p>
+<h2 id="_4">모델 학습</h2>
+<p>챗봇이 처음부터 사람의 질문에 대답하는 식으로 학습되진 않습니다. 모델의 성능을 끌어올리기 위해선 방대한 양의 데이터 (PaLM과 같이 7800억 개 정도의 단어)를 사용해야 하지만 그 정도 양질의 질문-답변 쌍으로 구성된 데이터가 충분하지 않기 때문입니다. 앞서 살펴본 PaLM의 학습에 사용 되었다는 단어도 대부분 인터넷에서 수집한 데이터라는 것을 알 수 있습니다.</p>
+<p>그러면 모델을 어떻게 학습할까요? 언어 모델은 보통 &quot;사전 학습 - 미세 조정&quot; 2단계에 걸쳐 학습됩니다. &quot;사전 학습&quot; 단계에서는 대규모 텍스트를 이용해 모델이 언어의 맥락과 패턴을 학습하고, &quot;미세 조정&quot; 단계에서는 모델이 원하는 목적에 맞게 작동하도록 조정하는 학습을 수행합니다.</p>
+<h3 id="_5">사전학습</h3>
+<p>사전 학습 단계에서는 문장의 앞부분을 보고 뒷 부분을 생성해내는 식으로 학습합니다. 예를 들면, 아래와 같은 문장이 주어졌을 때 그 뒤의 글자들을 그대로 예측하는 방식으로 모델이 학습되는 것이죠.</p>
+<pre><code>원본 문장 : &quot;미국의 첫 대통령은 조지 워싱턴으로 ... &quot;
+입력 : &quot;미국의 첫 대통령은&quot;
+출력 : &quot;조지 워싱턴으로 ... &quot;
+</code></pre>
+<p>놀랍게도 모델이 질문에 대한 답변을 하도록 명시적으로 학습되지 않았음에도 불구하고 질문에 답변을 할 수 있는 능력이 생긴다고 합니다. GPT-1 모델 연구 논문에 의하면, 위와 같은 사전학습만을 수행했음에도 각종 언어 관련 task들(문장 감정 분류, 질문과 답변, 문장 문법 판별 등)의 성능이 좋아지는 것을 확인했다고 합니다. (<a href="https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf">링크</a>)</p>
+<p><img alt="사전학습을 수행할수록(x축) 각종 언어 task들에 대한 점수(y축)들이 높아지는 것을 볼 수 있습니다." src="https://ifh.cc/g/2w9QxA.png" /></p>
+<p>이 연구를 시작으로 데이터의 양을 증가시키고 모델의 크기를 증가시키면서 점점 언어 모델의 성능이 좋아졌고, 지금의 chatGPT와 같은 모델들이 탄생할 수 있게 되었습니다.</p>
+<p>문제는 &quot;성능이 왜 좋아지는가?&quot;에 대한 정확한 답을 할 수가 없다는 것입니다. 이에 대해 연구자들이 &quot;모델이 대량의 텍스트에서 자연스럽게 문맥과 패턴을 학습한 결과&quot;라는 가설을 제시하기도 하고, 모델 내부의 메커니즘의 시각화를 통해 이에 대한 설명을 시도하기도 했지만 아직까지도 확실하게 이 비밀을 밝히진 못했습니다.</p>
+<p>그렇다면 사전학습을 왜 하는 걸까요? 목적에 부합하는 대량의 데이터를 구하는 것이 쉽지 않기 때문입니다. 인터넷에 굉장히 많은 텍스트 데이터들이 있지만 그 중 채팅 형식으로 작성되어 있는 텍스트는 극히 일부일 것입니다. 하지만 이 적은 양의 채팅 데이터로는 저희가 보는 chatGPT와 같은 성능의 챗봇을 만들 수 없습니다. 따라서 채팅 형식이 아닌 다른 데이터들도 학습에 활용할 방법을 찾다가 이런 사전학습 방식을 찾게 된 것입니다. 그래서 현재 챗봇들은 대규모 데이터셋을 이용해 사전학습을 한 뒤, 채팅 형식의 데이터를 이용해 미세조정을 하여 챗봇을 학습하는 식으로 설계됩니다.</p>
+<h3 id="_6">평가지표</h3>
+<p>또 다른 문제점은 모델의 평가지표입니다. 현재 언어 모델에 가장 많이 사용되는 지표는 모델이 예측한 단어 토큰과 실제 문장의 단어 토큰 사이의 정확도를 비교하는 방식입니다. 하지만 이 정확도만으로는 모델이 정확한 정보를 생성했는지, 부적절한 말을 했는지를 평가하지 못합니다. 이런 &#x27;사실성&#x27;이나 &#x27;적절성&#x27;을 평가 지표에 추가하지 못하는 이유는 이들을 자동화하기 어렵기 때문입니다.</p>
+<p>chatGPT나 BARD 모두 챗봇이 허상을 만들어내지 않도록 하기 위해 사람이 직접 챗봇이 만들어낸 텍스트를 평가하도록 했습니다. 그리고 이를 자동화하기 위해 사람이 직접 평가한 텍스트들을 모델이 다시 학습하여 모델이 스스로 자신의 텍스트를 검열할 수 있도록 합니다.</p>
+<p>또, <a href="https://www.perplexity.ai/">perplexity</a>나 최신 버전의 chatGPT는 모델이 질문에 답변할 때 어떤 글을 참고했는지 출처를 표시하는 기능을 추가하여 모델의 답변 내용의 신뢰성을 높이는 방식을 사용하고 있습니다.</p>
+<p><img alt="챗봇은 사람의 평가를 학습해 스스로 텍스트를 평가하기도 하고, 직접 웹문서를 탐색해서 답변의 출처를 제공하는 등의 방법으로 신뢰도를 높이고 있습니다." src="https://ifh.cc/g/aYry1C.png" /></p>
+<blockquote>
+<p>언어 모델은 사전학습을 통해 언어의 패턴과 맥락을 학습하게 되지만 '모델이 왜 언어를 이해하게 되는가'에 대한 이유를 정확히 파악하기가 어렵습니다. 또, 이 과정에서 사용되는 정확도 지표 만으로는 모델의 허상 문제를 방지할 수 없습니다.<br />
+그래서 보다 설명 가능한 모델을 만듦과 동시에 텍스트의 '사실성'을 평가하기 위해 미세 조정 단계를 거칩니다. 사람이 직접 텍스트를 평가하고 그 데이터를 모델이 학습하여, 스스로 텍스트를 평가할 수 있도록 합니다. 또, 모델이 답변의 출처를 같이 출력하도록 학습하여 답변의 신뢰성을 높일 수 있도록 하기도 합니다.</p>
+</blockquote>
+<h2 id="_7">모델 사용</h2>
+<p>사용자가 모델을 실사용하는 단계에서도 모델이 허상을 만들어내도록 하는 문제가 발생할 수 있습니다. 이 단계에서 발생 가능한 문제와 해결 방법을 알아보겠습니다.</p>
+<h4 id="_8">사용자가 고의적으로 거짓말을 하거나 부적절한 말을 하도록 유도함.</h4>
+<p>실제로 마이크로소프트의 &#x27;테이&#x27;라는 트위터 챗봇이나 한국의 &#x27;이루다&#x27;라는 챗봇들은 사람들이 부적절한 말을 유도하는 방법이 공유되면서 사회적인 문제가 발생해 서비스를 중단하는 사건이 벌어진 적이 있습니다. chatGPT와 같은 챗봇도 틀린 정보를 말하도록 다그치거나 화를 낸다면 잘못된 답변을 만들어낼 수 있습니다.</p>
+<p><em>개발자들은 지속적인 모니터링을 통해 모델이 잘못된 답변을 하게 되는 사례를 수집한 뒤, 추가 학습을 통해 이런 유도에 말리지 않도록 해야 합니다. 또 서비스 시작 전에 이런 공격을 막을 수 있도록 직접 모델이 잘못된 말을 하도록 유도해보고 이를 수정한 뒤에 서비스를 개시하는 방법도 많이 사용합니다.</em></p>
+<h4 id="_9">사용자의 질문이 자세하지 않거나 너무 추상적임.</h4>
+<p>질문이 명확하지 않을 경우 모델이 질문을 잘못 이해할 수 있습니다. 그러면 답변도 제대로 나오지 않겠죠. 또, 인공지능은 사람과 달리 오직 텍스트의 패턴에 기반해서 학습하기 때문에 사람과 달리 기본적인 상식이나 맥락을 알지 못할 수도 있습니다. 그래서 당연하다고 생각해 특정 정보를 생략하고 질문을 한다면 모델이 잘못 대답할 수도 있습니다.</p>
+<p><em>최대한 명확하고 자세하게 질문하여 모델이 원하는 답변을 정확히 할 수 있도록 해야 합니다.</em></p>
+<h4 id="_10">전문적인 내용에 대한 지식이 부족해 답변을 잘 못함.</h4>
+<p>전문성이 높은 내용일 수록 모델이 틀리게 답변할 가능성이 높습니다. chatGPT와 같이 범용성이 높은 모델일수록 전문적인 내용에 약한 모습을 보일 수 있습니다. 이는 전문적인 내용을 담고 있는 데이터가 다른 데이터에 비해 양이 부족해 학습이 덜 되어 발생하는 문제입니다.</p>
+<p><em>전문적인 내용은 해당 분야에 특화된 챗봇을 사용하는 것이 좋습니다. 가장 좋은 것은 본인이 직접 해당 정보가 정확한지 한 번 더 확인하는 절차를 거쳐야 합니다. 또는 사용자가 직접 정보들을 찾은 뒤 해당 정보들을 정리하거나 요약해 달라고 하는 식으로 사용하는 것이 더 좋습니다.</em></p>
+<blockquote>
+<p>모델의 사용 단계에서도 사용자가 어떻게 모델을 사용하냐에 따라 모델이 잘못된 대답을 내놓을 수도 있습니다. 사용자는 모델이 부적절한 말을 하도록 유도하지 않아야 하고, 질문은 최대한 자세하고 명확하게 하는 것이 좋습니다. 또 너무 전문적인 내용은 틀리기 쉽기 때문에 본인이 직접 내용을 한번 더 검토하는 것이 좋습니다.</p>
+</blockquote>
+<h2 id="_11">글을 마치며</h2>
+<p>이렇게 모델이 허상을 만들어내는 이유를 챗봇 AI가 학습하는 과정과 함께 알아보았습니다. 저는 인공지능이 사람이 만들어낸 데이터를 사용해 학습하는 이상 저희가 상상하던 완벽하게 객관적이고 정확한 정보만을 말하는 것은 어렵다고 생각합니다. 그래서 현재 이런 챗봇 AI가 어떤 식으로 학습되는지 대강 살펴봤습니다.</p>
+<p>하지만 여전히 인공지능이 사람보다 훨씬 많은 정보를 더 빠르게 처리할 수 있는 것은 사실입니다. 그렇기 때문에 인공지능을 활용하되, 완전히 인공지능에만 의존하는 것이 아니라 저희도 계속 공부를 해야 하며, 항상 인공지능이 생성한 답변 내용을 직접 검토할 수 있어야 합니다. 이런 챗봇 AI를 활용하려는 분들에게 도움이 되었으면 좋겠습니다. 감사합니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 1월 27일 10:50 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@empty_name/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@empty_name/">@empty_name</a>
+                        </h1>
+                        
+                            <p class="text-gray-600 dark:text-gray-400">https://all-the-meaning.tistory.com/</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/257/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/257/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">1</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/1404/add_comment/"
+                      method="post"
+                      hx-post="/blog/1404/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="uFsmgcd6D8N2rlkPZDp1qiJRTvZxgTmK4zR1UmOPg1UEkfuaMnnHuYegXCXEr4Za">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @empty_name 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@empty_name/1404/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            왜 인공지능은 허상(hallucination)을 만들어낼까?
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 27일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@empty_name/1288/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            인간과 같이 차별하는 인공지능
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@empty_name/1224/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            인공지능, 성능만이 문제가 아니다
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @empty_name 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17417">
+                    
+                        <img src="https://static.wikidocs.net/images/book/Designer_2_vfY6Xz4_ImsEIQ8_b4te2SB_jMH1VUc_tWaiciC.jpeg"
+                             alt="생각보다 쉬운 딥러닝 코딩 맛보기 - PyTorch"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17417"
+                           class="hover:text-red-500 dark:hover:text-red-400">생각보다 쉬운 딥러닝 코딩 맛보기 - PyTorch</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        딥러닝 개발을 목표로 하는 분들을 위해 간단한 튜토리얼을 마련해 봤어요.
+
+딥러닝 개발을 하는데 필요한 최소한의 지식과 재미를 얻을 수 있도록 최대한 어려운 이론은 덜어내고 …
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 3월 13일 2:21 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17252">
+                    
+                        <img src="https://static.wikidocs.net/images/book/Designer_QxYYwOT_VoQsLEh_20qyyiq_hCh7TLm_PxNJ2Cc_HVFHOHQ_YB7SF1u_sbXwVSa_aJ1X1aX_q_qDt921e.jpeg"
+                             alt="제일 간단한 파이썬 튜토리얼"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17252"
+                           class="hover:text-red-500 dark:hover:text-red-400">제일 간단한 파이썬 튜토리얼</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        파이썬을 쉽게 배울 수 있도록 작성한 튜토리얼입니다!
+
+기존의 파이썬 기초 내용들은 너무 무겁고 많은 내용들을 담고 있는 경우가 많다고 생각해 최대한 가볍고 쉽게 기본적인 것…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 3월 25일 3:05 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17416">
+                    
+                        <img src="https://static.wikidocs.net/images/book/Designer_1_ErttCBH_pptUa1C_HU6NGYb_AK3tPnT_YTKaoKc_xeJ1jQw.jpeg"
+                             alt="생각보다 쉬운 딥러닝 코딩 맛보기 - TensorFlow"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17416"
+                           class="hover:text-red-500 dark:hover:text-red-400">생각보다 쉬운 딥러닝 코딩 맛보기 - TensorFlow</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        딥러닝 개발을 목표로 하는 분들을 위해 간단한 튜토리얼을 마련해 봤어요.
+
+딥러닝 개발을 하는데 필요한 최소한의 지식과 재미를 얻을 수 있도록 최대한 어려운 이론은 덜어내고 …
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 3월 13일 2:21 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">633</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-1404"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-1404"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/1404/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@empty_name/1224/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/1224/Designer_1.jpeg"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            인공지능, 성능만이 문제가 아니다
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                들어가는 글
+딥러닝을 공부를 처음 하게 되면 모델 구현, 데이터 전처리 등의 코드 구현을…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1년 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=5bb18de'/>

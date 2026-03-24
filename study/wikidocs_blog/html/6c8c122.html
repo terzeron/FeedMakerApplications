@@ -1,0 +1,2121 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="바이브 코딩(Vibe Coding) 완벽 가이드">
+    <meta property="og:type" content="바이브 코딩(Vibe Coding) 완벽 가이드">
+    <meta property="og:title" content="바이브 코딩(Vibe Coding) 완벽 가이드">
+    <meta property="og:description" content="바이브 코딩(Vibe Coding) 완벽 가이드">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@ashespia/5516/">
+
+        
+    <title>바이브 코딩(Vibe Coding) 완벽 가이드
+        - 조각모음
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">바이브 코딩(Vibe Coding) 완벽 가이드</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@ashespia/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @ashespia
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 11월 12일 12:28 오전</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2589"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Kiro
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2588"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Lovable
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2587"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Vibecoding
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2586"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Copilot
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2585"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Windsurf
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2584"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            #cursor
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2583"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Vercel
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2582"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Replit
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2581"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Claudecode
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@ashespia/?tag=2580"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            바이브코딩
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="vibe-coding">바이브 코딩(Vibe Coding) 완벽 가이드</h2>
+<h2 id="2025-ai">2025년 AI 코딩 도구 선택부터 실전 활용까지</h2>
+<hr />
+<h2 id="_1">목차</h2>
+<ol>
+<li><a href="#서문">서문</a></li>
+<li><a href="#바이브-코딩이란-무엇인가">바이브 코딩이란 무엇인가</a></li>
+<li><a href="#도구-비교-분석">도구 비교 분석</a></li>
+<li><a href="#각-도구별-설치-및-기본-사용법">각 도구별 설치 및 기본 사용법</a></li>
+<li><a href="#실전-mvp-프로젝트">실전 MVP 프로젝트</a></li>
+<li><a href="#도구-조합-전략">도구 조합 전략</a></li>
+<li><a href="#학습-로드맵">학습 로드맵</a></li>
+<li><a href="#레퍼런스-및-리소스">레퍼런스 및 리소스</a></li>
+</ol>
+<hr />
+<h2 id="_2">서문</h2>
+<p>2025년, 소프트웨어 개발의 패러다임이 변화하고 있습니다. 전통적인 코드 작성 방식은 자연언어 기반의 &quot;바이브 코딩(Vibe Coding)&quot;으로 진화하고 있습니다. 이 가이드는 개발자와 비개발자 모두를 위해 현재 시장에서 가장 유망한 AI 코딩 도구들을 상세히 분석하고, 각 도구의 설치부터 실전 활용까지 다룹니다.</p>
+<p>바이브 코딩은 단순히 코드 자동 생성을 의미하지 않습니다. 이는 AI와 인간이 함께 작업하는 협력 패러다임입니다. 기존 개발의 진입장벽을 낮추면서도 생산성을 10배 이상 향상시킬 수 있는 혁신적인 방식입니다.</p>
+<p>이 전자책은 다음을 다룹니다:<br />
+- <strong>도구 선택의 실무 가이드</strong>: 9가지 주요 바이브 코딩 도구의 상세 비교<br />
+- <strong>설치부터 배포까지</strong>: 각 도구별 단계별 설치 및 설정 가이드<br />
+- <strong>실제 동작하는 예제</strong>: 각 도구로 실제 MVP를 만드는 과정<br />
+- <strong>조합 전략</strong>: 여러 도구를 어떻게 조합할 것인가<br />
+- <strong>개인 맞춤형 학습 로드맵</strong>: 당신의 목표에 맞는 학습 경로 제시</p>
+<hr />
+<h2 id="_3">바이브 코딩이란 무엇인가</h2>
+<h3 id="_4">정의</h3>
+<p>바이브 코딩은 AI 기반의 코드 생성 도구들을 활용하여, 자연언어 명령어(프롬프트)를 통해 코드를 작성하고 수정하는 개발 방식입니다. &quot;Vibe&quot;는 느낌, 감정을 뜻하며, 개발자의 &quot;의도(vibe)&quot;를 AI가 이해하고 구현한다는 의미를 담고 있습니다.</p>
+<h3 id="_5">핵심 원칙</h3>
+<h4 id="1">1. 자연언어 → 실행 가능한 코드</h4>
+<pre><code>기존: 개발자가 직접 코드 작성 (시간 많이 소요)
+바이브: &quot;로그인 기능이 있는 대시보드를 만들어줘&quot; → AI가 자동 생성
+</code></pre>
+<h4 id="2-iterative-refinement">2. 반복적 개선 (Iterative Refinement)</h4>
+<p>초기 생성된 코드가 100% 완벽하지 않습니다. 그러나 개발자가 요청사항을 다시 제시하면 AI가 점진적으로 개선합니다.</p>
+<pre><code>Round 1: &quot;기본 대시보드 만들기&quot; → AI 생성
+Round 2: &quot;다크 테마 추가해줘&quot; → 개선
+Round 3: &quot;모바일 반응형 디자인 적용&quot; → 최적화
+</code></pre>
+<h4 id="3-ai-human-in-the-loop">3. 인간-AI 협력 (Human-in-the-Loop)</h4>
+<p>AI는 강력하지만 완벽하지 않습니다. 개발자의 판단, 창의성, 보안 검토는 여전히 필수입니다.</p>
+<p><strong>바이브 코딩의 장점:</strong><br />
+- ⚡ <strong>속도</strong>: 기존 대비 5~10배 빠른 개발<br />
+- 💰 <strong>비용</strong>: 개발 인력 비용 절감<br />
+- 🎯 <strong>접근성</strong>: 비개발자도 소프트웨어 개발 가능<br />
+- 🔄 <strong>유연성</strong>: 빠른 반복과 수정<br />
+- 📚 <strong>학습</strong>: 자동 생성 코드로부터 학습 가능</p>
+<p><strong>바이브 코딩의 주의사항:</strong><br />
+- 🔒 보안 검토 필수<br />
+- 🧪 철저한 테스트 필요<br />
+- 📖 코드 이해도 필요<br />
+- 🎓 초보자 학습곡선 존재</p>
+<hr />
+<h2 id="_6">도구 비교 분석</h2>
+<h3 id="1-cursor-ai-ide">1. Cursor: AI 중심 IDE</h3>
+<h4 id="_7">개요</h4>
+<p>Cursor는 VSCode를 기반으로 한 독립형 AI IDE입니다. AI 코딩의 가장 강력한 성능을 제공하면서도 개발자에게 최대의 통제권을 제공합니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: 독립형 AI IDE (VSCode 포크)
+가격: 무료(2,000 completions + 50 requests), Pro($20/월), Ultra($200/월)
+플랫폼: Windows, macOS, Linux
+코드 제어: 완벽함
+배포 지원: 없음 (VS Code 확장으로 가능)
+</code></pre>
+<h4 id="_8">주요 특징</h4>
+<ol>
+<li><strong>Composer (멀티파일 편집)</strong></li>
+<li>여러 파일을 한 번에 편집 가능</li>
+<li>복잡한 리팩토링을 자동화</li>
+<li>
+<p>전체 프로젝트 구조 개선</p>
+</li>
+<li>
+<p><strong>깊은 코드베이스 이해</strong></p>
+</li>
+<li>@-mentions로 특정 파일/폴더 참조</li>
+<li>전체 프로젝트 컨텍스트 학습</li>
+<li>
+<p>일관된 코딩 스타일 유지</p>
+</li>
+<li>
+<p><strong>Agent Mode</strong></p>
+</li>
+<li>자동으로 작업 완료</li>
+<li>에러 발생 시 자동 수정</li>
+<li>
+<p>다단계 작업 자동화</p>
+</li>
+<li>
+<p><strong>Privacy Mode</strong></p>
+</li>
+<li>코드가 원격 서버에 저장 안 됨</li>
+<li>보안이 중요한 프로젝트에 적합</li>
+<li>SOC 2 인증</li>
+</ol>
+<h4 id="_9">추천 용도</h4>
+<ul>
+<li>✅ 프로덕션 애플리케이션 개발</li>
+<li>✅ 기존 코드베이스 리팩토링</li>
+<li>✅ 복잡한 API/서버 개발</li>
+<li>✅ 팀 협업 프로젝트</li>
+<li>❌ 빠른 프로토타입 (더 간단한 도구 추천)</li>
+<li>❌ 비개발자용 (진입장벽 높음)</li>
+</ul>
+<h4 id="_10">가격 비교</h4>
+<table>
+<thead>
+<tr>
+<th>플랜</th>
+<th>월 가격</th>
+<th>포함 사항</th>
+<th>대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>무료</td>
+<td>$0</td>
+<td>2,000 completions, 50 requests</td>
+<td>테스트용</td>
+</tr>
+<tr>
+<td>Pro</td>
+<td>$20</td>
+<td>Unlimited completions, 500 requests</td>
+<td>개인 개발자</td>
+</tr>
+<tr>
+<td>Ultra</td>
+<td>$200</td>
+<td>모든 기능, 5,000 requests</td>
+<td>전문가</td>
+</tr>
+<tr>
+<td>Teams</td>
+<td>$40/user/month</td>
+<td>팀 협업, 관리 기능</td>
+<td>팀</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2-kiro-aws-ide">2. Kiro: AWS의 스펙 기반 IDE</h3>
+<h4 id="_11">개요</h4>
+<p>AWS가 만든 혁신적인 Agentic IDE입니다. 기존의 &quot;대화하며 만들기(Vibe)&quot;와 &quot;명확한 스펙 기반 설계(Spec)&quot;를 모두 지원합니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: Spec-driven Agentic IDE
+상태: 얼리 액세스 (2025년 11월 기준)
+가격: 미정 (엔터프라이즈 모델 예상)
+플랫폼: Windows, macOS, Linux
+배포 지원: ✅ 자동 배포 기능
+</code></pre>
+<h4 id="_12">주요 특징</h4>
+<h5 id="vibe">Vibe 모드</h5>
+<ul>
+<li>자유로운 대화형 개발</li>
+<li>&quot;AI야, 간단한 웹서버 만들어줘&quot; 같은 자유로운 명령</li>
+<li>빠른 프로토타이핑에 최적</li>
+</ul>
+<h5 id="spec">Spec 모드</h5>
+<ul>
+<li>명확한 사양서 작성 후 개발</li>
+<li>&quot;200개 API 엔드포인트, 데이터베이스 스키마...&quot;같은 상세 명시</li>
+<li>복잡한 엔터프라이즈 프로젝트에 최적</li>
+<li>자동 테스트 생성</li>
+<li>높은 정확도와 일관성</li>
+</ul>
+<h4 id="_13">추천 용도</h4>
+<ul>
+<li>✅ 복잡한 API 설계</li>
+<li>✅ 엔터프라이즈 애플리케이션</li>
+<li>✅ 자동 테스트가 필요한 프로젝트</li>
+<li>✅ 마이크로서비스 아키텍처</li>
+<li>❌ 빠른 검증 (스펙 작성 시간 필요)</li>
+<li>❌ 초보자 (학습곡선 높음)</li>
+</ul>
+<hr />
+<h3 id="3-github-copilot">3. GitHub Copilot: 가장 널리 사용되는 선택</h3>
+<h4 id="_14">개요</h4>
+<p>OpenAI의 Codex를 기반으로 한 AI 코드 완성 도구입니다. 대부분의 IDE에 확장으로 설치 가능합니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: AI 코드 완성 (Extension)
+가격: 무료(제한), Pro($10/월), Business($19/user/월)
+IDE 지원: VS Code, Visual Studio, JetBrains, Neovim, Vim, Eclipse, Xcode 등 다수
+코드 제어: 완벽함
+배포 지원: 없음
+</code></pre>
+<h4 id="_15">주요 특징</h4>
+<ol>
+<li><strong>인라인 완성</strong>: 타이핑하면서 자동 제안</li>
+<li><strong>Copilot Chat</strong>: IDE 내 챗봇 기능</li>
+<li><strong>Agent Mode</strong>: 자동 작업 실행</li>
+<li><strong>Pull Request 분석</strong>: 코드 리뷰 자동화</li>
+<li><strong>다중 IDE 지원</strong>: 기존 IDE 그대로 사용</li>
+</ol>
+<h4 id="_16">가격 분석</h4>
+<pre><code>무료 (월 한도):
+- 2,000 autocompletions
+- 50 chat requests
+- 제한된 기능
+
+Pro ($10/월):
+- Unlimited completions
+- 300 chat requests
+- 모든 기능 포함
+
+Business ($19/user/월):
+- 전사 정책 관리
+- SAML SSO
+- 감사 로그
+</code></pre>
+<h4 id="_17">추천 용도</h4>
+<ul>
+<li>✅ 기존 IDE 사용자</li>
+<li>✅ 팀 협업 프로젝트</li>
+<li>✅ 빠른 코드 작성</li>
+<li>✅ 보일러플레이트 생성</li>
+<li>❌ 전체 프로젝트 이해 필요 시</li>
+<li>❌ Privacy Mode 필요 시</li>
+</ul>
+<hr />
+<h3 id="4-claude-code-vscode">4. Claude Code: VSCode 플러그인</h3>
+<h4 id="_18">개요</h4>
+<p>Anthropic의 Claude AI를 VSCode에 통합한 플러그인입니다. 실시간 협업 코딩 경험을 제공합니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: VSCode 플러그인 (CLI 기반)
+가격: 현재 무료 (Beta), 향후 구독 모델 예상
+설치: Claude CLI + VSCode 통합
+코드 제어: 완벽함
+협업: 👌 우수함 (chat 기반)
+</code></pre>
+<h4 id="_19">설치 절차</h4>
+<pre><code class="language-bash"># 1. Claude CLI 설치
+npm install -g @anthropic-ai/claude
+
+# 2. 업데이트 확인
+claude update
+
+# 3. VSCode 터미널에서 실행
+claude
+
+# 4. 단축키로 실행
+# Mac: Cmd+Esc
+# Windows/Linux: Ctrl+Esc
+</code></pre>
+<h4 id="_20">주요 특징</h4>
+<ol>
+<li><strong>실시간 Plan &amp; Review</strong>: 코드 변경 전 계획 수립</li>
+<li><strong>파일 관리</strong>: 파일 첨부 및 참조</li>
+<li><strong>대화 이력</strong>: 여러 세션 기록 유지</li>
+<li><strong>Diff 시각화</strong>: 코드 변경 사항 명확히 표시</li>
+<li><strong>협업</strong>: 채팅 기반 협업</li>
+</ol>
+<h4 id="_21">특수 명령어</h4>
+<pre><code>! - 터미널 명령 실행
+? - 명령어 도움말
+@ - 파일 경로 지정
+# - 정보 저장 (기억)
+/ - 슬래시 명령어 (/config, /ide 등)
+
+더블탭 Esc - 변경사항 취소
+Shift + Tab - 자동 수락
+Backslash + Return - 새 줄
+</code></pre>
+<h4 id="_22">추천 용도</h4>
+<ul>
+<li>✅ 팀 협업 개발</li>
+<li>✅ 코드 리뷰 프로세스</li>
+<li>✅ 복잡한 구조 설계</li>
+<li>✅ 실시간 피드백 필요</li>
+<li>❌ Windows에서 안정성 이슈</li>
+<li>❌ 빠른 자동완성 중심 작업</li>
+</ul>
+<hr />
+<h3 id="5-lovabledev">5. Lovable.dev: 완벽한 노코드 솔루션</h3>
+<h4 id="_23">개요</h4>
+<p>비개발자를 위한 완벽한 AI 앱 빌더입니다. 프로토타입부터 프로덕션까지 전 과정을 지원합니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: AI App Builder (웹 기반)
+가격: 무료 (크레딧 제한), Pro($30/월), Teams($50/월)
+설치: 웹 기반 (회원가입만으로 시작)
+코드 제어: ✅ GitHub 통합
+배포: ✅ Vercel 자동 배포
+백엔드: ✅ Supabase 자동 통합
+</code></pre>
+<h4 id="_24">시작하기</h4>
+<p><strong>Step 1: 프로젝트 생성</strong></p>
+<pre><code>1. https://lovable.dev 접속
+2. 무료 계정 가입
+3. &quot;New Project&quot; 클릭
+</code></pre>
+<p><strong>Step 2: MVP 아이디어 설명</strong></p>
+<pre><code>예시 프롬프트:
+&quot;Todo 앱을 만들어줘. 사용자는 할 일을 추가, 완료, 삭제할 수 있어. 
+모바일 반응형이고 깔끔한 디자인이면 좋겠어. 
+사용자 인증 기능도 있으면 좋아.&quot;
+</code></pre>
+<p><strong>Step 3: Supabase 백엔드 자동 설정</strong><br />
+- 사용자 인증<br />
+- 데이터베이스<br />
+- 실시간 동기화<br />
+→ 모두 자동으로 설정됨!</p>
+<p><strong>Step 4: 반복 개선</strong></p>
+<pre><code>Round 1: 기본 구조 생성
+Round 2: &quot;어두운 테마 추가해줘&quot;
+Round 3: &quot;할 일 우선순위 기능 추가&quot;
+Round 4: &quot;Google 계정으로도 로그인 가능하게&quot;
+</code></pre>
+<p><strong>Step 5: 배포</strong><br />
+- 우측 상단 &quot;Share&quot; 버튼 클릭<br />
+- Vercel로 자동 배포<br />
+- 실시간 공개 링크 생성</p>
+<h4 id="_25">실제 예제: 구독 관리 앱</h4>
+<p><strong>프롬프트:</strong></p>
+<pre><code>사용자가 구독 서비스(Netflix, Spotify 등)를 관리하는 앱을 만들어줘.
+기능:
+1. 구독 서비스 추가 (이름, 가격, 결제일)
+2. 월별 총 비용 계산
+3. 곧 만료될 서비스 알림
+4. 사용하지 않는 서비스 추천
+UI는 깨끗하고 모바일 친화적이어야 해.
+</code></pre>
+<p><strong>결과:</strong><br />
+- ✅ 10개 파일 자동 생성<br />
+- ✅ React + Tailwind CSS 코드<br />
+- ✅ Supabase 데이터베이스<br />
+- ✅ 사용자 인증<br />
+- ✅ 실시간 프리뷰<br />
+- ✅ GitHub로 내보내기 가능</p>
+<p><strong>완료 시간:</strong> 약 30분 (프롬프트 작성 포함)<br />
+<strong>전통 개발 시간:</strong> 3-5일</p>
+<h4 id="_26">추천 용도</h4>
+<ul>
+<li>✅ MVP 빠른 검증</li>
+<li>✅ 비개발자 창업가</li>
+<li>✅ 프로토타이핑</li>
+<li>✅ 스타트업 초기 단계</li>
+<li>✅ 데모 애플리케이션</li>
+<li>❌ 매우 복잡한 커스터마이징</li>
+<li>❌ 레거시 시스템 통합</li>
+</ul>
+<hr />
+<h3 id="6-v0-by-vercel-ui">6. v0 by Vercel: UI 컴포넌트 전문</h3>
+<h4 id="_27">개요</h4>
+<p>Vercel의 AI 도구입니다. 텍스트 설명에서 React 컴포넌트를 생성하고 즉시 배포합니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: UI 컴포넌트 생성 (웹 기반)
+가격: 무료(50 messages/day), Pro($20/월), Max($200/월)
+프레임워크: React, Vue, Svelte, HTML+CSS
+배포: ✅ Vercel 자동 배포
+설정: 5분 이내
+</code></pre>
+<h4 id="_28">사용 방법</h4>
+<p><strong>Step 1: v0.dev 접속</strong></p>
+<pre><code>https://v0.dev
+GitHub/Google 계정으로 로그인
+</code></pre>
+<p><strong>Step 2: 컴포넌트 설명</strong></p>
+<pre><code>예: &quot;다크 테마 히어로 섹션, 큰 제목, CTA 버튼, 배경 이미지&quot;
+</code></pre>
+<p><strong>Step 3: 생성된 옵션 중 선택</strong></p>
+<pre><code>v0는 보통 3-5개의 다른 스타일로 생성
+가장 마음에 드는 버전 선택
+</code></pre>
+<p><strong>Step 4: 커스터마이징</strong></p>
+<pre><code>프롬프트: &quot;배경을 그라데이션으로 바꿔줘&quot;
+프롬프트: &quot;버튼 애니메이션 추가&quot;
+프롬프트: &quot;모바일에서도 잘 보이게&quot;
+</code></pre>
+<p><strong>Step 5: 코드 내보내기 또는 배포</strong></p>
+<pre><code>- GitHub로 직접 푸시
+- Vercel로 배포
+- 코드 복사해서 자신의 프로젝트에 통합
+</code></pre>
+<h4 id="_29">실제 예제: 구독 관리 대시보드</h4>
+<p><strong>프롬프트:</strong></p>
+<pre><code>구독 관리 대시보드를 만들어줘.
+- 왼쪽: 네비게이션 바 (다크)
+- 중앙: 구독 서비스 카드 (테이블)
+- 각 카드: 이름, 가격, 다음 결제일, 취소 버튼
+- 상단: 월별 총액 표시
+- 반응형 디자인
+</code></pre>
+<p><strong>결과:</strong><br />
+- ✅ 10개 파일 자동 생성<br />
+- ✅ React + Tailwind CSS<br />
+- ✅ 완전히 반응형<br />
+- ✅ 즉시 프리뷰 가능<br />
+- ✅ Vercel 배포 1클릭</p>
+<p><strong>완료 시간:</strong> 5분<br />
+<strong>기존 UI 개발 시간:</strong> 2-4시간</p>
+<h4 id="_30">특징</h4>
+<ol>
+<li><strong>Figma 통합</strong>: Figma 디자인 업로드 → 코드 자동 생성</li>
+<li><strong>이미지 지원</strong>: 스크린샷 업로드 → 유사 컴포넌트 생성</li>
+<li><strong>버전 관리</strong>: 모든 버전 히스토리 저장</li>
+<li><strong>코드 내보내기</strong>: 완전한 코드 제어</li>
+</ol>
+<h4 id="_31">추천 용도</h4>
+<ul>
+<li>✅ UI 컴포넌트 빠른 생성</li>
+<li>✅ 디자인 → 코드 변환</li>
+<li>✅ 디자이너와 개발자 협업</li>
+<li>✅ 디자인 시스템 구축</li>
+<li>✅ 빠른 프로토타이핑</li>
+<li>❌ 비즈니스 로직 개발</li>
+<li>❌ 백엔드 로직</li>
+</ul>
+<hr />
+<h3 id="7-replit-ide">7. Replit: 클라우드 기반 IDE</h3>
+<h4 id="_32">개요</h4>
+<p>100개 이상의 프로그래밍 언어를 지원하는 클라우드 IDE입니다. 설치 없이 즉시 코딩을 시작할 수 있습니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: Cloud IDE (웹 기반)
+가격: 무료, Pro($7/월), Teams($20/월)
+언어: 100+ 지원
+설정: 0분 (가입 후 바로 시작)
+배포: ✅ 내장
+협업: ✅ 실시간
+</code></pre>
+<h4 id="_33">시작하기</h4>
+<p><strong>Step 1: 계정 생성</strong></p>
+<pre><code>https://replit.com
+Google/GitHub 계정으로 가입
+</code></pre>
+<p><strong>Step 2: 새 Repl 생성</strong></p>
+<pre><code>&quot;+ Create&quot; 버튼 클릭
+언어 선택 (Python, JavaScript, React 등)
+프로젝트 이름 입력
+</code></pre>
+<p><strong>Step 3: 코드 작성</strong></p>
+<pre><code>// main.py 또는 index.js 등에서 코드 작성
+좌측: 파일 탐색기
+중앙: 코드 편집기
+우측: 결과 출력 또는 프리뷰
+</code></pre>
+<p><strong>Step 4: 실행</strong></p>
+<pre><code>&quot;Run&quot; 버튼 클릭
+결과가 즉시 표시됨
+</code></pre>
+<h4 id="python-todo">실제 예제: Python Todo 앱</h4>
+<p><strong>전체 코드 (30줄):</strong></p>
+<pre><code class="language-python"># main.py
+from flask import Flask, render_template, request, jsonify
+
+app = Flask(__name__)
+todos = []
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/api/todos', methods=['GET'])
+def get_todos():
+    return jsonify(todos)
+
+@app.route('/api/todos', methods=['POST'])
+def add_todo():
+    data = request.json
+    new_todo = {
+        'id': len(todos) + 1,
+        'title': data['title'],
+        'completed': False
+    }
+    todos.append(new_todo)
+    return jsonify(new_todo)
+
+@app.route('/api/todos/&lt;int:todo_id&gt;', methods=['DELETE'])
+def delete_todo(todo_id):
+    global todos
+    todos = [t for t in todos if t['id'] != todo_id]
+    return jsonify({'success': True})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+</code></pre>
+<p><strong>HTML 템플릿 (templates/index.html):</strong></p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Todo App&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; }
+        input { padding: 10px; width: 100%; }
+        button { padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 10px; border: 1px solid #ddd; margin: 5px 0; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Todo List&lt;/h1&gt;
+    &lt;input type=&quot;text&quot; id=&quot;todoInput&quot; placeholder=&quot;할 일을 입력하세요&quot;&gt;
+    &lt;button onclick=&quot;addTodo()&quot;&gt;추가&lt;/button&gt;
+    &lt;ul id=&quot;todoList&quot;&gt;&lt;/ul&gt;
+
+    &lt;script&gt;
+        async function getTodos() {
+            const response = await fetch('/api/todos');
+            return response.json();
+        }
+
+        async function renderTodos() {
+            const todos = await getTodos();
+            const ul = document.getElementById('todoList');
+            ul.innerHTML = todos.map(t =&gt; `
+                &lt;li&gt;
+                    ${t.title}
+                    &lt;button onclick=&quot;deleteTodo(${t.id})&quot;&gt;삭제&lt;/button&gt;
+                &lt;/li&gt;
+            `).join('');
+        }
+
+        async function addTodo() {
+            const input = document.getElementById('todoInput');
+            const response = await fetch('/api/todos', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ title: input.value })
+            });
+            input.value = '';
+            renderTodos();
+        }
+
+        async function deleteTodo(id) {
+            await fetch(`/api/todos/${id}`, { method: 'DELETE' });
+            renderTodos();
+        }
+
+        renderTodos();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><strong>배포:</strong></p>
+<pre><code>1. 우측 &quot;Run&quot; 버튼 아래 &quot;URL&quot; 클릭
+2. 공개 링크 생성
+3. 누구나 접속 가능
+</code></pre>
+<h4 id="_34">추천 용도</h4>
+<ul>
+<li>✅ 학습 및 교육</li>
+<li>✅ 빠른 프로토타입</li>
+<li>✅ 팀 협업 코딩</li>
+<li>✅ 간단한 웹앱</li>
+<li>✅ 설정 불필요</li>
+<li>❌ 복잡한 애플리케이션</li>
+<li>❌ 높은 성능 요구</li>
+</ul>
+<hr />
+<h3 id="8-windsurf-ide">8. Windsurf: 다중 IDE 지원</h3>
+<h4 id="_35">개요</h4>
+<p>Codeium의 Windsurf는 40개 이상의 IDE를 지원하는 확장 프로그램입니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: AI IDE 플러그인
+가격: 무료, Pro($30/월), Teams($50/월)
+IDE 지원: VS Code, JetBrains, Neovim, Vim, Eclipse, Sublime, 40+ 기타
+특징: AI Flows, Agents, 자동 코드 생성
+</code></pre>
+<h4 id="vs-code">설치 (VS Code 기준)</h4>
+<p><strong>Step 1: 확장 설치</strong></p>
+<pre><code>Ctrl+Shift+X (또는 Extensions 아이콘)
+&quot;Windsurf&quot; 검색
+설치 버튼 클릭
+</code></pre>
+<p><strong>Step 2: 언어 서버 대기</strong></p>
+<pre><code>상태 표시줄에 다운로드 진행률 표시
+10-20초 소요
+</code></pre>
+<p><strong>Step 3: 로그인</strong></p>
+<pre><code>우측 하단 상태 표시줄 클릭
+로그인 링크 클릭
+브라우저에서 인증
+</code></pre>
+<h4 id="_36">주요 기능</h4>
+<p><strong>Cascade Panel (Ctrl/Cmd+L)</strong></p>
+<pre><code>- 선택한 코드 분석
+- 테스트 실행
+- CRUD 레이어 자동 생성
+- 데이터 파이프라인 생성
+- API 엔드포인트 자동 작성
+</code></pre>
+<p><strong>AI Flows</strong></p>
+<pre><code>프롬프트와 도구 조합으로 복잡한 작업 자동화
+예:
+1. API 스펙 분석
+2. 데이터베이스 스키마 생성
+3. 테스트 코드 작성
+4. 문서 생성
+→ 모두 자동으로 순차 실행
+</code></pre>
+<h4 id="_37">추천 용도</h4>
+<ul>
+<li>✅ 기존 IDE 사용자</li>
+<li>✅ 다양한 도구 환경</li>
+<li>✅ 자동화 중심 개발</li>
+<li>✅ CRUD 자동 생성</li>
+<li>✅ 테스트 자동화</li>
+<li>❌ 초보자</li>
+</ul>
+<hr />
+<h3 id="9-mocha">9. Mocha: 초고속 배포</h3>
+<h4 id="_38">개요</h4>
+<p>매우 빠른 배포를 특징으로 하는 AI 앱 빌더입니다.</p>
+<p><strong>기본 정보:</strong></p>
+<pre><code>타입: AI App Builder
+가격: 무료 (제한), Starter($20/월)
+배포 시간: 매우 빠름 (Type → Build → Deploy)
+코드 제어: 제한됨
+</code></pre>
+<h4 id="_39">특징</h4>
+<pre><code>✅ 매우 빠른 배포
+✅ 좋은 초기 디자인
+✅ 1-클릭 배포
+❌ GitHub 미통합
+❌ 지원 체계 약함
+❌ 앱 크기 제한
+</code></pre>
+<h4 id="_40">추천 용도</h4>
+<ul>
+<li>✅ 빠른 데모 필요</li>
+<li>✅ 아이디어 검증</li>
+<li>✅ 면접/발표 데모</li>
+<li>✅ 콘테스트 참가</li>
+<li>❌ 장기 프로젝트</li>
+<li>❌ 상업 프로덕션</li>
+</ul>
+<hr />
+<h2 id="_41">각 도구별 설치 및 기본 사용법</h2>
+<h3 id="cursor">Cursor 설치 가이드 (모든 플랫폼)</h3>
+<h4 id="windows">Windows 설치</h4>
+<p><strong>Step 1: 공식 인스톨러 다운로드</strong></p>
+<pre><code>https://downloader.cursor.sh/windows/nsis/x64
+</code></pre>
+<p><strong>Step 2: 관리자 권한으로 실행</strong></p>
+<pre><code>다운로드한 CursorSetup.exe를 우클릭
+&quot;관리자 권한으로 실행&quot; 선택
+</code></pre>
+<p><strong>Step 3: 설치 과정</strong></p>
+<pre><code>1. 라이선스 동의
+2. 설치 위치 선택 (기본값: C:\Users\[사용자명]\AppData\Local\Programs\cursor)
+3. 시작 메뉴 폴더 선택
+4. &quot;설치&quot; 클릭
+5. 자동으로 Cursor 실행
+</code></pre>
+<p><strong>Step 4: 초기 설정</strong></p>
+<pre><code>1. 테마 선택 (Light/Dark)
+2. 폴더 선택 (기존 프로젝트 열기)
+3. VSCode 설정 마이그레이션 (선택사항)
+</code></pre>
+<h4 id="macos">macOS 설치</h4>
+<p><strong>Step 1: DMG 파일 다운로드</strong></p>
+<pre><code>Intel Mac: https://downloader.cursor.sh/mac/dmg/x64
+Apple Silicon: https://downloader.cursor.sh/mac/dmg/arm64
+</code></pre>
+<p><strong>Step 2: 설치</strong></p>
+<pre><code>1. 다운로드한 Cursor.dmg 더블클릭
+2. Cursor 아이콘을 Applications 폴더로 드래그
+3. Applications에서 Cursor 실행
+</code></pre>
+<p><strong>Step 3: 보안 승인 (필요시)</strong></p>
+<pre><code>macOS가 &quot;식별할 수 없는 개발자&quot; 경고 표시
+→ 시스템 설정 → 보안 및 개인정보 → &quot;열기&quot; 클릭
+</code></pre>
+<p><strong>Step 4: 명령줄 지원 (선택사항)</strong></p>
+<pre><code>터미널에서 어디서나 cursor로 열기 위해:
+Cmd+Shift+P → &quot;Shell Command&quot; 검색
+&quot;Shell Command: Install 'cursor' command in PATH&quot; 선택
+</code></pre>
+<h4 id="linux">Linux 설치</h4>
+<p><strong>Step 1: AppImage 다운로드</strong></p>
+<pre><code>https://downloader.cursor.sh/linux/x64
+</code></pre>
+<p><strong>Step 2: 실행 권한 부여</strong></p>
+<pre><code class="language-bash">chmod +x cursor-*.AppImage
+</code></pre>
+<p><strong>Step 3: 실행</strong></p>
+<pre><code class="language-bash">./cursor-*.AppImage
+</code></pre>
+<p><strong>Step 4: FUSE 설치 (필요시)</strong></p>
+<pre><code class="language-bash"># libfuse.so.2 오류 발생 시
+sudo apt-get install libfuse2
+</code></pre>
+<h4 id="cursor_1">Cursor 초기 설정</h4>
+<p><strong>Step 1: API 키 설정</strong></p>
+<pre><code>1. Cursor 실행
+2. Settings (Cmd+,)
+3. &quot;API Key&quot; 또는 &quot;Models&quot; 검색
+4. 기본 설정 선택:
+   - Claude 3.5 Sonnet (권장)
+   - GPT-4
+   - o1 (고급)
+</code></pre>
+<p><strong>Step 2: 프로젝트 열기</strong></p>
+<pre><code>1. File → Open Folder
+2. 개발 프로젝트 폴더 선택
+3. Cursor가 프로젝트 인덱싱
+</code></pre>
+<p><strong>Step 3: 기본 명령어</strong></p>
+<pre><code>Cmd+K (Mac) / Ctrl+K (Windows/Linux)
+→ AI 채팅 창 열기
+
+Cmd+L (Mac) / Ctrl+L (Windows/Linux)
+→ 현재 파일 AI 어시스턴트 활성화
+
+@mentions 사용:
+@file_name.js
+@folder_name
+@codebase
+</code></pre>
+<hr />
+<h3 id="kiro">Kiro 설치 가이드</h3>
+<h4 id="_42">사전 요구사항</h4>
+<pre><code>- AWS Builder ID 또는 Google/GitHub 계정
+- 대기열 신청 후 활성화 코드 획득
+- 2GB 이상 저장 공간
+- 안정적인 인터넷 연결
+</code></pre>
+<h4 id="_43">설치 절차</h4>
+<p><strong>Step 1: 활성화 코드 획득</strong></p>
+<pre><code>1. https://kiro.dev/waitlist 접속
+2. 대기열 신청
+3. 메일로 활성화 코드 받음
+</code></pre>
+<p><strong>Step 2: Kiro 클라이언트 다운로드</strong></p>
+<pre><code>https://kiro.dev/downloads
+OS에 맞게 선택:
+- macOS (Intel/Apple Silicon)
+- Windows
+- Linux (Debian/Ubuntu)
+</code></pre>
+<p><strong>Step 3: 설치</strong></p>
+<p><strong>Windows:</strong></p>
+<pre><code>1. 다운로드한 .exe 실행
+2. 라이선스 동의
+3. 설치 위치 선택
+4. &quot;설치&quot; 클릭
+</code></pre>
+<p><strong>macOS:</strong></p>
+<pre><code>1. .dmg 파일 더블클릭
+2. Kiro를 Applications로 드래그
+3. Applications에서 Kiro 실행
+</code></pre>
+<p><strong>Linux:</strong></p>
+<pre><code class="language-bash"># Debian/Ubuntu
+sudo dpkg -i kiro-*.deb
+kiro
+</code></pre>
+<p><strong>Step 4: 초기 설정</strong></p>
+<pre><code>1. 활성화 코드 입력
+2. 계정 로그인 (Google/GitHub/AWS Builder ID)
+3. 테마 선택
+4. 개발 모드 선택 (Vibe vs Spec)
+</code></pre>
+<h4 id="kiro_1">Kiro의 두 가지 개발 모드</h4>
+<p><strong>Vibe 모드 (자유형)</strong></p>
+<pre><code>특징:
+- 자유로운 대화형 개발
+- &quot;간단한 웹 서버 만들어줘&quot; 같은 자유로운 명령
+- 빠른 프로토타이핑
+- 실험적 개발
+
+시작:
+1. New Project → Vibe 선택
+2. 프롬프트 입력
+3. AI와 대화하며 개발
+</code></pre>
+<p><strong>Spec 모드 (명확형)</strong></p>
+<pre><code>특징:
+- 명확한 사양서 작성
+- &quot;다음 API를 구현해: GET /users (200 users list), 
+  POST /users (create), DELETE /users/:id&quot;
+- 높은 정확도
+- 복잡한 프로젝트에 최적
+
+시작:
+1. New Project → Spec 선택
+2. 상세한 요구사항 정의
+3. AI가 완벽한 구현 생성
+</code></pre>
+<hr />
+<h3 id="claude-code">Claude Code 설치 가이드</h3>
+<h4 id="_44">시스템 요구사항</h4>
+<pre><code>- VSCode 설치
+- Node.js 18+ 설치
+- macOS/Linux/Windows (모두 지원)
+- Claude API 접근 (향후)
+</code></pre>
+<h4 id="_45">설치 절차</h4>
+<p><strong>Step 1: Claude CLI 설치</strong></p>
+<pre><code class="language-bash"># npm을 사용한 설치 (권장)
+npm install -g @anthropic-ai/claude
+
+# 또는 yarn
+yarn global add @anthropic-ai/claude
+
+# 설치 확인
+claude --version
+</code></pre>
+<p><strong>Step 2: CLI 업데이트</strong></p>
+<pre><code class="language-bash">claude update
+</code></pre>
+<p><strong>Step 3: VSCode에서 실행</strong></p>
+<pre><code>1. VSCode 열기
+2. 통합 터미널 열기 (Ctrl+`)
+3. 다음 입력:
+   claude
+4. VSCode 확장 자동 설치 시작
+</code></pre>
+<p><strong>Step 4: 단축키 설정</strong></p>
+<pre><code>Mac: Cmd+Esc → Claude 창 열기
+Windows/Linux: Ctrl+Esc → Claude 창 열기
+</code></pre>
+<h4 id="_46">실제 사용 예제</h4>
+<p><strong>예제 1: 파일 생성</strong></p>
+<pre><code>Claude 프롬프트:
+&quot;Python 함수를 작성해줘. 입력: 리스트, 출력: 리스트의 합&quot;
+
+응답:
+def sum_list(numbers):
+    return sum(numbers)
+
+## 설명
+이 함수는 내장 sum() 함수를 사용하여 
+리스트의 모든 원소를 더합니다.
+
+[적용] [거절] [수정]
+</code></pre>
+<p><strong>예제 2: 파일 참조</strong></p>
+<pre><code>프롬프트:
+@myfile.py
+위 파일의 함수를 리팩토링해줘
+
+결과:
+원본 함수와 개선된 버전의 diff 표시
+변경사항 검토 후 [적용] 클릭
+</code></pre>
+<p><strong>예제 3: 특수 명령</strong></p>
+<pre><code># 정보 저장
+프롬프트: # 프로젝트는 Django 기반, DB는 PostgreSQL
+
+# 터미널 명령 실행
+프롬프트: ! npm run build
+
+# IDE에서 프리뷰 열기
+프롬프트: /ide
+
+# 설정
+프롬프트: /config
+</code></pre>
+<hr />
+<h3 id="lovabledev">Lovable.dev 시작하기</h3>
+<h4 id="step-1">Step 1: 가입</h4>
+<p><strong>웹 접속:</strong></p>
+<pre><code>https://lovable.dev
+</code></pre>
+<p><strong>계정 생성:</strong></p>
+<pre><code>1. &quot;Sign Up&quot; 클릭
+2. Google/GitHub 계정 선택 또는 이메일 입력
+3. 초기 크레딧 받음
+</code></pre>
+<h4 id="step-2">Step 2: 첫 프로젝트 생성</h4>
+<p><strong>프로젝트 시작:</strong></p>
+<pre><code>1. 대시보드에서 &quot;Create New Project&quot; 클릭
+2. 프로젝트 이름 입력 (예: &quot;Todo App&quot;)
+3. &quot;Create&quot; 클릭
+</code></pre>
+<h4 id="step-3-mvp">Step 3: MVP 아이디어 설명</h4>
+<p><strong>프롬프트 작성 팁:</strong></p>
+<pre><code>✅ 좋은 프롬프트:
+&quot;로그인 기능이 있는 Todo 앱을 만들어줘.
+사용자는 할 일을 추가, 완료, 삭제할 수 있어.
+모바일 반응형이어야 하고, 깔끔한 테일윈드 스타일이 좋아.
+할 일의 우선순위도 설정할 수 있으면 좋겠어.&quot;
+
+❌ 나쁜 프롬프트:
+&quot;앱 만들어줘&quot;
+&quot;좋은 앱 만들어&quot;
+&quot;웹사이트 만들어줘&quot;
+</code></pre>
+<h4 id="step-4-supabase">Step 4: Supabase 백엔드 자동 설정</h4>
+<p><strong>자동 생성되는 것:</strong></p>
+<pre><code>✅ 사용자 인증 (이메일/비밀번호)
+✅ PostgreSQL 데이터베이스
+✅ 테이블 설계
+✅ 실시간 동기화
+✅ 보안 규칙 설정
+→ 모두 자동으로 구성됨!
+</code></pre>
+<h4 id="step-5">Step 5: 실시간 프리뷰</h4>
+<p><strong>프리뷰 보기:</strong></p>
+<pre><code>1. 우측 패널에서 &quot;Preview&quot; 탭 선택
+2. 실시간으로 앱 동작 확인
+3. 필요시 프롬프트로 수정 요청
+</code></pre>
+<h4 id="step-6">Step 6: 반복 개선</h4>
+<p><strong>Round 1: 기본 구조</strong></p>
+<pre><code>프롬프트: &quot;Todo 앱 만들어줘&quot;
+결과: 기본 CRUD 기능 포함 앱 생성
+</code></pre>
+<p><strong>Round 2: 디자인 개선</strong></p>
+<pre><code>프롬프트: &quot;어두운 테마로 바꿔줘&quot;
+결과: 다크 모드 적용
+</code></pre>
+<p><strong>Round 3: 기능 추가</strong></p>
+<pre><code>프롬프트: &quot;할 일에 카테고리 추가해줘 (Work, Personal, Shopping)&quot;
+결과: 카테고리 필터링 기능 추가
+</code></pre>
+<p><strong>Round 4: 사용성 개선</strong></p>
+<pre><code>프롬프트: &quot;할 일을 드래그해서 순서를 바꿀 수 있게 해줘&quot;
+결과: 드래그 앤 드롭 기능 추가
+</code></pre>
+<h4 id="step-7-github">Step 7: GitHub 연동 (선택)</h4>
+<p><strong>코드 접근:</strong></p>
+<pre><code>1. 우측 상단 &quot;...&quot; 메뉴
+2. &quot;Export to GitHub&quot; 선택
+3. GitHub 리포지토리 선택 또는 생성
+4. 모든 코드가 GitHub으로 푸시됨
+</code></pre>
+<h4 id="step-8">Step 8: 배포</h4>
+<p><strong>공개 링크 생성:</strong></p>
+<pre><code>1. 우측 상단 &quot;Share&quot; 버튼 클릭
+2. &quot;Deploy&quot; 클릭
+3. Vercel로 자동 배포
+4. 공개 URL 생성 (예: myapp-12345.vercel.app)
+5. 누구나 접속 가능
+</code></pre>
+<h4 id="_47">실전 예제: 구독 관리 앱</h4>
+<p><strong>Step 1: 프롬프트</strong></p>
+<pre><code>사용자가 월 구독 서비스를 관리하는 앱을 만들어줘.
+기능:
+1. 구독 서비스 추가 (이름, 가격, 결제일, 카테고리: Entertainment/Productivity/Education)
+2. 모든 구독의 월별 총 비용 계산
+3. 곧 만료될 구독 알림 (빨간색 표시)
+4. 구독 편집 및 삭제 기능
+5. 월별 비용 차트
+6. 사용하지 않는 구독 추천 (6개월 이상 미사용)
+
+UI는 모바일 친화적이고, 깔끔한 다크 테마로 디자인해줘.
+사용자 인증도 포함해줘. (Google 로그인 옵션 있으면 좋아)
+</code></pre>
+<p><strong>Step 2: 생성된 파일</strong></p>
+<pre><code>✅ 10+ 파일 자동 생성
+✅ React 컴포넌트
+✅ Tailwind CSS 스타일
+✅ Supabase 데이터베이스
+✅ API 경로
+✅ 인증 시스템
+</code></pre>
+<p><strong>Step 3: 프리뷰 &amp; 테스트</strong></p>
+<pre><code>1. 우측 패널에서 실시간 프리뷰
+2. 구독 추가 테스트
+3. 차트 확인
+4. 모바일 반응형 테스트
+</code></pre>
+<p><strong>Step 4: 반복 개선</strong></p>
+<pre><code>프롬프트 1: &quot;Google 계정으로 로그인 되면 프로필 사진도 보여줘&quot;
+프롬프트 2: &quot;월별 비용 트렌드 그래프 추가&quot;
+프롬프트 3: &quot;구독을 카테고리별로 필터링할 수 있게&quot;
+프롬프트 4: &quot;내보내기 (CSV) 기능 추가&quot;
+</code></pre>
+<p><strong>Step 5: 배포</strong></p>
+<pre><code>1. &quot;Share&quot; → &quot;Deploy&quot;
+2. 공개 링크 획득
+3. 친구/동료와 공유
+4. 피드백 수집
+</code></pre>
+<p><strong>소요 시간:</strong> 약 30분 (프롬프트 작성 포함)<br />
+<strong>전통 개발 시간:</strong> 3-5일</p>
+<hr />
+<h2 id="mvp">실전 MVP 프로젝트</h2>
+<h3 id="1-todo">프로젝트 1: Todo 앱 (모든 도구로 구현)</h3>
+<h4 id="1-1-lovabledev">1-1. Lovable.dev로 구현</h4>
+<p><strong>프롬프트:</strong></p>
+<pre><code>기본 todo 앱을 만들어줘.
+사용자는 할 일을 추가, 완료, 삭제할 수 있어.
+할 일 완료 상태를 토글할 수 있어야 하고,
+모바일 친화적인 디자인이면 좋겠어.
+사용자 인증 기능도 포함해줘.
+</code></pre>
+<p><strong>결과:</strong></p>
+<pre><code>폴더 구조:
+todo-app/
+├── app.jsx (메인 컴포넌트)
+├── supabase.js (데이터베이스 설정)
+├── styles.css (스타일)
+├── database.sql (스키마)
+└── vercel.json (배포 설정)
+
+특징:
+✅ React 기반
+✅ Supabase 자동 통합
+✅ 사용자 인증
+✅ 실시간 동기화
+✅ 모바일 반응형
+✅ 배포 가능한 상태
+</code></pre>
+<p><strong>배포:</strong></p>
+<pre><code>1. Share → Deploy
+2. Vercel 자동 배포
+3. 공개 링크 획득
+완료 시간: 30분
+</code></pre>
+<h4 id="1-2-cursor">1-2. Cursor로 구현</h4>
+<p><strong>작업 흐름:</strong></p>
+<pre><code>Step 1: 프로젝트 생성
+npm create vite@latest todo-app -- --template react
+cd todo-app
+
+Step 2: Cursor 열기
+cursor .
+
+Step 3: AI에 요청 (Cmd+K)
+&quot;Todo 앱을 React로 만들어줘.
+기능: 추가, 완료, 삭제
+로컬 스토리지에 저장
+모바일 반응형&quot;
+
+Step 4: 코드 생성 및 개선
+Round 1: 기본 구조 생성
+Round 2: &quot;CSS-in-JS로 스타일 변경&quot;
+Round 3: &quot;드래그 앤 드롭 기능 추가&quot;
+
+Step 5: 배포
+npm run build
+vercel deploy
+</code></pre>
+<p><strong>생성되는 파일:</strong></p>
+<pre><code>src/
+├── App.jsx (Todo 컴포넌트)
+├── hooks/
+│   └── useTodos.js (상태 관리)
+├── components/
+│   ├── TodoList.jsx
+│   ├── TodoInput.jsx
+│   └── TodoItem.jsx
+└── App.css
+</code></pre>
+<p><strong>소요 시간:</strong> 1-2시간<br />
+<strong>장점:</strong> 완전한 코드 제어, 커스터마이징 용이</p>
+<hr />
+<h3 id="2-lovable-v0">프로젝트 2: 리뷰 사이트 (Lovable + v0 조합)</h3>
+<h4 id="phase-1-lovable">Phase 1: Lovable로 기본 구조</h4>
+<p><strong>프롬프트:</strong></p>
+<pre><code>영화 리뷰 사이트를 만들어줘.
+사용자는:
+1. 영화 검색
+2. 별점 및 리뷰 작성
+3. 다른 사람의 리뷰 보기
+4. 좋아요 누르기
+
+데이터베이스: 영화 정보, 리뷰, 사용자
+인증: 이메일/비밀번호 또는 Google
+</code></pre>
+<p><strong>결과:</strong> 완벽한 fullstack 앱</p>
+<h4 id="phase-2-v0-ui">Phase 2: v0로 UI 개선</h4>
+<p><strong>프롬프트:</strong></p>
+<pre><code>영화 리뷰 카드 컴포넌트를 만들어줘.
+- 영화 포스터 이미지
+- 제목
+- 별점 (5개 별)
+- 리뷰 텍스트
+- 좋아요 수
+- 리뷰 작성자
+- 반응형 그리드 레이아웃
+</code></pre>
+<p><strong>결과:</strong> 고품질 UI 컴포넌트 생성</p>
+<p><strong>조합 효과:</strong></p>
+<pre><code>Lovable: 백엔드 + 기본 UI
+v0: 고품질 컴포넌트 생성
+→ 프로덕션 준비된 앱 완성
+소요 시간: 1-2시간
+</code></pre>
+<hr />
+<h2 id="_48">도구 조합 전략</h2>
+<h3 id="1_1">시나리오 1: 스타트업 창업자 (비개발자)</h3>
+<p><strong>목표:</strong> 빠르게 MVP 검증</p>
+<p><strong>추천 조합:</strong></p>
+<pre><code>1단계: Lovable (1주)
+- 완전한 MVP 앱 구현
+- 사용자 피드백 수집
+- 시장 검증
+
+2단계: v0 (필요시)
+- UI 개선
+- 디자인 품질 향상
+
+3단계: 팀 확장 필요 시
+- 개발자 고용
+- Cursor + Copilot 도입
+- Supabase 직접 관리로 전환
+</code></pre>
+<p><strong>예상 비용:</strong></p>
+<pre><code>Lovable Pro: $30/월
+v0 Pro: $20/월
+총 월 비용: $50
+vs 주니어 개발자: $2,000-4,000/월
+절감액: 95%
+</code></pre>
+<hr />
+<h3 id="2">시나리오 2: 기술팀 (개발자)</h3>
+<p><strong>목표:</strong> 고품질 프로덕션 앱 빠르게 개발</p>
+<p><strong>추천 조합:</strong></p>
+<pre><code>1단계: Kiro (스펙 설계)
+- 명확한 요구사항 문서화
+- AI가 정확한 구현 생성
+- 자동 테스트 생성
+
+2단계: Cursor (고도화 &amp; 리뷰)
+- 코드 리뷰
+- 보안 검토
+- 최적화
+
+3단계: Claude Code (협업)
+- 팀원과 실시간 협업
+- 복잡한 구조 설계
+
+4단계: Copilot (일상 작업)
+- 빠른 보일러플레이트 생성
+- 성능 최적화
+</code></pre>
+<p><strong>워크플로우:</strong></p>
+<pre><code>Day 1: Kiro로 스펙 기반 구현 완료
+Day 2-3: Cursor로 코드 품질 개선
+Day 4: Claude Code로 팀 리뷰
+Day 5: 배포 준비 및 Copilot으로 최적화
+</code></pre>
+<hr />
+<h3 id="3">시나리오 3: 에이전시 (다양한 클라이언트)</h3>
+<p><strong>목표:</strong> 빠른 납기, 높은 품질</p>
+<p><strong>추천 조합:</strong></p>
+<pre><code>프로젝트별 전략:
+1. 빠른 프로토타입 (1-2일)
+   → Mocha + Lovable
+   → 클라이언트 검증
+
+2. 중간 규모 프로젝트 (1-2주)
+   → Cursor + Copilot
+   → 완벽한 코드 제어
+
+3. 대규모 프로젝트 (1개월+)
+   → Kiro (스펙) + Claude Code (팀) + Cursor (리뷰)
+   → 체계적 개발
+
+공통 도구:
+- v0: UI 컴포넌트 라이브러리 구축
+- Replit: 팀 협업 개발 환경
+- Windsurf: 자동화 작업
+</code></pre>
+<hr />
+<h3 id="4">시나리오 4: 개인 프리랜서</h3>
+<p><strong>목표:</strong> 다양한 프로젝트 효율적 관리</p>
+<p><strong>추천 조합:</strong></p>
+<pre><code>1. 일상 작업
+   → Cursor Pro ($20/월)
+   → Copilot Pro ($10/월)
+   → 대부분의 작업 커버
+
+2. UI 중심 프로젝트
+   → v0 ($20/월)
+   → 빠른 컴포넌트 생성
+
+3. 비개발자 클라이언트
+   → Lovable ($30/월)
+   → MVP 빠르게 제공
+
+총 월 비용: $60 (필요시 활용)
+예상 생산성 향상: 3-5배
+</code></pre>
+<hr />
+<h2 id="_49">학습 로드맵</h2>
+<h3 id="_50">초급자 (비개발자 ~ 개발 초보)</h3>
+<h4 id="_51">목표: 첫 앱 만들기</h4>
+<p><strong>기간: 2-4주</strong></p>
+<p><strong>Week 1: 기초 학습</strong></p>
+<pre><code>Day 1-2: Lovable.dev 가입 및 기본 사용법
+  ✓ 계정 생성
+  ✓ 첫 프로젝트 생성
+  ✓ 기본 프롬프트 작성법
+
+Day 3-4: 간단한 Todo 앱 만들기
+  ✓ 프롬프트로 앱 생성
+  ✓ 배포까지 완료
+  ✓ 링크 공유
+
+Day 5-7: 복잡한 앱 도전
+  ✓ 구독 관리 앱
+  ✓ 반복 개선 경험
+  ✓ 사용자 피드백 적용
+</code></pre>
+<p><strong>Week 2: 디자인 개선</strong></p>
+<pre><code>Day 8-10: v0로 UI 컴포넌트 학습
+  ✓ v0.dev 가입
+  ✓ 다양한 UI 컴포넌트 생성
+  ✓ Figma 디자인 → 코드 변환
+
+Day 11-14: 기존 앱 개선
+  ✓ v0로 생성한 컴포넌트 통합
+  ✓ 디자인 품질 향상
+  ✓ 모바일 반응형 최적화
+</code></pre>
+<p><strong>Week 3-4: 포트폴리오 구축</strong></p>
+<pre><code>Day 15-20: 3개 프로젝트 완성
+  1. Todo App (기본)
+  2. Subscription Manager (중급)
+  3. Review Site (고급)
+
+Day 21-28: 배포 &amp; 포트폴리오
+  ✓ Vercel 배포
+  ✓ 포트폴리오 사이트 구축
+  ✓ GitHub에 코드 공유
+</code></pre>
+<p><strong>추천 학습 순서:</strong></p>
+<pre><code>1단계: Lovable (완전 자동화)
+2단계: v0 (UI 개선)
+3단계: Replit (협업 &amp; 학습)
+</code></pre>
+<hr />
+<h3 id="_52">중급자 (프론트엔드 개발 경험 있음)</h3>
+<h4 id="_53">목표: 프로덕션 앱 개발</h4>
+<p><strong>기간: 1-3개월</strong></p>
+<p><strong>Month 1: 도구 마스터</strong></p>
+<pre><code>Week 1: Cursor 심화
+  ✓ 설치 &amp; 기본 설정
+  ✓ Composer로 멀티파일 편집
+  ✓ 기존 프로젝트 리팩토링
+
+Week 2: Copilot 통합
+  ✓ VSCode에 Copilot 설치
+  ✓ Cursor + Copilot 비교
+  ✓ 워크플로우 최적화
+
+Week 3: v0 심화
+  ✓ 복잡한 컴포넌트 생성
+  ✓ 팀 협업
+  ✓ 디자인 시스템 구축
+
+Week 4: Claude Code 도입
+  ✓ 설치 &amp; 기본 사용
+  ✓ VSCode 통합
+  ✓ 팀 협업 경험
+</code></pre>
+<p><strong>Month 2: 실전 프로젝트</strong></p>
+<pre><code>프로젝트 1: SaaS 애플리케이션
+  기술: Cursor + Copilot + v0
+  기간: 2주
+  결과: 배포 가능한 상태
+
+프로젝트 2: API 설계 (Kiro 도입)
+  기술: Kiro (스펙) + Cursor (리뷰)
+  기간: 1주
+  결과: 고품질 API 엔드포인트
+</code></pre>
+<p><strong>Month 3: 팀 협업</strong></p>
+<pre><code>Claude Code로 팀 협업 경험
+Windsurf로 자동화 작업 학습
+Replit에서 팀원과 실시간 협업
+</code></pre>
+<p><strong>추천 학습 순서:</strong></p>
+<pre><code>1단계: Cursor (메인 도구)
+2단계: Copilot (보조 도구)
+3단계: Claude Code (협업)
+4단계: v0 (UI 시스템)
+5단계: Kiro (스펙 기반)
+</code></pre>
+<hr />
+<h3 id="_54">고급자 (풀스택 개발자)</h3>
+<h4 id="_55">목표: 엔터프라이즈 급 솔루션 구축</h4>
+<p><strong>기간: 지속적</strong></p>
+<p><strong>전략 1: 도구 조합 최적화</strong></p>
+<pre><code>Kiro (스펙 &amp; 아키텍처)
+  ↓
+Claude Code (팀 설계)
+  ↓
+Cursor (고도화 &amp; 리뷰)
+  ↓
+Copilot (일상 작업)
+  ↓
+Windsurf (자동화)
+</code></pre>
+<p><strong>전략 2: 프로젝트별 맞춤</strong></p>
+<pre><code>MVP/검증: Lovable + v0 (빠른 시장진입)
+초기 구현: Kiro (명확한 스펙)
+고도화: Cursor (코드 품질)
+협업: Claude Code (팀 커뮤니케이션)
+최적화: Copilot + Windsurf (성능)
+</code></pre>
+<p><strong>전략 3: 자동화 워크플로우</strong></p>
+<pre><code>1. Kiro로 API 스펙 생성
+2. 자동 테스트 생성
+3. CI/CD 자동화 (Windsurf)
+4. 배포 자동화
+5. 모니터링 자동화
+→ 개발 생산성 10배 향상
+</code></pre>
+<hr />
+<h2 id="_56">레퍼런스 및 리소스</h2>
+<h3 id="_57">공식 문서</h3>
+<p><strong>Cursor</strong><br />
+- 공식 웹사이트: https://cursor.com<br />
+- 문서: https://docs.cursor.com<br />
+- GitHub: https://github.com/getcursor</p>
+<p><strong>Kiro</strong><br />
+- 공식 웹사이트: https://kiro.dev<br />
+- 튜토리얼: https://kiro.dev/docs<br />
+- AWS 블로그: aws.amazon.com/blogs/kiro</p>
+<p><strong>Claude Code</strong><br />
+- 공식 문서: https://docs.anthropic.com/claude-code<br />
+- GitHub: https://github.com/anthropics/claude-code<br />
+- 커뮤니티: https://community.anthropic.com</p>
+<p><strong>GitHub Copilot</strong><br />
+- 공식 문서: https://docs.github.com/copilot<br />
+- 확장 마켓플레이스: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot<br />
+- 학습 리소스: https://github.com/copilot-guide</p>
+<p><strong>Lovable.dev</strong><br />
+- 공식 웹사이트: https://lovable.dev<br />
+- 튜토리얼: https://lovable.dev/tutorials<br />
+- 커뮤니티: https://discord.gg/lovable</p>
+<p><strong>v0 by Vercel</strong><br />
+- 공식 웹사이트: https://v0.dev<br />
+- 문서: https://v0.dev/docs<br />
+- 예제: https://v0.dev/gallery</p>
+<p><strong>Replit</strong><br />
+- 공식 웹사이트: https://replit.com<br />
+- 문서: https://docs.replit.com<br />
+- 커뮤니티: https://replit.com/community</p>
+<p><strong>Windsurf</strong><br />
+- 공식 웹사이트: https://windsurf.io<br />
+- 플러그인 설명서: https://docs.windsurf.io<br />
+- IDE 지원: 40+ IDE 및 에디터</p>
+<hr />
+<h3 id="_58">커뮤니티 및 학습 자료</h3>
+<p><strong>Reddit</strong><br />
+- r/GithubCopilot: GitHub Copilot 토론<br />
+- r/webdev: 웹 개발 일반<br />
+- r/learnprogramming: 프로그래밍 학습</p>
+<p><strong>Discord 서버</strong><br />
+- Cursor 커뮤니티<br />
+- Lovable 커뮤니티<br />
+- Vercel 커뮤니티</p>
+<p><strong>YouTube 채널</strong><br />
+- Cursor 튜토리얼<br />
+- AI 코딩 도구 리뷰<br />
+- MVP 빌딩 가이드</p>
+<p><strong>블로그 &amp; 아티클</strong><br />
+- Dev.to: 개발자 커뮤니티 블로그<br />
+- Medium: AI 코딩 도구 가이드<br />
+- Hashnode: 개발자 블로그</p>
+<hr />
+<h3 id="_59">추천 커리큘럼별 리소스</h3>
+<p><strong>비개발자 ~ 초보 개발자</strong></p>
+<pre><code>1. Lovable 공식 튜토리얼 (1시간)
+2. Todo 앱 실습 (1시간)
+3. 구독 관리 앱 (2시간)
+4. v0로 UI 개선 (1시간)
+→ 총 5시간으로 완벽한 앱 구현
+</code></pre>
+<p><strong>중급 개발자</strong></p>
+<pre><code>1. Cursor 심화 가이드 (2시간)
+2. 실전 프로젝트 (SaaS) (20시간)
+3. Claude Code 협업 (3시간)
+4. API 설계 (Kiro) (5시간)
+→ 총 30시간으로 엔터프라이즈 급 기술 습득
+</code></pre>
+<p><strong>고급 개발자</strong></p>
+<pre><code>1. Kiro 마스터 (아키텍처 설계)
+2. 팀 협업 최적화 (Claude Code)
+3. 자동화 워크플로우 (Windsurf)
+4. 성능 최적화 (Cursor + Copilot)
+→ 지속적인 개선과 최적화
+</code></pre>
+<hr />
+<h2 id="_60">결론: 바이브 코딩의 미래</h2>
+<h3 id="2025">2025년의 바이브 코딩</h3>
+<p>바이브 코딩은 더 이상 미래의 기술이 아닙니다. 이미 현재입니다.</p>
+<ul>
+<li><strong>Y Combinator 겨울 배치의 25%가 AI 생성 코드 95% 이상 활용</strong></li>
+<li><strong>개발 시간이 기존 대비 5-10배 단축</strong></li>
+<li><strong>비개발자도 소프트웨어 개발 가능</strong></li>
+<li><strong>개발팀의 생산성이 기하급수적으로 증가</strong></li>
+</ul>
+<h3 id="_61">개발자의 역할 변화</h3>
+<pre><code>2020s: &quot;코드를 손으로 직접 작성하는 개발자&quot;
+  → 수고롭고 반복적인 작업 많음
+
+2025+: &quot;AI와 협력하는 아키텍트 개발자&quot;
+  → 설계, 리뷰, 최적화에 집중
+  → 비즈니스 로직에 집중
+  → 보안과 성능에 집중
+</code></pre>
+<h3 id="_62">추천사항</h3>
+<p><strong>지금 바로 시작하세요.</strong></p>
+<pre><code>1단계: 당신의 상황에 맞는 도구 선택
+   비개발자? → Lovable
+   개발자? → Cursor
+   팀? → Claude Code
+
+2단계: 첫 프로젝트 시작
+   목표: 간단한 앱 완성
+   기간: 1-2주
+   결과: 실제 동작하는 앱
+
+3단계: 피드백 수집 &amp; 반복
+   사용자 피드백
+   지속적 개선
+   프로덕션 배포
+
+4단계: 도구 조합 최적화
+   프로젝트 특성에 따라
+   다양한 도구 시도
+   최적의 워크플로우 구축
+</code></pre>
+<hr />
+<h2 id="faq">부록: FAQ</h2>
+<h3 id="q1">Q1: 어느 도구가 가장 좋나요?</h3>
+<p><strong>A:</strong> 상황에 따라 다릅니다. 빠른 검증 필요? Lovable. 코드 제어 필요? Cursor. 팀 협업? Claude Code.</p>
+<h3 id="q2-ai">Q2: AI가 생성한 코드가 안전한가요?</h3>
+<p><strong>A:</strong> 안전하지만 검수 필수입니다. 항상 보안 및 성능 리뷰를 진행하세요.</p>
+<h3 id="q3">Q3: 저작권은 어디에?</h3>
+<p><strong>A:</strong> 생성된 코드는 사용자 소유입니다. 대부분의 도구가 명시하고 있습니다.</p>
+<h3 id="q4">Q4: 비용이 얼마나 되나요?</h3>
+<p><strong>A:</strong> 도구마다 다르지만, 월 $50-100이면 대부분의 도구 사용 가능합니다.</p>
+<h3 id="q5">Q5: 한국어 지원이 되나요?</h3>
+<p><strong>A:</strong> 대부분 영어로 최적화되어 있습니다. 한국어도 지원하지만, 영어가 더 정확합니다.</p>
+<h3 id="q6">Q6: 오프라인에서도 사용 가능한가요?</h3>
+<p><strong>A:</strong> 대부분 인터넷 필수입니다. 일부 로컬 모델 지원 도구도 있습니다.</p>
+<h3 id="q7">Q7: 초보자도 쉽게 배울 수 있나요?</h3>
+<p><strong>A:</strong> 네! 특히 Lovable, v0, Replit은 초보자 친화적입니다.</p>
+<h3 id="q8">Q8: 프로덕션 앱도 만들 수 있나요?</h3>
+<p><strong>A:</strong> 네! Cursor, Copilot, Kiro로 완벽한 프로덕션 앱을 만들 수 있습니다.</p>
+<hr />
+<h2 id="_63">저자의 마지막 말</h2>
+<p>이 전자책을 읽으신 분들이 바이브 코딩의 힘을 경험하기를 바랍니다. </p>
+<p>소프트웨어 개발의 민주화가 일어나고 있습니다. 더 이상 개발이 소수의 엘리트만의 영역이 아닙니다. 좋은 아이디어를 가진 누구나 빠르게 구현할 수 있는 시대가 되었습니다.</p>
+<p>여러분의 아이디어가 세상을 바꿀 수 있습니다. 지금 바로 시작하세요.</p>
+<hr />
+<p><strong>문서 작성일:</strong> 2025년 11월<br />
+<strong>최종 업데이트:</strong> 2025년 11월 11일<br />
+<strong>버전:</strong> 1.0</p>
+<hr />
+<p><em>이 전자책의 모든 내용은 2025년 11월 기준으로 작성되었습니다. 도구의 가격, 기능, 가용성은 변경될 수 있습니다.</em></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 11월 18일 8:21 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@ashespia/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@ashespia/">@ashespia</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1108/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1108/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/5516/add_comment/"
+                      method="post"
+                      hx-post="/blog/5516/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="X5wOujDAhIyYAz38rLIGhpiUVijxJs7vyTu3aB34HfW6KqYOHia6VWxRMlte0zrJ">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @ashespia 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/18682">
+                    
+                        <img src="https://static.wikidocs.net/images/book/표지_바이브_코딩Vibe_Coding_완벽_가이드_cLlIaqj_cppCyC9_7CbZKrD_1769347169_1769347331_1769347574.jpg"
+                             alt="바이브 코딩(Vibe Coding) 완벽 가이드"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/18682"
+                           class="hover:text-red-500 dark:hover:text-red-400">바이브 코딩(Vibe Coding) 완벽 가이드</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        이 책은 @ashespia님의 블로그 페이지를 엮어 만들어진 책입니다.
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 11월 12일 1:29 오전</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">3707</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-5516"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-5516"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/5516/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=6c8c122'/>

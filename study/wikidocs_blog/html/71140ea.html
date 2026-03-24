@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="ASP.NET Blazor에서 JavaScript와의 양방향 통신 모험기">
+    <meta property="og:type" content="ASP.NET Blazor에서 JavaScript와의 양방향 통신 모험기">
+    <meta property="og:title" content="ASP.NET Blazor에서 JavaScript와의 양방향 통신 모험기">
+    <meta property="og:description" content="ASP.NET Blazor에서 JavaScript와의 양방향 통신 모험기">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@dotlynee/2133/">
+
+        
+    <title>ASP.NET Blazor에서 JavaScript와의 양방향 통신 모험기
+        - 닷린이의 닷넷 모험기
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">ASP.NET Blazor에서 JavaScript와의 양방향 통신 모험기</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@dotlynee/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @dotlynee
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 4월 2일 8:17 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@dotlynee/?tag=1257"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Jsinterop
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@dotlynee/?tag=1256"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Asp.net
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@dotlynee/?tag=1255"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Javascript
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@dotlynee/?tag=1254"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Blazor
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@dotlynee/?tag=1253"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Typescript
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@dotlynee/?tag=1252"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Vite
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><blockquote>
+<p>이 글에는 타입스크립트로 작성한 자바스크립트 코드를 Vite로 빌드한 뒤 Blazor와 양방향 통신을 시도한 닷넷 초보의 모험이 담겨져 있습니다. <a href="https://github.com/dotlynee/JSInteropStudy">Github 레포지터리</a></p>
+</blockquote>
+<p><img alt="" src="https://raw.githubusercontent.com/dotlynee/JSInteropStudy/refs/heads/main/images/blog-title-20250402.jpg" /></p>
+<p>💎 <strong>모험에서 얻은 보상</strong></p>
+<p><img alt="" src="https://raw.githubusercontent.com/dotlynee/JSInteropStudy/refs/heads/main/images/interop-demo-2025040221.gif" /></p>
+<h3 id="1-dockview">1. 닷린이의 첫 발걸음: Dockview를 써보고 싶어요... 현기증 난다구욧!</h3>
+<p>안녕하세요! 저는 <strong>닷넷 생후 1개월</strong> 된, 커여운 햄스터 닷린이입니다. 이번 모험은 <strong>Blazor에서 JavaScript와의 양방향 통신</strong>을 구현해보려는 도전기입니다. 목표는 <a href="https://dockview.dev/"><code>Dockview</code></a> 라는 도킹 레이아웃 매니저를 Blazor에서 사용하기 위해 JavaScript 라이브러리를 활용하는 것이었죠.</p>
+<p>혹시 DockView를 모르신다구요?! Dockview는 이런 멋진 도킹 레이아웃 매니져입니다. 이걸 Blazor 컴포넌트와 같이 사용하면 얼마나 멋진 일일까요? 😍</p>
+<p><img alt="" src="https://dockview.dev/img/Animation.gif" /></p>
+<p>하지만, 이 여정은 순탄치 않았습니다. 일단 저는 <strong>닷넷 왕초보</strong> 닷린이입니다. ASP.NET, Blazor 모두 기초만 끄적거려봤을 뿐이죠. 😭 일단 저 Dockview 는 바닐라 JS로 만들어진 JavaScript 라이브러리입니다. 직접 DOM 을 핸들링하는데 여기다가 Blazor 컴포넌트를 곁들여야 하죠. 도대체 어디서부터 시작해야 할지 막막했습니다.</p>
+<p>하지만 저에겐 퍼플렉시티님이 있었기에, 닥치고 자바스크립트와이 랑데뷰를 시도해봤습니다. 비록 삽질과 멘붕의 연속이었지만, 그 과정에서 얻은 깨달음을 공유하려 합니다 🙏</p>
+<hr />
+<h3 id="2"><strong>2. 프로젝트 구조 세우기: 닷린이의 첫 삽질</strong></h3>
+<p>처음에는 퍼플렉시티에게 &quot;해죠~&quot; 하며 Blazor JSInterop 연습용 프로젝트를 만드는 방법을 문의했어요.</p>
+<p>다음 명령으로 <strong>Blazor Web App</strong> 을 만들라고 하더군요.</p>
+<pre><code>dotnet new blazor -o BlazorJSInteropDemo
+</code></pre>
+<p>그 결과, 만들어진 기본적인 프로젝트 구조는 아래와 같았습니다:</p>
+<pre><code class="language-text">BlazorJSInteropDemo/
+│   BlazorJSInteropDemo.csproj
+│   Program.cs
+├───Components
+│   │   App.razor
+│   │   Routes.razor
+│   │   _Imports.razor
+│   ├───Layout
+│   └───Pages
+├───Properties
+│       launchSettings.json
+└───wwwroot
+    └───lib
+        └───bootstrap
+            └───dist
+                ├───css
+                └───js
+</code></pre>
+<p>여기서 <code>wwwroot/js/site.js</code> 파일에 자바스크립트를 직접 작성해야 했는데, 이 방식은 저에게 너무 불편했습니다. 저는 IDE의 도움을 받아 타입스크립트로 작업하고 싶었거든요! 그래서 다음과 같은 구조로 변경하고 싶었습니다:</p>
+<pre><code class="language-text">BlazorJSInteropDemo/
+├───Client
+│   └───src
+│       ├─ package.json
+│       ├─ vite.config.ts
+│       └─ site.ts - - .
+├───Components         :
+├───Properties         :
+└───wwwroot            :
+    ├───js             :
+    │   └───dist       v
+    │           blazor-interop.js
+    └───lib
+
+</code></pre>
+<p>타입스크립트 파일(<code>site.ts</code>)을 작성하고, 이를 Vite 빌드 매니저를 통해 <code>wwwroot/js/dist/site.js</code>로 변환하는 구조를 만들기로 했습니다.</p>
+<hr />
+<h3 id="3-vite"><strong>3. 첫 번째 난관: Vite 빌드 설정 삽질기</strong></h3>
+<p>타입스크립트를 사용하려면 <code>vite.config.ts</code> 파일을 설정해야 했습니다. 하지만 인터넷에는 적절한 레시피가 거의 없었고, 퍼플렉시티님도 명확한 답을 주지 못했어요. 😭 결국 시행착오 끝에 다음과 같은 설정을 완성했습니다:</p>
+<pre><code class="language-typescript">import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    lib: {
+      entry: 'src/site.ts', // 진입점 파일
+      formats: ['es'],      // ES 모듈로 출력
+      fileName: () =&gt; 'blazor-interop.js',
+    },
+    rollupOptions: {
+      output: {
+        exports: 'named',  // named exports 유지
+      },
+    },
+    minify: true,
+    outDir: '../wwwroot/js/dist',
+    emptyOutDir: false,
+  },
+});
+</code></pre>
+<p>이제 타입스크립트로 작성한 코드가 <code>wwwroot/js/dist/blazor-interop.js</code>로 빌드되었고, Blazor에서 사용할 수 있게 되었어요! 🎉</p>
+<p>참고로, <code>site.ts</code> 는 이렇게 생겼답니다.</p>
+<pre><code class="language-ts">import { DotNet } from &quot;@microsoft/dotnet-js-interop&quot;;
+
+export function AddTableRow(
+    tableBody: HTMLElement,
+    name: string,
+    city: string,
+    dotNetRef: DotNet.DotNetObject // .NET 객체 참조
+): void {
+    try {
+        const row = document.createElement('tr');
+        row.innerHTML = `&lt;td&gt;${name}&lt;/td&gt;&lt;td&gt;${city}&lt;/td&gt;`;
+        tableBody.appendChild(row);
+
+        // .NET 메서드 호출 (1초 후 비동기 실행)
+        setTimeout(() =&gt; {
+            dotNetRef.invokeMethodAsync('OnRowAdded', name, city);
+        }, 1000);
+
+    } catch (error) {
+        dotNetRef.invokeMethodAsync('OnJSError', (error as Error).message);
+    }
+}
+</code></pre>
+<hr />
+<h3 id="4"><strong>4. 두 번째 함정: 퍼플렉시티의 배신(?)</strong></h3>
+<p>퍼플렉시티님은 <code>HandleJsCallback</code> 메서드를 다음처럼 작성하라고 알려줬습니다:</p>
+<pre><code class="language-csharp">[JSInvokable(&quot;OnRowAdded&quot;)]
+public static void HandleJsCallback(string name, string city)
+{
+    Console.WriteLine($&quot;JS에서 전달된 데이터: {name}, {city}&quot;);
+}
+</code></pre>
+<p>하지만 이 코드는 제대로 동작하지 않았습니다! 😱 왜냐하면 <code>static</code> 메서드는 Blazor 컴포넌트의 상태를 변경할 수 없기 때문이에요.</p>
+<h4 id="_1"><strong>햄스터의 깨달음</strong></h4>
+<p>퍼플렉시티님도 완벽하지 않다는 사실을 깨달았어요... 😅</p>
+<h4 id="_2"><strong>햄스터의 해결책</strong></h4>
+<p><code>static</code> 키워드를 제거하고 인스턴스 메서드로 변경했습니다:</p>
+<pre><code class="language-csharp">[JSInvokable(&quot;OnRowAdded&quot;)]
+public void HandleJsCallback(string name, string city)
+{
+    Console.WriteLine($&quot;JS에서 전달된 데이터: {name}, {city}&quot;);
+    StateHasChanged(); // UI 갱신 가능!
+}
+</code></pre>
+<p>이제야 제대로 동작하네요! 퍼플렉시티님, 다음엔 더 정확히 알려주세요~ 😊</p>
+<hr />
+<h3 id="5-dotnetobjectreference"><strong>5. DotNetObjectReference 관리 삽질기</strong></h3>
+<p>다음 문제는 <code>DotNetObjectReference</code> 관리였어요. 참조 해제를 제대로 처리하지 않아 메모리 누수가 발생했습니다.</p>
+<h4 id="_3"><strong>햄스터의 해결책</strong></h4>
+<p>컴포넌트 생명주기와 참조 수명을 일치시키는 것이 핵심이에요:</p>
+<pre><code class="language-csharp">private DotNetObjectReference&lt;DOMInterop&gt;? _dotNetRef;
+
+protected override void OnInitialized()
+{
+    _dotNetRef = DotNetObjectReference.Create(this);
+}
+
+public async ValueTask DisposeAsync()
+{
+    _dotNetRef?.Dispose(); // 참조 해제!
+}
+</code></pre>
+<hr />
+<h3 id="6"><strong>6. 최적화와 성능 개선</strong></h3>
+<p>양방향 통신 구현 후 성능 문제가 발생했어요. JS Interop 호출이 많아질수록 성능 저하가 눈에 띄었죠.</p>
+<h4 id="_4"><strong>햄스터의 해결책</strong></h4>
+<ol>
+<li><strong>Batch 처리</strong>:<br />
+여러 데이터를 한 번에 처리하도록 TypeScript 함수를 수정했어요:</li>
+</ol>
+<pre><code class="language-typescript">export function AddMultipleRows(tableBody: HTMLElement, data: Array&lt;[string, string]&gt;): void {
+    data.forEach(([name, city]) =&gt; {
+        const row = document.createElement('tr');
+        row.innerHTML = `&lt;td&gt;${name}&lt;/td&gt;&lt;td&gt;${city}&lt;/td&gt;`;
+        tableBody.appendChild(row);
+    });
+}
+</code></pre>
+<ol>
+<li><strong>Lazy Initialization</strong>:<br />
+JS 모듈 로드를 지연시켜 필요할 때만 초기화:</li>
+</ol>
+<pre><code class="language-csharp">private readonly Lazy&lt;Task&lt;IJSObjectReference&gt;&gt; _jsModuleTask;
+
+public DOMInterop(IJSRuntime jsRuntime)
+{
+    _jsModuleTask = new(() =&gt; jsRuntime.InvokeAsync&lt;IJSObjectReference&gt;(&quot;import&quot;, &quot;./js/dist/blazor-interop.js&quot;).AsTask());
+}
+</code></pre>
+<hr />
+<h3 id="7"><strong>7. 결론: 삽질 끝에 얻은 보물</strong></h3>
+<p>이번 모험을 통해 얻은 교훈은 다음과 같습니다:</p>
+<ol>
+<li>타입스크립트 빌드 설정은 Vite와 Rollup 옵션을 활용해 <code>export</code>를 유지해야 합니다.</li>
+<li>퍼플렉시티님도 무조건 신뢰하지 말고 문제를 직접 디버깅하세요.</li>
+<li>DotNetObjectReference는 반드시 생명주기와 일치시키고 <code>Dispose()</code>로 해제하세요.</li>
+<li>성능 최적화를 위해 Batch 처리와 Lazy Initialization을 적극 활용하세요.</li>
+</ol>
+<p>햄스터 닷린이는 앞으로도 삽질하며 성장할 예정입니다! 여러분도 함께 삽질하며 성장하시길 바라요! 🐹</p>
+<p>⁂</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 4월 2일 10:03 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@dotlynee/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/profile_TesgmpU.png"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@dotlynee/">@dotlynee</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/479/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/479/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">1</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/2133/add_comment/"
+                      method="post"
+                      hx-post="/blog/2133/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="SfxsQy1JbslZquNbCOK4EQ6D0x7E2MxEOlP93YDAmwfxLiYJbvP0jc7bqibe3EhY">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">256</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-2133"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-2133"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/2133/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=71140ea'/>

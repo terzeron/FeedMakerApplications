@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="ICS 파일을 CSV 파일로 변환하는 방법? 최고의 해결책을 알아보세요">
+    <meta property="og:type" content="ICS 파일을 CSV 파일로 변환하는 방법? 최고의 해결책을 알아보세요">
+    <meta property="og:title" content="ICS 파일을 CSV 파일로 변환하는 방법? 최고의 해결책을 알아보세요">
+    <meta property="og:description" content="ICS 파일을 CSV 파일로 변환하는 방법? 최고의 해결책을 알아보세요">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/9463/Convert_ICS_to_CSV_interface_2.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@mishti/9463/">
+
+        
+    <title>ICS 파일을 CSV 파일로 변환하는 방법? 최고의 해결책을 알아보세요
+        - How to Convert ICS to CSV ?
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">ICS 파일을 CSV 파일로 변환하는 방법? 최고의 해결책을 알아보세요</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@mishti/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @mishti
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 19일 8:55 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>디지털 업무 환경에서 다양한 플랫폼을 통해 여러 회의와 일정을 관리하는 전문가에게 캘린더 데이터 관리는 매우 중요합니다. iCalendar 파일로도 알려진 ICS 파일은 캘린더 정보를 저장하고 공유하는 데 널리 사용되지만, 캘린더 데이터를 분석하거나 CSV, 엑셀(Excel) 및 기타 형식과 같은 다른 애플리케이션으로 가져올 때는 이러한 형식들이 더 실용적입니다. </p>
+<p>여기서는 다음 문제에 대한 간단한 해결 방법을 살펴보겠습니다 convert ICS to CSV File 수동 및 전문가용 방법을 활용하여 빠르고 오류 없이 변환합니다.</p>
+<h2 id="csv">CSV 파일이란 무엇인가요?</h2>
+<p>CSV 파일은 구조화된 데이터를 저장하고 교환하는 데 사용되는 가장 간단하고 널리 쓰이는 파일 형식 중 하나입니다. 이 형식은 각 행이 하나의 데이터 레코드를 나타내는 일반 텍스트로 정보를 체계적으로 정리하며, 개별 값들은 쉼표로 구분됩니다. CSV 파일은 가독성이 뛰어난 구조를 갖추고 있어 Microsoft Excel, Google 스프레드시트, 심지어 데이터베이스 도구로도 열고 편집할 수 있습니다. </p>
+<p>요약하자면, CSV 파일은 표 형식의 데이터를 처리하는 간단하고 효과적이며 호환성이 뛰어난 방법을 제공하므로, 기술 분야는 물론 비즈니스 환경에서도 중요한 파일 형식입니다. </p>
+<h2 id="convert-ics-to-csv">사용자들은 왜 Convert ICS to CSV 파일?</h2>
+<p>ICS 파일은 여러 플랫폼 간에 캘린더 일정을 저장하고 공유하는 데 매우 유용하지만, 데이터를 확인하거나 분석하는 데 있어 항상 가장 편리한 파일 형식은 아닙니다.  바로 그 지점에서  <a href="https://www.systoolsgroup.com/how-to/convert-ics-to-csv/">convert ICS to CSV</a> . CSV 파일은 더 체계적이고 표 형식의 구조를 갖추고 있어, Microsoft Excel이나 Google 스프레드시트를 사용하여 데이터에 접근하기가 더 쉬워지므로 중요해집니다.  </p>
+<p>사용자들이 ICS 파일을 CSV로 내보내기로 선택하는 주요 이유는 다음과 같습니다.</p>
+<p><strong>손쉬운 데이터 분석:</strong> CSV 파일은 스프레드시트 소프트웨어에서 직접 일정 항목의 정렬, 필터링 및 분석을 가능하게 하며, 이는 ICS 파일 형식에서는 불가능한 기능입니다. <br />
+<strong>더 나은 호환성:</strong> 많은 기업에서 ICS 파일을 지원하지 않지만, CSV 파일의 데이터는 쉽게 가져올 수 있어 다른 시스템과의 연동에 있어 더 유연한 선택지가 됩니다. <br />
+<strong>손쉬운 공유 및 보고:</strong> CSV 파일은 이메일을 통해 쉽게 공유하거나 데이터베이스 및 분석 도구로 업로드할 수 있어 전문적인 보고에 유용합니다.<br />
+<strong>백업 및 기록 보관:</strong> ICS 파일 데이터를 CSV 형식으로 변환하면 가독성 높은 백업을 생성하거나 장기적인 기록을 관리할 수 있는 간편한 방법을 제공합니다.</p>
+<h2 id="ics-csv">수동 방법을 통해 ICS 파일을 무료로 CSV로 변환하기</h2>
+<p>달력 데이터를 보다 유연한 파일 형식으로 관리하거나 분석해야 할 때는, 가장 좋은 방법은 convert ICS to CSV 파일. 이벤트 정보를 저장하고 공유하기에는 매우 유용하지만, 직접 편집하기는 쉽지 않습니다. 다음은 이 변환 과정을 무료로 수행할 수 있는 몇 가지 방법입니다.</p>
+<h2 id="microsoft-outlook-ics-csv">Microsoft Outlook을 사용하여 ICS를 CSV로 변환하기:</h2>
+<p>Outlook은 캘린더 정보를 간편하게 가져오고 내보낼 수 있는 기능을 제공하므로, ICS를 CSV로 변환하는 데 가장 유용한 솔루션입니다.</p>
+<p>사용 방법: <br />
+* 컴퓨터에서 Microsoft Outlook을 엽니다.<br />
+* ‘파일’ 메뉴로 이동하여 ‘열기 및 내보내기’ &gt; ‘가져오기/내보내기’를 선택합니다.<br />
+* ‘ICS 파일 가져오기’를 선택하고 ‘다음’을 클릭합니다.<br />
+* ICS 파일을 찾아 선택합니다.<br />
+* 가져오기가 완료되면 캘린더를 열어 일정을 확인합니다.<br />
+* ‘파일’ &gt; ‘열기 및 내보내기’ &gt; ‘가져오기/내보내기’로 이동합니다.<br />
+* ‘파일 내보내기’ 옵션을 선택하고 ‘다음’을 탭합니다.<br />
+* 출력 파일 형식으로 “CSV”를 선택합니다.<br />
+* 출력 파일을 저장할 “위치”를 지정합니다.<br />
+* 마침을 클릭합니다.</p>
+<h2 id="google-ics-csv">Google 캘린더를 통해 ICS 파일을 CSV 파일로 변환하기:</h2>
+<p>Google의 웹 인터페이스를 이용하면, 아래에 설명된 몇 가지 간단한 단계만 거치면 ICS 파일을 CSV로 변환할 수 있습니다. <br />
+다음 단계를 따르세요: </p>
+<ul>
+<li>Google 캘린더를 열고 계정에 로그인하세요.</li>
+<li>오른쪽 상단의 톱니바퀴 아이콘을 클릭하고 ‘설정’을 선택하세요.</li>
+<li>오른쪽 탭에서 ‘가져오기 및 내보내기’를 선택하세요.</li>
+<li>‘가져오기’ 섹션에서 ‘컴퓨터에서 파일 선택’을 선택하세요.</li>
+<li>가져오려는 ICS 파일을 찾아 선택하세요.</li>
+<li>가져오기가 완료되면 다시 설정 &gt; 가져오기/내보내기로 이동합니다.</li>
+<li>이제 내보내기 섹션에서 &#x27;내보내기&#x27;를 클릭하여 데이터를 zip 파일로 다운로드합니다.</li>
+<li>이제 ICS 형식의 일정이 포함된 캘린더 데이터 zip 파일을 압축 해제합니다.</li>
+<li>텍스트 편집기나 온라인 변환기를 사용하여 ICS 파일을 열고 CSV 파일로 저장합니다. </li>
+</ul>
+<h2 id="3-ics-csv">3. 엑셀이나 메모장을 사용하여 ICS 파일을 CSV로 변환하기:</h2>
+<p>이 방법은 이메일 클라이언트 없이 빠르게 수동으로 변환하려는 사용자에게 적합합니다. 아래 단계를 따르세요:</p>
+<ul>
+<li>ICS 파일을 마우스 오른쪽 버튼으로 클릭하고 메모장으로 엽니다.</li>
+<li>이벤트 세부 정보가 표시됩니다.</li>
+<li>원하는 이벤트 세부 정보를 복사하여 엑셀에 붙여넣습니다.</li>
+<li>원하는 이벤트 세부 정보를 복사하여 엑셀에 붙여넣습니다.</li>
+<li>엑셀의 ‘텍스트를 열로’ 기능을 사용합니다.</li>
+<li>데이터 탭으로 이동하여 ‘텍스트를 열로’를 클릭합니다. </li>
+<li>&#x27;구분 기호&#x27;를 선택한 다음, 구분 기호로 쉼표(,) 또는 기타 기호를 선택하세요.</li>
+<li>데이터를 정리하기 위해 열을 수동으로 변경하세요(예: 제목, 시작 날짜, 종료 날짜).</li>
+<li>그런 다음, 파일 &gt; 다른 이름으로 저장을 선택하고, 형식으로 CSV(쉼표로 구분)를 선택한 후 저장하세요. </li>
+</ul>
+<h2 id="_1">수동 방식의 단점</h2>
+<p>수동 방식은 사용자가 convert ICS to CSV  무료로 이용할 수 있지만, 몇 가지 제한 사항이 있어 작업 과정에서 오류가 발생하기 쉽고 시간이 많이 소요될 수 있습니다. 다음은 이 변환 작업을 수동으로 수행할 때의 단점입니다:<br />
+* 파일을 수동으로 가져오거나 내보내는 작업, 특히 여러 개의 캘린더를 다룰 때는 여러 단계를 거쳐야 하므로 많은 시간이 소요됩니다.<br />
+* 변환 과정에서 반복 설정, 첨부 파일 또는 설명과 같은 이벤트 세부 정보가 제대로 전송되지 않아 데이터가 일부 누락되거나 손실될 수 있습니다.<br />
+* 사용자 주도 방식은 소규모 변환에만 적합합니다. 여러 개의 ICS 파일을 한 번에 변환해야 하는 경우, Outlook과 Google 캘린더는 일괄 처리 옵션을 제공하지 않습니다. <br />
+* 일부 사용자는 특히 Outlook 가져오기, Excel 서식 지정 또는 캘린더 내보내기를 다룰 때 여러 단계로 이루어진 절차를 따르는 것이 어렵다고 느낄 수 있습니다. </p>
+<h2 id="ics-csv-proficient-tool">ICS 파일을 CSV 파일로 변환하기 - Proficient Tool 사용법</h2>
+<p>만약 여러분이 convert ICS to CSV File 안전한 변환을 위한 최적의 솔루션인  <a href="https://www.systoolsgroup.com/ics/converter/">SysTools ICS Converter</a> 를 선택하시면 빠르고 효과적으로 변환할 수 있습니다. 수동 방식과 달리, 이 소프트웨어는 구조 손실, 항목 누락 또는 기술적 오류 없이 데이터를 안전하게 변환해 줍니다. 이 도구를 사용하면 PST, PDF,  등 다양한 형식의 파일을 변환할 수 있습니다. 특히 대량의 캘린더 데이터를 다루거나 일정을 다른 플랫폼으로 가져와야 하는 사용자에게 유용합니다. </p>
+<h2 id="_2">이 자동화 소프트웨어 사용 방법 (상세 단계)</h2>
+<ul>
+<li>시스템에 도구를 다운로드하여 설치하세요.</li>
+<li>하나 또는 여러 개의 ICS 파일을 가져오려면 ‘파일 추가’ 또는 ‘폴더 추가’ 옵션을 클릭하세요.</li>
+<li>파일이 가져오기 완료되면 캘린더 데이터를 미리 확인하세요.</li>
+<li>내보내기 옵션에서 원하는 파일 형식으로 CSV를 선택하세요.</li>
+<li>‘찾아보기’를 클릭하여 출력 파일의 저장 위치를 지정하세요.</li>
+<li>‘내보내기’ 버튼을 탭하여 변환을 시작하세요.</li>
+</ul>
+<h2 id="_3">이 마스터 툴의 장점</h2>
+<p>이 도구는 내보내기 프로세스를 원활하게 유지하고 다양한 플랫폼 간에 ICS 파일을 관리하도록 설계되었습니다. 사용자 친화적인 인터페이스와 기능을 제공하여 안전하고 정확한 변환을 보장합니다.<br />
+* 여러 개의 ICS 파일을 다른 파일 형식으로 변환하는 데 도움이 됩니다.<br />
+* ICS 파일을 일괄 변환합니다.<br />
+* 변환 전에 캘린더 데이터를 미리 볼 수 있습니다.<br />
+* 이 도구는 데이터의 원본 무결성을 유지합니다.<br />
+* 또한 출력 파일의 저장 위치를 선택할 수 있는 옵션을 제공합니다.<br />
+* 기술에 익숙한 사용자와 그렇지 않은 사용자 모두에게 적합합니다.<br />
+* 이 도구는 모든 버전의 Windows OS와 호환됩니다. <br />
+* </p>
+<h2 id="_4">결론</h2>
+<p>요약하자면, 우리는 어떻게 하는지 배웠습니다.  convert ICS to CSV file  달력 데이터를 보다 유용하고 편집하기 쉽게 만들기 위한 실용적인 방법입니다. Microsoft Outlook이나 Google Calendar와 같은 도구를 이용한 수동 방식으로도 무료로 이 변환 작업을 수행할 수 있지만, 특히 대용량 파일이나 여러 파일을 다룰 때 데이터의 완전한 정확성을 보장할 수는 없습니다.<br />
+하지만 ics 파일을 오류 없이, 그리고 많은 시간을 들이지 않고 CSV로 변환해야 하는 사용자에게는, 이 도구가 데이터 손실 없이 대량 변환을 가능하게 하므로 완벽한 선택입니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 19일 8:59 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@mishti/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@mishti/">@mishti</a>
+                        </h1>
+                        
+                            <p class="text-gray-600 dark:text-gray-400">Discover the easiest ways to convert ICS to CSV file without losing your Calendar Data.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1403/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1403/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9463/add_comment/"
+                      method="post"
+                      hx-post="/blog/9463/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="Jd8Gn4IArAfxrBcDa1qrkTJyqurkdg45mxdBqVYcdelogMEFgDysxNjVMjNE4Ttd">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">23</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9463"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9463"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9463/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=7dfa2d7'/>

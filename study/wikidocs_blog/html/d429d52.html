@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="ChatGPT, Claude, Gemini를 한 번에 쓸 수 있다고? felo chat!">
+    <meta property="og:type" content="ChatGPT, Claude, Gemini를 한 번에 쓸 수 있다고? felo chat!">
+    <meta property="og:title" content="ChatGPT, Claude, Gemini를 한 번에 쓸 수 있다고? felo chat!">
+    <meta property="og:description" content="ChatGPT, Claude, Gemini를 한 번에 쓸 수 있다고? felo chat!">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/1303/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-01-17_230337.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@systrader79/1303/">
+
+        
+    <title>ChatGPT, Claude, Gemini를 한 번에 쓸 수 있다고? felo chat!
+        - systrader79의 트레이딩 이야기
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@systrader79/1208/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@systrader79/1347/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">ChatGPT, Claude, Gemini를 한 번에 쓸 수 있다고? felo chat!</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@systrader79/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @systrader79
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 1월 17일 11:04 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@systrader79/?tag=208"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            유용한정보
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>요즘은 그야말로 <strong>대규모 언어 모델(LLM)</strong> 의 춘추전국시대라고 할 수 있습니다. <strong>ChatGPT</strong>, <strong>Claude</strong>, <strong>Gemini</strong> 등 상용화된 모델뿐만 아니라 최근에는 성능 좋은 오픈소스 모델까지 쏟아지고 있습니다. 굳이 설치를 하지 않더라도 웹에서 쉽게 채팅 형식으로 정보를 얻고 이미지를 생성할 수 있는 툴들도 굉장히 많이 쏟아지고 있고요. 이런 기본적인 대규모 언어 모델의 성능이 향상됨에 따라 새롭게 나타나고 있는 <strong>메타 LLM 서비스</strong>들도 많이 등장하고 있습니다. <strong>메타 LLM 서비스</strong>는 <strong>ChatGPT</strong> 나 <strong>Claude</strong>, <strong>Gemini</strong> 와 같은 다양한 언어 모델을 취사선택해서 내가 쓸 수 있도록 선택을 하고 이것을 내가 원하는 시스템 프롬프트를 저장해서 내가 원하는 용도로 쓸 수 있도록 하는 도와주는 그런 앱이라고 보시면 되겠습니다.</p>
+<h2 id="llm-meta-llm">개별 LLM 서비스의 한계와 Meta LLM의 장점</h2>
+<p>사실 이런 기능은 현재 LLM의 삼대장이라고 불리는 <strong>ChatGPT</strong>, <strong>Claude</strong>, <strong>Gemini</strong> 에 모두 탑재된 기능입니다. 여러분들이 원하는 프롬프트를 만들어서 저장해 두고 특정 목적으로 쉽게 쓸 수 있는 거죠. 예를 들자면, 저 같은 경우에는 의학 지식 검색이라든지 블로그 글 작성, 유튜브에서 전문 지식 정보를 획득하는 등의 다양한 프롬프트를 만들어서 저장해두고 많이 잘 활용하고 있습니다. 그런데 이런 개별적인 그 서비스에서의 단점이라고 하면은 자사의 모델만 쓸 수 있다는 점입니다. 예를 들어, <strong>ChatGPT</strong> 같은 경우는 <strong>ChatGPT</strong> 모델만 쓸 수가 있고, <strong>Claude</strong> 는 <strong>Claude</strong> 모델, <strong>Gemini</strong> 는 <strong>Gemini</strong> 모델만 쓸 수 있다는 것입니다.</p>
+<p>그래서 이런 제한점을 극복하기 위해서 최근에는 여러 모델들을 다 지원하면서 이런 것들을 취사선택해서 쓸 수 있도록 하는 메타 LLM 서비스들이 많이 나오고 있습니다. 국내에도 <strong>뤼튼</strong>이라는 서비스가 있고 해외에도 <strong>You.com</strong>, 또 지금 소개해드릴 <strong>felo.ai</strong> 와 같은 그런 다양한 서비스들이 출시가 되고 있죠.</p>
+<h2 id="meta-llm-feloai">Meta LLM 서비스, felo.ai의 등장</h2>
+<p>아무래도 고유한 삼대장이라고 불리는 그런 서비스를 쓰는 것도 의미가 있지만, 여러분들이 한 서비스를 통해서 한번 구독을 하거나 하는 방법을 통해서 이렇게 다양한 LLM을 취사선택해서 용도에 맞게 쓸 수 있는 서비스도 굉장히 여러분에게 큰 도움이 될 수가 있을 겁니다. 왜냐하면 그 LLM마다 특성과 장단점이 조금씩 다르기 때문에 이런 부분을 따로 저장해두고 쓰면은 굉장히 좋을 수 있기 때문이죠.</p>
+<p><a href="felo.ai"><img alt="" src="https://i.imgur.com/SG8WOPb.png" /></a></p>
+<p>지금 소개해드릴 메타 LLM은 제가 이전에도 한번 소개해드린 바가 있는 <strong>felo.ai</strong> 라는 메타 LLM 서비스인데요. <strong>felo.ai</strong> 는 일본에서 개발한 서비스인데 성능이 굉장히 좋습니다. <strong>felo.ai</strong> 는 일종의 <strong>Perplexity</strong> 를 대체하는, <strong>Perplexity</strong> 와 유사한 서비스와 인터페이스를 가지고 있는 구조인데요. 여기서는 <strong>실시간 웹 검색</strong>이 가능하기 때문에 굉장히 다양한 정보에서, 다양한 소스에서 실시간 정보를 얻을 수가 있는 것 같습니다. 지금 <strong>ChatGPT</strong> 같은 경우도 실시간 웹 검색을 지원하고 있는데 제가 써본 결과 <strong>felo.ai</strong> 의 웹 검색 성능이 좀 더 좋은 그런 느낌을 받고 있습니다.</p>
+<p><a href="felo.ai">http://felo.ai</a></p>
+<h2 id="feloai">felo.ai의 차별점 : 다국어 검색 지원</h2>
+<p>그래서 <strong>felo.ai</strong> 에서 특별히 주목할 만한 점이 있습니다. 이것은 기본적으로 <strong>felo.ai</strong> 만의 굉장히 강력한 강점이라고 볼 수가 있는데요. 이것은 <strong>다국어 검색을 디폴트로 지원</strong>한다는 것입니다. 예를 들어서 우리가 전 세계 고급 정보는 전부 영어로 되어 있지 않습니까? 예를 들어서 &quot;트레이딩 전략&quot; 이런 걸로 검색을 한다든지 그러면은 &quot;트레이딩 전략&quot;이라는 검색어를 한글로 검색을 한다면은 국내에 나와 있는 네이버나 티스토리에 나와 있는 정도의 정보밖에 검색이 되지 않습니다. 뭐 제 블로그도 그냥 많이 나오더라고요. 제가 트레이딩에 대해서 많이 쓴 것도 있지만, 다르게 생각하면 그만큼 소스가 빈약하다는 증거도 될 겁니다.</p>
+<blockquote>
+<p>아니, 한글로 '트레이딩 전략'이라고 검색했는데, 왜 영어로 된 자료까지 검색해야 하는 거냐? </p>
+</blockquote>
+<p>잘 생각해보면 엄청난 차이가 있다는 것을 알 수 있습니다. 예를 들어 <strong>ChatGPT</strong> 나 <strong>Google</strong> 에 &quot;트레이딩 전략&quot; 이라고 한글로 검색어를 입력한다고 가정해 보겠습니다. 그러면, 대부분 한국어로 된 웹사이트에서 수집된 정보들만 검색 결과로 나옵니다. 그렇다면, 한국어로 된 웹사이트에서만 정보를 얻을 수 있겠지요요?</p>
+<p>하지만, <strong>felo.ai</strong> 에서 &quot;트레이딩 전략&quot;으로 검색을 한다면 여기서는 &quot;trading strategy&quot; 라는 영문으로도 변환을 해서 굉장히 다국어로 검색을 해서 다국어로 검색이 된 결과를 이제 한글로 정리를 해서 보여주기 때문에 <strong>실제로는 영문 검색 결과까지 다 취합된 결과</strong>를 얻을 수 있다는 게 엄청나게 강력한 장점입니다. 여러분도 이런 <strong>ChatGPT</strong> 나 이런 AI를 이용한 검색을 할 때 고급 정보를 얻길 원하지 그냥 일반적으로 네이버나 한글 구글에서 얻을 수 있는 정보를 얻기 위해서 AI를 쓰지는 않잖아요? 그런데 여기서는 전 세계 언어, 특히 <strong>영어로 된 영문 자료까지 함께 검색을 해준다</strong>는 것이 엄청나게 강력한 장점입니다.</p>
+<p><img alt="" src="https://i.imgur.com/XqpoGWK.png" /></p>
+<p>위 사진을 보면 &#x27;변동성 돌파 전략&#x27; 으로 검색하면 자동적으로 &#x27;Volatility breakout&#x27;으로도 검색하는 것을 확인할 수 있습니다. </p>
+<p>그래서 저는 기본적으로 검색을 <strong>felo.ai</strong> 로 하고 있습니다. 주소창에서 치면은 <strong>felo.ai</strong> 로 검색을 하도록 하고 있고요.</p>
+<h2 id="feloai-felo-chat">felo.ai의 핵심 기능 : <a href="https://search-chat.felo.ai/">felo chat</a></h2>
+<p>다음으로 <strong>felo.ai</strong> 에서 가장 강력한 기능이라고 할 수 있는 것은 <strong><a href="https://search-chat.felo.ai/">felo chat</a></strong>이라는 기능인데요. 이것은 마치 <strong>ChatGPT</strong> 의 <strong>GPTs</strong> 나 <strong>Claude</strong> 의 <strong>프롬프트</strong>와 같은 그런 기능입니다. 여러분들이 원하는 모델을 선택하고 (모델이라면 <strong>ChatGPT</strong> 나 <strong>Claude</strong> 나 뭐 이런 걸 선택을 하는 거죠), 거기에 여러분들이 원하는 프롬프트 형식을 지정을 해주면은 <strong>GPTs</strong> 나 <strong>Claude</strong> 의 <strong>프롬프트</strong>와 같은 방식으로 쓸 수가 있습니다.<br />
+<img alt="" src="https://i.imgur.com/qbKcECA.png" /></p>
+<p>뿐만 아니라, 기본 화면에 아이콘 형태로 무려 183개에 달하는 다양한 목적의 프롬프트를 제공해주기 때문에, 여러분들이 필요한 용도의 프롬프트를 쉽게 골라서 쓰기도 편합니다.</p>
+<p><a href="https://search-chat.felo.ai/"><img alt="" src="https://i.imgur.com/ZwUr0mZ.png" /></a></p>
+<p>여기서 굉장히 큰 장점이라고 할 수 있는 점은 <strong>다양한 모델을 한 곳에서 쓸 수 있다</strong>는 것이죠. <strong>ChatGPT</strong>, <strong>Claude</strong>, <strong>Gemini</strong> 를 따로 구독하지 않더라도 여기서 다 사용이 가능합니다. 물론 무료로 사용할 때는 하루에 사용량의 제한이 있기 때문에 유료로 구독을 하면은 뭐 이거 제한 없이 쓸 수가 있습니다. 하지만 여기서는 한번 구독을 해서 3가지 모델을을 다 쓸 수가 있기 때문에 굉장히 큰 도움이 되겠죠?</p>
+<p>아래에 보시는 바와 같이 LLM 3대장의 대부분의 모델을 다 쓸 수 있고요, 최근 굉장한 성능으로 인기를 끌고 있는 제미나이의 모든 버전도 다 지원하고, DIY 프롬프트를 만들어 저장할 때도 모델을 따로 선택할 수 있다는 장점도 있습니다. 이건 일반적인 독립적인 LLM에서 잘 지원하지 않는 강력한 기능이지요?</p>
+<p><img alt="" src="https://i.imgur.com/ze7dnZ3.png" /></p>
+<h2 id="feloai_1">felo.ai 앰배서더 제안 및 할인 혜택</h2>
+<p>제가 며칠 전 <strong>felo.ai</strong> 본사에서 연락을 받았는데 이제 저보고 펠로우 앰배서더가 되어 달라고 연락을 받았습니다. 그래서 제가 알려드린 이 링크를 통해서 가입을 하시고, 이 링크를 통해서 구독을 하시면 여러분께서서 10% 할인 혜택을 받을 수 있다고 합니다. </p>
+<p><a href="https://felo.ai/?invite=dOK3vk1wvkjJQ">https://felo.ai/?invite=dOK3vk1wvkjJQ</a></p>
+<p>그래서 여러 가지 LLM 모델을 채팅으로 업무에 많이 이용하시는 분은 이 <strong>felo.ai</strong> 를 이용하여 다양한 모델을 함께 쓰시면 상당한 비용 절감 효과를 얻으실 수 있겠지요? </p>
+<p>지금까지 felo.ai 에 대해 알아보았는데요. <strong>felo.ai</strong> 는 <strong>다양한 LLM 모델을 하나의 플랫폼에서 사용할 수 있게 해주고, 다국어 검색 기능을 통해 더 풍부한 정보를 제공</strong>해줍니다. 특히 <strong>felo 챗</strong> 기능을 이용하면 <strong>사용자 정의 프롬프트를 생성하여 원하는 작업을 효율적으로 수행</strong>할 수 있습니다. 이러한 기능들은 LLM을 자주 활용하는 사용자에게 큰 도움이 될 것입니다. 여러분도 <strong>felo.ai</strong> 를 꼭 한번 사용해 보시고, 이 코드로 가입을 하시면 여러분에게도 구독 비용을 줄일 수 있는 좋은 기회가 될 거라고 생각을 합니다.</p>
+<p><a href="https://felo.ai/?invite=dOK3vk1wvkjJQ">https://felo.ai/?invite=dOK3vk1wvkjJQ</a></p>
+<p><a href="https://ctee.kr/item/store/44285"><img alt="" src="https://i.imgur.com/u7G7tVe.png" /></a><br />
+<a href="https://ctee.kr/item/store/44991"><img alt="" src="https://i.imgur.com/42V4zWv.png" /></a><br />
+<a href="https://gospel79.tistory.com/24"><img alt="" src="https://i.imgur.com/bOhmCVx.png" /></a></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 1월 17일 11:07 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@systrader79/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/%EC%9A%B0%EC%83%81%ED%96%A5.jpg"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@systrader79/">@systrader79</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/84/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/84/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">8</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/1303/add_comment/"
+                      method="post"
+                      hx-post="/blog/1303/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="QwzbzX2amkrumpcLm2oIDB4NY52gJrACskUaXh38doETM5lLpCSPzypIxz46xgX1">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @systrader79 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@systrader79/1303/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            ChatGPT, Claude, Gemini를 한 번에 쓸 수 있다고? felo chat!
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 17일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@systrader79/1208/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            GPT-o, Gemini 1.5 Pro, Claude 3.5 Sonnet, 플럭스 1.1 울트라 20개월 무료 사용하는 법!
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 08일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@systrader79/1141/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            국내 최고의 AI 정보 sns 추천
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 05일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@systrader79/1131/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            자기계발 무료 강의 사이트 31개 모음
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 05일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@systrader79/1111/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            머스크의 야심작 그록 3(GROK 3): AI 판도를 뒤흔들 혁신의 서막
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 04일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button  hx-get="/blog/detail/list/84/1303/1/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            2 / 4
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/84/1303/3/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @systrader79 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/16915">
+                    
+                        <img src="https://static.wikidocs.net/images/book/우상향_BNQS1PZ_kZz94KQ.jpg"
+                             alt="systrader79의 트레이딩 자료실"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/16915"
+                           class="hover:text-red-500 dark:hover:text-red-400">systrader79의 트레이딩 자료실</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 2월 27일 10:21 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">1631</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-1303"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-1303"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/1303/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@systrader79/1111/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/1111/스크린샷_2025-01-04_194837.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            머스크의 야심작 그록 3(GROK 3): AI 판도를 뒤흔들 혁신의 서막
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                 일론 머스크의 공식 발표: 그록 3, 그 거대한 시작
+
+2025년, 인공지능(AI) 분…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1년 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@systrader79/1141/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/1141/스크린샷_2025-01-05_222245.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            국내 최고의 AI 정보 sns 추천
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                요즘 정말 하루가 다르게, 실시간으로 어마어마하게 쏟아지는 AI 관련 뉴스, 정보, 팁들…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1년 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=d429d52'/>

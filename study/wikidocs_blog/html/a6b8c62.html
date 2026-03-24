@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최고의 가이드">
+    <meta property="og:type" content="JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최고의 가이드">
+    <meta property="og:title" content="JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최고의 가이드">
+    <meta property="og:description" content="JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최고의 가이드">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/9465/How_to_convert_JSON_to_readable_format.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@mathew0406/9465/">
+
+        
+    <title>JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최고의 가이드
+        - json
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최고의 가이드</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@mathew0406/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @mathew0406
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 19일 8:16 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>JSON은 웹 애플리케이션, 서버 및 API 간에 데이터를 저장하고 교환하는 데 일반적으로 사용됩니다. 그러나 JSON 파일은 대부분 형식이 지정되지 않은 상태로 제공되어 사용자가 분석, 읽기 및 다양한 플랫폼에서 공유하기 어렵습니다. <a href="https://www.systoolsgroup.com/how-to/convert-json-file-into-readable-format/">JSON 파일을 읽기 쉬운 형식으로 변환하면</a> 데이터 처리가 간소화되고 데이터를 쉽게 표현할 수 있습니다. 따라서 많은 사용자가 변환 작업을 수행할 수 있는 신뢰할 수 있는 솔루션을 찾고 있습니다. 이 블로그에서는 수동 및 고급 방법을 사용하여 JSON을 읽기 쉬운 형식으로 변환하는 다양한 방법을 안내합니다. 이 가이드를 통해 사용자는 자신의 필요에 가장 적합한 솔루션을 선택할 수 있을 것입니다.</p>
+<p>JSON 데이터를 읽기 쉬운 파일 형식으로 변환해야 하는 이유는 무엇일까요?<br />
+많은 사용자는 구조화된 형식으로 데이터를 관리하며, 데이터를 분석, 공유 또는 편집하지 않습니다. 이러한 경우, 데이터 관리를 효율적으로 하기 위해 JSON을 사람이 읽기 쉬운 형식으로 변환해야 합니다. 사용자가 변환을 해야 하는 이유는 다음과 같습니다.</p>
+<p>●     데이터 이해도 향상 – JSON 형식을 올바르게 지정하면 키-값 쌍과 중첩된 데이터를 더 쉽게 읽고 해석할 수 있습니다.<br />
+●     디버깅이 더 쉬워집니다. 구조화된 JSON 형식 덕분에 구문 오류와 누락된 요소를 신속하게 파악할 수 있습니다.<br />
+●     데이터 공유를 간소화합니다 . JSON을 Excel 또는 CSV로 변환하면 기술 지식이 없는 사용자와도 쉽게 공유할 수 있습니다.<br />
+●     데이터 표현 방식을 개선합니다 . 표나 문서 형태로 표시되는 JSON 형식이 더욱 명확하고 전문적인 느낌을 줍니다.<br />
+●     기술적인 지식이 없는 사용자도 데이터를 분석할 수 있도록 지원합니다 . 사용자 친화적인 형식으로 코딩 지식 없이도 데이터를 검토하고 분석할 수 있습니다.<br />
+JSON 형식 지정 시 흔히 발생하는 오류<br />
+JSON을 읽기 쉬운 형식으로 변환하는 과정에서 사용자는 변환 과정을 중단시킬 수 있는 몇 가지 일반적인 문제에 직면할 수 있습니다. 다음은 가장 빈번하게 발생하는 오류입니다.<br />
+●     잘못된 JSON 구조 – 쉼표가 너무 많거나, 콜론의 위치가 잘못되었거나, 키-값 형식이 올바르지 않은 경우와 같은 구문 오류로 인해 JSON 파일을 읽을 수 없게 될 수 있습니다.<br />
+●     대괄호 또는 중괄호 누락 – 닫히지 않은 대괄호는 전체 JSON 구조를 손상시키고 올바른 서식을 보장하지 못할 수 있습니다.<br />
+●     인코딩 문제 – 지원되지 않는 문자 인코딩(예: UTF-8 불일치)으로 인해 특수 문자가 잘못 표시될 수 있습니다.<br />
+●     대용량 파일 로딩 문제 – 매우 큰 JSON 파일은 온라인 도구나 텍스트 편집기를 멈추게 하여 파일을 열거나 제대로 서식을 지정하기 어렵게 만들 수 있습니다.<br />
+JSON을 읽기 쉬운 형식으로 변환하는 방법은 무엇일까요? 최적의 해결책은 무엇일까요?<br />
+JSON 파일은 특히 압축되었거나 중첩된 데이터 구조를 포함할 경우 복잡하고 해석하기 어려운 경우가 많습니다. 정보를 명확하고 관리하기 쉽게 만들려면 JSON 데이터를 읽기 쉬운 형식으로 변환하는 것이 중요합니다. 다행히 이러한 변환 과정을 간편하게 만들어주는 검증된 방법들이 여러 가지 있습니다. 이제 이러한 솔루션들을 자세히 살펴보겠습니다.</p>
+<p>JSON 파일은 특히 압축되었거나 중첩된 데이터 구조를 포함할 경우 복잡하고 해석하기 어려운 경우가 많습니다. 정보를 명확하고 관리하기 쉽게 만들려면 JSON 데이터를 읽기 쉬운 형식으로 변환하는 것이 중요합니다. 다행히 이러한 변환 과정을 간편하게 만들어주는 검증된 방법들이 여러 가지 있습니다. 이제 이러한 솔루션들을 자세히 살펴보겠습니다.</p>
+<p>방법 1: 온라인 도구 활용<br />
+온라인 JSON 포맷터 도구는 별도의 소프트웨어 설치 없이 JSON 데이터를 읽기 쉬운 형식으로 변환하는 빠르고 편리한 솔루션입니다. 다음 단계를 따르세요.</p>
+<p>신뢰할 수 있는 온라인 JSON 포맷터 웹사이트를 여세요.<br />
+JSON 데이터를 복사하여 입력 필드에 붙여넣으세요.<br />
+[서식/꾸미기] 버튼을 클릭하세요 .<br />
+형식화된 출력물을 다운로드하거나 복사하세요.</p>
+<p>장점:<br />
+●   무료이며 사용하기 쉽습니다.<br />
+●   설치가 필요 없습니다<br />
+●   즉시 포맷팅</p>
+<p>단점:<br />
+●   대용량 JSON 파일에는 적합하지 않습니다.<br />
+●   데이터 개인정보 보호 문제<br />
+●   인터넷 연결이 필요합니다.<br />
+방법 2: 전문 도구를 사용하여 JSON을 읽기 쉬운 형식으로 변환</p>
+<p>많은 사용자는 JSON 파일을 읽기 쉬운 형식으로 빠르고 안전하게 변환해야 할 필요가 있습니다. 바로 이때 <strong><a href="https://www.systoolsgroup.com/json/converter/">SysTools JSON 변환 도구가</a></strong> 유용합니다. 이 도구를 사용하면 JSON 파일을 사람이 읽기 쉬운 형식으로 변환할 수 있습니다. 데이터 정확성을 유지하면서 정확하고 대량의 변환이 필요한 기술 전문가와 비전문가 모두에게 적합합니다. 다음 단계를 따라 소프트웨어 사용 방법을 알아보세요.</p>
+<p>위에 언급된 도구를 다운로드하여 실행하십시오.<br />
+JSON 파일을 찾아 업로드하세요.<br />
+읽을 수 있는 파일 형식으로 PDF를 선택하세요.<br />
+내보내기 버튼을 클릭하세요.<br />
+마지막으로, &#x27;보고서 보기&#x27;를 탭하여 출력 파일을 확인하세요.<br />
+고급 소프트웨어 사용의 주요 특징<br />
+●   복잡하고 중첩이 심한 JSON 파일도 처리할 수 있습니다.<br />
+●   여러 파일을 처리할 수 있도록 일괄 변환을 지원합니다.<br />
+●   인터넷 연결이 필요 없는 오프라인 솔루션입니다.<br />
+●   코딩이 필요 없는 노코드 기반 애플리케이션으로, 기술적인 전문 지식이 필요하지 않습니다.<br />
+●   100% 성공률을 자랑하는 안전하고 확실한 방법입니다.<br />
+방법 3: 텍스트 편집기 사용<br />
+Notepad++이나 Visual Studio Code와 같은 고급 텍스트 편집기는 JSON 파일을 보기 좋게 꾸밀 수 있는 내장 서식 기능을 제공합니다. 아래 지침을 따르세요.</p>
+<p>텍스트 편집기에서 JSON 파일을 엽니다.<br />
+JSON 포맷터 플러그인을 설치하세요(필요한 경우).<br />
+서식/꾸미기 옵션을 선택하세요.<br />
+포맷된 파일을 저장하세요.</p>
+<p>장점:<br />
+●   기술 사용자에게 적합합니다.<br />
+●   완전히 오프라인에서 작동합니다.<br />
+●   무료로 이용할 수 있습니다.</p>
+<p>단점:<br />
+●   초보자에게는 적합하지 않습니다.<br />
+●   매우 큰 파일에 대한 지원은 제한적입니다.<br />
+●   기술적 지식이 필요합니다<br />
+JSON 데이터 관리를 위한 모범 사례<br />
+●   백업 복사본을 보관하세요.<br />
+●   JSON 유효성 검사를 정기적으로 수행하십시오.<br />
+●   기본 편집기에서 수동 편집을 피하십시오.<br />
+●   변환을 위해 구조화된 도구를 사용하세요<br />
+이제 마무리할 시간입니다!<br />
+이 글에서는 세 가지 방법을 사용하여 JSON을 읽기 쉬운 형식으로 손쉽게 변환하는 방법을 알아보겠습니다. 세 가지 방법 모두 결과를 제공하지만, 수동 변환 방식은 오류 발생 가능성이 있는 단점이 있습니다. 따라서 몇 번의 클릭만으로 JSON을 읽기 쉬운 형식으로 변환할 수 있는 자동화된 솔루션을 사용하는 것이 좋습니다. 자동화된 솔루션은 변환 과정에서 원래 폴더 구조를 그대로 유지합니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 19일 8:16 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@mathew0406/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/zs.jpg"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@mathew0406/">@mathew0406</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1406/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1406/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9465/add_comment/"
+                      method="post"
+                      hx-post="/blog/9465/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="6IzARWWB7BIq6FVCTTGlP6wz8YXWG3pTBlx8TUP4xmZNlJRcxY3m03dHFqlQ5sHa">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="true">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">19</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9465"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9465"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9465/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=a6b8c62'/>

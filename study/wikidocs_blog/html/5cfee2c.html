@@ -1,0 +1,1283 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="코딩 못해도 괜찮아요: Claude Code로 내 아이디어를 앱으로 만드는 법">
+    <meta property="og:type" content="코딩 못해도 괜찮아요: Claude Code로 내 아이디어를 앱으로 만드는 법">
+    <meta property="og:title" content="코딩 못해도 괜찮아요: Claude Code로 내 아이디어를 앱으로 만드는 법">
+    <meta property="og:description" content="코딩 못해도 괜찮아요: Claude Code로 내 아이디어를 앱으로 만드는 법">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/7080/image_202603212352.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@edwin/7080/">
+
+        
+    <title>코딩 못해도 괜찮아요: Claude Code로 내 아이디어를 앱으로 만드는 법
+        - 에드윈&#x27;s Blog
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@edwin/6592/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@edwin/7081/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">코딩 못해도 괜찮아요: Claude Code로 내 아이디어를 앱으로 만드는 법</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@edwin/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @edwin
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 2월 10일 10:09 오전</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@edwin/?tag=3336"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Agentteams
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@edwin/?tag=3335"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Claudecode
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@edwin/?tag=3334"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Claude
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@edwin/?tag=3168"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Agent
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><div class="toc">
+<ul>
+<li><a href="#_1">전체 흐름 한눈에 보기</a></li>
+<li><a href="#step-1-claudeai">Step 1. claude.ai에서 아이디어 구체화하기</a><ul>
+<li><a href="#_2">왜 채팅에서 먼저 해야 하나요?</a></li>
+<li><a href="#_3">대화 예시</a></li>
+<li><a href="#tip">💡 Tip: 더 좋은 결과를 위한 대화법</a></li>
+</ul>
+</li>
+<li><a href="#step-2-3">Step 2. 3대 문서 생성 요청</a><ul>
+<li><a href="#_4">각 문서가 하는 역할</a></li>
+<li><a href="#_5">📌 문서 품질을 높이는 추가 요청</a></li>
+<li><a href="#_6">⚠️ 문서 검토는 반드시 직접 하세요</a></li>
+</ul>
+</li>
+<li><a href="#step-3">Step 3. 문서를 로컬 프로젝트 폴더에 복사</a><ul>
+<li><a href="#claude-code">Claude Code 설치가 안 되어 있다면?</a></li>
+</ul>
+</li>
+<li><a href="#step-4-claude-code">Step 4. Claude Code에서 에이전트 팀으로 개발하기</a><ul>
+<li><a href="#_7">에이전트 팀이란?</a></li>
+<li><a href="#_8">사전 준비: 에이전트 팀 활성화</a></li>
+<li><a href="#_9">에이전트 팀 실행</a></li>
+<li><a href="#_10">팀이 구성되면 일어나는 일</a></li>
+<li><a href="#_11">팀메이트 확인 및 직접 소통</a></li>
+<li><a href="#vs">💡 에이전트 팀 vs 단일 세션, 언제 뭘 쓸까?</a></li>
+</ul>
+</li>
+<li><a href="#step-5">Step 5. 개발 실행 요청</a><ul>
+<li><a href="#_12">개발 진행 중 알아두면 좋은 것들</a></li>
+</ul>
+</li>
+<li><a href="#step-6">Step 6. 결과 확인 및 배포</a><ul>
+<li><a href="#_13">배포 후 체크리스트</a></li>
+</ul>
+</li>
+<li><a href="#_14">자주 하는 실수 &amp; 해결법</a><ul>
+<li><a href="#1-claude-code">1. &quot;아이디어 구체화 없이 바로 Claude Code에 던지기&quot;</a></li>
+<li><a href="#2">2. &quot;문서를 검토하지 않고 바로 개발 요청&quot;</a></li>
+<li><a href="#3">3. &quot;에러가 나면 포기하기&quot;</a></li>
+<li><a href="#4">4. &quot;한 세션에서 너무 많은 것을 요청하기&quot;</a></li>
+<li><a href="#5-claude">5. &quot;기술 스택을 Claude에게 완전히 맡기기&quot;</a></li>
+</ul>
+</li>
+<li><a href="#_15">실전 예시: 처음부터 끝까지</a><ul>
+<li><a href="#phase-1-claudeai-15">Phase 1: 아이디어 → 문서 (claude.ai 채팅, 약 15분)</a></li>
+<li><a href="#phase-2-claude-code-3060">Phase 2: 개발 (Claude Code, 약 30~60분)</a></li>
+</ul>
+</li>
+<li><a href="#_16">마무리</a></li>
+</ul>
+</div>
+<p>코딩을 전혀 모르는 사람도, 머릿속 아이디어를 실제 동작하는 앱으로 만들 수 있는 시대가 왔습니다.</p>
+<p>이 글에서는 <strong>claude.ai 웹 채팅</strong>에서 아이디어를 구체화하고, <strong>Claude Code</strong>에서 실제 개발까지 완료하는 전체 워크플로우를 소개합니다.</p>
+<blockquote>
+<p>💡 이 가이드의 핵심 전략: <strong>"기획은 채팅으로, 개발은 에이전트로"</strong></p>
+</blockquote>
+<hr />
+<h2 id="_1">전체 흐름 한눈에 보기</h2>
+<p><img alt="" src="https://static.wikidocs.net/images/blog/7080/image_202603212352.png" /></p>
+<pre><code>① 아이디어 채팅으로 구체화 (claude.ai)
+         ↓
+② 3대 문서 생성 요청 (PRD → TRD → Tasks)
+         ↓
+③ 문서를 로컬 프로젝트 폴더에 복사
+         ↓
+④ Claude Code에서 에이전트 팀 구성 요청
+         ↓
+⑤ 에이전트 팀에 개발 실행 요청
+         ↓
+⑥ 결과 확인 및 피드백 반복
+</code></pre>
+<hr />
+<h2 id="step-1-claudeai">Step 1. claude.ai에서 아이디어 구체화하기</h2>
+<p>Claude Code를 바로 열고 &quot;이거 만들어줘&quot;라고 하면 십중팔구 원하는 결과가 나오지 않습니다. <strong>먼저 웹 채팅에서 아이디어를 충분히 다듬는 것</strong>이 핵심입니다.</p>
+<h3 id="_2">왜 채팅에서 먼저 해야 하나요?</h3>
+<ul>
+<li>Claude Code는 <strong>코딩 실행 환경</strong>이라 토큰 소모가 빠릅니다</li>
+<li>채팅에서는 부담 없이 여러 번 대화하며 방향을 잡을 수 있습니다</li>
+<li>&quot;뭘 만들지&quot;가 명확해야 &quot;어떻게 만들지&quot;도 정확해집니다</li>
+</ul>
+<h3 id="_3">대화 예시</h3>
+<p>이런 식으로 시작하면 됩니다:</p>
+<blockquote>
+<p>회사에서 팀원들 커피 주문을 취합하는 웹앱을 만들고 싶어. 카카오톡으로 링크를 공유하면 각자 메뉴를 선택하고, 취합자가 한눈에 볼 수 있는 서비스야.</p>
+</blockquote>
+<p>Claude가 이런 질문들을 던질 겁니다:</p>
+<ul>
+<li>사용자는 몇 명 정도인가요?</li>
+<li>로그인이 필요한가요?</li>
+<li>메뉴는 어떻게 관리하나요?</li>
+<li>모바일에서도 잘 보여야 하나요?</li>
+</ul>
+<p><strong>이 대화를 3~5번 정도 주고받으면</strong>, 아이디어가 꽤 구체적인 기획으로 바뀝니다.</p>
+<h3 id="tip">💡 Tip: 더 좋은 결과를 위한 대화법</h3>
+<p>아이디어가 막연할수록 아래 내용을 함께 알려주면 좋습니다:</p>
+<ul>
+<li><strong>누가 쓰나요?</strong> → &quot;우리 팀 8~15명이 쓸 거야&quot;</li>
+<li><strong>어디서 쓰나요?</strong> → &quot;모바일 위주, 카톡으로 공유&quot;</li>
+<li><strong>비슷한 서비스가 있나요?</strong> → &quot;배민 장바구니 공유 같은 느낌&quot;</li>
+<li><strong>반드시 필요한 기능은?</strong> → &quot;주문 마감 시간 설정&quot;</li>
+<li><strong>절대 필요 없는 것은?</strong> → &quot;결제 기능은 필요 없어&quot;</li>
+</ul>
+<hr />
+<h2 id="step-2-3">Step 2. 3대 문서 생성 요청</h2>
+<p>아이디어가 충분히 구체화되었다면, <strong>같은 대화창에서</strong> 아래와 같이 요청합니다:</p>
+<blockquote>
+<p>지금까지 대화한 내용을 바탕으로 PRD, TRD, TASKS 3개 문서를 만들어줘.</p>
+</blockquote>
+<h3 id="_4">각 문서가 하는 역할</h3>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>역할</th>
+<th>비유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PRD(Product Requirements Document, 제품 요구사항 문서)</strong></td>
+<td>무엇을 만들 것인가</td>
+<td>건축의 &quot;설계 의뢰서&quot;</td>
+</tr>
+<tr>
+<td><strong>TRD(Technical Requirements Document, 기술 요구사항 문서)</strong></td>
+<td>어떤 기술로 만들 것인가</td>
+<td>건축의 &quot;구조 설계도&quot;</td>
+</tr>
+<tr>
+<td><strong>Tasks(구현 작업 목록)</strong></td>
+<td>어떤 순서로 만들 것인가</td>
+<td>건축의 &quot;공정표&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">📌 문서 품질을 높이는 추가 요청</h3>
+<p>기본 문서가 생성된 후, 아래 내용을 추가로 요청하면 결과물의 완성도가 올라갑니다:</p>
+<blockquote>
+<p>"PRD에 아래 항목들이 포함되어 있는지 확인하고 빠진 부분을 보완해줘:<br />
+- 사용자 페르소나 (누가 쓰는지)<br />
+- 핵심 사용자 시나리오 (어떤 상황에서 어떻게 쓰는지)<br />
+- MVP 범위 (1차로 꼭 만들 기능 vs 나중에 추가할 기능)<br />
+- 성공 기준 (이게 잘 만들어졌다는 걸 어떻게 판단하는지)"</p>
+<p>"TRD에 아래 내용도 포함시켜줘:<br />
+- 기술 스택 선택 이유<br />
+- 폴더 구조<br />
+- 외부 API나 서비스 의존성<br />
+- 배포 방법 (Vercel, Cloudflare Pages 등)"</p>
+<p>Tasks는 에이전트가 바로 실행할 수 있도록 체크리스트 형태로 만들어줘. 각 태스크에 예상 소요 시간도 넣어줘.</p>
+</blockquote>
+<h3 id="_6">⚠️ 문서 검토는 반드시 직접 하세요</h3>
+<p>Claude가 만든 문서를 그대로 넘기지 마세요. <strong>꼭 한 번 읽어보고 확인할 것:</strong></p>
+<ul>
+<li>빠진 기능이 없는지</li>
+<li>불필요한 기능이 들어가 있진 않은지 (과도한 기능은 복잡도를 높입니다)</li>
+<li>기술 스택이 내 상황에 맞는지 (예: 서버가 필요 없는데 백엔드가 포함되어 있진 않은지)</li>
+<li>태스크 순서가 논리적인지</li>
+</ul>
+<p>수정이 필요하면 같은 대화에서 바로 피드백하면 됩니다:</p>
+<blockquote>
+<p>"PRD에서 관리자 기능은 빼줘. MVP에는 필요 없어."<br />
+"TRD에서 DB는 Supabase 대신 SQLite로 바꿔줘. 서버 비용 없이 하고 싶어."</p>
+</blockquote>
+<hr />
+<h2 id="step-3">Step 3. 문서를 로컬 프로젝트 폴더에 복사</h2>
+<p>생성된 3개 파일을 다운로드한 뒤, 작업할 폴더에 넣습니다.</p>
+<pre><code>my-coffee-app/
+├── PRD.md
+├── TRD.md
+├── Tasks.md
+└── (아직 비어 있음 — Claude Code가 여기를 채울 겁니다)
+</code></pre>
+<blockquote>
+<p>💡 <code>docs/</code> 폴더에 넣고 싶을 수 있지만, <code>docs/</code>는 나중에 MkDocs 같은 도구로 프로젝트 문서 사이트를 만들 때 사용하는 폴더입니다. 기획 문서는 프로젝트 루트에 두세요.</p>
+</blockquote>
+<h3 id="claude-code">Claude Code 설치가 안 되어 있다면?</h3>
+<p>터미널(맥: Terminal, 윈도우: PowerShell)을 열고:</p>
+<pre><code class="language-bash">npm install -g @anthropic-ai/claude-code
+</code></pre>
+<blockquote>
+<p>Node.js가 설치되어 있어야 합니다. 없다면 <a href="https://nodejs.org">nodejs.org</a>에서 LTS 버전을 먼저 설치하세요.</p>
+</blockquote>
+<p>설치 확인:</p>
+<pre><code class="language-bash">claude --version
+</code></pre>
+<hr />
+<h2 id="step-4-claude-code">Step 4. Claude Code에서 에이전트 팀으로 개발하기</h2>
+<h3 id="_7">에이전트 팀이란?</h3>
+<p>에이전트 팀은 <strong>여러 개의 Claude Code 세션이 동시에 협업하는 구조</strong>입니다. 하나의 세션이 <strong>팀 리드(Team Lead)</strong>가 되고, 나머지 <strong>팀메이트(Teammate)</strong>들이 각자 독립된 컨텍스트 윈도우에서 병렬로 작업합니다.</p>
+<p>기존의 서브에이전트(Subagent)와 다른 점은, 팀메이트들이 <strong>서로 직접 메시지를 주고받을 수 있다</strong>는 것입니다. 서브에이전트는 메인 에이전트에게만 결과를 보고하지만, 에이전트 팀의 팀메이트들은 서로 발견한 내용을 공유하고 조율합니다.</p>
+<pre><code>┌─────────────────────────────────────┐
+│           팀 리드 (Lead)             │
+│    작업 배분, 조율, 결과 종합         │
+│         ↕          ↕          ↕     │
+│    팀메이트 A   팀메이트 B   팀메이트 C │
+│    (프론트)     (백엔드)     (테스트)  │
+│         ↔          ↔                │
+│       서로 직접 메시지 교환 가능       │
+└─────────────────────────────────────┘
+     ▼ 공유 태스크 리스트 ▼
+  [✅ 완료] [🔄 진행중] [⏳ 대기]
+</code></pre>
+<h3 id="_8">사전 준비: 에이전트 팀 활성화</h3>
+<p>에이전트 팀은 <strong>실험적 기능</strong>이라 기본적으로 꺼져 있습니다. 먼저 활성화해야 합니다:</p>
+<pre><code class="language-bash"># 환경변수로 활성화 (터미널에서 실행)
+export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
+</code></pre>
+<p>또는 <code>~/.claude/settings.json</code>에 추가:</p>
+<pre><code class="language-json">{
+  &quot;env&quot;: {
+    &quot;CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS&quot;: &quot;1&quot;
+  }
+}
+</code></pre>
+<h3 id="_9">에이전트 팀 실행</h3>
+<p>프로젝트 폴더로 이동한 뒤 Claude Code를 실행합니다:</p>
+<pre><code class="language-bash">cd my-coffee-app
+claude --dangerously-skip-permissions
+</code></pre>
+<blockquote>
+<p>💡 <code>--dangerously-skip-permissions</code>는 Claude Code가 파일 생성, 명령어 실행 등을 할 때마다 "허용할까요?" 묻지 않고 자동으로 진행하게 해줍니다. 이게 없으면 매번 수십 번씩 승인 버튼을 눌러야 해서 에이전트 팀이 제대로 돌아가지 않습니다.<br />
+&gt;<br />
+⚠️ <strong>주의:</strong> 이름에 "dangerously"가 들어간 이유가 있습니다. 중요한 파일이 있는 폴더에서는 사용하지 마세요. <strong>반드시 새로 만든 빈 프로젝트 폴더에서만 사용하세요.</strong></p>
+</blockquote>
+<p>Claude Code가 열리면 아래와 같이 요청합니다:</p>
+<blockquote>
+<p>"PRD.md, TRD.md, Tasks.md를 읽고, 이 프로젝트를 구현하기 위한 에이전트 팀을 구성해줘. 프론트엔드, 백엔드, 테스트 담당으로 팀메이트를 나눠서 병렬로 진행해줘."</p>
+</blockquote>
+<p>Claude가 팀 구성안을 제안하면 <strong>확인(승인)해야</strong> 팀이 생성됩니다. Claude는 승인 없이 팀을 만들지 않습니다.</p>
+<h3 id="_10">팀이 구성되면 일어나는 일</h3>
+<ol>
+<li><strong>공유 태스크 리스트</strong>가 만들어집니다 — Tasks.md 기반으로 작업 목록이 생성되고, 의존성(순서)이 자동 관리됩니다</li>
+<li><strong>팀메이트들이 태스크를 자동 배정</strong>받습니다 — 하나를 끝내면 다음 대기 중인 태스크를 스스로 가져갑니다</li>
+<li><strong>팀메이트 간 메시지 교환</strong>이 이루어집니다 — 예를 들어 백엔드 팀메이트가 API를 완성하면 프론트엔드 팀메이트에게 알려줍니다</li>
+</ol>
+<h3 id="_11">팀메이트 확인 및 직접 소통</h3>
+<p>터미널에서 <code>Shift+↑/↓</code>로 팀메이트를 선택하고, 직접 메시지를 보낼 수 있습니다. 팀 리드를 거치지 않고 특정 팀메이트에게 바로 피드백할 수 있습니다.</p>
+<h3 id="vs">💡 에이전트 팀 vs 단일 세션, 언제 뭘 쓸까?</h3>
+<table>
+<thead>
+<tr>
+<th>상황</th>
+<th>추천</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>파일 하나 수정, 간단한 버그 픽스</td>
+<td>단일 세션</td>
+</tr>
+<tr>
+<td>여러 영역이 동시에 작업 가능한 프로젝트</td>
+<td><strong>에이전트 팀</strong></td>
+</tr>
+<tr>
+<td>빠른 조사나 검증이 필요한 부분 작업</td>
+<td>서브에이전트</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>비용 참고:</strong> 에이전트 팀은 각 팀메이트가 독립된 Claude 세션이므로, 단일 세션보다 토큰을 많이 사용합니다. 간단한 작업에는 단일 세션이 더 효율적입니다.</p>
+</blockquote>
+<hr />
+<h2 id="step-5">Step 5. 개발 실행 요청</h2>
+<p>에이전트 팀이 구성되면, 개발을 시작합니다:</p>
+<blockquote>
+<p>"Tasks.md에 정의된 작업 순서대로 개발을 시작해줘. 각 태스크가 완료될 때마다 Tasks.md의 체크리스트를 업데이트해줘."</p>
+</blockquote>
+<h3 id="_12">개발 진행 중 알아두면 좋은 것들</h3>
+<p><strong>1. 한 번에 다 되지 않습니다</strong></p>
+<p>Claude Code가 만든 코드에 에러가 날 수 있습니다. 당황하지 마세요. 에러 메시지를 그대로 붙여넣으면 Claude Code가 스스로 수정합니다:</p>
+<blockquote>
+<p>"이런 에러가 나와: [에러 메시지]. 수정해줘."</p>
+</blockquote>
+<p><strong>2. 중간중간 확인하세요</strong></p>
+<p>태스크 3~4개가 완료될 때마다 실제로 실행해서 확인하세요:</p>
+<pre><code class="language-bash"># 웹앱이라면
+npm run dev
+</code></pre>
+<p>브라우저에서 <code>localhost:3000</code> (또는 안내된 주소)을 열어 직접 눌러보세요.</p>
+<p><strong>3. 피드백은 구체적으로</strong></p>
+<pre><code>❌ &quot;이거 좀 이상해&quot;
+✅ &quot;메뉴 선택 화면에서 '확인' 버튼을 누르면 아무 반응이 없어. 주문 목록에 추가되어야 해.&quot;
+</code></pre>
+<pre><code>❌ &quot;디자인 좀 바꿔줘&quot;
+✅ &quot;메인 화면의 배경색을 흰색으로, 버튼은 파란색(#3B82F6)으로 바꿔줘.&quot;
+</code></pre>
+<p><strong>4. 세션이 길어지면 요약을 요청하세요</strong></p>
+<p>Claude Code 대화가 길어지면 컨텍스트가 흐려질 수 있습니다:</p>
+<blockquote>
+<p>"지금까지 완료된 작업과 남은 작업을 정리해줘."</p>
+</blockquote>
+<p>이렇게 하면 Claude Code가 현재 상태를 다시 정리하고, 이어서 진행할 수 있습니다.</p>
+<hr />
+<h2 id="step-6">Step 6. 결과 확인 및 배포</h2>
+<p>모든 태스크가 완료되면:</p>
+<blockquote>
+<p>"모든 기능이 정상 동작하는지 최종 점검해줘. 그리고 Vercel(또는 Cloudflare Pages)에 배포하는 방법을 알려줘."</p>
+</blockquote>
+<h3 id="_13">배포 후 체크리스트</h3>
+<ul>
+<li>[ ] 모바일에서 잘 보이는지</li>
+<li>[ ] 링크 공유가 되는지</li>
+<li>[ ] 주요 기능이 모두 동작하는지</li>
+<li>[ ] 에러 발생 시 사용자에게 안내가 나오는지</li>
+</ul>
+<hr />
+<h2 id="_14">자주 하는 실수 &amp; 해결법</h2>
+<h3 id="1-claude-code">1. &quot;아이디어 구체화 없이 바로 Claude Code에 던지기&quot;</h3>
+<p><strong>문제:</strong> &quot;커피 주문 앱 만들어줘&quot;만으로는 Claude Code가 수십 가지를 임의로 결정합니다. 원하는 것과 다른 결과물이 나올 확률이 높습니다.</p>
+<p><strong>해결:</strong> 반드시 채팅에서 먼저 구체화하세요. 10분의 대화가 2시간의 수정을 줄여줍니다.</p>
+<h3 id="2">2. &quot;문서를 검토하지 않고 바로 개발 요청&quot;</h3>
+<p><strong>문제:</strong> PRD에 불필요한 기능(결제, 소셜 로그인 등)이 잔뜩 들어가면 개발이 복잡해지고 에러도 많아집니다.</p>
+<p><strong>해결:</strong> MVP(최소 기능 제품)에 집중하세요. &quot;이게 없으면 서비스가 안 되는 기능&quot;만 남기세요.</p>
+<h3 id="3">3. &quot;에러가 나면 포기하기&quot;</h3>
+<p><strong>문제:</strong> 처음 실행할 때 에러가 나는 건 정상입니다.</p>
+<p><strong>해결:</strong> 에러 메시지를 복사해서 Claude Code에 붙여넣기만 하면 됩니다. 대부분 자동으로 고칩니다.</p>
+<h3 id="4">4. &quot;한 세션에서 너무 많은 것을 요청하기&quot;</h3>
+<p><strong>문제:</strong> Claude Code의 컨텍스트 윈도우에는 한계가 있습니다. 대화가 너무 길어지면 앞부분을 잊습니다.</p>
+<p><strong>해결:</strong> 큰 프로젝트는 단계별로 나누세요. &quot;Phase 1: 기본 기능&quot; → &quot;Phase 2: 디자인 개선&quot; → &quot;Phase 3: 추가 기능&quot; 식으로 세션을 분리하는 것이 좋습니다.</p>
+<h3 id="5-claude">5. &quot;기술 스택을 Claude에게 완전히 맡기기&quot;</h3>
+<p><strong>문제:</strong> Claude가 제안한 기술 스택이 내 상황(서버 비용, 유지보수 난이도)에 안 맞을 수 있습니다.</p>
+<p><strong>해결:</strong> TRD 검토 시 아래를 확인하세요:<br />
+- 서버 비용이 발생하는지 (무료 티어로 가능한지)<br />
+- 외부 서비스 의존성이 많지 않은지<br />
+- 나중에 내가 (또는 Claude에게 시켜서) 수정할 수 있는 구조인지</p>
+<hr />
+<h2 id="_15">실전 예시: 처음부터 끝까지</h2>
+<p>아래는 실제로 이 워크플로우를 적용한 예시입니다.</p>
+<h3 id="phase-1-claudeai-15">Phase 1: 아이디어 → 문서 (claude.ai 채팅, 약 15분)</h3>
+<pre><code>나: 회사에서 점심 메뉴 투표 앱을 만들고 싶어. 매일 아침 투표를 열고, 
+    점심시간 전에 마감되는 거야.
+
+Claude: 좋은 아이디어네요! 몇 가지 확인할게요...
+        (3~5회 대화)
+
+나: 지금까지 내용으로 PRD, TRD, Tasks 문서 만들어줘.
+
+Claude: (3개 문서 생성)
+
+나: PRD에서 댓글 기능은 빼줘. Tasks에서 예상 시간도 넣어줘.
+
+Claude: (수정된 문서 생성)
+</code></pre>
+<h3 id="phase-2-claude-code-3060">Phase 2: 개발 (Claude Code, 약 30~60분)</h3>
+<pre><code>나: docs 폴더의 문서를 읽고 에이전트 팀을 구성해줘.
+Claude Code: (에이전트 팀 구성 완료)
+
+나: Tasks.md 순서대로 개발 시작해줘.
+Claude Code: (개발 진행...)
+
+나: npm run dev 했는데 투표 버튼이 안 눌려.
+Claude Code: (수정 후 재실행)
+
+나: 완료! 배포 방법 알려줘.
+Claude Code: (배포 가이드 제공)
+</code></pre>
+<hr />
+<h2 id="_16">마무리</h2>
+<p>정리하면 이렇습니다:</p>
+<ol>
+<li><strong>채팅에서 충분히 대화하세요</strong> — 아이디어가 구체적일수록 결과물이 좋습니다</li>
+<li><strong>3대 문서(PRD, TRD, Tasks)를 만드세요</strong> — 이것이 에이전트의 설계도입니다</li>
+<li><strong>문서를 반드시 검토하세요</strong> — 10분의 검토가 2시간의 수정을 줄입니다</li>
+<li><strong>에이전트 팀으로 개발하세요</strong> — 역할 분담이 품질을 높입니다</li>
+<li><strong>피드백은 구체적으로 하세요</strong> — 스크린샷, 에러 메시지, 구체적 위치를 알려주세요</li>
+</ol>
+<p>코딩을 몰라도 됩니다. <strong>무엇을 만들고 싶은지 설명할 수 있으면</strong> 충분합니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 21일 11:52 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@edwin/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/512_Python_%EC%A0%84%EB%AC%B8%EA%B0%80_%EC%97%90%EB%93%9C%EC%9C%88.jpg"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@edwin/">@edwin</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/275/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/275/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">3</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/7080/add_comment/"
+                      method="post"
+                      hx-post="/blog/7080/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="04TDV4g9lwmXjdvyOIZteEj5EVBjq8pLGvSJf9oTjYhJLG9A2qw18yoRTsZBjPcy">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @edwin 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@edwin/9571/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            알라딘 중고도서 묶음배송 검색 서비스 오픈! 🎊
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="fas fa-comment"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 21일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@edwin/7081/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            2026년에 AI 활용 1년 계획 세우는 건, 솔직히 시간 낭비입니다
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@edwin/7080/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            코딩 못해도 괜찮아요: Claude Code로 내 아이디어를 앱으로 만드는 법
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">2</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@edwin/6592/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            클로드 사용량 세션 시간 고정하기
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 25일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@edwin/6591/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Ko-Skils: AI 에이전트를 위한 한국어 스킬 포털
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 25일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 2
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/275/7080/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @edwin 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/14021">
+                    
+                        <img src="https://static.wikidocs.net/images/book/함께해요_파이썬_생태계_표지_v2_9ekBPyF.png"
+                             alt="함께해요 파이썬 생태계"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/14021"
+                           class="hover:text-red-500 dark:hover:text-red-400">함께해요 파이썬 생태계</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        파이썬의 진정한 마스터가 되는 길은 어떤 것일까요? 수년 간 파이썬을 사용해왔다 해도, 같은 라이브러리들로만 프로젝트를 진행하다 보면, 과연 &#x27;파이썬을 잘한다&#x27;고 말하기에는 무언…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 12월 31일 9:20 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/14691">
+                    
+                        <img src="https://static.wikidocs.net/images/book/스테이블_디퓨전_표지_0AUbn3Y_0px0raj_v0jpPTl_8Gurmd6_cgU6fWU_IJO7wwn_t8C8w5O_5tOwRMk.png"
+                             alt="함께해요 스테이블 디퓨전"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/14691"
+                           class="hover:text-red-500 dark:hover:text-red-400">함께해요 스테이블 디퓨전</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        &quot;함께해요 스테이블 디퓨전&quot;은 디지털 시대의 창조성을 탐구하고자 하는 모든 이들을 위한 가이드북입니다. 현재 많은 이미지 생성 서비스들이 존재하지만, 스테이블 디퓨전 기술은 그 …
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2024년 10월 29일 8:58 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/15787">
+                    
+                        <img src="https://static.wikidocs.net/images/book/함께해요_파이썬_전문가_0YSyfSL_MfdeslH_B7jLtDE_OdVCkcs_4Z4OdtD_0vB2l0m_MizkDcO_G4ROutT.png"
+                             alt="함께해요 파이썬 전문가"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/15787"
+                           class="hover:text-red-500 dark:hover:text-red-400">함께해요 파이썬 전문가</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        &quot;함께해요 파이썬 전문가&quot;는 파이썬을 처음 접하는 초보자부터 중급 및 고급 개발자까지 모두를 위한 종합적인 학습서입니다. 이 책은 파이썬의 기본 개념부터 고급 주제에 이르기까지 …
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2024년 7월 16일 2:38 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">501</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-7080"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-7080"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/7080/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">2</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@edwin/6591/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/6591/image_202601251026.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            Ko-Skils: AI 에이전트를 위한 한국어 스킬 포털
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                ](https://ko-skills.pages.dev/)
+
+
+, ,  같은 사이트를 보면…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=5cfee2c'/>

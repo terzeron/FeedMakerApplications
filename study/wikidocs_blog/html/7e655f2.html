@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="아기야 아기야.. 엄마가 날 버렸어..">
+    <meta property="og:type" content="아기야 아기야.. 엄마가 날 버렸어..">
+    <meta property="og:title" content="아기야 아기야.. 엄마가 날 버렸어..">
+    <meta property="og:description" content="아기야 아기야.. 엄마가 날 버렸어..">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@bhjhj/1328/">
+
+        
+    <title>아기야 아기야.. 엄마가 날 버렸어..
+        - 떠돌이
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@bhjhj/1327/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@bhjhj/1329/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">아기야 아기야.. 엄마가 날 버렸어..</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@bhjhj/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @bhjhj
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 1월 20일 2:22 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@bhjhj/?tag=754"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            피난
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@bhjhj/?tag=753"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            한국전쟁
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@bhjhj/?tag=750"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            6.25
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>아기야 아기야.. 엄마가 날 버렸어.. </p>
+<p>​</p>
+<p>산부인과 병원 문 앞에 있는 자그마한 꽃밭에 개나리와 진달래가 꽃을 피우려고 봉우리를 만들기 시작했다. 유난히도 추웠던 겨울이 가고 어김없이 봄이 돌아왔다. 90을 바라보는 한 여사의 주름진 얼굴에 미소가 피어올랐다. 증손녀를 보게 되다니! 이렇게 오래 살아 증손까지 두게 될 줄 상상이나 했던가. 그동안 너무나 힘겨웠던 전쟁 미망인의 고달픈 삶에 보상이 주어지는 것 같아 기쁘기도 하고 감사하기도 했다. 가벼운 걸음을 떼던 한 여사 앞에 육중한 병원 투명 유리문을 반쯤 열고 버티고 있는 할아버지가 눈에 들어왔다. 서있기도 힘들어 보이는 부인인 듯한 할머니가 무사히 문을 통과할 수 있도록 하기 위해 문을 잡은 손을 부르르르 떨면서 두 다리에 힘을 주고 있었다. 두 노인의 모습은 안스러웠지만 보기에는 무척 정겨웠다. 문을 통과하자 두 노인은 서로를 쳐다보며 따뜻한 미소를 주고 받았다. 한 여사의 눈 앞에 오랫동안 잊혀졌던 상사계급 군복 차림 남편의 씩씩한 모습이 어른거렸다. 절대로 잊을 수 없는 그 늠름한 모습. 셋째 출산을 코 앞에 두고 전장터로 떠나는 속 마음이야 걱정이 태산이지만 아내 앞에서 환한 웃음을 지으며 안심을 시키려고 애를 썼다.</p>
+<p>[전쟁은 이제 끝났어. 압록강까지 전진만 남았다구. 아기를 내가 못받아줘서 미안한데 그래도 떠나기 전에 이틀 휴가 받은 것만도 어디야. 대대장이 돈까지 쥐어주더라구. 그거까지 합해서 오천원 주면서 옆집 영남이 엄마에게 부탁했으니까 잘 봐주실 거야. 착한 분이니까 돈 안줘도 잘 해줄거지만. 새로 부임한 소대장은 아무 것도 몰라서 내가 꼭 있어야 소대며 중대가 돌아가. 대대장도 신신당부하더라구. 신상사 없으면 큰일 난다구. 아무래도 석달 이상은 지나야 올 거 같아. 그동안 혼자서 애 둘 데리고 출산까지 해야하니.. 내가.. 내가..]</p>
+<p>남편의 잘생긴 얼굴은 웃음을 짓고 있었지만 떨리는 목소리와 눈가의 촉촉한 이슬은 감추질 못했다. 한 여사 역시 쪼그라드는 가슴을 애써 달래며 말했다.</p>
+<p>[저나 애들 걱정은 마시고 몸 성히.. 부디..]</p>
+<p>둘 다 애써 억지웃음을 지으며 웃는 것도 아니고 우는 것도 아닌 짜부러진 얼굴들을 마주한 채 황망히 헤어졌고 한 여사는 그토록 씩씩했던 남편을 다시 보지 못하였다. 불쌍한 사람. 나는 80을 훨씬 넘겨 혼자 살아 남아서 예쁜 증손녀까지 보러 왔건만. 아이 둘 키우고 시집장가 보내느라 정신없이 살 때는 몰랐는데 정겨운 노부부를 보고 이제야 새삼 남편이 불쌍해서 눈물을 찔끔 흘렸다. 그리운 감정보다는 젊은 나이에 전사해서 유골도 못찾은 남편이 가엽기 짝이 없었다. 한 여사는 주책없이 흘러나오는 눈물을 닦으려고 화장실로 들어섰다. 귀여운 증손녀 앞에 두고 혼자 찔찔 짜고 있으면 그 얼마나 꼴불견일까. 그녀는 거울 앞에서 휴지로 눈물을 닦으며 애써 명랑한 표정을 지어보였다.</p>
+<p>신생아실 앞에는 한 여사와 딸, 손녀 말고 한 무리의 다른 가족들이 안을 들여다보고 있었다. 안에서 안고있는 아기를 보여주는 애엄마를 유리창 너머로 보면서 나직히 서로 킥킥거렸다. 한 여사 가족들은 유리창 너머가 아닌 접견실에서 셋이 모두 아이를 볼 수 있었다. 벌써 30이 된 손녀딸과 이제 60을 갓 넘긴 딸이 간호사로부터 소중히 증손녀를 넘겨받았다. 딸이 보여주는 증손녀의 작은 얼굴이 전혀 낯설지가 않았다. 많이 본 모습같았다. 아무렴.. 누구 핏줄인데.. 조그만 게 눈을 뜨고 주위를 둘러보며 새근새근 숨을 쉬는 게 너무나도 대견했다.</p>
+<p>[엄마도 한번 안아봐.]</p>
+<p>딸의 권유에 한 여사도 아기를 품에 안아보았다. 오목조목하게 생긴 귀여운 얼굴이 자꾸만 뭔가의 기억을 떠올리도록 강요하는 것만 같았다. 뽀뽀를 해주려고 오른쪽 뺨을 돌렸다. 뺨 한가운데에 자그마한 짙은 갈색 점이 있었다. 어둡고 깊은 우물에서 물이 담긴 두레박이 천천히 올라오듯 아득한 기억이 조금씩 조금씩 분명한 윤곽을 드러내었다. 똑같은 갈색 점을 분명히 본 적이 있는데.. 어디서였더라.. 잠시 후에 그 점의 정체가 드러났다. 6.25 전쟁 두번째 피난길에 길가에서 잃어버렸던 세번째 아기.. 아니다.. 길가에 두고온.. 길가 큰 나무 아래.. 숨겨둔?.. 다시 찾지못한.. 찾았지만 이미 해골로 변해버린.. 아기도 똑같은 점을 가지고 있었다. 눈을 뜨고 한 여사를 쳐다보던 아기가 울기 시작했다. 아기를 안은 한 여사의 양팔이 부들부들 떨려왔다. 증손녀를 품에 안고 좋아하던 어머니가 갑자기 안색이 하얗게 질리더니 몸을 덜덜 떨자 딸이 억세게 우는 아기를 넘겨받았다.</p>
+<p>[엄마, 몸이 안좋아? 갑자기 왜 그래?]</p>
+<p>[할머니, 어디 아프세요?]</p>
+<p>딸이 한 여사를 돌보려고 아기를 손녀딸에게 넘겼다. 갑작스런 상황에 둘은 몹시 당황했다. 아기가 더욱 거세게 울자 손녀딸이 달래려고 애를 썼다.</p>
+<p>[울지마 아기야. 무서운 사람 아니야. 바로 니 외할머니야. 에구, 에구, 후후. 아직 그런 거 몰라? 엄마가 날 버렸어? 후후, 아니야, 아니야, 울지마. 금쪽같이 예쁜 널 왜 버려? 아니야, 아니야, 울지마.]</p>
+<p>얼굴이 허옇게 질린 한 여사는 손녀딸이 아기를 달래는 목소리를 또렸하게 들었다. 아기야.. 아기야.. 엄마가 날 버렸어?.. 아니야.. 아니야.. 엄마가 날.. 피난 떠난 지 서너달 후 피난생활을 접고 인천집으로 돌아오는 같은 길에서 다시 보게된 작은 해골로 변해버린 아기.. 그 처참한 모습을 보지만 않았더라도.. 다리에 힘이 다 빠진 한 여사가 바닥에 주저앉고 말았다.</p>
+<p>갑작스러운 한 여사의 졸도에 놀란 두 모녀는 아기를 간호사에 맡기고는 쓰러진 한 여사를 붙잡고 흔들어댔다.</p>
+<p>[엄마, 왜 그래? 정신 차려!]</p>
+<p>[할머니, 갑자기 어떻게 된 거에요?]</p>
+<p>그렇게해서 소중한 증손녀를 보러온 씩씩하고 명랑했던 한 여사는 느닷없이 응급실로 실려 가게 되었다.</p>
+<p>밤이 되어 정신을 차린 한 여사는 왜 자신이 응급실 침대에 누워있는지 선듯 이유를 알 수 없었다. 왜 내가 여기 누워 있는 거지? 그녀는 팔뚝에 꽂힌 주사바늘 선을 따라 올려다 보았다. 평생 처음 맞아보는 링거 주사. 자신이 기절했었다는 사실이 믿기지가 않았다. 왜 정신을 잃었을까? 무엇때문에? 도무지 짚이는 게 없었다. 머리가 약간 지끈거릴 뿐 아무것도 떠오르지 않았다. 막막하고 어두운 사막 한 가운데 홀로 서있는 기분이 들었다. 그러다가 한 여사가 의식을 찾았다는 간호사의 연락을 받고 병실로 허둥지둥 들어서는 딸과 아들을 보고나서야 &lt;아, 나한테는 아들, 딸 자식들이 있었지.. 맞아.. 난 혼자가 아니야..&gt;라는 생각이 들었다.</p>
+<p>​</p>
+<p>1950년 11월 초에 한 여사는 셋째를 출산했다. 전장터로 떠난 남편이 말한대로 옆집 영남이네 아주머니가 알뜰히 보살펴주었다. 외아들이었던 남편은 10대 후반에 부모님 두분 다 여의게 되었고 한 여사 역시 혼자나 마찬가지였다. 강원도 강릉 근처에 살았던 그녀의 부모님은 너무나도 가난한데 흥부처럼 자식들은 많아서 한 여사를 서울로 식모살이 하게 했고 그녀의 언니는 부산의 한 신발공장으로 보낼 수밖에 없었다. 일찌감치 일을 시킬 수 있고 후손을 봐야하는 남자아이들만 남겨놓고 밥만 축내는 여자아이들은 무정하게 떠나보낸 것이다. 그렇게 10대에 집을 떠난 한 여사는 고향이 별로 그립지도 않았고 가끔 부모형제들이 보고싶기는 했지만 어릴 때 먹는 것부터 너무들 고생을 하여선지 만나고 싶다는 간절한 마음은 없었다. 가난이 무슨 죄냐 하지만 가장 고약한 악당은 날이 갈수록 사람의 감정도 바싹바싹 메마르게 만드는 바로 그 가난이라는 예비살인자임엔 틀림없었다.</p>
+<p>전쟁 직후에는 배가 약간 부르긴 했지만 아직 출산 전이고 군인 가족들의 피난을 중시하는 배려도 있어서 인천항에서 군산까지 5살, 3살된 아들딸과 함께 배를 타고 피난을 할 수 있었다. 하지만 곧 인민군 치하가 된 그곳에서 한 여사는 시골의 한 노부부의 보살핌을 받았다. 평생의 은인이었다. 인민군의 검색이 한번 있었지만 꼬지지한 어린 두 아이와 노부부를 보고는 수상한 사람을 신고하라는 말만 남기고 돌아갔다. 9월 말 서울이 수복되어 다시 인천으로 돌아왔고 군인인 남편이 휴가를 나와서 꿈같은 이틀 밤을 함께 지낼 수 있었다. 아이들이 귀여워 어쩔 줄 모르는 남편의 행복한 얼굴, 아빠가 왔다고 마구 매달리면서 어리광부리는 두 아이들, 반찬으로 김과 구하기 힘든 조기 두마리를 올리자 네 식구가 둘러앉아 맛있게 먹던 장면들, 남편은 제대로 먹지도 않고 아이들 먹으라고 맛있는 조기 뼈만 발라주었다. 한 여사의 생애 중 가장 행복한 순간들이었다. 그 이상 뭘 더 바랄 것인가. 아쉬운 순간이 지나가고 남편은 총알이 빗발치는 전장터로 떠나갔다. 남편과의 달콤한 짧은 만남에 한 여사는 힘을 얻었고 이제 고생스럽런 피난생활도 까마득히 잊혀져 가는 사이에 셋째를 낳게 되었다. 옆집 영남이네 아주머니가 아이들도 돌봐주고 산파 할머니도 수소문해서 데리고 와서 크게 고생하지 않았다. 다시는 짐보따리와 아이들 둘을 데리고 피난을 떠날 일은 없을 줄 알았다. 더군다나 이제 갓난아이까지 있으니 이 젖먹이까지 챙기고 어디를 간단 말인가. 말도 안되는 소리였다. 그런데 말도 안되는 기가 막힌 상황이 또 벌어지고 만 것이다.</p>
+<p>1950년 12월 중순 쯤에 주변에서 계속 안좋은 소문이 돌았다. 수많은 중공군이 압록강을 건너 밀고 내려오고 있고 미군과 국군은 점령했던 평양을 버리고 총퇴각을 하고 있다는 불길한 소식이었다. 남편으로부터는 아직 편지가 오질 않았다. 소식통인 영남이네 아주머니는 쌀값이 두배로 뛰었다며 큰일이라고 하면서 또다시 피난가야 할지도 모르겠다고 덧붙였다. 한 여사의 가슴이 쿵쾅거렸다. 아이 둘에 이제 젓먹이까지 생겼으니 어찌 또 피난길을 떠난단 말인가. 군인 가족은 그래도 트럭이 제공된다고는 하지만 한 여사는 앞이 캄캄해졌다.</p>
+<p>매서운 겨울의 찬 바람이 윙윙거리는 중에 설마 하던 소문이 점점 더 사실로 드러났다. 전쟁 직후와는 달리 북한 사람들이 수도 없이 남으로 내려오기 시작했다. 낯선 평안도 함경도 사투리를 들으니 도무지 한국말을 쓰는 같은 민족이라는 느낌이 들지 않았다. 불길한 예감은 적중되어 12월 24일 드디어 국가에서 소개령을 내렸다. 서울과 경인지역 국민들은 모두 피난가라는 명령이었다. 매일처럼 콩콩 뛰던 가슴이 철렁 내려앉았다. 더군다나 엄청나게 추운 한겨울 아닌가. 지난 번 피난 때에는 그나마 여름이었기에 다행이었는데 이제는 눈보라에 차가운 겨울바람이 쌩쌩 불고 있다. 자신과 세 자식이 얼마 못가 길거리에서 얼어죽을 것 같았다. 소개령이 떨어진 다음날 아침 국군 사병이 헐레벌떡 찾아왔다. 오후에 트럭이 수원으로 출발하니까 준비하라는 통보였다. </p>
+<p>[혹시 남편 소식 알 수 있을까요?]</p>
+<p>[신 상사님 부대요? 아마도 사리원 쯤에서 후퇴하고 있을 겁니다.]</p>
+<p>[사리원이 어디..]</p>
+<p>[평양 밑에 있어요. 걱정하지 마세요.]</p>
+<p>바쁜 병사를 붙들고 더 물어볼 수도 없었다. 일단 안심은 했지만 아이들과 피난길을 떠날 생각에 정신이 하나도 없었다. 황급히 피난 보따리를 꾸리고 있는데 아기가 악을 쓰고 울기 시작했다. 왜 그러나 싶어 이마에 손을 대보니 열이 펄펄 끓어올랐다. 어제밤부터 젖을 제대로 먹지 못하더니 감기에 걸린 것 같았다. 하필 이 난리통에.. 급하게 따뜻한 물에 적신 수건으로 아기의 얼굴을 닦아주었지만 울음은 그치지 않았다. 영남이네 아주머니가 울음소리를 듣고 달려왔다.</p>
+<p>[아이고, 이를 어째..]</p>
+<p>[오후에 수원으로 떠나는 트럭을 타야하는데 큰일이네요.]</p>
+<p>[그거 꼭 타야지. 꼭 타야돼! 내가 여기서 인공치하를 겪었잖아. 특히 군인가족 경찰가족들한테는 인정사정 없더라구. 아 가족들이 무슨 상관이야. 근데 인민군들은 그게 아니더라구. 막 죽이구 깜빵에 처넣구. 깜빵에 가둬둔 사람들도 걔네들 도망갈 때 다 죽이구 갔어. 에휴, 말도 마. 나도 무조건 피난갈라구 작정했어. 지난 몇 달 동안 얼마나 무섭고 가슴 조이며 살았는지 말도 못해. 정호 엄마는 그래도 타고갈 트럭이 있잖아. 얼마나 좋아. 그나저나 애가 열이 너무 나네.]</p>
+<p>5살짜리 아들 신정호는 바쁜 엄마를 보고 자기도 도와준답시고 3살짜리 여동생이 춥지 않도록 이옷 저옷 껴입히고 양말을 신겨주었다. 한 여사는 아이 달래랴 짐 꾸리랴 정신이 없다가도 밥을 좀 해가지고 주먹밥이라도 만들어야겠다는 생각에 부엌에 가기 위해 방문을 나섰다. 나서자마자 몰아치는 눈보라와 세찬 겨울바람에 눈도 제대로 뜰 수가 없었다. 이런 고약한 날씨에 열이 펄펄 나는 아기를 데리고 길을 떠날 수가 있을까.. 간신히 부엌에 들어가서 밥을 할 준비를 하려는데 아궁이 불은 괜찮았지만 길어놓은 물이 없었다. &lt;에그머니나, 물이 없네!&gt; 할 수 없이 주먹밥은 포기하고 다시 방안으로 들어서려는데 아침에 왔던 국군병사가 세찬 바람을 뚫고 마당에 들어섰다. 아침과 달리 철모를 쓰고 어깨에는 총을 메고 탄띠와 배낭까지 완전군장을 하고 있었다.</p>
+<p>[지금 바로 떠나셔야 합니다.]</p>
+<p>[갓난애가 열이 펄펄 나는데 어떡하죠?]</p>
+<p>[그래도 지금 바로 떠나야 합니다.]</p>
+<p>한 여사는 울상이 되었다.</p>
+<p>[손을 대면 뜨거울 정도에요.]</p>
+<p>병사는 마루에 앉아 아이의 이마에 손을 대보았다.</p>
+<p>[이거 보통이 아니네. 그래도 데리고 함께 가는 게 낫습니다. 일단 수원에 가면 군대 병원도 있으니까 약도 먹일 수 있고 치료도 할 수 있고. 여기 머물러있다가는 피난가기도 전에 큰일나겠는데요.]</p>
+<p>아기는 정신을 잃었는지 이젠 울지도 않았다. 한 여사가 나직히 울음을 터뜨렸다.</p>
+<p>[그럼 조금 큰 애들 둘이라도 먼저 데려가 주세요. 정호야! 동생 데리고 나와. 아저씨 따라서 먼저 가. 엄만 아기 좀 더 챙기고 정 안되면 영남이네한테 맡길테니까.]</p>
+<p>정호가 여동생을 데리고 나왔지만 완전무장을 하고 총까지 멘 병사를 보고 무서움에 바로 울면서 엄마 품을 파고 들었다.</p>
+<p>[싫어. 안갈래. 엄마하고 같이 갈 거야.]</p>
+<p>데리러 온 병사는 곤혹스러워했다.</p>
+<p>[사모님, 안되겠습니다. 지금 들려야할 집이 세 집이나 더 있습니다. 조기 조 앞 큰길 자전거포 앞에 트럭이 서있으니까 큰 짐은 놔두시고 아이들만 빨리 챙기고 내려 오세요. 세시까지 안오시면 출발할 수밖에 없습니다. 명심하세요. 세십니다. 30분 남았어요.]</p>
+<p>황급히 돌아서는 병사를 뒤로 한 채 한 여사는 얼른 안으로 들어가 외출할 때만 쓰려고 모셔둔 깨끗하고 예쁜 분홍색 새 포대기를 찾았다. 마음이 급해서인지 얼른 찾아지지가 않았다. 분명히 이불 옆 빈 공간에 두었는데 보이질 않았다. 허둥지둥 여기 저기 들쳐보다가 부엌 찬장 안에 둔 생각이 났다. 그녀는 부엌에 가려고 높은 문지방을 급하게 넘으려다가 걸려 넘어져 한바퀴 곤두박질을 하고 말았다.</p>
+<p>[정호 엄마! 정신이 들어? 이그, 얼굴 좀 봐. 이마가 퉁퉁 붓고 피가 나.]</p>
+<p>눈을 떠보니 영남이네 아주머니가 걱정스런 얼굴을 하고 있었고 정호가 한 여사 옆에서 엉엉 울며 발을 동동 구르고 있었다. 일어서려던 한 여사는 오른쪽 무릎에 강한 통증을 느끼고는 다시 주저앉았다.</p>
+<p>[에구구, 이를 어째. 정호 엄마! 정신 차려. 애들 셋이나 두고 이 난리통에 어쩌려고..]</p>
+<p>[지금, 지금 몇 시지요?]</p>
+<p>[시간은 왜?]</p>
+<p>[세시에 트럭이 떠난다구 했어요.]</p>
+<p>당시 한 여사 집에는 시계가 없었고 영남이네 집에만 벽시계가 있었다. 시간을 알려면 영남이네 집에 가야했다.</p>
+<p>[잠깐 기다려. 시계 보고 올테니까.]</p>
+<p>그사이 한 여사는 부리나케 부엌으로 가서 곱게 접어둔 분홍색 포대기를 챙겨왔다.</p>
+<p>[정호 엄마! 세시 넘었어. 세시 반이야!]</p>
+<p>[에그머니나, 이를 어째!]</p>
+<p>큰일났다 싶은 한 여사는 얼른 포대기로 아직도 열이 나는 아기를 업고 짐은 포기한 채 두 아이와 함께 달랑 집을 나섰다. 눈보라는 멈췄지만 바람은 더욱 거세어서 눈을 뜨기가 힘들었다. 영남이네 아주머니가 뒤따라왔다. 아직 트럭이 떠나지는 않았을 거야.. 제발.. 미리 준비를 했어야 하는 건데..</p>
+<p>쉬익 쉬이익 무서운 소리를 질러대는 겨울바람이 몰아치는 길에 황급히 오고가는 사람들과 구루마, 소달구지까지 보였다. 다들 피난을 떠나고 있는 중이었다. 자전거포가 가까와지자 한 여사의 작은 가슴이 마른 명태처럼 오그라들었다. 꽤 멀리서도 보여야할 커다란 트럭이 보이지 않았다.</p>
+<p>[트럭이 떠났어..]</p>
+<p>영남이네가 바람에 눈을 가늘게 뜨며 말했다.</p>
+<p>[떠났다구? 아유, 큰일났네.]</p>
+<p>넋을 놓고 멍하니 서있는 한 여사를 제치고 영남이네가 자전거포로 들어섰다. 한 여사도 힘없이 따라갔다. 가게 안에 자전거는 하나도 없고 중년 부부가 커다란 짐 보따리 두개를 가운데 두고 가물거리는 화로 앞에서 두 손을 비비며 쉬고 있었다.</p>
+<p>[트럭이요? 조금 전에 떠나두만. 사람들 잔뜩 태우고. 우리도 얻어타려고 사정사정해봤는데 안된데. 자리도 없거니와 군인 가족들만 태운다나? 젠장할! 군인 가족만 사람이여? 제기랄거. 이 엄동설한에 대체 어딜 가나.. 나원 참.]</p>
+<p>영남이네가 온몸을 부들부들 떨고있는 한 여사를 부축하며 같이 집으로 돌아왔다. 집에 들어선 한 여사는 곧바로 않아누워 잠들었다. 5살 아들 정호는 징징거리는 여동생을 조용 조용 달래며 엄마가 잠들도록 까치발을 하며 아기도 챙기려고 했다. 십분도 못되어 아기 우는 소리에 한 여사는 잠에서 깨었다. 그녀는 정신을 차리려고 머리를 잠깐 흔들었다. 오른쪽 무릎 통증이 더 심해졌고 많이 부어있었다. 어떻게든 살아남아야 한다.. 남편이 없는 두번 째 시련이지만 아이들 셋과 아무 탈없이 이겨내야한다.. 남편이 돌아오면 넷이 아니라 이제 다섯 식구가 밥상에 둘러앉아 웃고 떠들며 같이 밥을 먹을 거야.. 한 여사는 아픈 다리를 추스리며 일어섰다.</p>
+<p>군 트럭이 다시 한번 데리러 오지 않을까 싶어 피난길에 선듯 나서지 못하는 한 여사에게 영남이네 아주머니가 한마디했다.</p>
+<p>[부대는 벌써 대전 밑으로 가버렸을 거야. 다시 서울근방으로 올래도 올 수가 없어. 황해도에서 내려온 북한 사람 말로는, 사리원도 중공군 손에 진작에 넘어갔다누만.]</p>
+<p>[사리원두요?]</p>
+<p>사리원이라는 단어가 나오자마자 한 여사는 소스라치게 놀랐다. 남편 부대가 거기 있다고 했는데..</p>
+<p>[우린 내일 아침에 떠날 거야. 어쩌겠어, 도망가야지. 애기 엄마도 같이 가. 정호 아빠가 특별히 부탁한 것도 있고 해서 같이 떠나자고 말하는 거야. 보라구. 북한 사람들 수도 없이 계속 내려오잖아. 하나같이 하는 말들이,]</p>
+<p>영남이네는 밀려 내려오는 북한 사람들로부터 들은 참혹한 얘기를 한 여사에게 차마 전해줄 수 없었다. 남편으로부터 아무런 소식도 듣지 못한 한 여사가 까무러칠 것만 같았다. 그들 말로는 미군들은 물론이요 국군들 시체가 길바닥에 널려있고 트럭이며 대포들이 불에 타서 다 시커멓게 고철덩어리가 되어버렸다고 했다. 특히 도망쳤다가 중공군에 빌붙어서 같이 내려오는 인민군들은 수가 얼마 되지는 않지만, 국군만 보면 복수심에 포로고 뭐고 잔인하게 칼로 찔러 난도질해서 죽여버린다고 했다. 군인뿐 아니라 미군이나 국군에 조금이라도 협력했던 주민들을 사정없이 마구 죽이는 통에 너무 무서워서 이 추운 겨울에 황급히 도망오지 않을 수 없단다. 영남이네 아주머니는 이북 전장터에 있는 군인 남편을 둔 한 여사에게 도무지 그런 말을 할 입이 떨어지지가 않았다.</p>
+<p>그렇게 해서 새해 첫날 아침에 아이들 셋을 데리고 영남이네와 함께 수원으로 향하는 길을 떠났다. 영남이네가 마침 작은 수레를 하나 얻어서 짐도 꽤 챙길 수 있었다. 바람은 심하지 않았지만 날씨는 여전히 매섭게 추웠다. 아기를 업었던 새 분홍색 포대기는 점심 때쯤 되자 벌써 여기 저기 얼룩에 긁혀 찢어진 자국까지 생겼다. 그래도 아기가 열이 내리고 얌전히 있는 것만도 다행이었다. 어린 두 남매도 엄마 말을 잘 따라주었다. 밤이 되어 빈 집을 찾아 들어갔지만 이미 피난민들로 가득 차서 발 들여놓을 틈도 없었다. 차가운 겨울 바람을 맞으며 쉴 곳을 찾아 헤매다가 군포 근처 어느 농가의 허름한 창고를 발견하고 그곳에서 하루밤을 지냈다. 한 여사에게는 영남이네 식구들이 큰 의지가 되었다. 며칠 머물면서 상황을 보려고 했지만 만나는 피난민들마다 하는 소리가 수원을 넘어 평택까지는 가야 조금 안심이 될 거라고 해서 한 여사와 영남이네는 다시 길을 떠났다. 한 여사는 남편 소식이 몹시 궁금했지만 입을 꾹 다물고 아이들과 아기를 챙기기만 했다. 어떻게 됐을까.. 살았을까 죽었을까.. 생각만 해도 눈물이 비오듯 하는 통에 아예 생각도 하지 않으려고 애를 썼다. 하지만 애써서 될 일인가.</p>
+<p>이튿날 밤은 피난민이 꽉 들어찬 어느 관공서 건물에서 애들과 새우잠을 잤다. 피난민들도 한 여사의 갓난아기를 보고는 조금씩 자리를 양보했다. 그래봤자 반걸음 정도 공간을 내주는 거지만. 목표를 평택으로 잡았으나 아직 수원에 도착하지도 못했다. 한 여사는 자신의 가족들 때문에 영남이네까지 속도를 못내는 것같아 미안하기만 했다. 그렇게 수원으로 가는 길에 일이 터지고야 말았다.</p>
+<p>아기를 업은 한 여사가 제대로 걷지를 못하고 비틀거리자 영남이네 아주머니가 다급히 나섰다.</p>
+<p>[어이구, 아기 이리 줘. 저기 저 큰 나무 밑에서 좀 쉬어가자구. 애엄마가 쓰러지면 어떡해. 기운차려. 조금 자면 나아질 거야.]</p>
+<p>아주머니의 말대로 수면부족이었다. 먹는 건 가지고 간 쌀로 대략 끼니는 때웠는데 이틀 동안 오그리고 자면서 자다가 애가 울어대면 피난길 고달픈 다른 사람들이 깰까봐 황급히 애 업고 바람이 쌩쌩 부는 밖으로 나서야 했다. 천하장사라도 버틸 재간이 없을 지경이다. 영남이네는 한 여사가 애 울음소리에 깰까봐 좀 떨어진 곳에 아기를 눞혔다. 나무 밑에 드러누운 한 여사는 곧바로 깊은 잠에 빠져들었다. 깊은 잠인데도 꿈 속에서 남편을 보았다. 환하게 웃는 씩씩한 모습.. 한 여사는 가까이 다가갔지만 남편은 손에 잡힐 듯하면서 멀어져만 갔다. 그녀는 울면서 계속 남편에게 달려갔지만 그만큼 남편은 물러서기만 했다. 미소는 거두지 않으면서..</p>
+<p>갑작스런 큰 폭음 소리에 한 여사는 화들짝 놀라 잠에서 깨었다.</p>
+<p>[어서 이리 와! 거기 있으면 죽어!]</p>
+<p>영남이네 아주머니의 고함소리가 들리고 길가의 사람들이 모두 한방향으로 뛰거나 먼지투성이 길에 납작 엎드렸다. 피난민들이 천천히 걸어가던 길은 순식간에 아수라장이 되었다. 천둥소리보다 더 큰 계속 터지는 폭탄 소리에 놀란 한 여사는 무슨 생각을 할 겨를도 없이 사람들이 뛰는 방향으로 달음질쳤다. 영남이네 아주머니가 한 여사 애들 둘을 껴안고는 안절부절하였고 한 여사가 합류하자마자 같이 사람들 무리에 휩쓸려 뛰기 시작했다. 요란한 폭탄 터지는 소리 중간에 간간이 콩볶는 듯한 총소리도 들려왔고 화약 냄새와 자욱한 먼지바람이 몰아쳤다. 한참을 달리다가 폭격이 뜸해지는가 싶어 논두렁 밑에 숨어들어 뒤를 살펴보았다. 인민군인지 중공군인지 구분할 수 없는 일단의 군인들이 어디론가 계속 총을 쏘아대고 있었다. 총만 쏘아댈뿐 피난민들을 향해 오지는 않았다. 비행기 소리는 여전히 요란했지만 폭격을 마친 듯 물러가는 것 같았다. 길 가에 많은 사람들이 피를 흘리며 쓰러져 있었다. 한 여사는 두 남매를 끌어안으며 울다가 나무 밑에 놓아둔 아기가 생각났다! 머리가 하예지고 정신이 없었다. 급히 일어나 몇 백 미터 떨어진 나무를 향해 뛰기 시작했다.</p>
+<p>[정호 엄마! 안돼! 가지 마!]</p>
+<p>영남이네 아주머니가 또다시 고함을 쳤다. 고함 소리와 함께 요란한 따발총 소리가 울려퍼지고 한 여사 한참 앞에서 뛰던 한 중년남자가 쓰러졌다. 순식간에 시뻘건 고깃덩어리로 변해서 먼지구덩이 길가에 나딩굴었다. 끔찍한 장면에 한 여사는 다시 돌아서고 말았고 계속되는 요란한 따발총 소리에 놀란 사람들이 다시 뛰기 시작했다. 영남이네와 한 여사 일행도 사람들 틈에 끼어 달리기 시작했다. 모두들 공포에 질려 누구를 챙겨주고 어쩌고 할 겨를이 없었다. 오직 자신이 살아야할 급박한 순간이었다. 식구들마저 생각할 여지가 없었다. 자신이 죽으면 다 소용없지 않은가. 자신이 죽는데야 식구들마저 아무런 의미가 없다.</p>
+<p>그렇게 공포의 달음박질을 하면서 자그마한 고개를 넘었다. 그제서야 한숨을 돌린 피난민들이 식구들을 챙기기 시작했다. 한 여사도 무사한 두 남매를 확인하고는 아기를 데리고올 생각에 벌떡 일어났다.</p>
+<p>[가긴 어딜 가. 남은 애들이나 살릴 생각해.]</p>
+<p>영남이네가 조용히 뇌까렸다.</p>
+<p>[그냥 놔둘 순 없잖아요. 데려와야지.]</p>
+<p>그때 옆에 있던 할아버지가 한마디했다. 다 찢어진 한복에 뽀얀 먼지를 고스란히 뒤집어쓴 참담한 몰골이었지만 여전히 갓을 쓰고 있었다. 피난민들 모두 허연 먼지를 온몸에 뒤집어쓰고 있어서 전부들 달걀 귀신 부대원들 같았다.</p>
+<p>[이봐 애기엄마. 가면 죽어. 폭격을 왜 했겄어? 그놈들이 내려오니까 막을려고 때린 건데 글마들이 더이상은 못내려오지만 자기네한테 다가오는 사람들은 무조건 다 죽일 거야.]</p>
+<p>[그럼 아긴 어떡해요.]</p>
+<p>[할 수 없지. 나도 손자 손녀 한꺼번에 잃었어. 손자는 얼어죽고 손녀는 폭격에 죽고.. 세월이 이러니 어쩌나.. 할 수 없지. 보아하니 애기뿐 아니라 조기 조 애들도 있는데 고 녀석들이라도 살릴 생각해야지. 지금 뒤돌아갔다가 엄마한테 무슨 일 생겨봐. 저 녀석들 어떡할 거야. 이 난리통에 누가 챙겨주겄어. 안됐지만 할 수 없어. 이런 꼴 당하는 사람이 애기엄마뿐이 아니야. 다들 당하고 있다구.]</p>
+<p>영남이네도 할아버지의 말에 맞장구치면서 한 여사를 끌어당겼다. </p>
+<p>[정호 엄마, 좀 앉아. 애 둘이라도 살릴 생각해.]</p>
+<p>세 살짜리 딸 아이가 한 여사의 다리 한쪽에 매달리며 슬피 울었다. 그녀는 몸을 숙여 어린 딸을 달래주었고 정호는 사내랍시고 입술을 깨물며 옆에서 엄마와 여동생을 지켜보았다. 그때 누군가가 외쳤다.</p>
+<p>[중공군이 가까이 온다!]</p>
+<p>그 말 한마디에 달걀귀신 부대원들은 일사분란하게 남쪽으로의 빠른 걸음을 재촉했다. 피난민 중 어떤 남자가 울면서 떠들어댔다.</p>
+<p>[우리 애엄마랑 딸아이 본 사람 없수까?]</p>
+<p>그 말에 귀기울이는 사람은 아무도 없었다. 다들 한걸음이라도 빨리 남쪽으로 가야 살 수 있다는 생각에 자기 몸과 식구들 챙기기도 바쁜데 남자의 슬픈 하소연이 들릴 리가 없었다.</p>
+<p>수원에서의 2차 피난생활은 1차 때보다는 수월하였다. 정부에서도 미약하나마 피난민들을 신경쓸 수 있었고 미국의 원조물자 지원도 조직적이고 체계적으로 이루어졌다. 한 여사의 가족들은 군인가족이라고 해서 약간의 특별대우도 받았다. 길가에 두고 온 아기를 잊은 건 아니지만 두 아이와 느닷없이 이질에 걸려 앓아눕게된 영남이네 아주머니를 돌보느라 한여사는 몸이 열 개라도 모자랄 지경이었다. 중공군은 더이상의 남진은 하지 못하고 결국 서울에서 물러섰다는 소식이 들려왔다. 한 여사는 바쁜 와중에도 육군 부대를 찾아다니며 남편 신 상사의 안부를 묻고 또 물었지만 속시원한 대답은 듣지 못했다. 시체를 수습했거나 목격자도 없어서 전사는 아니었고 실종으로 결정하자니 다시 북진할 수도 있는 상황이라 그러기에도 애매하다고 했다. 극심한 생존투쟁의 고통스런 세월이 흘러 어느덧 5월이 되었고 피난민 수용소에도 사람들이 많이 줄어들었다. 영남이네 아주머니도 격리생활을 포함한 긴 투병을 끝내고 건강하게 살아남았다. 다시 집으로 돌아갈 시간이 되었다. 다른 피난민보다 조금 뒤늦게 일행은 다시 북으로 집을 찾아나섰다.</p>
+<p>오던 길을 다시 올라가니 약간은 익숙해서 좋긴 좋은데 마음이 편치않은 건 다들 마찬가지였다. 두번씩이나 난리를 치면서 피난을 했는데 또다시 집을 떠나야하는 건 아닌지.. 집을 찾아가면서도 대부분의 사람들이 세번 째 피난을 해야 할지도 모른다는 불안감을 가지고 있었다. 그렇다고 수원에서 터를 잡을 것도 아니고 한 여사의 경우에는 아이들 때문에라도 그런 생각을 해볼 수도 없었다. 그녀에게는 잃어버린 아기와 남편 신 상사의 생존여부가 가장 중요한 문제였다. 특히 남편의 안부에 애가 닳았고 말도 안되는 소리지만 하루빨리 집에 가 있어야 남편이 돌아올 것같은 생각이 들었다. 나와 애 둘이 기다리고 있는데 돌아오지 않을 리가 없다.. 돌아와야만 한다..</p>
+<p>폭격을 맞아 달리던 중 모두들 한숨 쉬던 고개에 도착하여 잠시 쉬었다. 당시 할아버지의 말이 생각났다. 나도 손자 손녀 다 잃었어.. 얼어죽고 폭격에 죽고.. 이제 그 무섭던 겨울은 지났으니 얼어죽을 일은 없고 간간히 목격하는 지옥같은 폭격에만 살아남으면 된다..</p>
+<p>고개를 넘자 아기를 놓아둔 큰 나무가 아스라히 눈에 들어왔다. 한 여사의 가슴이 콩콩 뛰기 시작했다. 혹시 살아있지나 않을까.. 어림없는 소리다. 폭격에 살아남았다 해도 기어다니지도 못하는 그 젖먹이가 몇 달 동안 어떻게 목숨을 부지할 수가 있을까. 택도 없는 소리였다. 나무에 가까이 다가갈수록 그녀의 가슴은 더 쿵쾅거렸다. 사람들이 모두 말렸지만 그때 다시 와서 데려갔어야 했는데.. 하지만 이렇게 두 남매와 자신이 살아남았으니 하는 소리다.. 그 지옥같은 불구덩이를 생각하면 그대로 내뺀 게 잘한 일 같기도 했다. 그래도 다시 데리러 왔어야 했는데.. 엄마라면 의당 그랬어야 했는데.. 젖먹이를 놔두고 도망치는 엄마가 세상 어디에 있나.. 아무리 화염지옥이라도 그렇지..</p>
+<p>이제 나무에 가까이 왔다. 나무 밑은 낙엽을 거름삼아 이름모를 풀들이 많이 자라있었다. 나름대로 푸른 생명력을 자랑하는 듯 약한 바람에도 살랑거렸다. 아기의 흔적은 찾아볼 수 없었다. 그때 아들 정호가 소리쳤다.</p>
+<p>[엄마, 이리 와봐!]</p>
+<p>정호의 손짓을 따라 가보니 검은 포대기가 눈에 들어왔다. 가까이 가보니 군데군데 분홍색 자국이 있어서 원래 검은색이 아니라 분홍색 포대기였슴을 알 수 있었다. 검게 변한 건 먼지와 오물이 묻고 거기에 비를 몇 번 맞고 또 더러워져서 그리 되었고 본래는 예쁜 분홍색이었슴이 틀림없었다. 숨이 막혀왔다. 아기의 포대기였다. 왈칵 울음이 터져나올 뻔했지만 걱정스레 지켜보는 정호를 보고는 울지 않았다. 다가가서 포대기를 살짝 들쳐보았다.</p>
+<p>어른 주먹만한 허연 색깔의 작은 해골이 보였다. 틀림없는 자신의 아기였다. 남편이 없어서 아직 이름도 지어주지 못한 아기.. 폭격이고 뭐고 상황이 어찌 되었건 엄마가 놔두고 자기 혼자 살겠다고 도망쳐버린 버려진 아기.. 한 여사는 가슴에서부터 북받쳐오르는 눈물을 조용히 흘렸다. 젖이 충분히 나오지 않아 맘껏 먹이지는 못했어도 그래도 볼이 통통한 게 귀여웠는데.. 머리털도 조금씩 나오기 시작했었는데.. 엄마를 알아보고 조금씩 웃기 시작했는데.. 이젠 완전히 해골로 변해버리다니.. 엄마는 아직도 살아 숨쉬는데.. 한 여사는 흐느끼기 시작했다. 아이들 앞에서 소리내지 않으려고 악을 썼지만 쉽지 않았다.</p>
+<p>[애기 엄마슈?]</p>
+<p>어느 틈엔가 와있던 허름한 흰 옷 차림의 중년 농부가 말했다. 옆에는 마찬가지로 꼬지지한 차림의 여자도 있었다.</p>
+<p>[거봐요. 어느 땐가는 찾아올 거라구 했잖아요.]</p>
+<p>[임자 말이 맞었구먼. 딱해서 못보겄네.]</p>
+<p>한 여사는 울음을 멈추고는 부부인듯한 두 내외를 바라보았다.</p>
+<p>[여기.. 여기 오셨었어요?]</p>
+<p>[한달 전인가 그 애기를 봤지유. 바로 묻어주려고 했는데 여기 제 처가 찾으러 올 거니께 그때 묻어주자고 해서,]</p>
+<p>[고맙습니다.]</p>
+<p>영남이네 아주머니 내외도 와서 같이 아기를 묻어주게 되었다. 농부 내외는 자기 자식 대하듯 삽으로 곱게 땅을 파서 아기 시체를 소중히 추스려 놓았다. 입술을 깨물며 울음을 참던 한 여사는 포대기에 싸인 아기의 시신에 흙이 덮이자 더이상 참지 못하고 주저앉아 통곡하기 시작했다.</p>
+<p>[애기야.. 애기야.. 내가 찾으러 왔어야 했는데.. 죽어도 너를 껴안고 같이 죽었어야 했는데.. 얼마나 추웠을까.. 얼마나 배가 고팠을까.. 얼마나 울면서 엄마를 불렀을까.. 세상에 너를 내놓고는 아직 젖도 안뗀 너는 죽고 나는 살다니.. 용서해다오.. 이렇게 빈다.. 날 미워하지 말아다오.. 널 버린 게 아니야.. 널 버린 게 아니야..]</p>
+<p>아기에게 마지막 흙을 한웅큼 덮어준 한 여사는 영남이네 아주머니의 품에 안겨 몸부림쳤다. 아들 정호도 옆에서 훌쩍거렸고 어린 딸아이는 무슨 일인지 알지도 못하면서 엄마가 서럽게 우니까 따라서 크게 울어댔다. 그렇게 그녀의 둘째 딸, 이름도 채 지어주지 못한 젖먹이의 간단한 장례가 끝이 났다.</p>
+<p>이후 두 아이와 함께 한 여사의 고된 삶이 이어졌다. 휴전이 되고 나서야 남편의 전사통지서를 받았다. 같은 부대원 중 하나가 포로로 잡혔다가 송환되어 증언을 한 것이다. 남편 신 상사는 부대의 후퇴를 엄호하기 위해 마지막까지 남아서 기관총을 쏘다가 탄약이 떨어져서 수류탄 2개로 중공군에 맞서다가 전사하였다. 한 여사는 뒤늦은 무공훈장을 대신 받았다. 그래서 유족연금을 받기 시작했지만 금액은 보잘 것 없었다. 한 여사뿐 아니라 당시 한국의 상황은 유가족을 보살필 여유가 없었다. 전쟁 중에 살아남기에 급급했는데 전쟁이 끝났어도 마찬가지였다. 모두가 어떻게 하면 굶어죽지 않고 살아남느냐가 최대의 과제였다. 유가족에게 충분한 배려를 할 수가 없었다. 한동안 식당일을 하던 한 여사는 서울로 올라와 남대문 시장에서 옷 수선일을 하며 조금씩 안정을 찾았다. 모든 물자가 귀했던 당시 사람들은 헤진 옷들을 버리지않고 수선해서 입었다. 그렇게 10년 동안 돈을 모아 포목점을 인수하여 비로소 생활이 안정되었다. 두 남매는 엄마를 속 썩인 적이 한번도 없었고 잘 자라나서 결혼도 하고 이제 증손녀까지 안겨주었다. 실로 몇십 년의 꿈같은 세월이 정신없이 흘러갔다. 남편에 대한 기억도 가물가물해지다가 딸 결혼식 때 신랑에게 인도해줄 사람이 없어서 속으로 한참을 울었다. 딸의 결혼을 부부가 같이 치렀으면 얼마나 좋았을까. 내심 남편이 가여웠고 죄책감까지 들었다. 그때도 젖먹이 때 죽은 셋째가 크게 떠오르진 않았었는데 증손녀를 안고 뺨의 똑같은 갈색 점을 보고는 기겁을 하지 않을 수 없었다.</p>
+<p>​</p>
+<p>한 여사는 두 주일 넘게 밥을 넘기지 못하고 죽만 조금씩 먹었다. 두 남매는 엄마가 왜 식사를 못하는지 이유를 알 수 없었다. 아들 딸의 걱정스러운 눈초리를 의식해서 억지로 수저를 들어 입에 댔지만 밥이 아니라 모래를 씹는 것같아 도저히 목구멍으로 넘길 수가 없었다. 어찌어찌 강제로 밥을 넘기다가도 셋째 생각에 갑자기 눈물이 쏟아져 나왔고 간신히 넘긴 밥덩이도 토해내고 말았다. 80 훨씬 넘어서도 나는 맛있는 밥을 먹는데 우리 아기는.. 우리 아기는.. 해골만 남은 아기의 시신을 보지만 않았서도 그럭저럭 괜찮았을지도 모른다. 그렇게 무서운 모습으로 짧디짧은 생을 마치다니.. 비정한 엄마가 보란듯이 봐야만 한다는 듯이 그토록 흉한 모습으로..</p>
+<p>하루에 한두 번 죽만 서너 숟갈 간신히 떠먹으니 두 주일이 지나자 한 여사의 얼굴은 형편없이 쪼그라들었다. 두 주일이 지나 한 달이 되자 그녀는 침대에서 일어날 기운도 없어졌다. 두 남매와 손녀가 증손녀 아기를 한번 데려왔는데 한 여사는 아기를 보자 벌벌 떨더니 통곡을 하고 말았다. 깜짝 놀란 식구들이 얼른 아기를 안고 물러섰다. 그녀는 피난 중 젖을 먹지 못하고 굶어 죽고만 셋째 얘기를 아무에게도 하지 않았다. 이제 와서 그런 끔찍한 얘기를 해서 무엇하랴 싶었고 혹시라도 이제는 환갑을 넘긴 아들과 딸까지 마음에 큰 부담을 지니게 하고 싶지 않았다. 그저 자신만이 그 고통스러운 기억을 안고 사라져야 한다. 아기가 사라졌듯이..</p>
+<p>두 남매는 엄마가 걱정되어 병원을 떠날 수가 없었다. 딸은 동생이 있었다는 기억이 아예 없었고 아들은 그나마 어렴풋하게 기억하는 건 하나 있었다. 엄마가 어떤 아주머니 품안에서 서럽게 울던 모습, 자기 키만큼이나 자란 풀들이 잔뜩 들어선 나무 밑, 엄마 따라서 앙앙 울어대던 여동생을 달래주려고 애쓰던 자신의 모습.. 그외엔 없었다. 그런 상황이 왜 일어났는지는 아무런 기억이 없었다. 처음에 한두 번 대체 왜 이러시냐고, 왜 식사까지 하지 않는 거냐고 물어봤지만 한 여사는 시선을 외면한 채 입술만 깨물었다. 남매는 더 이상 그런 말을 할 수가 없었다. 식사를 못해 반송장이 되어버린 한 여사는 영양주사까지 거부하였다. 잠이 들었을 때 몰래 주사바늘을 꼽으면 깨자마자 본인 자신이 빼버렸다. 아들이 울면서 정신과 의사를 만날 것을 애원했지만 한 여사는 한마디로 거절하면서 그런 말은 꺼내지도 말라고 화를 내었다. 정신과 의사가 뭘 안다고.. 자식들한테도 못하는 얘기를 의사한테 하라고? 가엽게 젖을 못먹고 굶어죽은 아기 얘기를 하라고? 그래서 해골만 남은 것을 보고는 이러는 거라고? 한 여사는 자신이 속죄해야한다고 생각했다.</p>
+<p>그녀는 점점 더 말라가서 뼈만 남게 되었고 일어나기는커녕 숨만 간신히 쉬었다. 간혹 잠에서 남편을 만났다.</p>
+<p>[아니, 아기 얼굴이 왜 이래? 뼈만 남았잖아.]</p>
+<p>남편은 평상 시처럼 웃는 얼굴이었지만 조금 놀라는 기색이었다. 한 여사는 대꾸를 하지 못하고 낯을 붉혔다.</p>
+<p>[폭격 때문에 그만..]</p>
+<p>[으응, 그랬구나.. 고생 많았어.]</p>
+<p>한 여사는 아기를 안은 남편의 품 안에서 흐느꼈다. 잠에서 깨어난 그녀는 이제 남편과 영원히 살겠구나 싶어 조용히 미소지었다. 다만 아기는 계속 해골 모습을 띤 게 못마땅했다. 아기의 다른 얼굴은 떠오르지 않았다.</p>
+<p>​</p>
+<ul>
+<li>끝 -</li>
+</ul></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 1월 20일 2:22 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@bhjhj/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@bhjhj/">@bhjhj</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/286/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/286/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/1328/add_comment/"
+                      method="post"
+                      hx-post="/blog/1328/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="gyjM4v8KigDuNzkOopbqguel4CzK7pGDhZuj27jgPThtzHGAFPLH4OL2BDjjbbhl">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @bhjhj 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@bhjhj/1330/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            마지막 종소리, 박희준 지음
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 20일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@bhjhj/1329/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            노새와 중공군
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 20일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@bhjhj/1328/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            아기야 아기야.. 엄마가 날 버렸어..
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 20일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@bhjhj/1327/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            장진호 전투 미군 해병대 사병
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 01월 20일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @bhjhj 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/2756">
+                    
+                        <img src="https://static.wikidocs.net/images/book/토끼_둘.jpg"
+                             alt="##왜 사냐고 묻거듣...  (시집)"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/2756"
+                           class="hover:text-red-500 dark:hover:text-red-400">##왜 사냐고 묻거듣...  (시집)</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2019년 3월 16일 2:20 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/2755">
+                    
+                        <img src="https://static.wikidocs.net/images/book/MELOO1a.JPG"
+                             alt="스타와 대중 (시집)"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/2755"
+                           class="hover:text-red-500 dark:hover:text-red-400">스타와 대중 (시집)</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        문학은 결국 재미있는 글이라고 생각합니다.
+  재미라는 말 속에는 가볍고 혹은 무거운 새털같고 또한 진지한 여러 가지 의미가 포함되어 있는데, 그러한 생각이 강박관념으로 작용하…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2019년 3월 16일 12:52 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">231</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-1328"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-1328"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/1328/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@bhjhj/1327/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            장진호 전투 미군 해병대 사병
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                장진호 전투 미군 해병대 사병
+
+​
+
+억수같은 비가 내린다
+
+온 우주에는 비와 물 외엔 …
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1년 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@bhjhj/1329/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            노새와 중공군
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                노새와 중공군 
+
+​
+
+11월로 들어서자 북한의 함경도 지방 날씨는 갑자기 더욱더 사나워…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>1년 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=7e655f2'/>

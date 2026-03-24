@@ -1,0 +1,980 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="Avalonia UI 2026 — 3년이 지난 지금, 어디까지 왔을까?">
+    <meta property="og:type" content="Avalonia UI 2026 — 3년이 지난 지금, 어디까지 왔을까?">
+    <meta property="og:title" content="Avalonia UI 2026 — 3년이 지난 지금, 어디까지 왔을까?">
+    <meta property="og:description" content="Avalonia UI 2026 — 3년이 지난 지금, 어디까지 왔을까?">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@lukewire/9758/">
+
+        
+    <title>Avalonia UI 2026 — 3년이 지난 지금, 어디까지 왔을까?
+        - 루크
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@lukewire/8453/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">Avalonia UI 2026 — 3년이 지난 지금, 어디까지 왔을까?</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@lukewire/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @lukewire
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 24일 5:48 오전</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@lukewire/?tag=4084"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            닷넷
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@lukewire/?tag=4083"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            크로스플랫폼
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@lukewire/?tag=4082"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            아발로니아
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@lukewire/?tag=2328"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Avaloniaui
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><blockquote>
+<p>3년 전, Avalonia를 처음 소개하는 글을 짧게 쓴 적이 있다. 당시엔 "이런 프레임워크가 있다" 정도의 맛보기 수준이었는데, 그로부터 3년이 지난 지금 제대로 한번 정리해보려 한다.</p>
+</blockquote>
+<hr />
+<h2 id="avalonia">Avalonia란?</h2>
+<p>Avalonia UI는 .NET 기반의 크로스플랫폼 데스크톱 UI 프레임워크다. XAML 문법을 사용하며, Windows · Linux · macOS에서 동일한 코드베이스로 동작한다. 모바일(Android, iOS)과 WebAssembly도 지원 범위에 포함되어 있다.</p>
+<p>WPF를 써본 개발자라면 친숙하게 접근할 수 있다. 레이아웃 구조, 바인딩 방식, MVVM 패턴 모두 WPF와 매우 유사하다. 다만 &quot;WPF의 복사본&quot;이 아니라 독자적인 렌더링 엔진(Skia / Direct2D) 위에 새로 만들어진 프레임워크다.</p>
+<hr />
+<h2 id="2023">2023년 당시의 기억</h2>
+<p>3년 전에 가장 인상적이었던 부분은 WPF처럼 XAML을 쓰면서도 Linux와 macOS까지 지원한다는 것이었다. 그것도 MIT 라이선스 무료로. .NET MAUI가 모바일 중심이라면, Avalonia는 데스크톱에 진심이었다.</p>
+<p>그러나 당시엔 명확한 한계도 있었다.</p>
+<ul>
+<li>VS, VSCode, Rider에서 XAML 미리보기가 불안정했음</li>
+<li>개발 도구(Previewer) 완성도가 낮았음</li>
+<li>WPF 대비 생태계 빈약</li>
+<li>기업 도입 레퍼런스 부족</li>
+<li>Prism 포팅 버전의 라이선스 불명확</li>
+</ul>
+<p>요약하면 프레임워크 자체의 가능성은 충분했지만, 개발 경험(DX)이 따라오지 못했다.</p>
+<hr />
+<h2 id="3">3년간의 흐름</h2>
+<p><strong>2023</strong> — MIT 라이선스 전체 무료. VS/VSCode/Rider XAML 미리보기 불안정, 생태계 초기 단계.</p>
+<p><strong>2024</strong> — Avalonia 11 정식 버전 안착. Prism.Avalonia v8 계열 등장. 커뮤니티 성장.</p>
+<p><strong>2025</strong> — Avalonia Accelerate 발표. 개발 도구에 처음으로 라이선스 정책 도입. Prism.Avalonia v9 등장.</p>
+<p><strong>2026</strong> — VSCode Extension 완전 재작성 및 Accelerate 편입. 월간 구독 옵션 추가. WebView 오픈소스화 예정(Avalonia 12).</p>
+<hr />
+<h2 id="avalonia-accelerate">Avalonia Accelerate란?</h2>
+<p>Avalonia 팀은 2025년, <strong>Avalonia Accelerate</strong>라는 개발 도구 패키지를 출시했다. 여기서 중요한 전제가 하나 있다.</p>
+<blockquote>
+<p><strong>Avalonia 프레임워크 자체는 여전히 MIT 라이선스 오픈소스다.</strong><br />
+Accelerate는 프레임워크가 아니라, 그 위에서 개발 경험을 높여주는 "프로 툴링"이다.<br />
+즉, Accelerate의 라이선스 조건은 Avalonia로 개발할 때가 아니라, Accelerate의 도구와 컴포넌트를 사용할 때만 적용된다.</p>
+</blockquote>
+<p>Accelerate는 크게 개발 도구(Tools)와 UI 컴포넌트(Components)로 나뉜다.</p>
+<h3 id="tools">개발 도구 (Tools)</h3>
+<p><strong>Visual Studio / VSCode Extension</strong></p>
+<p>기존 FOSS 버전을 버리고 완전히 밑바닥부터 재작성했다. 2026년 2월에는 VSCode Extension도 동일한 XAML 파서 엔진을 공유하도록 재작성됐다. 덕분에 VS에 추가되는 기능이 VSCode에도 동시에 반영되는 구조가 됐다. 3년 전 가장 아쉬웠던 XAML 도구의 불안정함을 정면으로 해결한 셈이다.</p>
+<p>주요 개선 사항:<br />
+- IntelliSense 대폭 강화 — <code>x:DataType</code> Quick Info, Go To Definition 지원<br />
+- XAML 미리보기 안정성 개선, DPI 처리 및 Zoom to Fit 추가<br />
+- 에러 진단 개선 및 자동 xmlns 네임스페이스 임포트<br />
+- 이벤트 핸들러 자동 생성</p>
+<p>참고로 VSCode Extension은 이제 Accelerate 구독이 필요하며, 더 이상 오픈소스가 아니다. 2023년 당시엔 VSCode 플러그인이 무료 MIT였다는 점을 감안하면 체감상 달라진 부분이다.</p>
+<p><strong>Dev Tools</strong></p>
+<p>앱 실행 중 UI 구조를 실시간으로 디버깅·인스펙션하는 독립 애플리케이션이다. 비주얼 트리 검사, 바인딩 디버깅, 레이아웃 확인 등을 지원한다. 기존 FOSS 버전의 업데이트가 아닌 완전히 새로 만들어진 별도 앱이다.</p>
+<p><strong>Parcel</strong></p>
+<p>크로스플랫폼 앱 패키징을 위한 전용 도구다. GUI와 CLI 두 가지 방식을 모두 지원하며, Windows · macOS · Linux 배포 패키지를 단일 환경에서 만들 수 있다. 코드 서명과 notarization도 처리해준다. 크로스플랫폼 앱 배포가 항상 까다로운 작업이었다는 점에서 실용적인 도구다.</p>
+<h3 id="ui-components">UI 컴포넌트 (Components)</h3>
+<p>Accelerate에는 도구 외에도 유료 UI 컴포넌트들이 포함되어 있다.</p>
+<ul>
+<li><strong>WebView</strong> — Chromium을 번들링하지 않고 플랫폼 네이티브 웹 렌더링 엔진을 사용하는 웹 뷰 컴포넌트</li>
+<li><strong>Media Player</strong> — Windows · macOS · Linux 네이티브 미디어 재생 컴포넌트</li>
+<li><strong>Markdown Viewer</strong> — 마크다운 렌더링 컨트롤</li>
+<li><strong>Virtual Keyboard</strong> — 키오스크·터치 환경을 위한 온스크린 키보드 (80개 이상 언어 레이아웃 지원)</li>
+<li><strong>TreeDataGrid</strong> — 기존 FOSS 버전 대비 개선된 트리 데이터 그리드</li>
+</ul>
+<hr />
+<h2 id="accelerate">Accelerate 라이선스 구조</h2>
+<p>Accelerate의 도구와 컴포넌트를 사용하려면 라이선스가 필요하다.</p>
+<table>
+<thead>
+<tr>
+<th>티어</th>
+<th>대상</th>
+<th>비용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Community</td>
+<td>개인 개발자, 소규모 조직(연매출 €100만 미만), 교육기관</td>
+<td>무료</td>
+</tr>
+<tr>
+<td>Business</td>
+<td>250인 이상 또는 연매출 €100만 초과 기업</td>
+<td>유료 (Named User)</td>
+</tr>
+<tr>
+<td>Startup Program</td>
+<td>창업 5년 미만, 매출/투자 €1000만 미만 기업</td>
+<td>Business 50% 할인</td>
+</tr>
+</tbody>
+</table>
+<p>사용자의 약 67%가 Community 라이선스 조건에 해당한다고 한다.</p>
+<p><strong>12개월 구독 시 영구 라이선스</strong> 구조도 있다. 구독 취소 후에도 이미 빌드된 앱은 그대로 동작한다. 런타임 라이선스 체크가 없으므로 최종 사용자에게는 영향이 없다.</p>
+<p>Community 라이선스에는 익명 사용 텔레메트리 수집이 포함된다. 소스코드나 개인정보는 수집하지 않으며 JetBrains Rider와 유사한 방식이라고 명시하고 있다.</p>
+<p>구버전 MIT 라이선스 도구들(구 VS Extension, 구 Dev Tools)은 여전히 GitHub에서 사용 가능하다. 단, 신규 기능 개발은 Accelerate 버전에만 집중될 예정이다.</p>
+<hr />
+<h2 id="prismavalonia">Prism.Avalonia의 현재 상황</h2>
+<p>WPF 생태계에서 Prism은 사실상 표준 아키텍처 프레임워크다. MVVM, 의존성 주입, 모듈화, EventAggregator, 리전 네비게이션까지 대규모 엔터프라이즈 앱에 필요한 구조를 제공한다.</p>
+<p>Avalonia용 Prism은 커뮤니티 포크인 <strong>Prism.Avalonia</strong>로 시작해 현재 v9.0까지 왔다. Avalonia 11.x를 지원하며 MIT 라이선스로 배포된다.</p>
+<p>한 가지 주의할 부분이 있다. Prism Library 본체(WPF, MAUI 등을 위한 공식 버전)가 v9.0부터 이중 라이선스 체계로 전환됐다. 개인·소규모 팀은 Community License로 무료지만, 일정 규모 이상 기업은 Commercial License가 필요하다.</p>
+<p>Prism.Avalonia는 커뮤니티 포크이므로 현재는 별개의 MIT 라이선스를 유지하고 있다. 다만 공식 Prism 팀과의 통합 논의가 있었던 만큼, 앞으로 통합이 이루어진다면 라이선스 구조가 변동될 여지는 있다. 기업 프로젝트라면 패키지별 라이선스를 주기적으로 확인하는 것이 좋다.</p>
+<hr />
+<h2 id="accelerate_1">Accelerate 도입, 기업 입장에서 바라보면</h2>
+<p>솔직히, 아직은 조심스럽다는 생각이 든다.</p>
+<p>Community 티어 조건에 해당하는 팀이라면 Accelerate 도구들을 사실상 무료로 쓸 수 있다. 문제는 엔터프라이즈 규모다. 연매출 €100만이 넘거나 250인 이상이면 Business 라이선스가 필요하다. 도구에 비용을 지불하는 것 자체가 문제가 아니라, 라이선스 정책이 앞으로 어떻게 변할지에 대한 불확실성이 부담으로 남는다.</p>
+<p>WPF 기반 레거시가 많은 기업이라면 굳이 옮길 유인도 적다. WPF는 Windows 내부 도구에는 여전히 충분하고, 익숙한 아키텍처가 있다면 더욱 그렇다.</p>
+<p>반면 처음부터 멀티 플랫폼이 필요한 신규 프로젝트라면 Avalonia는 진지하게 검토할 만한 선택지다. .NET MAUI와 달리 데스크톱에 무게중심이 있고, Skia 렌더링 기반으로 플랫폼 일관성도 높은 편이다.</p>
+<hr />
+<h2 id="_1">결론</h2>
+<p>3년 전의 질문과 달라졌다. 그때는 &quot;쓸 수 있을 만한가?&quot;였다면, 지금은 &quot;어떤 상황에서 선택하는 게 맞는가?&quot;가 더 적절한 질문이다.</p>
+<ul>
+<li>신규 크로스플랫폼 데스크톱 앱 → Avalonia는 진지한 후보다</li>
+<li>WPF 레거시 마이그레이션 → 조심스럽게 접근. 1:1 변환은 없으며 아키텍처 레이어도 재검토 필요</li>
+<li>개인·소규모 팀 → Community 라이선스로 Accelerate 도구도 무료. 3년 전과는 개발 경험이 다르다</li>
+<li>엔터프라이즈 기업 → Accelerate Business 라이선스 비용과 향후 정책 변동 리스크를 함께 고려해야 한다</li>
+<li>Prism 아키텍처를 그대로 가져오고 싶다면 → Prism.Avalonia는 옵션이 되지만, 라이선스 상태를 주기적으로 확인하는 것이 좋다</li>
+</ul>
+<p>프레임워크 자체는 계속 MIT다. Accelerate는 그 위에서 개발 경험을 높여주는 도구이고, 이 도구를 쓰려는 경우에만 라이선스 조건이 생긴다. 3년 전보다 Avalonia는 분명히 더 나은 선택지가 됐다. 도구가 성숙했고, 라이선스도 방향을 잡았다. 이제 남은 건 각자의 프로젝트와 팀 상황에 맞는 판단이다.</p>
+<hr />
+<p><em>2026년 3월 기준. Avalonia Accelerate 라이선스 세부 내용은 <a href="https://avaloniaui.net/legal-center">공식 문서</a> 참고.</em></p>
+<hr />
+<h2 id="_2">닷넷 오픈 커뮤니티</h2>
+<p>모르는 것이 생겼을 때 혼자 헤매는 것보다 커뮤니티에 물어보는 게 훨씬 빠르다. 국내에도 .NET / Avalonia 관련 개발자들이 모여 있는 곳들이 있으니 참고하길 바란다.</p>
+<p><strong>포럼</strong><br />
+- <a href="https://forum.dotnetdev.kr/">닷넷데브</a> — C#과 닷넷을 좋아하는 개발자들의 커뮤니티</p>
+<p><strong>카카오톡 오픈채팅</strong><br />
+- <a href="https://open.kakao.com/o/gViurRJ">닷넷 C# 개발자 모임</a><br />
+- <a href="https://open.kakao.com/o/gaXg2I5g">DotNet-Korea</a><br />
+- <a href="https://open.kakao.com/o/gjHmb33f">AvaloniaUI 개발자모임</a></p>
+<p>인원이 적은 곳일수록 답변이 빠른 편이다. 관심 있는 곳에 들어가 보길 권한다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 24일 5:48 오전
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@lukewire/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/KakaoTalk_20240816_131904407.jpg"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@lukewire/">@lukewire</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/301/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/301/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">1</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9758/add_comment/"
+                      method="post"
+                      hx-post="/blog/9758/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="yHknbqjGIjXq2geJ15QkX11qLx4ScOg3aBlDRmDgmDOcidZ2nziUlkQL9a3wIHKg">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @lukewire 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@lukewire/9758/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            Avalonia UI 2026 — 3년이 지난 지금, 어디까지 왔을까?
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">24분 전</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@lukewire/8453/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            async_await 내부에서 실제로 어떤 일이 일어나는가
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 27일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@lukewire/6752/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            내 ViewModel은 왜 자꾸 뚱뚱해질까
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 29일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@lukewire/6751/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            MVVM 패턴 View와 ViewModel, 어디까지가 니 일이고 내 일일까
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 29일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@lukewire/6750/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            UI 스레드와 Dispatcher 왜 내 앱은 비동기를 써도 굳어버릴까
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 29일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 3
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/301/9758/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @lukewire 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/1805">
+                    
+                        <img src="https://static.wikidocs.net/images/book/Clogo_1771345001.jpg"
+                             alt="C# 이야기"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/1805"
+                           class="hover:text-red-500 dark:hover:text-red-400">C# 이야기</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 2월 23일 12:52 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">6</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9758"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9758"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9758/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@lukewire/5055/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            뷰 퍼스트의 함정, 뷰모델 퍼스트로 극복하는 방법
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                MVVM의 진정한 힘: 왜 뷰모델 퍼스트에 집중해야 하는가?
+
+WPF/UWP 개발에서 M…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>6개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@lukewire/5048/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/5048/14075148.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            Avalonia Program cs에 숨겨진 비밀 앱의 첫걸음과 렌더링 백엔드
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                Program.cs 파헤치기: 우리 앱의 첫걸음 
+
+Program.cs는 프로그램이 시작…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>6개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=775a066'/>

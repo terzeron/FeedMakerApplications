@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="고객 여정, AI로 재설계하라">
+    <meta property="og:type" content="고객 여정, AI로 재설계하라">
+    <meta property="og:title" content="고객 여정, AI로 재설계하라">
+    <meta property="og:description" content="고객 여정, AI로 재설계하라">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@seung/7152/">
+
+        
+    <title>고객 여정, AI로 재설계하라
+        - AI Pioneer
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@seung/7151/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@seung/7153/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">고객 여정, AI로 재설계하라</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@seung/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @seung
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 2월 10일 11:05 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>디지털 시대의 새로운 고객 경험 전략</p>
+<p>디지털 혁신의 파고 속에서 기업이 고객과 만나는 방식이 근본적으로 변화하고 있다. 과거의 고객 여정(Customer Journey)이 인지에서 구매로 이어지는 선형적이고 통제 가능한 경로였다면, 오늘날의 여정은 복잡하고 비선형적이며 순환적인 구조를 띤다. 고객은 언제 어디서든 브랜드에 접속하며, 단 몇 분의 지체도 허용하지 않는 즉각적인 반응을 기대한다. 이러한 환경에서 기업이 생존하고 성장하기 위해서는 단순히 디지털 도구를 도입하는 것을 넘어, AI(인공지능)를 중심으로 고객 여정 전반을 재설계하는 과감한 혁신이 필요하다.</p>
+<ol>
+<li>고객 여정 재설계, 왜 지금인가?<br />
+특히 서비스업과 컨설팅 업계를 중심으로 고객 여정 재설계는 더 이상 선택이 아닌 필수 생존 전략이 되었다. 그 이유는 명확하다. 서비스 자체가 무형의 상품이기 때문에, 고객과의 상호작용 품질이 곧 브랜드 가치를 결정짓기 때문이다.</li>
+</ol>
+<p>AI 전환(Transformation)이 가속화되면서 고객의 기대치는 급격히 상승했다. 과거에는 친절한 응대만으로 충분했다면, 이제는 &#x27;나를 먼저 이해해주는 브랜드&#x27;, &#x27;즉각적이고 개인화된 솔루션&#x27;이 기본 기대치(Baseline)로 자리 잡았다. 또한 비즈니스 모델이 시간당 과금에서 가치 창출 기반으로 전환됨에 따라, 결과물뿐만 아니라 과정에서의 경험 관리 또한 성과의 핵심 지표가 되었다.</p>
+<p>이제 전문직의 역할마저 재정의되고 있다. 과거 인간 전문가가 수행하던 초기 진단과 상담 영역을 Agent AI(에이전트 AI)가 대체하며 첫인상을 형성하는 시대가 도래했다. 이는 기업이 고객 여정의 첫 단추부터 AI를 어떻게 활용하느냐에 따라 전체 비즈니스의 성패가 갈릴 수 있음을 시사한다.</p>
+<ol>
+<li>전통적 고객 여정의 한계와 AI의 등장<br />
+전통적인 고객 여정은 &#x27;인지(Awareness) → 고려(Consideration) → 구매(Purchase) → 충성도(Loyalty)&#x27;라는 명확한 선형 구조를 가졌다. 이 모델에서 브랜드는 메시지를 통제하고, 고객의 선택은 영업 담당자나 물리적 환경에 의해 좌우되었다.</li>
+</ol>
+<p>그러나 디지털 시대의 고객 여정은 다르다. 고객이 주도권을 쥐고 있으며, 수많은 접점을 오가는 비선형적이고 순환적인 구조를 가진다. 이 복잡한 여정을 관리하는 데 있어 인간의 역량만으로는 한계가 있다. 여기서 AI의 역할이 대두된다. AI는 수만 가지의 접점에서 발생하는 데이터를 실시간으로 분석하여, 고객이 원하는 시점에 가장 적절한 &#x27;초개인화(Hyper-personalization)&#x27; 경험을 제공한다.</p>
+<ol>
+<li>AI 기반 고객 여정 관리의 3대 전략<br />
+성공적인 고객 여정 재설계를 위해 기업은 다음 세 가지 핵심 전략을 고려해야 한다.</li>
+</ol>
+<p>① 고객 여정 예측 (Prediction)<br />
+과거의 데이터를 기반으로 고객의 미래 행동을 예측하여 선제적으로 대응하는 전략이다. 넷플릭스(Netflix)가 시청 이력을 기반으로 콘텐츠를 추천하거나, 아마존(Amazon)이 구매 패턴을 분석해 &#x27;다음에 살 물건&#x27;을 제안하는 것이 대표적이다. 이를 통해 기업은 고객의 이탈을 방지하고 구매 전환율을 극대화할 수 있다.</p>
+<p>② 고객 여정 단축 (Shortening)<br />
+인식부터 구매까지의 물리적, 심리적 단계를 최소화하는 전략이다. 아마존의 원클릭 결제나 비전(Vision) AI를 활용한 이미지 검색, 음성 AI를 통한 즉시 주문 등이 이에 해당한다. 중간 단계를 과감히 삭제함으로써 고객의 노력을 최소화하고 즉각적인 만족을 제공하는 것이 핵심이다. Forrester 보고서에 따르면 셀프서비스 자동화는 고객의 문제 해결 시간을 평균 50% 단축시키는 효과가 있다.</p>
+<p>③ 고객 여정 업스트림 이동 (Upstream Movement)<br />
+가장 고차원적인 전략으로, 고객이 구매 의사결정을 내리기 전인 &#x27;여정의 시작점&#x27;부터 기업이 개입하여 전체 과정을 주도하는 것이다.</p>
+<p>슈퍼앱 전략: 위챗(WeChat)이나 카카오톡처럼 결제, 예약, 쇼핑 등 모든 생활 서비스를 하나의 앱에서 해결하게 하여 생태계를 선점한다.<br />
+경험의 확장: 에어비앤비(Airbnb)는 단순 숙박(다운스트림)을 넘어 &#x27;현지 경험(Experiences)&#x27;이라는 업스트림 영역으로 확장하여 여행 전체를 큐레이션하는 플랫폼으로 진화했다.</p>
+<ol>
+<li>Agent AI: 고객 여정 혁신의 게임 체인저<br />
+최근 주목받는 Agent AI는 기존의 챗봇과는 차원이 다른 혁신을 예고한다. 단순한 질문-응답을 넘어, 고객의 의도를 파악하고 스스로 판단하여 행동(Autonomous Action)하는 &#x27;자율형 에이전트&#x27;이기 때문이다.</li>
+</ol>
+<p>Agent AI는 CRM, ERP 등 기업 내부 시스템과 실시간으로 연동되어 복잡한 업무를 자율적으로 처리한다. Salesforce Agentforce의 사례에서 보듯, Agent AI는 고객의 과거 이력과 현재 맥락(Context)을 이해하여 24시간 일관된 고품질의 서비스를 제공한다. BCG 보고서는 이를 &quot;고객 서비스의 황금기를 여는 기술&quot;이라고 평가하며, 비용 절감과 고객 만족도 향상이라는 두 마리 토끼를 잡을 수 있는 수단으로 지목했다.</p>
+<ol>
+<li>글로벌 컨설팅 펌의 실전 사례<br />
+선도적인 글로벌 컨설팅 기업들은 이미 AI를 활용해 고객 경험을 혁신하고 있다.</li>
+</ol>
+<p>BCG X + Allstate: 예측형 고객 여정<br />
+생성형 AI(GenAI)를 활용해 고객 여정 예측 모델을 개발했다. 200개 이상의 고객 특성을 분석하여 문제 발생 전 71%의 이슈를 식별해냈으며, 이를 통해 고객 만족도를 15~20% 향상시키고 서비스 비용을 대폭 절감했다.</p>
+<p>McKinsey: Next Best Experience<br />
+미국 주요 항공사에 적용된 사례로, AI 예측 인사이트를 통해 항공편 지연이나 취소 시 보상 바우처를 차별화하여 제공했다. 이는 이탈 위험 고객 타겟팅 정확도를 210% 개선하는 성과로 이어졌다.</p>
+<p>Deloitte + Rakuten Securities: AI 아바타 상담<br />
+진정성 있는 디지털 경험을 위해 AI 아바타 투자 상담 서비스를 개발했다. 인간적인 제스처와 음성 동기화를 통해 &quot;재미있는 상호작용&quot;을 제공, 고객의 90% 이상이 재사용 의사를 밝혔다.</p>
+<ol>
+<li>성공적인 고객 여정 관리를 위한 실행 원칙<br />
+AI 기술 도입만으로 성공이 보장되는 것은 아니다. 전략 수립 시에는 기업의 내부 역량과 외부 고객의 기대가 만나는 접점을 찾아야 한다.</li>
+</ol>
+<p>&quot;좋은 전략은 기업의 역량과 고객의 기대가 만나는 지점에서 선택된다.&quot;<br />
+성공적인 실행을 위해서는 다음 4단계의 접근이 필요하다.</p>
+<p>고객 여정 맵핑 (Mapping): 현재의 여정을 있는 그대로 시각화하고 핵심 접점을 파악한다.<br />
+개선 기회 식별: 여정 지도(Customer Journey Map) 상에서 고객의 감정 그래프가 가장 낮은 지점, 즉 병목 구간을 찾아낸다.<br />
+기술 선택 및 구현: 비전, 음성, 언어 AI 중 해당 문제 해결에 가장 적합한 기술을 선별하여 적용한다.<br />
+측정과 최적화: ROI를 고려한 성과 지표를 설정하고, 데이터를 기반으로 지속적으로 개선한다.<br />
+결론: 기술을 넘어 &#x27;고객 집착&#x27;으로<br />
+AI는 고객 여정을 재설계하는 강력한 도구이지만, 그 본질은 결국 &#x27;고객&#x27;에 있다. 아마존이 강조하는 &#x27;고객 집착(Customer Obsession)&#x27;의 철학처럼, 기술적 우위보다는 고객의 숨겨진 니즈를 먼저 파악하고 해결하려는 의지가 선행되어야 한다.</p>
+<p>이제 기업은 단순한 효율화를 넘어, AI를 통해 고객 관계를 재정의해야 할 시점이다. 인식 단계부터 충성도 구축에 이르는 전 과정을 데이터 기반으로 큐레이션하고, Agent AI라는 디지털 동료를 활용해 초개인화된 경험을 제공하는 기업만이 디지털 시대의 승자가 될 것이다. 지금 당신의 기업은 고객 여정의 어디쯤 와 있는가? 이제 AI와 함께 그 지도를 다시 그릴 때다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 2월 10일 11:05 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@seung/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@seung/">@seung</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1302/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1302/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">1</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/7152/add_comment/"
+                      method="post"
+                      hx-post="/blog/7152/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="dKqmVkv74FJa0VIPauqrUJOjayHB5ko3S0tRjHDKiVVHWTMjpSMYkHAnAnTrPGiu">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @seung 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@seung/7154/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            신뢰 수 있는 AI: 윤리, 규제, 거버넌스
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@seung/7153/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            AI는 어떻게 비즈니스의 수익 공식을 바꾸는가
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@seung/7152/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            고객 여정, AI로 재설계하라
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@seung/7151/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            고객의 숨겨진 니즈, AI로 발견하다
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@seung/7111/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            AI Pioneer, 컨설팅의 현재를 진단하고 미래를 바라본다
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 10일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @seung 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/6271">
+                    
+                        <img src="https://static.wikidocs.net/images/book/책커버.png"
+                             alt="회계사가 알려주는 데이터분석실무"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/6271"
+                           class="hover:text-red-500 dark:hover:text-red-400">회계사가 알려주는 데이터분석실무</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        안녕하세요. 데이터 분석 전문가 이승영 회계사입니다.
+
+회계/재무 분야 전공 및 비전공자를 위해 데이터 분석관련 지식을 이해하기 쉽게 전달하기 위해 노력하고 있습니다.
+
+…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2021년 11월 22일 9:21 오전</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">94</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-7152"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-7152"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/7152/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=b130a82'/>

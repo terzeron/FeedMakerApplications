@@ -1,0 +1,1220 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="커뮤니티 구축에 관하여.">
+    <meta property="og:type" content="커뮤니티 구축에 관하여.">
+    <meta property="og:title" content="커뮤니티 구축에 관하여.">
+    <meta property="og:description" content="커뮤니티 구축에 관하여.">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@holyboundary/5191/">
+
+        
+    <title>커뮤니티 구축에 관하여.
+        - 모두를 위한 스마트워크
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@holyboundary/5180/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@holyboundary/5332/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">커뮤니티 구축에 관하여.</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@holyboundary/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @holyboundary
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 10월 2일 5:55 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>저희 어제 정수홍 관장님께서 자료를 서로 공유할수 있는 플랫폼 얘기를 잠시 하셨는데요, 현재 페이스북 그룹이 있지만 자료를 쌓고 일목요연하게 게시판 보기에는 좀 부족한 면이 있어서 그러시지 않았나 싶습니다.</p>
+<p>커뮤니티를 만들어야 하나 근본적인 것 부터 질문이 필요하겠어요~<br />
+다른 분들 의견은 어떠신가요? 저는 관리에는 소질이 없고 일 벌리는 건 잘합니다. 관리자가 필요합니다.</p>
+<h2 id="_1">만약 커뮤니티 필요하다고 가정한다면,</h2>
+<p>1) 일단 네이버카페 같은게 있죠. 근데 원하지 않으겠죠? ㅎㅎ<br />
+2) 직접 어렵지 않게 사이트를 구축할수 있습니다. 비용은 종원쌤이 후원하겠지만(ㅋㅋ), 하지만 제대로 관리자가 필요합니다. ^^<br />
+3) 한줄요약 : 쉽게 가려면 깃허브, 예쁘게 가려면 유료로 discourse.</p>
+<p>샘플사이트 :</p>
+<p>깃허브 디스커션 : <a href="https://github.com/orgs/community/discussions">https://github.com/orgs/community/discussions</a><br />
+flarum : <a href="https://demo.flarum.site/">https://demo.flarum.site/</a><br />
+discourse : <a href="https://community.openai.com/">https://community.openai.com/</a></p>
+<hr />
+<p>제가 이런 관점에서 여러번 AI에게 질문 했습니다.</p>
+<p>[질문]</p>
+<p>나는 아래와 같은 사이트를 바이브코딩 또는 기성업체, 서비스, 무료소스 등을 이용해서 운영하고 싶어. 최근 트렌트 반영해서 한번 조사해보자.</p>
+<h2 id="_2">기술 사양 요구사항</h2>
+<h3 id="_3">프로젝트 기본 정보</h3>
+<ul>
+<li>목적 : 사회복지 등 비영리 섹터의 종사자들이 만든 바이브코딩 앱을 공유하는 커뮤니티</li>
+<li>규모: 작성자 50명, 독자 1,000명</li>
+<li>필수 기능: 게시판, 코드 공유, 링크/파일(용량제한)/이미지(AVIP)/동영상(구글드라이브링크) 업로드. (저용량)</li>
+<li>디자인: 네오 브루탈리즘 스타일</li>
+</ul>
+<h3 id="_4">비용 및 운영 조건</h3>
+<ul>
+<li>예산: 월 $0~2 (무료희망)</li>
+<li>안정성: 최우선순위 (데이터 손실 불가)</li>
+<li>리스크: 감수 불가 (계정 정지, 삭제 등)</li>
+<li>지역: 한국 사용자 대상</li>
+</ul>
+<h3 id="_5">기술 능력 제약</h3>
+<ul>
+<li>코딩 능력: 없지만 ai가 알려주면 따라할 수 있음</li>
+<li>터미널/CLI 사용: ai가 알려주면 따라할 수 있음</li>
+<li>업데이트 방식: 웹 어드민 메뉴 등에서 쉽게 하면 좋겠음</li>
+<li>보안 패치: 재배포 없이 어드민에서 처리할 수 있으면 좋겠음</li>
+</ul>
+<h3 id="_6">성능 요구사항</h3>
+<ul>
+<li>레이턴시: 100ms 이상 감수 가능</li>
+<li>SEO: 자동으로 되어야 함</li>
+<li>속도: 빠른 페이지 로드 선호</li>
+</ul>
+<hr />
+<p>[3시간 정도 탐색 후 정리 결과]</p>
+<h2 id="executive-summary">요약 (Executive Summary)</h2>
+<p>사회복지 비영리 종사자 50명이 바이브코딩 앱을 공유하고 1,000명의 독자가 활용하는 커뮤니티 구축을 위해 <strong>주요 플랫폼을 심층 비교 분석</strong>했습니다.</p>
+<p>분석 결과, 비용, 관리 편의성, 개발자 친화성을 모두 고려했을 때 <strong>GitHub Discussions</strong>가 가장 적합한 솔루션임을 확인했습니다.</p>
+<p><strong>최종 권장</strong>: <strong>GitHub Discussions</strong> (1순위) 또는 <strong>FreeFlarum</strong> (2순위)</p>
+<hr />
+<h2 id="1-github-discussions-vs-naver-cafe-vs-discourse">1. 주요 플랫폼 비교: GitHub Discussions vs Naver Cafe vs Discourse</h2>
+<p>본격적인 분석에 앞서, 대표적인 커뮤니티 플랫폼 후보군을 핵심 요구사항에 맞춰 비교했습니다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">GitHub Discussions</th>
+<th style="text-align: left;">Naver Cafe</th>
+<th style="text-align: left;">Discourse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>월 비용</strong></td>
+<td style="text-align: left;"><strong>$0 (완전 무료)</strong></td>
+<td style="text-align: left;">$0 (광고 기반)</td>
+<td style="text-align: left;">최소 $25 (관리형)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>코드 공유</strong></td>
+<td style="text-align: left;">✅ <strong>탁월 (전용 기능)</strong></td>
+<td style="text-align: left;">❌ 미흡 (단순 텍스트)</td>
+<td style="text-align: left;">✅ 우수 (플러그인)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>개발자 친화성</strong></td>
+<td style="text-align: left;">✅ <strong>매우 높음</strong></td>
+<td style="text-align: left;">❌ 매우 낮음</td>
+<td style="text-align: left;">✅ 높음</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>광고 노출</strong></td>
+<td style="text-align: left;">✅ <strong>없음</strong></td>
+<td style="text-align: left;">❌ 필수 노출</td>
+<td style="text-align: left;">✅ 없음</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>데이터 소유권</strong></td>
+<td style="text-align: left;">⚠️ GitHub 소유 (내보내기 가능)</td>
+<td style="text-align: left;">❌ 네이버 귀속</td>
+<td style="text-align: left;">✅ <strong>완전 통제 (설치형)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>관리 편의성</strong></td>
+<td style="text-align: left;">✅ 매우 쉬움 (웹 UI)</td>
+<td style="text-align: left;">✅ 매우 쉬움 (웹 UI)</td>
+<td style="text-align: left;">⚠️ 어려움 (설치형)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>디자인 자유도</strong></td>
+<td style="text-align: left;">❌ 매우 낮음</td>
+<td style="text-align: left;">⚠️ 낮음 (템플릿 기반)</td>
+<td style="text-align: left;">✅ <strong>매우 높음</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SEO</strong></td>
+<td style="text-align: left;">✅ 우수 (Google 최적화)</td>
+<td style="text-align: left;">⚠️ 네이버에 편중</td>
+<td style="text-align: left;">✅ 탁월</td>
+</tr>
+</tbody>
+</table>
+<p><strong>분석:</strong><br />
+*   <strong>네이버 카페</strong>는 비개발자에게 익숙하고 관리가 쉽지만, <strong>코드 공유 기능이 없고 광고가 필수</strong>라는 점에서 개발자 커뮤니티에는 부적합합니다.<br />
+*   <strong>Discourse</strong>는 기능과 확장성 면에서 가장 뛰어나지만, <strong>무료 호스팅 옵션이 없고 최소 월 $25의 비용이 발생</strong>하여 예산 요건을 충족하지 못합니다.<br />
+*   <strong>GitHub Discussions</strong>는 <strong>무료이면서 코드 공유에 최적화</strong>되어 있어, 이번 프로젝트의 목적에 가장 잘 부합합니다.</p>
+<hr />
+<h2 id="2">2. 플랫폼 상세 비교 분석</h2>
+<h3 id="_7">핵심 요구사항 대조표</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">GitHub Discussions</th>
+<th style="text-align: left;">FreeFlarum</th>
+<th style="text-align: left;">Google Cloud Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>월 비용</strong></td>
+<td style="text-align: left;">$0 (영구)</td>
+<td style="text-align: left;">$0 (영구)</td>
+<td style="text-align: left;">$0~0.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>저장소</strong></td>
+<td style="text-align: left;">5GB</td>
+<td style="text-align: left;">500MB</td>
+<td style="text-align: left;">30GB</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>파일 업로드</strong></td>
+<td style="text-align: left;">25MB (브라우저)</td>
+<td style="text-align: left;">20MB</td>
+<td style="text-align: left;">무제한</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>트래픽</strong></td>
+<td style="text-align: left;">100GB/월</td>
+<td style="text-align: left;">무제한</td>
+<td style="text-align: left;">1GB/월</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RAM</strong></td>
+<td style="text-align: left;">N/A (관리형)</td>
+<td style="text-align: left;">N/A (관리형)</td>
+<td style="text-align: left;">1GB</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>한국 최적화</strong></td>
+<td style="text-align: left;">✅ 우수</td>
+<td style="text-align: left;">✅ 우수</td>
+<td style="text-align: left;">❌ (미국만)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>레이턴시</strong></td>
+<td style="text-align: left;">50ms</td>
+<td style="text-align: left;">50ms</td>
+<td style="text-align: left;">150~250ms</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>보안패치</strong></td>
+<td style="text-align: left;">✅ 자동</td>
+<td style="text-align: left;">✅ 자동</td>
+<td style="text-align: left;">❌ 수동</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SEO</strong></td>
+<td style="text-align: left;">✅ 자동</td>
+<td style="text-align: left;">✅ 자동</td>
+<td style="text-align: left;">⚠️ 수동</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>네오 브루탈리즘</strong></td>
+<td style="text-align: left;">⚠️ CSS 제한적</td>
+<td style="text-align: left;">⚠️ 테마 제한적</td>
+<td style="text-align: left;">✅ 완전 가능</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>웹 어드민</strong></td>
+<td style="text-align: left;">✅ 완벽</td>
+<td style="text-align: left;">✅ 완벽</td>
+<td style="text-align: left;">❌ CLI 필요</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>데이터 통제</strong></td>
+<td style="text-align: left;">✅ GitHub 소유</td>
+<td style="text-align: left;">⚠️ FreeFlarum 관리</td>
+<td style="text-align: left;">✅ 완전 통제</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>계정 정지 리스크</strong></td>
+<td style="text-align: left;">✅ 매우 낮음</td>
+<td style="text-align: left;">✅ 매우 낮음</td>
+<td style="text-align: left;">✅ 낮음</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>코드 공유</strong></td>
+<td style="text-align: left;">✅ 탁월</td>
+<td style="text-align: left;">✅ 우수</td>
+<td style="text-align: left;">✅ 수동 설정</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3">3. 플랫폼별 심층 분석</h2>
+<h3 id="31-github-discussions">3.1 GitHub Discussions (신규 발견, 최적 후보)</h3>
+<h4 id="_8">핵심 장점</h4>
+<ul>
+<li><strong>완전 무료 + 안정성</strong>: Microsoft가 운영하는 GitHub 인프라 기반으로 계정 정지나 서비스 중단 리스크가 거의 없습니다.</li>
+<li><strong>바이브코딩 커뮤니티에 최적화</strong>: &quot;코드와 관련 없는 대화&quot;를 위한 기능으로 명시되어 있으며, 실제 소스코드 없이도 커뮤니티 운영이 가능합니다.</li>
+<li><strong>파일 및 저장소 관리</strong>: 기본 5GB 저장소와 월 100GB의 넉넉한 트래픽을 무료로 제공합니다.</li>
+<li><strong>SEO 성능</strong>: Google에 자동으로 인덱싱되며, GitHub의 높은 도메인 권위를 활용할 수 있습니다.</li>
+<li><strong>사용자 경험</strong>: 카테고리, 투표, 답변 채택 등 커뮤니티에 필요한 기능을 모두 갖추고 있습니다.</li>
+</ul>
+<h4 id="_9">제약사항</h4>
+<ul>
+<li><strong>커스터마이징 제한</strong>: 네오 브루탈리즘과 같은 특정 디자인을 완벽하게 구현하기 어렵습니다.</li>
+<li><strong>학습 곡선</strong>: GitHub 계정이 없는 비개발자에게는 초기 진입 장벽이 있을 수 있습니다.</li>
+</ul>
+<h3 id="32-flarum-vs-discourse">3.2 설치형 포럼 비교: Flarum vs. Discourse</h3>
+<h4 id="flarum">Flarum (경량, 무료 호스팅 가능)</h4>
+<p>Flarum은 현대적이고 빠른 인터페이스를 갖춘 경량 포럼 소프트웨어입니다. 특히 <strong>FreeFlarum</strong>이라는 무료 호스팅 서비스를 통해 기술적 지식 없이 즉시 사용 가능하다는 큰 장점이 있습니다.</p>
+<ul>
+<li>
+<p><strong>FreeFlarum 핵심 장점</strong>:</p>
+<ul>
+<li><strong>전문 포럼 소프트웨어</strong>: 7년 이상 안정적으로 운영된 Flarum 기반 서비스입니다.</li>
+<li><strong>무료 호스팅 안정성</strong>: 광고 없이 운영되며, 보안 및 업데이트를 관리팀이 자동으로 처리해줍니다.</li>
+<li><strong>SEO 자동화</strong>: 검색 엔진 최적화 기능이 기본적으로 제공됩니다.</li>
+<li><strong>유지보수 0시간</strong>: 사용자는 콘텐츠 관리에만 집중하면 됩니다.</li>
+</ul>
+</li>
+<li>
+<p><strong>FreeFlarum 제약사항</strong>:</p>
+<ul>
+<li><strong>저장소 제한</strong>: 기본 500MB는 이미지 업로드가 많을 경우 부족할 수 있어 Imgur, YouTube 등 외부 링크 활용이 권장됩니다.</li>
+<li><strong>커스터마이징 제한</strong>: 디자인 테마나 플러그인을 자유롭게 설치할 수 없습니다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="discourse">Discourse (고사양, 유료 호스팅 필수)</h4>
+<p>Discourse는 강력한 기능과 확장성을 자랑하는 최고의 포럼 소프트웨어지만, 그만큼 높은 시스템 사양을 요구합니다.</p>
+<ul>
+<li><strong>Discourse 호스팅 관점</strong>:<ul>
+<li><strong>무료 호스팅</strong>: <strong>없음.</strong> Discourse는 최소 2GB RAM을 요구하여 FreeFlarum과 같은 무료 호스팅 옵션이 존재하지 않습니다.</li>
+<li><strong>최소 비용 호스팅</strong>: 공식 관리형 호스팅은 <strong>월 $25부터 시작</strong>하여 예산을 크게 초과합니다. 저렴한 서버를 이용해 직접 설치할 경우, 높은 기술 전문성과 지속적인 관리가 필요해 비개발자에게는 적합하지 않습니다.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">Flarum</th>
+<th style="text-align: left;">Discourse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>메모리 요구</strong></td>
+<td style="text-align: left;">512MB~1GB</td>
+<td style="text-align: left;"><strong>최소 2GB</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>설치 난이도</strong></td>
+<td style="text-align: left;">쉬움</td>
+<td style="text-align: left;"><strong>어려움</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>무료 호스팅</strong></td>
+<td style="text-align: left;"><strong>FreeFlarum 존재</strong></td>
+<td style="text-align: left;"><strong>없음</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>최소 비용</strong></td>
+<td style="text-align: left;">$0 (FreeFlarum)</td>
+<td style="text-align: left;"><strong>$25/월 (관리형)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>적합 규모</strong></td>
+<td style="text-align: left;">중형 커뮤니티</td>
+<td style="text-align: left;">대형 커뮤니티</td>
+</tr>
+</tbody>
+</table>
+<p><strong>결론</strong>: 50명/1,000명 규모의 커뮤니티에는 Flarum이 더 적합하며, <strong>Discourse는 비용과 관리 부담이 과도합니다.</strong></p>
+<h3 id="33-google-cloud-free-tier">3.3 Google Cloud Free Tier (자체 호스팅 대안)</h3>
+<p>Flarum과 같은 소프트웨어를 직접 설치하는 방법이지만, 다음과 같은 치명적인 제약이 있습니다.</p>
+<ul>
+<li><strong>한국 리전 미지원</strong>: 무료 티어는 미국 리전만 지원하여 한국 사용자의 접속 속도가 150~250ms로 매우 느립니다.</li>
+<li><strong>트래픽 과금</strong>: 월 1GB를 초과하는 트래픽에 대해 과금될 수 있습니다.</li>
+<li><strong>수동 관리 필수</strong>: 보안 패치, 업데이트, 장애 대응을 모두 직접 처리해야 하므로 비개발자에게는 큰 부담입니다.</li>
+</ul>
+<hr />
+<h2 id="4">4. 사용자 요구사항 충족도 분석</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">요구사항</th>
+<th style="text-align: left;">GitHub Discussions</th>
+<th style="text-align: left;">FreeFlarum</th>
+<th style="text-align: left;">Google Cloud</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>월 $0~2 예산</strong></td>
+<td style="text-align: left;">✅ $0</td>
+<td style="text-align: left;">✅ $0</td>
+<td style="text-align: left;">⚠️ $0.48</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>안정성 최우선</strong></td>
+<td style="text-align: left;">✅ 탁월</td>
+<td style="text-align: left;">✅ 우수</td>
+<td style="text-align: left;">⚠️ 수동 관리</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>데이터 손실 불가</strong></td>
+<td style="text-align: left;">✅ GitHub 백업</td>
+<td style="text-align: left;">✅ 자동 백업</td>
+<td style="text-align: left;">⚠️ 직접 백업</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>계정 정지 불가</strong></td>
+<td style="text-align: left;">✅ 리스크 없음</td>
+<td style="text-align: left;">✅ 리스크 없음</td>
+<td style="text-align: left;">✅ 리스크 낮음</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>한국 사용자</strong></td>
+<td style="text-align: left;">✅ 50ms</td>
+<td style="text-align: left;">✅ 50ms</td>
+<td style="text-align: left;">❌ 150~250ms</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>웹 어드민</strong></td>
+<td style="text-align: left;">✅ 완벽</td>
+<td style="text-align: left;">✅ 완벽</td>
+<td style="text-align: left;">❌ CLI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>보안패치 자동</strong></td>
+<td style="text-align: left;">✅ 완전 자동</td>
+<td style="text-align: left;">✅ 완전 자동</td>
+<td style="text-align: left;">❌ 수동</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SEO 자동</strong></td>
+<td style="text-align: left;">✅ 자동</td>
+<td style="text-align: left;">✅ 자동</td>
+<td style="text-align: left;">❌ 수동</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-5">5. 비용 분석 (5년 총소유비용)</h2>
+<h3 id="50-1000">시나리오: 50명 작성자 + 1,000명 독자</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">플랫폼</th>
+<th style="text-align: left;">월 비용</th>
+<th style="text-align: left;">연간 비용</th>
+<th style="text-align: left;">5년 총비용</th>
+<th style="text-align: left;">관리 시간/월</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>GitHub Discussions</strong></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;"><strong>$0</strong></td>
+<td style="text-align: left;">0시간</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>FreeFlarum</strong></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;"><strong>$0</strong></td>
+<td style="text-align: left;">0시간</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Google Cloud Free</strong></td>
+<td style="text-align: left;">$0.48</td>
+<td style="text-align: left;">$5.76</td>
+<td style="text-align: left;"><strong>$28.8</strong></td>
+<td style="text-align: left;">2시간</td>
+</tr>
+</tbody>
+</table>
+<p><strong>결론</strong>: GitHub Discussions와 FreeFlarum은 금전적 비용과 관리 시간이 전혀 들지 않는 가장 효율적인 선택입니다.</p>
+<hr />
+<h2 id="6">6. 최종 추천 및 실행 계획</h2>
+<h3 id="1-github-discussions">🥇 1순위: GitHub Discussions</h3>
+<p><strong>선정 이유</strong>:<br />
+1.  <strong>완전 무료</strong> 및 <strong>최상급 안정성</strong> (Microsoft 인프라)<br />
+2.  <strong>데이터 및 계정 리스크 제로</strong><br />
+3.  <strong>한국 사용자에게 최적화된 속도</strong> (50ms)<br />
+4.  <strong>유지보수가 필요 없는</strong> 완전 자동화된 관리<br />
+5.  <strong>코드 공유 및 개발자 커뮤니티</strong>에 특화된 기능</p>
+<h3 id="2-freeflarum">🥈 2순위: FreeFlarum</h3>
+<p><strong>선정 이유</strong>:<br />
+*   GitHub 사용이 익숙하지 않은 멤버가 많을 경우<br />
+*   전통적인 포럼(게시판) UX를 선호하는 경우<br />
+*   <strong>GitHub 대안</strong>으로 선택할 수 있는 최고의 무료 옵션</p>
+<h3 id="_10">❌ 제외 대상</h3>
+<ul>
+<li><strong>Naver Cafe</strong>: 코드 공유 미흡 및 광고 문제</li>
+<li><strong>Discourse</strong>: 최소 월 $25의 높은 비용</li>
+<li><strong>Google Cloud</strong>: 한국 사용자 속도 문제 및 높은 관리 난이도</li>
+</ul>
+<h3 id="github-discussions-10">✅ 실행 계획: GitHub Discussions 설정 (10분 소요)</h3>
+<ol>
+<li><strong>리포지토리 생성</strong>: GitHub에서 <code>vibe-coding-community</code>와 같은 이름으로 공개(Public) 리포지토리를 생성합니다.</li>
+<li><strong>Discussions 활성화</strong>: 생성된 리포지토리의 <code>Settings</code> &gt; <code>Features</code>에서 <code>Discussions</code>를 활성화합니다.</li>
+<li><strong>카테고리 설정</strong>: &#x27;앱 공유&#x27;, &#x27;Q&amp;A&#x27;, &#x27;자유 토론&#x27; 등 목적에 맞는 카테고리를 생성합니다.</li>
+<li><strong>SEO 최적화</strong>: 리포지토리 <code>About</code> 섹션에 &quot;바이브코딩&quot;, &quot;사회복지&quot;, &quot;노코드&quot; 등의 키워드와 토픽을 추가합니다.</li>
+<li><strong>가이드라인 작성</strong>: README 파일에 커뮤니티 운영 규칙(파일 업로드 제한, 링크 사용 권장 등)을 명시합니다.</li>
+</ol>
+<p><strong>모든 설정은 웹 화면에서 클릭만으로 가능하며, 즉시 커뮤니티 운영을 시작할 수 있습니다.</strong></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 10월 2일 6:06 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@holyboundary/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/rainbow.png"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@holyboundary/">@holyboundary</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1016/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1016/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                1개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+        
+        
+            <div id="comment_262"
+     class="border-t border-gray-300 dark:border-gray-700 py-4">
+    <p class="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+        <!-- 댓글 작성자 -->
+        <span class="font-semibold hover:text-red-500 dark:hover:text-red-400">
+            
+                <a href="/blog/@swjoong/">최중호</a>
+            
+        </span>
+        <!-- 작성 시간 -->
+        <span class="ml-2">- 2025/10/23 15:43</span>
+        <!-- 좋아요 버튼 -->
+        
+            <button class="ml-2 like-button text-blue-500 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-400"
+                    data-comment-id="262">
+                
+                    <i class="far fa-thumbs-up"></i> <!-- 로그인한 사용자가 좋아요를 누르지 않은 경우 -->
+                
+            </button>
+            <!-- 추천 수 -->
+            <span id="like-count-262"
+                  class="ml-1 like-count cursor-pointer text-blue-500 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-400"
+                  hx-get="/blog/262/comment/likes/"
+                  hx-target="#like-popup-content"
+                  hx-swap="innerHTML"
+                  hx-trigger="click">0</span>
+        
+    </p>
+    <div class="prose dark:prose-invert max-w-none">
+        <p class="text-gray-800 dark:text-gray-200 my-4"><p>사회복지사가 깃허브까지 자유롭게 쓸 수 있는 날이 오면 좋겠네요~</p></p>
+    </div>
+    
+</div>
+
+        
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/5191/add_comment/"
+                      method="post"
+                      hx-post="/blog/5191/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="o8KgMDL89cPaSyrkPh9rIlAI69h4eEmojIQi2lxRBOUkdQucbH3r0wjlHafsBmtQ">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @holyboundary 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@holyboundary/5351/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            🎯 1인 바이브코딩 초심자를 위한 &quot;AI 똑똑하게 시키는 법&quot;
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 10월 22일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@holyboundary/5332/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            🚀 [바이브코딩] 왕초보를 위한 Google Apps Script 실시간 방명록 만들기 (with CLASP)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 10월 20일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@holyboundary/5191/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            커뮤니티 구축에 관하여.
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="fas fa-heart"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="fas fa-comment"></i>
+                                <span class="ml-0">1</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 10월 02일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@holyboundary/5180/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            🎉 비영리단체를 위한 Azure Codex 설치 &amp; 실행 가이드 (Windows)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 10월 01일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @holyboundary 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/18564">
+                    
+                        <img src="https://static.wikidocs.net/images/book/rainbow_p43lxy5_6nwMyvs_SejPgCc.png"
+                             alt="모두를 위한 스마트워크"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/18564"
+                           class="hover:text-red-500 dark:hover:text-red-400">모두를 위한 스마트워크</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        이 책은 @holyboundary님의 블로그 페이지를 엮어 만들어진 책입니다.
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 10월 22일 1:16 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">271</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-5191"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-5191"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/5191/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">1</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=0d05ed7'/>

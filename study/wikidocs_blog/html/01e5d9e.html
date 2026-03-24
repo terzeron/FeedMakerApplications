@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="최지한 (일반인)">
+    <meta property="og:type" content="최지한 (일반인)">
+    <meta property="og:title" content="최지한 (일반인)">
+    <meta property="og:description" content="최지한 (일반인)">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/4114/KakaoTalk_20250603_163136018.jpg">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@network1ove2/4114/">
+
+        
+    <title>최지한 (일반인)
+        
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">최지한 (일반인)</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@network1ove2/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @network1ove2
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 6월 3일 4:34 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p><img alt="최지한" src="https://mail.naver.com/read/image/original/?mimeSN=1748939297.838591.343.42752&amp;offset=1575&amp;size=2388580&amp;u=appraisal_recorder&amp;cid=82a016e9b6b4b3c451579b3d996f46cf@cweb009.nm&amp;contentType=image/png&amp;filename=1748939294896.png&amp;org=1" /></p>
+<table>
+<thead>
+<tr>
+<th>본명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최지한</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>출생</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2006년 4월 26일</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>국적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대한민국</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>가족 관계도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>어머니, 아버지, 누나, 반려견 2마리 (코코, 솜이)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>학력</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>와동 초등학교 (졸업), 한가람 중학교 (졸업,) 지산 고등학교 (졸업), 중앙대학교 (재학 중)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>MBTI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INFJ (최근에 INFP로 바뀐 적이 있으나 정작 본인은 부정하는 듯 하다.)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>별명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>과중 일짱, 강아지 (강한 아기 지한), 복복복, 지한최, 최...더보기, 말티즈 등</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>1.개요</p>
+<p>서울특별시 동작구 흑석로 84에 위치한 <a href="https://www.cau.ac.kr/index.do">중앙대학교</a> 에 재학 중인 대학생이다. AI 학과에 수시 전형 25학번으로 입학했으며, 모교인 <a href="https://pajujisan-h.goepj.kr/pajujisan-h/main.do">지산고등학교</a> 에서 여러 번 좋은 성적을 거둔 적이 있다.</p>
+<hr />
+<p>2.연애 전</p>
+<p>∙ 초등학교 시절에 노란색으로 탈색을 하고 다닌 적이 있다고 한다. 당시 인기가 많았던 남자 아이돌인 <a href="https://namu.wiki/w/%EA%B0%95%EB%8B%A4%EB%8B%88%EC%97%98">강다니엘</a> 헤어 스타일을 따라 하려던 것이었다고. 또한 이러한 헤어스타일을 하고 6학년 장기자랑 때 마술쇼를 선보기이도 했는데, 이 쇼로 최종 1위를 한 탓인지 주변인들에게 &#x27;탈색머리 마술쇼 걔&#x27; 라고 강한 인식이 박혀 있는 듯 하다.</p>
+<p>∙ 중학교 때는 의외로 공부에 매진하는 성격이 아니었다고 한다. 중학교 2학년 때까지는 학업에 대한 중요성을 못 느끼다가, 중학교 3학년 때의 모범생 친구를 만난 뒤로 학업에 매진하게 되었다고. 중학교 3학년 2학년 기말고사가 끝난 시기에도 홀로 독서실을 다니며 고등학교 공부를 이어 할 정도로 입시에만 집중한 모양인 듯 하다.</p>
+<p>∙ 사실 본인이 거주하던 동네 중 가장 명문 고등학교였던 <a href="https://unjeong-h.goepj.kr/unjeong-h/main.do">운정고등학교</a> 에 갈 내신이 충분했음에도 불구하고 <a href="https://pajujisan-h.goepj.kr/pajujisan-h/main.do">지산고등학교</a> 에 입학했다고 한다. <a href="https://unjeong-h.goepj.kr/unjeong-h/main.do">운정고등학교</a> 로 가게 되면 내신 경쟁률이 너무 치열할 것 같아 비교적 경쟁률이 덜 할 거 같은 곳인 <a href="https://pajujisan-h.goepj.kr/pajujisan-h/main.do">지산고등학교</a> 로 원서를 넣었다고.</p>
+<p>∙ <a href="https://pajujisan-h.goepj.kr/pajujisan-h/main.do">지산고등학교</a> 에 입학한 이후 앞서 언급 했듯이 좋은 성적을 거두기 시작한다. 1학년 1학기 중간고사에서는 학급 석차 1위를 했을 정도였으니 주변인들로부터도 모범생 이미지로 굳혀갔으며, 여담으로 교내 1학년 스포츠 리그에선 골기퍼 역할을 굳건하게 해주어 학급 친구들에게도 좋은 이미지를 받을 수 있었던 듯 하다.</p>
+<hr />
+<p>3.연애 후 </p>
+<p>자세한 이야기는 <a href="https://blog.naver.com/network1ove2/223308689031">이 시리즈</a>를 참고하도록 하자. </p>
+<p>∙ 본인 왈 자신의 이상형이라고 한다. (<del>작성자 기준에선 잘 모르겠다만...</del>) 자신의 성격을 바꿀 수 있게 해주고 많은 도움을 주었다고 주장하는 편인 듯 하다. </p>
+<p>∙  연인을 상대로 &#x27;넹&#x27;, &#x27;웅,&#x27; &#x27;~했어여&#x27; 말투를 부쩍 많이 사용한다. 아마 연인의 말투를 그대로 옮은 것 같다는 의견이 있다. </p>
+<p>∙  연애를 시작한 이후로 통일성 있던 짧은 <a href="https://namu.wiki/w/%ED%88%AC%EB%B8%94%EB%9F%AD">투블럭</a> 헤어스타일에서 <a href="https://namu.wiki/w/%ED%8C%8C%EB%A7%88">파마</a> 등 다양한 헤어스타일을 선보이고 있다. 후엔 <a href="https://namu.wiki/w/%EB%A9%80%EB%A6%BF">병지컷</a> 을 하고 싶어하는 성향도 보이는 것 같다.</p>
+<hr />
+<p>4.취향</p>
+<p>∙ <a href="https://namu.wiki/w/%EB%8F%88%EA%B0%80%EC%8A%A4">돈가스</a>를 무척이나 좋아한다. &#x27;평생 한 음식만 먹고 살라면?&#x27; 이라는 질문에 고민 없이 <a href="https://namu.wiki/w/%EB%8F%88%EA%B0%80%EC%8A%A4">돈가스</a>를 대답하기도 한 적이 있다.</p>
+<p>∙ 그 외에도 <a href="https://namu.wiki/w/%EC%A0%9C%EC%9C%A1%EB%B3%B6%EC%9D%8C">제육볶음</a>, <a href="https://namu.wiki/w/%EA%B9%80%EC%B9%98%EC%B0%8C%EA%B0%9C">김치찌개</a>, <a href="https://namu.wiki/w/%EA%B9%8C%EB%A5%B4%EB%B3%B4%20%EB%B6%88%EB%8B%AD%EB%B3%B6%EC%9D%8C%EB%A9%B4">까르보 불닭볶음면</a>을 좋아한다. 대체로 일식이나 매운 음식을 선호하는 듯. </p>
+<p>∙ 디저트류는 <a href="https://namu.wiki/w/%EB%85%B9%EC%B0%A8">녹차</a>, <a href="https://namu.wiki/w/%EB%A7%90%EC%B0%A8">말차</a>류의 맛이 나는 것을 선호한다.</p>
+<p>∙ 음악 부분에선 <a href="https://namu.wiki/w/%ED%8C%9D%20%EC%9D%8C%EC%95%85?from=%ED%8C%9D%EC%86%A1">팝송</a>, <a href="https://namu.wiki/w/J-POP?from=%EC%A0%9C%EC%9D%B4%ED%8C%9D">애니 OST</a>를 즐겨 듣는다. 플레이리스트를 보면 이 둘이 80%를 차지하고 있다고 해도 과언이 아니다.</p>
+<p>∙ 평소에 일본 애니메이션을 많이 즐겨보는 편인데, 인생 애니메이션이라고 뽑을 수 있는 건 단언컨대 <a href="https://namu.wiki/w/%EC%8B%A0%EC%B9%B4%EC%9D%B4%20%EB%A7%88%EC%BD%94%ED%86%A0">신카이 마코토</a> 작가의 작품 중 하나인 <a href="https://namu.wiki/w/%EB%84%88%EC%9D%98%20%EC%9D%B4%EB%A6%84%EC%9D%80.?from=%EB%84%88%EC%9D%98%20%EC%9D%B4%EB%A6%84%EC%9D%80">&lt;너의 이름은.&gt;</a>이라고 한다. 애초에 이 애니메이션을 보고 감동을 받아 그 이후로부터 애니메이션 보는 것을 좋아하게 됐다고. 그 외로는 <a href="https://namu.wiki/w/%EB%82%98%EB%A7%8C%EC%9D%B4%20%EC%97%86%EB%8A%94%20%EA%B1%B0%EB%A6%AC">나만이 없는 거리</a>, <a href="https://namu.wiki/w/%EC%A7%84%EA%B2%A9%EC%9D%98%20%EA%B1%B0%EC%9D%B8">진격의 거인</a> 등이 있다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 6월 3일 5:31 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@network1ove2/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@network1ove2/">@network1ove2</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/751/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/751/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/4114/add_comment/"
+                      method="post"
+                      hx-post="/blog/4114/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="QJDZOj8oZoce9AXorJ6L0x6VJViVov9GLRuh8xUAyvGNCSD3DMc1pChFv232z8An">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">845</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-4114"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-4114"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/4114/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">1</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=01e5d9e'/>

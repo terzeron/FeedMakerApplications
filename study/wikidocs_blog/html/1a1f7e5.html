@@ -1,0 +1,1513 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="초기 윈도우 환경에서 앱스 스크립트 자동 개발 환경 구축하기(종합판)">
+    <meta property="og:type" content="초기 윈도우 환경에서 앱스 스크립트 자동 개발 환경 구축하기(종합판)">
+    <meta property="og:title" content="초기 윈도우 환경에서 앱스 스크립트 자동 개발 환경 구축하기(종합판)">
+    <meta property="og:description" content="초기 윈도우 환경에서 앱스 스크립트 자동 개발 환경 구축하기(종합판)">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/7305/01-tools-overview.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@JNCD/7305/">
+
+        
+    <title>초기 윈도우 환경에서 앱스 스크립트 자동 개발 환경 구축하기(종합판)
+        - 중년코딩
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@JNCD/7224/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@JNCD/7343/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">초기 윈도우 환경에서 앱스 스크립트 자동 개발 환경 구축하기(종합판)</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@JNCD/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @JNCD
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 2월 12일 3:04 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>이 가이드는 <strong>완전히 새로운 Windows 컴퓨터</strong>에서 Google Apps Script 개발 환경을 구축하는 방법을 설명합니다. Node.js, clasp, gas-fakes, VS Code, opencode를 순차적으로 설치하고 설정합니다.</p>
+<hr />
+<h2 id="_1">📋 목차</h2>
+<ol>
+<li><a href="#0-도구별-역할-개요">도구별 역할 개요</a></li>
+<li><a href="#1-필수-소프트웨어-설치">필수 소프트웨어 설치</a></li>
+<li><a href="#2-clasp-설치-및-설정">clasp 설치 및 설정</a></li>
+<li><a href="#3-gas-fakes-설치-및-설정">gas-fakes 설치 및 설정</a></li>
+<li><a href="#4-visual-studio-code-설정">Visual Studio Code 설정</a></li>
+<li><a href="#5-opencode-설치-및-설정">opencode 설치 및 설정</a></li>
+<li><a href="#방법-1-직접-명령어-실행-기본">사용 방법 1: 직접 명령어 실행</a></li>
+<li><a href="#방법-2-mcpmodel-context-protocol-서버로-설정-통합-방식">사용 방법 2: MCP 서버 설정</a></li>
+<li><a href="#54-gemini-api-설정-ai-기능-활성화">Gemini API 설정</a></li>
+<li><a href="#55-oh-my-opencode-설치-선택사항-권장">oh-my-opencode 설치 (선택사항)</a></li>
+<li><a href="#6-통합-개발-워크플로우">통합 개발 워크플로우</a></li>
+<li><a href="#7-문제-해결">문제 해결</a></li>
+</ol>
+<hr />
+<h2 id="0">0. 도구별 역할 개요</h2>
+<p>이 가이드에서 설치하는 각 도구의 역할과 상호관계를 이해하면 개발 환경 구축이 더 쉬워집니다.</p>
+<h3 id="_2">🔧 주요 도구 역할</h3>
+<h4 id="nodejs"><strong>Node.js</strong></h4>
+<ul>
+<li><strong>역할</strong>: JavaScript 실행 환경 및 패키지 관리자(npm) 제공</li>
+<li><strong>왜 필요한가</strong>: clasp와 gas-fakes가 Node.js 기반으로 개발되어 npm을 통해 설치됨</li>
+<li><strong>사용 예시</strong>: <code>npm install -g @google/clasp</code></li>
+</ul>
+<h4 id="clasp-command-line-apps-script-projects"><strong>clasp (Command Line Apps Script Projects)</strong></h4>
+<ul>
+<li><strong>역할</strong>: Google Apps Script의 CLI(Command Line Interface) 도구</li>
+<li><strong>주요 기능</strong>:</li>
+<li>로컬에서 Apps Script 코드 작성 및 편집</li>
+<li>로컬 코드를 Google Apps Script 클라우드 환경에 푸시/동기화</li>
+<li>TypeScript 문법 지원 (<code>.ts</code> 파일을 <code>.gs</code>로 자동 변환)</li>
+<li>Git과 유사한 버전 관리 (clasp의 버전 기능)</li>
+<li><strong>중요 제한사항</strong>: </li>
+<li>TypeScript로 작성 후 clasp가 변환한 Apps Script 코드는 <strong>클린업(정리)됨</strong></li>
+<li>변환된 <code>.gs</code> 파일을 직접 수정하면 다음 푸시 시 로컬 변경사항이 덮어씀</li>
+<li><strong>결론</strong>: 항상 로컬 <code>.ts</code> 파일만 수정하고, 클라우드 <code>.gs</code> 파일은 직접 수정하지 말 것</li>
+<li><strong>사용 예시</strong>: <br />
+<code>cmd
+  clasp push          # 로컬 → 클라우드 업로드
+  clasp pull          # 클라우드 → 로컬 다운로드
+  clasp open          # 웹 에디터 열기</code></li>
+</ul>
+<h4 id="gas-fakes-google-apps-script-fakes"><strong>gas-fakes (Google Apps Script Fakes)</strong></h4>
+<ul>
+<li><strong>역할</strong>: 로컬 환경에서 Apps Script 코드를 실행하고 테스트하는 샌드박스 도구</li>
+<li><strong>주요 기능</strong>:</li>
+<li>Google Apps Script API(Drive, Sheets, Docs 등)를 로컬에서 에뮬레이션</li>
+<li>실제 Google 서비스와 유사한 동작을 로컬에서 테스트</li>
+<li>안전한 테스트 환경 제공 (실제 데이터 건드리지 않음)</li>
+<li><strong>사용 예시</strong>:<br />
+<code>cmd
+  gas-fakes run src/Code.js     # 로컬에서 스크립트 실행
+  gas-fakes test                # 테스트 실행</code></li>
+</ul>
+<h4 id="visual-studio-code-vs-code"><strong>Visual Studio Code (VS Code)</strong></h4>
+<ul>
+<li><strong>역할</strong>: 코드 편집기 (IDE)</li>
+<li><strong>주요 기능</strong>:</li>
+<li>JavaScript/TypeScript 문법 하이라이팅</li>
+<li>IntelliSense (자동완성)</li>
+<li>디버깅 도구</li>
+<li>확장 프로그램 생태계</li>
+<li><strong>왜 사용하는가</strong>: Google Apps Script 웹 에디터보다 강력한 편집 기능 제공</li>
+</ul>
+<h4 id="opencode"><strong>opencode</strong></h4>
+<ul>
+<li><strong>역할</strong>: AI 기반 개발 도구 및 통합 개발 환경 관리</li>
+<li><strong>주요 기능</strong>:</li>
+<li>AI 어시스턴트를 통한 코드 작성/리뷰 지원</li>
+<li>다양한 개발 도구와의 통합 관리 (MCP 프로토콜 지원)</li>
+<li><strong>사용 방법 1 (기본)</strong>: 직접 명령어 입력 - 별도 설정 없이 즉시 사용, 개발자가 직접 제어</li>
+<li><strong>사용 방법 2 (MCP)</strong>: clasp/gas-fakes를 MCP 서버로 등록 - 초기 설정 필요하나 opencode 내에서 명령 통합 관리 가능</li>
+<li><strong>참고</strong>: 직접 명령어 방식은 간단하고 예측 가능함. MCP 방식은 반복 작업 자동화에 유리하나 초기 설정과 AI 명령어 해석에 주의 필요</li>
+</ul>
+<h3 id="_3">🔄 도구 간 관계도</h3>
+<p><img alt="도구별 역할 개요" src="https://static.wikidocs.net/images/blog/7305/01-tools-overview.png" /></p>
+<p><em>그림 1: 로컬 개발 환경과 Google Cloud 간의 도구 관계도</em></p>
+<hr />
+<p><img alt="개발 워크플로우" src="https://static.wikidocs.net/images/blog/7305/02-development-workflow.png" /></p>
+<p><em>그림 2: TypeScript 개발부터 클라우드 배포까지의 개발 워크플로우</em></p>
+<h3 id="opencode_1">⚠️ 중요: opencode와의 관계</h3>
+<p><strong>두 가지 사용 방식:</strong></p>
+<p><strong>방식 1: 직접 명령어 실행 (권장)</strong><br />
+- opencode는 <strong>AI 개발 어시스턴트 도구</strong>입니다<br />
+- 별도 설정 없이 개발자가 명령어를 직접 입력하고 AI가 응답하는 구조입니다<br />
+- opencode에서 <code>clasp push</code>나 <code>gas-fakes run</code> 같은 명령어를 직접 입력하여 사용합니다</p>
+<p><strong>방식 2: MCP(Model Context Protocol) 서버로 설정</strong><br />
+- clasp와 gas-fakes를 MCP 서버로 등록할 수 있습니다<br />
+- AI가 직접 도구를 호출하여 명령어를 실행할 수 있습니다<br />
+- 고급 사용자용이며, 일반 사용자는 직접 명령어 입력 방식을 권장합니다<br />
+- MCP 설정 방법은 <a href="#53-opencode-사용-방법">5.3절</a>을 참고하세요</p>
+<hr />
+<h2 id="1">1. 필수 소프트웨어 설치</h2>
+<h3 id="11-nodejs">1.1 Node.js 설치</h3>
+<p>clasp와 gas-fakes는 Node.js 기반 도구입니다.</p>
+<p><strong>설치 단계:</strong></p>
+<ol>
+<li><a href="https://nodejs.org/">Node.js 공식 웹사이트</a> 접속</li>
+<li><strong>LTS(Long Term Support)</strong> 버전 다운로드 (왼쪽 버튼)</li>
+<li>다운로드된 <code>.msi</code> 파일 실행</li>
+<li>설치 마법사 따라가기:</li>
+<li>&quot;Next&quot; 클릭</li>
+<li>라이선스 동의 → &quot;Next&quot;</li>
+<li>설치 경로 (기본값 유지) → &quot;Next&quot;</li>
+<li>&quot;Add to PATH&quot; 체크 확인 → &quot;Next&quot;</li>
+<li>&quot;Install&quot; 클릭</li>
+<li>Windows 보안 경고 시 &quot;예&quot; 클릭</li>
+</ol>
+<p><strong>설치 확인:</strong></p>
+<pre><code class="language-cmd"># 명령 프롬프트(CMD) 또는 PowerShell 열기
+node --version
+npm --version
+</code></pre>
+<p>출력 예시:</p>
+<pre><code>v20.11.0
+10.2.4
+</code></pre>
+<h3 id="12-google-chrome">1.2 Google Chrome 설치 (권장)</h3>
+<p>clasp 인증에 브라우저가 필요합니다.</p>
+<ol>
+<li><a href="https://www.google.com/chrome/">Google Chrome 다운로드</a></li>
+<li>설치 마법사 따라가기</li>
+</ol>
+<hr />
+<h2 id="2-clasp">2. clasp 설치 및 설정</h2>
+<h3 id="21-clasp">2.1 clasp 전역 설치</h3>
+<pre><code class="language-cmd">npm install -g @google/clasp
+</code></pre>
+<p><strong>설치 확인:</strong></p>
+<pre><code class="language-cmd">clasp --version
+</code></pre>
+<p>출력 예시:</p>
+<pre><code>3.1.3
+</code></pre>
+<h3 id="22-clasp-google">2.2 clasp 인증 (Google 계정 연결)</h3>
+<p><img alt="clasp 인증 흐름" src="https://static.wikidocs.net/images/blog/7305/03-clasp-auth-flow.png" /></p>
+<p><em>그림 3: clasp login 명령을 통한 Google 계정 인증 과정</em></p>
+<pre><code class="language-cmd">clasp login
+</code></pre>
+<p><strong>인증 단계:</strong></p>
+<ol>
+<li>명령 실행 시 브라우저 자동 열림 (또는 URL 표시됨)</li>
+<li>Google 계정으로 로그인</li>
+<li>&quot;Google Apps Script API&quot; 접근 권한 요청 → &quot;허용&quot; 클릭</li>
+<li>성공 메시지 확인 후 브라우저 닫기</li>
+<li>터미널에서 성공 메시지 확인</li>
+</ol>
+<p><strong>인증 확인:</strong></p>
+<pre><code class="language-cmd">clasp list
+</code></pre>
+<p>Apps Script 프로젝트 목록이 표시되면 성공입니다.</p>
+<h3 id="23-apps-script-api">2.3 Apps Script API 활성화 (중요!)</h3>
+<p>Google Cloud 콘솔에서 API를 활성화해야 합니다.</p>
+<ol>
+<li><a href="https://script.google.com/home/usersettings">Google Apps Script API 설정 페이지</a> 접속</li>
+<li><strong>Google Apps Script API</strong> 토글을 <strong>ON</strong>으로 설정</li>
+<li>&quot;완료&quot; 메시지 확인</li>
+</ol>
+<hr />
+<h2 id="3-gas-fakes">3. gas-fakes 설치 및 설정</h2>
+<h3 id="31-gas-fakes">3.1 gas-fakes 전역 설치</h3>
+<pre><code class="language-cmd">npm install -g @mcpher/gas-fakes
+</code></pre>
+<p><strong>설치 확인:</strong></p>
+<pre><code class="language-cmd">gas-fakes --version
+</code></pre>
+<h3 id="32-gas-fakes">3.2 gas-fakes 인증</h3>
+<p>gas-fakes는 Google Drive API에 접근하기 위해 인증이 필요합니다.</p>
+<p><img alt="gas-fakes 인증 흐름" src="https://static.wikidocs.net/images/blog/7305/04-gas-fakes-auth-flow.png" /></p>
+<p><em>그림 4: gas-fakes 인증 및 Google Drive API 접근 과정</em></p>
+<pre><code class="language-cmd">gas-fakes auth
+</code></pre>
+<p><strong>인증 단계:</strong></p>
+<ol>
+<li>명령 실행 시 URL 표시됨</li>
+<li>브라우저에서 해당 URL 열기</li>
+<li>Google 계정 선택 (clasp와 동일한 계정 권장)</li>
+<li>&quot;Google Drive API&quot; 접근 권한 요청 → &quot;허용&quot; 클릭</li>
+<li>인증 코드 복사</li>
+<li>터미널에 붙여넣기</li>
+<li>성공 메시지 확인</li>
+</ol>
+<p><strong>인증 확인:</strong></p>
+<pre><code class="language-cmd">gas-fakes test
+</code></pre>
+<hr />
+<h2 id="4-visual-studio-code">4. Visual Studio Code 설정</h2>
+<h3 id="41-vs-code">4.1 VS Code 설치</h3>
+<ol>
+<li><a href="https://code.visualstudio.com/">VS Code 다운로드</a></li>
+<li><code>VSCodeUserSetup-x64-xxx.exe</code> 실행</li>
+<li>설치 옵션:</li>
+<li><strong>추가 작업 선택</strong>:<ul>
+<li>☑ &quot;PATH에 추가 (재부팅 후 사용 가능)&quot;</li>
+<li>☑ &quot;폴를 워크스페이스로 열 수 있도록 설정&quot;</li>
+<li>☑ &quot;파일 메뉴에서 &#x27;Code로 열기&#x27; 추가&quot;</li>
+</ul>
+</li>
+<li>설치 완료 후 &quot;Visual Studio Code 실행&quot; 체크</li>
+</ol>
+<h3 id="42">4.2 필수 확장 프로그램 설치</h3>
+<p>VS Code 실행 후 확장 프로그램 설치:</p>
+<p><strong>1. Google Apps Script ( clasp )</strong></p>
+<pre><code>검색어: clasp
+설치: &quot;Apps Script&quot; by @labnol (또는 관련 확장)
+</code></pre>
+<p><strong>2. JavaScript/TypeScript 지원 (기본 포함)</strong></p>
+<p><strong>3. Prettier - Code: formatter (권장)</strong></p>
+<pre><code>검색어: Prettier
+설치: &quot;Prettier - Code: formatter&quot;
+</code></pre>
+<p><strong>4. ESLint (권장)</strong></p>
+<pre><code>검색어: ESLint
+설치: &quot;ESLint&quot;
+</code></pre>
+<h3 id="43-vs-code">4.3 VS Code 설정</h3>
+<p><strong>설정 파일 열기:</strong><br />
+- <code>Ctrl + Shift + P</code> → &quot;Preferences: Open Settings (JSON)&quot; 입력</p>
+<p><strong>추천 설정:</strong></p>
+<pre><code class="language-json">{
+  &quot;editor.formatOnSave&quot;: true,
+  &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;,
+  &quot;files.associations&quot;: {
+    &quot;*.gs&quot;: &quot;javascript&quot;
+  },
+  &quot;javascript.updateImportsOnFileMove.enabled&quot;: &quot;always&quot;
+}
+</code></pre>
+<hr />
+<h2 id="5-opencode">5. opencode 설치 및 설정</h2>
+<h3 id="51-opencode-cli">5.1 opencode CLI 설치</h3>
+<pre><code class="language-cmd">npm i -g opencode-ai
+</code></pre>
+<p>또는 공식 설치 방법:</p>
+<pre><code class="language-cmd"># Windows PowerShell (관리자 권한)
+bun add -g opencode-ai
+</code></pre>
+<p><strong>설치 확인:</strong></p>
+<pre><code class="language-cmd">opencode --version
+</code></pre>
+<h3 id="52-opencode">5.2 opencode 초기화</h3>
+<pre><code class="language-cmd"># 프로젝트 디렉토리로 이동
+mkdir C:\Projects\gas-workspace
+cd C:\Projects\gas-workspace
+
+# opencode 초기화
+opencode init
+</code></pre>
+<p><strong>초기화 단계:</strong></p>
+<ol>
+<li>초기화 명령 실행</li>
+<li>설정 파일 생성 확인 (<code>.opencode.json</code> 또는 유사한 파일)</li>
+<li>기본 설정 완료</li>
+</ol>
+<h3 id="53-opencode">5.3 opencode 사용 방법</h3>
+<p><strong>방법 1: 직접 명령어 실행 (기본)</strong></p>
+<p>별도 설정 없이 opencode에서 직접 명령어를 입력하는 방식:</p>
+<pre><code class="language-cmd"># opencode 실행
+opencode
+
+# 또는 특정 디렉토리에서 실행
+cd C:\Projects\gas-projects
+opencode
+</code></pre>
+<p><strong>opencode에서 clasp/gas-fakes 명령어 사용:</strong></p>
+<pre><code># opencode 프롬프트에서 직접 명령어 실행
+&gt; clasp push
+&gt; gas-fakes run src/Code.js
+&gt; clasp open
+</code></pre>
+<hr />
+<p><strong>방법 2: MCP(Model Context Protocol) 서버로 설정 (통합 방식)</strong></p>
+<p>clasp와 gas-fakes를 MCP 서버로 등록하여 opencode가 직접 도구를 호출할 수 있게 설정:</p>
+<p><strong>설정 방법:</strong><br />
+1. opencode 설정 파일 (<code>~/.opencode/config.json</code> 또는 프로젝트 루트 <code>.opencode/config.json</code>) 생성/수정:</p>
+<pre><code class="language-json">{
+  &quot;mcpServers&quot;: {
+    &quot;clasp&quot;: {
+      &quot;command&quot;: &quot;clasp&quot;,
+      &quot;args&quot;: [],
+      &quot;env&quot;: {}
+    },
+    &quot;gas-fakes&quot;: {
+      &quot;command&quot;: &quot;gas-fakes&quot;,
+      &quot;args&quot;: [],
+      &quot;env&quot;: {}
+    }
+  }
+}
+</code></pre>
+<ol>
+<li>opencode 재시작 후 MCP 도구 사용 가능</li>
+</ol>
+<p><strong>MCP 방식의 특징:</strong></p>
+<table>
+<thead>
+<tr>
+<th>측면</th>
+<th>직접 명령어 방식</th>
+<th>MCP 서버 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>초기 설정</strong></td>
+<td>불필요</td>
+<td>MCP 서버 등록 필요</td>
+</tr>
+<tr>
+<td><strong>명령 일관성</strong></td>
+<td>수동 입력</td>
+<td>opencode 내 통합 관리</td>
+</tr>
+<tr>
+<td><strong>AI 자동화</strong></td>
+<td>제한적</td>
+<td>자연어 명령 가능 (&quot;코드 푸시해줘&quot;)</td>
+</tr>
+<tr>
+<td><strong>제어권</strong></td>
+<td>개발자가 직접 제어</td>
+<td>AI가 명령어 생성/실행</td>
+</tr>
+<tr>
+<td><strong>예측 가능성</strong></td>
+<td>높음 (명확함)</td>
+<td>낮음 (AI 해석 의존)</td>
+</tr>
+<tr>
+<td><strong>디버깅</strong></td>
+<td>쉬움</td>
+<td>복잡할 수 있음</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MCP 방식이 유리한 경우:</strong><br />
+- ✅ 반복적인 clasp/gas-fakes 명령어 조합을 자주 사용하는 경우<br />
+- ✅ AI에게 &quot;로컬 테스트하고 문제 없으면 배포해줘&quot; 같은 통합 작업을 맡기고 싶은 경우<br />
+- ✅ opencode 인터페이스 내에서 모든 개발 작업을 통합하여 관리하고 싶은 경우</p>
+<p><strong>주의사항:</strong><br />
+- MCP 서버 등록은 추가 초기 설정이 필요함<br />
+- AI가 명령어를 잘못 해석하거나 예상치 못한 동작을 할 수 있음<br />
+- 중요한 작업(프로덕션 배포 등)은 반드시 확인 후 실행 권장</p>
+<p><strong>추천 사용법:</strong><br />
+- <strong>초보자/단순 작업</strong>: 방법 1 (직접 명령어 실행) - 간단하고 명확함<br />
+- <strong>반복 작업 자동화</strong>: 방법 2 (MCP 서버) - 일관된 워크플로우 구축 가능</p>
+<hr />
+<h3 id="54-gemini-api-ai">5.4 Gemini API 설정 (AI 기능 활성화)</h3>
+<p>opencode의 AI 기능을 사용하려면 Google Gemini API key가 필요합니다.</p>
+<p><strong>1. Gemini API Key 생성</strong></p>
+<ol>
+<li><a href="https://aistudio.google.com/app/apikey">Google AI Studio</a> 접속</li>
+<li>Google 계정으로 로그인</li>
+<li>&quot;Create API key&quot; 버튼 클릭</li>
+<li>API key 이름 입력 (예: &quot;opencode-gas-dev&quot;)</li>
+<li>생성된 API key 복사 (⚠️ <strong>이 창을 닫으면 다시 볼 수 없으므로 반드시 복사필수</strong>)</li>
+</ol>
+<p><strong>2. opencode에 API Key 설정</strong></p>
+<p><strong>Windows에서 환경 변수로 설정 (권장):</strong></p>
+<pre><code class="language-cmd"># 시스템 환경 변수 설정 (관리자 권한 PowerShell)
+[Environment]::SetEnvironmentVariable(&quot;GEMINI_API_KEY&quot;, &quot;your-api-key-here&quot;, &quot;User&quot;)
+
+# 현재 터미널에만 설정 (임시)
+setx GEMINI_API_KEY &quot;your-api-key-here&quot;
+</code></pre>
+<p><strong>또는 opencode 설정 파일에 직접 설정:</strong></p>
+<p><code>~/.opencode/config.json</code> 파일 수정:</p>
+<pre><code class="language-json">{
+  &quot;llm&quot;: {
+    &quot;provider&quot;: &quot;google&quot;,
+    &quot;model&quot;: &quot;gemini-2.0-flash-exp&quot;,
+    &quot;apiKey&quot;: &quot;your-api-key-here&quot;
+  }
+}
+</code></pre>
+<p><strong>3. 설정 확인</strong></p>
+<pre><code class="language-cmd">opencode
+
+# opencode 프롬프트에서 테스트
+&gt; 안녕하세요
+</code></pre>
+<p>AI가 응답하면 설정 완료!</p>
+<p><strong>⚠️ 보안 주의사항:</strong><br />
+- API key는 외부에 노출되지 않도록 주의<br />
+- 공개 저장소(GitHub 등)에 API key를 올리지 마세요<br />
+- <code>.gitignore</code>에 <code>config.json</code> 추가 권장<br />
+- 필요시 API key를 정기적으로 재생성하세요</p>
+<hr />
+<h3 id="55-oh-my-opencode">5.5 oh-my-opencode 설치 (선택사항, 권장)</h3>
+<p><strong>oh-my-opencode</strong>는 opencode의 기능을 확장하는 플러그인으로, 특히 <strong>멀티 에이전트 기능</strong>이 매우 강력합니다.</p>
+<p><strong>🌟 주요 장점:</strong></p>
+<table>
+<thead>
+<tr>
+<th>기능</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>멀티 에이전트 시스템</strong></td>
+<td>Sisyphus(메인), Prometheus(기획), Oracle(아키텍처/디버깅), Librarian(문서검색) 등 전문 에이전트들이 협업</td>
+</tr>
+<tr>
+<td><strong>백그라운드 에이전트</strong></td>
+<td>여러 작업을 병렬로 처리하여 개발 속도 향상</td>
+</tr>
+<tr>
+<td><strong>LSP &amp; AST 도구</strong></td>
+<td>리팩토링, 코드 진단, AST 기반 검색 등 고급 코드 분석</td>
+</tr>
+<tr>
+<td><strong>Claude Code 호환</strong></td>
+<td>기존 Claude Code 사용자라면 설정 그대로 사용 가능</td>
+</tr>
+<tr>
+<td><strong>미리 설정된 MCP</strong></td>
+<td>gas-fakes, clasp 등의 MCP 도구가 미리 설정됨</td>
+</tr>
+</tbody>
+</table>
+<p><strong>설치 방법:</strong></p>
+<pre><code class="language-cmd"># npm으로 전역 설치
+npm install -g oh-my-opencode
+
+# 또는 bun 사용 시
+bunx oh-my-opencode install
+</code></pre>
+<p><strong>opencode에 플러그인 등록:</strong></p>
+<p><code>~/.config/opencode/opencode.json</code> 파일 수정:</p>
+<pre><code class="language-json">{
+  &quot;plugin&quot;: [
+    &quot;oh-my-opencode&quot;
+  ],
+  &quot;llm&quot;: {
+    &quot;provider&quot;: &quot;google&quot;,
+    &quot;model&quot;: &quot;gemini-2.0-flash-exp&quot;,
+    &quot;apiKey&quot;: &quot;your-api-key-here&quot;
+  }
+}
+</code></pre>
+<p><strong>사용 예시:</strong></p>
+<pre><code># oh-my-opencode 설치 후 opencode 실행
+opencode
+
+# 에이전트 호출 예시
+&gt; @oracle 이 코드의 아키텍처를 검토해줘
+&gt; @librarian gas-fakes 사용법을 알려줘
+&gt; @prometheus 이 기능 구현 계획을 세워줘
+
+# 백그라운드 에이전트 실행
+&gt; @sisyphus 이 파일들을 동시에 분석해줘
+</code></pre>
+<p><strong>주요 에이전트:</strong></p>
+<table>
+<thead>
+<tr>
+<th>에이전트</th>
+<th>역할</th>
+<th>사용 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sisyphus</strong></td>
+<td>메인 에이전트</td>
+<td>일반적인 개발 작업, 코드 작성</td>
+</tr>
+<tr>
+<td><strong>Prometheus</strong></td>
+<td>기획자</td>
+<td>구현 계획 수립, 작업 분해</td>
+</tr>
+<tr>
+<td><strong>Oracle</strong></td>
+<td>아키텍처 전문가</td>
+<td>복잡한 설계, 디버깅, 아키텍처 검토</td>
+</tr>
+<tr>
+<td><strong>Librarian</strong></td>
+<td>문서/코드 검색</td>
+<td>외부 라이브러리 문서 검색, 코드 예시 찾기</td>
+</tr>
+<tr>
+<td><strong>Frontend Engineer</strong></td>
+<td>프론트엔드 전문</td>
+<td>UI/UX 개발, 스타일링</td>
+</tr>
+</tbody>
+</table>
+<p><strong>설치 여부 판단:</strong></p>
+<p>✅ <strong>설치 권장</strong>: 복잡한 리팩토링, 코드 분석, 멀티태스킹이 필요한 경우<br />
+⏸️ <strong>선택사항</strong>: 단순 코드 편집만 필요한 경우 (기본 opencode로 충분)</p>
+<hr />
+<h2 id="6">6. 통합 개발 워크플로우</h2>
+<h3 id="61">6.1 새 프로젝트 생성 예시</h3>
+<p>전체 도구를 통합하여 사용하는 예시입니다.</p>
+<p><strong>단계 1: 프로젝트 디렉토리 생성</strong></p>
+<pre><code class="language-cmd">mkdir C:\Projects\gas-projects
+cd C:\Projects\gas-projects
+</code></pre>
+<p><strong>단계 2: clasp로 프로젝트 생성</strong></p>
+<pre><code class="language-cmd"># 새 Apps Script 프로젝트 생성
+clasp create --title &quot;내 첫 GAS 프로젝트&quot; --type standalone
+
+# 또는 기존 프로젝트 클론
+# clasp clone &lt;SCRIPT_ID&gt;
+</code></pre>
+<p><strong>단계 3: 프로젝트 구조 설정</strong></p>
+<pre><code>my-gas-project/
+├── .clasp.json          # clasp 설정
+├── appsscript.json      # Apps Script 매니페스트
+├── src/                 # 소스 코드 디렉토리
+│   ├── Code.js
+│   └── utils.js
+├── tests/               # 테스트 파일
+│   └── test.js
+├── gasfakes.json        # gas-fakes 설정
+└── package.json         # Node.js 의존성
+</code></pre>
+<p><strong>단계 4: gas-fakes 설정 파일 생성</strong></p>
+<p><code>gasfakes.json</code> 파일 생성:</p>
+<pre><code class="language-json">{
+  &quot;projectId&quot;: &quot;your-google-cloud-project-id&quot;,
+  &quot;sandbox&quot;: true,
+  &quot;cacheDir&quot;: &quot;./.gas-fakes-cache&quot;,
+  &quot;testDir&quot;: &quot;./tests&quot;
+}
+</code></pre>
+<p><strong>단계 5: package.json 생성</strong></p>
+<pre><code class="language-cmd">npm init -y
+</code></pre>
+<p><code>package.json</code> 수정:</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;my-gas-project&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;gas-fakes run tests/test.js&quot;,
+    &quot;push&quot;: &quot;clasp push&quot;,
+    &quot;watch&quot;: &quot;clasp push --watch&quot;,
+    &quot;open&quot;: &quot;clasp open&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@types/google-apps-script&quot;: &quot;^1.0.83&quot;
+  }
+}
+</code></pre>
+<p><strong>단계 6: TypeScript 타입 설치 (선택)</strong></p>
+<pre><code class="language-cmd">npm install --save-dev @types/google-apps-script
+</code></pre>
+<h3 id="62-vs-code">6.2 VS Code로 프로젝트 열기</h3>
+<pre><code class="language-cmd">code .
+</code></pre>
+<p>또는:<br />
+- VS Code 실행<br />
+- &quot;파일&quot; → &quot;폴더 열기&quot; → 프로젝트 폴더 선택</p>
+<h3 id="63">6.3 개발 워크플로우 예시</h3>
+<p><img alt="통합 개발 워크플로우" src="https://static.wikidocs.net/images/blog/7305/05-integrated-workflow.png" /></p>
+<p><em>그림 5: AI 어시스턴트를 활용한 통합 개발 워크플로우</em></p>
+<p><strong>로컬 개발 및 테스트:</strong></p>
+<pre><code class="language-cmd"># 코드 수정 (VS Code에서)
+# ...
+
+# 로컬 테스트 (gas-fakes)
+npm test
+# 또는
+gas-fakes run src/Code.js
+
+# Google Apps Script로 푸시
+npm run push
+# 또는
+clasp push
+
+# 실시간 감시 및 자동 푸시
+npm run watch
+</code></pre>
+<p><strong>Google Apps Script 웹 에디터에서 열기:</strong></p>
+<pre><code class="language-cmd">clasp open
+</code></pre>
+<hr />
+<h2 id="7">7. 문제 해결</h2>
+<h3 id="71">7.1 일반적인 문제</h3>
+<p><strong>Q: clasp login이 브라우저를 열지 않습니다.</strong></p>
+<p>A: 수동으로 URL을 복사하여 브라우저에 붙여넣으세요. 인증 후 표시되는 코드를 터미널에 입력하세요.</p>
+<p><strong>Q: &quot;No credentials found&quot; 오류</strong></p>
+<p>A: clasp 인증이 필요합니다. <code>clasp login</code>을 다시 실행하세요.</p>
+<p><strong>Q: &quot;Google Apps Script API has not been used in project&quot; 오류</strong></p>
+<p>A: <a href="https://script.google.com/home/usersettings">Apps Script API 설정 페이지</a>에서 API를 활성화하세요.</p>
+<p><strong>Q: gas-fakes에서 &quot;Authentication required&quot; 오류</strong></p>
+<p>A: <code>gas-fakes auth</code>를 실행하여 인증을 완료하세요.</p>
+<p><strong>Q: 한글 경로 문제</strong></p>
+<p>A: 프로젝트 경로에 한글이 있으면 문제가 발생할 수 있습니다. 영문 경로 사용을 권장합니다.</p>
+<pre><code class="language-cmd"># 권장
+C:\Projects\gas-project\
+
+# 비권장
+C:\사용자\문서\gas프로젝트\
+</code></pre>
+<h3 id="72-path">7.2 PATH 환경 변수 문제</h3>
+<p>Node.js를 설치 후에도 명령어를 찾을 수 없는 경우:</p>
+<p><strong>PATH 확인:</strong></p>
+<pre><code class="language-cmd">echo %PATH%
+</code></pre>
+<p><strong>PATH 수동 추가 (필요시):</strong><br />
+1. &quot;시스템 환경 변수 편집&quot; 검색 및 실행<br />
+2. &quot;환경 변수&quot; 버튼 클릭<br />
+3. &quot;사용자 변수&quot; 또는 &quot;시스템 변수&quot;에서 <code>Path</code> 선택<br />
+4. &quot;편집&quot; 클릭<br />
+5. 새 항목 추가:<br />
+   - <code>C:\Program Files\nodejs\</code> (Node.js)<br />
+   - <code>C:\Users\&lt;사용자명&gt;\AppData\Roaming\npm\</code> (npm 전역 패키지)<br />
+6. 확인 클릭 후 새로운 명령 프롬프트 창 열기</p>
+<h3 id="73-windows">7.3 Windows 방화벽/보안 문제</h3>
+<p><strong>PowerShell 실행 정책 문제:</strong></p>
+<pre><code class="language-powershell"># 관리자 권한 PowerShell에서 실행
+Set-ExecutionPolicy RemoteSigned -CurrentUser
+</code></pre>
+<p><strong>Windows Defender SmartScreen:</strong><br />
+- &quot;추가 정보&quot; 클릭 → &quot;실행&quot; 클릭</p>
+<hr />
+<h2 id="8">8. 추가 리소스</h2>
+<h3 id="81">8.1 공식 문서</h3>
+<ul>
+<li><a href="https://github.com/google/clasp">clasp GitHub</a></li>
+<li><a href="https://github.com/brucemcpherson/gas-fakes">gas-fakes GitHub</a></li>
+<li><a href="https://developers.google.com/apps-script">Google Apps Script 공식 문서</a></li>
+<li><a href="https://opencode.dev/docs">opencode 문서</a></li>
+</ul>
+<h3 id="82">8.2 유용한 명령어 모음</h3>
+<pre><code class="language-bash"># clasp 주요 명령어
+clasp login                    # 로그인
+clasp logout                   # 로그아웃
+clasp create                   # 새 프로젝트 생성
+clasp clone &lt;ID&gt;               # 기존 프로젝트 클론
+clasp pull                     # 원격에서 로컬로 가져오기
+clasp push                     # 로컬에서 원격으로 푸시
+clasp push --watch            # 실시간 감시
+clasp open                     # 웹 에디터 열기
+clasp logs                     # 스택드라이버 로그 보기
+clasp version &quot;설명&quot;           # 버전 생성
+clasp deploy                   # 배포
+
+# gas-fakes 주요 명령어
+gas-fakes auth                 # 인증
+gas-fakes run &lt;file.js&gt;        # 스크립트 실행
+gas-fakes test                 # 테스트 실행
+gas-fakes sandbox              # 샌드박스 모드 실행
+</code></pre>
+<hr />
+<h2 id="9">9. 정리</h2>
+<p>이제 다음 도구들이 설치되어 Google Apps Script 개발이 가능합니다:</p>
+<table>
+<thead>
+<tr>
+<th>도구</th>
+<th>역할</th>
+<th>사용 시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ <strong>Node.js</strong></td>
+<td>JavaScript 실행 환경</td>
+<td>모든 도구의 기반 (필수)</td>
+</tr>
+<tr>
+<td>✅ <strong>clasp</strong></td>
+<td>Apps Script CLI</td>
+<td>로컬 ↔ 클라우드 코드 동기화</td>
+</tr>
+<tr>
+<td>✅ <strong>gas-fakes</strong></td>
+<td>로컬 테스트 샌드박스</td>
+<td>코드 로컬 테스트 시</td>
+</tr>
+<tr>
+<td>✅ <strong>VS Code</strong></td>
+<td>코드 편집기</td>
+<td>코드 작성 및 수정 시</td>
+</tr>
+<tr>
+<td>✅ <strong>opencode</strong></td>
+<td>AI 개발 어시스턴트</td>
+<td>개발 도중 질문하거나 도움이 필요할 때</td>
+</tr>
+<tr>
+<td>⭐ <strong>oh-my-opencode</strong></td>
+<td>opencode 플러그인 (멀티 에이전트)</td>
+<td>복잡한 작업, 리팩토링, 코드 분석 시</td>
+</tr>
+</tbody>
+</table>
+<p><strong>opencode 사용 방식 선택:</strong></p>
+<table>
+<thead>
+<tr>
+<th>방식</th>
+<th>특징</th>
+<th>추천 대상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>직접 명령어</strong></td>
+<td>별도 설정 없이 즉시 사용, 개발자가 직접 제어</td>
+<td>초보자, 단순 작업</td>
+</tr>
+<tr>
+<td><strong>MCP 서버</strong></td>
+<td>초기 설정 필요하나 opencode 내 명령 통합, 반복 작업 자동화</td>
+<td>반복 작업 많은 사용자</td>
+</tr>
+<tr>
+<td><strong>+ oh-my-opencode</strong></td>
+<td>멀티 에이전트 시스템, 고급 코드 분석</td>
+<td>복잡한 리팩토링, 대규모 프로젝트</td>
+</tr>
+</tbody>
+</table>
+<p><strong>도구별 상호작용:</strong><br />
+1. <strong>VS Code</strong>에서 코드 작성 (<code>.ts</code> 또는 <code>.js</code>)<br />
+2. <strong>gas-fakes</strong>로 로컬에서 테스트<br />
+3. <strong>clasp push</strong>로 클라우드에 배포<br />
+4. 필요시 <strong>opencode</strong>에서 AI에게 질문하거나 명령어 실행<br />
+5. (선택) <strong>oh-my-opencode</strong> 멀티 에이전트로 복잡한 작업 처리 (<code>@oracle</code>, <code>@librarian</code> 등)</p>
+<p><strong>다음 단계:</strong><br />
+1. <a href="https://script.google.com">Google Apps Script</a>에서 새 프로젝트 생성<br />
+2. <code>clasp clone &lt;SCRIPT_ID&gt;</code>로 로컬에 가져오기<br />
+3. VS Code에서 코드 편집<br />
+4. <code>gas-fakes</code>로 로컬 테스트<br />
+5. <code>clasp push</code>로 클라우드에 배포</p>
+<p><strong>즐거운 개발 되세요!</strong> 🚀</p>
+<hr />
+<p><em>참고: 이 가이드는 버전 관리 도구(Git) 없이 최소한의 설치로 개발 환경을 구축하는 방법을 설명합니다. 향후 버전 관리가 필요하시면 Git을 추가로 설치하시면 됩니다.</em></p>
+<p><em>마지막 업데이트: 2025년 2월</em></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 2월 12일 11:14 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@JNCD/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/%EC%A4%91%EB%85%84%EC%BD%94%EB%94%A9.png"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@JNCD/">@JNCD</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1307/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1307/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/7305/add_comment/"
+                      method="post"
+                      hx-post="/blog/7305/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="WOd7M1p3kc208aK4t1mglIdSBpwhctwsUEnRaoGA4tyHmxniE73HuDQtSXkNAQ50">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @JNCD 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@JNCD/8691/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            터미널에서 구글 워크스페이스를 정복하다: 새로운 Google Workspace CLI (gws) 소개
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 05일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@JNCD/8620/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            전자공시 DSD 파일을 무료로 구글 시트로 변환하기
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 03일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@JNCD/7985/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            NotebookLM 편집, pptx 지원 업데이트(20260218)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@JNCD/7343/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Seedance 2.0 한국에서 테스트해보기
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 13일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@JNCD/7305/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            초기 윈도우 환경에서 앱스 스크립트 자동 개발 환경 구축하기(종합판)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 12일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 3
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/1307/7305/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @JNCD 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/19129">
+                    
+                        <img src="https://static.wikidocs.net/images/book/중년코딩_s4ptpf8_1770761314_1770761317_1770761322_1770762492.jpg"
+                             alt="왜 내가 이제 와서 구글 시트를 해야 합니..다."
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/19129"
+                           class="hover:text-red-500 dark:hover:text-red-400">왜 내가 이제 와서 구글 시트를 해야 합니..다.</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        이미 엑셀로 잘하고 있는 작업을 구글 스프레드시트로 아예 안 하게 만들어 봅시다.
+자꾸 나한테 뭘 만들어서 보내달라는 사람에게 평생 바뀌지 않는 최종본 링크를 던져줍시다.
+동…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 2월 11일 7:37 오전</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">399</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-7305"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-7305"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/7305/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=1a1f7e5'/>

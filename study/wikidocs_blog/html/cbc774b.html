@@ -1,0 +1,1741 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="시지 라이프, 지역 커뮤니티 웹앱 개발 - 매장 휴무일 설정 [8]">
+    <meta property="og:type" content="시지 라이프, 지역 커뮤니티 웹앱 개발 - 매장 휴무일 설정 [8]">
+    <meta property="og:title" content="시지 라이프, 지역 커뮤니티 웹앱 개발 - 매장 휴무일 설정 [8]">
+    <meta property="og:description" content="시지 라이프, 지역 커뮤니티 웹앱 개발 - 매장 휴무일 설정 [8]">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/4752/%EA%B7%B8%EB%A6%BC_8-1.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@inetsos/4752/">
+
+        
+    <title>시지 라이프, 지역 커뮤니티 웹앱 개발 - 매장 휴무일 설정 [8]
+        - 그랜파 개발자의 풀스택 공부
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@inetsos/4731/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@inetsos/4852/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">시지 라이프, 지역 커뮤니티 웹앱 개발 - 매장 휴무일 설정 [8]</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@inetsos/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @inetsos
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 7월 31일 3:32 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@inetsos/?tag=2092"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            시지라이프
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p><a href="https://next-tailwind-firebase-order-app.vercel.app/">시지 라이프 - 웹 서비스 테스트 배포</a><br />
+<a href="https://github.com/inetsos/next-tailwind-firebase-order-app">시지 라이프 - GitHub</a></p>
+<div class="toc">
+<ul>
+<li><a href="#-">시지 라이프 매장 등록 - 매장 휴무일 설정</a></li>
+<li><a href="#1-storeregisterpage">1. 매장 등록 컴포넌트 - StoreRegisterPage</a></li>
+<li><a href="#2">2. 매장 휴무일 설정 로직</a><ul>
+<li><a href="#1">✅ 1. 휴무일 관련 데이터 구조</a></li>
+<li><a href="#2-defaultholidayrule">✅ 2. 휴무일 기본값 (defaultHolidayRule)</a></li>
+<li><a href="#3">✅ 3. 휴무일 설정 모달 트리거</a></li>
+<li><a href="#4">✅ 4. 휴무일 설정 저장 처리</a></li>
+<li><a href="#5">✅ 5. 설정된 휴무일 요약 표시</a></li>
+<li><a href="#6">✅ 6. 전체 흐름 요약</a></li>
+<li><a href="#7-firestore">✅ 7. 저장 예시 (Firestore에 저장될 데이터)</a></li>
+</ul>
+</li>
+<li><a href="#holidayrulemodal">HolidayRuleModal 컴포넌트</a><ul>
+<li><a href="#1_1">📦 1. 주요 타입 정의</a></li>
+<li><a href="#2_1">🔄 2. 컴포넌트 동작 흐름</a><ul>
+<li><a href="#1_2">1. 초기 상태 세팅</a></li>
+<li><a href="#2-frequency">2. 휴무 주기 선택 (frequency)</a></li>
+<li><a href="#3_1">3. 요일 선택</a></li>
+<li><a href="#4-15">4. 주차 선택 (1~5주차)</a></li>
+<li><a href="#5_1">5. 지우기 버튼</a></li>
+<li><a href="#6_1">6. 취소 / 저장</a></li>
+<li><a href="#_1">🎯 사용 예시</a></li>
+<li><a href="#ux">🧠 UX 포인트</a></li>
+</ul>
+</li>
+<li><a href="#_2">✅ 요약</a></li>
+</ul>
+</li>
+<li><a href="#_3">휴무일 판단</a><ul>
+<li><a href="#_4">🔍 휴무일 판단 및 화면 표출 전체 흐름</a><ul>
+<li><a href="#1_3">✅ 1. 오늘의 요일과 날짜 정보 계산</a></li>
+<li><a href="#2_2">✅ 2. 오늘이 휴무일인지 여부 판별</a></li>
+<li><a href="#3_2">✅ 3. 오늘의 영업시간 정보와 비교</a></li>
+<li><a href="#4-rendertodaybusinesshour">✅ 4. 화면 표출 (renderTodayBusinessHour())</a></li>
+<li><a href="#5-renderholidayrule">✅ 5. 휴무일 요약 표출 (renderHolidayRule())</a></li>
+<li><a href="#_5">✅ 요약</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="-">시지 라이프 매장 등록 - 매장 휴무일 설정</h2>
+<p>휴무일 등록은 참 어렵습니다.<br />
+1주일에 한번, 2주일에 한번, 한달에 한번, 한달에 두번 등 다양한 휴무일이 있습니다.<br />
+이들을 모두 처리하는 것이 쉽지가 않습니다.</p>
+<p>영업시간과 휴무일은 별도로 설정이 되지만<br />
+휴무일의 영업 시간은 표기하지 말아야 합니다.<br />
+서로 연관이 있다는 뜻입니다.</p>
+<p><img alt="시지 라이프 - 매장 휴무일 설정" src="https://wikidocs.net/images/blog/4752/%EA%B7%B8%EB%A6%BC_8-1.png" /></p>
+<p><img alt="시지 라이프 - 매장 영업중" src="https://wikidocs.net/images/blog/4752/%EA%B7%B8%EB%A6%BC_8-2.png" /></p>
+<p><img alt="시지 라이프 - 매장 영업 종료" src="https://wikidocs.net/images/blog/4752/%EA%B7%B8%EB%A6%BC_8-3.png" /></p>
+<h2 id="1-storeregisterpage">1. 매장 등록 컴포넌트 - StoreRegisterPage</h2>
+<pre><code>'use client';
+
+import { useState, useEffect } from 'react';
+import { db } from '@/firebase/firebaseConfig';
+import { collection, addDoc, serverTimestamp, query, where, getDocs } from 'firebase/firestore';
+import { Store, BusinessHour, DayOfWeek, HolidayRule } from '@/types/store';
+import Script from 'next/script';
+import { useRouter } from 'next/navigation';
+import { useUserStore } from '@/stores/userStore';
+import BusinessHoursModal from '@/components/modals/BusinessHoursModal';
+import HolidayRuleModal from '@/components/modals/HolidayRuleModal';
+
+const categories = [
+  '한식', '중식', '일식', '양식', '분식', '치킨', '피자', '패스트푸드',
+  '고기/구이', '족발/보쌈', '찜/탕/찌개', '도시락', '야식', '해산물',
+  '디저트', '베이커리', '카페', '커피/음료', '샐러드', '브런치', '기타',
+];
+
+const emptyBusinessHours: Record&lt;DayOfWeek, BusinessHour&gt; = {
+  월: { opening: '', closing: '' },
+  화: { opening: '', closing: '' },
+  수: { opening: '', closing: '' },
+  목: { opening: '', closing: '' },
+  금: { opening: '', closing: '' },
+  토: { opening: '', closing: '' },
+  일: { opening: '', closing: '' },
+};
+
+const defaultHolidayRule: HolidayRule = {
+  frequency: '매주',
+  days: [],
+};
+
+export default function StoreRegisterPage() {
+  const [form, setForm] = useState&lt;Store&gt;({
+    category: '',
+    name: '',
+    description: '',
+    zipcode: '',
+    address: '',
+    detailAddress: '',
+    latitude: '',
+    longitude: '',
+    businessHours: emptyBusinessHours,
+    holidayRule: defaultHolidayRule,
+    admin: ''
+  });
+
+  const [showBusinessHoursModal, setShowBusinessHoursModal] = useState(false);
+  const [showHolidayRuleModal, setShowHolidayRuleModal] = useState(false);
+  const router = useRouter();
+  const { userData } = useUserStore();
+
+  const handleChange = (e: React.ChangeEvent&lt;HTMLInputElement | HTMLTextAreaElement&gt;) =&gt; {
+    const { name, value } = e.target;
+    setForm(prev =&gt; ({ ...prev, [name]: value }));
+  };
+
+  const handleAddressSearch = () =&gt; {
+    if (typeof window === 'undefined' || !(window as any).daum?.Postcode) return;
+    new (window as any).daum.Postcode({
+      oncomplete: (data: any) =&gt; {
+        setForm(prev =&gt; ({
+          ...prev,
+          address: data.address,
+          zipcode: data.zonecode,
+        }));
+      }
+    }).open();
+  };
+
+  const handleOpenMap = () =&gt; {
+    if (!form.name || !form.address) {
+      alert('상호명과 주소를 입력해주세요.');
+      return;
+    }
+
+    const query = new URLSearchParams({
+      name: form.name,
+      address: form.address,
+      latitude: String(form.latitude),
+      longitude: String(form.longitude),
+    });
+
+    const width = 800;
+    const height = 600;
+    const left = window.screenX + (window.outerWidth - width) / 2;
+    const top = window.screenY + (window.outerHeight - height) / 2;
+
+    window.open(
+      `/naver-map-view?${query.toString()}`,
+      'mapWindow',
+      `width=${width},height=${height},left=${left},top=${top}`
+    );
+  };
+
+  useEffect(() =&gt; {
+    const messageHandler = (event: MessageEvent) =&gt; {
+      if (event.origin !== window.location.origin) return;
+      if (event.data?.type === 'coords') {
+        setForm(prev =&gt; ({
+          ...prev,
+          latitude: event.data.lat.toString(),
+          longitude: event.data.lng.toString(),
+        }));
+      }
+    };
+    window.addEventListener('message', messageHandler);
+    return () =&gt; window.removeEventListener('message', messageHandler);
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) =&gt; {
+    e.preventDefault();
+
+    if (!userData?.userId) {
+      alert('사용자 정보가 없습니다. 로그인 상태를 확인해주세요.');
+      return;
+    }
+
+    const requiredFields = [
+      { key: 'category', label: '업종' },
+      { key: 'name', label: '상호명' },
+      { key: 'description', label: '소개말' },
+      { key: 'zipcode', label: '우편번호' },
+      { key: 'address', label: '주소' },
+      { key: 'latitude', label: '위도' },
+      { key: 'longitude', label: '경도' },
+    ];
+
+    for (const field of requiredFields) {
+      if (!form[field.key as keyof typeof form]) {
+        alert(`${field.label}을(를) 입력해주세요.`);
+        return;
+      }
+    }
+
+    // 영업시간 하나라도 설정됐는지 체크
+    const hasValidHours = Object.values(form.businessHours).some(
+      (day) =&gt; day.opening &amp;&amp; day.closing
+    );
+    if (!hasValidHours) {
+      alert('영업시간을 설정해주세요.');
+      return;
+    }
+
+    try {
+      const storesRef = collection(db, 'stores');
+      const duplicateQuery = query(
+        storesRef,
+        where('name', '==', form.name.trim()),
+        where('address', '==', form.address.trim())
+      );
+
+      const snapshot = await getDocs(duplicateQuery);
+
+      if (!snapshot.empty) {
+        alert(`이미 등록된 매장입니다.\n\n상호명: ${form.name}\n주소: ${form.address}`);
+        return;
+      }
+
+      await addDoc(storesRef, {
+        ...form,
+        latitude: parseFloat(form.latitude),
+        longitude: parseFloat(form.longitude),
+        admin: userData.userId,
+        createdAt: serverTimestamp(),
+      });
+
+      alert('매장이 등록되었습니다!');
+      router.push('/');
+    } catch (error) {
+      console.error(error);
+      alert('등록 실패');
+    }
+  };
+
+  return (
+    &lt;div className=&quot;max-w-xl mx-auto p-3&quot;&gt;
+      &lt;h1 className=&quot;text-2xl font-bold mb-2 dark:text-white&quot;&gt;매장 등록&lt;/h1&gt;
+      &lt;form onSubmit={handleSubmit} className=&quot;space-y-4&quot;&gt;
+
+        {/* 업종 선택 */}
+        &lt;div&gt;
+          &lt;label className=&quot;block font-semibold mb-2 dark:text-gray-200&quot;&gt;업종 선택&lt;/label&gt;
+          &lt;div className=&quot;flex flex-wrap gap-2&quot;&gt;
+            {categories.map(c =&gt; (
+              &lt;button
+                key={c}
+                type=&quot;button&quot;
+                onClick={() =&gt; setForm(prev =&gt; ({ ...prev, category: c }))}
+                className={`px-3 py-1.5 rounded-full border text-xs transition
+                  ${form.category === c
+                    ? 'bg-blue-600 text-white border-blue-600'
+                    : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-500 dark:hover:bg-gray-600'
+                  }`}
+              &gt;
+                {c}
+              &lt;/button&gt;
+            ))}
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        {/* 텍스트 입력 필드 예시 */}
+        &lt;input
+          type=&quot;text&quot;
+          name=&quot;name&quot;
+          placeholder=&quot;상호명&quot;
+          value={form.name}
+          onChange={handleChange}
+          className=&quot;w-full p-2 border text-xs border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-800 text-black dark:text-white&quot;
+        /&gt;
+
+        {/* textarea */}
+        &lt;textarea
+          name=&quot;description&quot;
+          placeholder=&quot;소개말&quot;
+          value={form.description}
+          onChange={handleChange}
+          className=&quot;w-full p-2 border text-xs border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-800 text-black dark:text-white&quot;
+        /&gt;
+
+        {/* 영업시간 버튼 */}
+        &lt;button
+          type=&quot;button&quot;
+          onClick={() =&gt; setShowBusinessHoursModal(true)}
+          className=&quot;w-full p-2 border text-xs rounded bg-gray-100 dark:bg-gray-700 dark:text-white&quot;
+        &gt;
+          영업시간 설정
+        &lt;/button&gt;
+
+        {/* 설정된 영업시간 보기 */}
+        &lt;div className=&quot;text-xs text-gray-600&quot;&gt;
+          {Object.entries(form.businessHours).every(([_, h]) =&gt; !h.opening &amp;&amp; !h.closing) ? (
+            &lt;span className=&quot;italic&quot;&gt;영업시간 미설정&lt;/span&gt;
+          ) : (
+            &lt;ul className=&quot;mt-0 space-y-1&quot;&gt;
+              {Object.entries(form.businessHours).map(([day, h]) =&gt; (
+                &lt;li key={day}&gt;
+                  &lt;span className=&quot;font-semibold&quot;&gt;{day}&lt;/span&gt;:&amp;nbsp;
+                  {h.opening &amp;&amp; h.closing ? `${h.opening} ~ ${h.closing}` : '휴무'}
+                &lt;/li&gt;
+              ))}
+            &lt;/ul&gt;
+          )}
+        &lt;/div&gt;
+
+        {/* 휴무일 설정 버튼 */}
+        &lt;button
+          type=&quot;button&quot;
+          onClick={() =&gt; setShowHolidayRuleModal(true)}
+          className=&quot;w-full p-2 border text-xs rounded bg-gray-100 dark:bg-gray-700 dark:text-white&quot;
+        &gt;
+          휴무일 설정
+        &lt;/button&gt;
+
+        {/* 휴무 규칙 요약 */}
+        &lt;p className=&quot;mt-0 text-xs text-gray-600 dark:text-gray-300&quot;&gt;
+          {form.holidayRule.frequency} {form.holidayRule.days.join(', ')}
+          {form.holidayRule.weeks?.length
+            ? ` (매월 ${form.holidayRule.weeks.join(', ')}주차)`
+            : ''} 휴무
+        &lt;/p&gt;
+
+
+        {/* 우편번호 및 주소 */}
+        &lt;input
+          type=&quot;text&quot;
+          name=&quot;zipcode&quot;
+          placeholder=&quot;우편번호 (클릭하여 검색)&quot;
+          value={form.zipcode}
+          readOnly
+          onClick={handleAddressSearch}
+          className=&quot;w-full p-2 text-xs border border-gray-300 dark:border-gray-600
+                    rounded bg-gray-100 dark:bg-gray-800 
+                    text-black dark:text-white 
+                    placeholder-gray-400 dark:placeholder-gray-500 
+                    cursor-pointer&quot;
+        /&gt;
+
+        &lt;input
+          type=&quot;text&quot;
+          name=&quot;address&quot;
+          placeholder=&quot;주소&quot;
+          value={form.address}
+          readOnly
+          onClick={handleAddressSearch}
+          className=&quot;w-full p-2 text-xs border border-gray-300 dark:border-gray-600 
+                    rounded bg-gray-100 dark:bg-gray-800 
+                    text-black dark:text-white 
+                    placeholder-gray-400 dark:placeholder-gray-500 
+                    cursor-pointer&quot;
+        /&gt;
+
+        &lt;input
+          type=&quot;text&quot;
+          name=&quot;detailAddress&quot;
+          placeholder=&quot;상세주소&quot;
+          value={form.detailAddress}
+          onChange={handleChange}
+          className=&quot;w-full p-2 text-xs border border-gray-300 dark:border-gray-600 
+                    rounded bg-white dark:bg-gray-800 
+                    text-black dark:text-white 
+                    placeholder-gray-400 dark:placeholder-gray-500&quot;
+        /&gt;
+
+
+        {/* 위도 / 경도 필드 */}
+        &lt;div className=&quot;flex gap-4&quot;&gt;
+          &lt;input
+            type=&quot;text&quot;
+            name=&quot;latitude&quot;
+            placeholder=&quot;위도&quot;
+            value={form.latitude}
+            readOnly
+            onClick={handleOpenMap}
+            className=&quot;w-full p-2 border text-xs border-gray-300 dark:border-gray-600 
+                      rounded bg-gray-100 dark:bg-gray-800 text-black dark:text-white&quot;
+          /&gt;
+          &lt;input
+            type=&quot;text&quot;
+            name=&quot;longitude&quot;
+            placeholder=&quot;경도&quot;
+            value={form.longitude}
+            readOnly
+            onClick={handleOpenMap}
+            className=&quot;w-full p-2 text-xs border border-gray-300 dark:border-gray-600 rounded
+                       bg-gray-100 dark:bg-gray-800 text-black dark:text-white&quot;
+          /&gt;
+        &lt;/div&gt;
+
+        {/* 등록 버튼 */}
+        &lt;button
+          type=&quot;submit&quot;
+          className=&quot;w-full text-xs bg-blue-600 text-white py-2 rounded hover:bg-blue-700
+                   dark:hover:bg-blue-500&quot;
+        &gt;
+          등록하기
+        &lt;/button&gt;
+      &lt;/form&gt;
+
+      {showBusinessHoursModal &amp;&amp; (
+        &lt;BusinessHoursModal
+          defaultValue={form.businessHours}
+          onSave={(updatedHours) =&gt; {
+            setForm(prev =&gt; ({ ...prev, businessHours: updatedHours }));
+            setShowBusinessHoursModal(false);
+          }}
+          onCancel={() =&gt; setShowBusinessHoursModal(false)}
+        /&gt;
+      )}
+
+      {showHolidayRuleModal &amp;&amp; (
+        &lt;HolidayRuleModal
+          isOpen={true}
+          defaultValue={form.holidayRule ?? defaultHolidayRule}
+          onSave={(updatedRule) =&gt; {
+            setForm(prev =&gt; ({ ...prev, holidayRule: updatedRule }));
+            setShowHolidayRuleModal(false);
+          }}
+          onCancel={() =&gt; setShowHolidayRuleModal(false)}
+        /&gt;
+      )}
+
+      &lt;Script src=&quot;https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js&quot; strategy=&quot;lazyOnload&quot; /&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<h2 id="2">2. 매장 휴무일 설정 로직</h2>
+<p><strong>매장 휴무일 설정 로직</strong>은 HolidayRuleModal을 통해 이루어지며,<br />
+사용자가 반복 주기(frequency), 요일(days), 주차(weeks)를 선택할 수 있도록 설계되어 있습니다.   </p>
+<h3 id="1">✅ 1. 휴무일 관련 데이터 구조</h3>
+<pre><code>export interface HolidayRule {
+  frequency: '매주' | '격주' | '한 달 1회' | '한 달 2회'; // 반복 주기
+  days: DayOfWeek[];  // 휴무 요일들, 예: ['일', '수']
+  weeks?: number[];   // 몇 주차에 적용할지, 예: [1, 3]
+}
+</code></pre>
+<h3 id="2-defaultholidayrule">✅ 2. 휴무일 기본값 (defaultHolidayRule)</h3>
+<pre><code>const defaultHolidayRule: HolidayRule = {
+  frequency: '매주',
+  days: [],
+};
+</code></pre>
+<ul>
+<li>모달을 처음 열 때의 기본 상태</li>
+<li>frequency만 있고, days와 weeks는 비어 있음</li>
+</ul>
+<h3 id="3">✅ 3. 휴무일 설정 모달 트리거</h3>
+<pre><code>&lt;button
+  type=&quot;button&quot;
+  onClick={() =&gt; setShowHolidayRuleModal(true)}
+&gt;
+  휴무일 설정
+&lt;/button&gt;
+</code></pre>
+<ul>
+<li>버튼 클릭 시 HolidayRuleModal이 열림</li>
+</ul>
+<h3 id="4">✅ 4. 휴무일 설정 저장 처리</h3>
+<pre><code>&lt;HolidayRuleModal
+  isOpen={true}
+  defaultValue={form.holidayRule ?? defaultHolidayRule}
+  onSave={(updatedRule) =&gt; {
+    setForm(prev =&gt; ({ ...prev, holidayRule: updatedRule }));
+    setShowHolidayRuleModal(false);
+  }}
+  onCancel={() =&gt; setShowHolidayRuleModal(false)}
+/&gt;
+</code></pre>
+<p><strong>여기서:</strong></p>
+<ul>
+<li>defaultValue는 현재 form.holidayRule</li>
+<li>모달 내에서 사용자가 설정한 값을 onSave로 전달하면 상태 업데이트</li>
+<li>onCancel을 누르면 모달 닫기만 수행</li>
+</ul>
+<h3 id="5">✅ 5. 설정된 휴무일 요약 표시</h3>
+<pre><code>&lt;p className=&quot;mt-0 text-xs text-gray-600 dark:text-gray-300&quot;&gt;
+  {form.holidayRule.frequency} {form.holidayRule.days.join(', ')}
+  {form.holidayRule.weeks?.length
+    ? ` (매월 ${form.holidayRule.weeks.join(', ')}주차)`
+    : ''} 휴무
+&lt;/p&gt;
+</code></pre>
+<p><strong>예시 출력:</strong></p>
+<ul>
+<li>매주 월,화 휴무</li>
+<li>격주 수,금 (매월 2,4주차) 휴무</li>
+</ul>
+<h3 id="6">✅ 6. 전체 흐름 요약</h3>
+<table>
+<thead>
+<tr>
+<th><strong>순서</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td>사용자가 &quot;휴무일 설정&quot; 버튼 클릭</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>HolidayRuleModal 열림 (기존 데이터 전달됨)</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>모달 내에서 주기/요일/주차 선택</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>&quot;저장&quot; 시 → 선택된 설정이 form.holidayRule에 저장됨</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>설정 요약은 본문에 간단히 표시됨</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>최종적으로 Firestore에 저장될 때 이 holidayRule도 함께 저장됨</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-firestore">✅ 7. 저장 예시 (Firestore에 저장될 데이터)</h3>
+<pre><code>{
+  &quot;holidayRule&quot;: {
+    &quot;frequency&quot;: &quot;한 달 2회&quot;,
+    &quot;days&quot;: [&quot;일&quot;],
+    &quot;weeks&quot;: [1, 3]
+  }
+}
+</code></pre>
+<hr />
+<h2 id="holidayrulemodal">HolidayRuleModal 컴포넌트</h2>
+<ul>
+<li>매장 휴무일 설정을 위한 모달 UI입니다. </li>
+<li>사용자는 주기(frequency), 요일(days), 그리고 몇째 주(weeks)를 선택하여 정기적인 휴무 규칙을 정의할 수 있습니다.</li>
+</ul>
+<pre><code>'use client';
+
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  Transition,
+  TransitionChild,
+} from '@headlessui/react';
+import { Fragment, useState } from 'react';
+import type { HolidayRule, HolidayFrequency } from '@/types/store';
+
+export type DayOfWeek = '월' | '화' | '수' | '목' | '금' | '토' | '일';
+
+interface HolidayRuleModalProps {
+  isOpen: boolean;
+  defaultValue: HolidayRule;
+  onSave: (rule: HolidayRule) =&gt; void;
+  onCancel: () =&gt; void;
+}
+
+const allDays: DayOfWeek[] = ['월', '화', '수', '목', '금', '토', '일'];
+
+const emptyRule: HolidayRule = {
+  frequency: '매주',
+  days: [],
+  weeks: [],
+};
+
+export default function HolidayRuleModal({
+  isOpen,
+  defaultValue,
+  onSave,
+  onCancel,
+}: HolidayRuleModalProps) {
+  const [rule, setRule] = useState&lt;HolidayRule&gt;(defaultValue);
+
+  const toggleDay = (day: DayOfWeek) =&gt; {
+    setRule((prev) =&gt; ({
+      ...prev,
+      days: prev.days.includes(day)
+        ? prev.days.filter((d) =&gt; d !== day)
+        : [...prev.days, day],
+    }));
+  };
+
+  const toggleWeek = (week: number) =&gt; {
+    setRule((prev) =&gt; {
+      const current = prev.weeks || [];
+
+      if (prev.frequency === '매월 1회') {
+        return { ...prev, weeks: [week] }; // 한 개만 선택 가능
+      }
+
+      // 매월 2회인 경우: 다중 선택 가능
+      return {
+        ...prev,
+        weeks: current.includes(week)
+          ? current.filter((w) =&gt; w !== week)
+          : [...current, week],
+      };
+    });
+  };
+
+  const handleFrequencyChange = (e: React.ChangeEvent&lt;HTMLSelectElement&gt;) =&gt; {
+    const value = e.target.value as HolidayFrequency;
+    setRule({
+      frequency: value,
+      days: [],
+      weeks: value === '매월 1회' || value === '매월 2회' ? [] : undefined,
+    });
+  };
+
+  const handleClear = () =&gt; {
+    setRule(emptyRule);
+  };
+
+  return (
+    &lt;Transition appear show={isOpen} as={Fragment}&gt;
+      &lt;Dialog as=&quot;div&quot; className=&quot;relative z-50&quot; onClose={onCancel}&gt;
+        &lt;TransitionChild
+          as={Fragment}
+          enter=&quot;ease-out duration-200&quot;
+          enterFrom=&quot;opacity-0&quot;
+          enterTo=&quot;opacity-100&quot;
+          leave=&quot;ease-in duration-150&quot;
+          leaveFrom=&quot;opacity-100&quot;
+          leaveTo=&quot;opacity-0&quot;
+        &gt;
+          &lt;div className=&quot;fixed inset-0 bg-black/30&quot; /&gt;
+        &lt;/TransitionChild&gt;
+
+        &lt;div className=&quot;fixed inset-0 flex items-center justify-center p-4&quot;&gt;
+          &lt;TransitionChild
+            as={Fragment}
+            enter=&quot;ease-out duration-200&quot;
+            enterFrom=&quot;opacity-0 scale-95&quot;
+            enterTo=&quot;opacity-100 scale-100&quot;
+            leave=&quot;ease-in duration-150&quot;
+            leaveFrom=&quot;opacity-100 scale-100&quot;
+            leaveTo=&quot;opacity-0 scale-95&quot;
+          &gt;
+            &lt;DialogPanel className=&quot;w-full max-w-md bg-white rounded-xl p-6 shadow-xl&quot;&gt;
+              &lt;DialogTitle className=&quot;text-lg font-semibold mb-4&quot;&gt;휴무일 설정&lt;/DialogTitle&gt;
+
+              &lt;div className=&quot;space-y-4&quot;&gt;
+                {/* 주기 선택 */}
+                &lt;div&gt;
+                  &lt;label className=&quot;block text-sm font-medium mb-1&quot;&gt;휴무 주기&lt;/label&gt;
+                  &lt;select
+                    className=&quot;w-full p-2 border rounded&quot;
+                    value={rule.frequency}
+                    onChange={handleFrequencyChange}
+                  &gt;
+                    &lt;option value=&quot;매주&quot;&gt;매주&lt;/option&gt;
+                    &lt;option value=&quot;격주&quot;&gt;격주&lt;/option&gt;
+                    &lt;option value=&quot;매월 1회&quot;&gt;매월 1회&lt;/option&gt;
+                    &lt;option value=&quot;매월 2회&quot;&gt;매월 2회&lt;/option&gt;
+                  &lt;/select&gt;
+                &lt;/div&gt;
+
+                {/* 요일 선택 */}
+                &lt;div&gt;
+                  &lt;label className=&quot;block text-sm font-medium mb-1&quot;&gt;요일 선택&lt;/label&gt;
+                  &lt;div className=&quot;flex gap-2 flex-wrap&quot;&gt;
+                    {allDays.map((day) =&gt; (
+                      &lt;button
+                        key={day}
+                        type=&quot;button&quot;
+                        onClick={() =&gt; toggleDay(day)}
+                        className={`px-3 py-1.5 rounded border text-sm transition ${
+                          rule.days.includes(day)
+                            ? 'bg-blue-600 text-white border-blue-600'
+                            : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
+                        }`}
+                      &gt;
+                        {day}
+                      &lt;/button&gt;
+                    ))}
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+                {/* 주차 선택 */}
+                {(rule.frequency === '매월 1회' || rule.frequency === '매월 2회') &amp;&amp; (
+                  &lt;div&gt;
+                    &lt;label className=&quot;block text-sm font-medium mb-1&quot;&gt;몇째 주&lt;/label&gt;
+                    &lt;div className=&quot;flex gap-2&quot;&gt;
+                      {[1, 2, 3, 4, 5].map((week) =&gt; (
+                        &lt;button
+                          key={week}
+                          type=&quot;button&quot;
+                          onClick={() =&gt; toggleWeek(week)}
+                          className={`px-3 py-1.5 rounded border text-sm transition ${
+                            rule.weeks?.includes(week)
+                              ? 'bg-green-600 text-white border-green-600'
+                              : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
+                          }`}
+                        &gt;
+                          {week}주차
+                        &lt;/button&gt;
+                      ))}
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                )}
+              &lt;/div&gt;
+
+              &lt;div className=&quot;mt-6 flex justify-between items-center&quot;&gt;
+                &lt;button
+                  onClick={handleClear}
+                  className=&quot;px-4 py-2 rounded border border-gray-300 hover:bg-gray-100&quot;
+                &gt;
+                  지우기
+                &lt;/button&gt;
+
+                &lt;div className=&quot;flex gap-2&quot;&gt;
+                  &lt;button
+                    onClick={onCancel}
+                    className=&quot;px-4 py-2 rounded border border-gray-300 hover:bg-gray-100&quot;
+                  &gt;
+                    취소
+                  &lt;/button&gt;
+                  &lt;button
+                    onClick={() =&gt; onSave(rule)}
+                    className=&quot;px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700&quot;
+                  &gt;
+                    저장
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/DialogPanel&gt;
+          &lt;/TransitionChild&gt;
+        &lt;/div&gt;
+      &lt;/Dialog&gt;
+    &lt;/Transition&gt;
+  );
+}
+</code></pre>
+<h3 id="1_1">📦 1. 주요 타입 정의</h3>
+<pre><code>export interface HolidayRule {
+  frequency: '매주' | '격주' | '매월 1회' | '매월 2회';
+  days: DayOfWeek[]; // 선택한 요일
+  weeks?: number[]; // '매월 1회' 또는 '매월 2회'일 때 사용
+}
+</code></pre>
+<pre><code>export type DayOfWeek = '월' | '화' | '수' | '목' | '금' | '토' | '일';
+</code></pre>
+<h3 id="2_1">🔄 2. 컴포넌트 동작 흐름</h3>
+<h4 id="1_2"><strong>1. 초기 상태 세팅</strong></h4>
+<pre><code>const [rule, setRule] = useState&lt;HolidayRule&gt;(defaultValue);
+</code></pre>
+<ul>
+<li>부모 컴포넌트에서 전달된 defaultValue로 상태 초기화</li>
+</ul>
+<h4 id="2-frequency"><strong>2. 휴무 주기 선택 (frequency)</strong></h4>
+<pre><code>&lt;select onChange={handleFrequencyChange}&gt;
+  &lt;option value=&quot;매주&quot;&gt;매주&lt;/option&gt;
+  &lt;option value=&quot;격주&quot;&gt;격주&lt;/option&gt;
+  &lt;option value=&quot;매월 1회&quot;&gt;매월 1회&lt;/option&gt;
+  &lt;option value=&quot;매월 2회&quot;&gt;매월 2회&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<pre><code>const handleFrequencyChange = (e) =&gt; {
+  setRule({
+    frequency: value,
+    days: [],
+    weeks: value === '매월 1회' || value === '매월 2회' ? [] : undefined,
+  });
+};
+</code></pre>
+<ul>
+<li>주기 변경 시 기존 days와 weeks 초기화</li>
+<li>주차 선택이 필요한 주기 (매월 1회, 매월 2회)일 때만 weeks 배열 유지</li>
+</ul>
+<h4 id="3_1"><strong>3. 요일 선택</strong></h4>
+<pre><code>const toggleDay = (day: DayOfWeek) =&gt; {
+  // 토글 방식으로 day 추가/제거
+};
+</code></pre>
+<pre><code>{allDays.map((day) =&gt; (
+  &lt;button onClick={() =&gt; toggleDay(day)}&gt;
+    {day}
+  &lt;/button&gt;
+))}
+</code></pre>
+<ul>
+<li>선택한 요일은 파란색으로 강조 (bg-blue-600)</li>
+</ul>
+<h4 id="4-15"><strong>4. 주차 선택 (1~5주차)</strong></h4>
+<pre><code>{(rule.frequency === '매월 1회' || rule.frequency === '매월 2회') &amp;&amp; (
+  // 1~5주차 선택 UI 표시
+)}
+</code></pre>
+<pre><code>const toggleWeek = (week: number) =&gt; {
+  if (rule.frequency === '매월 1회') {
+    setRule({ ...rule, weeks: [week] }); // 하나만 선택 가능
+  } else {
+    // 매월 2회는 토글 방식으로 다중 선택
+  }
+};
+</code></pre>
+<ul>
+<li>선택한 주차는 초록색으로 강조 (bg-green-600)</li>
+</ul>
+<h4 id="5_1"><strong>5. 지우기 버튼</strong></h4>
+<pre><code>&lt;button onClick={handleClear}&gt;지우기&lt;/button&gt;
+</code></pre>
+<pre><code>const emptyRule = { frequency: '매주', days: [], weeks: [] };
+</code></pre>
+<ul>
+<li>휴무 규칙을 초기 상태로 되돌림</li>
+</ul>
+<h4 id="6_1"><strong>6. 취소 / 저장</strong></h4>
+<pre><code>&lt;button onClick={onCancel}&gt;취소&lt;/button&gt;
+&lt;button onClick={() =&gt; onSave(rule)}&gt;저장&lt;/button&gt;
+</code></pre>
+<ul>
+<li>취소: 모달 닫기만 수행</li>
+<li>저장: 현재 설정된 rule을 부모 컴포넌트로 전달</li>
+</ul>
+<h4 id="_1"><strong>🎯 사용 예시</strong></h4>
+<p>매월 2회, 월요일과 수요일, 2주차/4주차에 쉬는 경우</p>
+<pre><code>{
+  frequency: '매월 2회',
+  days: ['월', '수'],
+  weeks: [2, 4],
+}
+</code></pre>
+<h4 id="ux"><strong>🧠 UX 포인트</strong></h4>
+<ul>
+<li>frequency에 따라 동적으로 weeks 표시 유무 제어</li>
+<li>요일, 주차는 토글 UI</li>
+<li>선택된 항목만 색상 강조 → 사용자 피드백 명확</li>
+<li>onSave와 onCancel로 부모 컴포넌트와의 연결 깔끔하게 분리</li>
+</ul>
+<h3 id="_2"><strong>✅ 요약</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>기능</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>휴무 주기 선택</td>
+<td>매주, 격주, 매월 1회, 매월 2회</td>
+</tr>
+<tr>
+<td>요일 선택</td>
+<td>복수 선택 가능</td>
+</tr>
+<tr>
+<td>몇째 주 선택</td>
+<td>주기가 매월일 때만 표시, 매월 1회는 단일 선택</td>
+</tr>
+<tr>
+<td>저장/취소/초기화</td>
+<td>모달 닫기 또는 설정 반영 가능</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">휴무일 판단</h2>
+<p>이 StoreLandingPage 컴포넌트에서는 오늘이 매장 휴무일인지 판단하고, <br />
+그에 따라 영업 상태를 보여주는 기능이 구현되어 있습니다.   </p>
+<h3 id="_4">🔍 휴무일 판단 및 화면 표출 전체 흐름</h3>
+<h4 id="1_3">✅ 1. 오늘의 요일과 날짜 정보 계산</h4>
+<pre><code>const today = new Date();
+const dayIndex = today.getDay(); // 0(일) ~ 6(토)
+const days: DayOfWeek[] = ['일', '월', '화', '수', '목', '금', '토'];
+const todayLabel = days[dayIndex]; // 현재 요일 문자열 ('월', '화' 등)
+</code></pre>
+<h4 id="2_2">✅ 2. 오늘이 휴무일인지 여부 판별</h4>
+<pre><code>const rule: HolidayRule | undefined = store.holidayRule;
+
+const isTodayHoliday =
+  rule?.days?.includes(todayLabel) &amp;&amp;
+  (
+    rule.frequency === '매주' || // 매주 해당 요일
+    rule.frequency === '격주' || // (격주도 같은 방식으로 적용됨)
+    (
+      (rule.frequency === '매월 1회' || rule.frequency === '매월 2회') &amp;&amp;
+      rule.weeks?.includes(getWeekNumberOfMonth(today))
+    )
+  );
+</code></pre>
+<ul>
+<li>rule.days에 오늘 요일이 포함되어 있고</li>
+<li>주기가 매주, 격주, 또는 매월 N회 + 주차 조건 충족이면 휴무일로 판정합니다.</li>
+</ul>
+<p><strong>👉 getWeekNumberOfMonth() 함수 설명</strong></p>
+<pre><code>const getWeekNumberOfMonth = (date: Date): number =&gt; {
+  const first = new Date(date.getFullYear(), date.getMonth(), 1); // 그 달 1일
+  const offset = first.getDay(); // 그 달 1일이 무슨 요일인지
+  const adjustedDate = date.getDate() + offset;
+  return Math.ceil(adjustedDate / 7); // 주차 계산
+};
+</code></pre>
+<h4 id="3_2">✅ 3. 오늘의 영업시간 정보와 비교</h4>
+<pre><code>const todayHour = store.businessHours[todayLabel]; // 오늘의 영업시간 정보
+</code></pre>
+<ul>
+<li>todayHour.opening과 closing이 없거나</li>
+<li>isTodayHoliday === true이면 → 휴무 처리</li>
+</ul>
+<h4 id="4-rendertodaybusinesshour">✅ 4. 화면 표출 (renderTodayBusinessHour())</h4>
+<p><strong>🔹 휴무일인 경우:</strong></p>
+<pre><code>&lt;p className=&quot;text-sm&quot;&gt;&lt;strong&gt;{todayLabel}요일&lt;/strong&gt;: 오늘은 휴무입니다.&lt;/p&gt;
+&lt;p className=&quot;text-sm font-semibold mt-1 text-red-500&quot;&gt;영업 중이 아닙니다.&lt;/p&gt;
+</code></pre>
+<p><strong>🔹 영업일인 경우:</strong><br />
+opening, closing과 현재 시간을 비교하여 영업 중인지 계산:</p>
+<pre><code>const isOpenNow = now &gt;= openTime &amp;&amp; now &lt; closeTime;
+</code></pre>
+<ul>
+<li>결과에 따라 메시지 표시:</li>
+</ul>
+<pre><code>&lt;p&gt;{todayLabel}요일: {todayHour.opening} ~ {todayHour.closing}&lt;/p&gt;
+&lt;p className={isOpenNow ? 'text-green-600' : 'text-red-500'}&gt;
+  {isOpenNow ? '영업 중입니다' : '영업 중이 아닙니다.'}
+&lt;/p&gt;
+</code></pre>
+<h4 id="5-renderholidayrule">✅ 5. 휴무일 요약 표출 (renderHolidayRule())</h4>
+<pre><code>&lt;p className=&quot;text-sm&quot;&gt;
+  {rule.frequency} 휴무: {rule.days.join(', ')}
+  {rule.weeks &amp;&amp; rule.weeks.length &gt; 0 &amp;&amp; &lt;&gt; (매월 {rule.weeks.join(', ')}주차)&lt;/&gt;}
+&lt;/p&gt;
+</code></pre>
+<p><strong>예시 출력:</strong></p>
+<pre><code>매월 2회 휴무: 월, 수 (매월 1, 3주차)
+</code></pre>
+<h4 id="_5">✅ 요약</h4>
+<table>
+<thead>
+<tr>
+<th><strong>항목</strong></th>
+<th><strong>설명</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>요일 판별</strong></td>
+<td>Date.getDay()를 활용해 오늘의 요일 (월, 화 등)을 얻음</td>
+</tr>
+<tr>
+<td><strong>주차 판별</strong></td>
+<td>getWeekNumberOfMonth()로 현재 달의 몇째 주인지 계산</td>
+</tr>
+<tr>
+<td><strong>휴무 판단</strong></td>
+<td>holidayRule.frequency + days + weeks를 조합하여 휴무 여부 판단</td>
+</tr>
+<tr>
+<td><strong>영업 시간 판별</strong></td>
+<td>오늘의 opening/closing과 현재 시간 비교</td>
+</tr>
+<tr>
+<td><strong>결과 출력</strong></td>
+<td>영업 중 / 휴무 여부를 화면에 문구와 색상으로 구분하여 출력</td>
+</tr>
+</tbody>
+</table></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 7월 31일 3:37 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@inetsos/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@inetsos/">@inetsos</a>
+                        </h1>
+                        
+                            <p class="text-gray-600 dark:text-gray-400">그랜파 개발자는 정년퇴직한 프로그래머로 일하고 싶은 백수입니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/15/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/15/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">7</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/4752/add_comment/"
+                      method="post"
+                      hx-post="/blog/4752/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="uPYFNge2FPb7anjxpC1FHeOwvb9CQsR3PkdgfCJxRFWZnAYn4IuuHkCzwvbIctH2">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @inetsos 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@inetsos/4852/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            시지 라이프, 지역 커뮤니티 웹앱 개발 -  메뉴 카테고리 관리 구현 [9]
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 08월 12일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@inetsos/4752/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            시지 라이프, 지역 커뮤니티 웹앱 개발 - 매장 휴무일 설정 [8]
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 07월 31일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@inetsos/4731/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            시지 라이프, 지역 커뮤니티 웹앱 - 매장 영업시간 설정 [7]
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 07월 28일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@inetsos/4713/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            수성구 시지 라이프 웹앱 개발 - 네이버 지도를 통하여 매장의 위치 입력 [6]
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 07월 26일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@inetsos/4710/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            대구 수성구 시지 라이프 웹앱 개발 - 카카오 주소 API로 주소 입력 [5]
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 07월 25일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 63
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/15/4752/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @inetsos 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/5490">
+                    
+                        <img src="https://static.wikidocs.net/images/book/title_oVqeZu7.png"
+                             alt="플라스크로 만드는 myBlog"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/5490"
+                           class="hover:text-red-500 dark:hover:text-red-400">플라스크로 만드는 myBlog</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        ###책의 사용법   
+플라스크와 개발에 관련된 설명은 하지 않고, 코딩의 흐름에 집중하였습니다.  
+마치 프로그래머가 S/W 설계서를 보면서 코딩을 하는 듯한 느낌으로 작성…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2021년 1월 13일 11:06 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/15679">
+                    
+                        <img src="https://static.wikidocs.net/images/book/dalle_tO673tg_bMDNaTT_4yPtuZK_PbBfn1d_mlvUFgv_Efj8S8U_07KzyXY.png"
+                             alt="ChatGPT에게 물었습니다 - PWA 개발"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/15679"
+                           class="hover:text-red-500 dark:hover:text-red-400">ChatGPT에게 물었습니다 - PWA 개발</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                           
+ 현직 머신 비전 프로그래머입니다.
+ 
+PWA를 알게 되었습니다. ChatGPT가 앱 개발을 잘 한다고 합니다.
+ChatGPT에게 물어가면서 PWA 웹앱을 개발해 …
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2024년 9월 24일 9:02 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/16420">
+                    
+                        <img src="https://static.wikidocs.net/images/book/dalle_tRx1A3z_DRtMBus_UcOMshJ_ziTeZub_8roCEfi_Jty1WUw_Qx1ugac_qogF7T6_BJTprKM_Dc2PawG.png"
+                             alt="Vue PWA mylog 개발"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/16420"
+                           class="hover:text-red-500 dark:hover:text-red-400">Vue PWA mylog 개발</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        mylog - 내 일상의 기록
+
+  Log는 컴퓨팅에서 운영 체제나 소프트웨어가 실행 중에 발생하는 이벤트나 메시지를 기록하는 것입니다. 내가 살아가면서 삶의 순간에 그때의 …
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2024년 11월 6일 5:20 오전</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">232</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-4752"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-4752"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/4752/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@inetsos/4852/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/4852/그림_9-1.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            시지 라이프, 지역 커뮤니티 웹앱 개발 -  메뉴 카테고리 관리 구현 [9]
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                
+
+
+[TOC]
+
+시지 라이프 - 메뉴 카테고리 관리
+
+메뉴의 구조를 생각해 봅시다.
+
+…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>7개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@inetsos/4713/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/4713/그림_6-1.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            수성구 시지 라이프 웹앱 개발 - 네이버 지도를 통하여 매장의 위치 입력 [6]
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                
+
+
+[TOC]
+
+시지 라이프 매장 등록 - 네이버 지도를 통해 위치 입력
+
+주소만 가지…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>8개월 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=cbc774b'/>
