@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="Android 15 + Magisk + Burp Suite 프록시 설정">
+    <meta property="og:type" content="Android 15 + Magisk + Burp Suite 프록시 설정">
+    <meta property="og:title" content="Android 15 + Magisk + Burp Suite 프록시 설정">
+    <meta property="og:description" content="Android 15 + Magisk + Burp Suite 프록시 설정">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@chubbyarnold/7986/">
+
+        
+    <title>Android 15 + Magisk + Burp Suite 프록시 설정
+        - no title
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@chubbyarnold/6449/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@chubbyarnold/7992/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">Android 15 + Magisk + Burp Suite 프록시 설정</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@chubbyarnold/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @chubbyarnold
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 2월 19일 2:14 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="android-15-magisk-burp-suite">Android 15 + Magisk + Burp Suite 프록시 설정 가이드</h2>
+<hr />
+<h2 id="1">1. 환경 및 선수 조건</h2>
+<h3 id="_1">필요 도구</h3>
+<table>
+<thead>
+<tr>
+<th>도구</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Magisk 29.0</td>
+<td>Android 루팅 및 모듈 관리</td>
+</tr>
+<tr>
+<td>Burp Suite</td>
+<td>프록시 및 인증서 발급</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>HTTP 서버로 인증서 전송</td>
+</tr>
+<tr>
+<td>OpenSSL</td>
+<td>인증서 형식 변환 (필요 시)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">네트워크 구성</h3>
+<ul>
+<li>Android 기기와 PC가 <strong>동일한 Wi-Fi</strong> 네트워크에 연결되어 있어야 함</li>
+</ul>
+<hr />
+<h2 id="2-alwaystrustusercerts">2. AlwaysTrustUserCerts 모듈 설치</h2>
+<h3 id="_3">모듈 다운로드</h3>
+<pre><code>https://github.com/NVISOsecurity/MagiskTrustUserCerts/releases/download/v0.4.1/AlwaysTrustUserCerts.zip
+</code></pre>
+<h3 id="magisk">Magisk에서 설치</h3>
+<ol>
+<li>다운로드한 <code>AlwaysTrustUserCerts.zip</code>을 기기로 전송</li>
+<li>Magisk 실행 → 하단 <strong>모듈</strong> 탭 클릭</li>
+<li><strong>저장소에서 설치</strong> → <code>AlwaysTrustUserCerts.zip</code> 선택</li>
+<li>설치 완료 후 <strong>다시 시작</strong> 버튼으로 재부팅</li>
+</ol>
+<hr />
+<h2 id="3-burp">3. Burp 인증서 발급</h2>
+<h3 id="ca-certificate">CA Certificate 다운로드</h3>
+<ol>
+<li>Android 기기에서 Burp 프록시가 설정된 상태로 브라우저 열기</li>
+<li><code>http://burp</code> 접속</li>
+<li><strong>CA Certificate</strong> 클릭하여 <code>cacert.der</code> 다운로드</li>
+</ol>
+<h3 id="_4">파일 형식 이해</h3>
+<p>인증서는 <strong>데이터 형식</strong>과 <strong>확장자</strong>가 분리된 개념</p>
+<table>
+<thead>
+<tr>
+<th>형식</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DER</strong></td>
+<td>바이너리 형식 (사람이 읽을 수 없음)</td>
+</tr>
+<tr>
+<td><strong>PEM</strong></td>
+<td>Base64 텍스트 형식 (<code>-----BEGIN CERTIFICATE-----</code> 로 시작)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>확장자</th>
+<th>주로 담긴 내용</th>
+<th>주로 쓰는 곳</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.der</code></td>
+<td>DER (바이너리)</td>
+<td>Java, Android</td>
+</tr>
+<tr>
+<td><code>.cer</code></td>
+<td>DER 또는 PEM</td>
+<td>Windows</td>
+</tr>
+<tr>
+<td><code>.crt</code></td>
+<td>PEM 또는 DER</td>
+<td>Linux, Android</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>.cer</code>와 <code>.crt</code>는 사실상 동일하며 플랫폼 관습 차이일 뿐</p>
+</blockquote>
+<hr />
+<h2 id="4-python-http">4. Python HTTP 서버로 인증서 전송</h2>
+<h3 id="pc-http">PC에서 HTTP 서버 실행</h3>
+<pre><code class="language-bash"># 인증서가 있는 디렉토리로 이동
+cd 인증서_경로
+
+# HTTP 서버 실행 (기본 포트 8000)
+python -m http.server 8000
+</code></pre>
+<h3 id="android">Android에서 다운로드</h3>
+<ol>
+<li>PC의 IP 확인 (예: <code>192.168.0.10</code>)</li>
+<li>Android 브라우저에서 <code>http://192.168.0.10:8000</code> 접속</li>
+<li><code>cacert.der</code> 파일 다운로드</li>
+</ol>
+<hr />
+<h2 id="5-der-crt">5. 인증서 형식 변환 (DER → CRT)</h2>
+<h3 id="1_1">1차 시도: 확장자만 변경</h3>
+<pre><code>cacert.der  →  cacert.crt
+</code></pre>
+<p>파일 탐색기에서 확장자만 <code>.crt</code>로 변경 후 설치 시도</p>
+<h3 id="2-openssl-pem-1">2차 시도: OpenSSL로 PEM 변환 (1차 실패 시)</h3>
+<pre><code class="language-bash">openssl x509 -inform DER -in cacert.der -out cacert.crt
+</code></pre>
+<blockquote>
+<p>이 명령어는 DER 바이너리를 실제 PEM 형식으로 변환</p>
+</blockquote>
+<hr />
+<h2 id="6-android">6. Android에 인증서 설치</h2>
+<h3 id="_5">설치 경로</h3>
+<pre><code>설정 &gt; 생체인식 및 보안 &gt; 기타 보안 설정 &gt; 디바이스에 저장된 인증서 설치 &gt; CA 인증서
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>VPN 및 앱 사용</strong> 이 아닌 반드시 <strong>CA 인증서</strong> 선택</p>
+</blockquote>
+<h3 id="_6">설치 순서</h3>
+<ol>
+<li>변환한 <code>cacert.crt</code> 선택</li>
+<li>인증서 이름 설정 후 확인</li>
+<li><strong>설정 &gt; 생체인식 및 보안 &gt; 기타 보안 설정 &gt; 인증서 관리 &gt; 사용자</strong> 탭에서 설치 확인</li>
+</ol>
+<h3 id="_7">시스템 인증서로 자동 승격 확인</h3>
+<ol>
+<li>기기 <strong>재부팅</strong></li>
+<li>AlwaysTrustUserCerts 모듈이 사용자 인증서를 시스템 인증서로 자동 승격</li>
+<li><strong>인증서 관리 &gt; 시스템</strong> 탭에서 Burp 인증서 확인</li>
+</ol>
+<hr />
+<h2 id="7-burp">7. Burp 프록시 리스너 설정</h2>
+<ol>
+<li>Burp Suite 실행</li>
+<li><strong>Proxy &gt; Proxy Settings &gt; Proxy Listeners</strong> 에서 <strong>Add</strong> 클릭</li>
+<li>설정:</li>
+<li><strong>Bind to port</strong>: 원하는 포트 (예: <code>8080</code>)</li>
+<li><strong>Bind to address</strong>: <code>All interfaces</code> 선택 (모든 대역 수신)</li>
+<li><strong>OK</strong> 후 리스너 활성화 확인</li>
+</ol>
+<hr />
+<h2 id="8-android-wi-fi">8. Android Wi-Fi 프록시 설정</h2>
+<ol>
+<li><strong>설정 &gt; 연결 &gt; Wi-Fi</strong> 에서 연결된 네트워크 선택</li>
+<li><strong>고급</strong> 메뉴 → <strong>프록시 → 수동</strong> 선택</li>
+<li>설정 입력:</li>
+<li><strong>프록시 호스트 이름</strong>: PC의 IP 주소 (예: <code>192.168.0.10</code>)</li>
+<li><strong>프록시 포트</strong>: Burp 리스너 포트 (예: <code>8080</code>)</li>
+<li>저장 후 브라우저 또는 앱 실행 → Burp에서 트래픽 캡처 확인</li>
+</ol></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 2월 19일 2:15 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@chubbyarnold/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@chubbyarnold/">@chubbyarnold</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1225/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1225/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/7986/add_comment/"
+                      method="post"
+                      hx-post="/blog/7986/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="fEWDGwZatmQ8pnhAFa7T6vTD8sVmlHC3ccgBHAbUjv9JrKRCyRnKYNeURPeZQAcu">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @chubbyarnold 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@chubbyarnold/7992/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Shamiko를 이용한 루팅 우회
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@chubbyarnold/7986/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            Android 15 + Magisk + Burp Suite 프록시 설정
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@chubbyarnold/6449/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            [Kubernetes 스터디] service 란?
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 14일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">175</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-7986"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-7986"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/7986/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=07425e5'/>

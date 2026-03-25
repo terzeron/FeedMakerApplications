@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="엑셀 VBA 코드를 무력화하는 방법 (승인된 복구를 위한 윤리적 가이드)">
+    <meta property="og:type" content="엑셀 VBA 코드를 무력화하는 방법 (승인된 복구를 위한 윤리적 가이드)">
+    <meta property="og:title" content="엑셀 VBA 코드를 무력화하는 방법 (승인된 복구를 위한 윤리적 가이드)">
+    <meta property="og:description" content="엑셀 VBA 코드를 무력화하는 방법 (승인된 복구를 위한 윤리적 가이드)">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/9833/b1JLs.jpg">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@philmartincollins/9833/">
+
+        
+    <title>엑셀 VBA 코드를 무력화하는 방법 (승인된 복구를 위한 윤리적 가이드)
+        - Phil Martin
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@philmartincollins/9469/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">엑셀 VBA 코드를 무력화하는 방법 (승인된 복구를 위한 윤리적 가이드)</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@philmartincollins/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @philmartincollins
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 24일 8:34 오후</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@philmartincollins/?tag=4092"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Excel
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@philmartincollins/?tag=4091"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Vba
+                        </a>
+                    </span>
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@philmartincollins/?tag=4090"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            중단
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>Microsoft Excel의 VBA(Visual Basic for Applications) 환경에서는 개발자가 코드를 암호로 보호할 수 있습니다. 이러한 보호 기능은 지적 재산을 보호하고 무단 수정을 방지하기 위해 고안되었습니다. 하지만 정당한 업무 상황에서 자신의 암호를 잊어버리거나 잠긴 파일을 물려받게 되면 어떻게 될까요?<br />
+이때 다음과 같은 의문이 생깁니다. 엑셀 VBA 코드를 어떻게 해제할 수 있을까요?<br />
+이 글은 무단 &#x27;해제&#x27;에 초점을 맞추기보다는, VBA 프로젝트에 대한 접근 권한을 되찾을 수 있는 윤리적, 합법적, 전문적인 방법을 탐구합니다. 함께 읽어보세요: <a href="https://www.systoolsgroup.com/how-to/remove-password-from-vba-project-in-excel/">remove vba password from xlsm file</a>.</p>
+<h2 id="excel-vba">Excel의 VBA 보호 기능 이해하기</h2>
+<p>복구 방법을 살펴보기 전에, VBA 보호 기능이 어떻게 작동하는지 이해하는 것이 중요합니다.<br />
+개발자가 VBA 프로젝트를 잠그면:<br />
+VBA 편집기에서 코드에 접근할 수 없게 됩니다.<br />
+사용자는 매크로를 보거나 편집할 수 없습니다.<br />
+프로젝트 잠금을 해제하려면 비밀번호가 필요합니다.<br />
+이로 인해 흔히 제기되는 의문이 있습니다. 비밀번호를 분실했을 때 Excel VBA 코드를 어떻게 해제할 수 있을까요? 그 해답은 해킹이 아닌 복구에 있습니다.</p>
+<h2 id="vba">VBA 코드 잠금을 해제하는 것이 정당한 경우는 언제인가요?</h2>
+<p>다음과 같은 경우에만 VBA 코드를 복구하거나 잠금을 해제해야 합니다:<br />
+본인이 파일을 생성했으나 비밀번호를 잊어버린 경우<br />
+파일 소유자로부터 명시적인 허가를 받은 경우<br />
+파일이 소속 조직의 소유인 경우<br />
+레거시 시스템 유지보수를 담당하고 있는 경우<br />
+승인 없이 보호 기능을 해제하려는 시도는 법적 및 윤리적 기준을 위반할 수 있습니다.<br />
+자세히 보기: <a href="https://www.systoolsgroup.com/updates/unprotect-vba-project-in-excel-without-password/">unprotect excel workbook without password vba</a></p>
+<h2 id="1">방법 1: 일반적인 비밀번호 복구 방법을 시도해 보세요</h2>
+<p>고급 해결책을 알아보기 전에, 기본적인 방법부터 시작해 보세요:<br />
+단계:<br />
+자주 사용하는 비밀번호를 떠올려 보세요<br />
+비밀번호 관리자나 관련 문서를 확인해 보세요<br />
+동료나 원래 개발자에게 물어보세요<br />
+프로젝트 노트나 이메일에서 단서를 찾아보세요<br />
+많은 사용자가 간단한 가능성을 간과하곤 합니다. ‘Excel VBA 코드를 어떻게 해제할까?’라고 고민하고 있다면, 때로는 단순히 비밀번호를 기억해내거나 복구하는 것이 해답일 수 있습니다.</p>
+<h2 id="2">방법 2: 백업 파일에서 복원하기</h2>
+<p>백업을 관리하고 있다면, 이것이 가장 안전한 해결책이 될 수 있습니다.<br />
+단계:<br />
+Excel 파일의 이전 버전을 검색하세요<br />
+VBA가 잠겨 있지 않을 수 있는 버전을 여세요<br />
+코드를 새 통합 문서로 추출하세요<br />
+이 방법은 어떤 것도 “해킹”할 필요가 없으며 데이터 무결성을 보장합니다.</p>
+<h2 id="3">방법 3: 신뢰할 수 있는 전문 도구 사용하기</h2>
+<p>수동적인 방법이 실패할 경우, 전문 소프트웨어를 사용하는 것이 가장 안전한 방법입니다.<br />
+만약 진지하게 “Excel VBA 코드를 어떻게 해제하나요?”라고 묻는다면, 가장 윤리적인 답변은 다음과 같습니다:<br />
+👉 신뢰할 수 있는 VBA 비밀번호 복구 도구를 사용하세요</p>
+<h2 id="vba_1">추천 솔루션: 최고의 VBA 암호 제거 도구</h2>
+<p>이 분야에서 가장 신뢰받는 솔루션 중 하나는 <a href="https://www.systoolsgroup.com/vba-password-remover.html">SysTools VBA Password Remover</a>입니다.<br />
+이 제품을 선택해야 하는 이유는 무엇일까요?<br />
+파일을 손상시키지 않고 VBA 프로젝트 암호를 제거합니다<br />
+다양한 Excel 버전을 지원합니다<br />
+원본 데이터의 무결성을 유지합니다<br />
+간단하고 사용자 친화적인 인터페이스<br />
+전문적인 기술 지식이 필요하지 않습니다<br />
+작동 원리 (개요):<br />
+소프트웨어를 설치합니다<br />
+잠긴 Excel 파일을 업로드합니다<br />
+도구가 처리하여 보호 기능을 제거하도록 합니다<br />
+VBA 코드에 다시 액세스합니다<br />
+&#x27;Excel VBA 코드를 해제하는 방법&#x27;을 찾아 위험한 방법을 끝없이 검색하는 대신, 이 도구는 안전하고 전문적인 대안을 제공합니다.</p>
+<h2 id="4">방법 4: 원본 개발자에게 문의하기</h2>
+<p>파일이 다른 사람이 만든 경우:<br />
+단계:<br />
+개발자나 팀에 연락하기<br />
+암호 또는 잠금 해제된 버전을 요청하기<br />
+규정 준수를 위해 권한을 문서화하기<br />
+이는 대개 가장 간단하고 법적으로도 타당한 방법입니다.</p>
+<h2 id="5-vba">방법 5: VBA 프로젝트 재구성하기</h2>
+<p>접근이 불가능한 경우, 재구성을 고려해 보세요.<br />
+단계:<br />
+Excel 파일의 기능을 분석합니다.<br />
+매크로 동작을 관찰합니다(실행 가능한 경우).<br />
+코드를 처음부터 다시 작성합니다.<br />
+시간이 많이 소요되지만, 보안 위험을 피할 수 있습니다. 여전히 “Excel VBA 코드를 어떻게 해제할까?”라고 고민하는 분들에게 재구성은 때때로 가장 깔끔한 해결책이 될 수 있습니다.</p>
+<h2 id="vba_2">VBA 잠금 문제를 방지하기 위한 모범 사례</h2>
+<p>향후 문제를 예방하려면:<br />
+1. 비밀번호를 안전하게 보관하세요<br />
+비밀번호 관리자를 사용하여 인증 정보를 체계적으로 관리하세요.<br />
+2. 문서화를 철저히 하세요<br />
+VBA 프로젝트 세부 정보와 액세스 인증 정보를 기록해 두세요.<br />
+3. 버전 관리를 활용하세요<br />
+중요한 파일은 여러 버전을 저장해 두세요.<br />
+4. 책임감 있게 액세스 권한을 공유하세요<br />
+팀원들이 필요할 때 승인된 액세스 권한을 갖도록 하세요.</p>
+<h2 id="_1">마무리</h2>
+<p>“엑셀 VBA 코드를 어떻게 무력화할 수 있을까?”라는 질문은 흔히 제기되지만, 이에 접근할 때는 항상 책임감을 가지고 임해야 합니다.<br />
+안전하지 않거나 허가되지 않은 방법을 시도하기보다는 다음 사항에 집중하십시오.<br />
+합법적인 복구 기법<br />
+백업 복원<br />
+전문 도구<br />
+이를 통해 데이터의 보안을 유지하고, 윤리적·법적 범위를 벗어나지 않는 조치를 취할 수 있습니다.</p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 24일 8:34 오후
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@philmartincollins/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@philmartincollins/">@philmartincollins</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/1408/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/1408/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">0</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/9833/add_comment/"
+                      method="post"
+                      hx-post="/blog/9833/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="UZqVO64YuyJaV7rroDiJjfvvAn61aqkVelWdemNfv8aDwDezH8NdSKi57b4POu1f">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @philmartincollins 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@philmartincollins/9833/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            엑셀 VBA 코드를 무력화하는 방법 (승인된 복구를 위한 윤리적 가이드)
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">36분 전</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@philmartincollins/9469/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Mac에서 중복된 MP4 파일을 삭제하는 방법 - 완벽한 가이드
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 03월 19일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 1
+        </span>
+        <!-- 다음 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>다음</button>
+    </div>
+</div>
+</div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">2</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-9833"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-9833"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/9833/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=d33c89e'/>

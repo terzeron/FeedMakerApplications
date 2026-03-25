@@ -1,0 +1,32 @@
+[
+  {
+    "domain": ".wikidocs.net",
+    "expiry": 1782181043,
+    "httpOnly": false,
+    "name": "_gcl_au",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1.1.348719787.1774405043"
+  },
+  {
+    "domain": ".wikidocs.net",
+    "expiry": 1808965043,
+    "httpOnly": false,
+    "name": "_ga_6N5MJRGLWG",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GS2.1.s1774405043$o1$g0$t1774405043$j60$l0$h969878384"
+  },
+  {
+    "domain": ".wikidocs.net",
+    "expiry": 1808965043,
+    "httpOnly": false,
+    "name": "_ga",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GA1.1.1142764900.1774405043"
+  }
+]
