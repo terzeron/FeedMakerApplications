@@ -30,47 +30,104 @@ def compose_description(item, link) -> str:
     return description
 
 
-def _download_with_retry(crawler: Crawler, url: str, file_path: Path, label: str) -> bool:
+def _download_with_retry(
+    crawler: Crawler, url: str, file_path: Path, label: str
+) -> bool:
     """이미지 다운로드를 시도하고, 실패 시 5초 후 1회 재시도한다."""
     import time
 
     result, error, _ = crawler.run(url, download_file=file_path)
     if result and not error:
         return True
-    LOGGER.warning("failed to download %s image '%s' (%s), retrying...", label, url, error)
+    LOGGER.warning(
+        "failed to download %s image '%s' (%s), retrying...", label, url, error
+    )
     time.sleep(5)
     result, error, _ = crawler.run(url, download_file=file_path)
     if result and not error:
         return True
-    LOGGER.error("can't download %s image '%s' to '%s', %s", label, url, file_path, error)
+    LOGGER.warning(
+        "can't download %s image '%s' to '%s', %s", label, url, file_path, error
+    )
     return False
 
 
-def download_and_merge(crawler: Crawler, download_dir_path: Path, background_image_url: str, foreground_image_url: str, item_id: str) -> str:
+def download_and_merge(
+    crawler: Crawler,
+    download_dir_path: Path,
+    background_image_url: str,
+    foreground_image_url: str,
+    item_id: str,
+) -> str:
     background_image_path = download_dir_path / (item_id + "_background.webp")
     foreground_image_path = download_dir_path / (item_id + "_foreground.png")
     merged_image_path = download_dir_path / (item_id + ".png")
 
     if not background_image_path.is_file() or background_image_path.stat().st_size == 0:
-        if not _download_with_retry(crawler, background_image_url, background_image_path, "background"):
+        if not _download_with_retry(
+            crawler, background_image_url, background_image_path, "background"
+        ):
             return ""
 
     if not foreground_image_path.is_file() or foreground_image_path.stat().st_size == 0:
-        if not _download_with_retry(crawler, foreground_image_url, foreground_image_path, "foreground"):
+        if not _download_with_retry(
+            crawler, foreground_image_url, foreground_image_path, "foreground"
+        ):
             return ""
 
     if not merged_image_path.is_file() or merged_image_path.stat().st_size == 0:
-        cropped_background_image_path = download_dir_path / (item_id + "_cropped_background.webp")
-        result = subprocess.run(["convert", str(background_image_path), "-crop", "750x824+0+0", "+repage", str(cropped_background_image_path)], capture_output=True, text=True, check=True)
+        cropped_background_image_path = download_dir_path / (
+            item_id + "_cropped_background.webp"
+        )
+        result = subprocess.run(
+            [
+                "convert",
+                str(background_image_path),
+                "-crop",
+                "750x824+0+0",
+                "+repage",
+                str(cropped_background_image_path),
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
         if result.returncode != 0:
-            LOGGER.error("can't merge images '%s' and '%s' to '%s'", background_image_path, cropped_background_image_path, merged_image_path)
+            LOGGER.error(
+                "can't merge images '%s' and '%s' to '%s'",
+                background_image_path,
+                cropped_background_image_path,
+                merged_image_path,
+            )
             return ""
-        result = subprocess.run(["convert", str(cropped_background_image_path), str(foreground_image_path), "-gravity", "south", "-composite", str(merged_image_path)], capture_output=True, text=True, check=True)
+        result = subprocess.run(
+            [
+                "convert",
+                str(cropped_background_image_path),
+                str(foreground_image_path),
+                "-gravity",
+                "south",
+                "-composite",
+                str(merged_image_path),
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
         if result.returncode != 0:
-            LOGGER.error("can't merge images '%s' and '%s' to '%s'", cropped_background_image_path, foreground_image_path, merged_image_path)
+            LOGGER.error(
+                "can't merge images '%s' and '%s' to '%s'",
+                cropped_background_image_path,
+                foreground_image_path,
+                merged_image_path,
+            )
             return ""
 
-    return Env.get("WEB_SERVICE_IMAGE_URL_PREFIX") + "/kakaowebtoon/" + merged_image_path.name
+    return (
+        Env.get("WEB_SERVICE_IMAGE_URL_PREFIX")
+        + "/kakaowebtoon/"
+        + merged_image_path.name
+    )
 
 
 def main() -> int:
@@ -92,7 +149,9 @@ def main() -> int:
     content = IO.read_stdin()
 
     # __NEXT_DATA__ script 태그에서 JSON 추출
-    match = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.+?)</script>', content)
+    match = re.search(
+        r'<script id="__NEXT_DATA__" type="application/json">(.+?)</script>', content
+    )
     if not match:
         LOGGER.error("can't find __NEXT_DATA__ in HTML")
         del crawler
@@ -136,16 +195,23 @@ def main() -> int:
         del crawler
         return -1
 
-    link = item_url if item_url else "%s/%s/%s" % (link_prefix, item.get("sid", ""), item.get("id", ""))
+    link = (
+        item_url
+        if item_url
+        else "%s/%s/%s" % (link_prefix, item.get("sid", ""), item.get("id", ""))
+    )
     item_id = URL.get_short_md5_name(URL.get_url_path(link))
 
     # 이미지 다운로드 및 병합
-    merged_image_url = download_and_merge(crawler, download_dir_path, item["bgImg"], item["mainImg"], item_id)
+    merged_image_url = download_and_merge(
+        crawler, download_dir_path, item["bgImg"], item["mainImg"], item_id
+    )
 
     del crawler
 
     if not merged_image_url:
-        LOGGER.warning("can't download and merge images, continuing without image")
+        LOGGER.warning("can't download and merge images, skipping this feed item")
+        return 0
 
     item["mergedImage"] = merged_image_url
 
@@ -154,7 +220,10 @@ def main() -> int:
 
     print(header_str, end="")
     print(description, end="")
-    print(FeedMaker.get_image_tag_str("https://terzeron.com", "kakaowebtoon.xml", link), end="")
+    print(
+        FeedMaker.get_image_tag_str("https://terzeron.com", "kakaowebtoon.xml", link),
+        end="",
+    )
 
     return 0
 
