@@ -1,0 +1,1038 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="AI 코딩 에이전트의 천장을 깨는 법: Anthropic의 멀티 에이전트 하네스 설계">
+    <meta property="og:type" content="AI 코딩 에이전트의 천장을 깨는 법: Anthropic의 멀티 에이전트 하네스 설계">
+    <meta property="og:title" content="AI 코딩 에이전트의 천장을 깨는 법: Anthropic의 멀티 에이전트 하네스 설계">
+    <meta property="og:description" content="AI 코딩 에이전트의 천장을 깨는 법: Anthropic의 멀티 에이전트 하네스 설계">
+    <meta property="og:image" content="https://static.wikidocs.net/images/blog/10028/84a488382e0428a5eebade574af047e5d3b610ab-2400x1260.png">
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@jaehong/10028/">
+
+        
+    <title>AI 코딩 에이전트의 천장을 깨는 법: Anthropic의 멀티 에이전트 하네스 설계
+        - 박재홍의 실리콘밸리
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@jaehong/10026/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@jaehong/10029/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">AI 코딩 에이전트의 천장을 깨는 법: Anthropic의 멀티 에이전트 하네스 설계</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@jaehong/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @jaehong
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2026년 3월 27일 8:10 오전</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full">
+                        <a href="/blog/@jaehong/?tag=3939"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">
+                            Claude
+                        </a>
+                    </span>
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><p>Claude에게 &quot;2D 레트로 게임 메이커를 만들어줘&quot;라고 한 줄 던지면 어떤 결과가 나올까. 단독 에이전트로 돌리면 20분, 9달러에 결과물이 나오지만 정작 게임 플레이 기능은 동작하지 않는다. 반면 Anthropic이 설계한 멀티 에이전트 하네스로 돌리면 6시간, 200달러가 들지만 실제로 플레이 가능한 게임이 만들어진다. 비용은 20배 이상 늘었지만, &quot;작동하는 소프트웨어&quot;와 &quot;작동하지 않는 소프트웨어&quot;의 차이는 비용으로 환산할 수 없다. Anthropic 엔지니어 Prithvi Rajasekaran이 공개한 이 글은 LLM 기반 코딩 에이전트가 부딪히는 근본적 한계 두 가지와, 그것을 GAN에서 영감받은 구조로 돌파한 실험 결과를 상세히 다룬다.</p>
+<p><img alt="thumbnail" src="https://static.wikidocs.net/images/blog/10028/84a488382e0428a5eebade574af047e5d3b610ab-2400x1260.png" /></p>
+<h2 id="_1">나이브한 에이전트가 실패하는 두 가지 이유</h2>
+<p>LLM 코딩 에이전트를 장시간 복잡한 태스크에 투입하면 두 가지 고질적 문제에 부딪힌다.</p>
+<p>첫 번째는 <strong>컨텍스트 불안(context anxiety)</strong>이다. 컨텍스트 윈도우가 차오르면서 모델이 일관성을 잃는 것은 알려진 문제지만, 더 흥미로운 현상은 모델이 컨텍스트 한계에 다가가고 있다고 &quot;느끼면&quot; 작업을 조기에 마무리하려 한다는 점이다. Sonnet 4.5에서 이 경향이 특히 강했는데, 기존에 사용하던 컴팩션(이전 대화를 요약해서 이어가는 방식)으로는 해결되지 않았다. 컴팩션은 연속성을 유지하지만 모델에게 &quot;깨끗한 출발&quot;을 주지 못하기 때문이다. 결국 컨텍스트를 완전히 리셋하고, 구조화된 핸드오프 문서를 통해 다음 에이전트에게 상태를 넘기는 방식이 필수가 되었다.</p>
+<p>두 번째는 <strong>자기 평가의 편향</strong>이다. 에이전트에게 자신이 만든 결과물을 평가하라고 하면 뻔뻔할 정도로 자화자찬한다. 인간이 보기에 명백히 평범한 결과물도 &quot;잘 만들었다&quot;고 자신 있게 답한다. 이 문제는 디자인처럼 주관적인 영역에서 특히 심각하지만, 코드처럼 검증 가능한 영역에서도 에이전트의 판단력을 떨어뜨린다. 핵심 통찰은, 작업하는 에이전트와 평가하는 에이전트를 분리하면 이 문제가 훨씬 다루기 쉬워진다는 것이다. 분리 자체가 관대함을 없애지는 않지만, 독립된 평가자를 &quot;엄격하게&quot; 튜닝하는 것이 생성자를 자기 비판적으로 만드는 것보다 훨씬 쉽다.</p>
+<h2 id="gan">GAN에서 빌려온 구조: 생성자와 평가자</h2>
+<p>이 두 문제를 해결하기 위해 Rajasekaran은 GAN(Generative Adversarial Network)의 구조에서 영감을 받았다. GAN에서 생성자와 판별자가 서로 경쟁하며 품질을 끌어올리듯, 코딩 에이전트에서도 생성 에이전트와 평가 에이전트를 분리해 피드백 루프를 만든 것이다.</p>
+<p>먼저 프론트엔드 디자인 영역에서 실험했다. Claude는 기본 상태에서 기능적으로는 문제없지만 시각적으로 평범한, 이른바 &quot;안전한&quot; 디자인을 만들어낸다. 보라색 그라디언트 위에 흰색 카드를 올린 전형적인 AI 생성물 패턴 말이다. 이를 개선하기 위해 네 가지 평가 기준을 설계했다.</p>
+<p><strong>디자인 품질</strong>은 색상, 타이포그래피, 레이아웃이 하나의 정체성을 이루는지를 본다. <strong>독창성</strong>은 템플릿 기본값이나 AI 특유의 패턴을 그대로 쓰지 않았는지를 검증한다. <strong>완성도</strong>는 타이포 위계, 간격 일관성, 색상 조화 같은 기술적 실행력을 측정한다. <strong>기능성</strong>은 사용자가 인터페이스를 이해하고 과제를 완수할 수 있는지를 평가한다. 여기서 핵심 판단은 디자인 품질과 독창성에 가중치를 더 준 것이다. Claude는 완성도와 기능성에서는 이미 괜찮은 점수를 내지만, 미적 모험을 하지 않기 때문이다.</p>
+<p>평가자에게는 Playwright MCP를 부여해 실제 페이지를 직접 탐색하고, 스크린샷을 찍고, 상호작용한 뒤 점수를 매기게 했다. 정적 스크린샷을 보는 것이 아니라 살아있는 페이지를 써보는 것이다. 한 번의 생성에 5~15회 반복을 돌렸고, 전체 실행은 최대 4시간까지 걸렸다.</p>
+<p>인상적인 사례가 있다. 네덜란드 미술관 웹사이트를 만들라는 프롬프트에 9번째 반복까지는 깔끔한 다크 테마 랜딩페이지를 점진적으로 다듬더니, 10번째 반복에서 접근 자체를 완전히 뒤엎었다. CSS 원근법으로 렌더링한 3D 방에 체크무늬 바닥을 깔고, 벽에 작품을 자유롭게 배치하고, 갤러리 간 이동은 스크롤이나 클릭 대신 문을 통과하는 방식으로 재설계한 것이다. 단일 패스 생성에서는 볼 수 없는 창의적 도약이다.</p>
+<h2 id="3">풀스택 개발로의 확장: 3에이전트 아키텍처</h2>
+<p>디자인 실험의 성과를 바탕으로 풀스택 개발에 동일한 패턴을 적용했다. 최종 구조는 세 에이전트로 구성된다.</p>
+<p><strong>플래너</strong>는 사용자의 1~4문장짜리 프롬프트를 완전한 제품 스펙으로 확장한다. 의도적으로 기술적 구현 세부사항보다는 제품 맥락과 고수준 설계에 집중하도록 했다. 플래너가 세부 기술 사항을 미리 지정했다가 틀리면 그 오류가 하위 구현으로 연쇄적으로 퍼지기 때문이다. 산출물(what)은 제약하되 경로(how)는 에이전트가 작업하며 알아내게 한 셈이다.</p>
+<p><strong>생성자</strong>는 스프린트 단위로 한 번에 하나의 기능을 구현한다. React, Vite, FastAPI, SQLite(이후 PostgreSQL) 스택을 사용하고, 각 스프린트 종료 시 자체 평가를 수행한 뒤 QA로 넘긴다. 특히 흥미로운 점은 스프린트 시작 전에 생성자와 평가자가 &quot;스프린트 계약&quot;을 협상한다는 것이다. &quot;이번 스프린트에서 무엇이 완성이고 어떻게 검증하는가&quot;를 코드 작성 전에 합의하는 일종의 테스트 주도 계약이다.</p>
+<p><strong>평가자</strong>는 Playwright MCP로 실행 중인 애플리케이션을 실제 사용자처럼 클릭하며 테스트한다. UI 기능, API 엔드포인트, 데이터베이스 상태를 확인하고, 각 스프린트를 제품 깊이, 기능성, 시각 디자인, 코드 품질 기준으로 채점한다. 각 기준에 하한 임계값이 있어서 하나라도 미달하면 스프린트가 실패하고 구체적 피드백이 생성자에게 전달된다.</p>
+<p>에이전트 간 통신은 파일 기반이다. 한 에이전트가 파일을 쓰면, 다른 에이전트가 읽고 같은 파일에 응답하거나 새 파일로 회신한다. 단순하지만 효과적인 방식이다.</p>
+<h2 id="_2">실전 결과: 레트로 게임 메이커</h2>
+<p>&quot;2D 레트로 게임 메이커를 만들어줘&quot;라는 동일한 프롬프트로 단독 에이전트와 풀 하네스를 비교했다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>소요 시간</th>
+<th>비용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단독 에이전트</td>
+<td>20분</td>
+<td>$9</td>
+</tr>
+<tr>
+<td>풀 하네스</td>
+<td>6시간</td>
+<td>$200</td>
+</tr>
+</tbody>
+</table>
+<p>단독 에이전트의 결과물은 초기 화면만 보면 괜찮아 보였다. 하지만 실제로 써보니 레이아웃이 공간을 낭비했고, 작업 순서를 안내하는 UI가 없었으며, 결정적으로 게임 플레이가 아예 동작하지 않았다. 엔티티 정의와 게임 런타임 사이의 연결이 끊겨 있었다.</p>
+<p>풀 하네스는 같은 한 줄 프롬프트에서 플래너가 10개 스프린트에 걸친 16개 기능 스펙을 생성했다. 핵심 에디터와 플레이 모드 외에 스프라이트 애니메이션 시스템, 행동 템플릿, 사운드 효과, AI 기반 스프라이트 생성기와 레벨 디자이너, 게임 익스포트까지 포함했다. 실제로 게임을 플레이할 수 있었다. 물리 엔진에 거친 부분이 있었지만(캐릭터가 플랫폼과 겹치는 현상 등) 핵심 기능은 작동했다.</p>
+<p>평가자가 잡아낸 버그의 구체성이 인상적이다. 예를 들어 &quot;사각형 채우기 도구가 드래그 시작/종료 지점에만 타일을 배치하고 영역을 채우지 않음. fillRectangle 함수가 존재하지만 mouseUp에서 제대로 트리거되지 않음&quot;이라든가, &quot;PUT /frames/reorder 라우트가 /{frame_id} 라우트 뒤에 정의되어 FastAPI가 &#x27;reorder&#x27;를 정수로 파싱하려다 422를 반환함&quot; 같은 수준이다. 스프린트 3 하나에 레벨 에디터 관련 검증 기준만 27개였다.</p>
+<p>다만 평가자를 이 수준으로 끌어올리기까지 상당한 튜닝이 필요했다. 초기에는 실제 문제를 발견하고도 &quot;별로 중요하지 않다&quot;고 스스로 합리화하며 통과시키는 경향이 있었고, 테스트도 피상적이어서 엣지 케이스를 놓쳤다. 평가자의 로그를 읽고, 인간 판단과 괴리가 있는 사례를 찾아 프롬프트를 수정하는 반복 작업이 여러 차례 필요했다.</p>
+<h2 id="opus-46">Opus 4.6과 하네스 간소화</h2>
+<p>하네스가 효과적이라 해도 6시간에 200달러는 부담스럽다. 자연스럽게 다음 단계는 성능을 유지하면서 하네스를 단순화하는 것이었다.</p>
+<p>여기서 중요한 원칙이 등장한다. <strong>하네스의 모든 구성요소는 &quot;모델이 혼자서는 못하는 것&quot;에 대한 가정을 인코딩한다.</strong> 그 가정은 틀릴 수도 있고, 모델이 개선되면 금방 낡을 수도 있다. Anthropic의 &quot;Building Effective Agents&quot; 포스트가 강조한 &quot;가능한 가장 단순한 솔루션을 찾고, 필요할 때만 복잡성을 높여라&quot;는 원칙과 정확히 일치한다.</p>
+<p>Opus 4.6의 출시가 이 방향에 힘을 실었다. 4.6은 더 신중하게 계획하고, 에이전틱 태스크를 더 오래 지속하며, 더 큰 코드베이스에서 안정적으로 작동하고, 자체 코드 리뷰와 디버깅 능력이 향상되었다. 이 모든 것이 기존 하네스가 보완하려 했던 능력이다.</p>
+<p>가장 큰 변화는 <strong>스프린트 구조를 완전히 제거</strong>한 것이다. Opus 4.5에서는 작업을 청크로 분해해야 모델이 일관성을 유지했지만, 4.6은 분해 없이도 2시간 넘게 연속으로 코딩할 수 있었다. 컨텍스트 불안 문제도 4.6에서는 대부분 해소되어, 컨텍스트 리셋 없이 Claude Agent SDK의 자동 컴팩션만으로 충분했다.</p>
+<p>평가자는 스프린트별 채점 대신 전체 빌드 완료 후 한 번만 실행하도록 변경했다. 여기서 흥미로운 관찰이 있다. 평가자의 가치는 태스크가 모델의 독자적 능력 경계에 위치하는지에 따라 달라진다는 것이다. 4.5에서는 그 경계가 가까워서 대부분의 빌드에서 평가자가 실질적 기여를 했다. 4.6에서는 경계가 바깥으로 밀려나면서, 과거에 평가자가 필요했던 태스크를 모델이 혼자 잘 처리하게 되었다. 하지만 여전히 모델 능력의 경계에 있는 복잡한 부분에서는 평가자가 확실한 가치를 제공한다.</p>
+<h2 id="daw">간소화된 하네스의 결과: 브라우저 DAW</h2>
+<p>업데이트된 하네스로 &quot;브라우저에서 완전한 기능의 DAW(Digital Audio Workstation)를 만들어줘&quot;라는 프롬프트를 실행했다.</p>
+<table>
+<thead>
+<tr>
+<th>에이전트/단계</th>
+<th>소요 시간</th>
+<th>비용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>플래너</td>
+<td>4.7분</td>
+<td>$0.46</td>
+</tr>
+<tr>
+<td>빌드 (1차)</td>
+<td>2시간 7분</td>
+<td>$71.08</td>
+</tr>
+<tr>
+<td>QA (1차)</td>
+<td>8.8분</td>
+<td>$3.24</td>
+</tr>
+<tr>
+<td>빌드 (2차)</td>
+<td>1시간 2분</td>
+<td>$36.89</td>
+</tr>
+<tr>
+<td>QA (2차)</td>
+<td>6.8분</td>
+<td>$3.09</td>
+</tr>
+<tr>
+<td>빌드 (3차)</td>
+<td>10.9분</td>
+<td>$5.88</td>
+</tr>
+<tr>
+<td>QA (3차)</td>
+<td>9.6분</td>
+<td>$4.06</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td><strong>3시간 50분</strong></td>
+<td><strong>$124.70</strong></td>
+</tr>
+</tbody>
+</table>
+<p>비용이 $200에서 $125로 줄었고, 스프린트 구조 없이도 생성자가 2시간 넘게 일관되게 작업했다. 평가자는 여전히 실질적 결함을 잡아냈다. 1차 QA에서 &quot;클립을 타임라인에서 드래그/이동할 수 없고, 악기 UI 패널(신스 노브, 드럼 패드)이 없으며, 시각적 이펙트 에디터(EQ 커브, 컴프레서 미터)가 없다&quot;는 피드백을 보냈고, 2차에서도 &quot;오디오 녹음이 스텁 상태이고, 클립 리사이즈와 분할이 미구현&quot;이라는 구체적 갭을 짚었다.</p>
+<p>최종 결과물은 전문 음악 프로덕션 소프트웨어 수준은 아니지만, 어레인지먼트 뷰, 믹서, 트랜스포트가 브라우저에서 작동했고, 내장된 AI 에이전트를 통해 프롬프트만으로 템포 설정, 멜로디 생성, 드럼 트랙 구성, 믹서 레벨 조정, 리버브 추가까지 가능했다. 한 줄 프롬프트에서 출발해 엔드투엔드 음악 제작이 되는 애플리케이션이 4시간 만에 나온 것이다.</p>
+<h2 id="_3">업계 맥락에서 이 실험이 의미하는 것</h2>
+<p>이 글의 핵심 통찰은 기술적 세부사항 너머에 있다. &quot;모델이 좋아지면 하네스가 필요 없어지는가?&quot;라는 질문에 대한 답이다. Anthropic의 결론은 명확하다. 흥미로운 하네스 조합의 공간은 모델이 발전해도 줄어들지 않는다. 대신 이동한다.</p>
+<p>이것은 AI 엔지니어링의 본질에 대한 중요한 관찰이다. 모델이 개선되면 기존 스캐폴딩 중 일부는 불필요해지지만, 동시에 더 복잡한 태스크가 가능해지면서 그 태스크를 위한 새로운 하네스 설계가 필요해진다. Sonnet 4.5에서는 컨텍스트 리셋과 스프린트 분해가 핵심이었지만, Opus 4.6에서는 그것이 불필요해진 대신 단일 세션에서 더 야심찬 빌드를 가능하게 하는 새로운 구조가 중요해졌다.</p>
+<p>실무 관점에서 주목할 점은 세 가지다.</p>
+<p>첫째, <strong>외부 평가자의 분리</strong>는 단순한 엔지니어링 트릭이 아니라 LLM의 근본적 약점(자기 평가 편향)에 대한 구조적 해법이다. 이 패턴은 코딩뿐 아니라 LLM이 산출물을 만드는 거의 모든 영역에 적용 가능하다.</p>
+<p>둘째, <strong>하네스 구성요소의 부하 지지력(load-bearing) 테스트</strong>라는 개념이다. 새 모델이 나올 때마다 하네스의 각 부분이 여전히 필요한지 검증하고, 불필요한 것은 걷어내야 한다. 복잡성은 유지비용이다. 모델이 혼자 할 수 있는 일을 위해 오케스트레이션 레이어를 유지하는 것은 낭비다.</p>
+<p>셋째, <strong>비용 대 품질의 트레이드오프</strong>가 현실적으로 드러난다. $9짜리 결과물은 데모에서는 그럴듯하지만 실제로는 동작하지 않고, $125~$200짜리 결과물은 실제로 작동하는 소프트웨어를 만든다. 아직 프로덕션 수준은 아니지만, 프로토타이핑이나 MVP 단계에서는 충분히 의미 있는 밀도다. 그리고 이 비용은 모델이 개선될 때마다 내려갈 것이다.</p>
+<p>결국 이 실험이 보여주는 것은, AI 코딩 에이전트의 미래가 &quot;더 좋은 모델&quot;만의 문제가 아니라 &quot;모델을 어떻게 조합하고 제약하느냐&quot;의 설계 문제이기도 하다는 점이다. 모델이 발전할수록 AI 엔지니어의 역할은 사라지는 것이 아니라, 더 높은 수준의 문제로 이동한다.</p>
+<p><a href="https://www.anthropic.com/engineering/harness-design-long-running-apps">원본 글</a></p></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2026년 3월 27일 8:34 오전
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@jaehong/">
+                        
+                            <!-- 기본 프로필 이미지 -->
+                            <div class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300">
+                                <i class="fas fa-user text-3xl"></i>
+                            </div>
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@jaehong/">@jaehong</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/364/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/364/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">20</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/10028/add_comment/"
+                      method="post"
+                      hx-post="/blog/10028/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="Qg5ciMlxdwuFjQLa9d6hsOIuhViW1hxSu5AsRCndsiZGANbpllYI2eGn0VLzEECG">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @jaehong 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/10029/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            AI 에이전트의 방정식: 모델 × 하네스 + 데이터
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">8분 전</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/10028/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            AI 코딩 에이전트의 천장을 깨는 법: Anthropic의 멀티 에이전트 하네스 설계
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">56분 전</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/10026/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            컴퓨터의 영혼을 글로 쓴 사람, 트레이시 키더를 떠나보내며
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">5시간 전</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/10025/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            Swift 6.3: Apple의 울타리를 넘으려는 Swift, 얼마나 진심인가
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">5시간 전</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@jaehong/10024/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            FreeCAD 1.1, 오픈소스 CAD가 상용 소프트웨어를 위협하기 시작했다
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">5시간 전</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 296
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/364/10028/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @jaehong 님의 대표 저서
+                </div>
+                <div id="blog-book-list"
+                     class="w-3/4 mt-4 mb-10">
+                    
+<div class="book-list">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/19104">
+                    
+                        <img src="https://static.wikidocs.net/images/book/claudecodeguide_book_1772272112_1772272188.jpg"
+                             alt="클로드 코드 가이드"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/19104"
+                           class="hover:text-red-500 dark:hover:text-red-400">클로드 코드 가이드</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        
+
+코드를 직접 짜는 시대는 끝났습니다. 이제는 말로 만듭니다.
+Claude Code는 Anthropic이 만든 AI 코딩 에이전트입니다. 자연어 한 줄이면 코드 작성, 디버깅,…
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 3월 25일 12:36 오후</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17550">
+                    
+                        <div class="flex items-center justify-center bg-gray-200 dark:bg-gray-700"
+                             style="width: 100px;
+                                    height: 130px">
+                            <i class="fa fa-book text-gray-400 text-4xl"></i>
+                        </div>
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17550"
+                           class="hover:text-red-500 dark:hover:text-red-400">바이브 코딩 (AI 코딩 에이전트 사용법)</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        AI 코딩 에이전트 사용법을 설명한다.
+
+Cursor, Cline, ...
+
+
+
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2026년 3월 12일 10:56 오전</div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <div class="book-item flex items-start">
+            <!-- 왼쪽: 책 이미지 또는 기본 아이콘 -->
+            <div class="book-image flex-shrink-0"
+                 style="min-width: 120px;
+                        min-height: 150px">
+                <a href="/book/17535">
+                    
+                        <img src="https://static.wikidocs.net/images/book/verified-5254386_1280_wW9RJ4l_e79K0qp_1773050366.jpg"
+                             alt="RLVR: 검증가능 보상 강화학습 소개"
+                             class="border"
+                             style="width: 100px;
+                                    height: 130px">
+                    
+                </a>
+            </div>
+            <!-- 오른쪽: 책 제목, 추천수, 요약, 마지막 편집일시 -->
+            <div class="book-info flex-grow px-2 space-y-3">
+                <!-- 책 제목과 추천 수 -->
+                <div class="flex items-center">
+                    <div class="book-title font-bold text-gray-900 dark:text-gray-100">
+                        <a href="/book/17535"
+                           class="hover:text-red-500 dark:hover:text-red-400">RLVR: 검증가능 보상 강화학습 소개</a>
+                    </div>
+                </div>
+                <!-- 책 요약 -->
+                <div class="book-summary text-sm text-gray-600 dark:text-gray-400"
+                     style="word-break: break-all;
+                            word-wrap: break-word">
+                    
+                        RLVR (Reinforcement Learning with Verifiable Rewards) 소개
+
+검증가능한 보상을 기반으로 하는 강화학습
+                    
+                </div>
+                <!-- 마지막 편집일시 -->
+                <div class="book-last-modify text-sm text-gray-500 dark:text-gray-400">2025년 3월 15일 4:39 오후</div>
+            </div>
+        </div>
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">2</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-10028"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-10028"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/10028/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+        <h2 class="font-semibold space-x-1 text-gray-800 dark:text-gray-200 mb-4">
+            <i class="fas fa-link"></i>
+            <span>관련 글</span>
+        </h2>
+        
+            <a href="/blog/@jaehong/9524/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                        <img src="https://static.wikidocs.net/images/blog/9524/featured.png"
+                             alt="Blog Image"
+                             class="w-full h-32 object-cover">
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            Claude Code Channels: 터미널 밖에서 Claude에게 이벤트를 밀어넣는 새로운 방식
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                Anthropic이 Claude Code에 &quot;Channels&quot;라는 기능을 연구 프리뷰로 …
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>6일 전</span>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="/blog/@jaehong/8719/" class="block">
+                <div class="mb-6 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-xl transition-transform transform duration-300 flex flex-col h-full min-h-[16rem]">
+                    <!-- 이미지가 있는 경우 상단에 표시 -->
+                    
+                    <!-- 카드 콘텐츠 -->
+                    <div class="p-3 flex-grow">
+                        <h2 class="font-bold text-gray-800 dark:text-gray-200">
+                            
+                            크누스가 놀란 날: Claude가 수십 년 된 조합론 난제를 풀다
+                        </h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 break-words">
+                            
+                                86세의 도널드 크누스(Donald Knuth)가 &quot;Shock! Shock!&quot;으로 시작하…
+                            
+                        </p>
+                    </div>
+                    <!-- 게시 날짜, 조회수, 댓글: 카드의 가장 하단에 위치 -->
+                    <div class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                        <span>21일 전</span>
+                    </div>
+                </div>
+            </a>
+        
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=ccb9187'/>

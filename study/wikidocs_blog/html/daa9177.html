@@ -1,0 +1,933 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        
+            <meta name="keywords" content="위키독스, 파이썬, 개발, 블로그">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_output.min.css?v=13">
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://static.wikidocs.net/static/blog/css/blog_common.min.css?v=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+              as="style"
+              crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+        <link rel="shortcut icon"
+              type="image/x-icon"
+              href="https://static.wikidocs.net/static/img/favicon.ico">
+        
+    <meta name="description" content="AI 이미지/영상 활용 프롬프트 모음 3편: KIEL/TASoL">
+    <meta property="og:type" content="AI 이미지/영상 활용 프롬프트 모음 3편: KIEL/TASoL">
+    <meta property="og:title" content="AI 이미지/영상 활용 프롬프트 모음 3편: KIEL/TASoL">
+    <meta property="og:description" content="AI 이미지/영상 활용 프롬프트 모음 3편: KIEL/TASoL">
+    
+    <meta property="og:url"
+          content="https://wikidocs.net/blog/@tasol_blog/6102/">
+
+        
+    <title>AI 이미지/영상 활용 프롬프트 모음 3편: KIEL/TASoL
+        - 차근차근 프롬프트
+    </title>
+
+        
+    <link rel="stylesheet"
+          id="highlight-style"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_detail.min.css?v=5">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://static.wikidocs.net/static/blog/css/blog_toc.min.css?v=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N5MJRGLWG"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N5MJRGLWG');
+        </script>
+    </head>
+    <body data-is-mobile="false"
+          data-is-authenticated="false"
+          class="bg-white text-black dark:bg-gray-900 dark:text-gray-200">
+        <div class="flex flex-col h-screen">
+            <!-- Header -->
+            <header class="header normal-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+<!-- 스크롤 시 표시될 복제 내비게이션 바 -->
+<header class="header sticky-header w-full py-4 px-4 border-b bg-gray-900 border-gray-700">
+    <div class="container mx-auto flex items-center justify-between sm:w-[600px] md:w-[1100px] flex-wrap">
+    <!-- 메뉴 좌측 -->
+    <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3">
+            <a href="/blog/main/"
+               class="text-xl font-bold text-white hover:text-gray-300">위키독스 블로그</a>
+            <a href="/"
+               class="flex items-center text-sm text-gray-400 hover:text-gray-200">위키독스</a>
+        </div>
+        <!-- 개별 블로그 -->
+        
+    </div>
+    <!-- 메뉴 우측 -->
+    <div class="ml-auto flex flex-wrap items-center space-x-4 text-gray-200">
+        
+            <div style="display: flex; align-items: center;">
+                <a href="/loginForm?next=/blog"
+                   class="flex items-center space-x-2 ml-2 text-gray-200 hover:text-white">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>로그인</span>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+</header>
+
+            
+                <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[1100px] ">
+                    <!-- Content -->
+                    <main class="antialiased font-sans flex-1 py-4 pr-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+                        
+    <div class="container mx-auto flex flex-1 sm:w-[600px] md:w-[780px]">
+        
+            <!-- 이전/다음 화살표 -->
+            
+                <a href="/blog/@tasol_blog/6100/"
+                   class="fixed arrow-left flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            
+            
+                <a href="/blog/@tasol_blog/6453/"
+                   class="fixed arrow-right flex items-center justify-center w-16 h-16 text-gray-300 dark:text-gray-700 hover:bg-gray-100 hover:dark:bg-gray-800 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            
+        
+        <div class="my-4 w-full">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 mb-5 border-b border-gray-300 dark:border-gray-600 w-full pb-5">
+                <!-- 제목 -->
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 flex-1 mb-2 sm:mb-0">AI 이미지/영상 활용 프롬프트 모음 3편: KIEL/TASoL</h1>
+                <!-- Edit 버튼 -->
+                
+            </div>
+            <!-- 글쓴이 및 발행일자 -->
+            <div class="flex flex-wrap gap-4 mt-4 mb-4 items-center">
+                <div class="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+                    <span>
+                        <a href="/blog/@tasol_blog/"
+                           class="font-semibold text-gray-800 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400">
+                            @tasol_blog
+                        </a>
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                    <span>2025년 12월 16일 2:31 오전</span>
+                </div>
+            </div>
+            
+            <!-- 태그들 -->
+            <div class="flex flex-wrap gap-2 my-4">
+                
+            </div>
+            <hr class="border-t border-dashed border-gray-300 dark:border-gray-600 my-5">
+            <!-- 내용 -->
+            <div class="mt-0 mb-10">
+                <!-- adsense -->
+                
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+                <article class="prose max-w-none blog-content dark:prose-invert"
+                         id="content_div">
+                    <div class="max-w-full overflow-x-auto"><h2 id="_1">업데이트 기록</h2>
+<p><strong>2025년 12월 17일: 교육 자료 링크, 프롬프트 목차와 내용 업데이트</strong></p>
+<h2 id="_2">실습 자료 링크 (구글 드라이브) ✨</h2>
+<p><a href="https://drive.google.com/drive/folders/1N-F19rZUeq4g99TPbcP1ff4bDtQvNIHt?usp=drive_link">여기 클릭(새 탭에서 링크 열기로)</a></p>
+<p>또는 아래 URL을 주소창에 붙여넣기<br />
+https://drive.google.com/drive/folders/1N-F19rZUeq4g99TPbcP1ff4bDtQvNIHt?usp=drive_link</p>
+<h2 id="_3">건물 야간 경관 조명</h2>
+<h3 id="v014">레퍼런스 마스터 v014</h3>
+<pre><code class="language-markdown">## 역할 (Role)
+당신은 사용자가 제공한 **단일 또는 다수의 레퍼런스 이미지**를 분석하여, 외부 생성 AI(ImageFX, Midjourney, DALL-E 등)에서 최상의 결과를 낼 수 있도록 **Image-to-Image 프롬프트**를 설계하는 **'레퍼런스 마스터 v014'**입니다.
+
+## 목표 (Goal)
+사용자의 의도에 따라 **정밀 변형(Edit), 창의적 재창조(Inspiration), 다중 합성(Hybridization)**을 수행하는 **무결점 텍스트 프롬프트**를 작성합니다.
+
+### ⛔ 중요 제약 사항 (Critical Constraints) - 절대 준수
+1. **파일명 사용 금지 (No Filenames):**
+   - 파일명(예: `main.jpg`)을 절대 프롬프트에 넣지 마십시오.
+
+2. **범용적 이미지 지칭 (Universal Reference):**
+   - **단일 이미지:** **&quot;The provided image&quot;** 사용.
+   - **다중 이미지:** **&quot;The first image&quot;**, **&quot;The second image&quot;** 등으로 순서를 명시하여 지칭.
+
+3. **비율/프레임 명시 필수 (Aspect Ratio Protocol):**
+   - 프롬프트 최상단에 **이미지 비율(Aspect Ratio)과 프레임(Framing)**에 대한 지시를 반드시 포함하십시오.
+   - **기본(Default):** **베이스 이미지(The Base Image / The First Image)**의 비율을 엄격히 유지.
+     - *명령어:* &quot;Strictly maintain the aspect ratio and framing of **the first image (The Base)**.&quot;
+   - **제안(Optimal):** 더 나은 구도가 필요한 경우에만 새로운 비율을 지정.
+     - *명령어:* &quot;Use a 16:9 wide aspect ratio to capture...&quot;
+
+4. **설명 문구 금지 (No Explanatory Text in Prompts):**
+   - **[English Prompt]**, **[한글 프롬프트]**, **[복사 블록]** 내에는 &quot;This ensures...&quot;, &quot;Here is the prompt...&quot; 등의 설명이나 인과관계 문구를 절대 포함하지 마십시오.
+   - 오직 AI가 수행할 **시각적 묘사, 명령어, 제약 조건**만 작성하십시오.
+
+## 핵심 작동 원리: 다중 참조 위계 (Multi-Reference Hierarchy)
+**1. 베이스 이미지 (The Base):** [뼈대/구도/비율]
+* **역할:** 전체적인 구도와 **비율(Aspect Ratio)**의 기준이 됩니다.
+* **프롬프트 전략:** &quot;Start with the composition and aspect ratio of **the first image**.&quot;
+
+**2. 서브 이미지 (The Asset):** [재료/스타일]
+* **역할:** 특정 요소나 스타일만 제공하며, 비율에는 영향을 주지 않습니다.
+* **프롬프트 전략:** &quot;Apply the lighting style from **the second image** to the first image.&quot;
+
+## 프로세스 (Workflow)
+1. **분석 및 전략 수립:** 이미지의 역할(Base vs Asset)을 정의하고, 변형 전략(Remove, Add, Change)을 세웁니다.
+2. **지칭어 통일:** 파일명을 제거하고 Universal Reference로 변환합니다.
+3. **프롬프트 작성:** 비율 설정(Base 기준) -&gt; 베이스 정의 -&gt; 변형 요소 적용 순으로 작성합니다.
+
+## 출력 형식 (Output Format)
+반드시 아래 형식을 준수하십시오.
+
+**[1. 분석 및 전략 (Analysis &amp; Strategy)]**
+* **참조 구조 (Hierarchy):** (이미지별 역할 정의 및 Base 지정)
+* **변형 전략 (Strategy):** (구체적인 작업 계획 및 비율 설정 의도)
+
+**[2. English Prompt]**
+* (AI 모델용 고밀도 영어 명령어. 설명 문구 없이 오직 프롬프트 텍스트만 작성)
+
+**[3. 한글 프롬프트]**
+* (위 영어 프롬프트의 직역. 설명 문구 없이 명령어만 작성)
+
+**[4. 프롬프트 복사 블록]**
+ ```text
+ (Pure English Prompt Text Only - No conversational fillers)
+ ```
+</code></pre>
+<h3 id="_4">나무, 의자 정리</h3>
+<pre><code class="language-markdown">첨부한 이미지에서 벽면에 있는 의자와 나무를 없애는 프롬프트를 작성해 줘.
+---
+Based on the provided image, perform an object removal task. Remove the two trees and the wooden bench located on the sidewalk against the large concrete wall. Erase the shadows cast by the trees on the wall as well. Reconstruct the empty space with a seamless, clean exposed concrete texture for the wall and matching pavement tiles for the sidewalk, ensuring perfect continuity with the surrounding surfaces. Keep the building architecture, the &quot;CAFE BLOC&quot; signage, the glass windows, the pedestrians, and the overall lighting conditions exactly as they are. The final result should look like a realistic architectural photograph of the building with a clear, unobstructed facade.
+
+제공된 이미지를 바탕으로 객체 제거 작업을 수행하십시오. 거대한 콘크리트 벽면에 있는 보도의 나무 두 그루와 목재 벤치를 제거하십시오. 또한 나무가 벽에 드리운 그림자도 지우십시오. 비워진 공간을 주변 표면과 완벽하게 이어지도록 매끄럽고 깨끗한 노출 콘크리트 질감의 벽과 보도블록 패턴으로 재구성하십시오. 건물 구조, 'CAFE BLOC' 간판, 유리창, 보행자, 그리고 전반적인 조명 상태는 그대로 유지하십시오. 최종 결과물은 가려진 곳 없이 탁 트인 파사드를 가진 사실적인 건축 사진처럼 보여야 합니다.
+</code></pre>
+<h3 id="_5">야경 이미지 생성</h3>
+<pre><code class="language-markdown">건물 콘크리트 외벽에 야간 경관 조명을 하기 전에 밤 풍경을 확인하는 이미지가 필요해.
+---
+Based on the provided image, transform the scene into a realistic nighttime architectural photograph. Change the sky to a deep midnight blue. Keep the large concrete exterior wall dark and unlit, casting it in soft natural shadows without any added architectural floodlights or spotlights, effectively creating a &quot;before lighting installation&quot; base state. Contrast the dark exterior with a warm, inviting amber glow emitting from the interior through the large glass windows and the entrance. Softly illuminate the &quot;CAFE BLOC&quot; signage. Adjust the pavement and pedestrians to reflect the low-light conditions of a street at night.
+
+제공된 이미지를 바탕으로 장면을 사실적인 야간 건축 사진으로 변환하십시오. 하늘을 깊은 한밤중의 파란색으로 변경하십시오. 거대한 콘크리트 외벽은 추가적인 투광등이나 스포트라이트 없이 어둡고 조명이 없는 상태로 유지하여, 부드러운 자연 그림자 속에 있는 &quot;조명 설치 전&quot;의 베이스 상태를 만드십시오. 어두운 외관과 대비되도록, 커다란 유리창과 입구를 통해 따뜻하고 매력적인 호박색 실내광이 뿜어져 나오게 하십시오. 'CAFE BLOC' 간판은 부드럽게 점등되도록 하십시오. 보도블록과 보행자들은 밤거리의 어두운 조명 환경을 반영하여 조정하십시오.
+</code></pre>
+<h3 id="_6">야간 주변광 보강</h3>
+<pre><code class="language-markdown">지금 생성된 이미지인데, 평가해 줘. 도심에 있는 카페 건물이라면 주변광이 부족해 보이는데, 어때?
+---
+Based on the provided night image, enhance the environmental lighting to reflect a realistic city center location. While keeping the building itself unlit by architectural spotlights, introduce ambient city lights and streetlamps from the surrounding area. The large concrete wall should not be pitch black but faintly illuminated by the soft, cool glow of the city, revealing its texture. Add realistic reflections of streetlights and neon signs on the pavement tiles, making the street look active and situated in an urban context. Increase the overall brightness slightly to simulate light pollution typical of a downtown area, balancing the warm interior glow with the cool exterior environment.
+
+제공된 야경 이미지를 바탕으로, 현실적인 도심지 위치를 반영하도록 환경 조명을 보강하십시오. 건물 자체에 설치된 스포트라이트는 없는 상태를 유지하되, 주변 지역에서 오는 도시의 환경광과 가로등 불빛을 도입하십시오. 거대한 콘크리트 벽면은 완전히 칠흑같이 어두워서는 안 되며, 부드럽고 차가운 도시의 불빛에 의해 희미하게 비치며 텍스처가 드러나야 합니다. 보도블록 타일에 가로등과 네온사인의 사실적인 반사를 추가하여, 거리가 활기차고 도심 속에 위치한 것처럼 보이게 하십시오. 도심 지역 특유의 광공해(light pollution)를 시뮬레이션하여 전체적인 밝기를 약간 높이고, 따뜻한 실내광과 차가운 외부 환경의 균형을 맞추십시오.
+</code></pre>
+<h3 id="_7">경관 조명 연출_1차 시도</h3>
+<pre><code class="language-markdown">첫 번째 이미지의 실외 벽면에 야간 경관 조명을 해 줘. 경관 조명에 사용하는 조명기구와 빔 패턴은 두 번째 이미지의 실외 벽면에 있는 조명기구와 빔 패턴을 가져다 똑같이 적용해 줘. 첫 번째 이미지에서 새로 설치할 야간 경관 조명 요소 외에는 그대로 유지해 줘.
+---
+Reference the attached Image 1 as the primary base and Image 2 as the lighting detail reference.
+Apply the exterior lighting design from Image 2 onto the large, dark concrete wall on the left side of Image 1.
+1. Lighting Addition: Install a row of small, modern wall-mounted downlights on the left concrete wall. Create distinct, warm-toned conical light beam patterns (scallops) that wash down the textured concrete surface, exactly replicating the intensity and shape seen in Image 2.
+2. Preservation: Strictly maintain the rest of Image 1 unchanged. Keep the 'CAFE BLOC' sign, the bright interior visible through the glass windows on the right, the pedestrians walking on the sidewalk, and the overall night sky atmosphere.
+3. Outcome: A realistic night architectural visualization where the only change is the addition of decorative wall washing lights on the blank concrete facade.
+
+첨부된 이미지 1을 기본 구도로, 이미지 2를 조명 디테일 참조로 사용하십시오. 이미지 1의 좌측에 있는 거대하고 어두운 콘크리트 벽면에 이미지 2의 외부 조명 디자인을 적용하십시오.
+조명 추가: 좌측 콘크리트 벽면에 일렬로 배치된 소형 현대식 벽부등(다운라이트)을 추가하십시오. 이미지 2에서 보이는 것과 똑같은 강도와 형태를 가진, 선명하고 따뜻한 톤의 원뿔형 빛 패턴(스캘럽 모양)이 콘크리트 질감을 타고 내려오도록 생성하십시오.
+원본 유지: 이미지 1의 나머지 부분은 엄격하게 유지하십시오. 'CAFE BLOC' 간판, 우측 유리창을 통해 보이는 밝은 내부 인테리어, 보도를 걷는 행인들, 그리고 전반적인 밤하늘 분위기를 그대로 두십시오.
+결과물: 빈 콘크리트 파사드에 장식용 월 워싱(Wall washing) 조명이 추가된 것 외에는 원본과 동일한 사실적인 야간 건축 시각화 이미지여야 합니다.
+</code></pre>
+<h3 id="2">2차 시도</h3>
+<pre><code class="language-markdown">지금 생성한 이미지인데, 의도와 전혀 다르게 작업됐어. 첫 번째 이미지에 빔 패턴이 적용돼야 하는데, 두 번째 이미지를 변경한 결과를 내 놓았는데, 원인 분석과 해결책을 제시해 줘.
+---
+Start with the exact scene and composition of the first image as the absolute base. Keep the building, the &quot;CAFE BLOC&quot; sign, the people, and the wet pavement reflections exactly as they appear in the first image. On the large, blank concrete wall of this scene, install a horizontal row of the small, round, black wall-mounted fixtures sourced from the second image. Then, apply the specific warm, conical down-light beam pattern (defined V-shapes) seen in the second image, where the light washes down the concrete surface, highlighting its rough texture. The lighting should be warm (around 3000K) and realistically interact with the concrete wall of the first image only. Do not alter any other part of the first image.
+
+첫 번째 이미지의 정확한 장면과 구도를 절대적인 베이스로 시작하십시오. 건물, 'CAFE BLOC' 간판, 사람들, 젖은 보도블록의 반사 등 첫 번째 이미지에 있는 모든 요소를 그대로 유지하십시오. 이 장면의 거대한 빈 콘크리트 벽면에, 두 번째 이미지에서 가져온 작고 둥근 검은색 벽부등을 수평으로 일렬로 설치하십시오. 그런 다음, 두 번째 이미지에서 보이는 특유의 **따뜻한 원뿔형 다운라이트 빔 패턴(선명한 V자 형태)**을 적용하여, 빛이 벽을 타고 내려오며 거친 콘크리트 질감을 강조하게 하십시오. 조명은 따뜻한 색온도(약 3000K)여야 하며, 오직 첫 번째 이미지의 콘크리트 벽면과 사실적으로 상호작용해야 합니다. 첫 번째 이미지의 다른 어떤 부분도 변경하지 마십시오.
+</code></pre>
+<h3 id="3">3차 시도</h3>
+<pre><code class="language-markdown">지금 생성한 이미지인데, 두 가지 문제가 있어.
+1) 첫 번째 이미지의 비율이 두 번째 것으로 변경됐어. 2) 외벽의 빔 패턴은 아래쪽으로만 향하게 해야 해.
+
+'위쪽으로 방출되는 빛은 절대 없어야 합니다. 등기구 바로 위의 벽면 영역은 어두운 그림자 상태로 유지되어야 합니다.': 이 부분으로 인해 건물 상부가 아주 어둡게 나오지 않을까 싶은데... 다시 한번 검토해 줘.
+
+'건물 상부는 첫 번째 이미지 상태를 유지한다'라는 문구는 어때?
+---
+Strictly maintain the exact aspect ratio, wide framing, and composition of the first image. Do not crop. On the concrete wall, install the horizontal row of black wall sconces.
+
+Lighting &amp; Preservation Strategy:
+1. Below the fixtures: Apply a strictly downward-facing warm (3000K) beam pattern (V-shapes) sourced from the second image.
+2. Above the fixtures: Strictly maintain the condition of the upper wall exactly as it appears in the first image. Do not add any light, shadow, or darkness to the upper section. Simply preserve the original concrete texture and the soft ambient visibility from the first image.
+
+첫 번째 이미지의 정확한 비율, 와이드 프레임, 그리고 구도를 엄격하게 유지하십시오. 잘라내지 마십시오. 콘크리트 벽면에 검은색 벽부등을 수평으로 일렬로 설치하십시오.
+
+조명 및 보존 전략:
+
+1. 등기구 아래쪽: 두 번째 이미지에서 가져온 **엄격한 하향광(downward-facing)**의 따뜻한(3000K) 빔 패턴(V자 형태)을 적용하십시오.
+
+2. 등기구 위쪽: 상단 벽면의 상태를 첫 번째 이미지에 보이는 그대로 엄격하게 유지하십시오. 상단 부분에는 어떠한 빛이나 그림자, 어둠도 추가하지 마십시오. 첫 번째 이미지의 원래 콘크리트 질감과 부드러운 주변광 시인성을 단순히 보존하십시오.
+</code></pre>
+<h3 id="45">4~5차 시도</h3>
+<pre><code class="language-markdown">지금 생성한 이미지야. 조명기구의 간격이 등간격이 아니라서 문제가 있어 보여. 해결책은? 그리고 조명기구의 설치 높이를 1층의 천정 높이로 조정하고 싶어.
+
+높이는 조절됐지만, 등간격은 이번에도 실패했어. 2중 레퍼런스 방식을 사용하지 말고, 지금 이 이미지를 레퍼런스로 해서 조명기구 설치 간격 문제만 정확하게 다루면 어떨까?
+
+조명기구 수량을 6개로 지정할 수 있을까?
+---
+Based on the provided image, modify the wall lighting installation. Keep the entire scene, including the building, the &quot;CAFE BLOC&quot; sign, pedestrians, and the warm downward beam pattern style, exactly as they are. The only change is to configure the wall lights. Install exactly six black wall sconces along the concrete wall at their current height. These six fixtures must be perfectly equidistant and uniformly spaced across the facade, creating a precise and regular rhythm.
+
+제공된 이미지를 바탕으로, 벽면 조명 설치를 수정하십시오. 건물, 'CAFE BLOC' 간판, 보행자, 그리고 따뜻한 하향광 빔 패턴 스타일을 포함한 전체 장면을 현재 상태 그대로 유지하십시오. 유일한 변경 사항은 벽부등의 구성을 변경하는 것입니다. 콘크리트 벽면의 현재 높이에 정확히 6개의 검은색 벽부등을 설치하십시오. 이 6개의 조명기구는 파사드 전체에 걸쳐 완벽하게 등간격이고 균일하게 배치되어 정밀하고 규칙적인 리듬을 만들어야 합니다.
+</code></pre>
+<h2 id="_8">간단한 인페인팅과 인포그래픽</h2>
+<pre><code class="language-markdown">이 이미지를 도면식 스케치 스타일로 변경해 줘.
+
+석재 볼라드를 카페 이미지의 빨간 색 점 위에 넣어 줘. 볼라드 중심이 빨간 점 위에 놓여서 빨간 점이 가려져서 이미지에 나타나지 않게 해 줘. 카페 이미지의 나머지 요소와 비율은 유지해 줘.
+</code></pre>
+<pre><code class="language-markdown">첫 번째 이미지를 작업해서 두 번째 이미지로 변경했는데, 적절한 한글 인포그래픽을 두 번째 이미지에 넣어 줘.
+</code></pre>
+<h2 id="_9">카드 뉴스 디자인</h2>
+<h3 id="v018">플랫 디자인 셰프 v018</h3>
+<pre><code class="language-markdown">## 역할 (Role)
+당신은 사용자의 아이디어를 고채도의 시각적 결과물로 요리하는 전문 AI 파트너 &quot;플랫 디자인 셰프 v018&quot;입니다. 구글의 최신 이미지 생성 모델에 최적화된 프롬프트를 작성하며, 기획부터 이미지 생성, 텍스트 합성까지 단계별로 완벽하게 가이드합니다.
+
+## 핵심 운영 원칙 (Core Principles)
+1. **매체 최적화 (Media First):** 시작 전 매체의 본질을 브리핑하여 성공 전략을 수립합니다.
+2. **비비드 팝 컬러 라인 플랫 (Vivid Pop Color Line Flat):** - 기본 스타일: 굵은 검은색 아웃라인, 미니멀한 구성.
+   - 컬러 전략: 채도가 높은(Highly Saturated) 다채롭고 비비드한 컬러를 기본값으로 사용.
+3. **철저한 순차 공정:** [1.브리핑] → [2.기획] → [3.전체대본] → [4.이미지] → [5.합성]의 5단계를 준수합니다.
+4. **이미지 모델 최적화:** 미드저니 전용 파라미터(예: --v 6.0)를 절대 사용하지 않으며, 구글 이미지 생성 모델이 이해하기 쉬운 상세한 자연어 묘사와 비율(--ar 1:1)만 사용합니다.
+
+## 공정 상태바 (Status Tracker)
+모든 응답 상단에 표시:
+&gt; **[진행 상황]:** `1.브리핑` -&gt; `2.기획` -&gt; `3.전체대본` -&gt; `4.이미지` -&gt; `5.합성`
+&gt; **[현재 단계]:** (단계명) / **[상태]:** (사용자 승인 대기 중 / 작업 중)
+
+## 5단계 작업 프로세스
+### [1단계] 매체 구조 및 본질 브리핑
+* 가독성, 정보 압축, 시각적 계층 구조 등 매체의 성공 방정식을 설명합니다.
+### [2단계] 기획하기
+* 타겟(Who), 주제(What), 이미지 비율(Ratio)을 확정합니다.
+### [3단계] 전체 대본 쓰기
+* '1장 1메시지' 원칙에 따라 페이지별 카피를 작성합니다.
+### [4~5단계] 페이지별 요리 (Per-Page Loop)
+* **4단계 (이미지):** 비비드한 색감과 텍스트를 위한 '넓은 여백'이 확보된 베이스 이미지 프롬프트를 제공합니다.
+* **5단계 (합성):** 4단계에서 생성된 이미지를 &quot;레퍼런스(Reference)&quot;로 활용하여, 그 위에 텍스트를 정확하게 합성하도록 유도하는 범용 합성 프롬프트를 제공합니다.
+
+## 프롬프트 출력 양식 (4, 5단계 필수)
+1. **[디자인 논리 (Design Logic)]:** 레이아웃 의도, 컬러 대비 전략, 여백 설계 이유.
+2. **[English Prompt]:** AI 입력용 영문 프롬프트 (비율 파라미터 포함).
+3. **[Korean Prompt]:** 영문 프롬프트의 한글 번역.
+4. **[Copy Code]:** 영문 프롬프트 코드 블록.
+   - *참고: 5단계 프롬프트는 &quot;Based on the provided/attached reference image...&quot;와 같은 범용적 지칭을 사용하여 이미지 참조 합성을 명시합니다.*
+</code></pre>
+<h3 id="ai">직장인 AI 교육 이벤트용 카드 뉴스 이미지</h3>
+<pre><code class="language-markdown">직장인 AI 교육 이벤트용 카드 뉴스 작성 예시를 진행해 보자.
+
+기획 아이디어 3개를 더 보여줘.
+
+2번으로 진행해 보자.
+
+각 페이지 별로 차례대로 진행하면서 개선하자. 표지부터 시작하자고.
+
+지금 생성한 표지 이미지야. 의도한 바와 같나? 냉정하게 평가해 줘.
+
+이제 이 이미지에 텍스트를 넣어 봐야지. 표지에 해당하는 텍스트를 넣어서 디자인을 완성시켜줘.
+
+원래는 프롬프트를 작성해 줘야 하는데... 이미지를 뽑았네... 텍스트 합성 프롬프트를 작성해 줘.
+
+이걸 이미지 레퍼런스를 활용해서 별도의 이미지 모델에서 생성하는 거야. 그에 합당한 문장 구조로 작성해 줘.
+
+이미지 파일명 대신, 업로드 또는 첨부한 파일이라는 문구를 사용해.
+</code></pre>
+<h2 id="_10">컨셉 이미지와 스타일 변주</h2>
+<pre><code class="language-markdown">나침반을 이용해 기업의 **개척 정신**과 **현장 중심의 경영 전략**을 상징하는 컨셉 이미지용 프롬프트를 작성해 줘.
+
+조직 회복과 성장의 가치를 극적으로 보여주는 컨셉 이미지 프롬프트
+
+회사에서 흔히 강조하는 가치(혁신, 협력, 비전, 성장, 갈등, 조정 등)를 **현실적이고 익숙한 사물이나 상황**에 빗대어 표현하는 컨셉 이미지 예시를 보여줘.
+</code></pre>
+<pre><code class="language-markdown">업로드한 컨셉 이미지를 극적으로 만들어 줄 이미지 자체의 스타일(화풍)을 추천해 주고, 해당 작업을 위한 프롬프트를 작성해 줘.
+</code></pre></div>
+                </article>
+                <div class="flex justify-end mt-10">
+                    <div class="text-sm text-gray-800 dark:text-gray-200">
+                        <span class="font-bold">마지막 편집일시</span>
+                        : 2025년 12월 18일 4:01 오전
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-24">
+                    <a href="/blog/@tasol_blog/">
+                        
+                            <img src="https://static.wikidocs.net/images/blog_profile_images/%EC%B0%A8%EA%B7%BC%EC%B0%A8%EA%B7%BC_%EC%9D%B4%EB%AF%B8%EC%A7%8003.png"
+                                 alt="Profile Image"
+                                 class="w-32 h-32 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-sm">
+                        
+                    </a>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">
+                            <a href="/blog/@tasol_blog/">@tasol_blog</a>
+                        </h1>
+                        
+                            <p class="text-gray-400 dark:text-gray-500">상태 메시지가 없습니다.</p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <!-- 구독 아이콘 -->
+                            <span hx-post="/blog/subscribe/410/"
+                                  hx-swap="none"
+                                  data-request-id="subscribe"
+                                  id="subscribe-icon"
+                                  class="text-2xl cursor-pointer align-middle">
+                                
+                                    <i class="far fa-star text-gray-500" title="구독"></i>
+                                
+                            </span>
+                            <span class="text-sm mt-0.5">구독</span>
+                            <!-- 구독자 수 -->
+                            <span id="subscribe-count"
+                                  class="mt-0.5 ml-1 text-gray-600 dark:text-gray-400 align-middle font-semibold text-xs cursor-pointer"
+                                  hx-get="/blog/410/subscriber/"
+                                  hx-target="#like-popup-content"
+                                  hx-trigger="click"
+                                  hx-swap="innerHTML">6</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-10 mb-5 border-gray-300 dark:border-gray-600">
+                <!-- message 표시 -->
+                
+                <a id="comment_top"></a>
+            </div>
+            <!-- adsense -->
+            
+    <div class="my-8">
+        
+            
+    <div class="flex justify-start gap-4">
+        <div class="first-ad ad-container">
+            <div id="primary-ad-1" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-1" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+        <div class="second-ad ad-container">
+            <div id="primary-ad-2" class="primary-ad">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;
+                            width:336px;
+                            height:280px"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="6452842464"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+            <div id="fallback-ad-2" class="fallback-ad" style="display: none;">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-6t+ed+2i-1n-4w"
+                     data-ad-client="ca-pub-9470517771012578"
+                     data-ad-slot="3202145385"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </div>
+
+
+            <h2 class="text-2xl font-semibold mt-4 mb-6 text-gray-800 dark:text-gray-200">
+                0개의 댓글
+            </h2>
+            <div id="comments"
+     hx-swap="outerHTML"
+     class="w-3/4">
+    
+</div>
+
+            <!-- 댓글 작성 폼 -->
+            <div class="my-4 w-3/4">
+                <form action="/blog/6102/add_comment/"
+                      method="post"
+                      hx-post="/blog/6102/add_comment/"
+                      data-request-id="comment"
+                      hx-on="htmx:afterOnLoad: this.reset()"
+                      hx-target="#comments"
+                      hx-swap="outerHTML">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="o9YD3Q5qprKZ3GmlknFqGpqIlzpvqcDTUsmfEj9zANdLzr3xxaCk10vZfszCgcpY">
+                    <input type="hidden" name="reply_user_id" id="reply_user_id">
+                    <textarea name="content"
+                              cols="40"
+                              rows="3"
+                              class="w-full text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-700 cursor-not-allowed"
+                              disabled
+                              placeholder="댓글을 입력하세요..."
+                              required
+                              id="id_content"></textarea>
+                    <div id="emoji-picker" style="display:none;">
+                        <span class="emoji">😊</span>
+                        <span class="emoji">👍</span>
+                        <span class="emoji">😍</span>
+                        <span class="emoji">😂</span>
+                        <span class="emoji">😢</span>
+                        <span class="emoji">😡</span>
+                        <span class="emoji">😭</span>
+                        <span class="emoji">😱</span>
+                        <span class="emoji">🤔</span>
+                        <span class="emoji">❤️</span>
+                    </div>
+                    
+                        <a href="/loginForm?next=/blog"
+                           class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">로그인이 필요합니다.</a>
+                    
+                </form>
+            </div>
+            
+                <div class="w-3/4 text-sm mt-16 mb-0 text-emerald-500 font-semibold border-t border-b py-4 border-t-gray-300 dark:border-t-gray-600 dark:text-emerald-400">
+                    @tasol_blog 님의 모든 글
+                </div>
+                <!-- 블로그 리스트 -->
+                <div id="blog-posts-list">
+<div class="prose dark:prose-invert max-w-none w-3/4">
+    <table class="table-auto w-full border-collapse">
+        <tbody>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@tasol_blog/8293/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            대화형 AI 활용 아이디어와 사례 모음
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 02월 24일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@tasol_blog/6453/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            AI 활용법 특강 프롬프트 모음: TASoL
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2026년 01월 15일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@tasol_blog/6102/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 font-semibold text-blue-500 dark:text-blue-400">
+                            AI 이미지/영상 활용 프롬프트 모음 3편: KIEL/TASoL
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 12월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@tasol_blog/6100/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            AI 이미지/영상 활용 프롬프트 모음 2편: KIEL/TASoL
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 12월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="border-b border-gray-300 dark:border-gray-700">
+                    <td class="text-left py-2 px-0" style="width:75%">
+                        <a href="/blog/@tasol_blog/6099/"
+                           class="w-3/4 not-prose hover:text-red-500 dark:hover:text-red-400 ">
+                            AI 이미지/영상 활용 프롬프트 모음 1편: KIEL/TASoL
+                        </a>
+                        <span class="text-xs ml-2 text-gray-400 dark:text-gray-500 space-x-0.5">
+                            
+                            <span class="inline-block items-center">
+                                <i class="far fa-heart"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                            <span class="inline-block items-center">
+                                <i class="far fa-comment"></i>
+                                <span class="ml-0">0</span>
+                            </span>
+                        </span>
+                    </td>
+                    <td class="py-2 px-0 text-right text-sm" style="width:25%">
+                        
+                            <span class="">2025년 12월 16일</span>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+    <div class="pagination-controls flex items-center justify-center space-x-2 mt-4">
+        <!-- 이전 버튼 -->
+        <button 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                disabled>이전</button>
+        <!-- 페이지 정보 -->
+        <span class="text-sm text-gray-700 dark:text-gray-300">
+            1 / 9
+        </span>
+        <!-- 다음 버튼 -->
+        <button  hx-get="/blog/detail/list/410/6102/2/" hx-target="#blog-posts-list" hx-swap="innerHTML" 
+                class="px-2 py-1 bg-blue-500 text-white text-xs rounded disabled:bg-gray-300 disabled:text-gray-500 dark:disabled:bg-gray-700 dark:disabled:text-gray-400 hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600"
+                >다음</button>
+    </div>
+</div>
+</div>
+            
+            
+        </div>
+        <!-- 팝업 컨테이너 -->
+        <div id="like-popup"
+             class="fixed inset-0 hidden z-[3000] bg-gray-800 bg-opacity-75 flex items-center justify-center"
+             onclick="closePopupOutside(event)">
+            <div id="like-popup-content"
+                 class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-sm w-full mx-auto">
+                <!-- 팝업 내용은 HTMX로 로드 -->
+            </div>
+        </div>
+    </div>
+    <!-- 위키 팝업 -->
+    <div id="popup"
+         class="hidden absolute z-50 bg-white border border-gray-300 rounded-lg shadow-lg w-80 p-4 dark:bg-gray-800 dark:border-gray-600">
+        <div class="flex items-center justify-between mb-2">
+            <a href=""
+               id="popup-title"
+               class="font-bold text-blue-600 hover:underline dark:text-blue-400"
+               target="_blank">Title</a>
+            <button id="popup-close"
+                    class="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400">
+                &times;
+            </button>
+        </div>
+        <div id="popup-content" class="text-sm text-gray-700 dark:text-gray-300">Loading...</div>
+    </div>
+
+                    </main>
+                    <!-- Sidebar -->
+                    
+                        <aside class="w-72 py-8 border-l pl-10 border-gray-300 dark:border-gray-700 ">
+                            
+    <div id="blog_detail"
+         class="mb-8 flex flex-col items-start space-y-3"
+         data-is-protect="false">
+        <!-- 조회수 표시 -->
+        <a href="#" class="view text-sm flex items-center space-x-2">
+            <div class="bg-green-100 dark:bg-green-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-eye text-green-500 dark:text-green-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">571</span>
+            </div>
+        </a>
+        <!-- 좋아요 버튼 -->
+        <div class="recommend text-sm flex items-center space-x-2">
+            <div class="bg-red-100 dark:bg-red-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <!-- 하트 아이콘: 좋아요 기능 -->
+                <i id="like-icon-6102"
+                   class="far fa-heart text-red-500 dark:text-red-300 text-lg cursor-pointer"
+                   >
+                </i>
+                <!-- 좋아요 수 -->
+                <span id="like-count-6102"
+                      class="text-gray-800 dark:text-gray-200 cursor-pointer"
+                      hx-get="/blog/6102/likes/"
+                      hx-target="#like-popup-content"
+                      hx-trigger="click">0</span>
+            </div>
+        </div>
+        <!-- 댓글 버튼 -->
+        <a href="#comment_top"
+           class="comment text-sm flex items-center space-x-2">
+            <div class="bg-blue-100 dark:bg-blue-900 rounded-lg p-2 flex items-center justify-center space-x-2">
+                <i class="far fa-comment text-blue-500 dark:text-blue-300 text-lg"></i>
+                <span class="text-gray-800 dark:text-gray-200">0</span>
+            </div>
+        </a>
+    </div>
+    
+    
+    <div class="my-8 sticky top-20">
+        
+            <div class="w-full flex items-center justify-center">
+    <div id="primary-ad-3" class="primary-ad">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <!-- 블로그 사이드바 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;
+                    width:240px;
+                    height:500px"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="6844928804"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    <div id="fallback-ad-3" class="fallback-ad" style="display: none;">
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9470517771012578"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-9470517771012578"
+             data-ad-slot="3202145385"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+
+        
+    </div>
+
+
+
+                        </aside>
+                    
+                </div>
+            
+            
+                <footer class="bg-gray-50 dark:bg-gray-900 text-center text-sm md:text-base py-10 border-t border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4">
+        <div class="text-gray-600 dark:text-gray-400">
+            &copy; 2008 wikidocs™. All Rights Reserved. •
+            <a href="/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">위키독스</a> •
+            <a href="https://wikidocs.net/265555"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">블로그 이용 가이드</a> •
+            <a href="https://wikidocs.net/blog/@pahkey/314/"
+               class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">버그 및 건의</a>
+        </div>
+        <div class="mt-2 text-gray-600 dark:text-gray-400">
+            대표자명: 박응용 • 사업자등록번호 : 724-14-01849 • 문의: <a href="mailto:admin@wikidocs.net"
+    class="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-500">admin@wikidocs.net</a>
+        </div>
+    </div>
+    <!-- 다크 모드 토글 버튼 -->
+    <a href="#"
+       onclick="toggleDarkMode(event)"
+       class="inline-block space-x-1 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded mt-4 hover:bg-gray-300 dark:hover:bg-gray-700">
+        <i class="fas fa-adjust"></i>
+        <span>다크 모드 전환</span>
+    </a>
+</footer>
+
+            
+        </div>
+        <!-- "맨위로 가기" 버튼 -->
+        <button id="scrollTopButton"
+                class="fixed bottom-5 right-5 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-12 h-12 rounded-full shadow-lg items-center justify-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="https://static.wikidocs.net/static/blog/js/blog_common.min.js?v=2"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous"></script>
+    <script id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://static.wikidocs.net/static/blog/js/blog_detail.min.js?v=5"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({ startOnLoad: false, theme: isDark ? 'dark' : 'default' });
+        document.querySelectorAll('pre code.language-mermaid').forEach((el) => {
+            const pre = el.parentElement;
+            const div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = el.textContent;
+            pre.replaceWith(div);
+        });
+        await mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+    </script>
+
+    </body>
+</html>
+
+<img src='https://terzeron.com/xml/img/1x1.jpg?feed=wikidocs_blog.xml&item=daa9177'/>
