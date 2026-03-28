@@ -9,19 +9,7 @@
       "window_size": 20,
       "unit_size_per_day": 120,
       "list_url_list": [
-        "https://wikidocs.net/blog/main/",
-        "https://wikidocs.net/blog/main/?kw=&page=2",
-        "https://wikidocs.net/blog/main/?kw=&page=3",
-        "https://wikidocs.net/blog/main/?kw=&page=4",
-        "https://wikidocs.net/blog/main/?kw=&page=5",
-        "https://wikidocs.net/blog/main/?kw=&page=6",
-        "https://wikidocs.net/blog/main/?kw=&page=7",
-        "https://wikidocs.net/blog/main/?kw=&page=8",
-        "https://wikidocs.net/blog/main/?kw=&page=9",
-        "https://wikidocs.net/blog/main/?kw=&page=10",
-        "https://wikidocs.net/blog/main/?kw=&page=11",
-        "https://wikidocs.net/blog/main/?kw=&page=12",
-        "https://wikidocs.net/blog/main/?kw=%EB%8B%B5%EC%95%88%EB%83%84&page=1&sort=recent&only_subscribed=false&only_liked=false"
+        "https://wikidocs.net/blog/main/"
       ]
     },
     "extraction": {
