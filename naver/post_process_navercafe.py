@@ -5,6 +5,7 @@ import re
 import json
 import getopt
 import requests
+from pathlib import Path
 from urllib.parse import unquote
 import unittest
 from unittest.mock import patch
@@ -12,24 +13,49 @@ from unittest.mock import patch
 from bin.feed_maker_util import IO, header_str, Env
 
 
+def read_cookies(feed_dir_path: str) -> dict[str, str]:
+    cookie_file = Path(feed_dir_path) / "cookies.requestsclient.json"
+    cookies = {}
+    if cookie_file.is_file():
+        with cookie_file.open("r", encoding="utf-8") as f:
+            for cookie in json.load(f):
+                name = cookie.get("name", "")
+                value = cookie.get("value", "")
+                if name and value:
+                    cookies[name] = value
+    return cookies
+
+
 def main():
     # dump out stdin
     IO.read_stdin()
 
+    feed_dir_path = "."
     optlist, args = getopt.getopt(sys.argv[1:], "f:")
+    for opt, val in optlist:
+        if opt == "-f":
+            feed_dir_path = val
     page_url = args[0]
-    
-    m = re.search(r'cafes/(?P<cafe_id>\d+)/articles/(?P<article_id>\d+)', page_url)
+
+    m = re.search(r"cafes/(?P<cafe_id>\d+)/articles/(?P<article_id>\d+)", page_url)
     if m:
         cafe_id = m.group("cafe_id")
         article_id = m.group("article_id")
         url = f"https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/{cafe_id}/articles/{article_id}"
-        
+
+        cookies = read_cookies(feed_dir_path)
         try:
-            response = requests.get(url, timeout=5)
+            response = requests.get(url, cookies=cookies, timeout=5)
             response.raise_for_status()
         except requests.RequestException as e:
-            print(f"Error fetching URL: {e}", file=sys.stderr)
+            if (
+                isinstance(e, requests.HTTPError)
+                and e.response is not None
+                and e.response.status_code == 401
+            ):
+                print(f"Warning: Unauthorized (401) for URL: {e}", file=sys.stderr)
+            else:
+                print(f"Error fetching URL: {e}", file=sys.stderr)
             sys.exit(1)
 
         if response:
@@ -38,7 +64,7 @@ def main():
                 result = data["result"]
 
                 print(header_str)
-                
+
                 # 본문
                 image_list: list[str] = []
                 i = 0
@@ -47,18 +73,21 @@ def main():
                     for attach in attaches:
                         if attach.get("type", "") == "M":
                             image_url = re.sub(
-                                r'https://download.blog.naver.com/\w+/(\w+)/',
-                                r'https://phinf.pstatic.net/image.nmv/\1/', 
-                                attach.get("url", ""))
+                                r"https://download.blog.naver.com/\w+/(\w+)/",
+                                r"https://phinf.pstatic.net/image.nmv/\1/",
+                                attach.get("url", ""),
+                            )
                             image_list.append(f"<img src='{image_url}' />")
-                    
+
                 if "article" in result:
                     article = result["article"]
 
                     # 이미지 수집
                     content_elements = article.get("contentElements", [])
                     if not content_elements and "scrap" in article:
-                        content_elements = article.get("scrap", {}).get("contentElements", [])
+                        content_elements = article.get("scrap", {}).get(
+                            "contentElements", []
+                        )
 
                     for image_element in content_elements:
                         json_ = image_element.get("json", {})
@@ -70,18 +99,26 @@ def main():
                             image_url = json_["image"].get("url", "")
                             if "egloos.com" in image_url or "hanafos.com" in image_url:
                                 continue
-                            m_img = re.search(r'https://dthumb-phinf\.pstatic\.net/\?src=%22(?P<real_image_url>http.*)%22', image_url)
+                            m_img = re.search(
+                                r"https://dthumb-phinf\.pstatic\.net/\?src=%22(?P<real_image_url>http.*)%22",
+                                image_url,
+                            )
                             if m_img:
                                 image_url = unquote(m_img.group("real_image_url"))
                             image_list.append(f"<img src='{image_url}' />")
                         elif "url" in json_:
-                            m_yt = re.search(r'(?P<youtube_link>youtube.com/embed/(?P<youtube_id>\w+))', json_["url"])
+                            m_yt = re.search(
+                                r"(?P<youtube_link>youtube.com/embed/(?P<youtube_id>\w+))",
+                                json_["url"],
+                            )
                             if m_yt:
                                 youtube_id = m_yt.group("youtube_id")
                                 image_url = f"https://i.ytimg.com/vi_webp/{youtube_id}/maxresdefault.webp"
-                                image_list.append(f"<a href='https://{m_yt.group('youtube_link')}'><img src='{image_url}' /></a>")
-                            
-                    # 본문 출력 
+                                image_list.append(
+                                    f"<a href='https://{m_yt.group('youtube_link')}'><img src='{image_url}' /></a>"
+                                )
+
+                    # 본문 출력
                     html = article.get("contentHtml", "")
                     if "scrap" in article and "contentHtml" in article.get("scrap", {}):
                         html += article["scrap"]["contentHtml"]
@@ -89,25 +126,136 @@ def main():
                     for i, img_tag in enumerate(image_list):
                         html = html.replace(f"[[[CONTENT-ELEMENT-{i}]]]", img_tag)
 
-                    html = re.sub(r' (style|class|lang)="[^"]*"', '', html)
-                    html = re.sub(r'</?span>', '', html)
-                    html = re.sub(r'<(br|img) ?/?>', r'<\1/>\n', html)
-                    html = re.sub(r'</(div|span|p|li|h\d)/?>', r'</\1>\n', html)
-                        
+                    html = re.sub(r' (style|class|lang)="[^"]*"', "", html)
+                    html = re.sub(r"</?span>", "", html)
+                    html = re.sub(r"<(br|img) ?/?>", r"<\1/>\n", html)
+                    html = re.sub(r"</(div|span|p|li|h\d)/?>", r"</\1>\n", html)
+
                     print("<div>")
                     print(html)
                     print("</div>")
-                        
+
                 # 댓글
                 comments = result.get("comments", {}).get("items", [])
                 if comments:
-                    print("<div>\n<h2>--------------------- 댓글 ---------------------</h2>\n<div>\n")
+                    print(
+                        "<div>\n<h2>--------------------- 댓글 ---------------------</h2>\n<div>\n"
+                    )
                     for comment in comments:
                         nick = comment.get("writer", {}).get("nick", "???")
                         comment_text = comment.get("content", "")
-                        comment_sticker_img_url = comment.get("sticker", {}).get("url", "") + "?type=pa30_30"
-                        print(f"<p><span>{nick}:</span> <span>{comment_text}</span> <span><img src='{comment_sticker_img_url}' /></span></p>\n")
+                        comment_sticker_img_url = (
+                            comment.get("sticker", {}).get("url", "") + "?type=pa30_30"
+                        )
+                        print(
+                            f"<p><span>{nick}:</span> <span>{comment_text}</span> <span><img src='{comment_sticker_img_url}' /></span></p>\n"
+                        )
                     print("</div>\n</div>\n")
+
+
+class TestReadCookies(unittest.TestCase):
+    def setUp(self):
+        import tempfile
+
+        self.tmp = tempfile.mkdtemp()
+
+    def test_reads_multiple_cookies(self):
+        cookie_file = Path(self.tmp) / "cookies.requestsclient.json"
+        cookie_file.write_text(
+            json.dumps(
+                [
+                    {"name": "NID_AUT", "value": "aut_val"},
+                    {"name": "NID_SES", "value": "ses_val"},
+                    {"name": "NID_JST", "value": "jst_val"},
+                ]
+            )
+        )
+        result = read_cookies(self.tmp)
+        self.assertEqual(
+            result, {"NID_AUT": "aut_val", "NID_SES": "ses_val", "NID_JST": "jst_val"}
+        )
+
+    def test_skips_empty_name_or_value(self):
+        cookie_file = Path(self.tmp) / "cookies.requestsclient.json"
+        cookie_file.write_text(
+            json.dumps(
+                [
+                    {"name": "", "value": "val"},
+                    {"name": "key", "value": ""},
+                    {"name": "good", "value": "cookie"},
+                ]
+            )
+        )
+        result = read_cookies(self.tmp)
+        self.assertEqual(result, {"good": "cookie"})
+
+    def test_returns_empty_when_no_file(self):
+        result = read_cookies(self.tmp)
+        self.assertEqual(result, {})
+
+    def test_returns_empty_for_empty_list(self):
+        cookie_file = Path(self.tmp) / "cookies.requestsclient.json"
+        cookie_file.write_text("[]")
+        result = read_cookies(self.tmp)
+        self.assertEqual(result, {})
+
+    def tearDown(self):
+        import shutil
+
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+
+_MODULE = __name__
+
+
+class TestMainCookiesPassedToRequest(unittest.TestCase):
+    def _mock_response(self, text):
+        resp = unittest.mock.MagicMock()
+        resp.status_code = 200
+        resp.text = text
+        resp.raise_for_status = unittest.mock.MagicMock()
+        return resp
+
+    def test_cookies_forwarded_to_api(self):
+        with (
+            patch(
+                f"{_MODULE}.read_cookies", return_value={"NID_AUT": "a", "NID_SES": "b"}
+            ) as mock_rc,
+            patch(f"{_MODULE}.requests.get") as mock_get,
+            patch(f"{_MODULE}.IO.read_stdin"),
+        ):
+            mock_get.return_value = self._mock_response(
+                '{"result":{"article":{"contentHtml":"hello","contentElements":[]},"comments":{"items":[]}}}'
+            )
+            sys.argv = [
+                "prog",
+                "-f",
+                "/some/path",
+                "https://m.cafe.naver.com/ca-fe/web/cafes/123/articles/456",
+            ]
+            main()
+            mock_rc.assert_called_once_with("/some/path")
+            mock_get.assert_called_once_with(
+                "https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/123/articles/456",
+                cookies={"NID_AUT": "a", "NID_SES": "b"},
+                timeout=5,
+            )
+
+    def test_default_feed_dir_when_no_f_option(self):
+        with (
+            patch(f"{_MODULE}.read_cookies", return_value={}) as mock_rc,
+            patch(f"{_MODULE}.requests.get") as mock_get,
+            patch(f"{_MODULE}.IO.read_stdin"),
+        ):
+            mock_get.return_value = self._mock_response(
+                '{"result":{"article":{"contentHtml":"x","contentElements":[]},"comments":{"items":[]}}}'
+            )
+            sys.argv = [
+                "prog",
+                "https://m.cafe.naver.com/ca-fe/web/cafes/123/articles/456",
+            ]
+            main()
+            mock_rc.assert_called_once_with(".")
 
 
 class TestPostProcessNaverCafe(unittest.TestCase):
@@ -128,20 +276,21 @@ class TestPostProcessNaverCafe(unittest.TestCase):
   }
 }
 """
+
     def _anonymize_recursive(self, obj):
         if isinstance(obj, dict):
             return {k: self._anonymize_recursive(v) for k, v in obj.items()}
         if isinstance(obj, list):
             return [self._anonymize_recursive(obj[0])] if obj else []
-        if isinstance(obj, str): return "__STRING__"
-        if isinstance(obj, int): return "__NUMBER__"
+        if isinstance(obj, str):
+            return "__STRING__"
+        if isinstance(obj, int):
+            return "__NUMBER__"
         return obj
 
-    @patch('__main__.requests.get')
-    def test_input_schema_is_unchanged(self, mock_get):
+    def test_input_schema_is_unchanged(self):
         """API 응답 JSON의 스키마가 변경되지 않았는지 검증합니다."""
-        mock_get.return_value.text = self.SAMPLE_API_RESPONSE
-        sample_data = json.loads(mock_get.return_value.text)
+        sample_data = json.loads(self.SAMPLE_API_RESPONSE)
         golden_schema = self._anonymize_recursive(sample_data)
         self.assertEqual(self._anonymize_recursive(sample_data), golden_schema)
 

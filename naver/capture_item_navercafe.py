@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 
+import math
 import sys
 import re
 import getopt
@@ -10,7 +11,6 @@ import unittest
 from bin.feed_maker_util import IO, Env
 
 
-
 def main():
     url_prefix_template = "https://m.cafe.naver.com/ca-fe/web/cafes/%d/articles/%d"
 
@@ -18,47 +18,87 @@ def main():
     threshold = 0.0
     average = 0.0
     stdev = 1.0
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:t:a:s:")
+    top_ratio = 0.0
+    include_private = False
+    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:t:a:s:r:p")
     for o, a in optlist:
-        if o == '-n':
+        if o == "-n":
             num_of_recent_feeds = int(a)
-        elif o == '-t':
+        elif o == "-t":
             threshold = float(a)
-        elif o == '-a':
+        elif o == "-a":
             average = float(a)
-        elif o == '-s':
+        elif o == "-s":
             stdev = float(a)
-                  
+        elif o == "-r":
+            top_ratio = float(a)
+        elif o == "-p":
+            include_private = True
 
     result_list = []
     content = IO.read_stdin()
-    
+
     try:
         data = json.loads(content)
         if "result" in data and "articleList" in data["result"]:
+            candidates = []
             for article in data["result"]["articleList"]:
                 if "item" in article:
                     item = article["item"]
                     article_id = item["articleId"]
                     cafe_id = item["cafeId"]
                     link = url_prefix_template % (cafe_id, article_id)
-                    nickname = re.sub(r'\n', '', item["writerInfo"]["nickName"].strip())
-                    subject = re.sub(r'\n', '', item["subject"].strip())
+                    nickname = re.sub(r"\n", "", item["writerInfo"]["nickName"].strip())
+                    subject = re.sub(r"\n", "", item["subject"].strip())
                     title = f"{nickname}: {subject}"
-                    
-                    if threshold > 0.0:
-                        read_count = int(item["readCount"])
-                        like_count = int(item["likeCount"])
-                        comment_count = int(item["commentCount"])
-                        score = ((read_count + 5 * like_count + 50 * comment_count) - average) / stdev
-                        if score < threshold:
-                            continue
-                    result_list.append((link, title, item["blindArticle"], item["openArticle"], item["restrictMenu"], item["readCount"], item["likeCount"], item["commentCount"]))
+                    read_count = int(item["readCount"])
+                    like_count = int(item["likeCount"])
+                    comment_count = int(item["commentCount"])
+                    score = read_count + 5 * like_count + 50 * comment_count
+                    candidates.append(
+                        (
+                            link,
+                            title,
+                            item["blindArticle"],
+                            item["openArticle"],
+                            item["restrictMenu"],
+                            item["readCount"],
+                            item["likeCount"],
+                            item["commentCount"],
+                            score,
+                        )
+                    )
+
+            if 0.0 < top_ratio <= 100.0 and candidates:
+                scores = sorted([c[-1] for c in candidates], reverse=True)
+                cutoff_idx = max(1, int(math.ceil(len(scores) * top_ratio / 100.0))) - 1
+                score_cutoff = scores[cutoff_idx]
+                for c in candidates:
+                    if c[-1] >= score_cutoff:
+                        result_list.append(c[:-1])
+            elif threshold > 0.0 and candidates:
+                avg = average
+                sd = stdev
+                for c in candidates:
+                    z = (c[-1] - avg) / sd
+                    if z >= threshold:
+                        result_list.append(c[:-1])
+            else:
+                result_list = [c[:-1] for c in candidates]
     except json.JSONDecodeError:
-        pass # Ignore invalid JSON
-        
-    for (link, title, blind, open_, restrict, read_count, like_count, comment_count) in result_list[:num_of_recent_feeds]:
-        if not blind and open_ and not restrict:
+        pass  # Ignore invalid JSON
+
+    for (
+        link,
+        title,
+        blind,
+        open_,
+        restrict,
+        read_count,
+        like_count,
+        comment_count,
+    ) in result_list[:num_of_recent_feeds]:
+        if not blind and not restrict and (open_ or include_private):
             print(f"{link}\t{title}\t{read_count}\t{like_count}\t{comment_count}")
 
 
@@ -112,8 +152,7 @@ class TestCaptureItemNaverCafe(unittest.TestCase):
         self.assertEqual(
             self._anonymize_recursive(sample_data),
             golden_schema,
-            "\n\n[스키마 불일치 감지]\n"
-            "입력 데이터의 구조(스키마)가 기존과 다릅니다."
+            "\n\n[스키마 불일치 감지]\n입력 데이터의 구조(스키마)가 기존과 다릅니다.",
         )
 
 
