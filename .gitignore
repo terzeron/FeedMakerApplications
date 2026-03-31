@@ -30,3 +30,4 @@ cookies*.json
 .failed_urls_cache
 .claude*
 translation_map.json
+.login.json
