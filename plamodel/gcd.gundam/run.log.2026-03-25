@@ -1,0 +1,522 @@
+[2026-03-25 17:49:56,565][run.py:202][DEBUG] # main()
+[2026-03-25 17:49:56,565][run.py:171][DEBUG] # determine_options()
+[2026-03-25 17:49:56,565][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-25 17:49:56,565][run.py:212][DEBUG] plamodel/gcd.gundam
+[2026-03-25 17:49:56,565][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-25 17:49:56,595][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 17:49:56,595][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 17:49:56,595][run.py:40][DEBUG] # make_single_feed(feed_dir_path='plamodel/gcd.gundam', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-25 17:49:56,595][run.py:55][INFO] * plamodel/gcd.gundam
+[2026-03-25 17:49:56,595][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-25 17:49:56,595][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-25 17:49:56,596][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='plamodel/gcd.gundam', feed_img_dir_path='img/gcd.gundam')
+[2026-03-25 17:49:56,596][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-25 17:49:56,596][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 17:49:56,596][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 17:49:56,596][run.py:73][INFO] * making feed file 'plamodel/gcd.gundam/gcd.gundam.xml'
+[2026-03-25 17:49:56,596][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=plamodel/gcd.gundam, do_collect_by_force=, do_collect_only=, rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml)
+[2026-03-25 17:49:56,596][feed_maker.py:529][DEBUG] # make()
+[2026-03-25 17:49:56,596][feed_maker.py:530][INFO] =========================================================
+[2026-03-25 17:49:56,596][feed_maker.py:531][INFO] plamodel/gcd.gundam
+[2026-03-25 17:49:56,596][feed_maker.py:532][INFO] =========================================================
+[2026-03-25 17:49:56,596][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 17:49:56,597][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 17:49:56,597][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 17:49:56,597][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-25 17:49:56,597][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-25 17:49:56,597][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['../../naver/post_process_navercafe.py', 'download_image.py'], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-25 17:49:56,597][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': 'always', 'rss_title': '모두의 건프라:건담/건담도색완성::네이버', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) NAVER Corp & https://cafe.naver.com/gcd. All rights reserved.', 'rss_link': 'https://terzeron.com/gcd.gundam.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-25 17:49:56,597][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-25 17:49:56,597][feed_maker.py:556][WARNING] Warning: can't read old feed list from files
+[2026-03-25 17:49:56,597][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-25 17:49:56,597][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=plamodel/gcd.gundam, collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=plamodel/gcd.gundam/newlist/20260325.txt
+[2026-03-25 17:49:56,597][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-25 17:49:56,597][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-25 17:49:56,597][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-25 17:49:56,597][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 17:49:56,597][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 17:49:56,597][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 17:49:56,597][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'
+[2026-03-25 17:49:56,597][crawler.py:434][DEBUG] # run(url=https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 17:49:56,598][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 17:49:56,598][crawler.py:228][DEBUG] # make_request(url='https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01', allow_redirects=True)
+[2026-03-25 17:49:56,949][new_list_collector.py:71][DEBUG] cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'
+[2026-03-25 17:49:56,949][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam', dir_path=plamodel/gcd.gundam, input_data=67946 bytes)
+[2026-03-25 17:49:56,950][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/capture_item_navercafe.py', '-n', '10', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam']
+[2026-03-25 17:49:57,075][new_list_collector.py:74][WARNING] Warning: can't get result from item capture script, cmd='../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'', ''
+[2026-03-25 17:49:57,075][new_list_collector.py:93][ERROR] Error: Can't get new list from '['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01']'
+[2026-03-25 17:49:57,075][feed_maker.py:569][ERROR] Error: Can't get recent feed list from urls
+[2026-03-25 17:49:57,075][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='plamodel/gcd.gundam')
+[2026-03-25 17:49:57,075][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-25 17:49:57,076][run.py:84][INFO] # Running time analysis
+[2026-03-25 17:49:57,076][run.py:85][INFO] * Start time: 2026-03-25T08:49:56+00:00
+[2026-03-25 17:49:57,076][run.py:86][INFO] * End time: 2026-03-25T08:49:57+00:00
+[2026-03-25 17:49:57,076][run.py:87][INFO] * Elapsed time: 0.480468
+[2026-03-25 17:49:57,076][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=plamodel/gcd.gundam, new_feed_dir_path=)
+[2026-03-25 17:49:57,076][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 17:49:57,083][feed_manager.py:71][INFO] * The removing of config info of feed 'gcd.gundam' is done.
+[2026-03-25 17:49:57,084][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 17:49:57,085][feed_manager.py:197][INFO] * The removing of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 17:49:57,087][feed_manager.py:296][INFO] * The removing of public feed info of feed 'gcd.gundam' is done.
+[2026-03-25 17:49:57,087][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 17:49:57,089][feed_manager.py:399][INFO] * The removing of progress info of feed 'gcd.gundam' is done.
+[2026-03-25 17:49:57,091][access_log_manager.py:56][INFO] * The removing of access info of feed 'gcd.gundam' is done.
+[2026-03-25 17:49:57,091][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='plamodel/gcd.gundam')
+[2026-03-25 17:49:57,094][html_file_manager.py:143][INFO] * The removing of some html files in 'plamodel/gcd.gundam' is done
+[2026-03-25 17:49:57,099][feed_manager.py:148][INFO] * The adding of config info of feed 'gcd.gundam' is done.
+[2026-03-25 17:49:57,101][feed_manager.py:242][INFO] * The adding of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 17:49:57,101][feed_manager.py:305][ERROR] can't find a public feed file 'gcd.gundam.xml'
+[2026-03-25 17:49:57,101][feed_manager.py:342][INFO] * The adding of public feed info of feed 'gcd.gundam' is done. 0 items
+[2026-03-25 17:49:57,104][feed_manager.py:497][INFO] * The adding of progress info of feed 'gcd.gundam' is done. 1 items
+[2026-03-25 17:49:57,104][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 17:49:57,104][html_file_manager.py:178][INFO] * The adding of some html files in 'plamodel/gcd.gundam' is done. 0 items
+[2026-03-25 17:49:57,105][run.py:234][INFO] # Checking problems and making report
+[2026-03-25 17:50:16,423][crawler.py:484][DEBUG] # main()
+[2026-03-25 17:50:16,423][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Accept-Encoding': 'gzip, deflate', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Accept': '*/*', 'Connection': 'Keep-Alive'}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 17:50:16,423][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Accept-Encoding': 'gzip, deflate', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Accept': '*/*', 'Connection': 'Keep-Alive'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 17:50:16,423][crawler.py:434][DEBUG] # run(url=https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 17:50:16,423][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 17:50:16,423][crawler.py:228][DEBUG] # make_request(url='https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01', allow_redirects=True)
+[2026-03-25 19:37:25,027][run.py:202][DEBUG] # main()
+[2026-03-25 19:37:25,027][run.py:171][DEBUG] # determine_options()
+[2026-03-25 19:37:25,027][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-25 19:37:25,027][run.py:212][DEBUG] plamodel/gcd.gundam
+[2026-03-25 19:37:25,027][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-25 19:37:25,077][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 19:37:25,078][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 19:37:25,078][run.py:40][DEBUG] # make_single_feed(feed_dir_path='plamodel/gcd.gundam', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-25 19:37:25,078][run.py:55][INFO] * plamodel/gcd.gundam
+[2026-03-25 19:37:25,078][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-25 19:37:25,078][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-25 19:37:25,078][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='plamodel/gcd.gundam', feed_img_dir_path='img/gcd.gundam')
+[2026-03-25 19:37:25,078][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-25 19:37:25,079][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 19:37:25,079][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 19:37:25,079][run.py:73][INFO] * making feed file 'plamodel/gcd.gundam/gcd.gundam.xml'
+[2026-03-25 19:37:25,079][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=plamodel/gcd.gundam, do_collect_by_force=, do_collect_only=, rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml)
+[2026-03-25 19:37:25,079][feed_maker.py:529][DEBUG] # make()
+[2026-03-25 19:37:25,079][feed_maker.py:530][INFO] =========================================================
+[2026-03-25 19:37:25,079][feed_maker.py:531][INFO] plamodel/gcd.gundam
+[2026-03-25 19:37:25,079][feed_maker.py:532][INFO] =========================================================
+[2026-03-25 19:37:25,079][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 19:37:25,079][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 19:37:25,079][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 19:37:25,079][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-25 19:37:25,079][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-25 19:37:25,080][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['../../naver/post_process_navercafe.py', 'download_image.py'], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-25 19:37:25,080][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': 'always', 'rss_title': '모두의 건프라:건담/건담도색완성::네이버', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) NAVER Corp & https://cafe.naver.com/gcd. All rights reserved.', 'rss_link': 'https://terzeron.com/gcd.gundam.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-25 19:37:25,080][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-25 19:37:25,080][feed_maker.py:556][WARNING] Warning: can't read old feed list from files
+[2026-03-25 19:37:25,080][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-25 19:37:25,080][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=plamodel/gcd.gundam, collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=plamodel/gcd.gundam/newlist/20260325.txt
+[2026-03-25 19:37:25,080][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-25 19:37:25,080][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-25 19:37:25,080][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-25 19:37:25,080][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 19:37:25,080][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 19:37:25,080][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 19:37:25,080][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'
+[2026-03-25 19:37:25,080][crawler.py:434][DEBUG] # run(url=https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 19:37:25,080][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 19:37:25,080][crawler.py:228][DEBUG] # make_request(url='https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01', allow_redirects=True)
+[2026-03-25 19:37:25,721][new_list_collector.py:71][DEBUG] cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'
+[2026-03-25 19:37:25,721][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam', dir_path=plamodel/gcd.gundam, input_data=67949 bytes)
+[2026-03-25 19:37:25,722][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/capture_item_navercafe.py', '-n', '10', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam']
+[2026-03-25 19:37:25,850][new_list_collector.py:74][WARNING] Warning: can't get result from item capture script, cmd='../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'', ''
+[2026-03-25 19:37:25,850][new_list_collector.py:93][ERROR] Error: Can't get new list from '['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01']'
+[2026-03-25 19:37:25,850][feed_maker.py:569][ERROR] Error: Can't get recent feed list from urls
+[2026-03-25 19:37:25,850][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='plamodel/gcd.gundam')
+[2026-03-25 19:37:25,850][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-25 19:37:25,850][run.py:84][INFO] # Running time analysis
+[2026-03-25 19:37:25,850][run.py:85][INFO] * Start time: 2026-03-25T10:37:25+00:00
+[2026-03-25 19:37:25,850][run.py:86][INFO] * End time: 2026-03-25T10:37:25+00:00
+[2026-03-25 19:37:25,850][run.py:87][INFO] * Elapsed time: 0.772021
+[2026-03-25 19:37:25,850][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=plamodel/gcd.gundam, new_feed_dir_path=)
+[2026-03-25 19:37:25,850][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 19:37:25,858][feed_manager.py:71][INFO] * The removing of config info of feed 'gcd.gundam' is done.
+[2026-03-25 19:37:25,858][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 19:37:25,860][feed_manager.py:197][INFO] * The removing of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 19:37:25,862][feed_manager.py:296][INFO] * The removing of public feed info of feed 'gcd.gundam' is done.
+[2026-03-25 19:37:25,862][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 19:37:25,864][feed_manager.py:399][INFO] * The removing of progress info of feed 'gcd.gundam' is done.
+[2026-03-25 19:37:25,866][access_log_manager.py:56][INFO] * The removing of access info of feed 'gcd.gundam' is done.
+[2026-03-25 19:37:25,866][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='plamodel/gcd.gundam')
+[2026-03-25 19:37:25,869][html_file_manager.py:143][INFO] * The removing of some html files in 'plamodel/gcd.gundam' is done
+[2026-03-25 19:37:25,874][feed_manager.py:148][INFO] * The adding of config info of feed 'gcd.gundam' is done.
+[2026-03-25 19:37:25,876][feed_manager.py:242][INFO] * The adding of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 19:37:25,876][feed_manager.py:305][ERROR] can't find a public feed file 'gcd.gundam.xml'
+[2026-03-25 19:37:25,876][feed_manager.py:342][INFO] * The adding of public feed info of feed 'gcd.gundam' is done. 0 items
+[2026-03-25 19:37:25,879][feed_manager.py:497][INFO] * The adding of progress info of feed 'gcd.gundam' is done. 1 items
+[2026-03-25 19:37:25,879][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 19:37:25,879][html_file_manager.py:178][INFO] * The adding of some html files in 'plamodel/gcd.gundam' is done. 0 items
+[2026-03-25 19:37:25,879][run.py:234][INFO] # Checking problems and making report
+[2026-03-25 23:53:11,431][run.py:202][DEBUG] # main()
+[2026-03-25 23:53:11,431][run.py:171][DEBUG] # determine_options()
+[2026-03-25 23:53:11,431][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-25 23:53:11,431][run.py:212][DEBUG] plamodel/gcd.gundam
+[2026-03-25 23:53:11,431][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-25 23:53:11,468][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:53:11,468][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 23:53:11,468][run.py:40][DEBUG] # make_single_feed(feed_dir_path='plamodel/gcd.gundam', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-25 23:53:11,468][run.py:55][INFO] * plamodel/gcd.gundam
+[2026-03-25 23:53:11,468][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-25 23:53:11,469][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-25 23:53:11,469][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='plamodel/gcd.gundam', feed_img_dir_path='img/gcd.gundam')
+[2026-03-25 23:53:11,469][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-25 23:53:11,469][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:53:11,469][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 23:53:11,469][run.py:73][INFO] * making feed file 'plamodel/gcd.gundam/gcd.gundam.xml'
+[2026-03-25 23:53:11,469][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=plamodel/gcd.gundam, do_collect_by_force=, do_collect_only=, rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml)
+[2026-03-25 23:53:11,469][feed_maker.py:529][DEBUG] # make()
+[2026-03-25 23:53:11,469][feed_maker.py:530][INFO] =========================================================
+[2026-03-25 23:53:11,469][feed_maker.py:531][INFO] plamodel/gcd.gundam
+[2026-03-25 23:53:11,469][feed_maker.py:532][INFO] =========================================================
+[2026-03-25 23:53:11,469][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:53:11,469][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 23:53:11,469][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 23:53:11,469][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-25 23:53:11,469][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-25 23:53:11,469][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['../../naver/post_process_navercafe.py', 'download_image.py'], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-25 23:53:11,469][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': 'always', 'rss_title': '모두의 건프라:건담/건담도색완성::네이버', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) NAVER Corp & https://cafe.naver.com/gcd. All rights reserved.', 'rss_link': 'https://terzeron.com/gcd.gundam.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-25 23:53:11,469][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-25 23:53:11,469][feed_maker.py:556][WARNING] Warning: can't read old feed list from files
+[2026-03-25 23:53:11,469][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-25 23:53:11,469][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=plamodel/gcd.gundam, collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=plamodel/gcd.gundam/newlist/20260325.txt
+[2026-03-25 23:53:11,469][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-25 23:53:11,469][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-25 23:53:11,469][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-25 23:53:11,470][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:53:11,470][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:53:11,470][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:53:11,470][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'
+[2026-03-25 23:53:11,470][crawler.py:434][DEBUG] # run(url=https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:53:11,470][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:53:11,470][crawler.py:228][DEBUG] # make_request(url='https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01', allow_redirects=True)
+[2026-03-25 23:53:12,211][new_list_collector.py:71][DEBUG] cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'
+[2026-03-25 23:53:12,211][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam', dir_path=plamodel/gcd.gundam, input_data=67756 bytes)
+[2026-03-25 23:53:12,211][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/capture_item_navercafe.py', '-n', '10', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam']
+[2026-03-25 23:53:12,299][new_list_collector.py:74][WARNING] Warning: can't get result from item capture script, cmd='../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'', ''
+[2026-03-25 23:53:12,299][new_list_collector.py:93][ERROR] Error: Can't get new list from '['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01']'
+[2026-03-25 23:53:12,299][feed_maker.py:569][ERROR] Error: Can't get recent feed list from urls
+[2026-03-25 23:53:12,299][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='plamodel/gcd.gundam')
+[2026-03-25 23:53:12,299][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-25 23:53:12,299][run.py:84][INFO] # Running time analysis
+[2026-03-25 23:53:12,299][run.py:85][INFO] * Start time: 2026-03-25T14:53:11+00:00
+[2026-03-25 23:53:12,299][run.py:86][INFO] * End time: 2026-03-25T14:53:12+00:00
+[2026-03-25 23:53:12,299][run.py:87][INFO] * Elapsed time: 0.831109
+[2026-03-25 23:53:12,299][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=plamodel/gcd.gundam, new_feed_dir_path=)
+[2026-03-25 23:53:12,300][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:53:12,306][feed_manager.py:71][INFO] * The removing of config info of feed 'gcd.gundam' is done.
+[2026-03-25 23:53:12,306][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:53:12,308][feed_manager.py:197][INFO] * The removing of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 23:53:12,309][feed_manager.py:296][INFO] * The removing of public feed info of feed 'gcd.gundam' is done.
+[2026-03-25 23:53:12,309][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:53:12,311][feed_manager.py:399][INFO] * The removing of progress info of feed 'gcd.gundam' is done.
+[2026-03-25 23:53:12,313][access_log_manager.py:56][INFO] * The removing of access info of feed 'gcd.gundam' is done.
+[2026-03-25 23:53:12,313][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='plamodel/gcd.gundam')
+[2026-03-25 23:53:12,315][html_file_manager.py:143][INFO] * The removing of some html files in 'plamodel/gcd.gundam' is done
+[2026-03-25 23:53:12,319][feed_manager.py:148][INFO] * The adding of config info of feed 'gcd.gundam' is done.
+[2026-03-25 23:53:12,320][feed_manager.py:242][INFO] * The adding of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 23:53:12,320][feed_manager.py:305][ERROR] can't find a public feed file 'gcd.gundam.xml'
+[2026-03-25 23:53:12,320][feed_manager.py:342][INFO] * The adding of public feed info of feed 'gcd.gundam' is done. 0 items
+[2026-03-25 23:53:12,322][feed_manager.py:497][INFO] * The adding of progress info of feed 'gcd.gundam' is done. 1 items
+[2026-03-25 23:53:12,322][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:53:12,322][html_file_manager.py:178][INFO] * The adding of some html files in 'plamodel/gcd.gundam' is done. 0 items
+[2026-03-25 23:53:12,322][run.py:234][INFO] # Checking problems and making report
+[2026-03-25 23:54:15,279][run.py:202][DEBUG] # main()
+[2026-03-25 23:54:15,279][run.py:171][DEBUG] # determine_options()
+[2026-03-25 23:54:15,279][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-25 23:54:15,279][run.py:212][DEBUG] plamodel/gcd.gundam
+[2026-03-25 23:54:15,279][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-25 23:54:15,324][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:54:15,324][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 23:54:15,324][run.py:40][DEBUG] # make_single_feed(feed_dir_path='plamodel/gcd.gundam', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-25 23:54:15,324][run.py:55][INFO] * plamodel/gcd.gundam
+[2026-03-25 23:54:15,324][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-25 23:54:15,324][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-25 23:54:15,324][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='plamodel/gcd.gundam', feed_img_dir_path='img/gcd.gundam')
+[2026-03-25 23:54:15,325][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-25 23:54:15,325][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:54:15,325][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 23:54:15,325][run.py:73][INFO] * making feed file 'plamodel/gcd.gundam/gcd.gundam.xml'
+[2026-03-25 23:54:15,325][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=plamodel/gcd.gundam, do_collect_by_force=, do_collect_only=, rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml)
+[2026-03-25 23:54:15,325][feed_maker.py:529][DEBUG] # make()
+[2026-03-25 23:54:15,325][feed_maker.py:530][INFO] =========================================================
+[2026-03-25 23:54:15,325][feed_maker.py:531][INFO] plamodel/gcd.gundam
+[2026-03-25 23:54:15,325][feed_maker.py:532][INFO] =========================================================
+[2026-03-25 23:54:15,325][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:54:15,325][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 23:54:15,325][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 23:54:15,325][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-25 23:54:15,325][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-25 23:54:15,325][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['../../naver/post_process_navercafe.py -p', 'download_image.py'], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-25 23:54:15,325][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': 'always', 'rss_title': '모두의 건프라:건담/건담도색완성::네이버', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) NAVER Corp & https://cafe.naver.com/gcd. All rights reserved.', 'rss_link': 'https://terzeron.com/gcd.gundam.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-25 23:54:15,325][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-25 23:54:15,325][feed_maker.py:556][WARNING] Warning: can't read old feed list from files
+[2026-03-25 23:54:15,325][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-25 23:54:15,325][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=plamodel/gcd.gundam, collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=plamodel/gcd.gundam/newlist/20260325.txt
+[2026-03-25 23:54:15,325][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-25 23:54:15,325][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-25 23:54:15,325][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-25 23:54:15,325][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:54:15,325][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:54:15,325][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:54:15,325][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'
+[2026-03-25 23:54:15,326][crawler.py:434][DEBUG] # run(url=https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:54:15,326][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:54:15,326][crawler.py:228][DEBUG] # make_request(url='https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01', allow_redirects=True)
+[2026-03-25 23:54:16,108][new_list_collector.py:71][DEBUG] cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'
+[2026-03-25 23:54:16,108][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam', dir_path=plamodel/gcd.gundam, input_data=67756 bytes)
+[2026-03-25 23:54:16,108][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/capture_item_navercafe.py', '-n', '10', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam']
+[2026-03-25 23:54:16,195][new_list_collector.py:74][WARNING] Warning: can't get result from item capture script, cmd='../../naver/capture_item_navercafe.py -n 10 -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'', ''
+[2026-03-25 23:54:16,195][new_list_collector.py:93][ERROR] Error: Can't get new list from '['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01']'
+[2026-03-25 23:54:16,195][feed_maker.py:569][ERROR] Error: Can't get recent feed list from urls
+[2026-03-25 23:54:16,195][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='plamodel/gcd.gundam')
+[2026-03-25 23:54:16,196][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-25 23:54:16,196][run.py:84][INFO] # Running time analysis
+[2026-03-25 23:54:16,196][run.py:85][INFO] * Start time: 2026-03-25T14:54:15+00:00
+[2026-03-25 23:54:16,196][run.py:86][INFO] * End time: 2026-03-25T14:54:16+00:00
+[2026-03-25 23:54:16,196][run.py:87][INFO] * Elapsed time: 0.871863
+[2026-03-25 23:54:16,196][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=plamodel/gcd.gundam, new_feed_dir_path=)
+[2026-03-25 23:54:16,196][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:54:16,202][feed_manager.py:71][INFO] * The removing of config info of feed 'gcd.gundam' is done.
+[2026-03-25 23:54:16,202][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:54:16,203][feed_manager.py:197][INFO] * The removing of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 23:54:16,204][feed_manager.py:296][INFO] * The removing of public feed info of feed 'gcd.gundam' is done.
+[2026-03-25 23:54:16,204][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:54:16,206][feed_manager.py:399][INFO] * The removing of progress info of feed 'gcd.gundam' is done.
+[2026-03-25 23:54:16,207][access_log_manager.py:56][INFO] * The removing of access info of feed 'gcd.gundam' is done.
+[2026-03-25 23:54:16,207][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='plamodel/gcd.gundam')
+[2026-03-25 23:54:16,209][html_file_manager.py:143][INFO] * The removing of some html files in 'plamodel/gcd.gundam' is done
+[2026-03-25 23:54:16,213][feed_manager.py:148][INFO] * The adding of config info of feed 'gcd.gundam' is done.
+[2026-03-25 23:54:16,215][feed_manager.py:242][INFO] * The adding of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 23:54:16,215][feed_manager.py:305][ERROR] can't find a public feed file 'gcd.gundam.xml'
+[2026-03-25 23:54:16,216][feed_manager.py:342][INFO] * The adding of public feed info of feed 'gcd.gundam' is done. 0 items
+[2026-03-25 23:54:16,217][feed_manager.py:497][INFO] * The adding of progress info of feed 'gcd.gundam' is done. 1 items
+[2026-03-25 23:54:16,217][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:54:16,218][html_file_manager.py:178][INFO] * The adding of some html files in 'plamodel/gcd.gundam' is done. 0 items
+[2026-03-25 23:54:16,218][run.py:234][INFO] # Checking problems and making report
+[2026-03-25 23:57:33,469][run.py:202][DEBUG] # main()
+[2026-03-25 23:57:33,469][run.py:171][DEBUG] # determine_options()
+[2026-03-25 23:57:33,469][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-03-25 23:57:33,469][run.py:212][DEBUG] plamodel/gcd.gundam
+[2026-03-25 23:57:33,469][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-03-25 23:57:33,508][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:57:33,508][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 23:57:33,508][run.py:40][DEBUG] # make_single_feed(feed_dir_path='plamodel/gcd.gundam', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-03-25 23:57:33,508][run.py:55][INFO] * plamodel/gcd.gundam
+[2026-03-25 23:57:33,508][feed_maker_util.py:797][DEBUG] # remove_image_files_with_zero_size()
+[2026-03-25 23:57:33,508][feed_maker_util.py:798][INFO] # deleting image files with zero size
+[2026-03-25 23:57:33,509][feed_maker_util.py:782][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='plamodel/gcd.gundam', feed_img_dir_path='img/gcd.gundam')
+[2026-03-25 23:57:33,509][feed_maker_util.py:783][INFO] # deleting html files without cached image files
+[2026-03-25 23:57:33,509][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:57:33,509][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 23:57:33,509][run.py:73][INFO] * making feed file 'plamodel/gcd.gundam/gcd.gundam.xml'
+[2026-03-25 23:57:33,509][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=plamodel/gcd.gundam, do_collect_by_force=, do_collect_only=, rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml)
+[2026-03-25 23:57:33,509][feed_maker.py:529][DEBUG] # make()
+[2026-03-25 23:57:33,509][feed_maker.py:530][INFO] =========================================================
+[2026-03-25 23:57:33,509][feed_maker.py:531][INFO] plamodel/gcd.gundam
+[2026-03-25 23:57:33,509][feed_maker.py:532][INFO] =========================================================
+[2026-03-25 23:57:33,509][feed_maker_util.py:466][DEBUG] # Config(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:57:33,509][feed_maker_util.py:538][DEBUG] # get_collection_configs()
+[2026-03-25 23:57:33,509][feed_maker_util.py:572][DEBUG] # get_extraction_configs()
+[2026-03-25 23:57:33,509][feed_maker_util.py:607][DEBUG] # get_rss_configs()
+[2026-03-25 23:57:33,509][feed_maker.py:538][DEBUG] self.collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10 -p', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}
+[2026-03-25 23:57:33,509][feed_maker.py:539][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['../../naver/post_process_navercafe.py', 'download_image.py'], 'headers': {}, 'exclude_ad_images': False}
+[2026-03-25 23:57:33,509][feed_maker.py:540][DEBUG] self.rss_conf={'ignore_broken_link': 'always', 'rss_title': '모두의 건프라:건담/건담도색완성::네이버', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) NAVER Corp & https://cafe.naver.com/gcd. All rights reserved.', 'rss_link': 'https://terzeron.com/gcd.gundam.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2026-03-25 23:57:33,509][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2026-03-25 23:57:33,509][feed_maker.py:556][WARNING] Warning: can't read old feed list from files
+[2026-03-25 23:57:33,509][feed_maker.py:411][DEBUG] # _get_recent_feed_list()
+[2026-03-25 23:57:33,509][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=plamodel/gcd.gundam, collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../../naver/capture_item_navercafe.py -n 10 -p', 'sort_field_pattern': '(\\d+)\\t', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 120.0, 'num_retries': 1, 'window_size': 500, 'list_url_list': ['https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=plamodel/gcd.gundam/newlist/20260325.txt
+[2026-03-25 23:57:33,509][new_list_collector.py:109][DEBUG] # collect()
+[2026-03-25 23:57:33,509][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-03-25 23:57:33,509][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-03-25 23:57:33,509][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:33,510][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:33,510][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:33,510][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01'
+[2026-03-25 23:57:33,510][crawler.py:434][DEBUG] # run(url=https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:33,510][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:33,510][crawler.py:228][DEBUG] # make_request(url='https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/11569626/menus/394/articles?pageSize=50&sortBy=TIME&viewType=L&page=01', allow_redirects=True)
+[2026-03-25 23:57:34,827][new_list_collector.py:71][DEBUG] cmd=../../naver/capture_item_navercafe.py -n 10 -p -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'
+[2026-03-25 23:57:34,827][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/capture_item_navercafe.py -n 10 -p -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam', dir_path=plamodel/gcd.gundam, input_data=67756 bytes)
+[2026-03-25 23:57:34,828][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/capture_item_navercafe.py', '-n', '10', '-p', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam']
+[2026-03-25 23:57:34,915][new_list_collector.py:30][DEBUG] # extract_urls()
+[2026-03-25 23:57:34,916][feed_maker.py:430][DEBUG] # _diff_feeds_and_make_htmls(recent_feed_list=[('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007', '시아온아빠: 버카의 시작 MG 퍼스트 버카입니다', ['164', '3', '2']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988', '건프라초보맨: 스프덤 도색완성', ['192', '5', '11']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979', 'JJ쎄르: PG 언니뉴~', ['448', '14', '8']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952', '아슬이: (초보도색)[HG]즈고크(시드 프리덤 버전)입니다.', ['72', '0', '3']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912', '삼사라: hg 스타게이저 아크릴 붓 도색 완성', ['143', '6', '8']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849', '츄르먹는콩이: HG데스티니 스펙2 도색 완성작입니다~', ['270', '2', '5']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782', '헝그리 하비: 크시 건담 풀 개조&개수 / 섬광의 하사웨이 관람 전 최고의 선택', ['623', '21', '16']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776', '담덕태자: SDEX 프리덤 건담', ['205', '5', '4']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756', '대갈마왕: MGSD 윙제로 리벨리온 건담입니다', ['571', '8', '18']), ('https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674', '로로라이나: mg발바토스', ['451', '5', '12'])], old_feed_list=[])
+[2026-03-25 23:57:34,916][feed_maker.py:435][INFO] Appending 10 new items to the feed list
+[2026-03-25 23:57:34,916][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:34,916][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:34,916][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:34,916][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007'
+[2026-03-25 23:57:34,916][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:34,916][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:34,916][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007', allow_redirects=True)
+[2026-03-25 23:57:35,435][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007'
+[2026-03-25 23:57:35,436][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:35,436][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007']
+[2026-03-25 23:57:35,914][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007'
+[2026-03-25 23:57:35,914][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1842007\n'
+[2026-03-25 23:57:35,914][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1842007 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1842007
+
+[2026-03-25 23:57:35,914][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:35,914][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:35,914][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:35,914][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988'
+[2026-03-25 23:57:35,914][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:35,914][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:35,914][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988', allow_redirects=True)
+[2026-03-25 23:57:36,360][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988'
+[2026-03-25 23:57:36,361][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:36,361][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988']
+[2026-03-25 23:57:36,907][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988'
+[2026-03-25 23:57:36,907][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841988\n'
+[2026-03-25 23:57:36,907][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841988 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841988
+
+[2026-03-25 23:57:36,907][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:36,907][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:36,907][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:36,907][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979'
+[2026-03-25 23:57:36,907][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:36,907][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:36,907][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979', allow_redirects=True)
+[2026-03-25 23:57:37,301][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979'
+[2026-03-25 23:57:37,301][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:37,302][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979']
+[2026-03-25 23:57:37,785][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979'
+[2026-03-25 23:57:37,785][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841979\n'
+[2026-03-25 23:57:37,785][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841979 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841979
+
+[2026-03-25 23:57:37,785][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:37,785][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:37,785][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:37,785][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952'
+[2026-03-25 23:57:37,785][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:37,785][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:37,785][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952', allow_redirects=True)
+[2026-03-25 23:57:38,115][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952'
+[2026-03-25 23:57:38,115][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:38,116][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952']
+[2026-03-25 23:57:38,520][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952'
+[2026-03-25 23:57:38,520][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841952\n'
+[2026-03-25 23:57:38,520][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841952 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841952
+
+[2026-03-25 23:57:38,520][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:38,520][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:38,520][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:38,520][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912'
+[2026-03-25 23:57:38,520][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:38,521][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:38,521][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912', allow_redirects=True)
+[2026-03-25 23:57:38,784][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912'
+[2026-03-25 23:57:38,784][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:38,784][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912']
+[2026-03-25 23:57:39,163][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912'
+[2026-03-25 23:57:39,163][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841912\n'
+[2026-03-25 23:57:39,163][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841912 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841912
+
+[2026-03-25 23:57:39,164][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:39,164][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:39,164][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:39,164][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849'
+[2026-03-25 23:57:39,164][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:39,164][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:39,164][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849', allow_redirects=True)
+[2026-03-25 23:57:39,427][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849'
+[2026-03-25 23:57:39,427][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:39,427][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849']
+[2026-03-25 23:57:39,788][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849'
+[2026-03-25 23:57:39,788][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841849\n'
+[2026-03-25 23:57:39,788][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841849 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841849
+
+[2026-03-25 23:57:39,789][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:39,789][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:39,789][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:39,789][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782'
+[2026-03-25 23:57:39,789][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:39,789][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:39,789][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782', allow_redirects=True)
+[2026-03-25 23:57:40,038][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782'
+[2026-03-25 23:57:40,038][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:40,038][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782']
+[2026-03-25 23:57:40,418][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782'
+[2026-03-25 23:57:40,418][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841782\n'
+[2026-03-25 23:57:40,418][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841782 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841782
+
+[2026-03-25 23:57:40,418][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:40,418][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:40,418][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:40,419][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776'
+[2026-03-25 23:57:40,419][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:40,419][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:40,419][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776', allow_redirects=True)
+[2026-03-25 23:57:40,689][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776'
+[2026-03-25 23:57:40,689][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:40,689][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776']
+[2026-03-25 23:57:41,110][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776'
+[2026-03-25 23:57:41,110][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841776\n'
+[2026-03-25 23:57:41,110][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841776 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841776
+
+[2026-03-25 23:57:41,110][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:41,111][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:41,111][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:41,111][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756'
+[2026-03-25 23:57:41,111][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:41,111][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:41,111][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756', allow_redirects=True)
+[2026-03-25 23:57:41,360][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756'
+[2026-03-25 23:57:41,360][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:41,360][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756']
+[2026-03-25 23:57:41,831][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756'
+[2026-03-25 23:57:41,831][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841756\n'
+[2026-03-25 23:57:41,831][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841756 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841756
+
+[2026-03-25 23:57:41,831][crawler.py:325][DEBUG] # Crawler(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-03-25 23:57:41,831][crawler.py:130][DEBUG] # RequestsClient(dir_path=plamodel/gcd.gundam, render_js=False, method=Method.GET, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Cookie': 'NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M='}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2026-03-25 23:57:41,831][crawler.py:369][DEBUG] # get_option_str()
+[2026-03-25 23:57:41,831][feed_maker.py:247][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36; Cookie: NID_JST=vk+SqHzMjMJ7QoN3jLYpB1Ed5udYI1E+uozGM5tQNmG2+TVDauVPc2H6NvcM4WlFK7JXg91XyVFPb1/gmWMzvUYoTFjHd6o87n0DlAs51Bm+7kJd5I/H2PzT5zxMZQUyWU8fFVtwcdxrbQnLMtRPHC6kkoTriewyos/v2vsB53M=' --timeout=60 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674'
+[2026-03-25 23:57:41,831][crawler.py:434][DEBUG] # run(url=https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674, data=None, download_file=None, allow_redirects=True)
+[2026-03-25 23:57:41,831][crawler.py:423][DEBUG] Cookie file exists, skipping login
+[2026-03-25 23:57:41,831][crawler.py:228][DEBUG] # make_request(url='https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674', allow_redirects=True)
+[2026-03-25 23:57:42,080][feed_maker.py:271][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674'
+[2026-03-25 23:57:42,081][feed_maker_util.py:151][DEBUG] # Process.exec_cmd(cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674', dir_path=plamodel/gcd.gundam, input_data=9646 bytes)
+[2026-03-25 23:57:42,081][feed_maker_util.py:155][DEBUG] argv=['/home/terzeron/workspace/fma/naver/post_process_navercafe.py', '-f', '/home/terzeron/workspace/fma/plamodel/gcd.gundam', 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674']
+[2026-03-25 23:57:42,484][feed_maker.py:273][DEBUG] cmd=../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674'
+[2026-03-25 23:57:42,484][feed_maker.py:275][ERROR] Error: No result in executing command '../../naver/post_process_navercafe.py -f '/home/terzeron/workspace/fma/plamodel/gcd.gundam' 'https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674'', 'Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841674\n'
+[2026-03-25 23:57:42,484][feed_maker.py:615][INFO] Adding failed URL https://m.cafe.naver.com/ca-fe/web/cafes/11569626/articles/1841674 to cache, expires at 9999-12-31T23:59:59.999999+00:00. Reason: Post-process failed: Error fetching URL: 401 Client Error: Unauthorized for url: https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/11569626/articles/1841674
+
+[2026-03-25 23:57:42,484][feed_maker.py:441][INFO] Appending 0 old items to the feed list
+[2026-03-25 23:57:42,484][feed_maker.py:579][INFO] No new feeds, no update of rss file
+[2026-03-25 23:57:42,484][feed_maker.py:448][DEBUG] # generate_rss_feed()
+[2026-03-25 23:57:42,484][feed_maker.py:458][DEBUG] rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml, temp_rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml.20260325, old_rss_file_path=plamodel/gcd.gundam/gcd.gundam.xml.old
+[2026-03-25 23:57:42,484][feed_maker.py:460][INFO] Generating rss feed file...
+[2026-03-25 23:57:42,486][feed_maker.py:512][DEBUG] is_differernt=True
+[2026-03-25 23:57:42,486][feed_maker.py:520][DEBUG] renaming 'plamodel/gcd.gundam/gcd.gundam.xml.20260325' to 'plamodel/gcd.gundam/gcd.gundam.xml'
+[2026-03-25 23:57:42,486][uploader.py:19][DEBUG] # upload(rss_file_path='plamodel/gcd.gundam/gcd.gundam.xml'
+[2026-03-25 23:57:42,486][uploader.py:27][INFO] new rss file exists
+[2026-03-25 23:57:42,486][uploader.py:36][INFO] old rss file doesn't exist
+[2026-03-25 23:57:42,487][uploader.py:40][INFO] upload success!
+[2026-03-25 23:57:42,487][uploader.py:42][INFO] replace old rss file with new rss file
+[2026-03-25 23:57:42,487][feed_maker_util.py:807][DEBUG] # remove_temporary_files(feed_dir_path='plamodel/gcd.gundam')
+[2026-03-25 23:57:42,487][feed_maker_util.py:808][INFO] # deleting temporary files
+[2026-03-25 23:57:42,487][run.py:84][INFO] # Running time analysis
+[2026-03-25 23:57:42,487][run.py:85][INFO] * Start time: 2026-03-25T14:57:33+00:00
+[2026-03-25 23:57:42,487][run.py:86][INFO] * End time: 2026-03-25T14:57:42+00:00
+[2026-03-25 23:57:42,487][run.py:87][INFO] * Elapsed time: 8.978595
+[2026-03-25 23:57:42,487][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=plamodel/gcd.gundam, new_feed_dir_path=)
+[2026-03-25 23:57:42,487][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:57:42,493][feed_manager.py:71][INFO] * The removing of config info of feed 'gcd.gundam' is done.
+[2026-03-25 23:57:42,493][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:57:42,495][feed_manager.py:197][INFO] * The removing of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 23:57:42,495][feed_manager.py:296][INFO] * The removing of public feed info of feed 'gcd.gundam' is done.
+[2026-03-25 23:57:42,495][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='plamodel/gcd.gundam', do_remove_file=False)
+[2026-03-25 23:57:42,497][feed_manager.py:399][INFO] * The removing of progress info of feed 'gcd.gundam' is done.
+[2026-03-25 23:57:42,498][access_log_manager.py:56][INFO] * The removing of access info of feed 'gcd.gundam' is done.
+[2026-03-25 23:57:42,498][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='plamodel/gcd.gundam')
+[2026-03-25 23:57:42,501][html_file_manager.py:143][INFO] * The removing of some html files in 'plamodel/gcd.gundam' is done
+[2026-03-25 23:57:42,505][feed_manager.py:148][INFO] * The adding of config info of feed 'gcd.gundam' is done.
+[2026-03-25 23:57:42,508][feed_manager.py:242][INFO] * The adding of rss info of feed 'gcd.gundam' is done.
+[2026-03-25 23:57:42,511][feed_manager.py:342][INFO] * The adding of public feed info of feed 'gcd.gundam' is done. 0 items
+[2026-03-25 23:57:42,513][feed_manager.py:497][INFO] * The adding of progress info of feed 'gcd.gundam' is done. 1 items
+[2026-03-25 23:57:42,513][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=plamodel/gcd.gundam)
+[2026-03-25 23:57:42,513][html_file_manager.py:178][INFO] * The adding of some html files in 'plamodel/gcd.gundam' is done. 0 items
+[2026-03-25 23:57:42,513][run.py:234][INFO] # Checking problems and making report
