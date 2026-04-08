@@ -74,9 +74,5 @@ def main():
         print("%s\t%s" % (link, title))
 
 
-    for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%s" % (link, title))
-
-
 if __name__ == "__main__":
     sys.exit(main())
