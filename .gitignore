@@ -12,6 +12,7 @@ __pycache__
 *.xml
 !conf.xml
 !test/*.xml
+*.json.old
 newlist/
 html/
 cookie.txt
