@@ -1,0 +1,61 @@
+[
+  {
+    "domain": ".tkr492.com",
+    "expiry": 1811291783,
+    "httpOnly": false,
+    "name": "_ga",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GA1.2.374339349.1776731784"
+  },
+  {
+    "domain": ".tkr492.com",
+    "expiry": 1811291783,
+    "httpOnly": false,
+    "name": "_ga_KB8S8E78F4",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GS2.1.s1776731783$o1$g0$t1776731783$j60$l0$h0"
+  },
+  {
+    "domain": "tkr492.com",
+    "httpOnly": false,
+    "name": "tktk_session_name",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "abeisudsrafce81febaa7mjts1"
+  },
+  {
+    "domain": "tkr492.com",
+    "expiry": 1776818182,
+    "httpOnly": false,
+    "name": "e1192aefb64683cc97abb83c71057733",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "YW5pbXY%3D"
+  },
+  {
+    "domain": ".tkr492.com",
+    "expiry": 1776818183,
+    "httpOnly": false,
+    "name": "_gid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GA1.2.415626548.1776731784"
+  },
+  {
+    "domain": ".tkr492.com",
+    "expiry": 1776731843,
+    "httpOnly": false,
+    "name": "_gat_gtag_UA_177364207_1",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1"
+  }
+]

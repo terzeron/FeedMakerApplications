@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "ignore_old_list": true,
-      "is_completed": false,
+      "is_completed": true,
       "item_capture_script": "../capture_item_toonkor.py -n 300",
       "render_js": true,
       "list_url_list": [
