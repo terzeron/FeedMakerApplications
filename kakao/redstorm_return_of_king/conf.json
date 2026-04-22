@@ -20,6 +20,7 @@
         "download_image.py --keep-img-meta-only"
       ],
       "render_js": true,
+      "simulate_scrolling": true,
       "blob_to_dataurl": true
     },
     "rss": {
