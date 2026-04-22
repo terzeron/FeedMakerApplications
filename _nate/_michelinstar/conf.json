@@ -2,17 +2,11 @@
   "configuration": {
     "collection": {
       "item_capture_script": "../capture_item_natewebtoonmobile.py",
-      "list_url_list": [
-        "http://comics.nate.com/webtoon/list.php?btno=48736"
-      ]
+      "list_url_list": ["http://comics.nate.com/webtoon/list.php?btno=48736"]
     },
     "extraction": {
-      "element_class_list": [
-        "toonView"
-      ],
-      "post_process_script_list": [
-        "post_process_only_for_images.py"
-      ]
+      "element_class_list": ["toonView"],
+      "post_process_script_list": ["download_image.py --keep-img-meta-only"]
     },
     "rss": {
       "title": "미슐랭 스타::네이트",

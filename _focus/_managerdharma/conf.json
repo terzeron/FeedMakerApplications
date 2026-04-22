@@ -9,12 +9,8 @@
     },
     "extraction": {
       "encoding": "cp949",
-      "element_path_list": [
-        "/html/body/table[3]"
-      ],
-      "post_process_script_list": [
-        "post_process_only_for_images.py"
-      ]
+      "element_path_list": ["/html/body/table[3]"],
+      "post_process_script_list": ["download_image.py --keep-img-meta-only"]
     },
     "rss": {
       "title": "달마과장::포커스",

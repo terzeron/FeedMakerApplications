@@ -11,12 +11,9 @@
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
-      "element_id_list": [
-        "root"
-      ],
+      "element_id_list": ["root"],
       "post_process_script_list": [
-        "download_merge_split.py -c blackorwhite -m -b 100 -n 20",
-        "post_process_only_for_images.py -r"
+        "download_image.py --keep-img-meta-only"
       ],
       "render_js": true,
       "blob_to_dataurl": true
