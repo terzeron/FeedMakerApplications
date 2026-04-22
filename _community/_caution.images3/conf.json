@@ -13,8 +13,7 @@
         "post_content"
       ],
       "post_process_script_list": [
-        "download_image.py",
-        "./remove_tags.py"
+        "download_image.py --strip-wrapper-tags"
       ]
     },
     "rss": {

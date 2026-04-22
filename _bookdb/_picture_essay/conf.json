@@ -34,7 +34,7 @@
         "conWrap"
       ],
       "post_process_script_list": [
-        "remove_non_breaking_space.py"
+        "download_image.py --replace-nbsp"
       ]
     },
     "rss": {

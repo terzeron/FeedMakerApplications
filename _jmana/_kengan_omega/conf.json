@@ -15,8 +15,7 @@
         "view-con"
       ],
       "post_process_script_list": [
-        "post_process_only_for_images.py -u",
-        "download_image.py",
+        "download_image.py --keep-img-meta-only --dedupe-consecutive-images",
         "../remove_anchor_images.sh"
       ]
     },
