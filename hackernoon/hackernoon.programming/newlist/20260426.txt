@@ -1,0 +1,5 @@
+https://hackernoon.com/break-the-loop-part-2-from-data-structures-to-computational-control	‘루프 깨기’ 2부: 데이터 구조에서 계산 제어까지(Break the Loop, Part 2: From Data Structures to Computational Control)	
+https://hackernoon.com/the-dark-logic-of-comefrom-and-human-thought-patterns	COMEFROM의 어두운 논리와 인간의 사고 패턴(The Dark Logic of COMEFROM and Human Thought Patterns)	
+https://hackernoon.com/building-a-transformer-from-scratch-in-annotated-pytorch	주석이 달린 PyTorch를 사용하여 트랜스포머를 처음부터 구축하기(Building a Transformer From Scratch in Annotated PyTorch)	
+https://hackernoon.com/how-to-structure-api-documentation	API 문서 구성 방법(How to Structure API Documentation)	
+https://hackernoon.com/github-agentic-workflows-solved-a-release-notes-problem-i-couldnt-script	GitHub의 Agentic 워크플로가 제가 스크립트로 해결할 수 없었던 릴리스 노트 문제를 해결해 주었습니다(GitHub Agentic Workflows Solved a Release Notes Problem I Couldn’t Script)	
