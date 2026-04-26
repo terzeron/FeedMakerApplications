@@ -1,0 +1,174 @@
+[2025-12-15 16:41:56,104][run.py:209][DEBUG] # main()
+[2025-12-15 16:41:56,104][run.py:171][DEBUG] # determine_options()
+[2025-12-15 16:41:56,104][run.py:218][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2025-12-15 16:41:56,104][run.py:219][DEBUG] hackernoon/hackernoon.cloud
+[2025-12-15 16:41:56,104][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2025-12-15 16:41:56,104][feed_maker_util.py:356][DEBUG] # Config(feed_dir_path=hackernoon/hackernoon.cloud)
+[2025-12-15 16:41:56,104][feed_maker_util.py:428][DEBUG] # get_collection_configs()
+[2025-12-15 16:41:56,104][run.py:40][DEBUG] # make_single_feed(feed_dir_path='hackernoon/hackernoon.cloud', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2025-12-15 16:41:56,105][run.py:55][INFO] * hackernoon/hackernoon.cloud
+[2025-12-15 16:41:56,105][feed_maker_util.py:685][DEBUG] # remove_image_files_with_zero_size()
+[2025-12-15 16:41:56,105][feed_maker_util.py:686][INFO] # deleting image files with zero size
+[2025-12-15 16:41:56,105][feed_maker_util.py:670][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='hackernoon/hackernoon.cloud', feed_img_dir_path='img/hackernoon.cloud')
+[2025-12-15 16:41:56,105][feed_maker_util.py:671][INFO] # deleting html files without cached image files
+[2025-12-15 16:41:56,105][feed_maker_util.py:356][DEBUG] # Config(feed_dir_path=hackernoon/hackernoon.cloud)
+[2025-12-15 16:41:56,105][feed_maker_util.py:462][DEBUG] # get_extraction_configs()
+[2025-12-15 16:41:56,105][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/a527e92.html')
+[2025-12-15 16:41:56,106][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/886b42d.html')
+[2025-12-15 16:41:56,106][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/6206d4f.html')
+[2025-12-15 16:41:56,106][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/57db20f.html')
+[2025-12-15 16:41:56,107][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/b27a40c.html')
+[2025-12-15 16:41:56,107][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/76fd4bd.html')
+[2025-12-15 16:41:56,107][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/b5e57e2.html')
+[2025-12-15 16:41:56,107][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/2fdc71e.html')
+[2025-12-15 16:41:56,109][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/f821567.html')
+[2025-12-15 16:41:56,109][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/60c215e.html')
+[2025-12-15 16:41:56,109][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/fe47a4e.html')
+[2025-12-15 16:41:56,109][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/c019eef.html')
+[2025-12-15 16:41:56,110][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/2a6387e.html')
+[2025-12-15 16:41:56,110][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/3048bc6.html')
+[2025-12-15 16:41:56,111][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/20359f7.html')
+[2025-12-15 16:41:56,111][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/593815c.html')
+[2025-12-15 16:41:56,111][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/78b8c6d.html')
+[2025-12-15 16:41:56,111][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/e77f191.html')
+[2025-12-15 16:41:56,112][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/49175e3.html')
+[2025-12-15 16:41:56,113][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/6912e7d.html')
+[2025-12-15 16:41:56,113][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/aef2a62.html')
+[2025-12-15 16:41:56,113][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/a475d94.html')
+[2025-12-15 16:41:56,113][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/e7babb9.html')
+[2025-12-15 16:41:56,113][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/96b2638.html')
+[2025-12-15 16:41:56,114][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/26da837.html')
+[2025-12-15 16:41:56,114][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/fe9a206.html')
+[2025-12-15 16:41:56,114][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/6418e1b.html')
+[2025-12-15 16:41:56,114][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/ed3ca03.html')
+[2025-12-15 16:41:56,115][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/45bf724.html')
+[2025-12-15 16:41:56,115][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/cb2bd4d.html')
+[2025-12-15 16:41:56,115][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/81049ca.html')
+[2025-12-15 16:41:56,115][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/88e6da2.html')
+[2025-12-15 16:41:56,115][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/716992f.html')
+[2025-12-15 16:41:56,116][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/a17e50b.html')
+[2025-12-15 16:41:56,116][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/72f1578.html')
+[2025-12-15 16:41:56,116][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/5b805be.html')
+[2025-12-15 16:41:56,116][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/d668b82.html')
+[2025-12-15 16:41:56,116][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/d9c80c8.html')
+[2025-12-15 16:41:56,117][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/47c1a62.html')
+[2025-12-15 16:41:56,117][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/3694a52.html')
+[2025-12-15 16:41:56,118][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/98912a4.html')
+[2025-12-15 16:41:56,118][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/1206e4e.html')
+[2025-12-15 16:41:56,118][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/3f07346.html')
+[2025-12-15 16:41:56,118][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/943f196.html')
+[2025-12-15 16:41:56,118][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/8792d07.html')
+[2025-12-15 16:41:56,119][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/6700770.html')
+[2025-12-15 16:41:56,119][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/f568bba.html')
+[2025-12-15 16:41:56,122][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/4ccc62f.html')
+[2025-12-15 16:41:56,122][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/3b7147d.html')
+[2025-12-15 16:41:56,122][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/39cc87c.html')
+[2025-12-15 16:41:56,123][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/06761af.html')
+[2025-12-15 16:41:56,123][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/a8bf295.html')
+[2025-12-15 16:41:56,123][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/47832e3.html')
+[2025-12-15 16:41:56,123][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/eb77560.html')
+[2025-12-15 16:41:56,123][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/32904ae.html')
+[2025-12-15 16:41:56,124][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/f41e88c.html')
+[2025-12-15 16:41:56,124][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/b8cccc2.html')
+[2025-12-15 16:41:56,124][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/f8cb10c.html')
+[2025-12-15 16:41:56,124][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/53e8947.html')
+[2025-12-15 16:41:56,125][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/0a25e22.html')
+[2025-12-15 16:41:56,125][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/4c28fd5.html')
+[2025-12-15 16:41:56,126][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/3493fb1.html')
+[2025-12-15 16:41:56,126][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/a055e3c.html')
+[2025-12-15 16:41:56,126][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/95d132b.html')
+[2025-12-15 16:41:56,126][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/ff88bb3.html')
+[2025-12-15 16:41:56,126][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/9e279f1.html')
+[2025-12-15 16:41:56,127][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/f67aa6e.html')
+[2025-12-15 16:41:56,127][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/f4775bc.html')
+[2025-12-15 16:41:56,128][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/6cf985c.html')
+[2025-12-15 16:41:56,128][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/2c962a6.html')
+[2025-12-15 16:41:56,128][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/570143f.html')
+[2025-12-15 16:41:56,128][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/c5525c5.html')
+[2025-12-15 16:41:56,129][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/822a222.html')
+[2025-12-15 16:41:56,129][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/8fcc9ec.html')
+[2025-12-15 16:41:56,129][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/265032b.html')
+[2025-12-15 16:41:56,129][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/b40d2d2.html')
+[2025-12-15 16:41:56,129][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/e2d49fd.html')
+[2025-12-15 16:41:56,130][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/4e2d307.html')
+[2025-12-15 16:41:56,130][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/04a0654.html')
+[2025-12-15 16:41:56,131][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/0a1c9c6.html')
+[2025-12-15 16:41:56,131][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/e9788c7.html')
+[2025-12-15 16:41:56,132][feed_maker_util.py:638][DEBUG] # get_incomplete_image_list(html_file_path='hackernoon/hackernoon.cloud/html/7b5aa48.html')
+[2025-12-15 16:41:56,132][run.py:73][INFO] * making feed file 'hackernoon/hackernoon.cloud/hackernoon.cloud.xml'
+[2025-12-15 16:41:56,132][feed_maker.py:42][DEBUG] # FeedMaker(feed_dir_path=hackernoon/hackernoon.cloud, do_collect_by_force=, do_collect_only=, rss_file_path=hackernoon/hackernoon.cloud/hackernoon.cloud.xml)
+[2025-12-15 16:41:56,132][feed_maker.py:522][DEBUG] # make()
+[2025-12-15 16:41:56,132][feed_maker.py:523][INFO] =========================================================
+[2025-12-15 16:41:56,132][feed_maker.py:524][INFO] hackernoon/hackernoon.cloud
+[2025-12-15 16:41:56,132][feed_maker.py:525][INFO] =========================================================
+[2025-12-15 16:41:56,132][feed_maker_util.py:356][DEBUG] # Config(feed_dir_path=hackernoon/hackernoon.cloud)
+[2025-12-15 16:41:56,132][feed_maker_util.py:428][DEBUG] # get_collection_configs()
+[2025-12-15 16:41:56,132][feed_maker_util.py:462][DEBUG] # get_extraction_configs()
+[2025-12-15 16:41:56,132][feed_maker_util.py:495][DEBUG] # get_rss_configs()
+[2025-12-15 16:41:56,132][feed_maker.py:531][DEBUG] self.collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../capture_item_hackernoon.py -n 5', 'sort_field_pattern': '&logNo=(\\d+)', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 1.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://hackernoon.com/c/cloud'], 'post_process_script_list': [], 'headers': {}}
+[2025-12-15 16:41:56,132][feed_maker.py:532][DEBUG] self.extraction_conf={'render_js': False, 'verify_ssl': True, 'bypass_element_extraction': True, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 0, 'timeout': 60, 'num_retries': 1, 'element_id_list': [], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['../post_process_hackernoon.py'], 'headers': {}}
+[2025-12-15 16:41:56,132][feed_maker.py:533][DEBUG] self.rss_conf={'ignore_broken_link': '', 'rss_title': 'Cloud::Hackernoon', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) Hackernoon. All rights reserved.', 'rss_link': 'https://terzeron.com/hackernoon.cloud.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': None}
+[2025-12-15 16:41:56,132][feed_maker.py:155][DEBUG] # _read_old_feed_list_from_file()
+[2025-12-15 16:41:56,133][feed_maker.py:173][INFO] hackernoon/hackernoon.cloud/newlist/20251210.txt
+[2025-12-15 16:41:56,133][feed_maker.py:398][DEBUG] # _get_recent_feed_list()
+[2025-12-15 16:41:56,133][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=hackernoon/hackernoon.cloud, collection_conf={'render_js': False, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../capture_item_hackernoon.py -n 5', 'sort_field_pattern': '&logNo=(\\d+)', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 1.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://hackernoon.com/c/cloud'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=hackernoon/hackernoon.cloud/newlist/20251215.txt
+[2025-12-15 16:41:56,133][new_list_collector.py:109][DEBUG] # collect()
+[2025-12-15 16:41:56,133][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2025-12-15 16:41:56,133][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2025-12-15 16:41:56,133][crawler.py:147][DEBUG] # Crawler(dir_path=hackernoon/hackernoon.cloud, render_js=False, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2025-12-15 16:41:56,133][crawler.py:36][DEBUG] # RequestsClient(dir_path=hackernoon/hackernoon.cloud, render_js=False, method=Method.GET, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, timeout=60, encoding=utf-8, verify_ssl=True)
+[2025-12-15 16:41:56,133][crawler.py:177][DEBUG] # get_option_str()
+[2025-12-15 16:41:56,133][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/hackernoon/hackernoon.cloud'  --render-js=false --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://hackernoon.com/c/cloud'
+[2025-12-15 16:41:56,133][crawler.py:222][DEBUG] # run(url=https://hackernoon.com/c/cloud, data=None, download_file=None, allow_redirects=True)
+[2025-12-15 16:41:56,133][crawler.py:73][DEBUG] # make_request(url='https://hackernoon.com/c/cloud', allow_redirects=True)
+[2025-12-15 16:41:56,244][new_list_collector.py:71][DEBUG] cmd=../capture_item_hackernoon.py -n 5 -f '/home/terzeron/workspace/fma/hackernoon/hackernoon.cloud'
+[2025-12-15 16:41:56,245][feed_maker_util.py:126][DEBUG] # Process.exec_cmd(cmd=../capture_item_hackernoon.py -n 5 -f '/home/terzeron/workspace/fma/hackernoon/hackernoon.cloud', dir_path=hackernoon/hackernoon.cloud, input_data=742211 bytes)
+[2025-12-15 16:41:56,245][feed_maker_util.py:130][DEBUG] /home/terzeron/workspace/fma/hackernoon/capture_item_hackernoon.py -n 5 -f '/home/terzeron/workspace/fma/hackernoon/hackernoon.cloud'
+[2025-12-15 16:41:56,480][translation.py:234][DEBUG] 모든 텍스트가 캐시에 있습니다
+[2025-12-15 16:41:56,518][new_list_collector.py:30][DEBUG] # extract_urls()
+[2025-12-15 16:41:56,518][feed_maker.py:417][DEBUG] # _diff_feeds_and_make_htmls(recent_feed_list=[('https://hackernoon.com/no-need-to-mock-all-the-time-a-better-way-to-test-api-resilience-in-your-terminal', '항상 모의 테스트할 필요 없음: 터미널에서 API 복원력을 테스트하는 더 나은 방법(No Need to Mock All the Time: A Better Way to Test API Resilience in Your Terminal)', []), ('https://hackernoon.com/how-i-access-my-home-nas-from-anywhere-without-doxxing-my-ip-using-cloudflare-tunnel', 'Cloudflare 터널을 사용하여 어디서나(내 IP를 도싱하지 않고) 홈 NAS에 액세스하는 방법(How I Access My Home NAS from Anywhere (Without Doxxing My IP) Using Cloudflare Tunnel)', []), ('https://hackernoon.com/supercharging-ai-workflows-distributed-document-processing-with-nodejs-python-and-rabbitmq', 'AI 워크플로 강화: Node.js, Python, RabbitMQ를 사용한 분산 문서 처리(Supercharging AI Workflows: Distributed Document Processing with Node.js, Python, and RabbitMQ)', []), ('https://hackernoon.com/the-hidden-architecture-powering-ai-search-vector-databases-under-the-hood', 'AI 검색을 지원하는 숨겨진 아키텍처 벡터 데이터베이스 내부(The Hidden Architecture Powering AI Search: Vector Databases Under the Hood)', []), ('https://hackernoon.com/how-to-migrate-existing-azure-functions-to-the-net-8-isolated-worker-runtime', '기존 Azure 함수를 .NET 8 격리된 워커 런타임으로 마이그레이션하는 방법(How to Migrate Existing Azure Functions to the .NET 8 Isolated Worker Runtime)', [])], old_feed_list=[('https://hackernoon.com/no-need-to-mock-all-the-time-a-better-way-to-test-api-resilience-in-your-terminal', '항상 모의 테스트할 필요 없음: 터미널에서 API 복원력을 테스트하는 더 나은 방법(No Need to Mock All the Time: A Better Way to Test API Resilience in Your Terminal)', []), ('https://hackernoon.com/how-i-access-my-home-nas-from-anywhere-without-doxxing-my-ip-using-cloudflare-tunnel', 'Cloudflare 터널을 사용하여 어디서나(내 IP를 도싱하지 않고) 홈 NAS에 액세스하는 방법(How I Access My Home NAS from Anywhere (Without Doxxing My IP) Using Cloudflare Tunnel)', []), ('https://hackernoon.com/supercharging-ai-workflows-distributed-document-processing-with-nodejs-python-and-rabbitmq', 'AI 워크플로 강화: Node.js, Python, RabbitMQ를 사용한 분산 문서 처리(Supercharging AI Workflows: Distributed Document Processing with Node.js, Python, and RabbitMQ)', []), ('https://hackernoon.com/the-hidden-architecture-powering-ai-search-vector-databases-under-the-hood', 'AI 검색을 지원하는 숨겨진 아키텍처 벡터 데이터베이스 내부(The Hidden Architecture Powering AI Search: Vector Databases Under the Hood)', []), ('https://hackernoon.com/how-to-migrate-existing-azure-functions-to-the-net-8-isolated-worker-runtime', '기존 Azure 함수를 .NET 8 격리된 워커 런타임으로 마이그레이션하는 방법(How to Migrate Existing Azure Functions to the .NET 8 Isolated Worker Runtime)', [])])
+[2025-12-15 16:41:56,518][feed_maker.py:422][INFO] Appending 0 new items to the feed list
+[2025-12-15 16:41:56,518][feed_maker.py:428][INFO] Appending 5 old items to the feed list
+[2025-12-15 16:41:56,519][feed_maker.py:221][INFO] Old: https://hackernoon.com/no-need-to-mock-all-the-time-a-better-way-to-test-api-resilience-in-your-terminal	항상 모의 테스트할 필요 없음: 터미널에서 API 복원력을 테스트하는 더 나은 방법(No Need to Mock All the Time: A Better Way to Test API Resilience in Your Terminal)	hackernoon/hackernoon.cloud/html/ff88bb3.html (4845 bytes > 359 bytes of template)
+[2025-12-15 16:41:56,519][feed_maker.py:221][INFO] Old: https://hackernoon.com/how-i-access-my-home-nas-from-anywhere-without-doxxing-my-ip-using-cloudflare-tunnel	Cloudflare 터널을 사용하여 어디서나(내 IP를 도싱하지 않고) 홈 NAS에 액세스하는 방법(How I Access My Home NAS from Anywhere (Without Doxxing My IP) Using Cloudflare Tunnel)	hackernoon/hackernoon.cloud/html/2c962a6.html (8915 bytes > 359 bytes of template)
+[2025-12-15 16:41:56,519][feed_maker.py:221][INFO] Old: https://hackernoon.com/supercharging-ai-workflows-distributed-document-processing-with-nodejs-python-and-rabbitmq	AI 워크플로 강화: Node.js, Python, RabbitMQ를 사용한 분산 문서 처리(Supercharging AI Workflows: Distributed Document Processing with Node.js, Python, and RabbitMQ)	hackernoon/hackernoon.cloud/html/49175e3.html (19563 bytes > 359 bytes of template)
+[2025-12-15 16:41:56,519][feed_maker.py:221][INFO] Old: https://hackernoon.com/the-hidden-architecture-powering-ai-search-vector-databases-under-the-hood	AI 검색을 지원하는 숨겨진 아키텍처 벡터 데이터베이스 내부(The Hidden Architecture Powering AI Search: Vector Databases Under the Hood)	hackernoon/hackernoon.cloud/html/47c1a62.html (39432 bytes > 359 bytes of template)
+[2025-12-15 16:41:56,519][feed_maker.py:221][INFO] Old: https://hackernoon.com/how-to-migrate-existing-azure-functions-to-the-net-8-isolated-worker-runtime	기존 Azure 함수를 .NET 8 격리된 워커 런타임으로 마이그레이션하는 방법(How to Migrate Existing Azure Functions to the .NET 8 Isolated Worker Runtime)	hackernoon/hackernoon.cloud/html/7b5aa48.html (7557 bytes > 359 bytes of template)
+[2025-12-15 16:41:56,519][feed_maker.py:435][DEBUG] # generate_rss_feed()
+[2025-12-15 16:41:56,519][feed_maker.py:445][DEBUG] rss_file_path=hackernoon/hackernoon.cloud/hackernoon.cloud.xml, temp_rss_file_path=hackernoon/hackernoon.cloud/hackernoon.cloud.xml.20251215, old_rss_file_path=hackernoon/hackernoon.cloud/hackernoon.cloud.xml.old
+[2025-12-15 16:41:56,519][feed_maker.py:447][INFO] Generating rss feed file...
+[2025-12-15 16:41:56,519][feed_maker.py:451][INFO] https://hackernoon.com/how-to-migrate-existing-azure-functions-to-the-net-8-isolated-worker-runtime	기존 Azure 함수를 .NET 8 격리된 워커 런타임으로 마이그레이션하는 방법(How to Migrate Existing Azure Functions to the .NET 8 Isolated Worker Runtime)	hackernoon/hackernoon.cloud/html/7b5aa48.html
+[2025-12-15 16:41:56,519][feed_maker.py:451][INFO] https://hackernoon.com/the-hidden-architecture-powering-ai-search-vector-databases-under-the-hood	AI 검색을 지원하는 숨겨진 아키텍처 벡터 데이터베이스 내부(The Hidden Architecture Powering AI Search: Vector Databases Under the Hood)	hackernoon/hackernoon.cloud/html/47c1a62.html
+[2025-12-15 16:41:56,519][feed_maker.py:451][INFO] https://hackernoon.com/supercharging-ai-workflows-distributed-document-processing-with-nodejs-python-and-rabbitmq	AI 워크플로 강화: Node.js, Python, RabbitMQ를 사용한 분산 문서 처리(Supercharging AI Workflows: Distributed Document Processing with Node.js, Python, and RabbitMQ)	hackernoon/hackernoon.cloud/html/49175e3.html
+[2025-12-15 16:41:56,519][feed_maker.py:451][INFO] https://hackernoon.com/how-i-access-my-home-nas-from-anywhere-without-doxxing-my-ip-using-cloudflare-tunnel	Cloudflare 터널을 사용하여 어디서나(내 IP를 도싱하지 않고) 홈 NAS에 액세스하는 방법(How I Access My Home NAS from Anywhere (Without Doxxing My IP) Using Cloudflare Tunnel)	hackernoon/hackernoon.cloud/html/2c962a6.html
+[2025-12-15 16:41:56,520][feed_maker.py:451][INFO] https://hackernoon.com/no-need-to-mock-all-the-time-a-better-way-to-test-api-resilience-in-your-terminal	항상 모의 테스트할 필요 없음: 터미널에서 API 복원력을 테스트하는 더 나은 방법(No Need to Mock All the Time: A Better Way to Test API Resilience in Your Terminal)	hackernoon/hackernoon.cloud/html/ff88bb3.html
+[2025-12-15 16:41:56,526][feed_maker.py:505][DEBUG] is_differernt=False
+[2025-12-15 16:41:56,526][uploader.py:19][DEBUG] # upload(rss_file_path='hackernoon/hackernoon.cloud/hackernoon.cloud.xml'
+[2025-12-15 16:41:56,526][uploader.py:24][INFO] new rss file exists
+[2025-12-15 16:41:56,530][uploader.py:27][WARNING] Warning: upload failed! no change from old rss file
+[2025-12-15 16:41:56,530][feed_maker_util.py:695][DEBUG] # remove_temporary_files(feed_dir_path='hackernoon/hackernoon.cloud')
+[2025-12-15 16:41:56,530][feed_maker_util.py:696][INFO] # deleting temporary files
+[2025-12-15 16:41:56,531][run.py:84][INFO] # Running time analysis
+[2025-12-15 16:41:56,531][run.py:85][INFO] * Start time: 2025-12-15T07:41:56+00:00
+[2025-12-15 16:41:56,531][run.py:86][INFO] * End time: 2025-12-15T07:41:56+00:00
+[2025-12-15 16:41:56,531][run.py:87][INFO] * Elapsed time: 0.426063
+[2025-12-15 16:41:56,531][problem_manager.py:108][DEBUG] # update_feed_info(feed_dir_path=hackernoon/hackernoon.cloud, new_feed_dir_path=)
+[2025-12-15 16:41:56,531][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='hackernoon/hackernoon.cloud', do_remove_file=False)
+[2025-12-15 16:41:56,545][feed_manager.py:71][INFO] * The removing of config info of feed 'hackernoon.cloud' is done.
+[2025-12-15 16:41:56,545][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='hackernoon/hackernoon.cloud', do_remove_file=False)
+[2025-12-15 16:41:56,547][feed_manager.py:197][INFO] * The removing of rss info of feed 'hackernoon.cloud' is done.
+[2025-12-15 16:41:56,548][feed_manager.py:295][INFO] * The removing of public feed info of feed 'hackernoon.cloud' is done.
+[2025-12-15 16:41:56,549][feed_manager.py:385][DEBUG] # remove_progress_info(feed_dir_path='hackernoon/hackernoon.cloud', do_remove_file=False)
+[2025-12-15 16:41:56,551][feed_manager.py:398][INFO] * The removing of progress info of feed 'hackernoon.cloud' is done.
+[2025-12-15 16:41:56,552][access_log_manager.py:95][INFO] * The removing of access info of feed 'hackernoon.cloud' is done.
+[2025-12-15 16:41:56,552][html_file_manager.py:150][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='hackernoon/hackernoon.cloud')
+[2025-12-15 16:41:56,557][html_file_manager.py:171][INFO] * The removing of some html files in 'hackernoon/hackernoon.cloud' is done
+[2025-12-15 16:41:56,563][feed_manager.py:148][INFO] * The adding of config info of feed 'hackernoon.cloud' is done.
+[2025-12-15 16:41:56,565][feed_manager.py:241][INFO] * The adding of rss info of feed 'hackernoon.cloud' is done.
+[2025-12-15 16:41:56,568][feed_manager.py:341][INFO] * The adding of public feed info of feed 'hackernoon.cloud' is done. 5 items
+[2025-12-15 16:41:56,571][feed_manager.py:496][INFO] * The adding of progress info of feed 'hackernoon.cloud' is done. 1 items
+[2025-12-15 16:41:56,571][access_log_manager.py:113][DEBUG] # add_httpd_access_info()
+[2025-12-15 16:41:56,758][access_log_manager.py:144][INFO] * The adding of access info is done.
+[2025-12-15 16:41:56,758][html_file_manager.py:174][DEBUG] # _add_html_info(feed_dir_path=hackernoon/hackernoon.cloud)
+[2025-12-15 16:41:56,805][html_file_manager.py:206][INFO] * The adding of some html files in 'hackernoon/hackernoon.cloud' is done. 82 items
+[2025-12-15 16:41:56,805][run.py:241][INFO] # Checking problems and making report

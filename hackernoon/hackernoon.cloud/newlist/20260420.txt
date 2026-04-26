@@ -1,0 +1,5 @@
+https://hackernoon.com/its-not-kubernetes-it-never-was	이건 쿠버네티스가 아닙니다. 애초에 쿠버네티스가 아니었죠.(It's Not Kubernetes. It Never Was.)	
+https://hackernoon.com/why-amazon-dynamo-still-shapes-modern-distributed-storage-17-years-later	17년이 지난 지금도 아마존 다이나모가 현대 분산 스토리지의 기준을 제시하는 이유(Why Amazon Dynamo Still Shapes Modern Distributed Storage 17 Years Later)	
+https://hackernoon.com/i-spent-two-weeks-testing-8-databases-with-the-same-question-heres-what-actually-happened	2주 동안 같은 질문으로 8개의 데이터베이스를 테스트해 봤습니다. 실제로 어떤 결과가 나왔는지 알려드립니다.(I Spent Two Weeks Testing 8 Databases With the Same Question - Here's What Actually Happened)	
+https://hackernoon.com/why-i-started-building-my-own-containers-and-what-i-wish-tutorials-told-me	내가 직접 컨테이너를 만들기 시작한 이유 (그리고 튜토리얼에서 알려주었으면 했던 점)(Why I Started Building My Own Containers (and What I Wish Tutorials Told Me))	
+https://hackernoon.com/cap-theorem-explained-part-1-the-problem-with-pick-two	CAP 정리의 해설, 1부: “두 가지를 선택하라”의 문제점(CAP Theorem Explained, Part 1: The Problem With “Pick Two”)	
