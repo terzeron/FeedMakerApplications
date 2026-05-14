@@ -1,5 +1,0 @@
-https://hackernoon.com/github-agentic-workflows-solved-a-release-notes-problem-i-couldnt-script	GitHub의 Agentic 워크플로가 제가 스크립트로 해결할 수 없었던 릴리스 노트 문제를 해결해 주었습니다(GitHub Agentic Workflows Solved a Release Notes Problem I Couldn’t Script)	
-https://hackernoon.com/native-json-streaming-in-symfony-how-to-bypass-memory-limits-and-more	Symfony의 네이티브 JSON 스트리밍: 메모리 제한 우회 방법 및 기타 정보(Native JSON Streaming in Symfony: How to Bypass Memory Limits and More)	
-https://hackernoon.com/ai-coding-tip-015-force-the-ai-to-obey-you	AI 코딩 팁 015 - AI가 당신의 명령에 따르도록 만들기(AI Coding Tip 015 - Force the AI to Obey You)	
-https://hackernoon.com/how-frontier-labs-use-fp8-to-train-faster-and-spend-less	프론티어 랩스(Frontier Labs)가 FP8을 활용해 훈련 속도를 높이고 비용을 절감하는 방법(How Frontier Labs Use FP8 to Train Faster and Spend Less)	
-https://hackernoon.com/i-let-karpathys-autoresearch-agent-run-overnight	카르파티의 AutoResearch 에이전트를 밤새도록 실행해 두었어요!(I Let Karpathy's AutoResearch Agent Run Overnight!)	
