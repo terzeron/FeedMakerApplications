@@ -5,7 +5,6 @@
       "list_url_list": [
         "https://mmzone.co.kr/mms_tool/mms_tool.php?cr=1&category=bom&b_type=2",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?cr=1&category=afv&b_type=2",
-        "https://mmzone.co.kr/mms_tool/mms_tool.php?cr=1&category=gundam&b_type=2",
         "https://mmzone.co.kr/mms_tool/mms_tool.php?cr=1&category=sf&b_type=2"
       ],
       "sort_field_pattern": "no=(\\d+)",
