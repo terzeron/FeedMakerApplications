@@ -203,8 +203,14 @@ def main() -> int:
     item_id = URL.get_short_md5_name(URL.get_url_path(link))
 
     # 이미지 다운로드 및 병합
+    bg_img_url = item["bgImg"]
+    if bg_img_url.endswith(".webp.jpg"):
+        bg_img_url = bg_img_url[:-4]  # .webp.jpg -> .webp
+    main_img_url = item["mainImg"]
+    if main_img_url.endswith(".webp.png"):
+        main_img_url = main_img_url[:-4]  # .webp.png -> .webp
     merged_image_url = download_and_merge(
-        crawler, download_dir_path, item["bgImg"], item["mainImg"], item_id
+        crawler, download_dir_path, bg_img_url, main_img_url, item_id
     )
 
     del crawler
