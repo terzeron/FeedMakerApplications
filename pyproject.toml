@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
       "fm",
+      "playwright>=1.59.0",
 ]
 
 [tool.uv.sources]
