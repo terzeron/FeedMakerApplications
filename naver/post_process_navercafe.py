@@ -53,9 +53,12 @@ def main():
                 and e.response is not None
                 and e.response.status_code == 401
             ):
-                print(f"Warning: Unauthorized (401) for URL: {e}", file=sys.stderr)
-            else:
-                print(f"Error fetching URL: {e}", file=sys.stderr)
+                # 401은 cookie 만료/미인증 상황. 시끄러운 ERROR 로그를 만들지 않고
+                # 빈 본문(header만)을 내보내 feed_maker가 size_too_small 경로로
+                # 조용히 스킵하도록 한다.
+                print(header_str)
+                sys.exit(0)
+            print(f"Error fetching URL: {e}", file=sys.stderr)
             sys.exit(1)
 
         if response:
@@ -256,6 +259,60 @@ class TestMainCookiesPassedToRequest(unittest.TestCase):
             ]
             main()
             mock_rc.assert_called_once_with(".")
+
+
+class TestMain401HandledSilently(unittest.TestCase):
+    def test_401_emits_header_only_and_exits_zero(self):
+        from io import StringIO
+
+        http_err = requests.HTTPError("401 Client Error: Unauthorized for url: x")
+        http_err.response = unittest.mock.MagicMock(status_code=401)
+
+        bad_resp = unittest.mock.MagicMock()
+        bad_resp.raise_for_status = unittest.mock.MagicMock(side_effect=http_err)
+
+        out_buf, err_buf = StringIO(), StringIO()
+        with (
+            patch(f"{_MODULE}.read_cookies", return_value={}),
+            patch(f"{_MODULE}.requests.get", return_value=bad_resp),
+            patch(f"{_MODULE}.IO.read_stdin"),
+            patch("sys.stdout", out_buf),
+            patch("sys.stderr", err_buf),
+        ):
+            sys.argv = [
+                "prog",
+                "https://m.cafe.naver.com/ca-fe/web/cafes/123/articles/456",
+            ]
+            with self.assertRaises(SystemExit) as cm:
+                main()
+        self.assertEqual(cm.exception.code, 0)
+        self.assertEqual(err_buf.getvalue(), "")
+        self.assertEqual(out_buf.getvalue().strip(), header_str.strip())
+
+    def test_non_401_http_error_still_reports_error(self):
+        from io import StringIO
+
+        http_err = requests.HTTPError("500 Server Error")
+        http_err.response = unittest.mock.MagicMock(status_code=500)
+
+        bad_resp = unittest.mock.MagicMock()
+        bad_resp.raise_for_status = unittest.mock.MagicMock(side_effect=http_err)
+
+        err_buf = StringIO()
+        with (
+            patch(f"{_MODULE}.read_cookies", return_value={}),
+            patch(f"{_MODULE}.requests.get", return_value=bad_resp),
+            patch(f"{_MODULE}.IO.read_stdin"),
+            patch("sys.stderr", err_buf),
+        ):
+            sys.argv = [
+                "prog",
+                "https://m.cafe.naver.com/ca-fe/web/cafes/123/articles/456",
+            ]
+            with self.assertRaises(SystemExit) as cm:
+                main()
+        self.assertEqual(cm.exception.code, 1)
+        self.assertIn("Error fetching URL", err_buf.getvalue())
 
 
 class TestPostProcessNaverCafe(unittest.TestCase):
