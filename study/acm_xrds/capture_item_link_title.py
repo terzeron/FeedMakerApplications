@@ -26,7 +26,7 @@ def main() -> int:
     result_list: List[Tuple[str, str]] = []
     issue_links_set = set()
     crawler = None
-    max_volumes = 10  # 처음 10개 볼륨만 크롤링
+    max_volumes = 2  # 처음 2개 볼륨만 크롤링
 
     for line in line_list:
         if len(issue_links_set) >= max_volumes:
