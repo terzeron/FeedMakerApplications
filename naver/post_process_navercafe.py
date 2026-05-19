@@ -31,10 +31,13 @@ def main():
     IO.read_stdin()
 
     feed_dir_path = "."
-    optlist, args = getopt.getopt(sys.argv[1:], "f:")
+    debug = False
+    optlist, args = getopt.getopt(sys.argv[1:], "f:d")
     for opt, val in optlist:
         if opt == "-f":
             feed_dir_path = val
+        elif opt == "-d":
+            debug = True
     page_url = args[0]
 
     m = re.search(r"cafes/(?P<cafe_id>\d+)/articles/(?P<article_id>\d+)", page_url)
@@ -44,9 +47,15 @@ def main():
         url = f"https://apis.naver.com/cafe-web/cafe-articleapi/v3/cafes/{cafe_id}/articles/{article_id}"
 
         cookies = read_cookies(feed_dir_path)
+        if debug:
+            print(f"# DEBUG request URL: {url}", file=sys.stderr)
+            print(f"# DEBUG cookie keys: {sorted(cookies.keys())}", file=sys.stderr)
         try:
             response = requests.get(url, cookies=cookies, timeout=5)
-            response.raise_for_status()
+            if debug:
+                print(f"# DEBUG status: {response.status_code}", file=sys.stderr)
+            if not debug:
+                response.raise_for_status()
         except requests.RequestException as e:
             if (
                 isinstance(e, requests.HTTPError)
@@ -60,6 +69,14 @@ def main():
                 sys.exit(0)
             print(f"Error fetching URL: {e}", file=sys.stderr)
             sys.exit(1)
+
+        if debug:
+            try:
+                data = json.loads(str(response.text))
+                print(json.dumps(data, indent=2, ensure_ascii=False))
+            except json.JSONDecodeError:
+                print(response.text)
+            return
 
         if response:
             data = json.loads(str(response.text))
