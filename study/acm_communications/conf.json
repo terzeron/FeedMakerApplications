@@ -10,6 +10,7 @@
       "list_url_list": [
         "https://cacm.acm.org/issues"
       ],
+      "item_capture_script": "./capture_item_link_title.py -n 5",
       "window_size": 10
     },
     "extraction": {
