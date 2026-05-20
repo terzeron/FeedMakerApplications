@@ -8,14 +8,13 @@
       "item_capture_script": "./capture_item_link_title.py -n 5",
       "sort_field_pattern": "/(\\d+)",
       "unit_size_per_day": 2,
-      "list_url_list": [
-        "https://xrds.acm.org/archives.cfm"
-      ]
+      "list_url_list": ["https://xrds.acm.org/archives.cfm"],
+      "num_retries": 3,
+      "retry_sleep": 30,
+      "wait_until": "networkidle"
     },
     "extraction": {
-      "element_class_list": [
-        "article-a"
-      ]
+      "element_class_list": ["article-a"]
     },
     "rss": {
       "title": "ACM XRDS",

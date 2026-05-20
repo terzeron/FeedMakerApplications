@@ -4,11 +4,14 @@
 import sys
 import re
 import getopt
+import logging
 from typing import List, Tuple
 
 from bin.feed_maker_util import IO
 from bin.crawler import Crawler
 from utils.translation import Translation
+
+LOGGER = logging.getLogger()
 
 
 def main() -> int:
@@ -17,9 +20,9 @@ def main() -> int:
 
     optlist, _ = getopt.getopt(sys.argv[1:], "f:n:d")
     for o, a in optlist:
-        if o == '-n':
+        if o == "-n":
             num_of_recent_feeds = int(a)
-        elif o == '-d':
+        elif o == "-d":
             debug = True
 
     line_list = IO.read_stdin_as_line_list()
@@ -37,39 +40,40 @@ def main() -> int:
             issue_link = "https://xrds.acm.org/" + m.group(1)
             if issue_link not in issue_links_set:
                 issue_links_set.add(issue_link)
-                print(f"Crawling {issue_link}...", file=sys.stderr)
+                LOGGER.debug("Crawling %s", issue_link)
 
                 try:
                     if crawler is None:
                         crawler = Crawler(render_js=True, timeout=60)
                     html, error, _ = crawler.run(issue_link)
-                except Exception as e:
-                    print(f"  Browser error, restarting: {e}", file=sys.stderr)
+                except Exception:
                     crawler = Crawler(render_js=True, timeout=60)
                     html, error, _ = crawler.run(issue_link)
 
                 if debug and html:
-                    iid = m.group(1).split('=')[1]
+                    iid = m.group(1).split("=")[1]
                     with open(f"debug_xrds_{iid}.html", "w") as f:
                         f.write(html)
-                    print(f"  Saved to debug_xrds_{iid}.html", file=sys.stderr)
+                    LOGGER.debug("Saved to debug_xrds_%s.html", iid)
 
                 if html and not error:
                     # article 링크 추출: <h3><a href="article.cfm?aid=XXXXXX">Title</a></h3>
-                    matches = re.findall(r'<h3><a href="(article\.cfm\?aid=\d+)">([^<]+)</a></h3>', html)
+                    matches = re.findall(
+                        r'<h3><a href="(article\.cfm\?aid=\d+)">([^<]+)</a></h3>', html
+                    )
                     for match in matches:
                         link = "https://xrds.acm.org/" + match[0]
                         title = match[1].strip()
                         if title and (link, title) not in result_list:
                             result_list.append((link, title))
-                    print(f"  Found {len(matches)} articles", file=sys.stderr)
+                    LOGGER.debug("Found %d articles", len(matches))
                 else:
-                    print(f"  Error: {error}", file=sys.stderr)
+                    LOGGER.error("Crawler error: %s", error)
 
     translation = Translation()
     result_list = translation.translate(result_list[:num_of_recent_feeds])
 
-    for (link, title) in result_list[:num_of_recent_feeds]:
+    for link, title in result_list[:num_of_recent_feeds]:
         print(f"{link}\t{title}")
 
     return 0

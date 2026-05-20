@@ -7,11 +7,12 @@
       "ignore_old_list": false,
       "sort_field_pattern": "\\t(\\S+)",
       "unit_size_per_day": 5,
-      "list_url_list": [
-        "https://cacm.acm.org/issues"
-      ],
+      "list_url_list": ["https://cacm.acm.org/issues"],
       "item_capture_script": "./capture_item_link_title.py -n 5",
-      "window_size": 10
+      "window_size": 10,
+      "num_retries": 3,
+      "retry_sleep": 30,
+      "wait_until": "networkidle"
     },
     "extraction": {
       "element_class_list": [
