@@ -1,0 +1,41 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_sbxh.py -n 5",
+      "render_js": true,
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+      },
+      "list_url_list": [
+        "https://sbxh2.com/manhwa/27155"
+      ],
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 0.5
+    },
+    "extraction": {
+      "element_class_list": [
+        "vw-imgs"
+      ],
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "render_js": true,
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+      },
+      "post_process_script_list": [
+        "download_image.py"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) Newtoki. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/gigantis.xml",
+      "title": "쟈이간티스 :: Newtoki",
+      "url_prefix_for_guid": "https://sbxh2.com"
+    }
+  }
+}
