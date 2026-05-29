@@ -15,6 +15,7 @@
       "wait_until": "networkidle"
     },
     "extraction": {
+      "render_js": true,
       "element_class_list": [
         "article-header__subtitle",
         "article_header__meta",
