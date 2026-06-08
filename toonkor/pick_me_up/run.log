@@ -1,0 +1,164 @@
+[2026-05-15 18:00:28,325][run.py:202][DEBUG] # main()
+[2026-05-15 18:00:28,325][run.py:171][DEBUG] # determine_options()
+[2026-05-15 18:00:28,325][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-05-15 18:00:28,325][run.py:212][DEBUG] toonkor/pick_me_up
+[2026-05-15 18:00:28,325][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-05-15 18:00:28,373][feed_maker_util.py:468][DEBUG] # Config(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:28,373][feed_maker_util.py:540][DEBUG] # get_collection_configs()
+[2026-05-15 18:00:28,373][run.py:40][DEBUG] # make_single_feed(feed_dir_path='toonkor/pick_me_up', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-05-15 18:00:28,374][run.py:55][INFO] * toonkor/pick_me_up
+[2026-05-15 18:00:28,374][feed_maker_util.py:792][DEBUG] # remove_image_files_with_zero_size()
+[2026-05-15 18:00:28,374][feed_maker_util.py:793][INFO] # deleting image files with zero size
+[2026-05-15 18:00:28,406][feed_maker_util.py:777][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='toonkor/pick_me_up', feed_img_dir_path='img/pick_me_up')
+[2026-05-15 18:00:28,406][feed_maker_util.py:778][INFO] # deleting html files without cached image files
+[2026-05-15 18:00:28,407][feed_maker_util.py:468][DEBUG] # Config(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:28,407][feed_maker_util.py:571][DEBUG] # get_extraction_configs()
+[2026-05-15 18:00:28,407][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/001d8f7.html')
+[2026-05-15 18:00:28,408][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/7f587de.html')
+[2026-05-15 18:00:28,410][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/513985f.html')
+[2026-05-15 18:00:28,411][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/7523ccc.html')
+[2026-05-15 18:00:28,412][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/fdc0090.html')
+[2026-05-15 18:00:28,414][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/ef8af25.html')
+[2026-05-15 18:00:28,415][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/63e4cf0.html')
+[2026-05-15 18:00:28,417][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/a33000e.html')
+[2026-05-15 18:00:28,418][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/9255140.html')
+[2026-05-15 18:00:28,418][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/466e880.html')
+[2026-05-15 18:00:28,420][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/894d82f.html')
+[2026-05-15 18:00:28,421][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/cbe2656.html')
+[2026-05-15 18:00:28,423][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/e09fb59.html')
+[2026-05-15 18:00:28,425][run.py:73][INFO] * making feed file 'toonkor/pick_me_up/pick_me_up.xml'
+[2026-05-15 18:00:28,425][feed_maker.py:43][DEBUG] # FeedMaker(feed_dir_path=toonkor/pick_me_up, do_collect_by_force=, do_collect_only=, rss_file_path=toonkor/pick_me_up/pick_me_up.xml)
+[2026-05-15 18:00:28,425][feed_maker.py:530][DEBUG] # make()
+[2026-05-15 18:00:28,425][feed_maker.py:531][INFO] =========================================================
+[2026-05-15 18:00:28,425][feed_maker.py:532][INFO] toonkor/pick_me_up
+[2026-05-15 18:00:28,425][feed_maker.py:533][INFO] =========================================================
+[2026-05-15 18:00:28,425][feed_maker_util.py:468][DEBUG] # Config(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:28,425][feed_maker_util.py:540][DEBUG] # get_collection_configs()
+[2026-05-15 18:00:28,425][feed_maker_util.py:571][DEBUG] # get_extraction_configs()
+[2026-05-15 18:00:28,425][feed_maker_util.py:602][DEBUG] # get_rss_configs()
+[2026-05-15 18:00:28,425][feed_maker.py:539][DEBUG] self.collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../capture_item_toonkor.py -n 5', 'sort_field_pattern': '\\t(\\d+)', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 2.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://tkr496.com/webtoon/9665'], 'post_process_script_list': [], 'headers': {}}
+[2026-05-15 18:00:28,425][feed_maker.py:540][DEBUG] self.extraction_conf={'render_js': True, 'verify_ssl': True, 'bypass_element_extraction': False, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 5, 'timeout': 60, 'num_retries': 1, 'element_id_list': ['tnimg'], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['download_image.py'], 'headers': {}, 'exclude_ad_images': False}
+[2026-05-15 18:00:28,425][feed_maker.py:541][DEBUG] self.rss_conf={'ignore_broken_link': '', 'rss_title': '픽 미 업!::ToonKor', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) ToonKor. All rights reserved.', 'rss_link': 'https://terzeron.com/pick_me_up.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': 'https://toonkor132.com'}
+[2026-05-15 18:00:28,425][feed_maker.py:156][DEBUG] # _read_old_feed_list_from_file()
+[2026-05-15 18:00:28,425][feed_maker.py:174][INFO] toonkor/pick_me_up/newlist/20260515.txt
+[2026-05-15 18:00:28,425][feed_maker.py:412][DEBUG] # _get_recent_feed_list()
+[2026-05-15 18:00:28,425][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=toonkor/pick_me_up, collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../capture_item_toonkor.py -n 5', 'sort_field_pattern': '\\t(\\d+)', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 2.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://tkr496.com/webtoon/9665'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=toonkor/pick_me_up/newlist/20260515.txt
+[2026-05-15 18:00:28,425][new_list_collector.py:109][DEBUG] # collect()
+[2026-05-15 18:00:28,425][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-05-15 18:00:28,425][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-05-15 18:00:28,425][crawler.py:326][DEBUG] # Crawler(dir_path=toonkor/pick_me_up, render_js=True, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-05-15 18:00:28,425][headless_browser_playwright.py:206][DEBUG] # HeadlessBrowserPlaywright(dir_path=toonkor/pick_me_up, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False, timeout=60)
+[2026-05-15 18:00:28,425][crawler.py:370][DEBUG] # get_option_str()
+[2026-05-15 18:00:28,425][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/toonkor/pick_me_up'  --render-js=true --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://tkr496.com/webtoon/9665'
+[2026-05-15 18:00:28,425][crawler.py:435][DEBUG] # run(url=https://tkr496.com/webtoon/9665, data=None, download_file=None, allow_redirects=True)
+[2026-05-15 18:00:28,426][headless_browser_playwright.py:478][DEBUG] # HeadlessBrowserPlaywright.make_request(url=https://tkr496.com/webtoon/9665, download_file=None)
+[2026-05-15 18:00:28,426][headless_browser_playwright.py:555][ERROR] Unexpected error in make_request: playwright is not installed
+[2026-05-15 18:00:28,426][new_list_collector.py:64][ERROR] Warning: can't get result from web page 'https://tkr496.com/webtoon/9665', 
+[2026-05-15 18:00:28,426][new_list_collector.py:93][ERROR] Error: Can't get new list from '['https://tkr496.com/webtoon/9665']'
+[2026-05-15 18:00:28,426][feed_maker.py:570][ERROR] Error: Can't get recent feed list from urls
+[2026-05-15 18:00:28,426][feed_maker_util.py:802][DEBUG] # remove_temporary_files(feed_dir_path='toonkor/pick_me_up')
+[2026-05-15 18:00:28,426][feed_maker_util.py:803][INFO] # deleting temporary files
+[2026-05-15 18:00:28,427][run.py:84][INFO] # Running time analysis
+[2026-05-15 18:00:28,427][run.py:85][INFO] * Start time: 2026-05-15T09:00:28+00:00
+[2026-05-15 18:00:28,427][run.py:86][INFO] * End time: 2026-05-15T09:00:28+00:00
+[2026-05-15 18:00:28,427][run.py:87][INFO] * Elapsed time: 0.053144
+[2026-05-15 18:00:28,427][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=toonkor/pick_me_up, new_feed_dir_path=)
+[2026-05-15 18:00:28,427][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='toonkor/pick_me_up', do_remove_file=False)
+[2026-05-15 18:00:28,431][feed_manager.py:71][INFO] * The removing of config info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:28,432][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='toonkor/pick_me_up', do_remove_file=False)
+[2026-05-15 18:00:28,434][feed_manager.py:197][INFO] * The removing of rss info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:28,435][feed_manager.py:296][INFO] * The removing of public feed info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:28,436][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='toonkor/pick_me_up', do_remove_file=False)
+[2026-05-15 18:00:28,438][feed_manager.py:399][INFO] * The removing of progress info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:28,440][access_log_manager.py:56][INFO] * The removing of access info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:28,440][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='toonkor/pick_me_up')
+[2026-05-15 18:00:28,444][html_file_manager.py:143][INFO] * The removing of some html files in 'toonkor/pick_me_up' is done
+[2026-05-15 18:00:28,449][feed_manager.py:148][INFO] * The adding of config info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:28,452][feed_manager.py:242][INFO] * The adding of rss info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:28,456][feed_manager.py:342][INFO] * The adding of public feed info of feed 'pick_me_up' is done. 5 items
+[2026-05-15 18:00:28,457][feed_manager.py:497][INFO] * The adding of progress info of feed 'pick_me_up' is done. 1 items
+[2026-05-15 18:00:28,457][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:28,466][html_file_manager.py:178][INFO] * The adding of some html files in 'toonkor/pick_me_up' is done. 13 items
+[2026-05-15 18:00:28,466][run.py:234][INFO] # Checking problems and making report
+[2026-05-15 18:00:46,609][run.py:202][DEBUG] # main()
+[2026-05-15 18:00:46,609][run.py:171][DEBUG] # determine_options()
+[2026-05-15 18:00:46,610][run.py:211][DEBUG] {'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5}
+[2026-05-15 18:00:46,610][run.py:212][DEBUG] toonkor/pick_me_up
+[2026-05-15 18:00:46,610][run.py:23][DEBUG] # FeedMakerRunner(html_archiving_period=30, list_archiving_period=7)
+[2026-05-15 18:00:46,640][feed_maker_util.py:468][DEBUG] # Config(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:46,641][feed_maker_util.py:540][DEBUG] # get_collection_configs()
+[2026-05-15 18:00:46,641][run.py:40][DEBUG] # make_single_feed(feed_dir_path='toonkor/pick_me_up', options={'do_make_all_feeds': False, 'do_remove_all_files': False, 'force_collection_opt': '', 'collect_only_opt': '', 'num_feeds': 0, 'window_size': 5})
+[2026-05-15 18:00:46,641][run.py:55][INFO] * toonkor/pick_me_up
+[2026-05-15 18:00:46,641][feed_maker_util.py:792][DEBUG] # remove_image_files_with_zero_size()
+[2026-05-15 18:00:46,641][feed_maker_util.py:793][INFO] # deleting image files with zero size
+[2026-05-15 18:00:46,653][feed_maker_util.py:777][DEBUG] # remove_html_files_without_cached_image_files(feed_dir_path='toonkor/pick_me_up', feed_img_dir_path='img/pick_me_up')
+[2026-05-15 18:00:46,653][feed_maker_util.py:778][INFO] # deleting html files without cached image files
+[2026-05-15 18:00:46,653][feed_maker_util.py:468][DEBUG] # Config(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:46,653][feed_maker_util.py:571][DEBUG] # get_extraction_configs()
+[2026-05-15 18:00:46,653][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/001d8f7.html')
+[2026-05-15 18:00:46,655][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/7f587de.html')
+[2026-05-15 18:00:46,657][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/513985f.html')
+[2026-05-15 18:00:46,659][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/7523ccc.html')
+[2026-05-15 18:00:46,661][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/fdc0090.html')
+[2026-05-15 18:00:46,662][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/ef8af25.html')
+[2026-05-15 18:00:46,664][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/63e4cf0.html')
+[2026-05-15 18:00:46,666][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/a33000e.html')
+[2026-05-15 18:00:46,668][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/9255140.html')
+[2026-05-15 18:00:46,668][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/466e880.html')
+[2026-05-15 18:00:46,670][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/894d82f.html')
+[2026-05-15 18:00:46,672][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/cbe2656.html')
+[2026-05-15 18:00:46,674][feed_maker_util.py:745][DEBUG] # get_incomplete_image_list(html_file_path='toonkor/pick_me_up/html/e09fb59.html')
+[2026-05-15 18:00:46,676][run.py:73][INFO] * making feed file 'toonkor/pick_me_up/pick_me_up.xml'
+[2026-05-15 18:00:46,676][feed_maker.py:43][DEBUG] # FeedMaker(feed_dir_path=toonkor/pick_me_up, do_collect_by_force=, do_collect_only=, rss_file_path=toonkor/pick_me_up/pick_me_up.xml)
+[2026-05-15 18:00:46,676][feed_maker.py:530][DEBUG] # make()
+[2026-05-15 18:00:46,676][feed_maker.py:531][INFO] =========================================================
+[2026-05-15 18:00:46,676][feed_maker.py:532][INFO] toonkor/pick_me_up
+[2026-05-15 18:00:46,676][feed_maker.py:533][INFO] =========================================================
+[2026-05-15 18:00:46,676][feed_maker_util.py:468][DEBUG] # Config(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:46,676][feed_maker_util.py:540][DEBUG] # get_collection_configs()
+[2026-05-15 18:00:46,676][feed_maker_util.py:571][DEBUG] # get_extraction_configs()
+[2026-05-15 18:00:46,676][feed_maker_util.py:602][DEBUG] # get_rss_configs()
+[2026-05-15 18:00:46,676][feed_maker.py:539][DEBUG] self.collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../capture_item_toonkor.py -n 5', 'sort_field_pattern': '\\t(\\d+)', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 2.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://tkr496.com/webtoon/9665'], 'post_process_script_list': [], 'headers': {}}
+[2026-05-15 18:00:46,676][feed_maker.py:540][DEBUG] self.extraction_conf={'render_js': True, 'verify_ssl': True, 'bypass_element_extraction': False, 'force_sleep_between_articles': True, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'threshold_to_remove_html_with_incomplete_image': 5, 'timeout': 60, 'num_retries': 1, 'element_id_list': ['tnimg'], 'element_class_list': [], 'element_path_list': [], 'post_process_script_list': ['download_image.py'], 'headers': {}, 'exclude_ad_images': False}
+[2026-05-15 18:00:46,676][feed_maker.py:541][DEBUG] self.rss_conf={'ignore_broken_link': '', 'rss_title': '픽 미 업!::ToonKor', 'rss_generator': "Terzeron's Feed Generator", 'rss_copyright': 'Copyright (c) ToonKor. All rights reserved.', 'rss_link': 'https://terzeron.com/pick_me_up.xml', 'rss_language': 'ko', 'rss_url_prefix_for_guid': 'https://toonkor132.com'}
+[2026-05-15 18:00:46,676][feed_maker.py:156][DEBUG] # _read_old_feed_list_from_file()
+[2026-05-15 18:00:46,676][feed_maker.py:174][INFO] toonkor/pick_me_up/newlist/20260515.txt
+[2026-05-15 18:00:46,676][feed_maker.py:412][DEBUG] # _get_recent_feed_list()
+[2026-05-15 18:00:46,676][new_list_collector.py:20][DEBUG] # NewlistCollector(feed_dir_path=toonkor/pick_me_up, collection_conf={'render_js': True, 'verify_ssl': True, 'ignore_old_list': False, 'is_completed': False, 'copy_images_from_canvas': False, 'simulate_scrolling': False, 'disable_headless': False, 'blob_to_dataurl': False, 'item_capture_script': '../capture_item_toonkor.py -n 5', 'sort_field_pattern': '\\t(\\d+)', 'user_agent': None, 'encoding': 'utf-8', 'referer': None, 'timeout': 60, 'unit_size_per_day': 2.0, 'num_retries': 1, 'window_size': 5, 'list_url_list': ['https://tkr496.com/webtoon/9665'], 'post_process_script_list': [], 'headers': {}}, new_list_file_path=toonkor/pick_me_up/newlist/20260515.txt
+[2026-05-15 18:00:46,676][new_list_collector.py:109][DEBUG] # collect()
+[2026-05-15 18:00:46,676][new_list_collector.py:112][DEBUG] collecting items from specified url list...
+[2026-05-15 18:00:46,676][new_list_collector.py:49][DEBUG] # compose_url_list()
+[2026-05-15 18:00:46,677][crawler.py:326][DEBUG] # Crawler(dir_path=toonkor/pick_me_up, render_js=True, method=Method.GET, headers={'Referer': None}, timeout=60, num_retries=1, encoding=utf-8, verify_ssl=True, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False)
+[2026-05-15 18:00:46,677][headless_browser_playwright.py:206][DEBUG] # HeadlessBrowserPlaywright(dir_path=toonkor/pick_me_up, headers={'Referer': None, 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}, copy_images_from_canvas=False, simulate_scrolling=False, disable_headless=False, blob_to_dataurl=False, timeout=60)
+[2026-05-15 18:00:46,677][crawler.py:370][DEBUG] # get_option_str()
+[2026-05-15 18:00:46,677][new_list_collector.py:60][DEBUG] cmd=crawler.py -f '/home/terzeron/workspace/fma/toonkor/pick_me_up'  --render-js=true --verify-ssl=true --copy-images-from-canvas=false --simulate-scrolling=false --blob-to-dataurl=false --disable-headless=false --encoding='utf-8' --header='User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' --timeout=60 'https://tkr496.com/webtoon/9665'
+[2026-05-15 18:00:46,677][crawler.py:435][DEBUG] # run(url=https://tkr496.com/webtoon/9665, data=None, download_file=None, allow_redirects=True)
+[2026-05-15 18:00:46,677][headless_browser_playwright.py:478][DEBUG] # HeadlessBrowserPlaywright.make_request(url=https://tkr496.com/webtoon/9665, download_file=None)
+[2026-05-15 18:00:46,678][headless_browser_playwright.py:555][ERROR] Unexpected error in make_request: playwright is not installed
+[2026-05-15 18:00:46,678][new_list_collector.py:64][ERROR] Warning: can't get result from web page 'https://tkr496.com/webtoon/9665', 
+[2026-05-15 18:00:46,678][new_list_collector.py:93][ERROR] Error: Can't get new list from '['https://tkr496.com/webtoon/9665']'
+[2026-05-15 18:00:46,678][feed_maker.py:570][ERROR] Error: Can't get recent feed list from urls
+[2026-05-15 18:00:46,678][feed_maker_util.py:802][DEBUG] # remove_temporary_files(feed_dir_path='toonkor/pick_me_up')
+[2026-05-15 18:00:46,678][feed_maker_util.py:803][INFO] # deleting temporary files
+[2026-05-15 18:00:46,678][run.py:84][INFO] # Running time analysis
+[2026-05-15 18:00:46,678][run.py:85][INFO] * Start time: 2026-05-15T09:00:46+00:00
+[2026-05-15 18:00:46,678][run.py:86][INFO] * End time: 2026-05-15T09:00:46+00:00
+[2026-05-15 18:00:46,678][run.py:87][INFO] * Elapsed time: 0.03774
+[2026-05-15 18:00:46,678][problem_manager.py:101][DEBUG] # update_feed_info(feed_dir_path=toonkor/pick_me_up, new_feed_dir_path=)
+[2026-05-15 18:00:46,678][feed_manager.py:61][DEBUG] # remove_config_info(feed_dir_path='toonkor/pick_me_up', do_remove_file=False)
+[2026-05-15 18:00:46,685][feed_manager.py:71][INFO] * The removing of config info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:46,685][feed_manager.py:188][DEBUG] # remove_rss_info(feed_dir_path='toonkor/pick_me_up', do_remove_file=False)
+[2026-05-15 18:00:46,688][feed_manager.py:197][INFO] * The removing of rss info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:46,689][feed_manager.py:296][INFO] * The removing of public feed info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:46,691][feed_manager.py:386][DEBUG] # remove_progress_info(feed_dir_path='toonkor/pick_me_up', do_remove_file=False)
+[2026-05-15 18:00:46,693][feed_manager.py:399][INFO] * The removing of progress info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:46,694][access_log_manager.py:56][INFO] * The removing of access info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:46,694][html_file_manager.py:122][DEBUG] # remove_html_file_in_path_from_info(dir_type_name='feed_dir_path'', path='toonkor/pick_me_up')
+[2026-05-15 18:00:46,699][html_file_manager.py:143][INFO] * The removing of some html files in 'toonkor/pick_me_up' is done
+[2026-05-15 18:00:46,706][feed_manager.py:148][INFO] * The adding of config info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:46,710][feed_manager.py:242][INFO] * The adding of rss info of feed 'pick_me_up' is done.
+[2026-05-15 18:00:46,714][feed_manager.py:342][INFO] * The adding of public feed info of feed 'pick_me_up' is done. 5 items
+[2026-05-15 18:00:46,717][feed_manager.py:497][INFO] * The adding of progress info of feed 'pick_me_up' is done. 1 items
+[2026-05-15 18:00:46,717][html_file_manager.py:146][DEBUG] # _add_html_info(feed_dir_path=toonkor/pick_me_up)
+[2026-05-15 18:00:46,734][html_file_manager.py:178][INFO] * The adding of some html files in 'toonkor/pick_me_up' is done. 13 items
+[2026-05-15 18:00:46,734][run.py:234][INFO] # Checking problems and making report

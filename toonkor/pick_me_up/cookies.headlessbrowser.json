@@ -1,0 +1,22 @@
+[
+  {
+    "name": "e1192aefb64683cc97abb83c71057733",
+    "value": "bWFuaHVh",
+    "domain": "tkr497.com",
+    "path": "/",
+    "expires": 1779502163.735495,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "tktk_session_name",
+    "value": "3udfq3h1meel1jviama8qnngp5",
+    "domain": "tkr497.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]

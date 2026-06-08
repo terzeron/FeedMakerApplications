@@ -1,0 +1,62 @@
+[
+  {
+    "name": "e1192aefb64683cc97abb83c71057733",
+    "value": "bWFuaHVh",
+    "domain": "tkr500.com",
+    "path": "/",
+    "expires": 1780935028.663611,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "e1192aefb64683cc97abb83c71057733",
+    "value": "bWFuaHVh",
+    "domain": "tkr501.com",
+    "path": "/",
+    "expires": 1781010561.721752,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "tktk_session_name",
+    "value": "9u82s5jrkcdj463i0d7u5egmb4",
+    "domain": "tkr500.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "tktk_session_name",
+    "value": "n6mo3bqv2dbaoo5illh4abk0t5",
+    "domain": "tkr499.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "tktk_session_name",
+    "value": "jad05mn4l6ref8he4ahf0qar75",
+    "domain": "tkr498.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "tktk_session_name",
+    "value": "55url56ve53hjpvmuhnj5vb9l6",
+    "domain": "tkr501.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]
