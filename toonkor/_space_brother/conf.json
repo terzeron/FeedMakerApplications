@@ -6,10 +6,11 @@
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "render_js": true,
       "list_url_list": [
-        "https://tkr501.com/manhua/9168"
+        "https://tkor125.com/manhua/9168"
       ],
       "sort_field_pattern": "\\t(\\d+)",
-      "unit_size_per_day": 2
+      "unit_size_per_day": 2,
+      "num_retries": 2
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
