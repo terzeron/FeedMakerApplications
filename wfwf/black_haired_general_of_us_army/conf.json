@@ -4,7 +4,7 @@
       "encoding": "cp949",
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_wfwf.py -n 5",
+      "item_capture_script": "../capture_item_wfwf.py -n 6",
       "list_url_list": [
         "https://wfwf462.com/list?toon=75873"
       ],
