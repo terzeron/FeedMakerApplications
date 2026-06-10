@@ -30,6 +30,31 @@ def compose_description(item, link) -> str:
     return description
 
 
+def extract_next_data(content: str):
+    """HTML에서 __NEXT_DATA__ script 태그의 JSON 문자열을 추출(없으면 None)."""
+    match = re.search(
+        r'<script id="__NEXT_DATA__" type="application/json">(.+?)</script>', content
+    )
+    if not match:
+        return None
+    return match.group(1)
+
+
+def select_content_item(content_map: dict, item_url: str):
+    """contentMap에서 URL 끝의 ID로 content를 찾고, 없으면 첫 번째 항목을 반환."""
+    content_id = None
+    if item_url:
+        id_match = re.search(r"/(\d+)$", item_url)
+        if id_match:
+            content_id = id_match.group(1)
+
+    if content_id and content_id in content_map:
+        return content_map[content_id]
+    if content_id and int(content_id) in content_map:
+        return content_map[int(content_id)]
+    return next(iter(content_map.values()))
+
+
 def _download_with_retry(
     crawler: Crawler, url: str, file_path: Path, label: str
 ) -> bool:
@@ -149,15 +174,11 @@ def main() -> int:
     content = IO.read_stdin()
 
     # __NEXT_DATA__ script 태그에서 JSON 추출
-    match = re.search(
-        r'<script id="__NEXT_DATA__" type="application/json">(.+?)</script>', content
-    )
-    if not match:
+    json_content = extract_next_data(content)
+    if not json_content:
         LOGGER.error("can't find __NEXT_DATA__ in HTML")
         del crawler
         return -1
-
-    json_content = match.group(1)
 
     try:
         json_data = json.loads(json_content)
@@ -170,21 +191,8 @@ def main() -> int:
     item = None
     try:
         content_map = json_data["props"]["initialState"]["content"]["contentMap"]
-        # contentMap에서 첫 번째 항목 또는 URL에서 추출한 ID로 찾기
-        content_id = None
-        if item_url:
-            # URL에서 ID 추출 (예: .../3802)
-            id_match = re.search(r"/(\d+)$", item_url)
-            if id_match:
-                content_id = id_match.group(1)
-
-        if content_id and content_id in content_map:
-            item = content_map[content_id]
-        elif content_id and int(content_id) in content_map:
-            item = content_map[int(content_id)]
-        else:
-            # 첫 번째 항목 사용
-            item = next(iter(content_map.values()))
+        # contentMap에서 URL의 ID로 찾고, 없으면 첫 번째 항목 사용
+        item = select_content_item(content_map, item_url)
     except (KeyError, TypeError) as e:
         LOGGER.error("can't find content in JSON structure: %s", e)
         del crawler
@@ -235,4 +243,73 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    if os.environ.get("TEST", ""):
+        import unittest
+
+        class TestPostProcessKakaowebtoon(unittest.TestCase):
+            # --- compose_description ---
+
+            def test_compose_description_basic(self):
+                item = {
+                    "title": "Toon",
+                    "genre": "Action",
+                    "synopsis": "story",
+                    "mergedImage": "http://img.test/x.png",
+                }
+                out = compose_description(item, "http://l.test/1")
+                self.assertIn("<div>Toon</div>", out)
+                self.assertIn("<div>Action</div>", out)
+                self.assertIn("<div>story</div>", out)
+                self.assertIn("<img src='http://img.test/x.png'>", out)
+
+            def test_compose_description_truncates_synopsis(self):
+                item = {"title": "T", "synopsis": "x" * 300}
+                out = compose_description(item, "l")
+                self.assertIn("<div>" + "x" * 200 + "</div>", out)
+
+            def test_compose_description_omits_image_when_absent(self):
+                item = {"title": "T"}
+                out = compose_description(item, "l")
+                self.assertNotIn("<img", out)
+
+            # --- extract_next_data ---
+
+            def test_extract_next_data_basic(self):
+                content = (
+                    'before<script id="__NEXT_DATA__" type="application/json">'
+                    '{"a":1}</script>after'
+                )
+                self.assertEqual(extract_next_data(content), '{"a":1}')
+
+            def test_extract_next_data_missing(self):
+                self.assertIsNone(extract_next_data("<div>no data</div>"))
+
+            # --- select_content_item ---
+
+            def test_select_content_item_by_string_id(self):
+                content_map = {"3802": {"title": "A"}, "1": {"title": "B"}}
+                self.assertEqual(
+                    select_content_item(content_map, "http://x/3802"), {"title": "A"}
+                )
+
+            def test_select_content_item_by_int_id(self):
+                content_map = {3802: {"title": "A"}}
+                self.assertEqual(
+                    select_content_item(content_map, "http://x/3802"), {"title": "A"}
+                )
+
+            def test_select_content_item_falls_back_to_first(self):
+                content_map = {"99": {"title": "first"}, "100": {"title": "second"}}
+                self.assertEqual(
+                    select_content_item(content_map, ""), {"title": "first"}
+                )
+
+            def test_select_content_item_unmatched_id_falls_back(self):
+                content_map = {"1": {"title": "only"}}
+                self.assertEqual(
+                    select_content_item(content_map, "http://x/999"), {"title": "only"}
+                )
+
+        sys.exit(unittest.main())
+    else:
+        sys.exit(main())

@@ -1,43 +1,126 @@
 #!/usr/bin/env python
 
 
+import os
 import sys
 import re
 import getopt
+from typing import List, Tuple
 from bin.feed_maker_util import IO
 
-    
-def main():
-    link = ""
-    url_prefix = "http://terms.naver.com/"
-    title = ""
-    state = 0
 
+URL_PREFIX = "http://terms.naver.com/"
+
+
+def parse_args(argv: List[str]) -> int:
+    """명령행 인자를 파싱해 최근 피드 개수를 반환."""
     num_of_recent_feeds = 30
-    optlist, _ = getopt.getopt(sys.argv[1:], "n:f:")
+    optlist, _ = getopt.getopt(argv, "n:f:")
     for o, a in optlist:
-        if o == '-n':
+        if o == "-n":
             num_of_recent_feeds = int(a)
+    return num_of_recent_feeds
 
-    result_list = []
-    for line in IO.read_stdin_as_line_list():
+
+def parse_feed_list(
+    line_list: List[str], url_prefix: str = URL_PREFIX
+) -> List[Tuple[str, str]]:
+    """title 마커 다음의 entry.naver anchor에서 (link, title)을 추출."""
+    state = 0
+    result_list: List[Tuple[str, str]] = []
+    for line in line_list:
         if state == 0:
             m = re.search(r'<strong class="title">', line)
             if m:
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="/(?P<url>entry\.naver\?[^"]+)"[^>]*>(?P<title>[^<]+)</a>', line)
+            m = re.search(
+                r'<a href="/(?P<url>entry\.naver\?[^"]+)"[^>]*>(?P<title>[^<]+)</a>',
+                line,
+            )
             if m:
                 url = m.group("url")
-                url = re.sub(r'&amp;', '&', url)
+                url = re.sub(r"&amp;", "&", url)
                 title = m.group("title")
                 link = url_prefix + url
                 result_list.append((link, title))
                 state = 0
+    return result_list
 
-    for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%s" % (link, title))
-                
-            
+
+def render_lines(
+    result_list: List[Tuple[str, str]], num_of_recent_feeds: int
+) -> List[str]:
+    """(link, title) 목록을 'link\\ttitle' 라인 목록으로 변환."""
+    return [
+        "%s\t%s" % (link, title) for (link, title) in result_list[:num_of_recent_feeds]
+    ]
+
+
+def main():
+    num_of_recent_feeds = parse_args(sys.argv[1:])
+
+    line_list = IO.read_stdin_as_line_list()
+    result_list = parse_feed_list(line_list)
+
+    for line in render_lines(result_list, num_of_recent_feeds):
+        print(line)
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    if os.environ.get("TEST", ""):
+        import unittest
+
+        class TestCaptureItemNavercast(unittest.TestCase):
+            # --- parse_args ---
+
+            def test_parse_args_default(self):
+                self.assertEqual(parse_args([]), 30)
+
+            def test_parse_args_num(self):
+                self.assertEqual(parse_args(["-n", "7"]), 7)
+
+            # --- parse_feed_list ---
+
+            def test_parse_feed_list_basic(self):
+                lines = [
+                    '<strong class="title">',
+                    '<a href="/entry.naver?docId=1&amp;x=2">My Title</a>',
+                ]
+                self.assertEqual(
+                    parse_feed_list(lines),
+                    [("http://terms.naver.com/entry.naver?docId=1&x=2", "My Title")],
+                )
+
+            def test_parse_feed_list_requires_title_marker(self):
+                lines = ['<a href="/entry.naver?docId=1">T</a>']
+                self.assertEqual(parse_feed_list(lines), [])
+
+            def test_parse_feed_list_multiple(self):
+                lines = [
+                    '<strong class="title">',
+                    '<a href="/entry.naver?docId=1">A</a>',
+                    '<strong class="title">',
+                    '<a href="/entry.naver?docId=2">B</a>',
+                ]
+                self.assertEqual([t for _, t in parse_feed_list(lines)], ["A", "B"])
+
+            def test_parse_feed_list_empty(self):
+                self.assertEqual(parse_feed_list([]), [])
+
+            # --- render_lines ---
+
+            def test_render_lines_basic(self):
+                self.assertEqual(
+                    render_lines([("l1", "A"), ("l2", "B")], 30), ["l1\tA", "l2\tB"]
+                )
+
+            def test_render_lines_limit(self):
+                self.assertEqual(
+                    render_lines([("l1", "A"), ("l2", "B"), ("l3", "C")], 2),
+                    ["l1\tA", "l2\tB"],
+                )
+
+        sys.exit(unittest.main())
+    else:
+        sys.exit(main())

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
 import sys
 import re
 import json
@@ -10,7 +11,7 @@ from urllib.parse import unquote
 import unittest
 from unittest.mock import patch
 
-from bin.feed_maker_util import IO, header_str, Env
+from bin.feed_maker_util import IO, header_str
 
 
 def read_cookies(feed_dir_path: str) -> dict[str, str]:
@@ -375,7 +376,7 @@ def run_tests():
 
 
 if __name__ == "__main__":
-    if Env.get("TEST", "0") == "1":
+    if os.environ.get("TEST", ""):
         run_tests()
     else:
         sys.exit(main())

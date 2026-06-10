@@ -16,6 +16,23 @@ logging.config.fileConfig(os.environ["FM_HOME_DIR"] + "/logging.conf")
 LOGGER = logging.getLogger(__name__)
 
 
+IMG_URL_PREFIX = "https://page-edge.kakao.com/sdownload/resource?kid="
+
+
+def extract_image_tags(data: dict, img_url_prefix: str = IMG_URL_PREFIX) -> list:
+    """다운로드 응답(downloadData.members.files)에서 이미지 img 태그 목록을 만든다."""
+    result = []
+    if (
+        "downloadData" in data
+        and "members" in data["downloadData"]
+        and "files" in data["downloadData"]["members"]
+    ):
+        for file in data["downloadData"]["members"]["files"]:
+            img_url = img_url_prefix + file["secureUrl"]
+            result.append("<img src='%s'>" % img_url)
+    return result
+
+
 def main() -> int:
     feed_dir_path = Path.cwd()
     img_url_prefix = "https://page-edge.kakao.com/sdownload/resource?kid="
@@ -55,15 +72,52 @@ def main() -> int:
         return -1
     data = json.loads(result)
 
-    if "downloadData" in data:
-        if "members" in data["downloadData"]:
-            if "files" in data["downloadData"]["members"]:
-                for file in data["downloadData"]["members"]["files"]:
-                    img_url = img_url_prefix + file["secureUrl"]
-                    print("<img src='%s'>" % img_url)
+    for img_tag in extract_image_tags(data, img_url_prefix):
+        print(img_tag)
 
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    if os.environ.get("TEST", ""):
+        import unittest
+
+        class TestPostProcessKakaopage(unittest.TestCase):
+            def test_extract_image_tags_basic(self):
+                data = {
+                    "downloadData": {
+                        "members": {
+                            "files": [{"secureUrl": "abc"}, {"secureUrl": "def"}]
+                        }
+                    }
+                }
+                self.assertEqual(
+                    extract_image_tags(data),
+                    [
+                        "<img src='https://page-edge.kakao.com/sdownload/resource?kid=abc'>",
+                        "<img src='https://page-edge.kakao.com/sdownload/resource?kid=def'>",
+                    ],
+                )
+
+            def test_extract_image_tags_custom_prefix(self):
+                data = {"downloadData": {"members": {"files": [{"secureUrl": "x"}]}}}
+                self.assertEqual(
+                    extract_image_tags(data, "http://p/"), ["<img src='http://p/x'>"]
+                )
+
+            def test_extract_image_tags_no_download_data(self):
+                self.assertEqual(extract_image_tags({}), [])
+
+            def test_extract_image_tags_no_files(self):
+                self.assertEqual(
+                    extract_image_tags({"downloadData": {"members": {}}}), []
+                )
+
+            def test_extract_image_tags_empty_files(self):
+                self.assertEqual(
+                    extract_image_tags({"downloadData": {"members": {"files": []}}}), []
+                )
+
+        sys.exit(unittest.main())
+    else:
+        sys.exit(main())

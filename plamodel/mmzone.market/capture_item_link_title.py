@@ -9,6 +9,9 @@ from typing import List, Tuple
 from bin.feed_maker_util import IO
 
 
+URL_PREFIX = "https://www.mmzone.co.kr"
+
+
 def parse_args(argv: List[str]) -> int:
     """명령행 인자를 파싱해 최근 피드 개수를 반환."""
     num_of_recent_feeds = 1000
@@ -20,31 +23,26 @@ def parse_args(argv: List[str]) -> int:
 
 
 def parse_feed_list(
-    line_list: List[str], url_prefix: str = ""
+    line_list: List[str], url_prefix: str = URL_PREFIX
 ) -> List[Tuple[str, str]]:
-    """page-list 안의 anchor에서 (link, title)을 추출하고 </ul>에서 멈춘다."""
-    link = ""
-    title = ""
+    """list-title-text 제목과 mt_view 링크를 짝지어 (link, title) 목록을 만든다."""
     state = 0
+    title = ""
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
-            m = re.search(r'<ul class="page-list"', line)
-            if m:
-                state = 1
-        elif state == 1:
             m = re.search(
-                r'<a\s+href="(?P<link>http[^"]+html)"\s+class="[^"]+"\s+title="[^"]+"[^>]*>(?P<title>.+)</a>',
-                line,
+                r'<div class="list-title-text"[^>]*title="(?P<title>[^"]*)"', line
             )
             if m:
-                link = url_prefix + m.group("link")
                 title = m.group("title")
-                result_list.append((link, title))
-
-            m = re.search(r"</ul>", line)
+                state = 1
+        elif state == 1:
+            m = re.search(r'<a href="(?P<link>/mms_tool/mt_view\.php\?id=\d+)"', line)
             if m:
-                break
+                link = url_prefix + m.group("link")
+                result_list.append((link, title))
+                state = 0
     return result_list
 
 
@@ -57,7 +55,7 @@ def render_lines(
     ]
 
 
-def main() -> int:
+def main():
     num_of_recent_feeds = parse_args(sys.argv[1:])
 
     line_list = IO.read_stdin_as_line_list()
@@ -66,14 +64,12 @@ def main() -> int:
     for line in render_lines(result_list, num_of_recent_feeds):
         print(line)
 
-    return 0
-
 
 if __name__ == "__main__":
     if os.environ.get("TEST", ""):
         import unittest
 
-        class TestCaptureItemTorrenttt(unittest.TestCase):
+        class TestCaptureItemLinkTitle(unittest.TestCase):
             # --- parse_args ---
 
             def test_parse_args_default(self):
@@ -86,28 +82,26 @@ if __name__ == "__main__":
 
             def test_parse_feed_list_basic(self):
                 lines = [
-                    '<ul class="page-list">',
-                    '<a href="https://t.test/post/1.html" class="c" title="x">My Title</a>',
+                    '<div class="list-title-text" title="My Kit">',
+                    '<a href="/mms_tool/mt_view.php?id=42">',
                 ]
                 self.assertEqual(
                     parse_feed_list(lines),
-                    [("https://t.test/post/1.html", "My Title")],
+                    [("https://www.mmzone.co.kr/mms_tool/mt_view.php?id=42", "My Kit")],
                 )
 
-            def test_parse_feed_list_requires_page_list(self):
-                lines = [
-                    '<a href="https://t.test/post/1.html" class="c" title="x">T</a>',
-                ]
+            def test_parse_feed_list_requires_title_first(self):
+                lines = ['<a href="/mms_tool/mt_view.php?id=42">']
                 self.assertEqual(parse_feed_list(lines), [])
 
-            def test_parse_feed_list_stops_at_ul_close(self):
+            def test_parse_feed_list_multiple(self):
                 lines = [
-                    '<ul class="page-list">',
-                    '<a href="https://t.test/1.html" class="c" title="x">A</a>',
-                    "</ul>",
-                    '<a href="https://t.test/2.html" class="c" title="x">B</a>',
+                    '<div class="list-title-text" title="A">',
+                    '<a href="/mms_tool/mt_view.php?id=1">',
+                    '<div class="list-title-text" title="B">',
+                    '<a href="/mms_tool/mt_view.php?id=2">',
                 ]
-                self.assertEqual([t for _, t in parse_feed_list(lines)], ["A"])
+                self.assertEqual([t for _, t in parse_feed_list(lines)], ["A", "B"])
 
             def test_parse_feed_list_empty(self):
                 self.assertEqual(parse_feed_list([]), [])

@@ -26,11 +26,13 @@ def print_img_tag(feed_dir_path: Path, page_url: str) -> None:
         LOGGER.error("can't read configuration")
         return
     rss_conf = config.get_rss_configs()
-    m = re.search(r'https://[^/]+/(?P<rss_file_name>.+\.xml)', rss_conf["rss_link"])
+    m = re.search(r"https://[^/]+/(?P<rss_file_name>.+\.xml)", rss_conf["rss_link"])
     if m:
         rss_file_name = m.group("rss_file_name")
         md5_name = URL.get_short_md5_name(URL.get_url_path(page_url))
-        print(f"<img src='https://terzeron.com/img/1x1.jpg?feed={rss_file_name}&item={md5_name}'/>")
+        print(
+            f"<img src='https://terzeron.com/img/1x1.jpg?feed={rss_file_name}&item={md5_name}'/>"
+        )
 
 
 def main() -> int:
@@ -48,7 +50,7 @@ def main() -> int:
 
     tag_list: List = []
     page_url = args[0]
-    m = re.search(r'titleId=(?P<title_id>\d+)', page_url)
+    m = re.search(r"titleId=(?P<title_id>\d+)", page_url)
     if m:
         title_id = m.group("title_id")
         link = url_prefix + title_id
@@ -104,11 +106,12 @@ class TestPostProcessNaverWebtoon(unittest.TestCase):
             return {k: self._anonymize_recursive(v) for k, v in obj.items()}
         if isinstance(obj, list):
             return [self._anonymize_recursive(obj[0])] if obj else []
-        if isinstance(obj, str): return "__STRING__"
+        if isinstance(obj, str):
+            return "__STRING__"
         return obj
 
-    @patch('__main__.IO.read_stdin')
-    @patch('__main__.Crawler.run')
+    @patch("__main__.IO.read_stdin")
+    @patch("__main__.Crawler.run")
     def test_input_schema_is_unchanged(self, mock_crawler_run, mock_read_stdin):
         """API 응답 JSON의 스키마가 변경되지 않았는지 검증합니다."""
         # IO.read_stdin이 테스트를 block하지 않도록 mock 처리
@@ -123,8 +126,9 @@ class TestPostProcessNaverWebtoon(unittest.TestCase):
         self.assertEqual(
             self._anonymize_recursive(sample_data),
             golden_schema,
-            "API 응답 스키마가 변경되었습니다."
+            "API 응답 스키마가 변경되었습니다.",
         )
+
 
 def run_tests():
     suite = unittest.TestLoader().loadTestsFromModule(sys.modules[__name__])
@@ -132,8 +136,7 @@ def run_tests():
 
 
 if __name__ == "__main__":
-    from bin.feed_maker_util import Env
-    if Env.get("TEST", "0") == "1":
+    if os.environ.get("TEST", ""):
         run_tests()
     else:
         sys.exit(main())

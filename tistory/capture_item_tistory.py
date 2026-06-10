@@ -1,37 +1,48 @@
 #!/usr/bin/env python
 
 
+import os
 import sys
 import re
 import getopt
+from typing import List, Tuple
 from bin.feed_maker_util import IO
 
 
-def main():
-    link = ""
-    title = ""
-    url_prefix = ""
+META_OG_URL_TAG_PATTERN = (
+    r'<meta property="og:url" content="(?P<url_prefix>https?://[^/"]+).*"'
+)
 
+
+def parse_args(argv: List[str]) -> int:
+    """명령행 인자를 파싱해 최근 피드 개수를 반환."""
     num_of_recent_feeds = 2000
-    optlist, _ = getopt.getopt(sys.argv[1:], "f:n:")
+    optlist, _ = getopt.getopt(argv, "f:n:")
     for o, a in optlist:
-        if o == '-n':
+        if o == "-n":
             num_of_recent_feeds = int(a)
+    return num_of_recent_feeds
 
-    result_list = []
-    html = IO.read_stdin_as_line_list()
 
-    meta_og_url_tag_pattern = r'<meta property="og:url" content="(?P<url_prefix>https?://[^/"]+).*"'
+def parse_feed_list(html: List[str]) -> List[Tuple[str, str]]:
+    """티스토리 스킨별로 다른 6가지 목록 패턴을 차례대로 적용해 (link, title) 목록을 누적한다."""
+    result_list: List[Tuple[str, str]] = []
+    link = ""
 
+    # pattern 1: link_post anchor + tit_post strong
+    url_prefix = ""
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(meta_og_url_tag_pattern, line)
+            m = re.search(META_OG_URL_TAG_PATTERN, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a href="(?P<article_id>/\d+)(?:\?category=\d+)?" class="link_post">', line)
+            m = re.search(
+                r'<a href="(?P<article_id>/\d+)(?:\?category=\d+)?" class="link_post">',
+                line,
+            )
             if m:
                 link = url_prefix + m.group("article_id")
                 state = 2
@@ -42,38 +53,49 @@ def main():
                 result_list.append((link, title))
                 state = 1
 
+    # pattern 2: <h2><a href="/n">title</a></h2>
+    url_prefix = ""
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(meta_og_url_tag_pattern, line)
+            m = re.search(META_OG_URL_TAG_PATTERN, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<h2><a href="(?P<article_id>/\d+)">(?P<title>.*?)</a></h2>', line)
+            m = re.search(
+                r'<h2><a href="(?P<article_id>/\d+)">(?P<title>.*?)</a></h2>', line
+            )
             if m:
                 link = url_prefix + m.group("article_id")
                 title = m.group("title")
                 result_list.append((link, title))
 
+    # pattern 3: <h2 class="title"><a href="n">title</a>
+    url_prefix = ""
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(meta_og_url_tag_pattern, line)
+            m = re.search(META_OG_URL_TAG_PATTERN, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<h2 class="title"><a href="(?P<article_id>\d+)">(?P<title>.*)</a>', line)
+            m = re.search(
+                r'<h2 class="title"><a href="(?P<article_id>\d+)">(?P<title>.*)</a>',
+                line,
+            )
             if m:
                 link = url_prefix + m.group("article_id")
                 title = m.group("title")
                 result_list.append((link, title))
 
+    # pattern 4: anchor + span.title
+    url_prefix = ""
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(meta_og_url_tag_pattern, line)
+            m = re.search(META_OG_URL_TAG_PATTERN, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -89,29 +111,37 @@ def main():
                 result_list.append((link, title))
                 state = 1
 
+    # pattern 5: <li><a> + tit_blog strong
+    url_prefix = ""
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(meta_og_url_tag_pattern, line)
+            m = re.search(META_OG_URL_TAG_PATTERN, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<li><a href="(?P<article_id>[^"\?]+)(?:\?category=\d+)?">', line)
+            m = re.search(
+                r'<li><a href="(?P<article_id>[^"\?]+)(?:\?category=\d+)?">', line
+            )
             if m:
                 link = url_prefix + m.group("article_id")
                 state = 2
         elif state == 2:
-            m = re.search(r'<strong class="tit_blog"[^>]*>(?P<title>.*?)</strong>', line)
+            m = re.search(
+                r'<strong class="tit_blog"[^>]*>(?P<title>.*?)</strong>', line
+            )
             if m:
                 title = m.group("title")
                 result_list.append((link, title))
                 state = 1
 
+    # pattern 6: body.list 영역의 /entry anchor (body.entry에서 종료)
+    url_prefix = ""
     state = 0
     for line in html:
         if state == 0:
-            m = re.search(meta_og_url_tag_pattern, line)
+            m = re.search(META_OG_URL_TAG_PATTERN, line)
             if m:
                 url_prefix = m.group("url_prefix")
                 state = 1
@@ -122,19 +152,104 @@ def main():
         elif state == 2:
             m = re.search(r'<div id="body" class="entry">', line)
             if m:
-                # 본문 시작이면 종료
                 break
-
-            m = re.search(r'<a href="(?P<article_id>/entry/[^"?=]+)(?:\?category=\d+)?">(?P<title>.+)</a>', line)
+            m = re.search(
+                r'<a href="(?P<article_id>/entry/[^"?=]+)(?:\?category=\d+)?">(?P<title>.+)</a>',
+                line,
+            )
             if m:
                 link = url_prefix + m.group("article_id")
                 title = m.group("title")
                 result_list.append((link, title))
                 state = 2
 
-    for (link, title) in result_list[:num_of_recent_feeds]:
-        print("%s\t%s" % (link, title))
+    return result_list
+
+
+def render_lines(
+    result_list: List[Tuple[str, str]], num_of_recent_feeds: int
+) -> List[str]:
+    """(link, title) 목록을 'link\\ttitle' 라인 목록으로 변환."""
+    return [
+        "%s\t%s" % (link, title) for (link, title) in result_list[:num_of_recent_feeds]
+    ]
+
+
+def main():
+    num_of_recent_feeds = parse_args(sys.argv[1:])
+
+    html = IO.read_stdin_as_line_list()
+    result_list = parse_feed_list(html)
+
+    for line in render_lines(result_list, num_of_recent_feeds):
+        print(line)
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    if os.environ.get("TEST", ""):
+        import unittest
+
+        class TestCaptureItemTistory(unittest.TestCase):
+            META = '<meta property="og:url" content="https://blog.test/path">'
+
+            # --- parse_args ---
+
+            def test_parse_args_default(self):
+                self.assertEqual(parse_args([]), 2000)
+
+            def test_parse_args_num(self):
+                self.assertEqual(parse_args(["-n", "5"]), 5)
+
+            # --- parse_feed_list (각 스킨 패턴) ---
+
+            def test_parse_feed_list_pattern1_link_post(self):
+                html = [
+                    self.META,
+                    '<a href="/42" class="link_post">',
+                    '<strong class="tit_post">Post 42</strong>',
+                ]
+                self.assertEqual(
+                    parse_feed_list(html), [("https://blog.test/42", "Post 42")]
+                )
+
+            def test_parse_feed_list_pattern2_h2_anchor(self):
+                html = [self.META, '<h2><a href="/7">Title 7</a></h2>']
+                self.assertEqual(
+                    parse_feed_list(html), [("https://blog.test/7", "Title 7")]
+                )
+
+            def test_parse_feed_list_pattern6_entry(self):
+                html = [
+                    self.META,
+                    '<div id="body" class="list">',
+                    '<a href="/entry/hello-world">Hello World</a>',
+                    '<div id="body" class="entry">',
+                    '<a href="/entry/should-not-appear">Nope</a>',
+                ]
+                self.assertEqual(
+                    parse_feed_list(html),
+                    [("https://blog.test/entry/hello-world", "Hello World")],
+                )
+
+            def test_parse_feed_list_no_match(self):
+                self.assertEqual(parse_feed_list([self.META, "<div>nothing</div>"]), [])
+
+            def test_parse_feed_list_empty(self):
+                self.assertEqual(parse_feed_list([]), [])
+
+            # --- render_lines ---
+
+            def test_render_lines_basic(self):
+                self.assertEqual(
+                    render_lines([("l1", "A"), ("l2", "B")], 2000), ["l1\tA", "l2\tB"]
+                )
+
+            def test_render_lines_limit(self):
+                self.assertEqual(
+                    render_lines([("l1", "A"), ("l2", "B"), ("l3", "C")], 2),
+                    ["l1\tA", "l2\tB"],
+                )
+
+        sys.exit(unittest.main())
+    else:
+        sys.exit(main())
