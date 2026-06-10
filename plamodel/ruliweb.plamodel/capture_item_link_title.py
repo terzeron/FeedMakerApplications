@@ -232,6 +232,37 @@ if __name__ == "__main__":
                     ["l1\tA", "l2\tB"],
                 )
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://bbs.ruliweb.com/family/232/board/300077 을 받아온 실제 HTML 중
+            #       파서가 매칭하는 (td.subject → subject_link → 제목) 블록 3개만 샘플링(og:url은 없음).
+            # 기대 출력: link_prefix를 conf의 list_url 도메인(https://bbs.ruliweb.com)으로 주고
+            #          parse_feed_list → render_lines로 만든 결과(= a.py 직접 실행과 동일).
+            REAL_SAMPLE_LINES = [
+                '                            <td class="subject">',
+                '                                <a class="subject_link deco" href="https://bbs.ruliweb.com/family/232/board/300077/read/23060243?">',
+                '                     allkyung님의 육군 K311 자작 (1/6)                    <i class="icon-picture"></i>                                                            <span class="num_reply" data-href="https://bbs.ruliweb.com/family/232/board/300077/read/23060243?#cmt" target="_self"> (18)</span>                                    </a>',
+                '        <td class="subject">',
+                '                                <a class="subject_link deco" href="https://bbs.ruliweb.com/family/232/board/300077/read/22885741?">',
+                '                    (HS.Kim[우찬아빠]님 작품)최고의 전함 &quot;미주리&quot;...                    <i class="icon-picture"></i>                                                            <span class="num_reply" data-href="https://bbs.ruliweb.com/family/232/board/300077/read/22885741?#cmt" target="_self"> (11)</span>                                    </a>',
+                '        <td class="subject">',
+                '                                <a class="subject_link deco" href="https://bbs.ruliweb.com/family/232/board/300077/read/14528341?">',
+                '                    오아시스[oasis]님의 제천대성(1/6 레진)                    <i class="icon-picture"></i>                                                            <span class="num_reply" data-href="https://bbs.ruliweb.com/family/232/board/300077/read/14528341?#cmt" target="_self"> (6)</span>                                    </a>',
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(
+                    self.REAL_SAMPLE_LINES, "https://bbs.ruliweb.com"
+                )
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://bbs.ruliweb.com/family/232/board/300077/read/23060243\tallkyung님의 육군 K311 자작 (1/6)",
+                        "https://bbs.ruliweb.com/family/232/board/300077/read/22885741\t(HS.Kim[우찬아빠]님 작품)최고의 전함 &quot;미주리&quot;...",
+                        "https://bbs.ruliweb.com/family/232/board/300077/read/14528341\t오아시스[oasis]님의 제천대성(1/6 레진)",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

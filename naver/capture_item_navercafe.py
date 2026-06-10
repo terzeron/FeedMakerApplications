@@ -305,6 +305,73 @@ if __name__ == "__main__":
                 golden_schema = self._anonymize_recursive(sample_data)
                 self.assertEqual(self._anonymize_recursive(sample_data), golden_schema)
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 apis.naver.com cafe-boardlist-api(cafeId=10503958) 응답에서
+            #       파서가 읽는 result.articleList[].item 필드만 3개로 샘플링.
+            # 기대 출력: threshold/top_ratio 없이(=전부 통과) build_candidates→select_candidates→
+            #          render_lines로 만든 'link\ttitle\tread\tlike\tcomment' 라인.
+            REAL_SAMPLE_DATA = {
+                "result": {
+                    "articleList": [
+                        {
+                            "item": {
+                                "articleId": 406400,
+                                "cafeId": 10503958,
+                                "writerInfo": {"nickName": "하비팤"},
+                                "subject": "M1068A3 제작기(3)",
+                                "readCount": 0,
+                                "likeCount": 0,
+                                "commentCount": 0,
+                                "blindArticle": False,
+                                "openArticle": True,
+                                "restrictMenu": False,
+                            }
+                        },
+                        {
+                            "item": {
+                                "articleId": 406391,
+                                "cafeId": 10503958,
+                                "writerInfo": {"nickName": "제프티"},
+                                "subject": "K21 보병전투차 #9 - 깨작 깨작",
+                                "readCount": 70,
+                                "likeCount": 4,
+                                "commentCount": 0,
+                                "blindArticle": False,
+                                "openArticle": True,
+                                "restrictMenu": False,
+                            }
+                        },
+                        {
+                            "item": {
+                                "articleId": 406388,
+                                "cafeId": 10503958,
+                                "writerInfo": {"nickName": "jump7221"},
+                                "subject": "트럼페터 포르쉐 킹타이거에서 가지고온~~~",
+                                "readCount": 82,
+                                "likeCount": 3,
+                                "commentCount": 0,
+                                "blindArticle": False,
+                                "openArticle": True,
+                                "restrictMenu": False,
+                            }
+                        },
+                    ]
+                }
+            }
+
+            def test_real_sample_end_to_end(self):
+                candidates = build_candidates(self.REAL_SAMPLE_DATA)
+                result_list = select_candidates(candidates, 0.0, 0.0, 0.0, 1.0)
+                lines = render_lines(result_list, 30, False)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://m.cafe.naver.com/ca-fe/web/cafes/10503958/articles/406400\t하비팤: M1068A3 제작기(3)\t0\t0\t0",
+                        "https://m.cafe.naver.com/ca-fe/web/cafes/10503958/articles/406391\t제프티: K21 보병전투차 #9 - 깨작 깨작\t70\t4\t0",
+                        "https://m.cafe.naver.com/ca-fe/web/cafes/10503958/articles/406388\tjump7221: 트럼페터 포르쉐 킹타이거에서 가지고온~~~\t82\t3\t0",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

@@ -137,6 +137,32 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py(--encoding=cp949)로 https://wtwt329.com/v1?toon=7094 를 받아온 실제 HTML 중
+            #       파서가 매칭하는 영역(og:url + toon anchor/subject 블록 3개)만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_wtwt.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '<meta property="og:url" content="https://wtwt329.com">',
+                '                    <a href="/v2?toon=7094&num=263">',
+                '                            <div class="subject">261화 - 후기</div>',
+                '                    <a href="/v2?toon=7094&num=262">',
+                '                            <div class="subject">260화 -마지막 화-</div>',
+                '                    <a href="/v2?toon=7094&num=261">',
+                '                            <div class="subject">259화</div>',
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://wtwt329.com/v2?toon=7094&num=263\t003. 261화 - 후기",
+                        "https://wtwt329.com/v2?toon=7094&num=262\t002. 260화 -마지막 화-",
+                        "https://wtwt329.com/v2?toon=7094&num=261\t001. 259화",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

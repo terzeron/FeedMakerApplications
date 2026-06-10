@@ -140,6 +140,33 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py(--render-js=true)로 toonkor 현행 도메인(tkr501.com)의 시리즈 페이지
+            #       /webtoon/4430 을 받아온 실제 HTML 중 파서가 매칭하는 영역(og:url + content__title td
+            #       + 업로드일자 셀) 3개만 샘플링. (제목은 업로드 날짜)
+            # 기대 출력: 동일 입력을 'capture_item_toonkor.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '<meta property="og:url" content="https://tkr501.com/webtoon/4430"></head>',
+                '\t\t\t\t\t\t<td style="padding: 1%;" class="content__title" name="view_list" data-role="/webtoon/990130/4430" alt="던전 리셋 266화" id="ortitle990130"><span style="margin-top: 1rem;font-size: 1.6rem;font-weight: bold;">던전 리셋 266화</span>',
+                "\t\t\t\t\t\t\t25-09-29\t\t\t\t\t\t</td>",
+                '\t\t\t\t\t\t<td style="padding: 1%;" class="content__title" name="view_list" data-role="/webtoon/988736/4430" alt="던전 리셋 265화" id="ortitle988736"><span style="margin-top: 1rem;font-size: 1.6rem;font-weight: bold;">던전 리셋 265화</span>',
+                "\t\t\t\t\t\t\t25-09-22\t\t\t\t\t\t</td>",
+                '\t\t\t\t\t\t<td style="padding: 1%;" class="content__title" name="view_list" data-role="/webtoon/986132/4430" alt="던전 리셋 264화" id="ortitle986132"><span style="margin-top: 1rem;font-size: 1.6rem;font-weight: bold;">던전 리셋 264화</span>',
+                "\t\t\t\t\t\t\t25-09-08\t\t\t\t\t\t</td>",
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://tkr501.com/webtoon/990130/4430\t003. 25-09-29",
+                        "https://tkr501.com/webtoon/988736/4430\t002. 25-09-22",
+                        "https://tkr501.com/webtoon/986132/4430\t001. 25-09-08",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

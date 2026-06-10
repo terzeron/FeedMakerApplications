@@ -103,6 +103,26 @@ if __name__ == "__main__":
             def test_extract_image_tags_empty(self):
                 self.assertEqual(extract_image_tags([]), [])
 
+            # --- end-to-end with real sampled pipeline data ---
+            # 입력: crawler.py로 funbe642.com 기사(절세무신 720화)를 받아온 실제 HTML(bypass_element_extraction)
+            #       중 파서가 act하는 og:url meta + var toon_img base64를 집중 조각(실제 이미지 2개)으로 축소.
+            #       small base64는 실제 toon_img를 디코드해 앞 2개 <img>만 다시 인코딩한 것.
+            # 기대 출력: 동일 입력을 'post_process_funbe.py'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '<meta property="og:url" content="https://funbe642.com/%EC%A0%88%EC%84%B8%EB%AC%B4%EC%8B%A0_720%ED%99%94.html" />',
+                "var toon_img = 'PGltZyBhbHQ9IuygiOyEuOustOyLoCA3MjDtmZQgLSDsm7ntiLAg7J2066+47KeAIDEiIHNyYz0iL2RhdGEvZmlsZS93dG9vbi8xMzUyNmZmLzE3ODA4Mzk1NTA0OC5qcGVnIi8+PGltZyBhbHQ9IuygiOyEuOustOyLoCA3MjDtmZQgLSDsm7ntiLAg7J2066+47KeAIDIiIHNyYz0iL2RhdGEvZmlsZS93dG9vbi8xMzUyNmZmLzE3ODA4Mzk1NTA4MzI2LmpwZWciLz4=';",
+            ]
+
+            def test_real_sample_end_to_end(self):
+                tags = extract_image_tags(self.REAL_SAMPLE_LINES)
+                self.assertEqual(
+                    tags,
+                    [
+                        "<img src='https://funbe642.com/data/file/wtoon/13526ff/178083955048.jpeg' />",
+                        "<img src='https://funbe642.com/data/file/wtoon/13526ff/17808395508326.jpeg' />",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

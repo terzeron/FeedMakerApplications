@@ -129,6 +129,46 @@ class TestPostProcessNaverWebtoon(unittest.TestCase):
             "API 응답 스키마가 변경되었습니다.",
         )
 
+    # --- end-to-end with real sampled data (network mocked) ---
+    # 이 스크립트는 stdin을 무시하고 page_url의 titleId로 api/article/list/info를 직접 fetch한다.
+    # 그래서 directive에 따라 Crawler.run을 실제 응답으로 mock(네트워크 1회분을 가짜로 반환)한다.
+    # REAL_API_RESPONSE: comic.naver.com/api/article/list/info?titleId=851431 의 실제 응답에서
+    #                    파서가 읽는 필드만 추린 것.
+    REAL_API_RESPONSE = (
+        '{"titleName": "비공식 CC",'
+        ' "synopsis": "캠퍼스 인기남 성우와 비밀 연애 중인 도아.",'
+        ' "thumbnailUrl": "https://image-comic.pstatic.net/webtoon/851431/thumbnail/thumbnail_IMAG21_d373b139-bdea-4e91-bfde-73b5b94c6b2d.jpg",'
+        ' "curationTagList": [{"tagName": "로맨스"}, {"tagName": "캠퍼스"}, {"tagName": "고자극로맨스"}]}'
+    )
+
+    @patch("__main__.IO.read_stdin", return_value="")
+    @patch("__main__.Crawler.run")
+    def test_real_sample_end_to_end(self, mock_crawler_run, mock_read_stdin):
+        import io as _io
+        import contextlib as _ctx
+
+        mock_crawler_run.return_value = (self.REAL_API_RESPONSE, None, None)
+        feed_dir = str(Path(__file__).resolve().parent)
+        page_url = "https://comic.naver.com/webtoon/list?titleId=851431"
+        buf = _io.StringIO()
+        with (
+            patch.object(
+                sys, "argv", ["post_process_naverwebtoon.py", "-f", feed_dir, page_url]
+            ),
+            _ctx.redirect_stdout(buf),
+        ):
+            main()
+        out = buf.getvalue()
+        self.assertIn("<p>비공식 CC</p>", out)
+        self.assertIn("<p>캠퍼스 인기남 성우와 비밀 연애 중인 도아.</p>", out)
+        self.assertIn(
+            "<p><img src='https://image-comic.pstatic.net/webtoon/851431/thumbnail/thumbnail_IMAG21_d373b139-bdea-4e91-bfde-73b5b94c6b2d.jpg'></p>",
+            out,
+        )
+        self.assertIn("<li>#로맨스</li>", out)
+        self.assertIn("<li>#캠퍼스</li>", out)
+        self.assertIn("<li>#고자극로맨스</li>", out)
+
 
 def run_tests():
     suite = unittest.TestLoader().loadTestsFromModule(sys.modules[__name__])

@@ -147,6 +147,35 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://funbe642.com/절세무신 을 받아온 실제 HTML 중 파서가 매칭하는
+            #       영역(g5_url + view_list/content__title/제목 블록 3개)만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_funbe.py -n 5'로 직접 실행해 캡처한 결과(제목 뒤 탭 포함).
+            REAL_SAMPLE_LINES = [
+                'var g5_url       = "https://funbe642.com";',
+                '\t\t\t\t<td width="2%" name="view_list" data-role="/절세무신_720화.html">',
+                '\t\t\t\t<td style="padding: 2%;" class="content__title" name="view_list" data-role="/절세무신_720화.html" alt="절세무신 720화"> ',
+                "\t\t\t\t\t절세무신 720화\t\t\t\t</td>",
+                '\t\t\t\t<td width="2%" name="view_list" data-role="/절세무신_719화.html">',
+                '\t\t\t\t<td style="padding: 2%;" class="content__title" name="view_list" data-role="/절세무신_719화.html" alt="절세무신 719화"> ',
+                "\t\t\t\t\t절세무신 719화\t\t\t\t</td>",
+                '\t\t\t\t<td width="2%" name="view_list" data-role="/절세무신_718화.html">',
+                '\t\t\t\t<td style="padding: 2%;" class="content__title" name="view_list" data-role="/절세무신_718화.html" alt="절세무신 718화"> ',
+                "\t\t\t\t\t절세무신 718화\t\t\t\t</td>",
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://funbe642.com/절세무신_720화.html\t003. 절세무신 720화\t\t\t\t",
+                        "https://funbe642.com/절세무신_719화.html\t002. 절세무신 719화\t\t\t\t",
+                        "https://funbe642.com/절세무신_718화.html\t001. 절세무신 718화\t\t\t\t",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

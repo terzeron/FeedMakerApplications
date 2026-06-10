@@ -158,6 +158,35 @@ if __name__ == "__main__":
             def test_extract_article_links_empty(self):
                 self.assertEqual(extract_article_links(""), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py(--render-js=true)로 받아온 xrds 이슈 페이지(archives.cfm?iid=3787909)
+            #       HTML 중 파서가 매칭하는 <h3><a href="article.cfm?aid=..."> 항목 3개만 샘플링.
+            # 기대 출력: extract_article_links가 만든 (link, title) 목록.
+            REAL_SAMPLE_HTML = (
+                '<h3><a href="article.cfm?aid=3778047">Accessibility Is a Right</a></h3>'
+                '<h3><a href="article.cfm?aid=3778048">Improving Digital Accessibility: From Awareness to Implementation</a></h3>'
+                '<h3><a href="article.cfm?aid=3778049">Reflection, Reckoning, and Refusal: A Dissertation Journey</a></h3>'
+            )
+
+            def test_real_sample_end_to_end(self):
+                self.assertEqual(
+                    extract_article_links(self.REAL_SAMPLE_HTML),
+                    [
+                        (
+                            "https://xrds.acm.org/article.cfm?aid=3778047",
+                            "Accessibility Is a Right",
+                        ),
+                        (
+                            "https://xrds.acm.org/article.cfm?aid=3778048",
+                            "Improving Digital Accessibility: From Awareness to Implementation",
+                        ),
+                        (
+                            "https://xrds.acm.org/article.cfm?aid=3778049",
+                            "Reflection, Reckoning, and Refusal: A Dissertation Journey",
+                        ),
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

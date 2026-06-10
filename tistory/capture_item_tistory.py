@@ -250,6 +250,32 @@ if __name__ == "__main__":
                     ["l1\tA", "l2\tB"],
                 )
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://nasica1.tistory.com/?page=1 을 받아온 실제 HTML 중
+            #       파서가 매칭하는 영역(og:url + anchor + span.title 블록 3개, pattern 4)만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_tistory.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '<meta property="og:url" content="https://nasica1.tistory.com"/>',
+                '\t\t\t\t<a href="/991">',
+                '\t\t\t\t\t<span class="title">하나우 전투 (3) - 브레더의 사연</span>',
+                '\t\t\t\t<a href="/990">',
+                '\t\t\t\t\t<span class="title">남티롤(S&uuml;dtirol) 이야기 (3) - &quot;훼손된 승리&quot;</span>',
+                '\t\t\t\t<a href="/989">',
+                '\t\t\t\t\t<span class="title">하나우 전투 (2) - 투자와 전쟁에서 예측은 금물</span>',
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://nasica1.tistory.com/991\t하나우 전투 (3) - 브레더의 사연",
+                        "https://nasica1.tistory.com/990\t남티롤(S&uuml;dtirol) 이야기 (3) - &quot;훼손된 승리&quot;",
+                        "https://nasica1.tistory.com/989\t하나우 전투 (2) - 투자와 전쟁에서 예측은 금물",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

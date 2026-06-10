@@ -119,6 +119,31 @@ if __name__ == "__main__":
                     ["l1\tA", "l2\tB"],
                 )
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 www.mmzone.co.kr mms_tool(거래장터) 페이지에서 파서가 매칭하는
+            #       영역(list-title-text div + mt_view anchor) 3개만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_link_title.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '                                     <div class="list-title-text" style="color:var(--theme-title-text)" title="창고정리중 에어로 미조립키트 판매합니다.">',
+                '                               <a href="/mms_tool/mt_view.php?id=263484" class="link-block cover-abs"></a>',
+                '                                     <div class="list-title-text" style="color:var(--theme-title-text)" title="M4A3E8 2026 하비페어 한정판 삽니다.">',
+                '                               <a href="/mms_tool/mt_view.php?id=263483" class="link-block cover-abs"></a>',
+                '                                     <div class="list-title-text" style="color:var(--theme-title-text)" title="반다이 에반게리온 판매합니다.">',
+                '                               <a href="/mms_tool/mt_view.php?id=263482" class="link-block cover-abs"></a>',
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://www.mmzone.co.kr/mms_tool/mt_view.php?id=263484\t창고정리중 에어로 미조립키트 판매합니다.",
+                        "https://www.mmzone.co.kr/mms_tool/mt_view.php?id=263483\tM4A3E8 2026 하비페어 한정판 삽니다.",
+                        "https://www.mmzone.co.kr/mms_tool/mt_view.php?id=263482\t반다이 에반게리온 판매합니다.",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

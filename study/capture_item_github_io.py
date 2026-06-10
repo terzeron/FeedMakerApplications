@@ -143,6 +143,29 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://kabbala.github.io/grammatica_latina/index.html 을
+            #       받아온 실제 HTML 중 파서가 매칭하는 toctree 항목(# 없는 링크) 3개만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_github_io.py <url_prefix>'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '<li class="toctree-l1"><a class="reference internal" href="prooemium.html">머리말</a></li>',
+                '<li class="toctree-l1"><a class="reference internal" href="introductio/divisio.html">라틴어의 분류</a><ul>',
+                '<li class="toctree-l1"><a class="reference internal" href="introductio/aliae_linguae.html">라틴어와 다른 언어와의 관계</a><ul>',
+            ]
+
+            def test_real_sample_end_to_end(self):
+                url_prefix = "https://kabbala.github.io/grammatica_latina/"
+                result = parse_feed_list(self.REAL_SAMPLE_LINES, url_prefix)
+                lines = render_lines(result, 1000)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://kabbala.github.io/grammatica_latina/prooemium.html\t001. 머리말",
+                        "https://kabbala.github.io/grammatica_latina/introductio/divisio.html\t002. 라틴어의 분류",
+                        "https://kabbala.github.io/grammatica_latina/introductio/aliae_linguae.html\t003. 라틴어와 다른 언어와의 관계",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

@@ -121,6 +121,31 @@ if __name__ == "__main__":
                     ["l1\tA", "l2\tB"],
                 )
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://terms.naver.com/list.naver?cid=58737&categoryId=58737 을
+            #       받아온 실제 HTML 중 파서가 매칭하는 (strong.title + a.entry.naver) 블록 3개만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_navercast.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '\t\t\t\t\t<strong class="title">',
+                "\t\t\t\t\t\t<a href=\"/entry.naver?docId=6917568&cid=59011&categoryId=59011\" onclick=\"nclk(this, 'tml.termlist', '', '', 1);\">이재유 · 김사국 · 강주룡 [李載裕 · 金恩國 · 姜周龍]</a>",
+                '\t\t\t\t\t<strong class="title">',
+                "\t\t\t\t\t\t<a href=\"/entry.naver?docId=6916298&cid=59011&categoryId=59011\" onclick=\"nclk(this, 'tml.termlist', '', '', 1);\">이명균 · 장석영 · 유진태 [李明均 · 張錫英 · 兪鎭泰]</a>",
+                '\t\t\t\t\t<strong class="title">',
+                "\t\t\t\t\t\t<a href=\"/entry.naver?docId=6915924&cid=59011&categoryId=59011\" onclick=\"nclk(this, 'tml.termlist', '', '', 1);\">이선경 · 조화벽 · 김향화 [李善卿 · 趙和璧 · 金香花]</a>",
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "http://terms.naver.com/entry.naver?docId=6917568&cid=59011&categoryId=59011\t이재유 · 김사국 · 강주룡 [李載裕 · 金恩國 · 姜周龍]",
+                        "http://terms.naver.com/entry.naver?docId=6916298&cid=59011&categoryId=59011\t이명균 · 장석영 · 유진태 [李明均 · 張錫英 · 兪鎭泰]",
+                        "http://terms.naver.com/entry.naver?docId=6915924&cid=59011&categoryId=59011\t이선경 · 조화벽 · 김향화 [李善卿 · 趙和璧 · 金香花]",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

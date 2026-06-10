@@ -330,6 +330,45 @@ if __name__ == "__main__":
             def test_print_feeds_empty(self):
                 self.assertEqual(self._capture_print([], 20), "")
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py(--render-js=true)로 https://wikidocs.net/blog/main/ 을 받아온
+            #       실제 HTML 중 파서가 act하는 영역(블록 anchor + h2 제목 + p excerpt) 3장만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_link_title.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '                        <a href="/blog/@history/18804/" class="block">',
+                '                                    <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200">',
+                "                                        불교는 어떻게 발상지 인도에서 사라지고 동아시아를 지배하게 되었는가",
+                "                                    </h2>",
+                '                                    <p class="text-gray-600 dark:text-gray-400 mt-2 break-words">',
+                "세계 4대 종교의 하나인 불교가, 정작 그것이 탄생한 발상지 인도에서는 거의 자취를 감추다시피 사라졌다는 사실, 알고 계셨습니까? 많은 분들이 불교의 본고장이라고 하면 당연히…",
+                "                                    </p>",
+                '                        <a href="/blog/@history/18803/" class="block">',
+                '                                    <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200">',
+                "                                        마그나카르타는 민주주의 문서가 아니라 귀족의 이익 합의서였다: 800년간의 의미 변천",
+                "                                    </h2>",
+                '                                    <p class="text-gray-600 dark:text-gray-400 mt-2 break-words">',
+                "흔히 민주주의와 자유의 출발점으로 떠받들어지는 마그나카르타가, 사실은 평범한 백성의 권리와는 거의 무관한, 반란을 일으킨 귀족들이 자신들의 특권을 지키기 위해 왕에게 들이민 …",
+                "                                    </p>",
+                '                        <a href="/blog/@history/18802/" class="block">',
+                '                                    <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200">',
+                "                                        콘스탄티노플 함락을 결정지은 것은 거대한 대포가 아니라 잠그지 않은 성문 하나였다",
+                "                                    </h2>",
+                '                                    <p class="text-gray-600 dark:text-gray-400 mt-2 break-words">',
+                "1453년 천년의 도시 콘스탄티노플을 무너뜨린 결정적 한 방이, 사실은 역사상 가장 거대했던 그 대포가 아니라 누군가 깜빡하고 잠그지 않은 작은 쪽문 하나였다는 사실, 알고 …",
+                "                                    </p>",
+            ]
+
+            def test_real_sample_end_to_end(self):
+                feeds = parse_feed_list(self.REAL_SAMPLE_LINES)
+                feeds = filter_excluded(feeds, [])
+                output = self._capture_print(feeds, 5)
+                self.assertEqual(
+                    output,
+                    "https://wikidocs.net/blog/@history/18804/\t불교는 어떻게 발상지 인도에서 사라지고 동아시아를 지배하게 되었는가\n"
+                    "https://wikidocs.net/blog/@history/18803/\t마그나카르타는 민주주의 문서가 아니라 귀족의 이익 합의서였다: 800년간의 의미 변천\n"
+                    "https://wikidocs.net/blog/@history/18802/\t콘스탄티노플 함락을 결정지은 것은 거대한 대포가 아니라 잠그지 않은 성문 하나였다\n",
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

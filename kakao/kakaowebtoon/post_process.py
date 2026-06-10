@@ -310,6 +310,47 @@ if __name__ == "__main__":
                     select_content_item(content_map, "http://x/999"), {"title": "only"}
                 )
 
+            # --- end-to-end with sampled upstream pipeline data (network mocked) ---
+            # 이 스크립트의 stdin은 webtoon.kakao.com content 페이지(<script id="__NEXT_DATA__">)다.
+            # 실 페이지의 contentMap은 클라이언트 XHR로 하이드레이션돼 어떤 crawler fetch에서도 비어있어
+            # 직접 샘플링이 불가하므로, 실제 구조(props.initialState.content.contentMap)에 실값을 채운
+            # content 페이지를 입력으로 사용한다.
+            # main()이 처리하는 핵심 경로(extract_next_data → select_content_item → compose_description)를
+            # 그대로 태우고, 네트워크(이미지 다운로드/병합) 결과는 mergedImage mock 값으로 대체한다.
+            REAL_SAMPLE_CONTENT = (
+                '<script id="__NEXT_DATA__" type="application/json">'
+                '{"props":{"initialState":{"content":{"contentMap":{'
+                '"342537":{"id":342537,"sid":"레드스톰---왕의-귀환","title":"레드스톰 - 왕의 귀환",'
+                '"genre":"액션","synopsis":"검술명가 막내의 복수극","bgImg":"https://kr-a.kakaopagecdn.com/bg.webp",'
+                '"mainImg":"https://kr-a.kakaopagecdn.com/main.webp"}'
+                "}}}}}</script>"
+            )
+
+            def test_real_sample_end_to_end(self):
+                item_url = (
+                    "https://webtoon.kakao.com/content/레드스톰---왕의-귀환/342537"
+                )
+                json_content = extract_next_data(self.REAL_SAMPLE_CONTENT)
+                self.assertIsNotNone(json_content)
+                content_map = json.loads(json_content)["props"]["initialState"][
+                    "content"
+                ]["contentMap"]
+                item = select_content_item(content_map, item_url)
+                self.assertEqual(item["title"], "레드스톰 - 왕의 귀환")
+                # 이미지 다운로드/병합(네트워크)은 mock 값으로 대체
+                item["mergedImage"] = (
+                    "https://terzeron.com/img/kakaowebtoon/cf_merged.png"
+                )
+                description = compose_description(item, item_url)
+                self.assertIn("<div>레드스톰 - 왕의 귀환</div>", description)
+                self.assertIn("<div>액션</div>", description)
+                self.assertIn("<div>검술명가 막내의 복수극</div>", description)
+                self.assertIn(f"<a href='{item_url}'>{item_url}</a>", description)
+                self.assertIn(
+                    "<div><img src='https://terzeron.com/img/kakaowebtoon/cf_merged.png'></div>",
+                    description,
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

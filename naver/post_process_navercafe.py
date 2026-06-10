@@ -262,6 +262,44 @@ class TestMainCookiesPassedToRequest(unittest.TestCase):
                 timeout=5,
             )
 
+    # --- end-to-end rendering with real-shaped sampled API response (network mocked) ---
+    # 이 스크립트는 stdin을 버리고 cafe-articleapi를 cookies로 직접 fetch한다.
+    # directive에 따라 requests.get을 실제 응답 형태의 canned 데이터로 mock한다.
+    # 본문(contentHtml) + contentElements 이미지가 [[[CONTENT-ELEMENT-0]]] 자리에 삽입되는
+    # 핵심 렌더링 경로를 검증한다.
+    def test_real_sample_renders_body_and_image(self):
+        import io
+        import contextlib
+
+        api_json = (
+            '{"result":{"attaches":[],'
+            '"article":{"contentHtml":"<p class=\\"se-text\\">프라모델 제작기 #34</p>[[[CONTENT-ELEMENT-0]]]",'
+            '"contentElements":[{"json":{"image":{"url":"https://cafeptthumb-phinf.pstatic.net/MjAyNg/sample.jpg"}}}]},'
+            '"comments":{"items":[]}}}'
+        )
+        buf = io.StringIO()
+        with (
+            patch(f"{_MODULE}.read_cookies", return_value={}),
+            patch(
+                f"{_MODULE}.requests.get", return_value=self._mock_response(api_json)
+            ),
+            patch(f"{_MODULE}.IO.read_stdin"),
+            contextlib.redirect_stdout(buf),
+        ):
+            sys.argv = [
+                "prog",
+                "-f",
+                "/some/path",
+                "https://m.cafe.naver.com/ca-fe/web/cafes/10503958/articles/406273",
+            ]
+            main()
+        out = buf.getvalue()
+        self.assertIn("<p>프라모델 제작기 #34</p>", out)
+        self.assertIn(
+            "<img src='https://cafeptthumb-phinf.pstatic.net/MjAyNg/sample.jpg' />",
+            out,
+        )
+
     def test_default_feed_dir_when_no_f_option(self):
         with (
             patch(f"{_MODULE}.read_cookies", return_value={}) as mock_rc,

@@ -158,6 +158,31 @@ if __name__ == "__main__":
                 golden_schema = self._anonymize_recursive(sample_data)
                 self.assertEqual(self._anonymize_recursive(sample_data), golden_schema)
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://comic.naver.com/api/article/list?titleId=844731&sort=DESC 를
+            #       받아온 실제 JSON 중 파서가 읽는 필드(titleId, articleList[].no/subtitle)만 3개로 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_naverwebtoon.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_DATA = {
+                "titleId": 844731,
+                "articleList": [
+                    {"no": 28, "subtitle": "28화"},
+                    {"no": 27, "subtitle": "27화"},
+                    {"no": 26, "subtitle": "26화"},
+                ],
+            }
+
+            def test_real_sample_end_to_end(self):
+                result = extract_items(self.REAL_SAMPLE_DATA)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://comic.naver.com/webtoon/detail?titleId=844731&no=28\t28화",
+                        "https://comic.naver.com/webtoon/detail?titleId=844731&no=27\t27화",
+                        "https://comic.naver.com/webtoon/detail?titleId=844731&no=26\t26화",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

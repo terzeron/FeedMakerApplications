@@ -169,6 +169,39 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 list_url(https://wfwf462.com/cl?toon=10543)을
+            #       받아온 실제 HTML 중 파서가 매칭하는 영역(og:url meta + anchor/subject
+            #       블록 3개)만 샘플링한 것.
+            # 기대 출력: 동일 입력을 'capture_item_wfwf.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINES = [
+                '<meta property="og:url" content="https://wfwf462.com/cl?toon=10543">',
+                '                    <a href="/cv?toon=10543&num=120&title=고블린슬레이어107화" class="view_open">',
+                '                        <div class="list-box">',
+                '                            <div class="num">120</div>',
+                '                            <div class="subject">고블린 슬레이어 107화&nbsp;</div>',
+                '                    <a href="/cv?toon=10543&num=119&title=고블린슬레이어106화" class="view_open">',
+                '                        <div class="list-box">',
+                '                            <div class="num">119</div>',
+                '                            <div class="subject">고블린 슬레이어 106화&nbsp;</div>',
+                '                    <a href="/cv?toon=10543&num=118&title=고블린슬레이어105화" class="view_open">',
+                '                        <div class="list-box">',
+                '                            <div class="num">118</div>',
+                '                            <div class="subject">고블린 슬레이어 105화&nbsp;</div>',
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://wfwf462.com/cv?toon=10543&num=120\t003. 고블린 슬레이어 107화 ",
+                        "https://wfwf462.com/cv?toon=10543&num=119\t002. 고블린 슬레이어 106화 ",
+                        "https://wfwf462.com/cv?toon=10543&num=118\t001. 고블린 슬레이어 105화 ",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

@@ -145,6 +145,33 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py(--render-js=true)로 https://t3.xtoon365.com/comic/840040 을 받아온 실제 HTML 중
+            #       파서가 매칭하는 영역(og:url + chapter-list + chapter anchor/제목 3개)만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_xtoon.py -n 5'로 직접 실행해 캡처한 결과(링크의 // 포함).
+            REAL_SAMPLE_LINES = [
+                '<meta property="og:url" content="https://t3.xtoon365.com/comic/840040"></head>',
+                '        <div class="chapter-list mt-4 chapter__list-box img-control mb-4">',
+                '            <a href="/chapter/1474756" id="chapter_1474756" data-chapter="1474756" class="py-2 py-md-3 chapter-list-item mb-2 d-flex justify-content-between px-3 j-chapter-item">',
+                '                <strong class="text-dark"><i class="far fa-bookmark opacity-25"></i>251화<label class="pnum ms-1 ms-md-2">122P</label>',
+                '            <a href="/chapter/1473639" id="chapter_1473639" data-chapter="1473639" class="py-2 py-md-3 chapter-list-item mb-2 d-flex justify-content-between px-3 j-chapter-item">',
+                '                <strong class="text-dark"><i class="far fa-bookmark opacity-25"></i>250화<label class="pnum ms-1 ms-md-2">137P</label>',
+                '            <a href="/chapter/1472336" id="chapter_1472336" data-chapter="1472336" class="py-2 py-md-3 chapter-list-item mb-2 d-flex justify-content-between px-3 j-chapter-item">',
+                '                <strong class="text-dark"><i class="far fa-bookmark opacity-25"></i>249화<label class="pnum ms-1 ms-md-2">127P</label>',
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = parse_feed_list(self.REAL_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://t3.xtoon365.com//chapter/1474756\t003. 251화",
+                        "https://t3.xtoon365.com//chapter/1473639\t002. 250화",
+                        "https://t3.xtoon365.com//chapter/1472336\t001. 249화",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

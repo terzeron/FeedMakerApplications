@@ -135,6 +135,51 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 list_url(https://api.brunch.co.kr/v1/magazine/37474/articles)을
+            #       받아온 실제 JSON 중 파서가 읽는 필드(data.list[].user.profileId,
+            #       article.no, article.title)만 item 3개로 샘플링한 것.
+            # 기대 출력: 동일 입력을 'capture_item_link_title.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_DATA = {
+                "data": {
+                    "list": [
+                        {
+                            "user": {"profileId": "hvnpoet"},
+                            "article": {
+                                "no": 189,
+                                "title": "AI의 흐름을 만드는 CEO, 해리슨 체이스",
+                            },
+                        },
+                        {
+                            "user": {"profileId": "hvnpoet"},
+                            "article": {
+                                "no": 190,
+                                "title": "AI 혁명의 삼각편대, 클레망 들랑그 외",
+                            },
+                        },
+                        {
+                            "user": {"profileId": "hvnpoet"},
+                            "article": {
+                                "no": 188,
+                                "title": "파운드리 혁명가, 모리스 창",
+                            },
+                        },
+                    ]
+                }
+            }
+
+            def test_real_sample_end_to_end(self):
+                result = extract_items(self.REAL_SAMPLE_DATA)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://brunch.co.kr/@hvnpoet/189\tAI의 흐름을 만드는 CEO, 해리슨 체이스",
+                        "https://brunch.co.kr/@hvnpoet/190\tAI 혁명의 삼각편대, 클레망 들랑그 외",
+                        "https://brunch.co.kr/@hvnpoet/188\t파운드리 혁명가, 모리스 창",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

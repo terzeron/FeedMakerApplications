@@ -166,6 +166,28 @@ var anotherData = {"logNo":"__LOG_NO__","title":"__TITLE__","content":"...","com
                 anonymized_lines = [self._anonymize_line(line) for line in input_lines]
                 self.assertEqual(anonymized_lines, golden_lines)
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 blog.naver.com PostTitleListAsync(blogId=jeunkim) 응답에서
+            #       파서가 읽는 "blogId" 및 "logNo"/"title" 쌍 3개만 한 줄로 샘플링(title은 URL-encoded).
+            # 기대 출력: 동일 입력을 'capture_item_naverblog.py'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_LINE = (
+                '{"blogId":"jeunkim","logNo":"224311458992","title":"CWS+%EC%A3%BC%EA%B0%84+%EB%AF%B8%EA%B5%AD+%EC%8B%9C%EC%9E%A5+%EB%A6%AC%EB%B7%B0+-+%EC%82%AC%EC%83%81+%EC%B5%9C%EA%B3%A0%EC%B9%98+%EA%B8%B0%EB%A1%9D+%ED%9B%84+%EB%B0%98%EB%8F%84%EC%B2%B4+%EA%B4%80%EB%A0%A8%EC%A3%BC+%ED%8F%AD%EB%9D%BD%EA%B3%BC+%EA%B2%BD%EC%A0%9C+%EC%A7%80%ED%91%9C+%ED%98%B8%EC%A1%B0+%EC%86%8D+%EB%B3%80%EB%8F%99%EC%84%B1+%EC%A7%80%EC%86%8D",'
+                '"logNo":"224310327930","title":"%5B%EC%98%A4%EB%8A%98%EC%9D%98+%EC%B0%A8%ED%8A%B8%5D++%EB%A7%88%EB%B2%A8%2C+S%26P+500+%EC%A7%80%EC%88%98+%ED%8E%B8%EC%9E%85%2C+%EA%B3%BC%EA%B1%B0+%EC%82%AC%EB%A1%80%EB%A5%BC+%EB%B3%B4%EB%A9%B4+%EC%B4%88%EA%B8%B0+%EC%83%81%EC%8A%B9%EC%84%B8%EC%97%90%EB%8A%94+%ED%81%B0+%ED%95%A8%EC%A0%95%EC%9D%B4",'
+                '"logNo":"224310851014","title":"%EC%B1%97%EB%B4%87%EB%93%A4%EC%9D%B4+%EC%98%88%EC%B8%A1%ED%95%9C+2026+%EC%9B%94%EB%93%9C%EC%BB%B5+%EC%9A%B0%EC%8A%B9%ED%8C%80%3A+%EC%8A%A4%ED%8E%98%EC%9D%B8+vs+%ED%94%84%EB%9E%91%EC%8A%A4%EC%9D%98+%EC%B9%98%EC%97%B4%ED%95%9C+%EA%B2%BD%EC%9F%81",}'
+            )
+
+            def test_real_sample_end_to_end(self):
+                result_list, url_prefix = parse_feed_list([self.REAL_SAMPLE_LINE])
+                lines = render_lines(result_list, url_prefix, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "http://blog.naver.com/PostView.naver?blogId=jeunkim&logNo=224311458992\tCWS 주간 미국 시장 리뷰 - 사상 최고치 기록 후 반도체 관련주 폭락과 경제 지표 호조 속 변동성 지속",
+                        "http://blog.naver.com/PostView.naver?blogId=jeunkim&logNo=224310327930\t[오늘의 차트]  마벨, S&P 500 지수 편입, 과거 사례를 보면 초기 상승세에는 큰 함정이",
+                        "http://blog.naver.com/PostView.naver?blogId=jeunkim&logNo=224310851014\t챗봇들이 예측한 2026 월드컵 우승팀: 스페인 vs 프랑스의 치열한 경쟁",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

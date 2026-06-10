@@ -125,6 +125,35 @@ if __name__ == "__main__":
                 ]
                 self.assertEqual(len(render_lines(result, 2)), 2)
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://comic.naver.com/api/webtoon/titlelist/new?order=update 를
+            #       받아온 실제 JSON 중 titleList[].titleId/titleName/adult 3개만 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_link_title.py -n 5'로 직접 실행해 캡처한 결과
+            #          (render_lines가 titleId 내림차순으로 정렬).
+            REAL_SAMPLE_DATA = {
+                "titleList": [
+                    {
+                        "titleId": 850971,
+                        "titleName": "조상님이 보고계셔",
+                        "adult": False,
+                    },
+                    {"titleId": 851029, "titleName": "더킹", "adult": False},
+                    {"titleId": 850967, "titleName": "경성배달꾼", "adult": False},
+                ]
+            }
+
+            def test_real_sample_end_to_end(self):
+                result = extract_items(self.REAL_SAMPLE_DATA)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://comic.naver.com/webtoon/list?titleId=851029\t더킹",
+                        "https://comic.naver.com/webtoon/list?titleId=850971\t조상님이 보고계셔",
+                        "https://comic.naver.com/webtoon/list?titleId=850967\t경성배달꾼",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

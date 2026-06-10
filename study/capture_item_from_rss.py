@@ -376,6 +376,37 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([]), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://www.brendangregg.com/blog/rss.xml 을 받아온 실제 RSS의
+            #       feedparser entry 중 (link, title) 3개만 샘플링한 것.
+            # 기대 출력: 번역(-t) 없이 동일 입력을 'capture_item_from_rss.py'로 실행해 캡처한 결과.
+            REAL_SAMPLE_ENTRIES = [
+                {
+                    "link": "http://www.brendangregg.com/blog//2026-02-07/why-i-joined-openai.html",
+                    "title": "Why I joined OpenAI",
+                },
+                {
+                    "link": "http://www.brendangregg.com/blog//2025-12-05/leaving-intel.html",
+                    "title": "Leaving Intel",
+                },
+                {
+                    "link": "http://www.brendangregg.com/blog//2025-11-28/ai-virtual-brendans.html",
+                    "title": 'On "AI Brendans" or "Virtual Brendans"',
+                },
+            ]
+
+            def test_real_sample_end_to_end(self):
+                result = collect_items(self.REAL_SAMPLE_ENTRIES, False, [])
+                lines = render_lines(result)
+                self.assertEqual(
+                    lines,
+                    [
+                        "http://www.brendangregg.com/blog//2026-02-07/why-i-joined-openai.html\tWhy I joined OpenAI",
+                        "http://www.brendangregg.com/blog//2025-12-05/leaving-intel.html\tLeaving Intel",
+                        'http://www.brendangregg.com/blog//2025-11-28/ai-virtual-brendans.html\tOn "AI Brendans" or "Virtual Brendans"',
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

@@ -79,6 +79,28 @@ if __name__ == "__main__":
                 ) + _script({"props": {"pageProps": {"data": {"markup": "B"}}}})
                 self.assertEqual(extract_contents(content), ["A", "B"])
 
+            # --- end-to-end with real sampled pipeline data ---
+            # 입력: crawler.py로 받아온 hackernoon.com 기사 원본 HTML 중 파서가 act하는
+            #       <script id="__NEXT_DATA__"> JSON을 집중 조각(props.pageProps.data.markup의
+            #       실제 본문 앞부분)으로 축소한 것.
+            # 기대 출력: extract_contents가 markup 본문 1개를 그대로 반환.
+            REAL_SAMPLE_CONTENT = (
+                '<script id="__NEXT_DATA__" type="application/json">'
+                '{"props":{"pageProps":{"data":{"markup":'
+                '"<h2 id=\\"h-overview\\">Overview</h2>'
+                '<p>Nex-N2-mini is a 35B-parameter model.</p>"}}}}'
+                "</script>"
+            )
+
+            def test_real_sample_end_to_end(self):
+                self.assertEqual(
+                    extract_contents(self.REAL_SAMPLE_CONTENT),
+                    [
+                        '<h2 id="h-overview">Overview</h2>'
+                        "<p>Nex-N2-mini is a 35B-parameter model.</p>"
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

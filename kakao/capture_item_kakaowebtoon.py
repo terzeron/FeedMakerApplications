@@ -130,6 +130,54 @@ if __name__ == "__main__":
                     ["l1\tA", "l2\tB"],
                 )
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py(accept-language: ko + Chrome UA)로 gateway-kw.kakao.com episodes API에서
+            #       받아온 실제 JSON 중 파서가 읽는 필드(data.episodes[].id/seoId/no/title/adult/useType)를
+            #       무료(FREE) 회차 3개로 샘플링.
+            # 기대 출력: 동일 입력을 'capture_item_kakaowebtoon.py -n 5'로 직접 실행해 캡처한 결과.
+            REAL_SAMPLE_DATA = {
+                "data": {
+                    "episodes": [
+                        {
+                            "id": 342537,
+                            "seoId": "레드스톰---왕의-귀환-462",
+                            "no": 462,
+                            "title": "2부 70화",
+                            "adult": False,
+                            "useType": "FREE",
+                        },
+                        {
+                            "id": 341855,
+                            "seoId": "레드스톰---왕의-귀환-461",
+                            "no": 461,
+                            "title": "2부 69화",
+                            "adult": False,
+                            "useType": "FREE",
+                        },
+                        {
+                            "id": 341208,
+                            "seoId": "레드스톰---왕의-귀환-460",
+                            "no": 460,
+                            "title": "2부 68화",
+                            "adult": False,
+                            "useType": "FREE",
+                        },
+                    ]
+                }
+            }
+
+            def test_real_sample_end_to_end(self):
+                result = extract_items(self.REAL_SAMPLE_DATA)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://webtoon.kakao.com/viewer/레드스톰---왕의-귀환-462/342537\t462. 2부 70화",
+                        "https://webtoon.kakao.com/viewer/레드스톰---왕의-귀환-461/341855\t461. 2부 69화",
+                        "https://webtoon.kakao.com/viewer/레드스톰---왕의-귀환-460/341208\t460. 2부 68화",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())

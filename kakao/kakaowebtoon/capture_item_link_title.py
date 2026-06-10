@@ -224,6 +224,66 @@ if __name__ == "__main__":
             def test_render_lines_empty(self):
                 self.assertEqual(render_lines([], 1000), [])
 
+            # --- end-to-end with real sampled crawl data ---
+            # 입력: crawler.py로 https://gateway-kw.kakao.com/section/v1/pages/novel-weekdays 를
+            #       받아온 실제 JSON 중 파서가 읽는 영역(data.sections→cardGroups→cards→content)에서
+            #       content 3개만 샘플링(extract_items가 읽는 필드만 유지).
+            # 기대 출력: 동일 입력을 'capture_item_link_title.py -n 5'로 직접 실행해 캡처한 결과
+            #          (render_lines가 "날짜 제목" 기준 내림차순 정렬).
+            REAL_SAMPLE_DATA = {
+                "data": {
+                    "sections": [
+                        {
+                            "cardGroups": [
+                                {
+                                    "cards": [
+                                        {
+                                            "content": {
+                                                "seoId": "이번-생은-가주가-되겠습니다",
+                                                "id": 2473,
+                                                "title": "이번 생은 가주가 되겠습니다",
+                                                "adult": False,
+                                                "serialRestartDateTime": "2026-02-15T15:00:00Z",
+                                            }
+                                        },
+                                        {
+                                            "content": {
+                                                "seoId": "교룡의-주인",
+                                                "id": 3345,
+                                                "title": "교룡의 주인",
+                                                "adult": False,
+                                                "serialStartDateTime": "2023-02-25T15:00:00Z",
+                                            }
+                                        },
+                                        {
+                                            "content": {
+                                                "seoId": "은행의-공녀님",
+                                                "id": 3327,
+                                                "title": "은행의 공녀님",
+                                                "adult": False,
+                                                "serialStartDateTime": "2023-02-19T15:00:00Z",
+                                            }
+                                        },
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+
+            def test_real_sample_end_to_end(self):
+                result = extract_items(self.REAL_SAMPLE_DATA)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://webtoon.kakao.com/content/이번-생은-가주가-되겠습니다/2473\t2026-02-15 이번 생은 가주가 되겠습니다",
+                        "https://webtoon.kakao.com/content/교룡의-주인/3345\t2023-02-25 교룡의 주인",
+                        "https://webtoon.kakao.com/content/은행의-공녀님/3327\t2023-02-19 은행의 공녀님",
+                    ],
+                )
+
         sys.exit(unittest.main())
     else:
         sys.exit(main())
