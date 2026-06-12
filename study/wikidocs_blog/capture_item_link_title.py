@@ -5,15 +5,21 @@ import os
 import sys
 import re
 import getopt
-from typing import List, NamedTuple
+from typing import Callable, List, NamedTuple, Optional
 
 from bin.feed_maker_util import IO
+from bin.crawler import Crawler
 
 
 class Feed(NamedTuple):
     link: str
     title: str
     body: str
+
+
+# article 상세 페이지의 태그 링크: <a href="/blog/@user/?tag=4942" ...>태그명</a>
+# href/class/텍스트가 여러 줄에 걸쳐 있을 수 있어 DOTALL로 처리한다.
+TAG_LINK_RE = re.compile(r'<a\s+href="[^"]*\?tag=\d+"[^>]*>(.*?)</a>', re.DOTALL)
 
 
 def parse_args(argv: List[str]) -> tuple[int, List[str]]:
@@ -32,6 +38,20 @@ def parse_args(argv: List[str]) -> tuple[int, List[str]]:
 
 def strip_tags(line: str) -> str:
     return re.sub(r"<[^>]+>", "", line).strip()
+
+
+def extract_tags(html: str) -> List[str]:
+    """article 상세 페이지 HTML에서 태그 텍스트 목록을 추출한다.
+
+    list 페이지에는 태그가 없으므로, 태그 기반 제외를 위해서는 각 글의
+    상세 페이지를 들여다봐야 한다.
+    """
+    tags: List[str] = []
+    for raw in TAG_LINK_RE.findall(html):
+        text = strip_tags(raw)
+        if text:
+            tags.append(text)
+    return tags
 
 
 def parse_feed_list(line_list: List[str]) -> List[Feed]:
@@ -108,13 +128,32 @@ def parse_feed_list(line_list: List[str]) -> List[Feed]:
     return feeds
 
 
-def filter_excluded(feeds: List[Feed], exclude_keywords: List[str]) -> List[Feed]:
+def filter_excluded(
+    feeds: List[Feed],
+    exclude_keywords: List[str],
+    get_extra_text: Optional[Callable[[Feed], str]] = None,
+    limit: Optional[int] = None,
+) -> List[Feed]:
+    """제외 키워드에 걸리는 feed를 걸러낸다.
+
+    매칭 대상은 기본적으로 list 페이지에서 얻은 제목+본문이다.
+    get_extra_text가 주어지면 각 feed의 추가 텍스트(예: 상세 페이지 태그)를
+    매칭 대상에 포함시켜, list 페이지에 없는 태그 기반 제외도 가능하게 한다.
+    limit이 주어지면 통과한 feed가 limit개에 도달하는 즉시 멈춰
+    불필요한 추가 fetch를 피한다.
+    """
     if not exclude_keywords:
         return feeds
 
     result: List[Feed] = []
     for feed in feeds:
+        if limit is not None and len(result) >= limit:
+            break
         haystack = f"{feed.title} {feed.body}"
+        if get_extra_text is not None:
+            extra = get_extra_text(feed)
+            if extra:
+                haystack = f"{haystack} {extra}"
         if any(keyword in haystack for keyword in exclude_keywords):
             continue
         result.append(feed)
@@ -131,7 +170,25 @@ def main() -> int:
 
     line_list = IO.read_stdin_as_line_list()
     feeds = parse_feed_list(line_list)
-    feeds = filter_excluded(feeds, exclude_keywords)
+
+    if exclude_keywords:
+        # 태그는 list 페이지에 없고 각 글의 상세 페이지에만 있으므로,
+        # 제외 판정을 위해 상세 페이지를 추가로 받아 태그를 들여다본다.
+        # 태그는 JS 렌더링 없이 노출되므로 render_js=False로 충분하다.
+        crawler = Crawler(render_js=False, timeout=60)
+
+        def get_tags_text(feed: Feed) -> str:
+            html, error, _ = crawler.run(feed.link)
+            if not html or error:
+                return ""
+            return " ".join(extract_tags(html))
+
+        feeds = filter_excluded(
+            feeds, exclude_keywords, get_tags_text, num_of_recent_feeds
+        )
+    else:
+        feeds = filter_excluded(feeds, exclude_keywords)
+
     print_feeds(feeds, num_of_recent_feeds)
 
     return 0
@@ -310,6 +367,64 @@ if __name__ == "__main__":
                 result = filter_excluded(self._feeds(), ["담보"])
                 self.assertEqual([f.link for f in result], ["l1", "l3"])
 
+            # --- extract_tags ---
+
+            def test_extract_tags_single(self):
+                html = '<a href="/blog/@u/?tag=42" class="x">유용한정보</a>'
+                self.assertEqual(extract_tags(html), ["유용한정보"])
+
+            def test_extract_tags_multiline(self):
+                # 실제 article 페이지에서 href/class/텍스트가 여러 줄에 걸쳐 있다
+                html = (
+                    '<a href="/blog/@infoplant/?tag=4942"\n'
+                    '   class="text-blue-500 dark:text-blue-400">\n'
+                    "    유용한정보\n"
+                    "</a>"
+                )
+                self.assertEqual(extract_tags(html), ["유용한정보"])
+
+            def test_extract_tags_multiple(self):
+                html = (
+                    '<a href="/blog/@u/?tag=1">재테크</a>'
+                    '<a href="/blog/@u/?tag=2">보험연금</a>'
+                )
+                self.assertEqual(extract_tags(html), ["재테크", "보험연금"])
+
+            def test_extract_tags_ignores_non_tag_links(self):
+                # 본문/제목 링크(?tag= 없는 링크)는 태그가 아니다
+                html = '<a href="/blog/@u/19075/">백링크 구축 전략</a>'
+                self.assertEqual(extract_tags(html), [])
+
+            def test_extract_tags_empty(self):
+                self.assertEqual(extract_tags(""), [])
+
+            # --- filter_excluded with extra text (article tags) ---
+
+            def test_filter_excluded_by_extra_text(self):
+                # 제목/본문에 없고 article 태그에만 있는 키워드도 제거 대상
+                feeds = [Feed("l1", "제목", "본문"), Feed("l2", "다른글", "내용")]
+                tags = {"l1": "유용한정보", "l2": "기술"}
+                result = filter_excluded(feeds, ["유용한정보"], lambda f: tags[f.link])
+                self.assertEqual([f.link for f in result], ["l2"])
+
+            def test_filter_excluded_extra_text_still_matches_body(self):
+                # extra가 비어도 기존 title/body 매칭은 그대로 동작
+                feeds = [Feed("l1", "증시 브리핑", "")]
+                self.assertEqual(filter_excluded(feeds, ["증시"], lambda f: ""), [])
+
+            def test_filter_excluded_limit_stops_early(self):
+                # limit만큼 채워지면 이후 feed는 fetch조차 하지 않는다
+                calls: List[str] = []
+
+                def extra(f: "Feed") -> str:
+                    calls.append(f.link)
+                    return ""
+
+                feeds = [Feed(f"l{i}", f"T{i}", "") for i in range(5)]
+                result = filter_excluded(feeds, ["없는키워드"], extra, 2)
+                self.assertEqual([f.link for f in result], ["l0", "l1"])
+                self.assertEqual(calls, ["l0", "l1"])
+
             # --- print_feeds ---
 
             def _capture_print(self, feeds, limit):
@@ -367,6 +482,48 @@ if __name__ == "__main__":
                     "https://wikidocs.net/blog/@history/18804/\t불교는 어떻게 발상지 인도에서 사라지고 동아시아를 지배하게 되었는가\n"
                     "https://wikidocs.net/blog/@history/18803/\t마그나카르타는 민주주의 문서가 아니라 귀족의 이익 합의서였다: 800년간의 의미 변천\n"
                     "https://wikidocs.net/blog/@history/18802/\t콘스탄티노플 함락을 결정지은 것은 거대한 대포가 아니라 잠그지 않은 성문 하나였다\n",
+                )
+
+            # --- regression: 태그 기반 제외 (신고된 버그) ---
+            # list 페이지(제목+본문)에는 '유용한정보'가 없고 상세 페이지의 태그에만 있다.
+            # main이 하는 배선(list 카드 파싱 → 상세 페이지 태그 추출 → 제외)을
+            # 네트워크 없이 그대로 재현한다. 태그 블록은 실제 article HTML
+            # (html/2392daf.html: href/class/텍스트가 여러 줄에 걸친 구조)을 본떴다.
+            def test_tag_based_exclusion_end_to_end(self):
+                lines = card(
+                    "/blog/@infoplant/19075/",
+                    ["백링크 구축 전략 2026, 구글 SEO 상위 노출 위한 5가지 핵심"],
+                    [
+                        "2026년 현재, 검색 엔진 최적화(SEO)의 풍경은 끊임없이 진화하고 있으며…"
+                    ],
+                ) + card("/blog/@history/18804/", ["불교 이야기"], ["불교가 인도에서…"])
+                feeds = parse_feed_list(lines)
+
+                # 상세 페이지 HTML(태그 블록만 발췌). 제목/본문에는 '유용한정보'가 없다.
+                article_html = {
+                    "https://wikidocs.net/blog/@infoplant/19075/": (
+                        '<div class="flex flex-wrap gap-2 my-4">\n'
+                        '  <span class="px-3 py-1 rounded-full">\n'
+                        '    <a href="/blog/@infoplant/?tag=4942"\n'
+                        '       class="text-blue-500 dark:text-blue-400">\n'
+                        "        유용한정보\n"
+                        "    </a>\n"
+                        "  </span>\n"
+                        "</div>"
+                    ),
+                    "https://wikidocs.net/blog/@history/18804/": (
+                        '<a href="/blog/@history/?tag=11">역사</a>'
+                    ),
+                }
+
+                def get_tags_text(feed):
+                    return " ".join(extract_tags(article_html[feed.link]))
+
+                result = filter_excluded(feeds, ["유용한정보"], get_tags_text, 20)
+                # 유용한정보 태그가 달린 19075만 제외되고 18804는 남는다
+                self.assertEqual(
+                    [f.link for f in result],
+                    ["https://wikidocs.net/blog/@history/18804/"],
                 )
 
         sys.exit(unittest.main())
