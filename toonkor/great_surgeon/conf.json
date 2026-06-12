@@ -6,7 +6,7 @@
       "item_capture_script": "../capture_item_toonkor.py -n 5",
       "render_js": true,
       "list_url_list": [
-        "https://tkor125.com/그레이트-써전"
+        "https://tkor126.com/그레이트-써전"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 1,
