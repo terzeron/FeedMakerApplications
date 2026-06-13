@@ -6,10 +6,11 @@
       "is_completed": true,
       "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
-        "https://wtwt329.com/c1?toon=13829"
+        "https://wtwt330.com/c1?toon=13829"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 0.25
+      "unit_size_per_day": 0.25,
+      "window_size": 10
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,

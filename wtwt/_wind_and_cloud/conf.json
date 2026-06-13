@@ -3,9 +3,9 @@
     "collection": {
       "encoding": "cp949",
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_wtwt.py -n 5",
+      "item_capture_script": "../capture_item_wtwt.py -n 10",
       "list_url_list": [
-        "https://wtwt329.com/v1?toon=3734"
+        "https://wtwt330.com/v1?toon=3734"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 1
