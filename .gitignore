@@ -33,3 +33,7 @@ cookies*.json
 .claude*
 translation_map.json
 .login.json
+
+.serena
+.codegraph
+.gitnexus
