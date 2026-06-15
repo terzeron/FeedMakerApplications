@@ -5,7 +5,8 @@
       "is_completed": false,
       "render_js": true,
       "simulate_scrolling": true,
-      "item_capture_script": "../capture_item_xtoon.py -n 5",
+      "item_capture_script": "../capture_item_xtoon.py -n 10",
+      "window_size": 10,
       "list_url_list": [
         "https://t3.xtoon365.com/comic/836615"
       ],

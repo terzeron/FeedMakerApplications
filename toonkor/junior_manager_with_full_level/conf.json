@@ -3,14 +3,15 @@
     "collection": {
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_toonkor.py -n 5",
+      "item_capture_script": "../capture_item_toonkor.py -n 10",
       "render_js": true,
       "list_url_list": [
         "https://tkor126.com/1년차-만렙-매니저"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2,
-      "num_retries": 2
+      "num_retries": 2,
+      "window_size": 10
     },
     "extraction": {
       "render_js": true,
