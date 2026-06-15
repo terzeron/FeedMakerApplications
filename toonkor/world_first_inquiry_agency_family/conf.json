@@ -20,7 +20,8 @@
         "toon_img"
       ],
       "post_process_script_list": [
-        "download_image.py"
+        "download_image.py",
+        "merge_and_split.py -H 1080 -w 200 -b 20 -t 0.05 -a 1 -c blackorwhite -q 75"
       ],
       "force_sleep_between_articles": true
     },

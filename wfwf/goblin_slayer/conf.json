@@ -19,6 +19,7 @@
       "encoding": "cp949",
       "post_process_script_list": [
         "download_image.py",
+        "merge_and_split.py -H 1080 -w 200 -b 20 -t 0.05 -a 1 -c blackorwhite -q 75",
         "../remove_anchor_images.sh"
       ]
     },
