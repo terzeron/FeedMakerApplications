@@ -9,7 +9,7 @@
         "https://wtwt330.com/c1?toon=13829"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 0.25,
+      "unit_size_per_day": 1,
       "window_size": 10
     },
     "extraction": {
