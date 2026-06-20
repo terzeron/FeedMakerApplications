@@ -9,7 +9,8 @@
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 4,
       "render_js": false,
-      "is_completed": true
+      "is_completed": true,
+      "window_size": 10
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
