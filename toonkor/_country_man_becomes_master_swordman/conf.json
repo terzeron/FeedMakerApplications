@@ -6,7 +6,7 @@
       "item_capture_script": "../capture_item_toonkor.py -n 10",
       "render_js": true,
       "list_url_list": [
-        "https://tkor128.com/촌구석의-아저씨-검성이-되다"
+        "https://tkor129.com/촌구석의-아저씨-검성이-되다"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 1,
