@@ -6,7 +6,7 @@
       "item_capture_script": "../capture_item_toonkor.py -n 10",
       "render_js": true,
       "list_url_list": [
-        "https://tkor132.com/무림맹주-막내제자"
+        "https://tkor133.com/무림맹주-막내제자"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2,
