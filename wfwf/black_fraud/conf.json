@@ -1,22 +1,22 @@
 {
   "configuration": {
     "collection": {
+      "encoding": "cp949",
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 10",
-      "sort_field_pattern": "num=(\\d+)\\t",
-      "encoding": "cp949",
-      "unit_size_per_day": 8,
       "list_url_list": [
-        "https://wfwf412.com/list?toon=6767"
+        "https://wfwf412.com/cl?toon=12235"
       ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 1,
       "window_size": 10
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
-      "encoding": "cp949",
       "element_class_list": [
         "image-view"
       ],
+      "encoding": "cp949",
       "post_process_script_list": [
         "download_image.py",
         "merge_and_split.py -H 4320 -w 200 -b 20 -t 0.01 -a 1 -c blackorwhite -q 75",
@@ -24,11 +24,11 @@
       ]
     },
     "rss": {
-      "title": "신과 함께 레벨업::늑대닷컴",
-      "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
-      "link": "https://terzeron.com/level_up_with_god.xml",
+      "generator": "Terzeron's Feed Generator",
       "language": "ko",
+      "link": "https://terzeron.com/black_fraud.xml",
+      "title": "검은 사기::늑대닷컴",
       "url_prefix_for_guid": "https://wfwf24.com"
     }
   }

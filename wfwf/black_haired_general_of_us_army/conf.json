@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "collection": {
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wfwf.py -n 6",
+      "list_url_list": [
+        "https://wfwf412.com/list?toon=75873"
+      ],
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 2,
+      "window_size": 10
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "element_class_list": [
+        "image-view"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py",
+        "merge_and_split.py -H 4320 -w 200 -b 20 -t 0.01 -a 1 -c blackorwhite -q 75",
+        "../remove_anchor_images.sh"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) 늑대닷컴. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/black_haired_general_of_us_army.xml",
+      "title": "검은머리 미군 대원수 :: 늑대닷컴",
+      "url_prefix_for_guid": "https://wfwf24.com"
+    }
+  }
+}
