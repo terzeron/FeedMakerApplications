@@ -18,8 +18,8 @@
         "se-main-container"
       ],
       "post_process_script_list": [
-        "download_image.py",
-        "merge_and_split.py -H 4320 -w 200 -b 20 -t 0.01 -a 1 -c blackorwhite -q 75"
+        "../post_process_naverblog.py",
+        "download_image.py"
       ]
     },
     "rss": {

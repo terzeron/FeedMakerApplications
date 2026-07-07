@@ -83,9 +83,32 @@ def collect_items(
     return result_list
 
 
+def _is_translation_failed(original_title: str, translated_title: str) -> bool:
+    """번역 결과가 'ko(en)' 형식에서 ko==en(원문 그대로)이면 번역 실패로 본다."""
+    return translated_title == f"{original_title}({original_title})"
+
+
 def translate_items(result_list: List[Tuple[str, str]]) -> List[Tuple[str, str]]:
-    """제목을 번역한 (link, title) 리스트로 반환."""
-    return Translation().translate(result_list)
+    """제목을 번역한 (link, title) 리스트로 반환. 실패한 항목은 한 번 더 재시도한다."""
+    translation = Translation()
+    translated = translation.translate(result_list)
+
+    # link -> 원문 title 매핑 (재시도 입력 구성 및 실패 판정에 사용)
+    original_by_link = dict(result_list)
+
+    # 번역에 실패해 원문 그대로 남은 항목만 추려 재시도 입력을 만든다.
+    failed = [
+        (link, original_by_link[link])
+        for link, title in translated
+        if link in original_by_link
+        and _is_translation_failed(original_by_link[link], title)
+    ]
+    if not failed:
+        return translated
+
+    # 실패 항목은 캐시에 저장되지 않으므로 재시도 시 실제 번역을 다시 시도한다.
+    retried = dict(translation.translate(failed))
+    return [(link, retried.get(link, title)) for link, title in translated]
 
 
 def format_line(link: str, title: str) -> str:
@@ -119,7 +142,9 @@ def main() -> int:
 
 if __name__ == "__main__":
     if os.environ.get("TEST", ""):
+        import io
         import unittest
+        from contextlib import redirect_stdout
         from unittest.mock import MagicMock, patch
 
         class TestCaptureItemFromRss(unittest.TestCase):
@@ -352,6 +377,61 @@ if __name__ == "__main__":
                     [("http://a.test/1", "Hello")]
                 )
 
+            def test_translate_items_no_retry_when_all_succeed(self):
+                # 모든 항목이 번역되면 translate는 한 번만 호출된다.
+                mock_translation = MagicMock()
+                mock_translation.translate.return_value = [
+                    ("http://a.test/1", "안녕"),
+                    ("http://a.test/2", "세계"),
+                ]
+                with patch("__main__.Translation", return_value=mock_translation):
+                    translate_items(
+                        [("http://a.test/1", "Hello"), ("http://a.test/2", "World")]
+                    )
+                self.assertEqual(mock_translation.translate.call_count, 1)
+
+            def test_translate_items_retries_failed_items(self):
+                # 1차에서 World가 'World(World)'로 실패하면 해당 항목만 재시도한다.
+                mock_translation = MagicMock()
+                mock_translation.translate.side_effect = [
+                    [("http://a.test/1", "안녕"), ("http://a.test/2", "World(World)")],
+                    [("http://a.test/2", "세계")],
+                ]
+                with patch("__main__.Translation", return_value=mock_translation):
+                    result = translate_items(
+                        [("http://a.test/1", "Hello"), ("http://a.test/2", "World")]
+                    )
+                self.assertEqual(
+                    result,
+                    [("http://a.test/1", "안녕"), ("http://a.test/2", "세계")],
+                )
+                self.assertEqual(mock_translation.translate.call_count, 2)
+                # 재시도 입력은 실패한 (link, 원문 title)만 포함한다.
+                self.assertEqual(
+                    mock_translation.translate.call_args_list[1].args[0],
+                    [("http://a.test/2", "World")],
+                )
+
+            def test_translate_items_retry_still_failing_keeps_original(self):
+                # 재시도해도 실패하면 1차 결과(원문 그대로)를 유지한다.
+                mock_translation = MagicMock()
+                mock_translation.translate.side_effect = [
+                    [("http://a.test/2", "World(World)")],
+                    [("http://a.test/2", "World(World)")],
+                ]
+                with patch("__main__.Translation", return_value=mock_translation):
+                    result = translate_items([("http://a.test/2", "World")])
+                self.assertEqual(result, [("http://a.test/2", "World(World)")])
+                self.assertEqual(mock_translation.translate.call_count, 2)
+
+            # --- _is_translation_failed ---
+
+            def test_is_translation_failed_true(self):
+                self.assertTrue(_is_translation_failed("Hello", "Hello(Hello)"))
+
+            def test_is_translation_failed_false(self):
+                self.assertFalse(_is_translation_failed("Hello", "안녕(Hello)"))
+
             # --- format_line ---
 
             def test_format_line_basic(self):
@@ -406,6 +486,67 @@ if __name__ == "__main__":
                         'http://www.brendangregg.com/blog//2025-11-28/ai-virtual-brendans.html\tOn "AI Brendans" or "Virtual Brendans"',
                     ],
                 )
+
+            # --- main (stdin -> stdout 통합) ---
+
+            @staticmethod
+            def _run_main(argv, entries):
+                """argv/stdin/feedparser를 목킹한 채 main()을 실행하고 출력 줄을 반환."""
+                fake_feed = MagicMock()
+                fake_feed.entries = entries
+                out = io.StringIO()
+                with (
+                    patch("sys.argv", ["prog", *argv]),
+                    patch("sys.stdin", io.StringIO("<rss/>")),
+                    patch("__main__.feedparser.parse", return_value=fake_feed),
+                    redirect_stdout(out),
+                ):
+                    rc = main()
+                return rc, out.getvalue().splitlines()
+
+            def test_main_basic_output(self):
+                rc, lines = self._run_main(
+                    [],
+                    [
+                        {"title": "A", "link": "http://a.test/1"},
+                        {"title": "B", "link": "http://a.test/2"},
+                    ],
+                )
+                self.assertEqual(rc, 0)
+                self.assertEqual(lines, ["http://a.test/1\tA", "http://a.test/2\tB"])
+
+            def test_main_respects_num_limit(self):
+                # -n은 collect_items 결과를 상위 N개로 자른다(main 고유 로직).
+                _, lines = self._run_main(
+                    ["-n", "2"],
+                    [
+                        {"title": "A", "link": "http://a.test/1"},
+                        {"title": "B", "link": "http://a.test/2"},
+                        {"title": "C", "link": "http://a.test/3"},
+                    ],
+                )
+                self.assertEqual(lines, ["http://a.test/1\tA", "http://a.test/2\tB"])
+
+            def test_main_no_translate_by_default(self):
+                # -t 없으면 translate_items를 호출하지 않는다.
+                with patch("__main__.translate_items") as m:
+                    _, lines = self._run_main(
+                        [], [{"title": "Hello", "link": "http://a.test/1"}]
+                    )
+                m.assert_not_called()
+                self.assertEqual(lines, ["http://a.test/1\tHello"])
+
+            def test_main_translate_invoked(self):
+                # -t는 슬라이싱된 (link, title) 리스트로 translate_items를 호출한다(main 고유 분기).
+                with patch(
+                    "__main__.translate_items",
+                    return_value=[("http://a.test/1", "안녕(Hello)")],
+                ) as m:
+                    _, lines = self._run_main(
+                        ["-t"], [{"title": "Hello", "link": "http://a.test/1"}]
+                    )
+                m.assert_called_once_with([("http://a.test/1", "Hello")])
+                self.assertEqual(lines, ["http://a.test/1\t안녕(Hello)"])
 
         sys.exit(unittest.main())
     else:

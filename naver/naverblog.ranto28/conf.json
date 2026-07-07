@@ -12,16 +12,11 @@
     },
     "extraction": {
       "force_sleep_between_articles": true,
-      "element_id_list": [
-        "postViewArea"
-      ],
-      "element_class_list": [
-        "se_component_wrap",
-        "se-main-container"
-      ],
+      "element_id_list": ["postViewArea"],
+      "element_class_list": ["se_component_wrap", "se-main-container"],
       "post_process_script_list": [
-        "download_image.py",
-        "merge_and_split.py -H 4320 -w 200 -b 20 -t 0.01 -a 1 -c blackorwhite -q 75"
+        "../post_process_naverblog.py",
+        "download_image.py"
       ]
     },
     "rss": {
