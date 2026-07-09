@@ -127,17 +127,31 @@ feed_dir 아래:
 
 ## 8. 완성기 인덱스 갱신 로직
 
-각 post_process 호출마다:
+**핵심 제약**: post_process는 run당 `list_url_list` 페이지 수(≈50)만큼 호출된다. 매 호출마다
+네트워크를 타면 통신량이 50배가 되어 목표(통신 최소화)에 정면으로 어긋난다. 따라서
+**네트워크 갱신은 `_is_first_page(url)`인 호출(=run당 1회, accum 리셋 시점)에서만** 수행하고,
+나머지 호출은 파일에서 인덱스를 로드해 **로컬 매칭만** 한다.
+
+`page=1` 호출에서:
 
 1. `finished_url_list` 없으면 skip(기존 동작).
-2. 인덱스 로드(`.finished_index.tsv`).
-3. **상단 refresh**: base URL로 page=1,2,... 요청, 각 페이지 항목 중 `articleId >
-index_max`인 신규만 인덱스에 추가. 신규가 0인 페이지를 만나면 중단.
-4. **하단 확장**: accum의 최소 articleId(`need_min`)를 인덱스가 아직 못 덮으면
-   (`index_min > need_min`) 더 오래된 페이지를 요청해 확장.
-5. **run당 페이지 상한** `MAX_FETCH_PAGES_PER_CALL`(기본 3)으로 통신 폭주 방지.
-   최초 backlog는 50개 제작기 페이지 처리(=50회 호출)에 걸쳐 점진적으로 채워진다.
-6. 갱신된 인덱스 저장.
+2. 인덱스 로드(`.finished_index.tsv`). `index_max_before` = 인덱스 최대 articleId(없으면 None).
+3. base URL로 page=1,2,... 순차 요청하며 항목을 인덱스에 병합(articleId로 dedup). 다음 중
+   하나면 중단:
+   - **overlap(증분 정지)**: 어떤 페이지가 `articleId ≤ index_max_before`인 항목을 포함 →
+     기존 인덱스 상단에 도달. 정상 상태에서는 보통 1페이지에 도달.
+   - **horizon(최초 backlog 깊이 제한)**: 페이지의 최소 articleId `< floor`.
+     `floor = anchor − FINISHED_COVERAGE`, `anchor = max(accum_max, index_max_before,
+첫 페이지 최신 articleId)`. (`FINISHED_COVERAGE = 24000` ≈ 120일)
+   - **페이지 상한**: 누적 요청이 `MAX_FETCH_PAGES_PER_RUN`(기본 50) 도달.
+   - 빈 페이지 / 네트워크·JSON 오류.
+4. 공개 글만(`openArticle && !blindArticle && !restrictMenu`) 인덱스에 저장.
+   **오래된 항목 trim은 하지 않는다**(완성기 볼륨이 작아 파일 증가 완만, 더 넓은 매칭 커버리지
+   유지). floor는 최초 backlog 깊이 제한에만 쓰인다.
+5. 갱신된 인덱스 저장.
+
+정상 상태 통신량: run당 **≈1페이지**(overlap로 조기 정지). 최초 1회만 backlog ≈40~50페이지.
+`page≠1` 호출: 네트워크 0.
 
 ## 9. 에러 처리 / 엣지 케이스
 
@@ -160,7 +174,7 @@ index_max`인 신규만 인덱스에 추가. 신규가 0인 페이지를 만나�
   - 완성기 API 응답 파싱(공개/blind 필터).
   - 매칭 알고리즘: 코드 매칭, 명사 매칭(코드 없을 때만), 시기 창 경계, 작성자 불일치,
     다중 클러스터 충돌 귀속.
-  - 인덱스 상단 refresh / 하단 확장 / 페이지 상한(네트워크는 mock).
+  - 인덱스 갱신: overlap 조기 정지 / horizon 깊이 제한 / 페이지 상한(네트워크는 mock).
   - 게이트: `finished_url_list` 유무에 따른 동작 분기(하위 호환).
 - **수동 통합 검증**: `zlpla.aero`에서 `page=1` 1회 실행 →
   `./post_process_group_series.py -f . '...&page=1' < newlist/YYYYMMDD.txt`
@@ -171,7 +185,8 @@ index_max`인 신규만 인덱스에 추가. 신규가 0인 페이지를 만나�
 
 - `MIN_SERIES_SIZE = 2` (기존)
 - `FINISHED_MATCH_MARGIN = 18000` (≈90일, 완성기 상한 여유)
-- `MAX_FETCH_PAGES_PER_CALL = 3` (호출당 완성기 페이지 상한)
+- `FINISHED_COVERAGE = 24000` (≈120일, 최초 backlog fetch 깊이 제한 = horizon)
+- `MAX_FETCH_PAGES_PER_RUN = 50` (page=1 호출 1회당 완성기 페이지 상한)
 - `FINISHED_INDEX_FILENAME = ".finished_index.tsv"`
 
 ## 12. 범위 밖 (YAGNI)
