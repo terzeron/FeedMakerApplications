@@ -59,9 +59,10 @@
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=49",
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/144/articles?pageSize=50&sortBy=TIME&viewType=L&page=50"
       ],
-      "post_process_script_list": [
-        "../../naver/post_process_group_series.py"
-      ]
+      "finished_url_list": [
+        "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/21/articles?pageSize=50&sortBy=TIME&viewType=L&page=1"
+      ],
+      "post_process_script_list": ["../../naver/post_process_group_series.py"]
     },
     "extraction": {
       "bypass_element_extraction": true,
