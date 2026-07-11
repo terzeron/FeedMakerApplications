@@ -20,7 +20,7 @@ def parse_args(argv: List[str]) -> int:
 
 
 def parse_feed_list(line_list: List[str]) -> List[Tuple[str, str]]:
-    """og:url로 url prefix를 잡은 뒤 anchor/subject를 상태머신으로 추적해 (link, title) 목록을 만든다."""
+    """og:url로 url prefix를 잡은 뒤 ep-item anchor/ep-title을 상태머신으로 추적해 (link, title) 목록을 만든다."""
     link = ""
     url_prefix = ""
     state = 0
@@ -36,14 +36,16 @@ def parse_feed_list(line_list: List[str]) -> List[Tuple[str, str]]:
                 state = 1
         elif state == 1:
             m = re.search(
-                r'<a(?:[^>]*)href="(?P<link>/[^"]*)&(amp;)?title=[^"]*"', line
+                r'<a(?:[^>]*)class="ep-item"(?:[^>]*)href="(?P<link>/[^"]*)"', line
             )
             if m:
                 link = url_prefix + m.group("link")
                 link = re.sub(r"&amp;", "&", link)
                 state = 2
         elif state == 2:
-            m = re.search(r'<div class="subject">\s*(?P<title>[^<]+)\s*<', line)
+            m = re.search(
+                r'<span class="ep-title">\s*(?P<title>[^<]+?)\s*</span>', line
+            )
             if m:
                 title = m.group("title")
                 title = re.sub(r"\s+", " ", title)
@@ -103,15 +105,15 @@ if __name__ == "__main__":
                     '<meta property="og:url" content="https://wfwf.test/list?id=1" />'
                 ]
                 for link, title in items:
-                    lines.append(f'<a class="x" href="{link}&title=foo">')
-                    lines.append(f'<div class="subject"> {title} <span>')
+                    lines.append(f'<a class="ep-item" href="{link}" data-num="1">')
+                    lines.append(f'<span class="ep-title">{title}</span>')
                 return lines
 
             def test_parse_feed_list_basic(self):
                 lines = self._page([("/cartoon/100", "Title One")])
                 self.assertEqual(
                     parse_feed_list(lines),
-                    [("https://wfwf.test/cartoon/100", "Title One ")],
+                    [("https://wfwf.test/cartoon/100", "Title One")],
                 )
 
             def test_parse_feed_list_multiple(self):
@@ -119,34 +121,37 @@ if __name__ == "__main__":
                 self.assertEqual(
                     parse_feed_list(lines),
                     [
-                        ("https://wfwf.test/c/1", "T1 "),
-                        ("https://wfwf.test/c/2", "T2 "),
+                        ("https://wfwf.test/c/1", "T1"),
+                        ("https://wfwf.test/c/2", "T2"),
                     ],
                 )
 
             def test_parse_feed_list_unescapes_amp_in_link(self):
                 lines = [
                     '<meta property="og:url" content="https://wfwf.test/list" />',
-                    '<a href="/c/1&amp;x=2&title=foo">',
-                    '<div class="subject"> T <span>',
+                    '<a class="ep-item" href="/c/1&amp;x=2&amp;num=1">',
+                    '<span class="ep-title">T</span>',
                 ]
                 self.assertEqual(
-                    parse_feed_list(lines), [("https://wfwf.test/c/1&x=2", "T ")]
+                    parse_feed_list(lines), [("https://wfwf.test/c/1&x=2&num=1", "T")]
                 )
 
             def test_parse_feed_list_collapses_title_whitespace(self):
                 lines = [
                     '<meta property="og:url" content="https://wfwf.test/list" />',
-                    '<a href="/c/1&title=foo">',
-                    '<div class="subject">  Hello   World&nbsp;! <span>',
+                    '<a class="ep-item" href="/c/1">',
+                    '<span class="ep-title">  Hello   World&nbsp;! </span>',
                 ]
                 self.assertEqual(
                     parse_feed_list(lines),
-                    [("https://wfwf.test/c/1", "Hello World ! ")],
+                    [("https://wfwf.test/c/1", "Hello World !")],
                 )
 
             def test_parse_feed_list_no_meta_returns_empty(self):
-                lines = ['<a href="/c/1&title=foo">', '<div class="subject"> T <span>']
+                lines = [
+                    '<a class="ep-item" href="/c/1">',
+                    '<span class="ep-title">T</span>',
+                ]
                 self.assertEqual(parse_feed_list(lines), [])
 
             def test_parse_feed_list_empty(self):
@@ -170,24 +175,27 @@ if __name__ == "__main__":
                 self.assertEqual(render_lines([], 1000), [])
 
             # --- end-to-end with real sampled crawl data ---
-            # 입력: crawler.py로 list_url(https://wfwf462.com/cl?toon=10543)을
-            #       받아온 실제 HTML 중 파서가 매칭하는 영역(og:url meta + anchor/subject
-            #       블록 3개)만 샘플링한 것.
+            # 입력: crawler.py로 list_url(https://wfwf416.com/cl?toon=12235)을
+            #       받아온 실제 HTML 중 파서가 매칭하는 영역(og:url meta + ep-item
+            #       anchor/ep-title 블록 3개)만 샘플링한 것.
             # 기대 출력: 동일 입력을 'capture_item_wfwf.py -n 5'로 직접 실행해 캡처한 결과.
             REAL_SAMPLE_LINES = [
-                '<meta property="og:url" content="https://wfwf462.com/cl?toon=10543">',
-                '                    <a href="/cv?toon=10543&num=120&title=고블린슬레이어107화" class="view_open">',
-                '                        <div class="list-box">',
-                '                            <div class="num">120</div>',
-                '                            <div class="subject">고블린 슬레이어 107화&nbsp;</div>',
-                '                    <a href="/cv?toon=10543&num=119&title=고블린슬레이어106화" class="view_open">',
-                '                        <div class="list-box">',
-                '                            <div class="num">119</div>',
-                '                            <div class="subject">고블린 슬레이어 106화&nbsp;</div>',
-                '                    <a href="/cv?toon=10543&num=118&title=고블린슬레이어105화" class="view_open">',
-                '                        <div class="list-box">',
-                '                            <div class="num">118</div>',
-                '                            <div class="subject">고블린 슬레이어 105화&nbsp;</div>',
+                '<meta property="og:url" content="https://wfwf416.com">',
+                '    <a class="ep-item" href="/cv?toon=12235&num=64" data-num="64">',
+                '      <div class="ep-num">64</div>',
+                '      <div class="ep-content"><span class="ep-title">검은사기 34권</span></div>',
+                '      <div class="ep-date">2018-09-27</div>',
+                "    </a>",
+                '    <a class="ep-item" href="/cv?toon=12235&num=63" data-num="63">',
+                '      <div class="ep-num">63</div>',
+                '      <div class="ep-content"><span class="ep-title">검은사기 33권</span></div>',
+                '      <div class="ep-date">2018-09-27</div>',
+                "    </a>",
+                '    <a class="ep-item" href="/cv?toon=12235&num=62" data-num="62">',
+                '      <div class="ep-num">62</div>',
+                '      <div class="ep-content"><span class="ep-title">검은사기 32권</span></div>',
+                '      <div class="ep-date">2018-09-27</div>',
+                "    </a>",
             ]
 
             def test_real_sample_end_to_end(self):
@@ -196,9 +204,9 @@ if __name__ == "__main__":
                 self.assertEqual(
                     lines,
                     [
-                        "https://wfwf462.com/cv?toon=10543&num=120\t003. 고블린 슬레이어 107화 ",
-                        "https://wfwf462.com/cv?toon=10543&num=119\t002. 고블린 슬레이어 106화 ",
-                        "https://wfwf462.com/cv?toon=10543&num=118\t001. 고블린 슬레이어 105화 ",
+                        "https://wfwf416.com/cv?toon=12235&num=64\t003. 검은사기 34권",
+                        "https://wfwf416.com/cv?toon=12235&num=63\t002. 검은사기 33권",
+                        "https://wfwf416.com/cv?toon=12235&num=62\t001. 검은사기 32권",
                     ],
                 )
 
