@@ -6,7 +6,7 @@
       "item_capture_script": "../../naver/capture_item_navercafe.py -n 10000",
       "sort_field_pattern": "\\t(.+)",
       "unit_size_per_day": 12,
-      "window_size": 40,
+      "window_size": 10,
       "list_url_list": [
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/145/articles?pageSize=50&sortBy=TIME&viewType=L&page=1",
         "https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/10503958/menus/145/articles?pageSize=50&sortBy=TIME&viewType=L&page=2",
