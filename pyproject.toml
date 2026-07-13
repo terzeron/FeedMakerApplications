@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+      "camoufox>=0.4.11",
       "cloakbrowser>=0.3.29",
       "fm",
       "playwright>=1.59.0",
