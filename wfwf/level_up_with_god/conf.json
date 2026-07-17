@@ -15,7 +15,7 @@
       "threshold_to_remove_html_with_incomplete_image": 5,
       "encoding": "cp949",
       "element_class_list": [
-        "image-view"
+        "vimg-area"
       ],
       "post_process_script_list": [
         "download_image.py",
