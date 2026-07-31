@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_sbxh.py -n 10",
       "render_js": false,
-      "list_url_list": ["https://sbxh9.com/webtoon/16815"],
+      "list_url_list": ["https://toki31.com/webtoon/16815"],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2,
       "num_retries": 2,
@@ -28,7 +28,7 @@
       "language": "ko",
       "link": "https://terzeron.com/youngest_disciple_of_leader_of_martial_arts_world.xml",
       "title": "무림맹주 막내제자::뉴토끼",
-      "url_prefix_for_guid": "https://sbxh9.com"
+      "url_prefix_for_guid": "https://toki31.com"
     }
   }
 }

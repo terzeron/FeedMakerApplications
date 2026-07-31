@@ -5,7 +5,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_sbxh.py -n 10",
       "render_js": false,
-      "list_url_list": ["https://sbxh9.com/webtoon/57369982"],
+      "list_url_list": ["https://toki31.com/webtoon/57369982"],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2,
       "num_retries": 2,
@@ -28,7 +28,7 @@
       "language": "ko",
       "link": "https://terzeron.com/junior_manager_with_full_level.xml",
       "title": "1년차 만렙 매니저::뉴토끼",
-      "url_prefix_for_guid": "https://sbxh9.com"
+      "url_prefix_for_guid": "https://toki31.com"
     }
   }
 }

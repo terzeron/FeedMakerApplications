@@ -6,7 +6,7 @@
       "item_capture_script": "../capture_item_sbxh.py -n 20",
       "render_js": false,
       "list_url_list": [
-        "https://sbxh9.com/webtoon/65653266"
+        "https://toki31.com/webtoon/65653266"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2,
@@ -32,7 +32,7 @@
       "language": "ko",
       "link": "https://terzeron.com/world_first_martial_coach.xml",
       "title": "천하제일 무공교관::뉴토끼",
-      "url_prefix_for_guid": "https://sbxh9.com"
+      "url_prefix_for_guid": "https://toki31.com"
     }
   }
 }
