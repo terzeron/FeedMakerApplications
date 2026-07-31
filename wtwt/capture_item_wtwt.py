@@ -5,6 +5,7 @@ import os
 import sys
 import re
 import getopt
+import urllib.parse
 from typing import List, Tuple
 from bin.feed_maker_util import IO
 
@@ -35,28 +36,29 @@ def parse_feed_list(line_list: List[str]) -> List[Tuple[str, str]]:
                 url_prefix = m.group("url_prefix")
                 state = 1
         elif state == 1:
-            m = re.search(r'<a\s*href="(?P<link>/\w+\d+\?toon[^"]*)">', line)
+            m = re.search(r'<a\s+[^>]*href="(?P<link>/[^"]*toon[^"]*)"[^>]*>', line)
             if m:
-                link = url_prefix + m.group("link")
+                raw_link = url_prefix + m.group("link")
+                link = urllib.parse.quote(raw_link, safe=":/?=&")
                 state = 2
         elif state == 2:
-            m = re.search(
-                r'<div class="subject">\s*(?:<div class=\'[^\']+\'><span class=\'text\'>.*</span></div>)?(?P<title>[^<]+)\s*<',
-                line,
-            )
+            m = re.search(r'<div class="subject">(?P<content>.*)', line)
             if m:
-                title = m.group("title")
-                title = re.sub(r"\s+", " ", title)
-                title = re.sub(r"&nbsp;", " ", title)
-                result_list.append((link, title))
-                state = 1
+                content = m.group("content")
+                content = re.sub(r"<div[^>]*>.*?</div>", "", content)
+                content = re.sub(r"<[^>]+>", "", content)
+                title = re.sub(r"&nbsp;", " ", content)
+                title = re.sub(r"\s+", " ", title).strip()
+                if title:
+                    result_list.append((link, title))
+                    state = 1
     return result_list
 
 
 def render_lines(
     result_list: List[Tuple[str, str]], num_of_recent_feeds: int
 ) -> List[str]:
-    """전체 개수에서 역순 번호를 매겨 'link\\t%03d. title' 라인 목록을 만든다."""
+    """전체 개수에서 역순 번호를 매겨 'link\t%03d. title' 라인 목록을 만든다."""
     num = len(result_list)
     lines: List[str] = []
     for link, title in result_list[:num_of_recent_feeds]:
@@ -103,16 +105,16 @@ if __name__ == "__main__":
                 lines = self._page([("/abc123?toon=1", "Title One")])
                 self.assertEqual(
                     parse_feed_list(lines),
-                    [("https://wtwt.test/abc123?toon=1", "Title One ")],
+                    [("https://wtwt.test/abc123?toon=1", "Title One")],
                 )
 
             def test_parse_feed_list_collapses_whitespace(self):
                 lines = self._page([("/abc1?toon", "Hello   World&nbsp;!")])
-                self.assertEqual(parse_feed_list(lines)[0][1], "Hello World ! ")
+                self.assertEqual(parse_feed_list(lines)[0][1], "Hello World !")
 
             def test_parse_feed_list_multiple(self):
                 lines = self._page([("/a1?toon", "A"), ("/b2?toon", "B")])
-                self.assertEqual([t for _, t in parse_feed_list(lines)], ["A ", "B "])
+                self.assertEqual([t for _, t in parse_feed_list(lines)], ["A", "B"])
 
             def test_parse_feed_list_requires_og_url(self):
                 lines = ['<a href="/a1?toon">', '<div class="subject"> T <span>']
@@ -138,9 +140,6 @@ if __name__ == "__main__":
                 self.assertEqual(render_lines([], 1000), [])
 
             # --- end-to-end with real sampled crawl data ---
-            # 입력: crawler.py(--encoding=cp949)로 https://wtwt329.com/v1?toon=7094 를 받아온 실제 HTML 중
-            #       파서가 매칭하는 영역(og:url + toon anchor/subject 블록 3개)만 샘플링.
-            # 기대 출력: 동일 입력을 'capture_item_wtwt.py -n 5'로 직접 실행해 캡처한 결과.
             REAL_SAMPLE_LINES = [
                 '<meta property="og:url" content="https://wtwt329.com">',
                 '                    <a href="/v2?toon=7094&num=263">',
@@ -149,6 +148,17 @@ if __name__ == "__main__":
                 '                            <div class="subject">260화 -마지막 화-</div>',
                 '                    <a href="/v2?toon=7094&num=261">',
                 '                            <div class="subject">259화</div>',
+            ]
+
+            NEW_SAMPLE_LINES = [
+                '<meta property="og:url" content="https://wftoon221.com/list?toon=8147">',
+                '                    <a href="/view?toon=8147&num=212&title=학사검전211화" class="view_open">',
+                '                        <div class="list-box">',
+                '                            <div class="num">212</div>',
+                '                            <div class="subject">학사검전 211화&nbsp;<div class=\'badge badge-new\'>오늘</div></div>',
+                '                            <div class="date">2026-07-26</div>',
+                '                        </div>',
+                '                    </a>',
             ]
 
             def test_real_sample_end_to_end(self):
@@ -160,6 +170,16 @@ if __name__ == "__main__":
                         "https://wtwt329.com/v2?toon=7094&num=263\t003. 261화 - 후기",
                         "https://wtwt329.com/v2?toon=7094&num=262\t002. 260화 -마지막 화-",
                         "https://wtwt329.com/v2?toon=7094&num=261\t001. 259화",
+                    ],
+                )
+
+            def test_new_sample_end_to_end(self):
+                result = parse_feed_list(self.NEW_SAMPLE_LINES)
+                lines = render_lines(result, 5)
+                self.assertEqual(
+                    lines,
+                    [
+                        "https://wftoon221.com/view?toon=8147&num=212&title=%ED%95%99%EC%82%AC%EA%B2%80%EC%A0%84211%ED%99%94\t001. 학사검전 211화",
                     ],
                 )
 

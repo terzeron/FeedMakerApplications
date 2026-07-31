@@ -7,7 +7,7 @@
       "encoding": "cp949",
       "unit_size_per_day": 2,
       "list_url_list": [
-        "https://wtwt335.com/c1?toon=14526"
+        "https://wftoon221.com/cl?toon=14526"
       ]
     },
     "extraction": {
@@ -15,7 +15,8 @@
       "force_sleep_between_articles": true,
       "encoding": "cp949",
       "element_class_list": [
-        "wbody"
+        "wbody",
+        "image-view"
       ],
       "post_process_script_list": [
         "download_image.py",
