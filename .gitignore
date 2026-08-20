@@ -37,3 +37,6 @@ translation_map.json
 .serena
 .codegraph
 .gitnexus
+graphify-out/
+AGENTS.md
+CLAUDE.md
