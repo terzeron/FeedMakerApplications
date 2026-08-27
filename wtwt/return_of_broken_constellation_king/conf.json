@@ -6,7 +6,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 10",
       "list_url_list": [
-        "https://wftoon224.com/list?toon=7228"
+        "https://wftoon226.com/list?toon=7228"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 0.5,
