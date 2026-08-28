@@ -1,9 +1,9 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": true,
+      "is_completed": false,
       "ignore_old_list": false,
-      "item_capture_script": "../../naver/capture_item_navercafe.py -n 20000",
+      "item_capture_script": "../../naver/capture_item_navercafe.py -n 5",
       "sort_field_pattern": "\\t(.+)",
       "unit_size_per_day": 96,
       "window_size": 20,
