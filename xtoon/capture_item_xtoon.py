@@ -20,39 +20,35 @@ def parse_args(argv: List[str]) -> int:
 
 
 def parse_feed_list(line_list: List[str]) -> List[Tuple[str, str]]:
-    """og:url → chapter-list → chapter 링크 → 제목 순으로 상태머신을 돌려 (link, title) 목록을 만든다."""
+    """data-chapter-list 컨테이너 → chapter 링크 → 제목 순으로 상태머신을 돌려 (link, title) 목록을 만든다.
+    페이지에 동일한 회차 목록이 두 번(모바일 시트 + 본문) 중복 렌더링되므로,
+    첫 번째 data-chapter-list 컨테이너만 파싱하고 두 번째가 나오면 멈춘다."""
     link = ""
-    url_prefix = ""
     state = 0
     result_list: List[Tuple[str, str]] = []
     for line in line_list:
         if state == 0:
+            if 'data-chapter-list=""' in line:
+                state = 1
+        elif state == 1:
+            if 'data-chapter-list=""' in line:
+                break
             m = re.search(
-                r'<meta property="og:url" content="(?P<url_prefix>https://[^/]+/)[^"]*" ?/?>',
+                r'<a href="(?P<link>https://[^"]+)" data-chapter-id="\d+" class="chapter-item[^"]*">',
                 line,
             )
             if m:
-                url_prefix = m.group("url_prefix")
-                state = 1
-        elif state == 1:
-            m = re.search(r'<div class="chapter-list[^"]*">', line)
-            if m:
+                link = m.group("link")
                 state = 2
         elif state == 2:
-            m = re.search(r'<a href="(?P<link>/chapter/\d+)"', line)
-            if m:
-                link = m.group("link")
-                link = url_prefix + link
-                state = 3
-        elif state == 3:
             m = re.search(
-                r'<strong class="[^"]*"><i class="[^"]*"></i>\s*(?P<title>.+)\s*<label',
+                r'<span class="min-w-0 truncate text-\[13px\] font-semibold">(?P<title>[^<]+)</span>',
                 line,
             )
             if m:
                 title = m.group("title")
                 result_list.append((link, title))
-                state = 2
+                state = 1
     return result_list
 
 
@@ -95,34 +91,54 @@ if __name__ == "__main__":
 
             # --- parse_feed_list ---
 
-            def _page(self, items):
-                lines = [
-                    '<meta property="og:url" content="https://xtoon.test/" />',
-                    '<div class="chapter-list">',
-                ]
+            def _page(self, items, duplicate=True):
+                lines = ['<div class="flex flex-col" data-chapter-list="">']
                 for link, title in items:
-                    lines.append(f'<a href="{link}" class="c">')
                     lines.append(
-                        f'<strong class="t"><i class="ic"></i> {title} <label>'
+                        f'<a href="{link}" data-chapter-id="1" class="chapter-item flex">'
                     )
+                    lines.append(
+                        f'<span class="min-w-0 truncate text-[13px] font-semibold">{title}</span>'
+                    )
+                if duplicate:
+                    lines.append(
+                        '<div class="mt-4 flex flex-col" data-chapter-list="">'
+                    )
+                    for link, title in items:
+                        lines.append(
+                            f'<a href="{link}" data-chapter-id="1" class="chapter-item flex">'
+                        )
+                        lines.append(
+                            f'<span class="min-w-0 truncate text-[13px] font-semibold">{title}</span>'
+                        )
                 return lines
 
             def test_parse_feed_list_basic(self):
-                lines = self._page([("/chapter/10", "Chapter 10")])
+                lines = self._page(
+                    [("https://xtoon.test/comics/1/chapters/10", "10화")]
+                )
                 self.assertEqual(
                     parse_feed_list(lines),
-                    [("https://xtoon.test//chapter/10", "Chapter 10 ")],
+                    [("https://xtoon.test/comics/1/chapters/10", "10화")],
                 )
 
             def test_parse_feed_list_multiple(self):
-                lines = self._page([("/chapter/1", "A"), ("/chapter/2", "B")])
-                self.assertEqual([t for _, t in parse_feed_list(lines)], ["A ", "B "])
+                lines = self._page(
+                    [
+                        ("https://xtoon.test/comics/1/chapters/2", "2화"),
+                        ("https://xtoon.test/comics/1/chapters/1", "1화"),
+                    ]
+                )
+                self.assertEqual([t for _, t in parse_feed_list(lines)], ["2화", "1화"])
+
+            def test_parse_feed_list_ignores_duplicate_container(self):
+                lines = self._page([("https://xtoon.test/comics/1/chapters/1", "1화")])
+                self.assertEqual(len(parse_feed_list(lines)), 1)
 
             def test_parse_feed_list_requires_chapter_list_marker(self):
                 lines = [
-                    '<meta property="og:url" content="https://xtoon.test/" />',
-                    '<a href="/chapter/1" class="c">',
-                    '<strong class="t"><i class="ic"></i> T <label>',
+                    '<a href="https://xtoon.test/comics/1/chapters/1" data-chapter-id="1" class="chapter-item flex">',
+                    '<span class="min-w-0 truncate text-[13px] font-semibold">1화</span>',
                 ]
                 self.assertEqual(parse_feed_list(lines), [])
 
@@ -146,29 +162,29 @@ if __name__ == "__main__":
                 self.assertEqual(render_lines([], 1000), [])
 
             # --- end-to-end with real sampled crawl data ---
-            # 입력: crawler.py(--render-js=true)로 https://t3.xtoon365.com/comic/840040 을 받아온 실제 HTML 중
-            #       파서가 매칭하는 영역(og:url + chapter-list + chapter anchor/제목 3개)만 샘플링.
-            # 기대 출력: 동일 입력을 'capture_item_xtoon.py -n 5'로 직접 실행해 캡처한 결과(링크의 // 포함).
+            # 입력: crawler.py(--render-js=true)로 https://newxtoon1.com/comics/9818 을 받아온 실제 HTML 중
+            #       파서가 매칭하는 영역(data-chapter-list + chapter anchor/제목 3개, 중복 컨테이너 1개 포함)만 샘플링.
+            #       (2026-09 xtoon 사이트가 t3.xtoon365.com에서 newxtoon1.com으로 리뉴얼되며 마크업이 전면 교체됨)
+            # 기대 출력: 동일 입력을 'capture_item_xtoon.py -n 2'로 직접 실행해 캡처한 결과.
             REAL_SAMPLE_LINES = [
-                '<meta property="og:url" content="https://t3.xtoon365.com/comic/840040"></head>',
-                '        <div class="chapter-list mt-4 chapter__list-box img-control mb-4">',
-                '            <a href="/chapter/1474756" id="chapter_1474756" data-chapter="1474756" class="py-2 py-md-3 chapter-list-item mb-2 d-flex justify-content-between px-3 j-chapter-item">',
-                '                <strong class="text-dark"><i class="far fa-bookmark opacity-25"></i>251화<label class="pnum ms-1 ms-md-2">122P</label>',
-                '            <a href="/chapter/1473639" id="chapter_1473639" data-chapter="1473639" class="py-2 py-md-3 chapter-list-item mb-2 d-flex justify-content-between px-3 j-chapter-item">',
-                '                <strong class="text-dark"><i class="far fa-bookmark opacity-25"></i>250화<label class="pnum ms-1 ms-md-2">137P</label>',
-                '            <a href="/chapter/1472336" id="chapter_1472336" data-chapter="1472336" class="py-2 py-md-3 chapter-list-item mb-2 d-flex justify-content-between px-3 j-chapter-item">',
-                '                <strong class="text-dark"><i class="far fa-bookmark opacity-25"></i>249화<label class="pnum ms-1 ms-md-2">127P</label>',
+                '                    <div class="flex flex-col" data-chapter-list="">',
+                '                        <a href="https://newxtoon1.com/comics/9818/chapters/801302" data-chapter-id="801302" class="chapter-item flex min-h-[58px] items-center gap-3 border-b border-line py-3">',
+                '                    <span class="min-w-0 truncate text-[13px] font-semibold">54화(시즌 1 완결)</span>',
+                '                <a href="https://newxtoon1.com/comics/9818/chapters/801301" data-chapter-id="801301" class="chapter-item flex min-h-[58px] items-center gap-3 border-b border-line py-3">',
+                '                    <span class="min-w-0 truncate text-[13px] font-semibold">53화</span>',
+                '                    <div class="mt-4 flex flex-col overflow-hidden rounded-[12px] border border-line bg-surface" data-chapter-list="">',
+                '                        <a href="https://newxtoon1.com/comics/9818/chapters/801302" data-chapter-id="801302" class="chapter-item flex min-h-[58px] items-center gap-3 border-b border-line py-3">',
+                '                    <span class="min-w-0 truncate text-[13px] font-semibold">54화(시즌 1 완결)</span>',
             ]
 
             def test_real_sample_end_to_end(self):
                 result = parse_feed_list(self.REAL_SAMPLE_LINES)
-                lines = render_lines(result, 5)
+                lines = render_lines(result, 2)
                 self.assertEqual(
                     lines,
                     [
-                        "https://t3.xtoon365.com//chapter/1474756\t003. 251화",
-                        "https://t3.xtoon365.com//chapter/1473639\t002. 250화",
-                        "https://t3.xtoon365.com//chapter/1472336\t001. 249화",
+                        "https://newxtoon1.com/comics/9818/chapters/801302\t002. 54화(시즌 1 완결)",
+                        "https://newxtoon1.com/comics/9818/chapters/801301\t001. 53화",
                     ],
                 )
 
