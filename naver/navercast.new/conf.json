@@ -22,7 +22,10 @@
       "force_sleep_between_articles": true,
       "element_class_list": [
         "end-basic-detail",
-        "script-content"
+        "script-content",
+        "video-sticky-scope",
+        "main-img-box",
+        "end-detail"
       ]
     },
     "rss": {
