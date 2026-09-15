@@ -1,0 +1,27 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "ignore_old_list": true,
+      "sort_field_pattern": "\\t(\\S+)",
+      "window_size": 10,
+      "unit_size_per_day": 1,
+      "list_url_list": [
+        "https://www.star-history.com/blog/"
+      ],
+      "item_capture_script": "./capture_item_link_title.py -t -n 300"
+    },
+    "extraction": {
+      "element_class_list": [
+        "prose"
+      ]
+    },
+    "rss": {
+      "title": "Star History 블로그",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Star History. All Rights Reserved",
+      "link": "https://terzeron.com/star_history.xml",
+      "language": "ko"
+    }
+  }
+}

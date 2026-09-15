@@ -1,0 +1,27 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": true,
+      "ignore_old_list": true,
+      "sort_field_pattern": "\\t(\\S+)",
+      "window_size": 10,
+      "unit_size_per_day": 2,
+      "list_url_list": [
+        "https://huggingface.co/papers/trending"
+      ],
+      "item_capture_script": "./capture_item_link_title.py -t -n 300"
+    },
+    "extraction": {
+      "element_class_list": [
+        "pr-4"
+      ]
+    },
+    "rss": {
+      "title": "Hugging Face 트렌딩 논문",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Hugging Face. All Rights Reserved",
+      "link": "https://terzeron.com/huggingface_papers.xml",
+      "language": "ko"
+    }
+  }
+}
