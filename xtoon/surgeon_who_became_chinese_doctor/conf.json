@@ -4,6 +4,7 @@
       "ignore_old_list": true,
       "is_completed": false,
       "render_js": true,
+      "browser_fallback": ["camoufox", "cloakbrowser", "patchright", "nodriver", "rebrowser_playwright"],
       "simulate_scrolling": true,
       "item_capture_script": "../capture_item_xtoon.py -n 10",
       "window_size": 10,
@@ -14,6 +15,7 @@
     "extraction": {
       "bypass_element_extraction": true,
       "render_js": true,
+      "browser_fallback": ["camoufox", "cloakbrowser", "patchright", "nodriver", "rebrowser_playwright"],
       "post_process_script_list": [
         "../post_process_xtoon.py",
         "download_image.py",
