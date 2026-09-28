@@ -6,13 +6,14 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_wfwf.py -n 10",
       "list_url_list": [
-        "https://wfwf496.com/cl?toon=11354"
+        "https://wfwf505.com/cl?toon=11354"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 0.5,
       "window_size": 10
     },
     "extraction": {
+      "force_sleep_between_articles": true,
       "threshold_to_remove_html_with_incomplete_image": 5,
       "element_class_list": [
         "vimg-area"
