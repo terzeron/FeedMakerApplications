@@ -8,6 +8,7 @@
       "list_url_list": [
         "https://wftoon230.com/list?toon=4579"
       ],
+      "num_retries": 3,
       "sort_field_pattern": "num=(\\d+)\\t",
       "unit_size_per_day": 2,
       "window_size": 10
