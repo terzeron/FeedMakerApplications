@@ -8,10 +8,13 @@
       "list_url_list": [
         "https://rss.slashdot.org/Slashdot/slashdotMain"
       ],
-      "item_capture_script": "../capture_item_from_rss.py -t -n 100"
+      "item_capture_script": "../capture_item_from_rss.py -t -n 100",
+      "num_retries": 3,
+      "retry_sleep": 30
     },
     "extraction": {
       "render_js": true,
+      "browser_fallback": ["cloakbrowser", "camoufox", "patchright", "nodriver", "rebrowser_playwright"],
       "bypass_element_extraction": true
     },
     "rss": {
