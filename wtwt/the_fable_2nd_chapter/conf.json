@@ -6,7 +6,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 10",
       "list_url_list": [
-        "https://wftoon230.com/cl?toon=15736"
+        "https://wftoon231.com/cl?toon=15736"
       ],
       "num_retries": 2,
       "retry_sleep": 5,
