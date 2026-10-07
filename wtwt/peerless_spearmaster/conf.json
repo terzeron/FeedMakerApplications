@@ -1,0 +1,39 @@
+{
+  "configuration": {
+    "collection": {
+      "retry_sleep": 5,
+      "encoding": "cp949",
+      "ignore_old_list": true,
+      "is_completed": false,
+      "item_capture_script": "../capture_item_wtwt.py -n 10",
+      "list_url_list": [
+        "https://wftoon231.com/list?toon=75462"
+      ],
+      "num_retries": 3,
+      "sort_field_pattern": "num=(\\d+)\\t",
+      "unit_size_per_day": 2,
+      "window_size": 10
+    },
+    "extraction": {
+      "threshold_to_remove_html_with_incomplete_image": 5,
+      "force_sleep_between_articles": true,
+      "element_class_list": [
+        "wbody",
+        "image-view"
+      ],
+      "encoding": "cp949",
+      "post_process_script_list": [
+        "download_image.py",
+        "merge_and_split.py -H 4320 -w 200 -b 20 -t 0.01 -a 1 -c blackorwhite -q 75"
+      ]
+    },
+    "rss": {
+      "copyright": "Copyright (c) W툰. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/peerless_spearmaster.xml",
+      "title": "창귀무쌍 :: W툰",
+      "url_prefix_for_guid": "https://wtoon40.com"
+    }
+  }
+}
