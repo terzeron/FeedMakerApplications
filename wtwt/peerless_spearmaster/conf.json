@@ -1,17 +1,17 @@
 {
   "configuration": {
     "collection": {
+      "is_completed": true,
+      "unit_size_per_day": 1,
+      "sort_field_pattern": "num=(\\d+)",
       "retry_sleep": 5,
       "encoding": "cp949",
       "ignore_old_list": true,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_wtwt.py -n 10",
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
         "https://wftoon231.com/list?toon=75462"
       ],
       "num_retries": 3,
-      "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 2,
       "window_size": 10
     },
     "extraction": {
