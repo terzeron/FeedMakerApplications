@@ -5,11 +5,14 @@
       "ignore_old_list": false,
       "sort_field_pattern": "\\t(\\S+)",
       "unit_size_per_day": 1,
-      "list_url_list": ["https://dl.acm.org/action/showFeed?type=etoc&feed=rss&jc=queue"],
+      "list_url_list": ["https://queue.acm.org/"],
+      "render_js": true,
+      "browser_fallback": ["cloakbrowser"],
       "item_capture_script": "./capture_item_from_acm_dl_feed.py -t"
     },
     "extraction": {
       "render_js": true,
+      "browser_fallback": ["cloakbrowser"],
       "element_class_list": ["container"]
     },
     "rss": {

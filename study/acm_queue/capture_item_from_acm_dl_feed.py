@@ -20,6 +20,13 @@ XML_VIEWER_PATTERN = re.compile(
 )
 
 
+HOME_ARTICLE_PATTERN = re.compile(
+    r'<a[^>]*href="/doi/10\.1145/(\d+)"[^>]*>(.*?)</a>', re.DOTALL
+)
+TAG_PATTERN = re.compile(r"<[^>]+>")
+GENERIC_LINK_TITLES = {"READ THE FULL ARTICLE"}
+
+
 class Options(NamedTuple):
     num_of_recent_feeds: int
     do_translate: bool
@@ -86,6 +93,24 @@ def collect_items(entries: Iterable[dict]) -> List[Tuple[str, str]]:
     return result_list
 
 
+def collect_items_from_home_html(page: str) -> List[Tuple[str, str]]:
+    """queue.acm.org 홈의 /doi/10.1145/<id> 링크에서 (url, title)을 페이지 순서대로 뽑는다."""
+    titles: dict[str, str] = {}
+    for match in HOME_ARTICLE_PATTERN.finditer(page):
+        article_id = match.group(1)
+        title = normalize_title(html.unescape(TAG_PATTERN.sub("", match.group(2))))
+        if not title or title.upper() in GENERIC_LINK_TITLES:
+            titles.setdefault(article_id, "")
+            continue
+        if not titles.get(article_id):
+            titles[article_id] = title
+    return [
+        (QUEUE_DETAIL_URL.format(article_id=article_id), title)
+        for article_id, title in titles.items()
+        if title
+    ]
+
+
 def _is_translation_failed(original_title: str, translated_title: str) -> bool:
     return translated_title == f"{original_title}({original_title})"
 
@@ -115,8 +140,10 @@ def render_lines(result_list: List[Tuple[str, str]]) -> List[str]:
 def main() -> int:
     opts = parse_args(sys.argv[1:])
     input_data = extract_feed_source(sys.stdin.read())
-    feed = feedparser.parse(input_data)
-    result_list = collect_items(feed.entries)
+    if "<item" in input_data:
+        result_list = collect_items(feedparser.parse(input_data).entries)
+    else:
+        result_list = collect_items_from_home_html(input_data)
     result_list = result_list[: opts.num_of_recent_feeds]
 
     if opts.do_translate:
@@ -172,9 +199,7 @@ if __name__ == "__main__":
                     "&lt;rss&gt;&lt;channel/&gt;&lt;/rss&gt;"
                     "</div>"
                 )
-                self.assertEqual(
-                    extract_feed_source(wrapped), "<rss><channel/></rss>"
-                )
+                self.assertEqual(extract_feed_source(wrapped), "<rss><channel/></rss>")
 
             def test_extract_article_id_from_prism_doi(self):
                 self.assertEqual(
@@ -204,7 +229,10 @@ if __name__ == "__main__":
 
             def test_collect_items_deduplicates_by_queue_detail_url(self):
                 entries = [
-                    {"link": "https://dl.acm.org/doi/abs/10.1145/3831358?af=R", "title": "A"},
+                    {
+                        "link": "https://dl.acm.org/doi/abs/10.1145/3831358?af=R",
+                        "title": "A",
+                    },
                     {"prism_doi": "10.1145/3831358", "title": "B"},
                 ]
                 self.assertEqual(
@@ -230,6 +258,25 @@ if __name__ == "__main__":
                     [
                         ("https://queue.acm.org/detail.cfm?ref=rss&id=2", "Newer"),
                         ("https://queue.acm.org/detail.cfm?ref=rss&id=1", "Older"),
+                    ],
+                )
+
+            def test_collect_items_from_home_html_skips_generic_and_dedups(self):
+                page = (
+                    '<a href="/doi/10.1145/1"><span>READ THE FULL ARTICLE</span></a>'
+                    '<a class="x" href="/doi/10.1145/1">Real &amp; Title</a>'
+                    '<a href="/doi/10.1145/1">Real &amp; Title</a>'
+                    '<a href="/doi/10.1145/2">Second</a>'
+                    '<a href="/doi/10.1145/3"><i></i></a>'
+                )
+                self.assertEqual(
+                    collect_items_from_home_html(page),
+                    [
+                        (
+                            "https://queue.acm.org/detail.cfm?ref=rss&id=1",
+                            "Real & Title",
+                        ),
+                        ("https://queue.acm.org/detail.cfm?ref=rss&id=2", "Second"),
                     ],
                 )
 
