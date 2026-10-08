@@ -5,10 +5,8 @@
       "ignore_old_list": false,
       "sort_field_pattern": "\\t(\\S+)",
       "unit_size_per_day": 2,
-      "list_url_list": [
-        "https://medium.com/feed/airbnb-engineering"
-      ],
-      "item_capture_script": "../capture_item_from_rss.py -t -n 10 -x \"Personalization without user identity\""
+      "list_url_list": ["https://medium.com/feed/airbnb-engineering"],
+      "item_capture_script": "../capture_item_from_rss.py -t -n 10 -x \"Personalization without user identity,Beyond synthetic testing\""
     },
     "extraction": {
       "bypass_element_extraction": true
