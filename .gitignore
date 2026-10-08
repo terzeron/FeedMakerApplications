@@ -40,3 +40,4 @@ translation_map.json
 graphify-out/
 AGENTS.md
 CLAUDE.md
+.playwright-mcp/
