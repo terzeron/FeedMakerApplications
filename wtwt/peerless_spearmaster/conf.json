@@ -2,7 +2,7 @@
   "configuration": {
     "collection": {
       "is_completed": true,
-      "unit_size_per_day": 1,
+      "unit_size_per_day": 10,
       "sort_field_pattern": "num=(\\d+)",
       "retry_sleep": 5,
       "encoding": "cp949",
