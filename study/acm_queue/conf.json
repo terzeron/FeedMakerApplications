@@ -8,6 +8,8 @@
       "list_url_list": ["https://queue.acm.org/"],
       "render_js": true,
       "browser_fallback": ["cloakbrowser"],
+      "num_retries": 3,
+      "retry_sleep": 10,
       "item_capture_script": "./capture_item_from_acm_dl_feed.py -t"
     },
     "extraction": {
