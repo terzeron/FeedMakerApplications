@@ -1,13 +1,13 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": true,
+      "is_completed": false,
       "unit_size_per_day": 48,
       "sort_field_pattern": "num=(\\d+)",
       "retry_sleep": 5,
       "encoding": "cp949",
       "ignore_old_list": true,
-      "item_capture_script": "../capture_item_wtwt.py -n 300",
+      "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
         "https://wftoon232.com/list?toon=75462"
       ],
