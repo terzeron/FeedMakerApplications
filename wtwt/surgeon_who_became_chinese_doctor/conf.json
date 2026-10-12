@@ -5,7 +5,7 @@
       "encoding": "cp949",
       "ignore_old_list": true,
       "is_completed": false,
-      "item_capture_script": "../capture_item_wtwt.py -n 10",
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
         "https://wftoon232.com/list?toon=7636"
       ],
