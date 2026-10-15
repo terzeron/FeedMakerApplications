@@ -4,10 +4,12 @@
 import os
 import sys
 import getopt
-from typing import Iterable, List, NamedTuple, Tuple
+from pathlib import Path
+from typing import Iterable, List, NamedTuple, Optional, Tuple
 from urllib.parse import urlsplit, urlunsplit
 
 from utils.translation import Translation
+from bin.feed_maker_util import Env, URL
 
 import feedparser
 
@@ -17,6 +19,8 @@ class Options(NamedTuple):
     do_translate: bool
     do_strip_query: bool
     exclusion_keywords: List[str]
+    feed_dir: Optional[Path] = None
+    save_content: bool = False
 
 
 def _strip_query(url: str) -> str:
@@ -35,10 +39,14 @@ def parse_args(argv: List[str]) -> Options:
     do_translate = False
     do_strip_query = False
     exclusion_keywords: List[str] = []
+    feed_dir: Optional[Path] = None
+    save_content = False
 
-    optlist, _ = getopt.getopt(argv, "f:n:tsx:")
+    optlist, _ = getopt.getopt(argv, "f:n:tsx:c")
     for o, a in optlist:
-        if o == "-n":
+        if o == "-f":
+            feed_dir = Path(a)
+        elif o == "-n":
             num_of_recent_feeds = int(a)
         elif o == "-t":
             do_translate = True
@@ -46,9 +54,16 @@ def parse_args(argv: List[str]) -> Options:
             do_strip_query = True
         elif o == "-x":
             exclusion_keywords = parse_exclusion_keywords(a)
+        elif o == "-c":
+            save_content = True
 
     return Options(
-        num_of_recent_feeds, do_translate, do_strip_query, exclusion_keywords
+        num_of_recent_feeds,
+        do_translate,
+        do_strip_query,
+        exclusion_keywords,
+        feed_dir,
+        save_content,
     )
 
 
@@ -111,6 +126,50 @@ def translate_items(result_list: List[Tuple[str, str]]) -> List[Tuple[str, str]]
     return [(link, retried.get(link, title)) for link, title in translated]
 
 
+def extract_content(entry: dict) -> str:
+    """RSS entry에서 HTML 본문 문자열을 추출."""
+    content_list = entry.get("content", [])
+    if isinstance(content_list, list):
+        for item in content_list:
+            if isinstance(item, dict) and item.get("value"):
+                return item["value"]
+            if hasattr(item, "value") and getattr(item, "value"):
+                return getattr(item, "value")
+    if entry.get("summary"):
+        return entry["summary"]
+    if entry.get("description"):
+        return entry["description"]
+    return ""
+
+
+def save_entry_content_if_needed(entry: dict, link: str, feed_dir: Path) -> bool:
+    """entry에 본문이 있고 html 파일이 없거나 불완전하면 html 디렉터리에 본문을 저장."""
+    content = extract_content(entry)
+    if not content:
+        return False
+    html_dir = feed_dir / "html"
+    html_dir.mkdir(parents=True, exist_ok=True)
+    md5_name = URL.get_short_md5_name(URL.get_url_path(link))
+    html_file = html_dir / f"{md5_name}.html"
+
+    img_url_prefix = Env.get("WEB_SERVICE_IMAGE_URL_PREFIX")
+    rss_file_name = f"{feed_dir.name}.xml"
+    image_tag = (
+        f"<img src='{img_url_prefix}/1x1.jpg?feed={rss_file_name}&item={md5_name}'/>"
+    )
+
+    if html_file.is_file() and html_file.stat().st_size > len(image_tag) + 10:
+        try:
+            text = html_file.read_text(encoding="utf-8")
+            if image_tag in text and "Sorry, you have been blocked" not in text:
+                return False
+        except Exception:
+            pass
+
+    html_file.write_text(f"{content}\n{image_tag}\n", encoding="utf-8")
+    return True
+
+
 def format_line(link: str, title: str) -> str:
     """출력 한 줄(link\\ttitle)을 만든다. 번역 결과의 공백도 정규화한다."""
     title = " ".join(title.split())
@@ -130,6 +189,12 @@ def main() -> int:
         feed.entries, opts.do_strip_query, opts.exclusion_keywords
     )
     result_list = result_list[: opts.num_of_recent_feeds]
+
+    if opts.save_content and opts.feed_dir:
+        for entry in feed.entries:
+            link, _ = normalize_entry(entry, opts.do_strip_query)
+            if link:
+                save_entry_content_if_needed(entry, link, opts.feed_dir)
 
     if opts.do_translate:
         result_list = translate_items(result_list)
@@ -216,15 +281,19 @@ if __name__ == "__main__":
                     parse_args(["-x", "AD, PR"]).exclusion_keywords, ["AD", "PR"]
                 )
 
-            def test_parse_args_f_ignored(self):
-                # -f는 인자를 받지만 동작에 영향 없음(기본값 유지)
+            def test_parse_args_f(self):
                 self.assertEqual(
-                    parse_args(["-f", "feed.xml"]), Options(1000, False, False, [])
+                    parse_args(["-f", "feed.xml"]).feed_dir, Path("feed.xml")
                 )
 
+            def test_parse_args_c(self):
+                self.assertTrue(parse_args(["-c"]).save_content)
+
             def test_parse_args_combined(self):
-                opts = parse_args(["-n", "3", "-t", "-s", "-x", "AD,PR"])
-                self.assertEqual(opts, Options(3, True, True, ["AD", "PR"]))
+                opts = parse_args(["-n", "3", "-t", "-s", "-x", "AD,PR", "-c", "-f", "dir"])
+                self.assertEqual(
+                    opts, Options(3, True, True, ["AD", "PR"], Path("dir"), True)
+                )
 
             # --- normalize_entry ---
 
@@ -546,7 +615,25 @@ if __name__ == "__main__":
                         ["-t"], [{"title": "Hello", "link": "http://a.test/1"}]
                     )
                 m.assert_called_once_with([("http://a.test/1", "Hello")])
-                self.assertEqual(lines, ["http://a.test/1\t안녕(Hello)"])
+            def test_extract_content(self):
+                self.assertEqual(extract_content({}), "")
+                self.assertEqual(extract_content({"summary": "Summary text"}), "Summary text")
+                self.assertEqual(extract_content({"content": [{"value": "Content HTML"}]}), "Content HTML")
+
+            def test_save_entry_content_if_needed(self):
+                import tempfile
+                with tempfile.TemporaryDirectory() as tmpdir:
+                    feed_dir = Path(tmpdir) / "test_feed"
+                    feed_dir.mkdir()
+                    entry = {"content": [{"value": "<p>Article body</p>"}]}
+                    link = "https://example.com/article-1"
+                    saved = save_entry_content_if_needed(entry, link, feed_dir)
+                    self.assertTrue(saved)
+                    html_files = list((feed_dir / "html").glob("*.html"))
+                    self.assertEqual(len(html_files), 1)
+                    content = html_files[0].read_text(encoding="utf-8")
+                    self.assertIn("<p>Article body</p>", content)
+                    self.assertIn("1x1.jpg?feed=test_feed.xml", content)
 
         sys.exit(unittest.main())
     else:
