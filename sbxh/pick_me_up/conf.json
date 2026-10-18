@@ -5,16 +5,8 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_sbxh.py -n 10",
       "render_js": true,
-      "browser_fallback": [
-        "camoufox",
-        "cloakbrowser",
-        "patchright",
-        "nodriver",
-        "rebrowser_playwright"
-      ],
-      "list_url_list": [
-        "https://sbxh9.com/webtoon/67137961"
-      ],
+      "browser_fallback": ["camoufox", "cloakbrowser", "patchright", "nodriver", "rebrowser_playwright"],
+      "list_url_list": ["https://sbxh9.com/webtoon/60914825"],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 2,
       "num_retries": 3,
@@ -25,9 +17,7 @@
       "render_js": true,
       "simulate_scrolling": true,
       "threshold_to_remove_html_with_incomplete_image": 5,
-      "element_class_list": [
-        "vw-imgs"
-      ],
+      "element_class_list": ["vw-imgs"],
       "post_process_script_list": [
         "download_image.py",
         "merge_and_split.py -H 4320 -w 200 -b 20 -t 0.01 -a 1 -c blackorwhite -q 75"
@@ -39,7 +29,7 @@
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/pick_me_up.xml",
-      "title": "군림천하 :: 뉴토끼",
+      "title": "픽 미 업!::뉴토끼",
       "url_prefix_for_guid": "https://sbxh9.com"
     }
   }
