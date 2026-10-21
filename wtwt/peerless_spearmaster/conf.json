@@ -9,7 +9,7 @@
       "ignore_old_list": true,
       "item_capture_script": "../capture_item_wtwt.py -n 5",
       "list_url_list": [
-        "https://wftoon233.com/list?toon=75462"
+        "https://wftoon234.com/list?toon=75462"
       ],
       "num_retries": 3,
       "window_size": 10

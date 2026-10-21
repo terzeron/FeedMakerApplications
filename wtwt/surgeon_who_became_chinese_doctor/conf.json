@@ -7,7 +7,7 @@
       "is_completed": false,
       "item_capture_script": "../capture_item_wtwt.py -n 10",
       "list_url_list": [
-        "https://wftoon233.com/list?toon=7636"
+        "https://wftoon234.com/list?toon=7636"
       ],
       "num_retries": 3,
       "sort_field_pattern": "num=(\\d+)\\t",
