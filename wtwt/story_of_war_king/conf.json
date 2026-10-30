@@ -4,14 +4,14 @@
       "retry_sleep": 5,
       "encoding": "cp949",
       "ignore_old_list": true,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_wtwt.py -n 10",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wtwt.py -n 300",
       "list_url_list": [
-        "https://wftoon234.com/list?toon=6262"
+        "https://wftoon235.com/list?toon=6262"
       ],
       "num_retries": 3,
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 2,
+      "unit_size_per_day": 0,
       "window_size": 10
     },
     "extraction": {
