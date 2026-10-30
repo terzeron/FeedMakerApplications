@@ -10,7 +10,7 @@
         "https://github.com/trending?since=weekly",
         "https://gitbreakout.imbch.dev/api/timeline"
       ],
-      "item_capture_script": "./capture_item_link_title.py -t -n 300"
+      "item_capture_script": "./capture_item_link_title.py -t -n 10"
     },
     "extraction": {
       "element_class_list": [
