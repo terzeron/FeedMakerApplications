@@ -4,10 +4,10 @@
       "retry_sleep": 5,
       "encoding": "cp949",
       "ignore_old_list": true,
-      "is_completed": false,
-      "item_capture_script": "../capture_item_wtwt.py -n 10",
+      "is_completed": true,
+      "item_capture_script": "../capture_item_wtwt.py -n 120",
       "list_url_list": [
-        "https://wftoon235.com/list?toon=4579"
+        "https://wftoon235.com/list?toon=3996"
       ],
       "num_retries": 3,
       "sort_field_pattern": "num=(\\d+)\\t",
@@ -32,7 +32,7 @@
       "generator": "Terzeron's Feed Generator",
       "language": "ko",
       "link": "https://terzeron.com/god_of_blackfield.xml",
-      "title": "갓 오브 블랙필드::W툰",
+      "title": "마법스크롤 상인 지오 :: W툰",
       "url_prefix_for_guid": "https://wtoon40.com"
     }
   }
