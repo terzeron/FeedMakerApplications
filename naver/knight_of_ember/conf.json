@@ -12,7 +12,10 @@
         "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=7",
         "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=8",
         "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=9",
-        "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=10"
+        "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=10",
+        "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=11",
+        "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=12",
+        "https://comic.naver.com/api/article/list?titleId=768536&sort=DESC&page=13"
       ],
       "sort_field_pattern": "no=(\\d+)\\t",
       "unit_size_per_day": 0.5,
