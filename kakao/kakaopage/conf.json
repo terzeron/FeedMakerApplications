@@ -1,0 +1,38 @@
+{
+  "configuration": {
+    "collection": {
+      "is_completed": false,
+      "ignore_old_list": false,
+      "list_url_list": [
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=11",
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=1",
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=2",
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=3",
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=4",
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=5",
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=6",
+        "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=7"
+      ],
+      "sort_field_pattern": "\\t(\\d\\d\\d\\d-\\d\\d-\\d\\d)",
+      "window_size": 20,
+      "headers": {
+        "accept-language": "ko"
+      },
+      "referer": "https://page.kakao.com/"
+    },
+    "extraction": {
+      "bypass_element_extraction": true,
+      "referer": "https://page.kakao.com/",
+      "post_process_script_list": [
+        "./post_process.py"
+      ]
+    },
+    "rss": {
+      "title": "카카오페이지웹툰목록::카카오",
+      "generator": "Terzeron's Feed Generator",
+      "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
+      "link": "https://terzeron.com/kakaopage.xml",
+      "language": "ko"
+    }
+  }
+}
