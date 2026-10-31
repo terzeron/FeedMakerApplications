@@ -1,7 +1,7 @@
 {
   "configuration": {
     "collection": {
-      "is_completed": false,
+      "is_completed": true,
       "ignore_old_list": false,
       "list_url_list": [
         "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=11",
