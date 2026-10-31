@@ -20,6 +20,15 @@ def parse_args(argv: List[str]) -> int:
     return num_of_recent_feeds
 
 
+def strip_title_param(url: str) -> str:
+    """URL 쿼리에서 title 파라미터를 제거한다."""
+    base, sep, query = url.partition("?")
+    if not sep:
+        return url
+    params = [p for p in query.split("&") if not p.startswith("title=")]
+    return base + ("?" + "&".join(params) if params else "")
+
+
 def parse_feed_list(line_list: List[str]) -> List[Tuple[str, str]]:
     """og:url → toon anchor → subject 제목 순으로 상태머신을 돌려 (link, title) 목록을 만든다."""
     link = ""
@@ -38,7 +47,7 @@ def parse_feed_list(line_list: List[str]) -> List[Tuple[str, str]]:
         elif state == 1:
             m = re.search(r'<a\s+[^>]*href="(?P<link>/[^"]*toon[^"]*)"[^>]*>', line)
             if m:
-                raw_link = url_prefix + m.group("link")
+                raw_link = strip_title_param(url_prefix + m.group("link"))
                 link = urllib.parse.quote(raw_link, safe=":/?=&")
                 state = 2
         elif state == 2:
@@ -155,10 +164,10 @@ if __name__ == "__main__":
                 '                    <a href="/view?toon=8147&num=212&title=학사검전211화" class="view_open">',
                 '                        <div class="list-box">',
                 '                            <div class="num">212</div>',
-                '                            <div class="subject">학사검전 211화&nbsp;<div class=\'badge badge-new\'>오늘</div></div>',
+                "                            <div class=\"subject\">학사검전 211화&nbsp;<div class='badge badge-new'>오늘</div></div>",
                 '                            <div class="date">2026-07-26</div>',
-                '                        </div>',
-                '                    </a>',
+                "                        </div>",
+                "                    </a>",
             ]
 
             def test_real_sample_end_to_end(self):
@@ -179,9 +188,23 @@ if __name__ == "__main__":
                 self.assertEqual(
                     lines,
                     [
-                        "https://wftoon221.com/view?toon=8147&num=212&title=%ED%95%99%EC%82%AC%EA%B2%80%EC%A0%84211%ED%99%94\t001. 학사검전 211화",
+                        "https://wftoon221.com/view?toon=8147&num=212\t001. 학사검전 211화",
                     ],
                 )
+
+            def test_strip_title_param(self):
+                self.assertEqual(
+                    strip_title_param("https://a/v?toon=1&num=2&title=x"),
+                    "https://a/v?toon=1&num=2",
+                )
+                self.assertEqual(
+                    strip_title_param("https://a/v?title=x&toon=1"),
+                    "https://a/v?toon=1",
+                )
+                self.assertEqual(
+                    strip_title_param("https://a/v?title=x"), "https://a/v"
+                )
+                self.assertEqual(strip_title_param("https://a/v"), "https://a/v")
 
         sys.exit(unittest.main())
     else:
