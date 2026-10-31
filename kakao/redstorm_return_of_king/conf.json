@@ -1,31 +1,28 @@
 {
   "configuration": {
     "collection": {
-      "item_capture_script": "../capture_item_kakaowebtoon.py -n 5",
+      "item_capture_script": "../capture_item_kakaopage.py -n 5",
       "sort_field_pattern": "\\b(\\d+)\\.",
-      "unit_size_per_day": 0.5,
-      "is_completed": false,
-      "ignore_old_list": false,
+      "unit_size_per_day": 1,
       "list_url_list": [
-        "https://gateway-kw.kakao.com/episode/v1/views/content-home/contents/823/episodes?sort=-NO&offset=0&limit=30"
+        "https://bff-page.kakao.com/api/gateway/api/v2/content/product/list?series_id=61856924&cursor_index=0&cursor_direction=NEXT&window_size=30&sort_type=desc"
       ],
       "headers": {
         "accept-language": "ko"
-      }
+      },
+      "referer": "https://page.kakao.com/"
     },
     "extraction": {
       "threshold_to_remove_html_with_incomplete_image": 5,
-      "element_id_list": ["root"],
+      "bypass_element_extraction": true,
       "post_process_script_list": [
+        "../post_process_kakaopage.py",
         "download_image.py --keep-img-meta-only",
         "merge_and_split.py -H 4320 -w 200 -b 20 -t 0.01 -a 1 -c blackorwhite -q 75"
-      ],
-      "render_js": true,
-      "simulate_scrolling": true,
-      "blob_to_dataurl": true
+      ]
     },
     "rss": {
-      "title": "레드스톰 - 왕의 귀환::카카오",
+      "title": "레드스톰 - 왕의 귀환:: 카카오",
       "generator": "Terzeron's Feed Generator",
       "copyright": "Copyright (c) Kakao Entertainment. All rights reserved.",
       "link": "https://terzeron.com/redstorm_return_of_king.xml",
