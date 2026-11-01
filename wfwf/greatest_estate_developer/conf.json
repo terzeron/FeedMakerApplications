@@ -11,7 +11,7 @@
         "https://wfwf528.com/list?toon=6788"
       ],
       "sort_field_pattern": "num=(\\d+)\\t",
-      "unit_size_per_day": 2,
+      "unit_size_per_day": 0.01,
       "window_size": 10
     },
     "extraction": {
