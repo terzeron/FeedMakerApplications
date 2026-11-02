@@ -14,8 +14,8 @@
         "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=0&tab_uid=7"
       ],
       "sort_field_pattern": "\\t(\\d\\d\\d\\d-\\d\\d-\\d\\d)",
-      "window_size": 20,
-      "unit_size_per_day": 1,
+      "window_size": 96,
+      "unit_size_per_day": 24,
       "headers": {
         "accept-language": "ko"
       },
