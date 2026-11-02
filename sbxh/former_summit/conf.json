@@ -1,0 +1,37 @@
+{
+  "configuration": {
+    "collection": {
+      "ignore_old_list": true,
+      "is_completed": true,
+      "item_capture_script": "../capture_item_sbxh_novel.py -n 1000",
+      "list_url_list": [
+        "https://sbxh9.com/novel/58599"
+      ],
+      "render_js": false,
+      "sort_field_pattern": "\\t(\\d+)\\.",
+      "unit_size_per_day": 2,
+      "window_size": 275,
+      "timeout": 60,
+      "num_retries": 3,
+      "retry_sleep": 5
+    },
+    "extraction": {
+      "render_js": false,
+      "bypass_element_extraction": true,
+      "post_process_script_list": [
+        "../extract_sbxh_novel.py"
+      ],
+      "timeout": 60,
+      "num_retries": 3,
+      "retry_sleep": 5
+    },
+    "rss": {
+      "copyright": "Copyright (c) 뉴토끼. All rights reserved.",
+      "generator": "Terzeron's Feed Generator",
+      "language": "ko",
+      "link": "https://terzeron.com/former_summit.xml",
+      "title": "[장영훈] 전직지존 :: 뉴토끼",
+      "url_prefix_for_guid": "https://sbxh9.com"
+    }
+  }
+}
