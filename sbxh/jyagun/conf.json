@@ -13,7 +13,8 @@
         "rebrowser_playwright"
       ],
       "list_url_list": [
-        "https://sbxh9.com/manhwa/8252"
+        "https://sbxh9.com/manhwa/8252",
+        "https://sbxh9.com/manhwa/8252?epage=2"
       ],
       "sort_field_pattern": "\\t(\\d+)",
       "unit_size_per_day": 0.01,
