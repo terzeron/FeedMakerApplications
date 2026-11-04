@@ -15,7 +15,7 @@
       ],
       "sort_field_pattern": "\\t(\\d\\d\\d\\d-\\d\\d-\\d\\d)",
       "window_size": 96,
-      "unit_size_per_day": 24,
+      "unit_size_per_day": 48,
       "headers": {
         "accept-language": "ko"
       },
