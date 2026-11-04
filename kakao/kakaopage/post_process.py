@@ -27,6 +27,12 @@ MAX_RETRIES = 2
 RETRY_SLEEP_SEC = 5
 LOGIN_NOT_REQUIRED = "비로그인 열람 가능"
 LOGIN_REQUIRED = "로그인 열람 필수"
+EXCLUDED_SUB_CATEGORIES = frozenset({"로판", "로맨스"})
+
+
+def is_excluded_series(series: dict) -> bool:
+    """제외 장르(로판, 로맨스)에 속한 작품이면 True."""
+    return series.get("sub_category", "") in EXCLUDED_SUB_CATEGORIES
 
 
 def parse_series_id(url: str) -> Optional[str]:
@@ -166,6 +172,13 @@ def main() -> int:
     if "title" not in series:
         LOGGER.error("can't find title of series '%s'", series_id)
         return -1
+    if is_excluded_series(series):
+        LOGGER.info(
+            "skipping excluded sub_category '%s' of series '%s'",
+            series["sub_category"],
+            series_id,
+        )
+        return -1
 
     link = "https://page.kakao.com/content/%s" % series_id
     item_id = URL.get_short_md5_name(URL.get_url_path(link))
@@ -245,6 +258,14 @@ if __name__ == "__main__":
 
             def test_classify_unknown_when_no_episodes(self):
                 self.assertEqual(classify_login_requirement([]), "")
+
+            # --- is_excluded_series ---
+
+            def test_is_excluded_series(self):
+                self.assertTrue(is_excluded_series({"sub_category": "로판"}))
+                self.assertTrue(is_excluded_series({"sub_category": "로맨스"}))
+                self.assertFalse(is_excluded_series({"sub_category": "판타지"}))
+                self.assertFalse(is_excluded_series({}))
 
             # --- extract_episodes ---
 

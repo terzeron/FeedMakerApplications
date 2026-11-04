@@ -22,6 +22,7 @@ LINK_PREFIX = "https://page.kakao.com/content"
 PAGE_URL = "https://bff-page.kakao.com/api/gateway/view/v2/landing/dayofweek?category_uid=10&screen_uid=52&page=%d&tab_uid=%s"
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 ADULT_AGE_GRADE = 19
+EXCLUDED_SUB_CATEGORIES = frozenset({"로판", "로맨스"})
 MAX_PAGES = 60
 FETCH_RETRIES = 2
 FETCH_RETRY_SLEEP_SEC = 3
@@ -47,13 +48,15 @@ def strip_outer_tags(content: str) -> str:
 def extract_items(
     json_data: dict, link_prefix: str = LINK_PREFIX
 ) -> List[Tuple[str, str]]:
-    """landing/dayofweek 응답에서 성인용(19세 이상)을 뺀 작품을 (link, title)로 추출한다.
+    """landing/dayofweek 응답에서 성인용(19세 이상)과 제외 장르(로판, 로맨스)를 뺀 작품을 (link, title)로 추출한다.
 
     제목 앞에 판매 시작일(YYYY-MM-DD)을 붙여 sort_field_pattern으로 정렬할 수 있게 한다.
     """
     result_list: List[Tuple[str, str]] = []
     for item in json_data.get("result", {}).get("list", []):
         if item.get("age_grade", 0) >= ADULT_AGE_GRADE:
+            continue
+        if item.get("sub_category", "") in EXCLUDED_SUB_CATEGORIES:
             continue
         series_id = item.get("series_id")
         title = item.get("title")
@@ -206,6 +209,21 @@ if __name__ == "__main__":
                 self.assertEqual(
                     [t for _, t in extract_items(data)],
                     ["2021-02-28 all", "2021-02-28 teen"],
+                )
+
+            def test_extract_items_excludes_romance_genres(self):
+                items = [
+                    self._item(1, "rofan"),
+                    self._item(2, "romance"),
+                    self._item(3, "fantasy"),
+                    self._item(4, "nogenre"),
+                ]
+                items[0]["sub_category"] = "로판"
+                items[1]["sub_category"] = "로맨스"
+                items[2]["sub_category"] = "판타지"
+                self.assertEqual(
+                    [t for _, t in extract_items(self._page(items))],
+                    ["2021-02-28 fantasy", "2021-02-28 nogenre"],
                 )
 
             def test_extract_items_missing_date_uses_epoch(self):
